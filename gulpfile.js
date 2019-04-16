@@ -40,7 +40,7 @@ gulp.task('js', () => gulp.src('./src/js/index.js')
     ],
   }))
   .on('error', swallowError)
-  .pipe(gulp.dest('static/js')));
+  .pipe(gulp.dest('assets/js')));
 
 gulp.task('css', () => gulp.src('src/scss/style.scss')
   .pipe(plumber())
@@ -51,7 +51,7 @@ gulp.task('css', () => gulp.src('src/scss/style.scss')
   ]))
   .on('error', swallowError)
   .pipe(sourcemap.write('.'))
-  .pipe(gulp.dest('static/css'))
+  .pipe(gulp.dest('assets/css'))
   .pipe(server.stream()));
 
 gulp.task('watch', () => {

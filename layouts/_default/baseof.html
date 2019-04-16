@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/style.css">
+    {{ $css := resources.Get "css/style.css"}}
+    <link rel="stylesheet" href="{{$css.Permalink}}">
     <title>Document</title>
-    <script defer src="{{ "js/index.js" | relURL }}"></script>
+    {{ $js := resources.Get "js/index.js" }}
+    {{ $secureJS := $js | resources.Fingerprint "sha512" }}
+    <script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" defer></script>
   </head>
   <body>
     {{- partial "header.html" . -}}
