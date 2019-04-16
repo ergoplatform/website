@@ -4,6 +4,8 @@
 	<sitemap>
 	   	<loc>/en/sitemap.xml</loc>
 		
+	   	<lastmod>2019-04-16T17:45:40+03:00</lastmod>
+		
 	</sitemap>
 	
 	<sitemap>
@@ -13,6 +15,8 @@
 	
 	<sitemap>
 	   	<loc>/de/sitemap.xml</loc>
+		
+	   	<lastmod>2019-04-16T17:45:40+03:00</lastmod>
 		
 	</sitemap>
 	

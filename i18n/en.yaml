@@ -1,3 +1,33 @@
-#about
+#landing
 - id: about_page
   translation: Hello
+
+- id: resilient_platform
+  translation: Ergo is a resilient platform
+
+- id: contractual_money
+  translation: for contractual money
+
+- id: getting_started
+  translation: Getting started with Ergo
+
+- id: ergo_philosophy
+  translation: Ergo philosophy
+
+- id: ergo_decentralization
+  translation: Decentralization
+
+- id: ergo_economy
+  translation: Economy model
+
+- id: ergo_contractual
+  translation: Contractual money
+
+- id: ergo_survivability
+  translation: Survivability
+
+- id: ergo_clients
+  translation: Light clients
+
+- id: news_title
+  translation: News

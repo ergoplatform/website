@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    
     <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
     
     
-    <script type="text/javascript" src="/js/index.b0c6e1b9ecfc196a2dc10fc2a96c414b7b5bfae90483086f92d609da78831c7ca432e828620eefb77212730fa71c1fe0a8b191bc5f701b5040ab2cdf7ff3475e.js" integrity="sha512-sMbhuez8GWotwQ/CqWxBS3tb&#43;ukEgwhvktYJ2niDHHykMugoYg7vt3IScw&#43;nHB/gqLGRvF9wG1BAqyzff/NHXg==" defer></script>
+    
+    <script type="text/javascript" src="/js/index.js" defer></script>
   </head>
   <body><header class="eg-header">
       <nav class="eg-navbar">
@@ -66,33 +69,35 @@
               
             </ul>
           </div>
-          <div class="eg-navbar__language dd-language dropdown dd-language--white">
-            <button
-              class="dd-language__button dd-language__button--white dropdown__button"
-              data-target-id="languageMenu"
-            >
-              RU
-            </button>
-            <ul
-              id="languageMenu"
-              class="dropdown__menu dd-language__menu"
-            >
-              
+          <div class="eg-navbar__language">
+            <div class="dd-language dropdown dd-language--white">
+              <button
+                class="dd-language__button dd-language__button--white dropdown__button"
+                data-target-id="languageMenu"
+              >
+                RU
+              </button>
+              <ul
+                id="languageMenu"
+                class="dropdown__menu dd-language__menu"
+              >
                 
-                  <li class="dd-language__item">
-                    <a class="dd-language__link dd-language__link--white" href="/en/">EN</a>
-                  </li>
+                  
+                    <li class="dd-language__item">
+                      <a class="dd-language__link dd-language__link--white" href="/en/">EN</a>
+                    </li>
+                  
                 
-              
+                  
                 
-              
+                  
+                    <li class="dd-language__item">
+                      <a class="dd-language__link dd-language__link--white" href="/de/">DE</a>
+                    </li>
+                  
                 
-                  <li class="dd-language__item">
-                    <a class="dd-language__link dd-language__link--white" href="/de/">DE</a>
-                  </li>
-                
-              
-            </ul>
+              </ul>
+            </div>
           </div>
           <button class="eg-navbar__trigger eg-navbar__trigger--white" type="button" aria-expanded="false" aria-label="Toggle navigation">
             <span></span>
@@ -105,17 +110,74 @@
       <section class="header-section">
         <div class="container header-section__container">
           <h1 class="header-section__title">
-            <span class="header-section__title--red">Ergo is a resilient platform</span>
+            <span class="header-section__title--red"></span>
             <br/>
-            for contractual money
+            
           </h1>
           <ul class="header-section__icons">
-            <li class="header-section__icon"><img src="/img/ic_git.svg" alt="icon github"></li>
-            <li class="header-section__icon"><img src="/img/ic_twitter.svg" alt="icon twitter"></li>
-            <li class="header-section__icon"><img src="/img/ic_youtube.svg" alt="icon youtube"></li>
-            <li class="header-section__icon"><img src="/img/ic_telegram.svg" alt="icon telegram"></li>
+            <li class="header-section__icon"><img src="/img/landing/ic_git.svg" alt="icon github"></li>
+            <li class="header-section__icon"><img src="/img/landing/ic_twitter.svg" alt="icon twitter"></li>
+            <li class="header-section__icon"><img src="/img/landing/ic_youtube.svg" alt="icon youtube"></li>
+            <li class="header-section__icon"><img src="/img/landing/ic_telegram.svg" alt="icon telegram"></li>
           </ul>
-          <button class="header-section__button eg-btn eg-btn--orange">Getting started with Ergo</button>
+          <button class="header-section__button eg-btn eg-btn--orange"></button>
+        </div>
+      </section>
+      <section class="subheader-section">
+        <div class="container container--margins-y subheader-section__container tabs">
+          <ul class="subheader-section__tabs">
+            <li class="subheader-section__item"><a href="#tabs-1"></a></li>
+            <li class="subheader-section__item"><a href="#tabs-2"></a></li>
+            <li class="subheader-section__item"><a href="#tabs-3"></a></li>
+            <li class="subheader-section__item"><a href="#tabs-4"></a></li>
+            <li class="subheader-section__item"><a href="#tabs-5"></a></li>
+            <li class="subheader-section__item"><a href="#tabs-6"></a></li>
+          </ul>
+          <div class="subheader-section__tabs-content">
+            <div id="tabs-4">
+              <h2 class="subheader-section__tab-title">Contractual money</h2>
+              <p class="subheader-section__tab-paragraph">Ergo’s mission is improving every aspect of a blockchain, but our top priority is ensuring long term survivability. We are building correct-by-design blockchain, capable of continuing without depending on a centralized development team, regular hardforks and/or high end hardware requirements for the userbase. For example, our improvements will allow users to synchronize and efficiently validate blocks regardless of blockchain and state size.</p>
+            </div>
+            <div id="tabs-1">
+              <h2 class="subheader-section__tab-title">Content heading 2</h2>
+              <p class="subheader-section__tab-paragraph">Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="news-section">
+        <div class="container container--margins-y">
+          <h2 class="news-section__title"></h2>
+          <div class="news-section__items">
+            
+            
+              
+                
+                  
+                  
+                    <a class="news-section__item" href="github.io">
+                      <h3 class="news-section__item-title">16 April, 2019</h3>
+                      <p class="news-section__item-paragraph">Introduction to Ergo Platform by Dmitry Meshkov</p>
+                    </a>
+                  
+                    <a class="news-section__item" href="">
+                      <h3 class="news-section__item-title">16 April, 2019</h3>
+                      <p class="news-section__item-paragraph">ErgoScript, a Cryptocurrency Scripting Language Supporting Noninteractive Zero-Knowledge Proofs</p>
+                    </a>
+                  
+                    <a class="news-section__item" href="">
+                      <h3 class="news-section__item-title">16 April, 2019</h3>
+                      <p class="news-section__item-paragraph">Ergo Platform is a storage of rich state with language safer than Bitcoin&#39;s</p>
+                    </a>
+                  
+                
+              
+                
+              
+                
+              
+            
+          </div>
         </div>
       </section>
     </main>

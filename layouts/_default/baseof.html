@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {{ $css := resources.Get "css/style.css"}}
-    <link rel="stylesheet" href="{{$css.Permalink}}">
+    <!-- <link rel="stylesheet" href="{{$css.Permalink}}"> -->
+    <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
     {{ $js := resources.Get "js/index.js" }}
     {{ $secureJS := $js | resources.Fingerprint "sha512" }}
-    <script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" defer></script>
+    <!-- <script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" defer></script> -->
+    <script type="text/javascript" src="/js/index.js" defer></script>
   </head>
   <body>
     {{- partial "header.html" . -}}

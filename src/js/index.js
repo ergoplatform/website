@@ -1,13 +1,14 @@
 import $ from 'jquery';
+import 'jquery-ui/ui/widgets/tabs';
 
 const dropDownFunc = (id) => {
-  $(`#${id}`).toggle('show');
+  $(`#${id}`).parent('.dropdown').toggleClass('show');
 };
 
 window.addEventListener('click', (event) => {
   if (!event.target.matches('.dropdown__button')) {
-    $('.dropdown__menu').each(function () {
-      $(this).hide('show');
+    $('.dropdown').each(function () {
+      $(this).removeClass('show');
     });
   }
 });
@@ -22,4 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
   $('.eg-navbar__trigger').click(() => {
     $('html').toggleClass('show-main-nav');
   });
+
+  $('.tabs').tabs();
 });

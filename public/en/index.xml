@@ -6,9 +6,46 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Tue, 16 Apr 2019 17:45:40 +0300</lastBuildDate>
     
 	<atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Introduction to Ergo Platform by Dmitry Meshkov</title>
+      <link>/en/news/4/</link>
+      <pubDate>Tue, 16 Apr 2019 17:45:40 +0300</pubDate>
+      
+      <guid>/en/news/4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ErgoScript, a Cryptocurrency Scripting Language Supporting Noninteractive Zero-Knowledge Proofs</title>
+      <link>/en/news/third/</link>
+      <pubDate>Tue, 16 Apr 2019 17:05:33 +0300</pubDate>
+      
+      <guid>/en/news/third/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ergo Platform is a storage of rich state with language safer than Bitcoin&#39;s</title>
+      <link>/en/news/second/</link>
+      <pubDate>Tue, 16 Apr 2019 17:05:11 +0300</pubDate>
+      
+      <guid>/en/news/second/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>First</title>
+      <link>/en/news/first/</link>
+      <pubDate>Tue, 16 Apr 2019 17:04:28 +0300</pubDate>
+      
+      <guid>/en/news/first/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

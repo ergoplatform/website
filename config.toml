@@ -8,6 +8,9 @@ defaultContentLanguageInSubdir = true
 [permalinks]
   pages = "/:slug/"
 
+[params]
+  defaultLanguage = "en"
+
 [languages.en]
   languageCode = "en"
   languageName = "English"

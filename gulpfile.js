@@ -36,10 +36,12 @@ gulp.task('js', () => gulp.src('./src/js/index.js')
       new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery',
+        'jquery-ui': 'jquery-ui',
       }),
     ],
   }))
   .on('error', swallowError)
+  .pipe(gulp.dest('static/js'))
   .pipe(gulp.dest('assets/js')));
 
 gulp.task('css', () => gulp.src('src/scss/style.scss')

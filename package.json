@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
-    "jquery": "^3.4.0"
+    "jquery": "^3.4.0",
+    "jquery-ui": "^1.12.1",
+    "jquery-ui-dist": "^1.12.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",

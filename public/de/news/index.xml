@@ -11,5 +11,41 @@
 	<atom:link href="/de/news/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>4</title>
+      <link>/de/news/4/</link>
+      <pubDate>Tue, 16 Apr 2019 17:45:40 +0300</pubDate>
+      
+      <guid>/de/news/4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Third</title>
+      <link>/de/news/third/</link>
+      <pubDate>Tue, 16 Apr 2019 17:05:33 +0300</pubDate>
+      
+      <guid>/de/news/third/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Second</title>
+      <link>/de/news/second/</link>
+      <pubDate>Tue, 16 Apr 2019 17:05:11 +0300</pubDate>
+      
+      <guid>/de/news/second/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>First</title>
+      <link>/de/news/first/</link>
+      <pubDate>Tue, 16 Apr 2019 17:04:28 +0300</pubDate>
+      
+      <guid>/de/news/first/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

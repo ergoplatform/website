@@ -1,7 +1,7 @@
 .eg-btn {
   display: inline-block;
   height: 50px;
-  color: #FFFFFF;
+  color: $white;
   font-size: 20px;
   line-height: 24px;
   font-weight: 300;
@@ -11,7 +11,12 @@
   cursor: pointer;
 
   &--orange {
-    background: #FF4221;
-    color: #fff;
+    background: $light-red;
+    color: $white;
+    transition: opacity ease-in 0.15s;
+
+    &:hover {
+      opacity: 0.9;
+    }
   }
 }

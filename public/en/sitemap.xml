@@ -3,6 +3,66 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/en/news/4/</loc>
+    <lastmod>2019-04-16T17:45:40+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/news/4/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/news/4/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/news/third/</loc>
+    <lastmod>2019-04-16T17:05:33+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/news/third/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/news/third/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/news/second/</loc>
+    <lastmod>2019-04-16T17:05:11+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/news/second/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/news/second/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/news/first/</loc>
+    <lastmod>2019-04-16T17:04:28+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/news/first/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/news/first/"
+                />
+  </url>
+  
+  <url>
     <loc>/en/news/</loc>
     <lastmod>2019-04-12T13:50:10+03:00</lastmod>
     <xhtml:link
@@ -87,13 +147,13 @@
     <lastmod>2019-04-11T20:29:21+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="/de/team/"
+                hreflang="ru"
+                href="/ru/team/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ru"
-                href="/ru/team/"
+                hreflang="de"
+                href="/de/team/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -144,6 +204,7 @@
   
   <url>
     <loc>/en/</loc>
+    <lastmod>2019-04-16T17:45:40+03:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
