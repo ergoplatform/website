@@ -1,0 +1,59 @@
+{
+  "name": "ergo_platform",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-flow": "^7.0.0",
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "autoprefixer": "^9.5.1",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "browser-sync": "2.26.x",
+    "debug": "^4.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-flowtype": "^3.2.1",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-lodash-fp": "^2.2.0-a1",
+    "gulp": "4.0.x",
+    "gulp-babel": "^8.0.0",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "8.0.x",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "2.6.x",
+    "gulp-watch": "^5.0.1",
+    "node-sass": "^4.11.0",
+    "stylelint": "9.10.x",
+    "stylelint-config-htmlacademy": "0.1.x",
+    "webpack": "^4.30.0",
+    "webpack-stream": "^5.2.1"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"static/scss/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "watch": "gulp watch"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "layouts/**/*.html",
+    "static/js/**/*.js",
+    "static/img/**/*.svg",
+    "static/scss/**/*.scss"
+  ]
+}

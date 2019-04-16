@@ -1,0 +1,47 @@
+{{- $currentPage := . -}}
+<header class="eg-header">
+  <nav class="eg-navbar">
+    <div class="container eg-navbar__container">
+      {{ with .Site.GetPage "home" }}
+        <a href="{{ .Permalink }}" class="logotype">
+          <img src="/img/logotype_black.svg" alt="logotype">
+        </a>
+      {{ end }}
+      <div class="eg-navbar__collapse" id="navbarSupportedContent">
+        <ul class="eg-nav eg-nav--black">
+          {{ range $index, $menuItem := .Site.Menus.mainmenu }}
+            <li class="eg-nav__item {{ if $currentPage.IsMenuCurrent "mainmenu" . }}active{{ end }}">
+              <a
+                class="eg-nav__link"
+                href="{{ .URL | absLangURL | safeURL }}"
+              >{{ with $menuItem.Pre }}{{ . | safeHTML }}{{ end }}{{ $menuItem.Name }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="eg-navbar__language dd-language dropdown">
+        <button
+          class="dd-language__button dropdown__button"
+          data-target-id="languageMenu"
+        >
+          {{ upper .Lang }}
+        </button>
+        <ul
+          id="languageMenu"
+          class="dropdown__menu dd-language__menu"
+        >
+          {{ range $.AllTranslations }}
+            {{ if ne .Language.Lang $currentPage.Lang }}
+              <li class="dd-language__item">
+                <a class="dd-language__link" href="{{ .Permalink }}">{{ upper .Language.Lang }}</a>
+              </li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+      <button class="eg-navbar__trigger eg-navbar__trigger--black" type="button" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+      </button>
+    </div>
+  </nav>
+</header>

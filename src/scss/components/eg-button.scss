@@ -1,0 +1,17 @@
+.eg-btn {
+  display: inline-block;
+  height: 50px;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 300;
+  padding: 12px 30px 14px 30px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+
+  &--orange {
+    background: #FF4221;
+    color: #fff;
+  }
+}

@@ -1,0 +1,99 @@
+baseURL = "/"
+languageCode = "en"
+title = "My New Hugo Site"
+defaultContentLanguage = "ru"
+defaultContentLanguageInSubdir = true
+
+# Links format
+[permalinks]
+  pages = "/:slug/"
+
+[languages.en]
+  languageCode = "en"
+  languageName = "English"
+  contentDir = "content/en"
+  weight = 1
+
+  [[languages.en.menu.mainmenu]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = -110
+
+  [[languages.en.menu.mainmenu]]
+    identifier = "news"
+    name = "News"
+    url = "/news/"
+    weight = -100
+
+  [[languages.en.menu.mainmenu]]
+    identifier = "FAQ"
+    name = "FAQ"
+    url = "/faq/"
+    weight = -90
+
+  [[languages.en.menu.mainmenu]]
+    identifier = "Documents"
+    name = "Documents"
+    url = "/documents/"
+    weight = -80
+
+  [[languages.en.menu.mainmenu]]
+    identifier = "Blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = -70
+
+  [[languages.en.menu.mainmenu]]
+    identifier = "Team"
+    name = "Team"
+    url = "/team/"
+    weight = -60
+
+[languages.ru]
+  languageCode = "ru"
+  languageName = "Russian"
+  contentDir = "content/ru"
+  weight = 1
+
+  [[languages.ru.menu.mainmenu]]
+    identifier = "about"
+    name = "О нас"
+    url = "/about/"
+    weight = -110
+
+  [[languages.ru.menu.mainmenu]]
+    identifier = "news"
+    name = "Новости"
+    url = "/news/"
+    weight = -100
+
+  [[languages.ru.menu.mainmenu]]
+    identifier = "FAQ"
+    name = "FAQ"
+    url = "/faq/"
+    weight = -90
+
+  [[languages.ru.menu.mainmenu]]
+    identifier = "Documents"
+    name = "Документы"
+    url = "/documents/"
+    weight = -80
+
+  [[languages.ru.menu.mainmenu]]
+    identifier = "Blog"
+    name = "Блог"
+    url = "/blog/"
+    weight = -70
+
+  [[languages.ru.menu.mainmenu]]
+    identifier = "Team"
+    name = "Команда"
+    url = "/team/"
+    weight = -60
+
+[languages.de]
+  languageCode = "de"
+  languageName = "Deutech"
+  contentDir = "content/de"
+  weight = 1
