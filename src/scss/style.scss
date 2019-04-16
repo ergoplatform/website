@@ -4,14 +4,6 @@
 @import 'header';
 @import 'landing/landing';
 
-:root {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  position: relative;
-  color: #000000;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -19,6 +11,7 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
   position: relative;
   min-width: 320px;
   font-family: "LabGrotesque", sans-serif;

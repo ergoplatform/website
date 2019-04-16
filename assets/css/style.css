@@ -38,7 +38,8 @@
     color: #fff; }
 
 .show-main-nav body {
-  overflow: hidden; }
+  overflow: hidden;
+  position: fixed; }
 
 .show-main-nav .eg-navbar__trigger > span {
   background: 0 0 !important; }
@@ -297,13 +298,6 @@
   .landing .header-section .header-section__button {
     margin-top: 70px; }
 
-:root {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  position: relative;
-  color: #000000; }
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -311,6 +305,7 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
   position: relative;
   min-width: 320px;
   font-family: "LabGrotesque", sans-serif; }
