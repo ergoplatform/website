@@ -224,15 +224,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   z-index: 100;
   padding-top: 12px;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 85px;
+  padding-right: 4px;
+  width: 80px;
   border: 1px solid transparent;
   border-bottom: none; }
   .dd-language--white .dd-language__button {
@@ -252,10 +251,8 @@
     background: none;
     outline: none;
     cursor: pointer;
-    padding-left: 0;
     color: #000;
-    padding-bottom: 0;
-    padding-top: 0; }
+    padding: 0; }
     .dd-language .dd-language__button::after {
       background-image: url("../img/arrow.svg");
       background-repeat: no-repeat;
@@ -263,7 +260,7 @@
       width: 12px;
       height: 7px;
       position: absolute;
-      right: -12px;
+      right: -18px;
       top: 6px; }
   .dd-language.show {
     border: 1px solid #fff;
@@ -279,17 +276,18 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-bottom: 12px;
     top: 30px;
     left: -1px;
     border: 1px solid #fff;
     border-top: none;
-    width: 85px; }
+    width: 80px;
+    padding-right: 4px; }
   .dd-language .dd-language__item {
-    margin-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100%; }
+    margin-top: 10px; }
   .dd-language .dd-language__link {
     font-weight: 300;
     font-size: 16px;
