@@ -14,8 +14,8 @@
         padding-bottom: 60px;
       }
 
-      @media (max-width: $md) {
-        padding-top: 200px;
+      @media (max-width: $sm) {
+        background-position: center;
       }
     }
 
@@ -116,7 +116,7 @@
       a {
         font-size: 20px;
         line-height: 36px;
-        font-weight: 300;
+        font-weight: 400;
         color: $black;
         text-decoration: none;
         position: relative;
@@ -156,7 +156,7 @@
     .news-section__title {
       font-size: 42px;
       line-height: 50px;
-      font-weight: 300;
+      font-weight: 400;
       margin-bottom: 30px;
 
       @media (max-width: $sm) {
@@ -179,6 +179,12 @@
 
     .news-section__item {
       text-decoration: none;
+
+      &:hover {
+        .news-section__item-paragraph {
+          text-decoration: underline;
+        }
+      }
 
       &-title {
         color: $light-red;
@@ -210,16 +216,12 @@
   }
 
   .services-section {
+    background-color: $black;
+
     .services-section__container {
-
-    }
-
-    .services-section__title {
-
-    }
-
-    .services-section__items {
-
+      background: url('/img/landing/services-bg.svg') no-repeat;
+      background-size: cover;
+      background-position: center;
     }
   }
 }

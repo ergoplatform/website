@@ -1,0 +1,46 @@
+.eg-info {
+  display: block;
+
+  &--link {
+    &:hover {
+      text-decoration: none;
+
+      .eg-info__title {
+        text-decoration: underline;
+      }
+
+      .eg-info__paragraph {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .eg-info__title {
+    color: $light-red;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+
+    &--white {
+      color: $white;
+    }
+
+    &--black {
+      color: $black;
+    }
+  }
+
+  .eg-info__paragraph {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    color: $white;
+    margin: 0;
+    position: relative;
+
+    &--black {
+      color: $light-black;
+    }
+  }
+}

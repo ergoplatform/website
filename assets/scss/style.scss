@@ -1,6 +1,7 @@
 @import 'fonts';
 @import 'variables';
 @import 'components/eg-button';
+@import 'components/eg-info';
 @import 'header';
 @import 'landing/landing';
 
@@ -78,16 +79,34 @@ p {
     grid-template-columns: 1fr;
     grid-gap: 20px;
   }
+
+  &__title {
+    color: $white;
+    margin: 0;
+    font-size: 42px;
+    line-height: 50px;
+    font-weight: 400;
+
+    @media (max-width: $sm) {
+      font-size: 26px;
+      line-height: 31px;
+    }
+
+    &--black {
+      color: $black;
+    }
+  }
 }
 
 .grid-container-1k1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 5.9%;
+  grid-gap: 60px 9%;
+  margin-top: 0.5rem;
 
   @media (max-width: $sm) {
     grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-gap: calc(1.5rem + 4px);
   }
 }
 
