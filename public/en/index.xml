@@ -6,10 +6,28 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 16 Apr 2019 17:45:40 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 17 Apr 2019 17:16:39 +0300</lastBuildDate>
     
 	<atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ergo Platform is a storage of rich state with language safer than Bitcoin&#39;s</title>
+      <link>/en/blog/second/</link>
+      <pubDate>Wed, 17 Apr 2019 17:16:39 +0300</pubDate>
+      
+      <guid>/en/blog/second/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Self-Reproducing Coins as Universal Turing Machine</title>
+      <link>/en/blog/first/</link>
+      <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
+      
+      <guid>/en/blog/first/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Introduction to Ergo Platform by Dmitry Meshkov</title>

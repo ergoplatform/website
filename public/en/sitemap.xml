@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/en/blog/second/</loc>
+    <lastmod>2019-04-17T17:16:39+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/blog/first/</loc>
+    <lastmod>2019-04-17T17:16:35+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/en/news/4/</loc>
     <lastmod>2019-04-16T17:45:40+03:00</lastmod>
     <xhtml:link
@@ -87,13 +97,13 @@
     <lastmod>2019-04-12T13:50:04+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="ru"
-                href="/ru/faq/"
+                hreflang="de"
+                href="/de/faq/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="/de/faq/"
+                hreflang="ru"
+                href="/ru/faq/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -147,13 +157,13 @@
     <lastmod>2019-04-11T20:29:21+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="ru"
-                href="/ru/team/"
+                hreflang="de"
+                href="/de/team/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="/de/team/"
+                hreflang="ru"
+                href="/ru/team/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -204,7 +214,7 @@
   
   <url>
     <loc>/en/</loc>
-    <lastmod>2019-04-16T17:45:40+03:00</lastmod>
+    <lastmod>2019-04-17T17:16:39+03:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
