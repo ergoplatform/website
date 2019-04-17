@@ -22,6 +22,11 @@
     font-weight: 400;
     margin-bottom: 1rem;
 
+    @media (max-width: $sm) {
+      font-size: 22px;
+      line-height: 30px;
+    }
+
     &--white {
       color: $white;
     }
@@ -38,6 +43,11 @@
     color: $white;
     margin: 0;
     position: relative;
+
+    @media (max-width: $sm) {
+      font-size: 16px;
+      line-height: 22px;
+    }
 
     &--black {
       color: $light-black;
