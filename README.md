@@ -6,13 +6,13 @@
 $ yarn install
 ```
 
-## Watch assets scss/js
+## Watch assets js
 
 ```sh
 $ yarn run watch
 ```
 
-## Build assets scss/js
+## Build assets js
 
 ```sh
 $ make build-assets

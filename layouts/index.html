@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    {{ $css := resources.Get "css/style.css"}}
-    <!-- <link rel="stylesheet" href="{{$css.Permalink}}"> -->
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Document</title>
+    <title>Ergo platform</title>
+    {{ $scss := resources.Get "scss/style.scss" }}
+    {{ $style := $scss | resources.ToCSS | resources.PostCSS | resources.Minify }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
     {{ $js := resources.Get "js/index.js" }}
     {{ $secureJS := $js | resources.Fingerprint "sha512" }}
     <!-- <script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" defer></script> -->
@@ -128,6 +128,37 @@
                 {{end}}
               {{ end }}
             {{ end }}
+          </div>
+        </div>
+      </section>
+      <section class="services-section">
+        <div class="container grid-container-1k2 services-section__container">
+          <h2 class="services-section__title">Ergo services</h2>
+          <div class="services-section__items grid-container-1k1">
+            <div class="services-section__item">
+              <h3 class="services-section__item-title">Wallets</h3>
+              <p class="services-section__item-paragraph">Click and study existing Ergo wallets. Choose a wallet you like and start using Ergo immediately!</p>
+            </div>
+            <div class="services-section__item">
+              <h3 class="services-section__item-title">Wallets</h3>
+              <p class="services-section__item-paragraph">Click and study existing Ergo wallets. Choose a wallet you like and start using Ergo immediately!</p>
+            </div>
+            <div class="services-section__item">
+              <h3 class="services-section__item-title">Wallets</h3>
+              <p class="services-section__item-paragraph">Click and study existing Ergo wallets. Choose a wallet you like and start using Ergo immediately!</p>
+            </div>
+            <div class="services-section__item">
+              <h3 class="services-section__item-title">Wallets</h3>
+              <p class="services-section__item-paragraph">Click and study existing Ergo wallets. Choose a wallet you like and start using Ergo immediately!</p>
+            </div>
+            <div class="services-section__item">
+              <h3 class="services-section__item-title">Wallets</h3>
+              <p class="services-section__item-paragraph">Click and study existing Ergo wallets. Choose a wallet you like and start using Ergo immediately!</p>
+            </div>
+            <div class="services-section__item">
+              <h3 class="services-section__item-title">Wallets</h3>
+              <p class="services-section__item-paragraph">Click and study existing Ergo wallets. Choose a wallet you like and start using Ergo immediately!</p>
+            </div>
           </div>
         </div>
       </section>

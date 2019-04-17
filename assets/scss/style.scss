@@ -63,9 +63,31 @@ p {
     padding-bottom: 70px;
 
     @media (max-width: $sm) {
-      padding-top: 1.5rem;
+      padding-top: 2rem;
       padding-bottom: 2rem;
     }
+  }
+}
+
+.grid-container-1k2 {
+  display: grid;
+  grid-template-columns: 5fr 11fr;
+  grid-gap: 5.9%;
+
+  @media (max-width: $sm) {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
+
+.grid-container-1k1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5.9%;
+
+  @media (max-width: $sm) {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
   }
 }
 

@@ -79,34 +79,42 @@
     position: relative; }
     .eg-header .eg-navbar .eg-navbar__container {
       display: -webkit-box;
+      display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
       height: 60px;
       -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between;
       -webkit-box-align: center;
+      -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center; }
       @media (max-width: 991px) {
         .eg-header .eg-navbar .eg-navbar__container {
           -webkit-box-pack: start;
+          -webkit-justify-content: flex-start;
               -ms-flex-pack: start;
                   justify-content: flex-start; } }
       @media (max-width: 757px) {
         .eg-header .eg-navbar .eg-navbar__container {
           display: -webkit-box;
+          display: -webkit-flex;
           display: -ms-flexbox;
           display: flex;
           -webkit-box-align: center;
+          -webkit-align-items: center;
               -ms-flex-align: center;
                   align-items: center;
           height: 48px; } }
     .eg-header .eg-navbar .eg-navbar__collapse {
       display: -webkit-box;
+      display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
+      -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center; }
       @media (max-width: 991px) {
@@ -128,12 +136,15 @@
       @media (max-width: 991px) {
         .eg-header .eg-navbar .eg-navbar__trigger {
           display: -webkit-box;
+          display: -webkit-flex;
           display: -ms-flexbox;
           display: flex;
           -webkit-box-pack: center;
+          -webkit-justify-content: center;
               -ms-flex-pack: center;
                   justify-content: center;
           -webkit-box-align: center;
+          -webkit-align-items: center;
               -ms-flex-align: center;
                   align-items: center;
           -webkit-box-sizing: content-box;
@@ -181,6 +192,7 @@
           top: -10px; }
   .eg-header .eg-nav {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
     .eg-header .eg-nav--black .eg-nav__link {
@@ -189,13 +201,16 @@
       .eg-header .eg-nav {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
             -ms-flex-direction: column;
                 flex-direction: column;
         height: 100%;
         -webkit-box-pack: center;
+        -webkit-justify-content: center;
             -ms-flex-pack: center;
                 justify-content: center;
         -webkit-box-align: center;
+        -webkit-align-items: center;
             -ms-flex-align: center;
                 align-items: center; } }
     .eg-header .eg-nav .eg-nav__item + .eg-nav__item {
@@ -226,9 +241,11 @@
 
 .dd-language {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
@@ -271,6 +288,7 @@
     border-bottom: none; }
     .dd-language.show .dd-language__menu {
       display: -webkit-box;
+      display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; }
   .dd-language .dd-language__menu {
@@ -278,9 +296,11 @@
     position: absolute;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-align: center;
+    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
     padding-bottom: 12px;
@@ -334,6 +354,7 @@
   .landing .header-section .header-section__icons {
     margin-top: 35px;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
   .landing .header-section .header-section__icon + .header-section__icon {
@@ -356,6 +377,7 @@
   @media (max-width: 757px) {
     .landing .subheader-section .subheader-section__tabs {
       display: -webkit-box;
+      display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
       overflow-y: auto; }
@@ -502,5 +524,3 @@ p {
   .logotype-mobile {
     height: 100%;
     display: none; }
-
-/*# sourceMappingURL=style.css.map */

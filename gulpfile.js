@@ -1,10 +1,4 @@
 const gulp = require('gulp');
-const plumber = require('gulp-plumber');
-const sourcemap = require('gulp-sourcemaps');
-const sass = require('gulp-sass');
-const postcss = require('gulp-postcss');
-const autoprefixer = require('autoprefixer');
-const server = require('browser-sync').create();
 const webpackStream = require('webpack-stream');
 const webpack = require('webpack');
 
@@ -41,25 +35,11 @@ gulp.task('js', () => gulp.src('./src/js/index.js')
     ],
   }))
   .on('error', swallowError)
-  .pipe(gulp.dest('static/js'))
-  .pipe(gulp.dest('assets/js')));
-
-gulp.task('css', () => gulp.src('src/scss/style.scss')
-  .pipe(plumber())
-  .pipe(sourcemap.init())
-  .pipe(sass())
-  .pipe(postcss([
-    autoprefixer(),
-  ]))
-  .on('error', swallowError)
-  .pipe(sourcemap.write('.'))
-  .pipe(gulp.dest('assets/css'))
-  .pipe(server.stream()));
+  .pipe(gulp.dest('static/js')));
 
 gulp.task('watch', () => {
-  gulp.watch('src/scss/**/*.scss', gulp.series('css'));
   gulp.watch('src/js/**/*.js', gulp.series('js'));
   gulp.watch('layouts/**/*.html');
 });
 
-gulp.task('build', gulp.series('css', 'js'));
+gulp.task('build', gulp.series('js'));

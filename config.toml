@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "en"
 title = "My New Hugo Site"
-defaultContentLanguage = "ru"
+defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 
 # Links format

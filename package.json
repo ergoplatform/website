@@ -33,6 +33,7 @@
     "gulp-sourcemaps": "2.6.x",
     "gulp-watch": "^5.0.1",
     "node-sass": "^4.11.0",
+    "postcss-cli": "^6.1.2",
     "stylelint": "9.10.x",
     "stylelint-config-htmlacademy": "0.1.x",
     "webpack": "^4.30.0",
