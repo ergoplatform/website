@@ -63,7 +63,6 @@
         </div>
       </nav>
     </header>
-
     <main class="landing">
       <section class="header-section">
         <div class="container header-section__container">
@@ -105,7 +104,7 @@
       </section>
       <section class="news-section">
         <div class="container container--margins-y">
-          <h2 class="news-section__title">{{ T "news_title"}}</h2>
+          <h2 class="eg-title eg-title--black">{{ T "news_title"}}</h2>
           <div class="news-section__items">
             {{ $langNews := where .Pages "Section" "news" }}
             {{ with $langNews }}
@@ -133,7 +132,7 @@
       </section>
       <section class="services-section">
         <div class="container container--margins-y grid-container-1k2 services-section__container">
-          <h2 class="grid-container-1k2__title services-section__title">Ergo services</h2>
+          <h2 class="eg-title services-section__title">Ergo services</h2>
           <div class="services-section__items grid-container-1k1">
             <a class="eg-info eg-info--link" href="#">
               <h3 class="eg-info__title">Wallets</h3>
@@ -164,7 +163,9 @@
       </section>
       <section class="documents-section">
         <div class="container container--margins-y grid-container-1k2">
-          <h2 class="grid-container-1k2__title grid-container-1k2__title--black">Documents</h2>
+          <div>
+            <h2 class="eg-title eg-title--black">Documents</h2>
+          </div>
           <div class="services-section__items grid-container-1k1">
             <a class="eg-info eg-info--link" href="#">
               <h3 class="eg-info__title">Whitepaper</h3>
@@ -175,16 +176,70 @@
               <p class="eg-info__paragraph eg-info__paragraph--black">ErgoScript, a Cryptocurrency Scripting Language Supporting Noninteractive Zero-Knowledge Proofs</p>
             </a>
             <a class="eg-info eg-info--link" href="#">
-              <h3 class="eg-info__title">Wallets</h3>
+              <h3 class="eg-info__title">Yellowpaper</h3>
               <p class="eg-info__paragraph eg-info__paragraph--black">Ergo technical documentation</p>
             </a>
             <a class="eg-info eg-info--link" href="#">
-              <h3 class="eg-info__title">WallWhitepaperets</h3>
+              <h3 class="eg-info__title">Whitepaper</h3>
               <p class="eg-info__paragraph eg-info__paragraph--black">Advanced ErgoScript Tutorial</p>
             </a>
           </div>
         </div>
       </section>
+      <section class="history-section">
+        <div class="container container--margins-y">
+          <h2 class="eg-title eg-title--black">Development history</h2>
+        </div>
+      </section>
+      <section class="blog-section">
+        <div class="container container--margins-y blog-section__container">
+          {{ $blogPages := where .Pages "Section" "blog" }}
+          {{ with $blogPages }}
+            {{ range first 2 $blogPages }}
+              <div class="blog-section__item">
+                <h3 class="blog-section__item-title">{{ .Title }}</h3>
+                <div class="eg-author">
+                  <img src="{{ .Params.authorPhoto }}" alt="author img" class="eg-author__img">
+                  <div class="eg-author__info">
+                    <h4 class="eg-author__info-title">{{ .Params.Author }}</h4>
+                    <p class="eg-author__info-paragraph">{{ .Date.Format "2 January, 2006" }}</p>
+                  </div>
+                </div>
+                <a class="blog-section__button eg-btn eg-btn--outline-orange" href="{{.Params.link}}">Read more</a>
+              </div>
+            {{end}}
+          {{ else }}
+            {{ range .Site.Home.AllTranslations }}
+              {{ if eq .Language.Lang .Site.Params.defaultLanguage }}
+                {{ $defaultBlogPages := where .Pages "Section" "blog" }}
+                {{ range first 3 $defaultBlogPages }}
+                  <div class="blog-section__item">
+                    <h3 class="blog-section__item-title">{{ .Title }}</h3>
+                    <div class="eg-author">
+                      <img src="{{ .Params.authorPhoto }}" alt="author img" class="eg-author__img">
+                      <div class="eg-author__info">
+                        <h4 class="eg-author__info-title">{{ .Params.Author }}</h4>
+                        <p class="eg-author__info-paragraph">{{ .Date.Format "2 January, 2006" }}</p>
+                      </div>
+                    </div>
+                    <a class="blog-section__button eg-btn eg-btn--outline-orange" href="{{.Params.link}}">Read more</a>
+                  </div>
+                {{end}}
+              {{end}}
+            {{ end }}
+          {{ end }}
+        </div>
+      </section>
+      <section class="community-section eg-red-section">
+        <div class="container eg-red-section__container">
+          <h2 class="eg-red-section__white-title">Ergo platform community</h2>
+          <div>
+            <p class="eg-red-section__paragraph">Ergo is the open protocol that implements modern scientific ideas in the blockchain area. Ergo operates an open contributor model where anyone is welcome to contribute.</p>
+            <a class="eg-red-section__link" href="">Contribute Ergo Platform</a>
+          </div>
+        </div>
+      </section>
+      {{- partial "footer.html" . -}}
     </main>
   </body>
 </html>

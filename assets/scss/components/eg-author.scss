@@ -1,0 +1,32 @@
+.eg-author {
+  display: flex;
+  align-items: center;
+
+  .eg-author__img {
+    width: 60px;
+    height: 60px;
+    margin-right: 1rem;
+  }
+
+  .eg-author__info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    &-title {
+      margin: 0;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 500;
+      color: $light-red;
+    }
+
+    &-paragraph {
+      margin: 0;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 500;
+      color: $light-black;
+    }
+  }
+}

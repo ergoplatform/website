@@ -1,0 +1,17 @@
+.eg-title {
+  color: $white;
+  font-size: 42px;
+  line-height: 50px;
+  font-weight: 500;
+  margin-bottom: 30px;
+
+  @media (max-width: $sm) {
+    font-size: 26px;
+    line-height: 31px;
+    margin-bottom: 1rem;
+  }
+
+  &--black {
+    color: $black;
+  }
+}

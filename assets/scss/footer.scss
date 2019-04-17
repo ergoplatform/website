@@ -1,0 +1,101 @@
+.eg-footer {
+  background: $black;
+
+  .eg-footer__container {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-gap: 29%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .eg-footer__name {
+    &-title {
+      font-size: 30px;
+      line-height: 42px;
+      color: $white;
+      margin: 0;
+    }
+
+    &-mail {
+      color: $light-red;
+      font-size: 30px;
+      line-height: 42px;
+      margin: 0;
+    }
+  }
+
+  .eg-footer__copyright {
+    display: flex;
+    margin-top: 110px;
+
+    &-paragraph {
+      font-size: 16px;
+      line-height: 24px;
+      color: $light-gray;
+    }
+
+    &-list {
+      display: flex;
+    }
+
+    &-item {
+      margin-left: 2rem;
+    }
+
+    &-link {
+      font-size: 16px;
+      line-height: 24px;
+      color: $light-gray;
+      position: relative;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      &::after {
+        content: "";
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-bottom: 1px solid $light-gray;
+      }
+    }
+  }
+
+  .eg-footer__insights {
+    display: flex;
+    flex-direction: column;
+
+    &-label {
+      font-size: 16px;
+      line-height: 22px;
+      color: $white;
+      margin-bottom: 1rem;
+    }
+
+    &-group {
+      display: flex;
+      border-bottom: 1px solid $white;
+    }
+
+    &-input {
+      font-size: 20px;
+      line-height: 38px;
+      height: 44.5px;
+      color: $light-gray;
+      background: $black;
+      border: none;
+    }
+
+    &-button {
+      line-height: 28px;
+      box-sizing: border-box;
+      background: none;
+      padding: 0;
+      border: none;
+      padding-top: 16px;
+    }
+  }
+}

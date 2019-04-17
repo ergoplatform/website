@@ -16,7 +16,7 @@
   font-family: "LabGrotesque";
   font-display: optional;
   src: local("LabGrotesque"), url("../fonts/LabGrotesque-Regular.otf") format("truetype");
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal; }
 
 @font-face {
@@ -223,7 +223,7 @@
       color: #fff;
       font-size: 16px;
       line-height: 19px;
-      font-weight: 400; }
+      font-weight: 500; }
       @media (max-width: 991px) {
         .eg-header .eg-nav .eg-nav__link {
           font-size: 26px;
@@ -412,7 +412,7 @@
   .landing .subheader-section .subheader-section__tab-title {
     font-size: 42px;
     line-height: 50px;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 1rem; }
     @media (max-width: 757px) {
       .landing .subheader-section .subheader-section__tab-title {
@@ -444,13 +444,13 @@
     color: #FF4221;
     font-size: 16px;
     line-height: 30px;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 0.5rem; }
   .landing .news-section .news-section__item-paragraph {
     color: #181818;
     font-size: 20px;
     line-height: 26px;
-    font-weight: 400;
+    font-weight: 500;
     margin: 0; }
 
 * {

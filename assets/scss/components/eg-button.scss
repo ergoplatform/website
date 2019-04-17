@@ -9,6 +9,11 @@
   border-radius: 25px;
   border: none;
   cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
 
   &--orange {
     background: $light-red;
@@ -17,6 +22,17 @@
 
     &:hover {
       opacity: 0.9;
+    }
+  }
+
+  &--outline-orange {
+    border: 1px solid $light-red;
+    color: $light-red;
+    transition: background ease-in 0.15s, color ease-in 0.15s;
+
+    &:hover {
+      background: $light-red;
+      color: $white;
     }
   }
 }

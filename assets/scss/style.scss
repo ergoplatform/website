@@ -2,6 +2,10 @@
 @import 'variables';
 @import 'components/eg-button';
 @import 'components/eg-info';
+@import 'components/eg-title';
+@import 'components/eg-author';
+@import 'components/eg-red-section';
+@import 'footer';
 @import 'header';
 @import 'landing/landing';
 
@@ -77,24 +81,7 @@ p {
 
   @media (max-width: $sm) {
     grid-template-columns: 1fr;
-    grid-gap: 20px;
-  }
-
-  &__title {
-    color: $white;
-    margin: 0;
-    font-size: 42px;
-    line-height: 50px;
-    font-weight: 400;
-
-    @media (max-width: $sm) {
-      font-size: 26px;
-      line-height: 31px;
-    }
-
-    &--black {
-      color: $black;
-    }
+    grid-gap: 0;
   }
 }
 
