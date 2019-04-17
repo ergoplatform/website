@@ -21,5 +21,5 @@ $ make build-assets
 ## Deploy build
 
 ```sh
-$ make build-site
+$ make site
 ```

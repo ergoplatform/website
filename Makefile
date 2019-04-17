@@ -4,5 +4,5 @@ build-hugo:
 build-assets:
 	yarn run build
 
-build-site:
+site:
 	make build-assets && make build-hugo
