@@ -24,6 +24,32 @@ gulp.task('js', () => gulp.src('./src/js/index.js')
             presets: ['@babel/preset-env'],
           },
         },
+        {
+          test: /\.css$/,
+          use: ['style-loader', 'css-loader'],
+        },
+        {
+          test: /\.svg$/,
+          use: [
+            {
+              loader: 'file-loader',
+            },
+          ],
+        },
+        {
+          test: /\.(otf|eot|ttf|woff|woff2)$/,
+          use: {
+            loader: 'file-loader',
+          },
+        },
+        {
+          test: /\.(jpg|jpeg|gif|png)$/,
+          use: [
+            {
+              loader: 'file-loader',
+            },
+          ],
+        },
       ],
     },
     plugins: [

@@ -1,0 +1,90 @@
+.eg-slider {
+  .eg-slider__nav {
+
+    &-item {
+      font-family: "LabGrotesqueMono", sans-serif;
+      font-size: 150px;
+      letter-spacing: -6px;
+      line-height: 180px;
+      color: $opacity-gray;
+
+      @media (max-width: $sm) {
+        font-size: 80px;
+        letter-spacing: -3.2px;
+        line-height: 96px;
+      }
+    }
+
+    .slick-current {
+      .eg-slider__nav-item {
+        color: $light-black;
+      }
+    }
+
+    .slick-slide {
+      outline: none;
+
+      & + .slick-slide {
+        margin-left: 40px;
+
+        @media (max-width: $sm) {
+          margin-left: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .eg-slider__slide {
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-group {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &-year {
+      font-size: 18px;
+      line-height: 32px;
+      color: $light-red;
+      min-width: 120px;
+      margin-bottom: 0.25rem;
+
+      & + .eg-slider__slide-paragraph {
+        margin-left: 2rem;
+
+        @media (max-width: $sm) {
+          margin-left: 1rem;
+        }
+      }
+
+      @media (max-width: $sm) {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+
+    &-paragraph {
+      font-size: 18px;
+      line-height: 32px;
+      color: $light-black;
+      margin-bottom: 0.25rem;
+
+      @media (max-width: $sm) {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+  }
+}
+
+.eg-slider__nav {
+  display: none;
+}
+
+.timeline-slider {
+  display: none;
+}
