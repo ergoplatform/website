@@ -2,10 +2,24 @@
   font-family: "LabGrotesque";
   font-display: swap;
   src: local("LabGrotesque"), url("../fonts/LabGrotesque-Regular.woff") format("woff");
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
 
 @font-face {
   font-family: "LabGrotesqueMono";
   font-display: swap;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
   src: local("LabGrotesqueMono"), url("../fonts/LabGrotesque-Mono.woff") format("woff");
 }
