@@ -1,31 +1,11 @@
 @font-face {
   font-family: "LabGrotesque";
   font-display: swap;
-  src: local("LabGrotesque"), url("../fonts/LabGrotesque-Thin.otf") format("truetype");
-  font-weight: 100;
-  font-style: normal;
+  src: local("LabGrotesque"), url("../fonts/LabGrotesque-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "LabGrotesque";
+  font-family: "LabGrotesqueMono";
   font-display: swap;
-  src: local("LabGrotesque"), url("../fonts/LabGrotesque-Light.otf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "LabGrotesque";
-  font-display: swap;
-  src: local("LabGrotesque"), url("../fonts/LabGrotesque-Regular.otf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "LabGrotesque";
-  font-display: swap;
-  src: local("LabGrotesque"), url("../fonts/LabGrotesque-Medium.otf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
+  src: local("LabGrotesqueMono"), url("../fonts/LabGrotesque-Mono.woff") format("woff");
 }
