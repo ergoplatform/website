@@ -52,7 +52,7 @@
   .eg-red-section__paragraph {
     font-size: 26px;
     line-height: 36px;
-    font-weight: 300;
+    font-weight: normal;
     color: $black;
 
     @media (max-width: $md) {
@@ -68,7 +68,7 @@
   .eg-red-section__link {
     font-size: 26px;
     line-height: 31px;
-    font-weight: 300;
+    font-weight: normal;
     color: $light-red;
 
     @media (max-width: $md) {

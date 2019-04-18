@@ -9,7 +9,7 @@
   font-family: "LabGrotesque";
   font-display: optional;
   src: local("LabGrotesque"), url("../fonts/LabGrotesque-Light.otf") format("truetype");
-  font-weight: 300;
+  font-weight: normal;
   font-style: normal; }
 
 @font-face {
@@ -32,7 +32,7 @@
   color: #fff;
   font-size: 20px;
   line-height: 24px;
-  font-weight: 300;
+  font-weight: normal;
   padding: 12px 30px 14px 30px;
   border-radius: 25px;
   border: none;
@@ -264,7 +264,7 @@
       margin-left: auto;
       margin-right: 1.5rem; } }
   .dd-language .dd-language__button {
-    font-weight: 300;
+    font-weight: normal;
     font-size: 16px;
     line-height: 19px;
     position: relative;
@@ -313,7 +313,7 @@
   .dd-language .dd-language__item {
     margin-top: 10px; }
   .dd-language .dd-language__link {
-    font-weight: 300;
+    font-weight: normal;
     font-size: 16px;
     line-height: 19px;
     color: #000;
@@ -402,7 +402,7 @@
   .landing .subheader-section .subheader-section__tabs a {
     font-size: 20px;
     line-height: 36px;
-    font-weight: 300;
+    font-weight: normal;
     color: #000;
     text-decoration: none;
     position: relative;
@@ -430,7 +430,7 @@
 .landing .news-section .news-section__title {
   font-size: 42px;
   line-height: 50px;
-  font-weight: 300;
+  font-weight: normal;
   margin-bottom: 30px; }
 
 .landing .news-section .news-section__items {
