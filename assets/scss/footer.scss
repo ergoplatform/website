@@ -4,9 +4,14 @@
   .eg-footer__container {
     display: grid;
     grid-template-columns: 6fr 6fr;
-    grid-gap: 29%;
+    grid-gap: 30%;
     padding-top: 3rem;
     padding-bottom: 3rem;
+
+    @media (max-width: $lg) {
+      grid-template-columns: 7fr 5fr;
+      grid-gap: 20%;
+    }
 
     @media (max-width: $md) {
       grid-gap: 10%;
@@ -17,7 +22,7 @@
       grid-gap: 2rem;
       grid-template-columns: 1fr;
       padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
+      padding-bottom: 2rem;
     }
   }
 
@@ -123,7 +128,24 @@
     }
 
     &-group {
-      display: flex;
+      display: inline-block;
+      position: relative;
+      padding-right: 30px;
+      border-bottom: 1px solid $white;
+      width: 70%;
+
+      @media (max-width: $lg) {
+        width: 100%;
+      }
+
+      @media (max-width: $md) {
+        width: 100%;
+      }
+
+      @media (max-width: $sm) {
+        width: 50%;
+        min-width: 280px;
+      }
     }
 
     &-input {
@@ -133,17 +155,8 @@
       color: $light-gray;
       background: $black;
       border: none;
-      border-bottom: 1px solid $white;
-      min-width: 70%;
+      width: 100%;
       outline: none;
-
-      @media (max-width: $lg) {
-        min-width: 100%;
-      }
-
-      @media (max-width: $md) {
-        min-width: 70%;
-      }
 
       @media (max-width: $sm) {
         font-size: 20px;
@@ -157,8 +170,8 @@
       background: 0 0;
       padding: 0;
       border: none;
-      padding-top: 8px;
-      border-bottom: 1px solid $white;
+      top: 12px;
+      position: absolute;
     }
   }
 
