@@ -7,6 +7,18 @@
     grid-gap: 29%;
     padding-top: 3rem;
     padding-bottom: 3rem;
+
+    @media (max-width: $md) {
+      grid-gap: 10%;
+      grid-template-columns: 7fr 5fr;
+    }
+
+    @media (max-width: $sm) {
+      grid-gap: 2rem;
+      grid-template-columns: 1fr;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
   }
 
   .eg-footer__name {
@@ -15,6 +27,11 @@
       line-height: 42px;
       color: $white;
       margin: 0;
+
+      @media (max-width: $sm) {
+        font-size: 22px;
+        line-height: 42px;
+      }
     }
 
     &-mail {
@@ -22,6 +39,11 @@
       font-size: 30px;
       line-height: 42px;
       margin: 0;
+
+      @media (max-width: $sm) {
+        font-size: 22px;
+        line-height: 42px;
+      }
     }
   }
 
@@ -29,10 +51,27 @@
     display: flex;
     margin-top: 110px;
 
+    @media (max-width: $sm) {
+      display: none;
+    }
+
+    &--mobile {
+      display: none !important;
+
+      @media (max-width: $sm) {
+        display: flex !important;
+        margin-top: 2rem;
+      }
+    }
+
     &-paragraph {
       font-size: 16px;
       line-height: 24px;
       color: $light-gray;
+
+      @media (max-width: $sm) {
+        font-size: 14px;
+      }
     }
 
     &-list {
@@ -41,13 +80,21 @@
 
     &-item {
       margin-left: 2rem;
+
+      @media (max-width: $sm) {
+        margin-left: 1rem;
+      }
     }
 
     &-link {
       font-size: 16px;
-      line-height: 24px;
+      line-height: 22px;
       color: $light-gray;
       position: relative;
+
+      @media (max-width: $sm) {
+        font-size: 14px;
+      }
 
       &:hover {
         text-decoration: none;
@@ -77,7 +124,6 @@
 
     &-group {
       display: flex;
-      border-bottom: 1px solid $white;
     }
 
     &-input {
@@ -87,15 +133,58 @@
       color: $light-gray;
       background: $black;
       border: none;
+      border-bottom: 1px solid $white;
+      min-width: 70%;
+      outline: none;
+
+      @media (max-width: $lg) {
+        min-width: 100%;
+      }
+
+      @media (max-width: $md) {
+        min-width: 70%;
+      }
+
+      @media (max-width: $sm) {
+        font-size: 20px;
+        line-height: 30px;
+        width: 100%;
+      }
     }
 
     &-button {
-      line-height: 28px;
       box-sizing: border-box;
-      background: none;
+      background: 0 0;
       padding: 0;
       border: none;
-      padding-top: 16px;
+      padding-top: 8px;
+      border-bottom: 1px solid $white;
+    }
+  }
+
+  .eg-footer__social {
+    margin-top: 60px;
+
+    @media (max-width: $sm) {
+      margin-top: 2rem;
+    }
+
+    &-label {
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+      color: $white;
+    }
+
+    &-icons {
+      display: flex;
+    }
+
+    &-icon {
+      & + .eg-footer__social-icon {
+        margin-left: 1.5rem;
+      }
     }
   }
 }

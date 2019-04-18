@@ -1,0 +1,25 @@
+.eg-social {
+  display: flex;
+
+  .eg-social__item {
+    & + .eg-social__item {
+      margin-left: 1.5rem;
+    }
+  }
+
+  .eg-social__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    path {
+      transition: fill ease-in 0.15s;
+    }
+
+    &:hover {
+      path {
+        fill: $light-red;
+      }
+    }
+  }
+}

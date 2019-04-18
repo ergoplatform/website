@@ -5,6 +5,7 @@
 @import 'components/eg-title';
 @import 'components/eg-author';
 @import 'components/eg-red-section';
+@import 'components/eg-social';
 @import 'footer';
 @import 'header';
 @import 'landing/landing';
@@ -18,7 +19,7 @@ body {
   padding: 0;
   width: 100%;
   position: relative;
-  min-width: 320px;
+  min-width: 340px;
   font-family: "LabGrotesque", sans-serif;
 }
 

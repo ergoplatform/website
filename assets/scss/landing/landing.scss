@@ -44,13 +44,6 @@
 
     .header-section__icons {
       margin-top: 35px;
-      display: flex;
-    }
-
-    .header-section__icon {
-      & + .header-section__icon {
-        margin-left: 2rem;
-      }
     }
 
     .header-section__button {

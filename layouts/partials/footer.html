@@ -20,6 +20,17 @@
           <input type="text" class="eg-footer__insights-input" placeholder="Your email"><button class="eg-footer__insights-button"><img src="/img/footer-arrow-right.svg" alt="arrow-right"></button>
         </div>
       </form>
+      <div class="eg-footer__social">
+        <p class="eg-footer__social-label">Social media</p>
+        {{- partial "social.html" . -}}
+      </div>
+      <div class="eg-footer__copyright eg-footer__copyright--mobile">
+        <span class="eg-footer__copyright-paragraph">Ergo Platform © 2019</span>
+        <ul class="eg-footer__copyright-list">
+          <li class="eg-footer__copyright-item"><a class="eg-footer__copyright-link" href="#">Privacy policy</a></li>
+          <li class="eg-footer__copyright-item"><a class="eg-footer__copyright-link" href="#">Legal</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </footer>

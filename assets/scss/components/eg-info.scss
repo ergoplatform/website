@@ -2,7 +2,8 @@
   display: block;
 
   &--link {
-    &:hover {
+    &:hover,
+    &:focus {
       text-decoration: none;
 
       .eg-info__title {

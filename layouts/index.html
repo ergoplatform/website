@@ -71,12 +71,9 @@
             <br/>
             {{ T "contractual_money" }}
           </h1>
-          <ul class="header-section__icons">
-            <li class="header-section__icon"><img src="/img/landing/ic_git.svg" alt="icon github"></li>
-            <li class="header-section__icon"><img src="/img/landing/ic_twitter.svg" alt="icon twitter"></li>
-            <li class="header-section__icon"><img src="/img/landing/ic_youtube.svg" alt="icon youtube"></li>
-            <li class="header-section__icon"><img src="/img/landing/ic_telegram.svg" alt="icon telegram"></li>
-          </ul>
+          <div class="header-section__icons">
+            {{- partial "social.html" . -}}
+          </div>
           <button class="header-section__button eg-btn eg-btn--orange">{{ T "getting_started" }}</button>
         </div>
       </section>
