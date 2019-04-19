@@ -69,6 +69,14 @@
       outline: none;
     }
 
+    .subheader-section__tab {
+      display: none;
+
+      &[aria-hidden="false"] {
+        display: block;
+      }
+    }
+
     .subheader-section__tabs {
       @media (max-width: $sm) {
         display: flex;
