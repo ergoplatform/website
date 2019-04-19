@@ -11,7 +11,7 @@
     {{ $js := resources.Get "js/index.js" }}
     {{ $secureJS := $js | resources.Fingerprint "sha512" }}
     <!-- <script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" defer></script> -->
-    <script type="text/javascript" src="/js/index.js" defer></script>
+    <script src="/js/index.js" async></script>
   </head>
   <body>
     {{- partial "header.html" . -}}
