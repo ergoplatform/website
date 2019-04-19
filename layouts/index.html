@@ -74,7 +74,7 @@
           <div class="header-section__icons">
             {{- partial "social.html" . -}}
           </div>
-          <button class="header-section__button eg-btn eg-btn--orange">{{ T "getting_started" }}</button>
+          <a href="{{ `about`| absLangURL | safeURL }}" class="header-section__button eg-btn eg-btn--orange">{{ T "getting_started" }}</a>
         </div>
       </section>
       <section class="subheader-section">
