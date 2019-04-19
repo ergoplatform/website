@@ -128,6 +128,86 @@
 - id: community_link
   translation: Contribute Ergo Platform
 
+#slider development history
+
+- id: development_history_2019_first_date
+  translation: 14 March
+
+- id: development_history_2019_first_date_text
+  translation: Fully functional Testnet 2.0 release
+
+- id: development_history_2018_first_date
+  translation: 1 June
+
+- id: development_history_2018_first_date_text
+  translation: Testnet 1.0 with smart contracts release
+
+- id: development_history_2018_second_date
+  translation: 26 June
+
+- id: development_history_2018_second_date_text
+  translation: Formal proof of ErgoScript Turing-completeness
+
+- id: development_history_2018_third_date
+  translation: 6 December
+
+- id: development_history_2018_third_date_text
+  translation: Testnet 1.8 with new PoW release
+
+- id: development_history_2017_first_date
+  translation: 13 June
+
+- id: development_history_2017_first_date_text
+  translation: Ergo implementation started
+
+- id: development_history_2017_second_date
+  translation: 28 July
+
+- id: development_history_2017_second_date_text
+  translation: Difficulty adjustment research completed
+
+- id: development_history_2017_third_date
+  translation: 5 December
+
+- id: development_history_2017_third_date_text
+  translation: Testnet 0 release
+
+- id: development_history_2016_first_date
+  translation: 12 March
+
+- id: development_history_2016_first_date_text
+  translation: Scorex-Lagonaki testnet release
+
+- id: development_history_2016_second_date
+  translation: 4 April
+
+- id: development_history_2016_second_date_text
+  translation: Waves launch based on Scorex
+
+- id: development_history_2016_third_date
+  translation: 14 October
+
+- id: development_history_2016_third_date_text
+  translation: Authenticated Dynamic Dictionaries research completed
+
+- id: development_history_2015_first_date
+  translation: 23 January
+
+- id: development_history_2015_first_date_text
+  translation: Scorex framework implementation started
+
+- id: development_history_2015_second_date
+  translation: 7 November
+
+- id: development_history_2015_second_date_text
+  translation: Collaboration with IOHK research began
+
+- id: development_history_2015_third_date
+  translation: 17 November
+
+- id: development_history_2015_third_date_text
+  translation: Scorex team won Moscow blockchain hackathon
+
 #footer
 - id: privacy_policy_link
   translation: Privacy policy
