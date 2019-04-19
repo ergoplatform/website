@@ -13,7 +13,7 @@
             <li class="eg-nav__item {{ if $currentPage.IsMenuCurrent "mainmenu" . }}active{{ end }}">
               <a
                 class="eg-nav__link"
-                href="/{{ .URL | absLangURL | safeURL }}"
+                href="{{ .URL | absLangURL | safeURL }}"
               >{{ with $menuItem.Pre }}{{ . | safeHTML }}{{ end }}{{ $menuItem.Name }}</a>
             </li>
           {{ end }}
