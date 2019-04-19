@@ -67,9 +67,9 @@
       <section class="header-section">
         <div class="container header-section__container">
           <h1 class="header-section__title">
-            <span class="header-section__title--red">{{ T "resilient_platform" }}</span>
+            <span class="header-section__title--red">{{ T "header_resilient_platform" }}</span>
             <br/>
-            {{ T "contractual_money" }}
+            {{ T "header_contractual_money" }}
           </h1>
           <div class="header-section__icons">
             {{- partial "social.html" . -}}
@@ -88,13 +88,29 @@
             <li class="subheader-section__item"><a href="#tabs-6">{{ T "ergo_survivability" }}</a></li>
           </ul>
           <div class="subheader-section__tabs-content">
-            <div id="tabs-4">
-              <h2 class="subheader-section__tab-title">Contractual money</h2>
-              <p class="subheader-section__tab-paragraph">Ergo’s mission is improving every aspect of a blockchain, but our top priority is ensuring long term survivability. We are building correct-by-design blockchain, capable of continuing without depending on a centralized development team, regular hardforks and/or high end hardware requirements for the userbase. For example, our improvements will allow users to synchronize and efficiently validate blocks regardless of blockchain and state size.</p>
-            </div>
             <div id="tabs-1">
-              <h2 class="subheader-section__tab-title">Content heading 2</h2>
-              <p class="subheader-section__tab-paragraph">Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+              <h2 class="subheader-section__tab-title">{{ T "ergo_philosophy" }}</h2>
+              <p class="subheader-section__tab-paragraph">{{ T "ergo_philosophy_text" }}</p>
+            </div>
+            <div id="tabs-2">
+              <h2 class="subheader-section__tab-title">{{ T "ergo_decentralization" }}</h2>
+              <p class="subheader-section__tab-paragraph">{{ T "ergo_decentralization_text" }}</p>
+            </div>
+            <div id="tabs-3">
+              <h2 class="subheader-section__tab-title">{{ T "ergo_economy" }}</h2>
+              <p class="subheader-section__tab-paragraph">{{ T "ergo_economy_text" }}</p>
+            </div>
+            <div id="tabs-4">
+              <h2 class="subheader-section__tab-title">{{ T "ergo_contractual" }}</h2>
+              <p class="subheader-section__tab-paragraph">{{ T "ergo_contractual_text" }}</p>
+            </div>
+            <div id="tabs-5">
+              <h2 class="subheader-section__tab-title">{{ T "ergo_clients" }}</h2>
+              <p class="subheader-section__tab-paragraph">{{ T "ergo_clients_text" }}</p>
+            </div>
+            <div id="tabs-6">
+              <h2 class="subheader-section__tab-title">{{ T "ergo_survivability" }}</h2>
+              <p class="subheader-section__tab-paragraph">{{ T "ergo_survivability_text" }}</p>
             </div>
           </div>
         </div>
@@ -129,31 +145,31 @@
       </section>
       <section class="services-section">
         <div class="container container--margins-y grid-container-1k2 services-section__container">
-          <h2 class="eg-title services-section__title">Ergo services</h2>
+          <h2 class="eg-title services-section__title">{{ T "services_title" }}</h2>
           <div class="services-section__items grid-container-1k1">
-            <a class="eg-info eg-info--link" href="#">
-              <h3 class="eg-info__title">Wallets</h3>
-              <p class="eg-info__paragraph">Click and study existing Ergo wallets. Choose a wallet you like and start using Ergo immediately!</p>
+            <a class="eg-info eg-info--link" href="wallets">
+              <h3 class="eg-info__title">{{ T "service_wallets_title" }}</h3>
+              <p class="eg-info__paragraph">{{ T "service_wallets_paragraph" }}</p>
             </a>
-            <a class="eg-info eg-info--link" href="#">
-              <h3 class="eg-info__title">Wallets</h3>
-              <p class="eg-info__paragraph">Click and study existing Ergo wallets. Choose a wallet you like and start using Ergo immediately!</p>
+            <a class="eg-info eg-info--link" href="exchanges">
+              <h3 class="eg-info__title">{{ T "service_exchanges_title" }}</h3>
+              <p class="eg-info__paragraph">{{ T "service_exchanges_paragraph" }}</p>
             </a>
-            <a class="eg-info eg-info--link" href="#">
-              <h3 class="eg-info__title">Wallets</h3>
-              <p class="eg-info__paragraph">Click and study existing Ergo wallets. Choose a wallet you like and start using Ergo immediately!</p>
+            <a class="eg-info eg-info--link" href="https://testnet.ergoplatform.com/">
+              <h3 class="eg-info__title">{{ T "service_explorer_title" }}</h3>
+              <p class="eg-info__paragraph">{{ T "service_explorer_paragraph" }}</p>
             </a>
-            <a class="eg-info eg-info--link" href="#">
-              <h3 class="eg-info__title">Wallets</h3>
-              <p class="eg-info__paragraph">Click and study existing Ergo wallets. Choose a wallet you like and start using Ergo immediately!</p>
+            <a class="eg-info eg-info--link" href="developer-tools">
+              <h3 class="eg-info__title">{{ T "service_dev_tools_title" }}</h3>
+              <p class="eg-info__paragraph">{{ T "service_dev_tools_paragraph" }}</p>
             </a>
-            <a class="eg-info eg-info--link" href="#">
-              <h3 class="eg-info__title">Wallets</h3>
-              <p class="eg-info__paragraph">Click and study existing Ergo wallets. Choose a wallet you like and start using Ergo immediately!</p>
+            <a class="eg-info eg-info--link" href="software">
+              <h3 class="eg-info__title">{{ T "service_software_title" }}</h3>
+              <p class="eg-info__paragraph">{{ T "service_software_paragraph" }}</p>
             </a>
-            <a class="eg-info eg-info--link" href="#">
-              <h3 class="eg-info__title">Wallets</h3>
-              <p class="eg-info__paragraph">Click and study existing Ergo wallets. Choose a wallet you like and start using Ergo immediately!</p>
+            <a class="eg-info eg-info--link" href="wiki">
+              <h3 class="eg-info__title">{{ T "service_wiki_title" }}</h3>
+              <p class="eg-info__paragraph">{{ T "service_wiki_paragraph" }}</p>
             </a>
           </div>
         </div>
@@ -161,31 +177,31 @@
       <section class="documents-section">
         <div class="container container--margins-y grid-container-1k2">
           <div>
-            <h2 class="eg-title eg-title--black">Documents</h2>
+            <h2 class="eg-title eg-title--black">{{ T "documents_title" }}</h2>
           </div>
           <div class="services-section__items grid-container-1k1">
-            <a class="eg-info eg-info--link" href="#">
-              <h3 class="eg-info__title">Whitepaper</h3>
-              <p class="eg-info__paragraph eg-info__paragraph--black">Ergo: The Resilient Platform For Contractual Money</p>
+            <a class="eg-info eg-info--link" href="https://docs.ergoplatform.com/teaser.pdf">
+              <h3 class="eg-info__title">{{ T "documents_ergo_platform" }}</h3>
+              <p class="eg-info__paragraph eg-info__paragraph--black">{{ T "documents_ergo_platform_text" }}</p>
             </a>
-            <a class="eg-info eg-info--link" href="#">
-              <h3 class="eg-info__title">Whitepaper</h3>
-              <p class="eg-info__paragraph eg-info__paragraph--black">ErgoScript, a Cryptocurrency Scripting Language Supporting Noninteractive Zero-Knowledge Proofs</p>
+            <a class="eg-info eg-info--link" href="https://docs.ergoplatform.com/ErgoScript.pdf">
+              <h3 class="eg-info__title">{{ T "documents_ergoscript" }}</h3>
+              <p class="eg-info__paragraph eg-info__paragraph--black">{{ T "documents_ergoscript_text" }}</p>
             </a>
-            <a class="eg-info eg-info--link" href="#">
-              <h3 class="eg-info__title">Yellowpaper</h3>
-              <p class="eg-info__paragraph eg-info__paragraph--black">Ergo technical documentation</p>
+            <a class="eg-info eg-info--link" href="https://docs.ergoplatform.com/YellowPaper.pdf">
+              <h3 class="eg-info__title">{{ T "documents_ergo_tech" }}</h3>
+              <p class="eg-info__paragraph eg-info__paragraph--black">{{ T "documents_ergo_tech_text" }}</p>
             </a>
-            <a class="eg-info eg-info--link" href="#">
-              <h3 class="eg-info__title">Whitepaper</h3>
-              <p class="eg-info__paragraph eg-info__paragraph--black">Advanced ErgoScript Tutorial</p>
+            <a class="eg-info eg-info--link" href="https://docs.ergoplatform.com/sigmastate_protocols.pdf">
+              <h3 class="eg-info__title">{{ T "documents_ergo_script_adv" }}</h3>
+              <p class="eg-info__paragraph eg-info__paragraph--black">{{ T "documents_ergo_script_adv_text" }}</p>
             </a>
           </div>
         </div>
       </section>
       <section class="history-section">
         <div class="container container--margins-y">
-          <h2 class="eg-title eg-title--black">Development history</h2>
+          <h2 class="eg-title eg-title--black">{{ T "development_history_title" }}</h2>
           {{- partial "slider.html" . -}}
         </div>
       </section>
@@ -203,7 +219,7 @@
                     <p class="eg-author__info-paragraph">{{ .Date.Format "2 January, 2006" }}</p>
                   </div>
                 </div>
-                <a class="blog-section__button eg-btn eg-btn--outline-orange" href="{{.Params.link}}">Read more</a>
+                <a class="blog-section__button eg-btn eg-btn--outline-orange" href="{{.Params.link}}">{{ T "read_more" }}</a>
               </div>
             {{end}}
           {{ else }}
@@ -220,7 +236,7 @@
                         <p class="eg-author__info-paragraph">{{ .Date.Format "2 January, 2006" }}</p>
                       </div>
                     </div>
-                    <a class="blog-section__button eg-btn eg-btn--outline-orange" href="{{.Params.link}}">Read more</a>
+                    <a class="blog-section__button eg-btn eg-btn--outline-orange" href="{{.Params.link}}">{{ T "read_more" }}</a>
                   </div>
                 {{end}}
               {{end}}
@@ -230,10 +246,10 @@
       </section>
       <section class="community-section eg-red-section">
         <div class="container eg-red-section__container">
-          <h2 class="eg-red-section__white-title">Ergo platform community</h2>
+          <h2 class="eg-red-section__white-title">{{ T "community_title" }}</h2>
           <div>
-            <p class="eg-red-section__paragraph">Ergo is the open protocol that implements modern scientific ideas in the blockchain area. Ergo operates an open contributor model where anyone is welcome to contribute.</p>
-            <a class="eg-red-section__link" href="">Contribute Ergo Platform</a>
+            <p class="eg-red-section__paragraph">{{ T "community_paragraph" }}</p>
+            <a class="eg-red-section__link" href="">{{ T "community_link" }}</a>
           </div>
         </div>
       </section>

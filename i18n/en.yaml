@@ -1,11 +1,8 @@
 #landing
-- id: about_page
-  translation: Hello
-
-- id: resilient_platform
+- id: header_resilient_platform
   translation: Ergo is a resilient platform
 
-- id: contractual_money
+- id: header_contractual_money
   translation: for contractual money
 
 - id: getting_started
@@ -29,5 +26,120 @@
 - id: ergo_clients
   translation: Light clients
 
+- id: ergo_philosophy_text
+  translation: Ergo philosophy
+
+- id: ergo_decentralization_text
+  translation: Decentralization
+
+- id: ergo_economy_text
+  translation: Economy model
+
+- id: ergo_contractual_text
+  translation: Contractual money
+
+- id: ergo_survivability_text
+  translation: Survivability
+
+- id: ergo_clients_text
+  translation: Light clients
+
 - id: news_title
   translation: News
+
+- id: services_title
+  translation: Ergo services
+
+- id: service_wallets_title
+  translation: Wallets
+
+- id: service_wallets_paragraph
+  translation: Click and study existing Ergo wallets. Choose a wallet you like and start using Ergo immediately!
+
+- id: service_exchanges_title
+  translation: Exchanges
+
+- id: service_exchanges_paragraph
+  translation: Watch all existing exchange services, find the one you like the most, then create an account to buy or sell ERG.
+
+- id: service_explorer_title
+  translation: Block explorer
+
+- id: service_explorer_paragraph
+  translation: Watch the latest blocks and transactions made in Ergo network.
+
+- id: service_dev_tools_title
+  translation: Developer tools
+
+- id: service_dev_tools_paragraph
+  translation: Explore developer tools and implement your first Ergo contract!
+
+- id: service_software_title
+  translation: Software
+
+- id: service_software_paragraph
+  translation: Download software required for your operational system and join the Ergo network today!
+
+- id: service_wiki_title
+  translation: Wiki
+
+- id: service_wiki_paragraph
+  translation: Educate yourself by reading Ergo wiki.
+
+- id: documents_title
+  translation: Documents
+
+- id: documents_ergo_platform
+  translation: Whitepaper
+
+- id: documents_ergo_platform_text
+  translation: "Ergo: The Resilient Platform For Contractual Money"
+
+- id: documents_ergoscript
+  translation: Whitepaper
+
+- id: documents_ergoscript_text
+  translation: ErgoScript, a Cryptocurrency Scripting Language Supporting Noninteractive Zero-Knowledge Proofs
+
+- id: documents_ergo_tech
+  translation: Yellowpaper
+
+- id: documents_ergo_tech_text
+  translation: Ergo technical documentation
+
+- id: documents_ergo_script_adv
+  translation: Whitepaper
+
+- id: documents_ergo_script_adv_text
+  translation: Advanced ErgoScript Tutorial
+
+- id: development_history_title
+  translation: Development history
+
+- id: read_more
+  translation: Read more
+
+- id: community_title
+  translation: Ergo platform community
+
+- id: community_paragraph
+  translation: Ergo is the open protocol that implements modern scientific ideas in the blockchain area. Ergo operates an open contributor model where anyone is welcome to contribute.
+
+- id: community_link
+  translation: Contribute Ergo Platform
+
+#footer
+- id: privacy_policy_link
+  translation: Privacy policy
+
+- id: legal_link
+  translation: Legal
+
+- id: insights_label
+  translation: Receive insight and news from Ergo
+
+- id: insights_input
+  translation: Your email
+
+- id: social_media
+  translation: Social_media

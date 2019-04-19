@@ -8,29 +8,29 @@
       <div class="eg-footer__copyright">
         <span class="eg-footer__copyright-paragraph">Ergo Platform © 2019</span>
         <ul class="eg-footer__copyright-list">
-          <li class="eg-footer__copyright-item"><a class="eg-footer__copyright-link" href="#">Privacy policy</a></li>
-          <li class="eg-footer__copyright-item"><a class="eg-footer__copyright-link" href="#">Legal</a></li>
+          <li class="eg-footer__copyright-item"><a class="eg-footer__copyright-link" href="/{{ "privacy" | absLangURL | }}">{{ T "privacy_policy_link" }}</a></li>
+          <li class="eg-footer__copyright-item"><a class="eg-footer__copyright-link" href="/{{ "legal" | absLangURL | }}">{{ T "legal_link" }}</a></li>
         </ul>
       </div>
     </div>
     <div class="eg-footer__item">
       <form class="eg-footer__insights">
-        <label for="" class="eg-footer__insights-label">Receive insight and news from Ergo</label>
+        <label for="subs_inp" class="eg-footer__insights-label">{{ T "insights_label" }}</label>
         <div>
           <div class="eg-footer__insights-group">
-            <input type="text" class="eg-footer__insights-input" placeholder="Your email"><button class="eg-footer__insights-button"><img src="/img/footer-arrow-right.svg" alt="arrow-right"></button>
+            <input type="text" id="subs_inp" class="eg-footer__insights-input" placeholder="{{ T `insights_input` }}"><button class="eg-footer__insights-button"><img src="/img/footer-arrow-right.svg" alt="arrow-right"></button>
           </div>
         </div>
       </form>
       <div class="eg-footer__social">
-        <p class="eg-footer__social-label">Social media</p>
+        <p class="eg-footer__social-label">{{ T `social_media` }}</p>
         {{- partial "social.html" . -}}
       </div>
       <div class="eg-footer__copyright eg-footer__copyright--mobile">
         <span class="eg-footer__copyright-paragraph">Ergo Platform © 2019</span>
         <ul class="eg-footer__copyright-list">
-          <li class="eg-footer__copyright-item"><a class="eg-footer__copyright-link" href="#">Privacy policy</a></li>
-          <li class="eg-footer__copyright-item"><a class="eg-footer__copyright-link" href="#">Legal</a></li>
+          <li class="eg-footer__copyright-item"><a class="eg-footer__copyright-link" href="/{{ "privacy" | absLangURL | }}">{{ T "privacy_policy_link" }}</a></li>
+          <li class="eg-footer__copyright-item"><a class="eg-footer__copyright-link" href="/{{ "legal" | absLangURL | }}">{{ T "legal_link" }}</a></li>
         </ul>
       </div>
     </div>
