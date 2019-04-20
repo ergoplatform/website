@@ -90,27 +90,27 @@
           <div class="subheader-section__tabs-content">
             <div id="tabs-1" class="subheader-section__tab">
               <h2 class="subheader-section__tab-title">{{ T "ergo_philosophy" }}</h2>
-              <p class="subheader-section__tab-paragraph">{{ T "ergo_philosophy_text" }}</p>
+              <p class="subheader-section__tab-paragraph">{{ T "ergo_philosophy_text" | safeHTML }}</p>
             </div>
             <div id="tabs-2" class="subheader-section__tab">
               <h2 class="subheader-section__tab-title">{{ T "ergo_decentralization" }}</h2>
-              <p class="subheader-section__tab-paragraph">{{ T "ergo_decentralization_text" }}</p>
+              <p class="subheader-section__tab-paragraph">{{ T "ergo_decentralization_text" | safeHTML }}</p>
             </div>
             <div id="tabs-3" class="subheader-section__tab">
               <h2 class="subheader-section__tab-title">{{ T "ergo_economy" }}</h2>
-              <p class="subheader-section__tab-paragraph">{{ T "ergo_economy_text" }}</p>
+              <p class="subheader-section__tab-paragraph">{{ T "ergo_economy_text" | safeHTML }}</p>
             </div>
             <div id="tabs-4" class="subheader-section__tab">
               <h2 class="subheader-section__tab-title">{{ T "ergo_contractual" }}</h2>
-              <p class="subheader-section__tab-paragraph">{{ T "ergo_contractual_text" }}</p>
+              <p class="subheader-section__tab-paragraph">{{ T "ergo_contractual_text" | safeHTML }}</p>
             </div>
             <div id="tabs-5" class="subheader-section__tab">
               <h2 class="subheader-section__tab-title">{{ T "ergo_clients" }}</h2>
-              <p class="subheader-section__tab-paragraph">{{ T "ergo_clients_text" }}</p>
+              <p class="subheader-section__tab-paragraph">{{ T "ergo_clients_text" | safeHTML }}</p>
             </div>
             <div id="tabs-6" class="subheader-section__tab">
               <h2 class="subheader-section__tab-title">{{ T "ergo_survivability" }}</h2>
-              <p class="subheader-section__tab-paragraph">{{ T "ergo_survivability_text" }}</p>
+              <p class="subheader-section__tab-paragraph">{{ T "ergo_survivability_text" | safeHTML }}</p>
             </div>
           </div>
         </div>
@@ -167,7 +167,7 @@
               <h3 class="eg-info__title">{{ T "service_software_title" }}</h3>
               <p class="eg-info__paragraph">{{ T "service_software_paragraph" }}</p>
             </a>
-            <a class="eg-info eg-info--link" href="{{ `wiki` | absLangURL | safeURL}}">
+            <a class="eg-info eg-info--link" href="https://github.com/ergoplatform/ergo/wiki">
               <h3 class="eg-info__title">{{ T "service_wiki_title" }}</h3>
               <p class="eg-info__paragraph">{{ T "service_wiki_paragraph" }}</p>
             </a>
@@ -180,7 +180,7 @@
             <h2 class="eg-title eg-title--black">{{ T "documents_title" }}</h2>
           </div>
           <div class="services-section__items grid-container-1k1">
-            <a class="eg-info eg-info--link" href="https://docs.ergoplatform.com/teaser.pdf">
+            <a class="eg-info eg-info--link" href="https://docs.ergoplatform.com/whitepaper.pdf">
               <h3 class="eg-info__title">{{ T "documents_ergo_platform" }}</h3>
               <p class="eg-info__paragraph eg-info__paragraph--black">{{ T "documents_ergo_platform_text" }}</p>
             </a>

@@ -27,22 +27,34 @@
   translation: Light clients
 
 - id: ergo_philosophy_text
-  translation: Ergo philosophy
+  translation: "Started more ten years ago with the Bitcoin, blockchain technology proved to be a secure way of maintaining a public transaction ledger. However, whereas many teams claimed to implement the next revolutionary blockchain, they have also mostly broken at least one of fundamental blockchain properties.
+ <br/>
+ In contrast, Ergo platform absorbs ready-to-use ideas, that are well-tested and formalized in scientific papers. Its primary focus is to provide an efficient, secure and easy way to implement financial contracts, that will be useful and survivable in the long term. Finally, Ergo is a self-amendable protocol, that allows to absorb new ideas and improve itself in the future in a decentralized manner."
 
 - id: ergo_decentralization_text
-  translation: Decentralization
+  translation: "Outstanding resilience of blockchain systems is achieved by a combination of modern cryptographic algorithms and decentralized architecture. While cryptography is widely used outside the cryptocurrencies, decentralized architecture forms a unique property of blockchain systems making them even more secure due to lack of single point of failure.
+ <br/>
+ Ergo struggle with the centralization at all levels. Ergo have an ASIC and pool resistant Proof-of-Work algorithm, preventing blockchain centralization in the hands of miners and pool operators. Its treasury system allows preventing governance and development centralization, while light nodes with high-security guaranties prevent services centralization"
 
 - id: ergo_economy_text
-  translation: Economy model
+  translation: "To achieve survivability, Ergo provides economic improvements in addition to the technical ones. A storage rent component makes Ergo similar to regular cloud storage services. However it has several significant consequences: it makes Ergo mining stable after the initial emission, prevents state size growth and provides a way to return coins to circulation.
+ <br/>
+ This component also predetermines the value of Ergo native token - it is a utility token used to pay for storage rent. The Ergo platform is suitable to build monetary systems on top of it with properties different from Ergo native token itself, however, participating such systems would require to use Ergo native token preventing spam attacks and making the network more secure."
 
 - id: ergo_contractual_text
-  translation: Contractual money
+  translation: "The overwhelming majority of public blockchain use-cases are about financial applications, even in platforms that claim to be a general-purpose decentralized world computer. For example, if an oracle is writing non-financial data into a blockchain, this data is usually to be written to be used in a financial contract.
+                   <br/>
+                   Ergo offers a powerful and protocol-friendly scripting language based on Σ-protocols, that allows specifying conditions under which a coin can be used. In the simple case, a coin can be spent at any time by an owner of a secret key, but more complex spending conditions may specify multiple coin holders, time of spending, the direction of spending and so on, allowing to implement contracts of arbitrary complexity."
 
 - id: ergo_survivability_text
-  translation: Survivability
+  translation: "Being a platform for contractual money, Ergo should also support long-term contracts for a period of a person’s life. Ergo general approach is to use well-tested solutions proved to be secure in the long-term, even if that leads to slower short-term innovations.
+ <br/>
+  Combination of PoW consensus protocol and authenticated state prevents performance degradation over time, allowing to join the network and use it from commodity hardware. Ergo economy model makes the system more reliable from the economic point of view, while on-chain governance allows gradual changes in the network parameters."
 
 - id: ergo_clients_text
-  translation: Light clients
+  translation: "One of the key aspects of Ergo is that it is created for regular people. In particular, that means that they should be able to participate in the protocol by running a full node, mining or creating transactions with the absence of trusted parties.
+ <br/>
+ Ergo protocol is friendly to Light clients, allowing to use it in a friendly and decentralized manner with full node security guarantees. The same properties of Ergo make it easier to implement sidechains, providing additional benefits in terms of throughput."
 
 - id: news_title
   translation: News
