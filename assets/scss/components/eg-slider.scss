@@ -23,6 +23,13 @@
       letter-spacing: -6px;
       line-height: 180px;
       color: $opacity-gray;
+      transition: color ease-in 0.15s;
+
+      &:hover,
+      &:focus {
+        color: $light-black;
+        cursor: pointer;
+      }
 
       @media (max-width: $sm) {
         font-size: 80px;
