@@ -1,0 +1,94 @@
+.eg-text {
+  .eg-text__group {
+    display: flex;
+    flex-direction: column;
+
+    & + .eg-text__group {
+      margin-top: 50px;
+
+      @media (max-width: $sm) {
+        margin-top: 2rem;
+      }
+    }
+
+    &-title {
+      position: relative;
+      display: flex;
+
+      @media (max-width: $sm) {
+        margin-bottom: 0.5rem;
+      }
+
+      span {
+        position: absolute;
+        width: 32px;
+        height: 30px;
+        color: $white;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        left: -42px;
+        background-image: url('../img/octagon_red.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @media (max-width: $md) {
+          left: -38px;
+        }
+
+        @media (max-width: $sm) {
+          position: relative;
+          left: 0;
+          margin-right: 0.5rem;
+        }
+      }
+
+      h4 {
+        font-size: 26px;
+        line-height: 30px;
+        width: 100%;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+
+        @media (max-width: $sm) {
+          font-size: 22px;
+          line-height: 30px;
+        }
+      }
+    }
+
+    &-paragraph {
+      font-size: 18px;
+      line-height: 24px;
+      color: $light-black;
+      max-width: 97%;
+      margin-bottom: 12px;
+
+      @media (max-width: $sm) {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .eg-text__link {
+    font-size: 18px;
+    line-height: 22px;
+    color: $light-red;
+
+    @media (max-width: $sm) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  .eg-text__links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .eg-text__link + .eg-text__link {
+      margin-top: 1rem;
+    }
+  }
+}

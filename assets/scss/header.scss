@@ -30,9 +30,14 @@
 }
 
 .eg-header {
-  position: absolute;
   width: 100%;
   margin-top: 40px;
+
+  &--landing {
+    position: absolute;
+    padding-bottom: 20px;
+    z-index: 9999;
+  }
 
   @media (max-width: $md) {
     margin-top: 35px;
@@ -43,8 +48,19 @@
     position: relative;
 
     .eg-navbar__container {
+      display: grid;
+      grid-template-columns: 4fr 11fr;
+      grid-gap: 11%;
+
+      @media (max-width: $sm) {
+        justify-content: space-between;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0;
+      }
+    }
+
+    .eg-navbar__content {
       display: flex;
-      height: 60px;
       justify-content: space-between;
       align-items: center;
 
@@ -166,12 +182,18 @@
     }
 
     .eg-nav__item {
+      &.active {
+        .eg-nav__link {
+          color: $light-red !important;
+        }
+      }
+
       & + .eg-nav__item {
-        margin-left: 2rem;
+        margin-left: 30px;
 
         @media (max-width: $md) {
           margin-left: 0;
-          margin-top: 1.5rem;
+          margin-top: 24px;
         }
       }
     }
@@ -191,7 +213,7 @@
 
   .eg-navbar__language {
     height: 100%;
-    margin-top: 8px;
+    margin-top: 14px;
 
     @media (max-width: $md) {
       margin-left: auto;
@@ -215,6 +237,7 @@
   border: 1px solid transparent;
 
   &--white {
+
     .dd-language__button {
       color: $white !important;
     }
@@ -253,11 +276,23 @@
     }
   }
 
-  &.show {
+  &--white.show {
     border: 1px solid transparent;
 
     .dd-language__menu {
       display: flex;
+    }
+  }
+
+  &--black.show {
+    border: 0.5px solid #DEE3F1;
+    border-bottom: none;
+
+    .dd-language__menu {
+      display: flex;
+      border: 0.5px solid #DEE3F1;
+      border-top: none;
+      box-shadow: 0 2px 3px 0 rgba(0,0,0,0.06);
     }
   }
 
@@ -268,10 +303,14 @@
     align-items: center;
     padding-bottom: 12px;
     top: 30px;
-    left: -1px;
+    left: 0;
     border: none;
     width: 80px;
     padding-right: 4px;
+
+    @media (max-width: $sm) {
+      left: -1px;
+    }
   }
 
   .dd-language__item {

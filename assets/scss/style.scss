@@ -7,6 +7,7 @@
 @import 'components/eg-red-section';
 @import 'components/eg-social';
 @import 'components/eg-slider';
+@import 'components/eg-text';
 @import 'footer';
 @import 'header';
 @import 'landing/landing';
@@ -54,6 +55,7 @@ p {
   padding-left: 70px;
   padding-right: 70px;
   margin: 0 auto;
+  position: relative;
 
   @media (max-width: $md) {
     padding-left: 35px;
@@ -71,19 +73,59 @@ p {
 
     @media (max-width: $sm) {
       padding-top: 2rem;
+      padding-bottom: 2.5rem;
+    }
+  }
+
+  &--top-content {
+    padding-top: 100px;
+    padding-bottom: 150px;
+
+    @media (max-width: $md) {
+      padding-top: 60px;
+      padding-bottom: 110px;
+    }
+
+    @media (max-width: $sm) {
       padding-bottom: 2rem;
     }
+  }
+
+  &--left-lines {
+    background-repeat: no-repeat;
+    background-image: url('../img/left_lines_bg.svg');
+    background-position-y: 210px;
+
+    @media (max-width: $md) {
+      background-position-x: -100px;
+    }
+
+    @media (max-width: $sm) {
+      background-image: none;
+    }
+  }
+}
+
+.border-section {
+  border-top: 1px solid #D8D8D8;
+
+  &--padding-top {
+    padding-top: 2.5rem;
   }
 }
 
 .grid-container-1k2 {
   display: grid;
-  grid-template-columns: 5fr 11fr;
-  grid-gap: 5.9%;
+  grid-template-columns: 4fr 11fr;
+  grid-gap: 11%;
 
   @media (max-width: $sm) {
     grid-template-columns: 1fr;
     grid-gap: 0;
+  }
+
+  &__main-section {
+    margin-top: 12px;
   }
 }
 
@@ -91,7 +133,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 60px 9%;
-  margin-top: 0.5rem;
+  margin-top: 12px;
 
   @media (max-width: $sm) {
     grid-template-columns: 1fr;

@@ -11,11 +11,12 @@
 
       @media (max-width: $md) {
         padding-top: 200px;
-        padding-bottom: 60px;
+        padding-bottom: 110px;
       }
 
       @media (max-width: $sm) {
         background-position: center;
+        padding-bottom: 60px;
       }
     }
 

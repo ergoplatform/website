@@ -235,3 +235,86 @@
 
 - id: social_media
   translation: Social_media
+
+
+#about
+
+- id: about_title
+  translation: How to use Ergo
+
+- id: about_first_title
+  translation: Inform yourself
+
+- id: about_first_paragraph
+  translation: Bitcoin is different than what you know and use every day. Before you start using Bitcoin, there are a few things that you need to know in order to use it securely and avoid common pitfalls.
+
+- id: about_second_title
+  translation: Choose your wallet
+
+- id: about_second_paragraph
+  translation: Free bitcoin wallets are available for all major operating systems and devices to serve a variety of your needs. For example, you can install an app on your mobile device for everyday use or you can have a wallet only for online payments on your computer. In any case, choosing a wallet is easy and can be done in minutes.
+
+- id: about_third_title
+  translation: Get Ergo
+
+- id: about_third_paragraph
+  translation: You can get Bitcoin by accepting it as a payment for goods and services. There are also several ways you can buy Bitcoin.
+
+- id: about_fourth_title
+  translation: Write a contract
+
+- id: about_fourth_paragraph
+  translation: There are a growing number of services and merchants accepting Bitcoin all over the world. Use Bitcoin to pay them and rate your experience to help them gain more visibility.
+
+#basics
+
+- id: basics_first_title
+  translation: Basics
+
+- id: basics_first-section_first_title
+  translation: Vision
+
+- id: basics_first-section_first_paragraph
+  translation: Ergo platform development began in 2017 after several years of research and prototype implementations. Despite the huge hype around cryptocurrencies, the technology itself has been stuck close to its initial stage. In pursuit of high profits and popularity, developers claimed implementations of blockchain 2.0, 3.0 and so on, mostly in opposition to the main advantage of cryptocurrencies — decentralization — and teams have simply promised that decentralization will be achieved at some point in the future.
+
+- id: basics_first-section_second_title
+  translation: Consensus
+
+- id: basics_first-section_second_paragraph
+  translation: Consensus protocol of Ergo — Autolykos — is based on the well-known Proof- of-Work (“PoW”) consensus algorithm. PoW was chosen for several reasons including that PoW protocols are widely studied, have high security guarantees, and are friendly to light clients.
+
+- id: basics_first-section_third_title
+  translation: Clients
+
+- id: basics_first-section_third_paragraph
+  translation: It is almost impossible to use existing cryptocurrencies without the help of trusted third-parties. To receive even a small amount of coins in a trustless fashion, a client must download and process gigabytes of data to synchronize with the network, which may take several weeks even on highend hardware, not to mention mobile devices. It is therefore no surprise that most users prefer to use trusted solutions for wallets, exchanges, block explorers and so on.
+
+- id: basics_first-section_fourth_title
+  translation: Survivability
+
+- id: basics_first-section_fourth_paragraph
+  translation: To be survivable, the network should adopt to changing environment without the intervention of trusted parties (such as a “core developer” team). Ergo’s on-chain miner voting protocol allows gradual changes in a large number of parameters including.
+
+- id: basics_first-section_fifth_title
+  translation: Economy
+
+- id: basics_first-section_fifth_paragraph
+  translation: It is almost impossible to use existing cryptocurrencies without the help of trusted third-parties. To receive even a small amount of coins in a trustless fashion, a client must download and process gigabytes of data to synchronize with the network, which may take several weeks even on highend hardware, not to mention mobile devices. It is therefore no surprise that most users prefer to use trusted solutions for wallets, exchanges, block explorers and so on.
+
+- id: basics_first-section_sixth_title
+  translation: Applicability
+
+- id: basics_first-section_sixth_paragraph
+  translation: To be survivable, the network should adopt to changing environment without the intervention of trusted parties (such as a “core developer” team). Ergo’s on-chain miner voting protocol allows gradual changes in a large number of parameters including.
+
+- id: basics_second_title
+  translation: Learn more
+
+- id: basics_second-section_first_link
+  translation: Developers tools
+
+- id: basics_second-section_second_link
+  translation: Documents
+
+- id: basics_second-section_third_link
+  translation: Wiki

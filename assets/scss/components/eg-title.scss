@@ -1,5 +1,5 @@
 .eg-title {
-  color: $white;
+  color: $black;
   font-size: 42px;
   line-height: 50px;
   font-weight: 500;
@@ -11,7 +11,7 @@
     margin-bottom: 1rem;
   }
 
-  &--black {
-    color: $black;
+  &--white {
+    color: $white;
   }
 }

@@ -53,6 +53,12 @@ defaultContentLanguageInSubdir = true
     url = "/team/"
     weight = -60
 
+  [[languages.en.menu.mainmenu]]
+    identifier = "Team"
+    name = "Team"
+    url = "/basics/"
+    weight = -50
+
 [languages.ru]
   languageCode = "ru"
   languageName = "Russian"
