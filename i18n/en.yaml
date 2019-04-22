@@ -234,7 +234,7 @@
   translation: Your email
 
 - id: social_media
-  translation: Social_media
+  translation: Social media
 
 
 #about
@@ -395,3 +395,101 @@
 
 - id: tools_second-section_first_paragraph
   translation: "By joining Ergo Platform you gain access to a complete development and deployment environment, including:"
+
+- id: tools_second-section_first-sub_title
+  translation: dApps Development
+
+- id: tools_second-section_first-sub_first_subtitle
+  translation: ErgoScript overview
+
+- id: tools_second-section_first-sub_first_paragraph
+  translation: Ergo propose flexible scripting language based on efficient Σ-protocols
+
+- id: tools_second-section_first-sub_second_subtitle
+  translation: Advanced ErgoScript Tutorial
+
+- id: tools_second-section_first-sub_second_paragraph
+  translation: Check out examples of contracts already being built on Ergo.
+
+- id: tools_second-section_second-sub_title
+  translation: Node installation
+
+- id: tools_second-section_second-sub_first_link
+  translation: How to install Ergo full node
+
+- id: tools_second-section_second-sub_second_link
+  translation: How to mine Ergo
+
+- id: tools_second-section_third-sub_title
+  translation: Explorers
+
+- id: tools_second-section_third-sub_first_link
+  translation: TestNet Explorer
+
+- id: tools_second-section_fourth-sub_title
+  translation: APIs
+
+- id: tools_second-section_fourth-sub_first_link
+  translation: Node API
+
+- id: tools_second-section_fourth-sub_second_link
+  translation: Explorer API
+
+- id: tools_second-section_fifth-sub_title
+  translation: Libraries (Scala)
+
+- id: tools_second-section_fifth-sub_first_link
+  translation: ErgoScript
+
+- id: tools_second-section_fifth-sub_second_link
+  translation: Basic cryptography
+
+- id: tools_third_title
+  translation: Grants for Developers
+
+- id: tools_third-section_paragraph
+  translation: We are offering grants to developers who are building projects on Ergo platform.
+
+- id: tools_third-section_link
+  translation: Get support
+
+#software
+
+- id: software_first_title
+  translation: Software
+
+- id: software_first-section_first_paragraph
+  translation: Monero (XMR) is a new cryptocurrency which is based on CryptoNote code and is not a Bitcoin fork in any way.
+
+- id: software_first-section_second_paragraph
+  translation: Main Monero features that were inherited from CryptoNote are Ring Signatures and unlinkable transactions.
+
+- id: software_first-section_third_paragraph
+  translation: "Usually Monero software consists of two binaries: bitmonerod & simplewallet. In the sections below you will be able to find binaries for a majority of operating systems."
+
+- id: software_second_title
+  translation: Downloads
+
+- id: software_second-section_first_title
+  translation: Windows x64 & x86
+
+- id: software_second-section_first_first-item_title
+  translation: Daemon + console wallet pack for Windows 64
+
+- id: software_second-section_first_second-item_title
+  translation: Daemon + console wallet pack for Windows 32
+
+- id: software_second-section_second_title
+  translation: Mac OS Mavericks 10.9
+
+- id: software_second-section_second_first-item_title
+  translation: Daemon + console wallet pack version 0.11.1.0
+
+- id: software_second-section_third_title
+  translation: Linux x64 & x86
+
+- id: software_second-section_third_title_first-item_title
+  translation: Daemon + console wallet pack for Linux x64
+
+- id: software_second-section_third_title_second-item_title
+  translation: Daemon + console wallet pack for Linux x86

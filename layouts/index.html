@@ -121,7 +121,7 @@
       </section>
       <section class="news-section">
         <div class="container container--margins-y">
-          <h2 class="eg-title eg-title--black">{{ T "news_title"}}</h2>
+          <h2 class="eg-title eg-title--black eg-mb-1">{{ T "news_title"}}</h2>
           <div class="news-section__items">
             {{ $langNews := where .Pages "Section" "news" }}
             {{ with $langNews }}
@@ -248,7 +248,7 @@
           {{ end }}
         </div>
       </section>
-      <section class="community-section eg-red-section container--last-container">
+      <section class="community-section eg-red-section">
         <div class="container eg-red-section__container">
           <h2 class="eg-red-section__white-title">{{ T "community_title" }}</h2>
           <div>
