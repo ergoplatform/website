@@ -71,14 +71,95 @@
     }
   }
 
+  .eg-text__paragraph {
+    color: $light-black;
+
+    &--18 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 1.5rem;
+
+      @media (max-width: $md) {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+
   .eg-text__link {
     font-size: 18px;
     line-height: 22px;
     color: $light-red;
+    position: relative;
 
     @media (max-width: $sm) {
       font-size: 16px;
       line-height: 22px;
+    }
+
+    &--download {
+      &::after {
+        position: absolute;
+        content: "";
+        width: 18px;
+        height: 23px;
+        bottom: -1px;
+        background-image: url('../img/download_arrow.svg');
+        background-repeat: no-repeat;
+        right: -28px;
+      }
+    }
+
+    &--26 {
+      font-size: 26px;
+      line-height: 30px;
+
+      @media (max-width: $md) {
+        font-size: 24px;
+        line-height: 28px;
+      }
+
+      @media (max-width: $sm) {
+        font-size: 22px;
+        line-height: 26px;
+      }
+    }
+
+    &--20 {
+      font-size: 20px;
+      line-height: 26px;
+
+      @media (max-width: $md) {
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      @media (max-width: $sm) {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+
+    &--left-arrow {
+      &::after {
+        content: "";
+        background-image: url('/img/landing/right-arrow.svg');
+        background-repeat: no-repeat;
+        height: 15px;
+        width: 22px;
+        position: absolute;
+        background-size: contain;
+        right: -35px;
+        top: 25%;
+
+        @media (max-width: $sm) {
+          height: 15px;
+          width: 16px;
+          background-size: contain;
+          right: -25px;
+          top: 4px;
+        }
+      }
     }
   }
 

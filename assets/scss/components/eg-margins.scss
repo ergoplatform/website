@@ -1,0 +1,26 @@
+.eg-mt-2-5 {
+  margin-top: 2.5rem;
+}
+
+.eg-mb-1 {
+  margin-bottom: 1rem;
+}
+
+.eg-my-sm-1 {
+  @media (max-width: $sm) {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+}
+
+.eg-mt-sm-1 {
+  @media (max-width: $sm) {
+    margin-top: 1rem !important;
+  }
+}
+
+.eg-mb-sm-2 {
+  @media (max-width: $sm) {
+    margin-bottom: 2rem !important;
+  }
+}

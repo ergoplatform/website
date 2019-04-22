@@ -3,17 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/ru/basics/</loc>
+    <lastmod>2019-04-22T16:06:15+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/basics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/basics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/basics/"
+                />
+  </url>
+  
+  <url>
     <loc>/ru/news/</loc>
     <lastmod>2019-04-12T13:50:10+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="/en/news/"
+                hreflang="de"
+                href="/de/news/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="/de/news/"
+                hreflang="en"
+                href="/en/news/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -87,13 +107,13 @@
     <lastmod>2019-04-11T20:29:21+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="/de/team/"
+                hreflang="en"
+                href="/en/team/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="/en/team/"
+                hreflang="de"
+                href="/de/team/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -107,13 +127,13 @@
     <lastmod>2019-04-11T20:27:44+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="/en/about/"
+                hreflang="de"
+                href="/de/about/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="/de/about/"
+                hreflang="en"
+                href="/en/about/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -127,13 +147,13 @@
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="/en/categories/"
+                hreflang="de"
+                href="/de/categories/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="/de/categories/"
+                hreflang="en"
+                href="/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -147,13 +167,13 @@
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="/en/"
+                hreflang="de"
+                href="/de/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="/de/"
+                hreflang="en"
+                href="/en/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -167,13 +187,13 @@
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="/en/tags/"
+                hreflang="de"
+                href="/de/tags/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="/de/tags/"
+                hreflang="en"
+                href="/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"

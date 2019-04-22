@@ -8,6 +8,7 @@
 @import 'components/eg-social';
 @import 'components/eg-slider';
 @import 'components/eg-text';
+@import 'components/eg-margins';
 @import 'footer';
 @import 'header';
 @import 'landing/landing';
@@ -67,19 +68,28 @@ p {
     padding-right: 25px;
   }
 
+  &--last-container {
+    padding-bottom: 70px !important;
+
+    @media (max-width: $sm) {
+      padding-bottom: 60px !important;
+    }
+  }
+
   &--margins-y {
     padding-top: 70px;
     padding-bottom: 70px;
 
     @media (max-width: $sm) {
       padding-top: 2rem;
-      padding-bottom: 2.5rem;
+      padding-bottom: 2rem;
     }
   }
 
+
   &--top-content {
     padding-top: 100px;
-    padding-bottom: 150px;
+    padding-bottom: 60px;
 
     @media (max-width: $md) {
       padding-top: 60px;
@@ -126,6 +136,10 @@ p {
 
   &__main-section {
     margin-top: 12px;
+
+    @media (max-width: $md) {
+      margin-top: 0;
+    }
   }
 }
 
@@ -135,9 +149,33 @@ p {
   grid-gap: 60px 9%;
   margin-top: 12px;
 
+  @media (max-width: $md) {
+    margin-top: 0;
+  }
+
   @media (max-width: $sm) {
     grid-template-columns: 1fr;
     grid-gap: calc(1.5rem + 4px);
+  }
+
+  &--sm-margins {
+    grid-gap: 20px 9% !important;
+
+    @media (max-width: $sm) {
+      grid-template-columns: 1fr;
+      grid-gap: calc(1.5rem + 4px);
+      margin-top: 0;
+    }
+  }
+
+  &--md-margins {
+    grid-gap: 40px 9% !important;
+
+    @media (max-width: $sm) {
+      grid-template-columns: 1fr;
+      grid-gap: calc(1.5rem + 4px);
+      margin-top: 0;
+    }
   }
 }
 

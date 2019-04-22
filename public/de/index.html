@@ -14,52 +14,56 @@
     
     <script src="/js/index.js" defer></script>
   </head>
-  <body><header class="eg-header">
+  <body><header class="eg-header eg-header--landing">
       <nav class="eg-navbar">
         <div class="container eg-navbar__container">
-          
-            <a href="/de/" class="logotype">
-              <img src="/img/logotype_white.svg" alt="logotype">
-            </a>
-          
-          <div class="eg-navbar__collapse eg-navbar__collapse--black" id="navbarSupportedContent">
-            <ul class="eg-nav">
-              
-            </ul>
+          <div>
+            
+              <a href="/de/" class="logotype">
+                <img src="/img/logotype_white.svg" alt="logotype">
+              </a>
+            
           </div>
-          <div class="eg-navbar__language">
-            <div class="dd-language dropdown dd-language--white">
-              <button
-                class="dd-language__button dd-language__button--white dropdown__button"
-                data-target-id="languageMenu"
-              >
-                Deu
-              </button>
-              <ul
-                id="languageMenu"
-                class="dropdown__menu dd-language__menu"
-              >
-                
-                  
-                    <li class="dd-language__item">
-                      <a class="dd-language__link dd-language__link--white" href="/en/">Eng</a>
-                    </li>
-                  
-                
-                  
-                    <li class="dd-language__item">
-                      <a class="dd-language__link dd-language__link--white" href="/ru/">Rus</a>
-                    </li>
-                  
-                
-                  
+          <div class="eg-navbar__content">
+            <div class="eg-navbar__collapse eg-navbar__collapse--black" id="navbarSupportedContent">
+              <ul class="eg-nav">
                 
               </ul>
             </div>
+            <div class="eg-navbar__language">
+              <div class="dd-language dropdown dd-language--white">
+                <button
+                  class="dd-language__button dd-language__button--white dropdown__button"
+                  data-target-id="languageMenu"
+                >
+                  Deu
+                </button>
+                <ul
+                  id="languageMenu"
+                  class="dropdown__menu dd-language__menu"
+                >
+                  
+                    
+                      <li class="dd-language__item">
+                        <a class="dd-language__link dd-language__link--white" href="/ru/">Rus</a>
+                      </li>
+                    
+                  
+                    
+                  
+                    
+                      <li class="dd-language__item">
+                        <a class="dd-language__link dd-language__link--white" href="/en/">Eng</a>
+                      </li>
+                    
+                  
+                </ul>
+              </div>
+            </div>
+            <button class="eg-navbar__trigger eg-navbar__trigger--white" type="button" aria-expanded="false" aria-label="Toggle navigation">
+              <span></span>
+            </button>
           </div>
-          <button class="eg-navbar__trigger eg-navbar__trigger--white" type="button" aria-expanded="false" aria-label="Toggle navigation">
-            <span></span>
-          </button>
         </div>
       </nav>
     </header>
@@ -217,7 +221,7 @@
       </section>
       <section class="services-section">
         <div class="container container--margins-y grid-container-1k2 services-section__container">
-          <h2 class="eg-title services-section__title">Ergo services</h2>
+          <h2 class="eg-title eg-title--white services-section__title">Ergo services</h2>
           <div class="services-section__items grid-container-1k1">
             <div class="eg-info">
               <a class="eg-info__title" href="/de/wallets">Wallets</a>
@@ -249,7 +253,7 @@
       <section class="documents-section">
         <div class="container container--margins-y grid-container-1k2">
           <div>
-            <h2 class="eg-title eg-title--black">Documents</h2>
+            <h2 class="eg-title">Documents</h2>
           </div>
           <div class="services-section__items grid-container-1k1">
             <div class="eg-info">
@@ -397,42 +401,18 @@
           
             
               
-                
-                
-                  <div class="blog-section__item">
-                    <h3 class="blog-section__item-title">Ergo Platform is a storage of rich state with language safer than Bitcoin&#39;s</h3>
-                    <div class="eg-author">
-                      <img src="/img/authors/dmitry_meshkov.svg" alt="author img" class="eg-author__img">
-                      <div class="eg-author__info">
-                        <h4 class="eg-author__info-title">Dmitry Meshkov</h4>
-                        <p class="eg-author__info-paragraph">17 April, 2019</p>
-                      </div>
-                    </div>
-                    <a class="blog-section__button eg-btn eg-btn--outline-orange" href="">Read more</a>
-                  </div>
-                
-                  <div class="blog-section__item">
-                    <h3 class="blog-section__item-title">Self-Reproducing Coins as Universal Turing Machine</h3>
-                    <div class="eg-author">
-                      <img src="/img/authors/dmitry_meshkov.svg" alt="author img" class="eg-author__img">
-                      <div class="eg-author__info">
-                        <h4 class="eg-author__info-title">Dmitry Meshkov</h4>
-                        <p class="eg-author__info-paragraph">17 April, 2019</p>
-                      </div>
-                    </div>
-                    <a class="blog-section__button eg-btn eg-btn--outline-orange" href="">Read more</a>
-                  </div>
-                
-              
             
               
             
+              
+                
+                
               
             
           
         </div>
       </section>
-      <section class="community-section eg-red-section">
+      <section class="community-section eg-red-section container--last-container">
         <div class="container eg-red-section__container">
           <h2 class="eg-red-section__white-title">Ergo platform community</h2>
           <div>

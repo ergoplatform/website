@@ -5,10 +5,21 @@
   font-weight: 500;
   margin-bottom: 30px;
 
+  @media (max-width: $lg) {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+
+  @media (max-width: $md) {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
   @media (max-width: $sm) {
     font-size: 26px;
     line-height: 31px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
   }
 
   &--white {
