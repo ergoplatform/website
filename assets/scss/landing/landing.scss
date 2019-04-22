@@ -238,6 +238,10 @@
       font-weight: normal;
       max-width: 600px;
 
+      a {
+        color: $black;
+      }
+
       @media (max-width: $sm) {
         font-size: 22px;
         line-height: 26px;

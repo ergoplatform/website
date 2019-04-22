@@ -1,5 +1,21 @@
 .eg-slider {
   .eg-slider__nav {
+    .slick-list.draggable {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 70px;
+      margin: 0 auto;
+
+      @media (max-width: $md) {
+        padding-left: 35px;
+        padding-right: 35px;
+      }
+
+      @media (max-width: $xs) {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+    }
 
     &-item {
       font-family: "LabGrotesqueMono", sans-serif;
@@ -25,7 +41,7 @@
       outline: none;
 
       & + .slick-slide {
-        margin-left: 40px;
+        margin-left: 30px;
 
         @media (max-width: $sm) {
           margin-left: 1.5rem;

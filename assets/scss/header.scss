@@ -213,7 +213,6 @@
   padding-right: 4px;
   width: 80px;
   border: 1px solid transparent;
-  border-bottom: none;
 
   &--white {
     .dd-language__button {
@@ -255,8 +254,7 @@
   }
 
   &.show {
-    border: 1px solid $white;
-    border-bottom: none;
+    border: 1px solid transparent;
 
     .dd-language__menu {
       display: flex;
@@ -271,8 +269,7 @@
     padding-bottom: 12px;
     top: 30px;
     left: -1px;
-    border: 1px solid $white;
-    border-top: none;
+    border: none;
     width: 80px;
     padding-right: 4px;
   }

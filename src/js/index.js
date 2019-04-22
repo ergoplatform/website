@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   $('.tabs').tabs();
 
   $('.timeline-nav').slick({
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: '.timeline-slider',
     centerMode: false,
@@ -40,15 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
     variableWidth: true,
     dots: false,
     infinite: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-    ],
   });
 
   $('.timeline-slider').slick({
@@ -57,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     arrows: false,
     centerMode: false,
     fade: true,
+    infinite: false,
     asNavFor: '.timeline-nav',
     cssEase: 'ease',
     mobileFirst: true,

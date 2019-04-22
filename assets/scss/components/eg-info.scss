@@ -1,20 +1,6 @@
 .eg-info {
-  display: block;
-
-  &--link {
-    &:hover,
-    &:focus {
-      text-decoration: none;
-
-      .eg-info__title {
-        text-decoration: underline;
-      }
-
-      .eg-info__paragraph {
-        text-decoration: underline;
-      }
-    }
-  }
+  display: flex;
+  flex-direction: column;
 
   .eg-info__title {
     color: $light-red;
@@ -22,6 +8,7 @@
     line-height: 30px;
     font-weight: 500;
     margin-bottom: 1rem;
+    width: 100%;
 
     @media (max-width: $sm) {
       font-size: 22px;

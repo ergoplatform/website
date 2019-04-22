@@ -96,6 +96,7 @@
       line-height: 22px;
       color: $light-gray;
       position: relative;
+      transition: color ease-in 0.15s;
 
       @media (max-width: $sm) {
         font-size: 14px;
@@ -103,15 +104,7 @@
 
       &:hover {
         text-decoration: none;
-      }
-
-      &::after {
-        content: "";
-        width: 100%;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        border-bottom: 1px solid $light-gray;
+        color: $white;
       }
     }
   }
@@ -130,7 +123,7 @@
     &-group {
       display: inline-block;
       position: relative;
-      padding-right: 30px;
+      margin-right: 30px;
       border-bottom: 1px solid $white;
       width: 70%;
 
@@ -155,6 +148,7 @@
       color: $light-gray;
       background: $black;
       border: none;
+      border-radius: 0;
       width: 100%;
       outline: none;
 
@@ -172,6 +166,22 @@
       border: none;
       top: 12px;
       position: absolute;
+      right: 0;
+      line-height: 32px;
+      border-bottom: 1px solid $white;
+      cursor: pointer;
+    }
+
+    &-image {
+      g {
+        transition: fill ease-in 0.15s;
+      }
+
+      &:hover {
+        g {
+          fill: $light-red;
+        }
+      }
     }
   }
 
