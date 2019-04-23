@@ -488,8 +488,14 @@
 - id: software_second-section_third_title
   translation: Linux x64 & x86
 
-- id: software_second-section_third_title_first-item_title
+- id: software_second-section_third_first-item_title
   translation: Daemon + console wallet pack for Linux x64
 
-- id: software_second-section_third_title_second-item_title
+- id: software_second-section_third_second-item_title
   translation: Daemon + console wallet pack for Linux x86
+
+- id: software_second-section_fourth_title
+  translation: FreeBSD x64
+
+- id: software_second-section_fourth_first-item_title
+  translation: Daemon + console wallet pack version 0.11.1.0

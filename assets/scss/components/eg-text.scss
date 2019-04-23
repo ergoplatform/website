@@ -71,8 +71,25 @@
     }
   }
 
+  .eg-text--color-red {
+    color: $light-red !important;
+  }
+
+  .eg-text--color-black {
+    color: $black !important;
+  }
+
   .eg-text__paragraph {
     color: $light-black;
+
+    &--16 {
+      font-size: 16px;
+      line-height: 24px;
+
+      @media (max-width: $sm) {
+        font-size: 14px;
+      }
+    }
 
     &--18 {
       font-size: 18px;
@@ -82,6 +99,10 @@
       @media (max-width: $md) {
         font-size: 16px;
         line-height: 22px;
+      }
+
+      @media (max-width: $sm) {
+        margin-bottom: 1rem;
       }
     }
 
@@ -123,6 +144,20 @@
         background-image: url('../img/download_arrow.svg');
         background-repeat: no-repeat;
         right: -28px;
+      }
+    }
+
+    &--sm-download {
+      &::after {
+        background-size: contain;
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 20px;
+        bottom: -1px;
+        background-image: url("../img/download_arrow.svg");
+        background-repeat: no-repeat;
+        right: -24px;
       }
     }
 

@@ -1,0 +1,26 @@
+.eg-download {
+  border: 1px solid #E5E5E5;
+  background-color: $white;
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 54px 13px 30px;
+
+  @media (max-width: $lg) {
+    flex-direction: column;
+  }
+
+  @media (max-width: $sm) {
+    padding: 13px 17px 13px 8px;
+  }
+
+  & + .eg-download {
+    border-top: none;
+  }
+
+  .eg-download__link {
+    @media (max-width: $xs) {
+      overflow-x: auto;
+      max-width: 290px;
+    }
+  }
+}
