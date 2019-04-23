@@ -19,6 +19,8 @@
                     class="eg-nav__link eg-link"
                     href="/{{ .URL | absLangURL }}"
                   ><span>{{ .Name }}</span></a>
+                  <span>{{ $url }}</span>
+                  <span>{{ (.URL | absLangURL)}}</span>
                 </li>
               {{ end }}
             </ul>
