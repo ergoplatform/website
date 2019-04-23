@@ -1,0 +1,50 @@
+.eg-accordion {
+  &__title {
+    position: relative;
+    font-weight: normal;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 1rem;
+
+    &.active {
+      span {
+        transform-origin: center;
+        transform: rotate(-180deg);
+      }
+    }
+
+    @media (max-width: $sm) {
+      padding-left: 30px;
+    }
+
+    span {
+      position: absolute;
+      width: 18px;
+      height: 15px;
+      color: $white;
+      text-align: center;
+      left: -30px;
+      top: 7px;
+      background-image: url('../img/arrow_top.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: transform ease-in 0.4s;
+
+      @media (max-width: $md) {
+        left: -38px;
+      }
+
+      @media (max-width: $sm) {
+        left: 0;
+        top: 4px;
+        height: 14px;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  &__item {
+    display: none;
+    margin-bottom: 1.5rem;
+  }
+}
