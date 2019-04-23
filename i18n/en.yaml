@@ -511,3 +511,69 @@
 
 - id: software_second-section_fourth_first-item_title
   translation: Daemon + console wallet pack version 0.11.1.0
+
+
+#echanges
+
+- id: exchanges_first_title
+  translation: Exchanges
+
+- id: exchanges_first-section_first_paragraph
+  translation: "You can buy, sell and trade Ergo on a number of online platforms called exchanges.
+    <br/><br/>
+    Disclaimer: Exchanges provide highly varying degrees of safety, security, privacy, and control over your funds and information. Perform your own research and consider whether storage of your coins in a wallet would be a safer option.
+  "
+
+- id: exchanges_first-section_link
+  translation: Explore wallets
+
+- id: exchanges_second_title
+  translation: Popular digital currency exchanges
+
+- id: exchanges_second-section_first_paragraph
+  translation: Before Ergo mainnet launch you can buy only EFYT token that will be swapped to Ergo tokens after the mainnet
+
+
+#team
+
+- id: team_first_title
+  translation: Contributing to Ergo core
+
+- id: team_first-section_first_paragraph
+  translation: "Thank you for considering contributing to Bitcoin Core! We have instructions below to help you get started contributing in several different ways.
+    <br/><br/>
+  If want to contribute in another way, please visit the #bitcoin-dev IRC chatroom and discuss your plan with a developer.
+  "
+
+- id: team_first-section_first-item_title
+  translation: Bug reports
+
+- id: team_first-section_first-item_paragraph
+  translation: Report bugs, including security issues
+
+- id: team_first-section_second-item_title
+  translation: Code
+
+- id: team_first-section_second-item_paragraph
+  translation: Write & review code
+
+- id: team_first-section_third-item_title
+  translation: Translations
+
+- id: team_first-section_third-item_paragraph
+  translation: Translate the user interface
+
+- id: team_first-section_fourth-item_title
+  translation: Documentation
+
+- id: team_first-section_fourth-item_paragraph
+  translation: Write documentation for users and developers
+
+- id: team_first-section_fifth-item_title
+  translation: Tech support
+
+- id: team_first-section_fifth-item_paragraph
+  translation: Support other users
+
+- id: team_second_title
+  translation: Regular contributors

@@ -10,6 +10,7 @@
 @import 'components/eg-text';
 @import 'components/eg-margins';
 @import 'components/eg-download';
+@import 'components/eg-team-grid';
 @import 'footer';
 @import 'header';
 @import 'landing/landing';
@@ -93,11 +94,12 @@ p {
     padding-bottom: 60px;
 
     @media (max-width: $md) {
-      padding-top: 60px;
-      padding-bottom: 110px;
+      padding-top: 100px;
+      padding-bottom: 60px;
     }
 
     @media (max-width: $sm) {
+      padding-top: 40px;
       padding-bottom: 2rem;
     }
   }

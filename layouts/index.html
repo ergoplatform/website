@@ -29,12 +29,13 @@
           <div class="eg-navbar__content">
             <div class="eg-navbar__collapse eg-navbar__collapse--black" id="navbarSupportedContent">
               <ul class="eg-nav">
-                {{ range $index, $menuItem := .Site.Menus.mainmenu }}
-                  <li class="eg-nav__item {{ if $currentPage.IsMenuCurrent "mainmenu" . }}active{{ end }}">
+                {{ $url := .URL }}
+                {{ range .Site.Menus.mainmenu }}
+                  <li class="eg-nav__item {{ if eq $url .URL  }}active{{ end }}">
                     <a
                       class="eg-nav__link eg-link"
                       href="/{{ .URL | absLangURL }}"
-                    ><span>{{ $menuItem.Name }}</span></a>
+                    ><span>{{ .Name }}</span></a>
                   </li>
                 {{ end }}
               </ul>

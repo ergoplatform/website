@@ -1,3 +1,195 @@
 {{define "main"}}
-  it is team page
+  <main>
+    <section class="container container--top-content grid-container-1k2">
+      <h2 class="eg-title">{{ T "team_first_title" }}</h2>
+      <div class="eg-text grid-container-1k2__main-section">
+        <p class="eg-text__paragraph eg-text__paragraph--18 eg-mb-3">{{ T "team_first-section_first_paragraph" | safeHTML }}</p>
+        <div class="grid-container-1k1 grid-container-1k1--md-margins">
+          <div class="eg-text">
+            <div class="eg-mb-0-5">
+              <a class="eg-text__link eg-text__link--26 eg-link" href="#"><span>{{ T "team_first-section_first-item_title"}}</span></a>
+            </div>
+            <div>
+              <a class="eg-text__paragraph eg-text__paragraph--18 eg-link" href="#"><span>{{ T "team_first-section_first-item_paragraph"}}</span></a>
+            </div>
+          </div>
+          <div class="eg-text">
+            <div class="eg-mb-0-5">
+              <a class="eg-text__link eg-text__link--26 eg-link" href="#"><span>{{ T "team_first-section_second-item_title"}}</span></a>
+            </div>
+            <div>
+              <a class="eg-text__paragraph eg-text__paragraph--18 eg-link" href="#"><span>{{ T "team_first-section_second-item_paragraph"}}</span></a>
+            </div>
+          </div>
+          <div class="eg-text">
+            <div class="eg-mb-0-5">
+              <a class="eg-text__link eg-text__link--26 eg-link" href="#"><span>{{ T "team_first-section_third-item_title"}}</span></a>
+            </div>
+            <div>
+              <a class="eg-text__paragraph eg-text__paragraph--18 eg-link" href="#"><span>{{ T "team_first-section_third-item_paragraph"}}</span></a>
+            </div>
+          </div>
+          <div class="eg-text">
+            <div class="eg-mb-0-5">
+              <a class="eg-text__link eg-text__link--26 eg-link" href="#"><span>{{ T "team_first-section_fourth-item_title"}}</span></a>
+            </div>
+            <div>
+              <a class="eg-text__paragraph eg-text__paragraph--18 eg-link" href="#"><span>{{ T "team_first-section_fourth-item_paragraph"}}</span></a>
+            </div>
+          </div>
+          <div class="eg-text">
+            <div class="eg-mb-0-5">
+              <a class="eg-text__link eg-text__link--26 eg-link" href="#"><span>{{ T "team_first-section_fifth-item_title"}}</span></a>
+            </div>
+            <div>
+              <a class="eg-text__paragraph eg-text__paragraph--18 eg-link" href="#"><span>{{ T "team_first-section_fifth-item_paragraph"}}</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container container--last-container">
+      <div class="border-section container--margins-y">
+        <h2 class="eg-title eg-mb-3 eg-mb-sm-1-5">{{ T "team_second_title" }}</h2>
+        <div class="eg-team-grid">
+          <div class="eg-team-grid__item">
+            <img src="/img/team/Chepurnoy.jpg" width="200" height="200" alt="Chepurnoy photo" class="eg-team-grid__item-img">
+            <p class="eg-team-grid__item-name">Alexander Chepurnoy</p>
+            <p class="eg-team-grid__item-role">Developer</p>
+            <div class="eg-social">
+              <div class="eg-social__item eg-social__item--sm-margins">
+                {{- partial "github.html" (dict "context" . "link" "github.com") -}}
+              </div>
+              <div class="eg-social__item eg-social__item--sm-margins">
+                {{- partial "twitter.html" (dict "context" . "link" "github.com") -}}
+              </div>
+              <div class="eg-social__item eg-social__item--sm-margins">
+                {{- partial "mail.html" (dict "context" . "link" "github.com") -}}
+              </div>
+            </div>
+          </div>
+          <div class="eg-team-grid__item">
+            <img src="/img/team/Meshkov.jpeg" width="200" height="200" alt="Meshkov photo" class="eg-team-grid__item-img">
+            <p class="eg-team-grid__item-name">Dmitry Meshkov</p>
+            <p class="eg-team-grid__item-role">Developer</p>
+            <div class="eg-social">
+              <div class="eg-social__item eg-social__item--sm-margins">
+                {{- partial "github.html" (dict "context" . "link" "github.com") -}}
+              </div>
+              <div class="eg-social__item eg-social__item--sm-margins">
+                {{- partial "twitter.html" (dict "context" . "link" "github.com") -}}
+              </div>
+              <div class="eg-social__item eg-social__item--sm-margins">
+                {{- partial "mail.html" (dict "context" . "link" "github.com") -}}
+              </div>
+            </div>
+          </div>
+          <div class="eg-team-grid__item">
+            <img src="/img/team/Oskin.jpg" width="200" height="200" alt="Oskin photo" class="eg-team-grid__item-img">
+            <p class="eg-team-grid__item-name">Ilya Oskin</p>
+            <p class="eg-team-grid__item-role">Developer</p>
+            <div class="eg-social">
+              <div class="eg-social__item eg-social__item--sm-margins">
+                {{- partial "github.html" (dict "context" . "link" "github.com") -}}
+              </div>
+              <div class="eg-social__item eg-social__item--sm-margins">
+                {{- partial "mail.html" (dict "context" . "link" "github.com") -}}
+              </div>
+            </div>
+          </div>
+          <div class="eg-team-grid__item">
+            <img src="/img/team/Aksarin.jpg" width="200" height="200" alt="Aksarin photo" class="eg-team-grid__item-img">
+            <p class="eg-team-grid__item-name">Mike Aksarin</p>
+            <p class="eg-team-grid__item-role">Developer</p>
+            <div class="eg-social">
+              <div class="eg-social__item eg-social__item--sm-margins">
+                {{- partial "github.html" (dict "context" . "link" "github.com") -}}
+              </div>
+            </div>
+          </div>
+          <div class="eg-team-grid__item">
+            <img src="/img/team/Andreev.jpg" width="200" height="200" alt="Andreev photo" class="eg-team-grid__item-img">
+            <p class="eg-team-grid__item-name">Andrey Andreev</p>
+            <p class="eg-team-grid__item-role">Developer</p>
+            <div class="eg-social">
+              <div class="eg-social__item eg-social__item--sm-margins">
+                {{- partial "github.html" (dict "context" . "link" "github.com") -}}
+              </div>
+            </div>
+          </div>
+          <div class="eg-team-grid__item">
+            <img src="/img/team/Slesarenko.jpg" width="200" height="200" alt="Slesarenko photo" class="eg-team-grid__item-img">
+            <p class="eg-team-grid__item-name">Alexander Slesarenko</p>
+            <p class="eg-team-grid__item-role">Developer</p>
+            <div class="eg-social">
+              <div class="eg-social__item eg-social__item--sm-margins">
+                {{- partial "github.html" (dict "context" . "link" "github.com") -}}
+              </div>
+              <div class="eg-social__item eg-social__item--sm-margins">
+                {{- partial "twitter.html" (dict "context" . "link" "github.com") -}}
+              </div>
+            </div>
+          </div>
+          <div class="eg-team-grid__item">
+            <img src="/img/team/Zadorozhnyi.jpg" width="200" height="200" alt="Zadorozhnyi photo" class="eg-team-grid__item-img">
+            <p class="eg-team-grid__item-name">Denys Zadorozhnyi</p>
+            <p class="eg-team-grid__item-role">Developer</p>
+            <div class="eg-social">
+              <div class="eg-social__item eg-social__item--sm-margins">
+                {{- partial "github.html" (dict "context" . "link" "github.com") -}}
+              </div>
+              <div class="eg-social__item eg-social__item--sm-margins">
+                {{- partial "twitter.html" (dict "context" . "link" "github.com") -}}
+              </div>
+            </div>
+          </div>
+          <div class="eg-team-grid__item">
+            <img src="/img/team/Manzanares.jpg" width="200" height="200" alt="Manzanares photo" class="eg-team-grid__item-img">
+            <p class="eg-team-grid__item-name">Guillermo Manzanares</p>
+            <p class="eg-team-grid__item-role">Community</p>
+            <div class="eg-social">
+              <div class="eg-social__item eg-social__item--sm-margins">
+                {{- partial "twitter.html" (dict "context" . "link" "github.com") -}}
+              </div>
+            </div>
+          </div>
+          <div class="eg-team-grid__item">
+            <img src="/img/team/Kharin.jpg" width="200" height="200" alt="Kharin photo" class="eg-team-grid__item-img">
+            <p class="eg-team-grid__item-name">Vasily Kharin</p>
+            <p class="eg-team-grid__item-role">Researcher at researchinstitute.io</p>
+            <div class="eg-social">
+              <div class="eg-social__item eg-social__item--sm-margins">
+                {{- partial "github.html" (dict "context" . "link" "github.com") -}}
+              </div>
+            </div>
+          </div>
+          <div class="eg-team-grid__item">
+            <img src="/img/team/Spodymek.jpg" width="200" height="200" alt="Spodymek photo" class="eg-team-grid__item-img">
+            <p class="eg-team-grid__item-name">Martin Spodymek</p>
+            <p class="eg-team-grid__item-role">Community</p>
+            <div class="eg-social">
+              <div class="eg-social__item eg-social__item--sm-margins">
+                {{- partial "twitter.html" (dict "context" . "link" "github.com") -}}
+              </div>
+            </div>
+          </div>
+          <div class="eg-team-grid__item">
+            <img src="/img/team/Gostkin.jpg" width="200" height="200" alt="Gostkin photo" class="eg-team-grid__item-img">
+            <p class="eg-team-grid__item-name">Eugene Gostkin</p>
+            <p class="eg-team-grid__item-role">Community</p>
+            <div class="eg-social">
+              <div class="eg-social__item eg-social__item--sm-margins">
+                {{- partial "twitter.html" (dict "context" . "link" "github.com") -}}
+              </div>
+            </div>
+          </div>
+          <div class="eg-team-grid__contribute">
+            <div>
+              <p class="eg-team-grid__contribute-title">Contribute<br/><a href="#" class="eg-team-grid__contribute-subtitle eg-link"><span>now</span></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 {{end}}

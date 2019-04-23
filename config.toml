@@ -3,7 +3,6 @@ languageCode = "en"
 title = "My New Hugo Site"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
-
 # Links format
 [permalinks]
   pages = "/:slug/"
@@ -52,12 +51,6 @@ defaultContentLanguageInSubdir = true
     name = "Team"
     url = "/team/"
     weight = -60
-
-  [[languages.en.menu.mainmenu]]
-    identifier = "Team"
-    name = "Team"
-    url = "/basics/"
-    weight = -50
 
 [languages.ru]
   languageCode = "ru"

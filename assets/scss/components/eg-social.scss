@@ -5,6 +5,10 @@
     & + .eg-social__item {
       margin-left: 1.5rem;
     }
+
+    &--sm-margins + .eg-social__item {
+      margin-left: 1rem;
+    }
   }
 
   .eg-social__link {
