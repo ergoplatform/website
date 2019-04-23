@@ -246,25 +246,25 @@
   translation: Inform yourself
 
 - id: about_first_paragraph
-  translation: Bitcoin is different than what you know and use every day. Before you start using Bitcoin, there are a few things that you need to know in order to use it securely and avoid common pitfalls.
+  translation: Ergo is different than what you know and use every day. Start with the basics and learn more about Ergo - what is it, how it can be used, how is it different than other blockchain systems.
 
 - id: about_second_title
   translation: Choose your wallet
 
 - id: about_second_paragraph
-  translation: Free bitcoin wallets are available for all major operating systems and devices to serve a variety of your needs. For example, you can install an app on your mobile device for everyday use or you can have a wallet only for online payments on your computer. In any case, choosing a wallet is easy and can be done in minutes.
+  translation: A wallet isn’t a requirement for owning Ergo, but it offers additional security and control. Spend a few minutes and choose the most suitable wallet for your needs.
 
 - id: about_third_title
   translation: Get Ergo
 
 - id: about_third_paragraph
-  translation: You can get Bitcoin by accepting it as a payment for goods and services. There are also several ways you can buy Bitcoin.
+  translation: The quickest and easiest way to acquire Ergo is to visit an exchange. We can point you in the right direction.
 
 - id: about_fourth_title
   translation: Write a contract
 
 - id: about_fourth_paragraph
-  translation: There are a growing number of services and merchants accepting Bitcoin all over the world. Use Bitcoin to pay them and rate your experience to help them gain more visibility.
+  translation: Ergo is not just a currency but is a platform for contractual money. Explore tutorials and examples and try to implement your own application powered by Ergo.
 
 #basics
 
