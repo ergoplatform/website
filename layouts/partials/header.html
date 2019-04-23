@@ -12,15 +12,14 @@
       <div class="eg-navbar__content">
         <div class="eg-navbar__collapse" id="navbarSupportedContent">
             <ul class="eg-nav eg-nav--black">
-              {{ $url := print `/` .URL| absLangURL }}
+              {{ $url := .URL| absLangURL }}
               {{ range .Site.Menus.mainmenu }}
-                <li class="eg-nav__item {{ if eq $url (print `/` (.URL | absLangURL))  }}active{{ end }}">
+                {{ $menuUrl := (print `/` (.URL | absLangURL)) }}
+                <li class="eg-nav__item {{ if eq $url $menuUrl  }}active{{ end }}">
                   <a
                     class="eg-nav__link eg-link"
-                    href="/{{ .URL | absLangURL }}"
+                    href="{{ $menuUrl }}"
                   ><span>{{ .Name }}</span></a>
-                  <span>{{ $url }}</span>
-                  <span>{{ (.URL | absLangURL)}}</span>
                 </li>
               {{ end }}
             </ul>
