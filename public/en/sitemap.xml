@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/en/exchanges/</loc>
+    <lastmod>2019-04-23T14:43:56+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/exchanges/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/exchanges/"
+                />
+  </url>
+  
+  <url>
     <loc>/en/software/</loc>
     <lastmod>2019-04-22T18:58:37+03:00</lastmod>
     <xhtml:link
@@ -242,13 +257,13 @@
     <lastmod>2019-04-11T20:27:44+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="/de/about/"
+                hreflang="ru"
+                href="/ru/about/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ru"
-                href="/ru/about/"
+                hreflang="de"
+                href="/de/about/"
                 />
     <xhtml:link
                 rel="alternate"

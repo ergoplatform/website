@@ -167,14 +167,6 @@
     }
 
     .news-section__item {
-      text-decoration: none;
-
-      &:hover {
-        .news-section__item-paragraph {
-          text-decoration: underline;
-        }
-      }
-
       &-title {
         color: $light-red;
         font-size: 16px;

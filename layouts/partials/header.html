@@ -15,9 +15,9 @@
               {{ range $index, $menuItem := .Site.Menus.mainmenu }}
                 <li class="eg-nav__item {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{ end }}">
                   <a
-                    class="eg-nav__link"
+                    class="eg-nav__link eg-link"
                     href="/{{ .URL | absLangURL }}"
-                  >{{ $menuItem.Name }}</a>
+                  ><span>{{ $menuItem.Name }}</span></a>
                 </li>
               {{ end }}
             </ul>
@@ -37,7 +37,7 @@
                 {{ range $currentPage.AllTranslations }}
                   {{ if ne .Language.Lang $currentPage.Lang }}
                     <li class="dd-language__item">
-                      <a class="dd-language__link dd-language__link--white" href="{{ .Permalink }}">{{ substr .Language.LanguageName 0 3 }}</a>
+                      <a class="dd-language__link dd-language__link--white eg-link" href="{{ .Permalink }}"><span>{{ substr .Language.LanguageName 0 3 }}</span></a>
                     </li>
                   {{ end }}
                 {{ end }}
