@@ -14,7 +14,7 @@
             <ul class="eg-nav eg-nav--black">
               {{ $url := .URL| absLangURL }}
               {{ range .Site.Menus.mainmenu }}
-                <li class="eg-nav__item {{ if eq $url (.URL | absLangURL)  }}active{{ end }}">
+                <li class="eg-nav__item {{ if eq $url (print `/` (.URL | absLangURL))  }}active{{ end }}">
                   <a
                     class="eg-nav__link eg-link"
                     href="/{{ .URL | absLangURL }}"
