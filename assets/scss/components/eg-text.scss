@@ -224,3 +224,14 @@
     }
   }
 }
+
+.eg-link {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+
+    span {
+      border-bottom: 1px solid;
+    }
+  }
+}

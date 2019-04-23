@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/svg+xml" href="/img/fav_ergo.svg" />
     <title>Ergo platform</title>
     {{ $scss := resources.Get "scss/style.scss" }}
     {{ $style := $scss | resources.ToCSS | resources.PostCSS | resources.Minify }}
@@ -31,9 +32,9 @@
                 {{ range $index, $menuItem := .Site.Menus.mainmenu }}
                   <li class="eg-nav__item {{ if $currentPage.IsMenuCurrent "mainmenu" . }}active{{ end }}">
                     <a
-                      class="eg-nav__link"
+                      class="eg-nav__link eg-link"
                       href="/{{ .URL | absLangURL }}"
-                    >{{ with $menuItem.Pre }}{{ . | safeHTML }}{{ end }}{{ $menuItem.Name }}</a>
+                    ><span>{{ $menuItem.Name }}</span></a>
                   </li>
                 {{ end }}
               </ul>
@@ -51,7 +52,7 @@
                   {{ range $.AllTranslations }}
                     {{ if ne .Language.Lang $currentPage.Lang }}
                       <li class="dd-language__item">
-                        <a class="dd-language__link dd-language__link--white" href="{{ .Permalink }}">{{ substr .Language.LanguageName 0 3 }}</a>
+                        <a class="dd-language__link dd-language__link--white eg-link" href="{{ .Permalink }}"><span>{{ substr .Language.LanguageName 0 3 }}</span></a>
                       </li>
                     {{ end }}
                   {{ end }}
@@ -124,9 +125,9 @@
             {{ $langNews := where .Pages "Section" "news" }}
             {{ with $langNews }}
               {{ range first 3 $langNews }}
-                <a class="news-section__item" href="{{.Params.link}}">
+                <a class="news-section__item eg-link" href="{{.Params.link}}">
                   <h3 class="news-section__item-title">{{ .Date.Format "2 January, 2006" }}</h3>
-                  <p class="news-section__item-paragraph">{{ .Title }}</p>
+                  <p class="news-section__item-paragraph"><span>{{ .Title }}</span></p>
                 </a>
               {{end}}
             {{ else }}
@@ -134,9 +135,9 @@
                 {{ if eq .Language.Lang .Site.Params.defaultLanguage }}
                   {{ $defaultLangPages := where .Pages "Section" "news" }}
                   {{ range first 3 $defaultLangPages }}
-                    <a class="news-section__item" href="{{.Params.link}}">
+                    <a class="news-section__item eg-link" href="{{.Params.link}}">
                       <h3 class="news-section__item-title">{{ .Date.Format "2 January, 2006" }}</h3>
-                      <p class="news-section__item-paragraph">{{ .Title }}</p>
+                      <p class="news-section__item-paragraph"><span>{{ .Title }}</span></p>
                     </a>
                   {{end}}
                 {{end}}
@@ -150,28 +151,28 @@
           <h2 class="eg-title eg-title--white services-section__title">{{ T "services_title" }}</h2>
           <div class="services-section__items grid-container-1k1">
             <div class="eg-info">
-              <a class="eg-info__title" href="{{ `wallets` | absLangURL | safeURL}}">{{ T "service_wallets_title" }}</a>
-              <a class="eg-info__paragraph" href="{{ `wallets` | absLangURL | safeURL}}">{{ T "service_wallets_paragraph" }}</a>
+              <a class="eg-info__title eg-link" href="{{ `wallets` | absLangURL | safeURL}}"><span>{{ T "service_wallets_title" }}</span></a>
+              <a class="eg-info__paragraph eg-link" href="{{ `wallets` | absLangURL | safeURL}}"><span>{{ T "service_wallets_paragraph" }}</span></a>
             </div>
             <div class="eg-info" href="{{ `exchanges` | absLangURL | safeURL}}">
-              <a class="eg-info__title" href="{{ `exchanges` | absLangURL | safeURL}}">{{ T "service_exchanges_title" }}</a>
-              <a class="eg-info__paragraph" href="{{ `exchanges` | absLangURL | safeURL}}">{{ T "service_exchanges_paragraph" }}</a>
+              <a class="eg-info__title eg-link" href="{{ `exchanges` | absLangURL | safeURL}}"><span>{{ T "service_exchanges_title" }}</span></a>
+              <a class="eg-info__paragraph eg-link" href="{{ `exchanges` | absLangURL | safeURL}}"><span>{{ T "service_exchanges_paragraph" }}</span></a>
             </div>
             <div class="eg-info">
-              <a class="eg-info__title" href="https://testnet.ergoplatform.com/">{{ T "service_explorer_title" }}</a>
-              <a class="eg-info__paragraph" href="https://testnet.ergoplatform.com/">{{ T "service_explorer_paragraph" }}</a>
+              <a class="eg-info__title eg-link" href="https://testnet.ergoplatform.com/"><span>{{ T "service_explorer_title" }}</span></a>
+              <a class="eg-info__paragraph eg-link" href="https://testnet.ergoplatform.com/"><span>{{ T "service_explorer_paragraph" }}</span></a>
             </div>
             <div class="eg-info">
-              <a class="eg-info__title" href="{{ `developer-tools` | absLangURL | safeURL}}">{{ T "service_dev_tools_title" }}</a>
-              <a class="eg-info__paragraph" href="{{ `developer-tools` | absLangURL | safeURL}}">{{ T "service_dev_tools_paragraph" }}</a>
+              <a class="eg-info__title eg-link" href="{{ `developer-tools` | absLangURL | safeURL}}"><span>{{ T "service_dev_tools_title" }}</span></a>
+              <a class="eg-info__paragraph eg-link" href="{{ `developer-tools` | absLangURL | safeURL}}"><span>{{ T "service_dev_tools_paragraph" }}</span></a>
             </div>
             <div class="eg-info">
-              <a class="eg-info__title" href="{{ `software` | absLangURL | safeURL}}">{{ T "service_software_title" }}</a>
-              <a class="eg-info__paragraph" href="{{ `software` | absLangURL | safeURL}}">{{ T "service_software_paragraph" }}</a>
+              <a class="eg-info__title eg-link" href="{{ `software` | absLangURL | safeURL}}"><span>{{ T "service_software_title" }}</span></a>
+              <a class="eg-info__paragraph eg-link" href="{{ `software` | absLangURL | safeURL}}"><span>{{ T "service_software_paragraph" }}</span></a>
             </div>
             <div class="eg-info">
-              <a class="eg-info__title" href="https://github.com/ergoplatform/ergo/wiki">{{ T "service_wiki_title" }}</a>
-              <a class="eg-info__paragraph" href="https://github.com/ergoplatform/ergo/wiki">{{ T "service_wiki_paragraph" }}</a>
+              <a class="eg-info__title eg-link" href="https://github.com/ergoplatform/ergo/wiki"><span>{{ T "service_wiki_title" }}</span></a>
+              <a class="eg-info__paragraph eg-link" href="https://github.com/ergoplatform/ergo/wiki"><span>{{ T "service_wiki_paragraph" }}</span></a>
             </div>
           </div>
         </div>
@@ -183,20 +184,20 @@
           </div>
           <div class="services-section__items grid-container-1k1">
             <div class="eg-info">
-              <a class="eg-info__title" href="https://docs.ergoplatform.com/whitepaper.pdf">{{ T "documents_ergo_platform" }}</a>
-              <a class="eg-info__paragraph eg-info__paragraph--black" href="https://docs.ergoplatform.com/whitepaper.pdf">{{ T "documents_ergo_platform_text" }}</a>
+              <a class="eg-info__title eg-link" href="https://docs.ergoplatform.com/whitepaper.pdf"><span>{{ T "documents_ergo_platform" }}</span></a>
+              <a class="eg-info__paragraph eg-link eg-info__paragraph--black" href="https://docs.ergoplatform.com/whitepaper.pdf"><span>{{ T "documents_ergo_platform_text" }}</span></a>
             </div>
             <div class="eg-info">
-              <a class="eg-info__title" href="https://docs.ergoplatform.com/ErgoScript.pdf">{{ T "documents_ergoscript" }}</a>
-              <a class="eg-info__paragraph eg-info__paragraph--black" href="https://docs.ergoplatform.com/ErgoScript.pdf">{{ T "documents_ergoscript_text" }}</a>
+              <a class="eg-info__title eg-link" href="https://docs.ergoplatform.com/ErgoScript.pdf"><span>{{ T "documents_ergoscript" }}</span></a>
+              <a class="eg-info__paragraph eg-link eg-info__paragraph--black" href="https://docs.ergoplatform.com/ErgoScript.pdf"><span>{{ T "documents_ergoscript_text" }}</span></a>
             </div>
             <div class="eg-info">
-              <a class="eg-info__title" href="https://docs.ergoplatform.com/YellowPaper.pdf">{{ T "documents_ergo_tech" }}</a>
-              <a class="eg-info__paragraph eg-info__paragraph--black" href="https://docs.ergoplatform.com/YellowPaper.pdf">{{ T "documents_ergo_tech_text" }}</a>
+              <a class="eg-info__title eg-link" href="https://docs.ergoplatform.com/YellowPaper.pdf"><span>{{ T "documents_ergo_tech" }}</span></a>
+              <a class="eg-info__paragraph eg-link eg-info__paragraph--black" href="https://docs.ergoplatform.com/YellowPaper.pdf"><span>{{ T "documents_ergo_tech_text" }}</span></a>
             </div>
             <div class="eg-info">
-              <a class="eg-info__title" href="https://docs.ergoplatform.com/sigmastate_protocols.pdf">{{ T "documents_ergo_script_adv" }}</a>
-              <a class="eg-info__paragraph eg-info__paragraph--black" href="https://docs.ergoplatform.com/sigmastate_protocols.pdf">{{ T "documents_ergo_script_adv_text" }}</a>
+              <a class="eg-info__title eg-link" href="https://docs.ergoplatform.com/sigmastate_protocols.pdf"><span>{{ T "documents_ergo_script_adv" }}</span></a>
+              <a class="eg-info__paragraph eg-link eg-info__paragraph--black" href="https://docs.ergoplatform.com/sigmastate_protocols.pdf"><span>{{ T "documents_ergo_script_adv_text" }}</span></a>
             </div>
           </div>
         </div>
@@ -213,7 +214,7 @@
           {{ with $blogPages }}
             {{ range first 2 $blogPages }}
               <div class="blog-section__item">
-                <h3 class="blog-section__item-title"><a href="{{ .URL | safeURL }}">{{ .Title }}</a></h3>
+                <h3 class="blog-section__item-title"><a href="{{ .URL | safeURL }}" class="eg-link"><span>{{ .Title }}</span></a></h3>
                 <div class="eg-author">
                   <img src="{{ .Params.authorPhoto }}" alt="author img" class="eg-author__img">
                   <div class="eg-author__info">
@@ -238,7 +239,7 @@
                         <p class="eg-author__info-paragraph">{{ .Date.Format "2 January, 2006" }}</p>
                       </div>
                     </div>
-                    <a class="blog-section__button eg-btn eg-btn--outline-orange" href="{{.Params.link}}">{{ T "read_more" }}</a>
+                    <a class="blog-section__button eg-btn eg-btn--outline-orange eg-link" href="{{.Params.link}}"><span>{{ T "read_more" }}</span></a>
                   </div>
                 {{end}}
               {{end}}
