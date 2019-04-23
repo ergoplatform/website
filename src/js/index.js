@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let activeAccordion = null;
 
   $('.eg-accordion .eg-accordion__title').click(function accordionClicl(e) {
-    if (activeAccordion == e.target) {
+    if (activeAccordion === e.target) {
       return false;
     }
     allTitles.removeClass('active');
