@@ -664,3 +664,44 @@
     <br/><br/>
     Ergo means \"therefore\" and is often used to present a connection between ideas where the second idea is influenced by or draws a logical conclusion from the first one. That image of being guided by what has come before but embodying the next logical step really tells our story in a single symbol.
   "
+
+# wallets
+
+- id: wallets_first_title
+  translation: "Wallets"
+
+- id: wallets_first-section_paragraph
+  translation: "Digital wallets can help keep your digital currency safe, private and in your control. We highly recommend the use of wallets for storing Zcash (technically, they store the keys to your Zcash addresses). But keep in mind, your wallet is like your bank account, so take extra precautions with your passwords and be sure to perform regular backups to protect your money.
+    <br/><br/>
+    Electric Coin Company does not endorse specific digital wallets, other than the Zcash desktop wallet. We provide the information below as a courtesy, in order to simplify the overall digital currency experience for you.
+  "
+
+- id: wallets_second_title
+  translation: "Popular"
+
+- id: wallets_table_first_title
+  translation: Wallets
+
+- id: wallets_table_second_title
+  translation: Type
+
+- id: wallets_table_third_title
+  translation: Multisig
+
+- id: wallets_table_fourth_title
+  translation: Scripts support
+
+- id: wallets_table_second-column_first_title
+  translation: Web
+
+- id: wallets_table_second-column_second_title
+  translation: Mobile
+
+- id: wallets_table_second-column_third_title
+  translation: Desktop
+
+- id: wallets_table_second-column_fourth_title
+  translation: Hardware
+
+- id: wallets_part
+  translation: Part

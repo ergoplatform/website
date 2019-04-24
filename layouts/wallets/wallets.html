@@ -1,0 +1,71 @@
+{{define "main"}}
+  <main>
+    <section class="container container--top-content grid-container-1k2">
+      <h2 class="eg-title">{{ T "wallets_first_title" }}</h2>
+      <div class="eg-text grid-container-1k2__main-section">
+        <p class="eg-text__paragraph eg-text__paragraph--18 eg-mb-0">{{ T "wallets_first-section_paragraph" | safeHTML}}</p>
+      </div>
+    </section>
+    <section class="container container--last-container">
+      <div class="border-section container--margins-y grid-container-1k2">
+        <h2 class="eg-title">{{ T "wallets_second_title" }}</h2>
+        <div class="grid-container-1k2__main-section eg-table">
+          <table>
+            <tbody>
+              <tr>
+                <td class="eg-table__title eg-table--bg-red">{{T "wallets_table_first_title"}}</td>
+                <td class="eg-table__title">{{T "wallets_table_second_title"}}</td>
+                <td class="eg-table__title">{{T "wallets_table_third_title"}}</td>
+                <td class="eg-table__title">{{T "wallets_table_fourth_title"}}</td>
+              </tr>
+              <tr>
+                <td class="eg-table__text eg-table--bg-light-white">
+                  <div class="eg-table__group">
+                    <img src="/img/wallets/bitgo.svg" alt="bitgo logotype">
+                    Bitgo
+                  </div>
+                </td>
+                <td class="eg-table__text">{{T "wallets_table_second-column_first_title"}}</td>
+                <td class="eg-table__text"><img src="/img/circle_arrow_red.svg" alt="have"></td>
+                <td class="eg-table__text"><img src="/img/circle_arrow_red.svg" alt="have"></td>
+              </tr>
+              <tr>
+                <td class="eg-table__text eg-table--bg-light-white">
+                  <div class="eg-table__group">
+                    <img src="/img/wallets/exodus.svg" alt="exodus logotype">
+                    Exodus
+                  </div>
+                </td>
+                <td class="eg-table__text">{{T "wallets_table_second-column_second_title"}}</td>
+                <td class="eg-table__text"><img src="/img/circle_cancel_black.svg" alt="have"></td>
+                <td class="eg-table__text"><img src="/img/circle_cancel_black.svg" alt="have"></td>
+              </tr>
+              <tr>
+                <td class="eg-table__text eg-table--bg-light-white">
+                  <div class="eg-table__group">
+                    <img src="/img/wallets/jaxx.svg" alt="exodus logotype">
+                    Jaxx
+                  </div>
+                </td>
+                <td class="eg-table__text">{{T "wallets_table_second-column_third_title"}}</td>
+                <td class="eg-table__text"><img src="/img/circle_arrow_red.svg" alt="have"></td>
+                <td class="eg-table__text">{{ T "wallets_part" }}</td>
+              </tr>
+              <tr>
+                <td class="eg-table__text eg-table--bg-light-white">
+                  <div class="eg-table__group">
+                    <img src="/img/wallets/guarda.svg" alt="guarda logotype">
+                    Guarda
+                  </div>
+                </td>
+                <td class="eg-table__text">{{T "wallets_table_second-column_fourth_title"}}</td>
+                <td class="eg-table__text"><img src="/img/circle_arrow_red.svg" alt="have"></td>
+                <td class="eg-table__text">{{ T "wallets_part" }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+{{ end}}
