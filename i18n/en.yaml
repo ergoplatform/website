@@ -334,28 +334,22 @@
 #tech
 
 - id: tech_first_title
-  translation: Overview and goals
+  translation: Documents
 
 - id: tech_first-section_first_paragraph
-  translation: Ergo is a decentralized and open-source cryptocurrency that introduces multiple improvements to different layers of the blockchain. Ergo intends to create a truly decentralized platform and provide accessible tools for trustless blockchain exploration and verification.
+  translation: Ergo is following the fundamental approach and use stable well-tested solutions, even if that leads to slower short-term innovations. Most of Ergo solutions are formalized in papers presented at peer-reviewed conferences and have been widely discussed in the community.
 
 - id: tech_first-section_second_paragraph
-  translation: Ergo is designed for mass adoption. Its efficient blockchain protocol will allow it to be widely used while still remaining friendly to application protocols thanks to its unique transaction language. Ergo implements numerous scalability enhancements resulting in the ability to process thousands of transactions per second without mining centralization or an decreasing number of full nodes.
+  translation: This page contains links to documents with a general overview of Ergo platform, as well as fundamental papers underlying Ergo protocol.
 
-- id: tech_first-section_third_paragraph
-  translation: The links on this page provide a more comprehensive understanding of Ergo. Under Foundational Papers are links to most of the papers that have informed the creation of the Ergo protocol. In our soon to be released videos we will provide a brief but thorough explanation of Ergo’s foundational ideas. A coming series of white papers will provide a fuller vision of how each piece of our solution work together to create a blockchain unlike any other.
-
-- id: tech_first-section_fourth_paragraph
-  translation: We will be conducting regular Q and A sessions on Slack and possibly other venues. Transcripts of these sessions will be posted in our News section as they happen. We will also update our FAQ page with the latest answers to the most frequent questions we receive.
-
-- id: tech_first-section_down_link
-  translation: Download presentation
+- id: tech_second_title
+  translation: Overviews
 
 - id: tech_third_title
   translation: Foundational papers
 
 - id: tech_third-section_title_link
-  translation: All articles
+  translation: All papers
 
 - id: tech_third-section_first_title
   translation: Improving authenticated dynamic dictionaries, with applications to cryptocurrencies
@@ -376,22 +370,22 @@
   translation: Leonid Reyzin, Dmitry Meshkov, Alexander Chepurnoy, Sasha Ivanov
 
 - id: tech_third-section_fourth_title
-  translation: Rollerchain, a Blockchain With Safely Pruneable Full Blocks
+  translation: Self-reproducing Coins as Universal Turing Machine
 
 - id: tech_third-section_fourth_paragraph
-  translation: Alexander Chepurnoy, Mario Larangeira, Alexander Ojiganov
+  translation: Alexander Chepurnoy, Vasily Kharin, Dmitry Meshkov
 
 - id: tech_third-section_fifth_title
-  translation: Proofs of Proofs of Work with Sublinear Complexity
+  translation: Multi-mode Cryptocurrency Systems
 
 - id: tech_third-section_fifth_paragraph
-  translation: Aggelos Kiayias, Nikolaos Lamprou, Aikaterini-Panagiota Stouka
+  translation: Tuyet Duong, Alexander Chepurnoy, Hong-Sheng Zhou
 
 - id: tech_third-section_sixth_title
-  translation: Enabling Blockchain Innovations with Pegged Sidechains
+  translation: "EDRAX: A Cryptocurrency with Stateless Transaction Validation"
 
 - id: tech_third-section_sixth_paragraph
-  translation: Alexander Chepurnoy, Mario Larangeira, Alexander Ojiganov
+  translation: Alexander Chepurnoy, Charalampos Papamanthou, Yupeng Zhang
 
 
 #tools
