@@ -89,12 +89,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const allPanels = $('.eg-accordion > .eg-accordion__item').hide();
   const allTitles = $('.eg-accordion .eg-accordion__title');
+  $('.eg-accordion .eg-accordion__title span').each(function () {
+    this.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+  });
+
   let activeAccordion = null;
 
   $('.eg-accordion .eg-accordion__title').click(function accordionClicl(e) {
     if (activeAccordion === e.target) {
       return false;
     }
+
     allTitles.removeClass('active');
     allPanels.slideUp().removeClass('active');
 
