@@ -89,6 +89,15 @@
       @media (max-width: $sm) {
         font-size: 14px;
       }
+
+      a {
+        font-size: 16px;
+        line-height: 24px;
+
+        @media (max-width: $sm) {
+          font-size: 14px;
+        }
+      }
     }
 
     &--18 {
@@ -103,6 +112,16 @@
 
       @media (max-width: $sm) {
         margin-bottom: 1rem;
+      }
+
+      a {
+        font-size: 18px;
+        line-height: 24px;
+
+        @media (max-width: $md) {
+          font-size: 16px;
+          line-height: 22px;
+        }
       }
     }
 
@@ -120,6 +139,21 @@
         font-size: 22px;
         line-height: 26px;
       }
+
+      a {
+        font-size: 26px;
+        line-height: 30px;
+
+        @media (max-width: $md) {
+          font-size: 24px;
+          line-height: 28px;
+        }
+
+        @media (max-width: $sm) {
+          font-size: 22px;
+          line-height: 26px;
+        }
+      }
     }
 
     &--20 {
@@ -135,6 +169,21 @@
         font-size: 16px;
         line-height: 24px;
       }
+
+      a {
+        font-size: 20px;
+        line-height: 30px;
+
+        @media (max-width: $md) {
+          font-size: 18px;
+          line-height: 28px;
+        }
+
+        @media (max-width: $sm) {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
     }
   }
 
@@ -143,6 +192,7 @@
     line-height: 22px;
     color: $light-red;
     position: relative;
+    cursor: pointer;
 
     @media (max-width: $sm) {
       font-size: 16px;
