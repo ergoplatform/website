@@ -3,6 +3,8 @@ import 'jquery-ui/ui/widgets/tabs';
 import 'slick-carousel';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
+import { downloader, hideAllPosts } from './downloadMore';
+
 
 const dropDownFunc = (id) => {
   $(`#${id}`).parent('.dropdown').toggleClass('show');
@@ -105,4 +107,8 @@ document.addEventListener('DOMContentLoaded', () => {
       .addClass('active');
     return false;
   });
+
+  if (document.getElementsByClassName('download').length > 0) {
+    downloader('download', 8);
+  }
 });

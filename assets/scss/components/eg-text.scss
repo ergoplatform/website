@@ -206,6 +206,15 @@
       }
     }
 
+    &--16 {
+      font-size: 16px;
+      line-height: 24px;
+
+      @media (max-width: $sm) {
+        font-size: 14px;
+      }
+    }
+
     &--left-arrow {
       &::after {
         content: "";
