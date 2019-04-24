@@ -705,3 +705,12 @@
 
 - id: wallets_part
   translation: Part
+
+
+#news
+
+- id: news_first_title
+  translation: The latest news
+
+- id: news_load_more
+  translation: Load more news
