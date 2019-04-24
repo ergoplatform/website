@@ -30,38 +30,65 @@
     </item>
     
     <item>
-      <title>Introduction to Ergo Platform by Dmitry Meshkov</title>
-      <link>/en/news/4/</link>
-      <pubDate>Tue, 16 Apr 2019 17:45:40 +0300</pubDate>
+      <title>Q&amp;A session transcript. Mainnet launch is planned for May 26</title>
+      <link>/en/news/2019-03-19/</link>
+      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/news/4/</guid>
+      <guid>/en/news/2019-03-19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Testnet 2.0 is live! Smart contracts language updated</title>
+      <link>/en/news/2019-03-14/</link>
+      <pubDate>Thu, 14 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/2019-03-14/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Token2049 conference and pub crawl with Ergo station</title>
+      <link>/en/news/2019-03-13/</link>
+      <pubDate>Wed, 13 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/2019-03-13/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ErgoScript, a Cryptocurrency Scripting Language Supporting Noninteractive Zero-Knowledge Proofs</title>
-      <link>/en/news/third/</link>
-      <pubDate>Tue, 16 Apr 2019 17:05:33 +0300</pubDate>
+      <link>/en/news/2019-03-12/</link>
+      <pubDate>Tue, 12 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/news/third/</guid>
+      <guid>/en/news/2019-03-12/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Ergo Platform is a storage of rich state with language safer than Bitcoin&#39;s</title>
-      <link>/en/news/second/</link>
-      <pubDate>Tue, 16 Apr 2019 17:05:11 +0300</pubDate>
+      <title>More examples of contracts: Non-interactive tumbler</title>
+      <link>/en/news/2019_02_08/</link>
+      <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/news/second/</guid>
+      <guid>/en/news/2019_02_08/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>First</title>
-      <link>/en/news/first/</link>
-      <pubDate>Tue, 16 Apr 2019 17:04:28 +0300</pubDate>
+      <title>How to set up and configure full Ergo node</title>
+      <link>/en/news/2019_01_17/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/news/first/</guid>
+      <guid>/en/news/2019_01_17/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>More examples of contracts: Non-interactive tumbler</title>
+      <link>/en/news/2019_01_08/</link>
+      <pubDate>Tue, 08 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/2019_01_08/</guid>
       <description></description>
     </item>
     

@@ -100,61 +100,21 @@
   <url>
     <loc>/de/news/4/</loc>
     <lastmod>2019-04-16T17:45:40+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/news/4/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/news/4/"
-                />
   </url>
   
   <url>
     <loc>/de/news/third/</loc>
     <lastmod>2019-04-16T17:05:33+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/news/third/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/news/third/"
-                />
   </url>
   
   <url>
     <loc>/de/news/second/</loc>
     <lastmod>2019-04-16T17:05:11+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/news/second/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/news/second/"
-                />
   </url>
   
   <url>
     <loc>/de/news/first/</loc>
     <lastmod>2019-04-16T17:04:28+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/news/first/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/news/first/"
-                />
   </url>
   
   <url>
