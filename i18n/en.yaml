@@ -513,7 +513,7 @@
   translation: Daemon + console wallet pack version 0.11.1.0
 
 
-#echanges
+#exchanges
 
 - id: exchanges_first_title
   translation: Exchanges
@@ -537,12 +537,12 @@
 #team
 
 - id: team_first_title
-  translation: Contributing to Ergo core
+  translation: Contributing to Ergo
 
 - id: team_first-section_first_paragraph
-  translation: "Thank you for considering contributing to Bitcoin Core! We have instructions below to help you get started contributing in several different ways.
+  translation: "Ergo operates an open contributor model where anyone is welcome to contribute. We have instructions below to help you get started contributing in several different ways.
     <br/><br/>
-  If want to contribute in another way, please visit the #bitcoin-dev IRC chatroom and discuss your plan with a developer.
+  If want to contribute in another way, please visit our <a class=\"eg-text__link eg-link\" href=\"https://t.me/ergoplatform\"><span>telegram channel</span></a> and discuss your plan with a developer.
   "
 
 - id: team_first-section_first-item_title
