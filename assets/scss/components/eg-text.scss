@@ -71,6 +71,17 @@
     }
   }
 
+  .eg-text__title {
+    font-weight: normal;
+    width: 100%;
+    margin-bottom: 1.5rem;
+
+    &--42 {
+      font-size: 42px;
+      line-height: 50px;
+    }
+  }
+
   .eg-text--color-red {
     color: $light-red !important;
   }
@@ -265,7 +276,7 @@
       }
     }
 
-    &--left-arrow {
+    &--right-arrow {
       &::after {
         content: "";
         background-image: url('/img/landing/right-arrow.svg');
@@ -283,6 +294,30 @@
           background-size: contain;
           right: -25px;
           top: 4px;
+        }
+      }
+    }
+
+    &--left-arrow {
+      padding-left: 40px;
+
+      &::before {
+        content: "";
+        background-image: url('/img/landing/right-arrow.svg');
+        transform: rotate(180deg);
+        background-repeat: no-repeat;
+        height: 15px;
+        width: 22px;
+        position: absolute;
+        background-size: contain;
+        left: 0;
+        top: 15%;
+
+        @media (max-width: $sm) {
+          height: 15px;
+          width: 16px;
+          background-size: contain;
+          top: 0px;
         }
       }
     }

@@ -1,0 +1,43 @@
+{{define "main"}}
+  <main>
+    <section class="container container--top-content container--lg-padding-bottom">
+      <div class="eg-blog">
+        {{ range first 1 .Pages.ByPublishDate.Reverse }}
+          <a class="eg-blog__top-item eg-link" href="{{.Permalink}}">
+            <div class="eg-blog__top-item-left-side">
+              <h3 class="eg-blog__top-item-title"><span>{{ truncate 50 .Title }}</span></h3>
+              <p class="eg-blog__top-item-paragraph">{{ truncate 140 .Summary}}</p>
+              <div class="eg-author">
+                <img src="{{ .Params.authorPhoto }}" alt="author img" class="eg-author__img">
+                <div class="eg-author__info">
+                  <h4 class="eg-author__info-title">{{ .Params.Author }}</h4>
+                  <p class="eg-author__info-paragraph">{{ .Date.Format "2 January, 2006" }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="eg-blog__top-item-img"><img src="{{ .Params.blogPhoto }}" alt="blog photo"></div>
+          </a>
+        {{ end }}
+        <div class="eg-blog__main download">
+          {{ range (after 1 .Pages.ByPublishDate.Reverse) }}
+            <a class="eg-blog__item eg-link download__post d-none" href="{{.Permalink}}">
+              <div class="eg-blog__item-img"><img src="{{ .Params.blogPhoto }}" height="188" width="335" alt="blog photo"></div>
+              <h3 class="eg-blog__item-title"><span>{{ truncate 50 .Title }}</span></h3>
+              <p class="eg-blog__item-paragraph">{{ truncate 155 .Summary}}</p>
+              <div class="eg-author">
+                <img src="{{ .Params.authorPhoto }}" alt="author img" class="eg-author__img">
+                <div class="eg-author__info">
+                  <h4 class="eg-author__info-title">{{ .Params.Author }}</h4>
+                  <p class="eg-author__info-paragraph">{{ .Date.Format "2 January, 2006" }}</p>
+                </div>
+              </div>
+            </a>
+          {{ end }}
+        </div>
+        <div class="load-more">
+          <button class="download-button eg-btn eg-btn--outline-orange d-none">{{ T "news_load_more" }}</button>
+        </div>
+      </div>
+    </section>
+  </main>
+{{end}}

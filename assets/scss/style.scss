@@ -13,21 +13,38 @@
 @import 'components/eg-team-grid';
 @import 'components/eg-accordion';
 @import 'components/eg-table';
+@import 'components/eg-share';
 @import 'footer';
 @import 'header';
 @import 'landing/landing';
+@import 'blog/blog';
 
 * {
   box-sizing: border-box;
   font-family: "LabGrotesque", sans-serif;
 }
 
+html,
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
+}
+
+body {
   width: 100%;
   position: relative;
   min-width: 340px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
 }
 
 ul {
@@ -221,7 +238,15 @@ p {
   display: none;
 }
 
-
 .download-button {
   margin-top: 50px;
+}
+
+.load-more {
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: $sm) {
+    justify-content: flex-start;
+  }
 }

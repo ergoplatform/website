@@ -116,6 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   if (document.getElementsByClassName('download').length > 0) {
-    downloader('download', 8);
+    downloader('download', 6);
   }
 });

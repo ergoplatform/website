@@ -1,0 +1,20 @@
+.eg-share {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+
+  &__list {
+    display: flex;
+  }
+
+  li {
+    & + li {
+      margin-left: 0.75rem;
+    }
+  }
+
+  p {
+    margin: 0 !important;
+    margin-right: 30px !important;
+  }
+}

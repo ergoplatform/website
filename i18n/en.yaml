@@ -708,3 +708,9 @@
 
 - id: news_load_more
   translation: Load more news
+
+
+#blog
+
+- id: back_to_all_posts
+  translation: Back to all posts

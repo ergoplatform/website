@@ -1,0 +1,28 @@
+{{define "main"}}
+  <main>
+    <section class="container  container--top-content grid-container-1k2">
+      <div class="eg-text eg-mb-2-5">
+        <a href="{{ `blog` | absLangURL | safeURL }}" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>{{ T "back_to_all_posts"}}</span></a>
+      </div>
+      <div class="eg-text eg-blog">
+        <h3 class="eg-title">{{ .Title }}</h3>
+        <div class="eg-author">
+          <img src="{{ .Params.authorPhoto }}" alt="author img" class="eg-author__img">
+          <div class="eg-author__info">
+            <h4 class="eg-author__info-title">{{ .Params.Author }}</h4>
+            <p class="eg-author__info-paragraph">{{ .Date.Format "2 January, 2006" }}</p>
+          </div>
+        </div>
+        <div class="eg-blog__single-img">
+          <img src="{{ .Params.blogPhoto }}" alt="blog photo">
+        </div>
+        <div class="eg-blog__single-content">
+          {{.Content}}
+        </div>
+        <div class="share-buttons">
+          {{- partial "share.html" (dict "context" . "link" (.Permalink | safeURL)) -}}
+        </div>
+      </div>
+    </section>
+  </main>
+{{end}}

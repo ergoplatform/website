@@ -7,7 +7,7 @@
           {{ $langNews := where .Pages "Section" "news" }}
           {{ with $langNews }}
             {{ range $langNews }}
-              <div class="eg-text download__post">
+              <div class="eg-text download__post d-none">
                 <h3 class="eg-text__paragraph eg-text__paragraph--16 eg-text--color-red eg-mb-0-5">{{ .Date.Format "2 January, 2006" }}</h3>
                 <div class="eg-mb-0-5">
                   <a class="eg-text__link eg-text__link--26  eg-link eg-text--color-black" href="{{.Params.link}}">
@@ -24,7 +24,7 @@
               {{ if eq .Language.Lang .Site.Params.defaultLanguage }}
                 {{ $defaultLangPages := where .Pages "Section" "news" }}
                 {{ range $defaultLangPages }}
-                  <div class="eg-text download__post">
+                  <div class="eg-text download__post d-none">
                     <h3 class="eg-text__paragraph eg-text__paragraph--16 eg-text--color-red eg-mb-0-5">{{ .Date.Format "2 January, 2006" }}</h3>
                     <div class="eg-mb-0-5">
                       <a class="eg-text__link eg-text__link--26  eg-link eg-text--color-black" href="{{.Params.link}}">

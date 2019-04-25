@@ -1,8 +1,8 @@
 baseURL = "/"
 languageCode = "en"
-title = "My New Hugo Site"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
+
 # Links format
 [permalinks]
   pages = "/:slug/"
@@ -93,9 +93,3 @@ defaultContentLanguageInSubdir = true
     name = "Команда"
     url = "/team/"
     weight = -60
-
-[languages.de]
-  languageCode = "de"
-  languageName = "Deutech"
-  contentDir = "content/de"
-  weight = 1

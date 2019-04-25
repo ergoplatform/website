@@ -27,6 +27,7 @@
 
   &--outline-orange {
     border: 1px solid $light-red;
+    background: $white;
     color: $light-red;
     transition: background ease-in 0.15s, color ease-in 0.15s;
 
