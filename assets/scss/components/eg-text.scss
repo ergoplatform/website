@@ -301,6 +301,10 @@
     &--left-arrow {
       padding-left: 40px;
 
+      @media (max-width: $sm) {
+        padding-left: 25px;
+      }
+
       &::before {
         content: "";
         background-image: url('/img/landing/right-arrow.svg');

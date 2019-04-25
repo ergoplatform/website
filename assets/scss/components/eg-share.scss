@@ -15,6 +15,31 @@
 
   p {
     margin: 0 !important;
-    margin-right: 30px !important;
+    margin-right: 1.5rem !important;
+  }
+
+  .eg-share__link {
+    &:hover {
+      .st1,
+      .st2 {
+        fill: $light-red;
+      }
+
+      .st0 {
+        fill: $white;
+      }
+
+      polygon {
+        fill: $white;
+      }
+
+      g {
+        fill: $light-red;
+      }
+
+      path {
+        fill: $light-red;
+      }
+    }
   }
 }

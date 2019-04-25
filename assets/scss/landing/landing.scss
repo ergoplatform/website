@@ -1,13 +1,12 @@
 .landing {
   .header-section {
     background-color: $black;
+    overflow: hidden;
+    position: relative;
 
     .header-section__container {
       padding-top: 240px;
-      background-image: url('../img/landing/lines.svg');
-      background-repeat: no-repeat;
       padding-bottom: 150px;
-      background-size: cover;
 
       @media (max-width: $md) {
         padding-top: 200px;

@@ -2,6 +2,10 @@
   max-width: 1140px;
   margin: 0 auto;
 
+  &--w-100 {
+    max-width: 100%;
+  }
+
   .eg-blog__top-item {
     display: grid;
     grid-template-columns: 6fr 11fr;
@@ -87,7 +91,7 @@
   .eg-blog__main {
     display: grid;
     grid-template-columns: repeat(3, minmax(auto, 1fr));
-    grid-gap: 50px;
+    grid-gap: 50px 5.4%;
 
     @media (max-width: $lg) {
       grid-template-columns: 1fr 1fr;

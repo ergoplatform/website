@@ -15,7 +15,7 @@ export class Downloader {
       : this.itemsLength;
 
     for (let i = this.currentIndex; i < nextIndex; i += 1) {
-      document.querySelectorAll('.download__post')[i].classList.remove('d-none');
+      document.querySelectorAll(`.${this.id}__post`)[i].classList.remove('d-none');
     }
 
     return new Downloader(this.id, nextIndex);

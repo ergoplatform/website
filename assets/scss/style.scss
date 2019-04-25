@@ -72,7 +72,35 @@ p {
   margin-top: 0;
 }
 
+.right-lines {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  position: absolute;
+  left: 55%;
+  top: 120px;
+}
+
+.left-lines {
+  position: relative;
+  overflow: hidden;
+
+  &__img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    position: absolute;
+    right: 74%;
+    top: 150px;
+
+    @media (max-width: $sm) {
+      display: none;
+    }
+  }
+}
+
 .container {
+  max-width: 1600px;
   width: 100%;
   padding-left: 70px;
   padding-right: 70px;
@@ -120,20 +148,6 @@ p {
     @media (max-width: $sm) {
       padding-top: 40px;
       padding-bottom: 2rem;
-    }
-  }
-
-  &--left-lines {
-    background-repeat: no-repeat;
-    background-image: url('../img/left_lines_bg.svg');
-    background-position-y: 210px;
-
-    @media (max-width: $md) {
-      background-position-x: -100px;
-    }
-
-    @media (max-width: $sm) {
-      background-image: none;
     }
   }
 
@@ -238,7 +252,8 @@ p {
   display: none;
 }
 
-.download-button {
+.download-button,
+.related-button {
   margin-top: 50px;
 }
 

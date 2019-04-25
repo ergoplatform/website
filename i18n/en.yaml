@@ -707,3 +707,6 @@
 
 - id: back_to_all_posts
   translation: Back to all posts
+
+- id: blog_related_reads
+  translation: Related reads
