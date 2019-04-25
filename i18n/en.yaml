@@ -658,9 +658,9 @@
   translation: "Wallets"
 
 - id: wallets_first-section_paragraph
-  translation: "Digital wallets can help keep your digital currency safe, private and in your control. We highly recommend the use of wallets for storing Zcash (technically, they store the keys to your Zcash addresses). But keep in mind, your wallet is like your bank account, so take extra precautions with your passwords and be sure to perform regular backups to protect your money.
+  translation: "Digital wallets can help keep your digital currency safe, private and in your control. We highly recommend the use of wallets for storing Ergo assets (technically, they store the keys to your Ergo addresses). But keep in mind, your wallet is unlike your bank account, so take extra precautions with your passwords and be sure to perform regular backups to protect your money.
     <br/><br/>
-    Electric Coin Company does not endorse specific digital wallets, other than the Zcash desktop wallet. We provide the information below as a courtesy, in order to simplify the overall digital currency experience for you.
+    Note that wallets are supported by third parties, we only provide the information below as a courtesy, in order to simplify the overall digital currency experience for you.
   "
 
 - id: wallets_second_title
