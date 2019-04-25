@@ -465,13 +465,15 @@
   translation: Software
 
 - id: software_first-section_first_paragraph
-  translation: Monero (XMR) is a new cryptocurrency which is based on CryptoNote code and is not a Bitcoin fork in any way.
+  translation: Ergo is a new cryptocurrency which is written from scratch and is not a fork of any other cryptocurrency.
 
 - id: software_first-section_second_paragraph
-  translation: Main Monero features that were inherited from CryptoNote are Ring Signatures and unlinkable transactions.
+  translation: "As far as software is reliable to keep your secret keys in private, it is highly recommended to build software from sources.
+  If you are not an experienced user, you may download already built binaries and
+  <a class=\"eg-text__link eg-link\" href=\"https://www.digitalocean.com/community/tutorials/how-to-verify-downloaded-files\"><span>verify</span></a> your image using the <a class=\"eg-text__link eg-link\" href=\"#???\"><span>SHA256 checksum</span></a>.
+  In the sections below you will be able to find binaries for a majority of operating systems.
+  "
 
-- id: software_first-section_third_paragraph
-  translation: "Usually Monero software consists of two binaries: bitmonerod & simplewallet. In the sections below you will be able to find binaries for a majority of operating systems."
 
 - id: software_second_title
   translation: Downloads
@@ -480,7 +482,7 @@
   translation: Windows x64 & x86
 
 - id: software_second-section_first_first-item_title
-  translation: Daemon + console wallet pack for Windows 64
+  translation: GPU miner for Windows 64
 
 - id: software_second-section_first_second-item_title
   translation: Daemon + console wallet pack for Windows 32
@@ -501,10 +503,10 @@
   translation: Daemon + console wallet pack for Linux x86
 
 - id: software_second-section_fourth_title
-  translation: FreeBSD x64
+  translation: All systems
 
 - id: software_second-section_fourth_first-item_title
-  translation: Daemon + console wallet pack version 0.11.1.0
+  translation: Full node jar file.
 
 
 #exchanges
