@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tech on My New Hugo Site</title>
+    <title>Tech on </title>
     <link>/en/tech/</link>
-    <description>Recent content in Tech on My New Hugo Site</description>
+    <description>Recent content in Tech on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 22 Apr 2019 16:22:15 +0300</lastBuildDate>

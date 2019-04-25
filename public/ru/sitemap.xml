@@ -7,11 +7,6 @@
     <lastmod>2019-04-22T16:06:15+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="/de/basics/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="en"
                 href="/en/basics/"
                 />
@@ -25,11 +20,6 @@
   <url>
     <loc>/ru/news/</loc>
     <lastmod>2019-04-12T13:50:10+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/news/"
-                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -52,11 +42,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="/de/faq/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="ru"
                 href="/ru/faq/"
                 />
@@ -69,11 +54,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="/en/documents/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/documents/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -92,11 +72,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="/de/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="ru"
                 href="/ru/blog/"
                 />
@@ -109,11 +84,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="/en/team/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/team/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -132,33 +102,8 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="/de/about/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="ru"
                 href="/ru/about/"
-                />
-  </url>
-  
-  <url>
-    <loc>/ru/categories/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="/ru/categories/"
                 />
   </url>
   
@@ -172,13 +117,23 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="/de/"
+                hreflang="ru"
+                href="/ru/"
+                />
+  </url>
+  
+  <url>
+    <loc>/ru/categories/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/"
+                href="/ru/categories/"
                 />
   </url>
   
@@ -189,11 +144,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/tags/"
                 />
     <xhtml:link
                 rel="alternate"

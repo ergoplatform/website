@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title></title>
     <link>/en/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 17 Apr 2019 17:16:39 +0300</lastBuildDate>
@@ -17,7 +17,53 @@
       <pubDate>Wed, 17 Apr 2019 17:16:39 +0300</pubDate>
       
       <guid>/en/blog/second/</guid>
-      <description>adsf</description>
+      <description>After multiple internal discussions as well as taking into consideration our community’s input, we are pleased to announce Ergo’s MainNet After multiple internal discussions as well as taking into consideration our community’s input, we are pleased to announce Ergo’s MainNet</description>
+    </item>
+    
+    <item>
+      <title>Self-Reproducing Coins as Universal Turing Machine</title>
+      <link>/en/blog/2019_02_08/</link>
+      <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
+      
+      <guid>/en/blog/2019_02_08/</guid>
+      <description>sdf</description>
+    </item>
+    
+    <item>
+      <title>Self-Reproducing Coins as Universal Turing Machine</title>
+      <link>/en/blog/2019_02_09/</link>
+      <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
+      
+      <guid>/en/blog/2019_02_09/</guid>
+      <description>sdf</description>
+    </item>
+    
+    <item>
+      <title>Self-Reproducing Coins as Universal Turing Machine</title>
+      <link>/en/blog/2019_02_10/</link>
+      <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
+      
+      <guid>/en/blog/2019_02_10/</guid>
+      <description>Data oracles are indispensable to blockchain infrastructure. In the first article in a series devoted to blockchain data oracles, we discuss how Waves’ protocol will help make an oracle accessible to the entire community.
+A smart contract written on the blockchain is unable to access data outside its own network. This problem is resolved by using data oracles, which are basically agents that find real-world information and feed it to the blockchain for use by smart contracts and dApps.</description>
+    </item>
+    
+    <item>
+      <title>Self-Reproducing Coins as Universal Turing Machine</title>
+      <link>/en/blog/2019_02_11/</link>
+      <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
+      
+      <guid>/en/blog/2019_02_11/</guid>
+      <description>sdf</description>
+    </item>
+    
+    <item>
+      <title>Self-Reproducing Coins as Universal Turing Machine</title>
+      <link>/en/blog/2019_02_12/</link>
+      <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
+      
+      <guid>/en/blog/2019_02_12/</guid>
+      <description>sdf</description>
     </item>
     
     <item>
@@ -26,7 +72,7 @@
       <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
       
       <guid>/en/blog/first/</guid>
-      <description></description>
+      <description>After multiple internal discussions as well as taking into consideration our community’s input, we are pleased to announce Ergo’s MainNet After multiple internal discussions as well as taking into consideration our community’s input, we are pleased to announce Ergo’s MainNet</description>
     </item>
     
     <item>

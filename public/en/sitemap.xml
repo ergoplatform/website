@@ -5,86 +5,31 @@
   <url>
     <loc>/en/wallets/</loc>
     <lastmod>2019-04-24T13:59:34+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/wallets/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/wallets/"
-                />
   </url>
   
   <url>
     <loc>/en/exchanges/</loc>
     <lastmod>2019-04-23T14:43:56+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/exchanges/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/exchanges/"
-                />
   </url>
   
   <url>
     <loc>/en/software/</loc>
     <lastmod>2019-04-22T18:58:37+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/software/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/software/"
-                />
   </url>
   
   <url>
     <loc>/en/tools/</loc>
     <lastmod>2019-04-22T18:00:17+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/tools/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/tools/"
-                />
   </url>
   
   <url>
     <loc>/en/tech/</loc>
     <lastmod>2019-04-22T16:22:15+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/tech/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/tech/"
-                />
   </url>
   
   <url>
     <loc>/en/basics/</loc>
     <lastmod>2019-04-22T15:55:51+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/basics/"
-                />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -103,6 +48,31 @@
   </url>
   
   <url>
+    <loc>/en/blog/2019_02_08/</loc>
+    <lastmod>2019-04-17T17:16:35+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/blog/2019_02_09/</loc>
+    <lastmod>2019-04-17T17:16:35+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/blog/2019_02_10/</loc>
+    <lastmod>2019-04-17T17:16:35+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/blog/2019_02_11/</loc>
+    <lastmod>2019-04-17T17:16:35+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/blog/2019_02_12/</loc>
+    <lastmod>2019-04-17T17:16:35+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/en/blog/first/</loc>
     <lastmod>2019-04-17T17:16:35+03:00</lastmod>
   </url>
@@ -114,11 +84,6 @@
                 rel="alternate"
                 hreflang="ru"
                 href="/ru/news/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/news/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -137,11 +102,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="/de/faq/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="en"
                 href="/en/faq/"
                 />
@@ -154,11 +114,6 @@
                 rel="alternate"
                 hreflang="ru"
                 href="/ru/documents/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/documents/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -177,11 +132,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="/de/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="en"
                 href="/en/blog/"
                 />
@@ -190,11 +140,6 @@
   <url>
     <loc>/en/team/</loc>
     <lastmod>2019-04-11T20:29:21+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/team/"
-                />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -214,11 +159,6 @@
                 rel="alternate"
                 hreflang="ru"
                 href="/ru/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/about/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -263,26 +203,6 @@
   </url>
   
   <url>
-    <loc>/en/categories/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="/ru/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/categories/"
-                />
-  </url>
-  
-  <url>
     <loc>/en/</loc>
     <lastmod>2019-04-17T17:16:39+03:00</lastmod>
     <priority>0</priority>
@@ -293,13 +213,23 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="/de/"
+                hreflang="en"
+                href="/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/categories/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/"
+                href="/en/categories/"
                 />
   </url>
   
@@ -310,11 +240,6 @@
                 rel="alternate"
                 hreflang="ru"
                 href="/ru/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/tags/"
                 />
     <xhtml:link
                 rel="alternate"
