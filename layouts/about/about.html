@@ -1,41 +1,44 @@
 {{define "main"}}
   <main>
-    <section class="container container--top-content grid-container-1k2 container--left-lines container--last-container">
-      <h2 class="eg-title">{{ T "about_title" }}</h2>
-      <ul class="eg-text grid-container-1k2__main-section">
-        <li class="eg-text__group">
-          <div class="eg-text__group-title">
-            <span>1</span>
-            <h4>{{ T "about_first_title"}}</h4>
-          </div>
-          <p class="eg-text__group-paragraph">{{ T "about_first_paragraph"}}</p>
-          <a href="{{ `basics` | absLangURL | safeURL }}" class="eg-text__link eg-link"><span>{{ T "read_more"}}</span></a>
-        </li>
-        <li class="eg-text__group">
-          <div class="eg-text__group-title">
-            <span>2</span>
-            <h4>{{ T "about_second_title"}}</h4>
-          </div>
-          <p class="eg-text__group-paragraph">{{ T "about_second_paragraph"}}</p>
-          <a href="{{ `wallets` | absLangURL | safeURL}}" class="eg-text__link eg-link"><span>{{ T "read_more"}}</span></a>
-        </li>
-        <li class="eg-text__group">
-          <div class="eg-text__group-title">
-            <span>3</span>
-            <h4>{{ T "about_third_title"}}</h4>
-          </div>
-          <p class="eg-text__group-paragraph">{{ T "about_third_paragraph"}}</p>
-          <a href="{{ `exchanges` | absLangURL | safeURL}}" class="eg-text__link eg-link"><span>{{ T "read_more"}}</span></a>
-        </li>
-        <li class="eg-text__group">
-          <div class="eg-text__group-title">
-            <span>4</span>
-            <h4>{{ T "about_fourth_title"}}</h4>
-          </div>
-          <p class="eg-text__group-paragraph">{{ T "about_fourth_paragraph"}}</p>
-          <a href="{{ `developer-tools` | absLangURL | safeURL}}" class="eg-text__link eg-link"><span>{{ T "read_more"}}</span></a>
-        </li>
-      </ul>
+    <section class="left-lines">
+      <img src="/img/lines.svg" alt="" class="left-lines__img">
+      <div class="grid-container-1k2 container container--top-content container--last-container ">
+        <h2 class="eg-title">{{ T "about_title" }}</h2>
+        <ul class="eg-text grid-container-1k2__main-section">
+          <li class="eg-text__group">
+            <div class="eg-text__group-title">
+              <span>1</span>
+              <h4>{{ T "about_first_title"}}</h4>
+            </div>
+            <p class="eg-text__group-paragraph">{{ T "about_first_paragraph"}}</p>
+            <a href="{{ `basics` | absLangURL | safeURL }}" class="eg-text__link eg-link"><span>{{ T "read_more"}}</span></a>
+          </li>
+          <li class="eg-text__group">
+            <div class="eg-text__group-title">
+              <span>2</span>
+              <h4>{{ T "about_second_title"}}</h4>
+            </div>
+            <p class="eg-text__group-paragraph">{{ T "about_second_paragraph"}}</p>
+            <a href="{{ `wallets` | absLangURL | safeURL}}" class="eg-text__link eg-link"><span>{{ T "read_more"}}</span></a>
+          </li>
+          <li class="eg-text__group">
+            <div class="eg-text__group-title">
+              <span>3</span>
+              <h4>{{ T "about_third_title"}}</h4>
+            </div>
+            <p class="eg-text__group-paragraph">{{ T "about_third_paragraph"}}</p>
+            <a href="{{ `exchanges` | absLangURL | safeURL}}" class="eg-text__link eg-link"><span>{{ T "read_more"}}</span></a>
+          </li>
+          <li class="eg-text__group">
+            <div class="eg-text__group-title">
+              <span>4</span>
+              <h4>{{ T "about_fourth_title"}}</h4>
+            </div>
+            <p class="eg-text__group-paragraph">{{ T "about_fourth_paragraph"}}</p>
+            <a href="{{ `developer-tools` | absLangURL | safeURL}}" class="eg-text__link eg-link"><span>{{ T "read_more"}}</span></a>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
 {{end}}

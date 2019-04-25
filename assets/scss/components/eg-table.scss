@@ -60,5 +60,10 @@
   .eg-table__group {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    a:first-child {
+      height: 30px;
+    }
   }
 }

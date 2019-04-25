@@ -118,4 +118,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.getElementsByClassName('download').length > 0) {
     downloader('download', 6);
   }
+
+  if (document.getElementsByClassName('related').length > 0) {
+    downloader('related', 3);
+  }
 });

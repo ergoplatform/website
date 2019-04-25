@@ -41,16 +41,22 @@ defaultContentLanguageInSubdir = true
     weight = -80
 
   [[languages.en.menu.mainmenu]]
+    identifier = "Tools"
+    name = "Tools"
+    url = "/tools/"
+    weight = -70
+
+  [[languages.en.menu.mainmenu]]
     identifier = "Blog"
     name = "Blog"
     url = "/blog/"
-    weight = -70
+    weight = -60
 
   [[languages.en.menu.mainmenu]]
     identifier = "Team"
     name = "Team"
     url = "/team/"
-    weight = -60
+    weight = -50
 
 [languages.ru]
   languageCode = "ru"

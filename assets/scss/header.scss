@@ -189,7 +189,7 @@
       }
 
       & + .eg-nav__item {
-        margin-left: 30px;
+        margin-left: 25px;
 
         @media (max-width: $md) {
           margin-left: 0;
@@ -213,7 +213,7 @@
 
   .eg-navbar__language {
     height: 100%;
-    margin-top: 14px;
+    margin-top: 20px;
 
     @media (max-width: $md) {
       margin-left: auto;

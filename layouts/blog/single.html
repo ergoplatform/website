@@ -1,11 +1,11 @@
 {{define "main"}}
-  <main>
+  <main class="">
     <section class="container  container--top-content grid-container-1k2">
-      <div class="eg-text eg-mb-2-5">
+      <div class="eg-text eg-mb-2 eg-mb-sm-1-5">
         <a href="{{ `blog` | absLangURL | safeURL }}" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>{{ T "back_to_all_posts"}}</span></a>
       </div>
-      <div class="eg-text eg-blog">
-        <h3 class="eg-title">{{ .Title }}</h3>
+      <div class="eg-text eg-blog eg-blog-w-100">
+        <h3 class="eg-title eg-mb-1">{{ .Title }}</h3>
         <div class="eg-author">
           <img src="{{ .Params.authorPhoto }}" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
@@ -17,10 +17,37 @@
           <img src="{{ .Params.blogPhoto }}" alt="blog photo">
         </div>
         <div class="eg-blog__single-content">
-          {{.Content}}
+          {{ .Content }}
         </div>
-        <div class="share-buttons">
-          {{- partial "share.html" (dict "context" . "link" (.Permalink | safeURL)) -}}
+        <div>
+          {{- partial "share.html" (dict "context" . "link" (.Permalink | safeURL) ) -}}
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="border-section container--margins-y container--last-container ">
+        <h2 class="eg-title eg-mb-2-5">{{ T "blog_related_reads" }}</h2>
+        <div class="eg-blog eg-blog--w-100">
+          <div class="eg-blog__main related">
+            {{ $blogPosts := where .Site.Pages "Section" "blog" }}
+            {{ range $blogPosts }}
+              <a class="eg-blog__item eg-link related__post d-none" href="{{.Permalink}}">
+                <div class="eg-blog__item-img"><img src="{{ .Params.blogPhoto }}" height="188" width="335" alt="blog photo"></div>
+                <h3 class="eg-blog__item-title"><span>{{ truncate 50 .Title }}</span></h3>
+                <p class="eg-blog__item-paragraph">{{ truncate 155 .Summary}}</p>
+                <div class="eg-author">
+                  <img src="{{ .Params.authorPhoto }}" alt="author img" class="eg-author__img">
+                  <div class="eg-author__info">
+                    <h4 class="eg-author__info-title">{{ .Params.Author }}</h4>
+                    <p class="eg-author__info-paragraph">{{ .Date.Format "2 January, 2006" }}</p>
+                  </div>
+                </div>
+              </a>
+            {{ end }}
+            </div>
+            <div class="load-more">
+              <button class="related-button eg-btn eg-btn--outline-orange d-none">{{ T "news_load_more" }}</button>
+            </div>
         </div>
       </div>
     </section>
