@@ -629,7 +629,17 @@
   translation: "Why does Ergo have own smart contract language?"
 
 - id: faq_eighth-item_text
-  translation: "??"
+  translation: "The design space of programming languages is very broad ranging from
+                general-purpose languages like C, Java, Python up to specialized languages
+                like SQL, HTML, CSS,
+                however, none of them was designed for contractual money application.
+                <br/><br/>
+                ErgoScript was designed to achieve several properties.
+                It only contains deterministic operations to maintain consensus in the network.
+                To prevent possible spam attacks ErgoScript supports ahead-of-time cost estimation,
+                excluding a wide range of operations like possibly infinite loops.
+                But even keeping all these limitations in mind, ErgoScript is expressive enough to
+                implement complex smart contracts, including Turing-complete ones."
 
 - id: faq_nineth-item_title
   translation: "Where can I learn more about Ergo?"
