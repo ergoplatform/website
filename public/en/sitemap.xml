@@ -3,138 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/en/wallets/</loc>
-    <lastmod>2019-04-24T13:59:34+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/en/exchanges/</loc>
-    <lastmod>2019-04-23T14:43:56+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/en/software/</loc>
-    <lastmod>2019-04-22T18:58:37+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/en/tools/</loc>
-    <lastmod>2019-04-22T18:00:17+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/en/tech/</loc>
-    <lastmod>2019-04-22T16:22:15+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/en/basics/</loc>
-    <lastmod>2019-04-22T15:55:51+03:00</lastmod>
+    <loc>/en/</loc>
+    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/basics/"
+                href="/ru/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/basics/"
+                href="/en/"
                 />
   </url>
   
   <url>
-    <loc>/en/blog/second/</loc>
-    <lastmod>2019-04-17T17:16:39+03:00</lastmod>
+    <loc>/en/news/2019-04-24-teaser/</loc>
+    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/blog/2019_02_08/</loc>
+    <loc>/en/news/</loc>
+    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/en/blog/</loc>
     <lastmod>2019-04-17T17:16:35+03:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>/en/blog/2019_02_09/</loc>
     <lastmod>2019-04-17T17:16:35+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/en/blog/2019_02_10/</loc>
-    <lastmod>2019-04-17T17:16:35+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/en/blog/2019_02_11/</loc>
-    <lastmod>2019-04-17T17:16:35+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/en/blog/2019_02_12/</loc>
-    <lastmod>2019-04-17T17:16:35+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/en/blog/first/</loc>
-    <lastmod>2019-04-17T17:16:35+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/en/news/</loc>
-    <lastmod>2019-04-12T13:50:10+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="/ru/news/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/news/"
-                />
-  </url>
-  
-  <url>
-    <loc>/en/faq/</loc>
-    <lastmod>2019-04-12T13:50:04+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="/ru/faq/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/faq/"
-                />
-  </url>
-  
-  <url>
-    <loc>/en/documents/</loc>
-    <lastmod>2019-04-12T13:49:59+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="/ru/documents/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/documents/"
-                />
-  </url>
-  
-  <url>
-    <loc>/en/blog/</loc>
-    <lastmod>2019-04-12T13:49:52+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="/ru/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/blog/"
-                />
   </url>
   
   <url>
@@ -155,16 +58,16 @@
   <url>
     <loc>/en/about/</loc>
     <lastmod>2019-04-11T20:27:44+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="/ru/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/about/"
-                />
+  </url>
+  
+  <url>
+    <loc>/en/news/2019-04-03-ergo-mining-tutorial/</loc>
+    <lastmod>2019-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/news/2019-04-02-testnet-2.0.3/</loc>
+    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -173,49 +76,18 @@
   </url>
   
   <url>
+    <loc>/en/news/2019_03_17-how-to-set-up-full-node/</loc>
+    <lastmod>2019-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/en/news/2019-03-14/</loc>
     <lastmod>2019-03-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/news/2019-03-13/</loc>
-    <lastmod>2019-03-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/en/news/2019-03-12/</loc>
     <lastmod>2019-03-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/en/news/2019_02_08/</loc>
-    <lastmod>2019-02-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/en/news/2019_01_17/</loc>
-    <lastmod>2019-01-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/en/news/2019_01_08/</loc>
-    <lastmod>2019-01-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/en/</loc>
-    <lastmod>2019-04-17T17:16:39+03:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="/ru/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/"
-                />
   </url>
   
   <url>

@@ -3,81 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/ru/basics/</loc>
-    <lastmod>2019-04-22T16:06:15+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/basics/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="/ru/basics/"
-                />
-  </url>
-  
-  <url>
-    <loc>/ru/news/</loc>
-    <lastmod>2019-04-12T13:50:10+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/news/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="/ru/news/"
-                />
-  </url>
-  
-  <url>
-    <loc>/ru/faq/</loc>
-    <lastmod>2019-04-12T13:50:04+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/faq/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="/ru/faq/"
-                />
-  </url>
-  
-  <url>
-    <loc>/ru/documents/</loc>
-    <lastmod>2019-04-12T13:49:59+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/documents/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="/ru/documents/"
-                />
-  </url>
-  
-  <url>
-    <loc>/ru/blog/</loc>
-    <lastmod>2019-04-12T13:49:52+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="/ru/blog/"
-                />
-  </url>
-  
-  <url>
     <loc>/ru/team/</loc>
     <lastmod>2019-04-11T20:29:21+03:00</lastmod>
     <xhtml:link
@@ -89,21 +14,6 @@
                 rel="alternate"
                 hreflang="ru"
                 href="/ru/team/"
-                />
-  </url>
-  
-  <url>
-    <loc>/ru/about/</loc>
-    <lastmod>2019-04-11T20:27:44+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="/ru/about/"
                 />
   </url>
   
