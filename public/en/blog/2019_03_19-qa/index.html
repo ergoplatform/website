@@ -120,7 +120,7 @@
       <div class="eg-text eg-mb-2 eg-mb-sm-1-5">
         <a href="https://powerful-spire-67290.herokuapp.com/en/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>Back to all posts</span></a>
       </div>
-      <div class="eg-text eg-blog eg-blog-w-100">
+      <div class="eg-text eg-blog eg-blog--w-100">
         <h3 class="eg-title eg-mb-1">Q&amp;A with Alex Chepurnoy and Dmitry Meshkov</h3>
         <div class="eg-author">
           <img src="/img/authors/dmitry_meshkov.svg" alt="author img" class="eg-author__img">
@@ -133,7 +133,8 @@
           <img src="/img/blog/question.jpg" alt="blog photo">
         </div>
         <div class="eg-blog__single-content">
-          <p><strong>First, we have a major announcement - Ergo mainnet launch is planned for May 26 if no security vulnerabilities will be found during audit process!</strong></p>
+          <div>
+            <p><strong>First, we have a major announcement - Ergo mainnet launch is planned for May 26 if no security vulnerabilities will be found during audit process!</strong></p>
 
 <p><strong>What are the vision about scaling and adoption?</strong><br />
 About scaling, the main approach is to avoid bloat without compromising functionality. E.g. persistent updateable storage is possible, with updates to be checked by a blockchain contract, but only digest of authenticated data structure (and some additional bytes, less than 40 bytes anyway) are stored in the UTXO set dependless on data set size. Storage rent is helping to remove dust from the UTXO set. Then light clients: in Ergo you can have full-node guarantees without storing UTXO set, if you do not mine. That&rsquo;s about much improved boostrapping and block validation times. With such improvements, it is possible to raise TPS without compromising classic blockchain assumptions and guarantees. Ok, but do you want concrete numbers? I don&rsquo;t have them, as parameters like block size etc are not set in stone, rather, miners can adjust them. So if a miner is experiencing low full block validation time (as hardware is getting better with time, as well as software), he may propose or vote to increase block size.</p>
@@ -184,6 +185,7 @@ It might be done using the exchange example, so you can create a contract that b
 <p><strong>So there is no way to transfer 0.0000001 of token?</strong><br />
 Every output in Ergo should have some amount of Erg in it. Transaction fee may be 0, but you should put some Erg amount to every output created.</p>
 
+          </div>
         </div>
         <div><div class="eg-share eg-text">
   <p class="eg-text__paragraph eg-text__paragraph--26">Share post</p>

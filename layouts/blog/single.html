@@ -4,7 +4,7 @@
       <div class="eg-text eg-mb-2 eg-mb-sm-1-5">
         <a href="{{ `blog` | absLangURL | safeURL }}" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>{{ T "back_to_all_posts"}}</span></a>
       </div>
-      <div class="eg-text eg-blog eg-blog-w-100">
+      <div class="eg-text eg-blog eg-blog--w-100">
         <h3 class="eg-title eg-mb-1">{{ .Title }}</h3>
         <div class="eg-author">
           <img src="{{ .Params.authorPhoto }}" alt="author img" class="eg-author__img">
@@ -17,7 +17,9 @@
           <img src="{{ .Params.blogPhoto }}" alt="blog photo">
         </div>
         <div class="eg-blog__single-content">
-          {{ .Content }}
+          <div>
+            {{ .Content }}
+          </div>
         </div>
         <div>
           {{- partial "share.html" (dict "context" . "link" ( print .Site.BaseURL .URL) ) -}}
