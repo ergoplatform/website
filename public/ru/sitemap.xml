@@ -3,6 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+<<<<<<< HEAD
+<<<<<<< HEAD
     <loc>https://powerful-spire-67290.herokuapp.com/ru/basics/</loc>
     <lastmod>2019-04-22T16:06:15+03:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -89,6 +91,11 @@
   
   <url>
     <loc>https://powerful-spire-67290.herokuapp.com/ru/team/</loc>
+=======
+=======
+>>>>>>> a1357c7291b1a440b710eaea408a827296a1e200
+    <loc>/ru/team/</loc>
+>>>>>>> blog posts
     <lastmod>2019-04-11T20:29:21+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -105,6 +112,8 @@
   </url>
   
   <url>
+<<<<<<< HEAD
+<<<<<<< HEAD
     <loc>https://powerful-spire-67290.herokuapp.com/ru/about/</loc>
     <lastmod>2019-04-11T20:27:44+03:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -124,6 +133,11 @@
   <url>
     <loc>https://powerful-spire-67290.herokuapp.com/ru/</loc>
     <changefreq>weekly</changefreq>
+=======
+=======
+>>>>>>> a1357c7291b1a440b710eaea408a827296a1e200
+    <loc>/ru/</loc>
+>>>>>>> blog posts
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"

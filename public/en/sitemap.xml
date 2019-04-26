@@ -3,6 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+<<<<<<< HEAD
+<<<<<<< HEAD
     <loc>https://powerful-spire-67290.herokuapp.com/en/wallets/</loc>
     <lastmod>2019-04-24T13:59:34+03:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -53,15 +55,43 @@
                 rel="alternate"
                 hreflang="ru"
                 href="https://powerful-spire-67290.herokuapp.com/ru/basics/"
+=======
+    <loc>/en/</loc>
+    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/"
+>>>>>>> blog posts
+=======
+    <loc>/en/</loc>
+    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/"
+>>>>>>> a1357c7291b1a440b710eaea408a827296a1e200
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+<<<<<<< HEAD
+<<<<<<< HEAD
                 href="https://powerful-spire-67290.herokuapp.com/en/basics/"
+=======
+                href="/en/"
+>>>>>>> blog posts
+=======
+                href="/en/"
+>>>>>>> a1357c7291b1a440b710eaea408a827296a1e200
                 />
   </url>
   
   <url>
+<<<<<<< HEAD
+<<<<<<< HEAD
     <loc>https://powerful-spire-67290.herokuapp.com/en/blog/second/</loc>
     <lastmod>2019-04-17T17:16:39+03:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -105,12 +135,33 @@
   
   <url>
     <loc>https://powerful-spire-67290.herokuapp.com/en/blog/first/</loc>
+=======
+    <loc>/en/news/2019-04-24-teaser/</loc>
+    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/news/</loc>
+    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/en/blog/</loc>
+    <lastmod>2019-04-17T17:16:35+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/en/blog/2019_02_09/</loc>
+>>>>>>> blog posts
     <lastmod>2019-04-17T17:16:35+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
+<<<<<<< HEAD
     <loc>https://powerful-spire-67290.herokuapp.com/en/news/</loc>
     <lastmod>2019-04-12T13:50:10+03:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -180,6 +231,33 @@
   
   <url>
     <loc>https://powerful-spire-67290.herokuapp.com/en/team/</loc>
+=======
+=======
+    <loc>/en/news/2019-04-24-teaser/</loc>
+    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/news/</loc>
+    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/en/blog/</loc>
+    <lastmod>2019-04-17T17:16:35+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/en/blog/2019_02_09/</loc>
+    <lastmod>2019-04-17T17:16:35+03:00</lastmod>
+  </url>
+  
+  <url>
+>>>>>>> a1357c7291b1a440b710eaea408a827296a1e200
+    <loc>/en/team/</loc>
+>>>>>>> blog posts
     <lastmod>2019-04-11T20:29:21+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -198,6 +276,8 @@
   <url>
     <loc>https://powerful-spire-67290.herokuapp.com/en/about/</loc>
     <lastmod>2019-04-11T20:27:44+03:00</lastmod>
+<<<<<<< HEAD
+<<<<<<< HEAD
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -269,6 +349,70 @@
                 hreflang="en"
                 href="https://powerful-spire-67290.herokuapp.com/en/"
                 />
+=======
+  </url>
+  
+  <url>
+    <loc>/en/news/2019-04-03-ergo-mining-tutorial/</loc>
+    <lastmod>2019-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/news/2019-04-02-testnet-2.0.3/</loc>
+    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/news/2019-03-19/</loc>
+    <lastmod>2019-03-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/news/2019_03_17-how-to-set-up-full-node/</loc>
+    <lastmod>2019-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/news/2019-03-14/</loc>
+    <lastmod>2019-03-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/news/2019-03-12/</loc>
+    <lastmod>2019-03-12T00:00:00+00:00</lastmod>
+>>>>>>> blog posts
+=======
+  </url>
+  
+  <url>
+    <loc>/en/news/2019-04-03-ergo-mining-tutorial/</loc>
+    <lastmod>2019-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/news/2019-04-02-testnet-2.0.3/</loc>
+    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/news/2019-03-19/</loc>
+    <lastmod>2019-03-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/news/2019_03_17-how-to-set-up-full-node/</loc>
+    <lastmod>2019-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/news/2019-03-14/</loc>
+    <lastmod>2019-03-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/news/2019-03-12/</loc>
+    <lastmod>2019-03-12T00:00:00+00:00</lastmod>
+>>>>>>> a1357c7291b1a440b710eaea408a827296a1e200
   </url>
   
   <url>
