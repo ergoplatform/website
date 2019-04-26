@@ -29,6 +29,11 @@
       &:focus {
         color: $light-black;
         cursor: pointer;
+
+        @media (max-width: $sm) {
+          color: $opacity-gray;
+          cursor: default;
+        }
       }
 
       @media (max-width: $sm) {
@@ -58,7 +63,6 @@
   }
 
   .eg-slider__slide {
-
     &-content {
       display: flex;
       flex-direction: column;

@@ -1,11 +1,28 @@
 .error-page {
   background: $black;
-  width: 100vw;
+  width: 100%;
+  min-height: 600px;
   height: 100vh;
-  padding-top: 340px;
+  padding-top: 200px;
+  position: relative;
+  overflow: hidden;
+
+  @media (min-height: 800px) {
+    padding-top: 340px;
+  }
+
+  &__img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    left: 55%;
+    top: 0;
+  }
 
   .container {
     height: 100%;
+    margin-bottom: 70px;
   }
 
   .error-page__number {
@@ -14,6 +31,11 @@
     line-height: 60px;
     margin-bottom: 6rem;
     color: $white;
+
+    @media (max-width: $sm) {
+      font-size: 150px;
+      margin-bottom: 2rem;
+    }
   }
 
   .error-page__text {
@@ -21,5 +43,10 @@
     line-height: 60px;
     margin-bottom: 70px;
     color: $light-red;
+
+    @media (max-width: $sm) {
+      font-size: 24px;
+      margin-bottom: 1rem;
+    }
   }
 }
