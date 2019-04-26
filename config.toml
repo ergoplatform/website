@@ -1,5 +1,5 @@
 #baseURL = "http://localhost:1313/"
-baseURL = "https://powerful-spire-67290.herokuapp.com/"
+baseURL = "https://powerful-spire-67290.herokuapp.com"
 languageCode = "en"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
