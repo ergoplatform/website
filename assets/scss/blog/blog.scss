@@ -19,7 +19,7 @@
     }
 
     @media (max-width: $md) {
-      grid-template-columns: minmax(360px, 1fr);
+      grid-template-columns: minmax(200px, 1fr);
       grid-template-rows: 1fr;
       height: 100%;
     }
