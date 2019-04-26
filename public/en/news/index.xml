@@ -6,71 +6,120 @@
     <description>Recent content in News on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 12 Apr 2019 13:50:10 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 24 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://powerful-spire-67290.herokuapp.com/en/news/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ergo teaser</title>
+<<<<<<< HEAD
       <link>https://powerful-spire-67290.herokuapp.com/en/news/2019-04-24-teaser/</link>
       <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://powerful-spire-67290.herokuapp.com/en/news/2019-04-24-teaser/</guid>
+=======
+      <link>/en/news/2019-04-24-teaser/</link>
+      <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/2019-04-24-teaser/</guid>
+>>>>>>> blog posts
       <description></description>
     </item>
     
     <item>
       <title>Ergo mining tutorial</title>
+<<<<<<< HEAD
       <link>https://powerful-spire-67290.herokuapp.com/en/news/2019-04-03-ergo-mining-tutorial/</link>
       <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://powerful-spire-67290.herokuapp.com/en/news/2019-04-03-ergo-mining-tutorial/</guid>
+=======
+      <link>/en/news/2019-04-03-ergo-mining-tutorial/</link>
+      <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/2019-04-03-ergo-mining-tutorial/</guid>
+>>>>>>> blog posts
       <description></description>
     </item>
     
     <item>
       <title>Testnet 2.0.3 released</title>
+<<<<<<< HEAD
       <link>https://powerful-spire-67290.herokuapp.com/en/news/2019-04-02-testnet-2.0.3/</link>
       <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://powerful-spire-67290.herokuapp.com/en/news/2019-04-02-testnet-2.0.3/</guid>
+=======
+      <link>/en/news/2019-04-02-testnet-2.0.3/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/2019-04-02-testnet-2.0.3/</guid>
+>>>>>>> blog posts
       <description></description>
     </item>
     
     <item>
       <title>Q&amp;A session transcript. Mainnet launch is planned for May 26</title>
+<<<<<<< HEAD
       <link>https://powerful-spire-67290.herokuapp.com/en/news/2019-03-19/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://powerful-spire-67290.herokuapp.com/en/news/2019-03-19/</guid>
+=======
+      <link>/en/news/2019-03-19/</link>
+      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/2019-03-19/</guid>
+>>>>>>> blog posts
       <description></description>
     </item>
     
     <item>
       <title>How to set up and configure full Ergo node</title>
+<<<<<<< HEAD
       <link>https://powerful-spire-67290.herokuapp.com/en/news/2019_03_17-how-to-set-up-full-node/</link>
       <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://powerful-spire-67290.herokuapp.com/en/news/2019_03_17-how-to-set-up-full-node/</guid>
+=======
+      <link>/en/news/2019_03_17-how-to-set-up-full-node/</link>
+      <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/2019_03_17-how-to-set-up-full-node/</guid>
+>>>>>>> blog posts
       <description></description>
     </item>
     
     <item>
       <title>Testnet 2.0 is live! Smart contracts language updated</title>
+<<<<<<< HEAD
       <link>https://powerful-spire-67290.herokuapp.com/en/news/2019-03-14/</link>
       <pubDate>Thu, 14 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://powerful-spire-67290.herokuapp.com/en/news/2019-03-14/</guid>
+=======
+      <link>/en/news/2019-03-14/</link>
+      <pubDate>Thu, 14 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/2019-03-14/</guid>
+>>>>>>> blog posts
       <description></description>
     </item>
     
     <item>
       <title>ErgoScript, a Cryptocurrency Scripting Language Supporting Noninteractive Zero-Knowledge Proofs</title>
+<<<<<<< HEAD
       <link>https://powerful-spire-67290.herokuapp.com/en/news/2019-03-12/</link>
       <pubDate>Tue, 12 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://powerful-spire-67290.herokuapp.com/en/news/2019-03-12/</guid>
+=======
+      <link>/en/news/2019-03-12/</link>
+      <pubDate>Tue, 12 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/2019-03-12/</guid>
+>>>>>>> blog posts
       <description></description>
     </item>
     

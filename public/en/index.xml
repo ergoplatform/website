@@ -13,6 +13,7 @@
     
     <item>
       <title>Ergo teaser</title>
+<<<<<<< HEAD
       <link>https://powerful-spire-67290.herokuapp.com/en/news/2019-04-24-teaser/</link>
       <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
       
@@ -36,6 +37,13 @@
       
       <guid>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_08/</guid>
       <description>sdf</description>
+=======
+      <link>/en/news/2019-04-24-teaser/</link>
+      <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/2019-04-24-teaser/</guid>
+      <description></description>
+>>>>>>> blog posts
     </item>
     
     <item>
@@ -48,6 +56,7 @@
     </item>
     
     <item>
+<<<<<<< HEAD
       <title>Self-Reproducing Coins as Universal Turing Machine</title>
       <link>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_10/</link>
       <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
@@ -90,15 +99,57 @@ A smart contract written on the blockchain is unable to access data outside its 
       <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://powerful-spire-67290.herokuapp.com/en/news/2019-04-03-ergo-mining-tutorial/</guid>
+=======
+      <title>Ergo mining tutorial</title>
+      <link>/en/news/2019-04-03-ergo-mining-tutorial/</link>
+      <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/2019-04-03-ergo-mining-tutorial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Testnet 2.0.3 released</title>
+      <link>/en/news/2019-04-02-testnet-2.0.3/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/2019-04-02-testnet-2.0.3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Q&amp;A session transcript. Mainnet launch is planned for May 26</title>
+      <link>/en/news/2019-03-19/</link>
+      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/2019-03-19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How to set up and configure full Ergo node</title>
+      <link>/en/news/2019_03_17-how-to-set-up-full-node/</link>
+      <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/2019_03_17-how-to-set-up-full-node/</guid>
+>>>>>>> blog posts
+      <description></description>
+    </item>
+    
+    <item>
+<<<<<<< HEAD
+      <title>Testnet 2.0.3 released</title>
       <link>https://powerful-spire-67290.herokuapp.com/en/news/2019-04-02-testnet-2.0.3/</link>
       <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://powerful-spire-67290.herokuapp.com/en/news/2019-04-02-testnet-2.0.3/</guid>
+=======
+      <title>Testnet 2.0 is live! Smart contracts language updated</title>
+      <link>/en/news/2019-03-14/</link>
+      <pubDate>Thu, 14 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/2019-03-14/</guid>
+>>>>>>> blog posts
       <description></description>
     </item>
     
@@ -111,6 +162,7 @@ A smart contract written on the blockchain is unable to access data outside its 
       <description></description>
     </item>
     
+<<<<<<< HEAD
     <item>
       <title>How to set up and configure full Ergo node</title>
       <link>https://powerful-spire-67290.herokuapp.com/en/news/2019_03_17-how-to-set-up-full-node/</link>
@@ -138,5 +190,7 @@ A smart contract written on the blockchain is unable to access data outside its 
       <description></description>
     </item>
     
+=======
+>>>>>>> blog posts
   </channel>
 </rss>
