@@ -1,0 +1,25 @@
+.error-page {
+  background: $black;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 340px;
+
+  .container {
+    height: 100%;
+  }
+
+  .error-page__number {
+    font-family: "LabGrotesqueMono";
+    font-size: 280px;
+    line-height: 60px;
+    margin-bottom: 6rem;
+    color: $white;
+  }
+
+  .error-page__text {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 70px;
+    color: $light-red;
+  }
+}

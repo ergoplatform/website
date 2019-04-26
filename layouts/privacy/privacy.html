@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <main>
+    <section class="container container--top-content grid-container-1k2">
+      <h2 class="eg-title">{{ T "privacy_title" }}</h2>
+      <div class="eg-text grid-container-1k2__main-section">
+        <div class="eg-text__group">
+          <p class="eg-text__paragraph eg-text__paragraph--26">{{ T "privacy_first-item_title"}}</p>
+          <p class="eg-text__paragraph eg-text__paragraph--18 eg-mb-0">{{ T "privacy_first-item_text" | safeHTML }}</p>
+        </div>
+        <div class="eg-text__group">
+          <p class="eg-text__paragraph eg-text__paragraph--26">{{ T "privacy_second-item_title"}}</p>
+          <p class="eg-text__paragraph eg-text__paragraph--18">{{ T "privacy_second-item_text" | safeHTML }}</p>
+        </div>
+      </div>
+    </section>
+  </main>
+{{ end }}

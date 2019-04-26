@@ -712,3 +712,59 @@
 
 - id: blog_related_reads
   translation: Related reads
+
+
+#legal
+
+- id: legal_title
+  translation: Legal
+
+- id: legal_first-item_title
+  translation: 1. Introduction
+
+- id: legal_first-item_text
+  translation: "WeWork Companies Inc. and our affiliates (collectively, “WeWork,” “we,” “us,” “our,” or “WeWork Family”) cares about your privacy. We are committed to maintaining your trust by protecting your Personal Information. This Privacy Policy (“Policy”) describes how the WeWork Family collects, uses, and discloses your Personal Information in connection with the use of our websites (“Website Services”), applications (“apps”), or other service that refers to or links to the Policy, as well as any offline products, programs, courses, and services (collectively our “Services”).
+    <br/><br/>
+    We want to help you build a life, and not just a living, through our Services. Before you use our services, please read this Policy in its entirety, which helps you make informed decisions about your relationship with us.
+  "
+
+- id: legal_second-item_title
+  translation: 2. Introduction
+
+- id: legal_second-item_text
+  translation: "WeWork Companies Inc. and our affiliates (collectively, “WeWork,” “we,” “us,” “our,” or “WeWork Family”) cares about your privacy. We are committed to maintaining your trust by protecting your Personal Information. This Privacy Policy (“Policy”) describes how the WeWork Family collects, uses, and discloses your Personal Information in connection with the use of our websites (“Website Services”), applications (“apps”), or other service that refers to or links to the Policy, as well as any offline products, programs, courses, and services (collectively our “Services”).
+    <br/><br/>
+    We want to help you build a life, and not just a living, through our Services. Before you use our services, please read this Policy in its entirety, which helps you make informed decisions about your relationship with us.
+  "
+
+
+#privacy
+
+- id: privacy_title
+  translation: Privacy policy
+
+- id: privacy_first-item_title
+  translation: 1. Introduction
+
+- id: privacy_first-item_text
+  translation: "WeWork Companies Inc. and our affiliates (collectively, “WeWork,” “we,” “us,” “our,” or “WeWork Family”) cares about your privacy. We are committed to maintaining your trust by protecting your Personal Information. This Privacy Policy (“Policy”) describes how the WeWork Family collects, uses, and discloses your Personal Information in connection with the use of our websites (“Website Services”), applications (“apps”), or other service that refers to or links to the Policy, as well as any offline products, programs, courses, and services (collectively our “Services”).
+    <br/><br/>
+    We want to help you build a life, and not just a living, through our Services. Before you use our services, please read this Policy in its entirety, which helps you make informed decisions about your relationship with us.
+  "
+
+- id: privacy_second-item_title
+  translation: 2. Introduction
+
+- id: privacy_second-item_text
+  translation: "WeWork Companies Inc. and our affiliates (collectively, “WeWork,” “we,” “us,” “our,” or “WeWork Family”) cares about your privacy. We are committed to maintaining your trust by protecting your Personal Information. This Privacy Policy (“Policy”) describes how the WeWork Family collects, uses, and discloses your Personal Information in connection with the use of our websites (“Website Services”), applications (“apps”), or other service that refers to or links to the Policy, as well as any offline products, programs, courses, and services (collectively our “Services”).
+    <br/><br/>
+    We want to help you build a life, and not just a living, through our Services. Before you use our services, please read this Policy in its entirety, which helps you make informed decisions about your relationship with us.
+  "
+
+# error page
+
+- id: error_page_text
+  translation: Sorry, page not found
+
+- id: error_page_button
+  translation: Back to home page
