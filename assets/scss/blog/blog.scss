@@ -50,10 +50,26 @@
         @media (max-width: $md) {
           max-height: 400px;
         }
+
+        @media (max-width: $sm) {
+          max-height: 300px;
+        }
+
+        @media (max-width: $xs) {
+          max-height: 216px;
+        }
       }
 
       @media (max-width: $md) {
         max-height: 400px;
+      }
+
+      @media (max-width: $sm) {
+        max-height: 300px;
+      }
+
+      @media (max-width: $xs) {
+        max-height: 216px;
       }
     }
 
@@ -115,6 +131,26 @@
       img {
         width: 100%;
         height: 100%;
+
+        @media (max-width: $sm) {
+          max-height: 300px;
+        }
+
+        @media (max-width: $xs) {
+          max-height: 216px;
+        }
+      }
+
+      @media (max-width: $md) {
+        max-height: 400px;
+      }
+
+      @media (max-width: $sm) {
+        max-height: 300px;
+      }
+
+      @media (max-width: $xs) {
+        max-height: 216px;
       }
     }
 
