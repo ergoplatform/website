@@ -2,6 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <title>Blog on </title>
     <link>https://powerful-spire-67290.herokuapp.com/en/blog/</link>
     <description>Recent content in Blog on </description>
@@ -10,6 +11,11 @@
     <link>/en/blog/</link>
     <description>Recent content in Blogs on </description>
 >>>>>>> blog posts
+=======
+    <title>Blogs on </title>
+    <link>/en/blog/</link>
+    <description>Recent content in Blogs on </description>
+>>>>>>> a1357c7291b1a440b710eaea408a827296a1e200
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 17 Apr 2019 17:16:35 +0300</lastBuildDate>
@@ -18,6 +24,7 @@
     
     
     <item>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <title>Ergo Platform is a storage of rich state with language safer than Bitcoin&#39;s</title>
       <link>https://powerful-spire-67290.herokuapp.com/en/blog/second/</link>
@@ -39,6 +46,8 @@
     <item>
 =======
 >>>>>>> blog posts
+=======
+>>>>>>> a1357c7291b1a440b710eaea408a827296a1e200
       <title>Self-Reproducing Coins as Universal Turing Machine</title>
       <link>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_09/</link>
       <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
@@ -47,6 +56,7 @@
       <description>sdf</description>
     </item>
     
+<<<<<<< HEAD
 <<<<<<< HEAD
     <item>
       <title>Self-Reproducing Coins as Universal Turing Machine</title>
@@ -87,5 +97,7 @@ A smart contract written on the blockchain is unable to access data outside its 
     
 =======
 >>>>>>> blog posts
+=======
+>>>>>>> a1357c7291b1a440b710eaea408a827296a1e200
   </channel>
 </rss>
