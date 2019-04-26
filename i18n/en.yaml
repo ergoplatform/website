@@ -8,8 +8,8 @@
 - id: getting_started
   translation: Getting started with Ergo
 
-- id: ergo_philosophy
-  translation: Ergo philosophy
+- id: ergo_vision
+  translation: Ergo Vision
 
 - id: ergo_decentralization
   translation: Decentralization
@@ -26,7 +26,7 @@
 - id: ergo_clients
   translation: Light clients
 
-- id: ergo_philosophy_text
+- id: ergo_vision_text
   translation: "Started more ten years ago with the Bitcoin, blockchain technology proved to be a secure way of maintaining a public transaction ledger. However, whereas many teams claimed to implement the next revolutionary blockchain, they have also mostly broken at least one of fundamental blockchain properties.
   <br/>
   In contrast, Ergo platform absorbs ready-to-use ideas, that are well-tested and formalized in scientific papers. Its primary focus is to provide an efficient, secure and easy way to implement financial contracts, that will be useful and survivable in the long term. Finally, Ergo is a self-amendable protocol, that allows to absorb new ideas and improve itself in the future in a decentralized manner."
@@ -403,7 +403,7 @@
   translation: "By joining Ergo Platform you gain access to a complete development and deployment environment, including:"
 
 - id: tools_second-section_first-sub_title
-  translation: dApps Development
+  translation: ErgoScript tutorials
 
 - id: tools_second-section_first-sub_first_subtitle
   translation: ErgoScript overview
@@ -442,13 +442,16 @@
   translation: Explorer API
 
 - id: tools_second-section_fifth-sub_title
-  translation: Libraries (Scala)
+  translation: Libraries
 
 - id: tools_second-section_fifth-sub_first_link
-  translation: ErgoScript
+  translation: (Scala) ErgoScript
 
 - id: tools_second-section_fifth-sub_second_link
-  translation: Basic cryptography
+  translation: (Scala) Basic cryptography
+
+- id: tools_second-section_fifth-sub_third_link
+  translation: (JS) Transaction basics
 
 - id: tools_third_title
   translation: Grants for Developers
@@ -720,22 +723,57 @@
   translation: Legal
 
 - id: legal_first-item_title
-  translation: 1. Introduction
+  translation: 1. Information published on ergoplatform.org
 
 - id: legal_first-item_text
-  translation: "WeWork Companies Inc. and our affiliates (collectively, “WeWork,” “we,” “us,” “our,” or “WeWork Family”) cares about your privacy. We are committed to maintaining your trust by protecting your Personal Information. This Privacy Policy (“Policy”) describes how the WeWork Family collects, uses, and discloses your Personal Information in connection with the use of our websites (“Website Services”), applications (“apps”), or other service that refers to or links to the Policy, as well as any offline products, programs, courses, and services (collectively our “Services”).
-    <br/><br/>
-    We want to help you build a life, and not just a living, through our Services. Before you use our services, please read this Policy in its entirety, which helps you make informed decisions about your relationship with us.
-  "
+  translation: "The website https://ergoplatform.org (hereinafter, referred to as the \"Website\") provides information and material of a general nature. You are not authorized and nor should you rely on the Website for legal advice, business advice, or advice of any kind. You act at your own risk in reliance on the contents of the Website. Should you make a decision to act or not act you should contact a licensed attorney in the relevant jurisdiction in which you want or need help. In no way are the owners of, or contributors to, the Website responsible for the actions, decisions, or other behavior taken or not taken by you in reliance upon the Website."
 
 - id: legal_second-item_title
-  translation: 2. Introduction
+  translation: 2. Translations
 
 - id: legal_second-item_text
-  translation: "WeWork Companies Inc. and our affiliates (collectively, “WeWork,” “we,” “us,” “our,” or “WeWork Family”) cares about your privacy. We are committed to maintaining your trust by protecting your Personal Information. This Privacy Policy (“Policy”) describes how the WeWork Family collects, uses, and discloses your Personal Information in connection with the use of our websites (“Website Services”), applications (“apps”), or other service that refers to or links to the Policy, as well as any offline products, programs, courses, and services (collectively our “Services”).
-    <br/><br/>
-    We want to help you build a life, and not just a living, through our Services. Before you use our services, please read this Policy in its entirety, which helps you make informed decisions about your relationship with us.
-  "
+  translation: "The Website may contain translations of the English version of the content available on the Website. These translations are provided only as a convenience. In the event of any conflict between the English language version and the translated version, the English language version shall take precedence. If you notice any inconsistency, please report them on <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki/Contribute#translation\"><span>GitHub</span></a>."
+
+- id: legal_third-item_title
+  translation: 3. Risks related to the use of Ergo
+
+- id: legal_third-item_text
+  translation: "he Website will not be responsible for any losses, damages or claims arising from events falling within the scope of the following five categories:
+                <br/><br/>
+                (1) Mistakes made by the user of any Ergo-related software or service, e.g., forgotten passwords, payments sent to wrong Ergo addresses, and accidental deletion of wallets.
+<br/><br/>
+                (2) Software problems of the Website and/or any Ergo-related software or service, e.g., corrupted wallet file, incorrectly constructed transactions, unsafe cryptographic libraries, malware affecting the Website and/or any Ergo-related software or service.
+<br/><br/>
+                (3) Technical failures in the hardware of the user of any Ergo-related software or service, e.g., data loss due to a faulty or damaged storage device.
+<br/><br/>
+                (4) Security problems experienced by the user of any Ergo-related software or service, e.g., unauthorized access to users' wallets and/or accounts.
+<br/><br/>
+                (5) Actions or inactions of third parties and/or events experienced by third parties, e.g., bankruptcy of service providers, information security attacks on service providers, and fraud conducted by third parties."
+
+- id: legal_fourth-item_title
+  translation: 4. Investment risks
+
+- id: legal_fourth-item_text
+  translation: "The investment in Ergo can lead to loss of money over short or even long periods. The investors in Ergo should expect prices to have large range fluctuations. The information published on the Website cannot guarantee that the investors in Ergo would not lose money."
+
+- id: legal_fifth-item_title
+  translation: 5. Compliance with tax obligations
+
+- id: legal_fifth-item_text
+  translation: "The users of the Website are solely responsible to determinate what, if any, taxes apply to their Ergo transactions. The owners of, or contributors to, the Website are NOT responsible for determining the taxes that apply to Ergo transactions."
+
+- id: legal_sixth-item_title
+  translation: 6. The Website does not store, send, or receive Ergs
+
+- id: legal_sixth-item_text
+  translation: "The Website does not store, send or receive Ergs. This is because Ergs exist only by virtue of the ownership record maintained in the Ergo network. Any transfer of title in Ergs occurs within a decentralized Ergo network, and not on the Website."
+
+- id: legal_seventh-item_title
+  translation: 7. No warranties
+
+- id: legal_seventh-item_text
+  translation: "The Website is provided on an \"as is\" basis without any warranties of any kind regarding the Website and/or any content, data, materials and/or services provided on the Website."
+
 
 
 #privacy
@@ -743,23 +781,8 @@
 - id: privacy_title
   translation: Privacy policy
 
-- id: privacy_first-item_title
-  translation: 1. Introduction
-
 - id: privacy_first-item_text
-  translation: "WeWork Companies Inc. and our affiliates (collectively, “WeWork,” “we,” “us,” “our,” or “WeWork Family”) cares about your privacy. We are committed to maintaining your trust by protecting your Personal Information. This Privacy Policy (“Policy”) describes how the WeWork Family collects, uses, and discloses your Personal Information in connection with the use of our websites (“Website Services”), applications (“apps”), or other service that refers to or links to the Policy, as well as any offline products, programs, courses, and services (collectively our “Services”).
-    <br/><br/>
-    We want to help you build a life, and not just a living, through our Services. Before you use our services, please read this Policy in its entirety, which helps you make informed decisions about your relationship with us.
-  "
-
-- id: privacy_second-item_title
-  translation: 2. Introduction
-
-- id: privacy_second-item_text
-  translation: "WeWork Companies Inc. and our affiliates (collectively, “WeWork,” “we,” “us,” “our,” or “WeWork Family”) cares about your privacy. We are committed to maintaining your trust by protecting your Personal Information. This Privacy Policy (“Policy”) describes how the WeWork Family collects, uses, and discloses your Personal Information in connection with the use of our websites (“Website Services”), applications (“apps”), or other service that refers to or links to the Policy, as well as any offline products, programs, courses, and services (collectively our “Services”).
-    <br/><br/>
-    We want to help you build a life, and not just a living, through our Services. Before you use our services, please read this Policy in its entirety, which helps you make informed decisions about your relationship with us.
-  "
+  translation: "We don’t store your data, period."
 
 # error page
 
