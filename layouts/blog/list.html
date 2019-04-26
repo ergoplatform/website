@@ -5,7 +5,7 @@
         {{ range first 1 .Pages.ByPublishDate.Reverse }}
           <a class="eg-blog__top-item eg-link" href="{{.Permalink}}">
             <div class="eg-blog__top-item-left-side">
-              <h3 class="eg-blog__top-item-title"><span>{{ truncate 50 .Title }}</span></h3>
+              <h3 class="eg-blog__top-item-title"><span>{{ truncate 30 .Title }}</span></h3>
               <p class="eg-blog__top-item-paragraph">{{ truncate 140 .Summary}}</p>
               <div class="eg-author">
                 <img src="{{ .Params.authorPhoto }}" alt="author img" class="eg-author__img">
