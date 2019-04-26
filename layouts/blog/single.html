@@ -20,7 +20,7 @@
           {{ .Content }}
         </div>
         <div>
-          {{- partial "share.html" (dict "context" . "link" (.Permalink | safeURL) ) -}}
+          {{- partial "share.html" (dict "context" . "link" (.URL | safeURL) ) -}}
         </div>
       </div>
     </section>
