@@ -6,10 +6,19 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 17 Apr 2019 17:16:39 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 24 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ergo teaser</title>
+      <link>/en/news/2019-04-24-teaser/</link>
+      <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/2019-04-24-teaser/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Ergo Platform is a storage of rich state with language safer than Bitcoin&#39;s</title>
@@ -76,11 +85,38 @@ A smart contract written on the blockchain is unable to access data outside its 
     </item>
     
     <item>
+      <title>Ergo mining tutorial</title>
+      <link>/en/news/2019-04-03-ergo-mining-tutorial/</link>
+      <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/2019-04-03-ergo-mining-tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Testnet 2.0.3 released</title>
+      <link>/en/news/2019-04-02-testnet-2.0.3/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/2019-04-02-testnet-2.0.3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Q&amp;A session transcript. Mainnet launch is planned for May 26</title>
       <link>/en/news/2019-03-19/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/en/news/2019-03-19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How to set up and configure full Ergo node</title>
+      <link>/en/news/2019_03_17-how-to-set-up-full-node/</link>
+      <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/2019_03_17-how-to-set-up-full-node/</guid>
       <description></description>
     </item>
     
@@ -94,47 +130,11 @@ A smart contract written on the blockchain is unable to access data outside its 
     </item>
     
     <item>
-      <title>Token2049 conference and pub crawl with Ergo station</title>
-      <link>/en/news/2019-03-13/</link>
-      <pubDate>Wed, 13 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/en/news/2019-03-13/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>ErgoScript, a Cryptocurrency Scripting Language Supporting Noninteractive Zero-Knowledge Proofs</title>
       <link>/en/news/2019-03-12/</link>
       <pubDate>Tue, 12 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/en/news/2019-03-12/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>More examples of contracts: Non-interactive tumbler</title>
-      <link>/en/news/2019_02_08/</link>
-      <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/en/news/2019_02_08/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>How to set up and configure full Ergo node</title>
-      <link>/en/news/2019_01_17/</link>
-      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/en/news/2019_01_17/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>More examples of contracts: Non-interactive tumbler</title>
-      <link>/en/news/2019_01_08/</link>
-      <pubDate>Tue, 08 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/en/news/2019_01_08/</guid>
       <description></description>
     </item>
     

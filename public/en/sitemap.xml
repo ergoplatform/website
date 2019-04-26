@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>/en/news/2019-04-24-teaser/</loc>
+    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/en/exchanges/</loc>
     <lastmod>2019-04-23T14:43:56+03:00</lastmod>
   </url>
@@ -168,8 +173,23 @@
   </url>
   
   <url>
+    <loc>/en/news/2019-04-03-ergo-mining-tutorial/</loc>
+    <lastmod>2019-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/news/2019-04-02-testnet-2.0.3/</loc>
+    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/en/news/2019-03-19/</loc>
     <lastmod>2019-03-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/news/2019_03_17-how-to-set-up-full-node/</loc>
+    <lastmod>2019-03-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -178,33 +198,13 @@
   </url>
   
   <url>
-    <loc>/en/news/2019-03-13/</loc>
-    <lastmod>2019-03-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/en/news/2019-03-12/</loc>
     <lastmod>2019-03-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/news/2019_02_08/</loc>
-    <lastmod>2019-02-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/en/news/2019_01_17/</loc>
-    <lastmod>2019-01-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/en/news/2019_01_08/</loc>
-    <lastmod>2019-01-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/en/</loc>
-    <lastmod>2019-04-17T17:16:39+03:00</lastmod>
+    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
