@@ -2,75 +2,75 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on </title>
-    <link>example.com/en/news/</link>
+    <link>/en/news/</link>
     <description>Recent content in News on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 12 Apr 2019 13:50:10 +0300</lastBuildDate>
     
-	<atom:link href="example.com/en/news/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/en/news/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ergo teaser</title>
-      <link>example.com/en/news/2019-04-24-teaser/</link>
+      <link>/en/news/2019-04-24-teaser/</link>
       <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>example.com/en/news/2019-04-24-teaser/</guid>
+      <guid>/en/news/2019-04-24-teaser/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ergo mining tutorial</title>
-      <link>example.com/en/news/2019-04-03-ergo-mining-tutorial/</link>
+      <link>/en/news/2019-04-03-ergo-mining-tutorial/</link>
       <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>example.com/en/news/2019-04-03-ergo-mining-tutorial/</guid>
+      <guid>/en/news/2019-04-03-ergo-mining-tutorial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Testnet 2.0.3 released</title>
-      <link>example.com/en/news/2019-04-02-testnet-2.0.3/</link>
+      <link>/en/news/2019-04-02-testnet-2.0.3/</link>
       <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>example.com/en/news/2019-04-02-testnet-2.0.3/</guid>
+      <guid>/en/news/2019-04-02-testnet-2.0.3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Q&amp;A session transcript. Mainnet launch is planned for May 26</title>
-      <link>example.com/en/news/2019-03-19/</link>
+      <link>/en/news/2019-03-19/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>example.com/en/news/2019-03-19/</guid>
+      <guid>/en/news/2019-03-19/</guid>
       <description></description>
     </item>
     
     <item>
       <title>How to set up and configure full Ergo node</title>
-      <link>example.com/en/news/2019_03_17-how-to-set-up-full-node/</link>
+      <link>/en/news/2019_03_17-how-to-set-up-full-node/</link>
       <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>example.com/en/news/2019_03_17-how-to-set-up-full-node/</guid>
+      <guid>/en/news/2019_03_17-how-to-set-up-full-node/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Testnet 2.0 is live! Smart contracts language updated</title>
-      <link>example.com/en/news/2019-03-14/</link>
+      <link>/en/news/2019-03-14/</link>
       <pubDate>Thu, 14 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>example.com/en/news/2019-03-14/</guid>
+      <guid>/en/news/2019-03-14/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ErgoScript, a Cryptocurrency Scripting Language Supporting Noninteractive Zero-Knowledge Proofs</title>
-      <link>example.com/en/news/2019-03-12/</link>
+      <link>/en/news/2019-03-12/</link>
       <pubDate>Tue, 12 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>example.com/en/news/2019-03-12/</guid>
+      <guid>/en/news/2019-03-12/</guid>
       <description></description>
     </item>
     

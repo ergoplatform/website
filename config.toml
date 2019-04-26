@@ -1,4 +1,4 @@
-baseURL = "example.com/"
+baseURL = "/"
 languageCode = "en"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
