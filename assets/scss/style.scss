@@ -176,7 +176,7 @@ p {
   grid-gap: 11%;
 
   @media (max-width: $sm) {
-    grid-template-columns: minmax(360px, 1fr);
+    grid-template-columns: minmax(100px, 1fr);
     grid-gap: 0;
   }
 
