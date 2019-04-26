@@ -19,12 +19,8 @@
   }
 
   .eg-share__link {
-    &:hover {
-      .st1,
-      .st2 {
-        fill: $light-red;
-      }
-
+    &:hover,
+    &:focus {
       .st0 {
         fill: $white;
       }
@@ -39,6 +35,24 @@
 
       path {
         fill: $light-red;
+      }
+    }
+
+    &:active {
+      .st0 {
+        fill: rgba(255,255,255, 0.8);
+      }
+
+      polygon {
+        fill: $white;
+      }
+
+      g {
+        fill: rgba(255, 66, 33, 0.9);
+      }
+
+      path {
+        fill: rgba(255, 66, 33, 0.9);
       }
     }
   }
