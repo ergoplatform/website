@@ -3,8 +3,7 @@ import 'jquery-ui/ui/widgets/tabs';
 import 'slick-carousel';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
-import { downloader, hideAllPosts } from './downloadMore';
-
+import { downloader } from './downloadMore';
 
 const dropDownFunc = (id) => {
   $(`#${id}`).parent('.dropdown').toggleClass('show');
@@ -108,32 +107,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  const allPanels = $('.eg-accordion > .eg-accordion__item').hide();
-  const allTitles = $('.eg-accordion .eg-accordion__title');
-  $('.eg-accordion .eg-accordion__title span').each(function () {
-    this.addEventListener('click', (e) => {
-      e.stopPropagation();
-    });
-  });
-
-  let activeAccordion = null;
-
-  $('.eg-accordion .eg-accordion__title').click(function accordionClicl(e) {
-    if (activeAccordion === e.target) {
-      return false;
-    }
-
-    allTitles.removeClass('active');
-    allPanels.slideUp().removeClass('active');
-
-    activeAccordion = e.target;
-
-    $(this).addClass('active').parent('div').next()
-      .slideDown()
-      .addClass('active');
-    return false;
-  });
-
   if (document.getElementsByClassName('download').length > 0) {
     downloader('download', 6);
   }
@@ -146,6 +119,21 @@ document.addEventListener('DOMContentLoaded', () => {
     $('.copy-link').click((e) => {
       e.preventDefault();
       copyToClipboard(e.currentTarget.href);
+    });
+  }
+
+  if (document.getElementsByClassName('expandableCollapsibleDiv').length > 0) {
+    $('.expandableCollapsibleDiv h3').click((e) => {
+      const showElementDescription = $(e.currentTarget).parent('.expandableCollapsibleDiv').find('p');
+      const elementTitle = $(e.currentTarget).parent('.expandableCollapsibleDiv').find('h3');
+
+      if ($(showElementDescription).is(':visible')) {
+        elementTitle.removeClass('active');
+        showElementDescription.slideUp();
+      } else {
+        showElementDescription.slideDown();
+        elementTitle.addClass('active');
+      }
     });
   }
 });

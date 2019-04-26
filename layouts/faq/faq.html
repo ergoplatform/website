@@ -1,61 +1,46 @@
 {{define "main"}}
   <main>
-    <section class="container container--top-content grid-container-1k2 container--left-lines container--lg-padding-bottom">
-      <h2 class="eg-title">{{ T "faq_first_title" }}</h2>
-      <div class="eg-text grid-container-1k2__main-section eg-accordion">
-        <div>
-          <h3 class="eg-text__paragraph eg-text__paragraph--20 eg-accordion__title"><span></span>{{ T "faq_first-item_title" }}</h3>
-        </div>
-        <div class="eg-accordion__item">
-          <p class="eg-text__paragraph eg-text__paragraph--18 eg-mb-0">{{ T "faq_first-item_text" | safeHTML }}</p>
-        </div>
-        <div>
-          <h3 class="eg-text__paragraph eg-text__paragraph--20 eg-accordion__title"><span></span>{{ T "faq_second-item_title" }}</h3>
-        </div>
-        <div class="eg-accordion__item">
-          <p class="eg-text__paragraph eg-text__paragraph--18 eg-mb-0">{{ T "faq_second-item_text" | safeHTML }}</p>
-        </div>
-        <div>
-          <h3 class="eg-text__paragraph eg-text__paragraph--20 eg-accordion__title"><span></span>{{ T "faq_third-item_title" }}</h3>
-        </div>
-        <div class="eg-accordion__item">
-          <p class="eg-text__paragraph eg-text__paragraph--18 eg-mb-0">{{ T "faq_third-item_text" | safeHTML }}</p>
-        </div>
-        <div>
-          <h3 class="eg-text__paragraph eg-text__paragraph--20 eg-accordion__title"><span></span>{{ T "faq_fourth-item_title" }}</h3>
-        </div>
-        <div class="eg-accordion__item">
-          <p class="eg-text__paragraph eg-text__paragraph--18 eg-mb-0">{{ T "faq_fourth-item_text" | safeHTML }}</p>
-        </div>
-        <div>
-          <h3 class="eg-text__paragraph eg-text__paragraph--20 eg-accordion__title"><span></span>{{ T "faq_fifth-item_title" }}</h3>
-        </div>
-        <div class="eg-accordion__item">
-          <p class="eg-text__paragraph eg-text__paragraph--18 eg-mb-0">{{ T "faq_fifth-item_text" | safeHTML }}</p>
-        </div>
-        <div>
-          <h3 class="eg-text__paragraph eg-text__paragraph--20 eg-accordion__title"><span></span>{{ T "faq_sixth-item_title" }}</h3>
-        </div>
-        <div class="eg-accordion__item">
-          <p class="eg-text__paragraph eg-text__paragraph--18 eg-mb-0">{{ T "faq_sixth-item_text" | safeHTML }}</p>
-        </div>
-        <div>
-          <h3 class="eg-text__paragraph eg-text__paragraph--20 eg-accordion__title"><span></span>{{ T "faq_seventh-item_title" }}</h3>
-        </div>
-        <div class="eg-accordion__item">
-          <p class="eg-text__paragraph eg-text__paragraph--18 eg-mb-0">{{ T "faq_seventh-item_text" | safeHTML }}</p>
-        </div>
-        <div>
-          <h3 class="eg-text__paragraph eg-text__paragraph--20 eg-accordion__title"><span></span>{{ T "faq_eighth-item_title" }}</h3>
-        </div>
-        <div class="eg-accordion__item">
-          <p class="eg-text__paragraph eg-text__paragraph--18 eg-mb-0">{{ T "faq_eighth-item_text" | safeHTML }}</p>
-        </div>
-        <div>
-          <h3 class="eg-text__paragraph eg-text__paragraph--20 eg-accordion__title"><span></span>{{ T "faq_nineth-item_title" }}</h3>
-        </div>
-        <div class="eg-accordion__item">
-          <p class="eg-text__paragraph eg-text__paragraph--18 eg-mb-0">{{ T "faq_nineth-item_text" | safeHTML }}</p>
+    <section class="left-lines">
+      <img src="/img/lines.svg" alt="" class="left-lines__img">
+      <div class="container container--top-content grid-container-1k2 container--left-lines container--lg-padding-bottom">
+        <h2 class="eg-title">{{ T "faq_first_title" }}</h2>
+        <div class="eg-text grid-container-1k2__main-section eg-accordion" id="demo" data-collapse>
+          <div class="expandableCollapsibleDiv">
+            <h3 class="eg-text__paragraph eg-text__paragraph--20 eg-accordion__title"><span></span>{{ T "faq_first-item_title" }}</h3>
+            <p class="eg-text__paragraph eg-text__paragraph--18 d-none">{{ T "faq_first-item_text" | safeHTML }}</p>
+          </div>
+          <div class="expandableCollapsibleDiv">
+            <h3 class="eg-text__paragraph eg-text__paragraph--20 eg-accordion__title"><span></span>{{ T "faq_second-item_title" }}</h3>
+            <p class="eg-text__paragraph eg-text__paragraph--18 d-none">{{ T "faq_second-item_text" | safeHTML }}</p>
+          </div>
+          <div class="expandableCollapsibleDiv">
+            <h3 class="eg-text__paragraph eg-text__paragraph--20 eg-accordion__title"><span></span>{{ T "faq_third-item_title" }}</h3>
+            <p class="eg-text__paragraph eg-text__paragraph--18 d-none">{{ T "faq_third-item_text" | safeHTML }}</p>
+          </div>
+          <div class="expandableCollapsibleDiv">
+            <h3 class="eg-text__paragraph eg-text__paragraph--20 eg-accordion__title"><span></span>{{ T "faq_fourth-item_title" }}</h3>
+            <p class="eg-text__paragraph eg-text__paragraph--18 d-none">{{ T "faq_fourth-item_text" | safeHTML }}</p>
+          </div>
+          <div class="expandableCollapsibleDiv">
+            <h3 class="eg-text__paragraph eg-text__paragraph--20 eg-accordion__title"><span></span>{{ T "faq_fifth-item_title" }}</h3>
+            <p class="eg-text__paragraph eg-text__paragraph--18 d-none">{{ T "faq_fifth-item_text" | safeHTML }}</p>
+          </div>
+          <div class="expandableCollapsibleDiv">
+            <h3 class="eg-text__paragraph eg-text__paragraph--20 eg-accordion__title"><span></span>{{ T "faq_sixth-item_title" }}</h3>
+            <p class="eg-text__paragraph eg-text__paragraph--18 d-none">{{ T "faq_sixth-item_text" | safeHTML }}</p>
+          </div>
+          <div class="expandableCollapsibleDiv">
+            <h3 class="eg-text__paragraph eg-text__paragraph--20 eg-accordion__title"><span></span>{{ T "faq_seventh-item_title" }}</h3>
+            <p class="eg-text__paragraph eg-text__paragraph--18 d-none">{{ T "faq_seventh-item_text" | safeHTML }}</p>
+          </div>
+          <div class="expandableCollapsibleDiv">
+            <h3 class="eg-text__paragraph eg-text__paragraph--20 eg-accordion__title"><span></span>{{ T "faq_eighth-item_title" }}</h3>
+            <p class="eg-text__paragraph eg-text__paragraph--18 d-none">{{ T "faq_eighth-item_text" | safeHTML }}</p>
+          </div>
+          <div class="expandableCollapsibleDiv">
+            <h3 class="eg-text__paragraph eg-text__paragraph--20 eg-accordion__title"><span></span>{{ T "faq_nineth-item_title" }}</h3>
+            <p class="eg-text__paragraph eg-text__paragraph--18 d-none">{{ T "faq_nineth-item_text" | safeHTML }}</p>
+          </div>
         </div>
       </div>
     </section>

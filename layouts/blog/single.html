@@ -25,13 +25,13 @@
       </div>
     </section>
     <section class="container">
-      <div class="border-section container--margins-y container--last-container ">
+      <div class="border-section container--margins-y container--last-container container--lg-padding-bottom">
         <h2 class="eg-title eg-mb-2-5">{{ T "blog_related_reads" }}</h2>
         <div class="eg-blog eg-blog--w-100">
           <div class="eg-blog__main related">
             {{ $blogPosts := where .Site.Pages "Section" "blog" }}
             {{ range $blogPosts }}
-              <a class="eg-blog__item eg-link related__post d-none" href="{{.Permalink}}">
+              <a class="eg-blog__item eg-link related__post" href="{{.Permalink}}">
                 <div class="eg-blog__item-img"><img src="{{ .Params.blogPhoto }}" height="188" width="335" alt="blog photo"></div>
                 <h3 class="eg-blog__item-title"><span>{{ truncate 50 .Title }}</span></h3>
                 <p class="eg-blog__item-paragraph">{{ truncate 155 .Summary}}</p>

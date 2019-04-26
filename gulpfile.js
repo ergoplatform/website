@@ -57,6 +57,7 @@ gulp.task('js', () => gulp.src('./src/js/index.js')
         $: 'jquery',
         jQuery: 'jquery',
         'jquery-ui': 'jquery-ui',
+        'jquery-collapse': 'jquery-collapse',
       }),
     ],
   }))
