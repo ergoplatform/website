@@ -2,76 +2,76 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on </title>
-    <link>/en/blog/</link>
+    <link>https://powerful-spire-67290.herokuapp.com/en/blog/</link>
     <description>Recent content in Blog on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 12 Apr 2019 13:49:52 +0300</lastBuildDate>
     
-	<atom:link href="/en/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://powerful-spire-67290.herokuapp.com/en/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ergo Platform is a storage of rich state with language safer than Bitcoin&#39;s</title>
-      <link>/en/blog/second/</link>
+      <link>https://powerful-spire-67290.herokuapp.com/en/blog/second/</link>
       <pubDate>Wed, 17 Apr 2019 17:16:39 +0300</pubDate>
       
-      <guid>/en/blog/second/</guid>
+      <guid>https://powerful-spire-67290.herokuapp.com/en/blog/second/</guid>
       <description>After multiple internal discussions as well as taking into consideration our community’s input, we are pleased to announce Ergo’s MainNet After multiple internal discussions as well as taking into consideration our community’s input, we are pleased to announce Ergo’s MainNet</description>
     </item>
     
     <item>
       <title>Self-Reproducing Coins as Universal Turing Machine</title>
-      <link>/en/blog/2019_02_08/</link>
+      <link>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_08/</link>
       <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
       
-      <guid>/en/blog/2019_02_08/</guid>
+      <guid>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_08/</guid>
       <description>sdf</description>
     </item>
     
     <item>
       <title>Self-Reproducing Coins as Universal Turing Machine</title>
-      <link>/en/blog/2019_02_09/</link>
+      <link>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_09/</link>
       <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
       
-      <guid>/en/blog/2019_02_09/</guid>
+      <guid>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_09/</guid>
       <description>sdf</description>
     </item>
     
     <item>
       <title>Self-Reproducing Coins as Universal Turing Machine</title>
-      <link>/en/blog/2019_02_10/</link>
+      <link>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_10/</link>
       <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
       
-      <guid>/en/blog/2019_02_10/</guid>
+      <guid>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_10/</guid>
       <description>Data oracles are indispensable to blockchain infrastructure. In the first article in a series devoted to blockchain data oracles, we discuss how Waves’ protocol will help make an oracle accessible to the entire community.
 A smart contract written on the blockchain is unable to access data outside its own network. This problem is resolved by using data oracles, which are basically agents that find real-world information and feed it to the blockchain for use by smart contracts and dApps.</description>
     </item>
     
     <item>
       <title>Self-Reproducing Coins as Universal Turing Machine</title>
-      <link>/en/blog/2019_02_11/</link>
+      <link>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_11/</link>
       <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
       
-      <guid>/en/blog/2019_02_11/</guid>
+      <guid>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_11/</guid>
       <description>sdf</description>
     </item>
     
     <item>
       <title>Self-Reproducing Coins as Universal Turing Machine</title>
-      <link>/en/blog/2019_02_12/</link>
+      <link>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_12/</link>
       <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
       
-      <guid>/en/blog/2019_02_12/</guid>
+      <guid>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_12/</guid>
       <description>sdf</description>
     </item>
     
     <item>
       <title>Self-Reproducing Coins as Universal Turing Machine</title>
-      <link>/en/blog/first/</link>
+      <link>https://powerful-spire-67290.herokuapp.com/en/blog/first/</link>
       <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
       
-      <guid>/en/blog/first/</guid>
+      <guid>https://powerful-spire-67290.herokuapp.com/en/blog/first/</guid>
       <description>After multiple internal discussions as well as taking into consideration our community’s input, we are pleased to announce Ergo’s MainNet After multiple internal discussions as well as taking into consideration our community’s input, we are pleased to announce Ergo’s MainNet</description>
     </item>
     

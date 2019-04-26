@@ -34,7 +34,7 @@
                   <li class="eg-nav__item {{ if eq $url .URL  }}active{{ end }}">
                     <a
                       class="eg-nav__link eg-link"
-                      href="/{{ .URL | absLangURL }}"
+                      href="{{ .URL | absLangURL }}"
                     ><span>{{ .Name }}</span></a>
                   </li>
                 {{ end }}

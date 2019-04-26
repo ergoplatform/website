@@ -3,248 +3,303 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/en/wallets/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/wallets/</loc>
     <lastmod>2019-04-24T13:59:34+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/en/news/2019-04-24-teaser/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/news/2019-04-24-teaser/</loc>
     <lastmod>2019-04-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/en/exchanges/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/exchanges/</loc>
     <lastmod>2019-04-23T14:43:56+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/en/software/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/software/</loc>
     <lastmod>2019-04-22T18:58:37+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/en/tools/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/tools/</loc>
     <lastmod>2019-04-22T18:00:17+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/en/tech/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/tech/</loc>
     <lastmod>2019-04-22T16:22:15+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/en/basics/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/basics/</loc>
     <lastmod>2019-04-22T15:55:51+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/basics/"
+                href="https://powerful-spire-67290.herokuapp.com/ru/basics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/basics/"
+                href="https://powerful-spire-67290.herokuapp.com/en/basics/"
                 />
   </url>
   
   <url>
-    <loc>/en/blog/second/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/blog/second/</loc>
     <lastmod>2019-04-17T17:16:39+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/en/blog/2019_02_08/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_08/</loc>
     <lastmod>2019-04-17T17:16:35+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/en/blog/2019_02_09/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_09/</loc>
     <lastmod>2019-04-17T17:16:35+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/en/blog/2019_02_10/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_10/</loc>
     <lastmod>2019-04-17T17:16:35+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/en/blog/2019_02_11/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_11/</loc>
     <lastmod>2019-04-17T17:16:35+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/en/blog/2019_02_12/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_12/</loc>
     <lastmod>2019-04-17T17:16:35+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/en/blog/first/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/blog/first/</loc>
     <lastmod>2019-04-17T17:16:35+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/en/news/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/news/</loc>
     <lastmod>2019-04-12T13:50:10+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/news/"
+                href="https://powerful-spire-67290.herokuapp.com/ru/news/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/news/"
+                href="https://powerful-spire-67290.herokuapp.com/en/news/"
                 />
   </url>
   
   <url>
-    <loc>/en/faq/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/faq/</loc>
     <lastmod>2019-04-12T13:50:04+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/faq/"
+                href="https://powerful-spire-67290.herokuapp.com/ru/faq/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/faq/"
+                href="https://powerful-spire-67290.herokuapp.com/en/faq/"
                 />
   </url>
   
   <url>
-    <loc>/en/documents/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/documents/</loc>
     <lastmod>2019-04-12T13:49:59+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/documents/"
+                href="https://powerful-spire-67290.herokuapp.com/ru/documents/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/documents/"
+                href="https://powerful-spire-67290.herokuapp.com/en/documents/"
                 />
   </url>
   
   <url>
-    <loc>/en/blog/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/blog/</loc>
     <lastmod>2019-04-12T13:49:52+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/blog/"
+                href="https://powerful-spire-67290.herokuapp.com/ru/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/blog/"
+                href="https://powerful-spire-67290.herokuapp.com/en/blog/"
                 />
   </url>
   
   <url>
-    <loc>/en/team/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/team/</loc>
     <lastmod>2019-04-11T20:29:21+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/team/"
+                href="https://powerful-spire-67290.herokuapp.com/ru/team/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/team/"
+                href="https://powerful-spire-67290.herokuapp.com/en/team/"
                 />
   </url>
   
   <url>
-    <loc>/en/about/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/about/</loc>
     <lastmod>2019-04-11T20:27:44+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/about/"
+                href="https://powerful-spire-67290.herokuapp.com/ru/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/about/"
+                href="https://powerful-spire-67290.herokuapp.com/en/about/"
                 />
   </url>
   
   <url>
-    <loc>/en/news/2019-04-03-ergo-mining-tutorial/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/news/2019-04-03-ergo-mining-tutorial/</loc>
     <lastmod>2019-04-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/en/news/2019-04-02-testnet-2.0.3/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/news/2019-04-02-testnet-2.0.3/</loc>
     <lastmod>2019-04-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/en/news/2019-03-19/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/news/2019-03-19/</loc>
     <lastmod>2019-03-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/en/news/2019_03_17-how-to-set-up-full-node/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/news/2019_03_17-how-to-set-up-full-node/</loc>
     <lastmod>2019-03-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/en/news/2019-03-14/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/news/2019-03-14/</loc>
     <lastmod>2019-03-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/en/news/2019-03-12/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/news/2019-03-12/</loc>
     <lastmod>2019-03-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/en/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/</loc>
     <lastmod>2019-04-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/"
+                href="https://powerful-spire-67290.herokuapp.com/ru/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/"
+                href="https://powerful-spire-67290.herokuapp.com/en/"
                 />
   </url>
   
   <url>
-    <loc>/en/categories/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/categories/</loc>
+    <changefreq>weekly</changefreq>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/categories/"
+                href="https://powerful-spire-67290.herokuapp.com/ru/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/categories/"
+                href="https://powerful-spire-67290.herokuapp.com/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>/en/tags/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/tags/</loc>
+    <changefreq>weekly</changefreq>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/tags/"
+                href="https://powerful-spire-67290.herokuapp.com/ru/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/tags/"
+                href="https://powerful-spire-67290.herokuapp.com/en/tags/"
                 />
   </url>
   

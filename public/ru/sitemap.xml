@@ -3,152 +3,169 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/ru/basics/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/ru/basics/</loc>
     <lastmod>2019-04-22T16:06:15+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/basics/"
+                href="https://powerful-spire-67290.herokuapp.com/en/basics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/basics/"
+                href="https://powerful-spire-67290.herokuapp.com/ru/basics/"
                 />
   </url>
   
   <url>
-    <loc>/ru/news/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/ru/news/</loc>
     <lastmod>2019-04-12T13:50:10+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/news/"
+                href="https://powerful-spire-67290.herokuapp.com/en/news/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/news/"
+                href="https://powerful-spire-67290.herokuapp.com/ru/news/"
                 />
   </url>
   
   <url>
-    <loc>/ru/faq/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/ru/faq/</loc>
     <lastmod>2019-04-12T13:50:04+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/faq/"
+                href="https://powerful-spire-67290.herokuapp.com/en/faq/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/faq/"
+                href="https://powerful-spire-67290.herokuapp.com/ru/faq/"
                 />
   </url>
   
   <url>
-    <loc>/ru/documents/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/ru/documents/</loc>
     <lastmod>2019-04-12T13:49:59+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/documents/"
+                href="https://powerful-spire-67290.herokuapp.com/en/documents/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/documents/"
+                href="https://powerful-spire-67290.herokuapp.com/ru/documents/"
                 />
   </url>
   
   <url>
-    <loc>/ru/blog/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/ru/blog/</loc>
     <lastmod>2019-04-12T13:49:52+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/blog/"
+                href="https://powerful-spire-67290.herokuapp.com/en/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/blog/"
+                href="https://powerful-spire-67290.herokuapp.com/ru/blog/"
                 />
   </url>
   
   <url>
-    <loc>/ru/team/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/ru/team/</loc>
     <lastmod>2019-04-11T20:29:21+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/team/"
+                href="https://powerful-spire-67290.herokuapp.com/en/team/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/team/"
+                href="https://powerful-spire-67290.herokuapp.com/ru/team/"
                 />
   </url>
   
   <url>
-    <loc>/ru/about/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/ru/about/</loc>
     <lastmod>2019-04-11T20:27:44+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/about/"
+                href="https://powerful-spire-67290.herokuapp.com/en/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/about/"
+                href="https://powerful-spire-67290.herokuapp.com/ru/about/"
                 />
   </url>
   
   <url>
-    <loc>/ru/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/ru/</loc>
+    <changefreq>weekly</changefreq>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/"
+                href="https://powerful-spire-67290.herokuapp.com/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/"
+                href="https://powerful-spire-67290.herokuapp.com/ru/"
                 />
   </url>
   
   <url>
-    <loc>/ru/categories/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/ru/categories/</loc>
+    <changefreq>weekly</changefreq>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/categories/"
+                href="https://powerful-spire-67290.herokuapp.com/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/categories/"
+                href="https://powerful-spire-67290.herokuapp.com/ru/categories/"
                 />
   </url>
   
   <url>
-    <loc>/ru/tags/</loc>
+    <loc>https://powerful-spire-67290.herokuapp.com/ru/tags/</loc>
+    <changefreq>weekly</changefreq>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/tags/"
+                href="https://powerful-spire-67290.herokuapp.com/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/tags/"
+                href="https://powerful-spire-67290.herokuapp.com/ru/tags/"
                 />
   </url>
   

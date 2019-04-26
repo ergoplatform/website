@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tech on </title>
-    <link>/en/tech/</link>
+    <link>https://powerful-spire-67290.herokuapp.com/en/tech/</link>
     <description>Recent content in Tech on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 22 Apr 2019 16:22:15 +0300</lastBuildDate>
     
-	<atom:link href="/en/tech/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://powerful-spire-67290.herokuapp.com/en/tech/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
