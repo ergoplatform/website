@@ -1,6 +1,8 @@
 # ergo-website
 
-Need lates version nodejs and yarn
+Need latest version nodejs and yarn.
+
+Need Hugo [0.55.4](https://github.com/gohugoio/hugo/releases) or later
 
 ## Setup
 

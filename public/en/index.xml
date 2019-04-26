@@ -21,67 +21,22 @@
     </item>
     
     <item>
-      <title>Ergo Platform is a storage of rich state with language safer than Bitcoin&#39;s</title>
-      <link>https://powerful-spire-67290.herokuapp.com/en/blog/second/</link>
-      <pubDate>Wed, 17 Apr 2019 17:16:39 +0300</pubDate>
+      <title>A Local Exchange Trading System On Top Of Ergo</title>
+      <link>https://powerful-spire-67290.herokuapp.com/en/blog/2019_04_22-lets/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://powerful-spire-67290.herokuapp.com/en/blog/second/</guid>
-      <description>After multiple internal discussions as well as taking into consideration our community’s input, we are pleased to announce Ergo’s MainNet After multiple internal discussions as well as taking into consideration our community’s input, we are pleased to announce Ergo’s MainNet</description>
+      <guid>https://powerful-spire-67290.herokuapp.com/en/blog/2019_04_22-lets/</guid>
+      <description>A local exchange trading system (LETS) is a local mutual credit association which members are allowed to create common credit money individually, with all the deals in the system written into a common ledger. As an example, assume that Alice with zero balance is willing to buy a liter of raw milk from Bob. First, they agree on a price, for example, assume that the price is about 2 Euro (as Alice and Bob are living in Ireland).</description>
     </item>
     
     <item>
-      <title>Self-Reproducing Coins as Universal Turing Machine</title>
-      <link>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_08/</link>
-      <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
+      <title>An ICO Example On Top Of Ergo</title>
+      <link>https://powerful-spire-67290.herokuapp.com/en/blog/2019_04_10-ico-example/</link>
+      <pubDate>Wed, 10 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_08/</guid>
-      <description>sdf</description>
-    </item>
-    
-    <item>
-      <title>Self-Reproducing Coins as Universal Turing Machine</title>
-      <link>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_09/</link>
-      <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
-      
-      <guid>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_09/</guid>
-      <description>sdf</description>
-    </item>
-    
-    <item>
-      <title>Self-Reproducing Coins as Universal Turing Machine</title>
-      <link>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_10/</link>
-      <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
-      
-      <guid>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_10/</guid>
-      <description>Data oracles are indispensable to blockchain infrastructure. In the first article in a series devoted to blockchain data oracles, we discuss how Waves’ protocol will help make an oracle accessible to the entire community.
-A smart contract written on the blockchain is unable to access data outside its own network. This problem is resolved by using data oracles, which are basically agents that find real-world information and feed it to the blockchain for use by smart contracts and dApps.</description>
-    </item>
-    
-    <item>
-      <title>Self-Reproducing Coins as Universal Turing Machine</title>
-      <link>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_11/</link>
-      <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
-      
-      <guid>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_11/</guid>
-      <description>sdf</description>
-    </item>
-    
-    <item>
-      <title>Self-Reproducing Coins as Universal Turing Machine</title>
-      <link>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_12/</link>
-      <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
-      
-      <guid>https://powerful-spire-67290.herokuapp.com/en/blog/2019_02_12/</guid>
-      <description>sdf</description>
-    </item>
-    
-    <item>
-      <title>Self-Reproducing Coins as Universal Turing Machine</title>
-      <link>https://powerful-spire-67290.herokuapp.com/en/blog/first/</link>
-      <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
-      
-      <guid>https://powerful-spire-67290.herokuapp.com/en/blog/first/</guid>
-      <description>After multiple internal discussions as well as taking into consideration our community’s input, we are pleased to announce Ergo’s MainNet After multiple internal discussions as well as taking into consideration our community’s input, we are pleased to announce Ergo’s MainNet</description>
+      <guid>https://powerful-spire-67290.herokuapp.com/en/blog/2019_04_10-ico-example/</guid>
+      <description>This article describes a full featured ICO (Initial Coin Offering) implemented in ErgoScript. The example covers several important and novel features of the Ergo Platform and shows how it can support complex contracts with tiny amount of code.
+Part 1. Preliminaries An important design decision in a cryptocurrency protocol is specifying what a spending transaction actually spends. There are two possibilities here. The first a UTXO-based model, as in Bitcoin, where a transaction spends one-time asset containers (called as &amp;lsquo;coins&amp;rsquo; or UTXOs in Bitcoin) and creates new ones.</description>
     </item>
     
     <item>
@@ -112,6 +67,17 @@ A smart contract written on the blockchain is unable to access data outside its 
     </item>
     
     <item>
+      <title>Q&amp;A with Alex Chepurnoy and Dmitry Meshkov</title>
+      <link>https://powerful-spire-67290.herokuapp.com/en/blog/2019_03_19-qa/</link>
+      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://powerful-spire-67290.herokuapp.com/en/blog/2019_03_19-qa/</guid>
+      <description>First, we have a major announcement - Ergo mainnet launch is planned for May 26 if no security vulnerabilities will be found during audit process!
+What are the vision about scaling and adoption?
+About scaling, the main approach is to avoid bloat without compromising functionality. E.g. persistent updateable storage is possible, with updates to be checked by a blockchain contract, but only digest of authenticated data structure (and some additional bytes, less than 40 bytes anyway) are stored in the UTXO set dependless on data set size.</description>
+    </item>
+    
+    <item>
       <title>How to set up and configure full Ergo node</title>
       <link>https://powerful-spire-67290.herokuapp.com/en/news/2019_03_17-how-to-set-up-full-node/</link>
       <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
@@ -136,6 +102,16 @@ A smart contract written on the blockchain is unable to access data outside its 
       
       <guid>https://powerful-spire-67290.herokuapp.com/en/news/2019-03-12/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Smart Contracts for the People</title>
+      <link>https://powerful-spire-67290.herokuapp.com/en/blog/2018_10_19-smart-contracts/</link>
+      <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://powerful-spire-67290.herokuapp.com/en/blog/2018_10_19-smart-contracts/</guid>
+      <description>!!! TODO !!!
+A lot of blockchain-related news these days are saying us that a bank X or a corporation Y is going to use a “blockchain” to “reduce costs”. Basically it means that just another buzzword is considered by big banksters as just another tool to extract value from everywhere in a more efficient way, and also to save on cutting job positions.</description>
     </item>
     
   </channel>
