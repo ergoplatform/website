@@ -20,6 +20,9 @@
           {{ .Content }}
         </div>
         <div>
+          <p>{{ .Site.BaseURL }}</p>
+          <p>{{ .URL }}</p>
+          <p>{{ ( print .Site.BaseURL .URL) }}</p>
           {{- partial "share.html" (dict "context" . "link" ( print .Site.BaseURL .URL) ) -}}
         </div>
       </div>

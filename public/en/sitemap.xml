@@ -3,248 +3,248 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/en/wallets/</loc>
+    <loc>example.com/en/wallets/</loc>
     <lastmod>2019-04-24T13:59:34+03:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/news/2019-04-24-teaser/</loc>
+    <loc>example.com/en/news/2019-04-24-teaser/</loc>
     <lastmod>2019-04-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/exchanges/</loc>
+    <loc>example.com/en/exchanges/</loc>
     <lastmod>2019-04-23T14:43:56+03:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/software/</loc>
+    <loc>example.com/en/software/</loc>
     <lastmod>2019-04-22T18:58:37+03:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/tools/</loc>
+    <loc>example.com/en/tools/</loc>
     <lastmod>2019-04-22T18:00:17+03:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/tech/</loc>
+    <loc>example.com/en/tech/</loc>
     <lastmod>2019-04-22T16:22:15+03:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/basics/</loc>
+    <loc>example.com/en/basics/</loc>
     <lastmod>2019-04-22T15:55:51+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/basics/"
+                href="example.com/ru/basics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/basics/"
+                href="example.com/en/basics/"
                 />
   </url>
   
   <url>
-    <loc>/en/blog/second/</loc>
+    <loc>example.com/en/blog/second/</loc>
     <lastmod>2019-04-17T17:16:39+03:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/blog/2019_02_08/</loc>
+    <loc>example.com/en/blog/2019_02_08/</loc>
     <lastmod>2019-04-17T17:16:35+03:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/blog/2019_02_09/</loc>
+    <loc>example.com/en/blog/2019_02_09/</loc>
     <lastmod>2019-04-17T17:16:35+03:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/blog/2019_02_10/</loc>
+    <loc>example.com/en/blog/2019_02_10/</loc>
     <lastmod>2019-04-17T17:16:35+03:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/blog/2019_02_11/</loc>
+    <loc>example.com/en/blog/2019_02_11/</loc>
     <lastmod>2019-04-17T17:16:35+03:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/blog/2019_02_12/</loc>
+    <loc>example.com/en/blog/2019_02_12/</loc>
     <lastmod>2019-04-17T17:16:35+03:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/blog/first/</loc>
+    <loc>example.com/en/blog/first/</loc>
     <lastmod>2019-04-17T17:16:35+03:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/news/</loc>
+    <loc>example.com/en/news/</loc>
     <lastmod>2019-04-12T13:50:10+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/news/"
+                href="example.com/ru/news/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/news/"
+                href="example.com/en/news/"
                 />
   </url>
   
   <url>
-    <loc>/en/faq/</loc>
+    <loc>example.com/en/faq/</loc>
     <lastmod>2019-04-12T13:50:04+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/faq/"
+                href="example.com/ru/faq/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/faq/"
+                href="example.com/en/faq/"
                 />
   </url>
   
   <url>
-    <loc>/en/documents/</loc>
+    <loc>example.com/en/documents/</loc>
     <lastmod>2019-04-12T13:49:59+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/documents/"
+                href="example.com/ru/documents/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/documents/"
+                href="example.com/en/documents/"
                 />
   </url>
   
   <url>
-    <loc>/en/blog/</loc>
+    <loc>example.com/en/blog/</loc>
     <lastmod>2019-04-12T13:49:52+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/blog/"
+                href="example.com/ru/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/blog/"
+                href="example.com/en/blog/"
                 />
   </url>
   
   <url>
-    <loc>/en/team/</loc>
+    <loc>example.com/en/team/</loc>
     <lastmod>2019-04-11T20:29:21+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/team/"
+                href="example.com/ru/team/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/team/"
+                href="example.com/en/team/"
                 />
   </url>
   
   <url>
-    <loc>/en/about/</loc>
+    <loc>example.com/en/about/</loc>
     <lastmod>2019-04-11T20:27:44+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/about/"
+                href="example.com/ru/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/about/"
+                href="example.com/en/about/"
                 />
   </url>
   
   <url>
-    <loc>/en/news/2019-04-03-ergo-mining-tutorial/</loc>
+    <loc>example.com/en/news/2019-04-03-ergo-mining-tutorial/</loc>
     <lastmod>2019-04-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/news/2019-04-02-testnet-2.0.3/</loc>
+    <loc>example.com/en/news/2019-04-02-testnet-2.0.3/</loc>
     <lastmod>2019-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/news/2019-03-19/</loc>
+    <loc>example.com/en/news/2019-03-19/</loc>
     <lastmod>2019-03-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/news/2019_03_17-how-to-set-up-full-node/</loc>
+    <loc>example.com/en/news/2019_03_17-how-to-set-up-full-node/</loc>
     <lastmod>2019-03-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/news/2019-03-14/</loc>
+    <loc>example.com/en/news/2019-03-14/</loc>
     <lastmod>2019-03-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/news/2019-03-12/</loc>
+    <loc>example.com/en/news/2019-03-12/</loc>
     <lastmod>2019-03-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/</loc>
+    <loc>example.com/en/</loc>
     <lastmod>2019-04-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/"
+                href="example.com/ru/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/"
+                href="example.com/en/"
                 />
   </url>
   
   <url>
-    <loc>/en/categories/</loc>
+    <loc>example.com/en/categories/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/categories/"
+                href="example.com/ru/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/categories/"
+                href="example.com/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>/en/tags/</loc>
+    <loc>example.com/en/tags/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/tags/"
+                href="example.com/ru/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/tags/"
+                href="example.com/en/tags/"
                 />
   </url>
   

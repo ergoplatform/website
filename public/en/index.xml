@@ -2,139 +2,139 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>/en/</link>
+    <link>example.com/en/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 24 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="example.com/en/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ergo teaser</title>
-      <link>/en/news/2019-04-24-teaser/</link>
+      <link>example.com/en/news/2019-04-24-teaser/</link>
       <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/news/2019-04-24-teaser/</guid>
+      <guid>example.com/en/news/2019-04-24-teaser/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ergo Platform is a storage of rich state with language safer than Bitcoin&#39;s</title>
-      <link>/en/blog/second/</link>
+      <link>example.com/en/blog/second/</link>
       <pubDate>Wed, 17 Apr 2019 17:16:39 +0300</pubDate>
       
-      <guid>/en/blog/second/</guid>
+      <guid>example.com/en/blog/second/</guid>
       <description>After multiple internal discussions as well as taking into consideration our community’s input, we are pleased to announce Ergo’s MainNet After multiple internal discussions as well as taking into consideration our community’s input, we are pleased to announce Ergo’s MainNet</description>
     </item>
     
     <item>
       <title>Self-Reproducing Coins as Universal Turing Machine</title>
-      <link>/en/blog/2019_02_08/</link>
+      <link>example.com/en/blog/2019_02_08/</link>
       <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
       
-      <guid>/en/blog/2019_02_08/</guid>
+      <guid>example.com/en/blog/2019_02_08/</guid>
       <description>sdf</description>
     </item>
     
     <item>
       <title>Self-Reproducing Coins as Universal Turing Machine</title>
-      <link>/en/blog/2019_02_09/</link>
+      <link>example.com/en/blog/2019_02_09/</link>
       <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
       
-      <guid>/en/blog/2019_02_09/</guid>
+      <guid>example.com/en/blog/2019_02_09/</guid>
       <description>sdf</description>
     </item>
     
     <item>
       <title>Self-Reproducing Coins as Universal Turing Machine</title>
-      <link>/en/blog/2019_02_10/</link>
+      <link>example.com/en/blog/2019_02_10/</link>
       <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
       
-      <guid>/en/blog/2019_02_10/</guid>
+      <guid>example.com/en/blog/2019_02_10/</guid>
       <description>Data oracles are indispensable to blockchain infrastructure. In the first article in a series devoted to blockchain data oracles, we discuss how Waves’ protocol will help make an oracle accessible to the entire community.
 A smart contract written on the blockchain is unable to access data outside its own network. This problem is resolved by using data oracles, which are basically agents that find real-world information and feed it to the blockchain for use by smart contracts and dApps.</description>
     </item>
     
     <item>
       <title>Self-Reproducing Coins as Universal Turing Machine</title>
-      <link>/en/blog/2019_02_11/</link>
+      <link>example.com/en/blog/2019_02_11/</link>
       <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
       
-      <guid>/en/blog/2019_02_11/</guid>
+      <guid>example.com/en/blog/2019_02_11/</guid>
       <description>sdf</description>
     </item>
     
     <item>
       <title>Self-Reproducing Coins as Universal Turing Machine</title>
-      <link>/en/blog/2019_02_12/</link>
+      <link>example.com/en/blog/2019_02_12/</link>
       <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
       
-      <guid>/en/blog/2019_02_12/</guid>
+      <guid>example.com/en/blog/2019_02_12/</guid>
       <description>sdf</description>
     </item>
     
     <item>
       <title>Self-Reproducing Coins as Universal Turing Machine</title>
-      <link>/en/blog/first/</link>
+      <link>example.com/en/blog/first/</link>
       <pubDate>Wed, 17 Apr 2019 17:16:35 +0300</pubDate>
       
-      <guid>/en/blog/first/</guid>
+      <guid>example.com/en/blog/first/</guid>
       <description>After multiple internal discussions as well as taking into consideration our community’s input, we are pleased to announce Ergo’s MainNet After multiple internal discussions as well as taking into consideration our community’s input, we are pleased to announce Ergo’s MainNet</description>
     </item>
     
     <item>
       <title>Ergo mining tutorial</title>
-      <link>/en/news/2019-04-03-ergo-mining-tutorial/</link>
+      <link>example.com/en/news/2019-04-03-ergo-mining-tutorial/</link>
       <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/news/2019-04-03-ergo-mining-tutorial/</guid>
+      <guid>example.com/en/news/2019-04-03-ergo-mining-tutorial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Testnet 2.0.3 released</title>
-      <link>/en/news/2019-04-02-testnet-2.0.3/</link>
+      <link>example.com/en/news/2019-04-02-testnet-2.0.3/</link>
       <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/news/2019-04-02-testnet-2.0.3/</guid>
+      <guid>example.com/en/news/2019-04-02-testnet-2.0.3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Q&amp;A session transcript. Mainnet launch is planned for May 26</title>
-      <link>/en/news/2019-03-19/</link>
+      <link>example.com/en/news/2019-03-19/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/news/2019-03-19/</guid>
+      <guid>example.com/en/news/2019-03-19/</guid>
       <description></description>
     </item>
     
     <item>
       <title>How to set up and configure full Ergo node</title>
-      <link>/en/news/2019_03_17-how-to-set-up-full-node/</link>
+      <link>example.com/en/news/2019_03_17-how-to-set-up-full-node/</link>
       <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/news/2019_03_17-how-to-set-up-full-node/</guid>
+      <guid>example.com/en/news/2019_03_17-how-to-set-up-full-node/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Testnet 2.0 is live! Smart contracts language updated</title>
-      <link>/en/news/2019-03-14/</link>
+      <link>example.com/en/news/2019-03-14/</link>
       <pubDate>Thu, 14 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/news/2019-03-14/</guid>
+      <guid>example.com/en/news/2019-03-14/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ErgoScript, a Cryptocurrency Scripting Language Supporting Noninteractive Zero-Knowledge Proofs</title>
-      <link>/en/news/2019-03-12/</link>
+      <link>example.com/en/news/2019-03-12/</link>
       <pubDate>Tue, 12 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/news/2019-03-12/</guid>
+      <guid>example.com/en/news/2019-03-12/</guid>
       <description></description>
     </item>
     

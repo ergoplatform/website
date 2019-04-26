@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on </title>
-    <link>/ru/news/</link>
+    <link>example.com/ru/news/</link>
     <description>Recent content in News on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <lastBuildDate>Fri, 12 Apr 2019 13:50:10 +0300</lastBuildDate>
     
-	<atom:link href="/ru/news/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="example.com/ru/news/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
