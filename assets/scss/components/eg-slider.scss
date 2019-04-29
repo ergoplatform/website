@@ -1,7 +1,8 @@
 .eg-slider {
   .eg-slider__nav {
     .slick-list.draggable {
-      width: 100%;
+      overflow: visible !important;
+      max-width: 1600px;
       padding-left: 70px;
       padding-right: 70px;
       margin: 0 auto;

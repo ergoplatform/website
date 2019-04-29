@@ -248,6 +248,22 @@
   </url>
   
   <url>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/categories/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://powerful-spire-67290.herokuapp.com/ru/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://powerful-spire-67290.herokuapp.com/en/categories/"
+                />
+  </url>
+  
+  <url>
     <loc>https://powerful-spire-67290.herokuapp.com/en/</loc>
     <lastmod>2019-04-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -261,22 +277,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://powerful-spire-67290.herokuapp.com/en/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://powerful-spire-67290.herokuapp.com/en/categories/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://powerful-spire-67290.herokuapp.com/ru/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://powerful-spire-67290.herokuapp.com/en/categories/"
                 />
   </url>
   

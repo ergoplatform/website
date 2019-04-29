@@ -3,6 +3,7 @@ baseURL = "https://powerful-spire-67290.herokuapp.com"
 languageCode = "en"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
+title = "Ergo"
 
 # Links format
 [permalinks]
@@ -15,6 +16,7 @@ defaultContentLanguageInSubdir = true
 
 [params]
   defaultLanguage = "en"
+  description = "Ergo platform"
 
 [languages.en]
   languageCode = "en"

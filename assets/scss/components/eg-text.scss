@@ -125,6 +125,12 @@
         margin-bottom: 1rem;
       }
 
+      &:last-child {
+        @media (max-width: $sm) {
+          margin-bottom: 2rem;
+        }
+      }
+
       a {
         font-size: 18px;
         line-height: 24px;
@@ -140,11 +146,6 @@
       font-size: 26px;
       line-height: 30px;
       margin-bottom: 1rem;
-
-      @media (max-width: $md) {
-        font-size: 24px;
-        line-height: 28px;
-      }
 
       @media (max-width: $sm) {
         font-size: 22px;

@@ -1,10 +1,17 @@
 .eg-accordion {
   &__title {
+    font-size: 20px;
+    line-height: 30px;
     position: relative;
     font-weight: normal;
     cursor: pointer;
     outline: none;
     margin-bottom: 1rem;
+
+    @media (max-width: $sm) {
+      font-size: 18px;
+      line-height: 24px;
+    }
 
     &.active {
       span {

@@ -1,7 +1,6 @@
 import $ from 'jquery';
 import 'jquery-ui/ui/widgets/tabs';
 import 'slick-carousel';
-import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 import { downloader } from './downloadMore';
 
@@ -123,6 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (document.getElementsByClassName('expandableCollapsibleDiv').length > 0) {
+    $('.expandableCollapsibleDiv').find('p').removeClass('d-none');
     $('.expandableCollapsibleDiv h3').click((e) => {
       const showElementDescription = $(e.currentTarget).parent('.expandableCollapsibleDiv').find('p');
       const elementTitle = $(e.currentTarget).parent('.expandableCollapsibleDiv').find('h3');
