@@ -6,7 +6,7 @@
         <a href="mailto:ergoplatform@protonmail.com" class="eg-footer__name-mail eg-link"><span>ergoplatform@protonmail.com</span></a>
       </div>
       <div class="eg-footer__copyright">
-        <span class="eg-footer__copyright-paragraph">Ergo Platform © 2019</span>
+        <span class="eg-footer__copyright-paragraph">Ergo Platform © {{ now.Format "2006"}}</span>
         <ul class="eg-footer__copyright-list">
           <li class="eg-footer__copyright-item"><a class="eg-footer__copyright-link" href="{{ `privacy` | absLangURL | safeURL }}">{{ T "privacy_policy_link" }}</a></li>
           <li class="eg-footer__copyright-item"><a class="eg-footer__copyright-link" href="{{ `legal` | absLangURL | safeURL}}">{{ T "legal_link" }}</a></li>
