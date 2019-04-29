@@ -3,7 +3,7 @@
   translation: Ergo is a resilient platform
 
 - id: header_contractual_money
-  translation: for contractual money
+  translation: for Contractual Money
 
 - id: getting_started
   translation: Getting started with Ergo
@@ -18,7 +18,7 @@
   translation: Economy model
 
 - id: ergo_contractual
-  translation: Contractual money
+  translation: Contractual Money
 
 - id: ergo_survivability
   translation: Survivability
@@ -34,7 +34,7 @@
 - id: ergo_decentralization_text
   translation: "Outstanding resilience of blockchain systems is achieved by a combination of modern cryptographic algorithms and decentralized architecture. While cryptography is widely used outside the cryptocurrencies, decentralized architecture forms a unique property of blockchain systems making them even more secure due to lack of single point of failure.
   <br/><br/>
-  Ergo struggle with the centralization at all levels. Ergo have an ASIC and pool resistant Proof-of-Work algorithm, preventing blockchain centralization in the hands of miners and pool operators. Its treasury system allows preventing governance and development centralization, while light nodes with high-security guaranties prevent services centralization"
+  Ergo struggle with the centralization at all levels. Ergo have an ASIC and pool resistant Proof-of-Work algorithm, preventing blockchain centralization in the hands of miners and pool operators. Its treasury system allows preventing governance and development centralization, while light nodes with high-security guaranties prevent services centralization."
 
 - id: ergo_economy_text
   translation: "To achieve survivability, Ergo provides economic improvements in addition to the technical ones. A storage rent component makes Ergo similar to regular cloud storage services. However it has several significant consequences: it makes Ergo mining stable after the initial emission, prevents state size growth and provides a way to return coins to circulation.
@@ -47,7 +47,7 @@
                    Ergo offers a powerful and protocol-friendly scripting language based on Σ-protocols, that allows specifying conditions under which a coin can be used. In the simple case, a coin can be spent at any time by an owner of a secret key, but more complex spending conditions may specify multiple coin holders, time of spending, the direction of spending and so on, allowing to implement contracts of arbitrary complexity."
 
 - id: ergo_survivability_text
-  translation: "Being a platform for contractual money, Ergo should also support long-term contracts for a period of a person’s life. Ergo general approach is to use well-tested solutions proved to be secure in the long-term, even if that leads to slower short-term innovations.
+  translation: "Being a platform for Contractual Money, Ergo should also support long-term contracts for a period of a person’s life. Ergo general approach is to use well-tested solutions proved to be secure in the long-term, even if that leads to slower short-term innovations.
   <br/><br/>
   Combination of PoW consensus protocol and authenticated state prevents performance degradation over time, allowing to join the network and use it from commodity hardware. Ergo economy model makes the system more reliable from the economic point of view, while on-chain governance allows gradual changes in the network parameters."
 
@@ -258,13 +258,14 @@
   translation: Get Ergo
 
 - id: about_third_paragraph
-  translation: The quickest and easiest way to acquire Ergo is to visit an exchange. We can point you in the right direction.
+  translation: "Ergo can be mined by users with access to commodity hardware.
+  However, the quickest and easiest way to acquire Ergo for many users will be to visit an exchange. We can point you in the right direction."
 
 - id: about_fourth_title
   translation: Write a contract
 
 - id: about_fourth_paragraph
-  translation: Ergo is not just a currency but is a platform for contractual money. Explore tutorials and examples and try to implement your own application powered by Ergo.
+  translation: Ergo is not just a currency but is a platform for Contractual Money. Explore tutorials and examples and try to implement your own application powered by Ergo.
 
 #basics
 
@@ -275,7 +276,7 @@
   translation: Vision
 
 - id: basics_vision
-  translation: "Ergo was created in response to stagnation in the blockchain area. It implements various technical and economic ready-to-use ideas that add value to the project but does not reduce the known advantages of cryptocurrencies. Ergo primary focus is to provide an efficient and secure way to implement financial contracts, which are the most widely used application of blockchain technology. It is created to provide an easy way to use financial contracts by ordinary people, that should be able to use them in a decentralized manner without any trust. Ergo protocol is designed to be survivable in a long-term focus, making it useful to implement contracts for a period of a person’s life."
+  translation: "Ergo was created in response to stagnation in the blockchain area. It implements various technical and economic ready-to-use ideas that add value to the project but does not reduce the known advantages of blockchain systems. Ergo primary focus is to provide an efficient and secure way to implement financial contracts, which are the most widely used application of blockchain technology. It is created to provide an easy way to use financial contracts by ordinary people, that should be able to use them in a decentralized manner without any trust. Ergo protocol is designed to be survivable in a long-term focus, making it useful to implement contracts for a period of a person’s life."
 
 - id: basics_consensus_title
   translation: Consensus
@@ -291,7 +292,7 @@
   translation: Light clients
 
 - id: basics_clients
-  translation: "It is almost impossible to use existing cryptocurrencies without the help of trusted third-parties. To receive even a small amount of coins in a trustless fashion, a client must download and process gigabytes of data to synchronize with the network, which may take several weeks even on high-end hardware, not to mention mobile devices. It is, therefore, no surprise that most users prefer to use trusted solutions for wallets, exchanges, block explorers and so on. <br/>
+  translation: "It is almost impossible to use existing cryptocurrencies without the help of trusted third-parties. To receive even a small amount of coins in a trustless fashion, a client must download and process gigabytes of data to synchronize with the network, which may take several weeks even on high-end hardware, not to mention mobile devices. It is, therefore, no surprise that most users prefer to use trusted solutions for wallets, exchanges, block explorers and so on. <br/><br/>
                   Ergo was designed to be maximally user-friendly in the sense of decentralization. One of the important properties of PoW is that it enables verification of the work done without downloading the full chain. Ergo blocks support NiPoPoW proofs, allowing light clients to synchronize with the network by downloading less than a megabyte of data. Also, Ergo uses authenticated state, and for any transaction included, a client may download proof of its correctness. Thus, regardless of the blockchain size, a regular user with a smart-phone can join the network and start using Ergo with the same security guarantees as a full node."
 
 
@@ -300,9 +301,9 @@
   translation: Survivability
 
 - id: basics_survivability
-  translation: "To survive in the long-term, Ergo prefers well-tested solutions. If there isn't already a well-teste solution for some problem, we perform our own research, and the number of peer-reviewed papers from the Ergo development team is already extensive.
-                  <br/>  To be survivable, the network should adapt to changing environment without the intervention of trusted parties (such as a ``core developer'' team). Ergo's on-chain miner voting protocol allows gradual changes in a large number of parameters including maximum block size, storage fee factor and more.
-                  <br/> For more fundamental changes Ergo is going to follow a soft-forkability approach --- if an overwhelming majority of the network accepts a new feature, it is activated, however, old nodes which do not upgrade continue to operate normally and just skip over this feature validation.
+  translation: "To survive in the long-term, Ergo prefers well-tested solutions. If there isn't already a well-tested solution for some problem, we perform our own research, and the number of peer-reviewed papers from the Ergo development team is already extensive.
+                  <br/><br/>  A resilient network should adapt to changing environment without the intervention of trusted parties (such as a ``core developer'' team). Ergo's on-chain miner voting protocol allows gradual changes in a large number of parameters including maximum block size, storage fee factor and more.
+                  <br/><br/> For more fundamental changes Ergo is going to follow a soft-forkability approach --- if an overwhelming majority of the network accepts a new feature, it is activated, however, old nodes which do not upgrade continue to operate normally and just skip over this feature validation.
   "
 
 - id: basics_ecomony_title
@@ -310,14 +311,14 @@
 
 - id: basics_ecomony_paragraph
   translation: "
-  To achieve survivability, Ergo provides economic improvements in addition to the technical ones, most central of which is a storage fee component which plays an important role for Ergo‘s stability: if an output remains in the state for 4 years without being moved, a miner may charge a small fee for every byte kept in the state. This idea is similar to regular cloud storage services, but it was only proposed quite recently for cryptocurrencies and has several significant consequences. First, Ergo mining will always be stable, unlike Bitcoin and other PoW currencies, in which mining may become unstable after the emission period. Second, state size growth becomes controllable and predictable reducing hardware requirements for Ergo miners. Third, by collecting storage fees from outdated boxes, miners return coins to circulation preventing a steady decrease of circulating supply due to lost keys. Finally, it also predetermines the value of Ergo native token - it is a utility token used to pay for storage rent. While Ergo users are free to implement any kind of applications on top of it, they would require to use Ergo native token as well in order to pay storage rent.
-  "
+  To achieve survivability, Ergo provides economic improvements in addition to the technical ones, most central of which is a storage fee component which plays an important role for Ergo‘s stability: if an output remains in the state for 4 years without being moved, a miner may charge a small fee for every byte kept in the state. This idea is similar to regular cloud storage services, but it's application to blockchain systems has several significant consequences. First, Ergo mining will always be stable, unlike Bitcoin and other PoW currencies, in which mining may become unstable after the emission period. Second, state size growth becomes controllable and predictable reducing hardware requirements for Ergo miners. Third, by collecting storage fees from outdated boxes, miners return coins to circulation preventing a steady decrease of circulating supply due to lost keys. Establishes long‐term unique use case for Ergo’s native token (“Erg”) as the only token on the Ergo blockchain that can be used to pay for storage rent, despite the expected presence of a large number of non‐native tokens that may be issued on the Ergo blockchain in order to benefit from its strong security and decentralization qualities and Contractual Money functionality.  "
 
 - id: basics_applicability_title
   translation: Applicability
 
 - id: basics_applicability_paragraph
-  translation: "Ergo DApps and offchain protocols may be implemented in a truly decentralized way due to light clients, however, they also require a flexible and safe smart contract language. Ergo smart contracts are based on a Bitcoin-like UTXO model, where every output is protected by some script. If the scripting language is rich enough, it enables writing of Turing-complete contracts while avoiding ad-hoc solutions for program halting like gas in Ethereum. While having significantly more versatility than Bitcoin script, Ergo script only contains operations, that allow estimation of script complexity before execution, which prevents various DoS attacks. However, these instructions set is enough to write any possible program — ErgoScript was proven to be Turing complete. The cryptographic part of Ergo script is based on sigma protocols and naturally supports threshold m-of-n signatures, ring signatures and more."
+  translation: "Ergo DApps and offchain protocols may be implemented in a truly decentralized way due to light clients, however, they also require a flexible and safe smart contract language. Ergo smart contracts are based on a Bitcoin-like UTXO model, where every output is protected by some script. If the scripting language is rich enough, it enables writing of Turing-complete contracts while avoiding ad-hoc solutions for program halting like gas in Ethereum. While having significantly more versatility than Bitcoin script, Ergo script only contains operations, that allow estimation of script complexity before execution, which prevents various DoS attacks. However, these instructions set is enough to write any possible program — ErgoScript was proven to be Turing complete. The cryptographic part of Ergo script is based on sigma protocols and naturally supports threshold m-of-n signatures, ring signatures and more. Keeping these all in mind, we expect ErgoScript and Ergo’s design to make it uniquely useful as Contractual Money with a countless applications possible.
+  "
 
 - id: basics_second_title
   translation: Learn more
@@ -444,6 +445,9 @@
 - id: tools_second-section_fifth-sub_title
   translation: Libraries
 
+- id: tools_second-section_scorex_link
+  translation: (Scala) Scorex framework
+
 - id: tools_second-section_fifth-sub_first_link
   translation: (Scala) ErgoScript
 
@@ -468,7 +472,7 @@
   translation: Software
 
 - id: software_first-section_first_paragraph
-  translation: Ergo is a new cryptocurrency which is written from scratch and is not a fork of any other cryptocurrency.
+  translation: "Ergo is a blockchain-based platform for Contractual Money which is written from scratch on Scala language and is not a fork of any other cryptocurrency."
 
 - id: software_first-section_second_paragraph
   translation: "As far as software is reliable to keep your secret keys in private, it is highly recommended to build software from sources.
@@ -587,17 +591,18 @@
   translation: What is Ergo?
 
 - id: faq_first-item_text
-  translation: "Ergo is designed to be a platform for applications with the main focus to provide an efficient, secure and easy way to imple ment financial contracts. <br/><br/>
-  To achieve this goal, Ergo includes various technical and economic improvements to existed blockchain solutions. Every coin in Ergo is protected by a program in ErgoScript, which is a powerful and protocolfriendly scripting language based on Σ-protocols. It specifies conditions under which a coin can be used: who can spend them, when, under what external conditions, to whom, and so on. <br/><br/>
-  Extended support of light nodes makes Ergo friendly for end users and allows to run contracts on commodity hardware without any trust. To be useful in the long-term, Ergo is following survivability approach — it uses widely-researched solutions that are not going to result in security issues in the future, while also prevents performance degradation over time with the new economic model. <br/><br/>
-  Finally, Ergo is a self-amendable protocol, that allows to absorb new ideas and improve itself in the future.
+  translation: "Ergo is a Resilient Platform for Contractual Money. It is designed to be a platform for applications with the main focus to provide an efficient, secure and easy way to implement financial contracts. <br/><br/>
+                  To achieve this goal, Ergo includes various technical and economic improvements to existed blockchain solutions. Every coin in Ergo is protected by a program in ErgoScript, which is a powerful and protocol friendly scripting language based on Σ-protocols. It specifies conditions under which a coin can be used: who can spend them, when, under what external conditions, to whom, and so on. <br/><br/>
+                  Extended support of light nodes makes Ergo friendly for end users and allows to run contracts on commodity hardware without any trust. To be useful in the long-term, Ergo is following survivability approach — it uses widely-researched solutions that are not going to result in security issues in the future, while also prevents performance degradation over time with the new economic model. <br/><br/>
+                  Finally, Ergo is a self-amendable protocol, that allows to absorb new ideas and improve itself in the future.
+                  Focuses on long‐term survivability and self‐amendability give Ergo’s its resiliency.
   "
 
 - id: faq_second-item_title
-  translation: "What does contractual money means?"
+  translation: "What does Contractual Money means?"
 
 - id: faq_second-item_text
-  translation: "In our opinion, the overwhelming majority of public blockchain use-cases are about financial applications. Ergo is extending Bitcoin way of writing contracts, by attaching a protecting script (together with additional custom data) to every coin. Thus Ergo applications are defined in terms of guarding scripts built into boxes also containing data involved into execution. We coin the term contractual money for Ergs and secondary tokens which usage is bounded by a contract. For example, in addition to regular protection by some m-of-n signature, Ergo allows specifying, who are the possible recipients of these coins, which may also be a contract with such complex conditions. This \"chaining\" approach allows implementing secure and efficient contracts of arbitrary complexity."
+  translation: "In our opinion, the overwhelming majority of public blockchain use-cases are about financial applications. Ergo is extending Bitcoin way of writing contracts, by attaching a protecting script (together with additional custom data) to every coin. Thus Ergo applications are defined in terms of guarding scripts built into boxes also containing data involved into execution. We coin the term Contractual Money for Ergs and secondary tokens which usage is bounded by a contract. For example, in addition to regular protection by some m-of-n signature, Ergo allows specifying, who are the possible recipients of these coins, which may also be a contract with such complex conditions. This \"chaining\" approach allows implementing secure and efficient contracts of arbitrary complexity."
 
 - id: faq_third-item_title
   translation: What was the ICO price?
@@ -610,13 +615,13 @@
 
 - id: faq_fourth-item_text
   translation: "Ergo is based on Autolykos PoW puzzle, that is the first PoW puzzle that is memory-hard and pool-resistant.
-  This means that you need a <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node\"><span>configured Ergo node</span></a> and GPU with at least 4 Gb of memory (while 8 Gb is recommended for maximum efficiency). Use this <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki/Mining\"><span>guide</span></a> to configure miner together with the node. Note, that you may use a lot of GPUs for one Ergo node"
+  This means that you need a <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node\"><span>configured Ergo node</span></a> and GPU with at least 4 Gb of memory (while 8 Gb is recommended for maximum efficiency). Use this <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki/Mining\"><span>guide</span></a> to configure miner together with the node. Note, that you may use a lot of GPUs for one Ergo node."
 
 - id: faq_fifth-item_title
   translation: "How to find Ergo mining pools?"
 
 - id: faq_fifth-item_text
-  translation: "Ergo was created with the idea to achieve maximum decentralization. Autolykos consensus protocol plays important role in the network decentralization, as far as it does not allow to combine into mining pools. Check Autolykos <a class=\"eg-text__link eg-link\" href=\"https://docs.ergoplatform.com/ErgoPow.pdf\"><span>specification</span></a> for more details."
+  translation: "Ergo was created with the idea to achieve maximum resiliency through decentralization. Autolykos consensus protocol plays important role in the network decentralization, as far as it does not allow to combine into mining pools. Check Autolykos <a class=\"eg-text__link eg-link\" href=\"https://docs.ergoplatform.com/ErgoPow.pdf\"><span>specification</span></a> for more details."
 
 - id: faq_sixth-item_title
   translation: "When will the Ergo network launch?"
@@ -637,7 +642,7 @@
   translation: "The design space of programming languages is very broad ranging from
                 general-purpose languages like C, Java, Python up to specialized languages
                 like SQL, HTML, CSS,
-                however, none of them was designed for contractual money application.
+                however, none of them was designed for Contractual Money application.
                 <br/><br/>
                 ErgoScript was designed to achieve several properties.
                 It only contains deterministic operations to maintain consensus in the network.
