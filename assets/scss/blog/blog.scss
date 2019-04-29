@@ -207,11 +207,11 @@
         height: 100%;
       }
 
-      h1 {
+      h2 {
         font-size: 26px;
         line-height: 30px;
         font-weight: normal;
-        margin-bottom: 2rem;
+        margin-bottom: 1.25rem;
 
         @media (max-width: $md) {
           font-size: 24px;
@@ -224,15 +224,25 @@
         }
       }
 
-      h2,
-      h3,
+      h3 {
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: normal;
+        margin-bottom: 1rem;
+
+        @media (max-width: $md) {
+          font-size: 20px;
+          line-height: 28px;
+        }
+      }
+
       h4,
       h5,
       h6 {
         font-size: 20px;
         line-height: 30px;
         font-weight: normal;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
 
         @media (max-width: $md) {
           font-size: 18px;
@@ -253,7 +263,16 @@
         color: #181818;
         font-size: 18px;
         line-height: 24px;
-        margin-bottom: 2rem;
+        margin-bottom: 1.25rem;
+
+        & + h1,
+        & + h2,
+        & + h3,
+        & + h4,
+        & + h5,
+        & + h6 {
+          margin-top: 1.5rem;
+        }
       }
 
       pre {
