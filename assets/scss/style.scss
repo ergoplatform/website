@@ -173,7 +173,7 @@ p {
 .grid-container-1k2 {
   display: grid;
   grid-template-columns: 4fr minmax(100px, 11fr);
-  grid-gap: 11%;
+  grid-gap: 11.6%;
 
   @media (max-width: $sm) {
     grid-template-columns: minmax(100px, 1fr);

@@ -50,7 +50,7 @@
     .eg-navbar__container {
       display: grid;
       grid-template-columns: 4fr 11fr;
-      grid-gap: 11%;
+      grid-gap: 11.6%;
 
       @media (max-width: $sm) {
         justify-content: space-between;
