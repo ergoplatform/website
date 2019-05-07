@@ -211,6 +211,7 @@
         line-height: 30px;
         font-weight: normal;
         margin-bottom: 1.25rem;
+        margin-top: 2.5rem;
 
         @media (max-width: $md) {
           font-size: 24px;
@@ -261,21 +262,18 @@
       p {
         color: #181818;
         font-size: 18px;
-        line-height: 24px;
+        line-height: 26px;
         margin-bottom: 1.25rem;
+      }
 
-        & + h1,
-        & + h2,
-        & + h3,
-        & + h4,
-        & + h5,
-        & + h6 {
-          margin-top: 1.5rem;
-        }
+      code {
+        background: $light-white;
+        font-family: LabGrotesque !important;
+        color: $light-red;
+        padding: 1px 4px;
       }
 
       pre {
-        background-color: #f6f8fa;
         border-radius: 3px;
         line-height: 1.45;
         overflow: auto;
@@ -288,6 +286,7 @@
         & > code {
           background: transparent;
           border: 0;
+          color: black;
           font-size: 100%;
           margin: 0;
           padding: 0;

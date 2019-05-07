@@ -221,7 +221,7 @@
                 <div class="blog-section__item">
                   <h3 class="blog-section__item-title"><a href="{{ .URL | safeURL }}" class="eg-link"><span>{{ .Title }}</span></a></h3>
                   <div class="eg-author">
-                    <img src="{{ .Params.authorPhoto }}" alt="author img" class="eg-author__img">
+                    <img src="{{ .Params.authorPhoto }}" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
                       <h4 class="eg-author__info-title">{{ .Params.Author }}</h4>
                       <p class="eg-author__info-paragraph">{{ .Date.Format "2 January, 2006" }}</p>

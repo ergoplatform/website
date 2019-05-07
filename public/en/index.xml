@@ -6,10 +6,26 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 24 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://powerful-spire-67290.herokuapp.com/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to mine Ergo on Windows(x64)</title>
+      <link>https://powerful-spire-67290.herokuapp.com/en/blog/2019_05_07_mining/</link>
+      <pubDate>Tue, 07 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://powerful-spire-67290.herokuapp.com/en/blog/2019_05_07_mining/</guid>
+      <description>Step 1: Tools Visual Studio https://visualstudio.microsoft.com/downloads/
+Choose free community version, you will need to select desktop development with C++ package during install.
+CUDA toolkit https://developer.nvidia.com/cuda-downloads
+Choose your system version, install with default options, it will update your graphics driver to a compatible version.
+Curl https://curl.haxx.se/latest.cgi?curl=win64-nossl
+Generic version without SSL, binary won`t work. Choose generic source, zip and click on show mirrors. Download and unpack.
+OpenSSL 1.0.2 https://slproweb.com/download/Win64OpenSSL-1_0_2r.exe
+Download and install.</description>
+    </item>
     
     <item>
       <title>Ergo teaser</title>

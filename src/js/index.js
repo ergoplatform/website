@@ -2,6 +2,8 @@ import $ from 'jquery';
 import 'jquery-ui/ui/widgets/tabs';
 import 'slick-carousel';
 import 'slick-carousel/slick/slick.css';
+import Prism from 'prismjs';
+import 'prismjs/themes/prism.css';
 import { downloader } from './downloadMore';
 
 const dropDownFunc = (id) => {
@@ -36,6 +38,8 @@ window.addEventListener('click', (event) => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+  Prism.highlightAll();
+
   $('.dropdown .dropdown__button').each(function (e) {
     this.addEventListener('click', (e) => {
       dropDownFunc(e.target.dataset.targetId);

@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://powerful-spire-67290.herokuapp.com/en/blog/2019_05_07_mining/</loc>
+    <lastmod>2019-05-07T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://powerful-spire-67290.herokuapp.com/en/legal/</loc>
     <lastmod>2019-04-26T13:24:22+03:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -265,7 +272,7 @@
   
   <url>
     <loc>https://powerful-spire-67290.herokuapp.com/en/</loc>
-    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
+    <lastmod>2019-05-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
     <xhtml:link
