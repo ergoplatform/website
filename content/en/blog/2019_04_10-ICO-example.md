@@ -4,7 +4,7 @@ date: 2019-04-10
 draft: false
 author: "Alex Chepurnoy"
 authorPhoto: "/img/authors/alex_chepurnoy.svg"
-blogPhoto: "/img/blog/ico-example.jpg"
+blogPhoto: "/img/blog/ico-example_opt.jpg"
 ---
 This article describes a full featured ICO (Initial Coin Offering) implemented in ErgoScript. The example covers several important and novel features of the Ergo Platform and shows how it can support complex contracts with tiny amount of code. 
 
@@ -49,7 +49,7 @@ The spending transaction should pay a fee, otherwise, it is unlikely that it wou
 
 The code below enforces the conditions described above. Please note that the 
 "nextStageScriptHash" environment variable contains hash of the issuance stage serialized script. 
-
+```scala
     val selfIndexIsZero = INPUTS(0).id == SELF.id
 
     val proof = getVar[Coll[Byte]](1).get
@@ -81,6 +81,7 @@ The code below enforces the conditions described above. Please note that the
     val outputsCorrect = outputsCount && feeOutputCorrect && selfOutputCorrect
 
     selfIndexIsZero && outputsCorrect && properTreeModification
+```
 
 ### The Issuance Stage
 
@@ -91,7 +92,7 @@ Secondly, the contract checks that the proper amount of ICO tokens are issued. I
 Thirdly, the contract checks that a spending transaction is indeed re-creating the box with the guard script corresponding to the next stage, the withdrawal stage.
 
 Finally, the project should withdraw collected Ergs, and of course, each spending transaction should pay a fee. Thus, the sub-contract checks that the spending transaction has indeed 3 outputs (one each for the project tokens box, the Ergs wirhdrawal box, and the fee box), and that the first output and output is carrying the tokens issued. As we do not specify project money withdrawal details, we require a project signature on the spending transaction.
-
+```scala
     val openTree = SELF.R5[AvlTree].get
     
     val closedTree = OUTPUTS(0).R5[AvlTree].get
@@ -118,11 +119,12 @@ Finally, the project should withdraw collected Ergs, and of course, each spendin
     val treeIsCorrect = digestPreserved && valueLengthPreserved && keyLengthPreserved && treeIsClosed
     
     projectPubKey && treeIsCorrect && valuePreserved && stateChanged
+```
 
 ### The Withdrawal Stage
 
 At this stage, investors are allowed to withdraw project tokens protected by a predefined guard script (whose hash is stored in the dictionary). Lets say withdraw is done in batches of size N. A withdrawing transaction, thus, has N + 2 outputs, where the first output carrys over the withdrawal sub-contract and balance tokens, the last output pays the fee and the remaining N outputs have guarding scripts and token values according to the dictionary. The contract requires two proofs for the dictionary elements: one proving that values to be withdrawn are indeed in the dictionary, and the second proving that the resulting dictionary does not have the withdrawn values. The sub-contract is below.  
-
+```scala
     val removeProof = getVar[Coll[Byte]](2).get
     val lookupProof = getVar[Coll[Byte]](3).get
     val withdrawIndexes = getVar[Coll[Int]](4).get
@@ -167,7 +169,8 @@ At this stage, investors are allowed to withdraw project tokens protected by a p
     val selfOutputCorrect = out0.propositionBytes == SELF.propositionBytes
 
     properTreeModification && valuesCorrect && selfOutputCorrect && tokensPreserved
-   
+```
+
 ## Possible Enhancements
 
 Please note that there are many nuances our example contract is ignoring. For example, anyone listening to the blockchain is allowed to execute the contract and construct proper spending transactions during funding and withdrawal stages. In the real-world, additional signature from the project or a trusted arbiter may be used. 

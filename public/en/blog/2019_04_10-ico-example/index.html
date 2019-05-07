@@ -139,7 +139,7 @@ Part 1. Preliminaries An important design decision in a cryptocurrency protocol 
           </div>
         </div>
         <div class="eg-blog__single-img">
-          <img src="/img/blog/ico-example.jpg" alt="blog photo">
+          <img src="/img/blog/ico-example_opt.jpg" alt="blog photo">
         </div>
         <div class="eg-blog__single-content">
           <div>
@@ -190,37 +190,37 @@ spending transaction provides a proof that investor data are indeed added to the
 <p>The code below enforces the conditions described above. Please note that the
 &ldquo;nextStageScriptHash&rdquo; environment variable contains hash of the issuance stage serialized script.</p>
 
-<pre><code>val selfIndexIsZero = INPUTS(0).id == SELF.id
+<pre><code class="language-scala">    val selfIndexIsZero = INPUTS(0).id == SELF.id
 
-val proof = getVar[Coll[Byte]](1).get
+    val proof = getVar[Coll[Byte]](1).get
 
-val inputsCount = INPUTS.size
+    val inputsCount = INPUTS.size
 
-val toAdd: Coll[(Coll[Byte], Coll[Byte])] = INPUTS.slice(1, inputsCount).map({ (b: Box) =&gt;
-    val pk = b.R4[Coll[Byte]].get
-    val value = longToByteArray(b.value)
-    (pk, value)
-})
+    val toAdd: Coll[(Coll[Byte], Coll[Byte])] = INPUTS.slice(1, inputsCount).map({ (b: Box) =&gt;
+        val pk = b.R4[Coll[Byte]].get
+        val value = longToByteArray(b.value)
+        (pk, value)
+    })
 
-val modifiedTree = SELF.R5[AvlTree].get.insert(toAdd, proof).get
+    val modifiedTree = SELF.R5[AvlTree].get.insert(toAdd, proof).get
 
-val expectedTree = OUTPUTS(0).R5[AvlTree].get
+    val expectedTree = OUTPUTS(0).R5[AvlTree].get
 
-val properTreeModification = modifiedTree == expectedTree
+    val properTreeModification = modifiedTree == expectedTree
 
-val outputsCount = OUTPUTS.size == 2
+    val outputsCount = OUTPUTS.size == 2
 
-val selfOutputCorrect = if(HEIGHT &lt; 2000) {
-    OUTPUTS(0).propositionBytes == SELF.propositionBytes
-} else {
-    blake2b256(OUTPUTS(0).propositionBytes) == nextStageScriptHash
-}
+    val selfOutputCorrect = if(HEIGHT &lt; 2000) {
+        OUTPUTS(0).propositionBytes == SELF.propositionBytes
+    } else {
+        blake2b256(OUTPUTS(0).propositionBytes) == nextStageScriptHash
+    }
 
-val feeOutputCorrect = (OUTPUTS(1).value &lt;= 1) &amp;&amp; (OUTPUTS(1).propositionBytes == feeBytes)
+    val feeOutputCorrect = (OUTPUTS(1).value &lt;= 1) &amp;&amp; (OUTPUTS(1).propositionBytes == feeBytes)
 
-val outputsCorrect = outputsCount &amp;&amp; feeOutputCorrect &amp;&amp; selfOutputCorrect
+    val outputsCorrect = outputsCount &amp;&amp; feeOutputCorrect &amp;&amp; selfOutputCorrect
 
-selfIndexIsZero &amp;&amp; outputsCorrect &amp;&amp; properTreeModification
+    selfIndexIsZero &amp;&amp; outputsCorrect &amp;&amp; properTreeModification
 </code></pre>
 
 <h3 id="the-issuance-stage">The Issuance Stage</h3>
@@ -233,82 +233,82 @@ selfIndexIsZero &amp;&amp; outputsCorrect &amp;&amp; properTreeModification
 
 <p>Finally, the project should withdraw collected Ergs, and of course, each spending transaction should pay a fee. Thus, the sub-contract checks that the spending transaction has indeed 3 outputs (one each for the project tokens box, the Ergs wirhdrawal box, and the fee box), and that the first output and output is carrying the tokens issued. As we do not specify project money withdrawal details, we require a project signature on the spending transaction.</p>
 
-<pre><code>val openTree = SELF.R5[AvlTree].get
-
-val closedTree = OUTPUTS(0).R5[AvlTree].get
-
-val digestPreserved = openTree.digest == closedTree.digest
-val keyLengthPreserved = openTree.keyLength == closedTree.keyLength
-val valueLengthPreserved = openTree.valueLengthOpt == closedTree.valueLengthOpt
-val treeIsClosed = closedTree.enabledOperations == 4
-
-val tokenId: Coll[Byte] = INPUTS(0).id
-
-val tokensIssued = OUTPUTS(0).tokens(0)._2
-
-val outputsCountCorrect = OUTPUTS.size == 3
-val secondOutputNoTokens = OUTPUTS(0).tokens.size == 1 &amp;&amp; OUTPUTS(1).tokens.size == 0 &amp;&amp; OUTPUTS(2).tokens.size == 0
-
-val correctTokensIssued = SELF.value == tokensIssued
-
-val correctTokenId = OUTPUTS(0).R4[Coll[Byte]].get == tokenId &amp;&amp; OUTPUTS(0).tokens(0)._1 == tokenId
-
-val valuePreserved = outputsCountCorrect &amp;&amp; secondOutputNoTokens &amp;&amp; correctTokensIssued &amp;&amp; correctTokenId
-val stateChanged = blake2b256(OUTPUTS(0).propositionBytes) == nextStageScriptHash
-
-val treeIsCorrect = digestPreserved &amp;&amp; valueLengthPreserved &amp;&amp; keyLengthPreserved &amp;&amp; treeIsClosed
-
-projectPubKey &amp;&amp; treeIsCorrect &amp;&amp; valuePreserved &amp;&amp; stateChanged
+<pre><code class="language-scala">    val openTree = SELF.R5[AvlTree].get
+    
+    val closedTree = OUTPUTS(0).R5[AvlTree].get
+    
+    val digestPreserved = openTree.digest == closedTree.digest
+    val keyLengthPreserved = openTree.keyLength == closedTree.keyLength
+    val valueLengthPreserved = openTree.valueLengthOpt == closedTree.valueLengthOpt
+    val treeIsClosed = closedTree.enabledOperations == 4
+    
+    val tokenId: Coll[Byte] = INPUTS(0).id
+    
+    val tokensIssued = OUTPUTS(0).tokens(0)._2
+    
+    val outputsCountCorrect = OUTPUTS.size == 3
+    val secondOutputNoTokens = OUTPUTS(0).tokens.size == 1 &amp;&amp; OUTPUTS(1).tokens.size == 0 &amp;&amp; OUTPUTS(2).tokens.size == 0
+    
+    val correctTokensIssued = SELF.value == tokensIssued
+    
+    val correctTokenId = OUTPUTS(0).R4[Coll[Byte]].get == tokenId &amp;&amp; OUTPUTS(0).tokens(0)._1 == tokenId
+    
+    val valuePreserved = outputsCountCorrect &amp;&amp; secondOutputNoTokens &amp;&amp; correctTokensIssued &amp;&amp; correctTokenId
+    val stateChanged = blake2b256(OUTPUTS(0).propositionBytes) == nextStageScriptHash
+    
+    val treeIsCorrect = digestPreserved &amp;&amp; valueLengthPreserved &amp;&amp; keyLengthPreserved &amp;&amp; treeIsClosed
+    
+    projectPubKey &amp;&amp; treeIsCorrect &amp;&amp; valuePreserved &amp;&amp; stateChanged
 </code></pre>
 
 <h3 id="the-withdrawal-stage">The Withdrawal Stage</h3>
 
 <p>At this stage, investors are allowed to withdraw project tokens protected by a predefined guard script (whose hash is stored in the dictionary). Lets say withdraw is done in batches of size N. A withdrawing transaction, thus, has N + 2 outputs, where the first output carrys over the withdrawal sub-contract and balance tokens, the last output pays the fee and the remaining N outputs have guarding scripts and token values according to the dictionary. The contract requires two proofs for the dictionary elements: one proving that values to be withdrawn are indeed in the dictionary, and the second proving that the resulting dictionary does not have the withdrawn values. The sub-contract is below.</p>
 
-<pre><code>val removeProof = getVar[Coll[Byte]](2).get
-val lookupProof = getVar[Coll[Byte]](3).get
-val withdrawIndexes = getVar[Coll[Int]](4).get
+<pre><code class="language-scala">    val removeProof = getVar[Coll[Byte]](2).get
+    val lookupProof = getVar[Coll[Byte]](3).get
+    val withdrawIndexes = getVar[Coll[Int]](4).get
 
-val out0 = OUTPUTS(0)
+    val out0 = OUTPUTS(0)
 
-val tokenId: Coll[Byte] = SELF.R4[Coll[Byte]].get
+    val tokenId: Coll[Byte] = SELF.R4[Coll[Byte]].get
 
-val withdrawals = withdrawIndexes.map({(idx: Int) =&gt;
-    val b = OUTPUTS(idx)
-    if(b.tokens(0)._1 == tokenId) {
-        (blake2b256(b.propositionBytes), b.tokens(0)._2)
-    } else {
-        (blake2b256(b.propositionBytes), 0L)
-    }
-})
+    val withdrawals = withdrawIndexes.map({(idx: Int) =&gt;
+        val b = OUTPUTS(idx)
+        if(b.tokens(0)._1 == tokenId) {
+            (blake2b256(b.propositionBytes), b.tokens(0)._2)
+        } else {
+            (blake2b256(b.propositionBytes), 0L)
+        }
+    })
 
-val withdrawValues = withdrawals.map({(t: (Coll[Byte], Long)) =&gt; t._2})
+    val withdrawValues = withdrawals.map({(t: (Coll[Byte], Long)) =&gt; t._2})
 
-val withdrawTotal = withdrawValues.fold(0L, { (l1: Long, l2: Long) =&gt; l1 + l2 })
+    val withdrawTotal = withdrawValues.fold(0L, { (l1: Long, l2: Long) =&gt; l1 + l2 })
 
-val toRemove = withdrawals.map({(t: (Coll[Byte], Long)) =&gt; t._1})
+    val toRemove = withdrawals.map({(t: (Coll[Byte], Long)) =&gt; t._1})
 
-val initialTree = SELF.R5[AvlTree].get
+    val initialTree = SELF.R5[AvlTree].get
 
-val removedValues = initialTree.getMany(toRemove, lookupProof).map({(o: Option[Coll[Byte]]) =&gt; byteArrayToLong(o.get)})
-val valuesCorrect = removedValues == withdrawValues
+    val removedValues = initialTree.getMany(toRemove, lookupProof).map({(o: Option[Coll[Byte]]) =&gt; byteArrayToLong(o.get)})
+    val valuesCorrect = removedValues == withdrawValues
 
-val modifiedTree = initialTree.remove(toRemove, removeProof).get
+    val modifiedTree = initialTree.remove(toRemove, removeProof).get
 
-val expectedTree = out0.R5[AvlTree].get
+    val expectedTree = out0.R5[AvlTree].get
 
-val selfTokensCorrect = SELF.tokens(0)._1 == tokenId
-val selfOutTokensAmount = SELF.tokens(0)._2
-val soutTokensCorrect = out0.tokens(0)._1 == tokenId
-val soutTokensAmount = out0.tokens(0)._2
+    val selfTokensCorrect = SELF.tokens(0)._1 == tokenId
+    val selfOutTokensAmount = SELF.tokens(0)._2
+    val soutTokensCorrect = out0.tokens(0)._1 == tokenId
+    val soutTokensAmount = out0.tokens(0)._2
 
-val tokensPreserved = selfTokensCorrect &amp;&amp; soutTokensCorrect &amp;&amp; (soutTokensAmount + withdrawTotal == selfOutTokensAmount)
+    val tokensPreserved = selfTokensCorrect &amp;&amp; soutTokensCorrect &amp;&amp; (soutTokensAmount + withdrawTotal == selfOutTokensAmount)
 
-val properTreeModification = modifiedTree == expectedTree
+    val properTreeModification = modifiedTree == expectedTree
 
-val selfOutputCorrect = out0.propositionBytes == SELF.propositionBytes
+    val selfOutputCorrect = out0.propositionBytes == SELF.propositionBytes
 
-properTreeModification &amp;&amp; valuesCorrect &amp;&amp; selfOutputCorrect &amp;&amp; tokensPreserved
+    properTreeModification &amp;&amp; valuesCorrect &amp;&amp; selfOutputCorrect &amp;&amp; tokensPreserved
 </code></pre>
 
 <h2 id="possible-enhancements">Possible Enhancements</h2>
@@ -380,7 +380,7 @@ properTreeModification &amp;&amp; valuesCorrect &amp;&amp; selfOutputCorrect &am
             
             
               <a class="eg-blog__item eg-link related__post" href="https://powerful-spire-67290.herokuapp.com/en/blog/2019_05_07_mining/">
-                <div class="eg-blog__item-img"><img src="/img/blog/mining.jpg" height="188" width="335" alt="blog photo"></div>
+                <div class="eg-blog__item-img"><img src="/img/blog/miner_opt.jpg" height="188" width="335" alt="blog photo"></div>
                 <h3 class="eg-blog__item-title"><span>How to mine Ergo on Windows(x64)</span></h3>
                 <p class="eg-blog__item-paragraph">Step 1: Tools Visual Studio https://visualstudio.microsoft.com/downloads/
 Choose free community version, you will need to select desktop development with …</p>
@@ -394,7 +394,7 @@ Choose free community version, you will need to select desktop development with 
               </a>
             
               <a class="eg-blog__item eg-link related__post" href="https://powerful-spire-67290.herokuapp.com/en/blog/2019_04_22-lets/">
-                <div class="eg-blog__item-img"><img src="/img/blog/lets-example.jpg" height="188" width="335" alt="blog photo"></div>
+                <div class="eg-blog__item-img"><img src="/img/blog/lets-example_opt.jpg" height="188" width="335" alt="blog photo"></div>
                 <h3 class="eg-blog__item-title"><span>A Local Exchange Trading System On Top Of Ergo</span></h3>
                 <p class="eg-blog__item-paragraph">A local exchange trading system (LETS) is a local mutual credit association which members are allowed to create common credit money individually, with all …</p>
                 <div class="eg-author">
@@ -407,7 +407,7 @@ Choose free community version, you will need to select desktop development with 
               </a>
             
               <a class="eg-blog__item eg-link related__post" href="https://powerful-spire-67290.herokuapp.com/en/blog/2019_04_10-ico-example/">
-                <div class="eg-blog__item-img"><img src="/img/blog/ico-example.jpg" height="188" width="335" alt="blog photo"></div>
+                <div class="eg-blog__item-img"><img src="/img/blog/ico-example_opt.jpg" height="188" width="335" alt="blog photo"></div>
                 <h3 class="eg-blog__item-title"><span>An ICO Example On Top Of Ergo</span></h3>
                 <p class="eg-blog__item-paragraph">This article describes a full featured ICO (Initial Coin Offering) implemented in ErgoScript. The example covers several important and novel features of …</p>
                 <div class="eg-author">
@@ -420,7 +420,7 @@ Choose free community version, you will need to select desktop development with 
               </a>
             
               <a class="eg-blog__item eg-link related__post" href="https://powerful-spire-67290.herokuapp.com/en/blog/2019_03_19-qa/">
-                <div class="eg-blog__item-img"><img src="/img/blog/question.jpg" height="188" width="335" alt="blog photo"></div>
+                <div class="eg-blog__item-img"><img src="/img/blog/question_opt.jpg" height="188" width="335" alt="blog photo"></div>
                 <h3 class="eg-blog__item-title"><span>Q&amp;A with Alex Chepurnoy and Dmitry Meshkov</span></h3>
                 <p class="eg-blog__item-paragraph">First, we have a major announcement - Ergo mainnet launch is planned for May 26 if no security vulnerabilities will be found during audit process!
 What are …</p>
