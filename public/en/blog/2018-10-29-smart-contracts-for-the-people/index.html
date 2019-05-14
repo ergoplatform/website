@@ -8,12 +8,12 @@
     <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
 
     
-      <meta name="description" content="This article describes a full featured ICO (Initial Coin Offering) implemented in ErgoScript. The example covers several important and novel features of the Ergo Platform and shows how it can support complex contracts with tiny amount of code.
-Part 1. Preliminaries An important design decision in a cryptocurrency protocol is specifying what a spending transaction actually spends. There are two possibilities here. The first a UTXO-based model, as in Bitcoin, where a transaction spends one-time asset containers (called as &amp;lsquo;coins&amp;rsquo; or UTXOs in Bitcoin) and creates new ones.">
+      <meta name="description" content="A lot of blockchain-related news these days are saying us that a bank X or a corporation Y is going to use a &amp;ldquo;blockchain&amp;rdquo; to &amp;ldquo;reduce costs&amp;rdquo;. Basically it means that just another buzzword is considered by big banksters as just another tool to extract value from everywhere in a more efficient way, and also to save on cutting job positions.
+While I am avoiding to say anything about &amp;ldquo;Satoshi&amp;rsquo;s vision&amp;rdquo; (nothing but speculations could be dug there after his exodus), a broad view I witnessed in the early years around online forums users is that a cryptocurrency should provide tools to enrich the ordinary people behind their small businesses providing no much above making ends meet, not depersonalized big financial capital.">
     
 
     
-    <title>An ICO Example On Top Of Ergo | Ergo</title>
+    <title>Smart Contracts for the People | Ergo</title>
 
     
     
@@ -130,192 +130,110 @@ Part 1. Preliminaries An important design decision in a cryptocurrency protocol 
         <a href="https://powerful-spire-67290.herokuapp.com/en/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>Back to all posts</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
-        <h1 class="eg-title eg-mb-1">An ICO Example On Top Of Ergo</h1>
+        <h1 class="eg-title eg-mb-1">Smart Contracts for the People</h1>
         <div class="eg-author">
-          <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img">
+          <img src="" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
-            <h4 class="eg-author__info-title">Alex Chepurnoy</h4>
-            <p class="eg-author__info-paragraph">10 April, 2019</p>
+            <h4 class="eg-author__info-title"></h4>
+            <p class="eg-author__info-paragraph">29 October, 2018</p>
           </div>
         </div>
         <div class="eg-blog__single-img">
-          <img src="/img/blog/ico-example_opt.jpg" alt="blog photo">
+          <img src="" alt="blog photo">
         </div>
         <div class="eg-blog__single-content">
           <div>
-            
+            <p>A lot of blockchain-related news these days are saying us that a bank <em>X</em> or a corporation <em>Y</em>
+is going to use a &ldquo;blockchain&rdquo; to &ldquo;reduce costs&rdquo;. Basically it means that just another buzzword is
+considered by big banksters as just another tool to extract value from everywhere in a more efficient way,
+and also to save on cutting job positions.</p>
 
-<p>This article describes a full featured ICO (Initial Coin Offering) implemented in ErgoScript. The example covers several important and novel features of the Ergo Platform and shows how it can support complex contracts with tiny amount of code.</p>
+<p>While I am avoiding to say anything about &ldquo;Satoshi&rsquo;s vision&rdquo; (nothing but speculations could be dug there after
+his exodus), a broad view I witnessed in the early years around online forums users is that a cryptocurrency
+should provide tools to enrich the ordinary people behind their small businesses providing no much above making ends meet, not depersonalized big financial capital. The tools of
+a cryptocurrency in the eyes of the original broad community vision should allow people to do economic activity dependless on business size, geographic location, interest rates set by big players, and so on.
+The tools should allow people to do contracts (no paper contracts, but digital, self-enforcing, and reasonably smart contracts) dependless on differences in jurisdictions, traditions, followed business practices etc.</p>
 
-<h2 id="part-1-preliminaries">Part 1. Preliminaries</h2>
+<p>I hope Ergo would be useful here. Thousands of small cooperatives and individual entrepreneurs are more important to healthy and sustainable wealth growth around the globe than a couple of corporations hiding profits in offshore heavens.</p>
 
-<p>An important design decision in a cryptocurrency protocol is specifying what a spending transaction actually spends. There are two possibilities here. The first a UTXO-based model, as in Bitcoin, where a transaction spends one-time asset containers (called as &lsquo;coins&rsquo; or UTXOs in Bitcoin) and creates new ones. The other is an account-based model, as in Nxt, Ethereum or Waves, where a transaction transfers some amount of asset from an existing long-living account to another, possibly new, long-living account, with possible side-effects on the way, such as contract execution in Waves or Ethereum. In this regard, Ergo is similar to Bitcoin, because it uses the UTXO-based approach, where one-time containers called boxes are being spent. Interestingly, an Ergo transaction can also have data-inputs which are not being spent, but rather used to provide some information from the current set of unspent boxes.</p>
+<p>As an example, let&rsquo;s consider a cooperative federation (such as <a href="http://www.radicalroutes.org.uk/">Radical Routes</a>) willing to provide financial help to an entrepreneur thousands kilometers away (say, in Rojava).</p>
 
-<p>It is not trivial to create an ICO on top of an UTXO based model, because, in contrast to account-based models, there is no explicit persistent storage here. However, Ergo brings a spending transaction into the execution context of a script.
-With this small change it becomes possible to express dependencies between transaction outputs and inputs. In turn, by setting dependencies we can execute even arbitrarily complex Turing-complete programs on top of blockchain (see the <a href="https://link.springer.com/chapter/10.1007/978-3-030-00305-0_4">&ldquo;Self-reproducing Coins as Universal Turing Machine&rdquo; paper</a>). In this article we will define a concrete scenario of a multi-stage contract using an ICO, where we have three stages (funding, token issuance, withdrawal).</p>
+<p>We need to assume some details now. In the first place, assume that there are four cooperatives in the network. They collectively lock <em>10,000</em> Ergs (in equal parts, so <em>2,500</em> Ergs each) in a contract, which says the following:</p>
 
-<p>Now imagine an ICO for thousands of participants. Unlike Ethereum, Ergo does not provide possibility to store large sets of data and carry them over throughout contract execution. Rather, it allows to store only about 40-bytes header of a data
-structure, represented as key -&gt; value dictionary, authenticated similarly to Merkle tree. To access some elements
-in the dictionary, or to modify it, a spending transaction which is triggering protecting script execution should
-provide lookup or modification proofs. This gives possibility for a contract to authenticate potentially huge datasets without requiring much memory to store contract state. However, storing space in the state (of active contracts) would mean bigger transactions, but this problem is easier from scalability point of view, and scalability is a top priority for Ergo.</p>
+<ol>
+<li>The cooperatives are associated with public keys <em>pubkeyA</em>, <em>pubkeyB</em>, <em>pubkeyC</em>, <em>pubkeyD</em>. The entrepreneur is associated with a public key <em>businessKey</em>.</li>
+<li>The cooperatives are locking money in a coin protected by a funding contract, then doing due diligence and vote on whether to fund the entrepreneur or not. All the contract fund (<em>10,000</em> Ergs) is going to the entrepreneur if <em>3</em> votes out of <em>4</em> are for that. Technically, the voting is done via 3-out-of-4 threshold signature. If voting is not successful (<em>3</em> out of <em>4</em> signatures are not collected) before the block number <em>1,000</em>, any cooperative (actually, anyone) can submit withdraw transaction, which is returning <em>2,500</em> Ergs (at least) to every cooperative. Further, the funding contract will also be called the voting contract.</li>
+<li>The investments could be spent on three goals, with some strict bounds. Namely, the entrepreneur must spend at least <em>5,000</em> Ergs on equipment, at least <em>2,000</em> Ergs on construction of a building needed, other funds the entrepreneur may spend arbitrarily.</li>
+<li>To be sure that equipment money will be spent on equipment, the cooperative federation is using public keys of known equipment sellers in the area of the entrepreneur. For example, consider that there are equipment sellers with public keys <em>pubkeyTool1</em>, <em>pubkeyTool2</em>, <em>pubkeyTool3</em>, <em>pubkeyTool4</em> in the area. Technically, the transfer is organized as a collective signature of one equipment sellers (thus ring signature from equipment sellers ring AND entrepreneur&rsquo;s signature)</li>
+<li>Similarly, assume that there are <em>3</em> builders in the are cooperative federation is recognizing, associated with public keys <em>pubkeyConstr1</em>, <em>pubkeyConstr2</em>, and <em>pubkeyConstr3</em>.</li>
+<li>Similarly to the voting contract, if equipment and construction contracts are not co-signed before block number <em>5000</em>, the federation cooperatives could withdraw funds.</li>
+</ol>
 
-<h2 id="part-2-the-ico-contract">Part 2. The ICO Contract</h2>
+<p>There are different ways to define contracts in Ergo. A script in the low-level language, <strong>ErgoTree</strong>, is describing a (single) logical condition on whether a coin could be spent according it, and also a spending proof provided by a spending transaction. Internally, the condition is represented as a typed syntax tree thus the name. The structure is allowing us to do ahead-of-time cost analysis etc. Higher-level language called <strong>ErgoScript</strong> allows to have more traditional and readable description, use variables and break logic into subroutines.</p>
 
-<p>There could be many possible scenarios associated with an Initial Coin Offering (ICO). In this article we consider an ICO that wants to collect at least a certain amount of funds (in Ergs) to start the project. Once the funding threshold is crossed and funding period ends, the project is kickstarted and ICO tokens are issued by the project based on the total funding collected. In the withdraw phase, which extends forever, the investors withdraw ICO tokens based on the amount they had invested during the funding period. The contract steps are briefly described below with details provided further:</p>
+<p>Let&rsquo;s start with the main contract defined in (1-3) above:</p>
 
-<ul>
-<li>First, <em>funding epoch</em> takes place. It starts with a project&rsquo;s box authenticating an empty dictionary. The dictionary is intended for holding (investor, balance) pairs, where investor is a script protecting the box containing withdrawn tokens. For the balance, we assume that 1 token is equal to 1 Ergo during the ICO. During the funding epoch, it is only possible to put Ergs into the project&rsquo;s box.
-A funding transaction spends the project&rsquo;s box and creates a new project box with updated information. For that, a spending transaction for the project&rsquo;s box also has other inputs which hold investor withdrawing scripts. Investor scripts and input values should be added to the tree of the new box. There could be many chained funding transactions.<br /></li>
-<li>Second, the funding period finishes, after which the tree holding the investors data becomes read-only. An authenticated tree could have different modification operations allowed individually: inserts, deletes, updates, or all the operations could be disallowed (so the tree could be in the read-only mode). Also, this transaction creates tokens of the ICO project which will be withdrawn in the next stage. The project can withdraw Ergs at this stage.<br /></li>
-<li>Third, investors withdraw their ICO tokens. For that, a spending transaction creates outputs with guarding conditions and token values taken from the tree. The withdrawn pairs are also cleared from the tree. There could be many chained spending transactions.</li>
-</ul>
+<pre><code>{
+ val votingSuccess  = atLeast(3, Array(pubkeyA, pubkeyB, pubkeyC, pubkeyD))
+ val properSpending = OUTPUTS(0).value &gt;= 5000L &amp;&amp;
+                      blake2b256(OUTPUTS(0).propositionBytes) == spendingContract1Hash &amp;&amp;
+                      OUTPUTS(1).value &gt;= 2000L &amp;&amp;
+                      blake2b256(OUTPUTS(1).propositionBytes) == spendingContract2Hash
 
-<p>These three stages should be linked together in the logical order. A seqience of boxes are used to achieve these goals,</p>
+ val withdrawCondition = HEIGHT &gt;= 1000L &amp;&amp;
+                         OUTPUTS(0).value &gt;= 2500L &amp;&amp; OUTPUTS(0).propositionBytes == pubkeyA.propBytes &amp;&amp;
+                         OUTPUTS(1).value &gt;= 2500L &amp;&amp; OUTPUTS(1).propositionBytes == pubkeyB.propBytes &amp;&amp;
+                         OUTPUTS(2).value &gt;= 2500L &amp;&amp; OUTPUTS(2).propositionBytes == pubkeyC.propBytes &amp;&amp;
+                         OUTPUTS(3).value &gt;= 2500L &amp;&amp; OUTPUTS(3).propositionBytes == pubkeyD.propBytes 
 
-<h2 id="part-3-the-ico-contract-details">Part 3. The ICO Contract Details</h2>
-
-<p>Now it is the time to provide details and ErgoScript code of the ICO contract stages.</p>
-
-<h3 id="the-funding-stage">The Funding Stage</h3>
-
-<p>In the funding stage, which comes first, we assume that initially a project creates a box committing to an empty dictionary (stored in the register R5) with some guarding script described below. This stage lasts at least till height 2,000. More concretely, the first transaction with height of 2,000 or more should change the output box&rsquo;s script as described in the next section (transactions at lower heights must output a box with the same script).</p>
-
-<p>The project&rsquo;s box checks that it is always first input and output of a transaction. The other inputs are considered investors&rsquo; inputs. An investor&rsquo;s input contains the hash of a script in register R4. This hash represents the <em>withdraw script</em> that will be used later on in the withdraw phase. The hashes as well as the monetary values of all investing inputs should be added to the dictionary. The
-spending transaction provides a proof that investor data are indeed added to the dictionary, and the proof is checked in the contract.</p>
-
-<p>It is not checked in the funding sub-contract that the dictionary allows only insertions, and not updating existing values or removals (it is not hard to add an explicit check though).</p>
-
-<p>The spending transaction should pay a fee, otherwise, it is unlikely that it would be included in a block. Thus, the funding contract checks that the spending transaction has two outputs (one for itself, another to pay fee), the fee is to be no more than a certain limit (just one nanoErg in our example), and the guarding proposition should e such that only a miner can spend the output (we use just a variable &ldquo;feeProp&rdquo; from compilation environment in our example without providing any details). This &ldquo;feeProp&rdquo; corresponds to a standard, though not required by protocol.</p>
-
-<p>The code below enforces the conditions described above. Please note that the
-&ldquo;nextStageScriptHash&rdquo; environment variable contains hash of the issuance stage serialized script.</p>
-
-<pre><code class="language-scala">    val selfIndexIsZero = INPUTS(0).id == SELF.id
-
-    val proof = getVar[Coll[Byte]](1).get
-
-    val inputsCount = INPUTS.size
-
-    val toAdd: Coll[(Coll[Byte], Coll[Byte])] = INPUTS.slice(1, inputsCount).map({ (b: Box) =&gt;
-        val pk = b.R4[Coll[Byte]].get
-        val value = longToByteArray(b.value)
-        (pk, value)
-    })
-
-    val modifiedTree = SELF.R5[AvlTree].get.insert(toAdd, proof).get
-
-    val expectedTree = OUTPUTS(0).R5[AvlTree].get
-
-    val properTreeModification = modifiedTree == expectedTree
-
-    val outputsCount = OUTPUTS.size == 2
-
-    val selfOutputCorrect = if(HEIGHT &lt; 2000) {
-        OUTPUTS(0).propositionBytes == SELF.propositionBytes
-    } else {
-        blake2b256(OUTPUTS(0).propositionBytes) == nextStageScriptHash
-    }
-
-    val feeOutputCorrect = (OUTPUTS(1).value &lt;= 1) &amp;&amp; (OUTPUTS(1).propositionBytes == feeBytes)
-
-    val outputsCorrect = outputsCount &amp;&amp; feeOutputCorrect &amp;&amp; selfOutputCorrect
-
-    selfIndexIsZero &amp;&amp; outputsCorrect &amp;&amp; properTreeModification
+ (votingSuccess &amp;&amp; properSpending) || withdrawCondition
+}
 </code></pre>
 
-<h3 id="the-issuance-stage">The Issuance Stage</h3>
+<p>This script in the <strong>ErgoScript</strong> is to be compiled into a syntax tree (which is to be written into the blockchain in a serialized form) by binding it with concrete values for variables (<em>pubkeyA</em>, <em>pubkeyB</em>, <em>pubkeyC</em>, <em>pubkeyD</em>, <em>spendingContract1Hash</em>, <em>spendingContract2Hash</em>). <em>spendingContract1Hash</em> is a hash of (serialized) equipment spending script which will be provided below, <em>spendingContract2Hash</em> is a hash of construction spending script.</p>
 
-<p>This stage has only one spending transaction to get to the next stage (the withdrawal stage). The spending transactions makes the following modifications. Firstly, the it changes the list of allowed operations on the dictionary from &ldquo;inserts only&rdquo; to &ldquo;removals only&rdquo;, as the next stage (withdrawal) is only dealing with removing entries from the dictionary.</p>
+<p>The equipment spending script is below:</p>
 
-<p>Secondly, the contract checks that the proper amount of ICO tokens are issued. In Ergo, it is allowed to issue one new kind of token per transaction, and the identifier of the token should be equal to the (unique) identifier of the first input box. The issuance sub-contract checks that a new token has been issued, and the amount of it is equal to the amount of nanoErgs collected by the ICO at till now.</p>
+<pre><code>{
+ val spendingSuccess = (pubkeyTool1 || pubkeyTool2 || pubkeyTool3 || pubkeyTool4) &amp;&amp; businessKey
 
-<p>Thirdly, the contract checks that a spending transaction is indeed re-creating the box with the guard script corresponding to the next stage, the withdrawal stage.</p>
+ val withdrawCondition = HEIGHT &gt; 5000L &amp;&amp;
+                         OUTPUTS(0).value &gt;= 1250L &amp;&amp; OUTPUTS(0).propositionBytes == pubkeyA.propBytes &amp;&amp;
+                         OUTPUTS(1).value &gt;= 1250L &amp;&amp; OUTPUTS(1).propositionBytes == pubkeyB.propBytes &amp;&amp;
+                         OUTPUTS(2).value &gt;= 1250L &amp;&amp; OUTPUTS(2).propositionBytes == pubkeyC.propBytes &amp;&amp;
+                         OUTPUTS(3).value &gt;= 1250L &amp;&amp; OUTPUTS(3).propositionBytes == pubkeyD.propBytes 
 
-<p>Finally, the project should withdraw collected Ergs, and of course, each spending transaction should pay a fee. Thus, the sub-contract checks that the spending transaction has indeed 3 outputs (one each for the project tokens box, the Ergs wirhdrawal box, and the fee box), and that the first output and output is carrying the tokens issued. As we do not specify project money withdrawal details, we require a project signature on the spending transaction.</p>
-
-<pre><code class="language-scala">    val openTree = SELF.R5[AvlTree].get
-    
-    val closedTree = OUTPUTS(0).R5[AvlTree].get
-    
-    val digestPreserved = openTree.digest == closedTree.digest
-    val keyLengthPreserved = openTree.keyLength == closedTree.keyLength
-    val valueLengthPreserved = openTree.valueLengthOpt == closedTree.valueLengthOpt
-    val treeIsClosed = closedTree.enabledOperations == 4
-    
-    val tokenId: Coll[Byte] = INPUTS(0).id
-    
-    val tokensIssued = OUTPUTS(0).tokens(0)._2
-    
-    val outputsCountCorrect = OUTPUTS.size == 3
-    val secondOutputNoTokens = OUTPUTS(0).tokens.size == 1 &amp;&amp; OUTPUTS(1).tokens.size == 0 &amp;&amp; OUTPUTS(2).tokens.size == 0
-    
-    val correctTokensIssued = SELF.value == tokensIssued
-    
-    val correctTokenId = OUTPUTS(0).R4[Coll[Byte]].get == tokenId &amp;&amp; OUTPUTS(0).tokens(0)._1 == tokenId
-    
-    val valuePreserved = outputsCountCorrect &amp;&amp; secondOutputNoTokens &amp;&amp; correctTokensIssued &amp;&amp; correctTokenId
-    val stateChanged = blake2b256(OUTPUTS(0).propositionBytes) == nextStageScriptHash
-    
-    val treeIsCorrect = digestPreserved &amp;&amp; valueLengthPreserved &amp;&amp; keyLengthPreserved &amp;&amp; treeIsClosed
-    
-    projectPubKey &amp;&amp; treeIsCorrect &amp;&amp; valuePreserved &amp;&amp; stateChanged
+ spendingSuccess || withdrawCondition
+}
 </code></pre>
 
-<h3 id="the-withdrawal-stage">The Withdrawal Stage</h3>
+<p>And the construction script is:</p>
 
-<p>At this stage, investors are allowed to withdraw project tokens protected by a predefined guard script (whose hash is stored in the dictionary). Lets say withdraw is done in batches of size N. A withdrawing transaction, thus, has N + 2 outputs, where the first output carrys over the withdrawal sub-contract and balance tokens, the last output pays the fee and the remaining N outputs have guarding scripts and token values according to the dictionary. The contract requires two proofs for the dictionary elements: one proving that values to be withdrawn are indeed in the dictionary, and the second proving that the resulting dictionary does not have the withdrawn values. The sub-contract is below.</p>
+<pre><code>{
+ val spendingSuccess = (pubkeyConstr1 || pubkeyConstr2 || pubkeyConstr3) &amp;&amp; businessKey
 
-<pre><code class="language-scala">    val removeProof = getVar[Coll[Byte]](2).get
-    val lookupProof = getVar[Coll[Byte]](3).get
-    val withdrawIndexes = getVar[Coll[Int]](4).get
+ val withdrawCondition = HEIGHT &gt; 5000L &amp;&amp;
+                         OUTPUTS(0).value &gt;= 500L &amp;&amp; OUTPUTS(0).propositionBytes == pubkeyA.propBytes &amp;&amp;
+                         OUTPUTS(1).value &gt;= 500L &amp;&amp; OUTPUTS(1).propositionBytes == pubkeyB.propBytes &amp;&amp;
+                         OUTPUTS(2).value &gt;= 500L &amp;&amp; OUTPUTS(2).propositionBytes == pubkeyC.propBytes &amp;&amp;
+                         OUTPUTS(3).value &gt;= 500L &amp;&amp; OUTPUTS(3).propositionBytes == pubkeyD.propBytes 
 
-    val out0 = OUTPUTS(0)
-
-    val tokenId: Coll[Byte] = SELF.R4[Coll[Byte]].get
-
-    val withdrawals = withdrawIndexes.map({(idx: Int) =&gt;
-        val b = OUTPUTS(idx)
-        if(b.tokens(0)._1 == tokenId) {
-            (blake2b256(b.propositionBytes), b.tokens(0)._2)
-        } else {
-            (blake2b256(b.propositionBytes), 0L)
-        }
-    })
-
-    val withdrawValues = withdrawals.map({(t: (Coll[Byte], Long)) =&gt; t._2})
-
-    val withdrawTotal = withdrawValues.fold(0L, { (l1: Long, l2: Long) =&gt; l1 + l2 })
-
-    val toRemove = withdrawals.map({(t: (Coll[Byte], Long)) =&gt; t._1})
-
-    val initialTree = SELF.R5[AvlTree].get
-
-    val removedValues = initialTree.getMany(toRemove, lookupProof).map({(o: Option[Coll[Byte]]) =&gt; byteArrayToLong(o.get)})
-    val valuesCorrect = removedValues == withdrawValues
-
-    val modifiedTree = initialTree.remove(toRemove, removeProof).get
-
-    val expectedTree = out0.R5[AvlTree].get
-
-    val selfTokensCorrect = SELF.tokens(0)._1 == tokenId
-    val selfOutTokensAmount = SELF.tokens(0)._2
-    val soutTokensCorrect = out0.tokens(0)._1 == tokenId
-    val soutTokensAmount = out0.tokens(0)._2
-
-    val tokensPreserved = selfTokensCorrect &amp;&amp; soutTokensCorrect &amp;&amp; (soutTokensAmount + withdrawTotal == selfOutTokensAmount)
-
-    val properTreeModification = modifiedTree == expectedTree
-
-    val selfOutputCorrect = out0.propositionBytes == SELF.propositionBytes
-
-    properTreeModification &amp;&amp; valuesCorrect &amp;&amp; selfOutputCorrect &amp;&amp; tokensPreserved
+ spendingSuccess || withdrawCondition
+}
 </code></pre>
 
-<h2 id="possible-enhancements">Possible Enhancements</h2>
+<p>Now assume that the cooperative federation has created a coin protected by the voting contract. Below is how the entrepreneur can do his business:</p>
 
-<p>Please note that there are many nuances our example contract is ignoring. For example, anyone listening to the blockchain is allowed to execute the contract and construct proper spending transactions during funding and withdrawal stages. In the real-world, additional signature from the project or a trusted arbiter may be used.</p>
+<ol>
+<li>Create a transaction which consumes the coin and create at least three coins, one with equipment spending contract, another with construction spending contract, third is creating a coin protected by entrepreneur&rsquo;s public key.<br /></li>
+<li>Send the transaction to the cooperatives, wait for the transaction with the threshold-signed input being published on the blockchain.<br /></li>
+<li>Consider a contract with an equipment seller, co-sign a spending transaction.</li>
+<li>Consider a contract with a builder, co-sign a spending transaction.</li>
+</ol>
 
-<p>Also, there is no self-destruction case considered in the withdrawal contract, so it will live until being destroyed by miners via storage rent mechanism, potentially for decades or even centuries. For the funding stage, it would be reasonable to have an additional input from the project with the value equal to the value of the fee output. And so on.</p>
+<p>The entrepreneur can easily run away without doing any business, but with no more than <em>3,000</em> Ergs. This can be fixed, e.g. this money could be made spendable only after block number <em>5,000</em>, and before that money could be withdrawn by the cooperatives. For equipment and construction spendings, the entrepreneur is working along with some, presumably already reputable, business. Thus the investor is reducing its risks.</p>
+
+<p>You can find <a href="https://github.com/ScorexFoundation/sigmastate-interpreter/blob/master/src/test/scala/sigmastate/utxo/examples/CoopExampleSpecification.scala">code and example transactions online</a>. Please note that we have more examples of complex signature schemes, multi-step contracts (with on-the-go execution paths revealing, like MAST in Bitcoin, but with cycles allowed), oracles, crowdfunding and so on. Please check our <a href="https://github.com/ScorexFoundation/sigmastate-interpreter/tree/master/src/test/scala/sigmastate/utxo/examples">examples repository</a>.</p>
 
           </div>
         </div>
@@ -323,7 +241,7 @@ spending transaction provides a proof that investor data are indeed added to the
   <p class="eg-text__paragraph eg-text__paragraph--26">Share post</p>
   <ul class="eg-social">
     <li class="eg-share_item">
-      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpowerful-spire-67290.herokuapp.com%2fen%2fblog%2f2019_04_10-ico-example%2f" target="_blank">
+      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpowerful-spire-67290.herokuapp.com%2fen%2fblog%2f2018-10-29-smart-contracts-for-the-people%2f" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path d="M17 14.0001H25V28.4H17V14.0001Z" fill="white"/>
@@ -334,7 +252,7 @@ spending transaction provides a proof that investor data are indeed added to the
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fpowerful-spire-67290.herokuapp.com%2fen%2fblog%2f2019_04_10-ico-example%2f&amp;hashtags=ergoplatform" target="_blank">
+      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fpowerful-spire-67290.herokuapp.com%2fen%2fblog%2f2018-10-29-smart-contracts-for-the-people%2f&amp;hashtags=ergoplatform" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path class="st0" fill-rule="evenodd" clip-rule="evenodd" d="M29 16.4204C28.4478 16.6615 27.855 16.8241 27.2323 16.8975C27.868 16.5225 28.3558 15.9287 28.5857 15.2214C27.9909 15.5684 27.3322 15.8208 26.6315 15.9565C26.0699 15.3677 25.2701 15 24.3851 15C22.6855 15 21.3076 16.3562 21.3076 18.0291C21.3076 18.2666 21.3347 18.4978 21.3873 18.7195C18.8298 18.5933 16.5616 17.3871 15.0441 15.5542C14.7792 16.0018 14.6274 16.5222 14.6274 17.0774C14.6274 18.1283 15.1706 19.0554 15.9963 19.5989C15.4921 19.5831 15.0174 19.4469 14.6024 19.22C14.6021 19.2325 14.6021 19.2452 14.6021 19.2581C14.6021 20.7258 15.6632 21.9504 17.0707 22.2285C16.8128 22.2979 16.5409 22.335 16.2599 22.335C16.0619 22.335 15.8693 22.3158 15.6812 22.2805C16.0728 23.4839 17.2097 24.36 18.5559 24.3843C17.5025 25.197 16.176 25.6812 14.734 25.6812C14.4857 25.6812 14.2408 25.6667 14 25.6384C15.3617 26.4982 16.979 27 18.7175 27C24.3777 27 27.4734 22.3837 27.4734 18.3804C27.4734 18.2494 27.4705 18.1184 27.4645 17.9883C28.0658 17.5614 28.5873 17.0281 29 16.4204Z" fill="#FF4221"/>
@@ -342,7 +260,7 @@ spending transaction provides a proof that investor data are indeed added to the
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link copy-link" href="https://powerful-spire-67290.herokuapp.com/en/blog/2019_04_10-ico-example/" target="_blank">
+      <a class="eg-share__link copy-link" href="https://powerful-spire-67290.herokuapp.com/en/blog/2018-10-29-smart-contracts-for-the-people/" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M39.91 19.3528L34.2335 6.06338C34.1186 5.78985 33.898 5.57515 33.6227 5.46487L20.2117 0.0807171C19.9364 -0.0292029 19.6283 -0.027376 19.3547 0.089384L6.0641 5.76578C5.79022 5.8811 5.57549 6.10129 5.46522 6.37698L0.0816753 19.7881C-0.0303977 20.0656 -0.0267767 20.3716 0.0903423 20.6455L5.76643 33.9366C5.88175 34.2101 6.10231 34.4249 6.37727 34.5352L19.7883 39.919C19.9209 39.9727 20.0639 40 20.2048 40C20.3544 40 20.5043 39.971 20.647 39.909L33.9359 34.2324C34.2097 34.1171 34.4245 33.8966 34.5348 33.6216L39.9183 20.2102C40.0304 19.9327 40.0267 19.6267 39.91 19.3528Z" stroke="#FF4221"/>
@@ -429,6 +347,19 @@ What are …</p>
                   <div class="eg-author__info">
                     <h4 class="eg-author__info-title">Dmitry Meshkov</h4>
                     <p class="eg-author__info-paragraph">19 March, 2019</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a class="eg-blog__item eg-link related__post" href="https://powerful-spire-67290.herokuapp.com/en/blog/2018-10-29-smart-contracts-for-the-people/">
+                <div class="eg-blog__item-img"><img src="" height="188" width="335" alt="blog photo"></div>
+                <h3 class="eg-blog__item-title"><span>Smart Contracts for the People</span></h3>
+                <p class="eg-blog__item-paragraph">A lot of blockchain-related news these days are saying us that a bank X or a corporation Y is going to use a &ldquo;blockchain&rdquo; to &ldquo;reduce …</p>
+                <div class="eg-author">
+                  <img src="" alt="author img" class="eg-author__img" width="60" height="60">
+                  <div class="eg-author__info">
+                    <h4 class="eg-author__info-title"></h4>
+                    <p class="eg-author__info-paragraph">29 October, 2018</p>
                   </div>
                 </div>
               </a>
