@@ -248,7 +248,7 @@
   &--black {
     .dd-language__menu {
       @media (max-width: $sm) {
-        left: -1px !important;
+        left: -0.5px !important;
       }
     }
   }
