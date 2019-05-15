@@ -349,6 +349,9 @@
 - id: basics_second-section_third_link
   translation: Documents
 
+- id: basics_second-section_fourth_link
+  translation: Software
+
 #tech
 
 - id: tech_first_title
@@ -764,7 +767,7 @@
   translation: 3. Risks related to the use of Ergo
 
 - id: legal_third-item_text
-  translation: "he Website will not be responsible for any losses, damages or claims arising from events falling within the scope of the following five categories:
+  translation: "The Website will not be responsible for any losses, damages or claims arising from events falling within the scope of the following five categories:
                 <br/><br/>
                 (1) Mistakes made by the user of any Ergo-related software or service, e.g., forgotten passwords, payments sent to wrong Ergo addresses, and accidental deletion of wallets.
 <br/><br/>
