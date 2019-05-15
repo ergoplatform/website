@@ -12,7 +12,7 @@
     {{ $style := $scss | resources.ToCSS | resources.PostCSS | resources.Minify }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     {{ $js := resources.Get "js/index.js" }}
-    {{ $secureJS := $js | resources.Fingerprint "sha512" }}
+    {{ $secureJS := $js  }}
     <script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" defer></script>
   </head>
   <body>
