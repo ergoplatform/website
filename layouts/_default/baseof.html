@@ -21,10 +21,7 @@
     {{ $scss := resources.Get "scss/style.scss" }}
     {{ $style := $scss | resources.ToCSS | resources.PostCSS | resources.Minify }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
-    {{ $js := resources.Get "js/index.js" }}
-    {{ $secureJS := $js | resources.Fingerprint "sha512" }}
-    <!-- <script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" defer></script> -->
-    <script src="/js/index.js" defer></script>
+    <script type="text/javascript" src="/js/index.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
