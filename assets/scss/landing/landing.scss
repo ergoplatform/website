@@ -181,10 +181,14 @@
       }
 
       &-paragraph {
-        color: $light-black;
+        color: $light-black !important;
         font-size: 20px;
         line-height: 26px;
         font-weight: 400;
+
+        &:visited {
+          color: $light-black !important;
+        }
 
         @media (max-width: $sm) {
           font-size: 16px;
@@ -193,10 +197,14 @@
       }
 
       &-subparagraph {
-        color: $light-black;
+        color: $light-black !important;
         font-size: 16px;
         line-height: 26px;
         font-weight: 400;
+
+        &:visited {
+          color: $light-black !important;
+        }
 
         @media (max-width: $sm) {
           font-size: 14px;

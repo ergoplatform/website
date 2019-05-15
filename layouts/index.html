@@ -129,20 +129,20 @@
                 {{ range first 3 $langNews }}
                   <div class="news-section__item">
                     <h3 class="news-section__item-title">{{ .Date.Format "2 January, 2006" }}</h3>
-                    <a class="eg-link" {{ if isset .Params `link`}} href="{{.Params.link}}"{{end}}>
-                      <p class="news-section__item-paragraph eg-mb-0-5">
-                        {{ if isset .Params `link`}} <span> {{end}}
-                          {{ .Title }}
-                        {{ if isset .Params `link`}} </span> {{end}}
-                      </p>
-                    </a>
-                    <a class="eg-link" {{ if isset .Params `link`}} href="{{.Params.link}}"{{end}}>
-                      <p class="news-section__item-subparagraph">
+                    <div class="eg-mb-0-5">
+                      <a class="news-section__item-paragraph eg-link"{{ if isset .Params `link`}} href="{{.Params.link}}"{{end}}>
+                      {{ if isset .Params `link`}} <span> {{end}}
+                        {{ .Title }}
+                      {{ if isset .Params `link`}} </span> {{end}}
+                      </a>
+                    </div>
+                    <div>
+                      <a class="news-section__item-subparagraph eg-link" {{ if isset .Params `link`}} href="{{.Params.link}}"{{end}}>
                         {{ if isset .Params `link`}} <span> {{end}}
                           {{ .Params.subTitle }}
                         {{ if isset .Params `link`}} </span> {{end}}
-                      </p>
-                    </a>
+                      </a>
+                    </div>
                   </div>
                 {{end}}
               {{ else }}
@@ -152,20 +152,20 @@
                     {{ range first 3 $defaultLangPages }}
                       <div class="news-section__item">
                         <h3 class="news-section__item-title">{{ .Date.Format "2 January, 2006" }}</h3>
-                        <a class="eg-link" {{ if isset .Params `link`}} href="{{.Params.link}}"{{end}}>
-                          <p class="news-section__item-paragraph eg-mb-0-5">
-                            {{ if isset .Params `link`}} <span> {{end}}
-                              {{ .Title }}
-                            {{ if isset .Params `link`}} </span> {{end}}
-                          </p>
-                        </a>
-                        <a class="eg-link" {{ if isset .Params `link`}} href="{{.Params.link}}"{{end}}>
-                          <p class="news-section__item-subparagraph">
+                        <div class="eg-mb-0-5">
+                          <a class="news-section__item-paragraph eg-link"{{ if isset .Params `link`}} href="{{.Params.link}}"{{end}}>
+                          {{ if isset .Params `link`}} <span> {{end}}
+                            {{ .Title }}
+                          {{ if isset .Params `link`}} </span> {{end}}
+                          </a>
+                        </div>
+                        <div>
+                          <a class="news-section__item-subparagraph eg-link" {{ if isset .Params `link`}} href="{{.Params.link}}"{{end}}>
                             {{ if isset .Params `link`}} <span> {{end}}
                               {{ .Params.subTitle }}
                             {{ if isset .Params `link`}} </span> {{end}}
-                          </p>
-                        </a>
+                          </a>
+                        </div>
                       </div>
                     {{end}}
                   {{end}}
