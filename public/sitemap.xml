@@ -1,16 +1,206 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	
-	<sitemap>
-	   	<loc>https://powerful-spire-67290.herokuapp.com/en/sitemap.xml</loc>
-		
-	   	<lastmod>2019-05-07T00:00:00+00:00</lastmod>
-		
-	</sitemap>
-	
-	<sitemap>
-	   	<loc>https://powerful-spire-67290.herokuapp.com/ru/sitemap.xml</loc>
-		
-	</sitemap>
-	
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://ergoplatform.org/blog/2019_05_07_mining/</loc>
+    <lastmod>2019-05-07T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/legal/</loc>
+    <lastmod>2019-04-26T13:24:22+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/privacy/</loc>
+    <lastmod>2019-04-26T13:18:49+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/wallets/</loc>
+    <lastmod>2019-04-24T13:59:34+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/news/2019-04-24-teaser/</loc>
+    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/exchanges/</loc>
+    <lastmod>2019-04-23T14:43:56+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/software/</loc>
+    <lastmod>2019-04-22T18:58:37+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/tools/</loc>
+    <lastmod>2019-04-22T18:00:17+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/basics/</loc>
+    <lastmod>2019-04-22T15:55:51+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/blog/2019_04_22-lets/</loc>
+    <lastmod>2019-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/news/</loc>
+    <lastmod>2019-04-12T13:50:10+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/faq/</loc>
+    <lastmod>2019-04-12T13:50:04+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/404/</loc>
+    <lastmod>2019-04-12T13:49:59+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/documents/</loc>
+    <lastmod>2019-04-12T13:49:59+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/blog/</loc>
+    <lastmod>2019-04-12T13:49:52+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/team/</loc>
+    <lastmod>2019-04-11T20:29:21+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/about/</loc>
+    <lastmod>2019-04-11T20:27:44+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/blog/2019_04_10-ico-example/</loc>
+    <lastmod>2019-04-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/news/2019-04-03-ergo-mining-tutorial/</loc>
+    <lastmod>2019-04-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/news/2019-04-02-testnet-2.0.3/</loc>
+    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/news/2019-03-19/</loc>
+    <lastmod>2019-03-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/blog/2019_03_19-qa/</loc>
+    <lastmod>2019-03-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/news/2019_03_17-how-to-set-up-full-node/</loc>
+    <lastmod>2019-03-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/news/2019-03-14/</loc>
+    <lastmod>2019-03-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/news/2019-03-12/</loc>
+    <lastmod>2019-03-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/blog/2018_10_19-smart-contracts/</loc>
+    <lastmod>2018-10-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/categories/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/</loc>
+    <lastmod>2019-05-07T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/tags/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
