@@ -1,4 +1,4 @@
-baseURL = "https://ergoplatform.org/"
+baseURL = "https://ergoplatform.org"
 languageCode = "en"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
