@@ -349,6 +349,9 @@
 - id: basics_second-section_third_link
   translation: Documents
 
+- id: basics_second-section_fourth_link
+  translation: Software
+
 #tech
 
 - id: tech_first_title
