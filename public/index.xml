@@ -6,10 +6,19 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 07 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ergo whitepaper</title>
+      <link>https://ergoplatform.org/news/2019-05-15-whitepaper/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/news/2019-05-15-whitepaper/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>How to mine Ergo on Windows(x64)</title>
@@ -95,10 +104,10 @@ About scaling, the main approach is to avoid bloat without compromising function
     
     <item>
       <title>How to set up and configure full Ergo node</title>
-      <link>https://ergoplatform.org/news/2019_03_17-how-to-set-up-full-node/</link>
+      <link>https://ergoplatform.org/news/2019-03-17-how-to-set-up-full-node/</link>
       <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/news/2019_03_17-how-to-set-up-full-node/</guid>
+      <guid>https://ergoplatform.org/news/2019-03-17-how-to-set-up-full-node/</guid>
       <description></description>
     </item>
     
