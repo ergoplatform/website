@@ -185,11 +185,22 @@
         font-size: 20px;
         line-height: 26px;
         font-weight: 400;
-        margin: 0;
 
         @media (max-width: $sm) {
           font-size: 16px;
           line-height: 22px;
+        }
+      }
+
+      &-subparagraph {
+        color: $light-black;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+
+        @media (max-width: $sm) {
+          font-size: 14px;
+          line-height: 20px;
         }
       }
     }
