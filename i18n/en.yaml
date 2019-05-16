@@ -820,3 +820,8 @@
 
 - id: error_page_button
   translation: Back to home page
+
+# share
+
+- id: share_post
+  translation: Share post
