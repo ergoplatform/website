@@ -29,11 +29,35 @@
     border: 1px solid $light-red;
     background: $white;
     color: $light-red;
-    transition: background ease-in 0.15s, color ease-in 0.15s;
+    position: relative;
+    outline: none;
+    background-color: $white;
+    z-index: 1;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
 
     &:hover {
-      background: $light-red;
+      cursor: pointer;
       color: $white;
+    }
+
+    &::before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 100%;
+      right: 100%;
+      width: 1em;
+      height: 1em;
+      border-radius: 50%;
+      background-color: $light-red;
+      transform-origin: center;
+      transform: translate(50%, -50%) scale(0);
+      transition: transform 0.45s ease-in-out;
+    }
+
+    &:hover::before {
+      transform: translate(50%, -50%) scale(25);
     }
   }
 }
