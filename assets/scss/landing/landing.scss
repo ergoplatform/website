@@ -51,7 +51,7 @@
       margin-top: 35px;
 
       @media (max-width: $xs) {
-        margin-top: 1.5rem;
+        margin-top: 1rem;
       }
     }
 
@@ -170,7 +170,7 @@
 
       @media (max-width: $sm) {
         grid-template-columns: 1fr;
-        grid-gap: 1rem;
+        grid-gap: calc(1.5rem + 4px);
       }
     }
 
