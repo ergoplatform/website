@@ -6,10 +6,19 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 May 2019 15:05:06 +0300</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Ergo Emission Schedule</title>
+      <link>https://ergoplatform.org/blog/2019_05_20-curve/</link>
+      <pubDate>Mon, 20 May 2019 15:05:06 +0300</pubDate>
+      
+      <guid>https://ergoplatform.org/blog/2019_05_20-curve/</guid>
+      <description>Overview Ergo’s native token is called Erg and its emission schedule may be of keen interest to users and miners of the platform. Ergs also have some unique characteristics which are highlighted in this post. Most basically and leaving out technical details, Ergo has a strictly limited supply, an 8‐year emission schedule and a declining rate of emission over these 8 years. All tokens are mined through an original Asic and Pool‐resistant Proof‐of‐Work (“PoW”) algorithm called Autolykos.</description>
+    </item>
     
     <item>
       <title>Ergo whitepaper</title>
