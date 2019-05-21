@@ -32,19 +32,22 @@
         <div class="eg-blog eg-blog--w-100">
           <div class="eg-blog__main related">
             {{ $blogPosts := where .Site.RegularPages "Section" "blog" }}
+            {{ $current := .URL}}
             {{ range $blogPosts }}
-              <a class="eg-blog__item eg-link related__post" href="{{.Permalink}}">
-                <div class="eg-blog__item-img"><img src="{{ .Params.blogPhoto }}" height="188" width="335" alt="blog photo"></div>
-                <h3 class="eg-blog__item-title"><span>{{ truncate 50 .Title }}</span></h3>
-                <p class="eg-blog__item-paragraph">{{ truncate 155 .Summary}}</p>
-                <div class="eg-author">
-                  <img src="{{ .Params.authorPhoto }}" alt="author img" class="eg-author__img" width="60" height="60">
-                  <div class="eg-author__info">
-                    <h4 class="eg-author__info-title">{{ .Params.Author }}</h4>
-                    <p class="eg-author__info-paragraph">{{ .Date.Format "2 January, 2006" }}</p>
+              {{ if ne $current .URL }}
+                <a class="eg-blog__item eg-link related__post" href="{{.Permalink}}">
+                  <div class="eg-blog__item-img"><img src="{{ .Params.blogPhoto }}" height="188" width="335" alt="blog photo"></div>
+                  <h3 class="eg-blog__item-title"><span>{{ truncate 50 .Title }}</span></h3>
+                  <p class="eg-blog__item-paragraph">{{ truncate 155 .Summary}}</p>
+                  <div class="eg-author">
+                    <img src="{{ .Params.authorPhoto }}" alt="author img" class="eg-author__img" width="60" height="60">
+                    <div class="eg-author__info">
+                      <h4 class="eg-author__info-title">{{ .Params.Author }}</h4>
+                      <p class="eg-author__info-paragraph">{{ .Date.Format "2 January, 2006" }}</p>
+                    </div>
                   </div>
-                </div>
-              </a>
+                </a>
+              {{ end }}
             {{ end }}
             </div>
             <div class="load-more">

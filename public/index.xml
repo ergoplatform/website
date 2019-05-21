@@ -35,14 +35,15 @@
       <pubDate>Tue, 07 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://ergoplatform.org/blog/2019_05_07_mining/</guid>
-      <description>Step 1: Tools Visual Studio https://visualstudio.microsoft.com/downloads/
+      <description>Step 1: Tools Visual Studio
 Choose free community version, you will need to select desktop development with C++ package during install.
-CUDA toolkit https://developer.nvidia.com/cuda-downloads
+CUDA toolkit
 Choose your system version, install with default options, it will update your graphics driver to a compatible version.
-Curl https://curl.haxx.se/latest.cgi?curl=win64-nossl
+Curl
 Generic version without SSL, binary won`t work. Choose generic source, zip and click on show mirrors. Download and unpack.
-OpenSSL 1.0.2 https://slproweb.com/download/Win64OpenSSL-1_0_2r.exe
-Download and install.</description>
+OpenSSL 1.0.2
+Download and install.
+Autolykos GPU miner</description>
     </item>
     
     <item>
@@ -116,8 +117,7 @@ Part 1. Preliminaries An important design decision in a cryptocurrency protocol 
       
       <guid>https://ergoplatform.org/blog/2019_03_19-qa/</guid>
       <description>First, we have a major announcement - Ergo mainnet launch is planned for May 26 if no security vulnerabilities will be found during audit process!
-What are the vision about scaling and adoption?
-About scaling, the main approach is to avoid bloat without compromising functionality. E.g. persistent updateable storage is possible, with updates to be checked by a blockchain contract, but only digest of authenticated data structure (and some additional bytes, less than 40 bytes anyway) are stored in the UTXO set dependless on data set size.</description>
+What are the vision about scaling and adoption? About scaling, the main approach is to avoid bloat without compromising functionality. E.g. persistent updateable storage is possible, with updates to be checked by a blockchain contract, but only digest of authenticated data structure (and some additional bytes, less than 40 bytes anyway) are stored in the UTXO set dependless on data set size.</description>
     </item>
     
     <item>
