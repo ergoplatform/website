@@ -283,13 +283,19 @@
   translation: Vision
 
 - id: basics_vision
-  translation: "Ergo was created in response to stagnation in the blockchain area. It implements various technical and economic ready-to-use ideas that add value but do not reduce the known advantages of blockchain systems. Ergo’s primary focus is to provide an efficient and secure way to implement financial contracts, which are the most widely used application of blockchain technology. It is created to provide an easy way to use financial contracts by ordinary people, that should be able to use them in a decentralized manner without any trust. Unlike the traditional financial system, no bailouts, blacklists or other forms of discrimination should be possible on the core level of Ergo protocol. Ergo protocol is designed to be survivable in the long-term, making it useful to implement contracts for a period of a person’s life and also enabling it to be a good store of value."
+  translation: "Ergo was created in response to stagnation in the blockchain area.
+                It implements various technical and economic ready-to-use ideas that add value but do not reduce the known advantages of blockchain systems.
+                Ergo’s primary focus is to provide an efficient and secure way to implement financial contracts, which are the most widely used application of blockchain technology.
+                It is created to provide an easy way to use financial contracts by ordinary people, that should be able to use them in a decentralized manner without any trust.
+                Unlike the traditional financial system, no bailouts, blacklists or other forms of discrimination should be possible on the core level of Ergo protocol.
+                Ergo protocol is designed to be survivable in the long-term, making it useful to implement contracts for a period of a person’s life and also enabling it to be a good store of value.
+                <a href=\"https://docs.ergoplatform.com/teaser.pdf\" class=\"eg-text__link eg-link\"><span>Read teaser for details</span></a>."
 
 - id: basics_consensus_title
   translation: Consensus
 
 - id: basics_consensus
-  translation: "Consensus protocol of Ergo — Autolykos — is based on the well-known Proof-of-Work (“PoW”) consensus algorithm.
+  translation: "Consensus protocol of Ergo — <a href=\"https://docs.ergoplatform.com/ErgoPow.pdf\" class=\"eg-text__link eg-link\"><span>Autolykos</span></a> — is based on the well-known Proof-of-Work (“PoW”) consensus algorithm.
                   PoW was chosen for several reasons including that PoW protocols are widely studied, have high security guarantees, and are friendly to light clients.
                   However, Autolykos has several meaningful differences from Bitcoin's PoW.
                   First, it is memory-hard reducing the disparity between specialized hardware (ASICs) and commodity GPUs, allowing ordinary people to participate in mining to secure the network and receive the reward.
@@ -322,7 +328,7 @@
   To achieve survivability, Ergo provides economic improvements in addition to the technical ones, most central of which is a storage fee component which plays an important role for Ergo‘s stability: if an output remains in the state for 4 years without being moved, a miner may charge a small fee for every byte kept in the state.
   This idea is similar to regular cloud storage services, but it's application to blockchain systems has several significant consequences.
   First, Ergo mining will always be stable, unlike Bitcoin and other PoW currencies, in which mining may become unstable after the emission period.
-  Second, state size growth becomes controllable and predictable reducing hardware requirements for Ergo miners. Third, by collecting storage fees from outdated boxes, miners return lost coins to circulation preventing a steady decrease of circulating supply due to lost keys. This also establishes a long‐term unique use case for Ergo’s native token (“Erg”) as the only token on the Ergo blockchain that can be used to pay for storage rent, despite the expected presence of a large number of non‐native tokens that may be issued on the Ergo blockchain in order to benefit from its strong security and decentralization qualities and Contractual Money functionality.  "
+  Second, state size growth becomes controllable and predictable reducing hardware requirements for Ergo miners. Third, by collecting storage fees from outdated boxes, miners return lost coins to circulation preventing a steady decrease of circulating supply due to lost keys. This also establishes a long‐term unique use case for <a class=\"eg-text__link eg-link\" href=\"https://docs.ergoplatform.com/ErgoPow.pdf\"><span>Ergo’s native token (“Erg”)</span></a> as the only token on the Ergo blockchain that can be used to pay for storage rent, despite the expected presence of a large number of non‐native tokens that may be issued on the Ergo blockchain in order to benefit from its strong security and decentralization qualities and Contractual Money functionality.  "
 
 - id: basics_applicability_title
   translation: Applicability
@@ -676,9 +682,15 @@
                 implement complex smart contracts, including Turing-complete smart contracts but in a secure manner."
 
 - id: faq_nineth-item_title
-  translation: "Where can I learn more about Ergo?"
+  translation: "What is the Ergo token emission schedule and total monetary base?"
 
 - id: faq_nineth-item_text
+  translation: "The details of the Ergo emission schedule and monetary supply can be found in the blog post <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/blog/2019_05_20-curve/\"><span>here</span></a>."
+
+- id: faq_tenth-item_title
+  translation: "Where can I learn more about Ergo?"
+
+- id: faq_tenth-item_text
   translation: "Website: <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/\"><span>https://ergoplatform.org/</span></a> <br/><br/>
   Twitter: <a class=\"eg-text__link eg-link\" href=\"https://twitter.com/ergoplatformorg\"><span>https://twitter.com/ergoplatformorg</span></a> <br/><br/>
   Wiki: <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki\"><span>https://github.com/ergoplatform/ergo/wiki</span></a> <br/><br/>

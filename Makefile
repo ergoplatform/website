@@ -6,3 +6,6 @@ build-assets:
 
 site:
 	make build-assets && make build-hugo
+
+server:
+	hugo -D server --noHTTPCache
