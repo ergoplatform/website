@@ -216,10 +216,14 @@
         content: "";
         width: 18px;
         height: 23px;
-        bottom: -1px;
+        bottom: 2px;
         background-image: url('../img/download_arrow.svg');
         background-repeat: no-repeat;
         right: -28px;
+
+        @media (max-width: $sm) {
+          bottom: -1px;
+        }
       }
     }
 
