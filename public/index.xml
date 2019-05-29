@@ -6,10 +6,20 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 20 May 2019 15:05:06 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 29 May 2019 18:21:23 +0300</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Trustless Local Exchange Trading System</title>
+      <link>https://ergoplatform.org/blog/2019_05_29-exchange/</link>
+      <pubDate>Wed, 29 May 2019 18:21:23 +0300</pubDate>
+      
+      <guid>https://ergoplatform.org/blog/2019_05_29-exchange/</guid>
+      <description>A Local Exchange Trading System (LETS) is aimed at developing local economy and is usually used by people of a locality in the vicinity of each other. A committee managed LETS is described at this link. We call such a system a managed or permissioned, since it depends on a trusted committee. Here we describe a trustless LETS system, i.e., one where there is no management committee.
+Overview LETS involves several parties that agree to use some form of &amp;ldquo;local currency&amp;rdquo;, usually pegged to the country&amp;rsquo;s main currency at a 1:1 rate.</description>
+    </item>
     
     <item>
       <title>The Ergo Emission Schedule</title>
