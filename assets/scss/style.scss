@@ -81,6 +81,18 @@ p {
   position: absolute;
   left: 55%;
   top: 120px;
+
+  @media (max-width: $xs) {
+    top: 0;
+    left: 30%;
+  }
+
+  svg {
+    @media (max-width: $xs) {
+      width: 600px;
+      height: 925px;
+    }
+  }
 }
 
 .left-lines {
