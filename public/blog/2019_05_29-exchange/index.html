@@ -162,62 +162,74 @@ Overview LETS involves several parties that agree to use some form of &amp;ldquo
 
 <p>To prevent spam and DDoS attacks, we require at least some minimum number of ergs (<code>minErgsToJoin</code>) to be locked in the newly created member&rsquo;s box. The ergs will be locked until at least <code>minWithdrawTime</code> number of blocks have been mined. A box is allowed to have a negative LETS balance upto the amount that can be covered by the locked ergs (using the rate at the time of trade).</p>
 
-<pre><code class="language-scala">val tokenBox = OUTPUTS(0) // first output should contain remaining LETS tokens
+<pre><code class="language-scala">// a tokenBox stores the membership tokens.
+val tokenBox = OUTPUTS(0) // first output contains remaining LETS tokens
 def isLets(b:Box) = {
-   // A LETS box must have 1 membership token in tokens(0)
+   // A LETS box must have exactly 1 membership token in tokens(0)
    b.tokens(0)._1 == letsTokenID &amp;&amp; b.tokens(0)._2 == 1 &amp;&amp;
    blake2b256(b.propositionBytes) == memberBoxScriptHash &amp;&amp;
-   SELF.R4[Long].get == 0 &amp;&amp; // start box with zero LETS balance
-   b.value &gt;= minErgsToJoin &amp;&amp; 
+   SELF.R4[Long].get == 0 &amp;&amp; // start the box with zero LETS balance
+   b.value &gt;= minErgsToJoin &amp;&amp; // the box must contain some minimum ergs
    b.R6[Long].get &lt;= HEIGHT // store the creation height in R6
 }
+
+// how many lets boxes creared in the tx
 val numLetsBoxes = OUTPUTS.filter({(b:Box) =&gt; isLets(b)}).size
 
-tokenBox.tokens(0)._1 == SELF.tokens(0)._1 &amp;&amp;
-tokenBox.tokens(0)._2 == SELF.tokens(0)._2 - numLetsBoxes &amp;&amp;
-tokenBox.propositionBytes == SELF.propositionBytes
+// In the transaction following is preserved for the token box ...
+tokenBox.tokens(0)._1 == SELF.tokens(0)._1 &amp;&amp;                //  token id
+tokenBox.tokens(0)._2 == SELF.tokens(0)._2 - numLetsBoxes &amp;&amp; //  quantity
+tokenBox.propositionBytes == SELF.propositionBytes           //  script
 </code></pre>
 
 <p>A LETS member&rsquo;s box is protected by the script below, whose hash memberBoxScriptHash is used above.</p>
 
 <pre><code class="language-scala">val validRateOracle = CONTEXT.dataInputs(0).tokens(0)._1 == rateTokenID
 val rate = CONTEXT.dataInputs(0).R4[Int].get
-val inBalance = SELF.R4[Long].get
-val pubKey = SELF.R5[SigmaProp].get
-val createdAt = SELF.R6[Long].get
+val inBalance = SELF.R4[Long].get    // LETS balance of current input
+val pubKey = SELF.R5[SigmaProp].get  // owner of the current input
+val createdAt = SELF.R6[Long].get    // height at which current input was mined
 
-val index = getVar[Int](0).get
-val outBalance = OUTPUTS(index).R4[Long].get
+val index = getVar[Int](0).get       // index of the corresponding output
+val out = OUTPUTS(index)
+val outBalance = out.R4[Long].get    // LETS balance of the output
+
+// A LETS box is one that has the same script as the current box
 val isMemberBox = {(b:Box) =&gt; b.propositionBytes == SELF.propositionBytes}
-val letsInputs = INPUTS.filter(isMemberBox)
-val letsOutputs = OUTPUTS.filter(isMemberBox)
+val letsInputs = INPUTS.filter(isMemberBox)    // all LETS input boxes
+val letsOutputs = OUTPUTS.filter(isMemberBox)  // all LETS output boxes
 
-// receiver box will contain same amount of ergs.
-val receiver = outBalance &gt; inBalance &amp;&amp; OUTPUTS(index).value == SELF.value
-val letsBalance = {(b:Box) =&gt; b.R4[Long].get}
+// The current input belongs to the receiver if its LETS balance increases
+// There may be some ergs in receiver's input box. We need to ensure that
+// the receiver's output box also contains the same amount of ergs as input
+val receiver = outBalance &gt; inBalance &amp;&amp; out.value == SELF.value
 
-val letsIn = letsInputs.map(letsBalance).fold(0L, {(l:Long, r:Long) =&gt; l + r})
-val letsOut = letsOutputs.map(letsBalance).fold(0L, {(l:Long, r:Long) =&gt; l + r})
+val getBalance = {(b:Box) =&gt; b.R4[Long].get} // returns LETS balance of a box
 
-// Sender box can contain less amount of ergs (sender may withdraw ergs 
-// provided that its negative LETS balance is backed by sufficient ergs
-// We don't touch the erg balance of the receiver
+val letsBalIn = letsInputs.map(getBalance).fold(0L, {(l:Long, r:Long) =&gt; l + r})
+val letsBalOut = letsOutputs.map(getBalance).fold(0L, {(l:Long, r:Long) =&gt; l + r})
 
-val correctErgs = OUTPUTS(index).value &gt;= -outBalance * rate &amp;&amp; (
-  OUTPUTS(index).value &gt;= SELF.value || 
-  SELF.R6[Long].get + minWithdrawTime &gt; HEIGHT
+// sender box can contain less amount of ergs (sender may withdraw ergs provided 
+// that any negative LETS balance of sender in out is backed by sufficient ergs)
+val correctErgs = out.value &gt;= -outBalance * rate &amp;&amp; (
+  out.value &gt;= SELF.value || SELF.R6[Long].get + minWithdrawTime &gt; HEIGHT
 )
 
-inBalance != outBalance &amp;&amp; // some transaction should occur
-SELF.tokens(0)._1 == letsTokenID &amp;&amp;
-OUTPUTS(index).tokens(0)._1 == letsTokenID &amp;&amp;
-validRateOracle &amp;&amp; // rate oracle is valid
-letsIn == letsOut &amp;&amp; // total LETS balance is preserved
-letsInputs.size == 2 &amp;&amp; letsOutputs.size == 2 &amp;&amp;
-OUTPUTS(index).propositionBytes == SELF.propositionBytes &amp;&amp;
-OUTPUTS(index).R5[SigmaProp].get == pubKey &amp;&amp;
-OUTPUTS(index).R6[Long].get == SELF.R6[Long].get &amp;&amp; // creation height
-(receiver || (pubKey &amp;&amp; correctErgs))
+// for the receiver, we don't touch the erg balance, 
+// since a receiver is not actively involved in the transaction
+
+inBalance != outBalance &amp;&amp; // some transaction should occur; balance must change
+SELF.tokens(0)._1 == letsTokenID &amp;&amp; // the current input has the right token
+out.tokens(0)._1 == letsTokenID &amp;&amp; // corresponding output has the right token
+validRateOracle &amp;&amp;          // oracle providing rate has the correct &quot;rate token&quot;
+letsBalIn == letsBalOut &amp;&amp;  // total LETS balance is preserved in the transaction
+letsInputs.size == 2 &amp;&amp; letsOutputs.size == 2 &amp;&amp;  // only two LETS inputs, outputs
+out.propositionBytes == SELF.propositionBytes &amp;&amp;  // out is a LETS box ...
+out.R5[SigmaProp].get == pubKey &amp;&amp;                // ... with the right pub key
+out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... and creation height
+(receiver ||              // either current input belongs to receiver ...
+  (pubKey &amp;&amp; correctErgs) // ... or out has correct ergs and tx has signature
+)
 </code></pre>
 
 <p>The transaction spending a box with the above script requires:</p>
