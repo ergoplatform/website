@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tools on Ergo</title>
-    <link>https://ergoplatform.org/tools/</link>
+    <link>https://powerful-spire-67290.herokuapp.com/tools/</link>
     <description>Recent content in Tools on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 22 Apr 2019 18:00:17 +0300</lastBuildDate>
     
-	<atom:link href="https://ergoplatform.org/tools/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://powerful-spire-67290.herokuapp.com/tools/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
