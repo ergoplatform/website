@@ -73,42 +73,42 @@ title = "Ergo"
 
   [[languages.cn.menu.mainmenu]]
     identifier = "about"
-    name = "About"
+    name = "关于"
     url = "/about/"
     weight = -110
 
   [[languages.cn.menu.mainmenu]]
     identifier = "news"
-    name = "News"
+    name = "新闻"
     url = "/news/"
     weight = -100
 
   [[languages.cn.menu.mainmenu]]
     identifier = "FAQ"
-    name = "FAQ"
+    name = "常问问题"
     url = "/faq/"
     weight = -90
 
   [[languages.cn.menu.mainmenu]]
     identifier = "Documents"
-    name = "Documents"
+    name = "文件"
     url = "/documents/"
     weight = -80
 
   [[languages.cn.menu.mainmenu]]
     identifier = "Tools"
-    name = "Tools"
+    name = "工具"
     url = "/tools/"
     weight = -70
 
   [[languages.cn.menu.mainmenu]]
     identifier = "Blog"
-    name = "Blog"
+    name = "博客"
     url = "/blog/"
     weight = -60
 
   [[languages.cn.menu.mainmenu]]
     identifier = "Team"
-    name = "Team"
+    name = "团队"
     url = "/team/"
     weight = -50
