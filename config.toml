@@ -19,7 +19,7 @@ title = "Ergo"
 
 [languages.en]
   languageCode = "en"
-  languageName = "English"
+  languageName = "Eng"
   contentDir = "content/en"
   weight = 1
 
@@ -60,6 +60,54 @@ title = "Ergo"
     weight = -60
 
   [[languages.en.menu.mainmenu]]
+    identifier = "Team"
+    name = "Team"
+    url = "/team/"
+    weight = -50
+
+[languages.cn]
+  languageCode = "cn"
+  languageName = "中文"
+  contentDir = "content/cn"
+  weight = 1
+
+  [[languages.cn.menu.mainmenu]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = -110
+
+  [[languages.cn.menu.mainmenu]]
+    identifier = "news"
+    name = "News"
+    url = "/news/"
+    weight = -100
+
+  [[languages.cn.menu.mainmenu]]
+    identifier = "FAQ"
+    name = "FAQ"
+    url = "/faq/"
+    weight = -90
+
+  [[languages.cn.menu.mainmenu]]
+    identifier = "Documents"
+    name = "Documents"
+    url = "/documents/"
+    weight = -80
+
+  [[languages.cn.menu.mainmenu]]
+    identifier = "Tools"
+    name = "Tools"
+    url = "/tools/"
+    weight = -70
+
+  [[languages.cn.menu.mainmenu]]
+    identifier = "Blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = -60
+
+  [[languages.cn.menu.mainmenu]]
     identifier = "Team"
     name = "Team"
     url = "/team/"

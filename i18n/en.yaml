@@ -1,9 +1,7 @@
 #landing
 - id: header_resilient_platform
-  translation: Ergo is a Resilient Platform
-
-- id: header_contractual_money
-  translation: for Contractual Money
+  translation: "<span class=\"header-section__title--red\">Ergo is a Resilient Platform</span> <br/>
+  for Contractual Money"
 
 - id: getting_started
   translation: Getting started with Ergo
