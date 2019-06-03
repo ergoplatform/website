@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ergo</title>
-    <link>https://ergoplatform.org/cn/</link>
+    <link>http://powerful-spire-67290.herokuapp.com/cn/</link>
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
     
-	<atom:link href="https://ergoplatform.org/cn/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://powerful-spire-67290.herokuapp.com/cn/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
