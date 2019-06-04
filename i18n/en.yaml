@@ -605,6 +605,20 @@
 - id: team_second_title
   translation: Regular Contributors
 
+- id: team_contribute
+  translation: Contribute
+
+- id: team_now
+  translation: now
+
+- id: team_developer
+  translation: Developer
+
+- id: team_community
+  translation: Community
+
+- id: team_researcher
+  translation: Researcher at researchinstitute.io
 
 #faq
 

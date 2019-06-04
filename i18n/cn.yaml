@@ -1,6 +1,6 @@
 #landing
 - id: header_resilient_platform
-  translation: "<span class=\"header-section__title--red\">尔格是一个具备强适应力的平台</span>对于合约货币"
+  translation: "<span class=\"header-section__title--red\">尔格是一个对于合约货币</span><br/>具备强适应力的平台"
 
 - id: getting_started
   translation: 开始使用尔格
@@ -9,13 +9,13 @@
   translation: 尔格的愿景
 
 - id: ergo_decentralization
-  translation: 真实的去中心化
+  translation: 真正的去中心化
 
 - id: ergo_economy
-  translation: 一个新的经济模型
+  translation: 全新的经济模型
 
 - id: ergo_contractual
-  translation: 合约货币
+  translation: 关于合约货币
 
 - id: ergo_survivability
   translation: 生存能力
@@ -584,6 +584,21 @@
 
 - id: team_second_title
   translation: 经常贡献者
+
+- id: team_contribute
+  translation: 参与
+
+- id: team_now
+  translation: 现在
+
+- id: team_developer
+  translation: 开发人员
+
+- id: team_community
+  translation: 社区
+
+- id: team_researcher
+  translation: researchinstitute.io的研究员
 
 #faq
 
