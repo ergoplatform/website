@@ -3,6 +3,20 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ergoplatform.org/news/2019-06-03/</loc>
+    <lastmod>2019-06-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/news/2019-05-30/</loc>
+    <lastmod>2019-05-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://ergoplatform.org/blog/2019_05_29-exchange/</loc>
     <lastmod>2019-05-29T18:21:23+03:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -10,8 +24,29 @@
   </url>
   
   <url>
+    <loc>https://ergoplatform.org/news/2019-05-27/</loc>
+    <lastmod>2019-05-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://ergoplatform.org/blog/2019_05_20-curve/</loc>
     <lastmod>2019-05-20T15:05:06+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/news/2019-05-20/</loc>
+    <lastmod>2019-05-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/news/2019-05-17/</loc>
+    <lastmod>2019-05-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -220,7 +255,7 @@
   
   <url>
     <loc>https://ergoplatform.org/</loc>
-    <lastmod>2019-05-29T18:21:23+03:00</lastmod>
+    <lastmod>2019-06-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
