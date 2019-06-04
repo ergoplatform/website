@@ -103,6 +103,9 @@
 - id: documents_ergo_platform
   translation: Whitepaper I
 
+- id: documents_ergo_platform_link
+  translation: /docs/whitepaper.pdf
+
 - id: documents_ergo_platform_text
   translation: "Ergo: The Resilient Platform For Contractual Money"
 
