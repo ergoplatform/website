@@ -8,8 +8,7 @@
     <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
 
     
-      <meta name="description" content="A Local Exchange Trading System (LETS) is aimed at developing local economy and is usually used by people of a locality in the vicinity of each other. A committee managed LETS is described at this link. We call such a system a managed or permissioned, since it depends on a trusted committee. Here we describe a trustless LETS system, i.e., one where there is no management committee.
-Overview LETS involves several parties that agree to use some form of &amp;ldquo;local currency&amp;rdquo;, usually pegged to the country&amp;rsquo;s main currency at a 1:1 rate.">
+      <meta name="description" content="A Local Exchange Trading System (LETS) is aimed at developing local economy and is usually used by people of a locality in the vicinity of each other. For a brief overview of LETS see this link, which also describes an ErgoScript implementation of a committee managed LETS. We call such a system a managed or permissioned, since it depends on a committee of trusted members to enroll new members into the LETS.">
     
 
     
@@ -148,7 +147,8 @@ Overview LETS involves several parties that agree to use some form of &amp;ldquo
           <div>
             
 
-<p>A Local Exchange Trading System (LETS) is aimed at developing local economy and is usually used by people of a locality in the vicinity of each other. A committee managed LETS is described at <a href="/en/blog/2019_04_22-lets/">this link</a>. We call such a system a <em>managed or permissioned</em>, since it depends on a trusted committee. Here we describe a <strong>trustless</strong> LETS system, i.e., one where there is no management committee.</p>
+<p>A Local Exchange Trading System (LETS) is aimed at developing local economy and is usually used by people of a locality in the vicinity of each other. For a brief overview of LETS see  <a href="/blog/2019_04_22-lets/">this link</a>, which also describes an ErgoScript implementation of a committee managed LETS. We call such a system a <em>managed</em> or <em>permissioned</em>, since it depends on a committee of trusted members to enroll new members into the LETS.
+Here we describe a <strong>trustless</strong> LETS, i.e., one where there is no management committee needed for enrolment.</p>
 
 <h2 id="overview">Overview</h2>
 
@@ -160,19 +160,23 @@ Overview LETS involves several parties that agree to use some form of &amp;ldquo
 
 <h2 id="trustless-lets">Trustless LETS</h2>
 
-<p>Since we desire a trustless LETS, we cannot depend on any trusted group of people to admit users. We will assume a rate oracle identified by some global id and a singleton box containing exactly one token with this id. This box also contains the rate of Ergs to Euros at any given period of time. The rate is updated by spending this box and creating another singleton box with the new rate.</p>
+<p>Since we desire a trustless LETS, we cannot depend on any trusted group of people to admit users. Note that we will still have a committee to perform some tasks such as setting up the LETS parameters (local currency, the maximum number of members, etc) and consuming any joining fee.</p>
 
-<p>At any instance, our LETS is defined by a global <strong>LETS token box</strong> that contains some LETS membership tokens. This box is protected by the script given below. The token ID uniquely defines the attributes of the LETS in use, such as the location, the currency unit, the rate oracle ID, etc. One or more users can spend this box and create their individual LETS boxes as outputs of the transaction. The box is initially started with, say, 10000 LETS membership tokens.</p>
+<p>We will only assume a trusted <em>pricing oracle</em> that gives the current rate of euros to ergs identified by some global id (<code>rateTokenID</code>) and a <em>singleton box</em> containing exactly one token with this id. A singleton box, described <a href="/blog/2019_04_22-lets/">here</a>, is a box containing a <em>singleton token</em>, i.e., a token with only one quantity in existence. This box also contains the rate of ergs to euros at any given period of time. The rate is updated by spending this box and creating another singleton box with the new rate.</p>
 
-<p>A LETS box represents a LETS member and must be used for a LETS transaction. A LETS transaction is between two LETS members, one being the sender and the other the receiver, such that the sender transfers some positive amount of the LETS currency (local Euros) to the receiver. Such a transaction consumes the member&rsquo;s boxes and recreates them as output with the updated balance.</p>
+<p>At any instance, our LETS is uniquely defined by a global <em>token box</em> that contains some <em>membership tokens</em> with id <code>letsTokenID</code>. This box defines the LETS parameters such as the location, the currency unit, <code>rateTokenID</code>, etc. The token box is initially started with, say, 10000 membership tokens. Users can spend this box and create their individual <em>LETS boxes</em> as outputs of the transaction, such that each such output has exactly one membership token and the balance membership tokens are put in a newly created token box.</p>
+
+<p>A LETS box represents a LETS member and must be used in every transaction. For simplicity, this article restricts all LETS transaction to involve exactly two members, one being the sender and the other the receiver, such that the sender transfers some positive amount of the LETS currency (local euros) to the receiver. Such a transaction consumes the member&rsquo;s boxes and recreates them as output with the updated balance.</p>
 
 <h2 id="the-basic-variant">The Basic Variant</h2>
 
 <p>To prevent spam and DDoS attacks, we require at least some minimum number of ergs (<code>minErgsToJoin</code>) to be locked in the newly created member&rsquo;s box. The ergs will be locked until at least <code>minWithdrawTime</code> number of blocks have been mined. A box is allowed to have a negative LETS balance upto the amount that can be covered by the locked ergs (using the rate at the time of trade).</p>
 
-<pre><code class="language-scala">// a tokenBox stores the membership tokens.
-val tokenBox = OUTPUTS(0) // first output contains remaining LETS tokens
-def isLets(b:Box) = {
+<pre><code class="language-scala">// a tokenBox stores the membership tokens and has this script
+val tokenBox = OUTPUTS(0) // the first output must also be a tokenBox
+// first output contains remaining LETS tokens
+
+def isLets(b:Box) = { // returns true if b is a LETS box
    // A LETS box must have exactly 1 membership token in tokens(0)
    b.tokens(0)._1 == letsTokenID &amp;&amp; b.tokens(0)._2 == 1 &amp;&amp;
    blake2b256(b.propositionBytes) == memberBoxScriptHash &amp;&amp;
@@ -190,7 +194,7 @@ tokenBox.tokens(0)._2 == SELF.tokens(0)._2 - numLetsBoxes &amp;&amp; //  quantit
 tokenBox.propositionBytes == SELF.propositionBytes           //  script
 </code></pre>
 
-<p>A LETS member&rsquo;s box is protected by the script below, whose hash memberBoxScriptHash is used above.</p>
+<p>A LETS member&rsquo;s box is protected by the script below, whose hash <code>memberBoxScriptHash</code> is used above. The script requires exactly one (sender, receiver) pair per transaction.</p>
 
 <pre><code class="language-scala">val validRateOracle = CONTEXT.dataInputs(0).tokens(0)._1 == rateTokenID
 val rate = CONTEXT.dataInputs(0).R4[Int].get
@@ -240,24 +244,21 @@ out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... and creation he
 )
 </code></pre>
 
-<p>The transaction spending a box with the above script requires:</p>
-
-<ul>
-<li>The sum of the LETS balance of inputs and outputs is preserved</li>
-<li>There are two LETS inputs and two LETS outputs</li>
-<li>The public keys (stored in R5) is preserved in the corresponding output</li>
-<li>The creation height (stored in R6) be preserved in the corresponding output</li>
-</ul>
+<p>The transaction spending a box with the above script requires:
+- The sum of the LETS balance of inputs and outputs is preserved
+- There are two LETS inputs and two LETS outputs
+- The public keys (stored in R5) is preserved in the corresponding output
+- The creation height (stored in R6) be preserved in the corresponding output</p>
 
 <p>We say that some public key is the receiver if the LETS balance of its output is higher than that of its input.</p>
 
-<p>The last condition requires that either the input (and output) box belongs to the receiver (so that the number of Ergs are preserved), or the output is backed by the required number of Ergs if its LETS balance is negative. Furthermore, it requires that the sender&rsquo;s ergs balance cannot be reduced until <code>minWithdrawTime</code> number of blocks have been mined after the ergs were locked.</p>
+<p>The last condition requires that either the input and output boxes belong to the receiver (so that the ergs are preserved), or, in case they belong to the sender, a signature is provided and the output is backed by the required number of ergs if its LETS balance is negative. Furthermore, it requires that the sender&rsquo;s ergs balance cannot be reduced until at least <code>minWithdrawTime</code> number of blocks have been mined after the ergs were locked.</p>
 
 <p>Compared to the managed LETS, the above system has the following differences:</p>
 
 <ul>
 <li><strong>No membership record</strong>: Unlike the managed LETS, We don&rsquo;t store any membership information here.</li>
-<li><strong>Multiple-boxes</strong>: A person can create multiple membership boxes, which is permitted. We only require each box to have a minimum number of ergs locked in it.</li>
+<li><strong>Multiple-boxes</strong>: A person can create multiple membership boxes, which is permitted. We only require that any negative balance be backed by the corresponding number of ergs locked in it.</li>
 </ul>
 
 <h2 id="lets-1-zero-sum-collateral">LETS-1: Zero Sum, Collateral</h2>
@@ -327,6 +328,8 @@ out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... and creation he
 </tr>
 </tbody>
 </table>
+
+<p>We considered LETS transactions involving a single sender-receiver pair. More advanced models can allow multiple senders and receivers, and need not be in pairs.</p>
 
           </div>
         </div>
