@@ -54,23 +54,6 @@
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_07_mining/</loc>
-    <lastmod>2019-05-07T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/blog/2019_05_07_mining/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_07_mining/"
-                />
-  </url>
-  
-  <url>
     <loc>http://powerful-spire-67290.herokuapp.com/cn/news/2019-05-07-release/</loc>
     <lastmod>2019-05-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -84,6 +67,23 @@
                 rel="alternate"
                 hreflang="cn"
                 href="http://powerful-spire-67290.herokuapp.com/cn/news/2019-05-07-release/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_07_mining/</loc>
+    <lastmod>2019-05-07T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://powerful-spire-67290.herokuapp.com/en/blog/2019_05_07_mining/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_07_mining/"
                 />
   </url>
   
@@ -377,6 +377,40 @@
   </url>
   
   <url>
+    <loc>http://powerful-spire-67290.herokuapp.com/cn/news/2019-04-03-ergo-mining-tutorial/</loc>
+    <lastmod>2019-04-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://powerful-spire-67290.herokuapp.com/en/news/2019-04-03-ergo-mining-tutorial/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019-04-03-ergo-mining-tutorial/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://powerful-spire-67290.herokuapp.com/cn/news/2019-04-02-testnet-2.0.3/</loc>
+    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://powerful-spire-67290.herokuapp.com/en/news/2019-04-02-testnet-2.0.3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019-04-02-testnet-2.0.3/"
+                />
+  </url>
+  
+  <url>
     <loc>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_03_19-qa/</loc>
     <lastmod>2019-03-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -390,6 +424,57 @@
                 rel="alternate"
                 hreflang="cn"
                 href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_03_19-qa/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://powerful-spire-67290.herokuapp.com/cn/news/2019-03-19/</loc>
+    <lastmod>2019-03-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://powerful-spire-67290.herokuapp.com/en/news/2019-03-19/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019-03-19/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://powerful-spire-67290.herokuapp.com/cn/news/2019-03-17-how-to-set-up-full-node/</loc>
+    <lastmod>2019-03-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://powerful-spire-67290.herokuapp.com/en/news/2019-03-17-how-to-set-up-full-node/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019-03-17-how-to-set-up-full-node/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://powerful-spire-67290.herokuapp.com/cn/news/2019-03-14/</loc>
+    <lastmod>2019-03-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://powerful-spire-67290.herokuapp.com/en/news/2019-03-14/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019-03-14/"
                 />
   </url>
   

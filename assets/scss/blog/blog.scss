@@ -284,6 +284,10 @@
         margin-block-start: 1em;
         margin-block-end: 1em;
         padding-inline-start: 40px;
+
+        @media (max-width: $sm) {
+          padding-inline-start: 20px;
+        }
       }
 
       ul {

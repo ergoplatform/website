@@ -8,19 +8,28 @@
     <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
 
     
-      <meta name="description" content="Step 1: Tools Visual Studio
-Choose free community version, you will need to select desktop development with C&#43;&#43; package during install.
-CUDA toolkit
-Choose your system version, install with default options, it will update your graphics driver to a compatible version.
+      <meta name="description" content="第1步：工具 Visual Studio(可视化工作室)
+选择免费的社区版本，您需要在安装期间选择使用C &#43;&#43;包进行桌面开发。
+CUDA工具包
+选择您的系统版本，使用默认选项安装，它会将您的图形驱动程序更新为兼容版本。
 Curl
-Generic version without SSL, binary won`t work. Choose generic source, zip and click on show mirrors. Download and unpack.
+没有SSL的通用版本，二进制不会工作。 选择通用源，压缩文件并单击显示镜像。下载并解压缩。
 OpenSSL 1.0.2
-Download and install.
-Autolykos GPU miner">
+下载并安装。
+Autolykos GPU矿工
+单击克隆或下载，并下载压缩文件并解压缩。
+第2步：构建libcurl 打开命令行，转到 c:\Program Files (x86)\Microsoft Visual Studio\2017\Community\vc\Auxiliary\Build\ 并运行此脚本： vcvarsall.bat x64
+打开命令行，转到解压缩的Curl目录，然后进入winbuild文件夹并运行此命令： nmake /f Makefile.vc mode=dll MACHINE=x64
+成功构建后，转到Curl目录， \curl\builds\libcurl-vc-x64-release-dll-ipv6-sspi-winssl\bin 并将 libcurl.dll 复制到 \Autolykos\secp256k1 目录。
+第3步：建立矿工 打开命令行，转到 c:\Program Files (x86)\Microsoft Visual Studio\2017\Community\vc\Auxiliary\Build\ 并运行此脚本： vcvars64.bat
+打开命令行并转到解压缩的奥托吕科斯图形处理器矿工（Autolykos GPU miner）目录，然后进入 secp256k1文件夹 并编辑 winbuild.cmd 文件，将 OPENSSL_DIR, LIBCURL_DIR 更改为OpenSSL和Curl主目录。 您可以将 CUDA_COMPUTE_ARCH 更改为所需的图形处理器代码体系结构。
+运行 winbuild.cmd 并构建你的矿工。 成功构建后，您应该能在同一目录中发现miner.exe。
+S第4步：挖掘 在挖掘之前，您必须配置您的节点，钱包和矿工 
+同步节点后，配置并解锁钱包，您必须在 \Autolykos\secp256k1 目录中，创建挖掘配置文件 config.">
     
 
     
-    <title>How to mine Ergo on Windows(x64) | Ergo</title>
+    <title>如何在Windows（x64）系统下挖掘尔格 | Ergo</title>
 
     
     
@@ -140,7 +149,7 @@ Autolykos GPU miner">
         <a href="http://powerful-spire-67290.herokuapp.com/cn/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>回到所有帖子</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
-        <h1 class="eg-title eg-mb-1">How to mine Ergo on Windows(x64)</h1>
+        <h1 class="eg-title eg-mb-1">如何在Windows（x64）系统下挖掘尔格</h1>
         <div class="eg-author">
           <img src="/img/authors/martin_spodymek.jpg" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
@@ -155,46 +164,47 @@ Autolykos GPU miner">
           <div>
             
 
-<h2 id="step-1-tools">Step 1: Tools</h2>
+<h2 id="第1步-工具">第1步：工具</h2>
 
-<p><a href="https://visualstudio.microsoft.com/downloads/">Visual Studio</a><br />
-Choose free community version, you will need to select desktop development with C++ package during install.</p>
+<p><a href="https://visualstudio.microsoft.com/downloads/">Visual Studio(可视化工作室)</a><br />
+选择免费的社区版本，您需要在安装期间选择使用C ++包进行桌面开发。</p>
 
-<p><a href="https://developer.nvidia.com/cuda-downloads">CUDA toolkit</a><br />
-Choose your system version, install with default options, it will update your graphics driver to a compatible version.</p>
+<p><a href="https://developer.nvidia.com/cuda-downloads">CUDA工具包</a><br />
+选择您的系统版本，使用默认选项安装，它会将您的图形驱动程序更新为兼容版本。</p>
 
 <p><a href="https://curl.haxx.se/latest.cgi?curl=win64-nossl">Curl</a><br />
-Generic version without SSL, binary won`t work. Choose generic source, zip and click on show mirrors. Download and unpack.</p>
+没有SSL的通用版本，二进制不会工作。 选择通用源，压缩文件并单击显示镜像。下载并解压缩。</p>
 
 <p><a href="https://slproweb.com/download/Win64OpenSSL-1_0_2r.exe">OpenSSL 1.0.2</a><br />
-Download and install.</p>
+下载并安装。</p>
 
-<p><a href="https://github.com/ergoplatform/Autolykos-GPU-miner">Autolykos GPU miner</a><br />
-Click on clone or download and download zip and unpack.</p>
+<p><a href="https://github.com/ergoplatform/Autolykos-GPU-miner">Autolykos GPU矿工</a><br />
+单击克隆或下载，并下载压缩文件并解压缩。</p>
 
-<h2 id="step-2-building-libcurl">Step 2: Building libcurl</h2>
+<h2 id="第2步-构建libcurl">第2步：构建libcurl</h2>
 
-<p>Open the command line, go to <code>c:\Program Files (x86)\Microsoft Visual Studio\2017\Community\vc\Auxiliary\Build\</code> and run this script: <code>vcvarsall.bat x64</code></p>
+<p>打开命令行，转到 <code>c:\Program Files (x86)\Microsoft Visual Studio\2017\Community\vc\Auxiliary\Build\</code> 并运行此脚本： <code>vcvarsall.bat x64</code></p>
 
-<p>Open the command line, go to unpacked Curl directory, then cd winbuild and run this command: <code>nmake /f Makefile.vc mode=dll MACHINE=x64</code></p>
+<p>打开命令行，转到解压缩的Curl目录，然后进入winbuild文件夹并运行此命令： <code>nmake /f Makefile.vc mode=dll MACHINE=x64</code></p>
 
-<p>After a successful build, go to Curl directory, <code>\curl\builds\libcurl-vc-x64-release-dll-ipv6-sspi-winssl\bin</code> and copy <code>libcurl.dll</code> to <code>\Autolykos\secp256k1</code> directory.</p>
+<p>成功构建后，转到Curl目录，  <code>\curl\builds\libcurl-vc-x64-release-dll-ipv6-sspi-winssl\bin</code> 并将 <code>libcurl.dll</code> 复制到 <code>\Autolykos\secp256k1</code> 目录。</p>
 
-<h2 id="step-3-building-miner">Step 3: Building miner</h2>
+<h2 id="第3步-建立矿工">第3步：建立矿工</h2>
 
-<p>Open the command line, go to <code>c:\Program Files (x86)\Microsoft Visual Studio\2017\Community\vc\Auxiliary\Build\</code> and run this script: <code>vcvars64.bat</code></p>
+<p>打开命令行，转到 <code>c:\Program Files (x86)\Microsoft Visual Studio\2017\Community\vc\Auxiliary\Build\</code> 并运行此脚本： <code>vcvars64.bat</code></p>
 
-<p>Open command line and go to unpacked Autolykos GPU miner directory, then cd <code>secp256k1</code> and edit <code>winbuild.cmd</code> file, change <code>OPENSSL_DIR, LIBCURL_DIR</code> to your OpenSSL and Curl main directories. You can change <code>CUDA_COMPUTE_ARCH</code> to GPU code architecture you want.</p>
+<p>打开命令行并转到解压缩的奥托吕科斯图形处理器矿工（Autolykos GPU miner）目录，然后进入 <code>secp256k1文件夹</code> 并编辑 <code>winbuild.cmd</code> 文件，将 <code>OPENSSL_DIR, LIBCURL_DIR</code> 更改为OpenSSL和Curl主目录。 您可以将 <code>CUDA_COMPUTE_ARCH</code> 更改为所需的图形处理器代码体系结构。</p>
 
-<p>Run <code>winbuild.cmd</code> and build your miner. After succesful build you should discover miner.exe in the same directory.</p>
+<p>运行 <code>winbuild.cmd</code> 并构建你的矿工。 成功构建后，您应该能在同一目录中发现miner.exe。</p>
 
-<h2 id="step-4-mining">Step 4: Mining</h2>
+<h2 id="s第4步-挖掘">S第4步：挖掘</h2>
 
-<p>Before you can mine, you have to <a href="https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node">configure your node</a>, <a href="https://github.com/ergoplatform/ergo/wiki/Wallet-configuration">wallet</a> and <a href="https://github.com/ergoplatform/ergo/wiki/Mining">miner</a></p>
+<p>在挖掘之前，您必须<a href="https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node">配置您的节点</a>，<a href="https://github.com/ergoplatform/ergo/wiki/Wallet-configuration">钱包</a>和<a href="https://github.com/ergoplatform/ergo/wiki/Mining">矿工
+</a></p>
 
-<p>After your node is synced, wallet is configured and unlocked, you have to create mining configuration file <code>config.json</code> with following structure: <code>{ &quot;seed&quot; : &quot;YourSeedString&quot;, &quot;node&quot; : &quot;https://127.0.0.1:9052&quot;, &quot;keepPrehash&quot; : true }</code> in the <code>\Autolykos\secp256k1</code> directory.</p>
+<p>同步节点后，配置并解锁钱包，您必须在 <code>\Autolykos\secp256k1</code> 目录中，创建挖掘配置文件 <code>config.json</code> ，具有以下结构： <code>{“seed”：“YourSeedString”，“node”：“https：//127.0.0.1：9052” ，“keepPrehash”：true}</code>。</p>
 
-<p>Open the command line and go to <code>\Autolykos\secp256k1</code> directory. Run <code>miner.exe config.json</code></p>
+<p>打开命令行并转到 <code>\Autolykos\secp256k1</code> 目录。 运行 <code>miner.exe config.json</code>。</p>
 
           </div>
         </div>
@@ -262,8 +272,9 @@ Click on clone or download and download zip and unpack.</p>
               
                 <a class="eg-blog__item eg-link related__post" href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_29-exchange/">
                   <div class="eg-blog__item-img"><img src="/img/blog/trading.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>A Trustless Local Exchange Trading System</span></h3>
-                  <p class="eg-blog__item-paragraph">A Local Exchange Trading System (LETS) is aimed at developing local economy and is usually used by people of a locality in the vicinity of each other. A …</p>
+                  <h3 class="eg-blog__item-title"><span>一个去信任的本地交易所交易系统</span></h3>
+                  <p class="eg-blog__item-paragraph">本地交易所交易系统（LETS）旨在发展当地经济，并且通常由在彼此附近的当地人使用。 在此链接中描述了一个管理LETS的委员会。 我们将此类系统称为管理或许可，因为它取决于受信任的委员会。 在这里，我们描述了一个去信任的LETS系统，即没有管理委员会的系统。
+概要 LETS涉及多个同意使用某种形式的“本地货币” …</p>
                   <div class="eg-author">
                     <img src="/img/authors/amitabh_saxena.png" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -277,8 +288,8 @@ Click on clone or download and download zip and unpack.</p>
               
                 <a class="eg-blog__item eg-link related__post" href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_20-curve/">
                   <div class="eg-blog__item-img"><img src="/img/blog/schedule2.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>The Ergo Emission Schedule</span></h3>
-                  <p class="eg-blog__item-paragraph">Overview Ergo’s native token is called Erg and its emission schedule may be of keen interest to users and miners of the platform. Ergs also have some …</p>
+                  <h3 class="eg-blog__item-title"><span>尔格发行计划</span></h3>
+                  <p class="eg-blog__item-paragraph">概要 尔格的原生代币称为尔格币，平台的用户和矿工对其发行时间表可能非常感兴趣。尔格币也有一些独特的特征，在这篇文章中将重点展现。最基本的并且省略技术细节的特征是：尔格有严格的供应量限制，8年的发行计划、以及8年来不断下降的的发行率。所有尔格币都通过原始的专用集成电路（Asic）和池阻工作量证明（“PoW”）算 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/justin_simpson.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -294,8 +305,8 @@ Click on clone or download and download zip and unpack.</p>
               
                 <a class="eg-blog__item eg-link related__post" href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_22-lets/">
                   <div class="eg-blog__item-img"><img src="/img/blog/lets-example_opt.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>A Local Exchange Trading System On Top Of Ergo</span></h3>
-                  <p class="eg-blog__item-paragraph">A local exchange trading system (LETS) is a local mutual credit association which members are allowed to create common credit money individually, with all …</p>
+                  <h3 class="eg-blog__item-title"><span>尔格之上的本地交易所交易系统</span></h3>
+                  <p class="eg-blog__item-paragraph">本地交易所交易系统（LETS）是一个本地相互信用协会，允许成员单独创建共同信用资金，系统中的所有交易都写入共同的分类账。例如，假设拥有零余额的Alice愿意从Bob购买一升生鲜奶。首先，他们就价格达成一致，例如，假设价格约为2欧元（Alice和Bob居住在爱尔兰）。交易被写入分类账后，Alice的余额变 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -309,8 +320,9 @@ Click on clone or download and download zip and unpack.</p>
               
                 <a class="eg-blog__item eg-link related__post" href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_10-ico-example/">
                   <div class="eg-blog__item-img"><img src="/img/blog/ico-example_opt.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>An ICO Example On Top Of Ergo</span></h3>
-                  <p class="eg-blog__item-paragraph">This article describes a full featured ICO (Initial Coin Offering) implemented in ErgoScript. The example covers several important and novel features of …</p>
+                  <h3 class="eg-blog__item-title"><span>一个尔格顶层的首次币发行案例</span></h3>
+                  <p class="eg-blog__item-paragraph">本文介绍了在尔格脚本中执行的功能齐全的ICO（首次币发行）。该案例涵盖了尔格平台的几个重要和新颖的特征，并展示了如何使用少量代码来支持复杂的合约。
+第1部分。初步行动 加密货币协议中的一个重要设计决策是指定支出交易实际花费的内容。这里有两种可能性。第一个基于UTXO(未花费的交易输出）的模型，如在比特币中，交 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -324,9 +336,9 @@ Click on clone or download and download zip and unpack.</p>
               
                 <a class="eg-blog__item eg-link related__post" href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_03_19-qa/">
                   <div class="eg-blog__item-img"><img src="/img/blog/question_opt.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>Q&amp;A with Alex Chepurnoy and Dmitry Meshkov</span></h3>
-                  <p class="eg-blog__item-paragraph">First, we have a major announcement - Ergo mainnet launch is planned for May 26 if no security vulnerabilities will be found during audit process!
-What are …</p>
+                  <h3 class="eg-blog__item-title"><span>Alex Chepurnoy 和Dmitry Meshkov的问答</span></h3>
+                  <p class="eg-blog__item-paragraph">首先，我们有一个重要的公告—如果在审计过程中没有发现安全漏洞，计划于5月26日发布尔格主网！
+关于扩展和应用的愿景是什么？ 关于扩展，主要方法是在不影响功能的情况下避免膨胀。例如。持久可更新存储是可能的，更新由区块链合约检查，但只有验证了的数据结构的摘要（以及一些额外的字节，少于40个字节）存储在UTXO集， …</p>
                   <div class="eg-author">
                     <img src="/img/authors/dmitry_meshkov.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -340,8 +352,9 @@ What are …</p>
               
                 <a class="eg-blog__item eg-link related__post" href="http://powerful-spire-67290.herokuapp.com/cn/blog/2018_10_19-smart-contracts/">
                   <div class="eg-blog__item-img"><img src="/img/blog/getting_startet.svg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>Smart Contracts for the People</span></h3>
-                  <p class="eg-blog__item-paragraph">A lot of blockchain-related news these days are saying us that a bank X or a corporation Y is going to use a &ldquo;blockchain&rdquo; to &ldquo;reduce …</p>
+                  <h3 class="eg-blog__item-title"><span>为客户提供智能合约</span></h3>
+                  <p class="eg-blog__item-paragraph">如今，很多与区块链相关的新闻都在告诉我们，银行X或Y公司将使用“区块链”来“降低成本”。基本上，这意味着大银行家认为另一个流行术语只是另一种以更有效的方式从某处提取价值的工具，也可以通过裁员来节省成本。
+虽然我不想对“Satoshi的愿景”说什么（他离开后只能去猜测），但我在网络论坛用户早期见证下的广泛观点是 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">

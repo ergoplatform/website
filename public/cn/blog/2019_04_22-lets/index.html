@@ -8,11 +8,17 @@
     <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
 
     
-      <meta name="description" content="A local exchange trading system (LETS) is a local mutual credit association which members are allowed to create common credit money individually, with all the deals in the system written into a common ledger. As an example, assume that Alice with zero balance is willing to buy a liter of raw milk from Bob. First, they agree on a price, for example, assume that the price is about 2 Euro (as Alice and Bob are living in Ireland).">
+      <meta name="description" content="本地交易所交易系统（LETS）是一个本地相互信用协会，允许成员单独创建共同信用资金，系统中的所有交易都写入共同的分类账。例如，假设拥有零余额的Alice愿意从Bob购买一升生鲜奶。首先，他们就价格达成一致，例如，假设价格约为2欧元（Alice和Bob居住在爱尔兰）。交易被写入分类账后，Alice的余额变为-2（减去2）欧元，Bob的余额变为2欧元。然后Bob可能会花费2欧元来购买Charlie的自制啤酒。通常，这种制度对负余额施加限制，有时甚至对正余额施加限制，以促进社区交易。
+从历史上看，这种系统在危机时期变得流行起来。第一个系统是迈克尔林顿于1981年在加拿大陷入萧条时的城镇建立的。1998-2002年阿根廷大萧条期间，当地的交易所交易系统非常受欢迎。大多数LETS团体的成员从50到250人不等，由核心委员会维护纸质信用票据和分类账。然而，基于纸张的LETS货币已经出现了一些问题，例如伪造票据，系统管理员可能的流氓行为等等。因此，基于区块链的LETS可能优于旧系统。有关LETS的更多信息可以在“货币生态”(The Ecology of Money”)一书(作者RichardDouthwaite) 和维基百科中找到。
+在本文中，我们将展示如何在尔格之上实现LETS。据我们所知，这是区块链上首次执行这种社区货币。我们的参考执行很简单，包括两个合同，即管理合同和交易合同。我们跳过尔格初步行动，所以请起步者阅读 首次币发行文章和ErgoScript教程(基础和 高级)。不过，我们将在以下句子中介绍几个新术语。如果发出的代币数量等于1，我们将其称为单例代币。类似地，包含单例代币的币箱称为单例币箱。
+管理合约控制一个单例币箱，该币箱容纳LETS系统的会员。合约允许以每笔交易一个会员的速度添加新会员。该币箱不存储会员，而是仅构建在会员目录之上的经过验证的数据结构的小摘要。会员与在交易中发出的单例代币相关联，该交易将会员添加到目录中。该交易创建一个新会员的币箱，其中包含会员的单例代币。会员的盒子受交换合同的保护。此外，新创建会员币箱的初始余额写入R4寄存器，在我们的示例中余额等于零。创建新会员的交易必须提供目录转换的正确性证明。
+管理合约币箱通常由委员会控制，委员会随着时间的推移而发展。为了支持这一点，我们允许委员会逻辑驻留在寄存器R5中。例如，假设已添加新的委员会会员以及新的LETS会员，输入管理合约币箱需要2/3个签名，输出币箱需要3/4个签名。在这种情况下，输入和输出币箱中R5寄存器的内容会有所不同。
+下面提供了尔格脚本中带有注释的管理合约代码。请注意“userContractHash”（用户合约哈希）是关于交易合约哈希。
+val selfOut = OUTPUTS(0) // 管理脚本 val managementScript = selfOut.R5[SigmaProp].get // 管理脚本模板正在自我复制，并且管理脚本已被满足 val scriptCorrect = (selfOut.propositionBytes == SELF.propositionBytes) &amp;amp;&amp;amp; managementScript // 支出交易正在为目录，用户，费用创建币箱。 val outsSizeCorrect = OUTPUTS.size == 3 // 检查管理标签代币是否正在自我复制 val outTokenCorrect = (selfOut.tokens.size == 1) &amp;amp;&amp;amp; (selfOut.tokens(0)._1 == letsToken) // 检查新代币是否发行，其数量是否正确 // OUTPUTS(0) 已经通过outtokenCorrect检查了代币 val issuedTokenId = INPUTS(0).id val userOut = OUTPUTS(1) val correctTokenAmounts = (userOut.tokens.size == 1 &amp;amp;&amp;amp; userOut.">
     
 
     
-    <title>A Local Exchange Trading System On Top Of Ergo | Ergo</title>
+    <title>尔格之上的本地交易所交易系统 | Ergo</title>
 
     
     
@@ -108,11 +114,11 @@
               >
                 
                   
-                
-                  
                     <li class="dd-language__item">
                       <a class="dd-language__link dd-language__link--white eg-link" href="http://powerful-spire-67290.herokuapp.com/en/blog/2019_04_22-lets/"><span>Eng</span></a>
                     </li>
+                  
+                
                   
                 
               </ul>
@@ -132,7 +138,7 @@
         <a href="http://powerful-spire-67290.herokuapp.com/cn/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>回到所有帖子</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
-        <h1 class="eg-title eg-mb-1">A Local Exchange Trading System On Top Of Ergo</h1>
+        <h1 class="eg-title eg-mb-1">尔格之上的本地交易所交易系统</h1>
         <div class="eg-author">
           <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
@@ -145,71 +151,37 @@
         </div>
         <div class="eg-blog__single-content">
           <div>
-            <p>A local exchange trading system (LETS) is a local mutual credit association which members are allowed to create common
-credit money individually, with all the deals in the system written into a common ledger.
-As an example, assume that Alice with zero balance is willing to buy a liter of raw milk from Bob.
-First, they agree on a price, for example, assume that the price is about 2 Euro (as Alice and Bob
-are living in Ireland). After the deal being written into a ledger, Alice&rsquo;s balance becomes -2 (minus
-two) Euro, and Bob&rsquo;s balance becomes 2 Euro. Then Bob may spend his 2 Euro, for example, on
-home-made beer from Charlie. Often, such systems impose limits on negative balances, and sometimes
-even on positive ones, in order to promote exchange in the community.</p>
+            <p>本地交易所交易系统（LETS）是一个本地相互信用协会，允许成员单独创建共同信用资金，系统中的所有交易都写入共同的分类账。例如，假设拥有零余额的Alice愿意从Bob购买一升生鲜奶。首先，他们就价格达成一致，例如，假设价格约为2欧元（Alice和Bob居住在爱尔兰）。交易被写入分类账后，Alice的余额变为-2（减去2）欧元，Bob的余额变为2欧元。然后Bob可能会花费2欧元来购买Charlie的自制啤酒。通常，这种制度对负余额施加限制，有时甚至对正余额施加限制，以促进社区交易。</p>
 
-<p>Historically, such systems become popular during crisis times. The first system was established by Michael Linton in
-a Canadian town stuck in depression back in 1981. Local exchange trading systems were extremely popular during
-1998-2002 Argentine Great Depression. Most LETS groups range from 50 to 250 members, with paper-based credit notes and
-ledger maintained by a core committee. However, paper-based LETS currencies have shown some problems, such as
-counterfeit notes, possible rogue behavior of system managers, and so on. Therefore, blockchain-based LETS could be superior
-to the old systems. More information on LETS could be found in
-<a href="http://feasta.org/documents/moneyecology/chaptertwo.htm">&ldquo;The Ecology of Money&rdquo; book (by Richard Douthwaite)</a> and
-<a href="https://en.wikipedia.org/wiki/Local_exchange_trading_system">Wikipedia</a>.</p>
+<p>从历史上看，这种系统在危机时期变得流行起来。第一个系统是迈克尔林顿于1981年在加拿大陷入萧条时的城镇建立的。1998-2002年阿根廷大萧条期间，当地的交易所交易系统非常受欢迎。大多数LETS团体的成员从50到250人不等，由核心委员会维护纸质信用票据和分类账。然而，基于纸张的LETS货币已经出现了一些问题，例如伪造票据，系统管理员可能的流氓行为等等。因此，基于区块链的LETS可能优于旧系统。有关LETS的更多信息可以在<a href="http://feasta.org/documents/moneyecology/chaptertwo.htm">“货币生态”(The Ecology of Money”)一书(作者RichardDouthwaite)</a>
+<a href="https://en.wikipedia.org/wiki/Local_exchange_trading_system">和维基百科</a>中找到。</p>
 
-<p>In this article we show how LETS could be implemented on top of Ergo. To the best of our knowledge, this is
-the first implementation of such kind of community currency on top of a blockchain.
-Our reference implementation
-is simple and consists of two contracts, namely, a management contract and an exchange contract.
-We skip Ergo preliminaries, so please read
-<a href="https://github.com/ergoplatform/ergo/wiki/An-ICO-Example-On-Top-Of-Ergo">the ICO article</a> and
-ErgoScript tutorials(<a href="https://docs.ergoplatform.com/ErgoScript.pdf">basic</a> and
-<a href="https://docs.ergoplatform.com/sigmastate_protocols.pdf">advanced</a>) for starters.
-Nevertheless, we are going to introduce a couple of new terms in following sentences.
-If a token is issued with amount equal to one, we call it the singleton token. Similarly,
-a box which contains the singleton token is called the singleton box.</p>
+<p>在本文中，我们将展示如何在尔格之上实现LETS。据我们所知，这是区块链上首次执行这种社区货币。我们的参考执行很简单，包括两个合同，即管理合同和交易合同。我们跳过尔格初步行动，所以请起步者阅读
+<a href="https://github.com/ergoplatform/ergo/wiki/An-ICO-Example-On-Top-Of-Ergo">首次币发行文章</a>和ErgoScript教程(<a href="https://docs.ergoplatform.com/ErgoScript.pdf">基础</a>和
+<a href="https://docs.ergoplatform.com/sigmastate_protocols.pdf">高级</a>)。不过，我们将在以下句子中介绍几个新术语。如果发出的代币数量等于1，我们将其称为单例代币。类似地，包含单例代币的币箱称为单例币箱。</p>
 
-<p>The management contract is controlling a singleton box which holds members of the LETS system.
-The contract enables the adding of new members at the pace of one member per one transaction. The box
-is not storing members, but only a small digest of authenticated data structure built on top of
-the members&rsquo; directory. A member is associated with a singleton token issued in a transaction which
-is adding the member to the directory. The transaction creates a new member&rsquo;s box which contains
-the member&rsquo;s singleton token. The member&rsquo;s box is protected by the exchange contract. Also, the newly
-created member&rsquo;s box has initial balance written down into the R4 register, and the balance is
-equal to zero in our example. The transaction creating a new member must provide a proof of correctness for
-directory transformation.</p>
+<p>管理合约控制一个单例币箱，该币箱容纳LETS系统的会员。合约允许以每笔交易一个会员的速度添加新会员。该币箱不存储会员，而是仅构建在会员目录之上的经过验证的数据结构的小摘要。会员与在交易中发出的单例代币相关联，该交易将会员添加到目录中。该交易创建一个新会员的币箱，其中包含会员的单例代币。会员的盒子受交换合同的保护。此外，新创建会员币箱的初始余额写入R4寄存器，在我们的示例中余额等于零。创建新会员的交易必须提供目录转换的正确性证明。</p>
 
-<p>The management contract box is controlled usually by a committee, and the committee could evolve over time. To support
-that, we allow committee logic to reside in the register R5.
-For example, assume that a new committee member has been added along with a new LETS member,
-the input management contract box is requiring 2-out-of-3 signatures, and the output box requires 3-out-of-4 signatures.
-In this case contents of the R5 register in the input and the output box would differ.</p>
+<p>管理合约币箱通常由委员会控制，委员会随着时间的推移而发展。为了支持这一点，我们允许委员会逻辑驻留在寄存器R5中。例如，假设已添加新的委员会会员以及新的LETS会员，输入管理合约币箱需要2/3个签名，输出币箱需要3/4个签名。在这种情况下，输入和输出币箱中R5寄存器的内容会有所不同。</p>
 
-<p>The management contract code in ErgoScript with comments is provided below. Please note that
-&ldquo;userContractHash&rdquo; is about exchange contract hash.</p>
+<p>下面提供了尔格脚本中带有注释的管理合约代码。请注意“userContractHash”（用户合约哈希）是关于交易合约哈希。</p>
 
 <pre><code class="language-scala">    val selfOut = OUTPUTS(0)
  
-    // Management script
+    // 管理脚本
     val managementScript = selfOut.R5[SigmaProp].get
  
-    // The management script template is replicating self, and management script is satisfied
+    // 管理脚本模板正在自我复制，并且管理脚本已被满足
     val scriptCorrect = (selfOut.propositionBytes == SELF.propositionBytes) &amp;&amp; managementScript
  
-    // A spending transaction is creating boxes for directory, user, fee.
+    // 支出交易正在为目录，用户，费用创建币箱。
     val outsSizeCorrect = OUTPUTS.size == 3
  
-    // Checks that the management label token is replicating self
+    // 检查管理标签代币是否正在自我复制
     val outTokenCorrect = (selfOut.tokens.size == 1) &amp;&amp; (selfOut.tokens(0)._1 == letsToken)
  
-    // Checks that new token is issued, and its amount is correct
-    // OUTPUTS(0) tokens already checked via outtokenCorrect
+    // 检查新代币是否发行，其数量是否正确
+    // OUTPUTS(0) 已经通过outtokenCorrect检查了代币
     val issuedTokenId = INPUTS(0).id
     val userOut = OUTPUTS(1)
     val correctTokenAmounts =
@@ -219,12 +191,12 @@ In this case contents of the R5 register in the input and the output box would d
         OUTPUTS(2).tokens.size == 0 &amp;&amp;
         outTokenCorrect)
  
-    // Checks that the new user has been created with the zero balance
+    // 检查是否已使用零余额创建新用户
     val zeroUserBalance  = userOut.R4[Long].get == 0
  
     val properUserScript = blake2b256(userOut.propositionBytes) == userContractHash
  
-    // Checks that the new token identifier has been added to the directory
+    // 检查新代币标识符是否已添加到目录中
     val selfTree = SELF.R4[AvlTree].get
     val toAdd: Coll[(Coll[Byte], Coll[Byte])] = Coll((issuedTokenId, Coll[Byte]()))
     val proof = getVar[Coll[Byte]](1).get
@@ -236,38 +208,32 @@ In this case contents of the R5 register in the input and the output box would d
     correctTokenAmounts &amp;&amp; scriptCorrect &amp;&amp; treeCorrect &amp;&amp; zeroUserBalance &amp;&amp; properUserScript correctTokenAmounts &amp;&amp; scriptCorrect &amp;&amp; treeCorrect &amp;&amp; zeroUserBalance &amp;&amp; properUserScript      
 </code></pre>
 
-<p>The exchange contract script is fairly straightforward and provided below along with comments describing its logic. In the
-contract, it is assumed that a spending transaction for an exchange contract box is receiving at least two inputs,
-and the first two inputs should be protected by the exchange contract script and contain LETS member tokens. To check
-that singleton member tokens in the inputs do indeed belong to the LETS system, a spending transaction provides the management
-contract box as the first read-only data input, and also should provide a proof that the member tokens do belong to
-the directory authenticated via the R4 register of the management contract box. &ldquo;letsToken&rdquo; in the script is about
-the singleton token of the management box.</p>
+<p>交易合约脚本非常简单，下面提供了描述其逻辑的注释。 在合约中，假设交易合约币箱的支出交易正在接收至少两个输入，并且前两个输入应受交易合约脚本保护并包含LETS成员代币。 要检查输入中的单例会员标记是否确实属于LETS系统，开销交易会将管理合约币箱作为第一个只读数据输入，并且还应提供会员标记确实属于经过验证的目录的证据。 通过管理合约币箱的R4注册。 脚本中的“letsToken”是关于管理币箱的单例代币。</p>
 
-<pre><code class="language-scala">  // Minimal balance allowed for LETS trader
+<pre><code class="language-scala">  // LETS交易者允许的最小余额
   val minBalance = -20000
 
   val lookupProof = getVar[Coll[Byte]](1).get
 
-  // The read-only box which contains directory of LETS members
+  // 包含LETS会员目录的只读币箱
   val treeHolderBox = CONTEXT.dataInputs(0)
   val properLetsToken = treeHolderBox.tokens(0)._1 == letsToken
   val membersTree = treeHolderBox.R4[AvlTree].get
 
-  // A spending transaction is taking two boxes of LETS members willing to make a deal,
-  // and returns boxes with modified balances.
+  // 支出交易需要愿意交易的LETS会员的两个币箱，
+  // 并返回修改余额的币箱。
   val participant0 = INPUTS(0)
   val participant1 = INPUTS(1)
   val participantOut0 = OUTPUTS(0)
   val participantOut1 = OUTPUTS(1)
 
-  //Check that members do indeed belong to the LETS
+  //检查成员是否确实属于LETS
   val token0 = participant0.tokens(0)._1
   val token1 = participant1.tokens(0)._1
   val memberTokens = Coll(token0, token1)
   val membersExist = membersTree.getMany(memberTokens, lookupProof).forall({ (o: Option[Coll[Byte]]) =&gt; o.isDefined })
 
-  // Check that LETS member balance changes during the deal are correct
+  // 检查交易期间LETS会员余额的变化是否正确
   val initialBalance0 = participant0.R4[Long].get
   val initialBalance1 = participant1.R4[Long].get
   val finishBalance0  = participantOut0.R4[Long].get
@@ -277,20 +243,19 @@ the singleton token of the management box.</p>
   val diffCorrect = diff0 == -diff1
   val balancesCorrect = (finishBalance0 &gt; minBalance) &amp;&amp; (finishBalance1 &gt; minBalance) &amp;&amp; diffCorrect
 
-  // Check that member boxes save their scripts.
-  // todo: optimization could be made here
+  // 检查会员币箱是否保存了脚本。
+  // todo：可以在这里进行优化
   val script0Saved = participantOut0.propositionBytes == participant0.propositionBytes
   val script1Saved = participantOut1.propositionBytes == participant1.propositionBytes
   val scriptsSaved = script0Saved &amp;&amp; script1Saved
 
-  // Member-specific box protection
+  // 会员特定的币箱保护
   val selfPubKey = SELF.R5[SigmaProp].get
 
   selfPubKey &amp;&amp; properLetsToken &amp;&amp; membersExist &amp;&amp; diffCorrect &amp;&amp; scriptsSaved
 </code></pre>
 
-<p>Note that both contracts could be modified in many ways to get new systems with different properties. So hopefully
-some day this article will be continued!</p>
+<p>请注意，可以通过多种方式修改这两个合约，以获得具有不同属性的新系统。 所以希望有一天这篇文章会有后续！</p>
 
           </div>
         </div>
@@ -358,8 +323,9 @@ some day this article will be continued!</p>
               
                 <a class="eg-blog__item eg-link related__post" href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_29-exchange/">
                   <div class="eg-blog__item-img"><img src="/img/blog/trading.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>A Trustless Local Exchange Trading System</span></h3>
-                  <p class="eg-blog__item-paragraph">A Local Exchange Trading System (LETS) is aimed at developing local economy and is usually used by people of a locality in the vicinity of each other. A …</p>
+                  <h3 class="eg-blog__item-title"><span>一个去信任的本地交易所交易系统</span></h3>
+                  <p class="eg-blog__item-paragraph">本地交易所交易系统（LETS）旨在发展当地经济，并且通常由在彼此附近的当地人使用。 在此链接中描述了一个管理LETS的委员会。 我们将此类系统称为管理或许可，因为它取决于受信任的委员会。 在这里，我们描述了一个去信任的LETS系统，即没有管理委员会的系统。
+概要 LETS涉及多个同意使用某种形式的“本地货币” …</p>
                   <div class="eg-author">
                     <img src="/img/authors/amitabh_saxena.png" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -373,8 +339,8 @@ some day this article will be continued!</p>
               
                 <a class="eg-blog__item eg-link related__post" href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_20-curve/">
                   <div class="eg-blog__item-img"><img src="/img/blog/schedule2.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>The Ergo Emission Schedule</span></h3>
-                  <p class="eg-blog__item-paragraph">Overview Ergo’s native token is called Erg and its emission schedule may be of keen interest to users and miners of the platform. Ergs also have some …</p>
+                  <h3 class="eg-blog__item-title"><span>尔格发行计划</span></h3>
+                  <p class="eg-blog__item-paragraph">概要 尔格的原生代币称为尔格币，平台的用户和矿工对其发行时间表可能非常感兴趣。尔格币也有一些独特的特征，在这篇文章中将重点展现。最基本的并且省略技术细节的特征是：尔格有严格的供应量限制，8年的发行计划、以及8年来不断下降的的发行率。所有尔格币都通过原始的专用集成电路（Asic）和池阻工作量证明（“PoW”）算 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/justin_simpson.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -388,11 +354,13 @@ some day this article will be continued!</p>
               
                 <a class="eg-blog__item eg-link related__post" href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_07_mining/">
                   <div class="eg-blog__item-img"><img src="/img/blog/miner_opt.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>How to mine Ergo on Windows(x64)</span></h3>
-                  <p class="eg-blog__item-paragraph">Step 1: Tools Visual Studio
-Choose free community version, you will need to select desktop development with C++ package during install.
-CUDA toolkit
-Choose …</p>
+                  <h3 class="eg-blog__item-title"><span>如何在Windows（x64）系统下挖掘尔格</span></h3>
+                  <p class="eg-blog__item-paragraph">第1步：工具 Visual Studio(可视化工作室)
+选择免费的社区版本，您需要在安装期间选择使用C ++包进行桌面开发。
+CUDA工具包
+选择您的系统版本，使用默认选项安装，它会将您的图形驱动程序更新为兼容版本。
+Curl
+没有SSL的通用版本，二进制不会工作。 选择通用源，压缩文件并单击显示镜像。下载 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/martin_spodymek.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -408,8 +376,9 @@ Choose …</p>
               
                 <a class="eg-blog__item eg-link related__post" href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_10-ico-example/">
                   <div class="eg-blog__item-img"><img src="/img/blog/ico-example_opt.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>An ICO Example On Top Of Ergo</span></h3>
-                  <p class="eg-blog__item-paragraph">This article describes a full featured ICO (Initial Coin Offering) implemented in ErgoScript. The example covers several important and novel features of …</p>
+                  <h3 class="eg-blog__item-title"><span>一个尔格顶层的首次币发行案例</span></h3>
+                  <p class="eg-blog__item-paragraph">本文介绍了在尔格脚本中执行的功能齐全的ICO（首次币发行）。该案例涵盖了尔格平台的几个重要和新颖的特征，并展示了如何使用少量代码来支持复杂的合约。
+第1部分。初步行动 加密货币协议中的一个重要设计决策是指定支出交易实际花费的内容。这里有两种可能性。第一个基于UTXO(未花费的交易输出）的模型，如在比特币中，交 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -423,9 +392,9 @@ Choose …</p>
               
                 <a class="eg-blog__item eg-link related__post" href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_03_19-qa/">
                   <div class="eg-blog__item-img"><img src="/img/blog/question_opt.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>Q&amp;A with Alex Chepurnoy and Dmitry Meshkov</span></h3>
-                  <p class="eg-blog__item-paragraph">First, we have a major announcement - Ergo mainnet launch is planned for May 26 if no security vulnerabilities will be found during audit process!
-What are …</p>
+                  <h3 class="eg-blog__item-title"><span>Alex Chepurnoy 和Dmitry Meshkov的问答</span></h3>
+                  <p class="eg-blog__item-paragraph">首先，我们有一个重要的公告—如果在审计过程中没有发现安全漏洞，计划于5月26日发布尔格主网！
+关于扩展和应用的愿景是什么？ 关于扩展，主要方法是在不影响功能的情况下避免膨胀。例如。持久可更新存储是可能的，更新由区块链合约检查，但只有验证了的数据结构的摘要（以及一些额外的字节，少于40个字节）存储在UTXO集， …</p>
                   <div class="eg-author">
                     <img src="/img/authors/dmitry_meshkov.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -439,8 +408,9 @@ What are …</p>
               
                 <a class="eg-blog__item eg-link related__post" href="http://powerful-spire-67290.herokuapp.com/cn/blog/2018_10_19-smart-contracts/">
                   <div class="eg-blog__item-img"><img src="/img/blog/getting_startet.svg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>Smart Contracts for the People</span></h3>
-                  <p class="eg-blog__item-paragraph">A lot of blockchain-related news these days are saying us that a bank X or a corporation Y is going to use a &ldquo;blockchain&rdquo; to &ldquo;reduce …</p>
+                  <h3 class="eg-blog__item-title"><span>为客户提供智能合约</span></h3>
+                  <p class="eg-blog__item-paragraph">如今，很多与区块链相关的新闻都在告诉我们，银行X或Y公司将使用“区块链”来“降低成本”。基本上，这意味着大银行家认为另一个流行术语只是另一种以更有效的方式从某处提取价值的工具，也可以通过裁员来节省成本。
+虽然我不想对“Satoshi的愿景”说什么（他离开后只能去猜测），但我在网络论坛用户早期见证下的广泛观点是 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">

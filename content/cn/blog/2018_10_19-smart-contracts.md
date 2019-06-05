@@ -1,5 +1,5 @@
 ---
-title: "Smart Contracts for the People"
+title: "为客户提供智能合约"
 date: 2018-10-19
 draft: false
 author: "Alex Chepurnoy"
@@ -7,56 +7,26 @@ authorPhoto: "/img/authors/alex_chepurnoy.svg"
 blogPhoto: "/img/blog/getting_startet.svg"
 ---
 
-A lot of blockchain-related news these days are saying us that a bank _X_ or a corporation _Y_
-is going to use a "blockchain" to "reduce costs". Basically it means that just another buzzword is 
-considered by big banksters as just another tool to extract value from everywhere in a more efficient way,
-and also to save on cutting job positions.  
+如今，很多与区块链相关的新闻都在告诉我们，银行X或Y公司将使用“区块链”来“降低成本”。基本上，这意味着大银行家认为另一个流行术语只是另一种以更有效的方式从某处提取价值的工具，也可以通过裁员来节省成本。
 
-While I am avoiding to say anything about "Satoshi's vision" (nothing but speculations could be dug there after 
-his exodus), a broad view I witnessed in the early years around online forums users is that a cryptocurrency 
-should provide tools to enrich the ordinary people behind their small businesses providing no much above making ends meet, not depersonalized big financial capital. The tools of 
-a cryptocurrency in the eyes of the original broad community vision should allow people to do economic activity dependless on business size, geographic location, interest rates set by big players, and so on. 
-The tools should allow people to do contracts (no paper contracts, but digital, self-enforcing, and reasonably smart contracts) dependless on differences in jurisdictions, traditions, followed business practices etc.
+虽然我不想对“Satoshi的愿景”说什么（他离开后只能去猜测），但我在网络论坛用户早期见证下的广泛观点是加密货币应该提供能使普通人变得富裕的工具，他们的小企业背后提供的不是生活收入，而不是非个人化的大金融资本。从最初广泛的社区愿景看来，加密货币的工具应该允许人们进行经济活动，而不依赖于业务规模，地理位置，大公司设定的利率等等。这些工具应该允许人们签订合同（没有纸质合约，而是数字化，自我执行和合理智能的合约），这取决于司法管辖区，传统，遵循商业惯例等方面的差异。
 
-I hope Ergo would be useful here. Thousands of small cooperatives and individual entrepreneurs are more important to healthy and sustainable wealth growth around the globe than a couple of corporations hiding profits in offshore heavens. 
+我希望尔格在这方面发挥作用。成千上万的小型合作社和个体企业家对全球健康和可持续的财富增长更为重要，而不是几家公司在离岸天堂中牟利。
 
-As an example, let's consider a cooperative federation (such as [Radical Routes](http://www.radicalroutes.org.uk/)) willing to provide financial help to an entrepreneur thousands kilometers away (say, in Rojava). 
+例如，让我们考虑一个合作联盟（如[Radical Routes](http://www.radicalroutes.org.uk/)激进路线），愿意为数千公里以外的企业家提供经济援助（例如，在Rojava）。
 
-We need to assume some details now. In the first place, assume that there are four cooperatives in the network. They collectively lock _10,000_ Ergs (in equal parts, so _2,500_ Ergs each) in a contract, which says the following:
+我们现在需要假设一些细节。首先，假设网络中有四个合作社。他们在合约中共同锁定10,000 个尔格币（均分四等份，即每份2,500个尔格币），其中说明如下：
 
-1. The cooperatives are associated with public keys _pubkeyA_, _pubkeyB_, _pubkeyC_, _pubkeyD_. The entrepreneur is associated with a public key _businessKey_.
-2. The cooperatives are locking money in a coin protected by a funding contract, then doing due diligence and vote on whether to fund the entrepreneur or not. All the contract fund (_10,000_ Ergs) is going to the entrepreneur if _3_ votes out of _4_ are for that. Technically, the voting is done via 3-out-of-4 threshold signature. If voting is not successful (_3_ out of _4_ signatures are not collected) before the block number _1,000_, any cooperative (actually, anyone) can submit withdraw transaction, which is returning _2,500_ Ergs (at least) to every cooperative. Further, the funding contract will also be called the voting contract.
-3. The investments could be spent on three goals, with some strict bounds. Namely, the entrepreneur must spend at least _5,000_ Ergs on equipment, at least _2,000_ Ergs on construction of a building needed, other funds the entrepreneur may spend arbitrarily.
-4. To be sure that equipment money will be spent on equipment, the cooperative federation is using public keys of known equipment sellers in the area of the entrepreneur. For example, consider that there are equipment sellers with public keys _pubkeyTool1_, _pubkeyTool2_, _pubkeyTool3_, _pubkeyTool4_ in the area. Technically, the transfer is organized as a collective signature of one equipment sellers (thus ring signature from equipment sellers ring AND entrepreneur's signature)
-5. Similarly, assume that there are _3_ builders in the are cooperative federation is recognizing, associated with public keys _pubkeyConstr1_, _pubkeyConstr2_, and _pubkeyConstr3_.
-6. Similarly to the voting contract, if equipment and construction contracts are not co-signed before block number _5000_, the federation cooperatives could withdraw funds. 
+1. 合作社与公钥pubkeyA，pubkeyB，pubkeyC，pubkeyD相关联。企业家与公钥businessKey关联。
+2. 合作社将资金锁定在受融资合约保护的硬币中，然后进行尽职调查，并就是否为企业家提供资金进行投票。所有合约基金（10,000个尔格币）都是给企业家的，如果4个中有3个投了票的话。从技术上讲，投票是通过3/4阈值签名完成的。如果在区块编号1,000之前投票不成功（没有达到3/4的签名），任何合作社（实际上，任何人）都可以提交撤销交易，这将向每个合作社返回2,500个尔格币（至少）。此外，融资合同也将被称为投票合同。
+3. 投资可以花在三个目标上，并且有一些严格的限制。也就是说，企业家必须在设备上花费至少5,000个尔格币，在建造所需建筑时至少需要2,000个尔格币，企业家可能会随意花费其他资金。
+4. 为了确保设备资金将用于设备，合作社联合会使用企业家领域中已知设备销售商的公钥。例如，考虑设备销售商在该区域中使用公钥pubkeyTool1，pubkeyTool2，pubkeyTool3，pubkeyTool4。从技术上讲，转移是作为一个设备销售商的集体签名组织的（因此来自设备销售商的环签名和企业家的签名）
+5. 类似地，假设合作联盟中有3个创建者正在识别，与公钥pubkeyConstr1，pubkeyConstr2和pubkeyConstr3相关联。
+6. 与投票合约类似，如果设备和建设合约在5000号区块之前没有共同签署，联合合作社可以撤回资金。
 
-There are different ways to define contracts in Ergo. A script in the low-level language, **ErgoTree**, is describing a (single) logical condition on whether a coin could be spent according it, and also a spending proof provided by a spending transaction. Internally, the condition is represented as a typed syntax tree thus the name. The structure is allowing us to do ahead-of-time cost analysis etc. Higher-level language called **ErgoScript** allows to have more traditional and readable description, use variables and break logic into subroutines. 
+在尔格中定义合约的方法有很多种。 低级语言尔格树中的一个脚本描述了一个（单个）逻辑条件，关于是否可以根据它使用硬币，以及支出交易提供的支出证明。 在内部，条件表示为类型化语法树这一名称。 该结构允许我们进行提前成本分析等。名为尔格脚本的高级语言允许具有更传统和可读的描述，使用变量并将逻辑分解为子程序。
 
-Let's start with the main contract defined in (1-3) above:
-
-```scala
-{
- val votingSuccess  = atLeast(3, Array(pubkeyA, pubkeyB, pubkeyC, pubkeyD))
- val properSpending = OUTPUTS(0).value >= 5000L &&
-                      blake2b256(OUTPUTS(0).propositionBytes) == spendingContract1Hash &&
-                      OUTPUTS(1).value >= 2000L &&
-                      blake2b256(OUTPUTS(1).propositionBytes) == spendingContract2Hash
-
- val withdrawCondition = HEIGHT >= 1000L &&
-                         OUTPUTS(0).value >= 2500L && OUTPUTS(0).propositionBytes == pubkeyA.propBytes &&
-                         OUTPUTS(1).value >= 2500L && OUTPUTS(1).propositionBytes == pubkeyB.propBytes &&
-                         OUTPUTS(2).value >= 2500L && OUTPUTS(2).propositionBytes == pubkeyC.propBytes &&
-                         OUTPUTS(3).value >= 2500L && OUTPUTS(3).propositionBytes == pubkeyD.propBytes 
-
- (votingSuccess && properSpending) || withdrawCondition
-}
-```
-
-This script in the **ErgoScript** is to be compiled into a syntax tree (which is to be written into the blockchain in a serialized form) by binding it with concrete values for variables (_pubkeyA_, _pubkeyB_, _pubkeyC_, _pubkeyD_, _spendingContract1Hash_, _spendingContract2Hash_). _spendingContract1Hash_ is a hash of (serialized) equipment spending script which will be provided below, _spendingContract2Hash_ is a hash of construction spending script. 
-
-
-The equipment spending script is below: 
+让我们从上面（1-3）中定义的主合约开始：
 
 ```scala
 {
@@ -72,7 +42,9 @@ The equipment spending script is below:
 }
 ```
 
-And the construction script is: 
+尔格脚本中的这个脚本将通过与变量的具体值（pubkeyA，pubkeyB，pubkeyC，pubkeyD，spendContract1Hash，spendContract2Hash）绑定，编译成语法树（以序列化形式写入区块链）。 spendContract1Hash是（序列化）设备支出脚本的哈希，将在下面提供具体脚本，spendContract2Hash是一个建造支出脚本的哈希。
+
+设备支出脚本如下：	
 
 ```scala
 {
@@ -88,14 +60,13 @@ And the construction script is:
 }
 ```
 
-Now assume that the cooperative federation has created a coin protected by the voting contract. Below is how the entrepreneur can do his business:
+现在假设合作联盟创建了一个受投票合约保护的硬币。以下是企业家如何开展业务：
 
-1. Create a transaction which consumes the coin and create at least three coins, one with equipment spending contract, another with construction spending contract, third is creating a coin protected by entrepreneur's public key.  
-2. Send the transaction to the cooperatives, wait for the transaction with the threshold-signed input being published on the blockchain.  
-3. Consider a contract with an equipment seller, co-sign a spending transaction.
-4. Consider a contract with a builder, co-sign a spending transaction.
+1. 创建一个消耗硬币并创建至少三个硬币的交易，一个与设备支出合同，另一个与建筑支出合同，第三个是创建由企业家的公钥保护的硬币。
+2. 将交易发送给合作社，等待交易，并在区块链上发布阈值签名输入。
+3. 考虑与设备销售商签订合同，共同签署支出交易。
+4. 考虑与建筑商签订合同，共同签署支出交易。
 
+企业家可以轻松逃离而不做任何业务，但不超过3,000尔格币。这可以是固定的，例如这笔钱只能在5000数量的区块之后才能消费，之前合作社可以提取这笔钱。对于设备和建筑支出，企业家正在与一些可能已经声誉良好的企业合作。这样投资者就能降低风险。
 
-The entrepreneur can easily run away without doing any business, but with no more than _3,000_ Ergs. This can be fixed, e.g. this money could be made spendable only after block number _5,000_, and before that money could be withdrawn by the cooperatives. For equipment and construction spendings, the entrepreneur is working along with some, presumably already reputable, business. Thus the investor is reducing its risks.
-
-You can find [code and example transactions online](https://github.com/ScorexFoundation/sigmastate-interpreter/blob/master/src/test/scala/sigmastate/utxo/examples/CoopExampleSpecification.scala). Please note that we have more examples of complex signature schemes, multi-step contracts (with on-the-go execution paths revealing, like MAST in Bitcoin, but with cycles allowed), oracles, crowdfunding and so on. Please check our [examples repository](https://github.com/ScorexFoundation/sigmastate-interpreter/tree/master/src/test/scala/sigmastate/utxo/examples). 
+您可以[在线查找代码和示例交易](https://github.com/ScorexFoundation/sigmastate-interpreter/blob/master/src/test/scala/sigmastate/utxo/examples/CoopExampleSpecification.scala)。请注意，我们有更多复杂签名方案的例子，多步合约（具有在线执行路径显示，比如比特币中的MAST，但允许循环），oracles（数据库），众筹等等。请查看我们的[示例库](https://github.com/ScorexFoundation/sigmastate-interpreter/tree/master/src/test/scala/sigmastate/utxo/examples)。

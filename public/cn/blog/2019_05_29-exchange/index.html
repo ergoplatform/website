@@ -8,12 +8,19 @@
     <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
 
     
-      <meta name="description" content="A Local Exchange Trading System (LETS) is aimed at developing local economy and is usually used by people of a locality in the vicinity of each other. A committee managed LETS is described at this link. We call such a system a managed or permissioned, since it depends on a trusted committee. Here we describe a trustless LETS system, i.e., one where there is no management committee.
-Overview LETS involves several parties that agree to use some form of &amp;ldquo;local currency&amp;rdquo;, usually pegged to the country&amp;rsquo;s main currency at a 1:1 rate.">
+      <meta name="description" content="本地交易所交易系统（LETS）旨在发展当地经济，并且通常由在彼此附近的当地人使用。 在此链接中描述了一个管理LETS的委员会。 我们将此类系统称为管理或许可，因为它取决于受信任的委员会。 在这里，我们描述了一个去信任的LETS系统，即没有管理委员会的系统。
+概要 LETS涉及多个同意使用某种形式的“本地货币”的党派，通常以1：1的比率与该国的主要货币挂钩。假设我们的LETS位于欧洲国家，货币为欧元，交换以“当地欧元”进行，被认为相当于国家欧元。
+LETS中的每个用户都有一个帐户，其中包含该用户的LETS余额（以本地欧元为单位）。在加入时，每个用户的余额为零。余额存储在（可能是去中心化的）分类帐中。 LETS的一个有趣特征是零余额的用户也可以“提款”，但仅用于支付另一个LETS用户。在任何时候，所有用户的LETS余额总和为零。
+例如，零余额的Alice希望从Bob那里以2欧元购买一升牛奶，Bob也是零余额的LETS成员。她将2欧元从她的账户转到Bob&amp;rsquo;s，她的余额为-2，Bob为&#43;2。然后，Bob可以将他的部分或全部余额转移给另一个LETS用户，以换取商品或服务。
+去信任的LETS 由于我们希望获得去信任的LETS，因此我们不能依赖任何受信任的群体来接纳用户。我们只假设又一个有信任的预言机（oracle）由一些全球账号和一个包含这个账号的一个代币的单例币箱标识。此币箱还包含在任何给定时间段内尔格币与欧元的比率。通过使用此币箱并使用新费率创建另一个单例币箱来更新费率。
+在任何情况下，我们的LETS由包含一些LETS成员资格代币的全局LETS币箱来定义。此币箱受以下脚本保护。代币账号唯一地定义了所使用的LETS的属性，例如位置，货币单位，费率预言机（oracle）账号等。一个或多个用户可以花费该币箱并创建他们各自的LETS币箱作为交易的输出。该币箱最初以例如10000 LETS会员代币开始。
+一个LETS币箱表示一个LETS成员，必须用于LETS交易。 LETS交易发生在两个LETS成员之间，一个是发送者而另一个是接收者，这样发送者将一些正数量的LETS货币（本地欧元）转移给接收者。这样的交易消耗成员的币箱并将其重新创建为具有更新余额的输出。
+基本变体 为了防止垃圾信息和分布式拒绝服务攻击，我们要求至少将一些最小数量的尔格币(minErgsToJoin)锁定在新创建的成员的币箱中。 尔格币将被锁定，直到至少minWithdrawTime数量的区块被挖掘为止。 允许一个币箱的LETS余额为负值，直至锁定的尔格币可以覆盖的金额（使用交易时的汇率）。
+// 一个币箱存储会员的代币 val tokenBox = OUTPUTS(0) // first output contains remaining LETS tokens def isLets(b:Box) = { // 一个LETS 币箱必须在代币中有正好一个会员资格代币(0) b.tokens(0)._1 == letsTokenID &amp;amp;&amp;amp; b.tokens(0)._2 == 1 &amp;amp;&amp;amp; blake2b256(b.propositionBytes) == memberBoxScriptHash &amp;amp;&amp;amp; SELF.R4[Long].get == 0 &amp;amp;&amp;amp; // 从0 LETS结余中开始一个币箱 b.value &amp;gt;= minErgsToJoin &amp;amp;&amp;amp; // 币箱必须包含一些最小数量的尔格币 b.R6[Long].get &amp;lt;= HEIGHT // 将创建高度存储在R6中 } // 在tx中创建了多少lets币箱 val numLetsBoxes = OUTPUTS.">
     
 
     
-    <title>A Trustless Local Exchange Trading System | Ergo</title>
+    <title>一个去信任的本地交易所交易系统 | Ergo</title>
 
     
     
@@ -133,7 +140,7 @@ Overview LETS involves several parties that agree to use some form of &amp;ldquo
         <a href="http://powerful-spire-67290.herokuapp.com/cn/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>回到所有帖子</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
-        <h1 class="eg-title eg-mb-1">A Trustless Local Exchange Trading System</h1>
+        <h1 class="eg-title eg-mb-1">一个去信任的本地交易所交易系统</h1>
         <div class="eg-author">
           <img src="/img/authors/amitabh_saxena.png" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
@@ -148,180 +155,180 @@ Overview LETS involves several parties that agree to use some form of &amp;ldquo
           <div>
             
 
-<p>A Local Exchange Trading System (LETS) is aimed at developing local economy and is usually used by people of a locality in the vicinity of each other. A committee managed LETS is described at <a href="/blog/2019_04_22-lets/">this link</a>. We call such a system a <em>managed or permissioned</em>, since it depends on a trusted committee. Here we describe a <strong>trustless</strong> LETS system, i.e., one where there is no management committee.</p>
+<p>本地交易所交易系统（LETS）旨在发展当地经济，并且通常由在彼此附近的当地人使用。 在<a href="/cn/blog/2019_04_22-lets/">此链接</a>中描述了一个管理LETS的委员会。 我们将此类系统称为管理或许可，因为它取决于受信任的委员会。 在这里，我们描述了一个去信任的LETS系统，即没有管理委员会的系统。</p>
 
-<h2 id="overview">Overview</h2>
+<h2 id="概要">概要</h2>
 
-<p>LETS involves several parties that agree to use some form of &ldquo;local currency&rdquo;, usually pegged to the country&rsquo;s main currency at a 1:1 rate. Assume that our LETS is based in a European country where the currency is Euros, and the exchange is done in &ldquo;local Euros&rdquo;, which are considered to be equivalent to national Euros.</p>
+<p>LETS涉及多个同意使用某种形式的“本地货币”的党派，通常以1：1的比率与该国的主要货币挂钩。假设我们的LETS位于欧洲国家，货币为欧元，交换以“当地欧元”进行，被认为相当于国家欧元。</p>
 
-<p>Each user in LETS has an account, which contains the LETS balance of that user (in Local Euros). On joining, each user has a balance of zero. The balance is stored in a (possibly decentralized) ledger. An interesting feature of LETS is that a user with zero balance can also &ldquo;withdraw&rdquo; money, but only for paying another LETS user. At any time the sum of LETS balances of all the users is zero.</p>
+<p>LETS中的每个用户都有一个帐户，其中包含该用户的LETS余额（以本地欧元为单位）。在加入时，每个用户的余额为零。余额存储在（可能是去中心化的）分类帐中。 LETS的一个有趣特征是零余额的用户也可以“提款”，但仅用于支付另一个LETS用户。在任何时候，所有用户的LETS余额总和为零。</p>
 
-<p>As an example, Alice with zero balance wishes to purchase one liter of milk for 2 Euros from Bob who is also a member of LETS with zero balance. She transfers 2 Euros from her account to Bob&rsquo;s, making her balance -2 and Bob&rsquo;s +2. Bob can then transfer some or all of his balance to another LETS user in exchange for goods or services.</p>
+<p>例如，零余额的Alice希望从Bob那里以2欧元购买一升牛奶，Bob也是零余额的LETS成员。她将2欧元从她的账户转到Bob&rsquo;s，她的余额为-2，Bob为+2。然后，Bob可以将他的部分或全部余额转移给另一个LETS用户，以换取商品或服务。</p>
 
-<h2 id="trustless-lets">Trustless LETS</h2>
+<h2 id="去信任的lets">去信任的LETS</h2>
 
-<p>Since we desire a trustless LETS, we cannot depend on any trusted group of people to admit users. We will assume a rate oracle identified by some global id and a singleton box containing exactly one token with this id. This box also contains the rate of Ergs to Euros at any given period of time. The rate is updated by spending this box and creating another singleton box with the new rate.</p>
+<p>由于我们希望获得去信任的LETS，因此我们不能依赖任何受信任的群体来接纳用户。我们只假设又一个有信任的预言机（oracle）由一些全球账号和一个包含这个账号的一个代币的单例币箱标识。此币箱还包含在任何给定时间段内尔格币与欧元的比率。通过使用此币箱并使用新费率创建另一个单例币箱来更新费率。</p>
 
-<p>At any instance, our LETS is defined by a global <strong>LETS token box</strong> that contains some LETS membership tokens. This box is protected by the script given below. The token ID uniquely defines the attributes of the LETS in use, such as the location, the currency unit, the rate oracle ID, etc. One or more users can spend this box and create their individual LETS boxes as outputs of the transaction. The box is initially started with, say, 10000 LETS membership tokens.</p>
+<p>在任何情况下，我们的LETS由包含一些LETS成员资格代币的全局LETS币箱来定义。此币箱受以下脚本保护。代币账号唯一地定义了所使用的LETS的属性，例如位置，货币单位，费率预言机（oracle）账号等。一个或多个用户可以花费该币箱并创建他们各自的LETS币箱作为交易的输出。该币箱最初以例如10000 LETS会员代币开始。</p>
 
-<p>A LETS box represents a LETS member and must be used for a LETS transaction. A LETS transaction is between two LETS members, one being the sender and the other the receiver, such that the sender transfers some positive amount of the LETS currency (local Euros) to the receiver. Such a transaction consumes the member&rsquo;s boxes and recreates them as output with the updated balance.</p>
+<p>一个LETS币箱表示一个LETS成员，必须用于LETS交易。 LETS交易发生在两个LETS成员之间，一个是发送者而另一个是接收者，这样发送者将一些正数量的LETS货币（本地欧元）转移给接收者。这样的交易消耗成员的币箱并将其重新创建为具有更新余额的输出。</p>
 
-<h2 id="the-basic-variant">The Basic Variant</h2>
+<h2 id="基本变体">基本变体</h2>
 
-<p>To prevent spam and DDoS attacks, we require at least some minimum number of ergs (<code>minErgsToJoin</code>) to be locked in the newly created member&rsquo;s box. The ergs will be locked until at least <code>minWithdrawTime</code> number of blocks have been mined. A box is allowed to have a negative LETS balance upto the amount that can be covered by the locked ergs (using the rate at the time of trade).</p>
+<p>为了防止垃圾信息和分布式拒绝服务攻击，我们要求至少将一些最小数量的尔格币(<code>minErgsToJoin</code>)锁定在新创建的成员的币箱中。 尔格币将被锁定，直到至少<code>minWithdrawTime</code>数量的区块被挖掘为止。 允许一个币箱的LETS余额为负值，直至锁定的尔格币可以覆盖的金额（使用交易时的汇率）。</p>
 
-<pre><code class="language-scala">// a tokenBox stores the membership tokens.
+<pre><code class="language-scala">// 一个币箱存储会员的代币
 val tokenBox = OUTPUTS(0) // first output contains remaining LETS tokens
 def isLets(b:Box) = {
-   // A LETS box must have exactly 1 membership token in tokens(0)
+   // 一个LETS 币箱必须在代币中有正好一个会员资格代币(0)
    b.tokens(0)._1 == letsTokenID &amp;&amp; b.tokens(0)._2 == 1 &amp;&amp;
    blake2b256(b.propositionBytes) == memberBoxScriptHash &amp;&amp;
-   SELF.R4[Long].get == 0 &amp;&amp; // start the box with zero LETS balance
-   b.value &gt;= minErgsToJoin &amp;&amp; // the box must contain some minimum ergs
-   b.R6[Long].get &lt;= HEIGHT // store the creation height in R6
+   SELF.R4[Long].get == 0 &amp;&amp; // 从0 LETS结余中开始一个币箱
+   b.value &gt;= minErgsToJoin &amp;&amp; // 币箱必须包含一些最小数量的尔格币
+   b.R6[Long].get &lt;= HEIGHT // 将创建高度存储在R6中
 }
 
-// how many lets boxes creared in the tx
+// 在tx中创建了多少lets币箱
 val numLetsBoxes = OUTPUTS.filter({(b:Box) =&gt; isLets(b)}).size
 
-// In the transaction following is preserved for the token box ...
-tokenBox.tokens(0)._1 == SELF.tokens(0)._1 &amp;&amp;                //  token id
-tokenBox.tokens(0)._2 == SELF.tokens(0)._2 - numLetsBoxes &amp;&amp; //  quantity
-tokenBox.propositionBytes == SELF.propositionBytes           //  script
+// 在交易中，为币箱保留了以下内容 ...
+tokenBox.tokens(0)._1 == SELF.tokens(0)._1 &amp;&amp;                // 代币账号
+tokenBox.tokens(0)._2 == SELF.tokens(0)._2 - numLetsBoxes &amp;&amp; //  数量
+tokenBox.propositionBytes == SELF.propositionBytes           //  脚本
 </code></pre>
 
-<p>A LETS member&rsquo;s box is protected by the script below, whose hash memberBoxScriptHash is used above.</p>
+<p>LETS成员的币框受以下脚本的保护，其哈希memberBoxScriptHash（成员币箱脚本哈希）被以上使用。</p>
 
 <pre><code class="language-scala">val validRateOracle = CONTEXT.dataInputs(0).tokens(0)._1 == rateTokenID
 val rate = CONTEXT.dataInputs(0).R4[Int].get
-val inBalance = SELF.R4[Long].get    // LETS balance of current input
-val pubKey = SELF.R5[SigmaProp].get  // owner of the current input
-val createdAt = SELF.R6[Long].get    // height at which current input was mined
+val inBalance = SELF.R4[Long].get    // 当前输入下的LETS结余
+val pubKey = SELF.R5[SigmaProp].get  // 当前输入的拥有者
+val createdAt = SELF.R6[Long].get    // 当前输入开采的高度
 
-val index = getVar[Int](0).get       // index of the corresponding output
+val index = getVar[Int](0).get       // 相关输出的指数
 val out = OUTPUTS(index)
-val outBalance = out.R4[Long].get    // LETS balance of the output
+val outBalance = out.R4[Long].get    // 输出的LETS结余
 
-// A LETS box is one that has the same script as the current box
+// LETS币箱与当前币箱具有相同的脚本
 val isMemberBox = {(b:Box) =&gt; b.propositionBytes == SELF.propositionBytes}
-val letsInputs = INPUTS.filter(isMemberBox)    // all LETS input boxes
-val letsOutputs = OUTPUTS.filter(isMemberBox)  // all LETS output boxes
+val letsInputs = INPUTS.filter(isMemberBox)    // 所有LETS输入币箱
+val letsOutputs = OUTPUTS.filter(isMemberBox)  // 所有LETS输出币箱
 
-// The current input belongs to the receiver if its LETS balance increases
-// There may be some ergs in receiver's input box. We need to ensure that
-// the receiver's output box also contains the same amount of ergs as input
+// 如果LETS余额增加，则当前输入属于接收器
+// 接收器的输入币箱中可能有一些尔格币，我们需要确保
+// 接收器的输出币箱也包含与输入相同数量的尔格币
 val receiver = outBalance &gt; inBalance &amp;&amp; out.value == SELF.value
 
-val getBalance = {(b:Box) =&gt; b.R4[Long].get} // returns LETS balance of a box
+val getBalance = {(b:Box) =&gt; b.R4[Long].get} // 回到币箱的LETS结余
 
 val letsBalIn = letsInputs.map(getBalance).fold(0L, {(l:Long, r:Long) =&gt; l + r})
 val letsBalOut = letsOutputs.map(getBalance).fold(0L, {(l:Long, r:Long) =&gt; l + r})
 
-// sender box can contain less amount of ergs (sender may withdraw ergs provided 
-// that any negative LETS balance of sender in out is backed by sufficient ergs)
+// 发送人的币箱可以包含较少量的尔格币(发送人可以撤回提供的尔格币
+// 发送者的任何负LETS余额都有足够的尔格币支持)
 val correctErgs = out.value &gt;= -outBalance * rate &amp;&amp; (
   out.value &gt;= SELF.value || SELF.R6[Long].get + minWithdrawTime &gt; HEIGHT
 )
 
-// for the receiver, we don't touch the erg balance, 
-// since a receiver is not actively involved in the transaction
+// 对于接受者来说，我们并不接触尔格币的结余
+// 因为接受者没有积极参与交易
 
-inBalance != outBalance &amp;&amp; // some transaction should occur; balance must change
-SELF.tokens(0)._1 == letsTokenID &amp;&amp; // the current input has the right token
-out.tokens(0)._1 == letsTokenID &amp;&amp; // corresponding output has the right token
-validRateOracle &amp;&amp;          // oracle providing rate has the correct &quot;rate token&quot;
-letsBalIn == letsBalOut &amp;&amp;  // total LETS balance is preserved in the transaction
-letsInputs.size == 2 &amp;&amp; letsOutputs.size == 2 &amp;&amp;  // only two LETS inputs, outputs
-out.propositionBytes == SELF.propositionBytes &amp;&amp;  // out is a LETS box ...
-out.R5[SigmaProp].get == pubKey &amp;&amp;                // ... with the right pub key
-out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... and creation height
-(receiver ||              // either current input belongs to receiver ...
-  (pubKey &amp;&amp; correctErgs) // ... or out has correct ergs and tx has signature
+inBalance != outBalance &amp;&amp; // 交易应该发生；结余必须变化
+SELF.tokens(0)._1 == letsTokenID &amp;&amp; // 当前输入有正确的代币
+out.tokens(0)._1 == letsTokenID &amp;&amp; // 对应地，输出也有正确的代币
+validRateOracle &amp;&amp;          // 预言机（oracle）提供费率具备正确的“费率代币”
+letsBalIn == letsBalOut &amp;&amp;  // 总共的LETS结余被保存在交易中
+letsInputs.size == 2 &amp;&amp; letsOutputs.size == 2 &amp;&amp;  // 只有两个LETS输入，输出
+out.propositionBytes == SELF.propositionBytes &amp;&amp;  // 输出是一个LETS币箱 ...
+out.R5[SigmaProp].get == pubKey &amp;&amp;                // ... 用正确的公钥
+out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... 和创建高度
+(receiver ||              // ...要么当前输入属于接受者
+  (pubKey &amp;&amp; correctErgs) // ... 要么输出有正确的尔格币，同时tx有签名
 )
 </code></pre>
 
-<p>The transaction spending a box with the above script requires:</p>
+<p>使用上述脚本支付币箱的交易需要：</p>
 
 <ul>
-<li>The sum of the LETS balance of inputs and outputs is preserved</li>
-<li>There are two LETS inputs and two LETS outputs</li>
-<li>The public keys (stored in R5) is preserved in the corresponding output</li>
-<li>The creation height (stored in R6) be preserved in the corresponding output</li>
+<li>保留了输入和输出的LETS结余之和</li>
+<li>有两个LETS输入和两个LETS输出</li>
+<li>公钥（存储在R5中）保存在相应的输出中</li>
+<li>创建高度（存储在R6中）保留在相应的输出中</li>
 </ul>
 
-<p>We say that some public key is the receiver if the LETS balance of its output is higher than that of its input.</p>
+<p>我们说如果输出的LETS结余高于其输入的LETS结余，则某些公钥是接收器。</p>
 
-<p>The last condition requires that either the input (and output) box belongs to the receiver (so that the number of Ergs are preserved), or the output is backed by the required number of Ergs if its LETS balance is negative. Furthermore, it requires that the sender&rsquo;s ergs balance cannot be reduced until <code>minWithdrawTime</code> number of blocks have been mined after the ergs were locked.</p>
+<p>最后一个条件要求输入（和输出）币箱属于接收器（以便保留尔格币的数量），或者如果LETS余额为负，则输出由所需数量的尔格币支持。此外，它要求发送者的尔格币结余不能减少，直到在尔格币被锁定之后已经挖掘了<code>minWithdrawTime</code>的区块数量。</p>
 
-<p>Compared to the managed LETS, the above system has the following differences:</p>
+<p>与托管LETS相比，上述系统有以下不同之处：</p>
 
 <ul>
-<li><strong>No membership record</strong>: Unlike the managed LETS, We don&rsquo;t store any membership information here.</li>
-<li><strong>Multiple-boxes</strong>: A person can create multiple membership boxes, which is permitted. We only require each box to have a minimum number of ergs locked in it.</li>
+<li>没有会员记录：与托管LETS不同，我们不在此处存储任何会员信息。</li>
+<li>多个币箱：一个人可以创建多个会员币箱，这是允许的。我们只要求每个币箱都锁定最小数量的尔格币。</li>
 </ul>
 
-<h2 id="lets-1-zero-sum-collateral">LETS-1: Zero Sum, Collateral</h2>
+<h2 id="lets-1-零和-有抵押">LETS-1：零和，有抵押</h2>
 
-<p>The above is the basic variant, which we call <strong>LETS-1</strong>. It has the following features:</p>
+<p>以上是我们称之为LETS-1的基本变体。 它具有以下功能：</p>
 
 <ul>
-<li><strong>Time-locked Joining-Fee</strong>: To prevent spam attacks, a member has to pay a certain minimum fee in ergs at the time of joining. This fee is refundable but only after a predefined number of blocks.</li>
-<li><strong>Zero Sum</strong>: The sum of the LETS balances of all member boxes is zero. Member boxes are allowed to have a negative balance as long as it is within a certain limit.</li>
-<li><strong>Collateral</strong>: For the sender&rsquo;s output, ergs are used as collateral to cover negative LETS balance at the current exchange rate.</li>
+<li>有时间限制的加入费：为了防止垃圾信息攻击，会员必须在加入时支付一定的最低费用。 此费用可退还，但仅限于预定数量的区块后。</li>
+<li>零和：所有成员币箱的LETS余额总和为零。 只要在一定限度内，会员币箱就可以有负余额。</li>
+<li>抵押品：对于发送人的输入，尔格币用作抵押品以支付当前汇率的负LETS余额。</li>
 </ul>
 
-<p>The following are some variations of LETS-1.</p>
+<p>以下是LETS-1的一些变体。</p>
 
-<h2 id="lets-2-zero-sum-no-collateral">LETS-2: Zero Sum, No collateral</h2>
+<h2 id="lets-2-零和-无抵押">LETS-2：零和，无抵押</h2>
 
-<p>This is a slight variation of LETS-1 as follows:</p>
+<p>这是LETS-1的略微变化如下：</p>
 
 <ul>
-<li><strong>Non-refundable joining fee</strong>: Similar to LETS-1, a joining fee is needed to prevent spam attacks. However, unlike LETS-1, this fee is non-refundable and must be sent to some predefined management committee.</li>
-<li><strong>Zero Sum</strong>: As in LETS-1.</li>
+<li>不可退还的加入费：与LETS-1类似，需要加入费用以防止垃圾信息攻击。但是，与LETS-1不同，此费用不可退还，必须发送给某个预定义的管理委员会。</li>
+<li>零和：与LETS-1一样。</li>
 </ul>
 
-<h2 id="lets-3-positive-sum-collateral">LETS-3: Positive-Sum, Collateral</h2>
+<h2 id="lets-3-正和-有抵押">LETS-3：正和，有抵押</h2>
 
-<p>The above two variants require the total LETS balance to be always zero. Here we consider a positive value for this sum. In particular, this variant has the following properties:</p>
+<p>以上两种变体要求总LETS余额始终为零。在这里，我们考虑这个总和的正值。特别是，此变体具有以下属性：</p>
 
 <ul>
-<li><strong>Time-locked Joining Fee</strong>: As in LETS-1.</li>
-<li><strong>Positive Sum</strong>: The LETS balance of every member must always be non-negative. This ensures that the sum of the LETS balances of all member boxes is positive. The initial LETS balance is set to a positive value based on the joining fee at the current rate, capped to some maximum value.</li>
-<li><strong>Collateral</strong>: Any reduction in ergs balance of the sender must be accompanied by a reduction of the corresponding LETS balance at the current exchange rate.</li>
+<li>时间锁定加入费：与LETS-1相同。</li>
+<li>正和：每个成员的LETS余额必须始终为非负数。这确保了所有成员币箱的LETS余额总和为正。初始LETS余额根据当前汇率的加入费设置为正值，上限为某个最大值。</li>
+<li>抵押品：发送方的尔格币余额的任何减少必须伴随当前汇率的相应LETS余额的减少。</li>
 </ul>
 
-<p>We can also allow topping up the LETS balance during a transaction by adding the equivalent amount of ergs.</p>
+<p>我们还可以通过添加等量的尔格币来允许在交易期间补足LETS余额。</p>
 
-<h2 id="lets-4-positive-sum-no-collateral">LETS-4: Positive-Sum, No collateral</h2>
+<h2 id="lets-4-正和-无抵押">LETS-4：正和，无抵押</h2>
 
-<p>This is similar to LETS-3 but with some small variations:</p>
+<p>这类似于LETS-3，但有一些小的变化：</p>
 
 <ul>
-<li><strong>Non-refundable Joining Fee</strong>: As in LETS-2</li>
-<li><strong>Positive-Sum</strong>: As in LETS-3</li>
+<li>不可退还的加入费：与LETS-2相同</li>
+<li>正和：与LETS-3一样</li>
 </ul>
 
-<p>The following table summarizes the variants:</p>
+<p>下表总结了这些变体：</p>
 
 <table>
 <thead>
 <tr>
 <th></th>
-<th>Zero Sum</th>
-<th>Positive Sum</th>
+<th>零和</th>
+<th>正和</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td><strong>Collateral</strong></td>
+<td>有抵押</td>
 <td>LETS-1</td>
 <td>LETS-3</td>
 </tr>
 
 <tr>
-<td><strong>No collateral</strong></td>
+<td>无抵押</td>
 <td>LETS-2</td>
 <td>LETS-4</td>
 </tr>
@@ -396,8 +403,8 @@ out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... and creation he
               
                 <a class="eg-blog__item eg-link related__post" href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_20-curve/">
                   <div class="eg-blog__item-img"><img src="/img/blog/schedule2.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>The Ergo Emission Schedule</span></h3>
-                  <p class="eg-blog__item-paragraph">Overview Ergo’s native token is called Erg and its emission schedule may be of keen interest to users and miners of the platform. Ergs also have some …</p>
+                  <h3 class="eg-blog__item-title"><span>尔格发行计划</span></h3>
+                  <p class="eg-blog__item-paragraph">概要 尔格的原生代币称为尔格币，平台的用户和矿工对其发行时间表可能非常感兴趣。尔格币也有一些独特的特征，在这篇文章中将重点展现。最基本的并且省略技术细节的特征是：尔格有严格的供应量限制，8年的发行计划、以及8年来不断下降的的发行率。所有尔格币都通过原始的专用集成电路（Asic）和池阻工作量证明（“PoW”）算 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/justin_simpson.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -411,11 +418,13 @@ out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... and creation he
               
                 <a class="eg-blog__item eg-link related__post" href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_07_mining/">
                   <div class="eg-blog__item-img"><img src="/img/blog/miner_opt.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>How to mine Ergo on Windows(x64)</span></h3>
-                  <p class="eg-blog__item-paragraph">Step 1: Tools Visual Studio
-Choose free community version, you will need to select desktop development with C++ package during install.
-CUDA toolkit
-Choose …</p>
+                  <h3 class="eg-blog__item-title"><span>如何在Windows（x64）系统下挖掘尔格</span></h3>
+                  <p class="eg-blog__item-paragraph">第1步：工具 Visual Studio(可视化工作室)
+选择免费的社区版本，您需要在安装期间选择使用C ++包进行桌面开发。
+CUDA工具包
+选择您的系统版本，使用默认选项安装，它会将您的图形驱动程序更新为兼容版本。
+Curl
+没有SSL的通用版本，二进制不会工作。 选择通用源，压缩文件并单击显示镜像。下载 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/martin_spodymek.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -429,8 +438,8 @@ Choose …</p>
               
                 <a class="eg-blog__item eg-link related__post" href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_22-lets/">
                   <div class="eg-blog__item-img"><img src="/img/blog/lets-example_opt.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>A Local Exchange Trading System On Top Of Ergo</span></h3>
-                  <p class="eg-blog__item-paragraph">A local exchange trading system (LETS) is a local mutual credit association which members are allowed to create common credit money individually, with all …</p>
+                  <h3 class="eg-blog__item-title"><span>尔格之上的本地交易所交易系统</span></h3>
+                  <p class="eg-blog__item-paragraph">本地交易所交易系统（LETS）是一个本地相互信用协会，允许成员单独创建共同信用资金，系统中的所有交易都写入共同的分类账。例如，假设拥有零余额的Alice愿意从Bob购买一升生鲜奶。首先，他们就价格达成一致，例如，假设价格约为2欧元（Alice和Bob居住在爱尔兰）。交易被写入分类账后，Alice的余额变 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -444,8 +453,9 @@ Choose …</p>
               
                 <a class="eg-blog__item eg-link related__post" href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_10-ico-example/">
                   <div class="eg-blog__item-img"><img src="/img/blog/ico-example_opt.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>An ICO Example On Top Of Ergo</span></h3>
-                  <p class="eg-blog__item-paragraph">This article describes a full featured ICO (Initial Coin Offering) implemented in ErgoScript. The example covers several important and novel features of …</p>
+                  <h3 class="eg-blog__item-title"><span>一个尔格顶层的首次币发行案例</span></h3>
+                  <p class="eg-blog__item-paragraph">本文介绍了在尔格脚本中执行的功能齐全的ICO（首次币发行）。该案例涵盖了尔格平台的几个重要和新颖的特征，并展示了如何使用少量代码来支持复杂的合约。
+第1部分。初步行动 加密货币协议中的一个重要设计决策是指定支出交易实际花费的内容。这里有两种可能性。第一个基于UTXO(未花费的交易输出）的模型，如在比特币中，交 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -459,9 +469,9 @@ Choose …</p>
               
                 <a class="eg-blog__item eg-link related__post" href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_03_19-qa/">
                   <div class="eg-blog__item-img"><img src="/img/blog/question_opt.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>Q&amp;A with Alex Chepurnoy and Dmitry Meshkov</span></h3>
-                  <p class="eg-blog__item-paragraph">First, we have a major announcement - Ergo mainnet launch is planned for May 26 if no security vulnerabilities will be found during audit process!
-What are …</p>
+                  <h3 class="eg-blog__item-title"><span>Alex Chepurnoy 和Dmitry Meshkov的问答</span></h3>
+                  <p class="eg-blog__item-paragraph">首先，我们有一个重要的公告—如果在审计过程中没有发现安全漏洞，计划于5月26日发布尔格主网！
+关于扩展和应用的愿景是什么？ 关于扩展，主要方法是在不影响功能的情况下避免膨胀。例如。持久可更新存储是可能的，更新由区块链合约检查，但只有验证了的数据结构的摘要（以及一些额外的字节，少于40个字节）存储在UTXO集， …</p>
                   <div class="eg-author">
                     <img src="/img/authors/dmitry_meshkov.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -475,8 +485,9 @@ What are …</p>
               
                 <a class="eg-blog__item eg-link related__post" href="http://powerful-spire-67290.herokuapp.com/cn/blog/2018_10_19-smart-contracts/">
                   <div class="eg-blog__item-img"><img src="/img/blog/getting_startet.svg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>Smart Contracts for the People</span></h3>
-                  <p class="eg-blog__item-paragraph">A lot of blockchain-related news these days are saying us that a bank X or a corporation Y is going to use a &ldquo;blockchain&rdquo; to &ldquo;reduce …</p>
+                  <h3 class="eg-blog__item-title"><span>为客户提供智能合约</span></h3>
+                  <p class="eg-blog__item-paragraph">如今，很多与区块链相关的新闻都在告诉我们，银行X或Y公司将使用“区块链”来“降低成本”。基本上，这意味着大银行家认为另一个流行术语只是另一种以更有效的方式从某处提取价值的工具，也可以通过裁员来节省成本。
+虽然我不想对“Satoshi的愿景”说什么（他离开后只能去猜测），但我在网络论坛用户早期见证下的广泛观点是 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">

@@ -8,11 +8,18 @@
     <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
 
     
-      <meta name="description" content="Overview Ergo’s native token is called Erg and its emission schedule may be of keen interest to users and miners of the platform. Ergs also have some unique characteristics which are highlighted in this post. Most basically and leaving out technical details, Ergo has a strictly limited supply, an 8‐year emission schedule and a declining rate of emission over these 8 years. All tokens are mined through an original Asic and Pool‐resistant Proof‐of‐Work (“PoW”) algorithm called Autolykos.">
+      <meta name="description" content="概要 尔格的原生代币称为尔格币，平台的用户和矿工对其发行时间表可能非常感兴趣。尔格币也有一些独特的特征，在这篇文章中将重点展现。最基本的并且省略技术细节的特征是：尔格有严格的供应量限制，8年的发行计划、以及8年来不断下降的的发行率。所有尔格币都通过原始的专用集成电路（Asic）和池阻工作量证明（“PoW”）算法称为奥托吕科斯（Autolykos），来进行挖掘。因此，在主网启动时存在0个尔格币，因为没有首次币发行也没有预挖。在8年结束时，最终的尔格币供应将是97,739,925个尔格币。尔格区块间距为2分钟，前两年每个区块将释放总共75个尔格币，供矿工和金库共享（下文讨论的金库）。但从第2年开始，发行率将下降3.0 个尔格币，然后每3个月进一步下降3.0个尔格币，这将导致在发行8年后结束发行。不会有额外的通货膨胀，而且尔格币基础货币将保持不变。下面的发行图说明了这一点。
+尔格金库 为了资助开发，推广，活动，将尔格的尔格第一年代币（“EFYT”， Ergo First Year Token下文进一步讨论）交换为尔格币并为可能推进该平台的其他活动提供资金，尔格已经建立了一个金库，将获得尔格币总发行量的4.43％。在主网发布后的前两年，金库每个区块将获得7.5个尔格币。鉴于每个区块的区块奖励总计为75个尔格币，金库的尔格币分配相当于前两年总区块奖励的10％，并且矿工的区块奖励为每区块67.5个尔格币。 2年后，金库将继续获得超过67.5个尔格币的部分奖励，但是，当区块奖励达到每个区块66个尔格币时，2年半之后将变为0。熟悉其他一些带有金库的工作量证明协议的读者，如ZCash，可能会发现与之类似，但应该注意的是进入金库的尔格币总数仅为4,330,791.5，占总货币金额的4.43％，并在短短2年半完成。这与ZCash的金库相比，后者是ZCash总货币金额的10％和前4年所有ZCash币的20％。希望在主网发布一年后，尔格将通过多元化的开发商，矿工和用户群实现高水平的去中心化。第一年，金库将用于在尔格币的Waves（波）平台上交换尔格第一年代币（EFYT）。在剩余的1年半内，将建立一个社区投票机制，以确定金库的资金支出情况。
+尔格发行图表和代码 发行计划的代码可以从此处获得
+Ergo第一年代币（“EFYT”Ergo First Year Token） 2年前，即2017年5月，从10万个尔格第一年代币（“EFYT”）空投开始，尔格第一年代币（“EFYT”）在Waves DEX上进行了空投和分发。尔格第一年代币有助于建立尔格利益相关者和爱好者的早期社区以及筹集少量资金的双重目的。该平台在发布之前用于资助开发，推广等。尔格第一年代币（“EFYT”）严格来说是一个Waves代币，与尔格币不同，尔格币是在尔格主网发布后挖掘的尔格主网本地代币。
+尔格第一年代币（“EFYT”）将与主网发布后的前1年内开采的尔格币的一小部分进行交换。执行交换的计划机制首先是，将在Waves上为尔格的主网代币尔格币建立一个新的支付网关。有关Waves支付网关的更多信息，请点击此处。在建立网关后，当尔格金库从挖矿奖励中收到尔格币时，金库将通过网关将这些尔格币存入Waves，此时，金库将以1.00 尔格币/1.00 EFYT的固定价格在市场上出价。尔格第一年代币的所有者可以将他们的尔格第一年代币交换为尔格币，并按照他们的意愿与他们的包含保存在Waves的尔格币进行交换，在Waves上交易或通过网关将他们的尔格币从Waves转移到他们自己的钱包以便在其他地方使用。在这个过程中由金库购买的所有尔格第一年代币都将被烧掉。
+尔格第一年代币的当前分发情况可以在这里找到。值得注意的是，尔格第一年代币的最大供应量为1,970,945.0。这是尔格代币发行第一年的10％和金库将获得的尔格币数量相同，这意味着金库将在第1年收到1,970,945.0个尔格币，足以将尔格第一年代币的最大供应量交换为尔格币。
+尔格如何在短短8年内发行整个尔格币供应，而其他工作量证明区块链的发行时间表更长？ 除了尔格之外，很少有（如果有的话）工作量证明协议仅有8年之短的发行时间表，尔格之所以能做到的原因是值得一提的。首先，简单地和一些突出的工作量证明和最近发布的工作量证明代币作比较，尔格币供应量在8年后完成100％发行，无长尾发行，而以下代币的发行是这样的：
+ 比特币在8年后发行约75％，随后长尾发行; ZCash和Ravencoin遵循与比特币相同的发行计划; Beam将在8年后发行75％并具有长尾发行; Grin通胀无限期延长。  尔格的短发行计划是通过其新的经济模式实现的，即其协议的存储租用费特征。矿工将有一个额外的收入来源，这里有一篇相关论文。总而言之，矿工能够从未使用的币箱（类似于比特币中的UTXO）中每隔4年扣除一次在尔格币中计算的存储租用费，以换取将这种币箱保持在高成本记忆中的状态。因此，即使在没有区块奖励补贴的情况下，矿工也会受到高度激励以确保网络安全，这将导致更稳定的挖矿奖励，而不仅仅依靠矿工也能获得的交易费用。拥有存储租用费的其他好处包括防止“状态膨胀”、建立一个状态周边的经济（用户必须付钱以保持矿工记忆中未用完的币箱）以及任何丢失的硬币逐渐返回循环。请注意，在尔格生态中，矿工可以使用在线投票来逐步更改许多关键参数，包括存储租用费、区块大小和区块的最大计算成本。">
     
 
     
-    <title>The Ergo Emission Schedule | Ergo</title>
+    <title>尔格发行计划 | Ergo</title>
 
     
     
@@ -132,7 +139,7 @@
         <a href="http://powerful-spire-67290.herokuapp.com/cn/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>回到所有帖子</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
-        <h1 class="eg-title eg-mb-1">The Ergo Emission Schedule</h1>
+        <h1 class="eg-title eg-mb-1">尔格发行计划</h1>
         <div class="eg-author">
           <img src="/img/authors/justin_simpson.jpg" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
@@ -147,40 +154,40 @@
           <div>
             
 
-<h2 id="overview">Overview</h2>
+<h2 id="概要">概要</h2>
 
-<p>Ergo’s native token is called Erg and its emission schedule may be of keen interest to users and miners of the platform. Ergs also have some unique characteristics which are highlighted in this post. Most basically and leaving out technical details, Ergo has a strictly limited supply, an 8‐year emission schedule and a declining rate of emission over these 8 years. All tokens are mined through an original Asic and Pool‐resistant Proof‐of‐Work (“PoW”) algorithm called Autolykos. Therefore, there are 0 Ergs in existence at launch of mainnet as there was no ICO nor pre‐mine. At the end of 8 years, the final Erg supply will be 97,739,925 Ergs.  The Ergo block interval is 2 minutes and for the first 2 years, each block will release a total of 75 Ergs to be shared between the miners and the Treasury (Treasury discussed below). But starting at year 2, the rate of emission will fall by 3.0 Ergs and thereafter further decline every 3 months by an additional 3.0 Ergs, which will result in an end to emission 8 years after launch. There will be no additional inflation and the Erg monetary base will remain fixed. The Emission Chart below illustrates this.</p>
+<p>尔格的原生代币称为尔格币，平台的用户和矿工对其发行时间表可能非常感兴趣。尔格币也有一些独特的特征，在这篇文章中将重点展现。最基本的并且省略技术细节的特征是：尔格有严格的供应量限制，8年的发行计划、以及8年来不断下降的的发行率。所有尔格币都通过原始的专用集成电路（Asic）和池阻工作量证明（“PoW”）算法称为奥托吕科斯（Autolykos），来进行挖掘。因此，在主网启动时存在0个尔格币，因为没有首次币发行也没有预挖。在8年结束时，最终的尔格币供应将是97,739,925个尔格币。尔格区块间距为2分钟，前两年每个区块将释放总共75个尔格币，供矿工和金库共享（下文讨论的金库）。但从第2年开始，发行率将下降3.0 个尔格币，然后每3个月进一步下降3.0个尔格币，这将导致在发行8年后结束发行。不会有额外的通货膨胀，而且尔格币基础货币将保持不变。下面的发行图说明了这一点。</p>
 
-<h2 id="the-ergo-treasury">The Ergo Treasury</h2>
+<h2 id="尔格金库">尔格金库</h2>
 
-<p>To fund development, promotion, events, to swap Ergo’s Ergo First Year Tokens (“EFYT”, further discussed below) into Ergs and to fund other activities which may advance the platform, Ergo has in place a Treasury which will receive 4.43% of the Ergs released during emission. During the first 2 years post‐mainnet launch, the Treasury will receive 7.5 Ergs per block. Given that the block reward for each block is 75 Ergs total, the Treasury’s allocation of Ergs is equivalent to 10% of the total block reward over the first 2 years and leaves miners with a block reward of 67.5 Ergs per block. After 2 years, the Treasury will continue to receive the part of the block reward that exceeds 67.5 Erg, however, this will be 0 after year 2.5 when the block reward becomes 66 Ergs per block.  Readers familiar with some other PoW protocols with a Treasury, such as ZCash, may find this to be similar, however, it should be noted that the amount of Ergs going to the Treasury comprise a total of only 4,330,791.5, or 4.43% of the total monetary base, and is completed in just 2.5 years. This compares with ZCash’s Treasury, which was 10% of the ZCash total monetary base and 20% of all issued ZCash coins during the first 4 years. With Ergo, it is hoped that by 1 year post‐mainnet launch, Ergo will have achieved a high level of decentralization with a diverse developer, miner and user base. For the first year, the Treasury will be used for swapping of the EFYT on the Waves platform for Erg. For the remaining 1.5 years, a community voting mechanism will be put in place to determine how Treasury funds are spent.</p>
+<p>为了资助开发，推广，活动，将尔格的尔格第一年代币（“EFYT”， Ergo First Year Token下文进一步讨论）交换为尔格币并为可能推进该平台的其他活动提供资金，尔格已经建立了一个金库，将获得尔格币总发行量的4.43％。在主网发布后的前两年，金库每个区块将获得7.5个尔格币。鉴于每个区块的区块奖励总计为75个尔格币，金库的尔格币分配相当于前两年总区块奖励的10％，并且矿工的区块奖励为每区块67.5个尔格币。 2年后，金库将继续获得超过67.5个尔格币的部分奖励，但是，当区块奖励达到每个区块66个尔格币时，2年半之后将变为0。熟悉其他一些带有金库的工作量证明协议的读者，如ZCash，可能会发现与之类似，但应该注意的是进入金库的尔格币总数仅为4,330,791.5，占总货币金额的4.43％，并在短短2年半完成。这与ZCash的金库相比，后者是ZCash总货币金额的10％和前4年所有ZCash币的20％。希望在主网发布一年后，尔格将通过多元化的开发商，矿工和用户群实现高水平的去中心化。第一年，金库将用于在尔格币的Waves（波）平台上交换尔格第一年代币（EFYT）。在剩余的1年半内，将建立一个社区投票机制，以确定金库的资金支出情况。</p>
 
-<h2 id="the-ergo-emission-chart-and-code">The Ergo Emission Chart and Code</h2>
+<h2 id="尔格发行图表和代码">尔格发行图表和代码</h2>
 
 <p><img src="/img/blog/emission_curve.png" alt="Ergo emission curve" /></p>
 
-<p>The code for the emission schedule can be found <a href="https://github.com/ScorexFoundation/sigmastate-interpreter/blob/master/src/main/scala/org/ergoplatform/mining/emission/EmissionRules.scala">here</a></p>
+<p>发行计划的代码可以从<a href="https://github.com/ScorexFoundation/sigmastate-interpreter/blob/master/src/main/scala/org/ergoplatform/mining/emission/EmissionRules.scala">此处</a>获得</p>
 
-<h2 id="the-ergo-first-year-token-efyt">The Ergo First Year Token (“EFYT”)</h2>
+<h2 id="ergo第一年代币-efyt-ergo-first-year-token">Ergo第一年代币（“EFYT”Ergo First Year Token）</h2>
 
-<p>EFYT was airdropped and distributed on <a href="https://wavesplatform.com/">Waves DEX</a> starting with a 100,000 EFYT airdrop 2 years ago in May, 2017. EFYT served the dual purposes of helping to build an early community of stake holders and enthusiasts for Ergo and of raising a small amount of funds for the platform before launch to fund development, promotion etc. EFYT is strictly a Waves token and is not the same as an Erg, which is the Ergo mainnet native token mined after Ergo’s mainnet launch.</p>
+<p>2年前，即2017年5月，从10万个尔格第一年代币（“EFYT”）空投开始，尔格第一年代币（“EFYT”）在<a href="https://wavesplatform.com/">Waves DEX</a>上进行了空投和分发。尔格第一年代币有助于建立尔格利益相关者和爱好者的早期社区以及筹集少量资金的双重目的。该平台在发布之前用于资助开发，推广等。尔格第一年代币（“EFYT”）严格来说是一个Waves代币，与尔格币不同，尔格币是在尔格主网发布后挖掘的尔格主网本地代币。</p>
 
-<p>EFYT will be swapped with a fraction of the Ergs mined within the first 1 year post mainnet launch. The planned mechanism for executing the swap is first, a new payment gateway will be set up on Waves for Ergo’s mainnet token, Erg. More on Waves payment gateways can be found <a href="https://blog.wavesplatform.com/waves-launches-cryptocurrency-payment-gateway-framework-d37c1bb2fe1b">here</a>. After the gateway is set up, as the Ergo Treasury receives Ergs from the mining reward, the Treasury will deposit these Ergs to Waves via the gateway, at which time, the Treasury will make a bid in the market at fixed price of 1.00 ERG / 1.00 EFYT and owners of EFYT can then swap their EFYTs for Ergs and do as they wish with their Ergs including holding them on Waves, trading on Waves or transferring their Ergs out of Waves via the gateway to their own wallet for use elsewhere. All EFYT purchased by the Treasury in this process will be burned.</p>
+<p>尔格第一年代币（“EFYT”）将与主网发布后的前1年内开采的尔格币的一小部分进行交换。执行交换的计划机制首先是，将在Waves上为尔格的主网代币尔格币建立一个新的支付网关。有关Waves支付网关的更多信息，请点击<a href="https://blog.wavesplatform.com/waves-launches-cryptocurrency-payment-gateway-framework-d37c1bb2fe1b">此处</a>。在建立网关后，当尔格金库从挖矿奖励中收到尔格币时，金库将通过网关将这些尔格币存入Waves，此时，金库将以1.00 尔格币/1.00 EFYT的固定价格在市场上出价。尔格第一年代币的所有者可以将他们的尔格第一年代币交换为尔格币，并按照他们的意愿与他们的包含保存在Waves的尔格币进行交换，在Waves上交易或通过网关将他们的尔格币从Waves转移到他们自己的钱包以便在其他地方使用。在这个过程中由金库购买的所有尔格第一年代币都将被烧掉。</p>
 
-<p>The current distribution of EFYT can be found <a href="http://dev.pywaves.org/assets/725Yv9oceWsB4GsYwyy4A52kEwyVrL5avubkeChSnL46">here</a>. It should be noted that the max supply of EFYT is 1,970,945.0. This is 10% of the first year of Ergo token emission and the same number of Ergs that the Treasury will receive, meaning that the Treasury will have received 1,970,945.0 Ergs during year 1, sufficient to swap the max supply of EFYT for Erg.</p>
+<p>尔格第一年代币的当前分发情况可以在<a href="http://dev.pywaves.org/assets/725Yv9oceWsB4GsYwyy4A52kEwyVrL5avubkeChSnL46">这里</a>找到。值得注意的是，尔格第一年代币的最大供应量为1,970,945.0。这是尔格代币发行第一年的10％和金库将获得的尔格币数量相同，这意味着金库将在第1年收到1,970,945.0个尔格币，足以将尔格第一年代币的最大供应量交换为尔格币。</p>
 
-<h2 id="how-can-ergo-issue-the-entire-erg-supply-in-only-8-years-whereas-other-pow-blockchains-all-have-much-longer-emission-schedules">How can Ergo Issue the Entire Erg Supply in only 8 years whereas other PoW blockchains all have much longer emission schedules?</h2>
+<h2 id="尔格如何在短短8年内发行整个尔格币供应-而其他工作量证明区块链的发行时间表更长">尔格如何在短短8年内发行整个尔格币供应，而其他工作量证明区块链的发行时间表更长？</h2>
 
-<p>Other than Ergo, few, if any, PoW protocols have such a short emission schedule as 8 years and it is worth mentioning what makes this possible for Ergo. Firstly, to briefly compare with just a few prominent PoW and recently issued PoW tokens, Erg supply is 100% issued after 8 years, with no long tail of emission, whereas emission of:</p>
+<p>除了尔格之外，很少有（如果有的话）工作量证明协议仅有8年之短的发行时间表，尔格之所以能做到的原因是值得一提的。首先，简单地和一些突出的工作量证明和最近发布的工作量证明代币作比较，尔格币供应量在8年后完成100％发行，无长尾发行，而以下代币的发行是这样的：</p>
 
 <ul>
-<li>Bitcoin is approximately 75% issued after 8 years with a long tail of emission to follow;</li>
-<li>ZCash and Ravencoin follow the same emission schedule as Bitcoin;</li>
-<li>Beam will be 75% issued after 8 years and has a long tail of emission;</li>
-<li>Grin inflation extends out indefinitely</li>
+<li>比特币在8年后发行约75％，随后长尾发行;</li>
+<li>ZCash和Ravencoin遵循与比特币相同的发行计划;</li>
+<li>Beam将在8年后发行75％并具有长尾发行;</li>
+<li>Grin通胀无限期延长。</li>
 </ul>
 
-<p>Ergo’s short emission schedule is made possible through its new economic model, namely, the storage rent fee component of its protocol. Miners will have an additional source of income and a paper on that is available <a href="https://fc18.ifca.ai/bitcoin/papers/bitcoin18-final18.pdf">here</a>. In summary, miners are able to deduct a storage rent fee every 4 years denominated in Erg from an unspent box (similar to a UTXO in Bitcoin) in exchange for the cost of keeping such box in state which resides in high cost memory. Therefore, miners will be highly incentivized to secure the network even in the absence of a block reward subsidy and this will lead to a more stable mining reward than just relying on transaction fees alone which miners will also receive. Other benefits from having the storage rent fee include prevention of “state bloat”, building of an economy around state (users must pay to keep unspent boxes in miners’ memory for the long‐term) and a gradual return of any lost coins back into circulation. Note that in Ergo, miners can use on‐chain voting to gradually change many key parameters including the storage rent fee, block size and maximum computational cost of a block.</p>
+<p>尔格的短发行计划是通过其新的经济模式实现的，即其协议的存储租用费特征。矿工将有一个额外的收入来源，<a href="https://fc18.ifca.ai/bitcoin/papers/bitcoin18-final18.pdf">这里</a>有一篇相关论文。总而言之，矿工能够从未使用的币箱（类似于比特币中的UTXO）中每隔4年扣除一次在尔格币中计算的存储租用费，以换取将这种币箱保持在高成本记忆中的状态。因此，即使在没有区块奖励补贴的情况下，矿工也会受到高度激励以确保网络安全，这将导致更稳定的挖矿奖励，而不仅仅依靠矿工也能获得的交易费用。拥有存储租用费的其他好处包括防止“状态膨胀”、建立一个状态周边的经济（用户必须付钱以保持矿工记忆中未用完的币箱）以及任何丢失的硬币逐渐返回循环。请注意，在尔格生态中，矿工可以使用在线投票来逐步更改许多关键参数，包括存储租用费、区块大小和区块的最大计算成本。</p>
 
           </div>
         </div>
@@ -248,8 +255,9 @@
               
                 <a class="eg-blog__item eg-link related__post" href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_29-exchange/">
                   <div class="eg-blog__item-img"><img src="/img/blog/trading.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>A Trustless Local Exchange Trading System</span></h3>
-                  <p class="eg-blog__item-paragraph">A Local Exchange Trading System (LETS) is aimed at developing local economy and is usually used by people of a locality in the vicinity of each other. A …</p>
+                  <h3 class="eg-blog__item-title"><span>一个去信任的本地交易所交易系统</span></h3>
+                  <p class="eg-blog__item-paragraph">本地交易所交易系统（LETS）旨在发展当地经济，并且通常由在彼此附近的当地人使用。 在此链接中描述了一个管理LETS的委员会。 我们将此类系统称为管理或许可，因为它取决于受信任的委员会。 在这里，我们描述了一个去信任的LETS系统，即没有管理委员会的系统。
+概要 LETS涉及多个同意使用某种形式的“本地货币” …</p>
                   <div class="eg-author">
                     <img src="/img/authors/amitabh_saxena.png" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -265,11 +273,13 @@
               
                 <a class="eg-blog__item eg-link related__post" href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_07_mining/">
                   <div class="eg-blog__item-img"><img src="/img/blog/miner_opt.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>How to mine Ergo on Windows(x64)</span></h3>
-                  <p class="eg-blog__item-paragraph">Step 1: Tools Visual Studio
-Choose free community version, you will need to select desktop development with C++ package during install.
-CUDA toolkit
-Choose …</p>
+                  <h3 class="eg-blog__item-title"><span>如何在Windows（x64）系统下挖掘尔格</span></h3>
+                  <p class="eg-blog__item-paragraph">第1步：工具 Visual Studio(可视化工作室)
+选择免费的社区版本，您需要在安装期间选择使用C ++包进行桌面开发。
+CUDA工具包
+选择您的系统版本，使用默认选项安装，它会将您的图形驱动程序更新为兼容版本。
+Curl
+没有SSL的通用版本，二进制不会工作。 选择通用源，压缩文件并单击显示镜像。下载 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/martin_spodymek.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -283,8 +293,8 @@ Choose …</p>
               
                 <a class="eg-blog__item eg-link related__post" href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_22-lets/">
                   <div class="eg-blog__item-img"><img src="/img/blog/lets-example_opt.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>A Local Exchange Trading System On Top Of Ergo</span></h3>
-                  <p class="eg-blog__item-paragraph">A local exchange trading system (LETS) is a local mutual credit association which members are allowed to create common credit money individually, with all …</p>
+                  <h3 class="eg-blog__item-title"><span>尔格之上的本地交易所交易系统</span></h3>
+                  <p class="eg-blog__item-paragraph">本地交易所交易系统（LETS）是一个本地相互信用协会，允许成员单独创建共同信用资金，系统中的所有交易都写入共同的分类账。例如，假设拥有零余额的Alice愿意从Bob购买一升生鲜奶。首先，他们就价格达成一致，例如，假设价格约为2欧元（Alice和Bob居住在爱尔兰）。交易被写入分类账后，Alice的余额变 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -298,8 +308,9 @@ Choose …</p>
               
                 <a class="eg-blog__item eg-link related__post" href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_10-ico-example/">
                   <div class="eg-blog__item-img"><img src="/img/blog/ico-example_opt.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>An ICO Example On Top Of Ergo</span></h3>
-                  <p class="eg-blog__item-paragraph">This article describes a full featured ICO (Initial Coin Offering) implemented in ErgoScript. The example covers several important and novel features of …</p>
+                  <h3 class="eg-blog__item-title"><span>一个尔格顶层的首次币发行案例</span></h3>
+                  <p class="eg-blog__item-paragraph">本文介绍了在尔格脚本中执行的功能齐全的ICO（首次币发行）。该案例涵盖了尔格平台的几个重要和新颖的特征，并展示了如何使用少量代码来支持复杂的合约。
+第1部分。初步行动 加密货币协议中的一个重要设计决策是指定支出交易实际花费的内容。这里有两种可能性。第一个基于UTXO(未花费的交易输出）的模型，如在比特币中，交 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -313,9 +324,9 @@ Choose …</p>
               
                 <a class="eg-blog__item eg-link related__post" href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_03_19-qa/">
                   <div class="eg-blog__item-img"><img src="/img/blog/question_opt.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>Q&amp;A with Alex Chepurnoy and Dmitry Meshkov</span></h3>
-                  <p class="eg-blog__item-paragraph">First, we have a major announcement - Ergo mainnet launch is planned for May 26 if no security vulnerabilities will be found during audit process!
-What are …</p>
+                  <h3 class="eg-blog__item-title"><span>Alex Chepurnoy 和Dmitry Meshkov的问答</span></h3>
+                  <p class="eg-blog__item-paragraph">首先，我们有一个重要的公告—如果在审计过程中没有发现安全漏洞，计划于5月26日发布尔格主网！
+关于扩展和应用的愿景是什么？ 关于扩展，主要方法是在不影响功能的情况下避免膨胀。例如。持久可更新存储是可能的，更新由区块链合约检查，但只有验证了的数据结构的摘要（以及一些额外的字节，少于40个字节）存储在UTXO集， …</p>
                   <div class="eg-author">
                     <img src="/img/authors/dmitry_meshkov.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -329,8 +340,9 @@ What are …</p>
               
                 <a class="eg-blog__item eg-link related__post" href="http://powerful-spire-67290.herokuapp.com/cn/blog/2018_10_19-smart-contracts/">
                   <div class="eg-blog__item-img"><img src="/img/blog/getting_startet.svg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>Smart Contracts for the People</span></h3>
-                  <p class="eg-blog__item-paragraph">A lot of blockchain-related news these days are saying us that a bank X or a corporation Y is going to use a &ldquo;blockchain&rdquo; to &ldquo;reduce …</p>
+                  <h3 class="eg-blog__item-title"><span>为客户提供智能合约</span></h3>
+                  <p class="eg-blog__item-paragraph">如今，很多与区块链相关的新闻都在告诉我们，银行X或Y公司将使用“区块链”来“降低成本”。基本上，这意味着大银行家认为另一个流行术语只是另一种以更有效的方式从某处提取价值的工具，也可以通过裁员来节省成本。
+虽然我不想对“Satoshi的愿景”说什么（他离开后只能去猜测），但我在网络论坛用户早期见证下的广泛观点是 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">

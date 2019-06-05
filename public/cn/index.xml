@@ -12,22 +12,36 @@
     
     
     <item>
-      <title>A Trustless Local Exchange Trading System</title>
+      <title>一个去信任的本地交易所交易系统</title>
       <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_29-exchange/</link>
       <pubDate>Wed, 29 May 2019 18:21:23 +0300</pubDate>
       
       <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_29-exchange/</guid>
-      <description>A Local Exchange Trading System (LETS) is aimed at developing local economy and is usually used by people of a locality in the vicinity of each other. A committee managed LETS is described at this link. We call such a system a managed or permissioned, since it depends on a trusted committee. Here we describe a trustless LETS system, i.e., one where there is no management committee.
-Overview LETS involves several parties that agree to use some form of &amp;ldquo;local currency&amp;rdquo;, usually pegged to the country&amp;rsquo;s main currency at a 1:1 rate.</description>
+      <description>本地交易所交易系统（LETS）旨在发展当地经济，并且通常由在彼此附近的当地人使用。 在此链接中描述了一个管理LETS的委员会。 我们将此类系统称为管理或许可，因为它取决于受信任的委员会。 在这里，我们描述了一个去信任的LETS系统，即没有管理委员会的系统。
+概要 LETS涉及多个同意使用某种形式的“本地货币”的党派，通常以1：1的比率与该国的主要货币挂钩。假设我们的LETS位于欧洲国家，货币为欧元，交换以“当地欧元”进行，被认为相当于国家欧元。
+LETS中的每个用户都有一个帐户，其中包含该用户的LETS余额（以本地欧元为单位）。在加入时，每个用户的余额为零。余额存储在（可能是去中心化的）分类帐中。 LETS的一个有趣特征是零余额的用户也可以“提款”，但仅用于支付另一个LETS用户。在任何时候，所有用户的LETS余额总和为零。
+例如，零余额的Alice希望从Bob那里以2欧元购买一升牛奶，Bob也是零余额的LETS成员。她将2欧元从她的账户转到Bob&amp;rsquo;s，她的余额为-2，Bob为+2。然后，Bob可以将他的部分或全部余额转移给另一个LETS用户，以换取商品或服务。
+去信任的LETS 由于我们希望获得去信任的LETS，因此我们不能依赖任何受信任的群体来接纳用户。我们只假设又一个有信任的预言机（oracle）由一些全球账号和一个包含这个账号的一个代币的单例币箱标识。此币箱还包含在任何给定时间段内尔格币与欧元的比率。通过使用此币箱并使用新费率创建另一个单例币箱来更新费率。
+在任何情况下，我们的LETS由包含一些LETS成员资格代币的全局LETS币箱来定义。此币箱受以下脚本保护。代币账号唯一地定义了所使用的LETS的属性，例如位置，货币单位，费率预言机（oracle）账号等。一个或多个用户可以花费该币箱并创建他们各自的LETS币箱作为交易的输出。该币箱最初以例如10000 LETS会员代币开始。
+一个LETS币箱表示一个LETS成员，必须用于LETS交易。 LETS交易发生在两个LETS成员之间，一个是发送者而另一个是接收者，这样发送者将一些正数量的LETS货币（本地欧元）转移给接收者。这样的交易消耗成员的币箱并将其重新创建为具有更新余额的输出。
+基本变体 为了防止垃圾信息和分布式拒绝服务攻击，我们要求至少将一些最小数量的尔格币(minErgsToJoin)锁定在新创建的成员的币箱中。 尔格币将被锁定，直到至少minWithdrawTime数量的区块被挖掘为止。 允许一个币箱的LETS余额为负值，直至锁定的尔格币可以覆盖的金额（使用交易时的汇率）。
+// 一个币箱存储会员的代币 val tokenBox = OUTPUTS(0) // first output contains remaining LETS tokens def isLets(b:Box) = { // 一个LETS 币箱必须在代币中有正好一个会员资格代币(0) b.tokens(0)._1 == letsTokenID &amp;amp;&amp;amp; b.tokens(0)._2 == 1 &amp;amp;&amp;amp; blake2b256(b.propositionBytes) == memberBoxScriptHash &amp;amp;&amp;amp; SELF.R4[Long].get == 0 &amp;amp;&amp;amp; // 从0 LETS结余中开始一个币箱 b.value &amp;gt;= minErgsToJoin &amp;amp;&amp;amp; // 币箱必须包含一些最小数量的尔格币 b.R6[Long].get &amp;lt;= HEIGHT // 将创建高度存储在R6中 } // 在tx中创建了多少lets币箱 val numLetsBoxes = OUTPUTS.</description>
     </item>
     
     <item>
-      <title>The Ergo Emission Schedule</title>
+      <title>尔格发行计划</title>
       <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_20-curve/</link>
       <pubDate>Mon, 20 May 2019 15:05:06 +0300</pubDate>
       
       <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_20-curve/</guid>
-      <description>Overview Ergo’s native token is called Erg and its emission schedule may be of keen interest to users and miners of the platform. Ergs also have some unique characteristics which are highlighted in this post. Most basically and leaving out technical details, Ergo has a strictly limited supply, an 8‐year emission schedule and a declining rate of emission over these 8 years. All tokens are mined through an original Asic and Pool‐resistant Proof‐of‐Work (“PoW”) algorithm called Autolykos.</description>
+      <description>概要 尔格的原生代币称为尔格币，平台的用户和矿工对其发行时间表可能非常感兴趣。尔格币也有一些独特的特征，在这篇文章中将重点展现。最基本的并且省略技术细节的特征是：尔格有严格的供应量限制，8年的发行计划、以及8年来不断下降的的发行率。所有尔格币都通过原始的专用集成电路（Asic）和池阻工作量证明（“PoW”）算法称为奥托吕科斯（Autolykos），来进行挖掘。因此，在主网启动时存在0个尔格币，因为没有首次币发行也没有预挖。在8年结束时，最终的尔格币供应将是97,739,925个尔格币。尔格区块间距为2分钟，前两年每个区块将释放总共75个尔格币，供矿工和金库共享（下文讨论的金库）。但从第2年开始，发行率将下降3.0 个尔格币，然后每3个月进一步下降3.0个尔格币，这将导致在发行8年后结束发行。不会有额外的通货膨胀，而且尔格币基础货币将保持不变。下面的发行图说明了这一点。
+尔格金库 为了资助开发，推广，活动，将尔格的尔格第一年代币（“EFYT”， Ergo First Year Token下文进一步讨论）交换为尔格币并为可能推进该平台的其他活动提供资金，尔格已经建立了一个金库，将获得尔格币总发行量的4.43％。在主网发布后的前两年，金库每个区块将获得7.5个尔格币。鉴于每个区块的区块奖励总计为75个尔格币，金库的尔格币分配相当于前两年总区块奖励的10％，并且矿工的区块奖励为每区块67.5个尔格币。 2年后，金库将继续获得超过67.5个尔格币的部分奖励，但是，当区块奖励达到每个区块66个尔格币时，2年半之后将变为0。熟悉其他一些带有金库的工作量证明协议的读者，如ZCash，可能会发现与之类似，但应该注意的是进入金库的尔格币总数仅为4,330,791.5，占总货币金额的4.43％，并在短短2年半完成。这与ZCash的金库相比，后者是ZCash总货币金额的10％和前4年所有ZCash币的20％。希望在主网发布一年后，尔格将通过多元化的开发商，矿工和用户群实现高水平的去中心化。第一年，金库将用于在尔格币的Waves（波）平台上交换尔格第一年代币（EFYT）。在剩余的1年半内，将建立一个社区投票机制，以确定金库的资金支出情况。
+尔格发行图表和代码 发行计划的代码可以从此处获得
+Ergo第一年代币（“EFYT”Ergo First Year Token） 2年前，即2017年5月，从10万个尔格第一年代币（“EFYT”）空投开始，尔格第一年代币（“EFYT”）在Waves DEX上进行了空投和分发。尔格第一年代币有助于建立尔格利益相关者和爱好者的早期社区以及筹集少量资金的双重目的。该平台在发布之前用于资助开发，推广等。尔格第一年代币（“EFYT”）严格来说是一个Waves代币，与尔格币不同，尔格币是在尔格主网发布后挖掘的尔格主网本地代币。
+尔格第一年代币（“EFYT”）将与主网发布后的前1年内开采的尔格币的一小部分进行交换。执行交换的计划机制首先是，将在Waves上为尔格的主网代币尔格币建立一个新的支付网关。有关Waves支付网关的更多信息，请点击此处。在建立网关后，当尔格金库从挖矿奖励中收到尔格币时，金库将通过网关将这些尔格币存入Waves，此时，金库将以1.00 尔格币/1.00 EFYT的固定价格在市场上出价。尔格第一年代币的所有者可以将他们的尔格第一年代币交换为尔格币，并按照他们的意愿与他们的包含保存在Waves的尔格币进行交换，在Waves上交易或通过网关将他们的尔格币从Waves转移到他们自己的钱包以便在其他地方使用。在这个过程中由金库购买的所有尔格第一年代币都将被烧掉。
+尔格第一年代币的当前分发情况可以在这里找到。值得注意的是，尔格第一年代币的最大供应量为1,970,945.0。这是尔格代币发行第一年的10％和金库将获得的尔格币数量相同，这意味着金库将在第1年收到1,970,945.0个尔格币，足以将尔格第一年代币的最大供应量交换为尔格币。
+尔格如何在短短8年内发行整个尔格币供应，而其他工作量证明区块链的发行时间表更长？ 除了尔格之外，很少有（如果有的话）工作量证明协议仅有8年之短的发行时间表，尔格之所以能做到的原因是值得一提的。首先，简单地和一些突出的工作量证明和最近发布的工作量证明代币作比较，尔格币供应量在8年后完成100％发行，无长尾发行，而以下代币的发行是这样的：
+ 比特币在8年后发行约75％，随后长尾发行; ZCash和Ravencoin遵循与比特币相同的发行计划; Beam将在8年后发行75％并具有长尾发行; Grin通胀无限期延长。  尔格的短发行计划是通过其新的经济模式实现的，即其协议的存储租用费特征。矿工将有一个额外的收入来源，这里有一篇相关论文。总而言之，矿工能够从未使用的币箱（类似于比特币中的UTXO）中每隔4年扣除一次在尔格币中计算的存储租用费，以换取将这种币箱保持在高成本记忆中的状态。因此，即使在没有区块奖励补贴的情况下，矿工也会受到高度激励以确保网络安全，这将导致更稳定的挖矿奖励，而不仅仅依靠矿工也能获得的交易费用。拥有存储租用费的其他好处包括防止“状态膨胀”、建立一个状态周边的经济（用户必须付钱以保持矿工记忆中未用完的币箱）以及任何丢失的硬币逐渐返回循环。请注意，在尔格生态中，矿工可以使用在线投票来逐步更改许多关键参数，包括存储租用费、区块大小和区块的最大计算成本。</description>
     </item>
     
     <item>
@@ -40,29 +54,38 @@ Overview LETS involves several parties that agree to use some form of &amp;ldquo
     </item>
     
     <item>
-      <title>How to mine Ergo on Windows(x64)</title>
-      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_07_mining/</link>
-      <pubDate>Tue, 07 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_07_mining/</guid>
-      <description>Step 1: Tools Visual Studio
-Choose free community version, you will need to select desktop development with C++ package during install.
-CUDA toolkit
-Choose your system version, install with default options, it will update your graphics driver to a compatible version.
-Curl
-Generic version without SSL, binary won`t work. Choose generic source, zip and click on show mirrors. Download and unpack.
-OpenSSL 1.0.2
-Download and install.
-Autolykos GPU miner</description>
-    </item>
-    
-    <item>
       <title>主链延迟发布</title>
       <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019-05-07-release/</link>
       <pubDate>Tue, 07 May 2019 00:00:00 +0000</pubDate>
       
       <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019-05-07-release/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>如何在Windows（x64）系统下挖掘尔格</title>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_07_mining/</link>
+      <pubDate>Tue, 07 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_07_mining/</guid>
+      <description>第1步：工具 Visual Studio(可视化工作室)
+选择免费的社区版本，您需要在安装期间选择使用C ++包进行桌面开发。
+CUDA工具包
+选择您的系统版本，使用默认选项安装，它会将您的图形驱动程序更新为兼容版本。
+Curl
+没有SSL的通用版本，二进制不会工作。 选择通用源，压缩文件并单击显示镜像。下载并解压缩。
+OpenSSL 1.0.2
+下载并安装。
+Autolykos GPU矿工
+单击克隆或下载，并下载压缩文件并解压缩。
+第2步：构建libcurl 打开命令行，转到 c:\Program Files (x86)\Microsoft Visual Studio\2017\Community\vc\Auxiliary\Build\ 并运行此脚本： vcvarsall.bat x64
+打开命令行，转到解压缩的Curl目录，然后进入winbuild文件夹并运行此命令： nmake /f Makefile.vc mode=dll MACHINE=x64
+成功构建后，转到Curl目录， \curl\builds\libcurl-vc-x64-release-dll-ipv6-sspi-winssl\bin 并将 libcurl.dll 复制到 \Autolykos\secp256k1 目录。
+第3步：建立矿工 打开命令行，转到 c:\Program Files (x86)\Microsoft Visual Studio\2017\Community\vc\Auxiliary\Build\ 并运行此脚本： vcvars64.bat
+打开命令行并转到解压缩的奥托吕科斯图形处理器矿工（Autolykos GPU miner）目录，然后进入 secp256k1文件夹 并编辑 winbuild.cmd 文件，将 OPENSSL_DIR, LIBCURL_DIR 更改为OpenSSL和Curl主目录。 您可以将 CUDA_COMPUTE_ARCH 更改为所需的图形处理器代码体系结构。
+运行 winbuild.cmd 并构建你的矿工。 成功构建后，您应该能在同一目录中发现miner.exe。
+S第4步：挖掘 在挖掘之前，您必须配置您的节点，钱包和矿工 
+同步节点后，配置并解锁钱包，您必须在 \Autolykos\secp256k1 目录中，创建挖掘配置文件 config.</description>
     </item>
     
     <item>
@@ -75,42 +98,127 @@ Autolykos GPU miner</description>
     </item>
     
     <item>
-      <title>A Local Exchange Trading System On Top Of Ergo</title>
+      <title>尔格之上的本地交易所交易系统</title>
       <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_22-lets/</link>
       <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_22-lets/</guid>
-      <description>A local exchange trading system (LETS) is a local mutual credit association which members are allowed to create common credit money individually, with all the deals in the system written into a common ledger. As an example, assume that Alice with zero balance is willing to buy a liter of raw milk from Bob. First, they agree on a price, for example, assume that the price is about 2 Euro (as Alice and Bob are living in Ireland).</description>
+      <description>本地交易所交易系统（LETS）是一个本地相互信用协会，允许成员单独创建共同信用资金，系统中的所有交易都写入共同的分类账。例如，假设拥有零余额的Alice愿意从Bob购买一升生鲜奶。首先，他们就价格达成一致，例如，假设价格约为2欧元（Alice和Bob居住在爱尔兰）。交易被写入分类账后，Alice的余额变为-2（减去2）欧元，Bob的余额变为2欧元。然后Bob可能会花费2欧元来购买Charlie的自制啤酒。通常，这种制度对负余额施加限制，有时甚至对正余额施加限制，以促进社区交易。
+从历史上看，这种系统在危机时期变得流行起来。第一个系统是迈克尔林顿于1981年在加拿大陷入萧条时的城镇建立的。1998-2002年阿根廷大萧条期间，当地的交易所交易系统非常受欢迎。大多数LETS团体的成员从50到250人不等，由核心委员会维护纸质信用票据和分类账。然而，基于纸张的LETS货币已经出现了一些问题，例如伪造票据，系统管理员可能的流氓行为等等。因此，基于区块链的LETS可能优于旧系统。有关LETS的更多信息可以在“货币生态”(The Ecology of Money”)一书(作者RichardDouthwaite) 和维基百科中找到。
+在本文中，我们将展示如何在尔格之上实现LETS。据我们所知，这是区块链上首次执行这种社区货币。我们的参考执行很简单，包括两个合同，即管理合同和交易合同。我们跳过尔格初步行动，所以请起步者阅读 首次币发行文章和ErgoScript教程(基础和 高级)。不过，我们将在以下句子中介绍几个新术语。如果发出的代币数量等于1，我们将其称为单例代币。类似地，包含单例代币的币箱称为单例币箱。
+管理合约控制一个单例币箱，该币箱容纳LETS系统的会员。合约允许以每笔交易一个会员的速度添加新会员。该币箱不存储会员，而是仅构建在会员目录之上的经过验证的数据结构的小摘要。会员与在交易中发出的单例代币相关联，该交易将会员添加到目录中。该交易创建一个新会员的币箱，其中包含会员的单例代币。会员的盒子受交换合同的保护。此外，新创建会员币箱的初始余额写入R4寄存器，在我们的示例中余额等于零。创建新会员的交易必须提供目录转换的正确性证明。
+管理合约币箱通常由委员会控制，委员会随着时间的推移而发展。为了支持这一点，我们允许委员会逻辑驻留在寄存器R5中。例如，假设已添加新的委员会会员以及新的LETS会员，输入管理合约币箱需要2/3个签名，输出币箱需要3/4个签名。在这种情况下，输入和输出币箱中R5寄存器的内容会有所不同。
+下面提供了尔格脚本中带有注释的管理合约代码。请注意“userContractHash”（用户合约哈希）是关于交易合约哈希。
+val selfOut = OUTPUTS(0) // 管理脚本 val managementScript = selfOut.R5[SigmaProp].get // 管理脚本模板正在自我复制，并且管理脚本已被满足 val scriptCorrect = (selfOut.propositionBytes == SELF.propositionBytes) &amp;amp;&amp;amp; managementScript // 支出交易正在为目录，用户，费用创建币箱。 val outsSizeCorrect = OUTPUTS.size == 3 // 检查管理标签代币是否正在自我复制 val outTokenCorrect = (selfOut.tokens.size == 1) &amp;amp;&amp;amp; (selfOut.tokens(0)._1 == letsToken) // 检查新代币是否发行，其数量是否正确 // OUTPUTS(0) 已经通过outtokenCorrect检查了代币 val issuedTokenId = INPUTS(0).id val userOut = OUTPUTS(1) val correctTokenAmounts = (userOut.tokens.size == 1 &amp;amp;&amp;amp; userOut.</description>
     </item>
     
     <item>
-      <title>An ICO Example On Top Of Ergo</title>
+      <title>一个尔格顶层的首次币发行案例</title>
       <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_10-ico-example/</link>
       <pubDate>Wed, 10 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_10-ico-example/</guid>
-      <description>This article describes a full featured ICO (Initial Coin Offering) implemented in ErgoScript. The example covers several important and novel features of the Ergo Platform and shows how it can support complex contracts with tiny amount of code.
-Part 1. Preliminaries An important design decision in a cryptocurrency protocol is specifying what a spending transaction actually spends. There are two possibilities here. The first a UTXO-based model, as in Bitcoin, where a transaction spends one-time asset containers (called as &amp;lsquo;coins&amp;rsquo; or UTXOs in Bitcoin) and creates new ones.</description>
+      <description>本文介绍了在尔格脚本中执行的功能齐全的ICO（首次币发行）。该案例涵盖了尔格平台的几个重要和新颖的特征，并展示了如何使用少量代码来支持复杂的合约。
+第1部分。初步行动 加密货币协议中的一个重要设计决策是指定支出交易实际花费的内容。这里有两种可能性。第一个基于UTXO(未花费的交易输出）的模型，如在比特币中，交易花费一次性资产容器（在比特币中称为&amp;rsquo;硬币&amp;rsquo;或UTXO）并创建新的。另一种是基于账户的模型，如在Nxt，以太坊或Waves中，交易将一定数量的资产从现有长存的账户转移到另一个，可能是新的长存的账户，这后续可能产生副作用，例如Waves或以太坊中的合同执行。在这方面，尔格类似于比特币，因为它使用基于UTXO的方法，其中一次性容器被称为币箱。有趣的是，尔格交易还可以有未被花费的数据输入，而是用于从当前未使用的币箱来提供一些信息。
+在基于UTXO的模型之上创建首次币发行并非易事，因为与基于帐户的模型相比，此处没有明确的持久存储。但是，尔格将支出交易带入脚本的执行上下文中。通过这种小的改变，可以表达交易输出和输入之间的依赖关系。反过来，通过设置依赖关系，我们甚至可以在区块链上执行任意复杂的图灵完备程序（参见&amp;ldquo;自我复制硬币作为通用图灵机&amp;rdquo;论文）。在本文中，我们将使用ICO定义多阶段合同的具体方案，其中我们有三个阶段（融资，代币发行，退出）。
+现在想象一下成千上万参与者的ICO。与以太坊不同，尔格不提供存储大量数据的可能性，并且在整个合同执行过程中都可以存储它们。相反，它允许仅存储数据结构的大约40字节的头，表示为键 - &amp;gt;值字典，与默克尔树类似地进行验证。要访问字典中的某些元素或对其进行修改，触发保护脚本执行的支出交易应提供查找或修改证明。这为合同提供了对潜在巨大数据集进行验证的可能性，而无需太多内存来存储合约状态。但是，在（活动合约）状态下存储空间意味着更大的交易，但从可扩展性的角度来看，这个问题更容易，并且可扩展性是尔格的首要任务。
+第2部分.首次币发行（ICO）合同 可能存在许多与首次币发行（ICO）相关的可能情景。在本文中，我们考虑一个首次币发行想要收集至少一定数量的资金（尔格币）来启动项目。一旦超过资金门槛并且资金期结束，该项目就会启动，并且项目将根据所收集的资金总额发放首次币发行的代币。在永久延续的退出阶段，投资者根据他们在融资期间投入的金额撤回首次币发行的代币。下面简要介绍合约步骤，并进一步提供详细信息：
+ 首先，融资期开始。它从一个项目币箱开始，对一个空字典进行验证。该词典用于持有（投资者，平衡）对，其中投资者是保护包含退出代币的币箱的脚本。为了平衡，我们假设在ICO期间1个代币等于1个尔格。在融资期，只有将尔格币放入项目的框中才有可能。资金交易花费在项目的框中，并创建一个包含更新信息的新项目框。为此，项目币箱的支出交易还有使投资者撤回脚本的其他输入。应将投资者脚本和输入值添加到新币箱的树中。这将会有许多链式资金交易。 其次，融资期结束，之后持有投资者数据的树变为只读。经过验证的树可以单独允许不同的修改操作：可以禁止插入，删除，更新或所有操作（因此树可以处于只读模式）。此外，此交易还会创建首次币发行项目的代币，该项目将在下一阶段退出。该项目可以在此阶段撤回尔格币。
+ 第三，投资者撤回他们的首次发行币代币。为此，支出交易创建具有保护条件的输出和从树中获取的标记值。撤回的对也从树中清除。可能会有许多链式支出交易。  这三个阶段应按逻辑顺序链接在一起。使用一系列币箱来实现这些目标。
+第3部分.首次币发行合约细节 下面提供ICO合约阶段的细节和尔格脚本代码。
+融资阶段 在先期的融资阶段，我们假设最初项目创建了一个提交到空字典（存储在寄存器R5中）的币箱，其中包含下面描述的一些保护脚本。这个阶段至少持续到2,000高度。更具体地说，高度为2,000或更高的第一个交易应该更改输出币箱的脚本，如下一节所述（较低高度的交易必须输出具有相同脚本的币箱）。
+项目币箱检查它是否始终是交易的第一个输入和输出。 其他输入被视为投资者的输入。 投资者的输入包含寄存器R4中的脚本的哈希。 此哈希表示将在稍后的退出阶段使用的退出脚本。 应将所有投资输入的哈希值和货币值添加到字典中。 支出交易提供了证明投资者数据确实被添加到字典中的证据，并且在合同中检查证明。
+在资助分包合约中没有检查字典是否只允许插入，而不是更新现有值或删除（尽管添加显式检查并不困难）。
+支出交易应该支付费用，否则，它不太可能包含在一个区块中。因此，资助合同检查支出交易有两个输出（一个用于自身，另一个用于支付费用），费用不超过一定限度（在我们的例子中只有一个纳米），并且保护命题应该是这样只有矿工可以花费输出（在我们的例子中，我们只使用来自编译环境的变量“feeProp”而不提供任何细节）。这个“feeProp”对应于一个标准，虽然不是协议所要求的。
+下面的代码强制执行上述条件。请注意，“nextStageScriptHash”（下一步脚本哈希）环境变量包含颁发阶段序列化脚本的哈希值。
+val selfIndexIsZero = INPUTS(0).id == SELF.id val proof = getVar[Coll[Byte]](1).get val inputsCount = INPUTS.size val toAdd: Coll[(Coll[Byte], Coll[Byte])] = INPUTS.slice(1, inputsCount).map({ (b: Box) =&amp;gt; val pk = b.R4[Coll[Byte]].get val value = longToByteArray(b.value) (pk, value) }) val modifiedTree = SELF.R5[AvlTree].get.insert(toAdd, proof).get val expectedTree = OUTPUTS(0).</description>
     </item>
     
     <item>
-      <title>Q&amp;A with Alex Chepurnoy and Dmitry Meshkov</title>
+      <title>尔格挖矿教程</title>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019-04-03-ergo-mining-tutorial/</link>
+      <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019-04-03-ergo-mining-tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>测试链2.0.3发布</title>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019-04-02-testnet-2.0.3/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019-04-02-testnet-2.0.3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Alex Chepurnoy 和Dmitry Meshkov的问答</title>
       <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_03_19-qa/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_03_19-qa/</guid>
-      <description>First, we have a major announcement - Ergo mainnet launch is planned for May 26 if no security vulnerabilities will be found during audit process!
-What are the vision about scaling and adoption? About scaling, the main approach is to avoid bloat without compromising functionality. E.g. persistent updateable storage is possible, with updates to be checked by a blockchain contract, but only digest of authenticated data structure (and some additional bytes, less than 40 bytes anyway) are stored in the UTXO set dependless on data set size.</description>
+      <description>首先，我们有一个重要的公告—如果在审计过程中没有发现安全漏洞，计划于5月26日发布尔格主网！
+关于扩展和应用的愿景是什么？ 关于扩展，主要方法是在不影响功能的情况下避免膨胀。例如。持久可更新存储是可能的，更新由区块链合约检查，但只有验证了的数据结构的摘要（以及一些额外的字节，少于40个字节）存储在UTXO集，这与数据集的大小无关。存储租金有助于清除UTXO设备上的灰尘。轻量客户端：在尔格中，如果你不使用，你可以在不存储UTXO设置的情况下获得全节点保证。这大大改善了boostrapping（机器学习算法）和区块验证时间。通过这些改进，可以在不影响经典区块链假设和保证的情况下提高TPS（透明页共享）。但是你想要具体数字吗？我没有具体数字，因为区块大小等参数不是一成不变的，而是矿工可以调整它们。因此，如果矿工正在经历低的完整区块验证时间（硬件随着时间的推移而变得越来越好，软件也是），他可能会建议或投票来增加区块大小。
+关于应用，我们希望有人追随：1。人们重视系统及其用户之间的社会契约。例如。人们对以太坊分叉不满意。尔格不会有硬件更新功能，而社区可以在很多方面升级协议。 2.由于（1）至少，同时也有限的供应，尔格将作为储值资产（如果您只是在系统中存储硬币，滞期费用很少）。3.需要安全，简单和高效的金融应用的人员。尔格的智能货币概念比以太坊的智能合约简单得多，同时功能强大，足以满足那些没有特定技术开发固态合约的人们的大多数金融应用，或大量资金来雇用熟练的开发人员。 4.还没准备好预测大公司的任何事情，但有些企业已表示有兴趣在尔格之上做一些代币和合约。我们会尽早宣布任何相关事宜。
+有没有示例或用例？ 我们有很多示例，合约：oracles（数据库），众筹，原子交叉链和单链（代币到代币）交换，混合等。 开发人员的尔格脚本教程涵盖了基础信息。
+一个包含更复杂示例的文件（冷钱包，混合，石头剪刀布游戏）即将发布。此外，我们将展示首次币发行场景和LETS系统的示例。 另请参阅&amp;ldquo;为大众提供智能合约&amp;rdquo;博文中的目标小额信贷合约示例。
+您是否有意建立像闪电网络这样的本地链下解决方案？您对社区驱动方案的看法是什么？ 是的，我们希望它们会在某个时刻出现。我们现在的目标是提供尽可能灵活的协议，使其实现变得容易。最重要的是，我们已经有社区成员在尔格之上执行侧链，但这项工作还处于早期阶段。我们支持社区的任何活动，包括侧链。
+哪个区块链项目与尔格类似？ 在某些方面，比特币（软分叉，但我们会更进一步），Coda（如果它是真实的，我仍需检查;轻量客户端），Grin（FlyClient类似于PoPoWs），ZCash（Equihash是类似于我们的工作量证明，但我们的参数更严格，我们的工作量证明是池阻的）。不能像我们的语言一样命名任何其他项目！所以，总的来说，尔格非常独特。
+什么是尔格数据以及它的实际用例是什么？ 主网将在多久之后执行？ 尔格数据计划成为一个具有相同技术的区块链，但不同的参数可满足面向数据的应用需求。现在我们完全专注于在其上推出单链和应用。我认为尔格数据可能会在2到3年后出现，如果需要这样的应用，并且还可能又基于尔格之上的应用限制（特别是数据密集型）。按说，将会有一个侧链。现在这个领域已经有很好的进展，所以到那时我们可能会有无条件好的侧链。
+什么时候开始挖矿？我们可以用cpu挖矿吗？ 当然，您现在可以开始使用CPU进行挖掘。只需使用mining = true config settings设置一个完整节点（查看本指南），您的节点将在初始同步后开始挖矿。可以在此处找到示例配置
+但是我们还没有上主网呢？所以我们只能挖掘测试网硬币？ 是的，你现在只能挖掘测试网硬币。 GPU 矿工绝对可以在主网之前使用（可能是本周或下周）。
+是否有关于如何设置钱包的手册？ 钱包是在主网发布之前应该更新的另一件事，我们会就它的安全设置等提出建议。现在，您只能在设置帖子的配置文件部分2中将助记词设置为纯文本
+运行节点的最低要求是什么？ 这一切都取决于你的节点制度。我们没有精确测量它，我们用4 Gb内存，2个CPU，80 Gb SSD驱动上打开我们的全部节点，但它就像推荐的配置，而不是最小的配置。
+您是否计划与其他平台合作（例如Wave）？哪一种？ 我们计划在Waves DEX上市（这将大大简化EFYT / 尔格币互换），没有计划与平台的其他合作。
+您有计划增加一个选择来生成类似ERC721的代币吗？无法拆分的令牌。 您可以免费为每个交易发行一个代币，因此发行大量代币（最大供应量为1）不是问题。没有标准可以将它们组合成一类相似的代币（没有标准的方法来检查，标记aa &amp;hellip; aa与标记aa...bb具有相同类别的代币），但可能在将来会出现这样的标准。
+是否可以同时播报一批交易？理想情况下，它们包含在同一区块中。 没有API方法可以同时播报批量交易，但没有什么可以阻止您逐个广播它们而没有延迟。因此，同时播报尽可能多的交易不应该是一个问题。理想情况下，它们应包含在同一个区块中 - 可以编写某种合约，确保一些交易包含在一个单一的交易中阻止（或者没有包括它们）但是，我们还没有尝试过。此外，这可能需要矿工具有从内存池收集交易的修改规则。
+是否可以选择使用0值资产发送交易？ 所以代币在交易中，它的数量是0？不，那是不可能的
+是否有选择发送“广告”交易？ 交易的该费用由自定义代币支付。 它可能是使用交换示例完成的，因此您可以创建一个为尔格购买代币的合约，当发件人要发送代币时—他会卖出所需数量的代币并将剩余的代币数量转移到里面一笔交易。
+所以没有办法转移0.0000001的代币？ 尔格中的每个输出都应该包含一定量的尔格币。 交易费用可能为0，但您应该为每个创建的输出放一定数量的尔格币。</description>
     </item>
     
     <item>
-      <title>Smart Contracts for the People</title>
+      <title>问答环节记录。主链计划于5月26日发布</title>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019-03-19/</link>
+      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019-03-19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>如何设置和配置尔格全节点</title>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019-03-17-how-to-set-up-full-node/</link>
+      <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019-03-17-how-to-set-up-full-node/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>侧链2.0已发布！智能合约语言已更新</title>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019-03-14/</link>
+      <pubDate>Thu, 14 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019-03-14/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>为客户提供智能合约</title>
       <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2018_10_19-smart-contracts/</link>
       <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2018_10_19-smart-contracts/</guid>
-      <description>A lot of blockchain-related news these days are saying us that a bank X or a corporation Y is going to use a &amp;ldquo;blockchain&amp;rdquo; to &amp;ldquo;reduce costs&amp;rdquo;. Basically it means that just another buzzword is considered by big banksters as just another tool to extract value from everywhere in a more efficient way, and also to save on cutting job positions.
-While I am avoiding to say anything about &amp;ldquo;Satoshi&amp;rsquo;s vision&amp;rdquo; (nothing but speculations could be dug there after his exodus), a broad view I witnessed in the early years around online forums users is that a cryptocurrency should provide tools to enrich the ordinary people behind their small businesses providing no much above making ends meet, not depersonalized big financial capital.</description>
+      <description>如今，很多与区块链相关的新闻都在告诉我们，银行X或Y公司将使用“区块链”来“降低成本”。基本上，这意味着大银行家认为另一个流行术语只是另一种以更有效的方式从某处提取价值的工具，也可以通过裁员来节省成本。
+虽然我不想对“Satoshi的愿景”说什么（他离开后只能去猜测），但我在网络论坛用户早期见证下的广泛观点是加密货币应该提供能使普通人变得富裕的工具，他们的小企业背后提供的不是生活收入，而不是非个人化的大金融资本。从最初广泛的社区愿景看来，加密货币的工具应该允许人们进行经济活动，而不依赖于业务规模，地理位置，大公司设定的利率等等。这些工具应该允许人们签订合同（没有纸质合约，而是数字化，自我执行和合理智能的合约），这取决于司法管辖区，传统，遵循商业惯例等方面的差异。
+我希望尔格在这方面发挥作用。成千上万的小型合作社和个体企业家对全球健康和可持续的财富增长更为重要，而不是几家公司在离岸天堂中牟利。
+例如，让我们考虑一个合作联盟（如Radical Routes激进路线），愿意为数千公里以外的企业家提供经济援助（例如，在Rojava）。
+我们现在需要假设一些细节。首先，假设网络中有四个合作社。他们在合约中共同锁定10,000 个尔格币（均分四等份，即每份2,500个尔格币），其中说明如下：
+ 合作社与公钥pubkeyA，pubkeyB，pubkeyC，pubkeyD相关联。企业家与公钥businessKey关联。 合作社将资金锁定在受融资合约保护的硬币中，然后进行尽职调查，并就是否为企业家提供资金进行投票。所有合约基金（10,000个尔格币）都是给企业家的，如果4个中有3个投了票的话。从技术上讲，投票是通过3/4阈值签名完成的。如果在区块编号1,000之前投票不成功（没有达到3/4的签名），任何合作社（实际上，任何人）都可以提交撤销交易，这将向每个合作社返回2,500个尔格币（至少）。此外，融资合同也将被称为投票合同。 投资可以花在三个目标上，并且有一些严格的限制。也就是说，企业家必须在设备上花费至少5,000个尔格币，在建造所需建筑时至少需要2,000个尔格币，企业家可能会随意花费其他资金。 为了确保设备资金将用于设备，合作社联合会使用企业家领域中已知设备销售商的公钥。例如，考虑设备销售商在该区域中使用公钥pubkeyTool1，pubkeyTool2，pubkeyTool3，pubkeyTool4。从技术上讲，转移是作为一个设备销售商的集体签名组织的（因此来自设备销售商的环签名和企业家的签名） 类似地，假设合作联盟中有3个创建者正在识别，与公钥pubkeyConstr1，pubkeyConstr2和pubkeyConstr3相关联。 与投票合约类似，如果设备和建设合约在5000号区块之前没有共同签署，联合合作社可以撤回资金。  在尔格中定义合约的方法有很多种。 低级语言尔格树中的一个脚本描述了一个（单个）逻辑条件，关于是否可以根据它使用硬币，以及支出交易提供的支出证明。 在内部，条件表示为类型化语法树这一名称。 该结构允许我们进行提前成本分析等。名为尔格脚本的高级语言允许具有更传统和可读的描述，使用变量并将逻辑分解为子程序。
+让我们从上面（1-3）中定义的主合约开始：
+{ val spendingSuccess = (pubkeyTool1 || pubkeyTool2 || pubkeyTool3 || pubkeyTool4) &amp;amp;&amp;amp; businessKey val withdrawCondition = HEIGHT &amp;gt; 5000L &amp;amp;&amp;amp; OUTPUTS(0).value &amp;gt;= 1250L &amp;amp;&amp;amp; OUTPUTS(0).propositionBytes == pubkeyA.propBytes &amp;amp;&amp;amp; OUTPUTS(1).value &amp;gt;= 1250L &amp;amp;&amp;amp; OUTPUTS(1).propositionBytes == pubkeyB.propBytes &amp;amp;&amp;amp; OUTPUTS(2).value &amp;gt;= 1250L &amp;amp;&amp;amp; OUTPUTS(2).propositionBytes == pubkeyC.propBytes &amp;amp;&amp;amp; OUTPUTS(3).value &amp;gt;= 1250L &amp;amp;&amp;amp; OUTPUTS(3).propositionBytes == pubkeyD.</description>
     </item>
     
   </channel>
