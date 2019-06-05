@@ -6,10 +6,28 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 29 May 2019 18:21:23 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 03 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ergo whitepaper(Chinese)</title>
+      <link>https://ergoplatform.org/en/news/2019-06-03/</link>
+      <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2019-06-03/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Trustless Local Exchange Trading System on top of Ergo</title>
+      <link>https://ergoplatform.org/en/news/2019-05-30/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2019-05-30/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>A Trustless Local Exchange Trading System</title>
@@ -27,6 +45,24 @@
       
       <guid>https://ergoplatform.org/en/blog/2019_05_20-curve/</guid>
       <description>Overview Ergo’s native token is called Erg and its emission schedule may be of keen interest to users and miners of the platform. Ergs also have some unique characteristics which are highlighted in this post. Most basically and leaving out technical details, Ergo has a strictly limited supply, an 8‐year emission schedule and a declining rate of emission over these 8 years. All tokens are mined through an original Asic and Pool‐resistant Proof‐of‐Work (“PoW”) algorithm called Autolykos.</description>
+    </item>
+    
+    <item>
+      <title>The Ergo Emission Schedule</title>
+      <link>https://ergoplatform.org/en/news/2019-05-20/</link>
+      <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2019-05-20/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Testnet 2.0.5 released</title>
+      <link>https://ergoplatform.org/en/news/2019-05-17/</link>
+      <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2019-05-17/</guid>
+      <description></description>
     </item>
     
     <item>
