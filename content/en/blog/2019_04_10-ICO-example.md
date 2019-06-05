@@ -30,7 +30,7 @@ A funding transaction spends the project's box and creates a new project box wit
 * Second, the funding period finishes, after which the tree holding the investors data becomes read-only. An authenticated tree could have different modification operations allowed individually: inserts, deletes, updates, or all the operations could be disallowed (so the tree could be in the read-only mode). Also, this transaction creates tokens of the ICO project which will be withdrawn in the next stage. The project can withdraw Ergs at this stage.  
 * Third, investors withdraw their ICO tokens. For that, a spending transaction creates outputs with guarding conditions and token values taken from the tree. The withdrawn pairs are also cleared from the tree. There could be many chained spending transactions.
 
-These three stages should be linked together in the logical order. A seqience of boxes are used to achieve these goals, 
+These three stages should be linked together in the logical order. A seqience of boxes are used to achieve these goals.
 
 ## Part 3. The ICO Contract Details
 

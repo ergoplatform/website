@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on Ergo</title>
+    <link>https://ergoplatform.org/cn/news/</link>
+    <description>Recent content in News on Ergo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <lastBuildDate>Fri, 12 Apr 2019 13:50:10 +0300</lastBuildDate>
+    
+	<atom:link href="https://ergoplatform.org/cn/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>尔格白皮书</title>
+      <link>https://ergoplatform.org/cn/news/2019-05-15-whitepaper/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/cn/news/2019-05-15-whitepaper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>主链延迟发布</title>
+      <link>https://ergoplatform.org/cn/news/2019-05-07-release/</link>
+      <pubDate>Tue, 07 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/cn/news/2019-05-07-release/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>尔格简介</title>
+      <link>https://ergoplatform.org/cn/news/2019-04-24-teaser/</link>
+      <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/cn/news/2019-04-24-teaser/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>尔格挖矿教程</title>
+      <link>https://ergoplatform.org/cn/news/2019-04-03-ergo-mining-tutorial/</link>
+      <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/cn/news/2019-04-03-ergo-mining-tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>测试链2.0.3发布</title>
+      <link>https://ergoplatform.org/cn/news/2019-04-02-testnet-2.0.3/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/cn/news/2019-04-02-testnet-2.0.3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>问答环节记录。主链计划于5月26日发布</title>
+      <link>https://ergoplatform.org/cn/news/2019-03-19/</link>
+      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/cn/news/2019-03-19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>如何设置和配置尔格全节点</title>
+      <link>https://ergoplatform.org/cn/news/2019-03-17-how-to-set-up-full-node/</link>
+      <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/cn/news/2019-03-17-how-to-set-up-full-node/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>侧链2.0已发布！智能合约语言已更新</title>
+      <link>https://ergoplatform.org/cn/news/2019-03-14/</link>
+      <pubDate>Thu, 14 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/cn/news/2019-03-14/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

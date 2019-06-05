@@ -1,9 +1,7 @@
 #landing
 - id: header_resilient_platform
-  translation: Ergo is a Resilient Platform
-
-- id: header_contractual_money
-  translation: for Contractual Money
+  translation: "<span class=\"header-section__title--red\">Ergo is a Resilient Platform</span> <br/>
+  for Contractual Money"
 
 - id: getting_started
   translation: Getting started with Ergo
@@ -104,6 +102,9 @@
 
 - id: documents_ergo_platform
   translation: Whitepaper I
+
+- id: documents_ergo_platform_link
+  translation: /docs/whitepaper.pdf
 
 - id: documents_ergo_platform_text
   translation: "Ergo: The Resilient Platform For Contractual Money"
@@ -243,6 +244,8 @@
 - id: social_media
   translation: Social Media
 
+- id: ergo_platform
+  translation: Ergo platform
 
 #about
 
@@ -607,6 +610,20 @@
 - id: team_second_title
   translation: Regular Contributors
 
+- id: team_contribute
+  translation: Contribute
+
+- id: team_now
+  translation: now
+
+- id: team_developer
+  translation: Developer
+
+- id: team_community
+  translation: Community
+
+- id: team_researcher
+  translation: Researcher at researchinstitute.io
 
 #faq
 
@@ -815,8 +832,6 @@
 - id: legal_seventh-item_text
   translation: "The Website is provided on an \"as is\" basis without any warranties of any kind regarding the Website and/or any content, data, materials and/or services provided on the Website."
 
-
-
 #privacy
 
 - id: privacy_title
@@ -837,3 +852,8 @@
 
 - id: share_post
   translation: Share post
+
+# social
+
+- id: telegram_channel
+  translation: https://t.me/ergoplatform

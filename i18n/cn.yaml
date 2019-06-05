@@ -1,0 +1,832 @@
+#landing
+- id: header_resilient_platform
+  translation: "<span class=\"header-section__title--red\">尔格是一个对于合约货币</span><br/>具备强适应力的平台"
+
+- id: getting_started
+  translation: 开始使用尔格
+
+- id: ergo_vision
+  translation: 尔格的愿景
+
+- id: ergo_decentralization
+  translation: 真正的去中心化
+
+- id: ergo_economy
+  translation: 全新的经济模型
+
+- id: ergo_contractual
+  translation: 关于合约货币
+
+- id: ergo_survivability
+  translation: 生存能力
+
+- id: ergo_clients
+  translation: 轻量客户端
+
+- id: ergo_vision_text
+  translation: "从十多年前的比特币开始，到目前为止，区块链技术已被证明是一种维护公共交易分类账，且某种程度上能去除受信第三方中介（如传统金融机构）的安全方式。然而，尽管许多团队声称要实施下一个革命性的区块链，但它们一般都会至少打破一个让区块链技术变得强大的基本属性。
+    <br/><br/>
+    相比之下，尔格平台吸收了即时可用的想法，这些想法在科学论文中经过了充分测试和定型。 其重点是提供一种有效，安全和简便的方法来实施金融合约且具备长期实用性和生存能力的。 最后，尔格是一个可自我修改的协议，以去中心化的方式吸收新想法并在未来改进自己。"
+
+- id: ergo_decentralization_text
+  translation: "区块链系统的潜在突出适应力是通过现代加密算法和去中心化架构结合来实现的。密码学在加密货币之外被广泛使用，去中心化架构则形成了区块链系统独特的属性，这使得它们由于没有单点故障而更加安全。
+    <br/><br/>
+    尔格是从头开始建立的，从而能抵制各个层面的集中化。 尔格具有ASIC和池阻工作量证明算法，可防止矿工和池运营方手中的区块链集中化。 其金库系统可以防止治理和开发的集中化，而具有高安全性保证的轻量客户端则可以防止服务的集中化。"
+
+- id: ergo_economy_text
+  translation: "为了实现生存性，尔格除了提供技术改进之外还提供经济改进，包括用于更安全和可生存网络的原始经济模型。存储租金特性使得尔格有类似于常规云存储服务。它有几个重要的意义：使得尔格挖矿在初始发行后保持稳定，防止了状态规模的增长，并提供了一种将丢失的硬币退回到流通中的方法。
+    <br/><br/>
+    区块链参与者还必须在其本地存储中保留大量数据，并且存储需求不断快速增长，其中的某些数据必须保留在内存中。例如区块链的整个状态，表示为基于UTXO协议（如比特币）的UTXO集。 在像比特币这样的平台上，矿工们不会因为保持这种状态而得到任何补偿，随着时间的推移，网络会受制于“状态膨胀”。 然而，尔格矿工将通过存储租金费用的特性来得到保持状态的补偿，以防止全节点膨胀。 此外，存储租金的费用将为矿工提供持续稳定的收入来源，即使在区块奖励补贴用完之后（在尔格运行8年后）也有助于确保网络的安全。"
+
+- id: ergo_contractual_text
+  translation: "绝大多数成功的公共区块链使用案例都与金融应用有关，即使在声称是通用去中心化世界计算机的平台上也是如此。 例如，如果预言机（oracle）将非金融数据写入区块链，那么写入这些数据通常会用于金融化合约。
+    <br/><br/>
+    尔格提供了一种基于Σ-协议（即“西格玛协议”）的强大且协议友好的脚本语言，可以指定使用硬币的条件。在简单情况下，硬币可以被密钥的所有者随时使用，但更复杂的消费条件却是可能要指定多个硬币持有者、消费的时间，硬币可以支出给谁、或者硬币可被什么群体使用等等。这使复杂合约的实施难度远远超越了目前其他的存在的安全分布式区块链合约。"
+
+- id: ergo_survivability_text
+  translation: "作为一个合约化货币的平台，尔格还应支持长期的合约，至少是一般人的一生这么长。尔格的普遍做法是使用经过充分测试被证明长期安全性的解决方案。
+    <br/><br/>
+    PoW（工作量证明）共识协议结合认证状态，可防止性能随时间降低，允许任何人加入网络，用普通硬件使用网络。 尔格经济模型使系统更加安全可靠，而链上治理允许网络参数逐渐变化，举一个简单的例子，区块起始大小为524kb，但矿工可以投票逐步增加区块大小，增量为1％。"
+
+- id: ergo_clients_text
+  translation: "尔格一个重要方面就是它是为普通人创建的。特别是，这意味着普通人应该能够通过运行完整节点、挖矿、创造交易来参与协议，而不应该依赖任何受信方。
+    <br/><br/>
+    尔格协议对轻量客户端/友好，允许用户以去中心化的方式使用它，并提供全节点安全保证。 尔格的相同属性使得其更容易实现侧链，在运营方面有附加优势。"
+
+- id: news_title
+  translation: 新闻
+
+- id: services_title
+  translation: 尔格的服务
+
+- id: service_wallets_title
+  translation: 钱包
+
+- id: service_wallets_paragraph
+  translation: 检查尔格钱包。 选择您喜欢的钱包并立即开始使用尔格！
+
+- id: service_exchanges_title
+  translation: 交易所
+
+- id: service_exchanges_paragraph
+  translation: 查看所有现有的兑换服务，找到您喜欢的，然后创建一个帐户来购买或出售尔格币。
+
+- id: service_explorer_title
+  translation: 区块链浏览器
+
+- id: service_explorer_paragraph
+  translation: 观察尔格网络上的最新区块和交易。
+
+- id: service_dev_tools_title
+  translation: 开发工具
+
+- id: service_dev_tools_paragraph
+  translation: 探索开发工具并执行您的第一个尔格合约！
+
+- id: service_software_title
+  translation: 软件
+
+- id: service_software_paragraph
+  translation: 下载您的操作系统所需的软件，立即加入尔格网络！
+
+- id: service_wiki_title
+  translation: 维基
+
+- id: service_wiki_paragraph
+  translation: 阅读尔格维基自我学习。
+
+- id: documents_title
+  translation: 文件
+
+- id: documents_ergo_platform
+  translation: 白皮书I
+
+- id: documents_ergo_platform_link
+  translation: https://docs.ergoplatform.com/cn/whitepaper_cn.pdf
+
+- id: documents_ergo_platform_text
+  translation: "尔格:具备强适应力的合约币平台"
+
+- id: documents_ergoscript
+  translation: 白皮书II
+
+- id: documents_ergoscript_text
+  translation: 尔格脚本，一种支持非交互式零知识证明的加密货币脚本语言
+
+- id: documents_ergo_tech
+  translation: 黄皮书（即将完成）
+
+- id: documents_ergo_tech_text
+  translation: 尔格技术文本
+
+- id: documents_ergo_script_adv
+  translation: 白皮书III
+
+- id: documents_ergo_script_adv_text
+  translation: 尔格脚本高级教程
+
+- id: development_history_title
+  translation: 发展历史
+
+- id: read_more
+  translation: 阅读更多
+
+- id: community_title
+  translation: 尔格平台社区
+
+- id: community_paragraph
+  translation: 尔格是在区块链领域实施现代科学思想的开放式协议。尔格在一个开放贡献者模式下运行，欢迎任何人参与。
+
+- id: community_link
+  translation: 参与尔格平台
+
+#slider development history
+
+- id: development_history_2019_first_date
+  translation: 3月14日
+
+- id: development_history_2019_first_date_text
+  translation: 功能齐全的测试链2.0版本发布
+
+
+- id: development_history_2019_second_date
+  translation: 6月20日
+
+- id: development_history_2019_second_date_text
+  translation: 主链计划启动时间
+
+- id: development_history_2018_first_date
+  translation: 6月1日
+
+- id: development_history_2018_first_date_text
+  translation: 带有智能合约的测试链1.0版本发布
+
+- id: development_history_2018_second_date
+  translation: 6月26日
+
+- id: development_history_2018_second_date_text
+  translation: 尔格脚本图灵完整性的格式证明
+- id: development_history_2018_third_date
+  translation: 12月6日
+
+- id: development_history_2018_third_date_text
+  translation: 带有新PoW（工作量证明）的测试链1.8版本发布
+
+- id: development_history_2017_first_date
+  translation: 6月13日
+
+- id: development_history_2017_first_date_text
+  translation: 开始执行尔格
+
+- id: development_history_2017_second_date
+  translation: 7月28日
+
+- id: development_history_2017_second_date_text
+  translation: 难度调整研究完成
+
+- id: development_history_2017_third_date
+  translation: 12月5日
+
+- id: development_history_2017_third_date_text
+  translation: 测试链0版本发布
+
+- id: development_history_2016_first_date
+  translation: 3月12日
+
+- id: development_history_2016_first_date_text
+  translation: Scorex-Lagonaki测试链发行
+
+- id: development_history_2016_second_date
+  translation: 4月4日
+
+- id: development_history_2016_second_date_text
+  translation: 基于Scorex发布Waves
+
+- id: development_history_2016_third_date
+  translation: 10月14日
+
+- id: development_history_2016_third_date_text
+  translation: 经过身份验证的动态词典研究完成
+
+- id: development_history_2015_first_date
+  translation: 1月23日
+
+- id: development_history_2015_first_date_text
+  translation: Scorex框架执行启动
+
+- id: development_history_2015_second_date
+  translation: 11月7日
+
+- id: development_history_2015_second_date_text
+  translation: 与IOHK的合作研究开始
+
+- id: development_history_2015_third_date
+  translation: 11月17日
+
+- id: development_history_2015_third_date_text
+  translation: Scorex团队赢得了莫斯科区块链编程马拉松
+
+#footer
+- id: privacy_policy_link
+  translation: 隐私政策
+
+- id: legal_link
+  translation: 法律
+
+- id: insights_label
+  translation: 接收尔格的洞见和新闻
+
+- id: insights_input
+  translation: 您的邮箱
+
+- id: social_media
+  translation: 社交媒体
+
+- id: ergo_platform
+  translation: 尔格平台
+
+#about
+
+- id: about_title
+  translation: 如何使用尔格
+
+- id: about_first_title
+  translation: 让自己充分了解
+
+- id: about_first_paragraph
+  translation: 尔格与您可能每天熟悉和使用的其他平台不同。 从基础开始了解尔格的基本原理 - 它是什么，如何使用，以及它与其他区块链系统的区别。
+
+- id: about_second_title
+  translation: 选择你的钱包
+
+- id: about_second_paragraph
+  translation: 钱包不是拥有尔格的必要条件，但它可以提供更多的安全性和控制度。 花几分钟时间选择最适合您需求的钱包。
+
+- id: about_third_title
+  translation: 获得尔格币
+
+- id: about_third_paragraph
+  translation: 尔格用户可以通过普通硬件来挖掘。然而，对很多用户来说，最快捷最简单的获得尔格币的方式就是访问交易所。我们可以为您指明正确的方向。
+
+- id: about_fourth_title
+  translation: 编写合约
+
+- id: about_fourth_paragraph
+  translation: 尔格不仅仅是一种货币，而且还是合约货币的平台。 浏览教程和示例，并尝试执行你自己的由尔格提供支持的应用。
+
+#basics
+
+- id: basics_first_title
+  translation: 基础信息
+
+- id: basics_vision_title
+  translation: 愿景
+
+- id: basics_vision
+  translation: "尔格是应对区块链领域的停滞发展而创建的。它实现了各种能增加价值的技术和经济的即用型想法，但没有降低区块链系统的已知优势。尔格的主要聚焦点是提供一种有效和安全的方式实施金融合约同，这是区块链技术最广泛使用的应用。尔格的创建是为了提供一种普通人使用金融合约的简便方法，能以去中心化的方式使用而不需要任何信任。与传统的金融体系不同，在尔格协议的核心层上，没有救助，黑名单或其他形式的歧视。尔格协议能长期生存，使得在一个人的生命期内实施合约都是有用的。 同时也使尔格币成为一个有价值的存储。详情细节请参考 <a href=\"https://docs.ergoplatform.com/cn/teaser%E5%B0%94%E6%A0%BC%E5%B9%B3%E5%8F%B0%E7%AE%80%E4%BB%8B_%E4%B8%AD%E6%96%87%E7%89%88.pdf\" class=\"eg-text__link eg-link\"><span>尔格平台简介_中文版</span></a>."
+
+- id: basics_consensus_title
+  translation: 共识
+
+- id: basics_consensus
+  translation: "尔格-Ergo — <a href=\"https://docs.ergoplatform.com/ErgoPow.pdf\" class=\"eg-text__link eg-link\"><span>奥托吕科斯</span></a> 的共识协议- 基于众所周知的工作量证明（”PoW“）一致性算法。
+    选择工作量证明有几个原因，包括工作量证明协议被广泛研究，具有高安全性保证，并且对轻量客户端友好。
+    然而，奥托吕科斯与比特币的工作量证明存在一些富有意义的差异。
+    首先，它是内存困难的，减少了专用硬件（ASIC）和普通图形处理器（GPU）之间的差异，允许普通人参与挖矿以保护网络并获得奖励。
+    其次，奥托吕科斯是第一个采用池阻挖矿的运营实施方案，它迫使用户进行单独挖矿，从而保持网络去中心化，而没有矿池。"
+
+- id: basics_clients_title
+  translation: 轻量客户端
+
+- id: basics_clients
+  translation: "没有受信第三方的帮助，几乎不可能使用其他现有的加密货币。 为了以无信任的方式接收少量硬币，客户必须下载并处理数十亿字节的数据以与网络同步，即使在高端硬件上也可能需要数周时间，更不用说移动设备了。 因此，其他加密货币大多数用户更喜欢将可信解决方案用于钱包，交换机，区块浏览器等，这并不奇怪。
+    <br/><br/>
+    在去中心化的意义上，尔格的设计最大程度地对终端客户友好。 工作量证明的一个重要特性是它可以在不下载完整链的情况下验证所完成的工作。 尔格区块支持工作量证明的非交互式证明，允许轻量客户端通过下载少于1兆字节的数据与网络同步。 此外，尔格使用经过身份验证的状态，对于包含的任何交易，客户都可以下载其正确性的证明。 因此，无论区块链大小如何，具有智能手机的普通用户都可以加入网络并开始使用具有与完整节点相同的安全保证的尔格。"
+
+
+- id: basics_survivability_title
+  translation: 生存性
+
+- id: basics_survivability
+  translation: "为了长期生存，尔格更喜欢经过充分测试的解决方案。如果还没有针对某些问题的经过充分测试的解决方案，我们会自己开展研究，并且来自尔格开发团队的同行评审论文数量已经很多了。
+    <br/><br/>  强适应力的网络应该适应不断变化的环境，而不需要受信任方（例如“核心开发”团队）的干预。 尔格的链上矿工投票协议允许逐步更改大量参数，包括最大区块大小，存储费用因素等。
+    <br/><br/>
+    对于更根本的变化，尔格将遵循软分叉方法 - 如果绝大多数网络接受新功能，则它将被激活，但是，不升级的旧节点仍将继续正常运行，只是跳过此功能验证。因此，尔格不要求具有破坏性的硬分叉。"
+
+- id: basics_ecomony_title
+  translation: 经济
+
+- id: basics_ecomony_paragraph
+  translation: "为了实现生存性，尔格除了提供技术改进之外还提供经济改进，其中最重要的是存储费用特性，它对尔格的稳定性起着重要作用：如果在输出状态下保持4年而不被移动，矿工可以为该状态的每个字节收取少量费用。
+    这个想法类似于常规云存储服务，它对区块链系统的应用有几个重要的影响。
+    首先，比特币和其他工作量证明货币的挖矿可能在发行后变得不稳定。与之不同的是，尔格挖矿将始终保持稳定，
+    其次，状态规模增长变得可控和可预测，降低了尔格矿工的硬件需求。第三，通过从过期币箱收取存储费用，矿工将丢失的硬币返还到流通中，防止由于钥匙丢失而导致的循环供应的稳定减少。这也为<a class=\"eg-text__link eg-link\" href=\"https://docs.ergoplatform.com/ErgoPow.pdf\"><span>尔格的原生代币(“尔格币”)</span></a>建立了一个长期的独特用例，作为尔格区块链上唯一可用于支付存储租金的货币，尽管预计存在大量非原生代币可以在尔格区块链上发布，以便从其强大的安全性和去中心化性质以及合约货币功能中受益。 "
+
+- id: basics_applicability_title
+  translation: 适用性
+
+- id: basics_applicability_paragraph
+  translation: "由于轻客户，尔格分散式的应用程序和链下协议可以以真正去中心化的方式实现，但是，它们还需要灵活且安全的智能合约语言。
+    尔格智能合约基于类似比特币的UTXO模型，其中每个输出都受到某些脚本的保护。
+    如果脚本语言足够丰富，它可以编写图灵完备合约，同时避免像以太坊燃料的程序暂停一样，事先无准备的解决方案。
+    尔格脚本具有比比特币脚本更多的多功能性，它还包含允许在执行前准确估计脚本复杂性的操作，从而防止各种DoS攻击和“暂停”问题。
+    然而，这个指令集仍然足以编写任何可能的程序;尔格脚本已经被证明是图灵完整的。
+    尔格脚本的加密部分是基于西格玛协议，自然支持阈值m-of-n签名，环签名等。
+    牢记这一切，尔格脚本和尔格的设计能够使尔格作为合约货币产生独特作用，适用于无数应用。"
+
+- id: basics_second_title
+  translation: 了解更多
+
+- id: basics_second-section_first_link
+  translation: 开发工具
+
+- id: basics_second-section_second_link
+  translation: 维基
+
+- id: basics_second-section_third_link
+  translation: 文档
+
+- id: basics_second-section_fourth_link
+  translation: 软件
+
+#tech
+
+- id: tech_first_title
+  translation: 文档
+
+- id: tech_first-section_first_paragraph
+  translation: 尔格遵循基本方法并使用经过良好测试的稳定解决方案，即使这会导致短期创新变慢。 大多数尔格解决方案在同行评审会议上发表的论文中正式化，并在社区中得到广泛讨论。
+
+- id: tech_first-section_second_paragraph
+  translation: 此页面包含指向尔格平台概述的文档链接，以及尔格协议的基础文章。
+
+- id: tech_second_title
+  translation: 概览
+
+- id: tech_third_title
+  translation: 基础文本
+
+- id: tech_third-section_title_link
+  translation: 所有文本
+
+- id: tech_third-section_first_title
+  translation: 改进经过身份验证的动态词典，以及它对加密货币的应用
+
+- id: tech_third-section_first_paragraph
+  translation: Leonid Reyzin, Dmitry Meshkov, Alexander Chepurnoy, Sasha Ivanov
+
+- id: tech_third-section_second_title
+  translation: 加密货币费用的系统性办法
+
+- id: tech_third-section_second_paragraph
+  translation: Alexander Chepurnoy, Vasily Kharin, Dmitry Meshkov
+
+- id: tech_third-section_third_title
+  translation: 重新审视区块链系统的难度控制
+
+- id: tech_third-section_third_paragraph
+  translation: Dmitry Meshkov, Alexander Chepurnoy, Marc Jansen
+
+- id: tech_third-section_fourth_title
+  translation: 作为通用图灵机自我复制硬币
+
+- id: tech_third-section_fourth_paragraph
+  translation: Alexander Chepurnoy, Vasily Kharin, Dmitry Meshkov
+
+- id: tech_third-section_fifth_title
+  translation: 多模型加密货币系统
+
+- id: tech_third-section_fifth_paragraph
+  translation: Tuyet Duong, Alexander Chepurnoy, Hong-Sheng Zhou
+
+- id: tech_third-section_sixth_title
+  translation: "EDRAX: 一个具备无状态交易验证的加密货币"
+
+- id: tech_third-section_sixth_paragraph
+  translation: Alexander Chepurnoy, Charalampos Papamanthou, Yupeng Zhang
+
+#tools
+
+- id: tools_first_title
+  translation: 集成工具
+
+- id: tools_first-section_first_paragraph
+  translation: 尔格提供了一种高效，安全且简便的方法，可以借助一系列工具实施金融合同。
+
+- id: tools_second_title
+  translation: 概述
+
+- id: tools_second-section_first_paragraph
+  translation: "通过加入尔格平台，您可以访问完整的开发和部署环境，包括："
+
+- id: tools_second-section_first-sub_title
+  translation: 尔格脚本教程
+
+- id: tools_second-section_first-sub_first_subtitle
+  translation: 尔格脚本概述
+
+- id: tools_second-section_first-sub_first_paragraph
+  translation: 尔格提出了一种基于高效Σ-协议（西格玛协议）的灵活脚本语言
+
+- id: tools_second-section_first-sub_second_subtitle
+  translation: 高级尔格脚本教程
+
+- id: tools_second-section_first-sub_second_paragraph
+  translation: 查看已经在尔格上构建的合同示例。
+
+- id: tools_second-section_second-sub_title
+  translation: 节点安装
+
+- id: tools_second-section_second-sub_first_link
+  translation: 如何安装尔格全节点
+
+- id: tools_second-section_second-sub_second_link
+  translation: 如何挖掘尔格
+
+- id: tools_second-section_third-sub_title
+  translation: 区块链浏览器
+
+- id: tools_second-section_third-sub_first_link
+  translation: 测试链浏览器
+
+- id: tools_second-section_fourth-sub_title
+  translation: APIs
+
+- id: tools_second-section_fourth-sub_first_link
+  translation: APIs节点
+
+- id: tools_second-section_fourth-sub_second_link
+  translation: API区块链浏览器
+
+- id: tools_second-section_fifth-sub_title
+  translation: 文库
+
+- id: tools_second-section_scorex_link
+  translation: (Scala) Scorex框架
+
+- id: tools_second-section_fifth-sub_first_link
+  translation: (Scala) 尔格脚本
+
+- id: tools_second-section_fifth-sub_second_link
+  translation: (Scala) 基础密码学
+
+- id: tools_second-section_fifth-sub_third_link
+  translation: (JS)交易基础
+
+- id: tools_third_title
+  translation: 为开发人员提供资助
+
+- id: tools_third-section_paragraph
+  translation: 我们正在为在尔格平台上构建项目的开发人员提供资助。
+
+- id: tools_third-section_link
+  translation: 获取支持
+
+#software
+
+- id: software_first_title
+  translation: 软件
+
+- id: software_first-section_first_paragraph
+  translation: 尔格是一个基于区块链的合约货币平台，它使用Scala编程语言从头开始开发，它并不是任何其他加密货币的分支。
+
+- id: software_first-section_second_paragraph
+  translation:  "只要软件可靠，可以保密您的密钥，强烈建议从源代码构建软件。
+    如果您是新用户，您可以下载已构建的二进制代码。 <a class=\"eg-text__link eg-link\" href=\"https://www.digitalocean.com/community/tutorials/how-to-verify-downloaded-files\"><span>确认</span></a>你的图片，使用<a class=\"eg-text__link eg-link\" href=\"#???\"><span>SHA256 校验和</span></a>.
+    在以下部分中，您将能够找到适合大多数操作系统的二进制代码。"
+
+- id: software_second_title
+  translation: 下载
+
+- id: software_second-section_first_title
+  translation: Windows x64 & x86
+
+- id: software_second-section_first_first-item_title
+  translation: 适用于Windows 64的GPU矿工
+
+- id: software_second-section_first_second-item_title
+  translation: 适用于Windows 32的虚拟光驱 + 控制台钱包
+
+- id: software_second-section_second_title
+  translation: Mac OS Mavericks 10.9
+
+- id: software_second-section_second_first-item_title
+  translation: 虚拟光驱 + 控制台钱包版本 0.11.1.0
+
+- id: software_second-section_third_title
+  translation: Linux x64 & x86
+
+- id: software_second-section_third_first-item_title
+  translation: 适用于Linux x64的虚拟光驱 + 控制台钱包
+
+- id: software_second-section_third_second-item_title
+  translation: 适用于Linux x86的虚拟光驱 + 控制台钱包
+
+- id: software_second-section_fourth_title
+  translation: 所有系统
+
+- id: software_second-section_fourth_first-item_title
+  translation: 完整节点jar文档
+
+#exchanges
+
+- id: exchanges_first_title
+  translation: 交易所
+
+- id: exchanges_first-section_first_paragraph
+  translation: "您可以在许多称为交易所的在线平台上购买，出售和交易尔格。
+    <br/><br/>
+    声明：交易所提供不同程度的安全性，安全性，隐私以及对您资金和信息的控制。您可以自己开展研究，并考虑清楚将硬币存入钱包是否是一个更安全的选择。"
+
+- id: exchanges_first-section_link
+  translation: 探索钱包
+
+- id: exchanges_second_title
+  translation: 受欢迎的数字货币交易所
+
+- id: exchanges_second-section_first_paragraph
+  translation: 在尔格主链发布前，您只能购买Waves平台上列出的尔格首年代币（“EFYT”），并在主链启动后交换为尔格币。
+
+#team
+
+- id: team_first_title
+  translation: 对尔格做贡献
+
+- id: team_first-section_first_paragraph
+  translation: " 尔格的运行是一个开放的贡献者模式，欢迎任何人来做贡献。我们有以下说明，帮助您开始以多种方式做出贡献。
+    <br/><br/>
+    如果想以其他方式做出贡献，请访问我们的<a class=\"eg-text__link eg-link\" href=\"https://t.me/ergoplatform\"><span>telegram 渠道</span></a>并与开发人员讨论您的计划。"
+
+- id: team_first-section_first-item_title
+  translation: 错误报告
+
+- id: team_first-section_first-item_paragraph
+  translation: 报错，包括安全问题
+
+- id: team_first-section_second-item_title
+  translation: 代码
+
+- id: team_first-section_second-item_paragraph
+  translation: 编写和审核代码
+
+- id: team_first-section_third-item_title
+  translation: 翻译
+
+- id: team_first-section_third-item_paragraph
+  translation: 翻译用户界面
+
+- id: team_first-section_fourth-item_title
+  translation: 文档
+
+- id: team_first-section_fourth-item_paragraph
+  translation: 为用户和开发者编写文档
+
+- id: team_first-section_fifth-item_title
+  translation: 技术支持
+
+- id: team_first-section_fifth-item_paragraph
+  translation: 支持其他用户
+
+- id: team_second_title
+  translation: 经常贡献者
+
+- id: team_contribute
+  translation: 参与
+
+- id: team_now
+  translation: 现在
+
+- id: team_developer
+  translation: 开发人员
+
+- id: team_community
+  translation: 社区
+
+- id: team_researcher
+  translation: researchinstitute.io的研究员
+
+#faq
+
+- id: faq_first_title
+  translation: 常问问题
+
+- id: faq_first-item_title
+  translation: 尔格是什么？
+
+- id: faq_first-item_text
+  translation: "尔格是一个具备高适应力的合约币平台。它被设计为一个主要关注于提供一种有效，安全和简便的方式来实施金融合约应用平台。
+    <br/><br/>
+    为实现这一目标，尔格对现有区块链解决方案进行了各种技术和经济上的改进。 尔格中的每个硬币都受到尔格脚本程序的保护，尔格脚本程序是一种基于Σ-协议的强大且协议友好的脚本语言。 它规定了使用硬币的条件：谁可以支付，在何时，在什么外部条件下，支付给谁等等。
+    <br/><br/>
+    对轻型节点的扩展支持使得尔格对终端用户友好，因为它允许在不受信任的普通硬件上运行合同。 为了能够长期使用，尔格遵循生存性方法；它使用不会在未来导致安全问题的广泛研究解决方案，同时还通过新的经济模型来防止性能随时间推移而降低。
+    <br/><br/>
+    最后，尔格还有一个可自我修改的协议，这个协议允许它在未来吸收新想法并且进行自我改进。
+    专注于长期生存能力和自我修正能力正是尔格的强适应力所在。 "
+
+- id: faq_second-item_title
+  translation: 合约货币是什么意思？
+
+- id: faq_second-item_text
+  translation: "我们认为，绝大多数公链用例都是和金融应用相关。
+    尔格通过给每个币附加一个保护脚本(连带其他自定义数据)，将比特币编写合约的方式进行了扩展。
+    因此，尔格应用程序的定义是保护内置于币箱中的脚本，同时，这些币箱还包含执行中涉及的数据。
+    我们将尔格币和二级代币称为合约货币，其使用受合约约束。
+    例如，除了通过一些m-of-n签名进行保护之外，尔格还允许指定谁是这些硬币的可能接收者，而此硬币可能是另外具有这种复杂条件的合约。 这种“链接”方法允许执行任意复杂度的安全和有效的合同。"
+
+- id: faq_third-item_title
+  translation: 首次币发行的价格是多少？
+
+- id: faq_third-item_text
+  translation: "尔格遵循最去中心化的发行方式，使用经过试验和测试的工作量证明挖矿办法，在尔格主链的前八年内发生整个硬币供应的“铸造”，开始供应零币。这里没有尔格的首次币发行。"
+
+- id: faq_fourth-item_title
+  translation: 如何挖掘尔格？
+
+- id: faq_fourth-item_text
+  translation: "尔格基于奥托吕科斯工作量证明算法，这是第一个具有内存困难和池阻性能的工作量证明算法。
+    这意味着您需要一个<a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node\"><span>配置了的尔格节点</span></a>和具有至少4 Gb内存的GPU（建议使用8 Gb以获得最高效率）。 使用此<a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki/Mining\"><span>指南</span></a>将矿工与节点配置在一起。 请注意，您可以在一个尔格节点上使用多个图形处理器。"
+
+- id: faq_fifth-item_title
+  translation: 如何找到尔格矿池？
+
+- id: faq_fifth-item_text
+  translation: "尔格创建思想是为了通过去中心化实现最强的适应力.奥托吕科斯共识协议在网络的去中心化中发挥着重要作用，是因为它能防止矿池。核对奥托吕科斯<a class=\"eg-text__link eg-link\" href=\"https://docs.ergoplatform.com/ErgoPow.pdf\"><span>说明</span></a>了解更多详情。"
+
+- id: faq_sixth-item_title
+  translation: 尔格主链何时推出？
+
+- id: faq_sixth-item_text
+  translation: 尔格目前处于安全审计阶段，正在通过社区测试。发布日期定在6月20日。
+
+- id: faq_seventh-item_title
+  translation: 尔格有无区块大小限制？
+
+- id: faq_seventh-item_text
+  translation: 没有，尔格没有硬区块大小限制。相反，区块的大小能够基于需求随时间增减。它有增长率上限，以防短时间内过度增长。
+
+- id: faq_eighth-item_title
+  translation: 为什么尔格有他自己的合约语言？
+
+- id: faq_eighth-item_text
+  translation: "编程语言的设计空间非常广泛，从通用语言，如C，Java，Python，到特殊语言，如SQL，HTML，CSS，但是，它们都不是为合约货币应用而设计的。
+    <br/><br/>
+    尔格脚本的设计为实现多个属性。
+    它仅包含确定性操作旨在维持网络中的共识。
+    为了防止可能的垃圾邮件攻击，尔格脚本支持提前成本估算，
+    排除了可能的无限循环等各种操作。
+    但即使记住所有这些限制，尔格脚本也足够灵活能执行复杂的智能合约，包括图灵完整的智能合约，但要以安全的方式。"
+
+- id: faq_nineth-item_title
+  translation: 尔格代币的发行计划以及总的基础货币是什么？
+
+- id: faq_nineth-item_text
+  translation: "尔格发行计划和货币供应的细节可以从<a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/blog/2019_05_20-curve/\"><span>这里的博文</span></a>中找到。"
+
+- id: faq_tenth-item_title
+  translation: 在哪里可以获得对尔格的更多了解？
+
+- id: faq_tenth-item_text
+  translation: "网站: <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/\"><span>https://ergoplatform.org/</span></a><br/><br/>
+    推特: <a class=\"eg-text__link eg-link\" href=\"https://twitter.com/ergoplatformorg\"><span>https://twitter.com/ergoplatformorg</span></a><br/><br/>
+    维基: <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki\"><span>https://github.com/ergoplatform/ergo/wiki</span></a><br/><br/>
+    Github: <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo\"><span>https://github.com/ergoplatform/ergo</span></a><br/><br/>
+    文档: <a class=\"eg-text__link eg-link\" href=\"http://docs.ergoplatform.com\"><span>http://docs.ergoplatform.com</span></a><br/><br/>"
+
+# wallets
+
+- id: wallets_first_title
+  translation: 钱包
+
+- id: wallets_first-section_paragraph
+  translation: 数字钱包可以帮助您保护数字货币的安全，私密和可控。我们强烈建议使用钱包来存储尔格资产（从技术上讲，它们将密钥存储到您的尔格地址中。）但请记住，您的钱包不同于您的银行帐户，因此请对密码采取额外的预防措施，并确保定期备份以保护您的资金。
+    <br/><br/>
+    请注意，钱包由第三方支持，我们仅提供以下信息作为礼貌，以简化您的整体数字货币体验。
+
+- id: wallets_second_title
+  translation: 流行
+
+- id: wallets_table_first_title
+  translation: 钱包
+
+- id: wallets_table_second_title
+  translation: 类型
+
+- id: wallets_table_third_title
+  translation: 多重签名
+
+- id: wallets_table_fourth_title
+  translation: 脚本支持
+
+- id: wallets_table_second-column_first_title
+  translation: 网
+
+- id: wallets_table_second-column_second_title
+  translation: 移动
+
+- id: wallets_table_second-column_third_title
+  translation: 桌面
+
+- id: wallets_td-column_fourth_title
+  translation: 硬件
+
+- id: wallets_part
+  translation: 部分
+
+#news
+
+- id: news_first_title
+  translation: 最近的新闻
+
+- id: news_load_more
+  translation: 加载更多新闻
+
+#blog
+
+- id: back_to_all_posts
+  translation: 回到所有帖子
+
+- id: blog_related_reads
+  translation: 相关阅读
+
+
+#legal
+
+- id: legal_title
+  translation: 法律
+
+- id: legal_first-item_title
+  translation: 1. 信息发布在ergoplatform.org上
+
+- id: legal_first-item_text
+  translation: "网站https://ergoplatform.org（以下简称”网站“）提供一般性的信息和材料。您未经授权，也不应依靠本网站来提供法律咨询，商业咨询或者您提供任何形式的咨询。如您运用本网站的内容，请自行承担风险。如果您决定采取行动或不采取行动，您应该联系您想要或需要帮助的相关司法管辖区的执照律师。 本网站的所有者或贡献者绝不负责您依靠本网站所采取或未采取的行动，决定或其他行为。"
+
+- id: legal_second-item_title
+  translation: 2. 翻译
+
+- id: legal_second-item_text
+  translation: "本网站可能包含网站上可用内容的英文版本的翻译。这些翻译仅为方便起见而提供。如果英语版本与翻译版本之间存在任何冲突，则应优先使用英语版本。 如果您发现任何不一致，请在此报告<a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki/Contribute#translation\"><span>GitHub</span></a>."
+
+- id: legal_third-item_title
+  translation: 3. 使用尔格的相关风险
+
+- id: legal_third-item_text
+  translation: "本网站不对以下五类事件引起的任何损失，损害赔偿或索赔负责：
+    <br/><br/>
+    (1)任何用户造成的与尔格相关的软件或服务，例如忘记的密码，付款发送到错误的尔格地址以及意外删除钱包。
+    <br/><br/>
+    (3) 网站的软件问题，和/或尔格相关的软件或服务，例如损坏的钱包文件，错误构建的交易，不安全的加密库，影响本网站的恶意软件，和/或任何与尔格相关的软件或服务。
+    <br/><br/>
+    (4) 任何尔格相关软件或服务的用户的软件技术故障，例如，因为存储设备故障或损坏导致的数据丢失。
+    <br/><br/>
+    (4) 任何客户经历的尔格相关的软件或服务的安全问题，例如，未经授权的访问用户的钱包和/或帐户。
+    <br/><br/>
+    (5) 第三方的作为或不作为，和/或第三方经历的事件，例如服务提供商的破产，服务提供商的信息安全攻击以及第三方的欺诈。"
+
+- id: legal_fourth-item_title
+  translation: 4. 投资者风险
+
+- id: legal_fourth-item_text
+  translation: "对尔格的投资可能导致短期或甚至长期的资金损失.尔格的投资者应该预期价格会出现大幅波动。网站上公布的信息无法保证尔格的投资者不会赔钱。"
+
+- id: legal_fifth-item_title
+  translation: 5. 遵守纳税义务
+
+- id: legal_fifth-item_text
+  translation: "本网站的用户全权负责确定适用于其尔格交易的税款（如果有）。 本网站的所有者或贡献者不负责确定适用于尔格交易的税款。"
+
+- id: legal_sixth-item_title
+  translation: 6. 本网站不存储，发送或接收Ergs
+
+- id: legal_sixth-item_text
+  translation: "本网站不存储，发送或接收尔格币。 这是因为尔格币仅凭借尔格网络中维护的所有权记录而存在。 尔格币的任何所有权转让都发生在去中心化的尔格网络中，而不是在网站上。"
+
+- id: legal_seventh-item_title
+  translation: 7. 无保证承诺
+
+- id: legal_seventh-item_text
+  translation: "本网站以\"原样\"为基础提供，不对本网站和/或本网站上提供的任何内容，数据，材料和/或服务做出任何形式的保证。"
+
+#privacy
+
+- id: privacy_title
+  translation: "隐私政策"
+
+- id: privacy_first-item_text
+  translation: "我们不存储您的数据。"
+
+# error page
+
+- id: error_page_text
+  translation: 抱歉，页面无法找到
+
+- id: error_page_button
+  translation: 回到首页
+
+# share
+- id: share_post
+  translation: 分享转发
+
+# social
+
+- id: telegram_channel
+  translation: https://t.me/ergoplatform_CH

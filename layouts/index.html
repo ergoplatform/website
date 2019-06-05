@@ -39,7 +39,7 @@
                 {{ end }}
               </ul>
             </div>
-            <div class="eg-navbar__language visible-hidden">
+            <div class="eg-navbar__language">
               <div class="dd-language dropdown dd-language--white">
                 <button
                   class="dd-language__button dd-language__button--white dropdown__button"
@@ -72,9 +72,8 @@
           <img src="/img/lines.svg" alt="" class="right-lines" />
           <div class="container header-section__container">
             <h1 class="header-section__title">
-              <span class="header-section__title--red">{{ T "header_resilient_platform" }}</span>
-              <br/>
-              {{ T "header_contractual_money" }}
+              {{ T "header_resilient_platform" | safeHTML }}
+
             </h1>
             <div class="header-section__icons">
               {{- partial "social.html" . -}}
@@ -212,8 +211,8 @@
             </div>
             <div class="services-section__items grid-container-1k1">
               <div class="eg-info">
-                <a class="eg-info__title eg-link" href="/docs/whitepaper.pdf"><span>{{ T "documents_ergo_platform" }}</span></a>
-                <a class="eg-info__paragraph eg-link eg-info__paragraph--black" href="/docs/whitepaper.pdf"><span>{{ T "documents_ergo_platform_text" }}</span></a>
+                <a class="eg-info__title eg-link" href="{{ T `documents_ergo_platform_link` }}"><span>{{ T "documents_ergo_platform" }}</span></a>
+                <a class="eg-info__paragraph eg-link eg-info__paragraph--black" href="{{ T `documents_ergo_platform_link` }}"><span>{{ T "documents_ergo_platform_text" }}</span></a>
               </div>
               <div class="eg-info">
                 <a class="eg-info__title eg-link" href="/docs/ErgoScript.pdf"><span>{{ T "documents_ergoscript" }}</span></a>
@@ -257,7 +256,7 @@
               {{ range .Site.Home.AllTranslations }}
                 {{ if eq .Language.Lang .Site.Params.defaultLanguage }}
                   {{ $defaultBlogPages := where .Pages "Section" "blog" }}
-                  {{ range first 3 $defaultBlogPages }}
+                  {{ range first 2 $defaultBlogPages }}
                     <div class="blog-section__item">
                       <h3 class="blog-section__item-title">{{ .Title }}</h3>
                       <div class="eg-author">
