@@ -827,3 +827,8 @@
 # share
 - id: share_post
   translation: 分享转发
+
+# social
+
+- id: telegram_channel
+  translation: https://t.me/ergoplatform_CH

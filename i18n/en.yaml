@@ -854,3 +854,8 @@
 
 - id: share_post
   translation: Share post
+
+# social
+
+- id: telegram_channel
+  translation: https://t.me/ergoplatform
