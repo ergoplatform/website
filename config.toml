@@ -1,4 +1,4 @@
-baseURL = "http://powerful-spire-67290.herokuapp.com"
+baseURL = "https://ergoplatform.org"
 languageCode = "en"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true

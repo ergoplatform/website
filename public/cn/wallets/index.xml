@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wallets on Ergo</title>
-    <link>http://powerful-spire-67290.herokuapp.com/cn/wallets/</link>
+    <link>https://ergoplatform.org/cn/wallets/</link>
     <description>Recent content in Wallets on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
     <lastBuildDate>Wed, 24 Apr 2019 13:59:34 +0300</lastBuildDate>
     
-	<atom:link href="http://powerful-spire-67290.herokuapp.com/cn/wallets/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ergoplatform.org/cn/wallets/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
