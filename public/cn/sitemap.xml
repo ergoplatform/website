@@ -3,6 +3,91 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_29-exchange/</loc>
+    <lastmod>2019-05-29T18:21:23+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://powerful-spire-67290.herokuapp.com/en/blog/2019_05_29-exchange/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_29-exchange/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_20-curve/</loc>
+    <lastmod>2019-05-20T15:05:06+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://powerful-spire-67290.herokuapp.com/en/blog/2019_05_20-curve/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_20-curve/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://powerful-spire-67290.herokuapp.com/cn/news/2019-05-15-whitepaper/</loc>
+    <lastmod>2019-05-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://powerful-spire-67290.herokuapp.com/en/news/2019-05-15-whitepaper/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019-05-15-whitepaper/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_07_mining/</loc>
+    <lastmod>2019-05-07T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://powerful-spire-67290.herokuapp.com/en/blog/2019_05_07_mining/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_07_mining/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://powerful-spire-67290.herokuapp.com/cn/news/2019-05-07-release/</loc>
+    <lastmod>2019-05-07T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://powerful-spire-67290.herokuapp.com/en/news/2019-05-07-release/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019-05-07-release/"
+                />
+  </url>
+  
+  <url>
     <loc>http://powerful-spire-67290.herokuapp.com/cn/legal/</loc>
     <lastmod>2019-04-26T13:24:22+03:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -50,6 +135,23 @@
                 rel="alternate"
                 hreflang="cn"
                 href="http://powerful-spire-67290.herokuapp.com/cn/wallets/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://powerful-spire-67290.herokuapp.com/cn/news/2019-04-24-teaser/</loc>
+    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://powerful-spire-67290.herokuapp.com/en/news/2019-04-24-teaser/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019-04-24-teaser/"
                 />
   </url>
   
@@ -118,6 +220,23 @@
                 rel="alternate"
                 hreflang="cn"
                 href="http://powerful-spire-67290.herokuapp.com/cn/basics/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_22-lets/</loc>
+    <lastmod>2019-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://powerful-spire-67290.herokuapp.com/en/blog/2019_04_22-lets/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_22-lets/"
                 />
   </url>
   
@@ -241,6 +360,57 @@
   </url>
   
   <url>
+    <loc>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_10-ico-example/</loc>
+    <lastmod>2019-04-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://powerful-spire-67290.herokuapp.com/en/blog/2019_04_10-ico-example/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_10-ico-example/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_03_19-qa/</loc>
+    <lastmod>2019-03-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://powerful-spire-67290.herokuapp.com/en/blog/2019_03_19-qa/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_03_19-qa/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://powerful-spire-67290.herokuapp.com/cn/blog/2018_10_19-smart-contracts/</loc>
+    <lastmod>2018-10-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://powerful-spire-67290.herokuapp.com/en/blog/2018_10_19-smart-contracts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="http://powerful-spire-67290.herokuapp.com/cn/blog/2018_10_19-smart-contracts/"
+                />
+  </url>
+  
+  <url>
     <loc>http://powerful-spire-67290.herokuapp.com/cn/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -258,6 +428,7 @@
   
   <url>
     <loc>http://powerful-spire-67290.herokuapp.com/cn/</loc>
+    <lastmod>2019-05-29T18:21:23+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
     <xhtml:link

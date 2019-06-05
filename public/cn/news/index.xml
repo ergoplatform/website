@@ -11,5 +11,32 @@
 	<atom:link href="http://powerful-spire-67290.herokuapp.com/cn/news/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>尔格白皮书</title>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019-05-15-whitepaper/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019-05-15-whitepaper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>主链延迟发布</title>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019-05-07-release/</link>
+      <pubDate>Tue, 07 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019-05-07-release/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>尔格简介</title>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019-04-24-teaser/</link>
+      <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019-04-24-teaser/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

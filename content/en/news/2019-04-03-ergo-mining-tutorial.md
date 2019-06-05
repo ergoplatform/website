@@ -2,6 +2,6 @@
 title: "Ergo mining tutorial"
 date: 2019-04-03
 draft: false
-subtitle: "Testnet 2.0.3 released with various bug fixes and GPU mining support."
+subtitle: "Mining is the process of adding new blocks into the Ergo blockchain by performing resource-intensive computations."
 link: "https://github.com/ergoplatform/ergo/wiki/Mining"
 ---

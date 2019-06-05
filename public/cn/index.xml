@@ -6,9 +6,112 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
+    <lastBuildDate>Wed, 29 May 2019 18:21:23 +0300</lastBuildDate>
     
 	<atom:link href="http://powerful-spire-67290.herokuapp.com/cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Trustless Local Exchange Trading System</title>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_29-exchange/</link>
+      <pubDate>Wed, 29 May 2019 18:21:23 +0300</pubDate>
+      
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_29-exchange/</guid>
+      <description>A Local Exchange Trading System (LETS) is aimed at developing local economy and is usually used by people of a locality in the vicinity of each other. A committee managed LETS is described at this link. We call such a system a managed or permissioned, since it depends on a trusted committee. Here we describe a trustless LETS system, i.e., one where there is no management committee.
+Overview LETS involves several parties that agree to use some form of &amp;ldquo;local currency&amp;rdquo;, usually pegged to the country&amp;rsquo;s main currency at a 1:1 rate.</description>
+    </item>
+    
+    <item>
+      <title>The Ergo Emission Schedule</title>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_20-curve/</link>
+      <pubDate>Mon, 20 May 2019 15:05:06 +0300</pubDate>
+      
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_20-curve/</guid>
+      <description>Overview Ergo’s native token is called Erg and its emission schedule may be of keen interest to users and miners of the platform. Ergs also have some unique characteristics which are highlighted in this post. Most basically and leaving out technical details, Ergo has a strictly limited supply, an 8‐year emission schedule and a declining rate of emission over these 8 years. All tokens are mined through an original Asic and Pool‐resistant Proof‐of‐Work (“PoW”) algorithm called Autolykos.</description>
+    </item>
+    
+    <item>
+      <title>尔格白皮书</title>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019-05-15-whitepaper/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019-05-15-whitepaper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How to mine Ergo on Windows(x64)</title>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_07_mining/</link>
+      <pubDate>Tue, 07 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_07_mining/</guid>
+      <description>Step 1: Tools Visual Studio
+Choose free community version, you will need to select desktop development with C++ package during install.
+CUDA toolkit
+Choose your system version, install with default options, it will update your graphics driver to a compatible version.
+Curl
+Generic version without SSL, binary won`t work. Choose generic source, zip and click on show mirrors. Download and unpack.
+OpenSSL 1.0.2
+Download and install.
+Autolykos GPU miner</description>
+    </item>
+    
+    <item>
+      <title>主链延迟发布</title>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019-05-07-release/</link>
+      <pubDate>Tue, 07 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019-05-07-release/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>尔格简介</title>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019-04-24-teaser/</link>
+      <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019-04-24-teaser/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Local Exchange Trading System On Top Of Ergo</title>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_22-lets/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_22-lets/</guid>
+      <description>A local exchange trading system (LETS) is a local mutual credit association which members are allowed to create common credit money individually, with all the deals in the system written into a common ledger. As an example, assume that Alice with zero balance is willing to buy a liter of raw milk from Bob. First, they agree on a price, for example, assume that the price is about 2 Euro (as Alice and Bob are living in Ireland).</description>
+    </item>
+    
+    <item>
+      <title>An ICO Example On Top Of Ergo</title>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_10-ico-example/</link>
+      <pubDate>Wed, 10 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_10-ico-example/</guid>
+      <description>This article describes a full featured ICO (Initial Coin Offering) implemented in ErgoScript. The example covers several important and novel features of the Ergo Platform and shows how it can support complex contracts with tiny amount of code.
+Part 1. Preliminaries An important design decision in a cryptocurrency protocol is specifying what a spending transaction actually spends. There are two possibilities here. The first a UTXO-based model, as in Bitcoin, where a transaction spends one-time asset containers (called as &amp;lsquo;coins&amp;rsquo; or UTXOs in Bitcoin) and creates new ones.</description>
+    </item>
+    
+    <item>
+      <title>Q&amp;A with Alex Chepurnoy and Dmitry Meshkov</title>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_03_19-qa/</link>
+      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_03_19-qa/</guid>
+      <description>First, we have a major announcement - Ergo mainnet launch is planned for May 26 if no security vulnerabilities will be found during audit process!
+What are the vision about scaling and adoption? About scaling, the main approach is to avoid bloat without compromising functionality. E.g. persistent updateable storage is possible, with updates to be checked by a blockchain contract, but only digest of authenticated data structure (and some additional bytes, less than 40 bytes anyway) are stored in the UTXO set dependless on data set size.</description>
+    </item>
+    
+    <item>
+      <title>Smart Contracts for the People</title>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2018_10_19-smart-contracts/</link>
+      <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2018_10_19-smart-contracts/</guid>
+      <description>A lot of blockchain-related news these days are saying us that a bank X or a corporation Y is going to use a &amp;ldquo;blockchain&amp;rdquo; to &amp;ldquo;reduce costs&amp;rdquo;. Basically it means that just another buzzword is considered by big banksters as just another tool to extract value from everywhere in a more efficient way, and also to save on cutting job positions.
+While I am avoiding to say anything about &amp;ldquo;Satoshi&amp;rsquo;s vision&amp;rdquo; (nothing but speculations could be dug there after his exodus), a broad view I witnessed in the early years around online forums users is that a cryptocurrency should provide tools to enrich the ordinary people behind their small businesses providing no much above making ends meet, not depersonalized big financial capital.</description>
+    </item>
     
   </channel>
 </rss>
