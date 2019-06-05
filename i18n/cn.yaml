@@ -806,7 +806,6 @@
 - id: legal_seventh-item_text
   translation: "本网站以\"原样\"为基础提供，不对本网站和/或本网站上提供的任何内容，数据，材料和/或服务做出任何形式的保证。"
 
-
 #privacy
 
 - id: privacy_title
@@ -814,7 +813,6 @@
 
 - id: privacy_first-item_text
   translation: "我们不存储您的数据。"
-
 
 # error page
 
