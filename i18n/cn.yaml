@@ -242,6 +242,8 @@
 - id: social_media
   translation: 社交媒体
 
+- id: ergo_platform
+  translation: 尔格平台
 
 #about
 

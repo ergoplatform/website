@@ -244,6 +244,8 @@
 - id: social_media
   translation: Social Media
 
+- id: ergo_platform
+  translation: Ergo platform
 
 #about
 
