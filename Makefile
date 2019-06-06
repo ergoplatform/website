@@ -5,7 +5,7 @@ build-assets:
 	yarn run build
 
 site:
-	rm -rf public/ && make build-assets && make build-hugo
+	 make build-assets && make build-hugo
 
 server:
 	hugo -D server --noHTTPCache

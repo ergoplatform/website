@@ -119,6 +119,15 @@
 - id: documents_ergo_tech_text
   translation: 尔格技术文本
 
+- id: documents_ergo_teaser
+  translation: 尔格平台简介_中文版
+
+- id: documents_ergo_teaser_text
+  translation: 尔格平台项目概况
+
+- id: documents_ergo_teaser_link
+  translation: https://docs.ergoplatform.com/cn/teaser%E5%B0%94%E6%A0%BC%E5%B9%B3%E5%8F%B0%E7%AE%80%E4%BB%8B_%E4%B8%AD%E6%96%87%E7%89%88.pdf
+
 - id: documents_ergo_script_adv
   translation: 白皮书III
 
@@ -680,7 +689,7 @@
   translation: 尔格代币的发行计划以及总的基础货币是什么？
 
 - id: faq_nineth-item_text
-  translation: "尔格发行计划和货币供应的细节可以从<a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/blog/2019_05_20-curve/\"><span>这里的博文</span></a>中找到。"
+  translation: "尔格发行计划和货币供应的细节可以从<a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/cn/blog/2019_05_20-curve/\"><span>这里的博文</span></a>中找到。"
 
 - id: faq_tenth-item_title
   translation: 在哪里可以获得对尔格的更多了解？
@@ -690,7 +699,10 @@
     推特: <a class=\"eg-text__link eg-link\" href=\"https://twitter.com/ergoplatformorg\"><span>https://twitter.com/ergoplatformorg</span></a><br/><br/>
     维基: <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki\"><span>https://github.com/ergoplatform/ergo/wiki</span></a><br/><br/>
     Github: <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo\"><span>https://github.com/ergoplatform/ergo</span></a><br/><br/>
-    文档: <a class=\"eg-text__link eg-link\" href=\"http://docs.ergoplatform.com\"><span>http://docs.ergoplatform.com</span></a><br/><br/>"
+    文档: <a class=\"eg-text__link eg-link\" href=\"http://docs.ergoplatform.com\"><span>http://docs.ergoplatform.com</span></a><br/><br/>
+    Telegram: <a class=\"eg-text__link eg-link\" href=\"https://t.me/ergoplatform_CH\"><span>https://t.me/ergoplatform_CH</span></a> <br/><br/>
+    微信: <a class=\"eg-text__link eg-link\" href=\"/img/Wechat_qrcode.jpg\"><span>二维码</span></a> <br/><br/>
+    "
 
 # wallets
 
