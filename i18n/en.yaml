@@ -702,7 +702,7 @@
   translation: "What is the Ergo token emission schedule and total monetary base?"
 
 - id: faq_nineth-item_text
-  translation: "The details of the Ergo emission schedule and monetary supply can be found in the blog post <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/blog/2019_05_20-curve/\"><span>here</span></a>."
+  translation: "The details of the Ergo emission schedule and monetary supply can be found in the blog post <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/en/blog/2019_05_20-curve/\"><span>here</span></a>."
 
 - id: faq_tenth-item_title
   translation: "Where can I learn more about Ergo?"
@@ -713,6 +713,7 @@
   Wiki: <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki\"><span>https://github.com/ergoplatform/ergo/wiki</span></a> <br/><br/>
   Github: <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo\"><span>https://github.com/ergoplatform/ergo</span></a> <br/><br/>
   Documents: <a class=\"eg-text__link eg-link\" href=\"http://docs.ergoplatform.com\"><span>http://docs.ergoplatform.com</span></a> <br/><br/>
+  Telegram: <a class=\"eg-text__link eg-link\" href=\"http://docs.ergoplatform.com\"><span>http://docs.ergoplatform.com</span></a><br/><br/>
   "
 
 # wallets
