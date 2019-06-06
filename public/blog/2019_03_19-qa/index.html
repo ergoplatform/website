@@ -7,122 +7,130 @@
     <link rel="icon" href="/favicon.png" sizes="16x16" type="image/png">
     <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
 
-    
+
       <meta name="description" content="First, we have a major announcement - Ergo mainnet launch is planned for May 26 if no security vulnerabilities will be found during audit process!
 What are the vision about scaling and adoption? About scaling, the main approach is to avoid bloat without compromising functionality. E.g. persistent updateable storage is possible, with updates to be checked by a blockchain contract, but only digest of authenticated data structure (and some additional bytes, less than 40 bytes anyway) are stored in the UTXO set dependless on data set size.">
-    
 
-    
+
+
     <title>Q&amp;A with Alex Chepurnoy and Dmitry Meshkov | Ergo</title>
 
-    
-    
+
+
     <link rel="stylesheet" href="https://ergoplatform.org/scss/style.min.css">
     <script type="text/javascript" src="/js/index.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
       <div class="content"><header class="eg-header">
-  <nav class="eg-navbar">
-    <div class="container eg-navbar__container">
-      <div>
-        
-          <a href="https://ergoplatform.org/" class="logotype">
-            <img src="/img/logotype_black.svg" alt="logotype">
-          </a>
-        
-      </div>
-      <div class="eg-navbar__content">
-        <div class="eg-navbar__collapse" id="navbarSupportedContent">
-            <ul class="eg-nav eg-nav--black">
-              
-              
-                
-                <li class="eg-nav__item ">
-                  <a
-                    class="eg-nav__link eg-link"
-                    href="https://ergoplatform.org/about/"
-                  ><span>About</span></a>
-                </li>
-              
-                
-                <li class="eg-nav__item ">
-                  <a
-                    class="eg-nav__link eg-link"
-                    href="https://ergoplatform.org/news/"
-                  ><span>News</span></a>
-                </li>
-              
-                
-                <li class="eg-nav__item ">
-                  <a
-                    class="eg-nav__link eg-link"
-                    href="https://ergoplatform.org/faq/"
-                  ><span>FAQ</span></a>
-                </li>
-              
-                
-                <li class="eg-nav__item ">
-                  <a
-                    class="eg-nav__link eg-link"
-                    href="https://ergoplatform.org/documents/"
-                  ><span>Documents</span></a>
-                </li>
-              
-                
-                <li class="eg-nav__item ">
-                  <a
-                    class="eg-nav__link eg-link"
-                    href="https://ergoplatform.org/tools/"
-                  ><span>Tools</span></a>
-                </li>
-              
-                
-                <li class="eg-nav__item ">
-                  <a
-                    class="eg-nav__link eg-link"
-                    href="https://ergoplatform.org/blog/"
-                  ><span>Blog</span></a>
-                </li>
-              
-                
-                <li class="eg-nav__item ">
-                  <a
-                    class="eg-nav__link eg-link"
-                    href="https://ergoplatform.org/team/"
-                  ><span>Team</span></a>
-                </li>
-              
-            </ul>
-          </div>
-          <div class="eg-navbar__language">
-            <div class="dd-language dropdown dd-language--black">
-              <button
-                class="dd-language__button dd-language__button--white dropdown__button"
-                data-target-id="languageMenu"
-              >
-                Eng
-              </button>
-              <ul
-                id="languageMenu"
-                class="dropdown__menu dd-language__menu"
-              >
-                
-              </ul>
+          <nav class="eg-navbar">
+            <div class="container eg-navbar__container">
+              <div>
+
+                  <a href="https://ergoplatform.org/en/" class="logotype">
+                    <img src="/img/logotype_black.svg" alt="logotype">
+                  </a>
+
+              </div>
+              <div class="eg-navbar__content">
+                <div class="eg-navbar__collapse" id="navbarSupportedContent">
+                    <ul class="eg-nav eg-nav--black">
+
+
+
+                        <li class="eg-nav__item ">
+                          <a
+                            class="eg-nav__link eg-link"
+                            href="https://ergoplatform.org/en/about/"
+                          ><span>About</span></a>
+                        </li>
+
+
+                        <li class="eg-nav__item ">
+                          <a
+                            class="eg-nav__link eg-link"
+                            href="https://ergoplatform.org/en/news/"
+                          ><span>News</span></a>
+                        </li>
+
+
+                        <li class="eg-nav__item ">
+                          <a
+                            class="eg-nav__link eg-link"
+                            href="https://ergoplatform.org/en/faq/"
+                          ><span>FAQ</span></a>
+                        </li>
+
+
+                        <li class="eg-nav__item ">
+                          <a
+                            class="eg-nav__link eg-link"
+                            href="https://ergoplatform.org/en/documents/"
+                          ><span>Documents</span></a>
+                        </li>
+
+
+                        <li class="eg-nav__item ">
+                          <a
+                            class="eg-nav__link eg-link"
+                            href="https://ergoplatform.org/en/tools/"
+                          ><span>Tools</span></a>
+                        </li>
+
+
+                        <li class="eg-nav__item">
+                          <a
+                            class="eg-nav__link eg-link"
+                            href="https://ergoplatform.org/en/blog/"
+                          ><span>Blog</span></a>
+                        </li>
+
+
+                        <li class="eg-nav__item ">
+                          <a
+                            class="eg-nav__link eg-link"
+                            href="https://ergoplatform.org/en/team/"
+                          ><span>Team</span></a>
+                        </li>
+
+                    </ul>
+                  </div>
+                  <div class="eg-navbar__language">
+                    <div class="dd-language dropdown dd-language--black">
+                      <button
+                        class="dd-language__button dd-language__button--white dropdown__button"
+                        data-target-id="languageMenu"
+                      >
+                        Eng
+                      </button>
+                      <ul
+                        id="languageMenu"
+                        class="dropdown__menu dd-language__menu"
+                      >
+
+
+
+
+                            <li class="dd-language__item">
+                              <a class="dd-language__link dd-language__link--white eg-link" href="https://ergoplatform.org/cn/blog/"><span>中文</span></a>
+                            </li>
+
+
+                      </ul>
+                    </div>
+                  </div>
+                  <button class="eg-navbar__trigger eg-navbar__trigger--black" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                  </button>
+              </div>
             </div>
-          </div>
-          <button class="eg-navbar__trigger eg-navbar__trigger--black" type="button" aria-expanded="false" aria-label="Toggle navigation">
-            <span></span>
-          </button>
-      </div>
-    </div>
-  </nav>
-</header>
+          </nav>
+        </header>
 
   <main class="">
     <section class="container  container--top-content grid-container-1k2">
       <div class="eg-text eg-mb-2 eg-mb-sm-1-5">
-        <a href="https://ergoplatform.org/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>Back to all posts</span></a>
+        <a href="https://ergoplatform.org/en/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>Back to all posts</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
         <h1 class="eg-title eg-mb-1">Q&amp;A with Alex Chepurnoy and Dmitry Meshkov</h1>
@@ -138,7 +146,7 @@ What are the vision about scaling and adoption? About scaling, the main approach
         </div>
         <div class="eg-blog__single-content">
           <div>
-            
+
 
 <p>First, we have a major announcement - Ergo mainnet launch is planned for May 26 if no security vulnerabilities will be found during audit process!</p>
 
@@ -231,7 +239,7 @@ Please also take a look at the targeted microcredit contract example from <a hre
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link copy-link" href="https://ergoplatform.org/blog/2019_03_19-qa/" target="_blank">
+      <a class="eg-share__link copy-link" href="https://ergoplatform.org/en/blog/2019_03_19-qa/" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M39.91 19.3528L34.2335 6.06338C34.1186 5.78985 33.898 5.57515 33.6227 5.46487L20.2117 0.0807171C19.9364 -0.0292029 19.6283 -0.027376 19.3547 0.089384L6.0641 5.76578C5.79022 5.8811 5.57549 6.10129 5.46522 6.37698L0.0816753 19.7881C-0.0303977 20.0656 -0.0267767 20.3716 0.0903423 20.6455L5.76643 33.9366C5.88175 34.2101 6.10231 34.4249 6.37727 34.5352L19.7883 39.919C19.9209 39.9727 20.0639 40 20.2048 40C20.3544 40 20.5043 39.971 20.647 39.909L33.9359 34.2324C34.2097 34.1171 34.4245 33.8966 34.5348 33.6216L39.9183 20.2102C40.0304 19.9327 40.0267 19.6267 39.91 19.3528Z" stroke="#FF4221"/>
@@ -266,11 +274,11 @@ Please also take a look at the targeted microcredit contract example from <a hre
         <h2 class="eg-title eg-mb-2-5">Related reads</h2>
         <div class="eg-blog eg-blog--w-100">
           <div class="eg-blog__main related">
-            
-            
-            
-              
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/blog/2019_05_29-exchange/">
+
+
+
+
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_05_29-exchange/">
                   <div class="eg-blog__item-img"><img src="/img/blog/trading.jpg" height="188" width="335" alt="blog photo"></div>
                   <h3 class="eg-blog__item-title"><span>A Trustless Local Exchange Trading System</span></h3>
                   <p class="eg-blog__item-paragraph">A Local Exchange Trading System (LETS) is aimed at developing local economy and is usually used by people of a locality in the vicinity of each other. For …</p>
@@ -282,10 +290,10 @@ Please also take a look at the targeted microcredit contract example from <a hre
                     </div>
                   </div>
                 </a>
-              
-            
-              
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/blog/2019_05_20-curve/">
+
+
+
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_05_20-curve/">
                   <div class="eg-blog__item-img"><img src="/img/blog/schedule2.jpg" height="188" width="335" alt="blog photo"></div>
                   <h3 class="eg-blog__item-title"><span>The Ergo Emission Schedule</span></h3>
                   <p class="eg-blog__item-paragraph">Overview Ergo’s native token is called Erg and its emission schedule may be of keen interest to users and miners of the platform. Ergs also have some …</p>
@@ -297,10 +305,10 @@ Please also take a look at the targeted microcredit contract example from <a hre
                     </div>
                   </div>
                 </a>
-              
-            
-              
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/blog/2019_05_07_mining/">
+
+
+
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_05_07_mining/">
                   <div class="eg-blog__item-img"><img src="/img/blog/miner_opt.jpg" height="188" width="335" alt="blog photo"></div>
                   <h3 class="eg-blog__item-title"><span>How to mine Ergo on Windows(x64)</span></h3>
                   <p class="eg-blog__item-paragraph">Step 1: Tools Visual Studio
@@ -315,10 +323,10 @@ Choose …</p>
                     </div>
                   </div>
                 </a>
-              
-            
-              
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/blog/2019_04_22-lets/">
+
+
+
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_04_22-lets/">
                   <div class="eg-blog__item-img"><img src="/img/blog/lets-example_opt.jpg" height="188" width="335" alt="blog photo"></div>
                   <h3 class="eg-blog__item-title"><span>A Local Exchange Trading System On Top Of Ergo</span></h3>
                   <p class="eg-blog__item-paragraph">A local exchange trading system (LETS) is a local mutual credit association which members are allowed to create common credit money individually, with all …</p>
@@ -330,10 +338,10 @@ Choose …</p>
                     </div>
                   </div>
                 </a>
-              
-            
-              
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/blog/2019_04_10-ico-example/">
+
+
+
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_04_10-ico-example/">
                   <div class="eg-blog__item-img"><img src="/img/blog/ico-example_opt.jpg" height="188" width="335" alt="blog photo"></div>
                   <h3 class="eg-blog__item-title"><span>An ICO Example On Top Of Ergo</span></h3>
                   <p class="eg-blog__item-paragraph">This article describes a full featured ICO (Initial Coin Offering) implemented in ErgoScript. The example covers several important and novel features of …</p>
@@ -345,12 +353,12 @@ Choose …</p>
                     </div>
                   </div>
                 </a>
-              
-            
-              
-            
-              
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/blog/2018_10_19-smart-contracts/">
+
+
+
+
+
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2018_10_19-smart-contracts/">
                   <div class="eg-blog__item-img"><img src="/img/blog/getting_startet.svg" height="188" width="335" alt="blog photo"></div>
                   <h3 class="eg-blog__item-title"><span>Smart Contracts for the People</span></h3>
                   <p class="eg-blog__item-paragraph">A lot of blockchain-related news these days are saying us that a bank X or a corporation Y is going to use a &ldquo;blockchain&rdquo; to &ldquo;reduce …</p>
@@ -362,8 +370,8 @@ Choose …</p>
                     </div>
                   </div>
                 </a>
-              
-            
+
+
             </div>
             <div class="load-more">
               <button class="related-button eg-btn eg-btn--outline-orange d-none">Load more news</button>

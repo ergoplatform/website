@@ -119,6 +119,15 @@
 - id: documents_ergo_tech_text
   translation: 尔格技术文本
 
+- id: documents_ergo_teaser
+  translation: 尔格平台简介_中文版
+
+- id: documents_ergo_teaser_text
+  translation: 尔格平台项目概况
+
+- id: documents_ergo_teaser_link
+  translation: https://docs.ergoplatform.com/cn/teaser%E5%B0%94%E6%A0%BC%E5%B9%B3%E5%8F%B0%E7%AE%80%E4%BB%8B_%E4%B8%AD%E6%96%87%E7%89%88.pdf
+
 - id: documents_ergo_script_adv
   translation: 白皮书III
 
