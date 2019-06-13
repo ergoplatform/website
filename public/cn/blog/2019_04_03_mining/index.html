@@ -8,17 +8,22 @@
     <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
 
     
-      <meta name="description" content="本地交易所交易系统（LETS）是一个本地相互信用协会，允许成员单独创建共同信用资金，系统中的所有交易都写入共同的分类账。例如，假设拥有零余额的Alice愿意从Bob购买一升生鲜奶。首先，他们就价格达成一致，例如，假设价格约为2欧元（Alice和Bob居住在爱尔兰）。交易被写入分类账后，Alice的余额变为-2（减去2）欧元，Bob的余额变为2欧元。然后Bob可能会花费2欧元来购买Charlie的自制啤酒。通常，这种制度对负余额施加限制，有时甚至对正余额施加限制，以促进社区交易。
-从历史上看，这种系统在危机时期变得流行起来。第一个系统是迈克尔林顿于1981年在加拿大陷入萧条时的城镇建立的。1998-2002年阿根廷大萧条期间，当地的交易所交易系统非常受欢迎。大多数LETS团体的成员从50到250人不等，由核心委员会维护纸质信用票据和分类账。然而，基于纸张的LETS货币已经出现了一些问题，例如伪造票据，系统管理员可能的流氓行为等等。因此，基于区块链的LETS可能优于旧系统。有关LETS的更多信息可以在“货币生态”(The Ecology of Money”)一书(作者RichardDouthwaite) 和维基百科中找到。
-在本文中，我们将展示如何在尔格之上实现LETS。据我们所知，这是区块链上首次执行这种社区货币。我们的参考执行很简单，包括两个合同，即管理合同和交易合同。我们跳过尔格初步行动，所以请起步者阅读 首次币发行文章和ErgoScript教程(基础和 高级)。不过，我们将在以下句子中介绍几个新术语。如果发出的代币数量等于1，我们将其称为单例代币。类似地，包含单例代币的币箱称为单例币箱。
-管理合约控制一个单例币箱，该币箱容纳LETS系统的会员。合约允许以每笔交易一个会员的速度添加新会员。该币箱不存储会员，而是仅构建在会员目录之上的经过验证的数据结构的小摘要。会员与在交易中发出的单例代币相关联，该交易将会员添加到目录中。该交易创建一个新会员的币箱，其中包含会员的单例代币。会员的盒子受交换合同的保护。此外，新创建会员币箱的初始余额写入R4寄存器，在我们的示例中余额等于零。创建新会员的交易必须提供目录转换的正确性证明。
-管理合约币箱通常由委员会控制，委员会随着时间的推移而发展。为了支持这一点，我们允许委员会逻辑驻留在寄存器R5中。例如，假设已添加新的委员会会员以及新的LETS会员，输入管理合约币箱需要2/3个签名，输出币箱需要3/4个签名。在这种情况下，输入和输出币箱中R5寄存器的内容会有所不同。
-下面提供了尔格脚本中带有注释的管理合约代码。请注意“userContractHash”（用户合约哈希）是关于交易合约哈希。
-val selfOut = OUTPUTS(0) // 管理脚本 val managementScript = selfOut.R5[SigmaProp].get // 管理脚本模板正在自我复制，并且管理脚本已被满足 val scriptCorrect = (selfOut.propositionBytes == SELF.propositionBytes) &amp;amp;&amp;amp; managementScript // 支出交易正在为目录，用户，费用创建币箱。 val outsSizeCorrect = OUTPUTS.size == 3 // 检查管理标签代币是否正在自我复制 val outTokenCorrect = (selfOut.tokens.size == 1) &amp;amp;&amp;amp; (selfOut.tokens(0)._1 == letsToken) // 检查新代币是否发行，其数量是否正确 // OUTPUTS(0) 已经通过outtokenCorrect检查了代币 val issuedTokenId = INPUTS(0).id val userOut = OUTPUTS(1) val correctTokenAmounts = (userOut.tokens.size == 1 &amp;amp;&amp;amp; userOut.">
+      <meta name="description" content="简介 挖掘是通过执行资源密集型计算将新区块添加到尔格区块链中的过程。
+尔格挖掘基于奥托吕科斯，这是一种工作量证明算法，旨在实现ASIC和池阻。 矿工必须执行内存计算困难〜（至少需要2 GB内存，但当前最有效的执行是使用4-8 GB内存），这使得尔格对图形处理器挖掘更加友好。 此外，奥托吕科斯需要访问私钥，从而防止挖掘池的形成。一旦找到正确的解决方案，矿工就会与解决方案一起播报该区块，并且能够在使用他在挖掘期间使用的秘密延迟720个区块之后收集区块奖励。 网络的其余部分使用矿工的公钥验证解决方案，这种验证可以非常有效地完成，需要不到一千字节的内存。
+如何挖尔格 尔格挖掘需要一个配置和同步的尔格节点和至少一个图形处理器来执行实际的工作量证明计算。如果您愿意，可以使用多个图形处理器（增加散列功率），但只需要一个尔格节点。
+配置完整节点 要配置完整节点，请查看本手册。 要支持外部矿工（我们将使用的），您应该在配置文件中进行以下设置：
+ergo.node.mining = trueergo.node.useExternalMiner = true  如果您已有私钥/公钥对，则可以在节点配置中指定公钥或地址：
+ergo.node.miningPubKeyHex = &amp;quot;11aa ... FF&amp;quot;  如果此参数不存在，则节点将使用内置钱包中的第一个公钥来形成外部矿工的区块。
+一旦节点与网络同步，您就可以开始挖掘了。
+配置矿工 ！！！警告！！！由于Autolykos使用私钥，因此不应使用不受信任的挖掘软件。检查该软件是否为开放源代码并由社区验证
+从可用列表中安装您的矿工软件：
+ CUDA矿工(仅限Nvidia GPU)  矿工配置文件如下所示：
+{ &amp;quot;seed&amp;quot;: &amp;quot;注意！！！ 将此替换为您的助记句并保密，否则您将被抢劫&amp;quot;, &amp;quot;node&amp;quot;: &amp;quot;http://188.166.89.71:9052&amp;quot;,&amp;quot;keepPrehash&amp;quot;: false }  在此处：
+ seed（种子）是来自节点配置的助记符句子或助记符句子，它允许计算配置中指定的miningPubKeyHex的私钥。 node（节点）是节点API的URL。 keepPrehash（保存预哈希）是一个优化参数。如果设置为true，则矿工将消耗最多8GB的内存。如果设置为false，则矿工将消耗最多4GB的内存，但其性能将降低约25％。  使用命令./auto.out config.json（对于Linux）运行您的矿工，享受接收区块奖励的快乐！">
     
 
     
-    <title>尔格之上的本地交易所交易系统 | Ergo</title>
+    <title>挖矿 | Ergo</title>
 
     
     
@@ -114,12 +119,6 @@ val selfOut = OUTPUTS(0) // 管理脚本 val managementScript = selfOut.R5[Sigma
               >
                 
                   
-                    <li class="dd-language__item">
-                      <a class="dd-language__link dd-language__link--white eg-link" href="https://ergoplatform.org/en/blog/2019_04_22-lets/"><span>Eng</span></a>
-                    </li>
-                  
-                
-                  
                 
               </ul>
             </div>
@@ -138,124 +137,74 @@ val selfOut = OUTPUTS(0) // 管理脚本 val managementScript = selfOut.R5[Sigma
         <a href="https://ergoplatform.org/cn/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>回到所有帖子</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
-        <h1 class="eg-title eg-mb-1">尔格之上的本地交易所交易系统</h1>
+        <h1 class="eg-title eg-mb-1">挖矿</h1>
         <div class="eg-author">
-          <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img">
+          <img src="/img/authors/dmitry_meshkov.svg" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
-            <h4 class="eg-author__info-title">Alex Chepurnoy</h4>
-            <p class="eg-author__info-paragraph">2019.04.22</p>
+            <h4 class="eg-author__info-title">Dmitry Meshkov</h4>
+            <p class="eg-author__info-paragraph">2019.04.03</p>
           </div>
         </div>
         <div class="eg-blog__single-img">
-          <img src="/img/blog/lets-example_opt.jpg" alt="blog photo">
+          <img src="/img/blog/mining_how.jpg" alt="blog photo">
         </div>
         <div class="eg-blog__single-content">
           <div>
-            <p>本地交易所交易系统（LETS）是一个本地相互信用协会，允许成员单独创建共同信用资金，系统中的所有交易都写入共同的分类账。例如，假设拥有零余额的Alice愿意从Bob购买一升生鲜奶。首先，他们就价格达成一致，例如，假设价格约为2欧元（Alice和Bob居住在爱尔兰）。交易被写入分类账后，Alice的余额变为-2（减去2）欧元，Bob的余额变为2欧元。然后Bob可能会花费2欧元来购买Charlie的自制啤酒。通常，这种制度对负余额施加限制，有时甚至对正余额施加限制，以促进社区交易。</p>
+            
 
-<p>从历史上看，这种系统在危机时期变得流行起来。第一个系统是迈克尔林顿于1981年在加拿大陷入萧条时的城镇建立的。1998-2002年阿根廷大萧条期间，当地的交易所交易系统非常受欢迎。大多数LETS团体的成员从50到250人不等，由核心委员会维护纸质信用票据和分类账。然而，基于纸张的LETS货币已经出现了一些问题，例如伪造票据，系统管理员可能的流氓行为等等。因此，基于区块链的LETS可能优于旧系统。有关LETS的更多信息可以在<a href="http://feasta.org/documents/moneyecology/chaptertwo.htm">“货币生态”(The Ecology of Money”)一书(作者RichardDouthwaite)</a>
-<a href="https://en.wikipedia.org/wiki/Local_exchange_trading_system">和维基百科</a>中找到。</p>
+<h2 id="简介">简介</h2>
 
-<p>在本文中，我们将展示如何在尔格之上实现LETS。据我们所知，这是区块链上首次执行这种社区货币。我们的参考执行很简单，包括两个合同，即管理合同和交易合同。我们跳过尔格初步行动，所以请起步者阅读
-<a href="https://github.com/ergoplatform/ergo/wiki/An-ICO-Example-On-Top-Of-Ergo">首次币发行文章</a>和ErgoScript教程(<a href="https://docs.ergoplatform.com/ErgoScript.pdf">基础</a>和
-<a href="https://docs.ergoplatform.com/sigmastate_protocols.pdf">高级</a>)。不过，我们将在以下句子中介绍几个新术语。如果发出的代币数量等于1，我们将其称为单例代币。类似地，包含单例代币的币箱称为单例币箱。</p>
+<p>挖掘是通过执行资源密集型计算将新区块添加到尔格区块链中的过程。</p>
 
-<p>管理合约控制一个单例币箱，该币箱容纳LETS系统的会员。合约允许以每笔交易一个会员的速度添加新会员。该币箱不存储会员，而是仅构建在会员目录之上的经过验证的数据结构的小摘要。会员与在交易中发出的单例代币相关联，该交易将会员添加到目录中。该交易创建一个新会员的币箱，其中包含会员的单例代币。会员的盒子受交换合同的保护。此外，新创建会员币箱的初始余额写入R4寄存器，在我们的示例中余额等于零。创建新会员的交易必须提供目录转换的正确性证明。</p>
+<p>尔格挖掘基于<a href="https://docs.ergoplatform.com/ErgoPow.pdf">奥托吕科斯</a>，这是一种工作量证明算法，旨在实现ASIC和池阻。 矿工必须执行内存计算困难〜（至少需要2 GB内存，但当前最有效的执行是使用4-8 GB内存），这使得尔格对图形处理器挖掘更加友好。 此外，奥托吕科斯需要访问私钥，从而防止挖掘池的形成。一旦找到正确的解决方案，矿工就会与解决方案一起播报该区块，并且能够在使用他在挖掘期间使用的秘密延迟720个区块之后收集区块奖励。 网络的其余部分使用矿工的公钥验证解决方案，这种验证可以非常有效地完成，需要不到一千字节的内存。</p>
 
-<p>管理合约币箱通常由委员会控制，委员会随着时间的推移而发展。为了支持这一点，我们允许委员会逻辑驻留在寄存器R5中。例如，假设已添加新的委员会会员以及新的LETS会员，输入管理合约币箱需要2/3个签名，输出币箱需要3/4个签名。在这种情况下，输入和输出币箱中R5寄存器的内容会有所不同。</p>
+<h2 id="如何挖尔格">如何挖尔格</h2>
 
-<p>下面提供了尔格脚本中带有注释的管理合约代码。请注意“userContractHash”（用户合约哈希）是关于交易合约哈希。</p>
+<p>尔格挖掘需要一个配置和同步的尔格节点和至少一个图形处理器来执行实际的工作量证明计算。如果您愿意，可以使用多个图形处理器（增加散列功率），但只需要一个尔格节点。</p>
 
-<pre><code class="language-scala">    val selfOut = OUTPUTS(0)
- 
-    // 管理脚本
-    val managementScript = selfOut.R5[SigmaProp].get
- 
-    // 管理脚本模板正在自我复制，并且管理脚本已被满足
-    val scriptCorrect = (selfOut.propositionBytes == SELF.propositionBytes) &amp;&amp; managementScript
- 
-    // 支出交易正在为目录，用户，费用创建币箱。
-    val outsSizeCorrect = OUTPUTS.size == 3
- 
-    // 检查管理标签代币是否正在自我复制
-    val outTokenCorrect = (selfOut.tokens.size == 1) &amp;&amp; (selfOut.tokens(0)._1 == letsToken)
- 
-    // 检查新代币是否发行，其数量是否正确
-    // OUTPUTS(0) 已经通过outtokenCorrect检查了代币
-    val issuedTokenId = INPUTS(0).id
-    val userOut = OUTPUTS(1)
-    val correctTokenAmounts =
-      (userOut.tokens.size == 1 &amp;&amp;
-        userOut.tokens(0)._1 == issuedTokenId &amp;&amp;
-        userOut.tokens(0)._2 == 1 &amp;&amp;
-        OUTPUTS(2).tokens.size == 0 &amp;&amp;
-        outTokenCorrect)
- 
-    // 检查是否已使用零余额创建新用户
-    val zeroUserBalance  = userOut.R4[Long].get == 0
- 
-    val properUserScript = blake2b256(userOut.propositionBytes) == userContractHash
- 
-    // 检查新代币标识符是否已添加到目录中
-    val selfTree = SELF.R4[AvlTree].get
-    val toAdd: Coll[(Coll[Byte], Coll[Byte])] = Coll((issuedTokenId, Coll[Byte]()))
-    val proof = getVar[Coll[Byte]](1).get
-    val modifiedTree = selfTree.insert(toAdd, proof).get
-    val expectedTree = selfOut.R4[AvlTree].get
-    val treeCorrect = modifiedTree == expectedTree
- 
-    correctTokenAmounts &amp;&amp; scriptCorrect &amp;&amp; treeCorrect &amp;&amp; zeroUserBalance &amp;&amp; properUserScript       
-    correctTokenAmounts &amp;&amp; scriptCorrect &amp;&amp; treeCorrect &amp;&amp; zeroUserBalance &amp;&amp; properUserScript correctTokenAmounts &amp;&amp; scriptCorrect &amp;&amp; treeCorrect &amp;&amp; zeroUserBalance &amp;&amp; properUserScript      
+<h2 id="配置完整节点">配置完整节点</h2>
+
+<p>要配置完整节点，请查看本<a href="https://ergoplatform.org/cn/blog/2019_03_17_how_to_set/">手册</a>。 要支持外部矿工（我们将使用的），您应该在配置文件中进行以下设置：</p>
+
+<pre><code class="language-sh">ergo.node.mining = trueergo.node.useExternalMiner = true
 </code></pre>
 
-<p>交易合约脚本非常简单，下面提供了描述其逻辑的注释。 在合约中，假设交易合约币箱的支出交易正在接收至少两个输入，并且前两个输入应受交易合约脚本保护并包含LETS成员代币。 要检查输入中的单例会员标记是否确实属于LETS系统，开销交易会将管理合约币箱作为第一个只读数据输入，并且还应提供会员标记确实属于经过验证的目录的证据。 通过管理合约币箱的R4注册。 脚本中的“letsToken”是关于管理币箱的单例代币。</p>
+<p>如果您已有私钥/公钥对，则可以在节点配置中指定公钥或地址：</p>
 
-<pre><code class="language-scala">  // LETS交易者允许的最小余额
-  val minBalance = -20000
-
-  val lookupProof = getVar[Coll[Byte]](1).get
-
-  // 包含LETS会员目录的只读币箱
-  val treeHolderBox = CONTEXT.dataInputs(0)
-  val properLetsToken = treeHolderBox.tokens(0)._1 == letsToken
-  val membersTree = treeHolderBox.R4[AvlTree].get
-
-  // 支出交易需要愿意交易的LETS会员的两个币箱，
-  // 并返回修改余额的币箱。
-  val participant0 = INPUTS(0)
-  val participant1 = INPUTS(1)
-  val participantOut0 = OUTPUTS(0)
-  val participantOut1 = OUTPUTS(1)
-
-  //检查成员是否确实属于LETS
-  val token0 = participant0.tokens(0)._1
-  val token1 = participant1.tokens(0)._1
-  val memberTokens = Coll(token0, token1)
-  val membersExist = membersTree.getMany(memberTokens, lookupProof).forall({ (o: Option[Coll[Byte]]) =&gt; o.isDefined })
-
-  // 检查交易期间LETS会员余额的变化是否正确
-  val initialBalance0 = participant0.R4[Long].get
-  val initialBalance1 = participant1.R4[Long].get
-  val finishBalance0  = participantOut0.R4[Long].get
-  val finishBalance1  = participantOut1.R4[Long].get
-  val diff0 = finishBalance0 - initialBalance0
-  val diff1 = finishBalance1 - initialBalance1
-  val diffCorrect = diff0 == -diff1
-  val balancesCorrect = (finishBalance0 &gt; minBalance) &amp;&amp; (finishBalance1 &gt; minBalance) &amp;&amp; diffCorrect
-
-  // 检查会员币箱是否保存了脚本。
-  // todo：可以在这里进行优化
-  val script0Saved = participantOut0.propositionBytes == participant0.propositionBytes
-  val script1Saved = participantOut1.propositionBytes == participant1.propositionBytes
-  val scriptsSaved = script0Saved &amp;&amp; script1Saved
-
-  // 会员特定的币箱保护
-  val selfPubKey = SELF.R5[SigmaProp].get
-
-  selfPubKey &amp;&amp; properLetsToken &amp;&amp; membersExist &amp;&amp; diffCorrect &amp;&amp; scriptsSaved
+<pre><code class="language-sh">ergo.node.miningPubKeyHex = &quot;11aa ... FF&quot;
 </code></pre>
 
-<p>请注意，可以通过多种方式修改这两个合约，以获得具有不同属性的新系统。 所以希望有一天这篇文章会有后续！</p>
+<p>如果此参数不存在，则节点将使用内置钱包中的第一个公钥来形成外部矿工的区块。</p>
+
+<p>一旦节点与网络同步，您就可以开始挖掘了。</p>
+
+<h2 id="配置矿工">配置矿工</h2>
+
+<p>！！！警告！！！由于Autolykos使用私钥，因此不应使用不受信任的挖掘软件。检查该软件是否为开放源代码并由社区验证</p>
+
+<p>从可用列表中安装您的矿工软件：</p>
+
+<ul>
+<li><a href="https://github.com/ergoplatform/cuda-miner">CUDA矿工(仅限Nvidia GPU)</a></li>
+</ul>
+
+<p>矿工配置文件如下所示：</p>
+
+<pre><code class="language-sh">{
+  &quot;seed&quot;: &quot;注意！！！ 将此替换为您的助记句并保密，否则您将被抢劫&quot;, 
+  &quot;node&quot;: &quot;http://188.166.89.71:9052&quot;,&quot;keepPrehash&quot;: false
+}
+</code></pre>
+
+<p>在此处：</p>
+
+<ul>
+<li><strong>seed</strong>（种子）是来自节点配置的助记符句子或助记符句子，它允许计算配置中指定的miningPubKeyHex的私钥。</li>
+<li><strong>node</strong>（节点）是节点API的URL。</li>
+<li><strong>keepPrehash</strong>（保存预哈希）是一个优化参数。如果设置为true，则矿工将消耗最多8GB的内存。如果设置为false，则矿工将消耗最多4GB的内存，但其性能将降低约25％。</li>
+</ul>
+
+<p>使用命令<code>./auto.out config.json</code>（对于Linux）运行您的矿工，享受接收区块奖励的快乐！</p>
 
           </div>
         </div>
@@ -263,7 +212,7 @@ val selfOut = OUTPUTS(0) // 管理脚本 val managementScript = selfOut.R5[Sigma
   <p class="eg-text__paragraph eg-text__paragraph--26">分享转发</p>
   <ul class="eg-social">
     <li class="eg-share_item">
-      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fcn%2fblog%2f2019_04_22-lets%2f" target="_blank">
+      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fcn%2fblog%2f2019_04_03_mining%2f" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path d="M17 14.0001H25V28.4H17V14.0001Z" fill="white"/>
@@ -274,7 +223,7 @@ val selfOut = OUTPUTS(0) // 管理脚本 val managementScript = selfOut.R5[Sigma
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fcn%2fblog%2f2019_04_22-lets%2f&amp;hashtags=ergoplatform" target="_blank">
+      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fcn%2fblog%2f2019_04_03_mining%2f&amp;hashtags=ergoplatform" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path class="st0" fill-rule="evenodd" clip-rule="evenodd" d="M29 16.4204C28.4478 16.6615 27.855 16.8241 27.2323 16.8975C27.868 16.5225 28.3558 15.9287 28.5857 15.2214C27.9909 15.5684 27.3322 15.8208 26.6315 15.9565C26.0699 15.3677 25.2701 15 24.3851 15C22.6855 15 21.3076 16.3562 21.3076 18.0291C21.3076 18.2666 21.3347 18.4978 21.3873 18.7195C18.8298 18.5933 16.5616 17.3871 15.0441 15.5542C14.7792 16.0018 14.6274 16.5222 14.6274 17.0774C14.6274 18.1283 15.1706 19.0554 15.9963 19.5989C15.4921 19.5831 15.0174 19.4469 14.6024 19.22C14.6021 19.2325 14.6021 19.2452 14.6021 19.2581C14.6021 20.7258 15.6632 21.9504 17.0707 22.2285C16.8128 22.2979 16.5409 22.335 16.2599 22.335C16.0619 22.335 15.8693 22.3158 15.6812 22.2805C16.0728 23.4839 17.2097 24.36 18.5559 24.3843C17.5025 25.197 16.176 25.6812 14.734 25.6812C14.4857 25.6812 14.2408 25.6667 14 25.6384C15.3617 26.4982 16.979 27 18.7175 27C24.3777 27 27.4734 22.3837 27.4734 18.3804C27.4734 18.2494 27.4705 18.1184 27.4645 17.9883C28.0658 17.5614 28.5873 17.0281 29 16.4204Z" fill="#FF4221"/>
@@ -282,7 +231,7 @@ val selfOut = OUTPUTS(0) // 管理脚本 val managementScript = selfOut.R5[Sigma
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link copy-link" href="https://ergoplatform.org/cn/blog/2019_04_22-lets/" target="_blank">
+      <a class="eg-share__link copy-link" href="https://ergoplatform.org/cn/blog/2019_04_03_mining/" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M39.91 19.3528L34.2335 6.06338C34.1186 5.78985 33.898 5.57515 33.6227 5.46487L20.2117 0.0807171C19.9364 -0.0292029 19.6283 -0.027376 19.3547 0.089384L6.0641 5.76578C5.79022 5.8811 5.57549 6.10129 5.46522 6.37698L0.0816753 19.7881C-0.0303977 20.0656 -0.0267767 20.3716 0.0903423 20.6455L5.76643 33.9366C5.88175 34.2101 6.10231 34.4249 6.37727 34.5352L19.7883 39.919C19.9209 39.9727 20.0639 40 20.2048 40C20.3544 40 20.5043 39.971 20.647 39.909L33.9359 34.2324C34.2097 34.1171 34.4245 33.8966 34.5348 33.6216L39.9183 20.2102C40.0304 19.9327 40.0267 19.6267 39.91 19.3528Z" stroke="#FF4221"/>
@@ -372,6 +321,19 @@ Curl
               
             
               
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_04_22-lets/">
+                  <div class="eg-blog__item-img"><img src="/img/blog/lets-example_opt.jpg" height="188" width="335" alt="blog photo"></div>
+                  <h3 class="eg-blog__item-title"><span>尔格之上的本地交易所交易系统</span></h3>
+                  <p class="eg-blog__item-paragraph">本地交易所交易系统（LETS）是一个本地相互信用协会，允许成员单独创建共同信用资金，系统中的所有交易都写入共同的分类账。例如，假设拥有零余额的Alice愿意从Bob购买一升生鲜奶。首先，他们就价格达成一致，例如，假设价格约为2欧元（Alice和Bob居住在爱尔兰）。交易被写入分类账后，Alice的余额变 …</p>
+                  <div class="eg-author">
+                    <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
+                    <div class="eg-author__info">
+                      <h4 class="eg-author__info-title">Alex Chepurnoy</h4>
+                      <p class="eg-author__info-paragraph">2019.04.22</p>
+                    </div>
+                  </div>
+                </a>
+              
             
               
                 <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_04_10-ico-example/">
@@ -389,20 +351,6 @@ Curl
                 </a>
               
             
-              
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_04_03_mining/">
-                  <div class="eg-blog__item-img"><img src="/img/blog/mining_how.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>挖矿</span></h3>
-                  <p class="eg-blog__item-paragraph">简介 挖掘是通过执行资源密集型计算将新区块添加到尔格区块链中的过程。
-尔格挖掘基于奥托吕科斯，这是一种工作量证明算法，旨在实现ASIC和池阻。 矿工必须执行内存计算困难〜（至少需要2 GB内存，但当前最有效的执行是使用4-8 GB内存），这使得尔格对图形处理器挖掘更加友好。 此外，奥托吕科斯需要访问私钥，从而 …</p>
-                  <div class="eg-author">
-                    <img src="/img/authors/dmitry_meshkov.svg" alt="author img" class="eg-author__img" width="60" height="60">
-                    <div class="eg-author__info">
-                      <h4 class="eg-author__info-title">Dmitry Meshkov</h4>
-                      <p class="eg-author__info-paragraph">2019.04.03</p>
-                    </div>
-                  </div>
-                </a>
               
             
               

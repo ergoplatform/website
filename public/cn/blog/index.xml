@@ -108,6 +108,26 @@ val selfIndexIsZero = INPUTS(0).id == SELF.id val proof = getVar[Coll[Byte]](1).
     </item>
     
     <item>
+      <title>挖矿</title>
+      <link>https://ergoplatform.org/cn/blog/2019_04_03_mining/</link>
+      <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/cn/blog/2019_04_03_mining/</guid>
+      <description>简介 挖掘是通过执行资源密集型计算将新区块添加到尔格区块链中的过程。
+尔格挖掘基于奥托吕科斯，这是一种工作量证明算法，旨在实现ASIC和池阻。 矿工必须执行内存计算困难〜（至少需要2 GB内存，但当前最有效的执行是使用4-8 GB内存），这使得尔格对图形处理器挖掘更加友好。 此外，奥托吕科斯需要访问私钥，从而防止挖掘池的形成。一旦找到正确的解决方案，矿工就会与解决方案一起播报该区块，并且能够在使用他在挖掘期间使用的秘密延迟720个区块之后收集区块奖励。 网络的其余部分使用矿工的公钥验证解决方案，这种验证可以非常有效地完成，需要不到一千字节的内存。
+如何挖尔格 尔格挖掘需要一个配置和同步的尔格节点和至少一个图形处理器来执行实际的工作量证明计算。如果您愿意，可以使用多个图形处理器（增加散列功率），但只需要一个尔格节点。
+配置完整节点 要配置完整节点，请查看本手册。 要支持外部矿工（我们将使用的），您应该在配置文件中进行以下设置：
+ergo.node.mining = trueergo.node.useExternalMiner = true  如果您已有私钥/公钥对，则可以在节点配置中指定公钥或地址：
+ergo.node.miningPubKeyHex = &amp;quot;11aa ... FF&amp;quot;  如果此参数不存在，则节点将使用内置钱包中的第一个公钥来形成外部矿工的区块。
+一旦节点与网络同步，您就可以开始挖掘了。
+配置矿工 ！！！警告！！！由于Autolykos使用私钥，因此不应使用不受信任的挖掘软件。检查该软件是否为开放源代码并由社区验证
+从可用列表中安装您的矿工软件：
+ CUDA矿工(仅限Nvidia GPU)  矿工配置文件如下所示：
+{ &amp;quot;seed&amp;quot;: &amp;quot;注意！！！ 将此替换为您的助记句并保密，否则您将被抢劫&amp;quot;, &amp;quot;node&amp;quot;: &amp;quot;http://188.166.89.71:9052&amp;quot;,&amp;quot;keepPrehash&amp;quot;: false }  在此处：
+ seed（种子）是来自节点配置的助记符句子或助记符句子，它允许计算配置中指定的miningPubKeyHex的私钥。 node（节点）是节点API的URL。 keepPrehash（保存预哈希）是一个优化参数。如果设置为true，则矿工将消耗最多8GB的内存。如果设置为false，则矿工将消耗最多4GB的内存，但其性能将降低约25％。  使用命令./auto.out config.json（对于Linux）运行您的矿工，享受接收区块奖励的快乐！</description>
+    </item>
+    
+    <item>
       <title>Alex Chepurnoy 和Dmitry Meshkov的问答</title>
       <link>https://ergoplatform.org/cn/blog/2019_03_19-qa/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
@@ -131,6 +151,29 @@ val selfIndexIsZero = INPUTS(0).id == SELF.id val proof = getVar[Coll[Byte]](1).
 是否可以选择使用0值资产发送交易？ 所以代币在交易中，它的数量是0？不，那是不可能的
 是否有选择发送“广告”交易？ 交易的该费用由自定义代币支付。 它可能是使用交换示例完成的，因此您可以创建一个为尔格购买代币的合约，当发件人要发送代币时—他会卖出所需数量的代币并将剩余的代币数量转移到里面一笔交易。
 所以没有办法转移0.0000001的代币？ 尔格中的每个输出都应该包含一定量的尔格币。 交易费用可能为0，但您应该为每个创建的输出放一定数量的尔格币。</description>
+    </item>
+    
+    <item>
+      <title>如何设置和配置一个完整尔格节点</title>
+      <link>https://ergoplatform.org/cn/blog/2019_03_17_how_to_set/</link>
+      <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/cn/blog/2019_03_17_how_to_set/</guid>
+      <description>本教程介绍如何安装和配置一个尔格节点
+节点安全性 您的钱包和金钱的安全取决于节点使用的一些重要方面：
+ 尔格节点需要在配置文件中存储安全关键参数。 你永远不能公开这个文件。 尔格节点提供REST API，用于与内置钱包进行交互。 敏感API方法需要安全令牌，永远不应通过不受信任的通道发送  设置环境 要运行节点，需要安装JRE版本&amp;gt; = 8。 安装它的一种方法是使用Java的Oracle(数据库)实现。
+设置一个尔格节点 当环境准备就绪时，可以下载最新的尔格客户端版本并创建配置文件。 请注意，您可以通过发出sbt assembly命令来克隆存储库并使用SBT自己创建jar，而不是下载jar。
+默认配置文件中描述了所有配置参数。 在配置文件中，您只需要重写要从默认值更改的参数。例如，您可以检查示例配置文件以查找仅包含重要参数的最新测试网。 请注意，使用后一个文件时，必须删除或注释掉文件中的以下行：
+testMnemonic = ... testKeysQty = ...  现在让我们进行关键步骤： 、设置一个API密钥： 要配置钱包，必须首先在节点配置文件中配置apiKeyHash参数，如此处所述。 特别是，需要编辑配置文件中的以下行：
+javascript scorex.restApi.apiKeyHash = &amp;quot;replace_this_with_your_unique_api_key_hash&amp;quot; 
+该值应该是助记词的十六进制编码Blake2b256哈希值，用于验证您的API请求。 您可以使用此脚本或任何其他脚本来为此目的计算blake2b哈希。助记词可以是任意随机字符串，但请保密，不发送到任何不受信任的服务。 以下REST API端点还提供了一个（非受保护的）方法来计算：
+/utils/hashBlake2b
+初始化钱包： 此步骤需要如上所述设置API密钥。 首次运行节点时，需要通过RESTAPI初始化钱包。 有两种选择：
+ 通过向数据body的/wallet/init发出POST请求，从头开始初始化(种子将由节点生成)：body: {&amp;quot;pass&amp;quot;：&amp;quot;123&amp;quot;， &amp;quot;mnemonicPass&amp;quot;：&amp;quot;abc&amp;quot;}（注意：不要忘记保存对应节点的助记词。请求体中的参数mnemonicPass是可选的，用于保护助记词）。
+ 从现有种子恢复钱包。 使用此选项时，您必须提供助记词。 这是通过使用数据body对/wallet/restore发出POST请求来完成的：body: {&amp;quot;pass&amp;quot;：123， &amp;quot;mnemonic&amp;quot;： &amp;quot;abandonabandon ...&amp;quot;，&amp;quot;mnemonicPass&amp;quot;：&amp;quot;abc&amp;quot;}（注意： 仅当您的助记词在创建时受到其他密码的保护时，才需要mnemonicPass字段。
+  、解锁钱包： 钱包初始化后，需要通过向数据body发送/wallet/unlock的POST请求来解锁：body: {&amp;quot;pass&amp;quot;： &amp;quot;123&amp;quot;}。 （注意：使用您在初始化阶段选择的密码）
+有关钱包细节的描述见此
+运行尔格节点 要从ergo-assembly-&amp;lt;version&amp;gt;.</description>
     </item>
     
     <item>
