@@ -394,6 +394,13 @@
   </url>
   
   <url>
+    <loc>https://ergoplatform.org/cn/blog/2019_04_03_mining/</loc>
+    <lastmod>2019-04-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://ergoplatform.org/cn/news/2019-04-02-testnet-2.0.3/</loc>
     <lastmod>2019-04-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -442,6 +449,13 @@
                 hreflang="cn"
                 href="https://ergoplatform.org/cn/news/2019-03-19/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/cn/blog/2019_03_17_how_to_set/</loc>
+    <lastmod>2019-03-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>

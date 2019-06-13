@@ -127,7 +127,9 @@
               {{ with $langNews }}
                 {{ range first 3 $langNews }}
                   <div class="news-section__item">
-                    <h3 class="news-section__item-title">{{ .Date.Format "2 January, 2006" }}</h3>
+                    <h3
+                      class="news-section__item-title"
+                    >{{ if eq .Language.Lang "cn" }}{{ .Date.Format "2006.01.02" }}{{ else }}{{ .Date.Format "2 January, 2006" }}{{end}}</h3>
                     <div class="eg-mb-0-5">
                       <a class="news-section__item-paragraph eg-link"{{ if isset .Params `link`}} href="{{.Params.link}}"{{end}}>
                       {{ if isset .Params `link`}} <span> {{end}}
@@ -246,7 +248,7 @@
                     <img src="{{ .Params.authorPhoto }}" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
                       <h4 class="eg-author__info-title">{{ .Params.Author }}</h4>
-                      <p class="eg-author__info-paragraph">{{ .Date.Format "2 January, 2006" }}</p>
+                      <p class="eg-author__info-paragraph">{{ if eq .Language.Lang "cn" }}{{ .Date.Format "2006.01.02" }}{{ else }}{{ .Date.Format "2 January, 2006" }}{{end}}</p>
                     </div>
                   </div>
                   <a class="blog-section__button eg-btn eg-btn--outline-orange" href="{{ .URL | safeURL }}">{{ T "read_more" }}</a>
