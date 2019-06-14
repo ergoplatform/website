@@ -1,0 +1,29 @@
+.eg-exchanges {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0px 70px;
+
+  @media (max-width: $md) {
+    grid-gap: 0 40px;
+  }
+
+  @media (max-width: $sm) {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  a {
+    display: block;
+    border: 1px solid transparent;
+
+    img {
+      width: 100%;
+      height: 65px;
+
+      @media (max-width: $sm) {
+        width: 160px;
+        height: 40px;
+      }
+    }
+  }
+}
