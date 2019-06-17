@@ -197,7 +197,7 @@ scorex.restApi.apiKeyHash =    &quot;replace_this_with_your_unique_api_key_hash&
 
 <h3 id="初始化钱包">初始化钱包：</h3>
 
-<p>此步骤需要如上所述设置API密钥。 首次运行节点时，需要通过RESTAPI<a href="https://github.com/ergoplatform/ergo/wiki/Wallet-configuration#using-the-wallet-for-the-first-time">初始化</a>钱包。 有两种选择：</p>
+<p>此步骤需要如上所述设置API密钥。 首次运行节点时，需要通过RESTAPI<a href="https://github.com/ergoplatform/ergo/wiki/Wallet-documentation#using-the-wallet-for-the-first-time">初始化</a>钱包。 有两种选择：</p>
 
 <ul>
 <li><p>通过向数据<code>body</code>的<code>/wallet/init</code>发出POST请求，从头开始初始化(种子将由节点生成)：<code>body: {&quot;pass&quot;：&quot;123&quot;， &quot;mnemonicPass&quot;：&quot;abc&quot;}</code>（注意：不要忘记保存对应节点的助记词。请求体中的参数<code>mnemonicPass</code>是可选的，用于保护助记词）。</p></li>
@@ -207,9 +207,9 @@ scorex.restApi.apiKeyHash =    &quot;replace_this_with_your_unique_api_key_hash&
 
 <h3 id="解锁钱包">、解锁钱包：</h3>
 
-<p>钱包初始化后，需要通过向数据<code>body</code>发送<code>/wallet/unlock</code>的POST请求来<a href="https://github.com/ergoplatform/ergo/wiki/Wallet-configuration#unlocking-the-wallet">解锁</a>：<code>body: {&quot;pass&quot;： &quot;123&quot;}</code>。 （注意：使用您在初始化阶段选择的密码）</p>
+<p>钱包初始化后，需要通过向数据<code>body</code>发送<code>/wallet/unlock</code>的POST请求来<a href="https://github.com/ergoplatform/ergo/wiki/Wallet-documentation#unlocking-the-wallet">解锁</a>：<code>body: {&quot;pass&quot;： &quot;123&quot;}</code>。 （注意：使用您在初始化阶段选择的密码）</p>
 
-<p>有关钱包细节的描述<a href="https://github.com/ergoplatform/ergo/wiki/Wallet-configuration">见此</a></p>
+<p>有关钱包细节的描述<a href="https://github.com/ergoplatform/ergo/wiki/Wallet-documentation">见此</a></p>
 
 <h2 id="运行尔格节点">运行尔格节点</h2>
 
