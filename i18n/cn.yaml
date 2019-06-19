@@ -744,6 +744,9 @@
 - id: wallets_part
   translation: 部分
 
+- id: wallets_ergo_wallet-doc_link
+  translation: https://ergoplatform.opg/cn/blog/2019_06_04_wallet-documentation/
+
 #news
 
 - id: news_first_title
