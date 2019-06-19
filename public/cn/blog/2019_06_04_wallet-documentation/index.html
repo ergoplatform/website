@@ -14,8 +14,8 @@
  ergo.wallet.seedStrengthBits - 如果其由节点产生，那么需要注意种子位的长度。注意：种子越强大，那么助记符句子的长度就会越长。选择： 128, 160, 192, 224, 256 ergo.wallet.secretStorage.secretDir - 请注意将机密以加密形式存储的目录 ergo.wallet.mnemonicPhraseLanguage - ergo.wallet.mnemonicPhraseLanguage – 请注意在助记符句子中将使用的语言。选择：&amp;quot;chinese_simplified&amp;quot;, &amp;quot;chinese_traditional&amp;quot;, &amp;quot;english&amp;quot;, &amp;quot;french&amp;quot;, &amp;quot;italian&amp;quot;, &amp;quot;japanese&amp;quot;, &amp;quot;korean&amp;quot;, &amp;quot;spanish&amp;quot;（ &amp;quot;简体中文&amp;quot;、&amp;quot;繁体中文&amp;quot;、&amp;quot;英文&amp;quot;、&amp;quot;法文&amp;quot;、&amp;quot;意大利文&amp;quot;、&amp;quot;日文&amp;quot;、&amp;quot;韩文&amp;quot;、&amp;quot;西班牙文&amp;quot;）  首次使用钱包 在首次运转节点的时候，需要通过REST API对钱包进行初始化。可以有两种选择：
  通过向含有数据body: {&amp;quot;pass&amp;quot;: &amp;quot;123&amp;quot;, &amp;quot;mnemonicPass&amp;quot;: &amp;quot;abc&amp;quot;}的/wallet/init 提出POST请求，从头开始进行初始化（种子将通过节点产生）。不要忘记存储节点对应的助记符短语。（备注：请求主题中的参数 mnemonicPass 是可选项，并且可以用来保护助记符短语）。
  从现有的种子中恢复钱包。你需要提供你的助记符短语：什么时候使用这一选项。这可以通过向含有数据body: {&amp;quot;pass&amp;quot;: &amp;quot;123&amp;quot;, &amp;quot;mnemonic&amp;quot;: &amp;quot;abandon abandon ...&amp;quot;, &amp;quot;mnemonicPass&amp;quot;: &amp;quot;abc&amp;quot;}提出 POST请求得以完成。（注意：只有当你的助记符短语在创建时被其他密码保护起来，才会需要mnemonicPass 字段）。
-  钱包开锁 &amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD
-在初始化后以及每次使用钱包前需要向含有数据body: {&amp;quot;pass&amp;quot;: &amp;quot;123&amp;quot;}的/wallet/unlock 提出 POST请求来进行解锁。（备注：在初始化阶段使用你已经选定的密码） 在初始化后以及每次使用钱包前需要向含有数据body: {&amp;quot;pass&amp;quot;: &amp;quot;123&amp;quot;}的/wallet/unlock 提出 POST请求来进行解锁。（备注：在初始化阶段使用你已经选定的密码） &amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; e233ef8e9dc5d1a781db276765f7e2c6dad98f0f 在每次节点重启或者钱包上锁的情况下，你必须走这一步。尤其是为了进行下列操作，钱包必须先解锁：">
+  钱包开锁 在初始化后以及每次使用钱包前需要向含有数据body: {&amp;quot;pass&amp;quot;: &amp;quot;123&amp;quot;}的/wallet/unlock 提出 POST请求来进行解锁。（备注：在初始化阶段使用你已经选定的密码） 在每次节点重启或者钱包上锁的情况下，你必须走这一步。尤其是为了进行下列操作，钱包必须先解锁：
+ 采用内部矿工 签署交易 跟踪框  钱包上锁 一段时间后钱包会自动上锁，这意味着所有当前加载的机密都将从内存中消失。你还可以通过向含有数据的/wallet/lock提出GET 请求，使用REST API 对钱包上锁。建议你在不用的时候对钱包上锁。上锁后，你需要对钱包进行重新解锁方能再次使用。">
     
 
     
@@ -181,12 +181,7 @@
 
 <h2 id="钱包开锁">钱包开锁</h2>
 
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
-
-<h1 id="在初始化后以及每次使用钱包前需要向含有数据-body-pass-123-的-wallet-unlock-提出-post-请求来进行解锁-备注-在初始化阶段使用你已经选定的密码">在初始化后以及每次使用钱包前需要向含有数据<code>body: {&quot;pass&quot;: &quot;123&quot;}</code>的<code>/wallet/unlock</code> 提出 <code>POST</code>请求来进行解锁。（备注：在初始化阶段使用你已经选定的密码）</h1>
-
-<p>在初始化后以及每次使用钱包前需要向含有数据<code>body: {&quot;pass&quot;: &quot;123&quot;}</code>的<code>/wallet/unlock</code> 提出 POST请求来进行解锁。（备注：在初始化阶段使用你已经选定的密码）
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; e233ef8e9dc5d1a781db276765f7e2c6dad98f0f
+<p>在初始化后以及每次使用钱包前需要向含有数据<code>body: {&quot;pass&quot;: &quot;123&quot;}</code>的<code>/wallet/unlock</code> 提出 <code>POST</code>请求来进行解锁。（备注：在初始化阶段使用你已经选定的密码）
 在每次节点重启或者钱包上锁的情况下，你必须走这一步。尤其是为了进行下列操作，钱包必须先解锁：</p>
 
 <ul>
@@ -197,12 +192,7 @@
 
 <h2 id="钱包上锁">钱包上锁</h2>
 
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
-
-<h1 id="一段时间后钱包会自动上锁-这意味着所有当前加载的机密都将从内存中消失-你还可以通过向含有数据的-wallet-lock-提出-get-请求-使用rest-api-对钱包上锁-建议你在不用的时候对钱包上锁-上锁后-你需要对钱包进行重新解锁方能再次使用">一段时间后钱包会自动上锁，这意味着所有当前加载的机密都将从内存中消失。你还可以通过向含有数据的<code>/wallet/lock</code>提出<code>GET</code> 请求，使用REST API 对钱包上锁。建议你在不用的时候对钱包上锁。上锁后，你需要对钱包进行重新解锁方能再次使用。</h1>
-
-<p>一段时间后钱包会自动上锁，这意味着所有当前加载的机密都将从内存中消失。你还可以通过向含有数据的<code>/wallet/lock</code>提出GET 请求，使用REST API 对钱包上锁。建议你在不用的时候对钱包上锁。上锁后，你需要对钱包进行重新解锁方能再次使用。
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; e233ef8e9dc5d1a781db276765f7e2c6dad98f0f</p>
+<p>一段时间后钱包会自动上锁，这意味着所有当前加载的机密都将从内存中消失。你还可以通过向含有数据的<code>/wallet/lock</code>提出<code>GET</code> 请求，使用REST API 对钱包上锁。建议你在不用的时候对钱包上锁。上锁后，你需要对钱包进行重新解锁方能再次使用。</p>
 
 <h2 id="管理密钥">管理密钥</h2>
 
