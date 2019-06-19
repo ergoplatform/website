@@ -4,13 +4,13 @@ date: 2019-06-04
 draft: false
 author: "Ilya Oskin"
 authorPhoto: "/img/authors/ilya_oskin.jpg"
-blogPhoto: "/img/blog/start_ergo.jpg"
+blogPhoto: "/img/blog/wallet-documentation.jpg"
 ---
 
 尔格节点提供内置钱包以便存放私钥及签署交易。以下内容将说明如何建立与保护阁下的尔格钱包。
 
-该钱包将采用[BIP39 标准](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)从助记符句子中生出一颗种子，其将根据[BIP32 标准](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)用以创造一把私钥 （分层确定性钱包）。如果你愿意的话，你可以使用你自己的由那些词汇偏执狂常用词汇所构成的助记符[句子](https://github.com/ergoplatform/ergo-wallet/tree/master/src/main/resources/wordlist)。所允许的句子长度分别为12、15、18、21、24，分别代表128位、160位、192位、224位、256位安全。为了对这个有助记符的钱包进行初始化，你应当使用这个wallet/restore API评估指标。然而，使用钱包所产生的助记符要安全得多。
-在此阶段，与钱包的所有互动只能通过节点[REST API完成](https://github.com/ergoplatform/ergo/wiki/Ergo-REST-API#setting-an-api-key)。请确保你在进行下一步之前在你的节点上设置一把API密钥。
+该钱包将采用[BIP39 标准](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)从助记符句子中生出一颗种子，其将根据[BIP32 标准](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)用以创造一把私钥 （分层确定性钱包）。如果你愿意的话，你可以使用你自己的由那些词汇偏执狂常用词汇所构成的助记符[句子](https://github.com/ergoplatform/ergo-wallet/tree/master/src/main/resources/wordlist)。所允许的句子长度分别为12、15、18、21、24，分别代表128位、160位、192位、224位、256位安全。为了对这个有助记符的钱包进行初始化，你应当使用这个`wallet/restore`API评估指标。然而，使用钱包所产生的助记符要安全得多。
+在此阶段，与钱包的所有互动只能通过节点REST API完成。请确保你在进行下一步之前在你的节点上[设置一把API密钥](https://github.com/ergoplatform/ergo/wiki/Ergo-REST-API#setting-an-api-key)。
 
 ## 钱包格式化
 
@@ -39,7 +39,7 @@ blogPhoto: "/img/blog/start_ergo.jpg"
 
 ## 钱包上锁
 
-一段时间后钱包会自动上锁，这意味着所有当前加载的机密都将从内存中消失。你还可以通过向的/wallet/unlock提出GET 请求，使用 REST API 对钱包上锁。建议你在不用的时候对钱包上锁。上锁后，你需要对钱包进行重新解锁方能再次使用。
+一段时间后钱包会自动上锁，这意味着所有当前加载的机密都将从内存中消失。你还可以通过向含有数据的`/wallet/lock`提出GET 请求，使用REST API 对钱包上锁。建议你在不用的时候对钱包上锁。上锁后，你需要对钱包进行重新解锁方能再次使用。
 
 ## 管理密钥
 

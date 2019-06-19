@@ -8,18 +8,18 @@
     <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
 
     
-      <meta name="description" content="如今，很多与区块链相关的新闻都在告诉我们，银行X或Y公司将使用“区块链”来“降低成本”。基本上，这意味着大银行家认为另一个流行术语只是另一种以更有效的方式从某处提取价值的工具，也可以通过裁员来节省成本。
-虽然我不想对“Satoshi的愿景”说什么（他离开后只能去猜测），但我在网络论坛用户早期见证下的广泛观点是加密货币应该提供能使普通人变得富裕的工具，他们的小企业背后提供的不是生活收入，而不是非个人化的大金融资本。从最初广泛的社区愿景看来，加密货币的工具应该允许人们进行经济活动，而不依赖于业务规模，地理位置，大公司设定的利率等等。这些工具应该允许人们签订合同（没有纸质合约，而是数字化，自我执行和合理智能的合约），这取决于司法管辖区，传统，遵循商业惯例等方面的差异。
-我希望尔格在这方面发挥作用。成千上万的小型合作社和个体企业家对全球健康和可持续的财富增长更为重要，而不是几家公司在离岸天堂中牟利。
-例如，让我们考虑一个合作联盟（如Radical Routes激进路线），愿意为数千公里以外的企业家提供经济援助（例如，在Rojava）。
-我们现在需要假设一些细节。首先，假设网络中有四个合作社。他们在合约中共同锁定10,000 个尔格币（均分四等份，即每份2,500个尔格币），其中说明如下：
- 合作社与公钥pubkeyA，pubkeyB，pubkeyC，pubkeyD相关联。企业家与公钥businessKey关联。 合作社将资金锁定在受融资合约保护的硬币中，然后进行尽职调查，并就是否为企业家提供资金进行投票。所有合约基金（10,000个尔格币）都是给企业家的，如果4个中有3个投了票的话。从技术上讲，投票是通过3/4阈值签名完成的。如果在区块编号1,000之前投票不成功（没有达到3/4的签名），任何合作社（实际上，任何人）都可以提交撤销交易，这将向每个合作社返回2,500个尔格币（至少）。此外，融资合同也将被称为投票合同。 投资可以花在三个目标上，并且有一些严格的限制。也就是说，企业家必须在设备上花费至少5,000个尔格币，在建造所需建筑时至少需要2,000个尔格币，企业家可能会随意花费其他资金。 为了确保设备资金将用于设备，合作社联合会使用企业家领域中已知设备销售商的公钥。例如，考虑设备销售商在该区域中使用公钥pubkeyTool1，pubkeyTool2，pubkeyTool3，pubkeyTool4。从技术上讲，转移是作为一个设备销售商的集体签名组织的（因此来自设备销售商的环签名和企业家的签名） 类似地，假设合作联盟中有3个创建者正在识别，与公钥pubkeyConstr1，pubkeyConstr2和pubkeyConstr3相关联。 与投票合约类似，如果设备和建设合约在5000号区块之前没有共同签署，联合合作社可以撤回资金。  在尔格中定义合约的方法有很多种。 低级语言尔格树中的一个脚本描述了一个（单个）逻辑条件，关于是否可以根据它使用硬币，以及支出交易提供的支出证明。 在内部，条件表示为类型化语法树这一名称。 该结构允许我们进行提前成本分析等。名为尔格脚本的高级语言允许具有更传统和可读的描述，使用变量并将逻辑分解为子程序。
-让我们从上面（1-3）中定义的主合约开始：
-{ val spendingSuccess = (pubkeyTool1 || pubkeyTool2 || pubkeyTool3 || pubkeyTool4) &amp;amp;&amp;amp; businessKey val withdrawCondition = HEIGHT &amp;gt; 5000L &amp;amp;&amp;amp; OUTPUTS(0).value &amp;gt;= 1250L &amp;amp;&amp;amp; OUTPUTS(0).propositionBytes == pubkeyA.propBytes &amp;amp;&amp;amp; OUTPUTS(1).value &amp;gt;= 1250L &amp;amp;&amp;amp; OUTPUTS(1).propositionBytes == pubkeyB.propBytes &amp;amp;&amp;amp; OUTPUTS(2).value &amp;gt;= 1250L &amp;amp;&amp;amp; OUTPUTS(2).propositionBytes == pubkeyC.propBytes &amp;amp;&amp;amp; OUTPUTS(3).value &amp;gt;= 1250L &amp;amp;&amp;amp; OUTPUTS(3).propositionBytes == pubkeyD.">
+      <meta name="description" content="尔格节点提供内置钱包以便存放私钥及签署交易。以下内容将说明如何建立与保护阁下的尔格钱包。
+该钱包将采用BIP39 标准从助记符句子中生出一颗种子，其将根据BIP32 标准用以创造一把私钥 （分层确定性钱包）。如果你愿意的话，你可以使用你自己的由那些词汇偏执狂常用词汇所构成的助记符句子。所允许的句子长度分别为12、15、18、21、24，分别代表128位、160位、192位、224位、256位安全。为了对这个有助记符的钱包进行初始化，你应当使用这个wallet/restoreAPI评估指标。然而，使用钱包所产生的助记符要安全得多。 在此阶段，与钱包的所有互动只能通过节点REST API完成。请确保你在进行下一步之前在你的节点上设置一把API密钥。
+钱包格式化 通过节点格式化文件对钱包进行格式化。以下是在首次钱包格式化时需要注意的格式化参数：
+ ergo.wallet.seedStrengthBits - 如果其由节点产生，那么需要注意种子位的长度。注意：种子越强大，那么助记符句子的长度就会越长。选择： 128, 160, 192, 224, 256 ergo.wallet.secretStorage.secretDir - 请注意将机密以加密形式存储的目录 ergo.wallet.mnemonicPhraseLanguage - ergo.wallet.mnemonicPhraseLanguage – 请注意在助记符句子中将使用的语言。选择：&amp;quot;chinese_simplified&amp;quot;, &amp;quot;chinese_traditional&amp;quot;, &amp;quot;english&amp;quot;, &amp;quot;french&amp;quot;, &amp;quot;italian&amp;quot;, &amp;quot;japanese&amp;quot;, &amp;quot;korean&amp;quot;, &amp;quot;spanish&amp;quot;（ &amp;quot;简体中文&amp;quot;、&amp;quot;繁体中文&amp;quot;、&amp;quot;英文&amp;quot;、&amp;quot;法文&amp;quot;、&amp;quot;意大利文&amp;quot;、&amp;quot;日文&amp;quot;、&amp;quot;韩文&amp;quot;、&amp;quot;西班牙文&amp;quot;）  首次使用钱包 在首次运转节点的时候，需要通过REST API对钱包进行初始化。可以有两种选择：
+ 通过向含有数据body: {&amp;quot;pass&amp;quot;: &amp;quot;123&amp;quot;, &amp;quot;mnemonicPass&amp;quot;: &amp;quot;abc&amp;quot;}的/wallet/init 提出POST请求，从头开始进行初始化（种子将通过节点产生）。不要忘记存储节点对应的助记符短语。（备注：请求主题中的参数 mnemonicPass 是可选项，并且可以用来保护助记符短语）。
+ 从现有的种子中恢复钱包。你需要提供你的助记符短语：什么时候使用这一选项。这可以通过向含有数据body: {&amp;quot;pass&amp;quot;: &amp;quot;123&amp;quot;, &amp;quot;mnemonic&amp;quot;: &amp;quot;abandon abandon ...&amp;quot;, &amp;quot;mnemonicPass&amp;quot;: &amp;quot;abc&amp;quot;}提出 POST请求得以完成。（注意：只有当你的助记符短语在创建时被其他密码保护起来，才会需要mnemonicPass 字段）。
+  钱包开锁 在初始化后以及每次使用钱包前需要向含有数据body: {&amp;quot;pass&amp;quot;: &amp;quot;123&amp;quot;}的/wallet/unlock 提出 POST请求来进行解锁。（备注：在初始化阶段使用你已经选定的密码） 在每次节点重启或者钱包上锁的情况下，你必须走这一步。尤其是为了进行下列操作，钱包必须先解锁：
+ 采用内部矿工 签署交易 跟踪框  钱包上锁 一段时间后钱包会自动上锁，这意味着所有当前加载的机密都将从内存中消失。你还可以通过向含有数据的/wallet/lock提出GET 请求，使用REST API 对钱包上锁。建议你在不用的时候对钱包上锁。上锁后，你需要对钱包进行重新解锁方能再次使用。">
     
 
     
-    <title>为客户提供智能合约 | Ergo</title>
+    <title>钱包文件汇编 | Ergo</title>
 
     
     
@@ -115,12 +115,6 @@
               >
                 
                   
-                    <li class="dd-language__item">
-                      <a class="dd-language__link dd-language__link--white eg-link" href="https://ergoplatform.org/en/blog/2018_10_19-smart-contracts/"><span>Eng</span></a>
-                    </li>
-                  
-                
-                  
                 
               </ul>
             </div>
@@ -139,84 +133,64 @@
         <a href="https://ergoplatform.org/cn/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>回到所有帖子</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
-        <h1 class="eg-title eg-mb-1">为客户提供智能合约</h1>
+        <h1 class="eg-title eg-mb-1">钱包文件汇编</h1>
         <div class="eg-author">
-          <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img">
+          <img src="/img/authors/ilya_oskin.jpg" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
-            <h4 class="eg-author__info-title">Alex Chepurnoy</h4>
-            <p class="eg-author__info-paragraph">2018.10.19</p>
+            <h4 class="eg-author__info-title">Ilya Oskin</h4>
+            <p class="eg-author__info-paragraph">2019.06.04</p>
           </div>
         </div>
         <div class="eg-blog__single-img">
-          <img src="/img/blog/getting_startet.svg" alt="blog photo">
+          <img src="/img/blog/wallet-documentation.jpg" alt="blog photo">
         </div>
         <div class="eg-blog__single-content">
           <div>
-            <p>如今，很多与区块链相关的新闻都在告诉我们，银行X或Y公司将使用“区块链”来“降低成本”。基本上，这意味着大银行家认为另一个流行术语只是另一种以更有效的方式从某处提取价值的工具，也可以通过裁员来节省成本。</p>
+            
 
-<p>虽然我不想对“Satoshi的愿景”说什么（他离开后只能去猜测），但我在网络论坛用户早期见证下的广泛观点是加密货币应该提供能使普通人变得富裕的工具，他们的小企业背后提供的不是生活收入，而不是非个人化的大金融资本。从最初广泛的社区愿景看来，加密货币的工具应该允许人们进行经济活动，而不依赖于业务规模，地理位置，大公司设定的利率等等。这些工具应该允许人们签订合同（没有纸质合约，而是数字化，自我执行和合理智能的合约），这取决于司法管辖区，传统，遵循商业惯例等方面的差异。</p>
+<p>尔格节点提供内置钱包以便存放私钥及签署交易。以下内容将说明如何建立与保护阁下的尔格钱包。</p>
 
-<p>我希望尔格在这方面发挥作用。成千上万的小型合作社和个体企业家对全球健康和可持续的财富增长更为重要，而不是几家公司在离岸天堂中牟利。</p>
+<p>该钱包将采用<a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki">BIP39 标准</a>从助记符句子中生出一颗种子，其将根据<a href="https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki">BIP32 标准</a>用以创造一把私钥 （分层确定性钱包）。如果你愿意的话，你可以使用你自己的由那些词汇偏执狂常用词汇所构成的助记符<a href="https://github.com/ergoplatform/ergo-wallet/tree/master/src/main/resources/wordlist">句子</a>。所允许的句子长度分别为12、15、18、21、24，分别代表128位、160位、192位、224位、256位安全。为了对这个有助记符的钱包进行初始化，你应当使用这个<code>wallet/restore</code>API评估指标。然而，使用钱包所产生的助记符要安全得多。
+在此阶段，与钱包的所有互动只能通过节点REST API完成。请确保你在进行下一步之前在你的节点上<a href="https://github.com/ergoplatform/ergo/wiki/Ergo-REST-API#setting-an-api-key">设置一把API密钥</a>。</p>
 
-<p>例如，让我们考虑一个合作联盟（如<a href="http://www.radicalroutes.org.uk/">Radical Routes</a>激进路线），愿意为数千公里以外的企业家提供经济援助（例如，在Rojava）。</p>
+<h2 id="钱包格式化">钱包格式化</h2>
 
-<p>我们现在需要假设一些细节。首先，假设网络中有四个合作社。他们在合约中共同锁定10,000 个尔格币（均分四等份，即每份2,500个尔格币），其中说明如下：</p>
+<p>通过节点格式化文件对钱包进行格式化。以下是在首次钱包格式化时需要注意的格式化参数：</p>
 
-<ol>
-<li>合作社与公钥pubkeyA，pubkeyB，pubkeyC，pubkeyD相关联。企业家与公钥businessKey关联。</li>
-<li>合作社将资金锁定在受融资合约保护的硬币中，然后进行尽职调查，并就是否为企业家提供资金进行投票。所有合约基金（10,000个尔格币）都是给企业家的，如果4个中有3个投了票的话。从技术上讲，投票是通过3/4阈值签名完成的。如果在区块编号1,000之前投票不成功（没有达到3/4的签名），任何合作社（实际上，任何人）都可以提交撤销交易，这将向每个合作社返回2,500个尔格币（至少）。此外，融资合同也将被称为投票合同。</li>
-<li>投资可以花在三个目标上，并且有一些严格的限制。也就是说，企业家必须在设备上花费至少5,000个尔格币，在建造所需建筑时至少需要2,000个尔格币，企业家可能会随意花费其他资金。</li>
-<li>为了确保设备资金将用于设备，合作社联合会使用企业家领域中已知设备销售商的公钥。例如，考虑设备销售商在该区域中使用公钥pubkeyTool1，pubkeyTool2，pubkeyTool3，pubkeyTool4。从技术上讲，转移是作为一个设备销售商的集体签名组织的（因此来自设备销售商的环签名和企业家的签名）</li>
-<li>类似地，假设合作联盟中有3个创建者正在识别，与公钥pubkeyConstr1，pubkeyConstr2和pubkeyConstr3相关联。</li>
-<li>与投票合约类似，如果设备和建设合约在5000号区块之前没有共同签署，联合合作社可以撤回资金。</li>
-</ol>
+<ul>
+<li><code>ergo.wallet.seedStrengthBits</code> - 如果其由节点产生，那么需要注意种子位的长度。注意：种子越强大，那么助记符句子的长度就会越长。选择： <code>128, 160, 192, 224, 256</code></li>
+<li><code>ergo.wallet.secretStorage.secretDir</code> - 请注意将机密以加密形式存储的目录</li>
+<li><code>ergo.wallet.mnemonicPhraseLanguage</code> - ergo.wallet.mnemonicPhraseLanguage – 请注意在助记符句子中将使用的语言。选择：<code>&quot;chinese_simplified&quot;, &quot;chinese_traditional&quot;, &quot;english&quot;, &quot;french&quot;, &quot;italian&quot;, &quot;japanese&quot;, &quot;korean&quot;, &quot;spanish&quot;（ &quot;简体中文&quot;、&quot;繁体中文&quot;、&quot;英文&quot;、&quot;法文&quot;、&quot;意大利文&quot;、&quot;日文&quot;、&quot;韩文&quot;、&quot;西班牙文&quot;）</code></li>
+</ul>
 
-<p>在尔格中定义合约的方法有很多种。 低级语言尔格树中的一个脚本描述了一个（单个）逻辑条件，关于是否可以根据它使用硬币，以及支出交易提供的支出证明。 在内部，条件表示为类型化语法树这一名称。 该结构允许我们进行提前成本分析等。名为尔格脚本的高级语言允许具有更传统和可读的描述，使用变量并将逻辑分解为子程序。</p>
+<h2 id="首次使用钱包">首次使用钱包</h2>
 
-<p>让我们从上面（1-3）中定义的主合约开始：</p>
-
-<pre><code class="language-scala">{
- val spendingSuccess = (pubkeyTool1 || pubkeyTool2 || pubkeyTool3 || pubkeyTool4) &amp;&amp; businessKey
-
- val withdrawCondition = HEIGHT &gt; 5000L &amp;&amp;
-                         OUTPUTS(0).value &gt;= 1250L &amp;&amp; OUTPUTS(0).propositionBytes == pubkeyA.propBytes &amp;&amp;
-                         OUTPUTS(1).value &gt;= 1250L &amp;&amp; OUTPUTS(1).propositionBytes == pubkeyB.propBytes &amp;&amp;
-                         OUTPUTS(2).value &gt;= 1250L &amp;&amp; OUTPUTS(2).propositionBytes == pubkeyC.propBytes &amp;&amp;
-                         OUTPUTS(3).value &gt;= 1250L &amp;&amp; OUTPUTS(3).propositionBytes == pubkeyD.propBytes 
-
- spendingSuccess || withdrawCondition
-}
-</code></pre>
-
-<p>尔格脚本中的这个脚本将通过与变量的具体值（pubkeyA，pubkeyB，pubkeyC，pubkeyD，spendContract1Hash，spendContract2Hash）绑定，编译成语法树（以序列化形式写入区块链）。 spendContract1Hash是（序列化）设备支出脚本的哈希，将在下面提供具体脚本，spendContract2Hash是一个建造支出脚本的哈希。</p>
-
-<p>设备支出脚本如下：</p>
-
-<pre><code class="language-scala">{
- val spendingSuccess = (pubkeyConstr1 || pubkeyConstr2 || pubkeyConstr3) &amp;&amp; businessKey
-
- val withdrawCondition = HEIGHT &gt; 5000L &amp;&amp;
-                         OUTPUTS(0).value &gt;= 500L &amp;&amp; OUTPUTS(0).propositionBytes == pubkeyA.propBytes &amp;&amp;
-                         OUTPUTS(1).value &gt;= 500L &amp;&amp; OUTPUTS(1).propositionBytes == pubkeyB.propBytes &amp;&amp;
-                         OUTPUTS(2).value &gt;= 500L &amp;&amp; OUTPUTS(2).propositionBytes == pubkeyC.propBytes &amp;&amp;
-                         OUTPUTS(3).value &gt;= 500L &amp;&amp; OUTPUTS(3).propositionBytes == pubkeyD.propBytes 
-
- spendingSuccess || withdrawCondition
-}
-</code></pre>
-
-<p>现在假设合作联盟创建了一个受投票合约保护的硬币。以下是企业家如何开展业务：</p>
+<p>在首次运转节点的时候，需要通过REST API对钱包进行初始化。可以有两种选择：</p>
 
 <ol>
-<li>创建一个消耗硬币并创建至少三个硬币的交易，一个与设备支出合同，另一个与建筑支出合同，第三个是创建由企业家的公钥保护的硬币。</li>
-<li>将交易发送给合作社，等待交易，并在区块链上发布阈值签名输入。</li>
-<li>考虑与设备销售商签订合同，共同签署支出交易。</li>
-<li>考虑与建筑商签订合同，共同签署支出交易。</li>
+<li><p>通过向含有数据<code>body: {&quot;pass&quot;: &quot;123&quot;, &quot;mnemonicPass&quot;: &quot;abc&quot;}</code>的<code>/wallet/init</code> 提出POST请求，从头开始进行初始化（种子将通过节点产生）。不要忘记存储节点对应的助记符短语。（备注：请求主题中的参数 <code>mnemonicPass</code> 是可选项，并且可以用来保护助记符短语）。</p></li>
+
+<li><p>从现有的种子中恢复钱包。你需要提供你的助记符短语：什么时候使用这一选项。这可以通过向含有数据<code>body: {&quot;pass&quot;: &quot;123&quot;, &quot;mnemonic&quot;: &quot;abandon abandon ...&quot;, &quot;mnemonicPass&quot;: &quot;abc&quot;}</code>提出 POST请求得以完成。（注意：只有当你的助记符短语在创建时被其他密码保护起来，才会需要<code>mnemonicPass</code> 字段）。</p></li>
 </ol>
 
-<p>企业家可以轻松逃离而不做任何业务，但不超过3,000尔格币。这可以是固定的，例如这笔钱只能在5000数量的区块之后才能消费，之前合作社可以提取这笔钱。对于设备和建筑支出，企业家正在与一些可能已经声誉良好的企业合作。这样投资者就能降低风险。</p>
+<h2 id="钱包开锁">钱包开锁</h2>
 
-<p>您可以<a href="https://github.com/ScorexFoundation/sigmastate-interpreter/blob/master/src/test/scala/sigmastate/utxo/examples/CoopExampleSpecification.scala">在线查找代码和示例交易</a>。请注意，我们有更多复杂签名方案的例子，多步合约（具有在线执行路径显示，比如比特币中的MAST，但允许循环），oracles（数据库），众筹等等。请查看我们的<a href="https://github.com/ScorexFoundation/sigmastate-interpreter/tree/master/src/test/scala/sigmastate/utxo/examples">示例库</a>。</p>
+<p>在初始化后以及每次使用钱包前需要向含有数据<code>body: {&quot;pass&quot;: &quot;123&quot;}</code>的<code>/wallet/unlock</code> 提出 POST请求来进行解锁。（备注：在初始化阶段使用你已经选定的密码）
+在每次节点重启或者钱包上锁的情况下，你必须走这一步。尤其是为了进行下列操作，钱包必须先解锁：</p>
+
+<ul>
+<li>采用内部矿工</li>
+<li>签署交易</li>
+<li>跟踪框</li>
+</ul>
+
+<h2 id="钱包上锁">钱包上锁</h2>
+
+<p>一段时间后钱包会自动上锁，这意味着所有当前加载的机密都将从内存中消失。你还可以通过向含有数据的<code>/wallet/lock</code>提出GET 请求，使用REST API 对钱包上锁。建议你在不用的时候对钱包上锁。上锁后，你需要对钱包进行重新解锁方能再次使用。</p>
+
+<h2 id="管理密钥">管理密钥</h2>
+
+<p>钱包采用BIP32 （&rdquo;分层确定性钱包&rdquo;）。在钱包进行初始化的时候，只会创建根密钥。为了产生与特定衍生路径相对应的其他密钥对（方法：POST, 请求主体： <code>{&quot;derivationPath&quot;: &quot;m/1/2&quot;}</code>） <code>/wallet/deriveKey</code>  API 路径可以使用。为了简化创建其他密钥对，可以使用a <code>/wallet/deriveNextKey</code>  API 路径 （方法：GET）。</p>
 
           </div>
         </div>
@@ -224,7 +198,7 @@
   <p class="eg-text__paragraph eg-text__paragraph--26">分享转发</p>
   <ul class="eg-social">
     <li class="eg-share_item">
-      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fcn%2fblog%2f2018_10_19-smart-contracts%2f" target="_blank">
+      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fcn%2fblog%2f2019_06_04_wallet-documentation%2f" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path d="M17 14.0001H25V28.4H17V14.0001Z" fill="white"/>
@@ -235,7 +209,7 @@
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fcn%2fblog%2f2018_10_19-smart-contracts%2f&amp;hashtags=ergoplatform" target="_blank">
+      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fcn%2fblog%2f2019_06_04_wallet-documentation%2f&amp;hashtags=ergoplatform" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path class="st0" fill-rule="evenodd" clip-rule="evenodd" d="M29 16.4204C28.4478 16.6615 27.855 16.8241 27.2323 16.8975C27.868 16.5225 28.3558 15.9287 28.5857 15.2214C27.9909 15.5684 27.3322 15.8208 26.6315 15.9565C26.0699 15.3677 25.2701 15 24.3851 15C22.6855 15 21.3076 16.3562 21.3076 18.0291C21.3076 18.2666 21.3347 18.4978 21.3873 18.7195C18.8298 18.5933 16.5616 17.3871 15.0441 15.5542C14.7792 16.0018 14.6274 16.5222 14.6274 17.0774C14.6274 18.1283 15.1706 19.0554 15.9963 19.5989C15.4921 19.5831 15.0174 19.4469 14.6024 19.22C14.6021 19.2325 14.6021 19.2452 14.6021 19.2581C14.6021 20.7258 15.6632 21.9504 17.0707 22.2285C16.8128 22.2979 16.5409 22.335 16.2599 22.335C16.0619 22.335 15.8693 22.3158 15.6812 22.2805C16.0728 23.4839 17.2097 24.36 18.5559 24.3843C17.5025 25.197 16.176 25.6812 14.734 25.6812C14.4857 25.6812 14.2408 25.6667 14 25.6384C15.3617 26.4982 16.979 27 18.7175 27C24.3777 27 27.4734 22.3837 27.4734 18.3804C27.4734 18.2494 27.4705 18.1184 27.4645 17.9883C28.0658 17.5614 28.5873 17.0281 29 16.4204Z" fill="#FF4221"/>
@@ -243,7 +217,7 @@
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link copy-link" href="https://ergoplatform.org/cn/blog/2018_10_19-smart-contracts/" target="_blank">
+      <a class="eg-share__link copy-link" href="https://ergoplatform.org/cn/blog/2019_06_04_wallet-documentation/" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M39.91 19.3528L34.2335 6.06338C34.1186 5.78985 33.898 5.57515 33.6227 5.46487L20.2117 0.0807171C19.9364 -0.0292029 19.6283 -0.027376 19.3547 0.089384L6.0641 5.76578C5.79022 5.8811 5.57549 6.10129 5.46522 6.37698L0.0816753 19.7881C-0.0303977 20.0656 -0.0267767 20.3716 0.0903423 20.6455L5.76643 33.9366C5.88175 34.2101 6.10231 34.4249 6.37727 34.5352L19.7883 39.919C19.9209 39.9727 20.0639 40 20.2048 40C20.3544 40 20.5043 39.971 20.647 39.909L33.9359 34.2324C34.2097 34.1171 34.4245 33.8966 34.5348 33.6216L39.9183 20.2102C40.0304 19.9327 40.0267 19.6267 39.91 19.3528Z" stroke="#FF4221"/>
@@ -281,20 +255,6 @@
             
             
             
-              
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_06_04_wallet-documentation/">
-                  <div class="eg-blog__item-img"><img src="/img/blog/wallet-documentation.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>钱包文件汇编</span></h3>
-                  <p class="eg-blog__item-paragraph">尔格节点提供内置钱包以便存放私钥及签署交易。以下内容将说明如何建立与保护阁下的尔格钱包。
-该钱包将采用BIP39 标准从助记符句子中生出一颗种子，其将根据BIP32 标准用以创造一把私钥 （分层确定性钱包）。如果你愿意的话，你可以使用你自己的由那些词汇偏执狂常用词汇所构成的助记符句子。所允许的句子长度分别 …</p>
-                  <div class="eg-author">
-                    <img src="/img/authors/ilya_oskin.jpg" alt="author img" class="eg-author__img" width="60" height="60">
-                    <div class="eg-author__info">
-                      <h4 class="eg-author__info-title">Ilya Oskin</h4>
-                      <p class="eg-author__info-paragraph">2019.06.04</p>
-                    </div>
-                  </div>
-                </a>
               
             
               
@@ -428,6 +388,20 @@ Curl
                 </a>
               
             
+              
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2018_10_19-smart-contracts/">
+                  <div class="eg-blog__item-img"><img src="/img/blog/getting_startet.svg" height="188" width="335" alt="blog photo"></div>
+                  <h3 class="eg-blog__item-title"><span>为客户提供智能合约</span></h3>
+                  <p class="eg-blog__item-paragraph">如今，很多与区块链相关的新闻都在告诉我们，银行X或Y公司将使用“区块链”来“降低成本”。基本上，这意味着大银行家认为另一个流行术语只是另一种以更有效的方式从某处提取价值的工具，也可以通过裁员来节省成本。
+虽然我不想对“Satoshi的愿景”说什么（他离开后只能去猜测），但我在网络论坛用户早期见证下的广泛观点是 …</p>
+                  <div class="eg-author">
+                    <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
+                    <div class="eg-author__info">
+                      <h4 class="eg-author__info-title">Alex Chepurnoy</h4>
+                      <p class="eg-author__info-paragraph">2018.10.19</p>
+                    </div>
+                  </div>
+                </a>
               
             
             </div>
