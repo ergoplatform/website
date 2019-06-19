@@ -24,7 +24,7 @@ Autolykos GPU矿工
 第3步：建立矿工 打开命令行，转到 c:\Program Files (x86)\Microsoft Visual Studio\2017\Community\vc\Auxiliary\Build\ 并运行此脚本： vcvars64.bat
 打开命令行并转到解压缩的奥托吕科斯图形处理器矿工（Autolykos GPU miner）目录，然后进入 secp256k1文件夹 并编辑 winbuild.cmd 文件，将 OPENSSL_DIR, LIBCURL_DIR 更改为OpenSSL和Curl主目录。 您可以将 CUDA_COMPUTE_ARCH 更改为所需的图形处理器代码体系结构。
 运行 winbuild.cmd 并构建你的矿工。 成功构建后，您应该能在同一目录中发现miner.exe。
-S第4步：挖掘 在挖掘之前，您必须配置您的节点，钱包和矿工 
+S第4步：挖掘 在挖掘之前，您必须配置您的节点，钱包和矿工
 同步节点后，配置并解锁钱包，您必须在 \Autolykos\secp256k1 目录中，创建挖掘配置文件 config.">
     
 
@@ -199,8 +199,7 @@ S第4步：挖掘 在挖掘之前，您必须配置您的节点，钱包和矿�
 
 <h2 id="s第4步-挖掘">S第4步：挖掘</h2>
 
-<p>在挖掘之前，您必须<a href="https://ergoplatform.org/cn/blog/2019_03_17_how_to_set/">配置您的节点</a>，<a href="https://github.com/ergoplatform/ergo/wiki/Wallet-documentation">钱包</a>和<a href="https://github.com/ergoplatform/ergo/wiki/Mining">矿工
-</a></p>
+<p>在挖掘之前，您必须<a href="https://ergoplatform.org/cn/blog/2019_03_17_how_to_set/">配置您的节点</a>，<a href="https://ergoplatform.org/cn/blog/2019_06_04_wallet-documentation/">钱包</a>和<a href="https://github.com/ergoplatform/ergo/wiki/Mining">矿工</a></p>
 
 <p>同步节点后，配置并解锁钱包，您必须在 <code>\Autolykos\secp256k1</code> 目录中，创建挖掘配置文件 <code>config.json</code> ，具有以下结构： <code>{“seed”：“YourSeedString”，“node”：“https：//127.0.0.1：9052” ，“keepPrehash”：true}</code>。</p>
 
@@ -268,6 +267,22 @@ S第4步：挖掘 在挖掘之前，您必须配置您的节点，钱包和矿�
           <div class="eg-blog__main related">
             
             
+            
+              
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_06_04_wallet-documentation/">
+                  <div class="eg-blog__item-img"><img src="/img/blog/wallet-documentation.jpg" height="188" width="335" alt="blog photo"></div>
+                  <h3 class="eg-blog__item-title"><span>钱包文件汇编</span></h3>
+                  <p class="eg-blog__item-paragraph">尔格节点提供内置钱包以便存放私钥及签署交易。以下内容将说明如何建立与保护阁下的尔格钱包。
+该钱包将采用BIP39 标准从助记符句子中生出一颗种子，其将根据BIP32 标准用以创造一把私钥 （分层确定性钱包）。如果你愿意的话，你可以使用你自己的由那些词汇偏执狂常用词汇所构成的助记符句子。所允许的句子长度分别 …</p>
+                  <div class="eg-author">
+                    <img src="/img/authors/ilya_oskin.jpg" alt="author img" class="eg-author__img" width="60" height="60">
+                    <div class="eg-author__info">
+                      <h4 class="eg-author__info-title">Ilya Oskin</h4>
+                      <p class="eg-author__info-paragraph">2019.06.04</p>
+                    </div>
+                  </div>
+                </a>
+              
             
               
                 <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_05_29-exchange/">

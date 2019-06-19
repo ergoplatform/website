@@ -222,6 +222,8 @@
         @media (max-width: $sm) {
           font-size: 22px;
           line-height: 26px;
+          margin-bottom: 1rem;
+          margin-top: 1.75rem;
         }
       }
 
@@ -270,6 +272,12 @@
           margin-top: 1rem;
           margin-bottom: 1rem;
         }
+
+        @media (max-width: $sm) {
+          line-height: 22px;
+          font-size: 14px;
+          margin-bottom: 1rem;
+        }
       }
 
       code {
@@ -298,6 +306,13 @@
       ul > li {
         font-size: 18px;
         margin-bottom: 0.75rem;
+        line-height: 26px;
+
+        @media (max-width: $sm) {
+          line-height: 22px;
+          font-size: 14px;
+          margin-bottom: 0.5rem;
+        }
       }
 
       pre {
