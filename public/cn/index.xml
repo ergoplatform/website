@@ -6,10 +6,26 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
-    <lastBuildDate>Wed, 29 May 2019 18:21:23 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 04 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>钱包文件汇编</title>
+      <link>https://ergoplatform.org/cn/blog/2019_06_04_wallet-documentation/</link>
+      <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/cn/blog/2019_06_04_wallet-documentation/</guid>
+      <description>尔格节点提供内置钱包以便存放私钥及签署交易。以下内容将说明如何建立与保护阁下的尔格钱包。
+该钱包将采用BIP39 标准从助记符句子中生出一颗种子，其将根据BIP32 标准用以创造一把私钥 （分层确定性钱包）。如果你愿意的话，你可以使用你自己的由那些词汇偏执狂常用词汇所构成的助记符句子。所允许的句子长度分别为12、15、18、21、24，分别代表128位、160位、192位、224位、256位安全。为了对这个有助记符的钱包进行初始化，你应当使用这个wallet/restoreAPI评估指标。然而，使用钱包所产生的助记符要安全得多。 在此阶段，与钱包的所有互动只能通过节点REST API完成。请确保你在进行下一步之前在你的节点上设置一把API密钥。
+钱包格式化 通过节点格式化文件对钱包进行格式化。以下是在首次钱包格式化时需要注意的格式化参数：
+ ergo.wallet.seedStrengthBits - 如果其由节点产生，那么需要注意种子位的长度。注意：种子越强大，那么助记符句子的长度就会越长。选择： 128, 160, 192, 224, 256 ergo.wallet.secretStorage.secretDir - 请注意将机密以加密形式存储的目录 ergo.wallet.mnemonicPhraseLanguage - ergo.wallet.mnemonicPhraseLanguage – 请注意在助记符句子中将使用的语言。选择：&amp;quot;chinese_simplified&amp;quot;, &amp;quot;chinese_traditional&amp;quot;, &amp;quot;english&amp;quot;, &amp;quot;french&amp;quot;, &amp;quot;italian&amp;quot;, &amp;quot;japanese&amp;quot;, &amp;quot;korean&amp;quot;, &amp;quot;spanish&amp;quot;（ &amp;quot;简体中文&amp;quot;、&amp;quot;繁体中文&amp;quot;、&amp;quot;英文&amp;quot;、&amp;quot;法文&amp;quot;、&amp;quot;意大利文&amp;quot;、&amp;quot;日文&amp;quot;、&amp;quot;韩文&amp;quot;、&amp;quot;西班牙文&amp;quot;）  首次使用钱包 在首次运转节点的时候，需要通过REST API对钱包进行初始化。可以有两种选择：
+ 通过向含有数据body: {&amp;quot;pass&amp;quot;: &amp;quot;123&amp;quot;, &amp;quot;mnemonicPass&amp;quot;: &amp;quot;abc&amp;quot;}的/wallet/init 提出POST请求，从头开始进行初始化（种子将通过节点产生）。不要忘记存储节点对应的助记符短语。（备注：请求主题中的参数 mnemonicPass 是可选项，并且可以用来保护助记符短语）。
+ 从现有的种子中恢复钱包。你需要提供你的助记符短语：什么时候使用这一选项。这可以通过向含有数据body: {&amp;quot;pass&amp;quot;: &amp;quot;123&amp;quot;, &amp;quot;mnemonic&amp;quot;: &amp;quot;abandon abandon ...&amp;quot;, &amp;quot;mnemonicPass&amp;quot;: &amp;quot;abc&amp;quot;}提出 POST请求得以完成。（注意：只有当你的助记符短语在创建时被其他密码保护起来，才会需要mnemonicPass 字段）。
+  钱包开锁 在初始化后以及每次使用钱包前需要向含有数据body: {&amp;quot;pass&amp;quot;: &amp;quot;123&amp;quot;}的/wallet/unlock 提出 POST请求来进行解锁。（备注：在初始化阶段使用你已经选定的密码） 在每次节点重启或者钱包上锁的情况下，你必须走这一步。尤其是为了进行下列操作，钱包必须先解锁：
+ 采用内部矿工 签署交易 跟踪框  钱包上锁 一段时间后钱包会自动上锁，这意味着所有当前加载的机密都将从内存中消失。你还可以通过向含有数据的/wallet/lock提出GET 请求，使用REST API 对钱包上锁。建议你在不用的时候对钱包上锁。上锁后，你需要对钱包进行重新解锁方能再次使用。</description>
+    </item>
     
     <item>
       <title>一个去信任的本地交易所交易系统</title>

@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ergoplatform.org/cn/blog/2019_06_04_wallet-documentation/</loc>
+    <lastmod>2019-06-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://ergoplatform.org/cn/blog/2019_05_29-exchange/</loc>
     <lastmod>2019-05-29T18:21:23+03:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -527,7 +534,7 @@
   
   <url>
     <loc>https://ergoplatform.org/cn/</loc>
-    <lastmod>2019-05-29T18:21:23+03:00</lastmod>
+    <lastmod>2019-06-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
     <xhtml:link
