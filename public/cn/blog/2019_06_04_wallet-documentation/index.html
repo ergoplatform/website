@@ -115,6 +115,12 @@
               >
                 
                   
+                    <li class="dd-language__item">
+                      <a class="dd-language__link dd-language__link--white eg-link" href="https://ergoplatform.org/en/blog/2019_06_04_wallet-documentation/"><span>Eng</span></a>
+                    </li>
+                  
+                
+                  
                 
               </ul>
             </div>
@@ -175,7 +181,7 @@
 
 <h2 id="钱包开锁">钱包开锁</h2>
 
-<p>在初始化后以及每次使用钱包前需要向含有数据<code>body: {&quot;pass&quot;: &quot;123&quot;}</code>的<code>/wallet/unlock</code> 提出 POST请求来进行解锁。（备注：在初始化阶段使用你已经选定的密码）
+<p>在初始化后以及每次使用钱包前需要向含有数据<code>body: {&quot;pass&quot;: &quot;123&quot;}</code>的<code>/wallet/unlock</code> 提出 <code>POST</code>请求来进行解锁。（备注：在初始化阶段使用你已经选定的密码）
 在每次节点重启或者钱包上锁的情况下，你必须走这一步。尤其是为了进行下列操作，钱包必须先解锁：</p>
 
 <ul>
@@ -186,7 +192,7 @@
 
 <h2 id="钱包上锁">钱包上锁</h2>
 
-<p>一段时间后钱包会自动上锁，这意味着所有当前加载的机密都将从内存中消失。你还可以通过向含有数据的<code>/wallet/lock</code>提出GET 请求，使用REST API 对钱包上锁。建议你在不用的时候对钱包上锁。上锁后，你需要对钱包进行重新解锁方能再次使用。</p>
+<p>一段时间后钱包会自动上锁，这意味着所有当前加载的机密都将从内存中消失。你还可以通过向含有数据的<code>/wallet/lock</code>提出<code>GET</code> 请求，使用REST API 对钱包上锁。建议你在不用的时候对钱包上锁。上锁后，你需要对钱包进行重新解锁方能再次使用。</p>
 
 <h2 id="管理密钥">管理密钥</h2>
 

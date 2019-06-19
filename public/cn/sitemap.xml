@@ -7,6 +7,16 @@
     <lastmod>2019-06-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ergoplatform.org/en/blog/2019_06_04_wallet-documentation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://ergoplatform.org/cn/blog/2019_06_04_wallet-documentation/"
+                />
   </url>
   
   <url>
