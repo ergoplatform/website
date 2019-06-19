@@ -7,6 +7,7 @@
   .eg-navbar__trigger {
     & > span {
       background: 0 0 !important;
+      transition: background .3s 0.1s;
 
       &::before,
       &::after {
@@ -15,11 +16,11 @@
       }
 
       &::after {
-        transform: rotate3d(0,0,1,-45deg);
+        transform: rotate3d(0, 0, 1, -45deg);
       }
 
       &::before {
-        transform: rotate3d(0,0,1,45deg);
+        transform: rotate3d(0, 0, 1, 45deg);
       }
     }
   }
@@ -141,7 +142,7 @@
         width: 30px;
         height: 3px;
         vertical-align: bottom;
-        transition: background .3s .5s;
+        transition: background .3s .25s;
 
         &::before,
         &::after {
@@ -214,10 +215,13 @@
   .eg-navbar__language {
     height: 100%;
     margin-top: 20px;
+    width: 80px;
+    position: relative;
 
     @media (max-width: $md) {
       margin-left: auto;
       margin-top: 16px;
+      margin-right: 1.5rem;
     }
 
     @media (max-width: $sm) {
@@ -228,12 +232,14 @@
 
 .dd-language {
   display: flex;
-  position: relative;
+  position: absolute;
+  flex-direction: column;
   z-index: 100;
   padding-top: 12px;
   padding-right: 4px;
   width: 80px;
   border: 0.5px solid transparent;
+  padding-bottom: 12px;
 
   &--white {
     .dd-language__button {
@@ -269,7 +275,6 @@
     cursor: pointer;
     color: $black;
     padding: 0;
-    padding-left: 20px;
 
     &::after {
       background-image: url('../img/arrow.svg');
@@ -286,40 +291,26 @@
   &--white.show {
     border: 0.5px solid transparent;
 
-    .dd-language__menu {
-      display: flex;
-      border: 0.5px solid transparent;
-      border-top: none !important;
+    .dd-language__item_hidden {
+      display: block;
     }
   }
 
   &--black.show {
     border: 0.5px solid #DEE3F1;
-    border-bottom: none;
 
-    .dd-language__menu {
-      display: flex;
-      border: 0.5px solid #DEE3F1 !important;
-      border-top: none !important;
-      box-shadow: 0 2px 3px 0 rgba(0,0,0,0.06);
+    .dd-language__item_hidden {
+      display: block;
     }
   }
 
-  .dd-language__menu {
-    display: none;
-    position: absolute;
-    flex-direction: column;
-    padding-bottom: 12px;
-    top: 30px;
-    left: 0;
-    border: none;
-    width: 80px;
-    padding-right: 4px;
-    padding-left: 20px;
-  }
-
   .dd-language__item {
-    margin-top: 10px;
+    padding-left: 20px;
+
+    &_hidden {
+      margin-top: 10px;
+      display: none;
+    }
   }
 
   .dd-language__link {

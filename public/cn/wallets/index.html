@@ -95,28 +95,28 @@
             </ul>
           </div>
           <div class="eg-navbar__language">
-            <div class="dd-language dropdown dd-language--black">
-              <button
+            <ul
+              class="dd-language dropdown dd-language--black dropdown__menu dd-language__menu"
+              id="languageMenu"
+            >
+              <li class="dd-language__item">
+                <button
                 class="dd-language__button dd-language__button--white dropdown__button"
                 data-target-id="languageMenu"
-              >
-                中文
-              </button>
-              <ul
-                id="languageMenu"
-                class="dropdown__menu dd-language__menu"
-              >
+                >
+                  中文
+                </button>
+              </li>
+              
                 
-                  
-                    <li class="dd-language__item">
-                      <a class="dd-language__link dd-language__link--white eg-link" href="https://ergoplatform.org/en/wallets/"><span>Eng</span></a>
-                    </li>
-                  
+              
                 
-                  
+                  <li class="dd-language__item dd-language__item_hidden">
+                    <a class="dd-language__link dd-language__link--white eg-link" href="https://ergoplatform.org/en/wallets/"><span>Eng</span></a>
+                  </li>
                 
-              </ul>
-            </div>
+              
+            </ul>
           </div>
           <button class="eg-navbar__trigger eg-navbar__trigger--black" type="button" aria-expanded="false" aria-label="Toggle navigation">
             <span></span>
