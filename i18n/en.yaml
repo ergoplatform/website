@@ -427,7 +427,7 @@
   translation: Alexander Chepurnoy, Charalampos Papamanthou, Yupeng Zhang
 
 
-#tools
+# tools
 
 - id: tools_first_title
   translation: Integration tools
@@ -503,6 +503,9 @@
 
 - id: tools_third-section_link
   translation: Get support
+
+- id: tools_mining_link
+  translation: https://github.com/ergoplatform/ergo/wiki/Mining
 
 #software
 
