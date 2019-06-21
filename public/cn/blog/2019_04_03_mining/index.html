@@ -8,22 +8,22 @@
     <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
 
     
-      <meta name="description" content="简介 挖掘是通过执行资源密集型计算将新区块添加到尔格区块链中的过程。
-尔格挖掘基于奥托吕科斯，这是一种工作量证明算法，旨在实现ASIC和池阻。 矿工必须执行内存计算困难〜（至少需要2 GB内存，但当前最有效的执行是使用4-8 GB内存），这使得尔格对图形处理器挖掘更加友好。 此外，奥托吕科斯需要访问私钥，从而防止挖掘池的形成。一旦找到正确的解决方案，矿工就会与解决方案一起播报该区块，并且能够在使用他在挖掘期间使用的秘密延迟720个区块之后收集区块奖励。 网络的其余部分使用矿工的公钥验证解决方案，这种验证可以非常有效地完成，需要不到一千字节的内存。
-如何挖尔格 尔格挖掘需要一个配置和同步的尔格节点和至少一个图形处理器来执行实际的工作量证明计算。如果您愿意，可以使用多个图形处理器（增加散列功率），但只需要一个尔格节点。
-配置完整节点 要配置完整节点，请查看本手册。 要支持外部矿工（我们将使用的），您应该在配置文件中进行以下设置：
-ergo.node.mining = trueergo.node.useExternalMiner = true  如果您已有私钥/公钥对，则可以在节点配置中指定公钥或地址：
-ergo.node.miningPubKeyHex = &amp;quot;11aa ... FF&amp;quot;  如果此参数不存在，则节点将使用内置钱包中的第一个公钥来形成外部矿工的区块。
-一旦节点与网络同步，您就可以开始挖掘了。
-配置矿工 ！！！警告！！！由于Autolykos使用私钥，因此不应使用不受信任的挖掘软件。检查该软件是否为开放源代码并由社区验证
-从可用列表中安装您的矿工软件：
- CUDA矿工(仅限Nvidia GPU)  矿工配置文件如下所示：
-{ &amp;quot;seed&amp;quot;: &amp;quot;注意！！！ 将此替换为您的助记句并保密，否则您将被抢劫&amp;quot;, &amp;quot;node&amp;quot;: &amp;quot;http://188.166.89.71:9052&amp;quot;,&amp;quot;keepPrehash&amp;quot;: false }  在此处：
- seed（种子）是来自节点配置的助记符句子或助记符句子，它允许计算配置中指定的miningPubKeyHex的私钥。 node（节点）是节点API的URL。 keepPrehash（保存预哈希）是一个优化参数。如果设置为true，则矿工将消耗最多8GB的内存。如果设置为false，则矿工将消耗最多4GB的内存，但其性能将降低约25％。  使用命令./auto.out config.json（对于Linux）运行您的矿工，享受接收区块奖励的快乐！">
+      <meta name="description" content="概况介绍 挖矿，是指在Ergo区块链上进行一系列资源密集的计算来加入新区块的过程。
+Ergo挖矿基于Autolykos, 一个旨在抵抗ASIC超级矿机和矿池的工作量证明（PoW）算法。矿工们要进行内存硬计算（至少需要2GB内存，4-8GB的RAM是目前效率最高的配置）因此Ergo对于GPU挖矿十分友好。此外，Autolykos需要接入私钥，由此防止挖矿池的形成。一旦找到正确的算法，矿工即可散播他的区块（连同算法一起散播），在720个区块后拿到他相应的奖励。余下全网将用该矿工的公钥对该算法进行验证，验证的过程需要较少的内存千字节，效率相当高。
+如何进行Ergo挖矿 Ergo挖矿需要一个配置并同步过的Ergo节点，还有至少一个GPU，来完成实际的PoW计算。当然了，你可以用多个GPU倍增哈希算力，但你仅需一个Ergo节点。
+设置全节点 全节点设置可参见上一个章节（教程一：如何设置全节点）。要支持一个外部矿工，也就是我们会用到的，你的配置文件里要有以下设置：
+ergo.node.mining = true ergo.node.useExternalMiner = true  如果你已经有了私钥/公钥对，你可以在节点配置里指定公钥或地址：
+ergo.node.miningPubKeyHex = &amp;quot;11aa ... FF&amp;quot;  如果这个参数没出现，节点会采用内置钱包里第一个公钥来为外部矿工生成区块。
+只要节点同步完成，你就完成挖矿的准备工作了。
+设置矿工 警告！ ⚠️ 由于Autolykos要用到私钥，切勿切勿使用非受信任的挖矿软件。一定要检查软件是否开源，是否已被社区认可，这非常重要！
+从以下挖矿软件里安装你的软件：
+ CUDA miner (Nvidia GPU only)  挖矿配置文件如下：
+{ &amp;quot;seed&amp;quot;: &amp;quot;注意！！！ 将此替换为您的助记句并保密，否则您将被抢劫&amp;quot;, &amp;quot;node&amp;quot;: &amp;quot;http://188.166.89.71:9052&amp;quot;,&amp;quot;keepPrehash&amp;quot;: false }  定义：
+ 种子 是节点配置里的助记句，或是该设置里能为miningPubKeyHex计算私钥的助记句 节点 是您的节点API端口的URL 保留预哈希（keep Prehash）是一个优化参数。如果设定成 true, 矿工会消耗最多8GB内存。如果设定成 false 矿工会消耗最大4GB内存，但其表现也会打25%左右折扣。  现在，用矿机运行指令 ./auto.out config.json (用Linux)，尽情享受区块奖励吧！">
     
 
     
-    <title>挖矿 | Ergo</title>
+    <title>如何进行Ergo挖矿 | Ergo</title>
 
     
     
@@ -137,7 +137,7 @@ ergo.node.miningPubKeyHex = &amp;quot;11aa ... FF&amp;quot;  如果此参数不�
         <a href="https://ergoplatform.org/cn/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>回到所有帖子</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
-        <h1 class="eg-title eg-mb-1">挖矿</h1>
+        <h1 class="eg-title eg-mb-1">如何进行Ergo挖矿</h1>
         <div class="eg-author">
           <img src="/img/authors/dmitry_meshkov.svg" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
@@ -152,43 +152,44 @@ ergo.node.miningPubKeyHex = &amp;quot;11aa ... FF&amp;quot;  如果此参数不�
           <div>
             
 
-<h2 id="简介">简介</h2>
+<h2 id="概况介绍">概况介绍</h2>
 
-<p>挖掘是通过执行资源密集型计算将新区块添加到尔格区块链中的过程。</p>
+<p>挖矿，是指在Ergo区块链上进行一系列资源密集的计算来加入新区块的过程。</p>
 
-<p>尔格挖掘基于<a href="https://docs.ergoplatform.com/ErgoPow.pdf">奥托吕科斯</a>，这是一种工作量证明算法，旨在实现ASIC和池阻。 矿工必须执行内存计算困难〜（至少需要2 GB内存，但当前最有效的执行是使用4-8 GB内存），这使得尔格对图形处理器挖掘更加友好。 此外，奥托吕科斯需要访问私钥，从而防止挖掘池的形成。一旦找到正确的解决方案，矿工就会与解决方案一起播报该区块，并且能够在使用他在挖掘期间使用的秘密延迟720个区块之后收集区块奖励。 网络的其余部分使用矿工的公钥验证解决方案，这种验证可以非常有效地完成，需要不到一千字节的内存。</p>
+<p>Ergo挖矿基于<a href="https://docs.ergoplatform.com/ErgoPow.pdf">Autolykos</a>, 一个旨在抵抗ASIC超级矿机和矿池的工作量证明（PoW）算法。矿工们要进行内存硬计算（至少需要2GB内存，4-8GB的RAM是目前效率最高的配置）因此Ergo对于GPU挖矿十分友好。此外，Autolykos需要接入私钥，由此防止挖矿池的形成。一旦找到正确的算法，矿工即可散播他的区块（连同算法一起散播），在720个区块后拿到他相应的奖励。余下全网将用该矿工的公钥对该算法进行验证，验证的过程需要较少的内存千字节，效率相当高。</p>
 
-<h2 id="如何挖尔格">如何挖尔格</h2>
+<h2 id="如何进行ergo挖矿">如何进行Ergo挖矿</h2>
 
-<p>尔格挖掘需要一个配置和同步的尔格节点和至少一个图形处理器来执行实际的工作量证明计算。如果您愿意，可以使用多个图形处理器（增加散列功率），但只需要一个尔格节点。</p>
+<p>Ergo挖矿需要一个配置并同步过的Ergo节点，还有至少一个GPU，来完成实际的PoW计算。当然了，你可以用多个GPU倍增哈希算力，但你仅需一个Ergo节点。</p>
 
-<h2 id="配置完整节点">配置完整节点</h2>
+<h2 id="设置全节点">设置全节点</h2>
 
-<p>要配置完整节点，请查看本<a href="https://ergoplatform.org/cn/blog/2019_03_17_how_to_set/">手册</a>。 要支持外部矿工（我们将使用的），您应该在配置文件中进行以下设置：</p>
+<p>全节点设置可参见上一个章节（<a href="https://ergoplatform.org/cn/blog/2019_03_17_how_to_set/">教程一：如何设置全节点</a>）。要支持一个外部矿工，也就是我们会用到的，你的配置文件里要有以下设置：</p>
 
-<pre><code class="language-sh">ergo.node.mining = trueergo.node.useExternalMiner = true
+<pre><code class="language-sh">ergo.node.mining = true
+ergo.node.useExternalMiner = true
 </code></pre>
 
-<p>如果您已有私钥/公钥对，则可以在节点配置中指定公钥或地址：</p>
+<p>如果你已经有了私钥/公钥对，你可以在节点配置里指定公钥或地址：</p>
 
 <pre><code class="language-sh">ergo.node.miningPubKeyHex = &quot;11aa ... FF&quot;
 </code></pre>
 
-<p>如果此参数不存在，则节点将使用内置钱包中的第一个公钥来形成外部矿工的区块。</p>
+<p>如果这个参数没出现，节点会采用内置钱包里第一个公钥来为外部矿工生成区块。</p>
 
-<p>一旦节点与网络同步，您就可以开始挖掘了。</p>
+<p>只要节点同步完成，你就完成挖矿的准备工作了。</p>
 
-<h2 id="配置矿工">配置矿工</h2>
+<h2 id="设置矿工">设置矿工</h2>
 
-<p>！！！警告！！！由于Autolykos使用私钥，因此不应使用不受信任的挖掘软件。检查该软件是否为开放源代码并由社区验证</p>
+<p>警告！ ⚠️ 由于Autolykos要用到私钥，切勿切勿使用非受信任的挖矿软件。一定要检查软件是否开源，是否已被社区认可，这非常重要！</p>
 
-<p>从可用列表中安装您的矿工软件：</p>
+<p>从以下挖矿软件里安装你的软件：</p>
 
 <ul>
-<li><a href="https://github.com/ergoplatform/cuda-miner">CUDA矿工(仅限Nvidia GPU)</a></li>
+<li><a href="https://github.com/ergoplatform/cuda-miner">CUDA miner (Nvidia GPU only)</a></li>
 </ul>
 
-<p>矿工配置文件如下所示：</p>
+<p>挖矿配置文件如下：</p>
 
 <pre><code class="language-sh">{
   &quot;seed&quot;: &quot;注意！！！ 将此替换为您的助记句并保密，否则您将被抢劫&quot;, 
@@ -196,15 +197,15 @@ ergo.node.miningPubKeyHex = &amp;quot;11aa ... FF&amp;quot;  如果此参数不�
 }
 </code></pre>
 
-<p>在此处：</p>
+<p>定义：</p>
 
 <ul>
-<li><strong>seed</strong>（种子）是来自节点配置的助记符句子或助记符句子，它允许计算配置中指定的miningPubKeyHex的私钥。</li>
-<li><strong>node</strong>（节点）是节点API的URL。</li>
-<li><strong>keepPrehash</strong>（保存预哈希）是一个优化参数。如果设置为true，则矿工将消耗最多8GB的内存。如果设置为false，则矿工将消耗最多4GB的内存，但其性能将降低约25％。</li>
+<li>种子 是节点配置里的助记句，或是该设置里能为miningPubKeyHex计算私钥的助记句</li>
+<li>节点 是您的节点API端口的URL</li>
+<li>保留预哈希（keep Prehash）是一个优化参数。如果设定成 true, 矿工会消耗最多8GB内存。如果设定成 false 矿工会消耗最大4GB内存，但其表现也会打25%左右折扣。</li>
 </ul>
 
-<p>使用命令<code>./auto.out config.json</code>（对于Linux）运行您的矿工，享受接收区块奖励的快乐！</p>
+<p>现在，用矿机运行指令 <code>./auto.out config.json (用Linux)</code>，尽情享受区块奖励吧！</p>
 
           </div>
         </div>
@@ -388,10 +389,9 @@ Curl
               
                 <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_03_17_how_to_set/">
                   <div class="eg-blog__item-img"><img src="/img/blog/start_ergo.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>如何设置和配置一个完整尔格节点</span></h3>
-                  <p class="eg-blog__item-paragraph">本教程介绍如何安装和配置一个尔格节点
-节点安全性 您的钱包和金钱的安全取决于节点使用的一些重要方面：
- 尔格节点需要在配置文件中存储安全关键参数。 你永远不能公开这个文件。 尔格节点提供REST API，用于与内置钱包进行交互。 敏感API方法需要安全令牌，永远不应通过不受信任的通道发送  设置环境 要运行节 …</p>
+                  <h3 class="eg-blog__item-title"><span>如何创建跟设置Ergo全节点</span></h3>
+                  <p class="eg-blog__item-paragraph">节点安全性 为保证您的钱包和资产的安全，请格外注意以下几个节点使用中的注意事项：
+ Ergo节点要求在设置文件中存储一定的关键安全参数，因此，切勿泄露您的设置文件。 Ergo节点已为内置钱包的交互提供了REST API（变现层状态转移编程接口）。灵敏API手段需要安全的通证，切勿采取非信任的渠道发送通证。   …</p>
                   <div class="eg-author">
                     <img src="/img/authors/ilya_oskin.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
