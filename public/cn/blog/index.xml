@@ -124,23 +124,23 @@ val selfIndexIsZero = INPUTS(0).id == SELF.id val proof = getVar[Coll[Byte]](1).
     </item>
     
     <item>
-      <title>挖矿</title>
+      <title>如何进行Ergo挖矿</title>
       <link>https://ergoplatform.org/cn/blog/2019_04_03_mining/</link>
       <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://ergoplatform.org/cn/blog/2019_04_03_mining/</guid>
-      <description>简介 挖掘是通过执行资源密集型计算将新区块添加到尔格区块链中的过程。
-尔格挖掘基于奥托吕科斯，这是一种工作量证明算法，旨在实现ASIC和池阻。 矿工必须执行内存计算困难〜（至少需要2 GB内存，但当前最有效的执行是使用4-8 GB内存），这使得尔格对图形处理器挖掘更加友好。 此外，奥托吕科斯需要访问私钥，从而防止挖掘池的形成。一旦找到正确的解决方案，矿工就会与解决方案一起播报该区块，并且能够在使用他在挖掘期间使用的秘密延迟720个区块之后收集区块奖励。 网络的其余部分使用矿工的公钥验证解决方案，这种验证可以非常有效地完成，需要不到一千字节的内存。
-如何挖尔格 尔格挖掘需要一个配置和同步的尔格节点和至少一个图形处理器来执行实际的工作量证明计算。如果您愿意，可以使用多个图形处理器（增加散列功率），但只需要一个尔格节点。
-配置完整节点 要配置完整节点，请查看本手册。 要支持外部矿工（我们将使用的），您应该在配置文件中进行以下设置：
-ergo.node.mining = trueergo.node.useExternalMiner = true  如果您已有私钥/公钥对，则可以在节点配置中指定公钥或地址：
-ergo.node.miningPubKeyHex = &amp;quot;11aa ... FF&amp;quot;  如果此参数不存在，则节点将使用内置钱包中的第一个公钥来形成外部矿工的区块。
-一旦节点与网络同步，您就可以开始挖掘了。
-配置矿工 ！！！警告！！！由于Autolykos使用私钥，因此不应使用不受信任的挖掘软件。检查该软件是否为开放源代码并由社区验证
-从可用列表中安装您的矿工软件：
- CUDA矿工(仅限Nvidia GPU)  矿工配置文件如下所示：
-{ &amp;quot;seed&amp;quot;: &amp;quot;注意！！！ 将此替换为您的助记句并保密，否则您将被抢劫&amp;quot;, &amp;quot;node&amp;quot;: &amp;quot;http://188.166.89.71:9052&amp;quot;,&amp;quot;keepPrehash&amp;quot;: false }  在此处：
- seed（种子）是来自节点配置的助记符句子或助记符句子，它允许计算配置中指定的miningPubKeyHex的私钥。 node（节点）是节点API的URL。 keepPrehash（保存预哈希）是一个优化参数。如果设置为true，则矿工将消耗最多8GB的内存。如果设置为false，则矿工将消耗最多4GB的内存，但其性能将降低约25％。  使用命令./auto.out config.json（对于Linux）运行您的矿工，享受接收区块奖励的快乐！</description>
+      <description>概况介绍 挖矿，是指在Ergo区块链上进行一系列资源密集的计算来加入新区块的过程。
+Ergo挖矿基于Autolykos, 一个旨在抵抗ASIC超级矿机和矿池的工作量证明（PoW）算法。矿工们要进行内存硬计算（至少需要2GB内存，4-8GB的RAM是目前效率最高的配置）因此Ergo对于GPU挖矿十分友好。此外，Autolykos需要接入私钥，由此防止挖矿池的形成。一旦找到正确的算法，矿工即可散播他的区块（连同算法一起散播），在720个区块后拿到他相应的奖励。余下全网将用该矿工的公钥对该算法进行验证，验证的过程需要较少的内存千字节，效率相当高。
+如何进行Ergo挖矿 Ergo挖矿需要一个配置并同步过的Ergo节点，还有至少一个GPU，来完成实际的PoW计算。当然了，你可以用多个GPU倍增哈希算力，但你仅需一个Ergo节点。
+设置全节点 全节点设置可参见上一个章节（教程一：如何设置全节点）。要支持一个外部矿工，也就是我们会用到的，你的配置文件里要有以下设置：
+ergo.node.mining = true ergo.node.useExternalMiner = true  如果你已经有了私钥/公钥对，你可以在节点配置里指定公钥或地址：
+ergo.node.miningPubKeyHex = &amp;quot;11aa ... FF&amp;quot;  如果这个参数没出现，节点会采用内置钱包里第一个公钥来为外部矿工生成区块。
+只要节点同步完成，你就完成挖矿的准备工作了。
+设置矿工 警告！ ⚠️ 由于Autolykos要用到私钥，切勿切勿使用非受信任的挖矿软件。一定要检查软件是否开源，是否已被社区认可，这非常重要！
+从以下挖矿软件里安装你的软件：
+ CUDA miner (Nvidia GPU only)  挖矿配置文件如下：
+{ &amp;quot;seed&amp;quot;: &amp;quot;注意！！！ 将此替换为您的助记句并保密，否则您将被抢劫&amp;quot;, &amp;quot;node&amp;quot;: &amp;quot;http://188.166.89.71:9052&amp;quot;,&amp;quot;keepPrehash&amp;quot;: false }  定义：
+ 种子 是节点配置里的助记句，或是该设置里能为miningPubKeyHex计算私钥的助记句 节点 是您的节点API端口的URL 保留预哈希（keep Prehash）是一个优化参数。如果设定成 true, 矿工会消耗最多8GB内存。如果设定成 false 矿工会消耗最大4GB内存，但其表现也会打25%左右折扣。  现在，用矿机运行指令 ./auto.out config.json (用Linux)，尽情享受区块奖励吧！</description>
     </item>
     
     <item>
@@ -170,26 +170,26 @@ ergo.node.miningPubKeyHex = &amp;quot;11aa ... FF&amp;quot;  如果此参数不�
     </item>
     
     <item>
-      <title>如何设置和配置一个完整尔格节点</title>
+      <title>如何创建跟设置Ergo全节点</title>
       <link>https://ergoplatform.org/cn/blog/2019_03_17_how_to_set/</link>
       <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://ergoplatform.org/cn/blog/2019_03_17_how_to_set/</guid>
-      <description>本教程介绍如何安装和配置一个尔格节点
-节点安全性 您的钱包和金钱的安全取决于节点使用的一些重要方面：
- 尔格节点需要在配置文件中存储安全关键参数。 你永远不能公开这个文件。 尔格节点提供REST API，用于与内置钱包进行交互。 敏感API方法需要安全令牌，永远不应通过不受信任的通道发送  设置环境 要运行节点，需要安装JRE版本&amp;gt; = 8。 安装它的一种方法是使用Java的Oracle(数据库)实现。
-设置一个尔格节点 当环境准备就绪时，可以下载最新的尔格客户端版本并创建配置文件。 请注意，您可以通过发出sbt assembly命令来克隆存储库并使用SBT自己创建jar，而不是下载jar。
-默认配置文件中描述了所有配置参数。 在配置文件中，您只需要重写要从默认值更改的参数。例如，您可以检查示例配置文件以查找仅包含重要参数的最新测试网。 请注意，使用后一个文件时，必须删除或注释掉文件中的以下行：
-testMnemonic = ... testKeysQty = ...  现在让我们进行关键步骤： 、设置一个API密钥： 要配置钱包，必须首先在节点配置文件中配置apiKeyHash参数，如此处所述。 特别是，需要编辑配置文件中的以下行：
+      <description>节点安全性 为保证您的钱包和资产的安全，请格外注意以下几个节点使用中的注意事项：
+ Ergo节点要求在设置文件中存储一定的关键安全参数，因此，切勿泄露您的设置文件。 Ergo节点已为内置钱包的交互提供了REST API（变现层状态转移编程接口）。灵敏API手段需要安全的通证，切勿采取非信任的渠道发送通证。  节点环境设置 您需要安装至少JRE 8.0 版本来运行Ergo节点。安装方法之一是通过Oracle执行的Java。
+设置Ergo节点 当运行环境设置完备，您就可以下载最新版的Ergo客户端（Ergo client release）创建一个设置文件了。至于jar包，不需要单独下载，您只需要用SBT通过sbt assembly指令来克隆一份资源库，就可创建您自己的jar包
+所有的设置参数都可以在默认设置文件（(default configuration file](https://github.com/ergoplatform/ergo/blob/master/src/main/resources/reference.conf)）中找到。在您的设置文件基础上，您只需重写您在默认值基础上想要进行改动的参数即可。比如，在该设置文件样本（[sampleconfiguration file](https://github.com/ergoplatform/ergo/blob/master/src/main/resources/nodeTestnet/application.conf)）中您可以查看最新的测试网，里面只包含了一些重要的参数。请注意，在这个样本文件中，您必须去除以下几行指令：
+testMnemonic = ... testKeysQty = ...  现在，我们来运行下面几个重要步骤： 、设置一个API密钥： 设置API端口密钥。要想设置钱包，您需要先通过节点设置文件来设置apiKeyHash参数，参见此处。文件中要编辑替换：
 javascript scorex.restApi.apiKeyHash = &amp;quot;replace_this_with_your_unique_api_key_hash&amp;quot; 
-该值应该是助记词的十六进制编码Blake2b256哈希值，用于验证您的API请求。 您可以使用此脚本或任何其他脚本来为此目的计算blake2b哈希。助记词可以是任意随机字符串，但请保密，不发送到任何不受信任的服务。 以下REST API端点还提供了一个（非受保护的）方法来计算：
+替换值是在运行您的API请求时生成的密码字符，是一串hex加密Blake2b256哈希数值。您可以使用这个脚本或任意其他脚本来计算blake2b哈希值。密码字符应该是一串随机字符，请务必保管妥善，切勿发给任何非信任方。 这个REST API终端也提供了一个（不受保护的）哈希计算办法：
 /utils/hashBlake2b
-初始化钱包： 此步骤需要如上所述设置API密钥。 首次运行节点时，需要通过RESTAPI初始化钱包。 有两种选择：
- 通过向数据body的/wallet/init发出POST请求，从头开始初始化(种子将由节点生成)：body: {&amp;quot;pass&amp;quot;：&amp;quot;123&amp;quot;， &amp;quot;mnemonicPass&amp;quot;：&amp;quot;abc&amp;quot;}（注意：不要忘记保存对应节点的助记词。请求体中的参数mnemonicPass是可选的，用于保护助记词）。
- 从现有种子恢复钱包。 使用此选项时，您必须提供助记词。 这是通过使用数据body对/wallet/restore发出POST请求来完成的：body: {&amp;quot;pass&amp;quot;：123， &amp;quot;mnemonic&amp;quot;： &amp;quot;abandonabandon ...&amp;quot;，&amp;quot;mnemonicPass&amp;quot;：&amp;quot;abc&amp;quot;}（注意： 仅当您的助记词在创建时受到其他密码的保护时，才需要mnemonicPass字段。
-  、解锁钱包： 钱包初始化后，需要通过向数据body发送/wallet/unlock的POST请求来解锁：body: {&amp;quot;pass&amp;quot;： &amp;quot;123&amp;quot;}。 （注意：使用您在初始化阶段选择的密码）
-有关钱包细节的描述见此
-运行尔格节点 要从ergo-assembly-&amp;lt;version&amp;gt;.</description>
+初始化钱包： 这里就用到了前一个步骤提及的API端口密钥。第一次运行节点时，需要先通过REST API对钱包进行初始化，有两个办法可以做到：
+ 从头初始化（节点会生成一个种子文件）：向/wallet/init发送一个包含数据body: {&amp;quot;pass&amp;quot;: &amp;quot;123&amp;quot;, &amp;quot;mnemonicPass&amp;quot;: &amp;quot;abc&amp;quot;}的POST请求（提示：别忘了保存下来助记词，节点响应要用到。请求中的mnemonicPass参数是可选项，它用来保护助记词）
+ 从已有种子文件恢复钱包：该方法需要您提供助记词。向/wallet/restore发送一个包含数据body: {&amp;quot;pass&amp;quot;: &amp;quot;123&amp;quot;, &amp;quot;mnemonic&amp;quot;: &amp;quot;abandon abandon ...&amp;quot;, &amp;quot;mnemonicPass&amp;quot;: “abc”}的POST请求（提示：mnemonicPass部分只有在您的助记词有额外密码保护的情况下才用得到）。
+  解锁钱包： 钱包初始化之后，向/wallet/unlock发送一个包含数据body: {&amp;quot;pass&amp;quot;: “123”}的POST请求（提示：使用您在初始阶段用的密码）
+更多关于钱包的细节描述，请查看此处。
+运行Ergo节点 用ergo-assembly-&amp;lt;version&amp;gt;.jar二进制和ergo.conf设置文件运行节点：
+$ java -jar ergo-assembly-&amp;lt;version&amp;gt;.</description>
     </item>
     
     <item>
