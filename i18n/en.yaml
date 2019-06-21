@@ -637,7 +637,7 @@
 - id: team_researcher
   translation: Researcher at researchinstitute.io
 
-#faq
+# faq
 
 - id: faq_first_title
   translation: FAQ
