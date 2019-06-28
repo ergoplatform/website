@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Joining the Ergo main network at the very beginning</title>
+      <link>https://ergoplatform.org/en/blog/2019_06_28_mainnet-bootstrap/</link>
+      <pubDate>Fri, 28 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2019_06_28_mainnet-bootstrap/</guid>
+      <description>Joining the Ergo main network at the very beginning In order to join the network at its very beginning and compete to mine the genesis block, you need to follow the steps described below. If you&amp;rsquo;re not going to participate in Ergo mining and just want to set up a full node, you need to follow steps 3 and 5.
+Preparations 1. Build mining software Check the https://github.com/ergoplatform/ergo/wiki/Mining guide first.</description>
+    </item>
+    
+    <item>
       <title>Wallet documentation</title>
       <link>https://ergoplatform.org/en/blog/2019_06_04_wallet-documentation/</link>
       <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
