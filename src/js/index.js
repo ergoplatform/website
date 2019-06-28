@@ -7,7 +7,7 @@ import 'prismjs/themes/prism.css';
 import { downloader } from './downloadMore';
 
 const dropDownFunc = (id) => {
-  $(`#${id}`).parent('.dropdown').toggleClass('show');
+  $(`#${id}`).closest('.dropdown').toggleClass('show');
 };
 
 const copyToClipboard = (str) => {
