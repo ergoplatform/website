@@ -4,7 +4,7 @@ date: 2019-06-28
 draft: false
 author: "Ilya Oskin"
 authorPhoto: "/img/authors/ilya_oskin.jpg"
-blogPhoto: "/img/blog/???.jpg"
+blogPhoto: "/img/blog/start_ergo_2.jpg"
 ---
 # Joining the Ergo main network at the very beginning
 
