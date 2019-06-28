@@ -3,6 +3,112 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ergoplatform.org/cn/news/2019_06_14/</loc>
+    <lastmod>2019-06-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/cn/news/2019_06_13/</loc>
+    <lastmod>2019-06-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ergoplatform.org/en/news/2019_06_13/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://ergoplatform.org/cn/news/2019_06_13/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/cn/news/2019_06_13_2/</loc>
+    <lastmod>2019-06-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ergoplatform.org/en/news/2019_06_13_2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://ergoplatform.org/cn/news/2019_06_13_2/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/cn/news/2019_06_12/</loc>
+    <lastmod>2019-06-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ergoplatform.org/en/news/2019_06_12/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://ergoplatform.org/cn/news/2019_06_12/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/cn/news/2019_06_11/</loc>
+    <lastmod>2019-06-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ergoplatform.org/en/news/2019_06_11/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://ergoplatform.org/cn/news/2019_06_11/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/cn/news/2019_06_05/</loc>
+    <lastmod>2019-06-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ergoplatform.org/en/news/2019_06_05/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://ergoplatform.org/cn/news/2019_06_05/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/cn/news/2019_06_05_3/</loc>
+    <lastmod>2019-06-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/cn/news/2019_06_05_2/</loc>
+    <lastmod>2019-06-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://ergoplatform.org/cn/blog/2019_06_04_wallet-documentation/</loc>
     <lastmod>2019-06-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -394,6 +500,13 @@
   </url>
   
   <url>
+    <loc>https://ergoplatform.org/cn/blog/2019_04_03_mining/</loc>
+    <lastmod>2019-04-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://ergoplatform.org/cn/news/2019-04-03-ergo-mining-tutorial/</loc>
     <lastmod>2019-04-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -408,13 +521,6 @@
                 hreflang="cn"
                 href="https://ergoplatform.org/cn/news/2019-04-03-ergo-mining-tutorial/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://ergoplatform.org/cn/blog/2019_04_03_mining/</loc>
-    <lastmod>2019-04-03T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
@@ -544,7 +650,7 @@
   
   <url>
     <loc>https://ergoplatform.org/cn/</loc>
-    <lastmod>2019-06-04T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
     <xhtml:link

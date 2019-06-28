@@ -3,6 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ergoplatform.org/en/news/2019-06-27/</loc>
+    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/en/news/2019-06_26/</loc>
+    <lastmod>2019-06-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/en/news/2019-06-24/</loc>
+    <lastmod>2019-06-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://ergoplatform.org/en/news/2019_06_1/</loc>
     <lastmod>2019-06-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -14,6 +35,16 @@
     <lastmod>2019-06-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://ergoplatform.org/cn/news/2019_06_13_2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ergoplatform.org/en/news/2019_06_13_2/"
+                />
   </url>
   
   <url>
@@ -21,6 +52,16 @@
     <lastmod>2019-06-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://ergoplatform.org/cn/news/2019_06_13/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ergoplatform.org/en/news/2019_06_13/"
+                />
   </url>
   
   <url>
@@ -28,6 +69,16 @@
     <lastmod>2019-06-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://ergoplatform.org/cn/news/2019_06_12/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ergoplatform.org/en/news/2019_06_12/"
+                />
   </url>
   
   <url>
@@ -35,6 +86,16 @@
     <lastmod>2019-06-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://ergoplatform.org/cn/news/2019_06_11/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ergoplatform.org/en/news/2019_06_11/"
+                />
   </url>
   
   <url>
@@ -42,6 +103,16 @@
     <lastmod>2019-06-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://ergoplatform.org/cn/news/2019_06_05/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ergoplatform.org/en/news/2019_06_05/"
+                />
   </url>
   
   <url>
@@ -621,7 +692,7 @@
   
   <url>
     <loc>https://ergoplatform.org/en/</loc>
-    <lastmod>2019-06-14T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
     <xhtml:link
