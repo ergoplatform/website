@@ -8,18 +8,12 @@
     <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
 
     
-      <meta name="description" content="Step 1: Tools Visual Studio
-Choose free community version, you will need to select desktop development with C&#43;&#43; package during install.
-CUDA toolkit
-Choose your system version, install with default options, it will update your graphics driver to a compatible version.
-Curl
-Generic version without SSL, binary won`t work. Choose generic source, zip and click on show mirrors. Download and unpack.
-OpenSSL 1.0.2
-Download and install, select the OpenSSL binaries (/bin) directory during install.">
+      <meta name="description" content="Joining the Ergo main network at the very beginning In order to join the network at its very beginning and compete to mine the genesis block, you need to follow the steps described below. If you&amp;rsquo;re not going to participate in Ergo mining and just want to set up a full node, you need to follow steps 3 and 5.
+Preparations 1. Build mining software Check the https://github.com/ergoplatform/ergo/wiki/Mining guide first.">
     
 
     
-    <title>How to mine Ergo on Windows(x64) | Ergo</title>
+    <title>Joining the Ergo main network at the very beginning | Ergo</title>
 
     
     
@@ -117,12 +111,6 @@ Download and install, select the OpenSSL binaries (/bin) directory during instal
               
                 
               
-                
-                  <li class="dd-language__item dd-language__item_hidden">
-                    <a class="dd-language__link dd-language__link--white eg-link" href="https://ergoplatform.org/cn/blog/2019_05_07_mining/"><span>中文</span></a>
-                  </li>
-                
-              
             </ul>
           </div>
           <button class="eg-navbar__trigger eg-navbar__trigger--black" type="button" aria-expanded="false" aria-label="Toggle navigation">
@@ -139,61 +127,184 @@ Download and install, select the OpenSSL binaries (/bin) directory during instal
         <a href="https://ergoplatform.org/en/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>Back to all posts</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
-        <h1 class="eg-title eg-mb-1">How to mine Ergo on Windows(x64)</h1>
+        <h1 class="eg-title eg-mb-1">Joining the Ergo main network at the very beginning</h1>
         <div class="eg-author">
-          <img src="/img/authors/martin_spodymek.jpg" alt="author img" class="eg-author__img">
+          <img src="/img/authors/ilya_oskin.jpg" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
-            <h4 class="eg-author__info-title">Martin Spodymek</h4>
-            <p class="eg-author__info-paragraph">7 May, 2019</p>
+            <h4 class="eg-author__info-title">Ilya Oskin</h4>
+            <p class="eg-author__info-paragraph">28 June, 2019</p>
           </div>
         </div>
         <div class="eg-blog__single-img">
-          <img src="/img/blog/miner_opt.jpg" alt="blog photo">
+          <img src="/img/blog/start.jpg" alt="blog photo">
         </div>
         <div class="eg-blog__single-content">
           <div>
             
 
-<h2 id="step-1-tools">Step 1: Tools</h2>
+<h1 id="joining-the-ergo-main-network-at-the-very-beginning">Joining the Ergo main network at the very beginning</h1>
 
-<p><a href="https://visualstudio.microsoft.com/downloads/">Visual Studio</a><br />
-Choose free community version, you will need to select desktop development with C++ package during install.</p>
+<p>In order to join the network at its very beginning and compete to mine the genesis block, you need to follow the steps described below. If you&rsquo;re not going to participate in Ergo mining and just want to set up a full node, you need to follow steps 3 and 5.</p>
 
-<p><a href="https://developer.nvidia.com/cuda-downloads">CUDA toolkit</a><br />
-Choose your system version, install with default options, it will update your graphics driver to a compatible version.</p>
+<h2 id="preparations">Preparations</h2>
 
-<p><a href="https://curl.haxx.se/latest.cgi?curl=win64-nossl">Curl</a><br />
-Generic version without SSL, binary won`t work. Choose generic source, zip and click on show mirrors. Download and unpack.</p>
+<h3 id="1-build-mining-software">1. Build mining software</h3>
 
-<p><a href="https://slproweb.com/download/Win64OpenSSL-1_0_2s.exe">OpenSSL 1.0.2</a><br />
-Download and install, select the OpenSSL binaries (/bin) directory during install.</p>
+<p>Check the <a href="https://github.com/ergoplatform/ergo/wiki/Mining">https://github.com/ergoplatform/ergo/wiki/Mining</a> guide first.</p>
 
-<p><a href="https://github.com/ergoplatform/Autolykos-GPU-miner">Autolykos GPU miner</a><br />
-Click on clone or download and download zip and unpack.</p>
+<p>Build a <a href="https://github.com/ergoplatform/Autolykos-GPU-miner">https://github.com/ergoplatform/Autolykos-GPU-miner</a> miner according to its readme instruction (for Ubuntu) or using  Windows manual <a href="https://ergoplatform.org/en/blog/2019_05_07_mining">https://ergoplatform.org/en/blog/2019_05_07_mining</a>.</p>
 
-<h2 id="step-2-building-libcurl">Step 2: Building libcurl</h2>
+<p>Try to run it like <code>./auto.out config.json</code> with test config:</p>
 
-<p>Open the command line, go to <code>c:\Program Files (x86)\Microsoft Visual Studio\2017\Community\vc\Auxiliary\Build\</code> and run this script: <code>vcvarsall.bat x64</code></p>
+<pre><code>{
+  &quot;mnemonic&quot;: &quot;noise peasant subway frozen illegal pretty oak agent train valid wash title burst column yard decide move coin gas asset pretty hire happy fuel&quot;,
+  &quot;node&quot;: &quot;http://159.203.36.162:9052&quot;,
+  &quot;keepPrehash&quot;: true
+}
+</code></pre>
 
-<p>Open the command line, go to unpacked Curl directory, then cd winbuild and run this command: <code>nmake /f Makefile.vc mode=dll MACHINE=x64</code></p>
+<p>and see something like:</p>
 
-<p>After a successful build, go to Curl directory, <code>\curl\builds\libcurl-vc-x64-release-dll-ipv6-sspi-winssl\bin</code> and copy <code>libcurl.dll</code> to <code>\Autolykos\secp256k1</code> directory.</p>
+<pre><code>2019-06-27 14:44:58,626 INFO [main thread] Using 1 GPU devices
+2019-06-27 14:44:58,626 INFO [main thread] Using configuration file mine162.json
+2019-06-27 14:44:58,628 INFO [main thread] Block getting URL:
+   http://159.203.36.162:9052/mining/candidate
+2019-06-27 14:44:58,628 INFO [main thread] Solution posting URL:
+   http://159.203.36.162:9052/mining/solution
+2019-06-27 14:44:58,629 INFO [main thread] Generated public key:
+      pk = 0x03 F5214F2F6D87C714 4A2E12F8D4C4E110 1C59FF7D9AEABC11 77C4CB50FA8497E7
+2019-06-27 14:44:58,714 INFO [main thread] Got new block in main thread, block data: {
+  &quot;MSG&quot; : &quot;3637B40440681781F92EDC92B33E623330F05705446168952CBD3720BA922442&quot;,
+  &quot;B&quot; : 3462030106355215694294694818737961234095984491840283822105474632310,
+  &quot;PK&quot; : &quot;03F5214F2F6D87C7144A2E12F8D4C4E1101C59FF7D9AEABC1177C4CB50FA8497E7&quot;
+}
+2019-06-27 14:44:58,956 INFO [GPU 0 miner] GPU 0 allocating memory
+2019-06-27 14:44:58,964 INFO [GPU 0 miner] Preparing unfinalized hashes on GPU 0
+2019-06-27 14:45:13,443 INFO [GPU 0 miner] GPU 0 read new block data
+2019-06-27 14:48:02,298 INFO [main thread] Average hashrates: GPU0 24.8537 MH/s Total 24.8537 MH/s 
+</code></pre>
 
-<h2 id="step-3-building-miner">Step 3: Building miner</h2>
+<p>The above notifications show that your miner is built correctly.</p>
 
-<p>Open the command line, go to <code>c:\Program Files (x86)\Microsoft Visual Studio\2017\Community\vc\Auxiliary\Build\</code> and run this script: <code>vcvars64.bat</code></p>
+<h3 id="2-generate-mnemonic-phrase-for-mining">2. Generate mnemonic phrase for mining</h3>
 
-<p>Open command line and go to unpacked Autolykos GPU miner directory, then cd <code>secp256k1</code> and edit <code>winbuild.cmd</code> file, change <code>OPENSSL_DIR, LIBCURL_DIR</code> to your OpenSSL and Curl main directories. You can change <code>CUDA_COMPUTE_ARCH</code> to GPU code architecture you want.</p>
+<p>Run <code>./auto.out -G</code> to generate a new mnemonic phrase if you don&rsquo;t have one.</p>
 
-<p>Run <code>winbuild.cmd</code> and build your miner. After succesful build you should discover miner.exe in the same directory.</p>
+<pre><code>$ ./auto.out -G
+2019-06-28 12:08:32,915 INFO [main thread] !!!Generated new mnemonic, put it in your config.json file!!!
+job great stage urge elite purity surprise any cram matrix typical table panel honey curious enlist fault matrix
+!!!Generated new mnemonic, put it in your config.json file!!!
+2019-06-28 12:08:32,918 INFO [main thread] Generated public key:
+      pk = 0x03 61F8098779E5EC8C 2A851E3EF57C471E 9A6803F60666E93E EB0BDD67411439D0
+</code></pre>
 
-<h2 id="step-4-mining">Step 4: Mining</h2>
+<p>In the example above your generated mnemonic phrase is <code>job great stage urge elite purity surprise any cram matrix typical table panel honey curious enlist fault matrix</code> while your public key is <code>0361F8098779E5EC8C2A851E3EF57C471E9A6803F60666E93EEB0BDD67411439D0</code>.
+Save your mnemonic phrase (e.g. by writing down to a piece of paper) and keep it in secret at all times, anyone who have access to it will be able to steal your funds. Write down your public key, you will need it in the next steps.</p>
 
-<p>Before you can mine, you have to <a href="https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node">configure your node</a>, <a href="https://ergoplatform.org/en/blog/2019_06_04_wallet-documentation/">wallet</a> and <a href="https://github.com/ergoplatform/ergo/wiki/Mining">miner</a></p>
+<h3 id="3-configure-and-start-your-miner">3. Configure and start your miner</h3>
 
-<p>After your node is synced, wallet is configured and unlocked, you have to create mining configuration file <code>config.json</code> with following structure: <code>{ &quot;seed&quot; : &quot;YourSeedString&quot;, &quot;node&quot; : &quot;https://127.0.0.1:9052&quot;, &quot;keepPrehash&quot; : true }</code> in the <code>\Autolykos\secp256k1</code> directory.</p>
+<p>Create a <code>settings.json</code> config file with the following content (don&rsquo;t forget to replace sections in <code>&lt;&gt;</code> braces):</p>
 
-<p>Open the command line and go to <code>\Autolykos\secp256k1</code> directory. Run <code>miner.exe config.json</code></p>
+<pre><code>{
+  &quot;mnemonic&quot;: &quot;&lt;mnemonic generated at step 2&gt;&quot;,
+  &quot;node&quot;: &quot;http://&lt;ip address of your node&gt;:9053&quot;,
+  &quot;keepPrehash&quot;: true
+}
+</code></pre>
+
+<p>and run a miner like <code>./auto.settings config.json</code>. It should initialize and start requesting a node for the block candidate.</p>
+
+<pre><code>2019-06-27 15:14:02,267 INFO [main thread] Using 1 GPU devices
+2019-06-27 15:14:02,267 INFO [main thread] Using configuration file mainnet-conf.json
+2019-06-27 15:14:02,269 INFO [main thread] Block getting URL:
+   http://&lt;ip address of your node&gt;:9053/mining/candidate
+2019-06-27 15:14:02,269 INFO [main thread] Solution posting URL:
+   http://&lt;ip address of your node&gt;:9053/mining/solution
+2019-06-27 15:14:02,269 INFO [main thread] Generated public key:
+      pk = 0x02 F611D5F6AAB70C05 4A530C6420395B3C 4521642DC7125A93 49AAA2D9BB89D7AF
+2019-06-28 12:21:36,035 ERROR [main thread] CURL: Couldn't connect to server
+2019-06-28 12:21:36,835 INFO [main thread] Waiting for block data to be published by node...
+2019-06-28 12:21:36,876 ERROR [main thread] CURL: Couldn't connect to server
+2019-06-28 12:21:37,676 INFO [main thread] Waiting for block data to be published by node...
+2019-06-28 12:21:37,718 ERROR [main thread] CURL: Couldn't connect to server
+
+
+</code></pre>
+
+<p>No more actions are required with the miner.</p>
+
+<h3 id="4-configure-and-run-your-full-node">4. Configure and run your full node</h3>
+
+<p>Check <a href="https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node">https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node</a> guide first.</p>
+
+<p>Create a <code>settings.conf</code> config file with the following content (don&rsquo;t forget to replace sections in <code>&lt;&gt;</code> braces):</p>
+
+<pre><code>ergo {
+  node {
+    mining = true
+    miningPubKeyHex = &quot;&lt;your public key from step 2&gt;&quot;
+  }
+}
+
+scorex {
+  network {
+    nodeName = &quot;&lt;some name to identify your node&gt;&quot;
+  }
+  restApi {
+    # you may wish to configure an apiKeyHash to use your wallet. Check https://ergoplatform.org/en/blog/2019_06_04_wallet-documentation/ for wallet documentation.
+    apiKeyHash = &quot;1111&quot;
+  }
+}
+</code></pre>
+
+<p>Download the latest mainnet release from <a href="https://github.com/ergoplatform/ergo/releases/tag/v3.0.0">https://github.com/ergoplatform/ergo/releases/tag/v3.0.0</a> and run it like <code>nohup java -jar -Xmx3G -Dlogback.stdout.level=DEBUG ergo-3.0.0.jar --mainnet -c settings.conf</code> and you if you see similar to the below:</p>
+
+<pre><code>17:02:11.449 INFO  [main] o.e.settings.ErgoSettings$ - Running in mainnet network mode
+17:02:12.262 INFO  [main] org.ergoplatform.ErgoApp - Entering coordinated network bootstrap procedure ..
+17:02:12.933 INFO  [main] o.e.BootstrapController - Wrong response format, retrying in 10s
+17:02:22.933 INFO  [main] o.e.BootstrapController - Wrong response format, retrying in 10s
+</code></pre>
+
+<p>You node is already configured correctly and no more action is required with it.</p>
+
+<h3 id="5-wait-for-the-mainnet-launch">5. Wait for the mainnet launch</h3>
+
+<p>After these steps you&rsquo;re ready to participate in Ergo mining and should just wait. Your miner is waiting for block candidate from your node, while your node is waiting for the proof-of-no-premine that will be broadcasted by the Ergo Development Team according to the main network launch schedule.  The proof‐of‐no‐premine will contain headlines from the media (The Guardian, Vedomosti, Xinhua), as well as the latest block identifiers from Bitcoin and Ethereum. When the launch time comes, we&rsquo;ll distribute the no-premine proof and the mining will start.</p>
+
+<p>To ensure that your node is mining, you may check your node log. It should stop to write logs from <code>BootstrapController</code> and write <code>Boot settings received. Starting the node</code>, so the logs file will looks like:</p>
+
+<pre><code>17:21:39.417 INFO  [main] o.e.BootstrapController - Wrong response format, retrying in 10s
+17:21:49.437 INFO  [main] o.e.BootstrapController - Wrong response format, retrying in 10s
+17:21:59.500 INFO  [main] org.ergoplatform.ErgoApp - Boot settings received. Starting the node ..
+17:21:59.554 INFO  [ctor.default-dispatcher-3] s.c.n.NetworkController - Declared address: None
+17:21:59.558 INFO  [ctor.default-dispatcher-3] s.c.n.NetworkController - Registering handlers for List((1,GetPeers message), (2,Peers message))
+17:21:59.559 INFO  [ctor.default-dispatcher-3] s.c.n.NetworkController - Successfully bound to the port 9030
+17:21:59.565 INFO  [ctor.default-dispatcher-4] o.e.n.state.ErgoState$ - Generating genesis UTXO state
+17:21:59.568 INFO  [ctor.default-dispatcher-2] o.e.local.ErgoMiner - Trying to use key from wallet for mining
+17:21:59.583 INFO  [ctor.default-dispatcher-3] s.c.u.NetworkTimeProvider - New offset adjusted: 2
+17:21:59.585 WARN  [ctor.default-dispatcher-3] o.e.n.ErgoReadersHolder - Got GetReaders request in state (None,None,None,None)
+17:21:59.598 INFO  [ctor.default-dispatcher-2] s.c.n.NetworkController - Registering handlers for List((55,Inv), (22,RequestModifier), (33,Modifier), (65,Sync))
+17:21:59.729 INFO  [ctor.default-dispatcher-4] s.c.a.a.b.VersionedIODBAVLStorage - Update storage to version ByteArrayWrapper[6813BCA7232C6E156FB6229ECF165D157640A8576A5B320506E4C1B66011253402]: 14 elements to insert, 1 elements to remove
+17:21:59.846 INFO  [ctor.default-dispatcher-4] o.e.n.state.ErgoState$ - Genesis UTXO state generated with hex digest 6813bca7232c6e156fb6229ecf165d157640a8576a5b320506e4c1b66011253402
+</code></pre>
+
+<p>At the same time your miner should write you something like:</p>
+
+<pre><code>2019-06-28 12:21:36,035 ERROR [main thread] CURL: Couldn't connect to server
+2019-06-28 12:21:36,835 INFO [main thread] Waiting for block data to be published by node...
+2019-06-28 12:21:36,876 ERROR [main thread] CURL: Couldn't connect to server
+2019-06-28 12:21:37,676 INFO [main thread] Waiting for block data to be published by node...
+2019-06-27 15:26:20,328 INFO [main thread] Got new block in main thread, block data: {
+  &quot;MSG&quot; : &quot;0777078E22BB64C771DE8A8D3B1E454847A91024D98AB86949091C8019FA7453&quot;,
+  &quot;B&quot; : 964934076977634961863091541739065898773646368992290869855043026179318012,
+  &quot;PK&quot; : &quot;02F611D5F6AAB70C054A530C6420395B3C4521642DC7125A9349AAA2D9BB89D7AF&quot;
+}
+2019-06-27 14:44:58,956 INFO [GPU 0 miner] GPU 0 allocating memory
+2019-06-27 14:44:58,964 INFO [GPU 0 miner] Preparing unfinalized hashes on GPU 0
+2019-06-27 14:45:13,443 INFO [GPU 0 miner] GPU 0 read new block data
+2019-06-27 14:48:02,298 INFO [main thread] Average hashrates: GPU0 24.8537 MH/s Total 24.8537 MH/s 
+2019-06-27 15:27:11,033 INFO [GPU 0 miner] GPU 0 found and trying to POST a solution:
+</code></pre>
 
           </div>
         </div>
@@ -201,7 +312,7 @@ Click on clone or download and download zip and unpack.</p>
   <p class="eg-text__paragraph eg-text__paragraph--26">Share post</p>
   <ul class="eg-social">
     <li class="eg-share_item">
-      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_05_07_mining%2f" target="_blank">
+      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_06_28_mainnet-bootstrap%2f" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path d="M17 14.0001H25V28.4H17V14.0001Z" fill="white"/>
@@ -212,7 +323,7 @@ Click on clone or download and download zip and unpack.</p>
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_05_07_mining%2f&amp;hashtags=ergoplatform" target="_blank">
+      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_06_28_mainnet-bootstrap%2f&amp;hashtags=ergoplatform" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path class="st0" fill-rule="evenodd" clip-rule="evenodd" d="M29 16.4204C28.4478 16.6615 27.855 16.8241 27.2323 16.8975C27.868 16.5225 28.3558 15.9287 28.5857 15.2214C27.9909 15.5684 27.3322 15.8208 26.6315 15.9565C26.0699 15.3677 25.2701 15 24.3851 15C22.6855 15 21.3076 16.3562 21.3076 18.0291C21.3076 18.2666 21.3347 18.4978 21.3873 18.7195C18.8298 18.5933 16.5616 17.3871 15.0441 15.5542C14.7792 16.0018 14.6274 16.5222 14.6274 17.0774C14.6274 18.1283 15.1706 19.0554 15.9963 19.5989C15.4921 19.5831 15.0174 19.4469 14.6024 19.22C14.6021 19.2325 14.6021 19.2452 14.6021 19.2581C14.6021 20.7258 15.6632 21.9504 17.0707 22.2285C16.8128 22.2979 16.5409 22.335 16.2599 22.335C16.0619 22.335 15.8693 22.3158 15.6812 22.2805C16.0728 23.4839 17.2097 24.36 18.5559 24.3843C17.5025 25.197 16.176 25.6812 14.734 25.6812C14.4857 25.6812 14.2408 25.6667 14 25.6384C15.3617 26.4982 16.979 27 18.7175 27C24.3777 27 27.4734 22.3837 27.4734 18.3804C27.4734 18.2494 27.4705 18.1184 27.4645 17.9883C28.0658 17.5614 28.5873 17.0281 29 16.4204Z" fill="#FF4221"/>
@@ -220,7 +331,7 @@ Click on clone or download and download zip and unpack.</p>
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link copy-link" href="https://ergoplatform.org/en/blog/2019_05_07_mining/" target="_blank">
+      <a class="eg-share__link copy-link" href="https://ergoplatform.org/en/blog/2019_06_28_mainnet-bootstrap/" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M39.91 19.3528L34.2335 6.06338C34.1186 5.78985 33.898 5.57515 33.6227 5.46487L20.2117 0.0807171C19.9364 -0.0292029 19.6283 -0.027376 19.3547 0.089384L6.0641 5.76578C5.79022 5.8811 5.57549 6.10129 5.46522 6.37698L0.0816753 19.7881C-0.0303977 20.0656 -0.0267767 20.3716 0.0903423 20.6455L5.76643 33.9366C5.88175 34.2101 6.10231 34.4249 6.37727 34.5352L19.7883 39.919C19.9209 39.9727 20.0639 40 20.2048 40C20.3544 40 20.5043 39.971 20.647 39.909L33.9359 34.2324C34.2097 34.1171 34.4245 33.8966 34.5348 33.6216L39.9183 20.2102C40.0304 19.9327 40.0267 19.6267 39.91 19.3528Z" stroke="#FF4221"/>
@@ -258,19 +369,6 @@ Click on clone or download and download zip and unpack.</p>
             
             
             
-              
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_06_28_mainnet-bootstrap/">
-                  <div class="eg-blog__item-img"><img src="/img/blog/start.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>Joining the Ergo main network at the very …</span></h3>
-                  <p class="eg-blog__item-paragraph">Joining the Ergo main network at the very beginning In order to join the network at its very beginning and compete to mine the genesis block, you need to …</p>
-                  <div class="eg-author">
-                    <img src="/img/authors/ilya_oskin.jpg" alt="author img" class="eg-author__img" width="60" height="60">
-                    <div class="eg-author__info">
-                      <h4 class="eg-author__info-title">Ilya Oskin</h4>
-                      <p class="eg-author__info-paragraph">28 June, 2019</p>
-                    </div>
-                  </div>
-                </a>
               
             
               
@@ -318,6 +416,22 @@ Click on clone or download and download zip and unpack.</p>
                 </a>
               
             
+              
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_05_07_mining/">
+                  <div class="eg-blog__item-img"><img src="/img/blog/miner_opt.jpg" height="188" width="335" alt="blog photo"></div>
+                  <h3 class="eg-blog__item-title"><span>How to mine Ergo on Windows(x64)</span></h3>
+                  <p class="eg-blog__item-paragraph">Step 1: Tools Visual Studio
+Choose free community version, you will need to select desktop development with C++ package during install.
+CUDA toolkit
+Choose …</p>
+                  <div class="eg-author">
+                    <img src="/img/authors/martin_spodymek.jpg" alt="author img" class="eg-author__img" width="60" height="60">
+                    <div class="eg-author__info">
+                      <h4 class="eg-author__info-title">Martin Spodymek</h4>
+                      <p class="eg-author__info-paragraph">7 May, 2019</p>
+                    </div>
+                  </div>
+                </a>
               
             
               
