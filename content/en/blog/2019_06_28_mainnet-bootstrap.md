@@ -14,12 +14,12 @@ In order to join the network at its very beginning and compete to mine the genes
 
 ### 1. Build mining software 
 
-Check the https://github.com/ergoplatform/ergo/wiki/Mining guide first.
+Check the [guide](https://github.com/ergoplatform/ergo/wiki/Mining) first.
 
-Build a https://github.com/ergoplatform/Autolykos-GPU-miner miner according to its readme instruction (for Ubuntu) or using  Windows manual https://ergoplatform.org/en/blog/2019_05_07_mining.
+Build a [miner](https://github.com/ergoplatform/Autolykos-GPU-miner) according to its readme instruction (for Ubuntu) or using  [Windows manual](https://ergoplatform.org/en/blog/2019_05_07_mining).
 
 Try to run it like `./auto.out config.json` with test config:
-```
+```scala
 {
   "mnemonic": "noise peasant subway frozen illegal pretty oak agent train valid wash title burst column yard decide move coin gas asset pretty hire happy fuel",
   "node": "http://159.203.36.162:9052",
@@ -27,7 +27,7 @@ Try to run it like `./auto.out config.json` with test config:
 }
 ```
 and see something like:
-```
+```scala
 2019-06-27 14:44:58,626 INFO [main thread] Using 1 GPU devices
 2019-06-27 14:44:58,626 INFO [main thread] Using configuration file mine162.json
 2019-06-27 14:44:58,628 INFO [main thread] Block getting URL:
@@ -52,7 +52,7 @@ The above notifications show that your miner is built correctly.
 
 Run `./auto.out -G` to generate a new mnemonic phrase if you don't have one. 
 
-```
+```scala
 $ ./auto.out -G
 2019-06-28 12:08:32,915 INFO [main thread] !!!Generated new mnemonic, put it in your config.json file!!!
 job great stage urge elite purity surprise any cram matrix typical table panel honey curious enlist fault matrix
@@ -67,7 +67,7 @@ Save your mnemonic phrase (e.g. by writing down to a piece of paper) and keep it
 ### 3. Configure and start your miner
 
 Create a `settings.json` config file with the following content (don't forget to replace sections in `<>` braces):
-```
+```scala
 {
   "mnemonic": "<mnemonic generated at step 2>",
   "node": "http://<ip address of your node>:9053",
@@ -76,7 +76,7 @@ Create a `settings.json` config file with the following content (don't forget to
 ```
 
 and run a miner like `./auto.out settings.json`. It should initialize and start requesting a node for the block candidate. 
-```
+```scala
 2019-06-27 15:14:02,267 INFO [main thread] Using 1 GPU devices
 2019-06-27 15:14:02,267 INFO [main thread] Using configuration file mainnet-conf.json
 2019-06-27 15:14:02,269 INFO [main thread] Block getting URL:
@@ -90,8 +90,6 @@ and run a miner like `./auto.out settings.json`. It should initialize and start 
 2019-06-28 12:21:36,876 ERROR [main thread] CURL: Couldn't connect to server
 2019-06-28 12:21:37,676 INFO [main thread] Waiting for block data to be published by node...
 2019-06-28 12:21:37,718 ERROR [main thread] CURL: Couldn't connect to server
-
-
 ```
 
 No more actions are required with the miner.
@@ -99,10 +97,10 @@ No more actions are required with the miner.
 
 ### 4. Configure and run your full node
 
-Check https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node guide first.
+Check [guide](https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node) first.
 
 Create a `settings.conf` config file with the following content (don't forget to replace sections in `<>` braces):
-```
+```scala
 ergo {
   node {
     mining = true
@@ -121,8 +119,8 @@ scorex {
 }
 ```
 
-Download the latest mainnet release from https://github.com/ergoplatform/ergo/releases/tag/v3.0.0 and run it like `nohup java -jar -Xmx3G -Dlogback.stdout.level=DEBUG ergo-3.0.0.jar --mainnet -c settings.conf` and you if you see similar to the below:
-```
+Download the latest mainnet release from [here](https://github.com/ergoplatform/ergo/releases/tag/v3.0.0) and run it like `nohup java -jar -Xmx3G -Dlogback.stdout.level=DEBUG ergo-3.0.0.jar --mainnet -c settings.conf` and you if you see similar to the below:
+```scala
 17:02:11.449 INFO  [main] o.e.settings.ErgoSettings$ - Running in mainnet network mode
 17:02:12.262 INFO  [main] org.ergoplatform.ErgoApp - Entering coordinated network bootstrap procedure ..
 17:02:12.933 INFO  [main] o.e.BootstrapController - Wrong response format, retrying in 10s
@@ -136,7 +134,7 @@ You node is already configured correctly and no more action is required with it.
 After these steps you're ready to participate in Ergo mining and should just wait. Your miner is waiting for block candidate from your node, while your node is waiting for the proof-of-no-premine that will be broadcasted by the Ergo Development Team according to the main network launch schedule.  The proof‐of‐no‐premine will contain headlines from the media (The Guardian, Vedomosti, Xinhua), as well as the latest block identifiers from Bitcoin and Ethereum. When the launch time comes, we'll distribute the no-premine proof and the mining will start.
 
 To ensure that your node is mining, you may check your node log. It should stop to write logs from `BootstrapController` and write `Boot settings received. Starting the node`, so the logs file will looks like:
-```
+```scala
 17:21:39.417 INFO  [main] o.e.BootstrapController - Wrong response format, retrying in 10s
 17:21:49.437 INFO  [main] o.e.BootstrapController - Wrong response format, retrying in 10s
 17:21:59.500 INFO  [main] org.ergoplatform.ErgoApp - Boot settings received. Starting the node ..
@@ -152,7 +150,7 @@ To ensure that your node is mining, you may check your node log. It should stop 
 17:21:59.846 INFO  [ctor.default-dispatcher-4] o.e.n.state.ErgoState$ - Genesis UTXO state generated with hex digest 6813bca7232c6e156fb6229ecf165d157640a8576a5b320506e4c1b66011253402
 ```
 At the same time your miner should write you something like:
-```
+```scala
 2019-06-28 12:21:36,035 ERROR [main thread] CURL: Couldn't connect to server
 2019-06-28 12:21:36,835 INFO [main thread] Waiting for block data to be published by node...
 2019-06-28 12:21:36,876 ERROR [main thread] CURL: Couldn't connect to server
