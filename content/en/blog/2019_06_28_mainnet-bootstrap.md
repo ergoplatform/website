@@ -75,7 +75,7 @@ Create a `settings.json` config file with the following content (don't forget to
 }
 ```
 
-and run a miner like `./auto.settings config.json`. It should initialize and start requesting a node for the block candidate. 
+and run a miner like `./auto.out settings.json`. It should initialize and start requesting a node for the block candidate. 
 ```
 2019-06-27 15:14:02,267 INFO [main thread] Using 1 GPU devices
 2019-06-27 15:14:02,267 INFO [main thread] Using configuration file mainnet-conf.json
