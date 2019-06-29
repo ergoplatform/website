@@ -21,6 +21,18 @@
     </item>
     
     <item>
+      <title>自启动伊始加入尔格主网</title>
+      <link>https://ergoplatform.org/cn/blog/2019_06_28_mainnet-bootstrap/</link>
+      <pubDate>Fri, 28 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/cn/blog/2019_06_28_mainnet-bootstrap/</guid>
+      <description>自启动伊始加入尔格主网 为了在启动伊始加入尔格主网并且竞相开采创世区块，你需要按照以下步骤进行操作。如果你不打算参与尔格挖矿，而只是想建一个全节点，那么你只需进行步骤3和步骤5的操作。
+准备工作 1. 安装采矿软件 请先查阅https://github.com/ergoplatform/ergo/wiki/Mining的说明. 根据其（有关Ubuntu的）阅读说明或使用Windows手册https://ergoplatform.org/en/blog/2019_05_07_mining，搭建一个https://github.com/ergoplatform/Autolykos-GPU-miner矿机。 尝试运行诸如含有测试格式化的./auto.out config.json:
+{ &amp;quot;mnemonic&amp;quot;: &amp;quot;noise peasant subway frozen illegal pretty oak agent train valid wash title burst column yard decide move coin gas asset pretty hire happy fuel&amp;quot;, &amp;quot;node&amp;quot;: &amp;quot;http://159.203.36.162:9052&amp;quot;, &amp;quot;keepPrehash&amp;quot;: true }  并且查看诸如以下内容：
+2019-06-27 14:44:58,626 INFO [main thread] Using 1 GPU devices 2019-06-27 14:44:58,626 INFO [main thread] Using configuration file mine162.json 2019-06-27 14:44:58,628 INFO [main thread] Block getting URL: http://159.203.36.162:9052/mining/candidate 2019-06-27 14:44:58,628 INFO [main thread] Solution posting URL: http://159.</description>
+    </item>
+    
+    <item>
       <title>发布“测试网2.2.0版(Testnet 2.2.0)”</title>
       <link>https://ergoplatform.org/cn/news/2019_06_27/</link>
       <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
