@@ -110,6 +110,9 @@ ergo {
     mining = true
     miningPubKeyHex = "<your public key from step 2>"
   }
+  chain {
+    initialDifficultyHex="011765000000"
+  }
 }
 
 scorex {
