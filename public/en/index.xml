@@ -6,10 +6,28 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 28 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ergo Mainnet 3.0.1 released</title>
+      <link>https://ergoplatform.org/en/news/2019_07_01_2/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2019_07_01_2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ergo explorer released</title>
+      <link>https://ergoplatform.org/en/news/2019_07_01/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2019_07_01/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Ergo will be listed on P2PB2B exchange</title>
