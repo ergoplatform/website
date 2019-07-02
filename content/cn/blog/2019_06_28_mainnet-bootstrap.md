@@ -126,7 +126,7 @@ scorex {
 }
 ```
 
-从[https://github.com/ergoplatform/ergo/releases/tag/v3.0.0](https://github.com/ergoplatform/ergo/releases/tag/v3.0.0)下载最新的主网发布，并且像`nohup java -jar -Xmx3G -Dlogback.stdout.level=DEBUG ergo-3.0.0.jar --mainnet -c settings.conf`那样运行，并且如果你看到类似以下内容：
+从[https://github.com/ergoplatform/ergo/releases/tag/v3.0.1](https://github.com/ergoplatform/ergo/releases/tag/v3.0.1)下载最新的主网发布，并且像`nohup java -jar -Xmx3G -Dlogback.stdout.level=DEBUG ergo-3.0.1.jar --mainnet -c settings.conf`那样运行，并且如果你看到类似以下内容：
 
 ```scala
 17:02:11.449 INFO  [main] o.e.settings.ErgoSettings$ - Running in mainnet network mode

@@ -122,7 +122,7 @@ scorex {
 }
 ```
 
-Download the latest mainnet release from [here](https://github.com/ergoplatform/ergo/releases/tag/v3.0.0) and run it like `nohup java -jar -Xmx3G -Dlogback.stdout.level=DEBUG ergo-3.0.0.jar --mainnet -c settings.conf` and you if you see similar to the below:
+Download the latest mainnet release from [here](https://github.com/ergoplatform/ergo/releases/tag/v3.0.1) and run it like `nohup java -jar -Xmx3G -Dlogback.stdout.level=DEBUG ergo-3.0.1.jar --mainnet -c settings.conf` and you if you see similar to the below:
 ```scala
 17:02:11.449 INFO  [main] o.e.settings.ErgoSettings$ - Running in mainnet network mode
 17:02:12.262 INFO  [main] org.ergoplatform.ErgoApp - Entering coordinated network bootstrap procedure ..
