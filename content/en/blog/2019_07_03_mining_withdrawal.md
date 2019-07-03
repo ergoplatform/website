@@ -6,14 +6,14 @@ author: "Alex Chepurnoy"
 authorPhoto: "/img/authors/alex_chepurnoy.svg"
 blogPhoto: "/img/blog/withdrawal.jpg"
 ---
-# Spending mining reward
+## Spending mining reward
 
 This text is to help miners to withdraw funds mined.
  
 A lot of folks launched a node and also a miner, with "pubkeyHex" from the miner embedded in the node config. Now
 information on how to recognize the coins mined and withdraw them to another address. 
  
-# On keys.
+## On keys.
 
 A miner can see a lot of keys in different formats. 
 
