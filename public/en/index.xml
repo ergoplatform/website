@@ -21,6 +21,18 @@
     </item>
     
     <item>
+      <title>Ergo Withdrawal</title>
+      <link>https://ergoplatform.org/en/blog/2019_07_03_mining_withdrawal/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2019_07_03_mining_withdrawal/</guid>
+      <description>Spending mining reward This text is to help miners to withdraw funds mined.
+A lot of folks launched a node and also a miner, with &amp;ldquo;pubkeyHex&amp;rdquo; from the miner embedded in the node config. Now information on how to recognize the coins mined and withdraw them to another address.
+On keys. A miner can see a lot of keys in different formats.
+First, mining software and also mining support in the node (namely, ergo.</description>
+    </item>
+    
+    <item>
       <title>Ergo mainnet is launched</title>
       <link>https://ergoplatform.org/en/news/2019_07_01_1/</link>
       <pubDate>Mon, 01 Jul 2019 11:06:02 +0300</pubDate>
