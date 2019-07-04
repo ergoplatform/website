@@ -6,10 +6,19 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
-    <lastBuildDate>Tue, 02 Jul 2019 11:08:39 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>尔格币提取说明</title>
+      <link>https://ergoplatform.org/cn/news/2019_07_03/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/cn/news/2019_07_03/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>尔格币($ERG) 在Tidex交易所挂牌交易</title>
