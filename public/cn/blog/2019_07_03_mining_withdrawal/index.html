@@ -8,19 +8,26 @@
     <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
 
     
-      <meta name="description" content="本地交易所交易系统（LETS）旨在发展当地经济，并且通常由在彼此附近的当地人使用。 在此链接中描述了一个管理LETS的委员会。 我们将此类系统称为管理或许可，因为它取决于受信任的委员会。 在这里，我们描述了一个去信任的LETS系统，即没有管理委员会的系统。
-概要 LETS涉及多个同意使用某种形式的“本地货币”的党派，通常以1：1的比率与该国的主要货币挂钩。假设我们的LETS位于欧洲国家，货币为欧元，交换以“当地欧元”进行，被认为相当于国家欧元。
-LETS中的每个用户都有一个帐户，其中包含该用户的LETS余额（以本地欧元为单位）。在加入时，每个用户的余额为零。余额存储在（可能是去中心化的）分类帐中。 LETS的一个有趣特征是零余额的用户也可以“提款”，但仅用于支付另一个LETS用户。在任何时候，所有用户的LETS余额总和为零。
-例如，零余额的Alice希望从Bob那里以2欧元购买一升牛奶，Bob也是零余额的LETS成员。她将2欧元从她的账户转到Bob&amp;rsquo;s，她的余额为-2，Bob为&#43;2。然后，Bob可以将他的部分或全部余额转移给另一个LETS用户，以换取商品或服务。
-去信任的LETS 由于我们希望获得去信任的LETS，因此我们不能依赖任何受信任的群体来接纳用户。我们只假设又一个有信任的预言机（oracle）由一些全球账号和一个包含这个账号的一个代币的单例币箱标识。此币箱还包含在任何给定时间段内尔格币与欧元的比率。通过使用此币箱并使用新费率创建另一个单例币箱来更新费率。
-在任何情况下，我们的LETS由包含一些LETS成员资格代币的全局LETS币箱来定义。此币箱受以下脚本保护。代币账号唯一地定义了所使用的LETS的属性，例如位置，货币单位，费率预言机（oracle）账号等。一个或多个用户可以花费该币箱并创建他们各自的LETS币箱作为交易的输出。该币箱最初以例如10000 LETS会员代币开始。
-一个LETS币箱表示一个LETS成员，必须用于LETS交易。 LETS交易发生在两个LETS成员之间，一个是发送者而另一个是接收者，这样发送者将一些正数量的LETS货币（本地欧元）转移给接收者。这样的交易消耗成员的币箱并将其重新创建为具有更新余额的输出。
-基本变体 为了防止垃圾信息和分布式拒绝服务攻击，我们要求至少将一些最小数量的尔格币(minErgsToJoin)锁定在新创建的成员的币箱中。 尔格币将被锁定，直到至少minWithdrawTime数量的区块被挖掘为止。 允许一个币箱的LETS余额为负值，直至锁定的尔格币可以覆盖的金额（使用交易时的汇率）。
-// 一个币箱存储会员的代币 val tokenBox = OUTPUTS(0) // first output contains remaining LETS tokens def isLets(b:Box) = { // 一个LETS 币箱必须在代币中有正好一个会员资格代币(0) b.tokens(0)._1 == letsTokenID &amp;amp;&amp;amp; b.tokens(0)._2 == 1 &amp;amp;&amp;amp; blake2b256(b.propositionBytes) == memberBoxScriptHash &amp;amp;&amp;amp; SELF.R4[Long].get == 0 &amp;amp;&amp;amp; // 从0 LETS结余中开始一个币箱 b.value &amp;gt;= minErgsToJoin &amp;amp;&amp;amp; // 币箱必须包含一些最小数量的尔格币 b.R6[Long].get &amp;lt;= HEIGHT // 将创建高度存储在R6中 } // 在tx中创建了多少lets币箱 val numLetsBoxes = OUTPUTS.">
+      <meta name="description" content="花掉挖矿报酬 本文帮助矿工提取所挖到的资金。
+许多人既发布节点，又担任拥有从内嵌于节点格式化矿机获得16进制公钥（pubkeyHex）的矿工。下面我来谈一谈如何认定所挖尔格币的数量以及如何将其提取到另一个地址。
+关于密钥. 矿工可能遇到很多不同形式的密钥。
+首先，挖矿软件以及节点中的采矿支持（即：格式化文件中的 ergo.node.miningPubKeyHex 设定） 正在采用16进制编码（Base16-encoded）“原”公钥，其仅为椭圆曲线中的一个编码序列点。该密钥对矿工来说已经足够用（其可能避免支持58进制的需要，地址构成的需要等）。
+其次，节点钱包显示公钥付费（P2PK）地址，该地址以“9”开始。P2PK地址不仅包含椭圆曲线点，而且还包含网络前缀和校验和（checksum）， 类似于比特币的P2PK和P2PKH地址。
+第三，还有minig/rewardAddress API方法，其主要是针对外部工具所产生的候选区块。此种API方法看起来有点像88dhgzEuTXaSfKEbxfa6vghvEGdBH39sn9h7As2Y2Z6SGd8bKXCXmRLY5JtU4g4RYBP4WcZWb3JwjXDK，其是以编码形式支付给矿工的特殊文字。
+无论如何，如果你想把你矿机的16进制公钥（pubkeyHex）植入你的节点，完全没有问题，不用担心看到不同的密钥。
+显示你的余额以及提款 如果你先挖出来尔格币然后才进行钱包初始化，因为你进行钱包初始化的区块高度比挖币的时候要高，那么或许你看不到你挖的尔格币。请注意：节点不会对区块进行反向扫描，在初始化后，其只扫描新的区块。因此，为了找到所开采的尔格币，目前需要对整个区块链进行重新扫描（或者，如果你开采，在另一台机器上发布另一个节点，或者在格式化文件中拥有不同端口设置的同一台机器上，即，给scorex.restApi.bindAddress 和scorex.network.bindAddress的域设定新的值； 另外请使用3.0.1版本，主要是因为其更便于格式化）。
+为了把挖矿报酬花掉，你需要按照以下步骤进行操作： 1. 清除节点状态，如果你打算叫停工作节点。 为了清除你的节点的状态，你需要叫停节点，并且删除.ergo 目录下的全部内容（其可能藏在Mac和Linux你看不到的地方，尝试目录中的 ls -a 命令，你可以从此路径运行节点）。
+2.从奥托吕克斯矿机使用的种子短语中恢复本地钱包 在你格式化你的奥托吕克斯矿机时，请记住你在config.json 设定的助记符句子 - 目前你需要从那儿恢复内置钱包。为了恢复你的钱包，再次启动节点，并且将POST请求发送给含有诸如
+{ &amp;quot;pass&amp;quot;: &amp;quot;your_wallet_pass&amp;quot;, &amp;quot;mnemonic&amp;quot;: &amp;quot;mnemonic_sentense_from_your_miner&amp;quot;, &amp;quot;mnemonicPass&amp;quot;: &amp;quot;mnemonic_pass_if_set&amp;quot; }  application/json 内容类型体的http://[your_node_ip]:9053/wallet/restore，
+如果 pass 是一个将用于你本地盘加密钱包数据的一把新的特殊钥匙， 并且 mnemonic 是一个你可以从奥托吕克斯矿机格式化文件(config.json)复制的助记符短语。请特别注意 mnemonicPass 的域 – 这是你的助记符短语口令，其为可选项，并且你在创造你的助记符的时候可能已经对其进行格式化。只有当你的助记符真地需要钥匙，那么就在请求中增加此域，否则就删除此域。
+不要忘记授权你的请求，设定对应 apiKeyHash正确的api_key HTTP 头字段， 在节点格式化文件中进行格式化。
+注意：为了让钱包扫描来自创世的全部区块，你需要在你的节点已经开始下载全部区块前恢复钱包（请在/info API方法回应核对fullHeight - 尽管其是 null 你的节点尚未开始下载全部区块）。
+3. 查询你的余额 当你的节点与网络实现同步的时候，请核对 /wallet/balances API方法。反馈应当类似于：
+{ &amp;quot;height&amp;quot;: 3560, &amp;quot;balance&amp;quot;: 67500000000, &amp;quot;assets&amp;quot;: {} }  首先注意 height 域 – 其应等于通过 /info API路径的 fullHeight 显示值。balance 是你钱包所发现的一个确认余额。">
     
 
     
-    <title>一个去信任的本地交易所交易系统 | Ergo</title>
+    <title>尔格提取 | Ergo</title>
 
     
     
@@ -118,7 +125,7 @@ LETS中的每个用户都有一个帐户，其中包含该用户的LETS余额（
               
                 
                   <li class="dd-language__item dd-language__item_hidden">
-                    <a class="dd-language__link dd-language__link--white eg-link" href="https://ergoplatform.org/en/blog/2019_05_29-exchange/"><span>Eng</span></a>
+                    <a class="dd-language__link dd-language__link--white eg-link" href="https://ergoplatform.org/en/blog/2019_07_03_mining_withdrawal/"><span>Eng</span></a>
                   </li>
                 
               
@@ -140,200 +147,94 @@ LETS中的每个用户都有一个帐户，其中包含该用户的LETS余额（
         <a href="https://ergoplatform.org/cn/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>回到所有帖子</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
-        <h1 class="eg-title eg-mb-1">一个去信任的本地交易所交易系统</h1>
+        <h1 class="eg-title eg-mb-1">尔格提取</h1>
         <div class="eg-author">
-          <img src="/img/authors/amitabh_saxena.png" alt="author img" class="eg-author__img">
+          <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
-            <h4 class="eg-author__info-title">Amitabh Saxena</h4>
-            <p class="eg-author__info-paragraph">2019.05.29</p>
+            <h4 class="eg-author__info-title">Alex Chepurnoy</h4>
+            <p class="eg-author__info-paragraph">2019.07.03</p>
           </div>
         </div>
         <div class="eg-blog__single-img">
-          <img src="/img/blog/trading.jpg" alt="blog photo">
+          <img src="/img/blog/withdrawal.jpg" alt="blog photo">
         </div>
         <div class="eg-blog__single-content">
           <div>
             
 
-<p>本地交易所交易系统（LETS）旨在发展当地经济，并且通常由在彼此附近的当地人使用。 在<a href="/cn/blog/2019_04_22-lets/">此链接</a>中描述了一个管理LETS的委员会。 我们将此类系统称为管理或许可，因为它取决于受信任的委员会。 在这里，我们描述了一个去信任的LETS系统，即没有管理委员会的系统。</p>
+<h2 id="花掉挖矿报酬">花掉挖矿报酬</h2>
 
-<h2 id="概要">概要</h2>
+<p>本文帮助矿工提取所挖到的资金。</p>
 
-<p>LETS涉及多个同意使用某种形式的“本地货币”的党派，通常以1：1的比率与该国的主要货币挂钩。假设我们的LETS位于欧洲国家，货币为欧元，交换以“当地欧元”进行，被认为相当于国家欧元。</p>
+<p>许多人既发布节点，又担任拥有从内嵌于节点格式化矿机获得16进制公钥（<code>pubkeyHex</code>）的矿工。下面我来谈一谈如何认定所挖尔格币的数量以及如何将其提取到另一个地址。</p>
 
-<p>LETS中的每个用户都有一个帐户，其中包含该用户的LETS余额（以本地欧元为单位）。在加入时，每个用户的余额为零。余额存储在（可能是去中心化的）分类帐中。 LETS的一个有趣特征是零余额的用户也可以“提款”，但仅用于支付另一个LETS用户。在任何时候，所有用户的LETS余额总和为零。</p>
+<h2 id="关于密钥">关于密钥.</h2>
 
-<p>例如，零余额的Alice希望从Bob那里以2欧元购买一升牛奶，Bob也是零余额的LETS成员。她将2欧元从她的账户转到Bob&rsquo;s，她的余额为-2，Bob为+2。然后，Bob可以将他的部分或全部余额转移给另一个LETS用户，以换取商品或服务。</p>
+<p>矿工可能遇到很多不同形式的密钥。</p>
 
-<h2 id="去信任的lets">去信任的LETS</h2>
+<p>首先，挖矿软件以及节点中的采矿支持（即：格式化文件中的 <code>ergo.node.miningPubKeyHex</code> 设定） 正在采用16进制编码（<code>Base16-encoded</code>）“原”公钥，其仅为椭圆曲线中的一个编码序列点。该密钥对矿工来说已经足够用（其可能避免支持58进制的需要，地址构成的需要等）。</p>
 
-<p>由于我们希望获得去信任的LETS，因此我们不能依赖任何受信任的群体来接纳用户。我们只假设又一个有信任的预言机（oracle）由一些全球账号和一个包含这个账号的一个代币的单例币箱标识。此币箱还包含在任何给定时间段内尔格币与欧元的比率。通过使用此币箱并使用新费率创建另一个单例币箱来更新费率。</p>
+<p>其次，节点钱包显示公钥付费（P2PK）地址，该地址以“9”开始。P2PK地址不仅包含椭圆曲线点，而且还包含网络前缀和校验和（<code>checksum</code>）， 类似于比特币的P2PK和P2PKH地址。</p>
 
-<p>在任何情况下，我们的LETS由包含一些LETS成员资格代币的全局LETS币箱来定义。此币箱受以下脚本保护。代币账号唯一地定义了所使用的LETS的属性，例如位置，货币单位，费率预言机（oracle）账号等。一个或多个用户可以花费该币箱并创建他们各自的LETS币箱作为交易的输出。该币箱最初以例如10000 LETS会员代币开始。</p>
+<p>第三，还有<code>minig/rewardAddress</code> API方法，其主要是针对外部工具所产生的候选区块。此种API方法看起来有点像<code>88dhgzEuTXaSfKEbxfa6vghvEGdBH39sn9h7As2Y2Z6SGd8bKXCXmRLY5JtU4g4RYBP4WcZWb3JwjXDK</code>，其是以编码形式支付给矿工的特殊文字。</p>
 
-<p>一个LETS币箱表示一个LETS成员，必须用于LETS交易。 LETS交易发生在两个LETS成员之间，一个是发送者而另一个是接收者，这样发送者将一些正数量的LETS货币（本地欧元）转移给接收者。这样的交易消耗成员的币箱并将其重新创建为具有更新余额的输出。</p>
+<p>无论如何，如果你想把你矿机的16进制公钥（<code>pubkeyHex</code>）植入你的节点，完全没有问题，不用担心看到不同的密钥。</p>
 
-<h2 id="基本变体">基本变体</h2>
+<h2 id="显示你的余额以及提款">显示你的余额以及提款</h2>
 
-<p>为了防止垃圾信息和分布式拒绝服务攻击，我们要求至少将一些最小数量的尔格币(<code>minErgsToJoin</code>)锁定在新创建的成员的币箱中。 尔格币将被锁定，直到至少<code>minWithdrawTime</code>数量的区块被挖掘为止。 允许一个币箱的LETS余额为负值，直至锁定的尔格币可以覆盖的金额（使用交易时的汇率）。</p>
+<p>如果你先挖出来尔格币然后才进行钱包初始化，因为你进行钱包初始化的区块高度比挖币的时候要高，那么或许你看不到你挖的尔格币。请注意：节点不会对区块进行反向扫描，在初始化后，其只扫描新的区块。因此，为了找到所开采的尔格币，目前需要对整个区块链进行重新扫描（或者，如果你开采，在另一台机器上发布另一个节点，或者在格式化文件中拥有不同端口设置的同一台机器上，即，给<code>scorex.restApi.bindAddress</code> 和<code>scorex.network.bindAddress</code>的域设定新的值； 另外请使用3.0.1版本，主要是因为其更便于格式化）。</p>
 
-<pre><code class="language-scala">// 一个币箱存储会员的代币
-val tokenBox = OUTPUTS(0) // first output contains remaining LETS tokens
-def isLets(b:Box) = {
-   // 一个LETS 币箱必须在代币中有正好一个会员资格代币(0)
-   b.tokens(0)._1 == letsTokenID &amp;&amp; b.tokens(0)._2 == 1 &amp;&amp;
-   blake2b256(b.propositionBytes) == memberBoxScriptHash &amp;&amp;
-   SELF.R4[Long].get == 0 &amp;&amp; // 从0 LETS结余中开始一个币箱
-   b.value &gt;= minErgsToJoin &amp;&amp; // 币箱必须包含一些最小数量的尔格币
-   b.R6[Long].get &lt;= HEIGHT // 将创建高度存储在R6中
+<h2 id="为了把挖矿报酬花掉-你需要按照以下步骤进行操作">为了把挖矿报酬花掉，你需要按照以下步骤进行操作：</h2>
+
+<h3 id="1-清除节点状态-如果你打算叫停工作节点">1. 清除节点状态，如果你打算叫停工作节点。</h3>
+
+<p>为了清除你的节点的状态，你需要叫停节点，并且删除<code>.ergo</code> 目录下的全部内容（其可能藏在Mac和Linux你看不到的地方，尝试目录中的 <code>ls -a</code> 命令，你可以从此路径运行节点）。</p>
+
+<h3 id="2-从奥托吕克斯矿机使用的种子短语中恢复本地钱包">2.从奥托吕克斯矿机使用的种子短语中恢复本地钱包</h3>
+
+<p>在你格式化你的奥托吕克斯矿机时，请记住你在<code>config.json</code> 设定的助记符句子 - 目前你需要从那儿恢复内置钱包。为了恢复你的钱包，再次启动节点，并且将POST请求发送给含有诸如</p>
+
+<pre><code class="language-scala">{
+  &quot;pass&quot;: &quot;your_wallet_pass&quot;,
+  &quot;mnemonic&quot;: &quot;mnemonic_sentense_from_your_miner&quot;,
+  &quot;mnemonicPass&quot;: &quot;mnemonic_pass_if_set&quot;
 }
-
-// 在tx中创建了多少lets币箱
-val numLetsBoxes = OUTPUTS.filter({(b:Box) =&gt; isLets(b)}).size
-
-// 在交易中，为币箱保留了以下内容 ...
-tokenBox.tokens(0)._1 == SELF.tokens(0)._1 &amp;&amp;                // 代币账号
-tokenBox.tokens(0)._2 == SELF.tokens(0)._2 - numLetsBoxes &amp;&amp; //  数量
-tokenBox.propositionBytes == SELF.propositionBytes           //  脚本
 </code></pre>
 
-<p>LETS成员的币框受以下脚本的保护，其哈希memberBoxScriptHash（成员币箱脚本哈希）被以上使用。</p>
+<p><code>application/json</code> 内容类型体的<code>http://[your_node_ip]:9053/wallet/restore</code>，</p>
 
-<pre><code class="language-scala">val validRateOracle = CONTEXT.dataInputs(0).tokens(0)._1 == rateTokenID
-val rate = CONTEXT.dataInputs(0).R4[Int].get
-val inBalance = SELF.R4[Long].get    // 当前输入下的LETS结余
-val pubKey = SELF.R5[SigmaProp].get  // 当前输入的拥有者
-val createdAt = SELF.R6[Long].get    // 当前输入开采的高度
+<p>如果 <code>pass</code> 是一个将用于你本地盘加密钱包数据的一把新的特殊钥匙， 并且 <code>mnemonic</code> 是一个你可以从奥托吕克斯矿机格式化文件(config.json)复制的助记符短语。请特别注意 <code>mnemonicPass</code> 的域 – 这是你的助记符短语口令，其为可选项，并且你在创造你的助记符的时候可能已经对其进行格式化。只有当你的助记符真地需要钥匙，那么就在请求中增加此域，否则就删除此域。</p>
 
-val index = getVar[Int](0).get       // 相关输出的指数
-val out = OUTPUTS(index)
-val outBalance = out.R4[Long].get    // 输出的LETS结余
+<p>不要忘记授权你的请求，设定对应 <code>apiKeyHash</code>正确的<code>api_key</code> HTTP 头字段， 在节点格式化文件中进行格式化。</p>
 
-// LETS币箱与当前币箱具有相同的脚本
-val isMemberBox = {(b:Box) =&gt; b.propositionBytes == SELF.propositionBytes}
-val letsInputs = INPUTS.filter(isMemberBox)    // 所有LETS输入币箱
-val letsOutputs = OUTPUTS.filter(isMemberBox)  // 所有LETS输出币箱
+<p>注意：为了让钱包扫描来自创世的全部区块，你需要在你的节点已经开始下载全部区块前恢复钱包（请在<code>/info</code> API方法回应核对<code>fullHeight</code>  - 尽管其是 <code>null</code> 你的节点尚未开始下载全部区块）。</p>
 
-// 如果LETS余额增加，则当前输入属于接收器
-// 接收器的输入币箱中可能有一些尔格币，我们需要确保
-// 接收器的输出币箱也包含与输入相同数量的尔格币
-val receiver = outBalance &gt; inBalance &amp;&amp; out.value == SELF.value
+<h3 id="3-查询你的余额">3. 查询你的余额</h3>
 
-val getBalance = {(b:Box) =&gt; b.R4[Long].get} // 回到币箱的LETS结余
+<p>当你的节点与网络实现同步的时候，请核对 <code>/wallet/balances</code> API方法。反馈应当类似于：</p>
 
-val letsBalIn = letsInputs.map(getBalance).fold(0L, {(l:Long, r:Long) =&gt; l + r})
-val letsBalOut = letsOutputs.map(getBalance).fold(0L, {(l:Long, r:Long) =&gt; l + r})
-
-// 发送人的币箱可以包含较少量的尔格币(发送人可以撤回提供的尔格币
-// 发送者的任何负LETS余额都有足够的尔格币支持)
-val correctErgs = out.value &gt;= -outBalance * rate &amp;&amp; (
-  out.value &gt;= SELF.value || SELF.R6[Long].get + minWithdrawTime &gt; HEIGHT
-)
-
-// 对于接受者来说，我们并不接触尔格币的结余
-// 因为接受者没有积极参与交易
-
-inBalance != outBalance &amp;&amp; // 交易应该发生；结余必须变化
-SELF.tokens(0)._1 == letsTokenID &amp;&amp; // 当前输入有正确的代币
-out.tokens(0)._1 == letsTokenID &amp;&amp; // 对应地，输出也有正确的代币
-validRateOracle &amp;&amp;          // 预言机（oracle）提供费率具备正确的“费率代币”
-letsBalIn == letsBalOut &amp;&amp;  // 总共的LETS结余被保存在交易中
-letsInputs.size == 2 &amp;&amp; letsOutputs.size == 2 &amp;&amp;  // 只有两个LETS输入，输出
-out.propositionBytes == SELF.propositionBytes &amp;&amp;  // 输出是一个LETS币箱 ...
-out.R5[SigmaProp].get == pubKey &amp;&amp;                // ... 用正确的公钥
-out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... 和创建高度
-(receiver ||              // ...要么当前输入属于接受者
-  (pubKey &amp;&amp; correctErgs) // ... 要么输出有正确的尔格币，同时tx有签名
-)
+<pre><code class="language-scala">{
+  &quot;height&quot;: 3560,
+  &quot;balance&quot;: 67500000000,
+  &quot;assets&quot;: {}
+}
 </code></pre>
 
-<p>使用上述脚本支付币箱的交易需要：</p>
+<p>首先注意 <code>height</code> 域 – 其应等于通过 <code>/info</code> API路径的 <code>fullHeight</code> 显示值。<code>balance</code> 是你钱包所发现的一个确认余额。</p>
 
-<ul>
-<li>保留了输入和输出的LETS结余之和</li>
-<li>有两个LETS输入和两个LETS输出</li>
-<li>公钥（存储在R5中）保存在相应的输出中</li>
-<li>创建高度（存储在R6中）保留在相应的输出中</li>
-</ul>
+<h3 id="4-通过交易花掉你的报酬">4. 通过交易花掉你的报酬</h3>
 
-<p>我们说如果输出的LETS结余高于其输入的LETS结余，则某些公钥是接收器。</p>
+<p>为了从你的钱包中提走报酬，利用 <code>/wallet/payment/send</code> API路径创建一笔新的支付交易。为了进行这一操作，发送诸如</p>
 
-<p>最后一个条件要求输入（和输出）币箱属于接收器（以便保留尔格币的数量），或者如果LETS余额为负，则输出由所需数量的尔格币支持。此外，它要求发送者的尔格币结余不能减少，直到在尔格币被锁定之后已经挖掘了<code>minWithdrawTime</code>的区块数量。</p>
+<pre><code class="language-scala">{
+  &quot;address&quot;: &quot;your_address&quot;,
+  &quot;value&quot;: 10000000
+}
+</code></pre>
 
-<p>与托管LETS相比，上述系统有以下不同之处：</p>
+<p>含有 <code>application/json</code> 内容类型体的POST请求， 如果 <code>address</code> 是你希望把你资金移去的地址并且 <code>value</code> 是你希望移走多少十亿分之一ERGs。</p>
 
-<ul>
-<li>没有会员记录：与托管LETS不同，我们不在此处存储任何会员信息。</li>
-<li>多个币箱：一个人可以创建多个会员币箱，这是允许的。我们只要求每个币箱都锁定最小数量的尔格币。</li>
-</ul>
-
-<h2 id="lets-1-零和-有抵押">LETS-1：零和，有抵押</h2>
-
-<p>以上是我们称之为LETS-1的基本变体。 它具有以下功能：</p>
-
-<ul>
-<li>有时间限制的加入费：为了防止垃圾信息攻击，会员必须在加入时支付一定的最低费用。 此费用可退还，但仅限于预定数量的区块后。</li>
-<li>零和：所有成员币箱的LETS余额总和为零。 只要在一定限度内，会员币箱就可以有负余额。</li>
-<li>抵押品：对于发送人的输入，尔格币用作抵押品以支付当前汇率的负LETS余额。</li>
-</ul>
-
-<p>以下是LETS-1的一些变体。</p>
-
-<h2 id="lets-2-零和-无抵押">LETS-2：零和，无抵押</h2>
-
-<p>这是LETS-1的略微变化如下：</p>
-
-<ul>
-<li>不可退还的加入费：与LETS-1类似，需要加入费用以防止垃圾信息攻击。但是，与LETS-1不同，此费用不可退还，必须发送给某个预定义的管理委员会。</li>
-<li>零和：与LETS-1一样。</li>
-</ul>
-
-<h2 id="lets-3-正和-有抵押">LETS-3：正和，有抵押</h2>
-
-<p>以上两种变体要求总LETS余额始终为零。在这里，我们考虑这个总和的正值。特别是，此变体具有以下属性：</p>
-
-<ul>
-<li>时间锁定加入费：与LETS-1相同。</li>
-<li>正和：每个成员的LETS余额必须始终为非负数。这确保了所有成员币箱的LETS余额总和为正。初始LETS余额根据当前汇率的加入费设置为正值，上限为某个最大值。</li>
-<li>抵押品：发送方的尔格币余额的任何减少必须伴随当前汇率的相应LETS余额的减少。</li>
-</ul>
-
-<p>我们还可以通过添加等量的尔格币来允许在交易期间补足LETS余额。</p>
-
-<h2 id="lets-4-正和-无抵押">LETS-4：正和，无抵押</h2>
-
-<p>这类似于LETS-3，但有一些小的变化：</p>
-
-<ul>
-<li>不可退还的加入费：与LETS-2相同</li>
-<li>正和：与LETS-3一样</li>
-</ul>
-
-<p>下表总结了这些变体：</p>
-
-<table>
-<thead>
-<tr>
-<th></th>
-<th>零和</th>
-<th>正和</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>有抵押</td>
-<td>LETS-1</td>
-<td>LETS-3</td>
-</tr>
-
-<tr>
-<td>无抵押</td>
-<td>LETS-2</td>
-<td>LETS-4</td>
-</tr>
-</tbody>
-</table>
+<p>在发送请求的时候，节点会回复交易ID作为回应。你可以利用 <a href="https://explorer.ergoplatform.com">explorer</a> 查询你的交易何时到达区块。</p>
 
           </div>
         </div>
@@ -341,7 +242,7 @@ out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... 和创建高度
   <p class="eg-text__paragraph eg-text__paragraph--26">分享转发</p>
   <ul class="eg-social">
     <li class="eg-share_item">
-      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fcn%2fblog%2f2019_05_29-exchange%2f" target="_blank">
+      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fcn%2fblog%2f2019_07_03_mining_withdrawal%2f" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path d="M17 14.0001H25V28.4H17V14.0001Z" fill="white"/>
@@ -352,7 +253,7 @@ out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... 和创建高度
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fcn%2fblog%2f2019_05_29-exchange%2f&amp;hashtags=ergoplatform" target="_blank">
+      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fcn%2fblog%2f2019_07_03_mining_withdrawal%2f&amp;hashtags=ergoplatform" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path class="st0" fill-rule="evenodd" clip-rule="evenodd" d="M29 16.4204C28.4478 16.6615 27.855 16.8241 27.2323 16.8975C27.868 16.5225 28.3558 15.9287 28.5857 15.2214C27.9909 15.5684 27.3322 15.8208 26.6315 15.9565C26.0699 15.3677 25.2701 15 24.3851 15C22.6855 15 21.3076 16.3562 21.3076 18.0291C21.3076 18.2666 21.3347 18.4978 21.3873 18.7195C18.8298 18.5933 16.5616 17.3871 15.0441 15.5542C14.7792 16.0018 14.6274 16.5222 14.6274 17.0774C14.6274 18.1283 15.1706 19.0554 15.9963 19.5989C15.4921 19.5831 15.0174 19.4469 14.6024 19.22C14.6021 19.2325 14.6021 19.2452 14.6021 19.2581C14.6021 20.7258 15.6632 21.9504 17.0707 22.2285C16.8128 22.2979 16.5409 22.335 16.2599 22.335C16.0619 22.335 15.8693 22.3158 15.6812 22.2805C16.0728 23.4839 17.2097 24.36 18.5559 24.3843C17.5025 25.197 16.176 25.6812 14.734 25.6812C14.4857 25.6812 14.2408 25.6667 14 25.6384C15.3617 26.4982 16.979 27 18.7175 27C24.3777 27 27.4734 22.3837 27.4734 18.3804C27.4734 18.2494 27.4705 18.1184 27.4645 17.9883C28.0658 17.5614 28.5873 17.0281 29 16.4204Z" fill="#FF4221"/>
@@ -360,7 +261,7 @@ out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... 和创建高度
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link copy-link" href="https://ergoplatform.org/cn/blog/2019_05_29-exchange/" target="_blank">
+      <a class="eg-share__link copy-link" href="https://ergoplatform.org/cn/blog/2019_07_03_mining_withdrawal/" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M39.91 19.3528L34.2335 6.06338C34.1186 5.78985 33.898 5.57515 33.6227 5.46487L20.2117 0.0807171C19.9364 -0.0292029 19.6283 -0.027376 19.3547 0.089384L6.0641 5.76578C5.79022 5.8811 5.57549 6.10129 5.46522 6.37698L0.0816753 19.7881C-0.0303977 20.0656 -0.0267767 20.3716 0.0903423 20.6455L5.76643 33.9366C5.88175 34.2101 6.10231 34.4249 6.37727 34.5352L19.7883 39.919C19.9209 39.9727 20.0639 40 20.2048 40C20.3544 40 20.5043 39.971 20.647 39.909L33.9359 34.2324C34.2097 34.1171 34.4245 33.8966 34.5348 33.6216L39.9183 20.2102C40.0304 19.9327 40.0267 19.6267 39.91 19.3528Z" stroke="#FF4221"/>
@@ -399,22 +300,6 @@ out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... 和创建高度
             
             
               
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_07_03_mining_withdrawal/">
-                  <div class="eg-blog__item-img"><img src="/img/blog/withdrawal.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>尔格提取</span></h3>
-                  <p class="eg-blog__item-paragraph">花掉挖矿报酬 本文帮助矿工提取所挖到的资金。
-许多人既发布节点，又担任拥有从内嵌于节点格式化矿机获得16进制公钥（pubkeyHex）的矿工。下面我来谈一谈如何认定所挖尔格币的数量以及如何将其提取到另一个地址。
-关于密钥. 矿工可能遇到很多不同形式的密钥。
-首先，挖矿软件以及节点中的采矿支持（即：格式化文件中 …</p>
-                  <div class="eg-author">
-                    <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
-                    <div class="eg-author__info">
-                      <h4 class="eg-author__info-title">Alex Chepurnoy</h4>
-                      <p class="eg-author__info-paragraph">2019.07.03</p>
-                    </div>
-                  </div>
-                </a>
-              
             
               
                 <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_06_28_mainnet-bootstrap/">
@@ -448,6 +333,20 @@ out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... 和创建高度
                 </a>
               
             
+              
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_05_29-exchange/">
+                  <div class="eg-blog__item-img"><img src="/img/blog/trading.jpg" height="188" width="335" alt="blog photo"></div>
+                  <h3 class="eg-blog__item-title"><span>一个去信任的本地交易所交易系统</span></h3>
+                  <p class="eg-blog__item-paragraph">本地交易所交易系统（LETS）旨在发展当地经济，并且通常由在彼此附近的当地人使用。 在此链接中描述了一个管理LETS的委员会。 我们将此类系统称为管理或许可，因为它取决于受信任的委员会。 在这里，我们描述了一个去信任的LETS系统，即没有管理委员会的系统。
+概要 LETS涉及多个同意使用某种形式的“本地货币” …</p>
+                  <div class="eg-author">
+                    <img src="/img/authors/amitabh_saxena.png" alt="author img" class="eg-author__img" width="60" height="60">
+                    <div class="eg-author__info">
+                      <h4 class="eg-author__info-title">Amitabh Saxena</h4>
+                      <p class="eg-author__info-paragraph">2019.05.29</p>
+                    </div>
+                  </div>
+                </a>
               
             
               

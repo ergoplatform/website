@@ -6,10 +6,19 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 03 Jul 2019 11:08:33 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ergo Mainnet 3.0.2 released</title>
+      <link>https://ergoplatform.org/en/news/2019_07_04/</link>
+      <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2019_07_04/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>ERGO ($ERG) is listed on Tidex Exchange</title>
@@ -27,7 +36,7 @@
       
       <guid>https://ergoplatform.org/en/blog/2019_07_03_mining_withdrawal/</guid>
       <description>Spending mining reward This text is to help miners to withdraw funds mined.
-A lot of folks launched a node and also a miner, with &amp;ldquo;pubkeyHex&amp;rdquo; from the miner embedded in the node config. Now information on how to recognize the coins mined and withdraw them to another address.
+A lot of folks launched a node and also a miner, with pubkeyHex from the miner embedded in the node config. Now information on how to recognize the coins mined and withdraw them to another address.
 On keys. A miner can see a lot of keys in different formats.
 First, mining software and also mining support in the node (namely, ergo.</description>
     </item>

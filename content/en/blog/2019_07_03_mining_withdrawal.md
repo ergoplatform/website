@@ -10,34 +10,27 @@ blogPhoto: "/img/blog/withdrawal.jpg"
 
 This text is to help miners to withdraw funds mined.
  
-A lot of folks launched a node and also a miner, with "pubkeyHex" from the miner embedded in the node config. Now
+A lot of folks launched a node and also a miner, with `pubkeyHex` from the miner embedded in the node config. Now
 information on how to recognize the coins mined and withdraw them to another address. 
  
 ## On keys.
 
 A miner can see a lot of keys in different formats. 
 
-First, mining software and also mining support in the node (namely, ergo.node.miningPubKeyHex setting in the config) are using a Base16-encoded "raw" public key, which is just an encoded
-serialized point on elliptic curve. This key is enough for a miner (which can avoid then supporting Base58, address forming etc).
+First, mining software and also mining support in the node (namely, `ergo.node.miningPubKeyHex` setting in the config) are using a `Base16-encoded` "raw" public key, which is just an encoded serialized point on elliptic curve. This key is enough for a miner (which can avoid then supporting Base58, address forming etc).
 
-Second, a node wallet shows Pay-To-Public-Key (P2PK) addresses, which are starting with "9". P2PK adress contains not just 
-elliptic curve point, but also network prefix and checksum, similarly to Bitcoin P2PK and P2PKH addresses. 
+Second, a node wallet shows Pay-To-Public-Key (P2PK) addresses, which are starting with "9". P2PK adress contains not just elliptic curve point, but also network prefix and `checksum`, similarly to Bitcoin P2PK and P2PKH addresses. 
 
-Third, there is minig/rewardAddress API method, which is intended for external tools generating block candidates. This API 
-method shows something like "88dhgzEuTXaSfKEbxfa6vghvEGdBH39sn9h7As2Y2Z6SGd8bKXCXmRLY5JtU4g4RYBP4WcZWb3JwjXDK", which is a 
-special script to pay a miner in encoded form.
+Third, there is `minig/rewardAddress` API method, which is intended for external tools generating block candidates. This API method shows something like `88dhgzEuTXaSfKEbxfa6vghvEGdBH39sn9h7As2Y2Z6SGd8bKXCXmRLY5JtU4g4RYBP4WcZWb3JwjXDK`, which is a special script to pay a miner in encoded form.
 
 Anyway, if you put pubkeyHex from you miner into your node, everything is okay, just don't worry about different keys seen.
 
 ## Getting you balance shown & withdrawals
 
 Probably you don't see mined coins after wallet initialization, if its done on height after blocks mined. Please note,
-the node is not scanning blocks backwards, it is only scanning new blocks after the initialization. Thus in order to find
-mined coins, full blockchain rescan is needed atm (or, if you mine, launch another node on another machine, or on the same 
-machine with different ports set in the config, namely, set new values to 
-"scorex.restApi.bindAddress" and "scorex.network.bindAddress" fields; also please use version 3.0.1 as it is easier to configurate). 
+the node is not scanning blocks backwards, it is only scanning new blocks after the initialization. Thus in order to find mined coins, full blockchain rescan is needed atm (or, if you mine, launch another node on another machine, or on the same machine with different ports set in the config, namely, set new values to `scorex.restApi.bindAddress` and `scorex.network.bindAddress` fields; also please use version 3.0.1 as it is easier to configurate). 
 
-In order to spend rewards you need to follow the steps below:
+## In order to spend rewards you need to follow the steps below:
 
 ### 1. Clear node state, if you're going to stop working node.
 
@@ -90,4 +83,4 @@ In order to withdraw a reward from your wallet, create a new payment transaction
 
 
 
-When the request is sent the node would return transation id in response. You can use `https://explorer.ergoplatform.com` to check when your transaction gets to the block.
+When the request is sent the node would return transation id in response. You can use [explorer](https://explorer.ergoplatform.com) to check when your transaction gets to the block.

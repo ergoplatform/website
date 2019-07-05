@@ -341,14 +341,3 @@
     }
   }
 }
-
-.eg-link {
-  &:hover,
-  &:focus {
-    text-decoration: none;
-
-    span {
-      border-bottom: 0.5px solid;
-    }
-  }
-}

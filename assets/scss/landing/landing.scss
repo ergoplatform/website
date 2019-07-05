@@ -76,6 +76,10 @@
 
     .subheader-section__item {
       outline: none;
+
+      a {
+        transition: color ease-in 0.3s;
+      }
     }
 
     .subheader-section__tab {
@@ -83,6 +87,21 @@
 
       &[aria-hidden="false"] {
         display: block;
+        animation: visibility 0.5s 1;
+      }
+
+      &[aria-hidden="true"] {
+        display: none;
+      }
+
+      @keyframes visibility {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
       }
     }
 
