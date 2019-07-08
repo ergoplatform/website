@@ -160,10 +160,10 @@
   translation: Fully functional Testnet 2.0 release
 
 - id: development_history_2019_second_date
-  translation: 20 June
+  translation: 1 July
 
 - id: development_history_2019_second_date_text
-  translation: Planned Mainnet Launch Date
+  translation: Ergo mainnet is launched
 
 - id: development_history_2018_first_date
   translation: 1 June
@@ -462,6 +462,9 @@
 - id: tools_second-section_second-sub_first_link
   translation: How to install Ergo full node
 
+- id: tools_second-section_second-sub_first_url
+  translation: https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node
+
 - id: tools_second-section_second-sub_second_link
   translation: How to mine Ergo
 
@@ -470,6 +473,9 @@
 
 - id: tools_second-section_third-sub_first_link
   translation: TestNet Explorer
+
+- id: tools_second-section_third-sub_second_link
+  translation: Mainnet Explorer
 
 - id: tools_second-section_fourth-sub_title
   translation: APIs
@@ -686,7 +692,7 @@
   translation: "When will the Ergo network launch?"
 
 - id: faq_sixth-item_text
-  translation: "Ergo is currently in stage of security audit and testing by the community. The launch date is set for June 20th."
+  translation: "Ergo mainnet launched on July 1st."
 
 - id: faq_seventh-item_title
   translation: "Does Ergo have a block size limit?"

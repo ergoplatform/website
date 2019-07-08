@@ -1,119 +1,21 @@
 <div class="eg-slider">
   <div class="eg-slider__nav timeline-nav">
-    <div class="eg-slider__nav-item">2019</div>
-    <div class="eg-slider__nav-item">2018</div>
-    <div class="eg-slider__nav-item">2017</div>
-    <div class="eg-slider__nav-item">2016</div>
-    <div class="eg-slider__nav-item">2015</div>
+    {{ range $.Site.Data.slider.years }}
+      <div class="eg-slider__nav-item">{{ . }}</div>
+    {{ end }}
   </div>
   <div class="timeline-slider container">
-    <div class="eg-slider__slide">
-      <div class="eg-slider__slide-content">
-        <div class="eg-slider__slide-group">
-          <p class="eg-slider__slide-year">{{ T "development_history_2019_first_date" }}</p>
-          <p class="eg-slider__slide-paragraph">{{ T "development_history_2019_first_date_text" }}</p>
-        </div>
-        <div class="eg-slider__slide-group">
-          <p class="eg-slider__slide-year">{{ T "development_history_2019_second_date" }}</p>
-          <p class="eg-slider__slide-paragraph">{{ T "development_history_2019_second_date_text" }}</p>
-        </div>
-      </div>
-    </div>
-    <div class="eg-slider__slide">
-      <div class="eg-slider__slide-content">
-        <div class="eg-slider__slide-group">
-          <p class="eg-slider__slide-year">{{ T "development_history_2018_first_date" }}</p>
-          <p class="eg-slider__slide-paragraph">{{ T "development_history_2018_first_date_text" }}</p>
-        </div>
-        <div class="eg-slider__slide-group">
-          <p class="eg-slider__slide-year">{{ T "development_history_2018_second_date" }}</p>
-          <p class="eg-slider__slide-paragraph">{{ T "development_history_2018_second_date_text" }}</p>
-        </div>
-        <div class="eg-slider__slide-group">
-          <p class="eg-slider__slide-year">{{ T "development_history_2018_third_date" }}</p>
-          <p class="eg-slider__slide-paragraph">{{ T "development_history_2018_third_date_text" }}</p>
+    {{ range $.Site.Data.slider.content }}
+      <div class="eg-slider__slide">
+        <div class="eg-slider__slide-content">
+          {{ range . }}
+              <div class="eg-slider__slide-group">
+                <p class="eg-slider__slide-year">{{ T .date }}</p>
+                <p class="eg-slider__slide-paragraph">{{ T .text }}</p>
+              </div>
+          {{ end }}
         </div>
       </div>
-    </div>
-    <div class="eg-slider__slide">
-      <div class="eg-slider__slide-content">
-        <div class="eg-slider__slide-group">
-          <p class="eg-slider__slide-year">{{ T "development_history_2017_first_date" }}</p>
-          <p class="eg-slider__slide-paragraph">{{ T "development_history_2017_first_date_text" }}</p>
-        </div>
-        <div class="eg-slider__slide-group">
-          <p class="eg-slider__slide-year">{{ T "development_history_2017_second_date" }}</p>
-          <p class="eg-slider__slide-paragraph">{{ T "development_history_2017_second_date_text" }}</p>
-        </div>
-        <div class="eg-slider__slide-group">
-          <p class="eg-slider__slide-year">{{ T "development_history_2017_third_date" }}</p>
-          <p class="eg-slider__slide-paragraph">{{ T "development_history_2017_third_date_text" }}</p>
-        </div>
-      </div>
-    </div>
-    <div class="eg-slider__slide">
-      <div class="eg-slider__slide-content">
-        <div class="eg-slider__slide-group">
-          <p class="eg-slider__slide-year">{{ T "development_history_2016_first_date" }}</p>
-          <p class="eg-slider__slide-paragraph">{{ T "development_history_2016_first_date_text" }}</p>
-        </div>
-        <div class="eg-slider__slide-group">
-          <p class="eg-slider__slide-year">{{ T "development_history_2016_second_date" }}</p>
-          <p class="eg-slider__slide-paragraph">{{ T "development_history_2016_second_date_text" }}</p>
-        </div>
-        <div class="eg-slider__slide-group">
-          <p class="eg-slider__slide-year">{{ T "development_history_2016_third_date" }}</p>
-          <p class="eg-slider__slide-paragraph">{{ T "development_history_2016_third_date_text" }}</p>
-        </div>
-      </div>
-    </div>
-    <div class="eg-slider__slide">
-      <div class="eg-slider__slide-content">
-        <div class="eg-slider__slide-group">
-          <p class="eg-slider__slide-year">{{ T "development_history_2015_first_date" }}</p>
-          <p class="eg-slider__slide-paragraph">{{ T "development_history_2015_first_date_text" }}</p>
-        </div>
-        <div class="eg-slider__slide-group">
-          <p class="eg-slider__slide-year">{{ T "development_history_2015_second_date" }}</p>
-          <p class="eg-slider__slide-paragraph">{{ T "development_history_2015_second_date_text" }}</p>
-        </div>
-        <div class="eg-slider__slide-group">
-          <p class="eg-slider__slide-year">{{ T "development_history_2015_third_date" }}</p>
-          <p class="eg-slider__slide-paragraph">{{ T "development_history_2015_third_date_text" }}</p>
-        </div>
-      </div>
-    </div>
-    <div class="eg-slider__slide">
-      <div class="eg-slider__slide-content">
-        <div class="eg-slider__slide-group">
-          <p class="eg-slider__slide-year">15 June</p>
-          <p class="eg-slider__slide-paragraph">Testnet 2 release</p>
-        </div>
-      </div>
-    </div>
-    <div class="eg-slider__slide">
-      <div class="eg-slider__slide-content">
-        <div class="eg-slider__slide-group">
-          <p class="eg-slider__slide-year">15 January</p>
-          <p class="eg-slider__slide-paragraph">Testnet 2 release</p>
-        </div>
-      </div>
-    </div>
-    <div class="eg-slider__slide">
-      <div class="eg-slider__slide-content">
-        <div class="eg-slider__slide-group">
-          <p class="eg-slider__slide-year">15 April</p>
-          <p class="eg-slider__slide-paragraph">Testnet 2 release</p>
-        </div>
-      </div>
-    </div>
-    <div class="eg-slider__slide">
-      <div class="eg-slider__slide-content">
-        <div class="eg-slider__slide-group">
-          <p class="eg-slider__slide-year">15 February</p>
-          <p class="eg-slider__slide-paragraph">Testnet 2 release</p>
-        </div>
-      </div>
-    </div>
+    {{ end }}
   </div>
 </div>

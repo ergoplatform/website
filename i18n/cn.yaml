@@ -157,12 +157,11 @@
 - id: development_history_2019_first_date_text
   translation: 功能齐全的测试链2.0版本发布
 
-
 - id: development_history_2019_second_date
-  translation: 6月20日
+  translation: 7月1日
 
 - id: development_history_2019_second_date_text
-  translation: 主链计划启动时间
+  translation: Ergo mainnet is launched
 
 - id: development_history_2018_first_date
   translation: 6月1日
@@ -449,6 +448,9 @@
 - id: tools_second-section_second-sub_first_link
   translation: 如何安装尔格全节点
 
+- id: tools_second-section_second-sub_first_url
+  translation: https://ergoplatform.org/cn/blog/2019_03_17_how_to_set/
+
 - id: tools_second-section_second-sub_second_link
   translation: 如何挖掘尔格
 
@@ -669,7 +671,7 @@
   translation: 尔格主链何时推出？
 
 - id: faq_sixth-item_text
-  translation: 尔格目前处于安全审计阶段，正在通过社区测试。发布日期定在6月20日。
+  translation: "Ergo mainnet launched on July 1st."
 
 - id: faq_seventh-item_title
   translation: 尔格有无区块大小限制？
