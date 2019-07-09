@@ -161,7 +161,7 @@
   translation: 7月1日
 
 - id: development_history_2019_second_date_text
-  translation: Ergo mainnet is launched
+  translation: 尔格主网正式启动
 
 - id: development_history_2018_first_date
   translation: 6月1日
@@ -459,6 +459,9 @@
 
 - id: tools_second-section_third-sub_first_link
   translation: 测试链浏览器
+
+- id: tools_second-section_third-sub_second_link
+  translation: 主链浏览器
 
 - id: tools_second-section_fourth-sub_title
   translation: APIs
