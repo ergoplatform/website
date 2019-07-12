@@ -6,10 +6,19 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ERG is available in Magnum Wallet</title>
+      <link>https://ergoplatform.org/en/news/2019_07_11/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2019_07_11/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>After-Launch Thoughts and Ergo Roadmap</title>
