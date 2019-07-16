@@ -1,6 +1,13 @@
 module.exports = {
   presets: [
-    ['@babel/preset-env'],
+    [
+      '@babel/preset-env',
+      {
+        modules: false,
+        loose: true,
+        useBuiltIns: 'usage',
+      },
+    ],
   ],
   plugins: [
     ['prismjs', {

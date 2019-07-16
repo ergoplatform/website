@@ -1,7 +1,7 @@
 @font-face {
   font-family: "LabGrotesque";
+  src: url("../fonts/LabGrotesque-kern-latin.woff") format("woff");
   font-display: swap;
-  src: local("LabGrotesque"), url("../fonts/LabGrotesque-Regular.woff") format("woff");
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -21,5 +21,5 @@
   text-transform: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-  src: local("LabGrotesqueMono"), url("../fonts/LabGrotesque-Mono.woff") format("woff");
+  src: url("../fonts/LabGrotesque-Mono-num.woff") format("woff");
 }

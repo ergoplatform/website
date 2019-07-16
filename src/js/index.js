@@ -6,6 +6,7 @@ import Prism from 'prismjs';
 import 'prismjs/themes/prism.css';
 import { downloader } from './downloadMore';
 
+
 const dropDownFunc = (id) => {
   $(`#${id}`).closest('.dropdown').toggleClass('show');
 };
@@ -38,6 +39,13 @@ window.addEventListener('click', (event) => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+  if ('fonts' in document) {
+    const regular = new FontFace('LabGrotesque', "url(/fonts/LabGrotesque-Regular-hint-all.woff) format('woff')");
+    regular.load().then((font) => {
+      document.fonts.add(font);
+    });
+  }
+
   Prism.highlightAll();
 
   $('.dropdown .dropdown__button').each(function (e) {

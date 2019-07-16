@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="/favicon.png" sizes="16x16" type="image/png">
     <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="preload" href="/fonts/LabGrotesque-kern-latin.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/LabGrotesque-Mono-num.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/LabGrotesque-Regular-hint-all.woff" as="font" type="font/woff" crossorigin>
 
     
       <meta name="description" content="本文介绍了在尔格脚本中执行的功能齐全的ICO（首次币发行）。该案例涵盖了尔格平台的几个重要和新颖的特征，并展示了如何使用少量代码来支持复杂的合约。
@@ -29,6 +32,8 @@ val selfIndexIsZero = INPUTS(0).id == SELF.id val proof = getVar[Coll[Byte]](1).
 
     
     
+
+    <link rel="preload" href="https://ergoplatform.org/scss/style.min.css" as="style">
     <link rel="stylesheet" href="https://ergoplatform.org/scss/style.min.css">
     <script type="text/javascript" src="/js/index.js" defer></script>
   </head>
@@ -723,5 +728,6 @@ Ergo挖矿基于Autolykos, 一个旨在抵抗ASIC超级矿机和矿池的工作�
   </div>
 </footer>
 </div>
+
   </body>
 </html>

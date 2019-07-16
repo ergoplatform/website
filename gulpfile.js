@@ -11,6 +11,7 @@ function swallowError(error) {
 
 gulp.task('js', () => gulp.src('./src/js/index.js')
   .pipe(webpackStream({
+    mode: 'production',
     output: {
       filename: 'index.js',
     },

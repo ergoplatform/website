@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="/favicon.png" sizes="16x16" type="image/png">
     <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="preload" href="/fonts/LabGrotesque-kern-latin.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/LabGrotesque-Mono-num.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/LabGrotesque-Regular-hint-all.woff" as="font" type="font/woff" crossorigin>
 
     
       <meta name="description" content="本地交易所交易系统（LETS）是一个本地相互信用协会，允许成员单独创建共同信用资金，系统中的所有交易都写入共同的分类账。例如，假设拥有零余额的Alice愿意从Bob购买一升生鲜奶。首先，他们就价格达成一致，例如，假设价格约为2欧元（Alice和Bob居住在爱尔兰）。交易被写入分类账后，Alice的余额变为-2（减去2）欧元，Bob的余额变为2欧元。然后Bob可能会花费2欧元来购买Charlie的自制啤酒。通常，这种制度对负余额施加限制，有时甚至对正余额施加限制，以促进社区交易。
@@ -22,6 +25,8 @@ val selfOut = OUTPUTS(0) // 管理脚本 val managementScript = selfOut.R5[Sigma
 
     
     
+
+    <link rel="preload" href="https://ergoplatform.org/scss/style.min.css" as="style">
     <link rel="stylesheet" href="https://ergoplatform.org/scss/style.min.css">
     <script type="text/javascript" src="/js/index.js" defer></script>
   </head>
@@ -656,5 +661,6 @@ Ergo挖矿基于Autolykos, 一个旨在抵抗ASIC超级矿机和矿池的工作�
   </div>
 </footer>
 </div>
+
   </body>
 </html>
