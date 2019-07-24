@@ -28,6 +28,7 @@ Unlike a (hex-encoded) binary representation of a script, an Ergo address is usi
 Let's look at the prefix byte which contains information about the network and address types:
 
 Possible network types are:
+
 * Mainnet - 0x00
 * Testnet - 0x10
 
