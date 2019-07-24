@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Ergo Addresses</title>
+      <link>https://ergoplatform.org/en/blog/2019_07_24_ergo_address/</link>
+      <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2019_07_24_ergo_address/</guid>
+      <description>In today&amp;rsquo;s article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work specifically as well as what makes them preferable to other types of blockchain addresses.
+Let&amp;rsquo;s start at the very beginning.
+The moment you install any cryptocurrency wallet you automatically create an address with it. Very loosely speaking you can compare a wallet to a traditional bank account and an address to the matching account number.</description>
+    </item>
+    
+    <item>
       <title>After-Launch Thoughts and Ergo Roadmap</title>
       <link>https://ergoplatform.org/en/blog/2019_07_09_after_launch/</link>
       <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>

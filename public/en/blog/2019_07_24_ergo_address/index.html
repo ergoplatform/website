@@ -11,11 +11,13 @@
     <link rel="preload" href="/fonts/LabGrotesque-Regular-hint-all.woff" as="font" type="font/woff" crossorigin>
 
     
-      <meta name="description" content="A Local Exchange Trading System (LETS) is aimed at developing local economy and is usually used by people of a locality in the vicinity of each other. For a brief overview of LETS see this link, which also describes an ErgoScript implementation of a committee managed LETS. We call such a system a managed or permissioned, since it depends on a committee of trusted members to enroll new members into the LETS.">
+      <meta name="description" content="In today&amp;rsquo;s article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work specifically as well as what makes them preferable to other types of blockchain addresses.
+Let&amp;rsquo;s start at the very beginning.
+The moment you install any cryptocurrency wallet you automatically create an address with it. Very loosely speaking you can compare a wallet to a traditional bank account and an address to the matching account number.">
     
 
     
-    <title>A Trustless Local Exchange Trading System | Ergo</title>
+    <title>Ergo Addresses | Ergo</title>
 
     
     
@@ -115,12 +117,6 @@
               
                 
               
-                
-                  <li class="dd-language__item dd-language__item_hidden">
-                    <a class="dd-language__link dd-language__link--white eg-link" href="https://ergoplatform.org/cn/blog/2019_05_29-exchange/"><span>中文</span></a>
-                  </li>
-                
-              
             </ul>
           </div>
           <button class="eg-navbar__trigger eg-navbar__trigger--black" type="button" aria-expanded="false" aria-label="Toggle navigation">
@@ -137,204 +133,93 @@
         <a href="https://ergoplatform.org/en/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>Back to all posts</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
-        <h1 class="eg-title eg-mb-1">A Trustless Local Exchange Trading System</h1>
+        <h1 class="eg-title eg-mb-1">Ergo Addresses</h1>
         <div class="eg-author">
-          <img src="/img/authors/amitabh_saxena.png" alt="author img" class="eg-author__img">
+          <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
-            <h4 class="eg-author__info-title">Amitabh Saxena</h4>
-            <p class="eg-author__info-paragraph">29 May, 2019</p>
+            <h4 class="eg-author__info-title">Alex Chepurnoy</h4>
+            <p class="eg-author__info-paragraph">24 July, 2019</p>
           </div>
         </div>
         <div class="eg-blog__single-img">
-          <img src="/img/blog/trading.jpg" alt="blog photo">
+          <img src="/img/blog/address.jpg" alt="blog photo">
         </div>
         <div class="eg-blog__single-content">
           <div>
-            
+            <p>In today&rsquo;s article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work specifically as well as what makes them preferable to other types of blockchain addresses.</p>
 
-<p>A Local Exchange Trading System (LETS) is aimed at developing local economy and is usually used by people of a locality in the vicinity of each other. For a brief overview of LETS see  <a href="/blog/2019_04_22-lets/">this link</a>, which also describes an ErgoScript implementation of a committee managed LETS. We call such a system a <em>managed</em> or <em>permissioned</em>, since it depends on a committee of trusted members to enroll new members into the LETS.
-Here we describe a <strong>trustless</strong> LETS, i.e., one where there is no management committee needed for enrolment.</p>
+<p>Let&rsquo;s start at the very beginning.</p>
 
-<h2 id="overview">Overview</h2>
+<p>The moment you install any cryptocurrency wallet you automatically create an address with it. Very loosely speaking you can compare a wallet to a traditional bank account and an address to the matching account number.
+It is precisely one of these alphanumeric addresses that&rsquo;s needed to either send money from person A to person B, receive money or <a href="https://ergoplatform.org/en/blog/2019_07_03_mining_withdrawal/">withdraw your mining rewards</a>.
+If you want to get started using the Ergo wallet and dive deeper into its functions go check out the <a href="https://ergoplatform.org/en/blog/2019_06_04_wallet-documentation/">following link</a>.</p>
 
-<p>LETS involves several parties that agree to use some form of &ldquo;local currency&rdquo;, usually pegged to the country&rsquo;s main currency at a 1:1 rate. Assume that our LETS is based in a European country where the currency is Euros, and the exchange is done in &ldquo;local Euros&rdquo;, which are considered to be equivalent to national Euros.</p>
+<p>Now, what exactly are addresses?</p>
 
-<p>Each user in LETS has an account, which contains the LETS balance of that user (in Local Euros). On joining, each user has a balance of zero. The balance is stored in a (possibly decentralized) ledger. An interesting feature of LETS is that a user with zero balance can also &ldquo;withdraw&rdquo; money, but only for paying another LETS user. At any time the sum of LETS balances of all the users is zero.</p>
-
-<p>As an example, Alice with zero balance wishes to purchase one liter of milk for 2 Euros from Bob who is also a member of LETS with zero balance. She transfers 2 Euros from her account to Bob&rsquo;s, making her balance -2 and Bob&rsquo;s +2. Bob can then transfer some or all of his balance to another LETS user in exchange for goods or services.</p>
-
-<h2 id="trustless-lets">Trustless LETS</h2>
-
-<p>Since we desire a trustless LETS, we cannot depend on any trusted group of people to admit users. Note that we will still have a committee to perform some tasks such as setting up the LETS parameters (local currency, the maximum number of members, etc) and consuming any joining fee.</p>
-
-<p>We will only assume a trusted <em>pricing oracle</em> that gives the current rate of euros to ergs identified by some global id (<code>rateTokenID</code>) and a <em>singleton box</em> containing exactly one token with this id. A singleton box, described <a href="/blog/2019_04_22-lets/">here</a>, is a box containing a <em>singleton token</em>, i.e., a token with only one quantity in existence. This box also contains the rate of ergs to euros at any given period of time. The rate is updated by spending this box and creating another singleton box with the new rate.</p>
-
-<p>At any instance, our LETS is uniquely defined by a global <em>token box</em> that contains some <em>membership tokens</em> with id <code>letsTokenID</code>. This box defines the LETS parameters such as the location, the currency unit, <code>rateTokenID</code>, etc. The token box is initially started with, say, 10000 membership tokens. Users can spend this box and create their individual <em>LETS boxes</em> as outputs of the transaction, such that each such output has exactly one membership token and the balance membership tokens are put in a newly created token box.</p>
-
-<p>A LETS box represents a LETS member and must be used in every transaction. For simplicity, this article restricts all LETS transaction to involve exactly two members, one being the sender and the other the receiver, such that the sender transfers some positive amount of the LETS currency (local euros) to the receiver. Such a transaction consumes the member&rsquo;s boxes and recreates them as output with the updated balance.</p>
-
-<h2 id="the-basic-variant">The Basic Variant</h2>
-
-<p>To prevent spam and DDoS attacks, we require at least some minimum number of ergs (<code>minErgsToJoin</code>) to be locked in the newly created member&rsquo;s box. The ergs will be locked until at least <code>minWithdrawTime</code> number of blocks have been mined. A box is allowed to have a negative LETS balance upto the amount that can be covered by the locked ergs (using the rate at the time of trade).</p>
-
-<pre><code class="language-scala">// a tokenBox stores the membership tokens and has this script
-val tokenBox = OUTPUTS(0) // the first output must also be a tokenBox
-// first output contains remaining LETS tokens
-
-def isLets(b:Box) = { // returns true if b is a LETS box
-   // A LETS box must have exactly 1 membership token in tokens(0)
-   b.tokens(0)._1 == letsTokenID &amp;&amp; b.tokens(0)._2 == 1 &amp;&amp;
-   blake2b256(b.propositionBytes) == memberBoxScriptHash &amp;&amp;
-   SELF.R4[Long].get == 0 &amp;&amp; // start the box with zero LETS balance
-   b.value &gt;= minErgsToJoin &amp;&amp; // the box must contain some minimum ergs
-   b.R6[Long].get &lt;= HEIGHT // store the creation height in R6
-}
-
-// how many lets boxes creared in the tx
-val numLetsBoxes = OUTPUTS.filter({(b:Box) =&gt; isLets(b)}).size
-
-// In the transaction following is preserved for the token box ...
-tokenBox.tokens(0)._1 == SELF.tokens(0)._1 &amp;&amp;                //  token id
-tokenBox.tokens(0)._2 == SELF.tokens(0)._2 - numLetsBoxes &amp;&amp; //  quantity
-tokenBox.propositionBytes == SELF.propositionBytes           //  script
-</code></pre>
-
-<p>A LETS member&rsquo;s box is protected by the script below, whose hash <code>memberBoxScriptHash</code> is used above. The script requires exactly one (sender, receiver) pair per transaction.</p>
-
-<pre><code class="language-scala">val validRateOracle = CONTEXT.dataInputs(0).tokens(0)._1 == rateTokenID
-val rate = CONTEXT.dataInputs(0).R4[Int].get
-val inBalance = SELF.R4[Long].get    // LETS balance of current input
-val pubKey = SELF.R5[SigmaProp].get  // owner of the current input
-val createdAt = SELF.R6[Long].get    // height at which current input was mined
-
-val index = getVar[Int](0).get       // index of the corresponding output
-val out = OUTPUTS(index)
-val outBalance = out.R4[Long].get    // LETS balance of the output
-
-// A LETS box is one that has the same script as the current box
-val isMemberBox = {(b:Box) =&gt; b.propositionBytes == SELF.propositionBytes}
-val letsInputs = INPUTS.filter(isMemberBox)    // all LETS input boxes
-val letsOutputs = OUTPUTS.filter(isMemberBox)  // all LETS output boxes
-
-// The current input belongs to the receiver if its LETS balance increases
-// There may be some ergs in receiver's input box. We need to ensure that
-// the receiver's output box also contains the same amount of ergs as input
-val receiver = outBalance &gt; inBalance &amp;&amp; out.value == SELF.value
-
-val getBalance = {(b:Box) =&gt; b.R4[Long].get} // returns LETS balance of a box
-
-val letsBalIn = letsInputs.map(getBalance).fold(0L, {(l:Long, r:Long) =&gt; l + r})
-val letsBalOut = letsOutputs.map(getBalance).fold(0L, {(l:Long, r:Long) =&gt; l + r})
-
-// sender box can contain less amount of ergs (sender may withdraw ergs provided 
-// that any negative LETS balance of sender in out is backed by sufficient ergs)
-val correctErgs = out.value &gt;= -outBalance * rate &amp;&amp; (
-  out.value &gt;= SELF.value || SELF.R6[Long].get + minWithdrawTime &gt; HEIGHT
-)
-
-// for the receiver, we don't touch the erg balance, 
-// since a receiver is not actively involved in the transaction
-
-inBalance != outBalance &amp;&amp; // some transaction should occur; balance must change
-SELF.tokens(0)._1 == letsTokenID &amp;&amp; // the current input has the right token
-out.tokens(0)._1 == letsTokenID &amp;&amp; // corresponding output has the right token
-validRateOracle &amp;&amp;          // oracle providing rate has the correct &quot;rate token&quot;
-letsBalIn == letsBalOut &amp;&amp;  // total LETS balance is preserved in the transaction
-letsInputs.size == 2 &amp;&amp; letsOutputs.size == 2 &amp;&amp;  // only two LETS inputs, outputs
-out.propositionBytes == SELF.propositionBytes &amp;&amp;  // out is a LETS box ...
-out.R5[SigmaProp].get == pubKey &amp;&amp;                // ... with the right pub key
-out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... and creation height
-(receiver ||              // either current input belongs to receiver ...
-  (pubKey &amp;&amp; correctErgs) // ... or out has correct ergs and tx has signature
-)
-</code></pre>
-
-<p>The transaction spending a box with the above script requires:
-- The sum of the LETS balance of inputs and outputs is preserved
-- There are two LETS inputs and two LETS outputs
-- The public keys (stored in R5) is preserved in the corresponding output
-- The creation height (stored in R6) be preserved in the corresponding output</p>
-
-<p>We say that some public key is the receiver if the LETS balance of its output is higher than that of its input.</p>
-
-<p>The last condition requires that either the input and output boxes belong to the receiver (so that the ergs are preserved), or, in case they belong to the sender, a signature is provided and the output is backed by the required number of ergs if its LETS balance is negative. Furthermore, it requires that the sender&rsquo;s ergs balance cannot be reduced until at least <code>minWithdrawTime</code> number of blocks have been mined after the ergs were locked.</p>
-
-<p>Compared to the managed LETS, the above system has the following differences:</p>
+<p>Addresses are short strings that correspond to certain scripts and are used to protect a box (<a href="https://www.ergoforum.org/t/ergo-terminology-a-box-and-a-register/32">this</a> post that core developer <em>kushti</em> published on our forum explains very well what a &ldquo;box&rdquo; is).
+Unlike a (hex-encoded) binary representation of a script, an Ergo address is using a Base58-encoding and therefore has some very useful characteristics to it which the binary representation do not offer:</p>
 
 <ul>
-<li><strong>No membership record</strong>: Unlike the managed LETS, We don&rsquo;t store any membership information here.</li>
-<li><strong>Multiple-boxes</strong>: A person can create multiple membership boxes, which is permitted. We only require that any negative balance be backed by the corresponding number of ergs locked in it.</li>
+<li>The integrity of an address can easily be checked via an integrated checksum (which is a &ldquo;small-sized datum derived from a block of digital data for the purpose of detecting errors that may have been introduced during its transmission or storage&rdquo;, according to Wikipedia).</li>
+<li>A prefix of the address is showing you the network and address type. In particular, the network prefix prevents you from mistakenly sending mainnet tokens to the testnet address.</li>
+<li>The address is using an encoding (namely, Base58 as mentioned) which is avoiding similarly looking characters and is friendly to double-clicking and also line-breaking in emails.</li>
+<li>An address is encoding network type, address type, checksum, and enough information to correspond with particular scripts.</li>
 </ul>
 
-<h2 id="lets-1-zero-sum-collateral">LETS-1: Zero Sum, Collateral</h2>
+<p>Let&rsquo;s look at the prefix byte which contains information about the network and address types:</p>
 
-<p>The above is the basic variant, which we call <strong>LETS-1</strong>. It has the following features:</p>
+<p>Possible network types are:
+* Mainnet - 0x00
+* Testnet - 0x10</p>
+
+<p>Address types are (semantics described below):</p>
 
 <ul>
-<li><strong>Time-locked Joining-Fee</strong>: To prevent spam attacks, a member has to pay a certain minimum fee in ergs at the time of joining. This fee is refundable but only after a predefined number of blocks.</li>
-<li><strong>Zero Sum</strong>: The sum of the LETS balances of all member boxes is zero. Member boxes are allowed to have a negative balance as long as it is within a certain limit.</li>
-<li><strong>Collateral</strong>: For the sender&rsquo;s output, ergs are used as collateral to cover negative LETS balance at the current exchange rate.</li>
+<li>0x01 - Pay-to-PublicKey(P2PK) address</li>
+<li>0x02 - Pay-to-Script-Hash(P2SH)</li>
+<li>0x03 - Pay-to-Script(P2S)</li>
 </ul>
 
-<p>The following are some variations of LETS-1.</p>
-
-<h2 id="lets-2-zero-sum-no-collateral">LETS-2: Zero Sum, No collateral</h2>
-
-<p>This is a slight variation of LETS-1 as follows:</p>
+<p>For an address type, we form content bytes as follows:</p>
 
 <ul>
-<li><strong>Non-refundable joining fee</strong>: Similar to LETS-1, a joining fee is needed to prevent spam attacks. However, unlike LETS-1, this fee is non-refundable and must be sent to some predefined management committee.</li>
-<li><strong>Zero Sum</strong>: As in LETS-1.</li>
+<li>P2PK - serialized (compressed) public key</li>
+<li>P2SH - first 192 bits of the Blake2b256 hash of serialized script bytes</li>
+<li>P2S  - serialized script (this is where mining rewards go!)</li>
 </ul>
 
-<h2 id="lets-3-positive-sum-collateral">LETS-3: Positive-Sum, Collateral</h2>
+<p>For example, sending 10 Ergs to a P2PK address usually means that a corresponding transaction
+will contain a box in which 10 Ergs are locked by a public key encoded in the P2PK address. Similarly,
+in case of a P2S address the box will be locked by a script encoded in the address. In the most complicated case of a
+P2SH script, the box will be protected by a special predefined script which is taking first 192 bits of Blake2b256 hash
+value for a script which should be shown by an input spending the box.</p>
 
-<p>The above two variants require the total LETS balance to be always zero. Here we consider a positive value for this sum. In particular, this variant has the following properties:</p>
+<p>Here is an example of how particular addresses are going to look on the testnet:</p>
 
 <ul>
-<li><strong>Time-locked Joining Fee</strong>: As in LETS-1.</li>
-<li><strong>Positive Sum</strong>: The LETS balance of every member must always be non-negative. This ensures that the sum of the LETS balances of all member boxes is positive. The initial LETS balance is set to a positive value based on the joining fee at the current rate, capped to some maximum value.</li>
-<li><strong>Collateral</strong>: Any reduction in ergs balance of the sender must be accompanied by a reduction of the corresponding LETS balance at the current exchange rate.</li>
+<li>3 - P2PK (3WvsT2Gm4EpsM9Pg18PdY6XyhNNMqXDsvJTbbf6ihLvAmSb7u5RN)</li>
+<li>8 - P2SH (8UmyuJuQ3FS9ts7j72fn3fKChXSGzbL9WC, 8LnSX95GAWdbDZWJZQ73Uth4uE8HqN3emJ)</li>
+<li>? - P2S (imdaM2NzX, z4hAmfvfSnQJPChMWzfBzJjpB8ei2HoLCZ2RHTaNArMNHFirdJTc7E)</li>
 </ul>
 
-<p>We can also allow topping up the LETS balance during a transaction by adding the equivalent amount of ergs.</p>
-
-<h2 id="lets-4-positive-sum-no-collateral">LETS-4: Positive-Sum, No collateral</h2>
-
-<p>This is similar to LETS-3 but with some small variations:</p>
+<p>And here is how they are looking on our mainnet:</p>
 
 <ul>
-<li><strong>Non-refundable Joining Fee</strong>: As in LETS-2</li>
-<li><strong>Positive-Sum</strong>: As in LETS-3</li>
+<li>9 - P2PK (9fRAWhdxEsTcdb8PhGNrZfwqa65zfkuYHAMmkQLcic1gdLSV5vA)</li>
+<li>2 - P2SH (25qGdVWg2yyYho8uC1pLtc7KxFn4nEEAwD, 23NL9a8ngN28ovtLiKLgHexcdTKBbUMLhH)</li>
+<li>? - P2S (7bwdkU5V8, BxKBaHkvrTvLZrDcZjcsxsF7aSsrN73ijeFZXtbj4CXZHHcvBtqSxQ)</li>
 </ul>
 
-<p>The following table summarizes the variants:</p>
+<p>In short summary:</p>
 
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Zero Sum</th>
-<th>Positive Sum</th>
-</tr>
-</thead>
+<ul>
+<li>Prefix byte = network type + address type (for example, P2S script on the testnet starts with 0x13 before Base58)</li>
+<li>checksum = blake2b256 (prefix byte || content bytes)</li>
+<li>address = prefix byte || content bytes || checksum</li>
+</ul>
 
-<tbody>
-<tr>
-<td><strong>Collateral</strong></td>
-<td>LETS-1</td>
-<td>LETS-3</td>
-</tr>
-
-<tr>
-<td><strong>No collateral</strong></td>
-<td>LETS-2</td>
-<td>LETS-4</td>
-</tr>
-</tbody>
-</table>
-
-<p>We considered LETS transactions involving a single sender-receiver pair. More advanced models can allow multiple senders and receivers, and need not be in pairs.</p>
+<p>If any of this sparked your interest, you are very welcome to join our community and ask further questions on our <a href="https://t.me/ergoplatform">telegram channel</a> and/or <a href="https://www.ergoforum.org/">forum</a>.
+See you there!</p>
 
           </div>
         </div>
@@ -342,7 +227,7 @@ out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... and creation he
   <p class="eg-text__paragraph eg-text__paragraph--26">Share post</p>
   <ul class="eg-social">
     <li class="eg-share_item">
-      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_05_29-exchange%2f" target="_blank">
+      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_07_24_ergo_address%2f" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path d="M17 14.0001H25V28.4H17V14.0001Z" fill="white"/>
@@ -353,7 +238,7 @@ out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... and creation he
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_05_29-exchange%2f&amp;hashtags=ergoplatform" target="_blank">
+      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_07_24_ergo_address%2f&amp;hashtags=ergoplatform" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path class="st0" fill-rule="evenodd" clip-rule="evenodd" d="M29 16.4204C28.4478 16.6615 27.855 16.8241 27.2323 16.8975C27.868 16.5225 28.3558 15.9287 28.5857 15.2214C27.9909 15.5684 27.3322 15.8208 26.6315 15.9565C26.0699 15.3677 25.2701 15 24.3851 15C22.6855 15 21.3076 16.3562 21.3076 18.0291C21.3076 18.2666 21.3347 18.4978 21.3873 18.7195C18.8298 18.5933 16.5616 17.3871 15.0441 15.5542C14.7792 16.0018 14.6274 16.5222 14.6274 17.0774C14.6274 18.1283 15.1706 19.0554 15.9963 19.5989C15.4921 19.5831 15.0174 19.4469 14.6024 19.22C14.6021 19.2325 14.6021 19.2452 14.6021 19.2581C14.6021 20.7258 15.6632 21.9504 17.0707 22.2285C16.8128 22.2979 16.5409 22.335 16.2599 22.335C16.0619 22.335 15.8693 22.3158 15.6812 22.2805C16.0728 23.4839 17.2097 24.36 18.5559 24.3843C17.5025 25.197 16.176 25.6812 14.734 25.6812C14.4857 25.6812 14.2408 25.6667 14 25.6384C15.3617 26.4982 16.979 27 18.7175 27C24.3777 27 27.4734 22.3837 27.4734 18.3804C27.4734 18.2494 27.4705 18.1184 27.4645 17.9883C28.0658 17.5614 28.5873 17.0281 29 16.4204Z" fill="#FF4221"/>
@@ -361,7 +246,7 @@ out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... and creation he
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link copy-link" href="https://ergoplatform.org/en/blog/2019_05_29-exchange/" target="_blank">
+      <a class="eg-share__link copy-link" href="https://ergoplatform.org/en/blog/2019_07_24_ergo_address/" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M39.91 19.3528L34.2335 6.06338C34.1186 5.78985 33.898 5.57515 33.6227 5.46487L20.2117 0.0807171C19.9364 -0.0292029 19.6283 -0.027376 19.3547 0.089384L6.0641 5.76578C5.79022 5.8811 5.57549 6.10129 5.46522 6.37698L0.0816753 19.7881C-0.0303977 20.0656 -0.0267767 20.3716 0.0903423 20.6455L5.76643 33.9366C5.88175 34.2101 6.10231 34.4249 6.37727 34.5352L19.7883 39.919C19.9209 39.9727 20.0639 40 20.2048 40C20.3544 40 20.5043 39.971 20.647 39.909L33.9359 34.2324C34.2097 34.1171 34.4245 33.8966 34.5348 33.6216L39.9183 20.2102C40.0304 19.9327 40.0267 19.6267 39.91 19.3528Z" stroke="#FF4221"/>
@@ -399,19 +284,6 @@ out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... and creation he
             
             
             
-              
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_07_24_ergo_address/">
-                  <div class="eg-blog__item-img"><img src="/img/blog/address.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>Ergo Addresses</span></h3>
-                  <p class="eg-blog__item-paragraph">In today&rsquo;s article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work …</p>
-                  <div class="eg-author">
-                    <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
-                    <div class="eg-author__info">
-                      <h4 class="eg-author__info-title">Alex Chepurnoy</h4>
-                      <p class="eg-author__info-paragraph">24 July, 2019</p>
-                    </div>
-                  </div>
-                </a>
               
             
               
@@ -475,6 +347,19 @@ A lot of folks launched a node and also a miner, with pubkeyHex from the miner �
                 </a>
               
             
+              
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_05_29-exchange/">
+                  <div class="eg-blog__item-img"><img src="/img/blog/trading.jpg" height="188" width="335" alt="blog photo"></div>
+                  <h3 class="eg-blog__item-title"><span>A Trustless Local Exchange Trading System</span></h3>
+                  <p class="eg-blog__item-paragraph">A Local Exchange Trading System (LETS) is aimed at developing local economy and is usually used by people of a locality in the vicinity of each other. For …</p>
+                  <div class="eg-author">
+                    <img src="/img/authors/amitabh_saxena.png" alt="author img" class="eg-author__img" width="60" height="60">
+                    <div class="eg-author__info">
+                      <h4 class="eg-author__info-title">Amitabh Saxena</h4>
+                      <p class="eg-author__info-paragraph">29 May, 2019</p>
+                    </div>
+                  </div>
+                </a>
               
             
               
