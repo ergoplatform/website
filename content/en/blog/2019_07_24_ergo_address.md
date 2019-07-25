@@ -2,8 +2,8 @@
 title: "Ergo Addresses"
 date: 2019-07-24
 draft: false
-author: "Alex Chepurnoy"
-authorPhoto: "/img/authors/alex_chepurnoy.svg"
+author: "Robert Wolf"
+authorPhoto: "/img/authors/robert_wolf.jpg"
 blogPhoto: "/img/blog/address.jpg"
 ---
 
