@@ -501,6 +501,12 @@
 - id: tools_second-section_fifth-sub_third_link
   translation: (JS) Transaction basics
 
+- id: tools_second-section_sixth-sub_title
+  translation: Support links
+
+- id: tools_second-section_sixth_sub_first_link
+  translation: Ergo Forum
+
 - id: tools_third_title
   translation: Grants for Developers
 
