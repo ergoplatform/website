@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://ergoplatform.org/cn/</loc>
-    <lastmod>2019-07-19T00:00:00+00:00</lastmod>
+    <lastmod>2019-08-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -15,6 +15,23 @@
                 rel="alternate"
                 hreflang="cn"
                 href="https://ergoplatform.org/cn/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/cn/news/2019_08_06/</loc>
+    <lastmod>2019-08-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ergoplatform.org/en/news/2019_08_06/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://ergoplatform.org/cn/news/2019_08_06/"
                 />
   </url>
   

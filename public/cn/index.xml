@@ -6,10 +6,19 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
-    <lastBuildDate>Fri, 19 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>发布尔格主网3.0.6版本</title>
+      <link>https://ergoplatform.org/cn/news/2019_08_06/</link>
+      <pubDate>Tue, 06 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/cn/news/2019_08_06/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>发布尔格主网3.0.4版本</title>

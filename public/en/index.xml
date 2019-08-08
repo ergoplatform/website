@@ -6,10 +6,21 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mining ERGO on AMD Cards</title>
+      <link>https://ergoplatform.org/en/blog/2018_08_08_amd/</link>
+      <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2018_08_08_amd/</guid>
+      <description>This tutorial will provide you with the information needed to get your AMD cards mining ERGO on either Windows or Linux.
+Developer MH Samadani published his AMD Miner just three days after the official launch and is continuously updating it since. To keep track of his updates you can join the Ergo Mining Telegram Channel and search for #amdminer. You can download and look into the miner here.
+The code is based on OpenCL and completely open source.</description>
+    </item>
     
     <item>
       <title>Ergo Mainnet 3.0.6 released</title>
