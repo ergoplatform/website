@@ -13,10 +13,10 @@
     
     <item>
       <title>Mining ERGO on AMD Cards</title>
-      <link>https://ergoplatform.org/en/blog/2018_08_08_amd/</link>
+      <link>https://ergoplatform.org/en/blog/2019_08_07_amd/</link>
       <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/blog/2018_08_08_amd/</guid>
+      <guid>https://ergoplatform.org/en/blog/2019_08_07_amd/</guid>
       <description>This tutorial will provide you with the information needed to get your AMD cards mining ERGO on either Windows or Linux.
 Developer MH Samadani published his AMD Miner just three days after the official launch and is continuously updating it since. To keep track of his updates you can join the Ergo Mining Telegram Channel and search for #amdminer. You can download and look into the miner here.
 The code is based on OpenCL and completely open source.</description>

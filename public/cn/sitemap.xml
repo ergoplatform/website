@@ -36,6 +36,23 @@
   </url>
   
   <url>
+    <loc>https://ergoplatform.org/cn/blog/2019_07_24_ergo_address/</loc>
+    <lastmod>2019-07-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ergoplatform.org/en/blog/2019_07_24_ergo_address/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://ergoplatform.org/cn/blog/2019_07_24_ergo_address/"
+                />
+  </url>
+  
+  <url>
     <loc>https://ergoplatform.org/cn/news/2019_07_19/</loc>
     <lastmod>2019-07-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
