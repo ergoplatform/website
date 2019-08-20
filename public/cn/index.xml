@@ -6,10 +6,27 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
-    <lastBuildDate>Tue, 06 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>利用AMD卡开采尔格币</title>
+      <link>https://ergoplatform.org/cn/blog/2019_08_07_amd/</link>
+      <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/cn/blog/2019_08_07_amd/</guid>
+      <description>本教程将向你提供在Windows或Linux环境下利用AMD卡开采尔格币的所需信息.
+开发者MH Samadani 在正式推出后第3天就发表其AMD矿工，并且之后还在不断对其进行更新。为了跟踪其最新动态，你可以加入尔格采矿电报群并且搜索 #amdminer。你可以在此查看矿机。
+编码是基于OpenCL并且是完全开放源代码。如果你用的是Nvidia 卡，你可以在此找到CUDA矿机。
+请注意，使用任何封闭源代码矿机是不安全的。尔格的开采特点要求你必须将你的密钥提供给矿机，以在任何脆弱数据面临危险之前确定谁值得信任！
+以下是AMD卡的报告哈希率：
+ rx570-8g: 22-24Mh/s rx580-8g: 23-25Mh/s rx Vega56: 24-26Mh/s  在进一步说明之前，我想对MH Samadani和主要开发人员Amin Moradi为矿工和同仁编写此教程的付出表示感谢！
+现在让我们开始吧！
+配置 将这些文件复制到相同的文件夹作为你的可执行文件，并且将你的种子字符串和节点地址添加到 config.json。除了在相同文件中设置keepPrehash: true 之外。
+ Miningkernel.cl Prehashkernel.cl Ocldecs.h Ocldefs.h Libcurl.dll(在windows环境下) Config.json  对Linux的要求 1. 通过下载你来自amd.com特定Linux 发行版的AMDGPU-PRO 软件包来安装AMDGPU-PRO驱动器。打开该文件包，并且在终端窗口运行： $ amdgpu-pro-install --opencl=legacy,pal --headless  2. 安装OpenCL 头文件 $ apt install libcurl4-openssl-dev  3. 安装OpenSSL 1.02 $ apt install libssl-dev  对Windows的要求 1. 你需要至少一个AMD GPU，其驱动器安装了 amd.com 2. 从此处的 mhssadini’s github 下载与安装AMD APK 3.</description>
+    </item>
     
     <item>
       <title>发布尔格主网3.0.6版本</title>

@@ -11,28 +11,19 @@
     <link rel="preload" href="/fonts/LabGrotesque-Regular-hint-all.woff" as="font" type="font/woff" crossorigin>
 
     
-      <meta name="description" content="首先，我们有一个重要的公告—如果在审计过程中没有发现安全漏洞，计划于5月26日发布尔格主网！
-关于扩展和应用的愿景是什么？ 关于扩展，主要方法是在不影响功能的情况下避免膨胀。例如。持久可更新存储是可能的，更新由区块链合约检查，但只有验证了的数据结构的摘要（以及一些额外的字节，少于40个字节）存储在UTXO集，这与数据集的大小无关。存储租金有助于清除UTXO设备上的灰尘。轻量客户端：在尔格中，如果你不使用，你可以在不存储UTXO设置的情况下获得全节点保证。这大大改善了boostrapping（机器学习算法）和区块验证时间。通过这些改进，可以在不影响经典区块链假设和保证的情况下提高TPS（透明页共享）。但是你想要具体数字吗？我没有具体数字，因为区块大小等参数不是一成不变的，而是矿工可以调整它们。因此，如果矿工正在经历低的完整区块验证时间（硬件随着时间的推移而变得越来越好，软件也是），他可能会建议或投票来增加区块大小。
-关于应用，我们希望有人追随：1。人们重视系统及其用户之间的社会契约。例如。人们对以太坊分叉不满意。尔格不会有硬件更新功能，而社区可以在很多方面升级协议。 2.由于（1）至少，同时也有限的供应，尔格将作为储值资产（如果您只是在系统中存储硬币，滞期费用很少）。3.需要安全，简单和高效的金融应用的人员。尔格的智能货币概念比以太坊的智能合约简单得多，同时功能强大，足以满足那些没有特定技术开发固态合约的人们的大多数金融应用，或大量资金来雇用熟练的开发人员。 4.还没准备好预测大公司的任何事情，但有些企业已表示有兴趣在尔格之上做一些代币和合约。我们会尽早宣布任何相关事宜。
-有没有示例或用例？ 我们有很多示例，合约：预言机（oracles），众筹，原子交叉链和单链（代币到代币）交换，混合等。 开发人员的尔格脚本教程涵盖了基础信息。
-一个包含更复杂示例的文件（冷钱包，混合，石头剪刀布游戏）即将发布。此外，我们将展示首次币发行场景和LETS系统的示例。 另请参阅&amp;ldquo;为大众提供智能合约&amp;rdquo;博文中的目标小额信贷合约示例。
-您是否有意建立像闪电网络这样的本地链下解决方案？您对社区驱动方案的看法是什么？ 是的，我们希望它们会在某个时刻出现。我们现在的目标是提供尽可能灵活的协议，使其实现变得容易。最重要的是，我们已经有社区成员在尔格之上执行侧链，但这项工作还处于早期阶段。我们支持社区的任何活动，包括侧链。
-哪个区块链项目与尔格类似？ 在某些方面，比特币（软分叉，但我们会更进一步），Coda（如果它是真实的，我仍需检查;轻量客户端），Grin（FlyClient类似于PoPoWs），ZCash（Equihash是类似于我们的工作量证明，但我们的参数更严格，我们的工作量证明是池阻的）。不能像我们的语言一样命名任何其他项目！所以，总的来说，尔格非常独特。
-什么是尔格数据以及它的实际用例是什么？ 主网将在多久之后执行？ 尔格数据计划成为一个具有相同技术的区块链，但不同的参数可满足面向数据的应用需求。现在我们完全专注于在其上推出单链和应用。我认为尔格数据可能会在2到3年后出现，如果需要这样的应用，并且还可能又基于尔格之上的应用限制（特别是数据密集型）。按说，将会有一个侧链。现在这个领域已经有很好的进展，所以到那时我们可能会有无条件好的侧链。
-什么时候开始挖矿？我们可以用cpu挖矿吗？ 当然，您现在可以开始使用CPU进行挖掘。只需使用mining = true config settings设置一个完整节点（查看本指南），您的节点将在初始同步后开始挖矿。可以在此处找到示例配置
-但是我们还没有上主网呢？所以我们只能挖掘测试网硬币？ 是的，你现在只能挖掘测试网硬币。 GPU 矿工绝对可以在主网之前使用（可能是本周或下周）。
-是否有关于如何设置钱包的手册？ 钱包是在主网发布之前应该更新的另一件事，我们会就它的安全设置等提出建议。现在，您只能在设置帖子的配置文件部分2中将助记词设置为纯文本
-运行节点的最低要求是什么？ 这一切都取决于你的节点制度。我们没有精确测量它，我们用4 Gb内存，2个CPU，80 Gb SSD驱动上打开我们的全部节点，但它就像推荐的配置，而不是最小的配置。
-您是否计划与其他平台合作（例如Waves）？哪一种？ 我们计划在Waves DEX上市（这将大大简化EFYT / 尔格币互换），没有计划与平台的其他合作。
-您有计划增加一个选择来生成类似ERC721的代币吗？无法拆分的令牌。 您可以免费为每个交易发行一个代币，因此发行大量代币（最大供应量为1）不是问题。没有标准可以将它们组合成一类相似的代币（没有标准的方法来检查，标记aa &amp;hellip; aa与标记aa...bb具有相同类别的代币），但可能在将来会出现这样的标准。
-是否可以同时播报一批交易？理想情况下，它们包含在同一区块中。 没有API方法可以同时播报批量交易，但没有什么可以阻止您逐个广播它们而没有延迟。因此，同时播报尽可能多的交易不应该是一个问题。理想情况下，它们应包含在同一个区块中 - 可以编写某种合约，确保一些交易包含在一个单一的交易中阻止（或者没有包括它们）但是，我们还没有尝试过。此外，这可能需要矿工具有从内存池收集交易的修改规则。
-是否可以选择使用0值资产发送交易？ 所以代币在交易中，它的数量是0？不，那是不可能的
-是否有选择发送“广告”交易？ 交易的该费用由自定义代币支付。 它可能是使用交换示例完成的，因此您可以创建一个为尔格购买代币的合约，当发件人要发送代币时—他会卖出所需数量的代币并将剩余的代币数量转移到里面一笔交易。
-所以没有办法转移0.0000001的代币？ 尔格中的每个输出都应该包含一定量的尔格币。 交易费用可能为0，但您应该为每个创建的输出放一定数量的尔格币。">
+      <meta name="description" content="本教程将向你提供在Windows或Linux环境下利用AMD卡开采尔格币的所需信息.
+开发者MH Samadani 在正式推出后第3天就发表其AMD矿工，并且之后还在不断对其进行更新。为了跟踪其最新动态，你可以加入尔格采矿电报群并且搜索 #amdminer。你可以在此查看矿机。
+编码是基于OpenCL并且是完全开放源代码。如果你用的是Nvidia 卡，你可以在此找到CUDA矿机。
+请注意，使用任何封闭源代码矿机是不安全的。尔格的开采特点要求你必须将你的密钥提供给矿机，以在任何脆弱数据面临危险之前确定谁值得信任！
+以下是AMD卡的报告哈希率：
+ rx570-8g: 22-24Mh/s rx580-8g: 23-25Mh/s rx Vega56: 24-26Mh/s  在进一步说明之前，我想对MH Samadani和主要开发人员Amin Moradi为矿工和同仁编写此教程的付出表示感谢！
+现在让我们开始吧！
+配置 将这些文件复制到相同的文件夹作为你的可执行文件，并且将你的种子字符串和节点地址添加到 config.json。除了在相同文件中设置keepPrehash: true 之外。
+ Miningkernel.cl Prehashkernel.cl Ocldecs.h Ocldefs.h Libcurl.dll(在windows环境下) Config.json  对Linux的要求 1. 通过下载你来自amd.com特定Linux 发行版的AMDGPU-PRO 软件包来安装AMDGPU-PRO驱动器。打开该文件包，并且在终端窗口运行： $ amdgpu-pro-install --opencl=legacy,pal --headless  2. 安装OpenCL 头文件 $ apt install libcurl4-openssl-dev  3. 安装OpenSSL 1.02 $ apt install libssl-dev  对Windows的要求 1. 你需要至少一个AMD GPU，其驱动器安装了 amd.com 2. 从此处的 mhssadini’s github 下载与安装AMD APK 3.">
     
 
     
-    <title>Alex Chepurnoy 和Dmitry Meshkov的问答 | Ergo</title>
+    <title>利用AMD卡开采尔格币 | Ergo</title>
 
     
     
@@ -131,11 +122,11 @@
               </li>
               
                 
-              
-                
                   <li class="dd-language__item dd-language__item_hidden">
-                    <a class="dd-language__link dd-language__link--white eg-link" href="https://ergoplatform.org/en/blog/2019_03_19-qa/"><span>Eng</span></a>
+                    <a class="dd-language__link dd-language__link--white eg-link" href="https://ergoplatform.org/en/blog/2019_08_07_amd/"><span>Eng</span></a>
                   </li>
+                
+              
                 
               
             </ul>
@@ -154,87 +145,123 @@
         <a href="https://ergoplatform.org/cn/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>回到所有帖子</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
-        <h1 class="eg-title eg-mb-1">Alex Chepurnoy 和Dmitry Meshkov的问答</h1>
+        <h1 class="eg-title eg-mb-1">利用AMD卡开采尔格币</h1>
         <div class="eg-author">
-          <img src="/img/authors/dmitry_meshkov.svg" alt="author img" class="eg-author__img">
+          <img src="/img/authors/robert_wolf.jpg" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
-            <h4 class="eg-author__info-title">Dmitry Meshkov</h4>
-            <p class="eg-author__info-paragraph">2019.03.19</p>
+            <h4 class="eg-author__info-title">Robert Wolf</h4>
+            <p class="eg-author__info-paragraph">2019.08.07</p>
           </div>
         </div>
         <div class="eg-blog__single-img">
-          <img src="/img/blog/question_opt.jpg" alt="blog photo">
+          <img src="/img/blog/amd.jpg" alt="blog photo">
         </div>
         <div class="eg-blog__single-content">
           <div>
             
 
-<p>首先，我们有一个重要的公告—如果在审计过程中没有发现安全漏洞，计划于5月26日发布尔格主网！</p>
+<p>本教程将向你提供在Windows或Linux环境下利用AMD卡开采尔格币的所需信息.</p>
 
-<h2 id="关于扩展和应用的愿景是什么">关于扩展和应用的愿景是什么？</h2>
+<p>开发者MH Samadani 在正式推出后第3天就发表其AMD矿工，并且之后还在不断对其进行更新。为了跟踪其最新动态，你可以加入<a href="https://t.me/ergo_mining">尔格采矿电报群</a>并且搜索 <code>#amdminer</code>。你可以<a href="https://github.com/mhssamadani/ergoAMDminer">在此</a>查看矿机。</p>
 
-<p>关于扩展，主要方法是在不影响功能的情况下避免膨胀。例如。持久可更新存储是可能的，更新由区块链合约检查，但只有验证了的数据结构的摘要（以及一些额外的字节，少于40个字节）存储在UTXO集，这与数据集的大小无关。存储租金有助于清除UTXO设备上的灰尘。轻量客户端：在尔格中，如果你不使用，你可以在不存储UTXO设置的情况下获得全节点保证。这大大改善了boostrapping（机器学习算法）和区块验证时间。通过这些改进，可以在不影响经典区块链假设和保证的情况下提高TPS（透明页共享）。但是你想要具体数字吗？我没有具体数字，因为区块大小等参数不是一成不变的，而是矿工可以调整它们。因此，如果矿工正在经历低的完整区块验证时间（硬件随着时间的推移而变得越来越好，软件也是），他可能会建议或投票来增加区块大小。</p>
+<p>编码是基于OpenCL并且是完全开放源代码。如果你用的是Nvidia 卡，你可以<a href="https://github.com/ergoplatform/Autolykos-GPU-miner/tree/master/secp256k1">在此</a>找到CUDA矿机。</p>
 
-<p>关于应用，我们希望有人追随：1。人们重视系统及其用户之间的社会契约。例如。人们对以太坊分叉不满意。尔格不会有硬件更新功能，而社区可以在很多方面升级协议。 2.由于（1）至少，同时也有限的供应，尔格将作为储值资产（如果您只是在系统中存储硬币，滞期费用很少）。3.需要安全，简单和高效的金融应用的人员。尔格的智能货币概念比以太坊的智能合约简单得多，同时功能强大，足以满足那些没有特定技术开发固态合约的人们的大多数金融应用，或大量资金来雇用熟练的开发人员。 4.还没准备好预测大公司的任何事情，但有些企业已表示有兴趣在尔格之上做一些代币和合约。我们会尽早宣布任何相关事宜。</p>
+<p>请注意，使用任何封闭源代码矿机是不安全的。尔格的开采特点要求你必须将你的密钥提供给矿机，以在任何脆弱数据面临危险之前确定谁值得信任！</p>
 
-<h2 id="有没有示例或用例">有没有示例或用例？</h2>
+<p>以下是AMD卡的报告哈希率：</p>
 
-<p>我们有很多示例，合约：预言机（oracles），众筹，原子交叉链和单链（代币到代币）交换，混合等。 <a href="https://docs.ergoplatform.com/ErgoScript.pdf">开发人员的尔格脚本教程</a>涵盖了基础信息。</p>
+<ul>
+<li>rx570-8g: 22-24Mh/s</li>
+<li>rx580-8g: 23-25Mh/s</li>
+<li>rx Vega56: 24-26Mh/s</li>
+</ul>
 
-<p>一个包含更复杂示例的文件（冷钱包，混合，石头剪刀布游戏）即将发布。此外，我们将展示首次币发行场景和<a href="https://en.wikipedia.org/wiki/Local_exchange_trading_system">LETS系统</a>的示例。
-另请参阅<a href="http://chepurnoy.org/blog/2018/10/smart-contracts-for-the-people/">&ldquo;为大众提供智能合约&rdquo;</a>博文中的目标小额信贷合约示例。</p>
+<p>在进一步说明之前，我想对MH Samadani和主要开发人员<a href="https://github.com/amin63moradi">Amin Moradi</a>为矿工和同仁编写此教程的付出表示感谢！</p>
 
-<h2 id="您是否有意建立像闪电网络这样的本地链下解决方案-您对社区驱动方案的看法是什么">您是否有意建立像闪电网络这样的本地链下解决方案？您对社区驱动方案的看法是什么？</h2>
+<p><strong>现在让我们开始吧！</strong></p>
 
-<p>是的，我们希望它们会在某个时刻出现。我们现在的目标是提供尽可能灵活的协议，使其实现变得容易。最重要的是，我们已经有社区成员在尔格之上执行侧链，但这项工作还处于早期阶段。我们支持社区的任何活动，包括侧链。</p>
+<h3 id="配置">配置</h3>
 
-<h2 id="哪个区块链项目与尔格类似">哪个区块链项目与尔格类似？</h2>
+<p>将这些文件复制到相同的文件夹作为你的可执行文件，并且将你的种子字符串和节点地址添加到 <code>config.json</code>。除了在相同文件中设置<code>keepPrehash: true</code> 之外。</p>
 
-<p>在某些方面，比特币（软分叉，但我们会更进一步），Coda（如果它是真实的，我仍需检查;轻量客户端），Grin（FlyClient类似于PoPoWs），ZCash（Equihash是类似于我们的工作量证明，但我们的参数更严格，我们的工作量证明是池阻的）。不能像我们的语言一样命名任何其他项目！所以，总的来说，尔格非常独特。</p>
+<ul>
+<li>Miningkernel.cl</li>
+<li>Prehashkernel.cl</li>
+<li>Ocldecs.h</li>
+<li>Ocldefs.h</li>
+<li>Libcurl.dll(在windows环境下)</li>
+<li>Config.json</li>
+</ul>
 
-<h2 id="什么是尔格数据以及它的实际用例是什么-主网将在多久之后执行">什么是尔格数据以及它的实际用例是什么？ 主网将在多久之后执行？</h2>
+<h3 id="对linux的要求">对Linux的要求</h3>
 
-<p>尔格数据计划成为一个具有相同技术的区块链，但不同的参数可满足面向数据的应用需求。现在我们完全专注于在其上推出单链和应用。我认为尔格数据可能会在2到3年后出现，如果需要这样的应用，并且还可能又基于尔格之上的应用限制（特别是数据密集型）。按说，将会有一个侧链。现在这个领域已经有很好的进展，所以到那时我们可能会有无条件好的侧链。</p>
+<h4 id="1-通过下载你来自-amd-com-https-amd-com-特定linux-发行版的amdgpu-pro-软件包来安装amdgpu-pro驱动器-打开该文件包-并且在终端窗口运行">1. 通过下载你来自<a href="https://amd.com">amd.com</a>特定Linux 发行版的AMDGPU-PRO 软件包来安装AMDGPU-PRO驱动器。打开该文件包，并且在终端窗口运行：</h4>
 
-<h2 id="什么时候开始挖矿-我们可以用cpu挖矿吗">什么时候开始挖矿？我们可以用cpu挖矿吗？</h2>
+<pre><code class="language-bash">$ amdgpu-pro-install --opencl=legacy,pal --headless
+</code></pre>
 
-<p>当然，您现在可以开始使用CPU进行挖掘。只需使用mining = true config settings设置一个完整节点（<a href="http://chepurnoy.org/blog/2019/01/how-to-set-up-and-configure-full-ergo-node/">查看本指南</a>），您的节点将在初始同步后开始挖矿。可以在<a href="https://github.com/ergoplatform/ergo/blob/master/src/main/resources/nodeTestnet/application.conf">此处</a>找到示例配置</p>
+<h4 id="2-安装opencl-头文件">2. 安装OpenCL 头文件</h4>
 
-<h2 id="但是我们还没有上主网呢-所以我们只能挖掘测试网硬币">但是我们还没有上主网呢？所以我们只能挖掘测试网硬币？</h2>
+<pre><code class="language-bash">$ apt install libcurl4-openssl-dev
+</code></pre>
 
-<p>是的，你现在只能挖掘测试网硬币。 GPU 矿工绝对可以在主网之前使用（可能是本周或下周）。</p>
+<h4 id="3-安装openssl-1-02">3. 安装OpenSSL 1.02</h4>
 
-<h2 id="是否有关于如何设置钱包的手册">是否有关于如何设置钱包的手册？</h2>
+<pre><code class="language-bash">$ apt install libssl-dev
+</code></pre>
 
-<p>钱包是在主网发布之前应该更新的另一件事，我们会就它的安全设置等提出建议。现在，您只能在<a href="http://chepurnoy.org/blog/2019/01/how-to-set-up-and-configure-full-ergo-node/">设置帖子</a>的配置文件部分2中将助记词设置为纯文本</p>
+<h3 id="对windows的要求">对Windows的要求</h3>
 
-<h2 id="运行节点的最低要求是什么">运行节点的最低要求是什么？</h2>
+<h4 id="1-你需要至少一个amd-gpu-其驱动器安装了-amd-com-https-amd-com">1. 你需要至少一个AMD GPU，其驱动器安装了 <a href="https://amd.com">amd.com</a></h4>
 
-<p>这一切都取决于你的节点制度。我们没有精确测量它，我们用4 Gb内存，2个CPU，80 Gb SSD驱动上打开我们的全部节点，但它就像推荐的配置，而不是最小的配置。</p>
+<h4 id="2-从-此处-http-amd-dev-wpengine-netdna-cdn-com-app-sdk-installers-appsdkinstaller-3-0-130-135-ga-full-amd-app-sdkinstaller-v3-0-130-135-ga-windows-f-x64-exe-的-mhssadini-s-github-下载与安装amd-apk">2. 从<a href="http://amd-dev.wpengine.netdna-cdn.com/app-sdk/installers/APPSDKInstaller/3.0.130.135-GA/full/AMD-APP-SDKInstaller-v3.0.130.135-GA-windows-F-x64.exe">此处</a>的 mhssadini’s github 下载与安装AMD APK</h4>
 
-<h2 id="您是否计划与其他平台合作-例如waves-哪一种">您是否计划与其他平台合作（例如Waves）？哪一种？</h2>
+<h4 id="3-如果没有现成的-利用含有-可视化工作室工具链说明-https-medium-com-chuy-max-compile-libcurl-on-windows-with-visual-studio-2017-x64-and-ssl-winssl-cff41ac7971d-的源代码建造网络库libcurl">3. 如果没有现成的，利用含有<a href="https://medium.com/@chuy.max/compile-libcurl-on-windows-with-visual-studio-2017-x64-and-ssl-winssl-cff41ac7971d">可视化工作室工具链说明</a>的源代码建造网络库libcurl</h4>
 
-<p>我们计划在Waves DEX上市（这将大大简化EFYT / 尔格币互换），没有计划与平台的其他合作。</p>
+<h4 id="4-从-此处-https-slproweb-com-download-win64openssl-1-0-2s-exe-下载与安装openssl-1-0-2">4. 从<a href="https://slproweb.com/download/Win64OpenSSL-1_0_2s.exe">此处</a>下载与安装OpenSSL 1.0.2</h4>
 
-<h2 id="您有计划增加一个选择来生成类似erc721的代币吗-无法拆分的令牌">您有计划增加一个选择来生成类似ERC721的代币吗？无法拆分的令牌。</h2>
+<h3 id="在linux环境下建造">在Linux环境下建造</h3>
 
-<p>您可以免费为每个交易发行一个代币，因此发行大量代币（最大供应量为1）不是问题。没有标准可以将它们组合成一类相似的代币（没有标准的方法来检查，标记aa &hellip; aa与标记<code>aa...bb</code>具有相同类别的代币），但可能在将来会出现这样的标准。</p>
+<h4 id="1-在主目录下编辑-ergoopencl-cpp-并且加批注-define-test-或者取消批注-define-test-以建造矿机或者测试机">1. 在主目录下编辑 <code>ErgoOpenCL.cpp</code> ，并且加批注 <code>#define TEST</code> 或者取消批注 <code>define TEST</code> 以建造矿机或者测试机。</h4>
 
-<h2 id="是否可以同时播报一批交易-理想情况下-它们包含在同一区块中">是否可以同时播报一批交易？理想情况下，它们包含在同一区块中。</h2>
+<h4 id="2-将目录改为-ergoamdminer-ubuntu-并且运行make">2. 将目录改为 <code>ergoAMDminer/Ubuntu</code> ，并且运行make.</h4>
 
-<p>没有API方法可以同时播报批量交易，但没有什么可以阻止您逐个广播它们而没有延迟。因此，同时播报尽可能多的交易不应该是一个问题。理想情况下，它们应包含在同一个区块中 - 可以编写某种合约，确保一些交易包含在一个单一的交易中阻止（或者没有包括它们）但是，我们还没有尝试过。此外，这可能需要矿工具有从内存池收集交易的修改规则。</p>
+<pre><code class="language-bash">./makefile
+</code></pre>
 
-<h2 id="是否可以选择使用0值资产发送交易">是否可以选择使用0值资产发送交易？</h2>
+<h4 id="3-如果每一步都运行无误-你应当可以在-ergoamdminer-ubuntu-下找到ergoopencl-继续-运行程序-开始开采">3. 如果每一步都运行无误，你应当可以在<code>ergoAMDminer/Ubuntu/</code>下找到ErgoOpenCL。继续，运行程序，开始开采。</h4>
 
-<p>所以代币在交易中，它的数量是0？不，那是不可能的</p>
+<pre><code class="language-bash">./ErgoOpenCL
+</code></pre>
 
-<h2 id="是否有选择发送-广告-交易-交易的该费用由自定义代币支付">是否有选择发送“广告”交易？ 交易的该费用由自定义代币支付。</h2>
+<h3 id="针对windows的预制版本">针对Windows的预制版本</h3>
 
-<p>它可能是使用交换示例完成的，因此您可以创建一个为尔格购买代币的合约，当发件人要发送代币时—他会卖出所需数量的代币并将剩余的代币数量转移到里面一笔交易。</p>
+<p>下载<a href="https://github.com/mhssamadani/ergoAMDminer">github</a>，前往win64文件夹，然后执行 <code>ErgoOpenCL_miner.exe</code> 或 <code>ErgoOpenCL_tester.exe</code>。如果每一步都运行无误（参见要求与配置），其应当可以开始开采。</p>
 
-<h2 id="所以没有办法转移0-0000001的代币">所以没有办法转移0.0000001的代币？</h2>
+<h3 id="在windows环境下建造">在Windows环境下建造</h3>
 
-<p>尔格中的每个输出都应该包含一定量的尔格币。 交易费用可能为0，但您应该为每个创建的输出放一定数量的尔格币。</p>
+<p>打开 <code>ErgoOpenCL.sln</code> 可视化工作室。增加OpenCL、LibCurl和OpenSSL库。
+包括目录：</p>
+
+<p><img src="/img/blog/picture1.jpg" alt="Picture 1" /></p>
+
+<p>并且包括其他目录：</p>
+
+<p><img src="/img/blog/picture2.jpg" alt="Picture 2" /></p>
+
+<p>其他库目录：</p>
+
+<p><img src="/img/blog/picture3.jpg" alt="Picture 3" /></p>
+
+<p>其他依赖性：</p>
+
+<p><img src="/img/blog/picture4.jpg" alt="Picture 4" /></p>
+
+<p>在<code>ErgoOpenCL.cpp</code> 文件中，加批注 <code>#define TEST</code> 以建造矿机，或取消批注<code>define TEST</code> 以建造测试机。</p>
+
+<p>如果你还有其他问题、建议，希望送花给 <code>@mhs_sam</code> 或者就是想加入社区，快加入我们的电报群 - <a href="https://t.me/ergo_mining">尔格采矿</a> 或<a href="https://t.me/ergoplatform">尔格平台</a> – 来打声招呼吧！</p>
+
+<p><strong>祝挖矿顺利！</strong></p>
 
           </div>
         </div>
@@ -242,7 +269,7 @@
   <p class="eg-text__paragraph eg-text__paragraph--26">分享转发</p>
   <ul class="eg-social">
     <li class="eg-share_item">
-      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fcn%2fblog%2f2019_03_19-qa%2f" target="_blank">
+      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fcn%2fblog%2f2019_08_07_amd%2f" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path d="M17 14.0001H25V28.4H17V14.0001Z" fill="white"/>
@@ -253,7 +280,7 @@
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fcn%2fblog%2f2019_03_19-qa%2f&amp;hashtags=ergoplatform" target="_blank">
+      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fcn%2fblog%2f2019_08_07_amd%2f&amp;hashtags=ergoplatform" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path class="st0" fill-rule="evenodd" clip-rule="evenodd" d="M29 16.4204C28.4478 16.6615 27.855 16.8241 27.2323 16.8975C27.868 16.5225 28.3558 15.9287 28.5857 15.2214C27.9909 15.5684 27.3322 15.8208 26.6315 15.9565C26.0699 15.3677 25.2701 15 24.3851 15C22.6855 15 21.3076 16.3562 21.3076 18.0291C21.3076 18.2666 21.3347 18.4978 21.3873 18.7195C18.8298 18.5933 16.5616 17.3871 15.0441 15.5542C14.7792 16.0018 14.6274 16.5222 14.6274 17.0774C14.6274 18.1283 15.1706 19.0554 15.9963 19.5989C15.4921 19.5831 15.0174 19.4469 14.6024 19.22C14.6021 19.2325 14.6021 19.2452 14.6021 19.2581C14.6021 20.7258 15.6632 21.9504 17.0707 22.2285C16.8128 22.2979 16.5409 22.335 16.2599 22.335C16.0619 22.335 15.8693 22.3158 15.6812 22.2805C16.0728 23.4839 17.2097 24.36 18.5559 24.3843C17.5025 25.197 16.176 25.6812 14.734 25.6812C14.4857 25.6812 14.2408 25.6667 14 25.6384C15.3617 26.4982 16.979 27 18.7175 27C24.3777 27 27.4734 22.3837 27.4734 18.3804C27.4734 18.2494 27.4705 18.1184 27.4645 17.9883C28.0658 17.5614 28.5873 17.0281 29 16.4204Z" fill="#FF4221"/>
@@ -261,7 +288,7 @@
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link copy-link" href="https://ergoplatform.org/cn/blog/2019_03_19-qa/" target="_blank">
+      <a class="eg-share__link copy-link" href="https://ergoplatform.org/cn/blog/2019_08_07_amd/" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M39.91 19.3528L34.2335 6.06338C34.1186 5.78985 33.898 5.57515 33.6227 5.46487L20.2117 0.0807171C19.9364 -0.0292029 19.6283 -0.027376 19.3547 0.089384L6.0641 5.76578C5.79022 5.8811 5.57549 6.10129 5.46522 6.37698L0.0816753 19.7881C-0.0303977 20.0656 -0.0267767 20.3716 0.0903423 20.6455L5.76643 33.9366C5.88175 34.2101 6.10231 34.4249 6.37727 34.5352L19.7883 39.919C19.9209 39.9727 20.0639 40 20.2048 40C20.3544 40 20.5043 39.971 20.647 39.909L33.9359 34.2324C34.2097 34.1171 34.4245 33.8966 34.5348 33.6216L39.9183 20.2102C40.0304 19.9327 40.0267 19.6267 39.91 19.3528Z" stroke="#FF4221"/>
@@ -299,21 +326,6 @@
             
             
             
-              
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_08_07_amd/">
-                  <div class="eg-blog__item-img"><img src="/img/blog/amd.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>利用AMD卡开采尔格币</span></h3>
-                  <p class="eg-blog__item-paragraph">本教程将向你提供在Windows或Linux环境下利用AMD卡开采尔格币的所需信息.
-开发者MH Samadani 在正式推出后第3天就发表其AMD矿工，并且之后还在不断对其进行更新。为了跟踪其最新动态，你可以加入尔格采矿电报群并且搜索 #amdminer。你可以在此查看矿机。
-编码是基于OpenCL并且是完 …</p>
-                  <div class="eg-author">
-                    <img src="/img/authors/robert_wolf.jpg" alt="author img" class="eg-author__img" width="60" height="60">
-                    <div class="eg-author__info">
-                      <h4 class="eg-author__info-title">Robert Wolf</h4>
-                      <p class="eg-author__info-paragraph">2019.08.07</p>
-                    </div>
-                  </div>
-                </a>
               
             
               
@@ -497,6 +509,20 @@ Ergo挖矿基于Autolykos, 一个旨在抵抗ASIC超级矿机和矿池的工作�
                 </a>
               
             
+              
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_03_19-qa/">
+                  <div class="eg-blog__item-img"><img src="/img/blog/question_opt.jpg" height="188" width="335" alt="blog photo"></div>
+                  <h3 class="eg-blog__item-title"><span>Alex Chepurnoy 和Dmitry Meshkov的问答</span></h3>
+                  <p class="eg-blog__item-paragraph">首先，我们有一个重要的公告—如果在审计过程中没有发现安全漏洞，计划于5月26日发布尔格主网！
+关于扩展和应用的愿景是什么？ 关于扩展，主要方法是在不影响功能的情况下避免膨胀。例如。持久可更新存储是可能的，更新由区块链合约检查，但只有验证了的数据结构的摘要（以及一些额外的字节，少于40个字节）存储在UTXO集， …</p>
+                  <div class="eg-author">
+                    <img src="/img/authors/dmitry_meshkov.svg" alt="author img" class="eg-author__img" width="60" height="60">
+                    <div class="eg-author__info">
+                      <h4 class="eg-author__info-title">Dmitry Meshkov</h4>
+                      <p class="eg-author__info-paragraph">2019.03.19</p>
+                    </div>
+                  </div>
+                </a>
               
             
               
