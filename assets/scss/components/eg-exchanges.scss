@@ -9,7 +9,7 @@
 
   @media (max-width: $sm) {
     grid-template-columns: 1fr;
-    grid-gap: 10px;
+    grid-gap: 5px;
   }
 
   a {
@@ -21,7 +21,12 @@
       height: 65px;
 
       @media (max-width: $sm) {
-        width: 140px;
+        width: 200px;
+        height: 40px;
+      }
+
+      @media (max-width: $xs) {
+        width: 100%;
         height: 40px;
       }
     }
