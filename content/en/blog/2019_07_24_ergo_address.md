@@ -67,7 +67,7 @@ And here is how they are looking on our mainnet:
 In short summary:
 
 * Prefix byte = network type + address type (for example, P2S script on the testnet starts with 0x13 before Base58)
-* checksum = blake2b256 (prefix byte || content bytes)
+* checksum = leftmost_4_bytes (blake2b256 (prefix byte || content bytes))
 * address = prefix byte || content bytes || checksum
 
 If any of this sparked your interest, you are very welcome to join our community and ask further questions on our [telegram channel](https://t.me/ergoplatform) and/or [forum](https://www.ergoforum.org/). 
