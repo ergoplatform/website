@@ -111,7 +111,7 @@ The treasury did provide [half of the funds](https://explorer.ergoplatform.com/e
 
 `9gBSqNT9LH9WjvWbyqEvFirMbYp4nfGHnoWdceKGu45AKiya3Fq`
 
-In order to donate any amount of money, please follow the “How To Donate” section above with replacing backerPubKey with your public key, and pledge amount with a proper value (please note that it is in nanoErgs, `1 Erg = 1.000.000.000 nanoErgs`).
+In order to donate any amount of money, please follow the `“How To Donate”` section above with replacing backerPubKey with your public key, and pledge amount with a proper value (please note that it is in nanoErgs, `1 Erg = 1.000.000.000 nanoErgs`).
 
 As always, if you have further questions, suggestions or want to participate in the movement, please join our social media channels or forum.
 
