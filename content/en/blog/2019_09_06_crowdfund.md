@@ -115,4 +115,4 @@ In order to donate any amount of money, please follow the `“How To Donate”` 
 
 As always, if you have further questions, suggestions or want to participate in the movement, please join our social media channels or forum.
 
-[t.me/ergoplatform](t.me/ergoplatform) | [t.me/ergo_mining](t.me/ergo_mining) | [www.ergoforum.org](www.ergoforum.org)
+[t.me/ergoplatform](https://t.me/ergoplatform) | [t.me/ergo_mining](https://t.me/ergo_mining) | [www.ergoforum.org](www.ergoforum.org)
