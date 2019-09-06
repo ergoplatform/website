@@ -62,7 +62,7 @@ blogPhoto: "/img/blog/address.jpg"
 归纳如下：
 
 * 前缀字节 = 网络类型 + 地址类型 (举例来说，测试网的P2S脚本由Base58之前的0x13开始)
-* 校验和 = blake2b256 (前缀字节 || 内容字节)
+* 校验和 = leftmost_4_bytes (blake2b256 (前缀字节 || 内容字节))
 * 地址 = 前缀字节 || 内容字节 || 校验和
 
 如果阁下对其中任何内容感兴趣，非常欢迎阁下加入我们的社区，并且在我们的[电报群](https://t.me/ergoplatform)和/或[论坛](https://t.me/ergoplatform_CH)中咨询更多问题。期待你的加入！
