@@ -22,7 +22,7 @@
           </div>
         </div>
         <div>
-          {{- partial "share.html" (dict "context" . "link" ( print .Site.BaseURL .URL) ) -}}
+          {{- partial "share.html" (dict "context" . "link" .Permalink ) -}}
         </div>
       </div>
     </section>
@@ -32,7 +32,7 @@
         <div class="eg-blog eg-blog--w-100">
           <div class="eg-blog__main related">
             {{ $blogPosts := where .Site.RegularPages "Section" "blog" }}
-            {{ $current := .URL}}
+            {{ $current := .RelPermalink}}
             {{ range $blogPosts }}
               {{ if ne $current .URL }}
                 <a class="eg-blog__item eg-link related__post" href="{{.Permalink}}">

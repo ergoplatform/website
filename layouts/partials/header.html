@@ -12,7 +12,7 @@
       <div class="eg-navbar__content">
         <div class="eg-navbar__collapse" id="navbarSupportedContent">
             <ul class="eg-nav eg-nav--black">
-              {{ $url := .URL }}
+              {{ $url := .RelPermalink }}
               {{ range .Site.Menus.mainmenu }}
                 {{ $menuUrl := .URL | absLangURL | safeURL }}
                 <li class="eg-nav__item {{ if eq (substr $url 3) .URL  }}active{{ end }}">

@@ -34,9 +34,8 @@
           <div class="eg-navbar__content">
             <div class="eg-navbar__collapse eg-navbar__collapse--black" id="navbarSupportedContent">
               <ul class="eg-nav">
-                {{ $url := .URL }}
                 {{ range .Site.Menus.mainmenu }}
-                  <li class="eg-nav__item {{ if eq $url .URL  }}active{{ end }}">
+                  <li class="eg-nav__item">
                     <a
                       class="eg-nav__link eg-link"
                       href="{{ .URL | absLangURL }}"
