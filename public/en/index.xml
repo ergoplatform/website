@@ -6,10 +6,19 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>BISQ has officially added ERG</title>
+      <link>https://ergoplatform.org/en/news/2019_09_16/</link>
+      <pubDate>Mon, 16 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2019_09_16/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>ERGO ($ERG) is listed on P2PB2B Exchange</title>
