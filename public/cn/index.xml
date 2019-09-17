@@ -6,10 +6,19 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
-    <lastBuildDate>Sat, 14 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>BISQ 已经正式了加了尔格币(ERG)</title>
+      <link>https://ergoplatform.org/cn/news/2019_09_16/</link>
+      <pubDate>Mon, 16 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/cn/news/2019_09_16/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>尔格币($ERG) 已经在P2PB2B交易所挂牌交易</title>
