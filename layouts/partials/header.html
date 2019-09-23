@@ -11,44 +11,44 @@
       </div>
       <div class="eg-navbar__content">
         <div class="eg-navbar__collapse" id="navbarSupportedContent">
-            <ul class="eg-nav eg-nav--black">
-              {{ $url := .RelPermalink }}
-              {{ range .Site.Menus.mainmenu }}
-                {{ $menuUrl := .URL | absLangURL | safeURL }}
-                <li class="eg-nav__item {{ if eq (substr $url 3) .URL  }}active{{ end }}">
-                  <a
-                    class="eg-nav__link eg-link"
-                    href="{{ $menuUrl }}"
-                  ><span>{{ .Name }}</span></a>
+          <ul class="eg-nav eg-nav--black">
+            {{ $url := .RelPermalink }}
+            {{ range .Site.Menus.mainmenu }}
+              {{ $menuUrl := .URL | absLangURL | safeURL }}
+              <li class="eg-nav__item {{ if eq (substr $url 4 (len .Identifier)) (substr .URL 1 (len .Identifier)) }}active{{ end }}">
+                <a
+                  class="eg-nav__link eg-link"
+                  href="{{ $menuUrl }}"
+                ><span>{{ .Name }}</span></a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+        <div class="eg-navbar__language">
+          <ul
+            class="dd-language dropdown dd-language--black dropdown__menu dd-language__menu"
+            id="languageMenu"
+          >
+            <li class="dd-language__item">
+              <button
+              class="dd-language__button dd-language__button--white dropdown__button"
+              data-target-id="languageMenu"
+              >
+                {{ substr .Language.LanguageName 0 3 }}
+              </button>
+            </li>
+            {{ range $currentPage.AllTranslations }}
+              {{ if ne .Language.Lang $currentPage.Lang }}
+                <li class="dd-language__item dd-language__item_hidden">
+                  <a class="dd-language__link dd-language__link--white eg-link" href="{{ .Permalink }}"><span>{{ substr .Language.LanguageName 0 3 }}</span></a>
                 </li>
               {{ end }}
-            </ul>
-          </div>
-          <div class="eg-navbar__language">
-            <ul
-              class="dd-language dropdown dd-language--black dropdown__menu dd-language__menu"
-              id="languageMenu"
-            >
-              <li class="dd-language__item">
-                <button
-                class="dd-language__button dd-language__button--white dropdown__button"
-                data-target-id="languageMenu"
-                >
-                  {{ substr .Language.LanguageName 0 3 }}
-                </button>
-              </li>
-              {{ range $currentPage.AllTranslations }}
-                {{ if ne .Language.Lang $currentPage.Lang }}
-                  <li class="dd-language__item dd-language__item_hidden">
-                    <a class="dd-language__link dd-language__link--white eg-link" href="{{ .Permalink }}"><span>{{ substr .Language.LanguageName 0 3 }}</span></a>
-                  </li>
-                {{ end }}
-              {{ end }}
-            </ul>
-          </div>
-          <button class="eg-navbar__trigger eg-navbar__trigger--black" type="button" aria-expanded="false" aria-label="Toggle navigation">
-            <span></span>
-          </button>
+            {{ end }}
+          </ul>
+        </div>
+        <button class="eg-navbar__trigger eg-navbar__trigger--black" type="button" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+        </button>
       </div>
     </div>
   </nav>

@@ -1,0 +1,17 @@
+{{define "main"}}
+  <main class="">
+    <section class="container  container--top-content grid-container-1k2">
+      <div class="eg-text eg-mb-2 eg-mb-sm-1-5">
+        <a href="{{ `careers` | absLangURL | safeURL }}" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>{{ T "back_to_all_careers"}}</span></a>
+      </div>
+      <div class="eg-text eg-blog eg-blog--w-100">
+        <h1 class="eg-title eg-mb-1-5">{{ .Title }}</h1>
+        <div class="eg-blog__single-content">
+          <div>
+            {{ .Content }}
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+{{end}}

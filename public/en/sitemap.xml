@@ -896,6 +896,13 @@
   </url>
   
   <url>
+    <loc>https://ergoplatform.org/en/careers/</loc>
+    <lastmod>2019-04-12T13:49:52+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://ergoplatform.org/en/team/</loc>
     <lastmod>2019-04-11T20:29:21+03:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -1085,6 +1092,12 @@
                 hreflang="en"
                 href="https://ergoplatform.org/en/categories/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/en/careers/frontend/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>

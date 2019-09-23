@@ -65,6 +65,12 @@ title = "Ergo"
     url = "/team/"
     weight = -50
 
+  # [[languages.en.menu.mainmenu]]
+  #   identifier = "Careers"
+  #   name = "Careers"
+  #   url = "/careers/"
+  #   weight = -40
+
 [languages.cn]
   languageCode = "cn"
   languageName = "中文"

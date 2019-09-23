@@ -888,3 +888,14 @@
 
 - id: telegram_channel
   translation: https://t.me/ergoplatform
+
+# careers
+
+- id: careers_first_title
+  translation: Open positions
+
+- id: careers_first-section_first_paragraph
+  translation: Some text about our company/team/etc
+
+- id: back_to_all_careers
+  translation: Back to all careers
