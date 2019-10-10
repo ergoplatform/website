@@ -3,6 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ergoplatform.org/cn/</loc>
+    <lastmod>2019-10-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ergoplatform.org/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://ergoplatform.org/cn/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/cn/news/2019_10_08_2/</loc>
+    <lastmod>2019-10-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/cn/news/2019_10_08/</loc>
+    <lastmod>2019-10-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ergoplatform.org/en/news/2019_10_08/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://ergoplatform.org/cn/news/2019_10_08/"
+                />
+  </url>
+  
+  <url>
     <loc>https://ergoplatform.org/cn/news/2019_09_16/</loc>
     <lastmod>2019-09-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -16,22 +56,6 @@
                 rel="alternate"
                 hreflang="cn"
                 href="https://ergoplatform.org/cn/news/2019_09_16/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://ergoplatform.org/cn/</loc>
-    <lastmod>2019-09-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ergoplatform.org/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="https://ergoplatform.org/cn/"
                 />
   </url>
   
