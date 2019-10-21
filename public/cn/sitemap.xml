@@ -94,6 +94,23 @@
   </url>
   
   <url>
+    <loc>https://ergoplatform.org/cn/blog/2019_09_06_crowdfund/</loc>
+    <lastmod>2019-09-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ergoplatform.org/en/blog/2019_09_06_crowdfund/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://ergoplatform.org/cn/blog/2019_09_06_crowdfund/"
+                />
+  </url>
+  
+  <url>
     <loc>https://ergoplatform.org/cn/news/2019_09_06/</loc>
     <lastmod>2019-09-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>

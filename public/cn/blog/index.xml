@@ -12,6 +12,20 @@
     
     
     <item>
+      <title>尔格和众筹</title>
+      <link>https://ergoplatform.org/cn/blog/2019_09_06_crowdfund/</link>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/cn/blog/2019_09_06_crowdfund/</guid>
+      <description>什么是众筹？ 众筹是一种通过许多人的努力实现一种融资方式。众筹多通过全球网站启动，使项目和企业可以通过众多个人的小额出资来完成融资。通过众筹方式成功创业的最经典案例之一就是虚拟现实耳麦 - Oculus Rift。Oculus VR公司在2012年发起众筹，仅在两年后就被脸书以20亿美元的价格所收购。除了常规创业企业以外，还有许多区块链项目也选择采取众筹模式，例如：乙太坊、Tron和EOS。目前市场上有无数众筹平台。部分较大的众筹平台包括Indiegogo、Kickstarter和Gofundme，不一而足。众筹方式有很多好处：覆盖面广、高效以及最具说服力的营销… 但是现在，让我们看一下其最核心的一点！
+为尔格引入众筹模式 就在几天前的8月28日，核心开发者 Kushti 在（尔格论坛上）[www.ergoforum.org]表示他成功写出并且实施可以让用户在尔格区块链开展众筹活动的代码（如白皮书第6页. 所述。该代码甚至与当前的钱包API相结合。这里是如何建立钱包的快速指南。在这篇文章中，你将学习如何具体开展尔格众筹工作！还将带你看一下有史以来首次众筹建议书，其将为EIP1后众筹文本撰写工作提供资金支持。如果你想了解更多细节，请阅读以下“脚本”章节。此外，你也可以跳过这一章，直接阅读后面“如何捐款”、“如何收集捐款”以及“众筹项目建议书”等章节。
+脚本 根据尔格脚本白皮书（第6页）, 最简单的众筹脚本是“有关下列众筹情况的脚本：（持有主要出资人公钥的）项目出资人希望为（拥有要出资人公钥的）项目捐款，但前提是该项目在最后期限前从其他渠道筹集到足够的资金（至少达到融资下限）（以高度表示）。为了给项目捐款，出资人将创建一个受以下脚本保护的输出框。该脚本有两个条件：一种情况是最后期限已过，融资失败（出资人可以将钱要回来），另一种情况是成功实现融资（如果融资金额在最后期限前达到了所规定的最低融资门槛，那么项目就可以用这些钱）。
+为了确保融到足够多的资金，脚本将在全部输出结果中搜索一个框，并且向项目公钥分配足够多的值。为了检查输出框值的去向，脚本将读取保护输出框的脚本，并且将其与proveDlog对应的脚本进行比较（项目公钥）；该脚本可以通过projectPubKey.propBytes获得。
+由于目前API不支持嵌入自定义环境变量（只有诸如高度等预定义变量），因此编译脚本的唯一方法是用具体值替换白皮书中的这些变量。例如，想想看，如果一个众筹活动在第5万个区块前筹到500个尔格币，那么这次众筹就是成功的。 对于出资人公钥（backerPubKey）和项目公钥而言，我们可以采用目前只接受P2PK序列化钥匙的PK()函数。 如此，白皮书修订后的脚本如下：
+{ val backerPubKey = PK(&amp;quot;9h7DHKSDgE4uvP8313GVGdsEg3AvdAWSSTG7XZsLwBfeth4aePG&amp;quot;) val projectPubKey = PK(&amp;quot;9gBSqNT9LH9WjvWbyqEvFirMbYp4nfGHnoWdceKGu45AKiya3Fq&amp;quot;) val deadline = 50000 val minToRaise = 500L * 1000000000 val fundraisingFailure = HEIGHT &amp;gt;= deadline &amp;amp;&amp;amp; backerPubKey val enoughRaised = {(outBox: Box) =&amp;gt;outBox.value &amp;gt;= minToRaise &amp;amp;&amp;amp; outBox.propositionBytes == projectPubKey.propBytes } val fundraisingSuccess = HEIGHT &amp;lt; deadline &amp;amp;&amp;amp; projectPubKey &amp;amp;&amp;amp; OUTPUTS.exists(enoughRaised) fundraisingFailure || fundraisingSuccess }  如何捐款 首先，JSON不支持多行字符串，因此需要用\n替换换行符。此外，引号将被转意，因此使用“而非”。生成的JSON将被发送到/script/p2sAddress。为了给项目捐款，首先要从/钱包/众多地址中获得你的地址，比如说，提取它们中的第一个。把地址输入出资人公钥，这样在这一步之后对/脚本/p2sAddress的请求看起来以下情况：</description>
+    </item>
+    
+    <item>
       <title>利用AMD卡开采尔格币</title>
       <link>https://ergoplatform.org/cn/blog/2019_08_07_amd/</link>
       <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
