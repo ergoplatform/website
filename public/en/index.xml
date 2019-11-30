@@ -2,139 +2,139 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ergo</title>
-    <link>https://ergoplatform.org/en/</link>
+    <link>http://powerful-spire-67290.herokuapp.com/en/</link>
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 30 Nov 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://ergoplatform.org/en/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://powerful-spire-67290.herokuapp.com/en/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Top 5 Things To Do With Ergo Appkit</title>
-      <link>https://ergoplatform.org/en/blog/2019_11_30_top5/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/blog/2019_11_30_top5/</link>
       <pubDate>Sat, 30 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/blog/2019_11_30_top5/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/blog/2019_11_30_top5/</guid>
       <description>Top 5 Things To Do With Ergo Appkit Ergo Appkit is a library for polyglot development of Ergo Applications based on GraalVM. Many useful things can be done with GraalVM. Relying on that, in this article we’ll list some of the Appkit features inherited from GraalVM and explain how you can use them.
  0. Example Scenario 1. Develop Ergo Applications in Java 2. Low-footprint, fast-startup Ergo Applications 3. Develop Ergo Applications in JavaScript, Python, Ruby 4.</description>
     </item>
     
     <item>
       <title>ERGO ($ERG) is listed on Probit Exchange</title>
-      <link>https://ergoplatform.org/en/news/2019_10_30/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_10_30/</link>
       <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_10_30/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_10_30/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ergo Mainnet 3.1.3 released</title>
-      <link>https://ergoplatform.org/en/news/2019_10_29/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_10_29/</link>
       <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_10_29/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_10_29/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ergo Mainnet 3.1.2 released</title>
-      <link>https://ergoplatform.org/en/news/2019_10_14/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_10_14/</link>
       <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_10_14/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_10_14/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ERGO ($ERG) is listed on HOTBIT Exchange</title>
-      <link>https://ergoplatform.org/en/news/2019_10_08_hotbit/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_10_08_hotbit/</link>
       <pubDate>Tue, 08 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_10_08_hotbit/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_10_08_hotbit/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ergo Mainnet 3.1.1 released</title>
-      <link>https://ergoplatform.org/en/news/2019_10_08/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_10_08/</link>
       <pubDate>Tue, 08 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_10_08/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_10_08/</guid>
       <description></description>
     </item>
     
     <item>
       <title>BISQ has officially added ERG</title>
-      <link>https://ergoplatform.org/en/news/2019_09_16/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_09_16/</link>
       <pubDate>Mon, 16 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_09_16/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_09_16/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ERGO ($ERG) is listed on P2PB2B Exchange</title>
-      <link>https://ergoplatform.org/en/news/2019_09_14/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_09_14/</link>
       <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_09_14/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_09_14/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ergo and crowdfunding</title>
-      <link>https://ergoplatform.org/en/blog/2019_09_06_crowdfund/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/blog/2019_09_06_crowdfund/</link>
       <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/blog/2019_09_06_crowdfund/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/blog/2019_09_06_crowdfund/</guid>
       <description>What is Crowdfunding? Crowdfunding is a way of raising capital through the collective efforts of individuals. The campaigns are mostly started via the world wide web and allow projects and businesses to be funded by raising small amounts of money from a large number of people. One of the best known examples for successful crowdfunding startups is Oculus Rift, a virtual reality headset. The company Oculus VR initiated its campaign in 2012 and was only two years later acquired by Facebook for $2 billion total.</description>
     </item>
     
     <item>
       <title>Ergo will be listed on Hotbit exchange</title>
-      <link>https://ergoplatform.org/en/news/2019_09_06/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_09_06/</link>
       <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_09_06/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_09_06/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ergo Mainnet 3.1.0 released</title>
-      <link>https://ergoplatform.org/en/news/2019_08_27/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_08_27/</link>
       <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_08_27/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_08_27/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ERGO ($ERG) is listed on Vgate Exchange</title>
-      <link>https://ergoplatform.org/en/news/2019_08_20_1/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_08_20_1/</link>
       <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_08_20_1/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_08_20_1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ergo Mainnet 3.0.7 released</title>
-      <link>https://ergoplatform.org/en/news/2019_08_20/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_08_20/</link>
       <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_08_20/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_08_20/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mining ERGO on AMD Cards</title>
-      <link>https://ergoplatform.org/en/blog/2019_08_07_amd/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/blog/2019_08_07_amd/</link>
       <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/blog/2019_08_07_amd/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/blog/2019_08_07_amd/</guid>
       <description>This tutorial will provide you with the information needed to get your AMD cards mining ERGO on either Windows or Linux.
 Developer MH Samadani published his AMD Miner just three days after the official launch and is continuously updating it since. To keep track of his updates you can join the Ergo Mining Telegram Channel and search for #amdminer. You can download and look into the miner here.
 The code is based on OpenCL and completely open source.</description>
@@ -142,28 +142,28 @@ The code is based on OpenCL and completely open source.</description>
     
     <item>
       <title>Ergo Mainnet 3.0.6 released</title>
-      <link>https://ergoplatform.org/en/news/2019_08_06/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_08_06/</link>
       <pubDate>Tue, 06 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_08_06/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_08_06/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ergo Mainnet 3.0.5 released</title>
-      <link>https://ergoplatform.org/en/news/2019_07_30/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_30/</link>
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_07_30/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_30/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ergo Addresses</title>
-      <link>https://ergoplatform.org/en/blog/2019_07_24_ergo_address/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/blog/2019_07_24_ergo_address/</link>
       <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/blog/2019_07_24_ergo_address/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/blog/2019_07_24_ergo_address/</guid>
       <description>In today&amp;rsquo;s article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work specifically as well as what makes them preferable to other types of blockchain addresses.
 Let&amp;rsquo;s start at the very beginning.
 The moment you install any cryptocurrency wallet you automatically create an address with it. Very loosely speaking you can compare a wallet to a traditional bank account and an address to the matching account number.</description>
@@ -171,74 +171,74 @@ The moment you install any cryptocurrency wallet you automatically create an add
     
     <item>
       <title>Ergo Mainnet 3.0.4 released</title>
-      <link>https://ergoplatform.org/en/news/2019_07_19/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_19/</link>
       <pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_07_19/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_19/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ergo Mainnet 3.0.3 released</title>
-      <link>https://ergoplatform.org/en/news/2019_07_18/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_18/</link>
       <pubDate>Thu, 18 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_07_18/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_18/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ERG is available in Magnum Wallet</title>
-      <link>https://ergoplatform.org/en/news/2019_07_11/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_11/</link>
       <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_07_11/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_11/</guid>
       <description></description>
     </item>
     
     <item>
       <title>After-Launch Thoughts and Ergo Roadmap</title>
-      <link>https://ergoplatform.org/en/blog/2019_07_09_after_launch/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/blog/2019_07_09_after_launch/</link>
       <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/blog/2019_07_09_after_launch/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/blog/2019_07_09_after_launch/</guid>
       <description>Firstly, we would like to thank many enthusiasts, developers, miners, other folks, and our families for measureless help with Ergo development and launching. The launch finishes a few years period of initial research and development by the Team, and also starts a new epoch, where the core technology is mostly set in stone and gradual improvements in protocol implementations and infrastructure projects become the main focus.
 The current core Ergo Core Team remains fully committed to the project (at least, while the Foundation Treasury enables that).</description>
     </item>
     
     <item>
       <title>After-Launch Thoughts and Ergo Roadmap</title>
-      <link>https://ergoplatform.org/en/news/2019_07_09/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_09/</link>
       <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_07_09/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_09/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ergo Mainnet 3.0.2 released</title>
-      <link>https://ergoplatform.org/en/news/2019_07_04/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_04/</link>
       <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_07_04/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_04/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ERGO ($ERG) is listed on Tidex Exchange</title>
-      <link>https://ergoplatform.org/en/news/2019_07_02/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_02/</link>
       <pubDate>Wed, 03 Jul 2019 11:08:33 +0300</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_07_02/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_02/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ergo Withdrawal</title>
-      <link>https://ergoplatform.org/en/blog/2019_07_03_mining_withdrawal/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/blog/2019_07_03_mining_withdrawal/</link>
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/blog/2019_07_03_mining_withdrawal/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/blog/2019_07_03_mining_withdrawal/</guid>
       <description>Spending mining reward This text is to help miners to withdraw funds mined.
 A lot of folks launched a node and also a miner, with pubkeyHex from the miner embedded in the node config. Now information on how to recognize the coins mined and withdraw them to another address.
 On keys. A miner can see a lot of keys in different formats.
@@ -247,246 +247,246 @@ First, mining software and also mining support in the node (namely, ergo.</descr
     
     <item>
       <title>Ergo Withdrawal Instructions</title>
-      <link>https://ergoplatform.org/en/news/2019_07_03/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_03/</link>
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_07_03/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_03/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ergo mainnet is launched</title>
-      <link>https://ergoplatform.org/en/news/2019_07_01_1/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_01_1/</link>
       <pubDate>Mon, 01 Jul 2019 11:06:02 +0300</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_07_01_1/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_01_1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ergo Mainnet 3.0.1 released</title>
-      <link>https://ergoplatform.org/en/news/2019_07_01_2/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_01_2/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_07_01_2/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_01_2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ergo explorer released</title>
-      <link>https://ergoplatform.org/en/news/2019_07_01/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_01/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_07_01/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_01/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ergo will be listed on P2PB2B exchange</title>
-      <link>https://ergoplatform.org/en/news/2019_06_28_2/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_06_28_2/</link>
       <pubDate>Fri, 28 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_06_28_2/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_06_28_2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Joining the Ergo main network at the very beginning</title>
-      <link>https://ergoplatform.org/en/blog/2019_06_28_mainnet-bootstrap/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/blog/2019_06_28_mainnet-bootstrap/</link>
       <pubDate>Fri, 28 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/blog/2019_06_28_mainnet-bootstrap/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/blog/2019_06_28_mainnet-bootstrap/</guid>
       <description>Joining the Ergo main network at the very beginning In order to join the network at its very beginning and compete to mine the genesis block, you need to follow the steps described below. If you&amp;rsquo;re not going to participate in Ergo mining and just want to set up a full node, you need to follow steps 3 and 5.
 Preparations 1. Build mining software Check the guide first.</description>
     </item>
     
     <item>
       <title>Joining the Ergo main network at the very beginning</title>
-      <link>https://ergoplatform.org/en/news/2019_06_28_3/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_06_28_3/</link>
       <pubDate>Fri, 28 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_06_28_3/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_06_28_3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Testnet 2.2.0 released</title>
-      <link>https://ergoplatform.org/en/news/2019-06-27/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019-06-27/</link>
       <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019-06-27/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019-06-27/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mainnet launch - Monday, July 1, 10:00 AM UTC</title>
-      <link>https://ergoplatform.org/en/news/2019-06_26/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019-06_26/</link>
       <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019-06_26/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019-06_26/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ergo Mining Telegram group is now open</title>
-      <link>https://ergoplatform.org/en/news/2019-06-24/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019-06-24/</link>
       <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019-06-24/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019-06-24/</guid>
       <description></description>
     </item>
     
     <item>
       <title>EFYT (Ergo First Year Token) is listed on Tidex Exchange</title>
-      <link>https://ergoplatform.org/en/news/2019_06_1/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_06_1/</link>
       <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_06_1/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_06_1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mainnet launch postponed</title>
-      <link>https://ergoplatform.org/en/news/2019_06_13_2/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_06_13_2/</link>
       <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_06_13_2/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_06_13_2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The Bad Crypto Podcast featuring Ergo</title>
-      <link>https://ergoplatform.org/en/news/2019_06_13/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_06_13/</link>
       <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_06_13/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_06_13/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Testnet 2.1.2 released</title>
-      <link>https://ergoplatform.org/en/news/2019_06_12/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_06_12/</link>
       <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_06_12/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_06_12/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Interview with Ergo, a platform who&#39;s building the framework for contractual money</title>
-      <link>https://ergoplatform.org/en/news/2019_06_11/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_06_11/</link>
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_06_11/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_06_11/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Agreement with SWFT Blockchain</title>
-      <link>https://ergoplatform.org/en/news/2019_06_05/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019_06_05/</link>
       <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019_06_05/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019_06_05/</guid>
       <description></description>
     </item>
     
     <item>
       <title>New Bitcointalk thread</title>
-      <link>https://ergoplatform.org/en/news/2019-06-05-1/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019-06-05-1/</link>
       <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019-06-05-1/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019-06-05-1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Testnet 2.1.0 released</title>
-      <link>https://ergoplatform.org/en/news/2019-06-05-2/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019-06-05-2/</link>
       <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019-06-05-2/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019-06-05-2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Wallet documentation</title>
-      <link>https://ergoplatform.org/en/blog/2019_06_04_wallet-documentation/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/blog/2019_06_04_wallet-documentation/</link>
       <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/blog/2019_06_04_wallet-documentation/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/blog/2019_06_04_wallet-documentation/</guid>
       <description>An Ergo node provides a built-in wallet for storing private keys and signing transactions. The following describes how to set up and protect your Ergo wallet.
 The wallet uses the BIP39 standard to generate a seed from a mnemonic sentence, which is then used to generate the private keys according to the BIP32 standard  (Hierarchical Deterministic Wallets). You can use your own mnemonic sentence composed of the words from one of these wordists if you want to.</description>
     </item>
     
     <item>
       <title>Ergo whitepaper(Chinese)</title>
-      <link>https://ergoplatform.org/en/news/2019-06-03/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019-06-03/</link>
       <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019-06-03/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019-06-03/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Trustless Local Exchange Trading System on top of Ergo</title>
-      <link>https://ergoplatform.org/en/news/2019-05-30/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019-05-30/</link>
       <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019-05-30/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019-05-30/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Trustless Local Exchange Trading System</title>
-      <link>https://ergoplatform.org/en/blog/2019_05_29-exchange/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/blog/2019_05_29-exchange/</link>
       <pubDate>Wed, 29 May 2019 18:21:23 +0300</pubDate>
       
-      <guid>https://ergoplatform.org/en/blog/2019_05_29-exchange/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/blog/2019_05_29-exchange/</guid>
       <description>A Local Exchange Trading System (LETS) is aimed at developing local economy and is usually used by people of a locality in the vicinity of each other. For a brief overview of LETS see this link, which also describes an ErgoScript implementation of a committee managed LETS. We call such a system a managed or permissioned, since it depends on a committee of trusted members to enroll new members into the LETS.</description>
     </item>
     
     <item>
       <title>The Ergo Emission Schedule</title>
-      <link>https://ergoplatform.org/en/blog/2019_05_20-curve/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/blog/2019_05_20-curve/</link>
       <pubDate>Mon, 20 May 2019 15:05:06 +0300</pubDate>
       
-      <guid>https://ergoplatform.org/en/blog/2019_05_20-curve/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/blog/2019_05_20-curve/</guid>
       <description>Overview Ergo’s native token is called Erg and its emission schedule may be of keen interest to users and miners of the platform. Ergs also have some unique characteristics which are highlighted in this post. Most basically and leaving out technical details, Ergo has a strictly limited supply, an 8‐year emission schedule and a declining rate of emission over these 8 years. All tokens are mined through an original Asic and Pool‐resistant Proof‐of‐Work (“PoW”) algorithm called Autolykos.</description>
     </item>
     
     <item>
       <title>The Ergo Emission Schedule</title>
-      <link>https://ergoplatform.org/en/news/2019-05-20/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019-05-20/</link>
       <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019-05-20/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019-05-20/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Testnet 2.0.5 released</title>
-      <link>https://ergoplatform.org/en/news/2019-05-17/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019-05-17/</link>
       <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019-05-17/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019-05-17/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ergo whitepaper</title>
-      <link>https://ergoplatform.org/en/news/2019-05-15-whitepaper/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019-05-15-whitepaper/</link>
       <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019-05-15-whitepaper/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019-05-15-whitepaper/</guid>
       <description></description>
     </item>
     
     <item>
       <title>How to mine Ergo on Windows(x64)</title>
-      <link>https://ergoplatform.org/en/blog/2019_05_07_mining/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/blog/2019_05_07_mining/</link>
       <pubDate>Tue, 07 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/blog/2019_05_07_mining/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/blog/2019_05_07_mining/</guid>
       <description>Step 1: Tools Visual Studio
 Choose free community version, you will need to select desktop development with C++ package during install.
 CUDA toolkit
@@ -499,121 +499,121 @@ Download and install, select the OpenSSL binaries (/bin) directory during instal
     
     <item>
       <title>Release postponed</title>
-      <link>https://ergoplatform.org/en/news/2019-05-07-release/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019-05-07-release/</link>
       <pubDate>Tue, 07 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019-05-07-release/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019-05-07-release/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ergo teaser</title>
-      <link>https://ergoplatform.org/en/news/2019-04-24-teaser/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019-04-24-teaser/</link>
       <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019-04-24-teaser/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019-04-24-teaser/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Local Exchange Trading System On Top Of Ergo</title>
-      <link>https://ergoplatform.org/en/blog/2019_04_22-lets/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/blog/2019_04_22-lets/</link>
       <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/blog/2019_04_22-lets/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/blog/2019_04_22-lets/</guid>
       <description>A local exchange trading system (LETS) is a local mutual credit association which members are allowed to create common credit money individually, with all the deals in the system written into a common ledger. As an example, assume that Alice with zero balance is willing to buy a liter of raw milk from Bob. First, they agree on a price, for example, assume that the price is about 2 Euro (as Alice and Bob are living in Ireland).</description>
     </item>
     
     <item>
       <title>An ICO Example On Top Of Ergo</title>
-      <link>https://ergoplatform.org/en/blog/2019_04_10-ico-example/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/blog/2019_04_10-ico-example/</link>
       <pubDate>Wed, 10 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/blog/2019_04_10-ico-example/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/blog/2019_04_10-ico-example/</guid>
       <description>This article describes a full featured ICO (Initial Coin Offering) implemented in ErgoScript. The example covers several important and novel features of the Ergo Platform and shows how it can support complex contracts with tiny amount of code.
 Part 1. Preliminaries An important design decision in a cryptocurrency protocol is specifying what a spending transaction actually spends. There are two possibilities here. The first a UTXO-based model, as in Bitcoin, where a transaction spends one-time asset containers (called as &amp;lsquo;coins&amp;rsquo; or UTXOs in Bitcoin) and creates new ones.</description>
     </item>
     
     <item>
       <title>Ergo mining tutorial</title>
-      <link>https://ergoplatform.org/en/news/2019-04-03-ergo-mining-tutorial/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019-04-03-ergo-mining-tutorial/</link>
       <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019-04-03-ergo-mining-tutorial/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019-04-03-ergo-mining-tutorial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Testnet 2.0.3 released</title>
-      <link>https://ergoplatform.org/en/news/2019-04-02-testnet-2.0.3/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019-04-02-testnet-2.0.3/</link>
       <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019-04-02-testnet-2.0.3/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019-04-02-testnet-2.0.3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Q&amp;A session transcript. Mainnet launch is planned for May 26</title>
-      <link>https://ergoplatform.org/en/news/2019-03-19/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019-03-19/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019-03-19/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019-03-19/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Q&amp;A with Alex Chepurnoy and Dmitry Meshkov</title>
-      <link>https://ergoplatform.org/en/blog/2019_03_19-qa/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/blog/2019_03_19-qa/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/blog/2019_03_19-qa/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/blog/2019_03_19-qa/</guid>
       <description>First, we have a major announcement - Ergo mainnet launch is planned for May 26 if no security vulnerabilities will be found during audit process!
 What are the vision about scaling and adoption? About scaling, the main approach is to avoid bloat without compromising functionality. E.g. persistent updateable storage is possible, with updates to be checked by a blockchain contract, but only digest of authenticated data structure (and some additional bytes, less than 40 bytes anyway) are stored in the UTXO set dependless on data set size.</description>
     </item>
     
     <item>
       <title>How to set up and configure full Ergo node</title>
-      <link>https://ergoplatform.org/en/news/2019-03-17-how-to-set-up-full-node/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019-03-17-how-to-set-up-full-node/</link>
       <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019-03-17-how-to-set-up-full-node/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019-03-17-how-to-set-up-full-node/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Testnet 2.0 is live! Smart contracts language updated</title>
-      <link>https://ergoplatform.org/en/news/2019-03-14/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019-03-14/</link>
       <pubDate>Thu, 14 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019-03-14/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019-03-14/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ErgoScript, a Cryptocurrency Scripting Language Supporting Noninteractive Zero-Knowledge Proofs</title>
-      <link>https://ergoplatform.org/en/news/2019-03-12/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/news/2019-03-12/</link>
       <pubDate>Tue, 12 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/news/2019-03-12/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/news/2019-03-12/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Smart Contracts for the People</title>
-      <link>https://ergoplatform.org/en/blog/2018_10_19-smart-contracts/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/blog/2018_10_19-smart-contracts/</link>
       <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/blog/2018_10_19-smart-contracts/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/blog/2018_10_19-smart-contracts/</guid>
       <description>A lot of blockchain-related news these days are saying us that a bank X or a corporation Y is going to use a &amp;ldquo;blockchain&amp;rdquo; to &amp;ldquo;reduce costs&amp;rdquo;. Basically it means that just another buzzword is considered by big banksters as just another tool to extract value from everywhere in a more efficient way, and also to save on cutting job positions.
 While I am avoiding to say anything about &amp;ldquo;Satoshi&amp;rsquo;s vision&amp;rdquo; (nothing but speculations could be dug there after his exodus), a broad view I witnessed in the early years around online forums users is that a cryptocurrency should provide tools to enrich the ordinary people behind their small businesses providing no much above making ends meet, not depersonalized big financial capital.</description>
     </item>
     
     <item>
       <title>Frontend developer</title>
-      <link>https://ergoplatform.org/en/careers/frontend/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/en/careers/frontend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/en/careers/frontend/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/en/careers/frontend/</guid>
       <description></description>
     </item>
     

@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ergo</title>
-    <link>https://ergoplatform.org/cn/</link>
+    <link>http://powerful-spire-67290.herokuapp.com/cn/</link>
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
     <lastBuildDate>Mon, 14 Oct 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://ergoplatform.org/cn/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://powerful-spire-67290.herokuapp.com/cn/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>发布尔格主网3.1.2版本</title>
-      <link>https://ergoplatform.org/cn/news/2019_10_14/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_10_14/</link>
       <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_10_14/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_10_14/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hotbit交易所上线ERGO (ERG)</title>
-      <link>https://ergoplatform.org/cn/news/2019_10_08_2/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_10_08_2/</link>
       <pubDate>Tue, 08 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_10_08_2/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_10_08_2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>发布尔格主网3.1.1版本</title>
-      <link>https://ergoplatform.org/cn/news/2019_10_08/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_10_08/</link>
       <pubDate>Tue, 08 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_10_08/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_10_08/</guid>
       <description></description>
     </item>
     
     <item>
       <title>BISQ 已经正式了加了尔格币(ERG)</title>
-      <link>https://ergoplatform.org/cn/news/2019_09_16/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_09_16/</link>
       <pubDate>Mon, 16 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_09_16/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_09_16/</guid>
       <description></description>
     </item>
     
     <item>
       <title>尔格币($ERG) 已经在P2PB2B交易所挂牌交易</title>
-      <link>https://ergoplatform.org/cn/news/2019_09_14/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_09_14/</link>
       <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_09_14/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_09_14/</guid>
       <description></description>
     </item>
     
     <item>
       <title>尔格和众筹</title>
-      <link>https://ergoplatform.org/cn/blog/2019_09_06_crowdfund/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_09_06_crowdfund/</link>
       <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/blog/2019_09_06_crowdfund/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_09_06_crowdfund/</guid>
       <description>什么是众筹？ 众筹是一种通过许多人的努力实现一种融资方式。众筹多通过全球网站启动，使项目和企业可以通过众多个人的小额出资来完成融资。通过众筹方式成功创业的最经典案例之一就是虚拟现实耳麦 - Oculus Rift。Oculus VR公司在2012年发起众筹，仅在两年后就被脸书以20亿美元的价格所收购。除了常规创业企业以外，还有许多区块链项目也选择采取众筹模式，例如：乙太坊、Tron和EOS。目前市场上有无数众筹平台。部分较大的众筹平台包括Indiegogo、Kickstarter和Gofundme，不一而足。众筹方式有很多好处：覆盖面广、高效以及最具说服力的营销… 但是现在，让我们看一下其最核心的一点！
 为尔格引入众筹模式 就在几天前的8月28日，核心开发者 Kushti 在（尔格论坛上）[www.ergoforum.org]表示他成功写出并且实施可以让用户在尔格区块链开展众筹活动的代码（如白皮书第6页. 所述。该代码甚至与当前的钱包API相结合。这里是如何建立钱包的快速指南。在这篇文章中，你将学习如何具体开展尔格众筹工作！还将带你看一下有史以来首次众筹建议书，其将为EIP1后众筹文本撰写工作提供资金支持。如果你想了解更多细节，请阅读以下“脚本”章节。此外，你也可以跳过这一章，直接阅读后面“如何捐款”、“如何收集捐款”以及“众筹项目建议书”等章节。
 脚本 根据尔格脚本白皮书（第6页）, 最简单的众筹脚本是“有关下列众筹情况的脚本：（持有主要出资人公钥的）项目出资人希望为（拥有要出资人公钥的）项目捐款，但前提是该项目在最后期限前从其他渠道筹集到足够的资金（至少达到融资下限）（以高度表示）。为了给项目捐款，出资人将创建一个受以下脚本保护的输出框。该脚本有两个条件：一种情况是最后期限已过，融资失败（出资人可以将钱要回来），另一种情况是成功实现融资（如果融资金额在最后期限前达到了所规定的最低融资门槛，那么项目就可以用这些钱）。
@@ -72,28 +72,28 @@
     
     <item>
       <title>尔格币($ERG) 将在Hotbit交易所挂牌交易</title>
-      <link>https://ergoplatform.org/cn/news/2019_09_06/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_09_06/</link>
       <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_09_06/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_09_06/</guid>
       <description></description>
     </item>
     
     <item>
       <title>尔格币($ERG) 已经在Vgate交易所挂牌交易</title>
-      <link>https://ergoplatform.org/cn/news/2019_08_20/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_08_20/</link>
       <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_08_20/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_08_20/</guid>
       <description></description>
     </item>
     
     <item>
       <title>利用AMD卡开采尔格币</title>
-      <link>https://ergoplatform.org/cn/blog/2019_08_07_amd/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_08_07_amd/</link>
       <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/blog/2019_08_07_amd/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_08_07_amd/</guid>
       <description>本教程将向你提供在Windows或Linux环境下利用AMD卡开采尔格币的所需信息.
 开发者MH Samadani 在正式推出后第3天就发表其AMD矿工，并且之后还在不断对其进行更新。为了跟踪其最新动态，你可以加入尔格采矿电报群并且搜索 #amdminer。你可以在此查看矿机。
 编码是基于OpenCL并且是完全开放源代码。如果你用的是Nvidia 卡，你可以在此找到CUDA矿机。
@@ -107,19 +107,19 @@
     
     <item>
       <title>发布尔格主网3.0.6版本</title>
-      <link>https://ergoplatform.org/cn/news/2019_08_06/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_08_06/</link>
       <pubDate>Tue, 06 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_08_06/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_08_06/</guid>
       <description></description>
     </item>
     
     <item>
       <title>尔格地址</title>
-      <link>https://ergoplatform.org/cn/blog/2019_07_24_ergo_address/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_07_24_ergo_address/</link>
       <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/blog/2019_07_24_ergo_address/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_07_24_ergo_address/</guid>
       <description>在今天的文章中，我们的将对尔格地址的格式化一窥究竟。除此之外，我们将说明他们具体的具体工作原理，以及什么使其优于其他类型的区块链地址。
 让我们从头说起。
 在你安装任何数字货币钱包的时候，你会自动创建一个地址。简单来说，这个钱包就好比一个传统银行账户，而地址就如同与之相匹配的账号。如果你需要把钱由甲打给乙、收款或者提走你的挖矿奖励，那么你就需要一个字母数字地址提取你的挖矿奖励。
@@ -138,37 +138,37 @@
     
     <item>
       <title>发布尔格主网3.0.4版本</title>
-      <link>https://ergoplatform.org/cn/news/2019_07_19/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_19/</link>
       <pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_07_19/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_19/</guid>
       <description></description>
     </item>
     
     <item>
       <title>发布尔格主网3.0.3版本</title>
-      <link>https://ergoplatform.org/cn/news/2019_07_18/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_18/</link>
       <pubDate>Thu, 18 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_07_18/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_18/</guid>
       <description></description>
     </item>
     
     <item>
       <title>尔格币已进入Magnum钱包</title>
-      <link>https://ergoplatform.org/cn/news/2019_07_11/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_11/</link>
       <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_07_11/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_11/</guid>
       <description></description>
     </item>
     
     <item>
       <title>启动后的思路与尔格发展路线图</title>
-      <link>https://ergoplatform.org/cn/blog/2019_07_09_after_launch/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_07_09_after_launch/</link>
       <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/blog/2019_07_09_after_launch/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_07_09_after_launch/</guid>
       <description>首先，我们感谢各位热心人士、开发者、矿工、社会各界以及我们的家人在尔格开发与启动过程中所给予我们的大力支持与无私帮助。尔格的启动为团队在过去几年的初始研发画上了句号，同时也开启了一个新的时代，核心技术大体定调，继续完善协议落实与基建项目将成为工作重点。
 当前核心-尔格核心团队将全心致力于项目开发（至少，同时Foundation Treasury正在推进这方面的工作）。基于此，请允许我介绍一下当前项目的进展情况以及未来规划。
 项目的当前进展状况 首先，关于尔格，我想提醒各位注意以下几点:
@@ -190,37 +190,37 @@
     
     <item>
       <title>启动后的思路与尔格路线图</title>
-      <link>https://ergoplatform.org/cn/news/2019_07_09/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_09/</link>
       <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_07_09/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_09/</guid>
       <description></description>
     </item>
     
     <item>
       <title>尔格主网3.0.2发布</title>
-      <link>https://ergoplatform.org/cn/news/2019_07_04/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_04/</link>
       <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_07_04/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_04/</guid>
       <description></description>
     </item>
     
     <item>
       <title>尔格币提取说明</title>
-      <link>https://ergoplatform.org/cn/news/2019_07_03/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_03/</link>
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_07_03/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_03/</guid>
       <description></description>
     </item>
     
     <item>
       <title>尔格提取</title>
-      <link>https://ergoplatform.org/cn/blog/2019_07_03_mining_withdrawal/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_07_03_mining_withdrawal/</link>
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/blog/2019_07_03_mining_withdrawal/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_07_03_mining_withdrawal/</guid>
       <description>花掉挖矿报酬 本文帮助矿工提取所挖到的资金。
 许多人既发布节点，又担任拥有从内嵌于节点格式化矿机获得16进制公钥（pubkeyHex）的矿工。下面我来谈一谈如何认定所挖尔格币的数量以及如何将其提取到另一个地址。
 关于密钥. 矿工可能遇到很多不同形式的密钥。
@@ -241,55 +241,55 @@
     
     <item>
       <title>尔格币($ERG) 在Tidex交易所挂牌交易</title>
-      <link>https://ergoplatform.org/cn/news/2019_07_02/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_02/</link>
       <pubDate>Tue, 02 Jul 2019 11:08:39 +0300</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_07_02/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_02/</guid>
       <description></description>
     </item>
     
     <item>
       <title>尔格主网正式启动</title>
-      <link>https://ergoplatform.org/cn/news/2019_07_01_1/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_01_1/</link>
       <pubDate>Mon, 01 Jul 2019 11:06:02 +0300</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_07_01_1/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_01_1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>发布尔格浏览器</title>
-      <link>https://ergoplatform.org/cn/news/2019_07_01_2/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_01_2/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_07_01_2/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_01_2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>尔格主网3.0.1发布</title>
-      <link>https://ergoplatform.org/cn/news/2019_07_01/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_01/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_07_01/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_01/</guid>
       <description></description>
     </item>
     
     <item>
       <title>尔格会在P2PB2B 交易所上市</title>
-      <link>https://ergoplatform.org/cn/news/2019_06_28/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_28/</link>
       <pubDate>Fri, 28 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_06_28/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_28/</guid>
       <description></description>
     </item>
     
     <item>
       <title>自启动伊始加入尔格主网</title>
-      <link>https://ergoplatform.org/cn/blog/2019_06_28_mainnet-bootstrap/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_06_28_mainnet-bootstrap/</link>
       <pubDate>Fri, 28 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/blog/2019_06_28_mainnet-bootstrap/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_06_28_mainnet-bootstrap/</guid>
       <description>自启动伊始加入尔格主网 为了在启动伊始加入尔格主网并且竞相开采创世区块，你需要按照以下步骤进行操作。如果你不打算参与尔格挖矿，而只是想建一个全节点，那么你只需进行步骤3和步骤5的操作。
 准备工作 1. 安装采矿软件 请先查阅https://github.com/ergoplatform/ergo/wiki/Mining的说明. 根据其（有关Ubuntu的）阅读说明或使用Windows手册https://ergoplatform.org/en/blog/2019_05_07_mining，搭建一个https://github.com/ergoplatform/Autolykos-GPU-miner矿机。 尝试运行诸如含有测试格式化的./auto.out config.json:
 { &amp;quot;mnemonic&amp;quot;: &amp;quot;noise peasant subway frozen illegal pretty oak agent train valid wash title burst column yard decide move coin gas asset pretty hire happy fuel&amp;quot;, &amp;quot;node&amp;quot;: &amp;quot;http://159.203.36.162:9052&amp;quot;, &amp;quot;keepPrehash&amp;quot;: true }  并且查看诸如以下内容：
@@ -298,109 +298,109 @@
     
     <item>
       <title>发布“测试网2.2.0版(Testnet 2.2.0)”</title>
-      <link>https://ergoplatform.org/cn/news/2019_06_27/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_27/</link>
       <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_06_27/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_27/</guid>
       <description></description>
     </item>
     
     <item>
       <title>主网启动 ： 周一，7月1日，上午10:00 UTC</title>
-      <link>https://ergoplatform.org/cn/news/2019_06_26/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_26/</link>
       <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_06_26/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_26/</guid>
       <description></description>
     </item>
     
     <item>
       <title>尔格采矿电报(Ergo Mining Telegram)群现已开放</title>
-      <link>https://ergoplatform.org/cn/news/2019_06_24/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_24/</link>
       <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_06_24/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_24/</guid>
       <description></description>
     </item>
     
     <item>
       <title>EFTY（尔格元年代币）已经在Tidex挂牌上市</title>
-      <link>https://ergoplatform.org/cn/news/2019_06_14/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_14/</link>
       <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_06_14/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_14/</guid>
       <description></description>
     </item>
     
     <item>
       <title>主网推出延后</title>
-      <link>https://ergoplatform.org/cn/news/2019_06_13/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_13/</link>
       <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_06_13/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_13/</guid>
       <description></description>
     </item>
     
     <item>
       <title>具有尔格特征的坏加密播客(Bad Crypto Podcast)</title>
-      <link>https://ergoplatform.org/cn/news/2019_06_13_2/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_13_2/</link>
       <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_06_13_2/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_13_2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>发布测试网（Testnet） 2.1.2版</title>
-      <link>https://ergoplatform.org/cn/news/2019_06_12/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_12/</link>
       <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_06_12/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_12/</guid>
       <description></description>
     </item>
     
     <item>
       <title>对为合约货币搭建框架名为“尔格”的平台所进行的访谈</title>
-      <link>https://ergoplatform.org/cn/news/2019_06_11/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_11/</link>
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_06_11/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_11/</guid>
       <description></description>
     </item>
     
     <item>
       <title>与SWFT区块链的协议</title>
-      <link>https://ergoplatform.org/cn/news/2019_06_05/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_05/</link>
       <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_06_05/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_05/</guid>
       <description></description>
     </item>
     
     <item>
       <title>发布测试网2.1.0版</title>
-      <link>https://ergoplatform.org/cn/news/2019_06_05_3/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_05_3/</link>
       <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_06_05_3/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_05_3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>新的Bitcointalk线索</title>
-      <link>https://ergoplatform.org/cn/news/2019_06_05_2/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_05_2/</link>
       <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019_06_05_2/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_05_2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>钱包文件汇编</title>
-      <link>https://ergoplatform.org/cn/blog/2019_06_04_wallet-documentation/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_06_04_wallet-documentation/</link>
       <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/blog/2019_06_04_wallet-documentation/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_06_04_wallet-documentation/</guid>
       <description>尔格节点提供内置钱包以便存放私钥及签署交易。以下内容将说明如何建立与保护阁下的尔格钱包。
 该钱包将采用BIP39 标准从助记符句子中生出一颗种子，其将根据BIP32 标准用以创造一把私钥 （分层确定性钱包）。如果你愿意的话，你可以使用你自己的由那些词汇偏执狂常用词汇所构成的助记符句子。所允许的句子长度分别为12、15、18、21、24，分别代表128位、160位、192位、224位、256位安全。为了对这个有助记符的钱包进行初始化，你应当使用这个wallet/restoreAPI评估指标。然而，使用钱包所产生的助记符要安全得多。 在此阶段，与钱包的所有互动只能通过节点REST API完成。请确保你在进行下一步之前在你的节点上设置一把API密钥。
 钱包格式化 通过节点格式化文件对钱包进行格式化。以下是在首次钱包格式化时需要注意的格式化参数：
@@ -413,10 +413,10 @@
     
     <item>
       <title>一个去信任的本地交易所交易系统</title>
-      <link>https://ergoplatform.org/cn/blog/2019_05_29-exchange/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_29-exchange/</link>
       <pubDate>Wed, 29 May 2019 18:21:23 +0300</pubDate>
       
-      <guid>https://ergoplatform.org/cn/blog/2019_05_29-exchange/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_29-exchange/</guid>
       <description>本地交易所交易系统（LETS）旨在发展当地经济，并且通常由在彼此附近的当地人使用。 在此链接中描述了一个管理LETS的委员会。 我们将此类系统称为管理或许可，因为它取决于受信任的委员会。 在这里，我们描述了一个去信任的LETS系统，即没有管理委员会的系统。
 概要 LETS涉及多个同意使用某种形式的“本地货币”的党派，通常以1：1的比率与该国的主要货币挂钩。假设我们的LETS位于欧洲国家，货币为欧元，交换以“当地欧元”进行，被认为相当于国家欧元。
 LETS中的每个用户都有一个帐户，其中包含该用户的LETS余额（以本地欧元为单位）。在加入时，每个用户的余额为零。余额存储在（可能是去中心化的）分类帐中。 LETS的一个有趣特征是零余额的用户也可以“提款”，但仅用于支付另一个LETS用户。在任何时候，所有用户的LETS余额总和为零。
@@ -430,10 +430,10 @@ LETS中的每个用户都有一个帐户，其中包含该用户的LETS余额（
     
     <item>
       <title>尔格发行计划</title>
-      <link>https://ergoplatform.org/cn/blog/2019_05_20-curve/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_20-curve/</link>
       <pubDate>Mon, 20 May 2019 15:05:06 +0300</pubDate>
       
-      <guid>https://ergoplatform.org/cn/blog/2019_05_20-curve/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_20-curve/</guid>
       <description>概要 尔格的原生代币称为尔格币，平台的用户和矿工对其发行时间表可能非常感兴趣。尔格币也有一些独特的特征，在这篇文章中将重点展现。最基本的并且省略技术细节的特征是：尔格有严格的供应量限制，8年的发行计划、以及8年来不断下降的的发行率。所有尔格币都通过原始的专用集成电路（Asic）和池阻工作量证明（“PoW”）算法称为奥托吕科斯（Autolykos），来进行挖掘。因此，在主网启动时存在0个尔格币，因为没有首次币发行也没有预挖。在8年结束时，最终的尔格币供应将是97,739,925个尔格币。尔格区块间距为2分钟，前两年每个区块将释放总共75个尔格币，供矿工和金库共享（下文讨论的金库）。但从第2年开始，发行率将下降3.0 个尔格币，然后每3个月进一步下降3.0个尔格币，这将导致在发行8年后结束发行。不会有额外的通货膨胀，而且尔格币基础货币将保持不变。下面的发行图说明了这一点。
 尔格金库 为了资助开发，推广，活动，将尔格的“尔格元年代币”（“EFYT”，Ergo First Year Token下文进一步讨论）交换为尔格币并为可能推进该平台的其他活动提供资金，尔格已经建立了一个金库，将获得尔格币总发行量的4.43％。在主网发布后的前两年，金库每个区块将获得7.5个尔格币。鉴于每个区块的区块奖励总计为75个尔格币，金库的尔格币分配相当于前两年总区块奖励的10％，并且矿工的区块奖励为每区块67.5个尔格币。 2年后，金库将继续获得超过67.5个尔格币的部分奖励，但是，当区块奖励达到每个区块66个尔格币时，2年半之后将变为0。熟悉其他一些带有金库的工作量证明协议的读者，如ZCash，可能会发现与之类似，但应该注意的是进入金库的尔格币总数仅为4,330,791.5，占总货币金额的4.43％，并在短短2年半完成。这与ZCash的金库相比，后者是ZCash总货币金额的10％和前4年所有ZCash币的20％。希望在主网发布一年后，尔格将通过多元化的开发商，矿工和用户群实现高水平的去中心化。第一年，金库将用于在尔格币的Waves（波）平台上交换尔格元年代币（EFYT）。在剩余的1年半内，将建立一个社区投票机制，以确定金库的资金支出情况。
 尔格发行图表和代码 发行计划的代码可以从此处获得
@@ -446,28 +446,28 @@ LETS中的每个用户都有一个帐户，其中包含该用户的LETS余额（
     
     <item>
       <title>尔格白皮书</title>
-      <link>https://ergoplatform.org/cn/news/2019-05-15-whitepaper/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019-05-15-whitepaper/</link>
       <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019-05-15-whitepaper/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019-05-15-whitepaper/</guid>
       <description></description>
     </item>
     
     <item>
       <title>主链延迟发布</title>
-      <link>https://ergoplatform.org/cn/news/2019-05-07-release/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019-05-07-release/</link>
       <pubDate>Tue, 07 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019-05-07-release/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019-05-07-release/</guid>
       <description></description>
     </item>
     
     <item>
       <title>如何在Windows（x64）系统下挖掘尔格</title>
-      <link>https://ergoplatform.org/cn/blog/2019_05_07_mining/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_07_mining/</link>
       <pubDate>Tue, 07 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/blog/2019_05_07_mining/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_07_mining/</guid>
       <description>第1步：工具 Visual Studio(可视化工作室)
 选择免费的社区版本，您需要在安装期间选择使用C ++包进行桌面开发。
 CUDA工具包
@@ -490,19 +490,19 @@ S第4步：挖掘 在挖掘之前，您必须配置您的节点，钱包和矿�
     
     <item>
       <title>尔格简介</title>
-      <link>https://ergoplatform.org/cn/news/2019-04-24-teaser/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019-04-24-teaser/</link>
       <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019-04-24-teaser/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019-04-24-teaser/</guid>
       <description></description>
     </item>
     
     <item>
       <title>尔格之上的本地交易所交易系统</title>
-      <link>https://ergoplatform.org/cn/blog/2019_04_22-lets/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_22-lets/</link>
       <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/blog/2019_04_22-lets/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_22-lets/</guid>
       <description>本地交易所交易系统（LETS）是一个本地相互信用协会，允许成员单独创建共同信用资金，系统中的所有交易都写入共同的分类账。例如，假设拥有零余额的Alice愿意从Bob购买一升生鲜奶。首先，他们就价格达成一致，例如，假设价格约为2欧元（Alice和Bob居住在爱尔兰）。交易被写入分类账后，Alice的余额变为-2（减去2）欧元，Bob的余额变为2欧元。然后Bob可能会花费2欧元来购买Charlie的自制啤酒。通常，这种制度对负余额施加限制，有时甚至对正余额施加限制，以促进社区交易。
 从历史上看，这种系统在危机时期变得流行起来。第一个系统是迈克尔林顿于1981年在加拿大陷入萧条时的城镇建立的。1998-2002年阿根廷大萧条期间，当地的交易所交易系统非常受欢迎。大多数LETS团体的成员从50到250人不等，由核心委员会维护纸质信用票据和分类账。然而，基于纸张的LETS货币已经出现了一些问题，例如伪造票据，系统管理员可能的流氓行为等等。因此，基于区块链的LETS可能优于旧系统。有关LETS的更多信息可以在“货币生态”(The Ecology of Money”)一书(作者RichardDouthwaite) 和维基百科中找到。
 在本文中，我们将展示如何在尔格之上实现LETS。据我们所知，这是区块链上首次执行这种社区货币。我们的参考执行很简单，包括两个合同，即管理合同和交易合同。我们跳过尔格初步行动，所以请起步者阅读 首次币发行文章和ErgoScript教程(基础和 高级)。不过，我们将在以下句子中介绍几个新术语。如果发出的代币数量等于1，我们将其称为单例代币。类似地，包含单例代币的币箱称为单例币箱。
@@ -514,10 +514,10 @@ val selfOut = OUTPUTS(0) // 管理脚本 val managementScript = selfOut.R5[Sigma
     
     <item>
       <title>一个尔格顶层的首次币发行案例</title>
-      <link>https://ergoplatform.org/cn/blog/2019_04_10-ico-example/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_10-ico-example/</link>
       <pubDate>Wed, 10 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/blog/2019_04_10-ico-example/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_10-ico-example/</guid>
       <description>本文介绍了在尔格脚本中执行的功能齐全的ICO（首次币发行）。该案例涵盖了尔格平台的几个重要和新颖的特征，并展示了如何使用少量代码来支持复杂的合约。
 第1部分。初步行动 加密货币协议中的一个重要设计决策是指定支出交易实际花费的内容。这里有两种可能性。第一个基于UTXO(未花费的交易输出）的模型，如在比特币中，交易花费一次性资产容器（在比特币中称为&amp;rsquo;硬币&amp;rsquo;或UTXO）并创建新的。另一种是基于账户的模型，如在Nxt，以太坊或Waves中，交易将一定数量的资产从现有长存的账户转移到另一个，可能是新的长存的账户，这后续可能产生副作用，例如Waves或以太坊中的合同执行。在这方面，尔格类似于比特币，因为它使用基于UTXO的方法，其中一次性容器被称为币箱。有趣的是，尔格交易还可以有未被花费的数据输入，而是用于从当前未使用的币箱来提供一些信息。
 在基于UTXO的模型之上创建首次币发行并非易事，因为与基于帐户的模型相比，此处没有明确的持久存储。但是，尔格将支出交易带入脚本的执行上下文中。通过这种小的改变，可以表达交易输出和输入之间的依赖关系。反过来，通过设置依赖关系，我们甚至可以在区块链上执行任意复杂的图灵完备程序（参见&amp;ldquo;自我复制硬币作为通用图灵机&amp;rdquo;论文）。在本文中，我们将使用ICO定义多阶段合同的具体方案，其中我们有三个阶段（融资，代币发行，退出）。
@@ -536,10 +536,10 @@ val selfIndexIsZero = INPUTS(0).id == SELF.id val proof = getVar[Coll[Byte]](1).
     
     <item>
       <title>如何进行Ergo挖矿</title>
-      <link>https://ergoplatform.org/cn/blog/2019_04_03_mining/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_03_mining/</link>
       <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/blog/2019_04_03_mining/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_03_mining/</guid>
       <description>概况介绍 挖矿，是指在Ergo区块链上进行一系列资源密集的计算来加入新区块的过程。
 Ergo挖矿基于Autolykos, 一个旨在抵抗ASIC超级矿机和矿池的工作量证明（PoW）算法。矿工们要进行内存硬计算（至少需要2GB内存，4-8GB的RAM是目前效率最高的配置）因此Ergo对于GPU挖矿十分友好。此外，Autolykos需要接入私钥，由此防止挖矿池的形成。一旦找到正确的算法，矿工即可散播他的区块（连同算法一起散播），在720个区块后拿到他相应的奖励。余下全网将用该矿工的公钥对该算法进行验证，验证的过程需要较少的内存千字节，效率相当高。
 如何进行Ergo挖矿 Ergo挖矿需要一个配置并同步过的Ergo节点，还有至少一个GPU，来完成实际的PoW计算。当然了，你可以用多个GPU倍增哈希算力，但你仅需一个Ergo节点。
@@ -556,28 +556,28 @@ ergo.node.miningPubKeyHex = &amp;quot;11aa ... FF&amp;quot;  如果这个参数�
     
     <item>
       <title>尔格挖矿教程</title>
-      <link>https://ergoplatform.org/cn/news/2019-04-03-ergo-mining-tutorial/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019-04-03-ergo-mining-tutorial/</link>
       <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019-04-03-ergo-mining-tutorial/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019-04-03-ergo-mining-tutorial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>测试链2.0.3发布</title>
-      <link>https://ergoplatform.org/cn/news/2019-04-02-testnet-2.0.3/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019-04-02-testnet-2.0.3/</link>
       <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019-04-02-testnet-2.0.3/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019-04-02-testnet-2.0.3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Alex Chepurnoy 和Dmitry Meshkov的问答</title>
-      <link>https://ergoplatform.org/cn/blog/2019_03_19-qa/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_03_19-qa/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/blog/2019_03_19-qa/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_03_19-qa/</guid>
       <description>首先，我们有一个重要的公告—如果在审计过程中没有发现安全漏洞，计划于5月26日发布尔格主网！
 关于扩展和应用的愿景是什么？ 关于扩展，主要方法是在不影响功能的情况下避免膨胀。例如。持久可更新存储是可能的，更新由区块链合约检查，但只有验证了的数据结构的摘要（以及一些额外的字节，少于40个字节）存储在UTXO集，这与数据集的大小无关。存储租金有助于清除UTXO设备上的灰尘。轻量客户端：在尔格中，如果你不使用，你可以在不存储UTXO设置的情况下获得全节点保证。这大大改善了boostrapping（机器学习算法）和区块验证时间。通过这些改进，可以在不影响经典区块链假设和保证的情况下提高TPS（透明页共享）。但是你想要具体数字吗？我没有具体数字，因为区块大小等参数不是一成不变的，而是矿工可以调整它们。因此，如果矿工正在经历低的完整区块验证时间（硬件随着时间的推移而变得越来越好，软件也是），他可能会建议或投票来增加区块大小。
 关于应用，我们希望有人追随：1。人们重视系统及其用户之间的社会契约。例如。人们对以太坊分叉不满意。尔格不会有硬件更新功能，而社区可以在很多方面升级协议。 2.由于（1）至少，同时也有限的供应，尔格将作为储值资产（如果您只是在系统中存储硬币，滞期费用很少）。3.需要安全，简单和高效的金融应用的人员。尔格的智能货币概念比以太坊的智能合约简单得多，同时功能强大，足以满足那些没有特定技术开发固态合约的人们的大多数金融应用，或大量资金来雇用熟练的开发人员。 4.还没准备好预测大公司的任何事情，但有些企业已表示有兴趣在尔格之上做一些代币和合约。我们会尽早宣布任何相关事宜。
@@ -600,19 +600,19 @@ ergo.node.miningPubKeyHex = &amp;quot;11aa ... FF&amp;quot;  如果这个参数�
     
     <item>
       <title>问答环节记录。主链计划于5月26日发布</title>
-      <link>https://ergoplatform.org/cn/news/2019-03-19/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019-03-19/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019-03-19/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019-03-19/</guid>
       <description></description>
     </item>
     
     <item>
       <title>如何创建跟设置Ergo全节点</title>
-      <link>https://ergoplatform.org/cn/blog/2019_03_17_how_to_set/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_03_17_how_to_set/</link>
       <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/blog/2019_03_17_how_to_set/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2019_03_17_how_to_set/</guid>
       <description>节点安全性 为保证您的钱包和资产的安全，请格外注意以下几个节点使用中的注意事项：
  Ergo节点要求在设置文件中存储一定的关键安全参数，因此，切勿泄露您的设置文件。 Ergo节点已为内置钱包的交互提供了REST API（变现层状态转移编程接口）。灵敏API手段需要安全的通证，切勿采取非信任的渠道发送通证。  节点环境设置 您需要安装至少JRE 8.0 版本来运行Ergo节点。安装方法之一是通过Oracle执行的Java。
 设置Ergo节点 当运行环境设置完备，您就可以下载最新版的Ergo客户端（Ergo client release）创建一个设置文件了。至于jar包，不需要单独下载，您只需要用SBT通过sbt assembly指令来克隆一份资源库，就可创建您自己的jar包
@@ -632,28 +632,28 @@ $ java -jar ergo-assembly-&amp;lt;version&amp;gt;.</description>
     
     <item>
       <title>如何设置和配置尔格全节点</title>
-      <link>https://ergoplatform.org/cn/news/2019-03-17-how-to-set-up-full-node/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019-03-17-how-to-set-up-full-node/</link>
       <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019-03-17-how-to-set-up-full-node/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019-03-17-how-to-set-up-full-node/</guid>
       <description></description>
     </item>
     
     <item>
       <title>侧链2.0已发布！智能合约语言已更新</title>
-      <link>https://ergoplatform.org/cn/news/2019-03-14/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/news/2019-03-14/</link>
       <pubDate>Thu, 14 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/news/2019-03-14/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/news/2019-03-14/</guid>
       <description></description>
     </item>
     
     <item>
       <title>为客户提供智能合约</title>
-      <link>https://ergoplatform.org/cn/blog/2018_10_19-smart-contracts/</link>
+      <link>http://powerful-spire-67290.herokuapp.com/cn/blog/2018_10_19-smart-contracts/</link>
       <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://ergoplatform.org/cn/blog/2018_10_19-smart-contracts/</guid>
+      <guid>http://powerful-spire-67290.herokuapp.com/cn/blog/2018_10_19-smart-contracts/</guid>
       <description>如今，很多与区块链相关的新闻都在告诉我们，银行X或Y公司将使用“区块链”来“降低成本”。基本上，这意味着大银行家认为另一个流行术语只是另一种以更有效的方式从某处提取价值的工具，也可以通过裁员来节省成本。
 虽然我不想对“Satoshi的愿景”说什么（他离开后只能去猜测），但我在网络论坛用户早期见证下的广泛观点是加密货币应该提供能使普通人变得富裕的工具，他们的小企业背后提供的不是生活收入，而不是非个人化的大金融资本。从最初广泛的社区愿景看来，加密货币的工具应该允许人们进行经济活动，而不依赖于业务规模，地理位置，大公司设定的利率等等。这些工具应该允许人们签订合同（没有纸质合约，而是数字化，自我执行和合理智能的合约），这取决于司法管辖区，传统，遵循商业惯例等方面的差异。
 我希望尔格在这方面发挥作用。成千上万的小型合作社和个体企业家对全球健康和可持续的财富增长更为重要，而不是几家公司在离岸天堂中牟利。

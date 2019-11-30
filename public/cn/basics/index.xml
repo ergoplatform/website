@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Basics on Ergo</title>
-    <link>https://ergoplatform.org/cn/basics/</link>
+    <link>http://powerful-spire-67290.herokuapp.com/cn/basics/</link>
     <description>Recent content in Basics on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
     <lastBuildDate>Mon, 22 Apr 2019 15:55:51 +0300</lastBuildDate>
     
-	<atom:link href="https://ergoplatform.org/cn/basics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://powerful-spire-67290.herokuapp.com/cn/basics/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
