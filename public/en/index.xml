@@ -6,10 +6,20 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 30 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Top 5 Things To Do With Ergo Appkit</title>
+      <link>https://ergoplatform.org/en/blog/2019_11_30_top5/</link>
+      <pubDate>Sat, 30 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2019_11_30_top5/</guid>
+      <description>Top 5 Things To Do With Ergo Appkit Ergo Appkit is a library for polyglot development of Ergo Applications based on GraalVM. Many useful things can be done with GraalVM. Relying on that, in this article we’ll list some of the Appkit features inherited from GraalVM and explain how you can use them.
+ 0. Example Scenario 1. Develop Ergo Applications in Java 2. Low-footprint, fast-startup Ergo Applications 3. Develop Ergo Applications in JavaScript, Python, Ruby 4.</description>
+    </item>
     
     <item>
       <title>ERGO ($ERG) is listed on Probit Exchange</title>

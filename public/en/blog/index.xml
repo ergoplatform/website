@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Top 5 Things To Do With Ergo Appkit</title>
+      <link>https://ergoplatform.org/en/blog/2019_11_30_top5/</link>
+      <pubDate>Sat, 30 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2019_11_30_top5/</guid>
+      <description>Top 5 Things To Do With Ergo Appkit Ergo Appkit is a library for polyglot development of Ergo Applications based on GraalVM. Many useful things can be done with GraalVM. Relying on that, in this article we’ll list some of the Appkit features inherited from GraalVM and explain how you can use them.
+ 0. Example Scenario 1. Develop Ergo Applications in Java 2. Low-footprint, fast-startup Ergo Applications 3. Develop Ergo Applications in JavaScript, Python, Ruby 4.</description>
+    </item>
+    
+    <item>
       <title>Ergo and crowdfunding</title>
       <link>https://ergoplatform.org/en/blog/2019_09_06_crowdfund/</link>
       <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>

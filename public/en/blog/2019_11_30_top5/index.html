@@ -11,13 +11,12 @@
     <link rel="preload" href="/fonts/LabGrotesque-Regular-hint-all.woff" as="font" type="font/woff" crossorigin>
 
     
-      <meta name="description" content="In today&amp;rsquo;s article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work specifically as well as what makes them preferable to other types of blockchain addresses.
-Let&amp;rsquo;s start at the very beginning.
-The moment you install any cryptocurrency wallet you automatically create an address with it. Very loosely speaking you can compare a wallet to a traditional bank account and an address to the matching account number.">
+      <meta name="description" content="Top 5 Things To Do With Ergo Appkit Ergo Appkit is a library for polyglot development of Ergo Applications based on GraalVM. Many useful things can be done with GraalVM. Relying on that, in this article we’ll list some of the Appkit features inherited from GraalVM and explain how you can use them.
+ 0. Example Scenario 1. Develop Ergo Applications in Java 2. Low-footprint, fast-startup Ergo Applications 3. Develop Ergo Applications in JavaScript, Python, Ruby 4.">
     
 
     
-    <title>Ergo Addresses | Ergo</title>
+    <title>Top 5 Things To Do With Ergo Appkit | Ergo</title>
 
     
     
@@ -117,12 +116,6 @@ The moment you install any cryptocurrency wallet you automatically create an add
             
               
             
-              
-                <li class="dd-language__item dd-language__item_hidden">
-                  <a class="dd-language__link dd-language__link--white eg-link" href="https://ergoplatform.org/cn/blog/2019_07_24_ergo_address/"><span>中文</span></a>
-                </li>
-              
-            
           </ul>
         </div>
         <button class="eg-navbar__trigger eg-navbar__trigger--black" type="button" aria-expanded="false" aria-label="Toggle navigation">
@@ -139,96 +132,516 @@ The moment you install any cryptocurrency wallet you automatically create an add
         <a href="https://ergoplatform.org/en/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>Back to all posts</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
-        <h1 class="eg-title eg-mb-1">Ergo Addresses</h1>
+        <h1 class="eg-title eg-mb-1">Top 5 Things To Do With Ergo Appkit</h1>
         <div class="eg-author">
-          <img src="/img/authors/robert_wolf.jpg" alt="author img" class="eg-author__img">
+          <img src="/img/authors/alexander_slesarenko.jpg" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
-            <h4 class="eg-author__info-title">Robert Wolf</h4>
-            <p class="eg-author__info-paragraph">24 July, 2019</p>
+            <h4 class="eg-author__info-title">Alexander Slesarenko</h4>
+            <p class="eg-author__info-paragraph">30 November, 2019</p>
           </div>
         </div>
         <div class="eg-blog__single-img">
-          <img src="/img/blog/address.jpg" alt="blog photo">
+          <img src="/img/blog/top5.jpg" alt="blog photo">
         </div>
         <div class="eg-blog__single-content">
           <div>
-            <p>In today&rsquo;s article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work specifically as well as what makes them preferable to other types of blockchain addresses.</p>
+            
 
-<p>Let&rsquo;s start at the very beginning.</p>
+<h1 id="top-5-things-to-do-with-ergo-appkit">Top 5 Things To Do With Ergo Appkit</h1>
 
-<p>The moment you install any cryptocurrency wallet you automatically create an address with it. Very loosely speaking you can compare a wallet to a traditional bank account and an address to the matching account number.
-It is precisely one of these alphanumeric addresses that&rsquo;s needed to either send money from person A to person B, receive money or <a href="https://ergoplatform.org/en/blog/2019_07_03_mining_withdrawal/">withdraw your mining rewards</a>.
-If you want to get started using the Ergo wallet and dive deeper into its functions go check out the <a href="https://ergoplatform.org/en/blog/2019_06_04_wallet-documentation/">following link</a>.</p>
-
-<p>Now, what exactly are addresses?</p>
-
-<p>Addresses are short strings that correspond to certain scripts and are used to protect a box (<a href="https://www.ergoforum.org/t/ergo-terminology-a-box-and-a-register/32">this</a> post that core developer <em>kushti</em> published on our forum explains very well what a &ldquo;box&rdquo; is).
-Unlike a (hex-encoded) binary representation of a script, an Ergo address is using a Base58-encoding and therefore has some very useful characteristics to it which the binary representation do not offer:</p>
+<p><a href="https://github.com/aslesarenko/ergo-appkit">Ergo Appkit</a> is a library for
+polyglot development of Ergo Applications based on
+<a href="https://www.graalvm.org/">GraalVM</a>. Many <a href="https://medium.com/graalvm/graalvm-ten-things-12d9111f307d">useful things</a> can be done with GraalVM. Relying on that, in this article we’ll list some of the Appkit features inherited from GraalVM and explain how you can use them.</p>
 
 <ul>
-<li>The integrity of an address can easily be checked via an integrated checksum (which is a &ldquo;small-sized datum derived from a block of digital data for the purpose of detecting errors that may have been introduced during its transmission or storage&rdquo;, according to Wikipedia).</li>
-<li>A prefix of the address is showing you the network and address type. In particular, the network prefix prevents you from mistakenly sending mainnet tokens to the testnet address.</li>
-<li>The address is using an encoding (namely, Base58 as mentioned) which is avoiding similarly looking characters and is friendly to double-clicking and also line-breaking in emails.</li>
-<li>An address is encoding network type, address type, checksum, and enough information to correspond with particular scripts.</li>
+<li><a href="#example-scenario">0. Example Scenario</a></li>
+<li><a href="#1-develop-ergo-applications-in-java">1. Develop Ergo Applications in Java</a></li>
+<li><a href="#2-low-footprint-fast-startup-ergo-applications">2. Low-footprint, fast-startup Ergo Applications</a></li>
+<li><a href="#3-develop-ergo-applications-in-javascript-python-ruby">3. Develop Ergo Applications in JavaScript, Python, Ruby</a></li>
+<li><a href="#4-ergo-application-as-native-shared-library">4. Ergo Application as native library</a></li>
+<li><a href="#5-debug-your-polyglot-ergo-application">5. Debug your polyglot Ergo Application</a></li>
 </ul>
 
-<p>Let&rsquo;s look at the prefix byte which contains information about the network and address types:</p>
+<h2 id="example-scenario">Example Scenario</h2>
 
-<p>Possible network types are:</p>
+<p>We will create a simple Java console application (called <a href="https://github.com/aslesarenko/ergo-appkit-examples/blob/master/java-examples/src/main/java/org/ergoplatform/appkit/examples/FreezeCoin.java">FreezeCoin</a>) which uses Appkit library to send a new transaction to an Ergo node. The transaction transfers a given amount of Erg to a new box protected by the following Ergo contract written in ErgoScript (see this
+<a href="https://ergoplatform.org/docs/ErgoScript.pdf">introduction</a> and more <a href="https://ergoplatform.org/docs/AdvancedErgoScriptTutorial.pdf">advanced examples</a>).</p>
 
-<ul>
-<li>Mainnet - 0x00</li>
-<li>Testnet - 0x10</li>
-</ul>
+<pre><code class="language-scala">// Freezer Contract
+{ 
+  // Parameters
+  // freezeDeadline: Int - some future block number after which the box can be spent
+  // ownerPk: SigmaProp - public key of the new box owner
+  sigmaProp(HEIGHT &gt; freezeDeadline) &amp;&amp; ownerPk
+}
+</code></pre>
 
-<p>Address types are (semantics described below):</p>
+<p>This contract checks the following conditions to allow spending of the box:</p>
 
-<ul>
-<li>0x01 - Pay-to-PublicKey(P2PK) address</li>
-<li>0x02 - Pay-to-Script-Hash(P2SH)</li>
-<li>0x03 - Pay-to-Script(P2S)</li>
-</ul>
+<ol>
+<li>current block number in Ergo blockchain (aka blockchain HEIGHT) should be
+greater than the given deadline</li>
+<li>the spending transaction should be signed by the owner of the secret key
+corresponding to the ownerPk public key.</li>
+</ol>
 
-<p>For an address type, we form content bytes as follows:</p>
+<p>The first condition effectively forbids spending of the box before the Ergo
+blockchain grows to the given height (thus delaying possibility to spend it).
+Because each new block is mined every 2 minutes on average, using the current
+blockchain height it is easy to compute 1 day, 1 week, 1 month or any other
+delays (i.e. 30 * 24 * 7 blocks per week). The funds become frozen in the box
+for some time. If you want to protect spending of your own Ergs even from
+yourself (for whatever reason :) you can use this Ergo contract and the FreezeCoin
+we are going to develop in this post.</p>
 
-<ul>
-<li>P2PK - serialized (compressed) public key</li>
-<li>P2SH - first 192 bits of the Blake2b256 hash of serialized script bytes</li>
-<li>P2S  - serialized script (this is where mining rewards go!)</li>
-</ul>
+<h2 id="1-develop-ergo-applications-in-java">1. Develop Ergo Applications in Java</h2>
 
-<p>For example, sending 10 Ergs to a P2PK address usually means that a corresponding transaction
-will contain a box in which 10 Ergs are locked by a public key encoded in the P2PK address. Similarly,
-in case of a P2S address the box will be locked by a script encoded in the address. In the most complicated case of a
-P2SH script, the box will be protected by a special predefined script which is taking first 192 bits of Blake2b256 hash
-value for a script which should be shown by an input spending the box.</p>
+<p>Appkit aims to provide a set of Java interfaces which can be used idiomatically
+in Java. If you use Java, you will feel right at home using Appkit.</p>
 
-<p>Here is an example of how particular addresses are going to look on the testnet:</p>
+<p>Please follow the <a href="https://github.com/aslesarenko/ergo-appkit#setup">setup instructions</a> for GraalVM and Appkit if you want to reproduce the examples below.</p>
 
-<ul>
-<li>3 - P2PK (3WvsT2Gm4EpsM9Pg18PdY6XyhNNMqXDsvJTbbf6ihLvAmSb7u5RN)</li>
-<li>8 - P2SH (8UmyuJuQ3FS9ts7j72fn3fKChXSGzbL9WC, 8LnSX95GAWdbDZWJZQ73Uth4uE8HqN3emJ)</li>
-<li>? - P2S (imdaM2NzX, z4hAmfvfSnQJPChMWzfBzJjpB8ei2HoLCZ2RHTaNArMNHFirdJTc7E)</li>
-</ul>
+<p>To use Appkit in our Java implementation of FreezeCoin we configure the
+following dependency in <a href="https://github.com/aslesarenko/ergo-appkit-examples/blob/master/java-examples/build.gradle.kts">gradle file</a></p>
 
-<p>And here is how they are looking on our mainnet:</p>
+<pre><code class="language-kotlin">dependencies {
+    implementation(&quot;org.ergoplatform&quot;, &quot;ergo-appkit_2.12&quot;, &quot;3.1.0&quot;, &quot;compile&quot;)
+    ...
+}
+</code></pre>
 
-<ul>
-<li>9 - P2PK (9fRAWhdxEsTcdb8PhGNrZfwqa65zfkuYHAMmkQLcic1gdLSV5vA)</li>
-<li>2 - P2SH (25qGdVWg2yyYho8uC1pLtc7KxFn4nEEAwD, 23NL9a8ngN28ovtLiKLgHexcdTKBbUMLhH)</li>
-<li>? - P2S (7bwdkU5V8, BxKBaHkvrTvLZrDcZjcsxsF7aSsrN73ijeFZXtbj4CXZHHcvBtqSxQ)</li>
-</ul>
+<p>At runtime Appkit needs to connect with an Ergo Node via REST API. For example,
+the node can be started locally and made available at <code>http://localhost:9052/</code>
+by following <a href="https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node">these instructions</a>.
+Assume we did the setup and started an Ergo Node using the following command.</p>
 
-<p>In short summary:</p>
+<pre><code class="language-shell">$ java -jar -Xmx4G target/scala-2.12/ergo-3.1.3.jar --testnet -c ergo-testnet.conf
+</code></pre>
 
-<ul>
-<li>Prefix byte = network type + address type (for example, P2S script on the testnet starts with 0x13 before Base58)</li>
-<li>checksum = leftmost_4_bytes (blake2b256 (prefix byte || content bytes))</li>
-<li>address = prefix byte || content bytes || checksum</li>
-</ul>
+<p>Our application will need a connection and security parameters along with
+application specific parameters to do its work. We will use a json file with the
+configuration parameters which FreezeCoin loads at its startup. See for example
+<a href="https://github.com/aslesarenko/ergo-appkit-examples/blob/master/freeze_coin_config.json">freeze_coin_config.json</a> file which have the following content:</p>
 
-<p>If any of this sparked your interest, you are very welcome to join our community and ask further questions on our <a href="https://t.me/ergoplatform">telegram channel</a> and/or <a href="https://www.ergoforum.org/">forum</a>.
-See you there!</p>
+<pre><code class="language-json">{
+  &quot;node&quot;: {
+    &quot;nodeApi&quot;: {
+      &quot;apiUrl&quot;: &quot;http://localhost:9052/&quot;,
+      &quot;apiKey&quot;: &quot;put here your secret apiKey generated during node setup&quot;
+    },
+    &quot;wallet&quot;: {
+      &quot;mnemonic&quot;: &quot;the mnemonic key used to initialize or restore the wallet on the node&quot;,
+      &quot;password&quot;: &quot;the password you chose to protect the wallet&quot;,
+      &quot;mnemonicPassword&quot;: &quot;the password you chose to protect the mnemonic&quot;
+    },
+    &quot;networkType&quot;: &quot;TESTNET&quot;
+  },
+  &quot;parameters&quot;: {
+    &quot;newBoxSpendingDelay&quot;: &quot;30&quot;,
+    &quot;ownerAddress&quot;: &quot;3WzR39tWQ5cxxWWX6ys7wNdJKLijPeyaKgx72uqg9FJRBCdZPovL&quot;
+  }
+}
+</code></pre>
+
+<p>Here <code>apiKey</code> is the secret key required for API authentication which can be
+obtained as described
+<a href="https://github.com/ergoplatform/ergo/wiki/Ergo-REST-API#setting-an-api-key">here</a>.
+And mnemonic is the secret phrase obtained during <a href="https://github.com/ergoplatform/ergo/wiki/Wallet-documentation">setup of a new wallet</a>.</p>
+
+<p>In FreezeCoin as the first step we read the configuration and the amount of NanoErg to transfer into the new box from the file and command line arguments</p>
+
+<pre><code class="language-java">public static void main(String[] args) {
+    long amountToSend = Long.parseLong(args[0]);  // positive value in NanoErg
+    ErgoToolConfig conf = ErgoToolConfig.load(&quot;freeze_coin_config.json&quot;);
+    int newBoxSpendingDelay = Integer.parseInt(conf.getParameters().get(&quot;newBoxSpendingDelay&quot;));
+    Address ownerAddress = Address.create(conf.getParameters().get(&quot;ownerAddress&quot;));
+    // the rest of the code discussed below 
+    ...
+}
+</code></pre>
+
+<p>Next we connect to the running Ergo node from our Java application by creating
+<code>ErgoClient</code> instance.</p>
+
+<pre><code class="language-java">ErgoNodeConfig nodeConf = conf.getNode();
+ErgoClient ergoClient = RestApiErgoClient.create(nodeConf);
+</code></pre>
+
+<p>Using
+<a href="https://github.com/aslesarenko/ergo-appkit/blob/master/lib-api/src/main/java/org/ergoplatform/appkit/ErgoClient.java">ErgoClient</a> any block of code can be executed in the current blockchain context.</p>
+
+<pre><code class="language-java">String txJson = ergoClient.execute((BlockchainContext ctx) -&gt; {
+    // use ctx here to create and sign a new transaction
+    // then send it to the node 
+});
+</code></pre>
+
+<p>The lambda passed to <code>execute</code> is called when the current blockchain context
+with the current blockchain data is loaded from the Ergo node. In this lambda we
+shall put our application logic. We start with some auxiliary steps.</p>
+
+<pre><code class="language-java">// access the wallet embedded in the Ergo node 
+// (the wallet's mnemonic we put in freeze_coin_config.json)
+ErgoWallet wallet = ctx.getWallet();
+
+// calculate total amount of NanoErgs we need to send to the new box 
+// and pay transaction fees
+long totalToSpend = amountToSend + Parameters.MinFee;
+
+// request wallet for unspent boxes that cover required amount of NanoErgs
+Optional&lt;List&lt;InputBox&gt;&gt; boxes = wallet.getUnspentBoxes(totalToSpend);
+if (!boxes.isPresent())
+    throw new ErgoClientException(
+        &quot;Not enough coins in the wallet to pay &quot; + totalToSpend, null);
+    
+// create a so called prover, a special object which will be used for signing the transaction
+// the prover should be configured with secrets, which are nessesary to generate signatures (aka proofs)
+ErgoProver prover = ctx.newProverBuilder()
+    .withMnemonic(
+            nodeConf.getWallet().getMnemonic(),
+            nodeConf.getWallet().getPassword())
+    .build();
+</code></pre>
+
+<p>Now we have the input boxes to spend in the transaction and we need to create
+an output box with the requested <code>amountToSend</code> and the contract protecting
+that box.</p>
+
+<pre><code class="language-java">// the only way to create transaction is using builder obtained from the context
+// the builder keeps relationship with the context to access necessary blockchain data.
+UnsignedTransactionBuilder txB = ctx.newTxBuilder();
+
+// create new box using new builder obtained from the transaction builder
+// in this case we compile new ErgoContract from source ErgoScript code
+OutBox newBox = txB.outBoxBuilder()
+        .value(amountToPay)
+        .contract(ctx.compileContract(
+                ConstantsBuilder.create()
+                        .item(&quot;freezeDeadline&quot;, ctx.getHeight() + newBoxSpendingDelay)
+                        .item(&quot;ownerPk&quot;, ownerAddress.getPublicKey())
+                        .build(),
+                &quot;{ sigmaProp(HEIGHT &gt; freezeDeadline) &amp;&amp; ownerPk }&quot;))
+        .build();
+</code></pre>
+
+<p>Note, in order to compile <code>ErgoContract</code> from source code the <code>compileContract</code> method requires to provide values for named constants which are used in the script. If no such constants are used, then <code>ConstantsBuilder.empty()</code> can be passed.</p>
+
+<p>In this specific case we pass the public key of the new box owner for <code>ownerPk</code>  placeholder of the script meaning the box can be spend only by the owner of the corresponding secret key.</p>
+
+<p>Next create an unsigned transaction using all the data collected so far.</p>
+
+<pre><code class="language-java">// tell transaction builder which boxes we are going to spend, which outputs
+// to create, amount of transaction fees and address for change coins.
+UnsignedTransaction tx = txB.boxesToSpend(boxes.get())
+        .outputs(newBox)
+        .fee(Parameters.MinFee)
+        .sendChangeTo(prover.getP2PKAddress())
+        .build();
+</code></pre>
+
+<p>And finally we 1) use prover to sign the created transaction; 2) obtain a new <code>SignedTransaction</code> instance and 3) use context to send the signed transaction to
+the Ergo node. The resulting <code>txId</code> can be used to refer to this transaction later and is not used here.</p>
+
+<pre><code class="language-java">SignedTransaction signed = prover.sign(tx);
+String txId = ctx.sendTransaction(signed);
+return signed.toJson(true);
+</code></pre>
+
+<p>As the last step and for demonstration purposes we serialize the signed transaction into a Json string with turned on pretty printing. Look at the <a href="https://github.com/aslesarenko/ergo-appkit-examples/blob/master/java-examples/src/main/java/org/ergoplatform/appkit/examples/FreezeCoin.java">full source code</a> of the example for more details and for using it as a template in your application.</p>
+
+<p>We can run the implemented FreezeCoin application using the following steps, assuming we are at the directory where you cloned <a href="https://github.com/aslesarenko/ergo-appkit-examples">ergo-appkit-examples</a>.</p>
+
+<pre><code class="language-shell">$ pwd
+the/directory/you/cloned/ergo-appkit-examples
+$ ./gradlew clean shadowJar 
+</code></pre>
+
+<p>This will assemble <code>build/libs/appkit-examples-3.1.0-all.jar</code> file containing
+FreezeCoin Java application and all its dependencies in a single fat jar. Note, this step have to be done only once after any changes in the Java source code
+of the example.</p>
+
+<p>Having examples jar assembled we can run our console application</p>
+
+<pre><code class="language-shell">$ java -cp build/libs/appkit-examples-3.1.0-all.jar \
+      org.ergoplatform.appkit.example.FreezeCoin  1000000000 
+</code></pre>
+
+<p>And get a similar <a href="https://gist.github.com/aslesarenko/cacee372350458ac31bd5c73e957e322">output</a> in the console.</p>
+
+<p>That is it, the transaction is accepted by the Ergo node, added to the unconfirmed transaction pool and broadcasted all over the network. After one of the miners picks it up, validates and includes in a new block it becomes part of the blockchain history.</p>
+
+<h2 id="2-low-footprint-fast-startup-ergo-applications">2. Low-footprint, fast-startup Ergo Applications</h2>
+
+<p>Using Java for short-running processes can suffer from longer startup time and relatively high memory usage. Let&rsquo;s run FreezeCoin using the time command to get the real, wall-clock elapsed time it takes to run the entire program from start to finish. We use -l to print the memory used as well as time used.</p>
+
+<pre><code class="language-shell">$ /usr/bin/time -l java -cp build/libs/appkit-examples-3.1.0-all.jar \
+   org.ergoplatform.appkit.examples.FreezeCoin 1000000000
+...
+       4.97 real         8.41 user         0.69 sys
+ 513703936  maximum resident set size
+         0  average shared memory size
+         0  average unshared data size
+         0  average unshared stack size
+    125010  page reclaims
+      1216  page faults
+         0  swaps
+         0  block input operations
+         0  block output operations
+        13  messages sent
+        86  messages received
+         1  signals received
+      2384  voluntary context switches
+     17409  involuntary context switches
+</code></pre>
+
+<p>Which means this simple operation took 2 parallel threads to run for almost 4
+seconds to do the job. Most of that time can be attributed to JVM startup and
+the background JIT compiler running.</p>
+
+<p>GraalVM gives us a tool that solves this problem by compiling Java code ahead-of-time, to a native executable image, instead of compiling just-in-time at runtime. This is similar to how a conventional compiler like gcc works. Note, we may need to run <code>assembly</code> first.</p>
+
+<pre><code class="language-shell">$ sbt assembly
+$ native-image --no-server \
+ -cp build/libs/appkit-examples-3.1.0-all.jar\
+ --report-unsupported-elements-at-runtime\
+  --no-fallback -H:+TraceClassInitialization -H:+ReportExceptionStackTraces\
+   -H:+AddAllCharsets -H:+AllowVMInspection -H:-RuntimeAssertions\
+   --allow-incomplete-classpath \
+    --enable-url-protocols=http,https org.ergoplatform.appkit.examples.FreezeCoin 
+[freezecoin:3133]    classlist:  35,217.78 ms
+[freezecoin:3133]        (cap):   6,063.07 ms
+[freezecoin:3133]        setup:   8,268.99 ms
+[freezecoin:3133]   (typeflow):  60,238.25 ms
+[freezecoin:3133]    (objects):  33,009.06 ms
+[freezecoin:3133]   (features):   4,796.86 ms
+[freezecoin:3133]     analysis: 102,876.01 ms
+[freezecoin:3133]     (clinit):  11,642.43 ms
+[freezecoin:3133]     universe:  13,718.96 ms
+[freezecoin:3133]      (parse):   5,053.18 ms
+[freezecoin:3133]     (inline):  18,317.24 ms
+[freezecoin:3133]    (compile):  44,806.82 ms
+[freezecoin:3133]      compile:  72,288.24 ms
+[freezecoin:3133]        image:   7,955.29 ms
+[freezecoin:3133]        write:   2,872.25 ms
+[freezecoin:3133]      [total]: 243,813.30 ms
+</code></pre>
+
+<p>This command produces a native executable called <code>freezecoin</code>. This executable
+isn’t a launcher for the JVM, it doesn’t link to the JVM, and it doesn’t bundle
+the JVM in any way. <code>native-image</code> compile out FreezeCoin code, and any Java libraries it depends on, all the way down to simple machine code.</p>
+
+<p>If we look at the libraries which <code>freezecoin</code> uses you can see they are only standard system libraries. We can move just this one file to a system which doesn&rsquo;t have a JVM installed and it will run there.</p>
+
+<pre><code class="language-shell">$ otool -L freezecoin    # ldd freezecoin on Linux
+freezecoin:
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1252.50.4)
+	/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation (compatibility version 150.0.0, current version 1455.12.0)
+	/usr/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.2.11)
+</code></pre>
+
+<p>If we run the executable we can see that it starts around 8x faster, and uses
+around 6x less memory, than running the same program on the JVM does. You don’t feel that pause you always get when running a short-running command with the JVM.</p>
+
+<pre><code class="language-shell">$ DYLD_LIBRARY_PATH=$GRAAL_HOME/jre/lib /usr/bin/time -l ./freezecoin 1800000000
+        0.43 real         0.15 user         0.03 sys
+  81289216  maximum resident set size
+         0  average shared memory size
+         0  average unshared data size
+         0  average unshared stack size
+     20079  page reclaims
+         0  page faults
+         0  swaps
+         0  block input operations
+         0  block output operations
+        13  messages sent
+        86  messages received
+         0  signals received
+        11  voluntary context switches
+       138  involuntary context switches
+</code></pre>
+
+<h2 id="3-develop-ergo-applications-in-javascript-python-ruby">3. Develop Ergo Applications in JavaScript, Python, Ruby</h2>
+
+<p>GraalVM supports so called polyglot programming in which different components of
+an application can be developed using the most suitable language and then
+seamlessly combined at runtime. In this way some unique libraries written in say
+Java can be used for example in a new node.js application written in JavaScript.</p>
+
+<p>To support polyglot programming GraalVM platform has it&rsquo;s own high performance
+implementations of popular languages which we are going to use to implement
+our example FreezeCoin scenario.</p>
+
+<p>Before running the examples in JavaScript, Python and Ruby sections below it my
+be helpful to run Java example first to make sure everything is set up
+correctly.</p>
+
+<h3 id="javascript">JavaScript</h3>
+
+<p>GraalVM can <a href="https://www.graalvm.org/docs/reference-manual/languages/js/">run JavaScript and Node.js</a> applications out of the box and it is compatible with the <a href="http://www.ecma-international.org/ecma-262/10.0/index.html">ECMAScript 2019 specification</a>.
+Additionally, <code>js</code> and <code>node</code> launchers accept special <code>--jvm</code> and <code>--polyglot</code> command line options which allow JS script to access Java objects and classes.</p>
+
+<p>That said, a JS implementation of FreezeCoin can be easily written using Appkit
+API interfaces. Please see the full source code of <a href="https://github.com/aslesarenko/ergo-appkit-examples/blob/master/js-examples/FreezeCoin.js">FreezeCoin JS implementation</a> for details. The following command use <code>node</code> launcher to execute FreezeCoin.js script.</p>
+
+<pre><code class="language-shell">$ node --jvm --vm.cp=build/libs/appkit-examples-3.1.0-all.jar \
+  js-examples/FreezeCoin.js  1000000000
+</code></pre>
+
+<p>Note, the paths in the command are relative to the root of <code>ergo-appkit-examples</code> project directory.</p>
+
+<h3 id="python">Python</h3>
+
+<p>GraalVM can <a href="https://www.graalvm.org/docs/reference-manual/languages/python/">run Python scripts</a>, though the Python implementation is still experimental (see also <a href="https://www.graalvm.org/docs/reference-manual/languages/python/#python-compatibility">compatibility section</a>
+for details).</p>
+
+<p><a href="https://github.com/aslesarenko/ergo-appkit-examples/blob/master/python-examples/FreezeCoin.py">Python example of FreezeCoin</a> can be executed using the following command</p>
+
+<pre><code class="language-shell">$ graalpython --jvm --polyglot --vm.cp=build/libs/appkit-examples-3.1.0-all.jar \
+   python-examples/FreezeCoin.py 1900000000
+</code></pre>
+
+<h3 id="ruby">Ruby</h3>
+
+<p>GraalVM can <a href="https://www.graalvm.org/docs/reference-manual/languages/ruby/">run Ruby scripts</a> using TruffleRuby implementation, which is however still experimental (see also
+<a href="https://www.graalvm.org/docs/reference-manual/languages/ruby/#compatibility">compatibility section</a> for details). TruffleRuby aims to be fully compatible with the standard implementation of Ruby, MRI, version 2.6.2</p>
+
+<p><a href="https://github.com/aslesarenko/ergo-appkit-examples/blob/master/ruby-examples/FreezeCoin.rb">Ruby example of FreezeCoin</a> can be executed using the following command</p>
+
+<pre><code class="language-shell">$ ruby --polyglot --jvm --vm.cp=build/libs/appkit-examples-3.1.0-all.jar \
+    ruby-examples/FreezeCoin.rb 1900000000
+</code></pre>
+
+<h2 id="4-ergo-application-as-native-shared-library">4. Ergo Application as native shared library</h2>
+
+<p>We can compile Java class as a native shared library, instead of an executable. To do that we declare one or more static methods as <code>@CEntryPoint</code>.</p>
+
+<pre><code class="language-java">public class FreezeCoin {
+    ...
+     /**
+     * Entry point callable from C which wraps {@link FreezeCoin#sendTx}
+     */
+    @CEntryPoint(name = &quot;sendTx&quot;)
+    public static void sendTxEntryPoint(
+            IsolateThread thread,
+            SignedWord amountToSendW,
+            CCharPointer configFileNameC,
+            CCharPointer resBuffer, UnsignedWord bufferSize) throws FileNotFoundException {
+        long amountToSend = amountToSendW.rawValue();
+        // Convert the C strings to the target Java strings.
+        String configFileName = CTypeConversion.toJavaString(configFileNameC);
+        String txJson = sendTx(amountToSend, configFileName);
+
+        // put resulting string into provided buffer
+        CTypeConversion.toCString(txJson, resBuffer, bufferSize);
+    }  
+    ...
+}
+</code></pre>
+
+<p>We can then compile to a shared library, and an automatically generated header file. Notice the use of <code>--shared</code> option.</p>
+
+<pre><code class="language-shell">$ native-image --no-server \
+ -cp build/libs/appkit-examples-3.1.0-all.jar\
+ --report-unsupported-elements-at-runtime\
+  --no-fallback -H:+TraceClassInitialization -H:+ReportExceptionStackTraces\
+   -H:+AddAllCharsets -H:+AllowVMInspection -H:-RuntimeAssertions\
+   --allow-incomplete-classpath \
+    --enable-url-protocols=http,https 
+    --shared -H:Name=libfreezecoin -H:Path=c-examples
+    
+$ otool -L c-examples/libfreezecoin.dylib 
+c-examples/libfreezecoin.dylib:
+	.../c-examples/libfreezecoin.dylib (compatibility version 0.0.0, current version 0.0.0)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1252.50.4)
+	/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation (compatibility version 150.0.0, current version 1455.12.0)
+	/usr/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.2.11)
+</code></pre>
+
+<p>We can then write a simple <a href="https://github.com/aslesarenko/ergo-appkit-examples/blob/master/c-examples/freezecoin.c">C program</a>
+to use the library. The interface to our native library does have a little
+ceremony — because the VM needs to manage a heap, threads, a garbage collector
+and other services, we need to create an instance of the system, and tell it
+about our main thread.</p>
+
+<pre><code class="language-java">#include &lt;stdlib.h&gt;
+#include &lt;stdio.h&gt;
+
+#include &lt;libfreezecoin.h&gt;
+
+int main(int argc, char **argv) {
+  graal_isolate_t *isolate = NULL;
+  graal_isolatethread_t *thread = NULL;
+  
+  if (graal_create_isolate(NULL, &amp;isolate, &amp;thread) != 0) {
+    fprintf(stderr, &quot;graal_create_isolate error\n&quot;);
+    return 1;
+  }
+
+  char * configFileName = &quot;freeze_coin_config.json&quot;;
+
+  // get amountToSend from cmd args and call transaction creation
+  long amountToSend = atol(argv[1]);
+  char result[1024 * 16];
+  sendTx(thread, amountToSend, configFileName, result, sizeof(result));
+
+  // print out serialized result
+  printf(&quot;%s\n&quot;, result);
+
+  if (graal_detach_thread(thread) != 0) {
+    fprintf(stderr, &quot;graal_detach_thread error\n&quot;);
+    return 1;
+  }
+  return 0;
+}
+</code></pre>
+
+<p>We compile this with our standard system tools and can run our executable (set LD_LIBRARY_PATH=. on Linux).</p>
+
+<pre><code class="language-shell">$ clang -Ic-examples -Lc-examples -lfreezecoin c-examples/freezecoin.c -o call_freezecoin
+$ otool -L call_freezecoin
+$ DYLD_LIBRARY_PATH=$GRAAL_HOME/jre/lib ./call_freezecoin 1000000000
+</code></pre>
+
+<h2 id="5-debug-your-polyglot-ergo-application">5. Debug your polyglot Ergo Application</h2>
+
+<p>You can debug JS, Python and Ruby in IntelliJ, but if for some reason this
+doesn&rsquo;t work for you, with GraalVM there is another option.</p>
+
+<p>All the GraalVM languages (except for Java) are implemented using the common <a href="https://github.com/oracle/graal/tree/master/truffle">Truffle framework</a>. This allows to implement functionality like debuggers once and have it available
+to all languages.</p>
+
+<p>We can run the program with the flag <code>--inspect</code>. This will give us a link to
+open in Chrome and will pause the program in the debugger.</p>
+
+<pre><code class="language-shell">$ ruby --polyglot --jvm --inspect --vm.cp=build/libs/appkit-examples-3.1.0-all.jar \
+    ruby-examples/FreezeCoin.rb 1900000000
+Debugger listening on port 9229.
+To start debugging, open the following URL in Chrome:
+    chrome-devtools://devtools/bundled/js_app.html?ws=127.0.0.1:9229/30c7da1e-7558a47d09b
+...
+</code></pre>
+
+<p>We can then set a breakpoint and continue execution. When it breaks we’ll see
+values of the variables, and can continue again until the next breakpoint.</p>
+
+<p><img src="/img/blog/debugger.png" alt="Debugger" /></p>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>We see how easy it is to use Appkit from different most popular languages such
+as Java, JavaScript, Python and Ruby to create new coins protected by custom user-defined Ergo contract written in ErgoScript.</p>
+
+<p>The example assumes the Ergo node (and the embedded wallet) is owned by the FreezeCoin user. However this is not strictly required and the Appkit interfaces can be used to create and send new transactions using arbitrary public Ergo node.</p>
+
+<h2 id="references">References</h2>
+
+<ol>
+<li><a href="https://ergoplatform.org/en/">Ergo Site</a></li>
+<li><a href="https://github.com/ergoplatform/ergo">Ergo Sources</a></li>
+<li><a href="https://github.com/aslesarenko/ergo-appkit">Ergo Appkit</a></li>
+<li><a href="https://github.com/aslesarenko/ergo-appkit-examples">Ergo Appkit Examples</a></li>
+<li><a href="https://www.graalvm.org">GraalVM</a></li>
+</ol>
 
           </div>
         </div>
@@ -236,7 +649,7 @@ See you there!</p>
   <p class="eg-text__paragraph eg-text__paragraph--26">Share post</p>
   <ul class="eg-social">
     <li class="eg-share_item">
-      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_07_24_ergo_address%2f" target="_blank">
+      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_11_30_top5%2f" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path d="M17 14.0001H25V28.4H17V14.0001Z" fill="white"/>
@@ -247,7 +660,7 @@ See you there!</p>
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_07_24_ergo_address%2f&amp;hashtags=ergoplatform" target="_blank">
+      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_11_30_top5%2f&amp;hashtags=ergoplatform" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path class="st0" fill-rule="evenodd" clip-rule="evenodd" d="M29 16.4204C28.4478 16.6615 27.855 16.8241 27.2323 16.8975C27.868 16.5225 28.3558 15.9287 28.5857 15.2214C27.9909 15.5684 27.3322 15.8208 26.6315 15.9565C26.0699 15.3677 25.2701 15 24.3851 15C22.6855 15 21.3076 16.3562 21.3076 18.0291C21.3076 18.2666 21.3347 18.4978 21.3873 18.7195C18.8298 18.5933 16.5616 17.3871 15.0441 15.5542C14.7792 16.0018 14.6274 16.5222 14.6274 17.0774C14.6274 18.1283 15.1706 19.0554 15.9963 19.5989C15.4921 19.5831 15.0174 19.4469 14.6024 19.22C14.6021 19.2325 14.6021 19.2452 14.6021 19.2581C14.6021 20.7258 15.6632 21.9504 17.0707 22.2285C16.8128 22.2979 16.5409 22.335 16.2599 22.335C16.0619 22.335 15.8693 22.3158 15.6812 22.2805C16.0728 23.4839 17.2097 24.36 18.5559 24.3843C17.5025 25.197 16.176 25.6812 14.734 25.6812C14.4857 25.6812 14.2408 25.6667 14 25.6384C15.3617 26.4982 16.979 27 18.7175 27C24.3777 27 27.4734 22.3837 27.4734 18.3804C27.4734 18.2494 27.4705 18.1184 27.4645 17.9883C28.0658 17.5614 28.5873 17.0281 29 16.4204Z" fill="#FF4221"/>
@@ -255,7 +668,7 @@ See you there!</p>
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link copy-link" href="https://ergoplatform.org/en/blog/2019_07_24_ergo_address/" target="_blank">
+      <a class="eg-share__link copy-link" href="https://ergoplatform.org/en/blog/2019_11_30_top5/" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M39.91 19.3528L34.2335 6.06338C34.1186 5.78985 33.898 5.57515 33.6227 5.46487L20.2117 0.0807171C19.9364 -0.0292029 19.6283 -0.027376 19.3547 0.089384L6.0641 5.76578C5.79022 5.8811 5.57549 6.10129 5.46522 6.37698L0.0816753 19.7881C-0.0303977 20.0656 -0.0267767 20.3716 0.0903423 20.6455L5.76643 33.9366C5.88175 34.2101 6.10231 34.4249 6.37727 34.5352L19.7883 39.919C19.9209 39.9727 20.0639 40 20.2048 40C20.3544 40 20.5043 39.971 20.647 39.909L33.9359 34.2324C34.2097 34.1171 34.4245 33.8966 34.5348 33.6216L39.9183 20.2102C40.0304 19.9327 40.0267 19.6267 39.91 19.3528Z" stroke="#FF4221"/>
@@ -294,19 +707,6 @@ See you there!</p>
             
             
               
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_11_30_top5/">
-                  <div class="eg-blog__item-img"><img src="/img/blog/top5.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>Top 5 Things To Do With Ergo Appkit</span></h3>
-                  <p class="eg-blog__item-paragraph">Top 5 Things To Do With Ergo Appkit Ergo Appkit is a library for polyglot development of Ergo Applications based on GraalVM. Many useful things can be done …</p>
-                  <div class="eg-author">
-                    <img src="/img/authors/alexander_slesarenko.jpg" alt="author img" class="eg-author__img" width="60" height="60">
-                    <div class="eg-author__info">
-                      <h4 class="eg-author__info-title">Alexander Slesarenko</h4>
-                      <p class="eg-author__info-paragraph">30 November, 2019</p>
-                    </div>
-                  </div>
-                </a>
-              
             
               
                 <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_09_06_crowdfund/">
@@ -339,6 +739,19 @@ Developer MH Samadani published …</p>
                 </a>
               
             
+              
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_07_24_ergo_address/">
+                  <div class="eg-blog__item-img"><img src="/img/blog/address.jpg" height="188" width="335" alt="blog photo"></div>
+                  <h3 class="eg-blog__item-title"><span>Ergo Addresses</span></h3>
+                  <p class="eg-blog__item-paragraph">In today&rsquo;s article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work …</p>
+                  <div class="eg-author">
+                    <img src="/img/authors/robert_wolf.jpg" alt="author img" class="eg-author__img" width="60" height="60">
+                    <div class="eg-author__info">
+                      <h4 class="eg-author__info-title">Robert Wolf</h4>
+                      <p class="eg-author__info-paragraph">24 July, 2019</p>
+                    </div>
+                  </div>
+                </a>
               
             
               
