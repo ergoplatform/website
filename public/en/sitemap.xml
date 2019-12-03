@@ -26,13 +26,6 @@
   </url>
   
   <url>
-    <loc>https://ergoplatform.org/en/blog/2019_11_30_top5/</loc>
-    <lastmod>2019-11-30T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://ergoplatform.org/en/news/2019_10_30/</loc>
     <lastmod>2019-10-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -1156,6 +1149,11 @@
                 hreflang="en"
                 href="https://ergoplatform.org/en/blog/2018_10_19-smart-contracts/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/en/blog/2019_11_30_top5/</loc>
+    <priority>0</priority>
   </url>
   
   <url>

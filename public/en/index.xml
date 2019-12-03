@@ -23,17 +23,6 @@ Node security There are a few important aspects of node usage that your wallet a
     </item>
     
     <item>
-      <title>5 Ways Ergo Application Development Is Changed Forever Thanks To Appkit</title>
-      <link>https://ergoplatform.org/en/blog/2019_11_30_top5/</link>
-      <pubDate>Sat, 30 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://ergoplatform.org/en/blog/2019_11_30_top5/</guid>
-      <description>With thanks to Robert Kornacki and Denys Zadorozhnyi.
- Ergo Appkit is a library for polyglot development of Ergo Applications based on GraalVM. GraalVM has many great use cases. Expanding on that, in this article we will go through some of the Appkit features inherited from GraalVM and take you step-by-step in learning how to take advantage of them.
- 0. Example Scenario 1. Java Ergo App Development 2.</description>
-    </item>
-    
-    <item>
       <title>ERGO ($ERG) is listed on Probit Exchange</title>
       <link>https://ergoplatform.org/en/news/2019_10_30/</link>
       <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
@@ -618,6 +607,15 @@ What are the vision about scaling and adoption? About scaling, the main approach
       <guid>https://ergoplatform.org/en/blog/2018_10_19-smart-contracts/</guid>
       <description>A lot of blockchain-related news these days are saying us that a bank X or a corporation Y is going to use a &amp;ldquo;blockchain&amp;rdquo; to &amp;ldquo;reduce costs&amp;rdquo;. Basically it means that just another buzzword is considered by big banksters as just another tool to extract value from everywhere in a more efficient way, and also to save on cutting job positions.
 While I am avoiding to say anything about &amp;ldquo;Satoshi&amp;rsquo;s vision&amp;rdquo; (nothing but speculations could be dug there after his exodus), a broad view I witnessed in the early years around online forums users is that a cryptocurrency should provide tools to enrich the ordinary people behind their small businesses providing no much above making ends meet, not depersonalized big financial capital.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ergoplatform.org/en/blog/2019_11_30_top5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2019_11_30_top5/</guid>
+      <description></description>
     </item>
     
     <item>
