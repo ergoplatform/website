@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ergoplatform.org/en/blog/2019_12_03_top5/</loc>
+    <lastmod>2019-12-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://ergoplatform.org/en/</loc>
     <lastmod>2019-12-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -19,8 +26,8 @@
   </url>
   
   <url>
-    <loc>https://ergoplatform.org/en/blog/2019_12_03_how_to_setup/</loc>
-    <lastmod>2019-12-03T00:00:00+00:00</lastmod>
+    <loc>https://ergoplatform.org/en/blog/2019_12_02_how_to_setup/</loc>
+    <lastmod>2019-12-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1149,11 +1156,6 @@
                 hreflang="en"
                 href="https://ergoplatform.org/en/blog/2018_10_19-smart-contracts/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://ergoplatform.org/en/blog/2019_11_30_top5/</loc>
-    <priority>0</priority>
   </url>
   
   <url>

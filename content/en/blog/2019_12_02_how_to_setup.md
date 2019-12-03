@@ -1,6 +1,6 @@
 ---
 title: "How to set up and configure a full Ergo node"
-date: 2019-12-03
+date: 2019-12-02
 draft: false
 author: "Ergo team"
 authorPhoto: "/img/logotype_black_circle.svg"
