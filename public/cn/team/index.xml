@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Team on Ergo</title>
-    <link>http://powerful-spire-67290.herokuapp.com/cn/team/</link>
+    <link>https://ergoplatform.org/cn/team/</link>
     <description>Recent content in Team on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
     <lastBuildDate>Thu, 11 Apr 2019 20:29:21 +0300</lastBuildDate>
     
-	<atom:link href="http://powerful-spire-67290.herokuapp.com/cn/team/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ergoplatform.org/cn/team/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

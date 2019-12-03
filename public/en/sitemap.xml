@@ -3,1187 +3,1194 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/blog/2019_11_30_top5/</loc>
+    <loc>https://ergoplatform.org/en/</loc>
+    <lastmod>2019-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://ergoplatform.org/cn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ergoplatform.org/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/en/blog/2019_12_03_how_to_setup/</loc>
+    <lastmod>2019-12-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/en/blog/2019_11_30_top5/</loc>
     <lastmod>2019-11-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/</loc>
-    <lastmod>2019-11-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_10_30/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_10_30/</loc>
     <lastmod>2019-10-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_10_29/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_10_29/</loc>
     <lastmod>2019-10-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_10_14/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_10_14/</loc>
     <lastmod>2019-10-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019_10_14/"
+                href="https://ergoplatform.org/cn/news/2019_10_14/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019_10_14/"
+                href="https://ergoplatform.org/en/news/2019_10_14/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_10_08_hotbit/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_10_08_hotbit/</loc>
     <lastmod>2019-10-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_10_08/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_10_08/</loc>
     <lastmod>2019-10-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019_10_08/"
+                href="https://ergoplatform.org/cn/news/2019_10_08/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019_10_08/"
+                href="https://ergoplatform.org/en/news/2019_10_08/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_09_16/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_09_16/</loc>
     <lastmod>2019-09-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019_09_16/"
+                href="https://ergoplatform.org/cn/news/2019_09_16/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019_09_16/"
+                href="https://ergoplatform.org/en/news/2019_09_16/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_09_14/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_09_14/</loc>
     <lastmod>2019-09-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019_09_14/"
+                href="https://ergoplatform.org/cn/news/2019_09_14/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019_09_14/"
+                href="https://ergoplatform.org/en/news/2019_09_14/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/blog/2019_09_06_crowdfund/</loc>
+    <loc>https://ergoplatform.org/en/blog/2019_09_06_crowdfund/</loc>
     <lastmod>2019-09-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_09_06_crowdfund/"
+                href="https://ergoplatform.org/cn/blog/2019_09_06_crowdfund/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/blog/2019_09_06_crowdfund/"
+                href="https://ergoplatform.org/en/blog/2019_09_06_crowdfund/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_09_06/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_09_06/</loc>
     <lastmod>2019-09-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019_09_06/"
+                href="https://ergoplatform.org/cn/news/2019_09_06/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019_09_06/"
+                href="https://ergoplatform.org/en/news/2019_09_06/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_08_27/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_08_27/</loc>
     <lastmod>2019-08-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_08_20_1/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_08_20_1/</loc>
     <lastmod>2019-08-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_08_20/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_08_20/</loc>
     <lastmod>2019-08-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019_08_20/"
+                href="https://ergoplatform.org/cn/news/2019_08_20/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019_08_20/"
+                href="https://ergoplatform.org/en/news/2019_08_20/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/blog/2019_08_07_amd/</loc>
+    <loc>https://ergoplatform.org/en/blog/2019_08_07_amd/</loc>
     <lastmod>2019-08-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_08_07_amd/"
+                href="https://ergoplatform.org/cn/blog/2019_08_07_amd/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/blog/2019_08_07_amd/"
+                href="https://ergoplatform.org/en/blog/2019_08_07_amd/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_08_06/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_08_06/</loc>
     <lastmod>2019-08-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019_08_06/"
+                href="https://ergoplatform.org/cn/news/2019_08_06/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019_08_06/"
+                href="https://ergoplatform.org/en/news/2019_08_06/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_30/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_07_30/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/blog/2019_07_24_ergo_address/</loc>
+    <loc>https://ergoplatform.org/en/blog/2019_07_24_ergo_address/</loc>
     <lastmod>2019-07-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_07_24_ergo_address/"
+                href="https://ergoplatform.org/cn/blog/2019_07_24_ergo_address/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/blog/2019_07_24_ergo_address/"
+                href="https://ergoplatform.org/en/blog/2019_07_24_ergo_address/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_19/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_07_19/</loc>
     <lastmod>2019-07-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_19/"
+                href="https://ergoplatform.org/cn/news/2019_07_19/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019_07_19/"
+                href="https://ergoplatform.org/en/news/2019_07_19/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_18/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_07_18/</loc>
     <lastmod>2019-07-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_18/"
+                href="https://ergoplatform.org/cn/news/2019_07_18/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019_07_18/"
+                href="https://ergoplatform.org/en/news/2019_07_18/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_11/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_07_11/</loc>
     <lastmod>2019-07-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_11/"
+                href="https://ergoplatform.org/cn/news/2019_07_11/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019_07_11/"
+                href="https://ergoplatform.org/en/news/2019_07_11/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/blog/2019_07_09_after_launch/</loc>
+    <loc>https://ergoplatform.org/en/blog/2019_07_09_after_launch/</loc>
     <lastmod>2019-07-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_07_09_after_launch/"
+                href="https://ergoplatform.org/cn/blog/2019_07_09_after_launch/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/blog/2019_07_09_after_launch/"
+                href="https://ergoplatform.org/en/blog/2019_07_09_after_launch/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_09/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_07_09/</loc>
     <lastmod>2019-07-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_09/"
+                href="https://ergoplatform.org/cn/news/2019_07_09/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019_07_09/"
+                href="https://ergoplatform.org/en/news/2019_07_09/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_04/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_07_04/</loc>
     <lastmod>2019-07-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_04/"
+                href="https://ergoplatform.org/cn/news/2019_07_04/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019_07_04/"
+                href="https://ergoplatform.org/en/news/2019_07_04/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_02/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_07_02/</loc>
     <lastmod>2019-07-03T11:08:33+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_02/"
+                href="https://ergoplatform.org/cn/news/2019_07_02/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019_07_02/"
+                href="https://ergoplatform.org/en/news/2019_07_02/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/blog/2019_07_03_mining_withdrawal/</loc>
+    <loc>https://ergoplatform.org/en/blog/2019_07_03_mining_withdrawal/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_07_03_mining_withdrawal/"
+                href="https://ergoplatform.org/cn/blog/2019_07_03_mining_withdrawal/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/blog/2019_07_03_mining_withdrawal/"
+                href="https://ergoplatform.org/en/blog/2019_07_03_mining_withdrawal/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_03/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_07_03/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_03/"
+                href="https://ergoplatform.org/cn/news/2019_07_03/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019_07_03/"
+                href="https://ergoplatform.org/en/news/2019_07_03/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_01_1/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_07_01_1/</loc>
     <lastmod>2019-07-01T11:06:02+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_01_1/"
+                href="https://ergoplatform.org/cn/news/2019_07_01_1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019_07_01_1/"
+                href="https://ergoplatform.org/en/news/2019_07_01_1/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_01_2/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_07_01_2/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_01_2/"
+                href="https://ergoplatform.org/cn/news/2019_07_01_2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019_07_01_2/"
+                href="https://ergoplatform.org/en/news/2019_07_01_2/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_07_01/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_07_01/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019_07_01/"
+                href="https://ergoplatform.org/cn/news/2019_07_01/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019_07_01/"
+                href="https://ergoplatform.org/en/news/2019_07_01/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_06_28_2/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_06_28_2/</loc>
     <lastmod>2019-06-28T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/blog/2019_06_28_mainnet-bootstrap/</loc>
+    <loc>https://ergoplatform.org/en/blog/2019_06_28_mainnet-bootstrap/</loc>
     <lastmod>2019-06-28T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_06_28_mainnet-bootstrap/"
+                href="https://ergoplatform.org/cn/blog/2019_06_28_mainnet-bootstrap/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/blog/2019_06_28_mainnet-bootstrap/"
+                href="https://ergoplatform.org/en/blog/2019_06_28_mainnet-bootstrap/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_06_28_3/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_06_28_3/</loc>
     <lastmod>2019-06-28T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019-06-27/</loc>
+    <loc>https://ergoplatform.org/en/news/2019-06-27/</loc>
     <lastmod>2019-06-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019-06_26/</loc>
+    <loc>https://ergoplatform.org/en/news/2019-06_26/</loc>
     <lastmod>2019-06-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019-06-24/</loc>
+    <loc>https://ergoplatform.org/en/news/2019-06-24/</loc>
     <lastmod>2019-06-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_06_1/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_06_1/</loc>
     <lastmod>2019-06-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_06_13_2/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_06_13_2/</loc>
     <lastmod>2019-06-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_13_2/"
+                href="https://ergoplatform.org/cn/news/2019_06_13_2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019_06_13_2/"
+                href="https://ergoplatform.org/en/news/2019_06_13_2/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_06_13/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_06_13/</loc>
     <lastmod>2019-06-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_13/"
+                href="https://ergoplatform.org/cn/news/2019_06_13/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019_06_13/"
+                href="https://ergoplatform.org/en/news/2019_06_13/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_06_12/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_06_12/</loc>
     <lastmod>2019-06-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_12/"
+                href="https://ergoplatform.org/cn/news/2019_06_12/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019_06_12/"
+                href="https://ergoplatform.org/en/news/2019_06_12/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_06_11/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_06_11/</loc>
     <lastmod>2019-06-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_11/"
+                href="https://ergoplatform.org/cn/news/2019_06_11/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019_06_11/"
+                href="https://ergoplatform.org/en/news/2019_06_11/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019_06_05/</loc>
+    <loc>https://ergoplatform.org/en/news/2019_06_05/</loc>
     <lastmod>2019-06-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019_06_05/"
+                href="https://ergoplatform.org/cn/news/2019_06_05/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019_06_05/"
+                href="https://ergoplatform.org/en/news/2019_06_05/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019-06-05-1/</loc>
+    <loc>https://ergoplatform.org/en/news/2019-06-05-1/</loc>
     <lastmod>2019-06-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019-06-05-2/</loc>
+    <loc>https://ergoplatform.org/en/news/2019-06-05-2/</loc>
     <lastmod>2019-06-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/blog/2019_06_04_wallet-documentation/</loc>
+    <loc>https://ergoplatform.org/en/blog/2019_06_04_wallet-documentation/</loc>
     <lastmod>2019-06-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_06_04_wallet-documentation/"
+                href="https://ergoplatform.org/cn/blog/2019_06_04_wallet-documentation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/blog/2019_06_04_wallet-documentation/"
+                href="https://ergoplatform.org/en/blog/2019_06_04_wallet-documentation/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019-06-03/</loc>
+    <loc>https://ergoplatform.org/en/news/2019-06-03/</loc>
     <lastmod>2019-06-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019-05-30/</loc>
+    <loc>https://ergoplatform.org/en/news/2019-05-30/</loc>
     <lastmod>2019-05-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/blog/2019_05_29-exchange/</loc>
+    <loc>https://ergoplatform.org/en/blog/2019_05_29-exchange/</loc>
     <lastmod>2019-05-29T18:21:23+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_29-exchange/"
+                href="https://ergoplatform.org/cn/blog/2019_05_29-exchange/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/blog/2019_05_29-exchange/"
+                href="https://ergoplatform.org/en/blog/2019_05_29-exchange/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/blog/2019_05_20-curve/</loc>
+    <loc>https://ergoplatform.org/en/blog/2019_05_20-curve/</loc>
     <lastmod>2019-05-20T15:05:06+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_20-curve/"
+                href="https://ergoplatform.org/cn/blog/2019_05_20-curve/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/blog/2019_05_20-curve/"
+                href="https://ergoplatform.org/en/blog/2019_05_20-curve/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019-05-20/</loc>
+    <loc>https://ergoplatform.org/en/news/2019-05-20/</loc>
     <lastmod>2019-05-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019-05-17/</loc>
+    <loc>https://ergoplatform.org/en/news/2019-05-17/</loc>
     <lastmod>2019-05-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019-05-15-whitepaper/</loc>
+    <loc>https://ergoplatform.org/en/news/2019-05-15-whitepaper/</loc>
     <lastmod>2019-05-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019-05-15-whitepaper/"
+                href="https://ergoplatform.org/cn/news/2019-05-15-whitepaper/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019-05-15-whitepaper/"
+                href="https://ergoplatform.org/en/news/2019-05-15-whitepaper/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/blog/2019_05_07_mining/</loc>
+    <loc>https://ergoplatform.org/en/blog/2019_05_07_mining/</loc>
     <lastmod>2019-05-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_05_07_mining/"
+                href="https://ergoplatform.org/cn/blog/2019_05_07_mining/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/blog/2019_05_07_mining/"
+                href="https://ergoplatform.org/en/blog/2019_05_07_mining/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019-05-07-release/</loc>
+    <loc>https://ergoplatform.org/en/news/2019-05-07-release/</loc>
     <lastmod>2019-05-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019-05-07-release/"
+                href="https://ergoplatform.org/cn/news/2019-05-07-release/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019-05-07-release/"
+                href="https://ergoplatform.org/en/news/2019-05-07-release/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/legal/</loc>
+    <loc>https://ergoplatform.org/en/legal/</loc>
     <lastmod>2019-04-26T13:24:22+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/legal/"
+                href="https://ergoplatform.org/cn/legal/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/legal/"
+                href="https://ergoplatform.org/en/legal/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/privacy/</loc>
+    <loc>https://ergoplatform.org/en/privacy/</loc>
     <lastmod>2019-04-26T13:18:49+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/privacy/"
+                href="https://ergoplatform.org/cn/privacy/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/privacy/"
+                href="https://ergoplatform.org/en/privacy/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/wallets/</loc>
+    <loc>https://ergoplatform.org/en/wallets/</loc>
     <lastmod>2019-04-24T13:59:34+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/wallets/"
+                href="https://ergoplatform.org/cn/wallets/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/wallets/"
+                href="https://ergoplatform.org/en/wallets/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019-04-24-teaser/</loc>
+    <loc>https://ergoplatform.org/en/news/2019-04-24-teaser/</loc>
     <lastmod>2019-04-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019-04-24-teaser/"
+                href="https://ergoplatform.org/cn/news/2019-04-24-teaser/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019-04-24-teaser/"
+                href="https://ergoplatform.org/en/news/2019-04-24-teaser/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/exchanges/</loc>
+    <loc>https://ergoplatform.org/en/exchanges/</loc>
     <lastmod>2019-04-23T14:43:56+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/exchanges/"
+                href="https://ergoplatform.org/cn/exchanges/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/exchanges/"
+                href="https://ergoplatform.org/en/exchanges/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/software/</loc>
+    <loc>https://ergoplatform.org/en/software/</loc>
     <lastmod>2019-04-22T18:58:37+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/software/"
+                href="https://ergoplatform.org/cn/software/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/software/"
+                href="https://ergoplatform.org/en/software/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/tools/</loc>
+    <loc>https://ergoplatform.org/en/tools/</loc>
     <lastmod>2019-04-22T18:00:17+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/tools/"
+                href="https://ergoplatform.org/cn/tools/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/tools/"
+                href="https://ergoplatform.org/en/tools/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/basics/</loc>
+    <loc>https://ergoplatform.org/en/basics/</loc>
     <lastmod>2019-04-22T15:55:51+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/basics/"
+                href="https://ergoplatform.org/cn/basics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/basics/"
+                href="https://ergoplatform.org/en/basics/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/blog/2019_04_22-lets/</loc>
+    <loc>https://ergoplatform.org/en/blog/2019_04_22-lets/</loc>
     <lastmod>2019-04-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_22-lets/"
+                href="https://ergoplatform.org/cn/blog/2019_04_22-lets/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/blog/2019_04_22-lets/"
+                href="https://ergoplatform.org/en/blog/2019_04_22-lets/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/</loc>
+    <loc>https://ergoplatform.org/en/news/</loc>
     <lastmod>2019-04-12T13:50:10+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/"
+                href="https://ergoplatform.org/cn/news/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/"
+                href="https://ergoplatform.org/en/news/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/faq/</loc>
+    <loc>https://ergoplatform.org/en/faq/</loc>
     <lastmod>2019-04-12T13:50:04+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/faq/"
+                href="https://ergoplatform.org/cn/faq/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/faq/"
+                href="https://ergoplatform.org/en/faq/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/404/</loc>
+    <loc>https://ergoplatform.org/en/404/</loc>
     <lastmod>2019-04-12T13:49:59+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/404/"
+                href="https://ergoplatform.org/cn/404/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/404/"
+                href="https://ergoplatform.org/en/404/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/documents/</loc>
+    <loc>https://ergoplatform.org/en/documents/</loc>
     <lastmod>2019-04-12T13:49:59+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/documents/"
+                href="https://ergoplatform.org/cn/documents/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/documents/"
+                href="https://ergoplatform.org/en/documents/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/blog/</loc>
+    <loc>https://ergoplatform.org/en/blog/</loc>
     <lastmod>2019-04-12T13:49:52+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/blog/"
+                href="https://ergoplatform.org/cn/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/blog/"
+                href="https://ergoplatform.org/en/blog/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/careers/</loc>
+    <loc>https://ergoplatform.org/en/careers/</loc>
     <lastmod>2019-04-12T13:49:52+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/team/</loc>
+    <loc>https://ergoplatform.org/en/team/</loc>
     <lastmod>2019-04-11T20:29:21+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/team/"
+                href="https://ergoplatform.org/cn/team/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/team/"
+                href="https://ergoplatform.org/en/team/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/about/</loc>
+    <loc>https://ergoplatform.org/en/about/</loc>
     <lastmod>2019-04-11T20:27:44+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/about/"
+                href="https://ergoplatform.org/cn/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/about/"
+                href="https://ergoplatform.org/en/about/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/blog/2019_04_10-ico-example/</loc>
+    <loc>https://ergoplatform.org/en/blog/2019_04_10-ico-example/</loc>
     <lastmod>2019-04-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_04_10-ico-example/"
+                href="https://ergoplatform.org/cn/blog/2019_04_10-ico-example/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/blog/2019_04_10-ico-example/"
+                href="https://ergoplatform.org/en/blog/2019_04_10-ico-example/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019-04-03-ergo-mining-tutorial/</loc>
+    <loc>https://ergoplatform.org/en/news/2019-04-03-ergo-mining-tutorial/</loc>
     <lastmod>2019-04-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019-04-03-ergo-mining-tutorial/"
+                href="https://ergoplatform.org/cn/news/2019-04-03-ergo-mining-tutorial/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019-04-03-ergo-mining-tutorial/"
+                href="https://ergoplatform.org/en/news/2019-04-03-ergo-mining-tutorial/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019-04-02-testnet-2.0.3/</loc>
+    <loc>https://ergoplatform.org/en/news/2019-04-02-testnet-2.0.3/</loc>
     <lastmod>2019-04-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019-04-02-testnet-2.0.3/"
+                href="https://ergoplatform.org/cn/news/2019-04-02-testnet-2.0.3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019-04-02-testnet-2.0.3/"
+                href="https://ergoplatform.org/en/news/2019-04-02-testnet-2.0.3/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019-03-19/</loc>
+    <loc>https://ergoplatform.org/en/news/2019-03-19/</loc>
     <lastmod>2019-03-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019-03-19/"
+                href="https://ergoplatform.org/cn/news/2019-03-19/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019-03-19/"
+                href="https://ergoplatform.org/en/news/2019-03-19/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/blog/2019_03_19-qa/</loc>
+    <loc>https://ergoplatform.org/en/blog/2019_03_19-qa/</loc>
     <lastmod>2019-03-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/blog/2019_03_19-qa/"
+                href="https://ergoplatform.org/cn/blog/2019_03_19-qa/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/blog/2019_03_19-qa/"
+                href="https://ergoplatform.org/en/blog/2019_03_19-qa/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019-03-17-how-to-set-up-full-node/</loc>
+    <loc>https://ergoplatform.org/en/news/2019-03-17-how-to-set-up-full-node/</loc>
     <lastmod>2019-03-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019-03-17-how-to-set-up-full-node/"
+                href="https://ergoplatform.org/cn/news/2019-03-17-how-to-set-up-full-node/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019-03-17-how-to-set-up-full-node/"
+                href="https://ergoplatform.org/en/news/2019-03-17-how-to-set-up-full-node/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019-03-14/</loc>
+    <loc>https://ergoplatform.org/en/news/2019-03-14/</loc>
     <lastmod>2019-03-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/news/2019-03-14/"
+                href="https://ergoplatform.org/cn/news/2019-03-14/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/news/2019-03-14/"
+                href="https://ergoplatform.org/en/news/2019-03-14/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/news/2019-03-12/</loc>
+    <loc>https://ergoplatform.org/en/news/2019-03-12/</loc>
     <lastmod>2019-03-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/blog/2018_10_19-smart-contracts/</loc>
+    <loc>https://ergoplatform.org/en/blog/2018_10_19-smart-contracts/</loc>
     <lastmod>2018-10-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/blog/2018_10_19-smart-contracts/"
+                href="https://ergoplatform.org/cn/blog/2018_10_19-smart-contracts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/blog/2018_10_19-smart-contracts/"
+                href="https://ergoplatform.org/en/blog/2018_10_19-smart-contracts/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/categories/</loc>
+    <loc>https://ergoplatform.org/en/categories/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/categories/"
+                href="https://ergoplatform.org/cn/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/categories/"
+                href="https://ergoplatform.org/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/careers/frontend/</loc>
+    <loc>https://ergoplatform.org/en/careers/frontend/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://powerful-spire-67290.herokuapp.com/en/tags/</loc>
+    <loc>https://ergoplatform.org/en/tags/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://powerful-spire-67290.herokuapp.com/cn/tags/"
+                href="https://ergoplatform.org/cn/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://powerful-spire-67290.herokuapp.com/en/tags/"
+                href="https://ergoplatform.org/en/tags/"
                 />
   </url>
   
