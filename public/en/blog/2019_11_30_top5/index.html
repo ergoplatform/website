@@ -11,12 +11,13 @@
     <link rel="preload" href="/fonts/LabGrotesque-Regular-hint-all.woff" as="font" type="font/woff" crossorigin>
 
     
-      <meta name="description" content="5 Ways Ergo Application Development Is Changed Forever Thanks To Appkit  With thanks to Robert Kornacki and Denys Zadorozhnyi.
- Ergo Appkit is a library for polyglot development of Ergo Applications based on GraalVM. GraalVM has many great use cases. Expanding on that, in this article we will go through some of the Appkit features inherited from GraalVM and take you step-by-step in learning how to take advantage of them.">
+      <meta name="description" content="With thanks to Robert Kornacki and Denys Zadorozhnyi.
+ Ergo Appkit is a library for polyglot development of Ergo Applications based on GraalVM. GraalVM has many great use cases. Expanding on that, in this article we will go through some of the Appkit features inherited from GraalVM and take you step-by-step in learning how to take advantage of them.
+ 0. Example Scenario 1. Java Ergo App Development 2.">
     
 
     
-    <title>Top 5 Things To Do With Ergo Appkit | Ergo</title>
+    <title>5 Ways Ergo Application Development Is Changed Forever Thanks To Appkit | Ergo</title>
 
     
     
@@ -132,7 +133,7 @@
         <a href="http://powerful-spire-67290.herokuapp.com/en/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>Back to all posts</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
-        <h1 class="eg-title eg-mb-1">Top 5 Things To Do With Ergo Appkit</h1>
+        <h1 class="eg-title eg-mb-1">5 Ways Ergo Application Development Is Changed Forever Thanks To Appkit</h1>
         <div class="eg-author">
           <img src="/img/authors/alexander_slesarenko.jpg" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
@@ -146,8 +147,6 @@
         <div class="eg-blog__single-content">
           <div>
             
-
-<h1 id="5-ways-ergo-application-development-is-changed-forever-thanks-to-appkit">5 Ways Ergo Application Development Is Changed Forever Thanks To Appkit</h1>
 
 <blockquote>
 <p>With thanks to <a href="https://github.com/robkorn">Robert Kornacki</a> and <a href="https://github.com/greenhat">Denys Zadorozhnyi</a>.</p>
@@ -189,15 +188,19 @@ examples</a> to learn more about ErgoScript).</p>
 
 <p>In short, a box (and therefore the funds within the box) are locked under a contract (or script) on the Ergo blockchain. In order for the box to be spent, the contract must evaluate to true. Thus the individual who wishes to spend the box must ensure that the contract evaluates to true based off of the encoded logic within it.</p>
 
-<p>Our Freezer contract above checks the following conditions before allowing the box to be spent:
-1) The current block number of the Ergo blockchain (aka blockchain HEIGHT) is
-greater than the specified deadline
-2) The spending transaction must be signed by the owner of the secret key
-corresponding to the ownerPk public key.</p>
+<p>Our Freezer contract above checks the following conditions before allowing the box to be spent:</p>
+
+<ol>
+<li><p>The current block number of the Ergo blockchain (aka blockchain HEIGHT) is
+greater than the specified deadline</p></li>
+
+<li><p>The spending transaction must be signed by the owner of the secret key
+corresponding to the ownerPk public key.</p></li>
+</ol>
 
 <p>The first condition forbids anyone from spending the box before the Ergo
 blockchain grows to the given height. Because new blocks on the blockchain are mined approximately every 2 minutes on average, using the current
-blockchain height it is easy to define any duration of delay we wish such as 1 day, 1 week, or 1 month. *(i.e. (<sup>60</sup>&frasl;<sub>2</sub>) * 24 * 7 = 5040, which is the # of blocks per week)*.</p>
+blockchain height it is easy to define any duration of delay we wish such as 1 day, 1 week, or 1 month. <em>(i.e. (60 / 2) * 24 * 7 = 5040, which is the # of blocks per week)</em>.</p>
 
 <p>We will now be going in depth on how we can take this Freezer Contract and integrate it with the Apkit library in order to create the FreezeCoin console application so that anyone and everyone can choose to freeze their coins if they so wish. (Granted, this contract/dApp is not actually useful, however it is an effective simple example for displaying how this technology stack works so that you yourself can build useful dApps down the line.)</p>
 
@@ -358,12 +361,14 @@ UnsignedTransaction tx = txB.boxesToSpend(boxes.get())
         .build();
 </code></pre>
 
-<p>And finally we:
-1) Use the prover to sign the built transaction
-2) Thus obtain a
-<code>SignedTransaction</code> instance
-3) Use the blockchain context to send the signed transaction to
-the Ergo node.</p>
+<p>And finally we:</p>
+
+<ol>
+<li>Use the prover to sign the built transaction</li>
+<li>Thus obtain a <code>SignedTransaction</code> instance</li>
+<li>Use the blockchain context to send the signed transaction to
+the Ergo node.</li>
+</ol>
 
 <p>The resulting <code>txId</code> can be used to refer to this transaction
 later however we do not use it here.</p>
@@ -451,7 +456,7 @@ at runtime.</p>
 <p>The experience for us (the developer using GraalVM) is quite similar to a conventional compiler like gcc. Note,
 we may need to run <code>./gradlew clean shadowJar</code> first.</p>
 
-<pre><code class="language-shell">$ sbt assembly
+<pre><code class="language-shell">$ ./gradlew clean shadowJar
 $ native-image --no-server \
  -cp build/libs/appkit-examples-3.1.0-all.jar\
  --report-unsupported-elements-at-runtime\

@@ -12,13 +12,14 @@
     
     
     <item>
-      <title>Top 5 Things To Do With Ergo Appkit</title>
+      <title>5 Ways Ergo Application Development Is Changed Forever Thanks To Appkit</title>
       <link>http://powerful-spire-67290.herokuapp.com/en/blog/2019_11_30_top5/</link>
       <pubDate>Sat, 30 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>http://powerful-spire-67290.herokuapp.com/en/blog/2019_11_30_top5/</guid>
-      <description>5 Ways Ergo Application Development Is Changed Forever Thanks To Appkit  With thanks to Robert Kornacki and Denys Zadorozhnyi.
- Ergo Appkit is a library for polyglot development of Ergo Applications based on GraalVM. GraalVM has many great use cases. Expanding on that, in this article we will go through some of the Appkit features inherited from GraalVM and take you step-by-step in learning how to take advantage of them.</description>
+      <description>With thanks to Robert Kornacki and Denys Zadorozhnyi.
+ Ergo Appkit is a library for polyglot development of Ergo Applications based on GraalVM. GraalVM has many great use cases. Expanding on that, in this article we will go through some of the Appkit features inherited from GraalVM and take you step-by-step in learning how to take advantage of them.
+ 0. Example Scenario 1. Java Ergo App Development 2.</description>
     </item>
     
     <item>

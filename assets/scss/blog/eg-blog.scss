@@ -375,6 +375,16 @@
           font-weight: 600;
         }
       }
+
+      blockquote {
+        margin: 0;
+        padding-left: 1.4rem;
+        border-left: 4px solid #dadada;
+
+        p {
+          color:#6a737d !important;
+        }
+      }
     }
   }
 }
