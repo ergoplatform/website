@@ -6,10 +6,28 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ergo Mainnet 3.1.4 released</title>
+      <link>https://ergoplatform.org/en/news/2019_12_04_2/</link>
+      <pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2019_12_04_2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Typescript library for Ergo with the support of custom tokens and complex transactions</title>
+      <link>https://ergoplatform.org/en/news/2019_12_04_1/</link>
+      <pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2019_12_04_1/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>5 Ways Ergo Application Development Is Changed Forever Thanks To Appkit</title>
@@ -20,6 +38,24 @@
       <description>With thanks to Robert Kornacki and Denys Zadorozhnyi.
  Ergo Appkit is a library for polyglot development of Ergo Applications based on GraalVM. GraalVM has many great use cases. Expanding on that, in this article we will go through some of the Appkit features inherited from GraalVM and take you step-by-step in learning how to take advantage of them.
  0. Example Scenario 1. Java Ergo App Development 2.</description>
+    </item>
+    
+    <item>
+      <title>5 Ways Ergo Application Development Is Changed Forever Thanks To Appkit and GraalVM</title>
+      <link>https://ergoplatform.org/en/news/2019_12_03_2/</link>
+      <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2019_12_03_2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How to set up and configure a full Ergo node</title>
+      <link>https://ergoplatform.org/en/news/2019_12_03_1/</link>
+      <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2019_12_03_1/</guid>
+      <description></description>
     </item>
     
     <item>
