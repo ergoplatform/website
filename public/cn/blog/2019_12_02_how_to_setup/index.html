@@ -11,13 +11,25 @@
     <link rel="preload" href="/fonts/LabGrotesque-Regular-hint-all.woff" as="font" type="font/woff" crossorigin>
 
     
-      <meta name="description" content="This tutorial explains how to install and run a full Ergo node. It does not cover mining.
-Node security There are a few important aspects of node usage that your wallet and money&amp;rsquo;s safety depends on:
- An Ergo node requires storing security-critical parameters in the configuration file. You should never make this file public. An Ergo node provides a REST API for interacting with the built-in wallet. Sensitive API methods require a security token, which should never be sent over untrusted channels.">
+      <meta name="description" content="本教程将解释如何安装与运行全尔格节点。其不涉及采矿相关的内容。
+节点安全 节点的使用涉及几个重要方面的内容，你的钱包和钱的安全性取决于以下方面:
+ 尔格节点需要在配置文件中存储安全关键参数。你永远不应把这个文件公开。 尔格节点提供用于与内置钱包互动的REST API。敏感的API方法需要一个安全令牌，你永远不要通过不可靠的渠道发送该令牌。 访问尔格REST API必须限制在认识的主机上。尤其是绝不允许通过互联网访问API。  先决条件 为了运行尔格节点，你需要JRE版本&amp;gt;= 将要安装的8。其中一种安装方式是使用 甲骨文安装Java.
+接下来需要下载最新的尔格客户端发行版 jar文件，并且创建一个节点配置文件。
+注意：你不用下载jar，你可以克隆资源库，然后通过发布sbt assembly指令，自己利用SBT 来创建jar。
+ergo_folder是指存放jar的文件夹。
+首席运行节点 创建在ergo_folder中含有以下文本的配置文件ergo.conf。
+ergo { directory = ${ergo.directory}&amp;quot;/.ergo&amp;quot; node { mining = false } wallet.secretStorage.secretDir = ${ergo.directory}&amp;quot;/wallet/keystore&amp;quot; }  参数${ergo.directory}指向jar运行的目录。向ergo_folder开启命令提示符和cd。然后发出以下命令来首次运行节点：
+java -jar ergo-&amp;lt;release&amp;gt;.jar --mainnet -c ergo.conf  之后节点将立即开始同步。API启动与进入到下一步需要等几分钟。
+注意：对于文件你可以使用任何名称，而非ergo.conf。全部配置参数将被传送给该文件，你只需要重写你想修改缺省值的参数。上述配置文件实际上有缺省值。
+计算你秘密的哈希值 首先，选择一个秘密来保护你的API。然后前往 http://127.0.0.1:9053/swagger#/utils/hashBlake2b 然后调用API来计算你秘密的哈希值。参考下图。
+复制含有哈希值的回复以便下一步使用（参见下图）。在我们的例子中，秘密是是 hello 谁的哈希值对应324dcf027dd4a30a932c441f365a25e86b173defa4b8e58948253471b81b72cf.
+重要提示：你必须使用不同且比较复杂的秘密.
+利用API关键哈希值来更新配置文件 编辑配置文件ergo.conf然后粘贴前步所复制的哈希值。文件内容应当看似如下：
+ergo { directory = ${ergo.directory}&amp;quot;/.ergo&amp;quot; node { mining = false } wallet.">
     
 
     
-    <title>How to set up and configure a full Ergo node | Ergo</title>
+    <title>如何设置与配置全尔格节点 | Ergo</title>
 
     
     
@@ -33,7 +45,7 @@ Node security There are a few important aspects of node usage that your wallet a
     <div class="container eg-navbar__container">
       <div>
         
-          <a href="https://ergoplatform.org/en/" class="logotype">
+          <a href="https://ergoplatform.org/cn/" class="logotype">
             <img src="/img/logotype_black.svg" alt="logotype">
           </a>
         
@@ -47,56 +59,56 @@ Node security There are a few important aspects of node usage that your wallet a
               <li class="eg-nav__item ">
                 <a
                   class="eg-nav__link eg-link"
-                  href="https://ergoplatform.org/en/about/"
-                ><span>About</span></a>
+                  href="https://ergoplatform.org/cn/about/"
+                ><span>关于</span></a>
               </li>
             
               
               <li class="eg-nav__item ">
                 <a
                   class="eg-nav__link eg-link"
-                  href="https://ergoplatform.org/en/news/"
-                ><span>News</span></a>
+                  href="https://ergoplatform.org/cn/news/"
+                ><span>新闻</span></a>
               </li>
             
               
               <li class="eg-nav__item ">
                 <a
                   class="eg-nav__link eg-link"
-                  href="https://ergoplatform.org/en/faq/"
-                ><span>FAQ</span></a>
+                  href="https://ergoplatform.org/cn/faq/"
+                ><span>常问问题</span></a>
               </li>
             
               
               <li class="eg-nav__item ">
                 <a
                   class="eg-nav__link eg-link"
-                  href="https://ergoplatform.org/en/documents/"
-                ><span>Documents</span></a>
+                  href="https://ergoplatform.org/cn/documents/"
+                ><span>文件</span></a>
               </li>
             
               
               <li class="eg-nav__item ">
                 <a
                   class="eg-nav__link eg-link"
-                  href="https://ergoplatform.org/en/tools/"
-                ><span>Tools</span></a>
+                  href="https://ergoplatform.org/cn/tools/"
+                ><span>工具</span></a>
               </li>
             
               
               <li class="eg-nav__item active">
                 <a
                   class="eg-nav__link eg-link"
-                  href="https://ergoplatform.org/en/blog/"
-                ><span>Blog</span></a>
+                  href="https://ergoplatform.org/cn/blog/"
+                ><span>博客</span></a>
               </li>
             
               
               <li class="eg-nav__item ">
                 <a
                   class="eg-nav__link eg-link"
-                  href="https://ergoplatform.org/en/team/"
-                ><span>Team</span></a>
+                  href="https://ergoplatform.org/cn/team/"
+                ><span>团队</span></a>
               </li>
             
           </ul>
@@ -111,16 +123,16 @@ Node security There are a few important aspects of node usage that your wallet a
               class="dd-language__button dd-language__button--white dropdown__button"
               data-target-id="languageMenu"
               >
-                Eng
+                中文
               </button>
             </li>
             
               
-            
-              
                 <li class="dd-language__item dd-language__item_hidden">
-                  <a class="dd-language__link dd-language__link--white eg-link" href="https://ergoplatform.org/cn/blog/2019_12_02_how_to_setup/"><span>中文</span></a>
+                  <a class="dd-language__link dd-language__link--white eg-link" href="https://ergoplatform.org/en/blog/2019_12_02_how_to_setup/"><span>Eng</span></a>
                 </li>
+              
+            
               
             
           </ul>
@@ -136,15 +148,15 @@ Node security There are a few important aspects of node usage that your wallet a
   <main class="">
     <section class="container  container--top-content grid-container-1k2">
       <div class="eg-text eg-mb-2 eg-mb-sm-1-5">
-        <a href="https://ergoplatform.org/en/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>Back to all posts</span></a>
+        <a href="https://ergoplatform.org/cn/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>回到所有帖子</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
-        <h1 class="eg-title eg-mb-1">How to set up and configure a full Ergo node</h1>
+        <h1 class="eg-title eg-mb-1">如何设置与配置全尔格节点</h1>
         <div class="eg-author">
           <img src="/img/logotype_black_circle.svg" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
             <h4 class="eg-author__info-title">Ergo team</h4>
-            <p class="eg-author__info-paragraph">2 December, 2019</p>
+            <p class="eg-author__info-paragraph">2019.12.02</p>
           </div>
         </div>
         <div class="eg-blog__single-img">
@@ -154,31 +166,31 @@ Node security There are a few important aspects of node usage that your wallet a
           <div>
             
 
-<p>This tutorial explains how to install and run a full Ergo node. It does not cover mining.</p>
+<p>本教程将解释如何安装与运行全尔格节点。其不涉及采矿相关的内容。</p>
 
-<h2 id="node-security">Node security</h2>
+<h2 id="节点安全">节点安全</h2>
 
-<p>There are a few important aspects of node usage that your wallet and money&rsquo;s safety depends on:</p>
+<p>节点的使用涉及几个重要方面的内容，你的钱包和钱的安全性取决于以下方面:</p>
 
 <ul>
-<li>An Ergo node requires storing security-critical parameters in the configuration file. You should never make this file public.</li>
-<li>An Ergo node provides a REST API for interacting with the built-in wallet. Sensitive API methods require a security token, which should never be sent over untrusted channels.</li>
-<li>Access to the Ergo REST API must be restricted to known hosts. In particular, the API must not be accessible from the Internet.</li>
+<li>尔格节点需要在配置文件中存储安全关键参数。你永远不应把这个文件公开。</li>
+<li>尔格节点提供用于与内置钱包互动的REST API。敏感的API方法需要一个安全令牌，你永远不要通过不可靠的渠道发送该令牌。</li>
+<li>访问尔格REST API必须限制在认识的主机上。尤其是绝不允许通过互联网访问API。</li>
 </ul>
 
-<h2 id="prerequisites">Prerequisites</h2>
+<h2 id="先决条件">先决条件</h2>
 
-<p>To run an Ergo node you need JRE version &gt;= 8 to be installed. One way to install it is to use <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">Oracle implementation of Java</a>.</p>
+<p>为了运行尔格节点，你需要JRE版本&gt;= 将要安装的8。其中一种安装方式是使用 <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">甲骨文安装Java</a>.</p>
 
-<p>The next step is to download the latest <a href="https://github.com/ergoplatform/ergo/releases/">Ergo client release</a> jar file and create a node configuration file.</p>
+<p>接下来需要下载最新的尔格客<a href="https://github.com/ergoplatform/ergo/releases/">户端发行版</a> jar文件，并且创建一个节点配置文件。</p>
 
-<p>Note that instead of downloading the jar, you can clone the repository and create the jar yourself using <a href="https://www.scala-sbt.org/">SBT</a> by issuing the <code>sbt assembly</code> command.</p>
+<p>注意：你不用下载jar，你可以克隆资源库，然后通过发布<code>sbt assembly</code>指令，自己利用<a href="https://www.scala-sbt.org/">SBT</a> 来创建jar。</p>
 
-<p>Denote by <strong>ergo_folder</strong> the folder where the jar is kept.</p>
+<p><strong>ergo_folder</strong>是指存放jar的文件夹。</p>
 
-<h2 id="running-the-node-for-the-first-time">Running the node for the first time</h2>
+<h2 id="首席运行节点">首席运行节点</h2>
 
-<p>Create a configuration file <code>ergo.conf</code> with the following text in <strong>ergo_folder</strong>.</p>
+<p>创建在<strong>ergo_folder</strong>中含有以下文本的配置文件<code>ergo.conf</code>。</p>
 
 <pre><code class="language-shell">ergo {
     directory = ${ergo.directory}&quot;/.ergo&quot;
@@ -189,32 +201,30 @@ Node security There are a few important aspects of node usage that your wallet a
 }
 </code></pre>
 
-<p>The parameter <code>${ergo.directory}</code> points to the directory where the jar will be run from.
-Open a command prompt and <code>cd</code> to <strong>ergo_folder</strong>. Then issue the following command to run the node for the first time:</p>
+<p>参数<code>${ergo.directory}</code>指向jar运行的目录。向<strong>ergo_folder</strong>开启命令提示符和<code>cd</code>。然后发出以下命令来首次运行节点：</p>
 
 <pre><code class="language-shell">  java -jar ergo-&lt;release&gt;.jar --mainnet -c ergo.conf
 </code></pre>
 
-<p>The node will start syncing immediately after this. Wait for a few minutes for the API to start and go to the next step.</p>
+<p>之后节点将立即开始同步。API启动与进入到下一步需要等几分钟。</p>
 
-<p><strong>Note:</strong> You can use any name for the file instead of <code>ergo.conf</code>. All configuration parameters are to be passed through this file and you only need to rewrite parameters that you want to change from the default values. The above config file actually has the default values.</p>
+<p><strong>注意</strong>：对于文件你可以使用任何名称，而非<code>ergo.conf</code>。全部配置参数将被传送给该文件，你只需要重写你想修改缺省值的参数。上述配置文件实际上有缺省值。</p>
 
-<h2 id="compute-the-hash-of-your-secret">Compute the hash of your secret</h2>
+<h2 id="计算你秘密的哈希值">计算你秘密的哈希值</h2>
 
-<p>First, select a secret to protect your API.
-Then go to <a href="http://127.0.0.1:9053/swagger#/utils/hashBlake2b">http://127.0.0.1:9053/swagger#/utils/hashBlake2b</a> and call the API to compute the hash of your secret. Refer to the image below.</p>
+<p>首先，选择一个秘密来保护你的API。然后前往 <a href="http://127.0.0.1:9053/swagger#/utils/hashBlake2b">http://127.0.0.1:9053/swagger#/utils/hashBlake2b</a> 然后调用API来计算你秘密的哈希值。参考下图。</p>
 
 <p><img src="/img/blog/how_to_setup_1img.png" alt="Compute Hash of secret" /></p>
 
-<p>Copy the response containing the hash for use in the next step (see below image). In our example, the secret is <code>hello</code> whose hash corresponds to <code>324dcf027dd4a30a932c441f365a25e86b173defa4b8e58948253471b81b72cf</code>.</p>
+<p>复制含有哈希值的回复以便下一步使用（参见下图）。在我们的例子中，秘密是是 <code>hello</code> 谁的哈希值对应<code>324dcf027dd4a30a932c441f365a25e86b173defa4b8e58948253471b81b72cf</code>.</p>
 
-<p><strong>IMPORTANT</strong> You must use a different and strong secret.</p>
+<p><strong>重要提示</strong>：你必须使用不同且比较复杂的秘密.</p>
 
 <p><img src="/img/blog/how_to_setup_2img.png" alt="response" /></p>
 
-<h2 id="update-config-file-with-api-key-hash">Update config file with API key hash</h2>
+<h2 id="利用api关键哈希值来更新配置文件">利用API关键哈希值来更新配置文件</h2>
 
-<p>Edit the config file <code>ergo.conf</code> and paste the hash copied in the previous step. The file should look as follows:</p>
+<p>编辑配置文件<code>ergo.conf</code>然后粘贴前步所复制的哈希值。文件内容应当看似如下：</p>
 
 <pre><code class="language-shell">ergo {
     directory = ${ergo.directory}&quot;/.ergo&quot;
@@ -235,61 +245,62 @@ scorex {
 }
 </code></pre>
 
-<h2 id="initialize-wallet">Initialize wallet</h2>
+<h2 id="初始化钱包">初始化钱包</h2>
 
-<p>Restart the node and go to <a href="http://127.0.0.1:9053/panel">http://127.0.0.1:9053/panel</a> to access the panel. Then set the API key secret from the previous step. Note that you need to set the <strong>secret</strong> and not the hash from the config file. In our example, this is the string <code>hello</code>.</p>
+<p>重启节点并且前往<a href="http://127.0.0.1:9053/panel">http://127.0.0.1:9053/panel</a> 以访问面板。然后设置上一步的API主要秘密。注意你需要设置秘密，而非配置文件的哈希值。在我们的举例中，这是字符串<code>hello</code>.</p>
 
 <p><img src="/img/blog/how_to_setup_3img.png" alt="set API key" /></p>
 
-<p>Finally, click on initialize wallet:</p>
+<p>最后，点击“初始化钱包”：</p>
 
 <p><img src="/img/blog/how_to_setup_4img.png" alt="click on initialize wallet" /></p>
 
-<p>In the pop-up that opens, you must enter a wallet password. The mnemonic password is optional. After you click send, the wallet will return a mnemonic sentence as shown below.</p>
+<p>在弹开窗口中，您必须输入钱包密码。助记符密码是或选项。点击发送后，钱包会返回一个助记句，如下图所示。</p>
 
 <p><img src="/img/blog/how_to_setup_5img.png" alt="mnemonic sentence" /></p>
 
-<p>You must copy this sentence and save it in a safe place. This sentence will be needed to restore the wallet on a different computer.</p>
+<p>你必须把这个句子抄下来，并把它保存在一个安全的地方。如果你要在其他计算机恢复你的钱包，就需要这个句子。</p>
 
-<h2 id="get-wallet-addresses">Get wallet addresses</h2>
+<h2 id="获得钱包的地址">获得钱包的地址</h2>
 
-<p>This is a test to ensure you have set up the node properly. It will return the current addresses in the wallet.
-In the panel at <a href="http://127.0.0.1:9053/panel">http://127.0.0.1:9053/panel</a> click on the <code>Wallet</code> tab on the left and then on <code>Get all wallet addresses</code> to view the addresses currently maintained by the wallet. It should return at least one address if the node is set correctly.</p>
+<p>这是一个可以确保你正确设置节点的测试。它将返回钱包中的当前地址。
+在<a href="http://127.0.0.1:9053/panel">http://127.0.0.1:9053/panel</a> 的面板上，点击左侧的<code>Wallet</code> 条，然后点击 <code>Get all wallet addresses</code> 以浏览钱包目前所保存的地址。如果节点设置正确，那么至少应该返回一个地址。</p>
 
 <p><img src="/img/blog/how_to_setup_6img.png" alt="Get addresses" /></p>
 
-<h2 id="use-the-swagger-ui">Use the Swagger UI</h2>
+<h2 id="使用swagger-ui">使用Swagger UI</h2>
 
-<p>A Swagger UI is available at <a href="http://127.0.0.1:9053/swagger">http://127.0.0.1:9053/swagger</a>. You had already used it earlier to compute the hash of your secret.
-You can also use this UI to make API calls for advanced operations that are not (yet) available in the panel. Some examples of this are:</p>
+<p>你可以在<a href="http://127.0.0.1:9053/swagger">http://127.0.0.1:9053/swagger</a>找到Swagger UI。你还可以使用该UI对面板上（尚不）能用的高级操作进行API调用。你之前已经用其来计算你秘密的哈希值。你还可以使用这个UI来为面板中（尚未）提供的高级操作进行API调用。部分举例如下：</p>
 
 <ol>
-<li>Creating non-standard transactions with registers and context variables.</li>
-<li>Creating transactions that issue tokens.</li>
-<li>Creating transactions that use certain boxes as inputs.</li>
+<li>利用寄存器和上下文变量来创建非标准交易。</li>
+<li>创建发出令牌的交易。</li>
+<li>创建使用某些框作为输入值的交易。</li>
 </ol>
 
-<p>A future article will discuss each of these operations in detail.</p>
+<p>未来的文章将逐一详细介绍这些操作。</p>
 
-<p>Note that most methods in the API are protected and you would need to use your secret (from earlier) to access these methods. The following images show the process of setting this secret in the Swagger UI.</p>
+<p>请注意API中的大部分方法都受到保护，你需要使用你（之前）的秘密来获得这些方法。接下来的图片将展示在Swagger UI中设置该秘密的流程。</p>
 
-<p>Navigate to the top of the page and click the &ldquo;Authorize&rdquo; button. Enter your secret in the form that pops-up as shown in the figure below.
-<img src="/img/blog/how_to_setup_7img.png" alt="Enter API key" /></p>
+<p>在页面顶端，点击“授权”键。在弹出框中输入您的秘密，如下图所示。</p>
 
-<p>After the password is entered and you have clicked &ldquo;Authorize&rdquo;, you will be shown the popup below:
-<img src="/img/blog/how_to_setup_8img.png" alt="Logged in" /></p>
+<p><img src="/img/blog/how_to_setup_7img.png" alt="Enter API key" /></p>
 
-<p>Now navigate to <a href="/img/blog/how_to_setup_9img.png">http://127.0.0.1:9053/swagger#/wallet/walletAddresses</a> and click on &ldquo;Try it out&rdquo;. You should see the same list of addresses as you saw earlier from the panel.</p>
+<p>输入密码后，点击“授权”，将跳出以下界面：</p>
+
+<p><img src="/img/blog/how_to_setup_8img.png" alt="Logged in" /></p>
+
+<p>现在转到<a href="/img/blog/how_to_setup_9img.png">http://127.0.0.1:9053/swagger#/wallet/walletAddresses</a> ，然后点击“试一试”。你会看到你之前从面板上看到过的相同的地址列表。</p>
 
 <p><img src="/img/blog/how_to_setup_10img.png" alt="Get addresses" /></p>
 
           </div>
         </div>
         <div><div class="eg-share eg-text">
-  <p class="eg-text__paragraph eg-text__paragraph--26">Share post</p>
+  <p class="eg-text__paragraph eg-text__paragraph--26">分享转发</p>
   <ul class="eg-social">
     <li class="eg-share_item">
-      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_12_02_how_to_setup%2f" target="_blank">
+      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fcn%2fblog%2f2019_12_02_how_to_setup%2f" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path d="M17 14.0001H25V28.4H17V14.0001Z" fill="white"/>
@@ -300,7 +311,7 @@ You can also use this UI to make API calls for advanced operations that are not 
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_12_02_how_to_setup%2f&amp;hashtags=ergoplatform" target="_blank">
+      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fcn%2fblog%2f2019_12_02_how_to_setup%2f&amp;hashtags=ergoplatform" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path class="st0" fill-rule="evenodd" clip-rule="evenodd" d="M29 16.4204C28.4478 16.6615 27.855 16.8241 27.2323 16.8975C27.868 16.5225 28.3558 15.9287 28.5857 15.2214C27.9909 15.5684 27.3322 15.8208 26.6315 15.9565C26.0699 15.3677 25.2701 15 24.3851 15C22.6855 15 21.3076 16.3562 21.3076 18.0291C21.3076 18.2666 21.3347 18.4978 21.3873 18.7195C18.8298 18.5933 16.5616 17.3871 15.0441 15.5542C14.7792 16.0018 14.6274 16.5222 14.6274 17.0774C14.6274 18.1283 15.1706 19.0554 15.9963 19.5989C15.4921 19.5831 15.0174 19.4469 14.6024 19.22C14.6021 19.2325 14.6021 19.2452 14.6021 19.2581C14.6021 20.7258 15.6632 21.9504 17.0707 22.2285C16.8128 22.2979 16.5409 22.335 16.2599 22.335C16.0619 22.335 15.8693 22.3158 15.6812 22.2805C16.0728 23.4839 17.2097 24.36 18.5559 24.3843C17.5025 25.197 16.176 25.6812 14.734 25.6812C14.4857 25.6812 14.2408 25.6667 14 25.6384C15.3617 26.4982 16.979 27 18.7175 27C24.3777 27 27.4734 22.3837 27.4734 18.3804C27.4734 18.2494 27.4705 18.1184 27.4645 17.9883C28.0658 17.5614 28.5873 17.0281 29 16.4204Z" fill="#FF4221"/>
@@ -308,7 +319,7 @@ You can also use this UI to make API calls for advanced operations that are not 
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link copy-link" href="https://ergoplatform.org/en/blog/2019_12_02_how_to_setup/" target="_blank">
+      <a class="eg-share__link copy-link" href="https://ergoplatform.org/cn/blog/2019_12_02_how_to_setup/" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M39.91 19.3528L34.2335 6.06338C34.1186 5.78985 33.898 5.57515 33.6227 5.46487L20.2117 0.0807171C19.9364 -0.0292029 19.6283 -0.027376 19.3547 0.089384L6.0641 5.76578C5.79022 5.8811 5.57549 6.10129 5.46522 6.37698L0.0816753 19.7881C-0.0303977 20.0656 -0.0267767 20.3716 0.0903423 20.6455L5.76643 33.9366C5.88175 34.2101 6.10231 34.4249 6.37727 34.5352L19.7883 39.919C19.9209 39.9727 20.0639 40 20.2048 40C20.3544 40 20.5043 39.971 20.647 39.909L33.9359 34.2324C34.2097 34.1171 34.4245 33.8966 34.5348 33.6216L39.9183 20.2102C40.0304 19.9327 40.0267 19.6267 39.91 19.3528Z" stroke="#FF4221"/>
@@ -340,241 +351,270 @@ You can also use this UI to make API calls for advanced operations that are not 
     </section>
     <section class="container">
       <div class="border-section container--margins-y container--last-container container--lg-padding-bottom">
-        <h2 class="eg-title eg-mb-2-5">Related reads</h2>
+        <h2 class="eg-title eg-mb-2-5">相关阅读</h2>
         <div class="eg-blog eg-blog--w-100">
           <div class="eg-blog__main related">
             
             
             
               
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_12_03_top5/">
-                  <div class="eg-blog__item-img"><img src="/img/blog/top5.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>5 Ways Ergo Application Development Is Changed …</span></h3>
-                  <p class="eg-blog__item-paragraph">With thanks to Robert Kornacki and Denys Zadorozhnyi.
- Ergo Appkit is a library for polyglot development of Ergo Applications based on GraalVM. GraalVM has …</p>
-                  <div class="eg-author">
-                    <img src="/img/authors/alexander_slesarenko.jpg" alt="author img" class="eg-author__img" width="60" height="60">
-                    <div class="eg-author__info">
-                      <h4 class="eg-author__info-title">Alexander Slesarenko</h4>
-                      <p class="eg-author__info-paragraph">3 December, 2019</p>
-                    </div>
-                  </div>
-                </a>
-              
             
               
-            
-              
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_09_06_crowdfund/">
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_09_06_crowdfund/">
                   <div class="eg-blog__item-img"><img src="/img/blog/crowdfund.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>Ergo and crowdfunding</span></h3>
-                  <p class="eg-blog__item-paragraph">What is Crowdfunding? Crowdfunding is a way of raising capital through the collective efforts of individuals. The campaigns are mostly started via the …</p>
+                  <h3 class="eg-blog__item-title"><span>尔格和众筹</span></h3>
+                  <p class="eg-blog__item-paragraph">什么是众筹？ 众筹是一种通过许多人的努力实现一种融资方式。众筹多通过全球网站启动，使项目和企业可以通过众多个人的小额出资来完成融资。通过众筹方式成功创业的最经典案例之一就是虚拟现实耳麦 - Oculus Rift。Oculus VR公司在2012年发起众筹，仅在两年后就被脸书以20亿美元的价格所收购。除了常规 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/robert_wolf.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
                       <h4 class="eg-author__info-title">Robert Wolf</h4>
-                      <p class="eg-author__info-paragraph">6 September, 2019</p>
+                      <p class="eg-author__info-paragraph">2019.09.06</p>
                     </div>
                   </div>
                 </a>
               
             
               
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_08_07_amd/">
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_08_07_amd/">
                   <div class="eg-blog__item-img"><img src="/img/blog/amd.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>Mining ERGO on AMD Cards</span></h3>
-                  <p class="eg-blog__item-paragraph">This tutorial will provide you with the information needed to get your AMD cards mining ERGO on either Windows or Linux.
-Developer MH Samadani published …</p>
+                  <h3 class="eg-blog__item-title"><span>利用AMD卡开采尔格币</span></h3>
+                  <p class="eg-blog__item-paragraph">本教程将向你提供在Windows或Linux环境下利用AMD卡开采尔格币的所需信息.
+开发者MH Samadani 在正式推出后第3天就发表其AMD矿工，并且之后还在不断对其进行更新。为了跟踪其最新动态，你可以加入尔格采矿电报群并且搜索 #amdminer。你可以在此查看矿机。
+编码是基于OpenCL并且是完 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/robert_wolf.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
                       <h4 class="eg-author__info-title">Robert Wolf</h4>
-                      <p class="eg-author__info-paragraph">7 August, 2019</p>
+                      <p class="eg-author__info-paragraph">2019.08.07</p>
                     </div>
                   </div>
                 </a>
               
             
               
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_07_24_ergo_address/">
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_07_24_ergo_address/">
                   <div class="eg-blog__item-img"><img src="/img/blog/address.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>Ergo Addresses</span></h3>
-                  <p class="eg-blog__item-paragraph">In today&rsquo;s article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work …</p>
+                  <h3 class="eg-blog__item-title"><span>尔格地址</span></h3>
+                  <p class="eg-blog__item-paragraph">在今天的文章中，我们的将对尔格地址的格式化一窥究竟。除此之外，我们将说明他们具体的具体工作原理，以及什么使其优于其他类型的区块链地址。
+让我们从头说起。
+在你安装任何数字货币钱包的时候，你会自动创建一个地址。简单来说，这个钱包就好比一个传统银行账户，而地址就如同与之相匹配的账号。如果你需要把钱由甲打给乙、收款 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/robert_wolf.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
                       <h4 class="eg-author__info-title">Robert Wolf</h4>
-                      <p class="eg-author__info-paragraph">24 July, 2019</p>
+                      <p class="eg-author__info-paragraph">2019.07.24</p>
                     </div>
                   </div>
                 </a>
               
             
               
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_07_09_after_launch/">
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_07_09_after_launch/">
                   <div class="eg-blog__item-img"><img src="/img/blog/thanks.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>After-Launch Thoughts and Ergo Roadmap</span></h3>
-                  <p class="eg-blog__item-paragraph">Firstly, we would like to thank many enthusiasts, developers, miners, other folks, and our families for measureless help with Ergo development and …</p>
+                  <h3 class="eg-blog__item-title"><span>启动后的思路与尔格发展路线图</span></h3>
+                  <p class="eg-blog__item-paragraph">首先，我们感谢各位热心人士、开发者、矿工、社会各界以及我们的家人在尔格开发与启动过程中所给予我们的大力支持与无私帮助。尔格的启动为团队在过去几年的初始研发画上了句号，同时也开启了一个新的时代，核心技术大体定调，继续完善协议落实与基建项目将成为工作重点。
+当前核心-尔格核心团队将全心致力于项目开发（至少，同 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
                       <h4 class="eg-author__info-title">Alex Chepurnoy</h4>
-                      <p class="eg-author__info-paragraph">9 July, 2019</p>
+                      <p class="eg-author__info-paragraph">2019.07.09</p>
                     </div>
                   </div>
                 </a>
               
             
               
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_07_03_mining_withdrawal/">
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_07_03_mining_withdrawal/">
                   <div class="eg-blog__item-img"><img src="/img/blog/withdrawal.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>Ergo Withdrawal</span></h3>
-                  <p class="eg-blog__item-paragraph">Spending mining reward This text is to help miners to withdraw funds mined.
-A lot of folks launched a node and also a miner, with pubkeyHex from the miner …</p>
+                  <h3 class="eg-blog__item-title"><span>尔格提取</span></h3>
+                  <p class="eg-blog__item-paragraph">花掉挖矿报酬 本文帮助矿工提取所挖到的资金。
+许多人既发布节点，又担任拥有从内嵌于节点格式化矿机获得16进制公钥（pubkeyHex）的矿工。下面我来谈一谈如何认定所挖尔格币的数量以及如何将其提取到另一个地址。
+关于密钥. 矿工可能遇到很多不同形式的密钥。
+首先，挖矿软件以及节点中的采矿支持（即：格式化文件中 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
                       <h4 class="eg-author__info-title">Alex Chepurnoy</h4>
-                      <p class="eg-author__info-paragraph">3 July, 2019</p>
+                      <p class="eg-author__info-paragraph">2019.07.03</p>
                     </div>
                   </div>
                 </a>
               
             
               
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_06_28_mainnet-bootstrap/">
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_06_28_mainnet-bootstrap/">
                   <div class="eg-blog__item-img"><img src="/img/blog/start.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>Joining the Ergo main network at the very …</span></h3>
-                  <p class="eg-blog__item-paragraph">Joining the Ergo main network at the very beginning In order to join the network at its very beginning and compete to mine the genesis block, you need to …</p>
+                  <h3 class="eg-blog__item-title"><span>自启动伊始加入尔格主网</span></h3>
+                  <p class="eg-blog__item-paragraph">自启动伊始加入尔格主网 为了在启动伊始加入尔格主网并且竞相开采创世区块，你需要按照以下步骤进行操作。如果你不打算参与尔格挖矿，而只是想建一个全节点，那么你只需进行步骤3和步骤5的操作。
+准备工作 1. 安装采矿软件 请先查 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/ilya_oskin.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
                       <h4 class="eg-author__info-title">Ilya Oskin</h4>
-                      <p class="eg-author__info-paragraph">28 June, 2019</p>
+                      <p class="eg-author__info-paragraph">2019.06.28</p>
                     </div>
                   </div>
                 </a>
               
             
               
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_06_04_wallet-documentation/">
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_06_04_wallet-documentation/">
                   <div class="eg-blog__item-img"><img src="/img/blog/wallet-documentation.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>Wallet documentation</span></h3>
-                  <p class="eg-blog__item-paragraph">An Ergo node provides a built-in wallet for storing private keys and signing transactions. The following describes how to set up and protect your Ergo …</p>
+                  <h3 class="eg-blog__item-title"><span>钱包文件汇编</span></h3>
+                  <p class="eg-blog__item-paragraph">尔格节点提供内置钱包以便存放私钥及签署交易。以下内容将说明如何建立与保护阁下的尔格钱包。
+该钱包将采用BIP39 标准从助记符句子中生出一颗种子，其将根据BIP32 标准用以创造一把私钥 （分层确定性钱包）。如果你愿意的话，你可以使用你自己的由那些词汇偏执狂常用词汇所构成的助记符句子。所允许的句子长度分别 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/ilya_oskin.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
                       <h4 class="eg-author__info-title">Ilya Oskin</h4>
-                      <p class="eg-author__info-paragraph">4 June, 2019</p>
+                      <p class="eg-author__info-paragraph">2019.06.04</p>
                     </div>
                   </div>
                 </a>
               
             
               
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_05_29-exchange/">
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_05_29-exchange/">
                   <div class="eg-blog__item-img"><img src="/img/blog/trading.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>A Trustless Local Exchange Trading System</span></h3>
-                  <p class="eg-blog__item-paragraph">A Local Exchange Trading System (LETS) is aimed at developing local economy and is usually used by people of a locality in the vicinity of each other. For …</p>
+                  <h3 class="eg-blog__item-title"><span>一个去信任的本地交易所交易系统</span></h3>
+                  <p class="eg-blog__item-paragraph">本地交易所交易系统（LETS）旨在发展当地经济，并且通常由在彼此附近的当地人使用。 在此链接中描述了一个管理LETS的委员会。 我们将此类系统称为管理或许可，因为它取决于受信任的委员会。 在这里，我们描述了一个去信任的LETS系统，即没有管理委员会的系统。
+概要 LETS涉及多个同意使用某种形式的“本地货币” …</p>
                   <div class="eg-author">
                     <img src="/img/authors/amitabh_saxena.png" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
                       <h4 class="eg-author__info-title">Amitabh Saxena</h4>
-                      <p class="eg-author__info-paragraph">29 May, 2019</p>
+                      <p class="eg-author__info-paragraph">2019.05.29</p>
                     </div>
                   </div>
                 </a>
               
             
               
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_05_20-curve/">
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_05_20-curve/">
                   <div class="eg-blog__item-img"><img src="/img/blog/schedule2.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>The Ergo Emission Schedule</span></h3>
-                  <p class="eg-blog__item-paragraph">Overview Ergo’s native token is called Erg and its emission schedule may be of keen interest to users and miners of the platform. Ergs also have some …</p>
+                  <h3 class="eg-blog__item-title"><span>尔格发行计划</span></h3>
+                  <p class="eg-blog__item-paragraph">概要 尔格的原生代币称为尔格币，平台的用户和矿工对其发行时间表可能非常感兴趣。尔格币也有一些独特的特征，在这篇文章中将重点展现。最基本的并且省略技术细节的特征是：尔格有严格的供应量限制，8年的发行计划、以及8年来不断下降的的发行率。所有尔格币都通过原始的专用集成电路（Asic）和池阻工作量证明（“PoW”）算 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/justin_simpson.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
                       <h4 class="eg-author__info-title">Justin Simpson</h4>
-                      <p class="eg-author__info-paragraph">20 May, 2019</p>
+                      <p class="eg-author__info-paragraph">2019.05.20</p>
                     </div>
                   </div>
                 </a>
               
             
               
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_05_07_mining/">
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_05_07_mining/">
                   <div class="eg-blog__item-img"><img src="/img/blog/miner_opt.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>How to mine Ergo on Windows(x64)</span></h3>
-                  <p class="eg-blog__item-paragraph">Step 1: Tools Visual Studio
-Choose free community version, you will need to select desktop development with C++ package during install.
-CUDA toolkit
-Choose …</p>
+                  <h3 class="eg-blog__item-title"><span>如何在Windows（x64）系统下挖掘尔格</span></h3>
+                  <p class="eg-blog__item-paragraph">第1步：工具 Visual Studio(可视化工作室)
+选择免费的社区版本，您需要在安装期间选择使用C ++包进行桌面开发。
+CUDA工具包
+选择您的系统版本，使用默认选项安装，它会将您的图形驱动程序更新为兼容版本。
+Curl
+没有SSL的通用版本，二进制不会工作。 选择通用源，压缩文件并单击显示镜像。下载 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/martin_spodymek.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
                       <h4 class="eg-author__info-title">Martin Spodymek</h4>
-                      <p class="eg-author__info-paragraph">7 May, 2019</p>
+                      <p class="eg-author__info-paragraph">2019.05.07</p>
                     </div>
                   </div>
                 </a>
               
             
               
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_04_22-lets/">
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_04_22-lets/">
                   <div class="eg-blog__item-img"><img src="/img/blog/lets-example_opt.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>A Local Exchange Trading System On Top Of Ergo</span></h3>
-                  <p class="eg-blog__item-paragraph">A local exchange trading system (LETS) is a local mutual credit association which members are allowed to create common credit money individually, with all …</p>
+                  <h3 class="eg-blog__item-title"><span>尔格之上的本地交易所交易系统</span></h3>
+                  <p class="eg-blog__item-paragraph">本地交易所交易系统（LETS）是一个本地相互信用协会，允许成员单独创建共同信用资金，系统中的所有交易都写入共同的分类账。例如，假设拥有零余额的Alice愿意从Bob购买一升生鲜奶。首先，他们就价格达成一致，例如，假设价格约为2欧元（Alice和Bob居住在爱尔兰）。交易被写入分类账后，Alice的余额变 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
                       <h4 class="eg-author__info-title">Alex Chepurnoy</h4>
-                      <p class="eg-author__info-paragraph">22 April, 2019</p>
+                      <p class="eg-author__info-paragraph">2019.04.22</p>
                     </div>
                   </div>
                 </a>
               
             
               
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_04_10-ico-example/">
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_04_10-ico-example/">
                   <div class="eg-blog__item-img"><img src="/img/blog/ico-example_opt.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>An ICO Example On Top Of Ergo</span></h3>
-                  <p class="eg-blog__item-paragraph">This article describes a full featured ICO (Initial Coin Offering) implemented in ErgoScript. The example covers several important and novel features of …</p>
+                  <h3 class="eg-blog__item-title"><span>一个尔格顶层的首次币发行案例</span></h3>
+                  <p class="eg-blog__item-paragraph">本文介绍了在尔格脚本中执行的功能齐全的ICO（首次币发行）。该案例涵盖了尔格平台的几个重要和新颖的特征，并展示了如何使用少量代码来支持复杂的合约。
+第1部分。初步行动 加密货币协议中的一个重要设计决策是指定支出交易实际花费的内容。这里有两种可能性。第一个基于UTXO(未花费的交易输出）的模型，如在比特币中，交 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
                       <h4 class="eg-author__info-title">Alex Chepurnoy</h4>
-                      <p class="eg-author__info-paragraph">10 April, 2019</p>
+                      <p class="eg-author__info-paragraph">2019.04.10</p>
                     </div>
                   </div>
                 </a>
               
             
               
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_03_19-qa/">
-                  <div class="eg-blog__item-img"><img src="/img/blog/question_opt.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>Q&amp;A with Alex Chepurnoy and Dmitry Meshkov</span></h3>
-                  <p class="eg-blog__item-paragraph">First, we have a major announcement - Ergo mainnet launch is planned for May 26 if no security vulnerabilities will be found during audit process!
-What are …</p>
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_04_03_mining/">
+                  <div class="eg-blog__item-img"><img src="/img/blog/mining_how.jpg" height="188" width="335" alt="blog photo"></div>
+                  <h3 class="eg-blog__item-title"><span>如何进行Ergo挖矿</span></h3>
+                  <p class="eg-blog__item-paragraph">概况介绍 挖矿，是指在Ergo区块链上进行一系列资源密集的计算来加入新区块的过程。
+Ergo挖矿基于Autolykos, 一个旨在抵抗ASIC超级矿机和矿池的工作量证明（PoW）算法。矿工们要进行内存硬计算（至少需要2GB内存，4-8GB的RAM是目前效率最高的配置）因此Ergo对于GPU挖矿十分友好。此 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/dmitry_meshkov.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
                       <h4 class="eg-author__info-title">Dmitry Meshkov</h4>
-                      <p class="eg-author__info-paragraph">19 March, 2019</p>
+                      <p class="eg-author__info-paragraph">2019.04.03</p>
                     </div>
                   </div>
                 </a>
               
             
               
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2018_10_19-smart-contracts/">
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_03_19-qa/">
+                  <div class="eg-blog__item-img"><img src="/img/blog/question_opt.jpg" height="188" width="335" alt="blog photo"></div>
+                  <h3 class="eg-blog__item-title"><span>Alex Chepurnoy 和Dmitry Meshkov的问答</span></h3>
+                  <p class="eg-blog__item-paragraph">首先，我们有一个重要的公告—如果在审计过程中没有发现安全漏洞，计划于5月26日发布尔格主网！
+关于扩展和应用的愿景是什么？ 关于扩展，主要方法是在不影响功能的情况下避免膨胀。例如。持久可更新存储是可能的，更新由区块链合约检查，但只有验证了的数据结构的摘要（以及一些额外的字节，少于40个字节）存储在UTXO集， …</p>
+                  <div class="eg-author">
+                    <img src="/img/authors/dmitry_meshkov.svg" alt="author img" class="eg-author__img" width="60" height="60">
+                    <div class="eg-author__info">
+                      <h4 class="eg-author__info-title">Dmitry Meshkov</h4>
+                      <p class="eg-author__info-paragraph">2019.03.19</p>
+                    </div>
+                  </div>
+                </a>
+              
+            
+              
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_03_17_how_to_set/">
+                  <div class="eg-blog__item-img"><img src="/img/blog/start_ergo.jpg" height="188" width="335" alt="blog photo"></div>
+                  <h3 class="eg-blog__item-title"><span>如何创建跟设置Ergo全节点</span></h3>
+                  <p class="eg-blog__item-paragraph">节点安全性 为保证您的钱包和资产的安全，请格外注意以下几个节点使用中的注意事项：
+ Ergo节点要求在设置文件中存储一定的关键安全参数，因此，切勿泄露您的设置文件。 Ergo节点已为内置钱包的交互提供了REST API（变现层状态转移编程接口）。灵敏API手段需要安全的通证，切勿采取非信任的渠道发送通证。   …</p>
+                  <div class="eg-author">
+                    <img src="/img/authors/ilya_oskin.jpg" alt="author img" class="eg-author__img" width="60" height="60">
+                    <div class="eg-author__info">
+                      <h4 class="eg-author__info-title">Ilya Oskin</h4>
+                      <p class="eg-author__info-paragraph">2019.03.17</p>
+                    </div>
+                  </div>
+                </a>
+              
+            
+              
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2018_10_19-smart-contracts/">
                   <div class="eg-blog__item-img"><img src="/img/blog/getting_startet.svg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>Smart Contracts for the People</span></h3>
-                  <p class="eg-blog__item-paragraph">A lot of blockchain-related news these days are saying us that a bank X or a corporation Y is going to use a &ldquo;blockchain&rdquo; to &ldquo;reduce …</p>
+                  <h3 class="eg-blog__item-title"><span>为客户提供智能合约</span></h3>
+                  <p class="eg-blog__item-paragraph">如今，很多与区块链相关的新闻都在告诉我们，银行X或Y公司将使用“区块链”来“降低成本”。基本上，这意味着大银行家认为另一个流行术语只是另一种以更有效的方式从某处提取价值的工具，也可以通过裁员来节省成本。
+虽然我不想对“Satoshi的愿景”说什么（他离开后只能去猜测），但我在网络论坛用户早期见证下的广泛观点是 …</p>
                   <div class="eg-author">
                     <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
                       <h4 class="eg-author__info-title">Alex Chepurnoy</h4>
-                      <p class="eg-author__info-paragraph">19 October, 2018</p>
+                      <p class="eg-author__info-paragraph">2018.10.19</p>
                     </div>
                   </div>
                 </a>
@@ -582,7 +622,7 @@ What are …</p>
             
             </div>
             <div class="load-more">
-              <button class="related-button eg-btn eg-btn--outline-orange d-none">Load more news</button>
+              <button class="related-button eg-btn eg-btn--outline-orange d-none">加载更多新闻</button>
             </div>
         </div>
       </div>
@@ -593,23 +633,23 @@ What are …</p>
   <div class="container eg-footer__container">
     <div class="eg-footer__item">
       <div class="eg-footer__name">
-        <p class="eg-footer__name-title">Ergo platform</p>
+        <p class="eg-footer__name-title">尔格平台</p>
         <a href="mailto:ergoplatform@protonmail.com" class="eg-footer__name-mail eg-link"><span>ergoplatform@protonmail.com</span></a>
       </div>
       <div class="eg-footer__copyright">
-        <span class="eg-footer__copyright-paragraph">Ergo platform © 2019</span>
+        <span class="eg-footer__copyright-paragraph">尔格平台 © 2019</span>
         <ul class="eg-footer__copyright-list">
-          <li class="eg-footer__copyright-item"><a class="eg-footer__copyright-link" href="https://ergoplatform.org/en/privacy">Privacy policy</a></li>
-          <li class="eg-footer__copyright-item"><a class="eg-footer__copyright-link" href="https://ergoplatform.org/en/legal">Legal</a></li>
+          <li class="eg-footer__copyright-item"><a class="eg-footer__copyright-link" href="https://ergoplatform.org/cn/privacy">隐私政策</a></li>
+          <li class="eg-footer__copyright-item"><a class="eg-footer__copyright-link" href="https://ergoplatform.org/cn/legal">法律</a></li>
         </ul>
       </div>
     </div>
     <div class="eg-footer__item">
       <form class="eg-footer__insights">
-        <label for="subs_inp" class="eg-footer__insights-label">Receive insight and news from Ergo</label>
+        <label for="subs_inp" class="eg-footer__insights-label">接收尔格的洞见和新闻</label>
         <div>
           <div class="eg-footer__insights-group">
-            <input type="text" id="subs_inp" class="eg-footer__insights-input" placeholder="Your email">
+            <input type="text" id="subs_inp" class="eg-footer__insights-input" placeholder="您的邮箱">
             <button class="eg-footer__insights-button">
               <svg class="eg-footer__insights-image" width="30px" height="22px" viewBox="0 0 30 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>Fill 1 Copy 6</title>
@@ -625,7 +665,7 @@ What are …</p>
         </div>
       </form>
       <div class="eg-footer__social">
-        <p class="eg-footer__social-label">Social Media</p><ul class="eg-social">
+        <p class="eg-footer__social-label">社交媒体</p><ul class="eg-social">
   <li class="eg-social__item">
     <a href="https://github.com/ergoplatform" class="eg-social__link">
       <svg class="eg-footer__social-icon eg-footer__social-icon--github" width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -676,7 +716,7 @@ What are …</p>
     </a>
   </li>
   <li class="eg-social__item">
-    <a href="https://t.me/ergoplatform" class="eg-social__link">
+    <a href="https://t.me/ergoplatform_CH" class="eg-social__link">
       <svg class="eg-footer__social-icon eg-footer__social-icon--telegram" width="25px" height="20px" viewBox="0 0 25 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>Telegram channel</title>
         <defs>
@@ -707,10 +747,10 @@ What are …</p>
 </ul>
 </div>
       <div class="eg-footer__copyright eg-footer__copyright--mobile">
-        <span class="eg-footer__copyright-paragraph">Ergo platform © 2019</span>
+        <span class="eg-footer__copyright-paragraph">尔格平台 © 2019</span>
         <ul class="eg-footer__copyright-list">
-          <li class="eg-footer__copyright-item"><a class="eg-footer__copyright-link" href="https://ergoplatform.org/en/privacy">Privacy policy</a></li>
-          <li class="eg-footer__copyright-item"><a class="eg-footer__copyright-link" href="https://ergoplatform.org/en/legal">Legal</a></li>
+          <li class="eg-footer__copyright-item"><a class="eg-footer__copyright-link" href="https://ergoplatform.org/cn/privacy">隐私政策</a></li>
+          <li class="eg-footer__copyright-item"><a class="eg-footer__copyright-link" href="https://ergoplatform.org/cn/legal">法律</a></li>
         </ul>
       </div>
     </div>
