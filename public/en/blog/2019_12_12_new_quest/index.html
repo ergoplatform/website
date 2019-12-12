@@ -11,11 +11,11 @@
     <link rel="preload" href="/fonts/LabGrotesque-Regular-hint-all.woff" as="font" type="font/woff" crossorigin>
 
     
-      <meta name="description" content="A local exchange trading system (LETS) is a local mutual credit association which members are allowed to create common credit money individually, with all the deals in the system written into a common ledger. As an example, assume that Alice with zero balance is willing to buy a liter of raw milk from Bob. First, they agree on a price, for example, assume that the price is about 2 Euro (as Alice and Bob are living in Ireland).">
+      <meta name="description" content="While most active conversations today in the space are about wider adoption of the blockchain technology (which often means selling out to the Wall St.) and competition with systems like Visa and Mastercard (which often means giving up with decentralization or introducing unclear security assumptions in the name of efficiency), there is the obvious need to revisit the roots of the cryptocurrency movement, which are mostly about decentralization. Many questions to be answered in clear here.">
     
 
     
-    <title>A Local Exchange Trading System On Top Of Ergo | Ergo</title>
+    <title>A New Quest for Decentralization, Part I: Technical Aspects | Ergo</title>
 
     
     
@@ -115,12 +115,6 @@
             
               
             
-              
-                <li class="dd-language__item dd-language__item_hidden">
-                  <a class="dd-language__link dd-language__link--white eg-link" href="https://ergoplatform.org/cn/blog/2019_04_22-lets/"><span>中文</span></a>
-                </li>
-              
-            
           </ul>
         </div>
         <button class="eg-navbar__trigger eg-navbar__trigger--black" type="button" aria-expanded="false" aria-label="Toggle navigation">
@@ -137,165 +131,75 @@
         <a href="https://ergoplatform.org/en/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>Back to all posts</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
-        <h1 class="eg-title eg-mb-1">A Local Exchange Trading System On Top Of Ergo</h1>
+        <h1 class="eg-title eg-mb-1">A New Quest for Decentralization, Part I: Technical Aspects</h1>
         <div class="eg-author">
           <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
             <h4 class="eg-author__info-title">Alex Chepurnoy</h4>
-            <p class="eg-author__info-paragraph">22 April, 2019</p>
+            <p class="eg-author__info-paragraph">12 December, 2019</p>
           </div>
         </div>
         <div class="eg-blog__single-img">
-          <img src="/img/blog/lets-example_opt.jpg" alt="blog photo">
+          <img src="/img/blog/new_quest.jpg" alt="blog photo">
         </div>
         <div class="eg-blog__single-content">
           <div>
-            <p>A local exchange trading system (LETS) is a local mutual credit association which members are allowed to create common
-credit money individually, with all the deals in the system written into a common ledger.
-As an example, assume that Alice with zero balance is willing to buy a liter of raw milk from Bob.
-First, they agree on a price, for example, assume that the price is about 2 Euro (as Alice and Bob
-are living in Ireland). After the deal being written into a ledger, Alice&rsquo;s balance becomes -2 (minus
-two) Euro, and Bob&rsquo;s balance becomes 2 Euro. Then Bob may spend his 2 Euro, for example, on
-home-made beer from Charlie. Often, such systems impose limits on negative balances, and sometimes
-even on positive ones, in order to promote exchange in the community.</p>
+            
 
-<p>Historically, such systems become popular during crisis times. The first system was established by Michael Linton in
-a Canadian town stuck in depression back in 1981. Local exchange trading systems were extremely popular during
-1998-2002 Argentine Great Depression. Most LETS groups range from 50 to 250 members, with paper-based credit notes and
-ledger maintained by a core committee. However, paper-based LETS currencies have shown some problems, such as
-counterfeit notes, possible rogue behavior of system managers, and so on. Therefore, blockchain-based LETS could be superior
-to the old systems. More information on LETS could be found in
-<a href="http://feasta.org/documents/moneyecology/chaptertwo.htm">&ldquo;The Ecology of Money&rdquo; book (by Richard Douthwaite)</a> and
-<a href="https://en.wikipedia.org/wiki/Local_exchange_trading_system">Wikipedia</a>.</p>
+<p>While most active conversations today in the space are about wider adoption of the blockchain technology (which often means
+selling out to the Wall St.) and competition with systems like Visa and Mastercard (which often means giving up with
+decentralization or introducing unclear security assumptions in the name of efficiency), there is the obvious need to
+revisit the roots of the cryptocurrency movement, which are mostly about decentralization. Many questions to be answered in clear here. Is it
+okay when 90% of mining power in Bitcoin <a href="https://twitter.com/lopp/status/673398201307664384">can gather in one room</a>?
+Is it okay when 2 or 3 mining pools control majority of hashing power, so can do censorship? Is it okay when almost all
+the new nodes avoid processing a blockchain from its genesis block? Is it okay when a Proof-of-Work coin developers are
+doing a hard-fork changing the consensus algorithm to make it GPU-friendly again? Can we summarize all the issues with
+decentralization? Can we cover most of issues with technical means?</p>
 
-<p>In this article we show how LETS could be implemented on top of Ergo. To the best of our knowledge, this is
-the first implementation of such kind of community currency on top of a blockchain.
-Our reference implementation
-is simple and consists of two contracts, namely, a management contract and an exchange contract.
-We skip Ergo preliminaries, so please read
-<a href="https://github.com/ergoplatform/ergo/wiki/An-ICO-Example-On-Top-Of-Ergo">the ICO article</a> and
-ErgoScript tutorials(<a href="https://docs.ergoplatform.com/ErgoScript.pdf">basic</a> and
-<a href="https://docs.ergoplatform.com/sigmastate_protocols.pdf">advanced</a>) for starters.
-Nevertheless, we are going to introduce a couple of new terms in following sentences.
-If a token is issued with amount equal to one, we call it the singleton token. Similarly,
-a box which contains the singleton token is called the singleton box.</p>
+<p>Decentralization is about many issues lying in many fields, of technical, social, and hybrid kinds. Researchers and
+developers are trying to find technical solutions, preferably, elegant and efficient. However, for many issues
+such solutions are not known, thus social solutions are also needed.</p>
 
-<p>The management contract is controlling a singleton box which holds members of the LETS system.
-The contract enables the adding of new members at the pace of one member per one transaction. The box
-is not storing members, but only a small digest of authenticated data structure built on top of
-the members&rsquo; directory. A member is associated with a singleton token issued in a transaction which
-is adding the member to the directory. The transaction creates a new member&rsquo;s box which contains
-the member&rsquo;s singleton token. The member&rsquo;s box is protected by the exchange contract. Also, the newly
-created member&rsquo;s box has initial balance written down into the R4 register, and the balance is
-equal to zero in our example. The transaction creating a new member must provide a proof of correctness for
-directory transformation.</p>
+<p>In this article I will cover only technical aspects of decentralization, namely, decentralization of mining and
+decentralization of verification.</p>
 
-<p>The management contract box is controlled usually by a committee, and the committee could evolve over time. To support
-that, we allow committee logic to reside in the register R5.
-For example, assume that a new committee member has been added along with a new LETS member,
-the input management contract box is requiring 2-out-of-3 signatures, and the output box requires 3-out-of-4 signatures.
-In this case contents of the R5 register in the input and the output box would differ.</p>
+<h2 id="decentralization-of-mining">Decentralization of Mining</h2>
 
-<p>The management contract code in ErgoScript with comments is provided below. Please note that
-&ldquo;userContractHash&rdquo; is about exchange contract hash.</p>
+<p>The two biggest concerns about decentralization of mining are specialized hardware (such as ASICs) and centralized pools.</p>
 
-<pre><code class="language-scala">    val selfOut = OUTPUTS(0)
- 
-    // Management script
-    val managementScript = selfOut.R5[SigmaProp].get
- 
-    // The management script template is replicating self, and management script is satisfied
-    val scriptCorrect = (selfOut.propositionBytes == SELF.propositionBytes) &amp;&amp; managementScript
- 
-    // A spending transaction is creating boxes for directory, user, fee.
-    val outsSizeCorrect = OUTPUTS.size == 3
- 
-    // Checks that the management label token is replicating self
-    val outTokenCorrect = (selfOut.tokens.size == 1) &amp;&amp; (selfOut.tokens(0)._1 == letsToken)
- 
-    // Checks that new token is issued, and its amount is correct
-    // OUTPUTS(0) tokens already checked via outtokenCorrect
-    val issuedTokenId = INPUTS(0).id
-    val userOut = OUTPUTS(1)
-    val correctTokenAmounts =
-      (userOut.tokens.size == 1 &amp;&amp;
-        userOut.tokens(0)._1 == issuedTokenId &amp;&amp;
-        userOut.tokens(0)._2 == 1 &amp;&amp;
-        OUTPUTS(2).tokens.size == 0 &amp;&amp;
-        outTokenCorrect)
- 
-    // Checks that the new user has been created with the zero balance
-    val zeroUserBalance  = userOut.R4[Long].get == 0
- 
-    val properUserScript = blake2b256(userOut.propositionBytes) == userContractHash
- 
-    // Checks that the new token identifier has been added to the directory
-    val selfTree = SELF.R4[AvlTree].get
-    val toAdd: Coll[(Coll[Byte], Coll[Byte])] = Coll((issuedTokenId, Coll[Byte]()))
-    val proof = getVar[Coll[Byte]](1).get
-    val modifiedTree = selfTree.insert(toAdd, proof).get
-    val expectedTree = selfOut.R4[AvlTree].get
-    val treeCorrect = modifiedTree == expectedTree
- 
-    correctTokenAmounts &amp;&amp; scriptCorrect &amp;&amp; treeCorrect &amp;&amp; zeroUserBalance &amp;&amp; properUserScript       
-    correctTokenAmounts &amp;&amp; scriptCorrect &amp;&amp; treeCorrect &amp;&amp; zeroUserBalance &amp;&amp; properUserScript correctTokenAmounts &amp;&amp; scriptCorrect &amp;&amp; treeCorrect &amp;&amp; zeroUserBalance &amp;&amp; properUserScript      
-</code></pre>
+<p>With ASICs, a big player capable to invest enough money into R&amp;D can get unfair advantage from privately
+owned efficient hardware. In principle, for any kind of computational activity it is always possible to develop
+specialized hardware performing better than commodity computing units, such and CPUs and GPUs. However, for different
+computational tasks R&amp;D efforts and possible outcome could vary a lot. Reasoning behind a search for a perfect (or
+close enough to perfect) could be quite complex (see e.g. 30 pages long <a href="http://ledgerjournal.org/ojs/index.php/ledger/article/view/48">Equihash paper</a>).</p>
 
-<p>The exchange contract script is fairly straightforward and provided below along with comments describing its logic. In the
-contract, it is assumed that a spending transaction for an exchange contract box is receiving at least two inputs,
-and the first two inputs should be protected by the exchange contract script and contain LETS member tokens. To check
-that singleton member tokens in the inputs do indeed belong to the LETS system, a spending transaction provides the management
-contract box as the first read-only data input, and also should provide a proof that the member tokens do belong to
-the directory authenticated via the R4 register of the management contract box. &ldquo;letsToken&rdquo; in the script is about
-the singleton token of the management box.</p>
+<p>For most of Proof-of-Work cryptocurrencies (including Bitcoin, Ethereum, ZCash), 2 to 4 centralized mining pools<br />
+control majority of mining power. This could mean easy censorship or frontrunning on applications (for example,
+reordering exchange orders), as in centralized pools only pool decides block candidate for the whole pool to work on.
+As a possible outcome, non-outsourceable mining schemes can prevent centralized pools formation. Only <a href="https://ergoplatform.org/en/">Ergo Platform</a> is known for deploying a practical non-outsourceable Proof-of-Work scheme (based on a supposedly memory-harder problem from the <a href="http://ledgerjournal.org/ojs/index.php/ledger/article/view/48">Equihash paper</a>) called <a href="https://docs.ergoplatform.com/ErgoPow.pdf">Autolykos</a>.</p>
 
-<pre><code class="language-scala">  // Minimal balance allowed for LETS trader
-  val minBalance = -20000
+<p>As an example where social decentralization issues meet the decentralization of mining, sometimes developers of
+Proof-of-Work are introducing hard-forks to make a Proof-of-Work algorithm GPU-friendly again once ASICs are going to
+dominate in the mining market for the coin, however, it is always not quite clear why totally legit activity is banned
+ and why developers (along with some users) can do hard-fork for this particular reason.</p>
 
-  val lookupProof = getVar[Coll[Byte]](1).get
+<h2 id="decentralization-of-verification">Decentralization of Verification</h2>
 
-  // The read-only box which contains directory of LETS members
-  val treeHolderBox = CONTEXT.dataInputs(0)
-  val properLetsToken = treeHolderBox.tokens(0)._1 == letsToken
-  val membersTree = treeHolderBox.R4[AvlTree].get
+<p>Decentralization of verification is about possibility to check validity of blockchain history. Such check provides
+confidence that nothing bad (i.e not conforming to a protocol) was injected to the blockchain and thus give a user
+a right to reject malicious chain even if it has absorbed more work than alternatives. There were many talks about
+such the right in the Bitcoin community when it was partly hot about User-Activated Soft Fork (UASF) idea, and
+recent article <a href="https://medium.com/@BitcoinErrorLog/who-secures-bitcoin-95b19bbcda3c">&ldquo;Who secures Bitcoin?&rdquo;</a> is
+summarizing this way of thinking well.</p>
 
-  // A spending transaction is taking two boxes of LETS members willing to make a deal,
-  // and returns boxes with modified balances.
-  val participant0 = INPUTS(0)
-  val participant1 = INPUTS(1)
-  val participantOut0 = OUTPUTS(0)
-  val participantOut1 = OUTPUTS(1)
+<p>If verification can be done in reasonable time only by an entity able to spend millions on renting a datacenter,
+obviously a network is not decentralized. Ideally, it should be possible to check integrity of the whole blockchain
+on commodity hardware, like a decent laptop.</p>
 
-  //Check that members do indeed belong to the LETS
-  val token0 = participant0.tokens(0)._1
-  val token1 = participant1.tokens(0)._1
-  val memberTokens = Coll(token0, token1)
-  val membersExist = membersTree.getMany(memberTokens, lookupProof).forall({ (o: Option[Coll[Byte]]) =&gt; o.isDefined })
-
-  // Check that LETS member balance changes during the deal are correct
-  val initialBalance0 = participant0.R4[Long].get
-  val initialBalance1 = participant1.R4[Long].get
-  val finishBalance0  = participantOut0.R4[Long].get
-  val finishBalance1  = participantOut1.R4[Long].get
-  val diff0 = finishBalance0 - initialBalance0
-  val diff1 = finishBalance1 - initialBalance1
-  val diffCorrect = diff0 == -diff1
-  val balancesCorrect = (finishBalance0 &gt; minBalance) &amp;&amp; (finishBalance1 &gt; minBalance) &amp;&amp; diffCorrect
-
-  // Check that member boxes save their scripts.
-  // todo: optimization could be made here
-  val script0Saved = participantOut0.propositionBytes == participant0.propositionBytes
-  val script1Saved = participantOut1.propositionBytes == participant1.propositionBytes
-  val scriptsSaved = script0Saved &amp;&amp; script1Saved
-
-  // Member-specific box protection
-  val selfPubKey = SELF.R5[SigmaProp].get
-
-  selfPubKey &amp;&amp; properLetsToken &amp;&amp; membersExist &amp;&amp; diffCorrect &amp;&amp; scriptsSaved
-</code></pre>
-
-<p>Note that both contracts could be modified in many ways to get new systems with different properties. So hopefully
-some day this article will be continued!</p>
+<p>However, new blockchains also tend to absorb more and more features, and they are not coming for free. Then the
+huge topic in the research community is about how to make possible to check integrity of the whole blockchain
+with pruned blocks or system state (or both) under plausible assumptions. Possible solutions here are about bootstrapping
+state snapshot and blockchain suffix on top of it (popular in Ethereum protocol clients, and formalized in <a href="https://eprint.iacr.org/2018/129.pdf">an academic paper even</a>), stateless clients (<a href="https://eprint.iacr.org/2016/994">partially stateless</a>, as implemented in <a href="https://ergoplatform.org/en/">Ergo Platform</a> or <a href="https://eprint.iacr.org/2018/968">fully stateless</a> which do exist only in research papers currently).</p>
 
           </div>
         </div>
@@ -303,7 +207,7 @@ some day this article will be continued!</p>
   <p class="eg-text__paragraph eg-text__paragraph--26">Share post</p>
   <ul class="eg-social">
     <li class="eg-share_item">
-      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_04_22-lets%2f" target="_blank">
+      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_12_12_new_quest%2f" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path d="M17 14.0001H25V28.4H17V14.0001Z" fill="white"/>
@@ -314,7 +218,7 @@ some day this article will be continued!</p>
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_04_22-lets%2f&amp;hashtags=ergoplatform" target="_blank">
+      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_12_12_new_quest%2f&amp;hashtags=ergoplatform" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path class="st0" fill-rule="evenodd" clip-rule="evenodd" d="M29 16.4204C28.4478 16.6615 27.855 16.8241 27.2323 16.8975C27.868 16.5225 28.3558 15.9287 28.5857 15.2214C27.9909 15.5684 27.3322 15.8208 26.6315 15.9565C26.0699 15.3677 25.2701 15 24.3851 15C22.6855 15 21.3076 16.3562 21.3076 18.0291C21.3076 18.2666 21.3347 18.4978 21.3873 18.7195C18.8298 18.5933 16.5616 17.3871 15.0441 15.5542C14.7792 16.0018 14.6274 16.5222 14.6274 17.0774C14.6274 18.1283 15.1706 19.0554 15.9963 19.5989C15.4921 19.5831 15.0174 19.4469 14.6024 19.22C14.6021 19.2325 14.6021 19.2452 14.6021 19.2581C14.6021 20.7258 15.6632 21.9504 17.0707 22.2285C16.8128 22.2979 16.5409 22.335 16.2599 22.335C16.0619 22.335 15.8693 22.3158 15.6812 22.2805C16.0728 23.4839 17.2097 24.36 18.5559 24.3843C17.5025 25.197 16.176 25.6812 14.734 25.6812C14.4857 25.6812 14.2408 25.6667 14 25.6384C15.3617 26.4982 16.979 27 18.7175 27C24.3777 27 27.4734 22.3837 27.4734 18.3804C27.4734 18.2494 27.4705 18.1184 27.4645 17.9883C28.0658 17.5614 28.5873 17.0281 29 16.4204Z" fill="#FF4221"/>
@@ -322,7 +226,7 @@ some day this article will be continued!</p>
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link copy-link" href="https://ergoplatform.org/en/blog/2019_04_22-lets/" target="_blank">
+      <a class="eg-share__link copy-link" href="https://ergoplatform.org/en/blog/2019_12_12_new_quest/" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M39.91 19.3528L34.2335 6.06338C34.1186 5.78985 33.898 5.57515 33.6227 5.46487L20.2117 0.0807171C19.9364 -0.0292029 19.6283 -0.027376 19.3547 0.089384L6.0641 5.76578C5.79022 5.8811 5.57549 6.10129 5.46522 6.37698L0.0816753 19.7881C-0.0303977 20.0656 -0.0267767 20.3716 0.0903423 20.6455L5.76643 33.9366C5.88175 34.2101 6.10231 34.4249 6.37727 34.5352L19.7883 39.919C19.9209 39.9727 20.0639 40 20.2048 40C20.3544 40 20.5043 39.971 20.647 39.909L33.9359 34.2324C34.2097 34.1171 34.4245 33.8966 34.5348 33.6216L39.9183 20.2102C40.0304 19.9327 40.0267 19.6267 39.91 19.3528Z" stroke="#FF4221"/>
@@ -360,19 +264,6 @@ some day this article will be continued!</p>
             
             
             
-              
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_12_12_new_quest/">
-                  <div class="eg-blog__item-img"><img src="/img/blog/new_quest.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>A New Quest for Decentralization, Part I: …</span></h3>
-                  <p class="eg-blog__item-paragraph">While most active conversations today in the space are about wider adoption of the blockchain technology (which often means selling out to the Wall St.) …</p>
-                  <div class="eg-author">
-                    <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
-                    <div class="eg-author__info">
-                      <h4 class="eg-author__info-title">Alex Chepurnoy</h4>
-                      <p class="eg-author__info-paragraph">12 December, 2019</p>
-                    </div>
-                  </div>
-                </a>
               
             
               
@@ -562,6 +453,19 @@ Choose …</p>
                 </a>
               
             
+              
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_04_22-lets/">
+                  <div class="eg-blog__item-img"><img src="/img/blog/lets-example_opt.jpg" height="188" width="335" alt="blog photo"></div>
+                  <h3 class="eg-blog__item-title"><span>A Local Exchange Trading System On Top Of Ergo</span></h3>
+                  <p class="eg-blog__item-paragraph">A local exchange trading system (LETS) is a local mutual credit association which members are allowed to create common credit money individually, with all …</p>
+                  <div class="eg-author">
+                    <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
+                    <div class="eg-author__info">
+                      <h4 class="eg-author__info-title">Alex Chepurnoy</h4>
+                      <p class="eg-author__info-paragraph">22 April, 2019</p>
+                    </div>
+                  </div>
+                </a>
               
             
               
