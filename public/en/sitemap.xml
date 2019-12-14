@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ergoplatform.org/en/news/2019_12_12/</loc>
+    <lastmod>2019-12-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://ergoplatform.org/en/blog/2019_12_12_new_quest/</loc>
     <lastmod>2019-12-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
