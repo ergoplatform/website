@@ -6,10 +6,20 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Ergo Cast: Understanding Ergo One Episode At A Time</title>
+      <link>https://ergoplatform.org/en/blog/2019_12_16_podcast/</link>
+      <pubDate>Mon, 16 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2019_12_16_podcast/</guid>
+      <description>Since the launch of the Ergo mainnet half a year ago, there has been an incredible amount of development and progress in the Ergo ecosystem. Auction smart contracts, crowdfunding, zero interest loans, privacy preserving protocols, and much more. Every week or two there&amp;rsquo;s some truly novel idea or development put out, however if you&amp;rsquo;re just an average blockchain enthusiast it&amp;rsquo;s likely you haven&amp;rsquo;t heard too much.
+Why is that? The reason is that the Ergo ecosystem is making incredible strides forward in the technology side of things, however there is a distinct lack of content to consume for the average user who is interested.</description>
+    </item>
     
     <item>
       <title>A New Quest for Decentralization</title>
