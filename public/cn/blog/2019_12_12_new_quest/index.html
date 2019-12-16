@@ -11,19 +11,20 @@
     <link rel="preload" href="/fonts/LabGrotesque-Regular-hint-all.woff" as="font" type="font/woff" crossorigin>
 
     
-      <meta name="description" content="本地交易所交易系统（LETS）旨在发展当地经济，并且通常由在彼此附近的当地人使用。 在此链接中描述了一个管理LETS的委员会。 我们将此类系统称为管理或许可，因为它取决于受信任的委员会。 在这里，我们描述了一个去信任的LETS系统，即没有管理委员会的系统。
-概要 LETS涉及多个同意使用某种形式的“本地货币”的党派，通常以1：1的比率与该国的主要货币挂钩。假设我们的LETS位于欧洲国家，货币为欧元，交换以“当地欧元”进行，被认为相当于国家欧元。
-LETS中的每个用户都有一个帐户，其中包含该用户的LETS余额（以本地欧元为单位）。在加入时，每个用户的余额为零。余额存储在（可能是去中心化的）分类帐中。 LETS的一个有趣特征是零余额的用户也可以“提款”，但仅用于支付另一个LETS用户。在任何时候，所有用户的LETS余额总和为零。
-例如，零余额的Alice希望从Bob那里以2欧元购买一升牛奶，Bob也是零余额的LETS成员。她将2欧元从她的账户转到Bob&amp;rsquo;s，她的余额为-2，Bob为&#43;2。然后，Bob可以将他的部分或全部余额转移给另一个LETS用户，以换取商品或服务。
-去信任的LETS 由于我们希望获得去信任的LETS，因此我们不能依赖任何受信任的群体来接纳用户。我们只假设又一个有信任的预言机（oracle）由一些全球账号和一个包含这个账号的一个代币的单例币箱标识。此币箱还包含在任何给定时间段内尔格币与欧元的比率。通过使用此币箱并使用新费率创建另一个单例币箱来更新费率。
-在任何情况下，我们的LETS由包含一些LETS成员资格代币的全局LETS币箱来定义。此币箱受以下脚本保护。代币账号唯一地定义了所使用的LETS的属性，例如位置，货币单位，费率预言机（oracle）账号等。一个或多个用户可以花费该币箱并创建他们各自的LETS币箱作为交易的输出。该币箱最初以例如10000 LETS会员代币开始。
-一个LETS币箱表示一个LETS成员，必须用于LETS交易。 LETS交易发生在两个LETS成员之间，一个是发送者而另一个是接收者，这样发送者将一些正数量的LETS货币（本地欧元）转移给接收者。这样的交易消耗成员的币箱并将其重新创建为具有更新余额的输出。
-基本变体 为了防止垃圾信息和分布式拒绝服务攻击，我们要求至少将一些最小数量的尔格币(minErgsToJoin)锁定在新创建的成员的币箱中。 尔格币将被锁定，直到至少minWithdrawTime数量的区块被挖掘为止。 允许一个币箱的LETS余额为负值，直至锁定的尔格币可以覆盖的金额（使用交易时的汇率）。
-// 一个币箱存储会员的代币 val tokenBox = OUTPUTS(0) // first output contains remaining LETS tokens def isLets(b:Box) = { // 一个LETS 币箱必须在代币中有正好一个会员资格代币(0) b.tokens(0)._1 == letsTokenID &amp;amp;&amp;amp; b.tokens(0)._2 == 1 &amp;amp;&amp;amp; blake2b256(b.propositionBytes) == memberBoxScriptHash &amp;amp;&amp;amp; SELF.R4[Long].get == 0 &amp;amp;&amp;amp; // 从0 LETS结余中开始一个币箱 b.value &amp;gt;= minErgsToJoin &amp;amp;&amp;amp; // 币箱必须包含一些最小数量的尔格币 b.R6[Long].get &amp;lt;= HEIGHT // 将创建高度存储在R6中 } // 在tx中创建了多少lets币箱 val numLetsBoxes = OUTPUTS.">
+      <meta name="description" content="尽管当今此领域最活跃话题是如何普及区块链技术（这通常意味着出售给华尔街）以及如何与维萨卡和万事达卡等系统进行竞争（这通常意味着利用去中心化而放弃，或以效率的名义引入不明确的安全假设），显然有必要对加密货币变化的原因进行重新审视，这些变化大多与去中心化有关。我接下来将在此给出许多问题的明确答案。将90%的比特币开采能力都集中在一个房间里? 是否可行？两三个矿池控制大部分算力是否可能？审查也可行吗？让几乎全部新节点避免处理来自其创世区块的区块链是否可行？工作量证明货币开发者正在做一个旨在改变一致性算法的硬叉，使其再次变得对图形处理器(GPU)友好是否可行？我们能否总结一下与去中心化相关的全部问题？我们能否用技术手段解决大部分问题？
+Decentralization is about many issues lying in many fields, of technical, social, and 去中心化涵盖技术、社会及跨界等众多领域的多个问题。研究人员和开发人员正在努力寻找技术解决方案，首选完美且高效的解决方案。然而，对于许多问题而言，依然没有找到解决方案，因此就需要社会解决方案。
+在这篇文章中，我将只讨论去中心化的技术方面，即采矿的去中心化和验证的去中心化。
+采矿的去中心化 关于采矿去中心化的两个最大的问题是专用硬件（如专用集成电路(ASICs)）和中心化池。
+凭借专用集成电路，一个拥有足够资金投资研发的大玩家可以从私人拥有的高效硬件中获得不公平优势。原则上来讲，对于任何类型的计算活动，开发性能优于商用计算设备（如CPUs 和GPUs）的专用硬件永远都是可能的。然而，对于不同的计算任务而言，研发努力与可能的结果却可能大相径庭。搜索一个完美（或者近似完美结果）背后的推理可能相当复杂（参见30多页厚的Equihash报告).
+对于大部分工作量证明加密货币而言（包括比特币、以太坊、ZCash），2-4个中心化挖矿池控制着大部分开采力。这可能意味着审查变得容易或者进行提前交易（例如，对交易所订单进行重新排序），因为在中心化池中，只有中心化池自己才有权决定其所负责的整个池中的候选区块。作为一种可能的结果，不可外包的采矿方案可以防止中心化池的出现。只有尔格平台因部署了一个名为奥托吕克斯共识协议(Autolykos)的实用性不可外包工作量证明方案（基于Equihash报告中据说是更难记忆的问题）而闻名。
+作为社会去中心化问题符合采矿去中心化的一个例子，有时工作量证明的开发者正在引入硬叉，以便一旦ASICs在未来主宰了挖矿市场，则工作量证明算法会对图形处理器再次变得友好。然而，尚不清楚为什么完全合法的活动总是被禁止，为什么开发人员（以及部分用户）可以出于特殊原因而做硬叉。
+验证的去中心化 验证的去中心化是关于核实区块链历史有效性的可能性。这种核实使人确信没有不好的东西（即：不符合协议）被注入到区块链中，从而给予用户拒绝恶意区块链的权利，即使其比其他方法吸收了更多的工作量。当用户激活软叉（UASF）的想法开始走红时，社会上有很多有关比特币社区此项权力的讨论。很好地总结了这种思维方式。最近一篇题为“谁为比特币担保”的文章很好的总结了这种思维模式。
+如果一个实体能够在合理的时间范围内通过花费数百万美元租用数据中心来进行验证，那么这个网络显然不是去中心化的。理想情况下，应该可以在商用硬件（如一台像样的笔记本电脑）上检查整个区块链的完整性。
+然而，新的区块链也倾向于吸收越来越多的功能，而且这些功能并非免费的。然后，研究社区的主题是关于如何在合理的假设下，通过修剪区块或系统状态（或两者）来检查整个区块链的完整性。这里可能的解决方案有：引导状态速览及基于此的区块链后缀（在以太坊协议节点中比较流行，甚至在一篇学术论文)中正式提出）、无状态节点（在尔格平台上实现 部分无状态，或者目前只存在于研究论文中的完全无状态）。">
     
 
     
-    <title>一个去信任的本地交易所交易系统 | Ergo</title>
+    <title>去中心化方面的新探索，第一部分：技术方面 | Ergo</title>
 
     
     
@@ -123,7 +124,7 @@ LETS中的每个用户都有一个帐户，其中包含该用户的LETS余额（
             
               
                 <li class="dd-language__item dd-language__item_hidden">
-                  <a class="dd-language__link dd-language__link--white eg-link" href="https://ergoplatform.org/en/blog/2019_05_29-exchange/"><span>Eng</span></a>
+                  <a class="dd-language__link dd-language__link--white eg-link" href="https://ergoplatform.org/en/blog/2019_12_12_new_quest/"><span>Eng</span></a>
                 </li>
               
             
@@ -145,200 +146,44 @@ LETS中的每个用户都有一个帐户，其中包含该用户的LETS余额（
         <a href="https://ergoplatform.org/cn/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>回到所有帖子</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
-        <h1 class="eg-title eg-mb-1">一个去信任的本地交易所交易系统</h1>
+        <h1 class="eg-title eg-mb-1">去中心化方面的新探索，第一部分：技术方面</h1>
         <div class="eg-author">
-          <img src="/img/authors/amitabh_saxena.png" alt="author img" class="eg-author__img">
+          <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
-            <h4 class="eg-author__info-title">Amitabh Saxena</h4>
-            <p class="eg-author__info-paragraph">2019.05.29</p>
+            <h4 class="eg-author__info-title">Alex Chepurnoy</h4>
+            <p class="eg-author__info-paragraph">2019.12.12</p>
           </div>
         </div>
         <div class="eg-blog__single-img">
-          <img src="/img/blog/trading.jpg" alt="blog photo">
+          <img src="/img/blog/new_quest.jpg" alt="blog photo">
         </div>
         <div class="eg-blog__single-content">
           <div>
             
 
-<p>本地交易所交易系统（LETS）旨在发展当地经济，并且通常由在彼此附近的当地人使用。 在<a href="/cn/blog/2019_04_22-lets/">此链接</a>中描述了一个管理LETS的委员会。 我们将此类系统称为管理或许可，因为它取决于受信任的委员会。 在这里，我们描述了一个去信任的LETS系统，即没有管理委员会的系统。</p>
+<p>尽管当今此领域最活跃话题是如何普及区块链技术（这通常意味着出售给华尔街）以及如何与维萨卡和万事达卡等系统进行竞争（这通常意味着利用去中心化而放弃，或以效率的名义引入不明确的安全假设），显然有必要对加密货币变化的原因进行重新审视，这些变化大多与去中心化有关。我接下来将在此给出许多问题的明确答案。将90%的比特币开采能力都<a href="https://twitter.com/lopp/status/673398201307664384">集中在一个房间里</a>? 是否可行？两三个矿池控制大部分算力是否可能？审查也可行吗？让几乎全部新节点避免处理来自其创世区块的区块链是否可行？工作量证明货币开发者正在做一个旨在改变一致性算法的硬叉，使其再次变得对图形处理器(GPU)友好是否可行？我们能否总结一下与去中心化相关的全部问题？我们能否用技术手段解决大部分问题？</p>
 
-<h2 id="概要">概要</h2>
+<p>Decentralization is about many issues lying in many fields, of technical, social, and 去中心化涵盖技术、社会及跨界等众多领域的多个问题。研究人员和开发人员正在努力寻找技术解决方案，首选完美且高效的解决方案。然而，对于许多问题而言，依然没有找到解决方案，因此就需要社会解决方案。</p>
 
-<p>LETS涉及多个同意使用某种形式的“本地货币”的党派，通常以1：1的比率与该国的主要货币挂钩。假设我们的LETS位于欧洲国家，货币为欧元，交换以“当地欧元”进行，被认为相当于国家欧元。</p>
+<p>在这篇文章中，我将只讨论去中心化的技术方面，即采矿的去中心化和验证的去中心化。</p>
 
-<p>LETS中的每个用户都有一个帐户，其中包含该用户的LETS余额（以本地欧元为单位）。在加入时，每个用户的余额为零。余额存储在（可能是去中心化的）分类帐中。 LETS的一个有趣特征是零余额的用户也可以“提款”，但仅用于支付另一个LETS用户。在任何时候，所有用户的LETS余额总和为零。</p>
+<h2 id="采矿的去中心化">采矿的去中心化</h2>
 
-<p>例如，零余额的Alice希望从Bob那里以2欧元购买一升牛奶，Bob也是零余额的LETS成员。她将2欧元从她的账户转到Bob&rsquo;s，她的余额为-2，Bob为+2。然后，Bob可以将他的部分或全部余额转移给另一个LETS用户，以换取商品或服务。</p>
+<p>关于采矿去中心化的两个最大的问题是专用硬件（如专用集成电路(ASICs)）和中心化池。</p>
 
-<h2 id="去信任的lets">去信任的LETS</h2>
+<p>凭借专用集成电路，一个拥有足够资金投资研发的大玩家可以从私人拥有的高效硬件中获得不公平优势。原则上来讲，对于任何类型的计算活动，开发性能优于商用计算设备（如CPUs 和GPUs）的专用硬件永远都是可能的。然而，对于不同的计算任务而言，研发努力与可能的结果却可能大相径庭。搜索一个完美（或者近似完美结果）背后的推理可能相当复杂（参见30多页厚的<a href="http://ledgerjournal.org/ojs/index.php/ledger/article/view/48">Equihash报告</a>).</p>
 
-<p>由于我们希望获得去信任的LETS，因此我们不能依赖任何受信任的群体来接纳用户。我们只假设又一个有信任的预言机（oracle）由一些全球账号和一个包含这个账号的一个代币的单例币箱标识。此币箱还包含在任何给定时间段内尔格币与欧元的比率。通过使用此币箱并使用新费率创建另一个单例币箱来更新费率。</p>
+<p>对于大部分工作量证明加密货币而言（包括比特币、以太坊、ZCash），2-4个中心化挖矿池控制着大部分开采力。这可能意味着审查变得容易或者进行提前交易（例如，对交易所订单进行重新排序），因为在中心化池中，只有中心化池自己才有权决定其所负责的整个池中的候选区块。作为一种可能的结果，不可外包的采矿方案可以防止中心化池的出现。只有<a href="https://ergoplatform.org/en/">尔格平台</a>因部署了一个名为<a href="https://docs.ergoplatform.com/ErgoPow.pdf">奥托吕克斯共识协议(Autolykos)</a>的实用性不可外包工作量证明方案（基于<a href="http://ledgerjournal.org/ojs/index.php/ledger/article/view/48">Equihash报告</a>中据说是更难记忆的问题）而闻名。</p>
 
-<p>在任何情况下，我们的LETS由包含一些LETS成员资格代币的全局LETS币箱来定义。此币箱受以下脚本保护。代币账号唯一地定义了所使用的LETS的属性，例如位置，货币单位，费率预言机（oracle）账号等。一个或多个用户可以花费该币箱并创建他们各自的LETS币箱作为交易的输出。该币箱最初以例如10000 LETS会员代币开始。</p>
+<p>作为社会去中心化问题符合采矿去中心化的一个例子，有时工作量证明的开发者正在引入硬叉，以便一旦ASICs在未来主宰了挖矿市场，则工作量证明算法会对图形处理器再次变得友好。然而，尚不清楚为什么完全合法的活动总是被禁止，为什么开发人员（以及部分用户）可以出于特殊原因而做硬叉。</p>
 
-<p>一个LETS币箱表示一个LETS成员，必须用于LETS交易。 LETS交易发生在两个LETS成员之间，一个是发送者而另一个是接收者，这样发送者将一些正数量的LETS货币（本地欧元）转移给接收者。这样的交易消耗成员的币箱并将其重新创建为具有更新余额的输出。</p>
+<h2 id="验证的去中心化">验证的去中心化</h2>
 
-<h2 id="基本变体">基本变体</h2>
+<p>验证的去中心化是关于核实区块链历史有效性的可能性。这种核实使人确信没有不好的东西（即：不符合协议）被注入到区块链中，从而给予用户拒绝恶意区块链的权利，即使其比其他方法吸收了更多的工作量。当用户激活软叉（UASF）的想法开始走红时，社会上有很多有关比特币社区此项权力的讨论。很好地总结了这种思维方式。最近一篇题为<a href="https://medium.com/@BitcoinErrorLog/who-secures-bitcoin-95b19bbcda3c">“谁为比特币担保”</a>的文章很好的总结了这种思维模式。</p>
 
-<p>为了防止垃圾信息和分布式拒绝服务攻击，我们要求至少将一些最小数量的尔格币(<code>minErgsToJoin</code>)锁定在新创建的成员的币箱中。 尔格币将被锁定，直到至少<code>minWithdrawTime</code>数量的区块被挖掘为止。 允许一个币箱的LETS余额为负值，直至锁定的尔格币可以覆盖的金额（使用交易时的汇率）。</p>
+<p>如果一个实体能够在合理的时间范围内通过花费数百万美元租用数据中心来进行验证，那么这个网络显然不是去中心化的。理想情况下，应该可以在商用硬件（如一台像样的笔记本电脑）上检查整个区块链的完整性。</p>
 
-<pre><code class="language-scala">// 一个币箱存储会员的代币
-val tokenBox = OUTPUTS(0) // first output contains remaining LETS tokens
-def isLets(b:Box) = {
-   // 一个LETS 币箱必须在代币中有正好一个会员资格代币(0)
-   b.tokens(0)._1 == letsTokenID &amp;&amp; b.tokens(0)._2 == 1 &amp;&amp;
-   blake2b256(b.propositionBytes) == memberBoxScriptHash &amp;&amp;
-   SELF.R4[Long].get == 0 &amp;&amp; // 从0 LETS结余中开始一个币箱
-   b.value &gt;= minErgsToJoin &amp;&amp; // 币箱必须包含一些最小数量的尔格币
-   b.R6[Long].get &lt;= HEIGHT // 将创建高度存储在R6中
-}
-
-// 在tx中创建了多少lets币箱
-val numLetsBoxes = OUTPUTS.filter({(b:Box) =&gt; isLets(b)}).size
-
-// 在交易中，为币箱保留了以下内容 ...
-tokenBox.tokens(0)._1 == SELF.tokens(0)._1 &amp;&amp;                // 代币账号
-tokenBox.tokens(0)._2 == SELF.tokens(0)._2 - numLetsBoxes &amp;&amp; //  数量
-tokenBox.propositionBytes == SELF.propositionBytes           //  脚本
-</code></pre>
-
-<p>LETS成员的币框受以下脚本的保护，其哈希memberBoxScriptHash（成员币箱脚本哈希）被以上使用。</p>
-
-<pre><code class="language-scala">val validRateOracle = CONTEXT.dataInputs(0).tokens(0)._1 == rateTokenID
-val rate = CONTEXT.dataInputs(0).R4[Int].get
-val inBalance = SELF.R4[Long].get    // 当前输入下的LETS结余
-val pubKey = SELF.R5[SigmaProp].get  // 当前输入的拥有者
-val createdAt = SELF.R6[Long].get    // 当前输入开采的高度
-
-val index = getVar[Int](0).get       // 相关输出的指数
-val out = OUTPUTS(index)
-val outBalance = out.R4[Long].get    // 输出的LETS结余
-
-// LETS币箱与当前币箱具有相同的脚本
-val isMemberBox = {(b:Box) =&gt; b.propositionBytes == SELF.propositionBytes}
-val letsInputs = INPUTS.filter(isMemberBox)    // 所有LETS输入币箱
-val letsOutputs = OUTPUTS.filter(isMemberBox)  // 所有LETS输出币箱
-
-// 如果LETS余额增加，则当前输入属于接收器
-// 接收器的输入币箱中可能有一些尔格币，我们需要确保
-// 接收器的输出币箱也包含与输入相同数量的尔格币
-val receiver = outBalance &gt; inBalance &amp;&amp; out.value == SELF.value
-
-val getBalance = {(b:Box) =&gt; b.R4[Long].get} // 回到币箱的LETS结余
-
-val letsBalIn = letsInputs.map(getBalance).fold(0L, {(l:Long, r:Long) =&gt; l + r})
-val letsBalOut = letsOutputs.map(getBalance).fold(0L, {(l:Long, r:Long) =&gt; l + r})
-
-// 发送人的币箱可以包含较少量的尔格币(发送人可以撤回提供的尔格币
-// 发送者的任何负LETS余额都有足够的尔格币支持)
-val correctErgs = out.value &gt;= -outBalance * rate &amp;&amp; (
-  out.value &gt;= SELF.value || SELF.R6[Long].get + minWithdrawTime &gt; HEIGHT
-)
-
-// 对于接受者来说，我们并不接触尔格币的结余
-// 因为接受者没有积极参与交易
-
-inBalance != outBalance &amp;&amp; // 交易应该发生；结余必须变化
-SELF.tokens(0)._1 == letsTokenID &amp;&amp; // 当前输入有正确的代币
-out.tokens(0)._1 == letsTokenID &amp;&amp; // 对应地，输出也有正确的代币
-validRateOracle &amp;&amp;          // 预言机（oracle）提供费率具备正确的“费率代币”
-letsBalIn == letsBalOut &amp;&amp;  // 总共的LETS结余被保存在交易中
-letsInputs.size == 2 &amp;&amp; letsOutputs.size == 2 &amp;&amp;  // 只有两个LETS输入，输出
-out.propositionBytes == SELF.propositionBytes &amp;&amp;  // 输出是一个LETS币箱 ...
-out.R5[SigmaProp].get == pubKey &amp;&amp;                // ... 用正确的公钥
-out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... 和创建高度
-(receiver ||              // ...要么当前输入属于接受者
-  (pubKey &amp;&amp; correctErgs) // ... 要么输出有正确的尔格币，同时tx有签名
-)
-</code></pre>
-
-<p>使用上述脚本支付币箱的交易需要：</p>
-
-<ul>
-<li>保留了输入和输出的LETS结余之和</li>
-<li>有两个LETS输入和两个LETS输出</li>
-<li>公钥（存储在R5中）保存在相应的输出中</li>
-<li>创建高度（存储在R6中）保留在相应的输出中</li>
-</ul>
-
-<p>我们说如果输出的LETS结余高于其输入的LETS结余，则某些公钥是接收器。</p>
-
-<p>最后一个条件要求输入（和输出）币箱属于接收器（以便保留尔格币的数量），或者如果LETS余额为负，则输出由所需数量的尔格币支持。此外，它要求发送者的尔格币结余不能减少，直到在尔格币被锁定之后已经挖掘了<code>minWithdrawTime</code>的区块数量。</p>
-
-<p>与托管LETS相比，上述系统有以下不同之处：</p>
-
-<ul>
-<li>没有会员记录：与托管LETS不同，我们不在此处存储任何会员信息。</li>
-<li>多个币箱：一个人可以创建多个会员币箱，这是允许的。我们只要求每个币箱都锁定最小数量的尔格币。</li>
-</ul>
-
-<h2 id="lets-1-零和-有抵押">LETS-1：零和，有抵押</h2>
-
-<p>以上是我们称之为LETS-1的基本变体。 它具有以下功能：</p>
-
-<ul>
-<li>有时间限制的加入费：为了防止垃圾信息攻击，会员必须在加入时支付一定的最低费用。 此费用可退还，但仅限于预定数量的区块后。</li>
-<li>零和：所有成员币箱的LETS余额总和为零。 只要在一定限度内，会员币箱就可以有负余额。</li>
-<li>抵押品：对于发送人的输入，尔格币用作抵押品以支付当前汇率的负LETS余额。</li>
-</ul>
-
-<p>以下是LETS-1的一些变体。</p>
-
-<h2 id="lets-2-零和-无抵押">LETS-2：零和，无抵押</h2>
-
-<p>这是LETS-1的略微变化如下：</p>
-
-<ul>
-<li>不可退还的加入费：与LETS-1类似，需要加入费用以防止垃圾信息攻击。但是，与LETS-1不同，此费用不可退还，必须发送给某个预定义的管理委员会。</li>
-<li>零和：与LETS-1一样。</li>
-</ul>
-
-<h2 id="lets-3-正和-有抵押">LETS-3：正和，有抵押</h2>
-
-<p>以上两种变体要求总LETS余额始终为零。在这里，我们考虑这个总和的正值。特别是，此变体具有以下属性：</p>
-
-<ul>
-<li>时间锁定加入费：与LETS-1相同。</li>
-<li>正和：每个成员的LETS余额必须始终为非负数。这确保了所有成员币箱的LETS余额总和为正。初始LETS余额根据当前汇率的加入费设置为正值，上限为某个最大值。</li>
-<li>抵押品：发送方的尔格币余额的任何减少必须伴随当前汇率的相应LETS余额的减少。</li>
-</ul>
-
-<p>我们还可以通过添加等量的尔格币来允许在交易期间补足LETS余额。</p>
-
-<h2 id="lets-4-正和-无抵押">LETS-4：正和，无抵押</h2>
-
-<p>这类似于LETS-3，但有一些小的变化：</p>
-
-<ul>
-<li>不可退还的加入费：与LETS-2相同</li>
-<li>正和：与LETS-3一样</li>
-</ul>
-
-<p>下表总结了这些变体：</p>
-
-<table>
-<thead>
-<tr>
-<th></th>
-<th>零和</th>
-<th>正和</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>有抵押</td>
-<td>LETS-1</td>
-<td>LETS-3</td>
-</tr>
-
-<tr>
-<td>无抵押</td>
-<td>LETS-2</td>
-<td>LETS-4</td>
-</tr>
-</tbody>
-</table>
+<p>然而，新的区块链也倾向于吸收越来越多的功能，而且这些功能并非免费的。然后，研究社区的主题是关于如何在合理的假设下，通过修剪区块或系统状态（或两者）来检查整个区块链的完整性。这里可能的解决方案有：引导状态速览及基于此的区块链后缀（在以太坊协议节点中比较流行，<a href="https://eprint.iacr.org/2018/129.pdf">甚至在一篇学术论文</a>)中正式提出）、无状态节点（在<a href="https://eprint.iacr.org/2016/994">尔格平台</a>上实现 <a href="https://ergoplatform.org/en/">部分无状态</a>，或者目前只存在于研究论文中的<a href="https://eprint.iacr.org/2018/968">完全无状态</a>）。</p>
 
           </div>
         </div>
@@ -346,7 +191,7 @@ out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... 和创建高度
   <p class="eg-text__paragraph eg-text__paragraph--26">分享转发</p>
   <ul class="eg-social">
     <li class="eg-share_item">
-      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fcn%2fblog%2f2019_05_29-exchange%2f" target="_blank">
+      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fcn%2fblog%2f2019_12_12_new_quest%2f" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path d="M17 14.0001H25V28.4H17V14.0001Z" fill="white"/>
@@ -357,7 +202,7 @@ out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... 和创建高度
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fcn%2fblog%2f2019_05_29-exchange%2f&amp;hashtags=ergoplatform" target="_blank">
+      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fcn%2fblog%2f2019_12_12_new_quest%2f&amp;hashtags=ergoplatform" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path class="st0" fill-rule="evenodd" clip-rule="evenodd" d="M29 16.4204C28.4478 16.6615 27.855 16.8241 27.2323 16.8975C27.868 16.5225 28.3558 15.9287 28.5857 15.2214C27.9909 15.5684 27.3322 15.8208 26.6315 15.9565C26.0699 15.3677 25.2701 15 24.3851 15C22.6855 15 21.3076 16.3562 21.3076 18.0291C21.3076 18.2666 21.3347 18.4978 21.3873 18.7195C18.8298 18.5933 16.5616 17.3871 15.0441 15.5542C14.7792 16.0018 14.6274 16.5222 14.6274 17.0774C14.6274 18.1283 15.1706 19.0554 15.9963 19.5989C15.4921 19.5831 15.0174 19.4469 14.6024 19.22C14.6021 19.2325 14.6021 19.2452 14.6021 19.2581C14.6021 20.7258 15.6632 21.9504 17.0707 22.2285C16.8128 22.2979 16.5409 22.335 16.2599 22.335C16.0619 22.335 15.8693 22.3158 15.6812 22.2805C16.0728 23.4839 17.2097 24.36 18.5559 24.3843C17.5025 25.197 16.176 25.6812 14.734 25.6812C14.4857 25.6812 14.2408 25.6667 14 25.6384C15.3617 26.4982 16.979 27 18.7175 27C24.3777 27 27.4734 22.3837 27.4734 18.3804C27.4734 18.2494 27.4705 18.1184 27.4645 17.9883C28.0658 17.5614 28.5873 17.0281 29 16.4204Z" fill="#FF4221"/>
@@ -365,7 +210,7 @@ out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... 和创建高度
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link copy-link" href="https://ergoplatform.org/cn/blog/2019_05_29-exchange/" target="_blank">
+      <a class="eg-share__link copy-link" href="https://ergoplatform.org/cn/blog/2019_12_12_new_quest/" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M39.91 19.3528L34.2335 6.06338C34.1186 5.78985 33.898 5.57515 33.6227 5.46487L20.2117 0.0807171C19.9364 -0.0292029 19.6283 -0.027376 19.3547 0.089384L6.0641 5.76578C5.79022 5.8811 5.57549 6.10129 5.46522 6.37698L0.0816753 19.7881C-0.0303977 20.0656 -0.0267767 20.3716 0.0903423 20.6455L5.76643 33.9366C5.88175 34.2101 6.10231 34.4249 6.37727 34.5352L19.7883 39.919C19.9209 39.9727 20.0639 40 20.2048 40C20.3544 40 20.5043 39.971 20.647 39.909L33.9359 34.2324C34.2097 34.1171 34.4245 33.8966 34.5348 33.6216L39.9183 20.2102C40.0304 19.9327 40.0267 19.6267 39.91 19.3528Z" stroke="#FF4221"/>
@@ -403,19 +248,6 @@ out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... 和创建高度
             
             
             
-              
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_12_12_new_quest/">
-                  <div class="eg-blog__item-img"><img src="/img/blog/new_quest.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>去中心化方面的新探索，第一部分：技术方面</span></h3>
-                  <p class="eg-blog__item-paragraph">尽管当今此领域最活跃话题是如何普及区块链技术（这通常意味着出售给华尔街）以及如何与维萨卡和万事达卡等系统进行竞争（这通常意味着利用去中心化而放弃，或以效率的名义引入不明确的安全假设），显然有必要对加密货币变化的原因进行重新审视，这些变化大多与去中心化有关。我接下来将在此给出许多问题的明确答案。将90%的比特币 …</p>
-                  <div class="eg-author">
-                    <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
-                    <div class="eg-author__info">
-                      <h4 class="eg-author__info-title">Alex Chepurnoy</h4>
-                      <p class="eg-author__info-paragraph">2019.12.12</p>
-                    </div>
-                  </div>
-                </a>
               
             
               
@@ -550,6 +382,20 @@ out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... 和创建高度
                 </a>
               
             
+              
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/cn/blog/2019_05_29-exchange/">
+                  <div class="eg-blog__item-img"><img src="/img/blog/trading.jpg" height="188" width="335" alt="blog photo"></div>
+                  <h3 class="eg-blog__item-title"><span>一个去信任的本地交易所交易系统</span></h3>
+                  <p class="eg-blog__item-paragraph">本地交易所交易系统（LETS）旨在发展当地经济，并且通常由在彼此附近的当地人使用。 在此链接中描述了一个管理LETS的委员会。 我们将此类系统称为管理或许可，因为它取决于受信任的委员会。 在这里，我们描述了一个去信任的LETS系统，即没有管理委员会的系统。
+概要 LETS涉及多个同意使用某种形式的“本地货币” …</p>
+                  <div class="eg-author">
+                    <img src="/img/authors/amitabh_saxena.png" alt="author img" class="eg-author__img" width="60" height="60">
+                    <div class="eg-author__info">
+                      <h4 class="eg-author__info-title">Amitabh Saxena</h4>
+                      <p class="eg-author__info-paragraph">2019.05.29</p>
+                    </div>
+                  </div>
+                </a>
               
             
               
