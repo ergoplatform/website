@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://ergoplatform.org/en/</loc>
-    <lastmod>2019-12-24T00:00:00+00:00</lastmod>
+    <lastmod>2019-12-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -16,6 +16,13 @@
                 hreflang="en"
                 href="https://ergoplatform.org/en/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/en/blog/2019_12_22_mining_for_fun/</loc>
+    <lastmod>2019-12-28T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>

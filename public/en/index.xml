@@ -6,10 +6,20 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mining Ergo for Fun and Profit</title>
+      <link>https://ergoplatform.org/en/blog/2019_12_22_mining_for_fun/</link>
+      <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2019_12_22_mining_for_fun/</guid>
+      <description>Ergo GPU Mining This article will help you start mining Ergo using a GPU.
+Ergo mining is based on Autolykos, a Proof-of-Work algorithm designed to be ASIC and pool resistant. Miners have to perform memory-hard computations~(at least 4 GB memory is needed, but the current most efficient implementation utilizes between 8 GB of vRAM) that makes Ergo friendly for GPU mining. In addition, Autolykos requires access to private keys, thereby preventing mining pool formation.</description>
+    </item>
     
     <item>
       <title>ErgoTool: A Command Line Interface for Ergo blockchain</title>
