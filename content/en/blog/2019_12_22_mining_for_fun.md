@@ -2,8 +2,8 @@
 title: "Mining Ergo for Fun and Profit"
 date: 2019-12-28
 draft: false
-author: "Amitabh Saxena"
-authorPhoto: "/img/authors/amitabh_saxena.png"
+author: "Ergo team"
+authorPhoto: "/img/logotype_black_circle.svg"
 blogPhoto: "/img/blog/mining_for_fun.jpg"
 ---
 
