@@ -6,10 +6,20 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Make Your Own Ergo Wallet: Managing Ergo Coins with ErgoTool</title>
+      <link>https://ergoplatform.org/en/blog/2019_12_31_ergo_tool/</link>
+      <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2019_12_31_ergo_tool/</guid>
+      <description>Introduction ErgoTool is a command line interface (CLI) for Ergo blockchain. You can use ErgoTool without running your own Ergo node. Even though running a node is the most secure way to communicate with the Ergo blockchain network, ErgoTool however, aims to provide more foundational tools at your disposal. Surely, you still can use it with your own running node.
+In this post we will walk through simple steps to generate a mnemonic phrase, create a local secret storage and use it to send ERGs between addresses, all with the help of ErgoTool commands.</description>
+    </item>
     
     <item>
       <title>Mining Ergo for Fun and Profit</title>

@@ -11,12 +11,12 @@
     <link rel="preload" href="/fonts/LabGrotesque-Regular-hint-all.woff" as="font" type="font/woff" crossorigin>
 
     
-      <meta name="description" content="Ergo GPU Mining This article will help you start mining Ergo using a GPU.
-Ergo mining is based on Autolykos, a Proof-of-Work algorithm designed to be ASIC and pool resistant. Miners have to perform memory-hard computations~(at least 4 GB memory is needed, but the current most efficient implementation utilizes between 8 GB of vRAM) that makes Ergo friendly for GPU mining. In addition, Autolykos requires access to private keys, thereby preventing mining pool formation.">
+      <meta name="description" content="Introduction ErgoTool is a command line interface (CLI) for Ergo blockchain. You can use ErgoTool without running your own Ergo node. Even though running a node is the most secure way to communicate with the Ergo blockchain network, ErgoTool however, aims to provide more foundational tools at your disposal. Surely, you still can use it with your own running node.
+In this post we will walk through simple steps to generate a mnemonic phrase, create a local secret storage and use it to send ERGs between addresses, all with the help of ErgoTool commands.">
     
 
     
-    <title>Mining Ergo for Fun and Profit | Ergo</title>
+    <title>Make Your Own Ergo Wallet: Managing Ergo Coins with ErgoTool | Ergo</title>
 
     
     
@@ -132,84 +132,308 @@ Ergo mining is based on Autolykos, a Proof-of-Work algorithm designed to be ASIC
         <a href="https://ergoplatform.org/en/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>Back to all posts</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
-        <h1 class="eg-title eg-mb-1">Mining Ergo for Fun and Profit</h1>
+        <h1 class="eg-title eg-mb-1">Make Your Own Ergo Wallet: Managing Ergo Coins with ErgoTool</h1>
         <div class="eg-author">
-          <img src="/img/logotype_black_circle.svg" alt="author img" class="eg-author__img">
+          <img src="/img/authors/alexander_slesarenko.jpg" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
-            <h4 class="eg-author__info-title">Ergo team</h4>
-            <p class="eg-author__info-paragraph">28 December, 2019</p>
+            <h4 class="eg-author__info-title">Alexander Slesarenko</h4>
+            <p class="eg-author__info-paragraph">31 December, 2019</p>
           </div>
         </div>
         <div class="eg-blog__single-img">
-          <img src="/img/blog/mining_for_fun.jpg" alt="blog photo">
+          <img src="/img/blog/ergo_tool.jpg" alt="blog photo">
         </div>
         <div class="eg-blog__single-content">
           <div>
             
 
-<h1 id="ergo-gpu-mining">Ergo GPU Mining</h1>
+<h2 id="introduction">Introduction</h2>
 
-<p>This article will help you start mining Ergo using a GPU.</p>
+<p><a href="https://github.com/aslesarenko/ergo-tool">ErgoTool</a> is a command line interface (CLI) for
+<a href="https://ergoplatform.org/">Ergo blockchain</a>. You can use ErgoTool without running your
+own Ergo node. Even though running a node is the most secure way to communicate with the
+Ergo blockchain network, ErgoTool however, aims to provide more foundational tools at
+your disposal. Surely, you still can use it with your own running node.</p>
 
-<p>Ergo mining is based on <a href="https://docs.ergoplatform.com/ErgoPow.pdf">Autolykos</a>, a Proof-of-Work algorithm designed to be ASIC and pool resistant. Miners have to perform memory-hard computations~(at least 4 GB memory is needed, but the current most efficient implementation utilizes between 8 GB of vRAM) that makes Ergo friendly for GPU mining. In addition, Autolykos requires access to <strong>private</strong> keys, thereby preventing mining pool formation. As soon as a correct solution is found, the miner broadcasts the block along with the solution and is able to collect the block reward after a delay of 720 blocks using the secret he used during mining. The rest of the network verifies the solution using the miner&rsquo;s <strong>public</strong> key and this verification can be done very efficiently, requiring less than a kilobyte of memory.</p>
+<p>In this post we will walk through simple steps to generate a mnemonic phrase, create a
+local secret storage and use it to send ERGs between addresses, all with the help of
+ErgoTool commands.</p>
 
-<h2 id="prerequisites">Prerequisites</h2>
+<h2 id="getting-started">Getting Started</h2>
 
-<p>In order to mine, you need the following setup:</p>
+<p>First of all we need to install ErgoTool on our system from sources by following the
+<a href="https://github.com/aslesarenko/ergo-tool#installation">installation instructions</a>. In the
+directory where we cloned ErgoTool there is <code>ergo-tool.sh</code> script which we are going to
+use to run commands. Run the following command to check ErgoTool is installed correctly.</p>
 
-<ol>
-<li>A full node with wallet initialized and fully synced.</li>
-<li>A computer with a GPU that is recognized by your OS.</li>
-<li>Ergo mining software for your operating system. Ergo supports both AMD and NVidia GPUs.</li>
-</ol>
+<pre><code class="language-bash">$ ./ergo-tool.sh help     
+command name is not specified (run ergo-tool without arguments to list commands)
 
-<p>Ergo mining requires a configured and synchronized Ergo node and at least one GPU for mining. You may use multiple GPUs if you wish (to multiply your hashing power) but you only need one Ergo node.</p>
+Command Name:	help
+Usage Syntax:	ergo-tool help &lt;commandName&gt;
+Description:	prints usage help for a command
+Doc page:	https://aslesarenko.github.io/ergo-tool/api/org/ergoplatform/appkit/ergotool/HelpCmd.html
+</code></pre>
 
-<p><strong>Note that Ergo no longer works in Java 8 due to its lack of <a href="http://mail.openjdk.java.net/pipermail/security-dev/2016-October/014942.html">strong cryptography</a>. You must use Java &gt;= 9</strong></p>
+<p>Let&rsquo;s see what we get here. ErgoTool outputs the error message with the information about
+<code>help</code> command. This is a typical output of ErgoTool when one of the known commands is
+specified, but it is used incorrectly. As we can learn from the message, the <code>help</code>
+command requires us to specify additional <code>&lt;commandName&gt;</code> argument. Also, each command has
+an API doc page with all the details about command execution, so its url is shown here.</p>
 
-<p>The links for setting up the mining software are:</p>
+<h2 id="create-a-new-mnemonic-phrase">Create a New Mnemonic Phrase</h2>
 
-<ul>
-<li><a href="https://github.com/ergoplatform/cuda-miner">Nvidia Miner</a></li>
-<li><a href="https://ergoplatform.org/en/blog/2019_08_07_amd/">AMD Miner</a></li>
-</ul>
+<p>Mnemonic is a random sequence of characters which is used to generate a master key
+according to <a href="https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki">Hierarchical Deterministic
+Wallets</a> specification.
+For convenience random sequence of english words is used, but this is not required.
+Run the following command to generate a new mnemonic phrase:</p>
 
-<p><strong>!!!WARNING!!! Since Autolykos utilizes private keys, you should never use untrusted mining software. Check that the software is open-source and validated by the community</strong></p>
+<pre><code class="language-bash">$ ./ergo-tool.sh mnemonic          
+bird harbor wheat innocent business disease busy quick yellow trust time oil enter situate moon
+</code></pre>
 
-<h2 id="sync-node-and-initialize-wallet">Sync node and Initialize Wallet</h2>
+<p>Write it down on a paper and keep in a safe and secret place.
+As an additional security measure you can create an arbitrary mnemonic password.
+In some sense it can serve like an additional non-vocabulary word in the mnemonic.
+Mnemonic password is optional and is used for additional security.
+If you decide to use mnemonic password you should also write it down and keep in a secret and
+probably different from mnemonic place.</p>
 
-<p>Follow the steps of setting up a node as described in <a href="https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node">the tutorial</a>.</p>
+<p><strong>Important, both mnemonic phrase and mnemonic password are required to restore secret keys,
+if you lose any of them then you will not be able to regenerate you master key again.</strong></p>
 
-<p>Edit the config file of the node and add the following line.</p>
+<p>Next let&rsquo;s use the generated mnemonic to create a storage with a master secret key.</p>
 
-<p><code>ergo.node.mining = true</code></p>
+<h2 id="create-a-new-encrypted-storage">Create a New Encrypted Storage</h2>
 
-<p>Ensure that the wallet is initialized and you are in possession of the correct mnemonic sentence.</p>
+<p>For better security neither mnemonic phrase nor password is required by ErgoTool to
+perform the transaction signing. Instead, the secret key from the encrypted storage is
+required to sign spending transaction. We can generate a secret key and store it in an
+encrypted storage using <code>createStorage</code> command.</p>
 
-<p>Finally, ensure that the node is synced as described <a href="https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node#check-if-the-node-is-synced">here</a>.</p>
+<pre><code class="language-bash">$ ./ergo-tool.sh help createStorage
 
-<h2 id="configure-and-run-the-miner">Configure and run the miner</h2>
+Command Name:	createStorage
+Usage Syntax:	ergo-tool createStorage [&lt;storageDir&gt;=&quot;storage&quot;] [&lt;storageFileName&gt;=&quot;secret.json&quot;]
+Description:	Creates an encrypted storage file for the mnemonic entered by the user
+Doc page:       https://aslesarenko.github.io/ergo-tool/api/org/ergoplatform/appkit/ergotool/CreateStorageCmd.html
 
-<p>On the computer where the miner will be running, create a file called <code>config.json</code> with the following content</p>
+$ ./ergo-tool.sh createStorage 
+Enter mnemonic phrase&gt; bird harbor wheat innocent business disease busy quick yellow trust time oil enter situate moon
+Mnemonic password&gt; 
+Repeat mnemonic password&gt; 
+Storage password&gt; 
+Repeat storage password&gt; 
+Storage File: storage/secret.json
+</code></pre>
 
-<pre><code class="language-json">{
-    &quot;seed&quot;: &quot;Attention!!! Replace this with your mnemonic sentence and keep it secret or you will get robbed&quot;, 
-    &quot;node&quot;: &quot;http://192.168.1.100:9053&quot;,
-    &quot;keepPrehash&quot;: false
+<p>A master secret key is generated from the (mnemonic phrase, mnemonic password) pair and
+saved encrypted in the <code>storage/secret.json</code> file. Mnemonic itself is not stored in the
+file and there is no way to restore it from the file, even if you know the passwords.</p>
+
+<p>Please take care to enter correct mnemonic password, the one you chose and saved before.
+Since a mnemonic password is optional you can leave it empty by pressing enter.</p>
+
+<p>If you forget the storage password (aka encryption password), you will not be able to use
+that storage file anymore, however, you can always restore your secret keys from (mnemonic
+phrase, mnemonic password) pair and thus create a new storage file with a new password.</p>
+
+<p>Keep your storage file and storage password in secret, anyone who obtain both your storage
+file and storage password will be able to decipher it and access secret keys.</p>
+
+<h2 id="extracting-data-from-storage">Extracting Data From Storage</h2>
+
+<p>Secret storage contains master secret key and as a result can be used to compute both the
+public key and the pay-to-public-key address which correspond to that secret key. The
+<code>extractStorage</code> command is doing just that.</p>
+
+<pre><code class="language-bash">$ ./ergo-tool.sh help extractStorage
+
+Command Name:	extractStorage
+Usage Syntax:	ergo-tool extractStorage &lt;storage file&gt; address|masterKey|publicKey|secretKey mainnet|testnet
+Description:	Reads the file, unlocks it using password and extract the requested property from the given storage file.
+Doc page:	https://aslesarenko.github.io/ergo-tool/api/org/ergoplatform/appkit/ergotool/ExtractStorageCmd.html 
+
+$ ./ergo-tool.sh extractStorage storage/secret.json address mainnet     
+Storage password&gt; 
+9iHiSAg3ko2ZGxR2vhc1Aem3tShqfzEPDAF7XK5cdtbZ3Ut2CCf
+</code></pre>
+
+<p>Here the command transforms the secret key to the corresponding public key and then creates
+the pay-to-public-key address on the mainnet.</p>
+
+<p>The same way we can obtain public key, private key and other data from the storage.</p>
+
+<pre><code class="language-bash">$ ./ergo-tool.sh extractStorage storage/secret.json secretKey mainnet
+Storage password&gt; 
+55dfde63c9b6b4f47683592e85ee997ba2e93507f38ba3f9c82933bcfbc677ca
+
+$ ./ergo-tool.sh extractStorage storage/secret.json publicKey mainnet
+Storage password&gt; 
+03f07aecb145a85920bf6e9be80efe5f1cd1a165b45ad3aa8e5c4ca3ba50856bb8
+</code></pre>
+
+<h2 id="listing-unspent-boxes">Listing Unspent Boxes</h2>
+
+<p>ErgoTool has the special command to list all available (aka unspent) boxes for a given address.</p>
+
+<pre><code class="language-bash">$ ./ergo-tool.sh listAddressBoxes 9f4QF8AD1nQ3nJahQVkMj8hFSVVzVom77b52JU7EW71Zexg6N8v                                                                
+BoxId                                                             NanoERGs          
+4840cb6facc20b765085db0ad24768ed0c5e7afd413e8e58e597c33a993f8119  4987000000
+</code></pre>
+
+<p>if we specify <code>--print-json</code> option, then ErgoTool will output all the boxes in json format</p>
+
+<pre><code class="language-bash">$ ./ergo-tool.sh listAddressBoxes --print-json 9f4QF8AD1nQ3nJahQVkMj8hFSVVzVom77b52JU7EW71Zexg6N8v
+[{&quot;boxId&quot;:&quot;4840cb6facc20b765085db0ad24768ed0c5e7afd413e8e58e597c33a993f8119&quot;,&quot;value&quot;:4987000000,&quot;ergoTree&quot;:&quot;0008cd02472963123ce32c057907c7a7268bc09f45d9ca57819d3327b9e7497d7b1cc347&quot;,&quot;creationHeight&quot;:125646,&quot;assets&quot;:[],&quot;additionalRegisters&quot;:{},&quot;transactionId&quot;:&quot;820c688f4b9d709924ba0186ee930a7df374d8852920bc769fc1f1d0b313e5ab&quot;,&quot;index&quot;:2}]
+</code></pre>
+
+<h2 id="transfer-coins">Transfer Coins</h2>
+
+<p>Now, with secret key stored securely in the encrypted storage file, we can use ErgoTool to
+transfer coins from our address to some other recipient address. The command to do that is
+<code>send</code>.</p>
+
+<pre><code class="language-bash">./ergo-tool.sh help send                                     
+
+Command Name:	send
+Usage Syntax:	ergo-tool send &lt;storageFile&gt; &lt;recipientAddr&gt; &lt;amountToSend&gt;
+Description:	send the given &lt;amountToSend&gt; to the given &lt;recipientAddr&gt; using 
+ the given &lt;storageFile&gt; to sign transaction (requests storage password)
+Doc page:	https://aslesarenko.github.io/ergo-tool/api/org/ergoplatform/appkit/ergotool/SendCmd.html
+</code></pre>
+
+<p>The storage file is necessary in order to access secret key and generate a signature. The
+storage password will be requested by ErgoTool to unlock and decipher the file content.
+The command <code>send</code> supports the <code>--dry-run</code> option which forces ErgoTool to create the
+signed transaction, but instead of sending it to the blockchain, ErgoTool prints the
+transaction on the console.</p>
+
+<pre><code class="language-bash">$ ./ergo-tool.sh send --dry-run storage/E1.json 9hHDQb26AjnJUXxcqriqY1mnhpLuUeC81C4pggtK7tupr92Ea1K 5000000
+Storage password&gt;
+Creating prover... Ok
+Loading unspent boxes from at address 9f4QF8AD1nQ3nJahQVkMj8hFSVVzVom77b52JU7EW71Zexg6N8v... Ok
+Signing the transaction... Ok
+Tx: {
+  &quot;id&quot;: &quot;2633733a1d81b8fc747d984bdc36fac42cb52118b5057375b081b4c543c62b0e&quot;,
+  &quot;inputs&quot;: [
+    {
+      &quot;boxId&quot;: &quot;4840cb6facc20b765085db0ad24768ed0c5e7afd413e8e58e597c33a993f8119&quot;,
+      &quot;spendingProof&quot;: {
+        &quot;proofBytes&quot;: &quot;060e7c99c9c9cecf89ec5c3e7b692075e0b3415318f8064c64f7f01401ac29c6637b44535151e51d43d4cd25e05ad459dbe33718a99a22dd&quot;,
+        &quot;extension&quot;: {}
+      }
+    }
+  ],
+  &quot;dataInputs&quot;: [],
+  &quot;outputs&quot;: [
+    {
+      &quot;boxId&quot;: &quot;4eaed414ae763158126859bbf912fa9ffb9ea67ac13d81d473b1c81ec65b06fd&quot;,
+      &quot;value&quot;: 5000000,
+      &quot;ergoTree&quot;: &quot;ErgoTree(0,WrappedArray(),Right(ConstantNode(SigmaProp(ProveDlog(ECPoint(6ba5cf,8ae5ac,...))),SSigmaProp)),80,[B@1117fff48)&quot;,
+      &quot;creationHeight&quot;: 130508,
+      &quot;assets&quot;: [],
+      &quot;additionalRegisters&quot;: {},
+      &quot;transactionId&quot;: &quot;2633733a1d81b8fc747d984bdc36fac42cb52118b5057375b081b4c543c62b0e&quot;,
+      &quot;index&quot;: 0
+    },
+    {
+      &quot;boxId&quot;: &quot;059b426fe2aaef10b6a9a618f0c5b4e97d4dd9931328bf4f52bcf92b0943a42c&quot;,
+      &quot;value&quot;: 1000000,
+      &quot;ergoTree&quot;: &quot;ErgoTree(16,WrappedArray(IntConstant(0), IntConstant(0), ConstantNode(Coll(16,2,4,-96,11,8,-51,2,121,-66,102,126,-7,-36,-69,-84,85,-96,98,-107,-50,-121,11,7,2,-101,-4,-37,45,-50,40,-39,89,-14,-127,91,22,-8,23,-104,-22,2,-47,-110,-93,-102,-116,-57,-89,1,115,0,115,1),Coll[SByte$]), ConstantNode(Coll(1),Coll[SInt$]), IntConstant(1)),Right(BoolToSigmaProp(AND(ConcreteCollection(WrappedArray(EQ(Height$(163),SelectField(ExtractCreationInfo(ByIndex(Outputs$(165),ConstantPlaceholder(0,SInt$),None)),1)), EQ(ExtractScriptBytes(ByIndex(Outputs$(165),ConstantPlaceholder(1,SInt$),None)),SubstConstants(ConstantPlaceholder(2,Coll[SByte$]),ConstantPlaceholder(3,Coll[SInt$]),ConcreteCollection(WrappedArray(CreateProveDlog(DecodePoint(MinerPubkey$(172)))),SSigmaProp))), EQ(SizeOf(Outputs$(165)),ConstantPlaceholder(4,SInt$))),SBoolean)))),4836,[B@111805c40)&quot;,
+      &quot;creationHeight&quot;: 130508,
+      &quot;assets&quot;: [],
+      &quot;additionalRegisters&quot;: {},
+      &quot;transactionId&quot;: &quot;2633733a1d81b8fc747d984bdc36fac42cb52118b5057375b081b4c543c62b0e&quot;,
+      &quot;index&quot;: 1
+    },
+    {
+      &quot;boxId&quot;: &quot;0638ddb0fe6a8cc6ca4f981f71777f4a6e8aad72d57fdf945b24e0ef4ca714e1&quot;,
+      &quot;value&quot;: 4981000000,
+      &quot;ergoTree&quot;: &quot;ErgoTree(0,WrappedArray(),Right(ConstantNode(SigmaProp(ProveDlog(ECPoint(472963,7c85fd,...))),SSigmaProp)),80,[B@111816258)&quot;,
+      &quot;creationHeight&quot;: 130508,
+      &quot;assets&quot;: [],
+      &quot;additionalRegisters&quot;: {},
+      &quot;transactionId&quot;: &quot;2633733a1d81b8fc747d984bdc36fac42cb52118b5057375b081b4c543c62b0e&quot;,
+      &quot;index&quot;: 2
+    }
+  ]
 }
 </code></pre>
 
-<p>where:</p>
+<p>Note the &ldquo;ergoTree&rdquo; scripts are deserialized and printed as abstract syntax trees. This
+printing format can be regulated by additional options so that the scripts can be printed as
+human readable ErgoScript. (Not yet implemented, but somewhere on the roadmap.)</p>
+
+<p>If we exclude <code>--dry-run</code> option, the transaction will be sent and included in the
+blockchain.</p>
+
+<pre><code class="language-bash">$ ./ergo-tool.sh send storage/E1.json 9hHDQb26AjnJUXxcqriqY1mnhpLuUeC81C4pggtK7tupr92Ea1K 5000000          
+Storage password&gt;
+Creating prover... Ok
+Loading unspent boxes from at address 9f4QF8AD1nQ3nJahQVkMj8hFSVVzVom77b52JU7EW71Zexg6N8v... Ok
+Signing the transaction... Ok
+Sendng the transaction... Ok
+Server returned tx id: &quot;c5710af17f5124a232a5ef731fdf94a493025334c2a7d5a79e9923210972b962&quot;
+</code></pre>
+
+<p>The newly created transaction will be broadcast all over the blockchain and miners start
+to include it in a new block. Once the new block with our transaction is mined and
+accepted by the network our transfer is confirmed and we can <a href="https://explorer.ergoplatform.com/en/transactions/c5710af17f5124a232a5ef731fdf94a493025334c2a7d5a79e9923210972b962">see it in Explorer</a>.</p>
+
+<p>We can also list boxes of the recipient address and see the coin we created among others
+(until it is spent by the recipient)</p>
+
+<pre><code class="language-bash">$ ./ergo-tool.sh listAddressBoxes 9hHDQb26AjnJUXxcqriqY1mnhpLuUeC81C4pggtK7tupr92Ea1K                      
+BoxId                                                             NanoERGs          
+252c5ce38fc367001ea48fa6813e6252ebc169288d9b5392c572edb55380b3cd  5000000
+6df9dbf08b4859b7e280afbd0822dcf20dba5bf8e3e33b78fe278df6597276f1  2000000
+d47f958b201dc7162f641f7eb055e9fa7a9cb65cc24d4447a10f86675fc58328  1000000
+e050a3af38241ce444c34eb25c0ab880674fc23a0e63632633ae14f547141c37  1000000
+b50ed8c2953fd33b52af816c4caa63ec5b6d236a262a5a192534695c3478da78  1000000
+26d6e08027e005270b38e5c5f4a73ffdb6d65a3289efb51ac37f98ad395d887c  10000000000
+</code></pre>
+
+<h2 id="security-notes">Security Notes</h2>
+
+<p>ErgoTool is created with security in mind and tries its best to safeguard the usage of
+sensitive information like mnemonic phrases (which are never stored persistently),
+passwords (which are never shown on the screen) etc. In addition, secret keys are never
+stored on local disk unencrypted and surely never sent anywhere.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>ErgoTool is designed to look and feel like a typical CLI utility:</p>
 
 <ul>
-<li><strong>seed</strong> is the mnemonic sentence from your node&rsquo;s wallet obtained in the previous step.</li>
-<li><strong>node</strong> is the URL of your node.</li>
-<li><strong>keepPrehash</strong> is an optimization parameter. If set to <code>true</code>, the miner will consume at most 8GB of memory. If set to <code>false</code> the miner will consume at most 4GB of memory, but its performance will be for about 25% lower.</li>
+<li>which is easy to use and fast to run from command line</li>
+<li>can be scriptable via shell scripts</li>
+<li>has built-in usage help</li>
 </ul>
 
-<p>Run your miner using the command <code>./auto.out config.json</code> (for Linux) or <code>miner.exe config.json</code> (for Windows) and enjoy receiving block rewards!</p>
+<p>At the same time ErgoTool is designed to be easily extensible:</p>
 
-<p>Once you have received any mining rewards, you can view the balance as described <a href="https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node#check-wallet-balance">here</a> and then withdraw the funds as described <a href="https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node#sending-funds">here</a>.</p>
+<ul>
+<li>implemented in high-level language Scala</li>
+<li>reuses the core libraries which are used in Ergo network client</li>
+<li>open-sourced and fully documented</li>
+</ul>
+
+<p>This last point is especially important as many new commands can be easily added to
+ErgoTool, thanks to its architecture. If you need a specific feature or a command
+please file an issue or maybe even a PR.</p>
+
+<p>The extensibility of ErgoTool is a subject of the next planned blog post, stay tuned!</p>
+
+<h2 id="references">References</h2>
+
+<ol>
+<li><a href="https://ergoplatform.org/en/">Ergo Site</a></li>
+<li><a href="https://github.com/ergoplatform/ergo">Ergo Sources</a></li>
+<li><a href="https://github.com/aslesarenko/ergo-appkit">Ergo Appkit</a></li>
+<li><a href="https://github.com/aslesarenko/ergo-tool">Ergo Tool</a></li>
+</ol>
 
           </div>
         </div>
@@ -217,7 +441,7 @@ Ergo mining is based on Autolykos, a Proof-of-Work algorithm designed to be ASIC
   <p class="eg-text__paragraph eg-text__paragraph--26">Share post</p>
   <ul class="eg-social">
     <li class="eg-share_item">
-      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_12_22_mining_for_fun%2f" target="_blank">
+      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_12_31_ergo_tool%2f" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path d="M17 14.0001H25V28.4H17V14.0001Z" fill="white"/>
@@ -228,7 +452,7 @@ Ergo mining is based on Autolykos, a Proof-of-Work algorithm designed to be ASIC
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_12_22_mining_for_fun%2f&amp;hashtags=ergoplatform" target="_blank">
+      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_12_31_ergo_tool%2f&amp;hashtags=ergoplatform" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path class="st0" fill-rule="evenodd" clip-rule="evenodd" d="M29 16.4204C28.4478 16.6615 27.855 16.8241 27.2323 16.8975C27.868 16.5225 28.3558 15.9287 28.5857 15.2214C27.9909 15.5684 27.3322 15.8208 26.6315 15.9565C26.0699 15.3677 25.2701 15 24.3851 15C22.6855 15 21.3076 16.3562 21.3076 18.0291C21.3076 18.2666 21.3347 18.4978 21.3873 18.7195C18.8298 18.5933 16.5616 17.3871 15.0441 15.5542C14.7792 16.0018 14.6274 16.5222 14.6274 17.0774C14.6274 18.1283 15.1706 19.0554 15.9963 19.5989C15.4921 19.5831 15.0174 19.4469 14.6024 19.22C14.6021 19.2325 14.6021 19.2452 14.6021 19.2581C14.6021 20.7258 15.6632 21.9504 17.0707 22.2285C16.8128 22.2979 16.5409 22.335 16.2599 22.335C16.0619 22.335 15.8693 22.3158 15.6812 22.2805C16.0728 23.4839 17.2097 24.36 18.5559 24.3843C17.5025 25.197 16.176 25.6812 14.734 25.6812C14.4857 25.6812 14.2408 25.6667 14 25.6384C15.3617 26.4982 16.979 27 18.7175 27C24.3777 27 27.4734 22.3837 27.4734 18.3804C27.4734 18.2494 27.4705 18.1184 27.4645 17.9883C28.0658 17.5614 28.5873 17.0281 29 16.4204Z" fill="#FF4221"/>
@@ -236,7 +460,7 @@ Ergo mining is based on Autolykos, a Proof-of-Work algorithm designed to be ASIC
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link copy-link" href="https://ergoplatform.org/en/blog/2019_12_22_mining_for_fun/" target="_blank">
+      <a class="eg-share__link copy-link" href="https://ergoplatform.org/en/blog/2019_12_31_ergo_tool/" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M39.91 19.3528L34.2335 6.06338C34.1186 5.78985 33.898 5.57515 33.6227 5.46487L20.2117 0.0807171C19.9364 -0.0292029 19.6283 -0.027376 19.3547 0.089384L6.0641 5.76578C5.79022 5.8811 5.57549 6.10129 5.46522 6.37698L0.0816753 19.7881C-0.0303977 20.0656 -0.0267767 20.3716 0.0903423 20.6455L5.76643 33.9366C5.88175 34.2101 6.10231 34.4249 6.37727 34.5352L19.7883 39.919C19.9209 39.9727 20.0639 40 20.2048 40C20.3544 40 20.5043 39.971 20.647 39.909L33.9359 34.2324C34.2097 34.1171 34.4245 33.8966 34.5348 33.6216L39.9183 20.2102C40.0304 19.9327 40.0267 19.6267 39.91 19.3528Z" stroke="#FF4221"/>
@@ -275,20 +499,21 @@ Ergo mining is based on Autolykos, a Proof-of-Work algorithm designed to be ASIC
             
             
               
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_12_31_ergo_tool/">
-                  <div class="eg-blog__item-img"><img src="/img/blog/ergo_tool.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>Make Your Own Ergo Wallet: Managing Ergo Coins …</span></h3>
-                  <p class="eg-blog__item-paragraph">Introduction ErgoTool is a command line interface (CLI) for Ergo blockchain. You can use ErgoTool without running your own Ergo node. Even though running a …</p>
+            
+              
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_12_22_mining_for_fun/">
+                  <div class="eg-blog__item-img"><img src="/img/blog/mining_for_fun.jpg" height="188" width="335" alt="blog photo"></div>
+                  <h3 class="eg-blog__item-title"><span>Mining Ergo for Fun and Profit</span></h3>
+                  <p class="eg-blog__item-paragraph">Ergo GPU Mining This article will help you start mining Ergo using a GPU.
+Ergo mining is based on Autolykos, a Proof-of-Work algorithm designed to be ASIC …</p>
                   <div class="eg-author">
-                    <img src="/img/authors/alexander_slesarenko.jpg" alt="author img" class="eg-author__img" width="60" height="60">
+                    <img src="/img/logotype_black_circle.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
-                      <h4 class="eg-author__info-title">Alexander Slesarenko</h4>
-                      <p class="eg-author__info-paragraph">31 December, 2019</p>
+                      <h4 class="eg-author__info-title">Ergo team</h4>
+                      <p class="eg-author__info-paragraph">28 December, 2019</p>
                     </div>
                   </div>
                 </a>
-              
-            
               
             
               
