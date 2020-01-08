@@ -2,6 +2,15 @@
   background: $black;
   flex: 0 0 auto;
 
+  .eg-footer__item:last-child {
+    display: flex;
+    align-items: flex-end;
+
+    @media (max-width: $sm) {
+      display: block;
+    }
+  }
+
   .eg-footer__container {
     display: grid;
     grid-template-columns: 6fr 6fr;
@@ -193,12 +202,6 @@
   }
 
   .eg-footer__social {
-    margin-top: 60px;
-
-    @media (max-width: $sm) {
-      margin-top: 2rem;
-    }
-
     &-label {
       font-size: 16px;
       line-height: 22px;
