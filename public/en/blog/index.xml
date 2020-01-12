@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Security Audit (by Jean Philippe Aumasson)</title>
+      <link>https://ergoplatform.org/en/blog/2020_01_12_security_audit/</link>
+      <pubDate>Sun, 12 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2020_01_12_security_audit/</guid>
+      <description>We would like to announce that Ergo has successfully passed security audit of certain (most critical) parts of the code. This time the audit was done by Jean-Philipee Aumasson (aka veorq, https://aumasson.jp/ ).
+The detailed report is below. Nothing critical is found. Comments on issues found:
+ On wallet password, we&amp;rsquo;ll provide a recommendation in next versions of the protocol client. Not sure hard enforcement on password will take place, but we&amp;rsquo;ll do more consultations on this.</description>
+    </item>
+    
+    <item>
       <title>Make Your Own Ergo Wallet: Managing Ergo Coins with ErgoTool</title>
       <link>https://ergoplatform.org/en/blog/2019_12_31_ergo_tool/</link>
       <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>

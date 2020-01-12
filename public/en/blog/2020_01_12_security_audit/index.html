@@ -11,12 +11,13 @@
     <link rel="preload" href="/fonts/LabGrotesque-Regular-hint-all.woff" as="font" type="font/woff" crossorigin>
 
     
-      <meta name="description" content="First, we have a major announcement - Ergo mainnet launch is planned for May 26 if no security vulnerabilities will be found during audit process!
-What are the vision about scaling and adoption? About scaling, the main approach is to avoid bloat without compromising functionality. E.g. persistent updateable storage is possible, with updates to be checked by a blockchain contract, but only digest of authenticated data structure (and some additional bytes, less than 40 bytes anyway) are stored in the UTXO set dependless on data set size.">
+      <meta name="description" content="We would like to announce that Ergo has successfully passed security audit of certain (most critical) parts of the code. This time the audit was done by Jean-Philipee Aumasson (aka veorq, https://aumasson.jp/ ).
+The detailed report is below. Nothing critical is found. Comments on issues found:
+ On wallet password, we&amp;rsquo;ll provide a recommendation in next versions of the protocol client. Not sure hard enforcement on password will take place, but we&amp;rsquo;ll do more consultations on this.">
     
 
     
-    <title>Q&amp;A with Alex Chepurnoy and Dmitry Meshkov | Ergo</title>
+    <title>Security Audit (by Jean Philippe Aumasson) | Ergo</title>
 
     
     
@@ -115,12 +116,6 @@ What are the vision about scaling and adoption? About scaling, the main approach
             </li>
             
               
-                <li class="dd-language__item dd-language__item_hidden">
-                  <a class="dd-language__link dd-language__link--white eg-link" href="https://ergoplatform.org/cn/blog/2019_03_19-qa/"><span>中文</span></a>
-                </li>
-              
-            
-              
             
           </ul>
         </div>
@@ -138,86 +133,142 @@ What are the vision about scaling and adoption? About scaling, the main approach
         <a href="https://ergoplatform.org/en/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>Back to all posts</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
-        <h1 class="eg-title eg-mb-1">Q&amp;A with Alex Chepurnoy and Dmitry Meshkov</h1>
+        <h1 class="eg-title eg-mb-1">Security Audit (by Jean Philippe Aumasson)</h1>
         <div class="eg-author">
-          <img src="/img/authors/dmitry_meshkov.svg" alt="author img" class="eg-author__img">
+          <img src="/img/logotype_black_circle.svg" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
-            <h4 class="eg-author__info-title">Dmitry Meshkov</h4>
-            <p class="eg-author__info-paragraph">19 March, 2019</p>
+            <h4 class="eg-author__info-title">Ergo team</h4>
+            <p class="eg-author__info-paragraph">12 January, 2020</p>
           </div>
         </div>
         <div class="eg-blog__single-img">
-          <img src="/img/blog/question_opt.jpg" alt="blog photo">
+          <img src="/img/blog/security.jpg" alt="blog photo">
         </div>
         <div class="eg-blog__single-content">
           <div>
             
 
-<p>First, we have a major announcement - Ergo mainnet launch is planned for May 26 if no security vulnerabilities will be found during audit process!</p>
+<p>We would like to announce that Ergo has successfully passed security audit of certain (most critical) parts of the code. This time the audit was done by Jean-Philipee Aumasson (aka veorq, <a href="https://aumasson.jp/">https://aumasson.jp/</a> ).</p>
 
-<h2 id="what-are-the-vision-about-scaling-and-adoption">What are the vision about scaling and adoption?</h2>
+<p>The detailed report is below. Nothing critical is found. Comments on issues found:</p>
 
-<p>About scaling, the main approach is to avoid bloat without compromising functionality. E.g. persistent updateable storage is possible, with updates to be checked by a blockchain contract, but only digest of authenticated data structure (and some additional bytes, less than 40 bytes anyway) are stored in the UTXO set dependless on data set size. Storage rent is helping to remove dust from the UTXO set. Then light clients: in Ergo you can have full-node guarantees without storing UTXO set, if you do not mine. That&rsquo;s about much improved boostrapping and block validation times. With such improvements, it is possible to raise TPS without compromising classic blockchain assumptions and guarantees. Ok, but do you want concrete numbers? I don&rsquo;t have them, as parameters like block size etc are not set in stone, rather, miners can adjust them. So if a miner is experiencing low full block validation time (as hardware is getting better with time, as well as software), he may propose or vote to increase block size.</p>
+<ol>
+<li><p>On wallet password, we&rsquo;ll provide a recommendation in next versions of the protocol client. Not sure hard enforcement on password will take place, but we&rsquo;ll do more consultations on this.</p></li>
 
-<p>On adoption, we expect following people to come: 1. People valuing social contract among the system and its users. E.g. people dissatisfied with Ethereum forking. Ergo will not have hard-forks to update functionality, while it will be possible for community to upgrade the protocol in many aspects. 2. Because of (1) at least, and also limited supply, Ergo would be good as store-of-value asset (demurrage cost is small if you just store a coin in the system). 3. People who need for safe, simple, and and efficient financial applications. Ergo&rsquo;s Smart Money concept is much simpler that Ethereum&rsquo;s Smart Contracts, while powerful enough for most financial applications of the people not having very specific skills to develop Solidity contracts, or bunch of money to hire proficient devs. 4. Not ready to predict anything about big companies, but some businesses already expressing interest to do some tokens and contracts on top of Ergo. To early to announce anything though.</p>
+<li><p>Changing &ldquo;n&rdquo; and &ldquo;k&rdquo; parameters makes sense when launching new network only. Changing this parameters in mining node will make blocks produced invalid for other nodes. Changing this parameters in protocol client means going on another fork (blocks coming from the honest protocol participants will be rejected). So no need for extra checks maybe, as people launching new networks will set &ldquo;n&rdquo; and &ldquo;k&rdquo; properly.</p></li>
 
-<h2 id="is-there-an-example-or-usecase">Is there an example or usecase?</h2>
+<li><p>Currently the Ergo node (as well as other blockchain protocol clients and wallets we&rsquo;re aware of, as well as cryptographic libraries we&rsquo;re using) do not provide protection from side-channel attacks running locally (e.g. timing attacks or memory inspection by malware or viruses). So please protect machines you&rsquo;re running wallets on!</p></li>
+</ol>
 
-<p>We have many examples, contracts: oracles, crowdfunding, atomic cross-chains and single-chain (token-to-token) swaps, mixing, etc. Basic things are covered in the <a href="https://docs.ergoplatform.com/ErgoScript.pdf">ErgoScript tutorial for developers</a>.<br />
-A document with more complex examples (cold wallets, mixing, Rock-Paper-Scissors game) will be published soon. Further, we&rsquo;ll show examples of ICO scenarios and a <a href="https://en.wikipedia.org/wiki/Local_exchange_trading_system">LETS system</a>.<br />
-Please also take a look at the targeted microcredit contract example from <a href="http://chepurnoy.org/blog/2018/10/smart-contracts-for-the-people/">&ldquo;Smart contracts for the people&rdquo;</a> blogpost.</p>
+<p>==========================================================================================================</p>
 
-<h2 id="do-you-have-intentions-to-build-a-native-off-chain-solution-like-lightning-network-and-what-is-your-vision-on-community-driven-approaches">Do you have intentions to build a native off-chain solution like lightning network? And what is your vision on community-driven approaches?</h2>
+<p>% Ergo security assessment % Jean-Philippe Aumasson % 07/Dec/19</p>
 
-<p>Yes, we hope that they will occur at some point. Our goal now is to provide as flexible protocol as possible to make their implementation easy. Suprisely, we already have community members that are working on sidechain implementation on top of Ergo, but this work is in the early stage. We support any activity from our community, including sidechains)</p>
+<h2 id="summary">Summary</h2>
 
-<h2 id="what-blockchain-project-is-similar-to-ergo">What blockchain project is similar to ERGO?</h2>
+<p>We were solicited by Ergo to perform a security assessment of several components of their Ergo Platform:</p>
 
-<p>In some aspects, Bitcoin (soft-forkability, but we&rsquo;re going much further), Coda (if it&rsquo;s the real thing, I need to check still; light client), Grin (FlyClient is similar to PoPoWs), ZCash (Equihash is similar to our PoW, but our params are stricter and our PoW is pool-resistant). Can not name anything like our language! So, in general, the Ergo is very unique.</p>
+<ul>
+<li>Sigma protocol proofs creation and verification</li>
+<li>Wallet&rsquo;s secure storage of secrets</li>
+<li>Proof-of-Work validation</li>
+</ul>
 
-<h2 id="what-is-ergodata-and-what-are-its-practical-use-cases-and-how-long-after-mainnet-is-it-going-to-be-implemented">What is ErgoData and what are its practical use cases? And how long after Mainnet is it going to be implemented?</h2>
+<p>​This brief report summarizes our assessment and describes our findings and mitigation recommendations.</p>
 
-<p>ErgoData was planned to be a blockchain with the same technology under the hood, but different parameters to address needs of data-oriented applications. Now we&rsquo;re totally focused to launching the single chain and applications on top of it. I think ErgoData could come 2 or 3 years after, if there will be demand for such applications, and also based on applications limitations(especially, data-intensive) on top of Ergo may have. Supposedly, it will be a sidechain. Now there&rsquo;s good progress in this area, so supposedly by then we may have unconditionally good sidechains.</p>
+<h2 id="sigma-protocol-proofs">Sigma protocol proofs</h2>
 
-<h2 id="when-can-we-start-mining-and-can-we-mine-with-cpu">When can we start mining? and can we mine with cpu?</h2>
+<p>​The Ergo protocol relies on ErgoScript, a scripting language supporting sigma-statements, which can be proven and verified through non-interactive proofs of knowledge.</p>
 
-<p>For sure you can start mining with CPU right now. Just set up a full node (<a href="http://chepurnoy.org/blog/2019/01/how-to-set-up-and-configure-full-ergo-node/">check this guide</a>) with mining = true config settings, and your node will start mining after the initial synchronization. Example config may be found <a href="https://github.com/ergoplatform/ergo/blob/master/src/main/resources/nodeTestnet/application.conf">here</a></p>
+<p>These proofs are statements described as a tree of AND, OR, and threshold conditions, whose leaves are proofs of knowledge of a discrete-logarithm problem.</p>
 
-<h2 id="but-we-are-not-on-mainnet-yet-so-we-can-only-mine-testnet-coins">But we are not on mainnet yet? So we can only mine testnet coins?</h2>
+<p>The proof of the sigma-statement is then made non-interactive thanks to the Fiat-Shamir transform.</p>
 
-<p>Yes, you can only mine testnet coins now. GPU miner will be definitely available before mainnet(probably this or next week).</p>
+<p>This logic is specified in the <a href="https://docs.ergoplatform.com/ErgoScript.pdf">ErgoScript paper</a>, and the specific
+proving and verification routines described in its Appendix A.</p>
 
-<h2 id="will-there-be-a-manual-on-how-to-setup-a-wallet">Will there be a manual on how to setup a wallet?</h2>
+<p>​Implementation challenges are then to:</p>
 
-<p>Wallet is one more thing that should be updated before mainnet launch, we take advice about it&rsquo;s secure setup and so on. For now you can only set up seed phrase as a plain text in your config file section 2 in <a href="http://chepurnoy.org/blog/2019/01/how-to-set-up-and-configure-full-ergo-node/">set up post</a></p>
+<ul>
+<li><p>Define encoding of the proofs that are safe and efficient, and implement serialization and deserialization that always succeeds in processing valid input, and that always gracefully fails to process invalid input.</p></li>
 
-<h2 id="what-are-the-minimum-requirements-to-run-a-node">What are the minimum requirements to run a node?</h2>
+<li><p>Implement the proving and verification functionalities correctly, in compliance with the specification, and most importantly such that no invalid statement can successfully pass verification.</p></li>
+</ul>
 
-<p>It all depends on your node regime. We haven&rsquo;t measured it precisely, we turn our full nodes on droplets with 4 Gb memory, 2 CPU, 80 Gb SSD drive, but it is like recommended config, not a minimum one.</p>
+<p>We reviewed these two aspects, based on the code in the repository <a href="https://github.com/ScorexFoundation/sigmastate-interpreter">sigmastate-interpreter</a>, and on the <a href="https://docs.ergoplatform.com/ErgoScript.pdf">ErgoScript paper</a>, carefully comparing the intended behavior (in Appendix A) with the actual behavior as implemented.</p>
 
-<h2 id="are-you-planning-any-cooperation-with-other-platforms-waves-for-example-what-kind-of">Are you planning any cooperation with other platforms (Waves for example)? What kind of?</h2>
+<p>​We notably reviewed code from the <a href="https://github.com/ScorexFoundation/sigmastate-interpreter/blob/master/sigmastate/src/main/scala/sigmastate/SigSerializer.scala">SigSerializer</a>, <a href="https://github.com/ScorexFoundation/sigmastate-interpreter/blob/master/sigmastate/src/main/scala/sigmastate/interpreter/Interpreter.scala">Interpreter</a>, and <a href="https://github.com/ScorexFoundation/sigmastate-interpreter/blob/master/sigmastate/src/main/scala/sigmastate/interpreter/ProverInterpreter.scala">ProverInterpreter</a> traits and objects.</p>
 
-<p>We&rsquo;re planning to be listed on Waves DEX (this will significantly simplify EFYT/ERG swap), no other cooperation with platforms is planned.</p>
+<p>​We mainly sought bugs from the following classes:</p>
 
-<h2 id="do-you-have-plans-to-add-an-option-to-generate-erc721-alike-tokens-tokens-that-can-t-be-splitted">Do you have plans to add an option to generate ERC721 alike tokens? Tokens that can&rsquo;t be splitted.</h2>
+<ul>
+<li>​Unsafe processing of malformed input</li>
+<li>Unsafe processing of unusually long or short input</li>
+<li>Behavior when large tree depth or recursion level</li>
+<li>Unsafe use Scala types and structures</li>
+<li>Inappropriate variable types</li>
+<li>Integer overflows</li>
+<li>Race conditions</li>
+<li>Logic bugs</li>
+</ul>
 
-<p>You can issue one token per transaction for free, so it is not a problem to issue a huge amount of tokens (with 1 max supply). There is no standard to unite them into a class of similar tokens (no standard way to check, that token aa&hellip;aa is of the same class of tokens as token <code>aa...bb</code>), but probably such kind of a standard will occur in the future.</p>
+<p>​Despite extensive review, we did not identify any security issue.</p>
 
-<h2 id="is-there-an-option-to-broadcast-a-batch-of-transactions-at-the-same-time-ideally-them-to-be-included-in-same-block">Is there an option to broadcast a batch of transactions at the same time? Ideally them to be included in same block.</h2>
+<p>The protocol&rsquo;s logic and internals are nonetheless relatively complex, and we believe the highest risk is in the parsing and verification of proofs. To exploit such issues, however, an attacker would have to create a semantically correct script that somehow benefits them, yet that passes verification when it does not ought to.</p>
 
-<p>There is no API method to broadcast batch of transactions at the same time, but nothing stops you from broadcasting them one by one with no delays. So the should not be a problem to broadcast as many transactions as you wish simultaneously.Regarding Ideally them to be included in same block - it is possible to write some kind of a contract, that ensures that some batch of transactions were included in a single block (or where none of them was included), however, we haven&rsquo;t tried it yet. In addition this may require a miner with modifier rules of collecting transactions from mempool.</p>
+<p>Regarding software security, Scala eliminates certain classes of bugs, but Scala code may still suffer from bugs due to Scala&rsquo;s specific behavior or to unhandled errors.</p>
 
-<h2 id="is-there-an-option-to-send-transaction-with-0-value-asset">Is there an option to send transaction with 0 value asset?</h2>
+<h2 id="wallet">Wallet</h2>
 
-<p>So the token is in the transaction, but it&rsquo;s amount is 0? No, that&rsquo;s not possible</p>
+<p>Ergo&rsquo;s wallet functionality enables its users to store a secret on disk and recover it, initializing the wallet with a new seed when it&rsquo;s first used.</p>
 
-<h2 id="is-there-an-option-to-send-sponsored-transaction-the-transaction-which-fee-is-paid-by-a-custom-token">Is there an option to send &ldquo;sponsored&rdquo; transaction? The transaction which fee is paid by a custom token.</h2>
+<p>​This logic is mainly defined in <a href="https://github.com/ergoplatform/ergo/blob/master/src/main/scala/org/ergoplatform/nodeView/wallet/ErgoWalletActor.scala">ErgoWalletActor</a>, and a key component regarding secrets&rsquo; storage is <a href="https://github.com/ergoplatform/ergo/blob/master/ergo-wallet/src/main/scala/org/ergoplatform/wallet/secrets/JsonSecretStorage.scala">JsonSecretStorage</a>.</p>
 
-<p>It might be done using the exchange example, so you can create a contract that buys your token for Ergo, and when a sender is going to send a token - he sells required amount of token and makes a transfer of the remaining amount of tokens inside one transaction.</p>
+<p>​The first time a wallet is create, the <code>InitWallet</code> command does the following:</p>
 
-<h2 id="so-there-is-no-way-to-transfer-0-0000001-of-token">So there is no way to transfer 0.0000001 of token?</h2>
+<ul>
+<li><p>Generate <code>settings.walletSettings.seedStrengthBits</code> random bits, as initial entropy. <a href="https://github.com/ergoplatform/ergo/blob/master/src/main/resources/reference.conf">By default</a>, 160 bits are generated.</p></li>
 
-<p>Every output in Ergo should have some amount of Erg in it. Transaction fee may be 0, but you should put some Erg amount to every output created.</p>
+<li><p>Generate a BIP39 from the random bits generated, which can be seen as an encoding of the entropy bits. The standard BIP39 logic is used, with optional password.</p></li>
+
+<li><p>Derive a seed from the mnemonic using BIP39&rsquo;s PBKDF2-based derivation logic.</p></li>
+
+<li><p>Encrypt this seed to disk with AES-GCM, using a random nonce, and a key derive from the password using PBKDF2-HMAC-SHA256 with <a href="https://github.com/ergoplatform/ergo/blob/master/src/test/resources/application.conf#L107">128000</a> iterations, using a random salt.</p></li>
+</ul>
+
+<p>To unlock a wallet already created, a user provides the password and the wallet attempts to decrypt the stored data.</p>
+
+<p>​To restore an existing account from a BIP39 passphrase, a similar process as initialization is performed, except that the wallet will derive the seed from the mnemonic instead of picking random mnemonic.</p>
+
+<p>​The two risks we identified here are:</p>
+
+<ul>
+<li><p>The absence of checks on the password&rsquo;s length: since the password is sufficient to access the seed given the wallet&rsquo;s on-disk stored secret, the password should in theory have at least as much entropy as the mnemonic, and in practice should be practically hard to crack. We thus recommend to enforce a minimal password length, for example of 16 characters.</p></li>
+
+<li><p>Copies of secret values (password, seed, and derive private keys) are likely to remain in memory after wallet software execution, which is an intrinsic limitation garbage-collected languages such as Scala.</p></li>
+</ul>
+
+<p>Another process or user sharing the same memory address space could potentially recover the secrets, and they could also appear in crash dumps. To the best of our knowledge, there is no effective mitigation in pure Scala.</p>
+
+<p>​</p>
+
+<h1 id="pow-validation">PoW validation</h1>
+
+<p>​After previously reviewing the security of the Autolykos PoW, we performed another round of review focusing on its latest verification logic, and notably the changes in the commit <a href="https://github.com/ergoplatform/ergo/commit/eb0f85ac48b0ee8194c12369faf4cc5f16954af9">eb0f85a</a>.</p>
+
+<p>​The main relevant file is <a href="https://github.com/ergoplatform/ergo/blob/master/src/main/scala/org/ergoplatform/mining/AutolykosPowScheme.scala">AutolykosPowScheme</a>,and other important operations are for example implemented in
+<a href="https://github.com/ergoplatform/ergo/blob/master/src/main/scala/org/ergoplatform/nodeView/history/storage/modifierprocessors/HeadersProcessor.scala">HeadersProcessor</a> and <a href="https://github.com/ScorexFoundation/Scorex/blob/master/src/main/scala/scorex/core/validation/ModifierValidator.scala">ModifierValidator</a>.</p>
+
+<p>​We checked that the implemented verification logic is consistent with that specified in the Autolykos specifications, and that it is properly integrated in the block header validation logic.</p>
+
+<p>​We believe the following points should be addressed:</p>
+
+<ul>
+<li><p>Stricter validation of <code>k</code> and <code>n</code>: although the class enforces <code>k&lt;=32</code> (number of elements in the solution) and <code>n&lt;31</code> (log2 of the total number of elements), weak could still be created from the authorized parameters. The <code>validate()</code> function may therefore have additional validation that <code>n</code> and <code>k</code> are equal to the intended
+values.</p></li>
+
+<li><p>Assert that <code>k</code> and <code>n</code> are positive values, since currently negative ones (as <code>Int</code>s) would pass the <code>assert</code> statements.</p></li>
+</ul>
 
           </div>
         </div>
@@ -225,7 +276,7 @@ Please also take a look at the targeted microcredit contract example from <a hre
   <p class="eg-text__paragraph eg-text__paragraph--26">Share post</p>
   <ul class="eg-social">
     <li class="eg-share_item">
-      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_03_19-qa%2f" target="_blank">
+      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2020_01_12_security_audit%2f" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path d="M17 14.0001H25V28.4H17V14.0001Z" fill="white"/>
@@ -236,7 +287,7 @@ Please also take a look at the targeted microcredit contract example from <a hre
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_03_19-qa%2f&amp;hashtags=ergoplatform" target="_blank">
+      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2020_01_12_security_audit%2f&amp;hashtags=ergoplatform" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path class="st0" fill-rule="evenodd" clip-rule="evenodd" d="M29 16.4204C28.4478 16.6615 27.855 16.8241 27.2323 16.8975C27.868 16.5225 28.3558 15.9287 28.5857 15.2214C27.9909 15.5684 27.3322 15.8208 26.6315 15.9565C26.0699 15.3677 25.2701 15 24.3851 15C22.6855 15 21.3076 16.3562 21.3076 18.0291C21.3076 18.2666 21.3347 18.4978 21.3873 18.7195C18.8298 18.5933 16.5616 17.3871 15.0441 15.5542C14.7792 16.0018 14.6274 16.5222 14.6274 17.0774C14.6274 18.1283 15.1706 19.0554 15.9963 19.5989C15.4921 19.5831 15.0174 19.4469 14.6024 19.22C14.6021 19.2325 14.6021 19.2452 14.6021 19.2581C14.6021 20.7258 15.6632 21.9504 17.0707 22.2285C16.8128 22.2979 16.5409 22.335 16.2599 22.335C16.0619 22.335 15.8693 22.3158 15.6812 22.2805C16.0728 23.4839 17.2097 24.36 18.5559 24.3843C17.5025 25.197 16.176 25.6812 14.734 25.6812C14.4857 25.6812 14.2408 25.6667 14 25.6384C15.3617 26.4982 16.979 27 18.7175 27C24.3777 27 27.4734 22.3837 27.4734 18.3804C27.4734 18.2494 27.4705 18.1184 27.4645 17.9883C28.0658 17.5614 28.5873 17.0281 29 16.4204Z" fill="#FF4221"/>
@@ -244,7 +295,7 @@ Please also take a look at the targeted microcredit contract example from <a hre
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link copy-link" href="https://ergoplatform.org/en/blog/2019_03_19-qa/" target="_blank">
+      <a class="eg-share__link copy-link" href="https://ergoplatform.org/en/blog/2020_01_12_security_audit/" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M39.91 19.3528L34.2335 6.06338C34.1186 5.78985 33.898 5.57515 33.6227 5.46487L20.2117 0.0807171C19.9364 -0.0292029 19.6283 -0.027376 19.3547 0.089384L6.0641 5.76578C5.79022 5.8811 5.57549 6.10129 5.46522 6.37698L0.0816753 19.7881C-0.0303977 20.0656 -0.0267767 20.3716 0.0903423 20.6455L5.76643 33.9366C5.88175 34.2101 6.10231 34.4249 6.37727 34.5352L19.7883 39.919C19.9209 39.9727 20.0639 40 20.2048 40C20.3544 40 20.5043 39.971 20.647 39.909L33.9359 34.2324C34.2097 34.1171 34.4245 33.8966 34.5348 33.6216L39.9183 20.2102C40.0304 19.9327 40.0267 19.6267 39.91 19.3528Z" stroke="#FF4221"/>
@@ -282,19 +333,6 @@ Please also take a look at the targeted microcredit contract example from <a hre
             
             
             
-              
-                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2020_01_12_security_audit/">
-                  <div class="eg-blog__item-img"><img src="/img/blog/security.jpg" height="188" width="335" alt="blog photo"></div>
-                  <h3 class="eg-blog__item-title"><span>Security Audit (by Jean Philippe Aumasson)</span></h3>
-                  <p class="eg-blog__item-paragraph">We would like to announce that Ergo has successfully passed security audit of certain (most critical) parts of the code. This time the audit was done by …</p>
-                  <div class="eg-author">
-                    <img src="/img/logotype_black_circle.svg" alt="author img" class="eg-author__img" width="60" height="60">
-                    <div class="eg-author__info">
-                      <h4 class="eg-author__info-title">Ergo team</h4>
-                      <p class="eg-author__info-paragraph">12 January, 2020</p>
-                    </div>
-                  </div>
-                </a>
               
             
               
@@ -575,6 +613,20 @@ Choose …</p>
                 </a>
               
             
+              
+                <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_03_19-qa/">
+                  <div class="eg-blog__item-img"><img src="/img/blog/question_opt.jpg" height="188" width="335" alt="blog photo"></div>
+                  <h3 class="eg-blog__item-title"><span>Q&amp;A with Alex Chepurnoy and Dmitry Meshkov</span></h3>
+                  <p class="eg-blog__item-paragraph">First, we have a major announcement - Ergo mainnet launch is planned for May 26 if no security vulnerabilities will be found during audit process!
+What are …</p>
+                  <div class="eg-author">
+                    <img src="/img/authors/dmitry_meshkov.svg" alt="author img" class="eg-author__img" width="60" height="60">
+                    <div class="eg-author__info">
+                      <h4 class="eg-author__info-title">Dmitry Meshkov</h4>
+                      <p class="eg-author__info-paragraph">19 March, 2019</p>
+                    </div>
+                  </div>
+                </a>
               
             
               
