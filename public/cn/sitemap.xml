@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://ergoplatform.org/cn/</loc>
-    <lastmod>2019-12-12T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -15,6 +15,40 @@
                 rel="alternate"
                 hreflang="cn"
                 href="https://ergoplatform.org/cn/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/cn/news/2020_01_12/</loc>
+    <lastmod>2020-01-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ergoplatform.org/en/news/2020_01_12/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://ergoplatform.org/cn/news/2020_01_12/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/cn/news/2020_01_07/</loc>
+    <lastmod>2020-01-07T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ergoplatform.org/en/news/2020_01_07/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://ergoplatform.org/cn/news/2020_01_07/"
                 />
   </url>
   
