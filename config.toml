@@ -89,7 +89,7 @@ title = "Ergo"
     url = "/about/"
     weight = -110
 
-  [[languages.en.menu.mainmenu]]
+  [[languages.cn.menu.mainmenu]]
     identifier = "Foundation"
     name = "Foundation"
     url = "/foundation/"
