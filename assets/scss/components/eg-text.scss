@@ -59,14 +59,14 @@
 
     &-paragraph {
       font-size: 18px;
-      line-height: 24px;
+      line-height: 28px;
       color: $light-black;
       max-width: 97%;
       margin-bottom: 12px;
 
       @media (max-width: $sm) {
         font-size: 16px;
-        line-height: 22px;
+        line-height: 24px;
       }
     }
   }
@@ -113,12 +113,12 @@
 
     &--18 {
       font-size: 18px;
-      line-height: 24px;
+      line-height: 28px;
       margin-bottom: 1.5rem;
 
       @media (max-width: $md) {
         font-size: 16px;
-        line-height: 22px;
+        line-height: 24px;
       }
 
       @media (max-width: $sm) {

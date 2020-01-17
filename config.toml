@@ -30,40 +30,46 @@ title = "Ergo"
     weight = -110
 
   [[languages.en.menu.mainmenu]]
+    identifier = "Foundation"
+    name = "Foundation"
+    url = "/foundation/"
+    weight = -100
+
+  [[languages.en.menu.mainmenu]]
     identifier = "news"
     name = "News"
     url = "/news/"
-    weight = -100
+    weight = -90
 
   [[languages.en.menu.mainmenu]]
     identifier = "FAQ"
     name = "FAQ"
     url = "/faq/"
-    weight = -90
+    weight = -80
 
   [[languages.en.menu.mainmenu]]
     identifier = "Documents"
     name = "Documents"
     url = "/documents/"
-    weight = -80
+    weight = -70
 
   [[languages.en.menu.mainmenu]]
     identifier = "Tools"
     name = "Tools"
     url = "/tools/"
-    weight = -70
+    weight = -60
 
   [[languages.en.menu.mainmenu]]
     identifier = "Blog"
     name = "Blog"
     url = "/blog/"
-    weight = -60
+    weight = -50
 
   [[languages.en.menu.mainmenu]]
     identifier = "Team"
     name = "Team"
     url = "/team/"
-    weight = -50
+    weight = -40
 
   # [[languages.en.menu.mainmenu]]
   #   identifier = "Careers"
@@ -83,38 +89,44 @@ title = "Ergo"
     url = "/about/"
     weight = -110
 
+  [[languages.en.menu.mainmenu]]
+    identifier = "Foundation"
+    name = "Foundation"
+    url = "/foundation/"
+    weight = -100
+
   [[languages.cn.menu.mainmenu]]
     identifier = "news"
     name = "新闻"
     url = "/news/"
-    weight = -100
+    weight = -90
 
   [[languages.cn.menu.mainmenu]]
     identifier = "FAQ"
     name = "常问问题"
     url = "/faq/"
-    weight = -90
+    weight = -80
 
   [[languages.cn.menu.mainmenu]]
     identifier = "Documents"
     name = "文件"
     url = "/documents/"
-    weight = -80
+    weight = -70
 
   [[languages.cn.menu.mainmenu]]
     identifier = "Tools"
     name = "工具"
     url = "/tools/"
-    weight = -70
+    weight = -60
 
   [[languages.cn.menu.mainmenu]]
     identifier = "Blog"
     name = "博客"
     url = "/blog/"
-    weight = -60
+    weight = -50
 
   [[languages.cn.menu.mainmenu]]
     identifier = "Team"
     name = "团队"
     url = "/team/"
-    weight = -50
+    weight = -40

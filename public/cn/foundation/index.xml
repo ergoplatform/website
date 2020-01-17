@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Foundation on Ergo</title>
+    <link>https://ergoplatform.org/cn/foundation/</link>
+    <description>Recent content in Foundation on Ergo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <lastBuildDate>Fri, 26 Apr 2019 13:24:22 +0300</lastBuildDate>
+    
+	<atom:link href="https://ergoplatform.org/cn/foundation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

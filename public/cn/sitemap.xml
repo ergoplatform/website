@@ -721,6 +721,23 @@
   </url>
   
   <url>
+    <loc>https://ergoplatform.org/cn/foundation/</loc>
+    <lastmod>2019-04-26T13:24:22+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ergoplatform.org/en/foundation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://ergoplatform.org/cn/foundation/"
+                />
+  </url>
+  
+  <url>
     <loc>https://ergoplatform.org/cn/legal/</loc>
     <lastmod>2019-04-26T13:24:22+03:00</lastmod>
     <changefreq>weekly</changefreq>

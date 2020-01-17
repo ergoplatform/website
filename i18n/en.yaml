@@ -426,6 +426,24 @@
 - id: tech_third-section_sixth_paragraph
   translation: Alexander Chepurnoy, Charalampos Papamanthou, Yupeng Zhang
 
+- id: tech_third-section_seventh_title
+  translation: On Contractual Money
+
+- id: tech_third-section_seventh_paragraph
+  translation: Alexander Chepurnoy, Amitabh Saxena
+
+- id: tech_third-section_eight_title
+  translation: Multi-stage Contracts in the UTXO Model
+
+- id: tech_third-section_eight_paragraph
+  translation: Alexander Chepurnoy, Amitabh Saxena
+
+- id: tech_third-section_nine_title
+  translation: Bypassing Non-Outsourceable Proof-of-Work Schemes Using Collateralized Smart Contracts
+
+- id: tech_third-section_nine_paragraph
+  translation: Alexander Chepurnoy, Amitabh Saxena
+
 
 # tools
 
@@ -902,3 +920,8 @@
 
 - id: back_to_all_careers
   translation: Back to all careers
+
+# foundation
+
+- id: foundation_first_title
+  translation: Ergo Foundation
