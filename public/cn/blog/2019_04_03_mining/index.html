@@ -15,13 +15,13 @@
 Ergo挖矿基于Autolykos, 一个旨在抵抗ASIC超级矿机和矿池的工作量证明（PoW）算法。矿工们要进行内存硬计算（至少需要2GB内存，4-8GB的RAM是目前效率最高的配置）因此Ergo对于GPU挖矿十分友好。此外，Autolykos需要接入私钥，由此防止挖矿池的形成。一旦找到正确的算法，矿工即可散播他的区块（连同算法一起散播），在720个区块后拿到他相应的奖励。余下全网将用该矿工的公钥对该算法进行验证，验证的过程需要较少的内存千字节，效率相当高。
 如何进行Ergo挖矿 Ergo挖矿需要一个配置并同步过的Ergo节点，还有至少一个GPU，来完成实际的PoW计算。当然了，你可以用多个GPU倍增哈希算力，但你仅需一个Ergo节点。
 设置全节点 全节点设置可参见上一个章节（教程一：如何设置全节点）。要支持一个外部矿工，也就是我们会用到的，你的配置文件里要有以下设置：
-ergo.node.mining = true ergo.node.useExternalMiner = true  如果你已经有了私钥/公钥对，你可以在节点配置里指定公钥或地址：
-ergo.node.miningPubKeyHex = &amp;quot;11aa ... FF&amp;quot;  如果这个参数没出现，节点会采用内置钱包里第一个公钥来为外部矿工生成区块。
+ergo.node.mining = true ergo.node.useExternalMiner = true 如果你已经有了私钥/公钥对，你可以在节点配置里指定公钥或地址：
+ergo.node.miningPubKeyHex = &amp;#34;11aa ... FF&amp;#34; 如果这个参数没出现，节点会采用内置钱包里第一个公钥来为外部矿工生成区块。
 只要节点同步完成，你就完成挖矿的准备工作了。
 设置矿工 警告！ ⚠️ 由于Autolykos要用到私钥，切勿切勿使用非受信任的挖矿软件。一定要检查软件是否开源，是否已被社区认可，这非常重要！
 从以下挖矿软件里安装你的软件：
  CUDA miner (Nvidia GPU only)  挖矿配置文件如下：
-{ &amp;quot;seed&amp;quot;: &amp;quot;注意！！！ 将此替换为您的助记句并保密，否则您将被抢劫&amp;quot;, &amp;quot;node&amp;quot;: &amp;quot;http://188.166.89.71:9052&amp;quot;,&amp;quot;keepPrehash&amp;quot;: false }  定义：
+{ &amp;#34;seed&amp;#34;: &amp;#34;注意！！！ 将此替换为您的助记句并保密，否则您将被抢劫&amp;#34;, &amp;#34;node&amp;#34;: &amp;#34;http://188.166.89.71:9052&amp;#34;,&amp;#34;keepPrehash&amp;#34;: false } 定义：
  种子 是节点配置里的助记句，或是该设置里能为miningPubKeyHex计算私钥的助记句 节点 是您的节点API端口的URL 保留预哈希（keep Prehash）是一个优化参数。如果设定成 true, 矿工会消耗最多8GB内存。如果设定成 false 矿工会消耗最大4GB内存，但其表现也会打25%左右折扣。  现在，用矿机运行指令 ./auto.out config.json (用Linux)，尽情享受区块奖励吧！">
     
 
@@ -163,61 +163,36 @@ ergo.node.miningPubKeyHex = &amp;quot;11aa ... FF&amp;quot;  如果这个参数�
         </div>
         <div class="eg-blog__single-content">
           <div>
-            
-
-<h2 id="概况介绍">概况介绍</h2>
-
+            <h2 id="概况介绍">概况介绍</h2>
 <p>挖矿，是指在Ergo区块链上进行一系列资源密集的计算来加入新区块的过程。</p>
-
 <p>Ergo挖矿基于<a href="https://docs.ergoplatform.com/ErgoPow.pdf">Autolykos</a>, 一个旨在抵抗ASIC超级矿机和矿池的工作量证明（PoW）算法。矿工们要进行内存硬计算（至少需要2GB内存，4-8GB的RAM是目前效率最高的配置）因此Ergo对于GPU挖矿十分友好。此外，Autolykos需要接入私钥，由此防止挖矿池的形成。一旦找到正确的算法，矿工即可散播他的区块（连同算法一起散播），在720个区块后拿到他相应的奖励。余下全网将用该矿工的公钥对该算法进行验证，验证的过程需要较少的内存千字节，效率相当高。</p>
-
 <h2 id="如何进行ergo挖矿">如何进行Ergo挖矿</h2>
-
 <p>Ergo挖矿需要一个配置并同步过的Ergo节点，还有至少一个GPU，来完成实际的PoW计算。当然了，你可以用多个GPU倍增哈希算力，但你仅需一个Ergo节点。</p>
-
 <h2 id="设置全节点">设置全节点</h2>
-
 <p>全节点设置可参见上一个章节（<a href="https://ergoplatform.org/cn/blog/2019_03_17_how_to_set/">教程一：如何设置全节点</a>）。要支持一个外部矿工，也就是我们会用到的，你的配置文件里要有以下设置：</p>
-
-<pre><code class="language-sh">ergo.node.mining = true
-ergo.node.useExternalMiner = true
-</code></pre>
-
-<p>如果你已经有了私钥/公钥对，你可以在节点配置里指定公钥或地址：</p>
-
-<pre><code class="language-sh">ergo.node.miningPubKeyHex = &quot;11aa ... FF&quot;
-</code></pre>
-
-<p>如果这个参数没出现，节点会采用内置钱包里第一个公钥来为外部矿工生成区块。</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ergo.node.mining <span style="color:#f92672">=</span> true
+ergo.node.useExternalMiner <span style="color:#f92672">=</span> true
+</code></pre></div><p>如果你已经有了私钥/公钥对，你可以在节点配置里指定公钥或地址：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ergo.node.miningPubKeyHex <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;11aa ... FF&#34;</span>
+</code></pre></div><p>如果这个参数没出现，节点会采用内置钱包里第一个公钥来为外部矿工生成区块。</p>
 <p>只要节点同步完成，你就完成挖矿的准备工作了。</p>
-
 <h2 id="设置矿工">设置矿工</h2>
-
 <p>警告！ ⚠️ 由于Autolykos要用到私钥，切勿切勿使用非受信任的挖矿软件。一定要检查软件是否开源，是否已被社区认可，这非常重要！</p>
-
 <p>从以下挖矿软件里安装你的软件：</p>
-
 <ul>
 <li><a href="https://github.com/ergoplatform/cuda-miner">CUDA miner (Nvidia GPU only)</a></li>
 </ul>
-
 <p>挖矿配置文件如下：</p>
-
-<pre><code class="language-sh">{
-  &quot;seed&quot;: &quot;注意！！！ 将此替换为您的助记句并保密，否则您将被抢劫&quot;, 
-  &quot;node&quot;: &quot;http://188.166.89.71:9052&quot;,&quot;keepPrehash&quot;: false
-}
-</code></pre>
-
-<p>定义：</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">{</span>
+  <span style="color:#e6db74">&#34;seed&#34;</span>: <span style="color:#e6db74">&#34;注意！！！ 将此替换为您的助记句并保密，否则您将被抢劫&#34;</span>, 
+  <span style="color:#e6db74">&#34;node&#34;</span>: <span style="color:#e6db74">&#34;http://188.166.89.71:9052&#34;</span>,<span style="color:#e6db74">&#34;keepPrehash&#34;</span>: false
+<span style="color:#f92672">}</span>
+</code></pre></div><p>定义：</p>
 <ul>
 <li>种子 是节点配置里的助记句，或是该设置里能为miningPubKeyHex计算私钥的助记句</li>
 <li>节点 是您的节点API端口的URL</li>
 <li>保留预哈希（keep Prehash）是一个优化参数。如果设定成 true, 矿工会消耗最多8GB内存。如果设定成 false 矿工会消耗最大4GB内存，但其表现也会打25%左右折扣。</li>
 </ul>
-
 <p>现在，用矿机运行指令 <code>./auto.out config.json (用Linux)</code>，尽情享受区块奖励吧！</p>
 
           </div>
@@ -289,7 +264,7 @@ ergo.node.useExternalMiner = true
                   <h3 class="eg-blog__item-title"><span>(Jean Philippe Aumasson 所进行的)安全审查</span></h3>
                   <p class="eg-blog__item-paragraph">我们想宣布尔格已经成功通过某些(最关键的)部分的安全审查。此次审查由 Jean- Philipee Aumasson 负责完成(也叫 veorq, https://aumasson.jp/ )。
 具体报告如下。没有发现任何重大问题。对所发现问题的评论如下:
- 关于钱包密码，我们将在下一版协议节点中提供建议。不 …</p>
+  关于钱包密码，我们将在下一版协议节点中提供建议。 …</p>
                   <div class="eg-author">
                     <img src="/img/logotype_black_circle.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -484,8 +459,7 @@ ergo.node.useExternalMiner = true
                   <h3 class="eg-blog__item-title"><span>如何在Windows（x64）系统下挖掘尔格</span></h3>
                   <p class="eg-blog__item-paragraph">第1步：工具 Visual Studio(可视化工作室)
 选择免费的社区版本，您需要在安装期间选择使用C ++包进行桌面开发。
-CUDA工具包
-选择您的系统版本，使用默认选项安装，它会将您的图形驱动程序更新为兼容版本。
+CUDA工具包 选择您的系统版本，使用默认选项安装，它会将您的图形驱动程序更新为兼容版本。
 Curl
 没有SSL的通用版本，二进制不会工作。 选择通用源，压缩文件并单击显示镜像。下载 …</p>
                   <div class="eg-author">

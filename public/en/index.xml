@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ergo</title>
@@ -6,10 +6,19 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 17 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ergo Platform Discord Server has been created</title>
+      <link>https://ergoplatform.org/en/news/2020_01_23/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2020_01_23/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Bypassing Non-Outsourceable Proof-of-Work Schemes Using Collateralized Smart Contracts</title>
@@ -28,7 +37,7 @@
       <guid>https://ergoplatform.org/en/blog/2020_01_12_security_audit/</guid>
       <description>We would like to announce that Ergo has successfully passed security audit of certain (most critical) parts of the code. This time the audit was done by Jean-Philipee Aumasson (aka veorq, https://aumasson.jp/ ).
 The detailed report is below. Nothing critical is found. Comments on issues found:
- On wallet password, we&amp;rsquo;ll provide a recommendation in next versions of the protocol client. Not sure hard enforcement on password will take place, but we&amp;rsquo;ll do more consultations on this.</description>
+  On wallet password, we&#39;ll provide a recommendation in next versions of the protocol client. Not sure hard enforcement on password will take place, but we&#39;ll do more consultations on this.</description>
     </item>
     
     <item>
@@ -156,7 +165,7 @@ Ergo mining is based on Autolykos, a Proof-of-Work algorithm designed to be ASIC
       <pubDate>Mon, 16 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://ergoplatform.org/en/blog/2019_12_16_podcast/</guid>
-      <description>Since the launch of the Ergo mainnet half a year ago, there has been an incredible amount of development and progress in the Ergo ecosystem. Auction smart contracts, crowdfunding, zero interest loans, privacy preserving protocols, and much more. Every week or two there&amp;rsquo;s some truly novel idea or development put out, however if you&amp;rsquo;re just an average blockchain enthusiast it&amp;rsquo;s likely you haven&amp;rsquo;t heard too much.
+      <description>Since the launch of the Ergo mainnet half a year ago, there has been an incredible amount of development and progress in the Ergo ecosystem. Auction smart contracts, crowdfunding, zero interest loans, privacy preserving protocols, and much more. Every week or two there&#39;s some truly novel idea or development put out, however if you&#39;re just an average blockchain enthusiast it&#39;s likely you haven&#39;t heard too much.
 Why is that? The reason is that the Ergo ecosystem is making incredible strides forward in the technology side of things, however there is a distinct lack of content to consume for the average user who is interested.</description>
     </item>
     
@@ -204,7 +213,7 @@ Why is that? The reason is that the Ergo ecosystem is making incredible strides 
       <guid>https://ergoplatform.org/en/blog/2019_12_03_top5/</guid>
       <description>With thanks to Robert Kornacki and Denys Zadorozhnyi.
  Ergo Appkit is a library for polyglot development of Ergo Applications based on GraalVM. GraalVM has many great use cases. Expanding on that, in this article we will go through some of the Appkit features inherited from GraalVM and take you step-by-step in learning how to take advantage of them.
- 0. Example Scenario 1. Java Ergo App Development 2.</description>
+ 0. Example Scenario 1. Java Ergo App Development 2. Low-footprint, Fast-startup Ergo Applications 3.</description>
     </item>
     
     <item>
@@ -232,7 +241,7 @@ Why is that? The reason is that the Ergo ecosystem is making incredible strides 
       
       <guid>https://ergoplatform.org/en/blog/2019_12_02_how_to_setup/</guid>
       <description>This tutorial explains how to install and run a full Ergo node. It does not cover mining.
-Node security There are a few important aspects of node usage that your wallet and money&amp;rsquo;s safety depends on:
+Node security There are a few important aspects of node usage that your wallet and money&#39;s safety depends on:
  An Ergo node requires storing security-critical parameters in the configuration file. You should never make this file public. An Ergo node provides a REST API for interacting with the built-in wallet. Sensitive API methods require a security token, which should never be sent over untrusted channels.</description>
     </item>
     
@@ -379,8 +388,8 @@ The code is based on OpenCL and completely open source.</description>
       <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://ergoplatform.org/en/blog/2019_07_24_ergo_address/</guid>
-      <description>In today&amp;rsquo;s article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work specifically as well as what makes them preferable to other types of blockchain addresses.
-Let&amp;rsquo;s start at the very beginning.
+      <description>In today&#39;s article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work specifically as well as what makes them preferable to other types of blockchain addresses.
+Let&#39;s start at the very beginning.
 The moment you install any cryptocurrency wallet you automatically create an address with it. Very loosely speaking you can compare a wallet to a traditional bank account and an address to the matching account number.</description>
     </item>
     
@@ -479,20 +488,20 @@ First, mining software and also mining support in the node (namely, ergo.</descr
     </item>
     
     <item>
-      <title>Ergo Mainnet 3.0.1 released</title>
-      <link>https://ergoplatform.org/en/news/2019_07_01_2/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://ergoplatform.org/en/news/2019_07_01_2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Ergo explorer released</title>
       <link>https://ergoplatform.org/en/news/2019_07_01/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://ergoplatform.org/en/news/2019_07_01/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ergo Mainnet 3.0.1 released</title>
+      <link>https://ergoplatform.org/en/news/2019_07_01_2/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2019_07_01_2/</guid>
       <description></description>
     </item>
     
@@ -511,8 +520,9 @@ First, mining software and also mining support in the node (namely, ergo.</descr
       <pubDate>Fri, 28 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://ergoplatform.org/en/blog/2019_06_28_mainnet-bootstrap/</guid>
-      <description>Joining the Ergo main network at the very beginning In order to join the network at its very beginning and compete to mine the genesis block, you need to follow the steps described below. If you&amp;rsquo;re not going to participate in Ergo mining and just want to set up a full node, you need to follow steps 3 and 5.
-Preparations 1. Build mining software Check the guide first.</description>
+      <description>Joining the Ergo main network at the very beginning In order to join the network at its very beginning and compete to mine the genesis block, you need to follow the steps described below. If you&#39;re not going to participate in Ergo mining and just want to set up a full node, you need to follow steps 3 and 5.
+Preparations 1. Build mining software Check the guide first.
+Build a miner according to its readme instruction (for Ubuntu) or using Windows manual.</description>
     </item>
     
     <item>
@@ -704,8 +714,7 @@ The wallet uses the BIP39 standard to generate a seed from a mnemonic sentence, 
       <guid>https://ergoplatform.org/en/blog/2019_05_07_mining/</guid>
       <description>Step 1: Tools Visual Studio
 Choose free community version, you will need to select desktop development with C++ package during install.
-CUDA toolkit
-Choose your system version, install with default options, it will update your graphics driver to a compatible version.
+CUDA toolkit Choose your system version, install with default options, it will update your graphics driver to a compatible version.
 Curl
 Generic version without SSL, binary won`t work. Choose generic source, zip and click on show mirrors. Download and unpack.
 OpenSSL 1.0.2
@@ -820,7 +829,7 @@ What are the vision about scaling and adoption? About scaling, the main approach
       
       <guid>https://ergoplatform.org/en/blog/2018_10_19-smart-contracts/</guid>
       <description>A lot of blockchain-related news these days are saying us that a bank X or a corporation Y is going to use a &amp;ldquo;blockchain&amp;rdquo; to &amp;ldquo;reduce costs&amp;rdquo;. Basically it means that just another buzzword is considered by big banksters as just another tool to extract value from everywhere in a more efficient way, and also to save on cutting job positions.
-While I am avoiding to say anything about &amp;ldquo;Satoshi&amp;rsquo;s vision&amp;rdquo; (nothing but speculations could be dug there after his exodus), a broad view I witnessed in the early years around online forums users is that a cryptocurrency should provide tools to enrich the ordinary people behind their small businesses providing no much above making ends meet, not depersonalized big financial capital.</description>
+While I am avoiding to say anything about &amp;ldquo;Satoshi&#39;s vision&amp;rdquo; (nothing but speculations could be dug there after his exodus), a broad view I witnessed in the early years around online forums users is that a cryptocurrency should provide tools to enrich the ordinary people behind their small businesses providing no much above making ends meet, not depersonalized big financial capital.</description>
     </item>
     
     <item>

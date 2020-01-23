@@ -16,7 +16,7 @@
 在你安装任何数字货币钱包的时候，你会自动创建一个地址。简单来说，这个钱包就好比一个传统银行账户，而地址就如同与之相匹配的账号。如果你需要把钱由甲打给乙、收款或者提走你的挖矿奖励，那么你就需要一个字母数字地址提取你的挖矿奖励。
 如果你希望利用尔格钱包启动，并且想深入了解其功能，请双击以下链接.
 那么，到底什么是地址呢？
-地址是与某些脚本相对应的短字符串，并且用于保护一个币箱 （在此贴中，核心开发者*kushti* 在我们的论坛中发表文章详细解释了什么是币箱(“box”)。
+地址是与某些脚本相对应的短字符串，并且用于保护一个币箱 （在此贴中，核心开发者kushti 在我们的论坛中发表文章详细解释了什么是币箱(“box”)。
 与（十六进制编码）二进制脚本描述有所不同，尔格地址采用Base58编码，因此拥有一些二进制描述无法提供的非常有用的特性：
  地址的完整性可以轻易通过一体化校验和进行检查（根据维基百科的解释，其是“出于探测那些在传输与存储期间可能导入错误之目的，从一堆数字资料中得出的小型数据”）。 地址的前缀告诉你网络和地址的类型。尤其是网络前缀可以防止你误将主网代币发到测试网的地址。 地址使用一个编码（即：上面提到的 Base58），其可以避免长得很像的字符 ，并且方便双击以及在电子邮件中进行换行。 地址是编码网络类型、地址类型、校验和以及足以与特定脚本相对应的信息。  让我们看一下含有有关网络和地址类型信息的前缀字节：
 可能的网络类型包括：
@@ -172,77 +172,55 @@
         <div class="eg-blog__single-content">
           <div>
             <p>在今天的文章中，我们的将对尔格地址的格式化一窥究竟。除此之外，我们将说明他们具体的具体工作原理，以及什么使其优于其他类型的区块链地址。</p>
-
 <p>让我们从头说起。</p>
-
 <p>在你安装任何数字货币钱包的时候，你会自动创建一个地址。简单来说，这个钱包就好比一个传统银行账户，而地址就如同与之相匹配的账号。如果你需要把钱由甲打给乙、收款或者提走你的挖矿奖励，那么你就需要一个字母数字地址<a href="https://ergoplatform.org/cn/blog/2019_07_03_mining_withdrawal/">提取你的挖矿奖励</a>。</p>
-
 <p>如果你希望利用尔格钱包启动，并且想深入了解其功能，请双击<a href="https://ergoplatform.org/cn/blog/2019_06_04_wallet-documentation/">以下链接</a>.</p>
-
 <p>那么，到底什么是地址呢？</p>
-
-<p>地址是与某些脚本相对应的短字符串，并且用于保护一个币箱 （在<a href="https://www.ergoforum.org/t/ergo-terminology-a-box-and-a-register/32">此</a>贴中，核心开发者*kushti* 在我们的论坛中发表文章详细解释了什么是币箱(“box”)。</p>
-
+<p>地址是与某些脚本相对应的短字符串，并且用于保护一个币箱 （在<a href="https://www.ergoforum.org/t/ergo-terminology-a-box-and-a-register/32">此</a>贴中，核心开发者<em>kushti</em> 在我们的论坛中发表文章详细解释了什么是币箱(“box”)。</p>
 <p>与（十六进制编码）二进制脚本描述有所不同，尔格地址采用Base58编码，因此拥有一些二进制描述无法提供的非常有用的特性：</p>
-
 <ul>
 <li>地址的完整性可以轻易通过一体化校验和进行检查（根据维基百科的解释，其是“出于探测那些在传输与存储期间可能导入错误之目的，从一堆数字资料中得出的小型数据”）。</li>
 <li>地址的前缀告诉你网络和地址的类型。尤其是网络前缀可以防止你误将主网代币发到测试网的地址。</li>
 <li>地址使用一个编码（即：上面提到的 Base58），其可以避免长得很像的字符 ，并且方便双击以及在电子邮件中进行换行。</li>
 <li>地址是编码网络类型、地址类型、校验和以及足以与特定脚本相对应的信息。</li>
 </ul>
-
 <p>让我们看一下含有有关网络和地址类型信息的前缀字节：</p>
-
 <p>可能的网络类型包括：</p>
-
 <ul>
 <li>主网 - 0x00</li>
 <li>测试网 - 0x10</li>
 </ul>
-
 <p>地址类型包括（下述语义学）：</p>
-
 <ul>
 <li>0x01 - Pay-to-PublicKey(P2PK) address</li>
 <li>0x02 - Pay-to-Script-Hash(P2SH)</li>
 <li>0x03 - Pay-to-Script(P2S)</li>
 </ul>
-
 <p>对于地址类型，我们建立的内容字节如下：</p>
-
 <ul>
 <li>P2PK – 序列化（压缩）公钥</li>
 <li>P2SH - 序列化脚本字节Blake2b256 哈希的前192个比特</li>
 <li>P2S – 序列化脚本（这就是挖矿奖励的去处!）</li>
 </ul>
-
 <p>举例来说，将10个尔格币发到P2PK 地址通常意味着对应的交易将包含一个币箱，在这个币箱中用P2PK地址中编码的公钥锁住10个尔格币。与此相类似， 如果是P2S地址，币箱将被地址中编码脚本锁住。如果是最复杂的P2SH脚本，币箱将获得特别预先确定脚本的保护，其将对脚本采用Blake2b256 哈希值前192个比特，在币箱支出时，应当会通过输入值显示。</p>
-
 <p>以下是特定地址将如何看待测试网的例子：</p>
-
 <ul>
 <li>3 - P2PK (3WvsT2Gm4EpsM9Pg18PdY6XyhNNMqXDsvJTbbf6ihLvAmSb7u5RN)</li>
 <li>8 - P2SH (8UmyuJuQ3FS9ts7j72fn3fKChXSGzbL9WC, 8LnSX95GAWdbDZWJZQ73Uth4uE8HqN3emJ)</li>
 <li>? - P2S (imdaM2NzX, z4hAmfvfSnQJPChMWzfBzJjpB8ei2HoLCZ2RHTaNArMNHFirdJTc7E)</li>
 </ul>
-
 <p>以下是他们对我们主网的看法：</p>
-
 <ul>
 <li>9 - P2PK (9fRAWhdxEsTcdb8PhGNrZfwqa65zfkuYHAMmkQLcic1gdLSV5vA)</li>
 <li>2 - P2SH (25qGdVWg2yyYho8uC1pLtc7KxFn4nEEAwD, 23NL9a8ngN28ovtLiKLgHexcdTKBbUMLhH)</li>
 <li>? - P2S (7bwdkU5V8, BxKBaHkvrTvLZrDcZjcsxsF7aSsrN73ijeFZXtbj4CXZHHcvBtqSxQ)</li>
 </ul>
-
 <p>归纳如下：</p>
-
 <ul>
 <li>前缀字节 = 网络类型 + 地址类型 (举例来说，测试网的P2S脚本由Base58之前的0x13开始)</li>
 <li>校验和 = leftmost_4_bytes (blake2b256 (前缀字节 || 内容字节))</li>
 <li>地址 = 前缀字节 || 内容字节 || 校验和</li>
 </ul>
-
 <p>如果阁下对其中任何内容感兴趣，非常欢迎阁下加入我们的社区，并且在我们的<a href="https://t.me/ergoplatform">电报群</a>和/或<a href="https://t.me/ergoplatform_CH">论坛</a>中咨询更多问题。期待你的加入！</p>
 
           </div>
@@ -314,7 +292,7 @@
                   <h3 class="eg-blog__item-title"><span>(Jean Philippe Aumasson 所进行的)安全审查</span></h3>
                   <p class="eg-blog__item-paragraph">我们想宣布尔格已经成功通过某些(最关键的)部分的安全审查。此次审查由 Jean- Philipee Aumasson 负责完成(也叫 veorq, https://aumasson.jp/ )。
 具体报告如下。没有发现任何重大问题。对所发现问题的评论如下:
- 关于钱包密码，我们将在下一版协议节点中提供建议。不 …</p>
+  关于钱包密码，我们将在下一版协议节点中提供建议。 …</p>
                   <div class="eg-author">
                     <img src="/img/logotype_black_circle.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -494,8 +472,7 @@
                   <h3 class="eg-blog__item-title"><span>如何在Windows（x64）系统下挖掘尔格</span></h3>
                   <p class="eg-blog__item-paragraph">第1步：工具 Visual Studio(可视化工作室)
 选择免费的社区版本，您需要在安装期间选择使用C ++包进行桌面开发。
-CUDA工具包
-选择您的系统版本，使用默认选项安装，它会将您的图形驱动程序更新为兼容版本。
+CUDA工具包 选择您的系统版本，使用默认选项安装，它会将您的图形驱动程序更新为兼容版本。
 Curl
 没有SSL的通用版本，二进制不会工作。 选择通用源，压缩文件并单击显示镜像。下载 …</p>
                   <div class="eg-author">

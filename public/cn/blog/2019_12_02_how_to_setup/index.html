@@ -18,14 +18,14 @@
 注意：你不用下载jar，你可以克隆资源库，然后通过发布sbt assembly指令，自己利用SBT 来创建jar。
 ergo_folder是指存放jar的文件夹。
 首席运行节点 创建在ergo_folder中含有以下文本的配置文件ergo.conf。
-ergo { directory = ${ergo.directory}&amp;quot;/.ergo&amp;quot; node { mining = false } wallet.secretStorage.secretDir = ${ergo.directory}&amp;quot;/wallet/keystore&amp;quot; }  参数${ergo.directory}指向jar运行的目录。向ergo_folder开启命令提示符和cd。然后发出以下命令来首次运行节点：
-java -jar ergo-&amp;lt;release&amp;gt;.jar --mainnet -c ergo.conf  之后节点将立即开始同步。API启动与进入到下一步需要等几分钟。
+ergo { directory = ${ergo.directory}&amp;#34;/.ergo&amp;#34; node { mining = false } wallet.secretStorage.secretDir = ${ergo.directory}&amp;#34;/wallet/keystore&amp;#34; } 参数${ergo.directory}指向jar运行的目录。向ergo_folder开启命令提示符和cd。然后发出以下命令来首次运行节点：
+java -jar ergo-&amp;lt;release&amp;gt;.jar --mainnet -c ergo.conf 之后节点将立即开始同步。API启动与进入到下一步需要等几分钟。
 注意：对于文件你可以使用任何名称，而非ergo.conf。全部配置参数将被传送给该文件，你只需要重写你想修改缺省值的参数。上述配置文件实际上有缺省值。
 计算你秘密的哈希值 首先，选择一个秘密来保护你的API。然后前往 http://127.0.0.1:9053/swagger#/utils/hashBlake2b 然后调用API来计算你秘密的哈希值。参考下图。
 复制含有哈希值的回复以便下一步使用（参见下图）。在我们的例子中，秘密是是 hello 谁的哈希值对应324dcf027dd4a30a932c441f365a25e86b173defa4b8e58948253471b81b72cf.
 重要提示：你必须使用不同且比较复杂的秘密.
 利用API关键哈希值来更新配置文件 编辑配置文件ergo.conf然后粘贴前步所复制的哈希值。文件内容应当看似如下：
-ergo { directory = ${ergo.directory}&amp;quot;/.ergo&amp;quot; node { mining = false } wallet.">
+ergo { directory = ${ergo.directory}&amp;#34;/.ergo&amp;#34; node { mining = false } wallet.secretStorage.secretDir = ${ergo.directory}&amp;#34;/wallet/keystore&amp;#34; } scorex { restApi { # Hex-encoded Blake2b256 hash of an API key.">
     
 
     
@@ -172,135 +172,84 @@ ergo { directory = ${ergo.directory}&amp;quot;/.ergo&amp;quot; node { mining = f
         </div>
         <div class="eg-blog__single-content">
           <div>
-            
-
-<p>本教程将解释如何安装与运行全尔格节点。其不涉及采矿相关的内容。</p>
-
+            <p>本教程将解释如何安装与运行全尔格节点。其不涉及采矿相关的内容。</p>
 <h2 id="节点安全">节点安全</h2>
-
 <p>节点的使用涉及几个重要方面的内容，你的钱包和钱的安全性取决于以下方面:</p>
-
 <ul>
 <li>尔格节点需要在配置文件中存储安全关键参数。你永远不应把这个文件公开。</li>
 <li>尔格节点提供用于与内置钱包互动的REST API。敏感的API方法需要一个安全令牌，你永远不要通过不可靠的渠道发送该令牌。</li>
 <li>访问尔格REST API必须限制在认识的主机上。尤其是绝不允许通过互联网访问API。</li>
 </ul>
-
 <h2 id="先决条件">先决条件</h2>
-
 <p>为了运行尔格节点，你需要JRE版本&gt;= 将要安装的8。其中一种安装方式是使用 <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">甲骨文安装Java</a>.</p>
-
 <p>接下来需要下载最新的尔格客<a href="https://github.com/ergoplatform/ergo/releases/">户端发行版</a> jar文件，并且创建一个节点配置文件。</p>
-
 <p>注意：你不用下载jar，你可以克隆资源库，然后通过发布<code>sbt assembly</code>指令，自己利用<a href="https://www.scala-sbt.org/">SBT</a> 来创建jar。</p>
-
 <p><strong>ergo_folder</strong>是指存放jar的文件夹。</p>
-
 <h2 id="首席运行节点">首席运行节点</h2>
-
 <p>创建在<strong>ergo_folder</strong>中含有以下文本的配置文件<code>ergo.conf</code>。</p>
-
-<pre><code class="language-shell">ergo {
-    directory = ${ergo.directory}&quot;/.ergo&quot;
-    node {
-        mining = false
-    }
-    wallet.secretStorage.secretDir = ${ergo.directory}&quot;/wallet/keystore&quot;
-}
-</code></pre>
-
-<p>参数<code>${ergo.directory}</code>指向jar运行的目录。向<strong>ergo_folder</strong>开启命令提示符和<code>cd</code>。然后发出以下命令来首次运行节点：</p>
-
-<pre><code class="language-shell">  java -jar ergo-&lt;release&gt;.jar --mainnet -c ergo.conf
-</code></pre>
-
-<p>之后节点将立即开始同步。API启动与进入到下一步需要等几分钟。</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ergo <span style="color:#f92672">{</span>
+    directory <span style="color:#f92672">=</span> <span style="color:#e6db74">${</span>ergo.directory<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;/.ergo&#34;</span>
+    node <span style="color:#f92672">{</span>
+        mining <span style="color:#f92672">=</span> false
+    <span style="color:#f92672">}</span>
+    wallet.secretStorage.secretDir <span style="color:#f92672">=</span> <span style="color:#e6db74">${</span>ergo.directory<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;/wallet/keystore&#34;</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>参数<code>${ergo.directory}</code>指向jar运行的目录。向<strong>ergo_folder</strong>开启命令提示符和<code>cd</code>。然后发出以下命令来首次运行节点：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">  java -jar ergo-&lt;release&gt;.jar --mainnet -c ergo.conf
+</code></pre></div><p>之后节点将立即开始同步。API启动与进入到下一步需要等几分钟。</p>
 <p><strong>注意</strong>：对于文件你可以使用任何名称，而非<code>ergo.conf</code>。全部配置参数将被传送给该文件，你只需要重写你想修改缺省值的参数。上述配置文件实际上有缺省值。</p>
-
 <h2 id="计算你秘密的哈希值">计算你秘密的哈希值</h2>
-
-<p>首先，选择一个秘密来保护你的API。然后前往 <a href="http://127.0.0.1:9053/swagger#/utils/hashBlake2b">http://127.0.0.1:9053/swagger#/utils/hashBlake2b</a> 然后调用API来计算你秘密的哈希值。参考下图。</p>
-
-<p><img src="/img/blog/how_to_setup_1img.png" alt="Compute Hash of secret" /></p>
-
+<p>首先，选择一个秘密来保护你的API。然后前往 http://127.0.0.1:9053/swagger#/utils/hashBlake2b 然后调用API来计算你秘密的哈希值。参考下图。</p>
+<p><img src="/img/blog/how_to_setup_1img.png" alt="Compute Hash of secret"></p>
 <p>复制含有哈希值的回复以便下一步使用（参见下图）。在我们的例子中，秘密是是 <code>hello</code> 谁的哈希值对应<code>324dcf027dd4a30a932c441f365a25e86b173defa4b8e58948253471b81b72cf</code>.</p>
-
 <p><strong>重要提示</strong>：你必须使用不同且比较复杂的秘密.</p>
-
-<p><img src="/img/blog/how_to_setup_2img.png" alt="response" /></p>
-
+<p><img src="/img/blog/how_to_setup_2img.png" alt="response"></p>
 <h2 id="利用api关键哈希值来更新配置文件">利用API关键哈希值来更新配置文件</h2>
-
 <p>编辑配置文件<code>ergo.conf</code>然后粘贴前步所复制的哈希值。文件内容应当看似如下：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ergo <span style="color:#f92672">{</span>
+    directory <span style="color:#f92672">=</span> <span style="color:#e6db74">${</span>ergo.directory<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;/.ergo&#34;</span>
+    node <span style="color:#f92672">{</span>
+        mining <span style="color:#f92672">=</span> false
+    <span style="color:#f92672">}</span>
+    wallet.secretStorage.secretDir <span style="color:#f92672">=</span> <span style="color:#e6db74">${</span>ergo.directory<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;/wallet/keystore&#34;</span>
+<span style="color:#f92672">}</span>
 
-<pre><code class="language-shell">ergo {
-    directory = ${ergo.directory}&quot;/.ergo&quot;
-    node {
-        mining = false
-    }
-    wallet.secretStorage.secretDir = ${ergo.directory}&quot;/wallet/keystore&quot;
-}
-
-scorex {
-    restApi {
-        # Hex-encoded Blake2b256 hash of an API key. 
-        # Should be 64-chars long Base16 string.
-        # below is the hash of the string 'hello'
-        # replace with your actual hash 
-        apiKeyHash = &quot;324dcf027dd4a30a932c441f365a25e86b173defa4b8e58948253471b81b72cf&quot;
-    }
-}
-</code></pre>
-
-<h2 id="初始化钱包">初始化钱包</h2>
-
+scorex <span style="color:#f92672">{</span>
+    restApi <span style="color:#f92672">{</span>
+        <span style="color:#75715e"># Hex-encoded Blake2b256 hash of an API key.</span> 
+        <span style="color:#75715e"># Should be 64-chars long Base16 string.</span>
+        <span style="color:#75715e"># below is the hash of the string &#39;hello&#39;</span>
+        <span style="color:#75715e"># replace with your actual hash</span> 
+        apiKeyHash <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;324dcf027dd4a30a932c441f365a25e86b173defa4b8e58948253471b81b72cf&#34;</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h2 id="初始化钱包">初始化钱包</h2>
 <p>重启节点并且前往<a href="http://127.0.0.1:9053/panel">http://127.0.0.1:9053/panel</a> 以访问面板。然后设置上一步的API主要秘密。注意你需要设置秘密，而非配置文件的哈希值。在我们的举例中，这是字符串<code>hello</code>.</p>
-
-<p><img src="/img/blog/how_to_setup_3img.png" alt="set API key" /></p>
-
+<p><img src="/img/blog/how_to_setup_3img.png" alt="set API key"></p>
 <p>最后，点击“初始化钱包”：</p>
-
-<p><img src="/img/blog/how_to_setup_4img.png" alt="click on initialize wallet" /></p>
-
+<p><img src="/img/blog/how_to_setup_4img.png" alt="click on initialize wallet"></p>
 <p>在弹开窗口中，您必须输入钱包密码。助记符密码是或选项。点击发送后，钱包会返回一个助记句，如下图所示。</p>
-
-<p><img src="/img/blog/how_to_setup_5img.png" alt="mnemonic sentence" /></p>
-
+<p><img src="/img/blog/how_to_setup_5img.png" alt="mnemonic sentence"></p>
 <p>你必须把这个句子抄下来，并把它保存在一个安全的地方。如果你要在其他计算机恢复你的钱包，就需要这个句子。</p>
-
 <h2 id="获得钱包的地址">获得钱包的地址</h2>
-
 <p>这是一个可以确保你正确设置节点的测试。它将返回钱包中的当前地址。
 在<a href="http://127.0.0.1:9053/panel">http://127.0.0.1:9053/panel</a> 的面板上，点击左侧的<code>Wallet</code> 条，然后点击 <code>Get all wallet addresses</code> 以浏览钱包目前所保存的地址。如果节点设置正确，那么至少应该返回一个地址。</p>
-
-<p><img src="/img/blog/how_to_setup_6img.png" alt="Get addresses" /></p>
-
+<p><img src="/img/blog/how_to_setup_6img.png" alt="Get addresses"></p>
 <h2 id="使用swagger-ui">使用Swagger UI</h2>
-
 <p>你可以在<a href="http://127.0.0.1:9053/swagger">http://127.0.0.1:9053/swagger</a>找到Swagger UI。你还可以使用该UI对面板上（尚不）能用的高级操作进行API调用。你之前已经用其来计算你秘密的哈希值。你还可以使用这个UI来为面板中（尚未）提供的高级操作进行API调用。部分举例如下：</p>
-
 <ol>
 <li>利用寄存器和上下文变量来创建非标准交易。</li>
 <li>创建发出令牌的交易。</li>
 <li>创建使用某些框作为输入值的交易。</li>
 </ol>
-
 <p>未来的文章将逐一详细介绍这些操作。</p>
-
 <p>请注意API中的大部分方法都受到保护，你需要使用你（之前）的秘密来获得这些方法。接下来的图片将展示在Swagger UI中设置该秘密的流程。</p>
-
 <p>在页面顶端，点击“授权”键。在弹出框中输入您的秘密，如下图所示。</p>
-
-<p><img src="/img/blog/how_to_setup_7img.png" alt="Enter API key" /></p>
-
+<p><img src="/img/blog/how_to_setup_7img.png" alt="Enter API key"></p>
 <p>输入密码后，点击“授权”，将跳出以下界面：</p>
-
-<p><img src="/img/blog/how_to_setup_8img.png" alt="Logged in" /></p>
-
+<p><img src="/img/blog/how_to_setup_8img.png" alt="Logged in"></p>
 <p>现在转到<a href="/img/blog/how_to_setup_9img.png">http://127.0.0.1:9053/swagger#/wallet/walletAddresses</a> ，然后点击“试一试”。你会看到你之前从面板上看到过的相同的地址列表。</p>
-
-<p><img src="/img/blog/how_to_setup_10img.png" alt="Get addresses" /></p>
+<p><img src="/img/blog/how_to_setup_10img.png" alt="Get addresses"></p>
 
           </div>
         </div>
@@ -371,7 +320,7 @@ scorex {
                   <h3 class="eg-blog__item-title"><span>(Jean Philippe Aumasson 所进行的)安全审查</span></h3>
                   <p class="eg-blog__item-paragraph">我们想宣布尔格已经成功通过某些(最关键的)部分的安全审查。此次审查由 Jean- Philipee Aumasson 负责完成(也叫 veorq, https://aumasson.jp/ )。
 具体报告如下。没有发现任何重大问题。对所发现问题的评论如下:
- 关于钱包密码，我们将在下一版协议节点中提供建议。不 …</p>
+  关于钱包密码，我们将在下一版协议节点中提供建议。 …</p>
                   <div class="eg-author">
                     <img src="/img/logotype_black_circle.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -551,8 +500,7 @@ scorex {
                   <h3 class="eg-blog__item-title"><span>如何在Windows（x64）系统下挖掘尔格</span></h3>
                   <p class="eg-blog__item-paragraph">第1步：工具 Visual Studio(可视化工作室)
 选择免费的社区版本，您需要在安装期间选择使用C ++包进行桌面开发。
-CUDA工具包
-选择您的系统版本，使用默认选项安装，它会将您的图形驱动程序更新为兼容版本。
+CUDA工具包 选择您的系统版本，使用默认选项安装，它会将您的图形驱动程序更新为兼容版本。
 Curl
 没有SSL的通用版本，二进制不会工作。 选择通用源，压缩文件并单击显示镜像。下载 …</p>
                   <div class="eg-author">

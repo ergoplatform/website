@@ -13,8 +13,7 @@
     
       <meta name="description" content="Step 1: Tools Visual Studio
 Choose free community version, you will need to select desktop development with C&#43;&#43; package during install.
-CUDA toolkit
-Choose your system version, install with default options, it will update your graphics driver to a compatible version.
+CUDA toolkit Choose your system version, install with default options, it will update your graphics driver to a compatible version.
 Curl
 Generic version without SSL, binary won`t work. Choose generic source, zip and click on show mirrors. Download and unpack.
 OpenSSL 1.0.2
@@ -165,47 +164,28 @@ Download and install, select the OpenSSL binaries (/bin) directory during instal
         </div>
         <div class="eg-blog__single-content">
           <div>
-            
-
-<h2 id="step-1-tools">Step 1: Tools</h2>
-
-<p><a href="https://visualstudio.microsoft.com/downloads/">Visual Studio</a><br />
+            <h2 id="step-1-tools">Step 1: Tools</h2>
+<p><a href="https://visualstudio.microsoft.com/downloads/">Visual Studio</a><br>
 Choose free community version, you will need to select desktop development with C++ package during install.</p>
-
-<p><a href="https://developer.nvidia.com/cuda-downloads">CUDA toolkit</a><br />
+<p><a href="https://developer.nvidia.com/cuda-downloads">CUDA toolkit</a> <br>
 Choose your system version, install with default options, it will update your graphics driver to a compatible version.</p>
-
-<p><a href="https://curl.haxx.se/latest.cgi?curl=win64-nossl">Curl</a><br />
+<p><a href="https://curl.haxx.se/latest.cgi?curl=win64-nossl">Curl</a><br>
 Generic version without SSL, binary won`t work. Choose generic source, zip and click on show mirrors. Download and unpack.</p>
-
-<p><a href="https://slproweb.com/download/Win64OpenSSL-1_0_2s.exe">OpenSSL 1.0.2</a><br />
+<p><a href="https://slproweb.com/download/Win64OpenSSL-1_0_2s.exe">OpenSSL 1.0.2</a><br>
 Download and install, select the OpenSSL binaries (/bin) directory during install.</p>
-
-<p><a href="https://github.com/ergoplatform/Autolykos-GPU-miner">Autolykos GPU miner</a><br />
+<p><a href="https://github.com/ergoplatform/Autolykos-GPU-miner">Autolykos GPU miner</a><br>
 Click on clone or download and download zip and unpack.</p>
-
 <h2 id="step-2-building-libcurl">Step 2: Building libcurl</h2>
-
 <p>Open the command line, go to <code>c:\Program Files (x86)\Microsoft Visual Studio\2017\Community\vc\Auxiliary\Build\</code> and run this script: <code>vcvarsall.bat x64</code></p>
-
 <p>Open the command line, go to unpacked Curl directory, then cd winbuild and run this command: <code>nmake /f Makefile.vc mode=dll MACHINE=x64</code></p>
-
 <p>After a successful build, go to Curl directory, <code>\curl\builds\libcurl-vc-x64-release-dll-ipv6-sspi-winssl\bin</code> and copy <code>libcurl.dll</code> to <code>\Autolykos\secp256k1</code> directory.</p>
-
 <h2 id="step-3-building-miner">Step 3: Building miner</h2>
-
 <p>Open the command line, go to <code>c:\Program Files (x86)\Microsoft Visual Studio\2017\Community\vc\Auxiliary\Build\</code> and run this script: <code>vcvars64.bat</code></p>
-
 <p>Open command line and go to unpacked Autolykos GPU miner directory, then cd <code>secp256k1</code> and edit <code>winbuild.cmd</code> file, change <code>OPENSSL_DIR, LIBCURL_DIR</code> to your OpenSSL and Curl main directories. You can change <code>CUDA_COMPUTE_ARCH</code> to GPU code architecture you want.</p>
-
 <p>Run <code>winbuild.cmd</code> and build your miner. After succesful build you should discover miner.exe in the same directory.</p>
-
 <h2 id="step-4-mining">Step 4: Mining</h2>
-
 <p>Before you can mine, you have to <a href="https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node">configure your node</a>, <a href="https://ergoplatform.org/en/blog/2019_06_04_wallet-documentation/">wallet</a> and <a href="https://github.com/ergoplatform/ergo/wiki/Mining">miner</a></p>
-
 <p>After your node is synced, wallet is configured and unlocked, you have to create mining configuration file <code>config.json</code> with following structure: <code>{ &quot;seed&quot; : &quot;YourSeedString&quot;, &quot;node&quot; : &quot;https://127.0.0.1:9052&quot;, &quot;keepPrehash&quot; : true }</code> in the <code>\Autolykos\secp256k1</code> directory.</p>
-
 <p>Open the command line and go to <code>\Autolykos\secp256k1</code> directory. Run <code>miner.exe config.json</code></p>
 
           </div>
@@ -414,7 +394,7 @@ Developer MH Samadani published …</p>
                 <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_07_24_ergo_address/">
                   <div class="eg-blog__item-img"><img src="/img/blog/address.jpg" height="188" width="335" alt="blog photo"></div>
                   <h3 class="eg-blog__item-title"><span>Ergo Addresses</span></h3>
-                  <p class="eg-blog__item-paragraph">In today&rsquo;s article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work …</p>
+                  <p class="eg-blog__item-paragraph">In today's article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work specifically as …</p>
                   <div class="eg-author">
                     <img src="/img/authors/robert_wolf.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">

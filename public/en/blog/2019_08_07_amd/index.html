@@ -160,34 +160,22 @@ The code is based on OpenCL and completely open source.">
         </div>
         <div class="eg-blog__single-content">
           <div>
-            
-
-<p>This tutorial will provide you with the information needed to get your AMD cards mining ERGO on either Windows or Linux.</p>
-
+            <p>This tutorial will provide you with the information needed to get your AMD cards mining ERGO on either Windows or Linux.</p>
 <p>Developer MH Samadani published his AMD Miner just three days after the official launch and is continuously updating it since. To keep track of his updates you can join the <a href="https://t.me/ergo_mining">Ergo Mining Telegram Channel</a> and search for <code>#amdminer</code>. You can download and look into the miner <a href="https://github.com/mhssamadani/ergoAMDminer">here</a>.</p>
-
 <p>The code is based on OpenCL and completely open source.
 If you are using Nvidia cards, you can find the CUDA miner <a href="https://github.com/ergoplatform/Autolykos-GPU-miner/tree/master/secp256k1">here</a>.</p>
-
 <p>Please, be aware that it is unsafe to use any closed source miners.
 The mining specifics of ERGO require you to disclose your secret key to the miner so make sure who to trust before exposing any vulnerable data!</p>
-
 <p>These are the reported Hashrates for AMD cards:</p>
-
 <ul>
 <li>rx570-8g: 22-24Mh/s</li>
 <li>rx580-8g: 23-25Mh/s</li>
 <li>rx Vega56: 24-26Mh/s</li>
 </ul>
-
 <p>Before going any further I want to give credits to MH Samadani and his head developer <a href="https://github.com/amin63moradi">Amin Moradi</a> for providing the miner and the base for this tutorial.</p>
-
-<p><strong>Now let&rsquo;s get started!</strong></p>
-
+<p><strong>Now let's get started!</strong></p>
 <h3 id="configuration">Configuration</h3>
-
-<p>Copy these files into the same folder as your executable file and add your seed string and your node&rsquo;s address to <code>config.json</code>. In addition to that set <code>keepPrehash: true</code> in the same file.</p>
-
+<p>Copy these files into the same folder as your executable file and add your seed string and your node's address to <code>config.json</code>. In addition to that set <code>keepPrehash: true</code> in the same file.</p>
 <ul>
 <li>Miningkernel.cl</li>
 <li>Prehashkernel.cl</li>
@@ -196,77 +184,39 @@ The mining specifics of ERGO require you to disclose your secret key to the mine
 <li>Libcurl.dll( in windows)</li>
 <li>Config.json</li>
 </ul>
-
 <h3 id="requirements-for-linux">Requirements for Linux</h3>
-
-<h4 id="1-install-the-amdgpu-pro-driver-by-downloading-the-amdgpu-pro-package-for-your-specific-linux-distribution-from-amd-com-https-amd-com-unpack-this-file-and-in-a-terminal-window-run">1. Install the AMDGPU-PRO driver by downloading the AMDGPU-PRO package for your specific Linux distribution from <a href="https://amd.com">amd.com</a>. Unpack this file and in a terminal window run:</h4>
-
-<pre><code class="language-bash">$ amdgpu-pro-install --opencl=legacy,pal --headless
-</code></pre>
-
-<h4 id="2-install-opencl-headers">2. Install OpenCL headers</h4>
-
-<pre><code class="language-bash">$ apt install libcurl4-openssl-dev
-</code></pre>
-
-<h4 id="3-install-openssl-1-02">3. Install OpenSSL 1.02</h4>
-
-<pre><code class="language-bash">$ apt install libssl-dev
-</code></pre>
-
-<h3 id="requirements-for-windows">Requirements for Windows</h3>
-
-<h4 id="1-you-need-at-least-one-amd-gpu-with-its-driver-installed-amd-com-https-amd-com">1. You need at least one AMD GPU with its driver installed <a href="https://amd.com">amd.com</a></h4>
-
-<h4 id="2-download-and-install-amd-apk-from-mhssadini-s-github-here-http-amd-dev-wpengine-netdna-cdn-com-app-sdk-installers-appsdkinstaller-3-0-130-135-ga-full-amd-app-sdkinstaller-v3-0-130-135-ga-windows-f-x64-exe">2. Download and Install AMD APK from mhssadini&rsquo;s github <a href="http://amd-dev.wpengine.netdna-cdn.com/app-sdk/installers/APPSDKInstaller/3.0.130.135-GA/full/AMD-APP-SDKInstaller-v3.0.130.135-GA-windows-F-x64.exe">here</a></h4>
-
-<h4 id="3-if-not-already-available-build-libcurl-from-sources-with-visual-studio-toolchain-instruction-https-medium-com-chuy-max-compile-libcurl-on-windows-with-visual-studio-2017-x64-and-ssl-winssl-cff41ac7971d">3. If not already available, build libcurl from sources with <a href="https://medium.com/@chuy.max/compile-libcurl-on-windows-with-visual-studio-2017-x64-and-ssl-winssl-cff41ac7971d">Visual Studio toolchain instruction</a></h4>
-
-<h4 id="4-download-and-install-openssl-1-0-2-here-https-slproweb-com-download-win64openssl-1-0-2s-exe">4. Download and install OpenSSL 1.0.2 <a href="https://slproweb.com/download/Win64OpenSSL-1_0_2s.exe">here</a></h4>
-
+<h4 id="1-install-the-amdgpu-pro-driver-by-downloading-the-amdgpu-pro-package-for-your-specific-linux-distribution-from-amdcomhttpsamdcom-unpack-this-file-and-in-a-terminal-window-run">1. Install the AMDGPU-PRO driver by downloading the AMDGPU-PRO package for your specific Linux distribution from <a href="https://amd.com">amd.com</a>. Unpack this file and in a terminal window run:</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ amdgpu-pro-install --opencl<span style="color:#f92672">=</span>legacy,pal --headless
+</code></pre></div><h4 id="2-install-opencl-headers">2. Install OpenCL headers</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ apt install libcurl4-openssl-dev
+</code></pre></div><h4 id="3-install-openssl-102">3. Install OpenSSL 1.02</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ apt install libssl-dev
+</code></pre></div><h3 id="requirements-for-windows">Requirements for Windows</h3>
+<h4 id="1-you-need-at-least-one-amd-gpu-with-its-driver-installed-amdcomhttpsamdcom">1. You need at least one AMD GPU with its driver installed <a href="https://amd.com">amd.com</a></h4>
+<h4 id="2-download-and-install-amd-apk-from-mhssadinis-github-herehttpamd-devwpenginenetdna-cdncomapp-sdkinstallersappsdkinstaller30130135-gafullamd-app-sdkinstaller-v30130135-ga-windows-f-x64exe">2. Download and Install AMD APK from mhssadini's github <a href="http://amd-dev.wpengine.netdna-cdn.com/app-sdk/installers/APPSDKInstaller/3.0.130.135-GA/full/AMD-APP-SDKInstaller-v3.0.130.135-GA-windows-F-x64.exe">here</a></h4>
+<h4 id="3-if-not-already-available-build-libcurl-from-sources-with-visual-studio-toolchain-instructionhttpsmediumcomchuymaxcompile-libcurl-on-windows-with-visual-studio-2017-x64-and-ssl-winssl-cff41ac7971d">3. If not already available, build libcurl from sources with <a href="https://medium.com/@chuy.max/compile-libcurl-on-windows-with-visual-studio-2017-x64-and-ssl-winssl-cff41ac7971d">Visual Studio toolchain instruction</a></h4>
+<h4 id="4-download-and-install-openssl-102-herehttpsslprowebcomdownloadwin64openssl-1_0_2sexe">4. Download and install OpenSSL 1.0.2 <a href="https://slproweb.com/download/Win64OpenSSL-1_0_2s.exe">here</a></h4>
 <h3 id="building-in-linux">Building in Linux</h3>
-
-<h4 id="1-edit-the-ergoopencl-cpp-in-the-master-directory-and-comment-define-test-or-uncomment-define-test-to-either-build-the-miner-or-tester">1. Edit the <code>ErgoOpenCL.cpp</code> in the master directory and comment <code>#define TEST</code> or uncomment <code>define TEST</code> to either build the miner or tester.</h4>
-
-<h4 id="2-change-the-directory-to-ergoamdminer-ubuntu-and-run-make">2. Change the directory to <code>ergoAMDminer/Ubuntu</code> and run make.</h4>
-
-<pre><code class="language-bash">./makefile
-</code></pre>
-
-<h4 id="3-if-everything-was-done-correctly-you-should-now-find-ergoopencl-in-ergoamdminer-ubuntu-go-ahead-and-run-it-to-start-mining">3. If everything was done correctly, you should now find ErgoOpenCL in <code>ergoAMDminer/Ubuntu/</code>. Go ahead and run it to start mining.</h4>
-
-<pre><code class="language-bash">./ErgoOpenCL
-</code></pre>
-
-<h3 id="pre-built-version-for-windows">Pre-Built Version for Windows</h3>
-
+<h4 id="1-edit-the-ergoopenclcpp-in-the-master-directory-and-comment-define-test-or-uncomment-define-test-to-either-build-the-miner-or-tester">1. Edit the <code>ErgoOpenCL.cpp</code> in the master directory and comment <code>#define TEST</code> or uncomment <code>define TEST</code> to either build the miner or tester.</h4>
+<h4 id="2-change-the-directory-to-ergoamdminerubuntu-and-run-make">2. Change the directory to <code>ergoAMDminer/Ubuntu</code> and run make.</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./makefile
+</code></pre></div><h4 id="3-if-everything-was-done-correctly-you-should-now-find-ergoopencl-in-ergoamdminerubuntu-go-ahead-and-run-it-to-start-mining">3. If everything was done correctly, you should now find ErgoOpenCL in <code>ergoAMDminer/Ubuntu/</code>. Go ahead and run it to start mining.</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./ErgoOpenCL
+</code></pre></div><h3 id="pre-built-version-for-windows">Pre-Built Version for Windows</h3>
 <p>Download the <a href="https://github.com/mhssamadani/ergoAMDminer">github</a>, head over to the win64 folder and execute either <code>ErgoOpenCL_miner.exe</code> or <code>ErgoOpenCL_tester.exe</code>. If everything was set up correctly (see requirements and configuration) it should start mining.</p>
-
 <h3 id="building-in-windows">Building in Windows</h3>
-
 <p>Open <code>ErgoOpenCL.sln</code> Visual Studio.
 Add the OpenCL, LibCurl and OpenSSL libraries.</p>
-
 <p>Include directories:</p>
-
-<p><img src="/img/blog/picture1.jpg" alt="Picture 1" /></p>
-
+<p><img src="/img/blog/picture1.jpg" alt="Picture 1"></p>
 <p>And include additional directories:</p>
-
-<p><img src="/img/blog/picture2.jpg" alt="Picture 2" /></p>
-
+<p><img src="/img/blog/picture2.jpg" alt="Picture 2"></p>
 <p>Additional library directories:</p>
-
-<p><img src="/img/blog/picture3.jpg" alt="Picture 3" /></p>
-
+<p><img src="/img/blog/picture3.jpg" alt="Picture 3"></p>
 <p>Additional dependencies:</p>
-
-<p><img src="/img/blog/picture4.jpg" alt="Picture 4" /></p>
-
+<p><img src="/img/blog/picture4.jpg" alt="Picture 4"></p>
 <p>Now, in the <code>ErgoOpenCL.cpp</code> file, comment <code>#define TEST</code> to build the miner or uncomment <code>define TEST</code> to build the tester.</p>
-
 <p>If you have any additional questions, suggestions, want to send flowers to <code>@mhs_sam</code> to or simply feel like joining the community, head over to our <em>telegram channels</em> - <a href="https://t.me/ergo_mining">Ergo Mining</a> or <a href="https://t.me/ergoplatform">Ergo Platform</a> - and say hello.</p>
-
 <p><strong>Happy mining!</strong></p>
 
           </div>
@@ -461,7 +411,7 @@ Node security There are a few important aspects of node usage …</p>
                 <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_07_24_ergo_address/">
                   <div class="eg-blog__item-img"><img src="/img/blog/address.jpg" height="188" width="335" alt="blog photo"></div>
                   <h3 class="eg-blog__item-title"><span>Ergo Addresses</span></h3>
-                  <p class="eg-blog__item-paragraph">In today&rsquo;s article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work …</p>
+                  <p class="eg-blog__item-paragraph">In today's article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work specifically as …</p>
                   <div class="eg-author">
                     <img src="/img/authors/robert_wolf.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -569,8 +519,7 @@ A lot of folks launched a node and also a miner, with pubkeyHex from the miner �
                   <h3 class="eg-blog__item-title"><span>How to mine Ergo on Windows(x64)</span></h3>
                   <p class="eg-blog__item-paragraph">Step 1: Tools Visual Studio
 Choose free community version, you will need to select desktop development with C++ package during install.
-CUDA toolkit
-Choose …</p>
+CUDA toolkit Choose …</p>
                   <div class="eg-author">
                     <img src="/img/authors/martin_spodymek.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">

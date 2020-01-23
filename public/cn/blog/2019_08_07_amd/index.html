@@ -19,7 +19,7 @@
  rx570-8g: 22-24Mh/s rx580-8g: 23-25Mh/s rx Vega56: 24-26Mh/s  在进一步说明之前，我想对MH Samadani和主要开发人员Amin Moradi为矿工和同仁编写此教程的付出表示感谢！
 现在让我们开始吧！
 配置 将这些文件复制到相同的文件夹作为你的可执行文件，并且将你的种子字符串和节点地址添加到 config.json。除了在相同文件中设置keepPrehash: true 之外。
- Miningkernel.cl Prehashkernel.cl Ocldecs.h Ocldefs.h Libcurl.dll(在windows环境下) Config.json  对Linux的要求 1. 通过下载你来自amd.com特定Linux 发行版的AMDGPU-PRO 软件包来安装AMDGPU-PRO驱动器。打开该文件包，并且在终端窗口运行： $ amdgpu-pro-install --opencl=legacy,pal --headless  2. 安装OpenCL 头文件 $ apt install libcurl4-openssl-dev  3. 安装OpenSSL 1.02 $ apt install libssl-dev  对Windows的要求 1. 你需要至少一个AMD GPU，其驱动器安装了 amd.com 2. 从此处的 mhssadini’s github 下载与安装AMD APK 3.">
+ Miningkernel.cl Prehashkernel.cl Ocldecs.h Ocldefs.h Libcurl.dll(在windows环境下) Config.json  对Linux的要求 1. 通过下载你来自amd.com特定Linux 发行版的AMDGPU-PRO 软件包来安装AMDGPU-PRO驱动器。打开该文件包，并且在终端窗口运行： $ amdgpu-pro-install --opencl=legacy,pal --headless 2. 安装OpenCL 头文件 $ apt install libcurl4-openssl-dev 3. 安装OpenSSL 1.02 $ apt install libssl-dev 对Windows的要求 1. 你需要至少一个AMD GPU，其驱动器安装了 amd.com 2. 从此处的 mhssadini’s github 下载与安装AMD APK 3. 如果没有现成的，利用含有可视化工作室工具链说明的源代码建造网络库libcurl 4.">
     
 
     
@@ -166,32 +166,20 @@
         </div>
         <div class="eg-blog__single-content">
           <div>
-            
-
-<p>本教程将向你提供在Windows或Linux环境下利用AMD卡开采尔格币的所需信息.</p>
-
+            <p>本教程将向你提供在Windows或Linux环境下利用AMD卡开采尔格币的所需信息.</p>
 <p>开发者MH Samadani 在正式推出后第3天就发表其AMD矿工，并且之后还在不断对其进行更新。为了跟踪其最新动态，你可以加入<a href="https://t.me/ergo_mining">尔格采矿电报群</a>并且搜索 <code>#amdminer</code>。你可以<a href="https://github.com/mhssamadani/ergoAMDminer">在此</a>查看矿机。</p>
-
 <p>编码是基于OpenCL并且是完全开放源代码。如果你用的是Nvidia 卡，你可以<a href="https://github.com/ergoplatform/Autolykos-GPU-miner/tree/master/secp256k1">在此</a>找到CUDA矿机。</p>
-
 <p>请注意，使用任何封闭源代码矿机是不安全的。尔格的开采特点要求你必须将你的密钥提供给矿机，以在任何脆弱数据面临危险之前确定谁值得信任！</p>
-
 <p>以下是AMD卡的报告哈希率：</p>
-
 <ul>
 <li>rx570-8g: 22-24Mh/s</li>
 <li>rx580-8g: 23-25Mh/s</li>
 <li>rx Vega56: 24-26Mh/s</li>
 </ul>
-
 <p>在进一步说明之前，我想对MH Samadani和主要开发人员<a href="https://github.com/amin63moradi">Amin Moradi</a>为矿工和同仁编写此教程的付出表示感谢！</p>
-
 <p><strong>现在让我们开始吧！</strong></p>
-
 <h3 id="配置">配置</h3>
-
 <p>将这些文件复制到相同的文件夹作为你的可执行文件，并且将你的种子字符串和节点地址添加到 <code>config.json</code>。除了在相同文件中设置<code>keepPrehash: true</code> 之外。</p>
-
 <ul>
 <li>Miningkernel.cl</li>
 <li>Prehashkernel.cl</li>
@@ -200,75 +188,38 @@
 <li>Libcurl.dll(在windows环境下)</li>
 <li>Config.json</li>
 </ul>
-
 <h3 id="对linux的要求">对Linux的要求</h3>
-
-<h4 id="1-通过下载你来自-amd-com-https-amd-com-特定linux-发行版的amdgpu-pro-软件包来安装amdgpu-pro驱动器-打开该文件包-并且在终端窗口运行">1. 通过下载你来自<a href="https://amd.com">amd.com</a>特定Linux 发行版的AMDGPU-PRO 软件包来安装AMDGPU-PRO驱动器。打开该文件包，并且在终端窗口运行：</h4>
-
-<pre><code class="language-bash">$ amdgpu-pro-install --opencl=legacy,pal --headless
-</code></pre>
-
-<h4 id="2-安装opencl-头文件">2. 安装OpenCL 头文件</h4>
-
-<pre><code class="language-bash">$ apt install libcurl4-openssl-dev
-</code></pre>
-
-<h4 id="3-安装openssl-1-02">3. 安装OpenSSL 1.02</h4>
-
-<pre><code class="language-bash">$ apt install libssl-dev
-</code></pre>
-
-<h3 id="对windows的要求">对Windows的要求</h3>
-
-<h4 id="1-你需要至少一个amd-gpu-其驱动器安装了-amd-com-https-amd-com">1. 你需要至少一个AMD GPU，其驱动器安装了 <a href="https://amd.com">amd.com</a></h4>
-
-<h4 id="2-从-此处-http-amd-dev-wpengine-netdna-cdn-com-app-sdk-installers-appsdkinstaller-3-0-130-135-ga-full-amd-app-sdkinstaller-v3-0-130-135-ga-windows-f-x64-exe-的-mhssadini-s-github-下载与安装amd-apk">2. 从<a href="http://amd-dev.wpengine.netdna-cdn.com/app-sdk/installers/APPSDKInstaller/3.0.130.135-GA/full/AMD-APP-SDKInstaller-v3.0.130.135-GA-windows-F-x64.exe">此处</a>的 mhssadini’s github 下载与安装AMD APK</h4>
-
-<h4 id="3-如果没有现成的-利用含有-可视化工作室工具链说明-https-medium-com-chuy-max-compile-libcurl-on-windows-with-visual-studio-2017-x64-and-ssl-winssl-cff41ac7971d-的源代码建造网络库libcurl">3. 如果没有现成的，利用含有<a href="https://medium.com/@chuy.max/compile-libcurl-on-windows-with-visual-studio-2017-x64-and-ssl-winssl-cff41ac7971d">可视化工作室工具链说明</a>的源代码建造网络库libcurl</h4>
-
-<h4 id="4-从-此处-https-slproweb-com-download-win64openssl-1-0-2s-exe-下载与安装openssl-1-0-2">4. 从<a href="https://slproweb.com/download/Win64OpenSSL-1_0_2s.exe">此处</a>下载与安装OpenSSL 1.0.2</h4>
-
+<h4 id="1-通过下载你来自amdcomhttpsamdcom特定linux-发行版的amdgpu-pro-软件包来安装amdgpu-pro驱动器打开该文件包并且在终端窗口运行">1. 通过下载你来自<a href="https://amd.com">amd.com</a>特定Linux 发行版的AMDGPU-PRO 软件包来安装AMDGPU-PRO驱动器。打开该文件包，并且在终端窗口运行：</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ amdgpu-pro-install --opencl<span style="color:#f92672">=</span>legacy,pal --headless
+</code></pre></div><h4 id="2-安装opencl-头文件">2. 安装OpenCL 头文件</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ apt install libcurl4-openssl-dev
+</code></pre></div><h4 id="3-安装openssl-102">3. 安装OpenSSL 1.02</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ apt install libssl-dev
+</code></pre></div><h3 id="对windows的要求">对Windows的要求</h3>
+<h4 id="1-你需要至少一个amd-gpu其驱动器安装了amdcomhttpsamdcom">1. 你需要至少一个AMD GPU，其驱动器安装了 <a href="https://amd.com">amd.com</a></h4>
+<h4 id="2-从此处httpamd-devwpenginenetdna-cdncomapp-sdkinstallersappsdkinstaller30130135-gafullamd-app-sdkinstaller-v30130135-ga-windows-f-x64exe的-mhssadinis-github下载与安装amd-apk">2. 从<a href="http://amd-dev.wpengine.netdna-cdn.com/app-sdk/installers/APPSDKInstaller/3.0.130.135-GA/full/AMD-APP-SDKInstaller-v3.0.130.135-GA-windows-F-x64.exe">此处</a>的 mhssadini’s github 下载与安装AMD APK</h4>
+<h4 id="3-如果没有现成的利用含有可视化工作室工具链说明httpsmediumcomchuymaxcompile-libcurl-on-windows-with-visual-studio-2017-x64-and-ssl-winssl-cff41ac7971d的源代码建造网络库libcurl">3. 如果没有现成的，利用含有<a href="https://medium.com/@chuy.max/compile-libcurl-on-windows-with-visual-studio-2017-x64-and-ssl-winssl-cff41ac7971d">可视化工作室工具链说明</a>的源代码建造网络库libcurl</h4>
+<h4 id="4-从此处httpsslprowebcomdownloadwin64openssl-1_0_2sexe下载与安装openssl-102">4. 从<a href="https://slproweb.com/download/Win64OpenSSL-1_0_2s.exe">此处</a>下载与安装OpenSSL 1.0.2</h4>
 <h3 id="在linux环境下建造">在Linux环境下建造</h3>
-
-<h4 id="1-在主目录下编辑-ergoopencl-cpp-并且加批注-define-test-或者取消批注-define-test-以建造矿机或者测试机">1. 在主目录下编辑 <code>ErgoOpenCL.cpp</code> ，并且加批注 <code>#define TEST</code> 或者取消批注 <code>define TEST</code> 以建造矿机或者测试机。</h4>
-
-<h4 id="2-将目录改为-ergoamdminer-ubuntu-并且运行make">2. 将目录改为 <code>ergoAMDminer/Ubuntu</code> ，并且运行make.</h4>
-
-<pre><code class="language-bash">./makefile
-</code></pre>
-
-<h4 id="3-如果每一步都运行无误-你应当可以在-ergoamdminer-ubuntu-下找到ergoopencl-继续-运行程序-开始开采">3. 如果每一步都运行无误，你应当可以在<code>ergoAMDminer/Ubuntu/</code>下找到ErgoOpenCL。继续，运行程序，开始开采。</h4>
-
-<pre><code class="language-bash">./ErgoOpenCL
-</code></pre>
-
-<h3 id="针对windows的预制版本">针对Windows的预制版本</h3>
-
+<h4 id="1-在主目录下编辑ergoopenclcpp并且加批注define-test或者取消批注define-test以建造矿机或者测试机">1. 在主目录下编辑 <code>ErgoOpenCL.cpp</code> ，并且加批注 <code>#define TEST</code> 或者取消批注 <code>define TEST</code> 以建造矿机或者测试机。</h4>
+<h4 id="2-将目录改为ergoamdminerubuntu并且运行make">2. 将目录改为 <code>ergoAMDminer/Ubuntu</code> ，并且运行make.</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./makefile
+</code></pre></div><h4 id="3-如果每一步都运行无误你应当可以在ergoamdminerubuntu下找到ergoopencl继续运行程序开始开采">3. 如果每一步都运行无误，你应当可以在<code>ergoAMDminer/Ubuntu/</code>下找到ErgoOpenCL。继续，运行程序，开始开采。</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./ErgoOpenCL
+</code></pre></div><h3 id="针对windows的预制版本">针对Windows的预制版本</h3>
 <p>下载<a href="https://github.com/mhssamadani/ergoAMDminer">github</a>，前往win64文件夹，然后执行 <code>ErgoOpenCL_miner.exe</code> 或 <code>ErgoOpenCL_tester.exe</code>。如果每一步都运行无误（参见要求与配置），其应当可以开始开采。</p>
-
 <h3 id="在windows环境下建造">在Windows环境下建造</h3>
-
 <p>打开 <code>ErgoOpenCL.sln</code> 可视化工作室。增加OpenCL、LibCurl和OpenSSL库。
 包括目录：</p>
-
-<p><img src="/img/blog/picture1.jpg" alt="Picture 1" /></p>
-
+<p><img src="/img/blog/picture1.jpg" alt="Picture 1"></p>
 <p>并且包括其他目录：</p>
-
-<p><img src="/img/blog/picture2.jpg" alt="Picture 2" /></p>
-
+<p><img src="/img/blog/picture2.jpg" alt="Picture 2"></p>
 <p>其他库目录：</p>
-
-<p><img src="/img/blog/picture3.jpg" alt="Picture 3" /></p>
-
+<p><img src="/img/blog/picture3.jpg" alt="Picture 3"></p>
 <p>其他依赖性：</p>
-
-<p><img src="/img/blog/picture4.jpg" alt="Picture 4" /></p>
-
+<p><img src="/img/blog/picture4.jpg" alt="Picture 4"></p>
 <p>在<code>ErgoOpenCL.cpp</code> 文件中，加批注 <code>#define TEST</code> 以建造矿机，或取消批注<code>define TEST</code> 以建造测试机。</p>
-
 <p>如果你还有其他问题、建议，希望送花给 <code>@mhs_sam</code> 或者就是想加入社区，快加入我们的电报群 - <a href="https://t.me/ergo_mining">尔格采矿</a> 或<a href="https://t.me/ergoplatform">尔格平台</a> – 来打声招呼吧！</p>
-
 <p><strong>祝挖矿顺利！</strong></p>
 
           </div>
@@ -340,7 +291,7 @@
                   <h3 class="eg-blog__item-title"><span>(Jean Philippe Aumasson 所进行的)安全审查</span></h3>
                   <p class="eg-blog__item-paragraph">我们想宣布尔格已经成功通过某些(最关键的)部分的安全审查。此次审查由 Jean- Philipee Aumasson 负责完成(也叫 veorq, https://aumasson.jp/ )。
 具体报告如下。没有发现任何重大问题。对所发现问题的评论如下:
- 关于钱包密码，我们将在下一版协议节点中提供建议。不 …</p>
+  关于钱包密码，我们将在下一版协议节点中提供建议。 …</p>
                   <div class="eg-author">
                     <img src="/img/logotype_black_circle.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -520,8 +471,7 @@
                   <h3 class="eg-blog__item-title"><span>如何在Windows（x64）系统下挖掘尔格</span></h3>
                   <p class="eg-blog__item-paragraph">第1步：工具 Visual Studio(可视化工作室)
 选择免费的社区版本，您需要在安装期间选择使用C ++包进行桌面开发。
-CUDA工具包
-选择您的系统版本，使用默认选项安装，它会将您的图形驱动程序更新为兼容版本。
+CUDA工具包 选择您的系统版本，使用默认选项安装，它会将您的图形驱动程序更新为兼容版本。
 Curl
 没有SSL的通用版本，二进制不会工作。 选择通用源，压缩文件并单击显示镜像。下载 …</p>
                   <div class="eg-author">

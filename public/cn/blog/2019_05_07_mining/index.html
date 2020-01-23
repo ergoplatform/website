@@ -13,8 +13,7 @@
     
       <meta name="description" content="第1步：工具 Visual Studio(可视化工作室)
 选择免费的社区版本，您需要在安装期间选择使用C &#43;&#43;包进行桌面开发。
-CUDA工具包
-选择您的系统版本，使用默认选项安装，它会将您的图形驱动程序更新为兼容版本。
+CUDA工具包 选择您的系统版本，使用默认选项安装，它会将您的图形驱动程序更新为兼容版本。
 Curl
 没有SSL的通用版本，二进制不会工作。 选择通用源，压缩文件并单击显示镜像。下载并解压缩。
 OpenSSL 1.0.2
@@ -175,48 +174,29 @@ S第4步：挖掘 在挖掘之前，您必须配置您的节点，钱包和矿�
         </div>
         <div class="eg-blog__single-content">
           <div>
-            
-
-<h2 id="第1步-工具">第1步：工具</h2>
-
-<p><a href="https://visualstudio.microsoft.com/downloads/">Visual Studio(可视化工作室)</a><br />
+            <h2 id="第1步工具">第1步：工具</h2>
+<p><a href="https://visualstudio.microsoft.com/downloads/">Visual Studio(可视化工作室)</a><br>
 选择免费的社区版本，您需要在安装期间选择使用C ++包进行桌面开发。</p>
-
-<p><a href="https://developer.nvidia.com/cuda-downloads">CUDA工具包</a><br />
+<p><a href="https://developer.nvidia.com/cuda-downloads">CUDA工具包</a> <br>
 选择您的系统版本，使用默认选项安装，它会将您的图形驱动程序更新为兼容版本。</p>
-
-<p><a href="https://curl.haxx.se/latest.cgi?curl=win64-nossl">Curl</a><br />
+<p><a href="https://curl.haxx.se/latest.cgi?curl=win64-nossl">Curl</a><br>
 没有SSL的通用版本，二进制不会工作。 选择通用源，压缩文件并单击显示镜像。下载并解压缩。</p>
-
-<p><a href="https://slproweb.com/download/Win64OpenSSL-1_0_2r.exe">OpenSSL 1.0.2</a><br />
+<p><a href="https://slproweb.com/download/Win64OpenSSL-1_0_2r.exe">OpenSSL 1.0.2</a><br>
 下载并安装。</p>
-
-<p><a href="https://github.com/ergoplatform/Autolykos-GPU-miner">Autolykos GPU矿工</a><br />
+<p><a href="https://github.com/ergoplatform/Autolykos-GPU-miner">Autolykos GPU矿工</a><br>
 单击克隆或下载，并下载压缩文件并解压缩。</p>
-
-<h2 id="第2步-构建libcurl">第2步：构建libcurl</h2>
-
+<h2 id="第2步构建libcurl">第2步：构建libcurl</h2>
 <p>打开命令行，转到 <code>c:\Program Files (x86)\Microsoft Visual Studio\2017\Community\vc\Auxiliary\Build\</code> 并运行此脚本： <code>vcvarsall.bat x64</code></p>
-
 <p>打开命令行，转到解压缩的Curl目录，然后进入winbuild文件夹并运行此命令： <code>nmake /f Makefile.vc mode=dll MACHINE=x64</code></p>
-
 <p>成功构建后，转到Curl目录，  <code>\curl\builds\libcurl-vc-x64-release-dll-ipv6-sspi-winssl\bin</code> 并将 <code>libcurl.dll</code> 复制到 <code>\Autolykos\secp256k1</code> 目录。</p>
-
-<h2 id="第3步-建立矿工">第3步：建立矿工</h2>
-
+<h2 id="第3步建立矿工">第3步：建立矿工</h2>
 <p>打开命令行，转到 <code>c:\Program Files (x86)\Microsoft Visual Studio\2017\Community\vc\Auxiliary\Build\</code> 并运行此脚本： <code>vcvars64.bat</code></p>
-
 <p>打开命令行并转到解压缩的奥托吕科斯图形处理器矿工（Autolykos GPU miner）目录，然后进入 <code>secp256k1文件夹</code> 并编辑 <code>winbuild.cmd</code> 文件，将 <code>OPENSSL_DIR, LIBCURL_DIR</code> 更改为OpenSSL和Curl主目录。 您可以将 <code>CUDA_COMPUTE_ARCH</code> 更改为所需的图形处理器代码体系结构。</p>
-
 <p>运行 <code>winbuild.cmd</code> 并构建你的矿工。 成功构建后，您应该能在同一目录中发现miner.exe。</p>
-
-<h2 id="s第4步-挖掘">S第4步：挖掘</h2>
-
+<h2 id="s第4步挖掘">S第4步：挖掘</h2>
 <p>在挖掘之前，您必须<a href="https://ergoplatform.org/cn/blog/2019_03_17_how_to_set/">配置您的节点</a>，<a href="https://github.com/ergoplatform/ergo/wiki/Wallet-documentation">钱包</a>和<a href="https://ergoplatform.org/cn/blog/2019_04_03_mining/">矿工
 </a></p>
-
 <p>同步节点后，配置并解锁钱包，您必须在 <code>\Autolykos\secp256k1</code> 目录中，创建挖掘配置文件 <code>config.json</code> ，具有以下结构： <code>{“seed”：“YourSeedString”，“node”：“https：//127.0.0.1：9052” ，“keepPrehash”：true}</code>。</p>
-
 <p>打开命令行并转到 <code>\Autolykos\secp256k1</code> 目录。 运行 <code>miner.exe config.json</code>。</p>
 
           </div>
@@ -288,7 +268,7 @@ S第4步：挖掘 在挖掘之前，您必须配置您的节点，钱包和矿�
                   <h3 class="eg-blog__item-title"><span>(Jean Philippe Aumasson 所进行的)安全审查</span></h3>
                   <p class="eg-blog__item-paragraph">我们想宣布尔格已经成功通过某些(最关键的)部分的安全审查。此次审查由 Jean- Philipee Aumasson 负责完成(也叫 veorq, https://aumasson.jp/ )。
 具体报告如下。没有发现任何重大问题。对所发现问题的评论如下:
- 关于钱包密码，我们将在下一版协议节点中提供建议。不 …</p>
+  关于钱包密码，我们将在下一版协议节点中提供建议。 …</p>
                   <div class="eg-author">
                     <img src="/img/logotype_black_circle.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">

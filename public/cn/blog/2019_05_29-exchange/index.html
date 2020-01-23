@@ -14,12 +14,12 @@
       <meta name="description" content="本地交易所交易系统（LETS）旨在发展当地经济，并且通常由在彼此附近的当地人使用。 在此链接中描述了一个管理LETS的委员会。 我们将此类系统称为管理或许可，因为它取决于受信任的委员会。 在这里，我们描述了一个去信任的LETS系统，即没有管理委员会的系统。
 概要 LETS涉及多个同意使用某种形式的“本地货币”的党派，通常以1：1的比率与该国的主要货币挂钩。假设我们的LETS位于欧洲国家，货币为欧元，交换以“当地欧元”进行，被认为相当于国家欧元。
 LETS中的每个用户都有一个帐户，其中包含该用户的LETS余额（以本地欧元为单位）。在加入时，每个用户的余额为零。余额存储在（可能是去中心化的）分类帐中。 LETS的一个有趣特征是零余额的用户也可以“提款”，但仅用于支付另一个LETS用户。在任何时候，所有用户的LETS余额总和为零。
-例如，零余额的Alice希望从Bob那里以2欧元购买一升牛奶，Bob也是零余额的LETS成员。她将2欧元从她的账户转到Bob&amp;rsquo;s，她的余额为-2，Bob为&#43;2。然后，Bob可以将他的部分或全部余额转移给另一个LETS用户，以换取商品或服务。
+例如，零余额的Alice希望从Bob那里以2欧元购买一升牛奶，Bob也是零余额的LETS成员。她将2欧元从她的账户转到Bob&#39;s，她的余额为-2，Bob为&#43;2。然后，Bob可以将他的部分或全部余额转移给另一个LETS用户，以换取商品或服务。
 去信任的LETS 由于我们希望获得去信任的LETS，因此我们不能依赖任何受信任的群体来接纳用户。我们只假设又一个有信任的预言机（oracle）由一些全球账号和一个包含这个账号的一个代币的单例币箱标识。此币箱还包含在任何给定时间段内尔格币与欧元的比率。通过使用此币箱并使用新费率创建另一个单例币箱来更新费率。
 在任何情况下，我们的LETS由包含一些LETS成员资格代币的全局LETS币箱来定义。此币箱受以下脚本保护。代币账号唯一地定义了所使用的LETS的属性，例如位置，货币单位，费率预言机（oracle）账号等。一个或多个用户可以花费该币箱并创建他们各自的LETS币箱作为交易的输出。该币箱最初以例如10000 LETS会员代币开始。
 一个LETS币箱表示一个LETS成员，必须用于LETS交易。 LETS交易发生在两个LETS成员之间，一个是发送者而另一个是接收者，这样发送者将一些正数量的LETS货币（本地欧元）转移给接收者。这样的交易消耗成员的币箱并将其重新创建为具有更新余额的输出。
 基本变体 为了防止垃圾信息和分布式拒绝服务攻击，我们要求至少将一些最小数量的尔格币(minErgsToJoin)锁定在新创建的成员的币箱中。 尔格币将被锁定，直到至少minWithdrawTime数量的区块被挖掘为止。 允许一个币箱的LETS余额为负值，直至锁定的尔格币可以覆盖的金额（使用交易时的汇率）。
-// 一个币箱存储会员的代币 val tokenBox = OUTPUTS(0) // first output contains remaining LETS tokens def isLets(b:Box) = { // 一个LETS 币箱必须在代币中有正好一个会员资格代币(0) b.tokens(0)._1 == letsTokenID &amp;amp;&amp;amp; b.tokens(0)._2 == 1 &amp;amp;&amp;amp; blake2b256(b.propositionBytes) == memberBoxScriptHash &amp;amp;&amp;amp; SELF.R4[Long].get == 0 &amp;amp;&amp;amp; // 从0 LETS结余中开始一个币箱 b.value &amp;gt;= minErgsToJoin &amp;amp;&amp;amp; // 币箱必须包含一些最小数量的尔格币 b.R6[Long].get &amp;lt;= HEIGHT // 将创建高度存储在R6中 } // 在tx中创建了多少lets币箱 val numLetsBoxes = OUTPUTS.">
+// 一个币箱存储会员的代币 val tokenBox = OUTPUTS(0) // first output contains remaining LETS tokens def isLets(b:Box) = { // 一个LETS 币箱必须在代币中有正好一个会员资格代币(0)  b.tokens(0)._1 == letsTokenID &amp;amp;&amp;amp; b.tokens(0)._2 == 1 &amp;amp;&amp;amp; blake2b256(b.propositionBytes) == memberBoxScriptHash &amp;amp;&amp;amp; SELF.R4[Long].get == 0 &amp;amp;&amp;amp; // 从0 LETS结余中开始一个币箱  b.value &amp;gt;= minErgsToJoin &amp;amp;&amp;amp; // 币箱必须包含一些最小数量的尔格币  b.R6[Long].get &amp;lt;= HEIGHT // 将创建高度存储在R6中 } // 在tx中创建了多少lets币箱 val numLetsBoxes = OUTPUTS.">
     
 
     
@@ -166,164 +166,125 @@ LETS中的每个用户都有一个帐户，其中包含该用户的LETS余额（
         </div>
         <div class="eg-blog__single-content">
           <div>
-            
-
-<p>本地交易所交易系统（LETS）旨在发展当地经济，并且通常由在彼此附近的当地人使用。 在<a href="/cn/blog/2019_04_22-lets/">此链接</a>中描述了一个管理LETS的委员会。 我们将此类系统称为管理或许可，因为它取决于受信任的委员会。 在这里，我们描述了一个去信任的LETS系统，即没有管理委员会的系统。</p>
-
+            <p>本地交易所交易系统（LETS）旨在发展当地经济，并且通常由在彼此附近的当地人使用。 在<a href="/cn/blog/2019_04_22-lets/">此链接</a>中描述了一个管理LETS的委员会。 我们将此类系统称为管理或许可，因为它取决于受信任的委员会。 在这里，我们描述了一个去信任的LETS系统，即没有管理委员会的系统。</p>
 <h2 id="概要">概要</h2>
-
 <p>LETS涉及多个同意使用某种形式的“本地货币”的党派，通常以1：1的比率与该国的主要货币挂钩。假设我们的LETS位于欧洲国家，货币为欧元，交换以“当地欧元”进行，被认为相当于国家欧元。</p>
-
 <p>LETS中的每个用户都有一个帐户，其中包含该用户的LETS余额（以本地欧元为单位）。在加入时，每个用户的余额为零。余额存储在（可能是去中心化的）分类帐中。 LETS的一个有趣特征是零余额的用户也可以“提款”，但仅用于支付另一个LETS用户。在任何时候，所有用户的LETS余额总和为零。</p>
-
-<p>例如，零余额的Alice希望从Bob那里以2欧元购买一升牛奶，Bob也是零余额的LETS成员。她将2欧元从她的账户转到Bob&rsquo;s，她的余额为-2，Bob为+2。然后，Bob可以将他的部分或全部余额转移给另一个LETS用户，以换取商品或服务。</p>
-
+<p>例如，零余额的Alice希望从Bob那里以2欧元购买一升牛奶，Bob也是零余额的LETS成员。她将2欧元从她的账户转到Bob's，她的余额为-2，Bob为+2。然后，Bob可以将他的部分或全部余额转移给另一个LETS用户，以换取商品或服务。</p>
 <h2 id="去信任的lets">去信任的LETS</h2>
-
 <p>由于我们希望获得去信任的LETS，因此我们不能依赖任何受信任的群体来接纳用户。我们只假设又一个有信任的预言机（oracle）由一些全球账号和一个包含这个账号的一个代币的单例币箱标识。此币箱还包含在任何给定时间段内尔格币与欧元的比率。通过使用此币箱并使用新费率创建另一个单例币箱来更新费率。</p>
-
 <p>在任何情况下，我们的LETS由包含一些LETS成员资格代币的全局LETS币箱来定义。此币箱受以下脚本保护。代币账号唯一地定义了所使用的LETS的属性，例如位置，货币单位，费率预言机（oracle）账号等。一个或多个用户可以花费该币箱并创建他们各自的LETS币箱作为交易的输出。该币箱最初以例如10000 LETS会员代币开始。</p>
-
 <p>一个LETS币箱表示一个LETS成员，必须用于LETS交易。 LETS交易发生在两个LETS成员之间，一个是发送者而另一个是接收者，这样发送者将一些正数量的LETS货币（本地欧元）转移给接收者。这样的交易消耗成员的币箱并将其重新创建为具有更新余额的输出。</p>
-
 <h2 id="基本变体">基本变体</h2>
-
 <p>为了防止垃圾信息和分布式拒绝服务攻击，我们要求至少将一些最小数量的尔格币(<code>minErgsToJoin</code>)锁定在新创建的成员的币箱中。 尔格币将被锁定，直到至少<code>minWithdrawTime</code>数量的区块被挖掘为止。 允许一个币箱的LETS余额为负值，直至锁定的尔格币可以覆盖的金额（使用交易时的汇率）。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#75715e">// 一个币箱存储会员的代币
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> tokenBox <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">OUTPUTS</span><span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span> <span style="color:#75715e">// first output contains remaining LETS tokens
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">def</span> isLets<span style="color:#f92672">(</span>b<span style="color:#66d9ef">:</span><span style="color:#66d9ef">Box</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">=</span> <span style="color:#f92672">{</span>
+   <span style="color:#75715e">// 一个LETS 币箱必须在代币中有正好一个会员资格代币(0)
+</span><span style="color:#75715e"></span>   b<span style="color:#f92672">.</span>tokens<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>_1 <span style="color:#f92672">==</span> letsTokenID <span style="color:#f92672">&amp;&amp;</span> b<span style="color:#f92672">.</span>tokens<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>_2 <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&amp;&amp;</span>
+   blake2b256<span style="color:#f92672">(</span>b<span style="color:#f92672">.</span>propositionBytes<span style="color:#f92672">)</span> <span style="color:#f92672">==</span> memberBoxScriptHash <span style="color:#f92672">&amp;&amp;</span>
+   <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>R4<span style="color:#f92672">[</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">]</span><span style="color:#f92672">.</span>get <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#75715e">// 从0 LETS结余中开始一个币箱
+</span><span style="color:#75715e"></span>   b<span style="color:#f92672">.</span>value <span style="color:#f92672">&gt;=</span> minErgsToJoin <span style="color:#f92672">&amp;&amp;</span> <span style="color:#75715e">// 币箱必须包含一些最小数量的尔格币
+</span><span style="color:#75715e"></span>   b<span style="color:#f92672">.</span>R6<span style="color:#f92672">[</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">]</span><span style="color:#f92672">.</span>get <span style="color:#f92672">&lt;=</span> <span style="color:#a6e22e">HEIGHT</span> <span style="color:#75715e">// 将创建高度存储在R6中
+</span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
 
-<pre><code class="language-scala">// 一个币箱存储会员的代币
-val tokenBox = OUTPUTS(0) // first output contains remaining LETS tokens
-def isLets(b:Box) = {
-   // 一个LETS 币箱必须在代币中有正好一个会员资格代币(0)
-   b.tokens(0)._1 == letsTokenID &amp;&amp; b.tokens(0)._2 == 1 &amp;&amp;
-   blake2b256(b.propositionBytes) == memberBoxScriptHash &amp;&amp;
-   SELF.R4[Long].get == 0 &amp;&amp; // 从0 LETS结余中开始一个币箱
-   b.value &gt;= minErgsToJoin &amp;&amp; // 币箱必须包含一些最小数量的尔格币
-   b.R6[Long].get &lt;= HEIGHT // 将创建高度存储在R6中
-}
+<span style="color:#75715e">// 在tx中创建了多少lets币箱
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> numLetsBoxes <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">OUTPUTS</span><span style="color:#f92672">.</span>filter<span style="color:#f92672">(</span><span style="color:#f92672">{</span><span style="color:#f92672">(</span>b<span style="color:#66d9ef">:</span><span style="color:#66d9ef">Box</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">=&gt;</span> isLets<span style="color:#f92672">(</span>b<span style="color:#f92672">)</span><span style="color:#f92672">}</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>size
 
-// 在tx中创建了多少lets币箱
-val numLetsBoxes = OUTPUTS.filter({(b:Box) =&gt; isLets(b)}).size
+<span style="color:#75715e">// 在交易中，为币箱保留了以下内容 ...
+</span><span style="color:#75715e"></span>tokenBox<span style="color:#f92672">.</span>tokens<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>_1 <span style="color:#f92672">==</span> <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>tokens<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>_1 <span style="color:#f92672">&amp;&amp;</span>                <span style="color:#75715e">// 代币账号
+</span><span style="color:#75715e"></span>tokenBox<span style="color:#f92672">.</span>tokens<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>_2 <span style="color:#f92672">==</span> <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>tokens<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>_2 <span style="color:#f92672">-</span> numLetsBoxes <span style="color:#f92672">&amp;&amp;</span> <span style="color:#75715e">//  数量
+</span><span style="color:#75715e"></span>tokenBox<span style="color:#f92672">.</span>propositionBytes <span style="color:#f92672">==</span> <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>propositionBytes           <span style="color:#75715e">//  脚本
+</span></code></pre></div><p>LETS成员的币框受以下脚本的保护，其哈希memberBoxScriptHash（成员币箱脚本哈希）被以上使用。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#66d9ef">val</span> validRateOracle <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">CONTEXT</span><span style="color:#f92672">.</span>dataInputs<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>tokens<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>_1 <span style="color:#f92672">==</span> rateTokenID
+<span style="color:#66d9ef">val</span> rate <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">CONTEXT</span><span style="color:#f92672">.</span>dataInputs<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>R4<span style="color:#f92672">[</span><span style="color:#66d9ef">Int</span><span style="color:#f92672">]</span><span style="color:#f92672">.</span>get
+<span style="color:#66d9ef">val</span> inBalance <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>R4<span style="color:#f92672">[</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">]</span><span style="color:#f92672">.</span>get    <span style="color:#75715e">// 当前输入下的LETS结余
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> pubKey <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>R5<span style="color:#f92672">[</span><span style="color:#66d9ef">SigmaProp</span><span style="color:#f92672">]</span><span style="color:#f92672">.</span>get  <span style="color:#75715e">// 当前输入的拥有者
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> createdAt <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>R6<span style="color:#f92672">[</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">]</span><span style="color:#f92672">.</span>get    <span style="color:#75715e">// 当前输入开采的高度
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">val</span> index <span style="color:#66d9ef">=</span> getVar<span style="color:#f92672">[</span><span style="color:#66d9ef">Int</span><span style="color:#f92672">]</span><span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>get       <span style="color:#75715e">// 相关输出的指数
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> out <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">OUTPUTS</span><span style="color:#f92672">(</span>index<span style="color:#f92672">)</span>
+<span style="color:#66d9ef">val</span> outBalance <span style="color:#66d9ef">=</span> out<span style="color:#f92672">.</span>R4<span style="color:#f92672">[</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">]</span><span style="color:#f92672">.</span>get    <span style="color:#75715e">// 输出的LETS结余
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// LETS币箱与当前币箱具有相同的脚本
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> isMemberBox <span style="color:#66d9ef">=</span> <span style="color:#f92672">{</span><span style="color:#f92672">(</span>b<span style="color:#66d9ef">:</span><span style="color:#66d9ef">Box</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">=&gt;</span> b<span style="color:#f92672">.</span>propositionBytes <span style="color:#f92672">==</span> <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>propositionBytes<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">val</span> letsInputs <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">INPUTS</span><span style="color:#f92672">.</span>filter<span style="color:#f92672">(</span>isMemberBox<span style="color:#f92672">)</span>    <span style="color:#75715e">// 所有LETS输入币箱
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> letsOutputs <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">OUTPUTS</span><span style="color:#f92672">.</span>filter<span style="color:#f92672">(</span>isMemberBox<span style="color:#f92672">)</span>  <span style="color:#75715e">// 所有LETS输出币箱
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// 如果LETS余额增加，则当前输入属于接收器
+</span><span style="color:#75715e"></span><span style="color:#75715e">// 接收器的输入币箱中可能有一些尔格币，我们需要确保
+</span><span style="color:#75715e"></span><span style="color:#75715e">// 接收器的输出币箱也包含与输入相同数量的尔格币
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> receiver <span style="color:#66d9ef">=</span> outBalance <span style="color:#f92672">&gt;</span> inBalance <span style="color:#f92672">&amp;&amp;</span> out<span style="color:#f92672">.</span>value <span style="color:#f92672">==</span> <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>value
 
-// 在交易中，为币箱保留了以下内容 ...
-tokenBox.tokens(0)._1 == SELF.tokens(0)._1 &amp;&amp;                // 代币账号
-tokenBox.tokens(0)._2 == SELF.tokens(0)._2 - numLetsBoxes &amp;&amp; //  数量
-tokenBox.propositionBytes == SELF.propositionBytes           //  脚本
-</code></pre>
+<span style="color:#66d9ef">val</span> getBalance <span style="color:#66d9ef">=</span> <span style="color:#f92672">{</span><span style="color:#f92672">(</span>b<span style="color:#66d9ef">:</span><span style="color:#66d9ef">Box</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">=&gt;</span> b<span style="color:#f92672">.</span>R4<span style="color:#f92672">[</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">]</span><span style="color:#f92672">.</span>get<span style="color:#f92672">}</span> <span style="color:#75715e">// 回到币箱的LETS结余
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">val</span> letsBalIn <span style="color:#66d9ef">=</span> letsInputs<span style="color:#f92672">.</span>map<span style="color:#f92672">(</span>getBalance<span style="color:#f92672">)</span><span style="color:#f92672">.</span>fold<span style="color:#f92672">(</span><span style="color:#ae81ff">0L</span><span style="color:#f92672">,</span> <span style="color:#f92672">{</span><span style="color:#f92672">(</span>l<span style="color:#66d9ef">:</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">,</span> r<span style="color:#66d9ef">:</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">=&gt;</span> l <span style="color:#f92672">+</span> r<span style="color:#f92672">}</span><span style="color:#f92672">)</span>
+<span style="color:#66d9ef">val</span> letsBalOut <span style="color:#66d9ef">=</span> letsOutputs<span style="color:#f92672">.</span>map<span style="color:#f92672">(</span>getBalance<span style="color:#f92672">)</span><span style="color:#f92672">.</span>fold<span style="color:#f92672">(</span><span style="color:#ae81ff">0L</span><span style="color:#f92672">,</span> <span style="color:#f92672">{</span><span style="color:#f92672">(</span>l<span style="color:#66d9ef">:</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">,</span> r<span style="color:#66d9ef">:</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">=&gt;</span> l <span style="color:#f92672">+</span> r<span style="color:#f92672">}</span><span style="color:#f92672">)</span>
 
-<p>LETS成员的币框受以下脚本的保护，其哈希memberBoxScriptHash（成员币箱脚本哈希）被以上使用。</p>
+<span style="color:#75715e">// 发送人的币箱可以包含较少量的尔格币(发送人可以撤回提供的尔格币
+</span><span style="color:#75715e"></span><span style="color:#75715e">// 发送者的任何负LETS余额都有足够的尔格币支持)
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> correctErgs <span style="color:#66d9ef">=</span> out<span style="color:#f92672">.</span>value <span style="color:#f92672">&gt;=</span> <span style="color:#f92672">-</span>outBalance <span style="color:#f92672">*</span> rate <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">(</span>
+  out<span style="color:#f92672">.</span>value <span style="color:#f92672">&gt;=</span> <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>value <span style="color:#f92672">||</span> <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>R6<span style="color:#f92672">[</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">]</span><span style="color:#f92672">.</span>get <span style="color:#f92672">+</span> minWithdrawTime <span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">HEIGHT</span>
+<span style="color:#f92672">)</span>
 
-<pre><code class="language-scala">val validRateOracle = CONTEXT.dataInputs(0).tokens(0)._1 == rateTokenID
-val rate = CONTEXT.dataInputs(0).R4[Int].get
-val inBalance = SELF.R4[Long].get    // 当前输入下的LETS结余
-val pubKey = SELF.R5[SigmaProp].get  // 当前输入的拥有者
-val createdAt = SELF.R6[Long].get    // 当前输入开采的高度
-
-val index = getVar[Int](0).get       // 相关输出的指数
-val out = OUTPUTS(index)
-val outBalance = out.R4[Long].get    // 输出的LETS结余
-
-// LETS币箱与当前币箱具有相同的脚本
-val isMemberBox = {(b:Box) =&gt; b.propositionBytes == SELF.propositionBytes}
-val letsInputs = INPUTS.filter(isMemberBox)    // 所有LETS输入币箱
-val letsOutputs = OUTPUTS.filter(isMemberBox)  // 所有LETS输出币箱
-
-// 如果LETS余额增加，则当前输入属于接收器
-// 接收器的输入币箱中可能有一些尔格币，我们需要确保
-// 接收器的输出币箱也包含与输入相同数量的尔格币
-val receiver = outBalance &gt; inBalance &amp;&amp; out.value == SELF.value
-
-val getBalance = {(b:Box) =&gt; b.R4[Long].get} // 回到币箱的LETS结余
-
-val letsBalIn = letsInputs.map(getBalance).fold(0L, {(l:Long, r:Long) =&gt; l + r})
-val letsBalOut = letsOutputs.map(getBalance).fold(0L, {(l:Long, r:Long) =&gt; l + r})
-
-// 发送人的币箱可以包含较少量的尔格币(发送人可以撤回提供的尔格币
-// 发送者的任何负LETS余额都有足够的尔格币支持)
-val correctErgs = out.value &gt;= -outBalance * rate &amp;&amp; (
-  out.value &gt;= SELF.value || SELF.R6[Long].get + minWithdrawTime &gt; HEIGHT
-)
-
-// 对于接受者来说，我们并不接触尔格币的结余
-// 因为接受者没有积极参与交易
-
-inBalance != outBalance &amp;&amp; // 交易应该发生；结余必须变化
-SELF.tokens(0)._1 == letsTokenID &amp;&amp; // 当前输入有正确的代币
-out.tokens(0)._1 == letsTokenID &amp;&amp; // 对应地，输出也有正确的代币
-validRateOracle &amp;&amp;          // 预言机（oracle）提供费率具备正确的“费率代币”
-letsBalIn == letsBalOut &amp;&amp;  // 总共的LETS结余被保存在交易中
-letsInputs.size == 2 &amp;&amp; letsOutputs.size == 2 &amp;&amp;  // 只有两个LETS输入，输出
-out.propositionBytes == SELF.propositionBytes &amp;&amp;  // 输出是一个LETS币箱 ...
-out.R5[SigmaProp].get == pubKey &amp;&amp;                // ... 用正确的公钥
-out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... 和创建高度
-(receiver ||              // ...要么当前输入属于接受者
-  (pubKey &amp;&amp; correctErgs) // ... 要么输出有正确的尔格币，同时tx有签名
-)
-</code></pre>
-
-<p>使用上述脚本支付币箱的交易需要：</p>
-
+<span style="color:#75715e">// 对于接受者来说，我们并不接触尔格币的结余
+</span><span style="color:#75715e"></span><span style="color:#75715e">// 因为接受者没有积极参与交易
+</span><span style="color:#75715e"></span>
+inBalance <span style="color:#f92672">!=</span> outBalance <span style="color:#f92672">&amp;&amp;</span> <span style="color:#75715e">// 交易应该发生；结余必须变化
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>tokens<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>_1 <span style="color:#f92672">==</span> letsTokenID <span style="color:#f92672">&amp;&amp;</span> <span style="color:#75715e">// 当前输入有正确的代币
+</span><span style="color:#75715e"></span>out<span style="color:#f92672">.</span>tokens<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>_1 <span style="color:#f92672">==</span> letsTokenID <span style="color:#f92672">&amp;&amp;</span> <span style="color:#75715e">// 对应地，输出也有正确的代币
+</span><span style="color:#75715e"></span>validRateOracle <span style="color:#f92672">&amp;&amp;</span>          <span style="color:#75715e">// 预言机（oracle）提供费率具备正确的“费率代币”
+</span><span style="color:#75715e"></span>letsBalIn <span style="color:#f92672">==</span> letsBalOut <span style="color:#f92672">&amp;&amp;</span>  <span style="color:#75715e">// 总共的LETS结余被保存在交易中
+</span><span style="color:#75715e"></span>letsInputs<span style="color:#f92672">.</span>size <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">&amp;&amp;</span> letsOutputs<span style="color:#f92672">.</span>size <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">&amp;&amp;</span>  <span style="color:#75715e">// 只有两个LETS输入，输出
+</span><span style="color:#75715e"></span>out<span style="color:#f92672">.</span>propositionBytes <span style="color:#f92672">==</span> <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>propositionBytes <span style="color:#f92672">&amp;&amp;</span>  <span style="color:#75715e">// 输出是一个LETS币箱 ...
+</span><span style="color:#75715e"></span>out<span style="color:#f92672">.</span>R5<span style="color:#f92672">[</span><span style="color:#66d9ef">SigmaProp</span><span style="color:#f92672">]</span><span style="color:#f92672">.</span>get <span style="color:#f92672">==</span> pubKey <span style="color:#f92672">&amp;&amp;</span>                <span style="color:#75715e">// ... 用正确的公钥
+</span><span style="color:#75715e"></span>out<span style="color:#f92672">.</span>R6<span style="color:#f92672">[</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">]</span><span style="color:#f92672">.</span>get <span style="color:#f92672">==</span> <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>R6<span style="color:#f92672">[</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">]</span><span style="color:#f92672">.</span>get <span style="color:#f92672">&amp;&amp;</span>          <span style="color:#75715e">// ... 和创建高度
+</span><span style="color:#75715e"></span><span style="color:#f92672">(</span>receiver <span style="color:#f92672">||</span>              <span style="color:#75715e">// ...要么当前输入属于接受者
+</span><span style="color:#75715e"></span>  <span style="color:#f92672">(</span>pubKey <span style="color:#f92672">&amp;&amp;</span> correctErgs<span style="color:#f92672">)</span> <span style="color:#75715e">// ... 要么输出有正确的尔格币，同时tx有签名
+</span><span style="color:#75715e"></span><span style="color:#f92672">)</span>
+</code></pre></div><p>使用上述脚本支付币箱的交易需要：</p>
 <ul>
 <li>保留了输入和输出的LETS结余之和</li>
 <li>有两个LETS输入和两个LETS输出</li>
 <li>公钥（存储在R5中）保存在相应的输出中</li>
 <li>创建高度（存储在R6中）保留在相应的输出中</li>
 </ul>
-
 <p>我们说如果输出的LETS结余高于其输入的LETS结余，则某些公钥是接收器。</p>
-
 <p>最后一个条件要求输入（和输出）币箱属于接收器（以便保留尔格币的数量），或者如果LETS余额为负，则输出由所需数量的尔格币支持。此外，它要求发送者的尔格币结余不能减少，直到在尔格币被锁定之后已经挖掘了<code>minWithdrawTime</code>的区块数量。</p>
-
 <p>与托管LETS相比，上述系统有以下不同之处：</p>
-
 <ul>
 <li>没有会员记录：与托管LETS不同，我们不在此处存储任何会员信息。</li>
 <li>多个币箱：一个人可以创建多个会员币箱，这是允许的。我们只要求每个币箱都锁定最小数量的尔格币。</li>
 </ul>
-
-<h2 id="lets-1-零和-有抵押">LETS-1：零和，有抵押</h2>
-
+<h2 id="lets-1零和有抵押">LETS-1：零和，有抵押</h2>
 <p>以上是我们称之为LETS-1的基本变体。 它具有以下功能：</p>
-
 <ul>
 <li>有时间限制的加入费：为了防止垃圾信息攻击，会员必须在加入时支付一定的最低费用。 此费用可退还，但仅限于预定数量的区块后。</li>
 <li>零和：所有成员币箱的LETS余额总和为零。 只要在一定限度内，会员币箱就可以有负余额。</li>
 <li>抵押品：对于发送人的输入，尔格币用作抵押品以支付当前汇率的负LETS余额。</li>
 </ul>
-
 <p>以下是LETS-1的一些变体。</p>
-
-<h2 id="lets-2-零和-无抵押">LETS-2：零和，无抵押</h2>
-
+<h2 id="lets-2零和无抵押">LETS-2：零和，无抵押</h2>
 <p>这是LETS-1的略微变化如下：</p>
-
 <ul>
 <li>不可退还的加入费：与LETS-1类似，需要加入费用以防止垃圾信息攻击。但是，与LETS-1不同，此费用不可退还，必须发送给某个预定义的管理委员会。</li>
 <li>零和：与LETS-1一样。</li>
 </ul>
-
-<h2 id="lets-3-正和-有抵押">LETS-3：正和，有抵押</h2>
-
+<h2 id="lets-3正和有抵押">LETS-3：正和，有抵押</h2>
 <p>以上两种变体要求总LETS余额始终为零。在这里，我们考虑这个总和的正值。特别是，此变体具有以下属性：</p>
-
 <ul>
 <li>时间锁定加入费：与LETS-1相同。</li>
 <li>正和：每个成员的LETS余额必须始终为非负数。这确保了所有成员币箱的LETS余额总和为正。初始LETS余额根据当前汇率的加入费设置为正值，上限为某个最大值。</li>
 <li>抵押品：发送方的尔格币余额的任何减少必须伴随当前汇率的相应LETS余额的减少。</li>
 </ul>
-
 <p>我们还可以通过添加等量的尔格币来允许在交易期间补足LETS余额。</p>
-
-<h2 id="lets-4-正和-无抵押">LETS-4：正和，无抵押</h2>
-
+<h2 id="lets-4正和无抵押">LETS-4：正和，无抵押</h2>
 <p>这类似于LETS-3，但有一些小的变化：</p>
-
 <ul>
 <li>不可退还的加入费：与LETS-2相同</li>
 <li>正和：与LETS-3一样</li>
 </ul>
-
 <p>下表总结了这些变体：</p>
-
 <table>
 <thead>
 <tr>
@@ -332,14 +293,12 @@ out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... 和创建高度
 <th>正和</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>有抵押</td>
 <td>LETS-1</td>
 <td>LETS-3</td>
 </tr>
-
 <tr>
 <td>无抵押</td>
 <td>LETS-2</td>
@@ -417,7 +376,7 @@ out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... 和创建高度
                   <h3 class="eg-blog__item-title"><span>(Jean Philippe Aumasson 所进行的)安全审查</span></h3>
                   <p class="eg-blog__item-paragraph">我们想宣布尔格已经成功通过某些(最关键的)部分的安全审查。此次审查由 Jean- Philipee Aumasson 负责完成(也叫 veorq, https://aumasson.jp/ )。
 具体报告如下。没有发现任何重大问题。对所发现问题的评论如下:
- 关于钱包密码，我们将在下一版协议节点中提供建议。不 …</p>
+  关于钱包密码，我们将在下一版协议节点中提供建议。 …</p>
                   <div class="eg-author">
                     <img src="/img/logotype_black_circle.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -598,8 +557,7 @@ out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... 和创建高度
                   <h3 class="eg-blog__item-title"><span>如何在Windows（x64）系统下挖掘尔格</span></h3>
                   <p class="eg-blog__item-paragraph">第1步：工具 Visual Studio(可视化工作室)
 选择免费的社区版本，您需要在安装期间选择使用C ++包进行桌面开发。
-CUDA工具包
-选择您的系统版本，使用默认选项安装，它会将您的图形驱动程序更新为兼容版本。
+CUDA工具包 选择您的系统版本，使用默认选项安装，它会将您的图形驱动程序更新为兼容版本。
 Curl
 没有SSL的通用版本，二进制不会工作。 选择通用源，压缩文件并单击显示镜像。下载 …</p>
                   <div class="eg-author">

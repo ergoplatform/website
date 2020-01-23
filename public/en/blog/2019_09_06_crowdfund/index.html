@@ -158,112 +158,78 @@
         </div>
         <div class="eg-blog__single-content">
           <div>
-            
-
-<h2 id="what-is-crowdfunding">What is Crowdfunding?</h2>
-
+            <h2 id="what-is-crowdfunding">What is Crowdfunding?</h2>
 <p>Crowdfunding is a way of raising capital through the collective efforts of individuals. The campaigns are mostly started via the world wide web and allow projects and businesses to be funded by raising small amounts of money from a large number of people.
 One of the best known examples for successful crowdfunding startups is Oculus Rift, a virtual reality headset. The company Oculus VR initiated its campaign in 2012 and was only two years later acquired by Facebook for $2 billion total. Besides the usual startups, there are also a lot of blockchain projects which went the way of crowdfunding, for example, Ethereum, Tron and EOS. Today, numerous platforms exist that allow you to publish your campaign. Some of the bigger ones are Indiegogo, Kickstarter, and Gofundme, only to name a few.
-Crowdfunding has a lot of benefits: a wide reach, efficiency, and marketing aspects being the most convincing&hellip; But for now, let&rsquo;s get onto what&rsquo;s really important!</p>
-
+Crowdfunding has a lot of benefits: a wide reach, efficiency, and marketing aspects being the most convincing&hellip; But for now, let's get onto what's really important!</p>
 <h2 id="introducing-crowdfunding-on-ergo">Introducing Crowdfunding on Ergo</h2>
-
 <p>A few days ago, on August 28th, core developer <a href="https://www.ergoforum.org/u/kushti">Kushti</a> stated on the (Ergo forum)[www.ergoforum.org] that he managed to successfully write and implement code that allows users to start a crowdfunding campaign on top of the Ergo blockchain (as mentioned in the <a href="https://docs.ergoplatform.com/ErgoScript.pdf">whitepaper page 6</a>. This code even works with the current wallet API. <a href="https://ergoplatform.org/en/blog/2019_06_04_wallet-documentation/">Here</a> is a quick guide on how to set up the wallet.
 In this article, you will learn how to do exactly that: crowdfunding on top of Ergo! It also takes you through the proposal of the first campaign ever, which is to fund the <a href="https://github.com/ergoplatform/eips/blob/master/eip-0001.md">post-EIP1</a> crowdfunding script development.
 If you want to go into all the details, please read the following section, “The Script”. Otherwise, you can simply skip to reading the “How To Donate”, &ldquo;How To Collect Donations&rdquo;, and “Crowdfunding Project Proposal” sections below that.</p>
-
 <h2 id="the-script">The Script</h2>
-
 <p>The simplest crowdfunding script, according to the <a href="https://docs.ergoplatform.com/ErgoScript.pdf">ErgoScript White Paper (page 6)</a>, is “a script for the following crowdfunding situation: a project backer (with key backerPubKey) wishes to give money to a project (with key projectPubKey), but only if the project raises enough money (at least minToRaise) from other sources by a deadline (expressed in terms of HEIGHT).
 To give money to the project, the backer will create an output box protected by the following script. The script contains two conditions: one for the case the deadline has passed (enabling the backer to get the money back) and one for the case it succeeded (enabling the project to spend the money if the amount is at least minToRaise before the deadline).</p>
-
 <p>In order to ensure enough money has been raised, the script will search the output collection for a box with a sufficient value going to the projectPubKey. To check where the value of the output box is going, the script will read the script protecting the output box and compare it to the script corresponding to proveDlog(projectPubKey); this script can be obtained byprojectPubKey.propBytes.</p>
-
 <p>As currently the API does not support embedding of custom environment variables (only predefined ones like HEIGHT), the only way to compile the script is to replace such variables in the script from the white-paper with concrete values. For example, consider that a crowdfunding campaign is successful if it is raising 500 Ergs before block number 50,000. For backerPubKey and projectPubKey we can use PK() function which accepts only P2PK serialized keys at the moment. Then the modified script from the WhitePaper becomes the following:</p>
-
-<pre><code class="language-scala">{
-   val backerPubKey = PK(&quot;9h7DHKSDgE4uvP8313GVGdsEg3AvdAWSSTG7XZsLwBfeth4aePG&quot;)
-   val projectPubKey = PK(&quot;9gBSqNT9LH9WjvWbyqEvFirMbYp4nfGHnoWdceKGu45AKiya3Fq&quot;) 
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#f92672">{</span>
+   <span style="color:#66d9ef">val</span> backerPubKey <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">PK</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;9h7DHKSDgE4uvP8313GVGdsEg3AvdAWSSTG7XZsLwBfeth4aePG&#34;</span><span style="color:#f92672">)</span>
+   <span style="color:#66d9ef">val</span> projectPubKey <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">PK</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;9gBSqNT9LH9WjvWbyqEvFirMbYp4nfGHnoWdceKGu45AKiya3Fq&#34;</span><span style="color:#f92672">)</span> 
     
-   val deadline = 50000
-   val minToRaise = 500L * 1000000000 
+   <span style="color:#66d9ef">val</span> deadline <span style="color:#66d9ef">=</span> <span style="color:#ae81ff">50000</span>
+   <span style="color:#66d9ef">val</span> minToRaise <span style="color:#66d9ef">=</span> <span style="color:#ae81ff">500L</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000000000</span> 
    
-   val fundraisingFailure = HEIGHT &gt;= deadline &amp;&amp; backerPubKey
-   val enoughRaised = {(outBox: Box) =&gt;outBox.value &gt;= minToRaise 
-                              &amp;&amp; outBox.propositionBytes == projectPubKey.propBytes
-                      }
+   <span style="color:#66d9ef">val</span> fundraisingFailure <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">HEIGHT</span> <span style="color:#f92672">&gt;=</span> deadline <span style="color:#f92672">&amp;&amp;</span> backerPubKey
+   <span style="color:#66d9ef">val</span> enoughRaised <span style="color:#66d9ef">=</span> <span style="color:#f92672">{</span><span style="color:#f92672">(</span>outBox<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Box</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">=&gt;</span>outBox<span style="color:#f92672">.</span>value <span style="color:#f92672">&gt;=</span> minToRaise 
+                              <span style="color:#f92672">&amp;&amp;</span> outBox<span style="color:#f92672">.</span>propositionBytes <span style="color:#f92672">==</span> projectPubKey<span style="color:#f92672">.</span>propBytes
+                      <span style="color:#f92672">}</span>
         
-   val fundraisingSuccess = HEIGHT &lt; deadline &amp;&amp; projectPubKey &amp;&amp; OUTPUTS.exists(enoughRaised)
-   fundraisingFailure || fundraisingSuccess                     
- }                              
-</code></pre>
-
-<h2 id="how-to-donate">How to Donate</h2>
-
+   <span style="color:#66d9ef">val</span> fundraisingSuccess <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">HEIGHT</span> <span style="color:#f92672">&lt;</span> deadline <span style="color:#f92672">&amp;&amp;</span> projectPubKey <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">OUTPUTS</span><span style="color:#f92672">.</span>exists<span style="color:#f92672">(</span>enoughRaised<span style="color:#f92672">)</span>
+   fundraisingFailure <span style="color:#f92672">||</span> fundraisingSuccess                     
+ <span style="color:#f92672">}</span>                              
+</code></pre></div><h2 id="how-to-donate">How to Donate</h2>
 <p>First of all, JSON is not supporting multi-line strings, so you need to replace line breaks with <code>\n</code>.
-Also, quotes are to be escaped, so use &ldquo; instead of &ldquo;. The resulting JSON will be sent to <code>/script/p2sAddress</code>.
+Also, quotes are to be escaped, so use &quot; instead of &ldquo;. The resulting JSON will be sent to <code>/script/p2sAddress</code>.
 To donate to a project, first get your address from /wallet/addresses, take e.g. the first of them. Put the address into the backerPubKey, so a request to /script/p2sAddress will look like the following after this step:</p>
-
-<pre><code class="language-scala">{
-  &quot;source&quot;: &quot;{ 
-    val backerPubKey = PK(\&quot;9...\&quot;)
-    val projectPubKey = PK(\&quot;9gBSqNT9LH9WjvWbyqEvFirMbYp4nfGHnoWdceKGu45AKiya3Fq\&quot;)
-    val deadline = 50000
-    val minToRaise = 500L * 1000000000
-    val fundraisingFailure = HEIGHT &gt;= deadline &amp;&amp; backerPubKey
-    val enoughRaised = {
-      (outBox: Box) =&gt; 
-        outBox.value &gt;= minToRaise &amp;&amp; outBox.propositionBytes == projectPubKey.propBytes
-    } 
-    val fundraisingSuccess = HEIGHT &lt; deadline &amp;&amp; projectPubKey &amp;&amp; OUTPUTS.exists(enoughRaised) 
-    fundraisingFailure || fundraisingSuccess 
-  }&quot;
-}    
-</code></pre>
-
-<p>with your address instead of “9…”.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#f92672">{</span>
+  <span style="color:#e6db74">&#34;source&#34;</span><span style="color:#66d9ef">:</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#f92672">{</span> 
+    <span style="color:#66d9ef">val</span> <span style="color:#66d9ef">backerPubKey</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">PK</span><span style="color:#f92672">(</span><span style="color:#66d9ef">\</span><span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#960050;background-color:#1e0010">9</span><span style="color:#66d9ef">.</span><span style="color:#66d9ef">.</span><span style="color:#66d9ef">.</span><span style="color:#66d9ef">\</span><span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#f92672">)</span>
+    <span style="color:#66d9ef">val</span> <span style="color:#66d9ef">projectPubKey</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">PK</span><span style="color:#f92672">(</span>\<span style="color:#e6db74">&#34;9gBSqNT9LH9WjvWbyqEvFirMbYp4nfGHnoWdceKGu45AKiya3Fq\&#34;)
+</span><span style="color:#e6db74">    val deadline = 50000
+</span><span style="color:#e6db74">    val minToRaise = 500L * 1000000000
+</span><span style="color:#e6db74">    val fundraisingFailure = HEIGHT &gt;= deadline &amp;&amp; backerPubKey
+</span><span style="color:#e6db74">    val enoughRaised = {
+</span><span style="color:#e6db74">      (outBox: Box) =&gt; 
+</span><span style="color:#e6db74">        outBox.value &gt;= minToRaise &amp;&amp; outBox.propositionBytes == projectPubKey.propBytes
+</span><span style="color:#e6db74">    } 
+</span><span style="color:#e6db74">    val fundraisingSuccess = HEIGHT &lt; deadline &amp;&amp; projectPubKey &amp;&amp; OUTPUTS.exists(enoughRaised) 
+</span><span style="color:#e6db74">    fundraisingFailure || fundraisingSuccess 
+</span><span style="color:#e6db74">  }&#34;</span>
+<span style="color:#f92672">}</span>    
+</code></pre></div><p>with your address instead of “9…”.</p>
 <p>Send the string to <code>/script/p2sAddress</code> to get a response like:</p>
-
-<pre><code class="language-scala">{
-  &quot;address&quot;: &quot;GB3kh2izpWKvyZfMboQwsEscjPaZcz9WrzGqZB4ZrkzRreiFMV6HZYWXGMK3rqCjDCoPgWGNzfnYSUhivW4a1VRYPE7uZXwKnBcqWcRkiuTx6QW55EcPcWeELUsumwdtKoFtWY583nWnKZff&quot;
-}     
-</code></pre>
-
-<p>Copy address string (GB3… in our example) and send the money to it via <code>/wallet/payment/send</code> . A request to the API method to send 10 Ergs (10 Billion nanoErgs) will be like following:</p>
-
-<pre><code class="language-scala">[
- {
-   &quot;address&quot;: &quot;GB3kh2izpWKvyZfMboQwsEscjPaZcz9WrzGqZB4ZrkzRreiFMV6HZYWXGMK3rqCjDCoPgWGNzfnYSUhivW4a1VRYPE7uZXwKnBcqWcRkiuTx6QW55EcPcWeELUsumwdtKoFtWY583nWnKZff&quot;,
-   &quot;value&quot;: 10000000000
- }
-]
-</code></pre>
-
-<p>That’s all!</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#f92672">{</span>
+  <span style="color:#e6db74">&#34;address&#34;</span><span style="color:#66d9ef">:</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#66d9ef">GB3kh2izpWKvyZfMboQwsEscjPaZcz9WrzGqZB4ZrkzRreiFMV6HZYWXGMK3rqCjDCoPgWGNzfnYSUhivW4a1VRYPE7uZXwKnBcqWcRkiuTx6QW55EcPcWeELUsumwdtKoFtWY583nWnKZff</span><span style="color:#960050;background-color:#1e0010">&#34;</span>
+<span style="color:#f92672">}</span>     
+</code></pre></div><p>Copy address string (GB3… in our example) and send the money to it via <code>/wallet/payment/send</code> . A request to the API method to send 10 Ergs (10 Billion nanoErgs) will be like following:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#f92672">[</span>
+ <span style="color:#f92672">{</span>
+   <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#66d9ef">address</span><span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#66d9ef">:</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#66d9ef">GB3kh2izpWKvyZfMboQwsEscjPaZcz9WrzGqZB4ZrkzRreiFMV6HZYWXGMK3rqCjDCoPgWGNzfnYSUhivW4a1VRYPE7uZXwKnBcqWcRkiuTx6QW55EcPcWeELUsumwdtKoFtWY583nWnKZff</span><span style="color:#960050;background-color:#1e0010">&#34;</span>,
+   <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#66d9ef">value</span><span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#66d9ef">:</span> <span style="color:#960050;background-color:#1e0010">1</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span>
+ <span style="color:#f92672">}</span>
+<span style="color:#f92672">]</span>
+</code></pre></div><p>That’s all!</p>
 <p>Now the wallet will automatically find the box on the blockchain, as it contains the public key which belongs to the wallet in the refund condition. The wallet then periodically checks whether the box is spendable by constructing a simplest transaction with the box as an input and just one output (to the same address). After refund height (50,000 in our example) the wallet will be able to spend the box and so the box value will be added to /wallet/balances.
 Please note that this will not be the case after EIP-1 3 implementation as the wallet will use narrow recognition patterns by then.</p>
-
 <h2 id="how-to-collect-donations">How to Collect Donations</h2>
-
 <p>The wallet which is associated with the project public key will find incoming boxes on the blockchain. However, it will fail to make sure that boxes are spendable, as the wallet currently is using a simplest transaction for that, and the script is failing for such a spending transaction.
 Before <code>/wallet/boxes/uncertain</code> method being implemented, the only way for a project to find incoming boxes. Then <code>/wallet/transaction/send</code> with manually provided (in “inputsRaw”) serialized boxes (use <code>/utxo/byIdBinary</code> to get the serialized box by its identifier).</p>
-
 <p>Kushti did that by himself and got the following <a href="https://explorer.ergoplatform.com/en/transactions/3d5a1102296b6159754097f33e780cae2692d9a2ec2b6daf26219651bcc2ae48">transaction</a>.</p>
-
 <p>Please note that <a href="https://github.com/ergoplatform/eips/blob/master/eip-0001.md">EIP-1</a> will break this workflow as well.</p>
-
 <p>Kushti proposes to raise 500 Ergs before block 50,000 to develop command-line scripts (in Python) for organizing and participating in crowdfunding campaigns after EIP-1 implementation. Command-line scripts are more suitable than doing requests manually and also could be used for building graphic interfaces on top of them.</p>
-
 <p>The treasury did provide <a href="https://explorer.ergoplatform.com/en/transactions/2fc882792b94f8210e4378f2f5bab90896523e212d927ed16600170d76f46ac9">half of the funds</a>, so others need to contribute the missing 250 Erg collectively. In case of a campaign failure refunds will be given automatically. As collecting pledges is not trivial at the moment, Kushti will lead the project role, so please use the following key, which is controlled by him:</p>
-
 <p><code>9gBSqNT9LH9WjvWbyqEvFirMbYp4nfGHnoWdceKGu45AKiya3Fq</code></p>
-
 <p>In order to donate any amount of money, please follow the <code>“How To Donate”</code> section above with replacing backerPubKey with your public key, and pledge amount with a proper value (please note that it is in nanoErgs, <code>1 Erg = 1.000.000.000 nanoErgs</code>).</p>
-
 <p>As always, if you have further questions, suggestions or want to participate in the movement, please join our social media channels or forum.</p>
-
 <p><a href="https://t.me/ergoplatform">t.me/ergoplatform</a> | <a href="https://t.me/ergo_mining">t.me/ergo_mining</a> | <a href="www.ergoforum.org">www.ergoforum.org</a></p>
 
           </div>
@@ -459,7 +425,7 @@ Developer MH Samadani published …</p>
                 <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_07_24_ergo_address/">
                   <div class="eg-blog__item-img"><img src="/img/blog/address.jpg" height="188" width="335" alt="blog photo"></div>
                   <h3 class="eg-blog__item-title"><span>Ergo Addresses</span></h3>
-                  <p class="eg-blog__item-paragraph">In today&rsquo;s article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work …</p>
+                  <p class="eg-blog__item-paragraph">In today's article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work specifically as …</p>
                   <div class="eg-author">
                     <img src="/img/authors/robert_wolf.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -567,8 +533,7 @@ A lot of folks launched a node and also a miner, with pubkeyHex from the miner �
                   <h3 class="eg-blog__item-title"><span>How to mine Ergo on Windows(x64)</span></h3>
                   <p class="eg-blog__item-paragraph">Step 1: Tools Visual Studio
 Choose free community version, you will need to select desktop development with C++ package during install.
-CUDA toolkit
-Choose …</p>
+CUDA toolkit Choose …</p>
                   <div class="eg-author">
                     <img src="/img/authors/martin_spodymek.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">

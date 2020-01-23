@@ -21,12 +21,12 @@
 显示你的余额以及提款 如果你先挖出来尔格币然后才进行钱包初始化，因为你进行钱包初始化的区块高度比挖币的时候要高，那么或许你看不到你挖的尔格币。请注意：节点不会对区块进行反向扫描，在初始化后，其只扫描新的区块。因此，为了找到所开采的尔格币，目前需要对整个区块链进行重新扫描（或者，如果你开采，在另一台机器上发布另一个节点，或者在格式化文件中拥有不同端口设置的同一台机器上，即，给scorex.restApi.bindAddress 和scorex.network.bindAddress的域设定新的值； 另外请使用3.0.1版本，主要是因为其更便于格式化）。
 为了把挖矿报酬花掉，你需要按照以下步骤进行操作： 1. 清除节点状态，如果你打算叫停工作节点。 为了清除你的节点的状态，你需要叫停节点，并且删除.ergo 目录下的全部内容（其可能藏在Mac和Linux你看不到的地方，尝试目录中的 ls -a 命令，你可以从此路径运行节点）。
 2.从奥托吕克斯矿机使用的种子短语中恢复本地钱包 在你格式化你的奥托吕克斯矿机时，请记住你在config.json 设定的助记符句子 - 目前你需要从那儿恢复内置钱包。为了恢复你的钱包，再次启动节点，并且将POST请求发送给含有诸如
-{ &amp;quot;pass&amp;quot;: &amp;quot;your_wallet_pass&amp;quot;, &amp;quot;mnemonic&amp;quot;: &amp;quot;mnemonic_sentense_from_your_miner&amp;quot;, &amp;quot;mnemonicPass&amp;quot;: &amp;quot;mnemonic_pass_if_set&amp;quot; }  application/json 内容类型体的http://[your_node_ip]:9053/wallet/restore，
+{ &amp;#34;pass&amp;#34;: &amp;#34;your_wallet_pass&amp;#34;, &amp;#34;mnemonic&amp;#34;: &amp;#34;mnemonic_sentense_from_your_miner&amp;#34;, &amp;#34;mnemonicPass&amp;#34;: &amp;#34;mnemonic_pass_if_set&amp;#34; } application/json 内容类型体的http://[your_node_ip]:9053/wallet/restore，
 如果 pass 是一个将用于你本地盘加密钱包数据的一把新的特殊钥匙， 并且 mnemonic 是一个你可以从奥托吕克斯矿机格式化文件(config.json)复制的助记符短语。请特别注意 mnemonicPass 的域 – 这是你的助记符短语口令，其为可选项，并且你在创造你的助记符的时候可能已经对其进行格式化。只有当你的助记符真地需要钥匙，那么就在请求中增加此域，否则就删除此域。
 不要忘记授权你的请求，设定对应 apiKeyHash正确的api_key HTTP 头字段， 在节点格式化文件中进行格式化。
 注意：为了让钱包扫描来自创世的全部区块，你需要在你的节点已经开始下载全部区块前恢复钱包（请在/info API方法回应核对fullHeight - 尽管其是 null 你的节点尚未开始下载全部区块）。
 3. 查询你的余额 当你的节点与网络实现同步的时候，请核对 /wallet/balances API方法。反馈应当类似于：
-{ &amp;quot;height&amp;quot;: 3560, &amp;quot;balance&amp;quot;: 67500000000, &amp;quot;assets&amp;quot;: {} }  首先注意 height 域 – 其应等于通过 /info API路径的 fullHeight 显示值。balance 是你钱包所发现的一个确认余额。">
+{ &amp;#34;height&amp;#34;: 3560, &amp;#34;balance&amp;#34;: 67500000000, &amp;#34;assets&amp;#34;: {} } 首先注意 height 域 – 其应等于通过 /info API路径的 fullHeight 显示值。balance 是你钱包所发现的一个确认余额。">
     
 
     
@@ -173,80 +173,46 @@
         </div>
         <div class="eg-blog__single-content">
           <div>
-            
-
-<h2 id="花掉挖矿报酬">花掉挖矿报酬</h2>
-
+            <h2 id="花掉挖矿报酬">花掉挖矿报酬</h2>
 <p>本文帮助矿工提取所挖到的资金。</p>
-
 <p>许多人既发布节点，又担任拥有从内嵌于节点格式化矿机获得16进制公钥（<code>pubkeyHex</code>）的矿工。下面我来谈一谈如何认定所挖尔格币的数量以及如何将其提取到另一个地址。</p>
-
 <h2 id="关于密钥">关于密钥.</h2>
-
 <p>矿工可能遇到很多不同形式的密钥。</p>
-
 <p>首先，挖矿软件以及节点中的采矿支持（即：格式化文件中的 <code>ergo.node.miningPubKeyHex</code> 设定） 正在采用16进制编码（<code>Base16-encoded</code>）“原”公钥，其仅为椭圆曲线中的一个编码序列点。该密钥对矿工来说已经足够用（其可能避免支持58进制的需要，地址构成的需要等）。</p>
-
 <p>其次，节点钱包显示公钥付费（P2PK）地址，该地址以“9”开始。P2PK地址不仅包含椭圆曲线点，而且还包含网络前缀和校验和（<code>checksum</code>）， 类似于比特币的P2PK和P2PKH地址。</p>
-
 <p>第三，还有<code>minig/rewardAddress</code> API方法，其主要是针对外部工具所产生的候选区块。此种API方法看起来有点像<code>88dhgzEuTXaSfKEbxfa6vghvEGdBH39sn9h7As2Y2Z6SGd8bKXCXmRLY5JtU4g4RYBP4WcZWb3JwjXDK</code>，其是以编码形式支付给矿工的特殊文字。</p>
-
 <p>无论如何，如果你想把你矿机的16进制公钥（<code>pubkeyHex</code>）植入你的节点，完全没有问题，不用担心看到不同的密钥。</p>
-
 <h2 id="显示你的余额以及提款">显示你的余额以及提款</h2>
-
 <p>如果你先挖出来尔格币然后才进行钱包初始化，因为你进行钱包初始化的区块高度比挖币的时候要高，那么或许你看不到你挖的尔格币。请注意：节点不会对区块进行反向扫描，在初始化后，其只扫描新的区块。因此，为了找到所开采的尔格币，目前需要对整个区块链进行重新扫描（或者，如果你开采，在另一台机器上发布另一个节点，或者在格式化文件中拥有不同端口设置的同一台机器上，即，给<code>scorex.restApi.bindAddress</code> 和<code>scorex.network.bindAddress</code>的域设定新的值； 另外请使用3.0.1版本，主要是因为其更便于格式化）。</p>
-
-<h2 id="为了把挖矿报酬花掉-你需要按照以下步骤进行操作">为了把挖矿报酬花掉，你需要按照以下步骤进行操作：</h2>
-
-<h3 id="1-清除节点状态-如果你打算叫停工作节点">1. 清除节点状态，如果你打算叫停工作节点。</h3>
-
+<h2 id="为了把挖矿报酬花掉你需要按照以下步骤进行操作">为了把挖矿报酬花掉，你需要按照以下步骤进行操作：</h2>
+<h3 id="1-清除节点状态如果你打算叫停工作节点">1. 清除节点状态，如果你打算叫停工作节点。</h3>
 <p>为了清除你的节点的状态，你需要叫停节点，并且删除<code>.ergo</code> 目录下的全部内容（其可能藏在Mac和Linux你看不到的地方，尝试目录中的 <code>ls -a</code> 命令，你可以从此路径运行节点）。</p>
-
-<h3 id="2-从奥托吕克斯矿机使用的种子短语中恢复本地钱包">2.从奥托吕克斯矿机使用的种子短语中恢复本地钱包</h3>
-
+<h3 id="2从奥托吕克斯矿机使用的种子短语中恢复本地钱包">2.从奥托吕克斯矿机使用的种子短语中恢复本地钱包</h3>
 <p>在你格式化你的奥托吕克斯矿机时，请记住你在<code>config.json</code> 设定的助记符句子 - 目前你需要从那儿恢复内置钱包。为了恢复你的钱包，再次启动节点，并且将POST请求发送给含有诸如</p>
-
-<pre><code class="language-scala">{
-  &quot;pass&quot;: &quot;your_wallet_pass&quot;,
-  &quot;mnemonic&quot;: &quot;mnemonic_sentense_from_your_miner&quot;,
-  &quot;mnemonicPass&quot;: &quot;mnemonic_pass_if_set&quot;
-}
-</code></pre>
-
-<p><code>application/json</code> 内容类型体的<code>http://[your_node_ip]:9053/wallet/restore</code>，</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#f92672">{</span>
+  <span style="color:#e6db74">&#34;pass&#34;</span><span style="color:#66d9ef">:</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#66d9ef">your_wallet_pass</span><span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#f92672">,</span>
+  <span style="color:#e6db74">&#34;mnemonic&#34;</span><span style="color:#66d9ef">:</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#66d9ef">mnemonic_sentense_from_your_miner</span><span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#f92672">,</span>
+  <span style="color:#e6db74">&#34;mnemonicPass&#34;</span><span style="color:#66d9ef">:</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#66d9ef">mnemonic_pass_if_set</span><span style="color:#960050;background-color:#1e0010">&#34;</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p><code>application/json</code> 内容类型体的<code>http://[your_node_ip]:9053/wallet/restore</code>，</p>
 <p>如果 <code>pass</code> 是一个将用于你本地盘加密钱包数据的一把新的特殊钥匙， 并且 <code>mnemonic</code> 是一个你可以从奥托吕克斯矿机格式化文件(config.json)复制的助记符短语。请特别注意 <code>mnemonicPass</code> 的域 – 这是你的助记符短语口令，其为可选项，并且你在创造你的助记符的时候可能已经对其进行格式化。只有当你的助记符真地需要钥匙，那么就在请求中增加此域，否则就删除此域。</p>
-
 <p>不要忘记授权你的请求，设定对应 <code>apiKeyHash</code>正确的<code>api_key</code> HTTP 头字段， 在节点格式化文件中进行格式化。</p>
-
 <p>注意：为了让钱包扫描来自创世的全部区块，你需要在你的节点已经开始下载全部区块前恢复钱包（请在<code>/info</code> API方法回应核对<code>fullHeight</code>  - 尽管其是 <code>null</code> 你的节点尚未开始下载全部区块）。</p>
-
 <h3 id="3-查询你的余额">3. 查询你的余额</h3>
-
 <p>当你的节点与网络实现同步的时候，请核对 <code>/wallet/balances</code> API方法。反馈应当类似于：</p>
-
-<pre><code class="language-scala">{
-  &quot;height&quot;: 3560,
-  &quot;balance&quot;: 67500000000,
-  &quot;assets&quot;: {}
-}
-</code></pre>
-
-<p>首先注意 <code>height</code> 域 – 其应等于通过 <code>/info</code> API路径的 <code>fullHeight</code> 显示值。<code>balance</code> 是你钱包所发现的一个确认余额。</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#f92672">{</span>
+  <span style="color:#e6db74">&#34;height&#34;</span><span style="color:#66d9ef">:</span> <span style="color:#960050;background-color:#1e0010">3</span><span style="color:#960050;background-color:#1e0010">5</span><span style="color:#960050;background-color:#1e0010">6</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#f92672">,</span>
+  <span style="color:#e6db74">&#34;balance&#34;</span><span style="color:#66d9ef">:</span> <span style="color:#960050;background-color:#1e0010">6</span><span style="color:#960050;background-color:#1e0010">7</span><span style="color:#960050;background-color:#1e0010">5</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#f92672">,</span>
+  <span style="color:#e6db74">&#34;assets&#34;</span><span style="color:#66d9ef">:</span> <span style="color:#f92672">{</span><span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>首先注意 <code>height</code> 域 – 其应等于通过 <code>/info</code> API路径的 <code>fullHeight</code> 显示值。<code>balance</code> 是你钱包所发现的一个确认余额。</p>
 <h3 id="4-通过交易花掉你的报酬">4. 通过交易花掉你的报酬</h3>
-
 <p>为了从你的钱包中提走报酬，利用 <code>/wallet/payment/send</code> API路径创建一笔新的支付交易。为了进行这一操作，发送诸如</p>
-
-<pre><code class="language-scala">{
-  &quot;address&quot;: &quot;your_address&quot;,
-  &quot;value&quot;: 10000000
-}
-</code></pre>
-
-<p>含有 <code>application/json</code> 内容类型体的POST请求， 如果 <code>address</code> 是你希望把你资金移去的地址并且 <code>value</code> 是你希望移走多少十亿分之一ERGs。</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#f92672">{</span>
+  <span style="color:#e6db74">&#34;address&#34;</span><span style="color:#66d9ef">:</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#66d9ef">your_address</span><span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#f92672">,</span>
+  <span style="color:#e6db74">&#34;value&#34;</span><span style="color:#66d9ef">:</span> <span style="color:#960050;background-color:#1e0010">1</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>含有 <code>application/json</code> 内容类型体的POST请求， 如果 <code>address</code> 是你希望把你资金移去的地址并且 <code>value</code> 是你希望移走多少十亿分之一ERGs。</p>
 <p>在发送请求的时候，节点会回复交易ID作为回应。你可以利用 <a href="https://explorer.ergoplatform.com">explorer</a> 查询你的交易何时到达区块。</p>
 
           </div>
@@ -318,7 +284,7 @@
                   <h3 class="eg-blog__item-title"><span>(Jean Philippe Aumasson 所进行的)安全审查</span></h3>
                   <p class="eg-blog__item-paragraph">我们想宣布尔格已经成功通过某些(最关键的)部分的安全审查。此次审查由 Jean- Philipee Aumasson 负责完成(也叫 veorq, https://aumasson.jp/ )。
 具体报告如下。没有发现任何重大问题。对所发现问题的评论如下:
- 关于钱包密码，我们将在下一版协议节点中提供建议。不 …</p>
+  关于钱包密码，我们将在下一版协议节点中提供建议。 …</p>
                   <div class="eg-author">
                     <img src="/img/logotype_black_circle.svg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -497,8 +463,7 @@
                   <h3 class="eg-blog__item-title"><span>如何在Windows（x64）系统下挖掘尔格</span></h3>
                   <p class="eg-blog__item-paragraph">第1步：工具 Visual Studio(可视化工作室)
 选择免费的社区版本，您需要在安装期间选择使用C ++包进行桌面开发。
-CUDA工具包
-选择您的系统版本，使用默认选项安装，它会将您的图形驱动程序更新为兼容版本。
+CUDA工具包 选择您的系统版本，使用默认选项安装，它会将您的图形驱动程序更新为兼容版本。
 Curl
 没有SSL的通用版本，二进制不会工作。 选择通用源，压缩文件并单击显示镜像。下载 …</p>
                   <div class="eg-author">

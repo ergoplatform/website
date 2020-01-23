@@ -11,8 +11,8 @@
     <link rel="preload" href="/fonts/LabGrotesque-Regular-hint-all.woff" as="font" type="font/woff" crossorigin>
 
     
-      <meta name="description" content="In today&amp;rsquo;s article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work specifically as well as what makes them preferable to other types of blockchain addresses.
-Let&amp;rsquo;s start at the very beginning.
+      <meta name="description" content="In today&#39;s article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work specifically as well as what makes them preferable to other types of blockchain addresses.
+Let&#39;s start at the very beginning.
 The moment you install any cryptocurrency wallet you automatically create an address with it. Very loosely speaking you can compare a wallet to a traditional bank account and an address to the matching account number.">
     
 
@@ -160,81 +160,61 @@ The moment you install any cryptocurrency wallet you automatically create an add
         </div>
         <div class="eg-blog__single-content">
           <div>
-            <p>In today&rsquo;s article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work specifically as well as what makes them preferable to other types of blockchain addresses.</p>
-
-<p>Let&rsquo;s start at the very beginning.</p>
-
+            <p>In today's article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work specifically as well as what makes them preferable to other types of blockchain addresses.</p>
+<p>Let's start at the very beginning.</p>
 <p>The moment you install any cryptocurrency wallet you automatically create an address with it. Very loosely speaking you can compare a wallet to a traditional bank account and an address to the matching account number.
-It is precisely one of these alphanumeric addresses that&rsquo;s needed to either send money from person A to person B, receive money or <a href="https://ergoplatform.org/en/blog/2019_07_03_mining_withdrawal/">withdraw your mining rewards</a>.
+It is precisely one of these alphanumeric addresses that's needed to either send money from person A to person B, receive money or <a href="https://ergoplatform.org/en/blog/2019_07_03_mining_withdrawal/">withdraw your mining rewards</a>.
 If you want to get started using the Ergo wallet and dive deeper into its functions go check out the <a href="https://ergoplatform.org/en/blog/2019_06_04_wallet-documentation/">following link</a>.</p>
-
 <p>Now, what exactly are addresses?</p>
-
 <p>Addresses are short strings that correspond to certain scripts and are used to protect a box (<a href="https://www.ergoforum.org/t/ergo-terminology-a-box-and-a-register/32">this</a> post that core developer <em>kushti</em> published on our forum explains very well what a &ldquo;box&rdquo; is).
 Unlike a (hex-encoded) binary representation of a script, an Ergo address is using a Base58-encoding and therefore has some very useful characteristics to it which the binary representation do not offer:</p>
-
 <ul>
 <li>The integrity of an address can easily be checked via an integrated checksum (which is a &ldquo;small-sized datum derived from a block of digital data for the purpose of detecting errors that may have been introduced during its transmission or storage&rdquo;, according to Wikipedia).</li>
 <li>A prefix of the address is showing you the network and address type. In particular, the network prefix prevents you from mistakenly sending mainnet tokens to the testnet address.</li>
 <li>The address is using an encoding (namely, Base58 as mentioned) which is avoiding similarly looking characters and is friendly to double-clicking and also line-breaking in emails.</li>
 <li>An address is encoding network type, address type, checksum, and enough information to correspond with particular scripts.</li>
 </ul>
-
-<p>Let&rsquo;s look at the prefix byte which contains information about the network and address types:</p>
-
+<p>Let's look at the prefix byte which contains information about the network and address types:</p>
 <p>Possible network types are:</p>
-
 <ul>
 <li>Mainnet - 0x00</li>
 <li>Testnet - 0x10</li>
 </ul>
-
 <p>Address types are (semantics described below):</p>
-
 <ul>
 <li>0x01 - Pay-to-PublicKey(P2PK) address</li>
 <li>0x02 - Pay-to-Script-Hash(P2SH)</li>
 <li>0x03 - Pay-to-Script(P2S)</li>
 </ul>
-
 <p>For an address type, we form content bytes as follows:</p>
-
 <ul>
 <li>P2PK - serialized (compressed) public key</li>
 <li>P2SH - first 192 bits of the Blake2b256 hash of serialized script bytes</li>
 <li>P2S  - serialized script (this is where mining rewards go!)</li>
 </ul>
-
 <p>For example, sending 10 Ergs to a P2PK address usually means that a corresponding transaction
 will contain a box in which 10 Ergs are locked by a public key encoded in the P2PK address. Similarly,
 in case of a P2S address the box will be locked by a script encoded in the address. In the most complicated case of a
 P2SH script, the box will be protected by a special predefined script which is taking first 192 bits of Blake2b256 hash
 value for a script which should be shown by an input spending the box.</p>
-
 <p>Here is an example of how particular addresses are going to look on the testnet:</p>
-
 <ul>
 <li>3 - P2PK (3WvsT2Gm4EpsM9Pg18PdY6XyhNNMqXDsvJTbbf6ihLvAmSb7u5RN)</li>
 <li>8 - P2SH (8UmyuJuQ3FS9ts7j72fn3fKChXSGzbL9WC, 8LnSX95GAWdbDZWJZQ73Uth4uE8HqN3emJ)</li>
 <li>? - P2S (imdaM2NzX, z4hAmfvfSnQJPChMWzfBzJjpB8ei2HoLCZ2RHTaNArMNHFirdJTc7E)</li>
 </ul>
-
 <p>And here is how they are looking on our mainnet:</p>
-
 <ul>
 <li>9 - P2PK (9fRAWhdxEsTcdb8PhGNrZfwqa65zfkuYHAMmkQLcic1gdLSV5vA)</li>
 <li>2 - P2SH (25qGdVWg2yyYho8uC1pLtc7KxFn4nEEAwD, 23NL9a8ngN28ovtLiKLgHexcdTKBbUMLhH)</li>
 <li>? - P2S (7bwdkU5V8, BxKBaHkvrTvLZrDcZjcsxsF7aSsrN73ijeFZXtbj4CXZHHcvBtqSxQ)</li>
 </ul>
-
 <p>In short summary:</p>
-
 <ul>
 <li>Prefix byte = network type + address type (for example, P2S script on the testnet starts with 0x13 before Base58)</li>
 <li>checksum = leftmost_4_bytes (blake2b256 (prefix byte || content bytes))</li>
 <li>address = prefix byte || content bytes || checksum</li>
 </ul>
-
 <p>If any of this sparked your interest, you are very welcome to join our community and ask further questions on our <a href="https://t.me/ergoplatform">telegram channel</a> and/or <a href="https://www.ergoforum.org/">forum</a>.
 See you there!</p>
 
@@ -539,8 +519,7 @@ A lot of folks launched a node and also a miner, with pubkeyHex from the miner �
                   <h3 class="eg-blog__item-title"><span>How to mine Ergo on Windows(x64)</span></h3>
                   <p class="eg-blog__item-paragraph">Step 1: Tools Visual Studio
 Choose free community version, you will need to select desktop development with C++ package during install.
-CUDA toolkit
-Choose …</p>
+CUDA toolkit Choose …</p>
                   <div class="eg-author">
                     <img src="/img/authors/martin_spodymek.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">

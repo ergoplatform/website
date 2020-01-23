@@ -158,166 +158,129 @@
         </div>
         <div class="eg-blog__single-content">
           <div>
-            
-
-<p>A Local Exchange Trading System (LETS) is aimed at developing local economy and is usually used by people of a locality in the vicinity of each other. For a brief overview of LETS see  <a href="/blog/2019_04_22-lets/">this link</a>, which also describes an ErgoScript implementation of a committee managed LETS. We call such a system a <em>managed</em> or <em>permissioned</em>, since it depends on a committee of trusted members to enroll new members into the LETS.
+            <p>A Local Exchange Trading System (LETS) is aimed at developing local economy and is usually used by people of a locality in the vicinity of each other. For a brief overview of LETS see  <a href="/blog/2019_04_22-lets/">this link</a>, which also describes an ErgoScript implementation of a committee managed LETS. We call such a system a <em>managed</em> or <em>permissioned</em>, since it depends on a committee of trusted members to enroll new members into the LETS.
 Here we describe a <strong>trustless</strong> LETS, i.e., one where there is no management committee needed for enrolment.</p>
-
 <h2 id="overview">Overview</h2>
-
-<p>LETS involves several parties that agree to use some form of &ldquo;local currency&rdquo;, usually pegged to the country&rsquo;s main currency at a 1:1 rate. Assume that our LETS is based in a European country where the currency is Euros, and the exchange is done in &ldquo;local Euros&rdquo;, which are considered to be equivalent to national Euros.</p>
-
+<p>LETS involves several parties that agree to use some form of &ldquo;local currency&rdquo;, usually pegged to the country's main currency at a 1:1 rate. Assume that our LETS is based in a European country where the currency is Euros, and the exchange is done in &ldquo;local Euros&rdquo;, which are considered to be equivalent to national Euros.</p>
 <p>Each user in LETS has an account, which contains the LETS balance of that user (in Local Euros). On joining, each user has a balance of zero. The balance is stored in a (possibly decentralized) ledger. An interesting feature of LETS is that a user with zero balance can also &ldquo;withdraw&rdquo; money, but only for paying another LETS user. At any time the sum of LETS balances of all the users is zero.</p>
-
-<p>As an example, Alice with zero balance wishes to purchase one liter of milk for 2 Euros from Bob who is also a member of LETS with zero balance. She transfers 2 Euros from her account to Bob&rsquo;s, making her balance -2 and Bob&rsquo;s +2. Bob can then transfer some or all of his balance to another LETS user in exchange for goods or services.</p>
-
+<p>As an example, Alice with zero balance wishes to purchase one liter of milk for 2 Euros from Bob who is also a member of LETS with zero balance. She transfers 2 Euros from her account to Bob's, making her balance -2 and Bob's +2. Bob can then transfer some or all of his balance to another LETS user in exchange for goods or services.</p>
 <h2 id="trustless-lets">Trustless LETS</h2>
-
 <p>Since we desire a trustless LETS, we cannot depend on any trusted group of people to admit users. Note that we will still have a committee to perform some tasks such as setting up the LETS parameters (local currency, the maximum number of members, etc) and consuming any joining fee.</p>
-
 <p>We will only assume a trusted <em>pricing oracle</em> that gives the current rate of euros to ergs identified by some global id (<code>rateTokenID</code>) and a <em>singleton box</em> containing exactly one token with this id. A singleton box, described <a href="/blog/2019_04_22-lets/">here</a>, is a box containing a <em>singleton token</em>, i.e., a token with only one quantity in existence. This box also contains the rate of ergs to euros at any given period of time. The rate is updated by spending this box and creating another singleton box with the new rate.</p>
-
 <p>At any instance, our LETS is uniquely defined by a global <em>token box</em> that contains some <em>membership tokens</em> with id <code>letsTokenID</code>. This box defines the LETS parameters such as the location, the currency unit, <code>rateTokenID</code>, etc. The token box is initially started with, say, 10000 membership tokens. Users can spend this box and create their individual <em>LETS boxes</em> as outputs of the transaction, such that each such output has exactly one membership token and the balance membership tokens are put in a newly created token box.</p>
-
-<p>A LETS box represents a LETS member and must be used in every transaction. For simplicity, this article restricts all LETS transaction to involve exactly two members, one being the sender and the other the receiver, such that the sender transfers some positive amount of the LETS currency (local euros) to the receiver. Such a transaction consumes the member&rsquo;s boxes and recreates them as output with the updated balance.</p>
-
+<p>A LETS box represents a LETS member and must be used in every transaction. For simplicity, this article restricts all LETS transaction to involve exactly two members, one being the sender and the other the receiver, such that the sender transfers some positive amount of the LETS currency (local euros) to the receiver. Such a transaction consumes the member's boxes and recreates them as output with the updated balance.</p>
 <h2 id="the-basic-variant">The Basic Variant</h2>
+<p>To prevent spam and DDoS attacks, we require at least some minimum number of ergs (<code>minErgsToJoin</code>) to be locked in the newly created member's box. The ergs will be locked until at least <code>minWithdrawTime</code> number of blocks have been mined. A box is allowed to have a negative LETS balance upto the amount that can be covered by the locked ergs (using the rate at the time of trade).</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#75715e">// a tokenBox stores the membership tokens and has this script
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> tokenBox <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">OUTPUTS</span><span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span> <span style="color:#75715e">// the first output must also be a tokenBox
+</span><span style="color:#75715e"></span><span style="color:#75715e">// first output contains remaining LETS tokens
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">def</span> isLets<span style="color:#f92672">(</span>b<span style="color:#66d9ef">:</span><span style="color:#66d9ef">Box</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">=</span> <span style="color:#f92672">{</span> <span style="color:#75715e">// returns true if b is a LETS box
+</span><span style="color:#75715e"></span>   <span style="color:#75715e">// A LETS box must have exactly 1 membership token in tokens(0)
+</span><span style="color:#75715e"></span>   b<span style="color:#f92672">.</span>tokens<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>_1 <span style="color:#f92672">==</span> letsTokenID <span style="color:#f92672">&amp;&amp;</span> b<span style="color:#f92672">.</span>tokens<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>_2 <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&amp;&amp;</span>
+   blake2b256<span style="color:#f92672">(</span>b<span style="color:#f92672">.</span>propositionBytes<span style="color:#f92672">)</span> <span style="color:#f92672">==</span> memberBoxScriptHash <span style="color:#f92672">&amp;&amp;</span>
+   <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>R4<span style="color:#f92672">[</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">]</span><span style="color:#f92672">.</span>get <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#75715e">// start the box with zero LETS balance
+</span><span style="color:#75715e"></span>   b<span style="color:#f92672">.</span>value <span style="color:#f92672">&gt;=</span> minErgsToJoin <span style="color:#f92672">&amp;&amp;</span> <span style="color:#75715e">// the box must contain some minimum ergs
+</span><span style="color:#75715e"></span>   b<span style="color:#f92672">.</span>R6<span style="color:#f92672">[</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">]</span><span style="color:#f92672">.</span>get <span style="color:#f92672">&lt;=</span> <span style="color:#a6e22e">HEIGHT</span> <span style="color:#75715e">// store the creation height in R6
+</span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
 
-<p>To prevent spam and DDoS attacks, we require at least some minimum number of ergs (<code>minErgsToJoin</code>) to be locked in the newly created member&rsquo;s box. The ergs will be locked until at least <code>minWithdrawTime</code> number of blocks have been mined. A box is allowed to have a negative LETS balance upto the amount that can be covered by the locked ergs (using the rate at the time of trade).</p>
+<span style="color:#75715e">// how many lets boxes creared in the tx
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> numLetsBoxes <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">OUTPUTS</span><span style="color:#f92672">.</span>filter<span style="color:#f92672">(</span><span style="color:#f92672">{</span><span style="color:#f92672">(</span>b<span style="color:#66d9ef">:</span><span style="color:#66d9ef">Box</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">=&gt;</span> isLets<span style="color:#f92672">(</span>b<span style="color:#f92672">)</span><span style="color:#f92672">}</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>size
 
-<pre><code class="language-scala">// a tokenBox stores the membership tokens and has this script
-val tokenBox = OUTPUTS(0) // the first output must also be a tokenBox
-// first output contains remaining LETS tokens
+<span style="color:#75715e">// In the transaction following is preserved for the token box ...
+</span><span style="color:#75715e"></span>tokenBox<span style="color:#f92672">.</span>tokens<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>_1 <span style="color:#f92672">==</span> <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>tokens<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>_1 <span style="color:#f92672">&amp;&amp;</span>                <span style="color:#75715e">//  token id
+</span><span style="color:#75715e"></span>tokenBox<span style="color:#f92672">.</span>tokens<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>_2 <span style="color:#f92672">==</span> <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>tokens<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>_2 <span style="color:#f92672">-</span> numLetsBoxes <span style="color:#f92672">&amp;&amp;</span> <span style="color:#75715e">//  quantity
+</span><span style="color:#75715e"></span>tokenBox<span style="color:#f92672">.</span>propositionBytes <span style="color:#f92672">==</span> <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>propositionBytes           <span style="color:#75715e">//  script
+</span></code></pre></div><p>A LETS member's box is protected by the script below, whose hash <code>memberBoxScriptHash</code> is used above. The script requires exactly one (sender, receiver) pair per transaction.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#66d9ef">val</span> validRateOracle <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">CONTEXT</span><span style="color:#f92672">.</span>dataInputs<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>tokens<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>_1 <span style="color:#f92672">==</span> rateTokenID
+<span style="color:#66d9ef">val</span> rate <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">CONTEXT</span><span style="color:#f92672">.</span>dataInputs<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>R4<span style="color:#f92672">[</span><span style="color:#66d9ef">Int</span><span style="color:#f92672">]</span><span style="color:#f92672">.</span>get
+<span style="color:#66d9ef">val</span> inBalance <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>R4<span style="color:#f92672">[</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">]</span><span style="color:#f92672">.</span>get    <span style="color:#75715e">// LETS balance of current input
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> pubKey <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>R5<span style="color:#f92672">[</span><span style="color:#66d9ef">SigmaProp</span><span style="color:#f92672">]</span><span style="color:#f92672">.</span>get  <span style="color:#75715e">// owner of the current input
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> createdAt <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>R6<span style="color:#f92672">[</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">]</span><span style="color:#f92672">.</span>get    <span style="color:#75715e">// height at which current input was mined
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">val</span> index <span style="color:#66d9ef">=</span> getVar<span style="color:#f92672">[</span><span style="color:#66d9ef">Int</span><span style="color:#f92672">]</span><span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>get       <span style="color:#75715e">// index of the corresponding output
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> out <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">OUTPUTS</span><span style="color:#f92672">(</span>index<span style="color:#f92672">)</span>
+<span style="color:#66d9ef">val</span> outBalance <span style="color:#66d9ef">=</span> out<span style="color:#f92672">.</span>R4<span style="color:#f92672">[</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">]</span><span style="color:#f92672">.</span>get    <span style="color:#75715e">// LETS balance of the output
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// A LETS box is one that has the same script as the current box
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> isMemberBox <span style="color:#66d9ef">=</span> <span style="color:#f92672">{</span><span style="color:#f92672">(</span>b<span style="color:#66d9ef">:</span><span style="color:#66d9ef">Box</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">=&gt;</span> b<span style="color:#f92672">.</span>propositionBytes <span style="color:#f92672">==</span> <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>propositionBytes<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">val</span> letsInputs <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">INPUTS</span><span style="color:#f92672">.</span>filter<span style="color:#f92672">(</span>isMemberBox<span style="color:#f92672">)</span>    <span style="color:#75715e">// all LETS input boxes
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> letsOutputs <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">OUTPUTS</span><span style="color:#f92672">.</span>filter<span style="color:#f92672">(</span>isMemberBox<span style="color:#f92672">)</span>  <span style="color:#75715e">// all LETS output boxes
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// The current input belongs to the receiver if its LETS balance increases
+</span><span style="color:#75715e"></span><span style="color:#75715e">// There may be some ergs in receiver&#39;s input box. We need to ensure that
+</span><span style="color:#75715e"></span><span style="color:#75715e">// the receiver&#39;s output box also contains the same amount of ergs as input
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> receiver <span style="color:#66d9ef">=</span> outBalance <span style="color:#f92672">&gt;</span> inBalance <span style="color:#f92672">&amp;&amp;</span> out<span style="color:#f92672">.</span>value <span style="color:#f92672">==</span> <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>value
 
-def isLets(b:Box) = { // returns true if b is a LETS box
-   // A LETS box must have exactly 1 membership token in tokens(0)
-   b.tokens(0)._1 == letsTokenID &amp;&amp; b.tokens(0)._2 == 1 &amp;&amp;
-   blake2b256(b.propositionBytes) == memberBoxScriptHash &amp;&amp;
-   SELF.R4[Long].get == 0 &amp;&amp; // start the box with zero LETS balance
-   b.value &gt;= minErgsToJoin &amp;&amp; // the box must contain some minimum ergs
-   b.R6[Long].get &lt;= HEIGHT // store the creation height in R6
-}
+<span style="color:#66d9ef">val</span> getBalance <span style="color:#66d9ef">=</span> <span style="color:#f92672">{</span><span style="color:#f92672">(</span>b<span style="color:#66d9ef">:</span><span style="color:#66d9ef">Box</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">=&gt;</span> b<span style="color:#f92672">.</span>R4<span style="color:#f92672">[</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">]</span><span style="color:#f92672">.</span>get<span style="color:#f92672">}</span> <span style="color:#75715e">// returns LETS balance of a box
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">val</span> letsBalIn <span style="color:#66d9ef">=</span> letsInputs<span style="color:#f92672">.</span>map<span style="color:#f92672">(</span>getBalance<span style="color:#f92672">)</span><span style="color:#f92672">.</span>fold<span style="color:#f92672">(</span><span style="color:#ae81ff">0L</span><span style="color:#f92672">,</span> <span style="color:#f92672">{</span><span style="color:#f92672">(</span>l<span style="color:#66d9ef">:</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">,</span> r<span style="color:#66d9ef">:</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">=&gt;</span> l <span style="color:#f92672">+</span> r<span style="color:#f92672">}</span><span style="color:#f92672">)</span>
+<span style="color:#66d9ef">val</span> letsBalOut <span style="color:#66d9ef">=</span> letsOutputs<span style="color:#f92672">.</span>map<span style="color:#f92672">(</span>getBalance<span style="color:#f92672">)</span><span style="color:#f92672">.</span>fold<span style="color:#f92672">(</span><span style="color:#ae81ff">0L</span><span style="color:#f92672">,</span> <span style="color:#f92672">{</span><span style="color:#f92672">(</span>l<span style="color:#66d9ef">:</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">,</span> r<span style="color:#66d9ef">:</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">=&gt;</span> l <span style="color:#f92672">+</span> r<span style="color:#f92672">}</span><span style="color:#f92672">)</span>
 
-// how many lets boxes creared in the tx
-val numLetsBoxes = OUTPUTS.filter({(b:Box) =&gt; isLets(b)}).size
+<span style="color:#75715e">// sender box can contain less amount of ergs (sender may withdraw ergs provided 
+</span><span style="color:#75715e"></span><span style="color:#75715e">// that any negative LETS balance of sender in out is backed by sufficient ergs)
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> correctErgs <span style="color:#66d9ef">=</span> out<span style="color:#f92672">.</span>value <span style="color:#f92672">&gt;=</span> <span style="color:#f92672">-</span>outBalance <span style="color:#f92672">*</span> rate <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">(</span>
+  out<span style="color:#f92672">.</span>value <span style="color:#f92672">&gt;=</span> <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>value <span style="color:#f92672">||</span> <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>R6<span style="color:#f92672">[</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">]</span><span style="color:#f92672">.</span>get <span style="color:#f92672">+</span> minWithdrawTime <span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">HEIGHT</span>
+<span style="color:#f92672">)</span>
 
-// In the transaction following is preserved for the token box ...
-tokenBox.tokens(0)._1 == SELF.tokens(0)._1 &amp;&amp;                //  token id
-tokenBox.tokens(0)._2 == SELF.tokens(0)._2 - numLetsBoxes &amp;&amp; //  quantity
-tokenBox.propositionBytes == SELF.propositionBytes           //  script
-</code></pre>
-
-<p>A LETS member&rsquo;s box is protected by the script below, whose hash <code>memberBoxScriptHash</code> is used above. The script requires exactly one (sender, receiver) pair per transaction.</p>
-
-<pre><code class="language-scala">val validRateOracle = CONTEXT.dataInputs(0).tokens(0)._1 == rateTokenID
-val rate = CONTEXT.dataInputs(0).R4[Int].get
-val inBalance = SELF.R4[Long].get    // LETS balance of current input
-val pubKey = SELF.R5[SigmaProp].get  // owner of the current input
-val createdAt = SELF.R6[Long].get    // height at which current input was mined
-
-val index = getVar[Int](0).get       // index of the corresponding output
-val out = OUTPUTS(index)
-val outBalance = out.R4[Long].get    // LETS balance of the output
-
-// A LETS box is one that has the same script as the current box
-val isMemberBox = {(b:Box) =&gt; b.propositionBytes == SELF.propositionBytes}
-val letsInputs = INPUTS.filter(isMemberBox)    // all LETS input boxes
-val letsOutputs = OUTPUTS.filter(isMemberBox)  // all LETS output boxes
-
-// The current input belongs to the receiver if its LETS balance increases
-// There may be some ergs in receiver's input box. We need to ensure that
-// the receiver's output box also contains the same amount of ergs as input
-val receiver = outBalance &gt; inBalance &amp;&amp; out.value == SELF.value
-
-val getBalance = {(b:Box) =&gt; b.R4[Long].get} // returns LETS balance of a box
-
-val letsBalIn = letsInputs.map(getBalance).fold(0L, {(l:Long, r:Long) =&gt; l + r})
-val letsBalOut = letsOutputs.map(getBalance).fold(0L, {(l:Long, r:Long) =&gt; l + r})
-
-// sender box can contain less amount of ergs (sender may withdraw ergs provided 
-// that any negative LETS balance of sender in out is backed by sufficient ergs)
-val correctErgs = out.value &gt;= -outBalance * rate &amp;&amp; (
-  out.value &gt;= SELF.value || SELF.R6[Long].get + minWithdrawTime &gt; HEIGHT
-)
-
-// for the receiver, we don't touch the erg balance, 
-// since a receiver is not actively involved in the transaction
-
-inBalance != outBalance &amp;&amp; // some transaction should occur; balance must change
-SELF.tokens(0)._1 == letsTokenID &amp;&amp; // the current input has the right token
-out.tokens(0)._1 == letsTokenID &amp;&amp; // corresponding output has the right token
-validRateOracle &amp;&amp;          // oracle providing rate has the correct &quot;rate token&quot;
-letsBalIn == letsBalOut &amp;&amp;  // total LETS balance is preserved in the transaction
-letsInputs.size == 2 &amp;&amp; letsOutputs.size == 2 &amp;&amp;  // only two LETS inputs, outputs
-out.propositionBytes == SELF.propositionBytes &amp;&amp;  // out is a LETS box ...
-out.R5[SigmaProp].get == pubKey &amp;&amp;                // ... with the right pub key
-out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... and creation height
-(receiver ||              // either current input belongs to receiver ...
-  (pubKey &amp;&amp; correctErgs) // ... or out has correct ergs and tx has signature
-)
-</code></pre>
-
-<p>The transaction spending a box with the above script requires:
-- The sum of the LETS balance of inputs and outputs is preserved
-- There are two LETS inputs and two LETS outputs
-- The public keys (stored in R5) is preserved in the corresponding output
-- The creation height (stored in R6) be preserved in the corresponding output</p>
-
-<p>We say that some public key is the receiver if the LETS balance of its output is higher than that of its input.</p>
-
-<p>The last condition requires that either the input and output boxes belong to the receiver (so that the ergs are preserved), or, in case they belong to the sender, a signature is provided and the output is backed by the required number of ergs if its LETS balance is negative. Furthermore, it requires that the sender&rsquo;s ergs balance cannot be reduced until at least <code>minWithdrawTime</code> number of blocks have been mined after the ergs were locked.</p>
-
-<p>Compared to the managed LETS, the above system has the following differences:</p>
-
+<span style="color:#75715e">// for the receiver, we don&#39;t touch the erg balance, 
+</span><span style="color:#75715e"></span><span style="color:#75715e">// since a receiver is not actively involved in the transaction
+</span><span style="color:#75715e"></span>
+inBalance <span style="color:#f92672">!=</span> outBalance <span style="color:#f92672">&amp;&amp;</span> <span style="color:#75715e">// some transaction should occur; balance must change
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>tokens<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>_1 <span style="color:#f92672">==</span> letsTokenID <span style="color:#f92672">&amp;&amp;</span> <span style="color:#75715e">// the current input has the right token
+</span><span style="color:#75715e"></span>out<span style="color:#f92672">.</span>tokens<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>_1 <span style="color:#f92672">==</span> letsTokenID <span style="color:#f92672">&amp;&amp;</span> <span style="color:#75715e">// corresponding output has the right token
+</span><span style="color:#75715e"></span>validRateOracle <span style="color:#f92672">&amp;&amp;</span>          <span style="color:#75715e">// oracle providing rate has the correct &#34;rate token&#34;
+</span><span style="color:#75715e"></span>letsBalIn <span style="color:#f92672">==</span> letsBalOut <span style="color:#f92672">&amp;&amp;</span>  <span style="color:#75715e">// total LETS balance is preserved in the transaction
+</span><span style="color:#75715e"></span>letsInputs<span style="color:#f92672">.</span>size <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">&amp;&amp;</span> letsOutputs<span style="color:#f92672">.</span>size <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">&amp;&amp;</span>  <span style="color:#75715e">// only two LETS inputs, outputs
+</span><span style="color:#75715e"></span>out<span style="color:#f92672">.</span>propositionBytes <span style="color:#f92672">==</span> <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>propositionBytes <span style="color:#f92672">&amp;&amp;</span>  <span style="color:#75715e">// out is a LETS box ...
+</span><span style="color:#75715e"></span>out<span style="color:#f92672">.</span>R5<span style="color:#f92672">[</span><span style="color:#66d9ef">SigmaProp</span><span style="color:#f92672">]</span><span style="color:#f92672">.</span>get <span style="color:#f92672">==</span> pubKey <span style="color:#f92672">&amp;&amp;</span>                <span style="color:#75715e">// ... with the right pub key
+</span><span style="color:#75715e"></span>out<span style="color:#f92672">.</span>R6<span style="color:#f92672">[</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">]</span><span style="color:#f92672">.</span>get <span style="color:#f92672">==</span> <span style="color:#a6e22e">SELF</span><span style="color:#f92672">.</span>R6<span style="color:#f92672">[</span><span style="color:#66d9ef">Long</span><span style="color:#f92672">]</span><span style="color:#f92672">.</span>get <span style="color:#f92672">&amp;&amp;</span>          <span style="color:#75715e">// ... and creation height
+</span><span style="color:#75715e"></span><span style="color:#f92672">(</span>receiver <span style="color:#f92672">||</span>              <span style="color:#75715e">// either current input belongs to receiver ...
+</span><span style="color:#75715e"></span>  <span style="color:#f92672">(</span>pubKey <span style="color:#f92672">&amp;&amp;</span> correctErgs<span style="color:#f92672">)</span> <span style="color:#75715e">// ... or out has correct ergs and tx has signature
+</span><span style="color:#75715e"></span><span style="color:#f92672">)</span>
+</code></pre></div><p>The transaction spending a box with the above script requires:</p>
 <ul>
-<li><strong>No membership record</strong>: Unlike the managed LETS, We don&rsquo;t store any membership information here.</li>
+<li>The sum of the LETS balance of inputs and outputs is preserved</li>
+<li>There are two LETS inputs and two LETS outputs</li>
+<li>The public keys (stored in R5) is preserved in the corresponding output</li>
+<li>The creation height (stored in R6) be preserved in the corresponding output</li>
+</ul>
+<p>We say that some public key is the receiver if the LETS balance of its output is higher than that of its input.</p>
+<p>The last condition requires that either the input and output boxes belong to the receiver (so that the ergs are preserved), or, in case they belong to the sender, a signature is provided and the output is backed by the required number of ergs if its LETS balance is negative. Furthermore, it requires that the sender's ergs balance cannot be reduced until at least <code>minWithdrawTime</code> number of blocks have been mined after the ergs were locked.</p>
+<p>Compared to the managed LETS, the above system has the following differences:</p>
+<ul>
+<li><strong>No membership record</strong>: Unlike the managed LETS, We don't store any membership information here.</li>
 <li><strong>Multiple-boxes</strong>: A person can create multiple membership boxes, which is permitted. We only require that any negative balance be backed by the corresponding number of ergs locked in it.</li>
 </ul>
-
 <h2 id="lets-1-zero-sum-collateral">LETS-1: Zero Sum, Collateral</h2>
-
 <p>The above is the basic variant, which we call <strong>LETS-1</strong>. It has the following features:</p>
-
 <ul>
 <li><strong>Time-locked Joining-Fee</strong>: To prevent spam attacks, a member has to pay a certain minimum fee in ergs at the time of joining. This fee is refundable but only after a predefined number of blocks.</li>
 <li><strong>Zero Sum</strong>: The sum of the LETS balances of all member boxes is zero. Member boxes are allowed to have a negative balance as long as it is within a certain limit.</li>
-<li><strong>Collateral</strong>: For the sender&rsquo;s output, ergs are used as collateral to cover negative LETS balance at the current exchange rate.</li>
+<li><strong>Collateral</strong>: For the sender's output, ergs are used as collateral to cover negative LETS balance at the current exchange rate.</li>
 </ul>
-
 <p>The following are some variations of LETS-1.</p>
-
 <h2 id="lets-2-zero-sum-no-collateral">LETS-2: Zero Sum, No collateral</h2>
-
 <p>This is a slight variation of LETS-1 as follows:</p>
-
 <ul>
 <li><strong>Non-refundable joining fee</strong>: Similar to LETS-1, a joining fee is needed to prevent spam attacks. However, unlike LETS-1, this fee is non-refundable and must be sent to some predefined management committee.</li>
 <li><strong>Zero Sum</strong>: As in LETS-1.</li>
 </ul>
-
 <h2 id="lets-3-positive-sum-collateral">LETS-3: Positive-Sum, Collateral</h2>
-
 <p>The above two variants require the total LETS balance to be always zero. Here we consider a positive value for this sum. In particular, this variant has the following properties:</p>
-
 <ul>
 <li><strong>Time-locked Joining Fee</strong>: As in LETS-1.</li>
 <li><strong>Positive Sum</strong>: The LETS balance of every member must always be non-negative. This ensures that the sum of the LETS balances of all member boxes is positive. The initial LETS balance is set to a positive value based on the joining fee at the current rate, capped to some maximum value.</li>
 <li><strong>Collateral</strong>: Any reduction in ergs balance of the sender must be accompanied by a reduction of the corresponding LETS balance at the current exchange rate.</li>
 </ul>
-
 <p>We can also allow topping up the LETS balance during a transaction by adding the equivalent amount of ergs.</p>
-
 <h2 id="lets-4-positive-sum-no-collateral">LETS-4: Positive-Sum, No collateral</h2>
-
 <p>This is similar to LETS-3 but with some small variations:</p>
-
 <ul>
 <li><strong>Non-refundable Joining Fee</strong>: As in LETS-2</li>
 <li><strong>Positive-Sum</strong>: As in LETS-3</li>
 </ul>
-
 <p>The following table summarizes the variants:</p>
-
 <table>
 <thead>
 <tr>
@@ -326,14 +289,12 @@ out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... and creation he
 <th>Positive Sum</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><strong>Collateral</strong></td>
 <td>LETS-1</td>
 <td>LETS-3</td>
 </tr>
-
 <tr>
 <td><strong>No collateral</strong></td>
 <td>LETS-2</td>
@@ -341,7 +302,6 @@ out.R6[Long].get == SELF.R6[Long].get &amp;&amp;          // ... and creation he
 </tr>
 </tbody>
 </table>
-
 <p>We considered LETS transactions involving a single sender-receiver pair. More advanced models can allow multiple senders and receivers, and need not be in pairs.</p>
 
           </div>
@@ -550,7 +510,7 @@ Developer MH Samadani published …</p>
                 <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_07_24_ergo_address/">
                   <div class="eg-blog__item-img"><img src="/img/blog/address.jpg" height="188" width="335" alt="blog photo"></div>
                   <h3 class="eg-blog__item-title"><span>Ergo Addresses</span></h3>
-                  <p class="eg-blog__item-paragraph">In today&rsquo;s article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work …</p>
+                  <p class="eg-blog__item-paragraph">In today's article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work specifically as …</p>
                   <div class="eg-author">
                     <img src="/img/authors/robert_wolf.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -645,8 +605,7 @@ A lot of folks launched a node and also a miner, with pubkeyHex from the miner �
                   <h3 class="eg-blog__item-title"><span>How to mine Ergo on Windows(x64)</span></h3>
                   <p class="eg-blog__item-paragraph">Step 1: Tools Visual Studio
 Choose free community version, you will need to select desktop development with C++ package during install.
-CUDA toolkit
-Choose …</p>
+CUDA toolkit Choose …</p>
                   <div class="eg-author">
                     <img src="/img/authors/martin_spodymek.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">

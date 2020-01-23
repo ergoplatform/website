@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on Ergo</title>
@@ -10,6 +10,15 @@
     
 	<atom:link href="https://ergoplatform.org/en/news/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ergo Platform Discord Server has been created</title>
+      <link>https://ergoplatform.org/en/news/2020_01_23/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2020_01_23/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Bypassing Non-Outsourceable Proof-of-Work Schemes Using Collateralized Smart Contracts</title>
@@ -354,20 +363,20 @@
     </item>
     
     <item>
-      <title>Ergo Mainnet 3.0.1 released</title>
-      <link>https://ergoplatform.org/en/news/2019_07_01_2/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://ergoplatform.org/en/news/2019_07_01_2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Ergo explorer released</title>
       <link>https://ergoplatform.org/en/news/2019_07_01/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://ergoplatform.org/en/news/2019_07_01/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ergo Mainnet 3.0.1 released</title>
+      <link>https://ergoplatform.org/en/news/2019_07_01_2/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2019_07_01_2/</guid>
       <description></description>
     </item>
     

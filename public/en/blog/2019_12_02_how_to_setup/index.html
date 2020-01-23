@@ -12,7 +12,7 @@
 
     
       <meta name="description" content="This tutorial explains how to install and run a full Ergo node. It does not cover mining.
-Node security There are a few important aspects of node usage that your wallet and money&amp;rsquo;s safety depends on:
+Node security There are a few important aspects of node usage that your wallet and money&#39;s safety depends on:
  An Ergo node requires storing security-critical parameters in the configuration file. You should never make this file public. An Ergo node provides a REST API for interacting with the built-in wallet. Sensitive API methods require a security token, which should never be sent over untrusted channels.">
     
 
@@ -160,136 +160,87 @@ Node security There are a few important aspects of node usage that your wallet a
         </div>
         <div class="eg-blog__single-content">
           <div>
-            
-
-<p>This tutorial explains how to install and run a full Ergo node. It does not cover mining.</p>
-
+            <p>This tutorial explains how to install and run a full Ergo node. It does not cover mining.</p>
 <h2 id="node-security">Node security</h2>
-
-<p>There are a few important aspects of node usage that your wallet and money&rsquo;s safety depends on:</p>
-
+<p>There are a few important aspects of node usage that your wallet and money's safety depends on:</p>
 <ul>
 <li>An Ergo node requires storing security-critical parameters in the configuration file. You should never make this file public.</li>
 <li>An Ergo node provides a REST API for interacting with the built-in wallet. Sensitive API methods require a security token, which should never be sent over untrusted channels.</li>
 <li>Access to the Ergo REST API must be restricted to known hosts. In particular, the API must not be accessible from the Internet.</li>
 </ul>
-
 <h2 id="prerequisites">Prerequisites</h2>
-
 <p>To run an Ergo node you need JRE version &gt;= 8 to be installed. One way to install it is to use <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">Oracle implementation of Java</a>.</p>
-
 <p>The next step is to download the latest <a href="https://github.com/ergoplatform/ergo/releases/">Ergo client release</a> jar file and create a node configuration file.</p>
-
 <p>Note that instead of downloading the jar, you can clone the repository and create the jar yourself using <a href="https://www.scala-sbt.org/">SBT</a> by issuing the <code>sbt assembly</code> command.</p>
-
 <p>Denote by <strong>ergo_folder</strong> the folder where the jar is kept.</p>
-
 <h2 id="running-the-node-for-the-first-time">Running the node for the first time</h2>
-
 <p>Create a configuration file <code>ergo.conf</code> with the following text in <strong>ergo_folder</strong>.</p>
-
-<pre><code class="language-shell">ergo {
-    directory = ${ergo.directory}&quot;/.ergo&quot;
-    node {
-        mining = false
-    }
-    wallet.secretStorage.secretDir = ${ergo.directory}&quot;/wallet/keystore&quot;
-}
-</code></pre>
-
-<p>The parameter <code>${ergo.directory}</code> points to the directory where the jar will be run from.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ergo <span style="color:#f92672">{</span>
+    directory <span style="color:#f92672">=</span> <span style="color:#e6db74">${</span>ergo.directory<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;/.ergo&#34;</span>
+    node <span style="color:#f92672">{</span>
+        mining <span style="color:#f92672">=</span> false
+    <span style="color:#f92672">}</span>
+    wallet.secretStorage.secretDir <span style="color:#f92672">=</span> <span style="color:#e6db74">${</span>ergo.directory<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;/wallet/keystore&#34;</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>The parameter <code>${ergo.directory}</code> points to the directory where the jar will be run from.
 Open a command prompt and <code>cd</code> to <strong>ergo_folder</strong>. Then issue the following command to run the node for the first time:</p>
-
-<pre><code class="language-shell">  java -jar ergo-&lt;release&gt;.jar --mainnet -c ergo.conf
-</code></pre>
-
-<p>The node will start syncing immediately after this. Wait for a few minutes for the API to start and go to the next step.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">  java -jar ergo-&lt;release&gt;.jar --mainnet -c ergo.conf
+</code></pre></div><p>The node will start syncing immediately after this. Wait for a few minutes for the API to start and go to the next step.</p>
 <p><strong>Note:</strong> You can use any name for the file instead of <code>ergo.conf</code>. All configuration parameters are to be passed through this file and you only need to rewrite parameters that you want to change from the default values. The above config file actually has the default values.</p>
-
 <h2 id="compute-the-hash-of-your-secret">Compute the hash of your secret</h2>
-
 <p>First, select a secret to protect your API.
-Then go to <a href="http://127.0.0.1:9053/swagger#/utils/hashBlake2b">http://127.0.0.1:9053/swagger#/utils/hashBlake2b</a> and call the API to compute the hash of your secret. Refer to the image below.</p>
-
-<p><img src="/img/blog/how_to_setup_1img.png" alt="Compute Hash of secret" /></p>
-
+Then go to http://127.0.0.1:9053/swagger#/utils/hashBlake2b and call the API to compute the hash of your secret. Refer to the image below.</p>
+<p><img src="/img/blog/how_to_setup_1img.png" alt="Compute Hash of secret"></p>
 <p>Copy the response containing the hash for use in the next step (see below image). In our example, the secret is <code>hello</code> whose hash corresponds to <code>324dcf027dd4a30a932c441f365a25e86b173defa4b8e58948253471b81b72cf</code>.</p>
-
 <p><strong>IMPORTANT</strong> You must use a different and strong secret.</p>
-
-<p><img src="/img/blog/how_to_setup_2img.png" alt="response" /></p>
-
+<p><img src="/img/blog/how_to_setup_2img.png" alt="response"></p>
 <h2 id="update-config-file-with-api-key-hash">Update config file with API key hash</h2>
-
 <p>Edit the config file <code>ergo.conf</code> and paste the hash copied in the previous step. The file should look as follows:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ergo <span style="color:#f92672">{</span>
+    directory <span style="color:#f92672">=</span> <span style="color:#e6db74">${</span>ergo.directory<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;/.ergo&#34;</span>
+    node <span style="color:#f92672">{</span>
+        mining <span style="color:#f92672">=</span> false
+    <span style="color:#f92672">}</span>
+    wallet.secretStorage.secretDir <span style="color:#f92672">=</span> <span style="color:#e6db74">${</span>ergo.directory<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;/wallet/keystore&#34;</span>
+<span style="color:#f92672">}</span>
 
-<pre><code class="language-shell">ergo {
-    directory = ${ergo.directory}&quot;/.ergo&quot;
-    node {
-        mining = false
-    }
-    wallet.secretStorage.secretDir = ${ergo.directory}&quot;/wallet/keystore&quot;
-}
-
-scorex {
-    restApi {
-        # Hex-encoded Blake2b256 hash of an API key. 
-        # Should be 64-chars long Base16 string.
-        # below is the hash of the string 'hello'
-        # replace with your actual hash 
-        apiKeyHash = &quot;324dcf027dd4a30a932c441f365a25e86b173defa4b8e58948253471b81b72cf&quot;
-    }
-}
-</code></pre>
-
-<h2 id="initialize-wallet">Initialize wallet</h2>
-
+scorex <span style="color:#f92672">{</span>
+    restApi <span style="color:#f92672">{</span>
+        <span style="color:#75715e"># Hex-encoded Blake2b256 hash of an API key.</span> 
+        <span style="color:#75715e"># Should be 64-chars long Base16 string.</span>
+        <span style="color:#75715e"># below is the hash of the string &#39;hello&#39;</span>
+        <span style="color:#75715e"># replace with your actual hash</span> 
+        apiKeyHash <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;324dcf027dd4a30a932c441f365a25e86b173defa4b8e58948253471b81b72cf&#34;</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h2 id="initialize-wallet">Initialize wallet</h2>
 <p>Restart the node and go to <a href="http://127.0.0.1:9053/panel">http://127.0.0.1:9053/panel</a> to access the panel. Then set the API key secret from the previous step. Note that you need to set the <strong>secret</strong> and not the hash from the config file. In our example, this is the string <code>hello</code>.</p>
-
-<p><img src="/img/blog/how_to_setup_3img.png" alt="set API key" /></p>
-
+<p><img src="/img/blog/how_to_setup_3img.png" alt="set API key"></p>
 <p>Finally, click on initialize wallet:</p>
-
-<p><img src="/img/blog/how_to_setup_4img.png" alt="click on initialize wallet" /></p>
-
+<p><img src="/img/blog/how_to_setup_4img.png" alt="click on initialize wallet"></p>
 <p>In the pop-up that opens, you must enter a wallet password. The mnemonic password is optional. After you click send, the wallet will return a mnemonic sentence as shown below.</p>
-
-<p><img src="/img/blog/how_to_setup_5img.png" alt="mnemonic sentence" /></p>
-
+<p><img src="/img/blog/how_to_setup_5img.png" alt="mnemonic sentence"></p>
 <p>You must copy this sentence and save it in a safe place. This sentence will be needed to restore the wallet on a different computer.</p>
-
 <h2 id="get-wallet-addresses">Get wallet addresses</h2>
-
 <p>This is a test to ensure you have set up the node properly. It will return the current addresses in the wallet.
 In the panel at <a href="http://127.0.0.1:9053/panel">http://127.0.0.1:9053/panel</a> click on the <code>Wallet</code> tab on the left and then on <code>Get all wallet addresses</code> to view the addresses currently maintained by the wallet. It should return at least one address if the node is set correctly.</p>
-
-<p><img src="/img/blog/how_to_setup_6img.png" alt="Get addresses" /></p>
-
+<p><img src="/img/blog/how_to_setup_6img.png" alt="Get addresses"></p>
 <h2 id="use-the-swagger-ui">Use the Swagger UI</h2>
-
 <p>A Swagger UI is available at <a href="http://127.0.0.1:9053/swagger">http://127.0.0.1:9053/swagger</a>. You had already used it earlier to compute the hash of your secret.
 You can also use this UI to make API calls for advanced operations that are not (yet) available in the panel. Some examples of this are:</p>
-
 <ol>
 <li>Creating non-standard transactions with registers and context variables.</li>
 <li>Creating transactions that issue tokens.</li>
 <li>Creating transactions that use certain boxes as inputs.</li>
 </ol>
-
 <p>A future article will discuss each of these operations in detail.</p>
-
 <p>Note that most methods in the API are protected and you would need to use your secret (from earlier) to access these methods. The following images show the process of setting this secret in the Swagger UI.</p>
-
 <p>Navigate to the top of the page and click the &ldquo;Authorize&rdquo; button. Enter your secret in the form that pops-up as shown in the figure below.
-<img src="/img/blog/how_to_setup_7img.png" alt="Enter API key" /></p>
-
+<img src="/img/blog/how_to_setup_7img.png" alt="Enter API key"></p>
 <p>After the password is entered and you have clicked &ldquo;Authorize&rdquo;, you will be shown the popup below:
-<img src="/img/blog/how_to_setup_8img.png" alt="Logged in" /></p>
-
+<img src="/img/blog/how_to_setup_8img.png" alt="Logged in"></p>
 <p>Now navigate to <a href="/img/blog/how_to_setup_9img.png">http://127.0.0.1:9053/swagger#/wallet/walletAddresses</a> and click on &ldquo;Try it out&rdquo;. You should see the same list of addresses as you saw earlier from the panel.</p>
-
-<p><img src="/img/blog/how_to_setup_10img.png" alt="Get addresses" /></p>
+<p><img src="/img/blog/how_to_setup_10img.png" alt="Get addresses"></p>
 
           </div>
         </div>
@@ -483,7 +434,7 @@ Developer MH Samadani published …</p>
                 <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_07_24_ergo_address/">
                   <div class="eg-blog__item-img"><img src="/img/blog/address.jpg" height="188" width="335" alt="blog photo"></div>
                   <h3 class="eg-blog__item-title"><span>Ergo Addresses</span></h3>
-                  <p class="eg-blog__item-paragraph">In today&rsquo;s article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work …</p>
+                  <p class="eg-blog__item-paragraph">In today's article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work specifically as …</p>
                   <div class="eg-author">
                     <img src="/img/authors/robert_wolf.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -591,8 +542,7 @@ A lot of folks launched a node and also a miner, with pubkeyHex from the miner �
                   <h3 class="eg-blog__item-title"><span>How to mine Ergo on Windows(x64)</span></h3>
                   <p class="eg-blog__item-paragraph">Step 1: Tools Visual Studio
 Choose free community version, you will need to select desktop development with C++ package during install.
-CUDA toolkit
-Choose …</p>
+CUDA toolkit Choose …</p>
                   <div class="eg-author">
                     <img src="/img/authors/martin_spodymek.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">

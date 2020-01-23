@@ -153,70 +153,44 @@ Ergo mining is based on Autolykos, a Proof-of-Work algorithm designed to be ASIC
         </div>
         <div class="eg-blog__single-content">
           <div>
-            
-
-<h1 id="ergo-gpu-mining">Ergo GPU Mining</h1>
-
+            <h1 id="ergo-gpu-mining">Ergo GPU Mining</h1>
 <p>This article will help you start mining Ergo using a GPU.</p>
-
-<p>Ergo mining is based on <a href="https://docs.ergoplatform.com/ErgoPow.pdf">Autolykos</a>, a Proof-of-Work algorithm designed to be ASIC and pool resistant. Miners have to perform memory-hard computations~(at least 4 GB memory is needed, but the current most efficient implementation utilizes between 8 GB of vRAM) that makes Ergo friendly for GPU mining. In addition, Autolykos requires access to <strong>private</strong> keys, thereby preventing mining pool formation. As soon as a correct solution is found, the miner broadcasts the block along with the solution and is able to collect the block reward after a delay of 720 blocks using the secret he used during mining. The rest of the network verifies the solution using the miner&rsquo;s <strong>public</strong> key and this verification can be done very efficiently, requiring less than a kilobyte of memory.</p>
-
+<p>Ergo mining is based on <a href="https://docs.ergoplatform.com/ErgoPow.pdf">Autolykos</a>, a Proof-of-Work algorithm designed to be ASIC and pool resistant. Miners have to perform memory-hard computations~(at least 4 GB memory is needed, but the current most efficient implementation utilizes between 8 GB of vRAM) that makes Ergo friendly for GPU mining. In addition, Autolykos requires access to <strong>private</strong> keys, thereby preventing mining pool formation. As soon as a correct solution is found, the miner broadcasts the block along with the solution and is able to collect the block reward after a delay of 720 blocks using the secret he used during mining. The rest of the network verifies the solution using the miner's <strong>public</strong> key and this verification can be done very efficiently, requiring less than a kilobyte of memory.</p>
 <h2 id="prerequisites">Prerequisites</h2>
-
 <p>In order to mine, you need the following setup:</p>
-
 <ol>
 <li>A full node with wallet initialized and fully synced.</li>
 <li>A computer with a GPU that is recognized by your OS.</li>
 <li>Ergo mining software for your operating system. Ergo supports both AMD and NVidia GPUs.</li>
 </ol>
-
 <p>Ergo mining requires a configured and synchronized Ergo node and at least one GPU for mining. You may use multiple GPUs if you wish (to multiply your hashing power) but you only need one Ergo node.</p>
-
 <p><strong>Note that Ergo no longer works in Java 8 due to its lack of <a href="http://mail.openjdk.java.net/pipermail/security-dev/2016-October/014942.html">strong cryptography</a>. You must use Java &gt;= 9</strong></p>
-
 <p>The links for setting up the mining software are:</p>
-
 <ul>
 <li><a href="https://github.com/ergoplatform/cuda-miner">Nvidia Miner</a></li>
 <li><a href="https://ergoplatform.org/en/blog/2019_08_07_amd/">AMD Miner</a></li>
 </ul>
-
 <p><strong>!!!WARNING!!! Since Autolykos utilizes private keys, you should never use untrusted mining software. Check that the software is open-source and validated by the community</strong></p>
-
 <h2 id="sync-node-and-initialize-wallet">Sync node and Initialize Wallet</h2>
-
 <p>Follow the steps of setting up a node as described in <a href="https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node">the tutorial</a>.</p>
-
 <p>Edit the config file of the node and add the following line.</p>
-
 <p><code>ergo.node.mining = true</code></p>
-
 <p>Ensure that the wallet is initialized and you are in possession of the correct mnemonic sentence.</p>
-
 <p>Finally, ensure that the node is synced as described <a href="https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node#check-if-the-node-is-synced">here</a>.</p>
-
 <h2 id="configure-and-run-the-miner">Configure and run the miner</h2>
-
 <p>On the computer where the miner will be running, create a file called <code>config.json</code> with the following content</p>
-
-<pre><code class="language-json">{
-    &quot;seed&quot;: &quot;Attention!!! Replace this with your mnemonic sentence and keep it secret or you will get robbed&quot;, 
-    &quot;node&quot;: &quot;http://192.168.1.100:9053&quot;,
-    &quot;keepPrehash&quot;: false
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#f92672">&#34;seed&#34;</span>: <span style="color:#e6db74">&#34;Attention!!! Replace this with your mnemonic sentence and keep it secret or you will get robbed&#34;</span>, 
+    <span style="color:#f92672">&#34;node&#34;</span>: <span style="color:#e6db74">&#34;http://192.168.1.100:9053&#34;</span>,
+    <span style="color:#f92672">&#34;keepPrehash&#34;</span>: <span style="color:#66d9ef">false</span>
 }
-</code></pre>
-
-<p>where:</p>
-
+</code></pre></div><p>where:</p>
 <ul>
-<li><strong>seed</strong> is the mnemonic sentence from your node&rsquo;s wallet obtained in the previous step.</li>
+<li><strong>seed</strong> is the mnemonic sentence from your node's wallet obtained in the previous step.</li>
 <li><strong>node</strong> is the URL of your node.</li>
 <li><strong>keepPrehash</strong> is an optimization parameter. If set to <code>true</code>, the miner will consume at most 8GB of memory. If set to <code>false</code> the miner will consume at most 4GB of memory, but its performance will be for about 25% lower.</li>
 </ul>
-
 <p>Run your miner using the command <code>./auto.out config.json</code> (for Linux) or <code>miner.exe config.json</code> (for Windows) and enjoy receiving block rewards!</p>
-
 <p>Once you have received any mining rewards, you can view the balance as described <a href="https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node#check-wallet-balance">here</a> and then withdraw the funds as described <a href="https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node#sending-funds">here</a>.</p>
 
           </div>
@@ -411,7 +385,7 @@ Developer MH Samadani published …</p>
                 <a class="eg-blog__item eg-link related__post" href="https://ergoplatform.org/en/blog/2019_07_24_ergo_address/">
                   <div class="eg-blog__item-img"><img src="/img/blog/address.jpg" height="188" width="335" alt="blog photo"></div>
                   <h3 class="eg-blog__item-title"><span>Ergo Addresses</span></h3>
-                  <p class="eg-blog__item-paragraph">In today&rsquo;s article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work …</p>
+                  <p class="eg-blog__item-paragraph">In today's article, we will have a closer look into the Ergo address formatting. In addition to that we are going to explain how they work specifically as …</p>
                   <div class="eg-author">
                     <img src="/img/authors/robert_wolf.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -519,8 +493,7 @@ A lot of folks launched a node and also a miner, with pubkeyHex from the miner �
                   <h3 class="eg-blog__item-title"><span>How to mine Ergo on Windows(x64)</span></h3>
                   <p class="eg-blog__item-paragraph">Step 1: Tools Visual Studio
 Choose free community version, you will need to select desktop development with C++ package during install.
-CUDA toolkit
-Choose …</p>
+CUDA toolkit Choose …</p>
                   <div class="eg-author">
                     <img src="/img/authors/martin_spodymek.jpg" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
