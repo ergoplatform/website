@@ -130,7 +130,7 @@
           <div class="container container--margins-y">
             <h2 class="eg-title eg-title--black eg-mb-1">{{ T "news_title"}}</h2>
             <div class="news-section__items">
-              {{ $langNews := where .Pages "Section" "news" }}
+              {{ $langNews := where .Site.Pages "Section" "news" }}
               {{ with $langNews }}
                 {{ range first 3 $langNews }}
                   <div class="news-section__item">
@@ -246,11 +246,11 @@
         </section>
         <section class="blog-section">
           <div class="container container--margins-y blog-section__container">
-            {{ $blogPages := where .Pages "Section" "blog" }}
+            {{ $blogPages := where .Site.Pages "Section" "blog" }}
             {{ with $blogPages }}
               {{ range first 2 $blogPages }}
                 <div class="blog-section__item">
-                  <h3 class="blog-section__item-title"><a href="{{ .URL | safeURL }}" class="eg-link"><span>{{ .Title }}</span></a></h3>
+                  <h3 class="blog-section__item-title"><a href="{{ .Permalink | safeURL }}" class="eg-link"><span>{{ .Title }}</span></a></h3>
                   <div class="eg-author">
                     <img src="{{ .Params.authorPhoto }}" alt="author img" class="eg-author__img" width="60" height="60">
                     <div class="eg-author__info">
@@ -258,7 +258,7 @@
                       <p class="eg-author__info-paragraph">{{ if eq .Language.Lang "cn" }}{{ .Date.Format "2006.01.02" }}{{ else }}{{ .Date.Format "2 January, 2006" }}{{end}}</p>
                     </div>
                   </div>
-                  <a class="blog-section__button eg-btn eg-btn--outline-orange" href="{{ .URL | safeURL }}">{{ T "read_more" }}</a>
+                  <a class="blog-section__button eg-btn eg-btn--outline-orange" href="{{ .Permalink | safeURL }}">{{ T "read_more" }}</a>
                 </div>
               {{end}}
             {{ else }}

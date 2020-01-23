@@ -190,11 +190,11 @@
 </ul>
 <h3 id="对linux的要求">对Linux的要求</h3>
 <h4 id="1-通过下载你来自amdcomhttpsamdcom特定linux-发行版的amdgpu-pro-软件包来安装amdgpu-pro驱动器打开该文件包并且在终端窗口运行">1. 通过下载你来自<a href="https://amd.com">amd.com</a>特定Linux 发行版的AMDGPU-PRO 软件包来安装AMDGPU-PRO驱动器。打开该文件包，并且在终端窗口运行：</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ amdgpu-pro-install --opencl<span style="color:#f92672">=</span>legacy,pal --headless
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ amdgpu-pro-install --opencl<span class="o">=</span>legacy,pal --headless
 </code></pre></div><h4 id="2-安装opencl-头文件">2. 安装OpenCL 头文件</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ apt install libcurl4-openssl-dev
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ apt install libcurl4-openssl-dev
 </code></pre></div><h4 id="3-安装openssl-102">3. 安装OpenSSL 1.02</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ apt install libssl-dev
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ apt install libssl-dev
 </code></pre></div><h3 id="对windows的要求">对Windows的要求</h3>
 <h4 id="1-你需要至少一个amd-gpu其驱动器安装了amdcomhttpsamdcom">1. 你需要至少一个AMD GPU，其驱动器安装了 <a href="https://amd.com">amd.com</a></h4>
 <h4 id="2-从此处httpamd-devwpenginenetdna-cdncomapp-sdkinstallersappsdkinstaller30130135-gafullamd-app-sdkinstaller-v30130135-ga-windows-f-x64exe的-mhssadinis-github下载与安装amd-apk">2. 从<a href="http://amd-dev.wpengine.netdna-cdn.com/app-sdk/installers/APPSDKInstaller/3.0.130.135-GA/full/AMD-APP-SDKInstaller-v3.0.130.135-GA-windows-F-x64.exe">此处</a>的 mhssadini’s github 下载与安装AMD APK</h4>
@@ -203,9 +203,9 @@
 <h3 id="在linux环境下建造">在Linux环境下建造</h3>
 <h4 id="1-在主目录下编辑ergoopenclcpp并且加批注define-test或者取消批注define-test以建造矿机或者测试机">1. 在主目录下编辑 <code>ErgoOpenCL.cpp</code> ，并且加批注 <code>#define TEST</code> 或者取消批注 <code>define TEST</code> 以建造矿机或者测试机。</h4>
 <h4 id="2-将目录改为ergoamdminerubuntu并且运行make">2. 将目录改为 <code>ergoAMDminer/Ubuntu</code> ，并且运行make.</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./makefile
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">./makefile
 </code></pre></div><h4 id="3-如果每一步都运行无误你应当可以在ergoamdminerubuntu下找到ergoopencl继续运行程序开始开采">3. 如果每一步都运行无误，你应当可以在<code>ergoAMDminer/Ubuntu/</code>下找到ErgoOpenCL。继续，运行程序，开始开采。</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./ErgoOpenCL
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">./ErgoOpenCL
 </code></pre></div><h3 id="针对windows的预制版本">针对Windows的预制版本</h3>
 <p>下载<a href="https://github.com/mhssamadani/ergoAMDminer">github</a>，前往win64文件夹，然后执行 <code>ErgoOpenCL_miner.exe</code> 或 <code>ErgoOpenCL_tester.exe</code>。如果每一步都运行无误（参见要求与配置），其应当可以开始开采。</p>
 <h3 id="在windows环境下建造">在Windows环境下建造</h3>

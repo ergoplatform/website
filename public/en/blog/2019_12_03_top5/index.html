@@ -178,13 +178,13 @@ transaction will transfer a given amount of Erg into a new box protected by the
 following Ergo contract written in ErgoScript (see this
 <a href="https://ergoplatform.org/docs/ErgoScript.pdf">introduction</a> and more <a href="https://ergoplatform.org/docs/AdvancedErgoScriptTutorial.pdf">advanced
 examples</a> to learn more about ErgoScript).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// Freezer Contract
-</span><span style="color:#75715e"></span><span style="color:#f92672">{</span> 
-  <span style="color:#75715e">// Parameters
-</span><span style="color:#75715e"></span>  <span style="color:#75715e">// freezeDeadline: Int - some future block number after which the box can be spent
-</span><span style="color:#75715e"></span>  <span style="color:#75715e">// ownerPk: SigmaProp - public key of the new box owner
-</span><span style="color:#75715e"></span>  sigmaProp<span style="color:#f92672">(</span>HEIGHT <span style="color:#f92672">&gt;</span> freezeDeadline<span style="color:#f92672">)</span> <span style="color:#f92672">&amp;</span><span style="color:#f92672">&amp;</span> ownerPk
-<span style="color:#f92672">}</span>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">// Freezer Contract
+</span><span class="c1"></span><span class="o">{</span> 
+  <span class="c1">// Parameters
+</span><span class="c1"></span>  <span class="c1">// freezeDeadline: Int - some future block number after which the box can be spent
+</span><span class="c1"></span>  <span class="c1">// ownerPk: SigmaProp - public key of the new box owner
+</span><span class="c1"></span>  <span class="n">sigmaProp</span><span class="o">(</span><span class="n">HEIGHT</span> <span class="o">&gt;</span> <span class="n">freezeDeadline</span><span class="o">)</span> <span class="o">&amp;</span><span class="o">&amp;</span> <span class="n">ownerPk</span>
+<span class="o">}</span>
 </code></pre></div><p>In short, a box (and therefore the funds within the box) are locked under a contract (or script) on the Ergo blockchain. In order for the box to be spent, the contract must evaluate to true. Thus the individual who wishes to spend the box must ensure that the contract evaluates to true based off of the encoded logic within it.</p>
 <p>Our Freezer contract above checks the following conditions before allowing the box to be spent:</p>
 <ol>
@@ -210,10 +210,10 @@ Appkit if you wish to reproduce the examples below.</p>
 <p>To use Appkit in our Java implementation of FreezeCoin we must add the
 following dependency in the <a href="https://github.com/aslesarenko/ergo-appkit-examples/blob/master/java-examples/build.gradle.kts">gradle
 file</a></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">dependencies {
-    implementation(<span style="color:#e6db74">&#34;org.ergoplatform&#34;</span>, <span style="color:#e6db74">&#34;ergo-appkit_2.12&#34;</span>, <span style="color:#e6db74">&#34;3.1.0&#34;</span>, <span style="color:#e6db74">&#34;compile&#34;</span>)
-    ...
-}
+<div class="highlight"><pre class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="n">dependencies</span> <span class="p">{</span>
+    <span class="n">implementation</span><span class="p">(</span><span class="s">&#34;org.ergoplatform&#34;</span><span class="p">,</span> <span class="s">&#34;ergo-appkit_2.12&#34;</span><span class="p">,</span> <span class="s">&#34;3.1.0&#34;</span><span class="p">,</span> <span class="s">&#34;compile&#34;</span><span class="p">)</span>
+    <span class="p">.</span><span class="p">.</span><span class="p">.</span>
+<span class="p">}</span>
 </code></pre></div><p>Furthermore at runtime Appkit/our application needs to connect with an Ergo Node via REST API. Often,
 the node will be running locally and made available at <code>http://localhost:9052/</code>. This is the standard scenario for anyone who has set up a full-node by following <a href="https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node">these
 instructions</a> and is using the default configuration.</p>
@@ -221,24 +221,24 @@ instructions</a> and is using the default configuration.</p>
 <p>Next, our application will need to know how to be able to a connect to our local running node, in addition to other various settings in order to function properly. We will use a json file with the following
 configuration parameters which our FreezeCoin app will load at startup.</p>
 <p><a href="https://github.com/aslesarenko/ergo-appkit-examples/blob/master/freeze_coin_config.json">freeze_coin_config.json:</a></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
-  <span style="color:#f92672">&#34;node&#34;</span>: {
-    <span style="color:#f92672">&#34;nodeApi&#34;</span>: {
-      <span style="color:#f92672">&#34;apiUrl&#34;</span>: <span style="color:#e6db74">&#34;http://localhost:9052/&#34;</span>,
-      <span style="color:#f92672">&#34;apiKey&#34;</span>: <span style="color:#e6db74">&#34;put your secret apiKey generated during node setup here&#34;</span>
-    },
-    <span style="color:#f92672">&#34;wallet&#34;</span>: {
-      <span style="color:#f92672">&#34;mnemonic&#34;</span>: <span style="color:#e6db74">&#34;the mnemonic key used to initialize or restore the wallet of the node&#34;</span>,
-      <span style="color:#f92672">&#34;password&#34;</span>: <span style="color:#e6db74">&#34;the password you chose to protect the wallet&#34;</span>,
-      <span style="color:#f92672">&#34;mnemonicPassword&#34;</span>: <span style="color:#e6db74">&#34;the password you chose to protect the mnemonic&#34;</span>
-    },
-    <span style="color:#f92672">&#34;networkType&#34;</span>: <span style="color:#e6db74">&#34;TESTNET&#34;</span>
-  },
-  <span style="color:#f92672">&#34;parameters&#34;</span>: {
-    <span style="color:#f92672">&#34;newBoxSpendingDelay&#34;</span>: <span style="color:#e6db74">&#34;30&#34;</span>,
-    <span style="color:#f92672">&#34;ownerAddress&#34;</span>: <span style="color:#e6db74">&#34;3WzR39tWQ5cxxWWX6ys7wNdJKLijPeyaKgx72uqg9FJRBCdZPovL&#34;</span>
-  }
-}
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+  <span class="nt">&#34;node&#34;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&#34;nodeApi&#34;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&#34;apiUrl&#34;</span><span class="p">:</span> <span class="s2">&#34;http://localhost:9052/&#34;</span><span class="p">,</span>
+      <span class="nt">&#34;apiKey&#34;</span><span class="p">:</span> <span class="s2">&#34;put your secret apiKey generated during node setup here&#34;</span>
+    <span class="p">}</span><span class="p">,</span>
+    <span class="nt">&#34;wallet&#34;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&#34;mnemonic&#34;</span><span class="p">:</span> <span class="s2">&#34;the mnemonic key used to initialize or restore the wallet of the node&#34;</span><span class="p">,</span>
+      <span class="nt">&#34;password&#34;</span><span class="p">:</span> <span class="s2">&#34;the password you chose to protect the wallet&#34;</span><span class="p">,</span>
+      <span class="nt">&#34;mnemonicPassword&#34;</span><span class="p">:</span> <span class="s2">&#34;the password you chose to protect the mnemonic&#34;</span>
+    <span class="p">}</span><span class="p">,</span>
+    <span class="nt">&#34;networkType&#34;</span><span class="p">:</span> <span class="s2">&#34;TESTNET&#34;</span>
+  <span class="p">}</span><span class="p">,</span>
+  <span class="nt">&#34;parameters&#34;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&#34;newBoxSpendingDelay&#34;</span><span class="p">:</span> <span class="s2">&#34;30&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;ownerAddress&#34;</span><span class="p">:</span> <span class="s2">&#34;3WzR39tWQ5cxxWWX6ys7wNdJKLijPeyaKgx72uqg9FJRBCdZPovL&#34;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div><p>Here <code>apiKey</code> is the secret key required for API authentication which can be
 acquired as described
 <a href="https://github.com/ergoplatform/ergo/wiki/Ergo-REST-API#setting-an-api-key">here</a>.
@@ -246,66 +246,66 @@ Your mnemonic is the secret phrase obtained during <a href="https://github.com/e
 wallet</a>.</p>
 <p>How our app will work is that the user will launch it from the command line and provide one argument. This argument is the amount of value (in NanoErgs) which they wish to freeze/lock under the Freezer contract which we wrote above.</p>
 <p>Our first step for our FreezeCoin app will be to read the configuration json file we just created and to accept the command line argument from the user:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[</span><span style="color:#f92672">]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">long</span> amountToSend <span style="color:#f92672">=</span> Long<span style="color:#f92672">.</span><span style="color:#a6e22e">parseLong</span><span style="color:#f92672">(</span>args<span style="color:#f92672">[</span>0<span style="color:#f92672">]</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>  <span style="color:#75715e">// positive value in NanoErg
-</span><span style="color:#75715e"></span>    ErgoToolConfig conf <span style="color:#f92672">=</span> ErgoToolConfig<span style="color:#f92672">.</span><span style="color:#a6e22e">load</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;freeze_coin_config.json&#34;</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-    <span style="color:#75715e">// the rest of the code discussed below 
-</span><span style="color:#75715e"></span>    <span style="color:#f92672">.</span><span style="color:#f92672">.</span><span style="color:#f92672">.</span>
-<span style="color:#f92672">}</span>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[</span><span class="o">]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kt">long</span> <span class="n">amountToSend</span> <span class="o">=</span> <span class="n">Long</span><span class="o">.</span><span class="na">parseLong</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="n">0</span><span class="o">]</span><span class="o">)</span><span class="o">;</span>  <span class="c1">// positive value in NanoErg
+</span><span class="c1"></span>    <span class="n">ErgoToolConfig</span> <span class="n">conf</span> <span class="o">=</span> <span class="n">ErgoToolConfig</span><span class="o">.</span><span class="na">load</span><span class="o">(</span><span class="s">&#34;freeze_coin_config.json&#34;</span><span class="o">)</span><span class="o">;</span>
+    <span class="c1">// the rest of the code discussed below 
+</span><span class="c1"></span>    <span class="o">.</span><span class="o">.</span><span class="o">.</span>
+<span class="o">}</span>
 </code></pre></div><p>With these acquired, we can now obtain the spending delay and the owner address which were defined in the json config file.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  <span style="color:#66d9ef">int</span> newBoxSpendingDelay <span style="color:#f92672">=</span> Integer<span style="color:#f92672">.</span><span style="color:#a6e22e">parseInt</span><span style="color:#f92672">(</span>conf<span style="color:#f92672">.</span><span style="color:#a6e22e">getParameters</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;newBoxSpendingDelay&#34;</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-  Address ownerAddress <span style="color:#f92672">=</span> Address<span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">(</span>conf<span style="color:#f92672">.</span><span style="color:#a6e22e">getParameters</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;ownerAddress&#34;</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java">  <span class="kt">int</span> <span class="n">newBoxSpendingDelay</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">conf</span><span class="o">.</span><span class="na">getParameters</span><span class="o">(</span><span class="o">)</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s">&#34;newBoxSpendingDelay&#34;</span><span class="o">)</span><span class="o">)</span><span class="o">;</span>
+  <span class="n">Address</span> <span class="n">ownerAddress</span> <span class="o">=</span> <span class="n">Address</span><span class="o">.</span><span class="na">create</span><span class="o">(</span><span class="n">conf</span><span class="o">.</span><span class="na">getParameters</span><span class="o">(</span><span class="o">)</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s">&#34;ownerAddress&#34;</span><span class="o">)</span><span class="o">)</span><span class="o">;</span>
 </code></pre></div><p>Next we need to connect to the running Ergo node from our Java application so that we can use the data we just parsed and post something on-chain. This is done by creating
 an <code>ErgoClient</code> instance which uses our pre-defined values for our node from the json config file as well.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">ErgoNodeConfig nodeConf <span style="color:#f92672">=</span> conf<span style="color:#f92672">.</span><span style="color:#a6e22e">getNode</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-ErgoClient ergoClient <span style="color:#f92672">=</span> RestApiErgoClient<span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">(</span>nodeConf<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">ErgoNodeConfig</span> <span class="n">nodeConf</span> <span class="o">=</span> <span class="n">conf</span><span class="o">.</span><span class="na">getNode</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+<span class="n">ErgoClient</span> <span class="n">ergoClient</span> <span class="o">=</span> <span class="n">RestApiErgoClient</span><span class="o">.</span><span class="na">create</span><span class="o">(</span><span class="n">nodeConf</span><span class="o">)</span><span class="o">;</span>
 </code></pre></div><p>Now that we have an instance of <a href="https://github.com/aslesarenko/ergo-appkit/blob/master/lib-api/src/main/java/org/ergoplatform/appkit/ErgoClient.java">ErgoClient</a>,
 we can execute any block of code and have access to the current blockchain context.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">String txJson <span style="color:#f92672">=</span> ergoClient<span style="color:#f92672">.</span><span style="color:#a6e22e">execute</span><span style="color:#f92672">(</span><span style="color:#f92672">(</span>BlockchainContext ctx<span style="color:#f92672">)</span> <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
-    <span style="color:#75715e">// use ctx here to create and sign a new transaction
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// then send it to the node 
-</span><span style="color:#75715e"></span><span style="color:#f92672">}</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">String</span> <span class="n">txJson</span> <span class="o">=</span> <span class="n">ergoClient</span><span class="o">.</span><span class="na">execute</span><span class="o">(</span><span class="o">(</span><span class="n">BlockchainContext</span> <span class="n">ctx</span><span class="o">)</span> <span class="o">-</span><span class="o">&gt;</span> <span class="o">{</span>
+    <span class="c1">// use ctx here to create and sign a new transaction
+</span><span class="c1"></span>    <span class="c1">// then send it to the node 
+</span><span class="c1"></span><span class="o">}</span><span class="o">)</span><span class="o">;</span>
 </code></pre></div><p>The lambda passed to <code>execute</code> is called when the current blockchain context
 is loaded from the Ergo node. In this lambda we
 shall put our application logic.</p>
 <p>First we start with some auxiliary steps.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// access the wallet embedded in the Ergo node 
-</span><span style="color:#75715e"></span><span style="color:#75715e">// (using the wallet specified via mnemonic we put in freeze_coin_config.json)
-</span><span style="color:#75715e"></span>ErgoWallet wallet <span style="color:#f92672">=</span> ctx<span style="color:#f92672">.</span><span style="color:#a6e22e">getWallet</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">// access the wallet embedded in the Ergo node 
+</span><span class="c1"></span><span class="c1">// (using the wallet specified via mnemonic we put in freeze_coin_config.json)
+</span><span class="c1"></span><span class="n">ErgoWallet</span> <span class="n">wallet</span> <span class="o">=</span> <span class="n">ctx</span><span class="o">.</span><span class="na">getWallet</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
 
-<span style="color:#75715e">// calculate total amount of NanoErgs we need to send to the new box 
-</span><span style="color:#75715e"></span><span style="color:#75715e">// including paying for transaction fees
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">long</span> totalToSpend <span style="color:#f92672">=</span> amountToSend <span style="color:#f92672">+</span> Parameters<span style="color:#f92672">.</span><span style="color:#a6e22e">MinFee</span><span style="color:#f92672">;</span>
+<span class="c1">// calculate total amount of NanoErgs we need to send to the new box 
+</span><span class="c1"></span><span class="c1">// including paying for transaction fees
+</span><span class="c1"></span><span class="kt">long</span> <span class="n">totalToSpend</span> <span class="o">=</span> <span class="n">amountToSend</span> <span class="o">+</span> <span class="n">Parameters</span><span class="o">.</span><span class="na">MinFee</span><span class="o">;</span>
 
-<span style="color:#75715e">// request for unspent boxes that cover the required amount of NanoErgs from the wallet
-</span><span style="color:#75715e"></span>Optional<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&lt;</span>InputBox<span style="color:#f92672">&gt;</span><span style="color:#f92672">&gt;</span> boxes <span style="color:#f92672">=</span> wallet<span style="color:#f92672">.</span><span style="color:#a6e22e">getUnspentBoxes</span><span style="color:#f92672">(</span>totalToSpend<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span><span style="color:#f92672">!</span>boxes<span style="color:#f92672">.</span><span style="color:#a6e22e">isPresent</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-    <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> ErgoClientException<span style="color:#f92672">(</span>
-        <span style="color:#e6db74">&#34;Not enough coins in your specified wallet to pay &#34;</span> <span style="color:#f92672">+</span> totalToSpend<span style="color:#f92672">,</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+<span class="c1">// request for unspent boxes that cover the required amount of NanoErgs from the wallet
+</span><span class="c1"></span><span class="n">Optional</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;</span><span class="n">InputBox</span><span class="o">&gt;</span><span class="o">&gt;</span> <span class="n">boxes</span> <span class="o">=</span> <span class="n">wallet</span><span class="o">.</span><span class="na">getUnspentBoxes</span><span class="o">(</span><span class="n">totalToSpend</span><span class="o">)</span><span class="o">;</span>
+<span class="k">if</span> <span class="o">(</span><span class="o">!</span><span class="n">boxes</span><span class="o">.</span><span class="na">isPresent</span><span class="o">(</span><span class="o">)</span><span class="o">)</span>
+    <span class="k">throw</span> <span class="k">new</span> <span class="n">ErgoClientException</span><span class="o">(</span>
+        <span class="s">&#34;Not enough coins in your specified wallet to pay &#34;</span> <span class="o">+</span> <span class="n">totalToSpend</span><span class="o">,</span> <span class="kc">null</span><span class="o">)</span><span class="o">;</span>
     
-<span style="color:#75715e">// create a &#34;prover&#34;, which is a special object that will be used for signing the transaction
-</span><span style="color:#75715e"></span><span style="color:#75715e">// the prover should be configured with your wallet&#39;s secrets, which are necessary to generate signatures (aka proofs)
-</span><span style="color:#75715e"></span>ErgoProver prover <span style="color:#f92672">=</span> ctx<span style="color:#f92672">.</span><span style="color:#a6e22e">newProverBuilder</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span>
-    <span style="color:#f92672">.</span><span style="color:#a6e22e">withMnemonic</span><span style="color:#f92672">(</span>
-            nodeConf<span style="color:#f92672">.</span><span style="color:#a6e22e">getWallet</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getMnemonic</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span>
-            nodeConf<span style="color:#f92672">.</span><span style="color:#a6e22e">getWallet</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getPassword</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-    <span style="color:#f92672">.</span><span style="color:#a6e22e">build</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+<span class="c1">// create a &#34;prover&#34;, which is a special object that will be used for signing the transaction
+</span><span class="c1"></span><span class="c1">// the prover should be configured with your wallet&#39;s secrets, which are necessary to generate signatures (aka proofs)
+</span><span class="c1"></span><span class="n">ErgoProver</span> <span class="n">prover</span> <span class="o">=</span> <span class="n">ctx</span><span class="o">.</span><span class="na">newProverBuilder</span><span class="o">(</span><span class="o">)</span>
+    <span class="o">.</span><span class="na">withMnemonic</span><span class="o">(</span>
+            <span class="n">nodeConf</span><span class="o">.</span><span class="na">getWallet</span><span class="o">(</span><span class="o">)</span><span class="o">.</span><span class="na">getMnemonic</span><span class="o">(</span><span class="o">)</span><span class="o">,</span>
+            <span class="n">nodeConf</span><span class="o">.</span><span class="na">getWallet</span><span class="o">(</span><span class="o">)</span><span class="o">.</span><span class="na">getPassword</span><span class="o">(</span><span class="o">)</span><span class="o">)</span>
+    <span class="o">.</span><span class="na">build</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
 </code></pre></div><p>At this point we have the input boxes chosen for our spending transaction, but we now need to create an output box with the specified <code>amountToSend</code> and locked under the Freezer contract.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// the only way to create a transaction is using the tx builder obtained from the context
-</span><span style="color:#75715e"></span><span style="color:#75715e">// the builder uses the context to access necessary blockchain data.
-</span><span style="color:#75715e"></span>UnsignedTransactionBuilder txB <span style="color:#f92672">=</span> ctx<span style="color:#f92672">.</span><span style="color:#a6e22e">newTxBuilder</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">// the only way to create a transaction is using the tx builder obtained from the context
+</span><span class="c1"></span><span class="c1">// the builder uses the context to access necessary blockchain data.
+</span><span class="c1"></span><span class="n">UnsignedTransactionBuilder</span> <span class="n">txB</span> <span class="o">=</span> <span class="n">ctx</span><span class="o">.</span><span class="na">newTxBuilder</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
 
-<span style="color:#75715e">// create new box using new builder obtained from the transaction builder
-</span><span style="color:#75715e"></span><span style="color:#75715e">// in this case we compile a new ErgoContract from the Freezer ErgoScript code
-</span><span style="color:#75715e"></span>OutBox newBox <span style="color:#f92672">=</span> txB<span style="color:#f92672">.</span><span style="color:#a6e22e">outBoxBuilder</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span>
-        <span style="color:#f92672">.</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(</span>amountToPay<span style="color:#f92672">)</span>
-        <span style="color:#f92672">.</span><span style="color:#a6e22e">contract</span><span style="color:#f92672">(</span>ctx<span style="color:#f92672">.</span><span style="color:#a6e22e">compileContract</span><span style="color:#f92672">(</span>
-                ConstantsBuilder<span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span>
-                        <span style="color:#f92672">.</span><span style="color:#a6e22e">item</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;freezeDeadline&#34;</span><span style="color:#f92672">,</span> ctx<span style="color:#f92672">.</span><span style="color:#a6e22e">getHeight</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">+</span> newBoxSpendingDelay<span style="color:#f92672">)</span>
-                        <span style="color:#f92672">.</span><span style="color:#a6e22e">item</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;ownerPk&#34;</span><span style="color:#f92672">,</span> ownerAddress<span style="color:#f92672">.</span><span style="color:#a6e22e">getPublicKey</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-                        <span style="color:#f92672">.</span><span style="color:#a6e22e">build</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span>
-                <span style="color:#e6db74">&#34;{ sigmaProp(HEIGHT &gt; freezeDeadline) &amp;&amp; ownerPk }&#34;</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-        <span style="color:#f92672">.</span><span style="color:#a6e22e">build</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+<span class="c1">// create new box using new builder obtained from the transaction builder
+</span><span class="c1"></span><span class="c1">// in this case we compile a new ErgoContract from the Freezer ErgoScript code
+</span><span class="c1"></span><span class="n">OutBox</span> <span class="n">newBox</span> <span class="o">=</span> <span class="n">txB</span><span class="o">.</span><span class="na">outBoxBuilder</span><span class="o">(</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">value</span><span class="o">(</span><span class="n">amountToPay</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">contract</span><span class="o">(</span><span class="n">ctx</span><span class="o">.</span><span class="na">compileContract</span><span class="o">(</span>
+                <span class="n">ConstantsBuilder</span><span class="o">.</span><span class="na">create</span><span class="o">(</span><span class="o">)</span>
+                        <span class="o">.</span><span class="na">item</span><span class="o">(</span><span class="s">&#34;freezeDeadline&#34;</span><span class="o">,</span> <span class="n">ctx</span><span class="o">.</span><span class="na">getHeight</span><span class="o">(</span><span class="o">)</span> <span class="o">+</span> <span class="n">newBoxSpendingDelay</span><span class="o">)</span>
+                        <span class="o">.</span><span class="na">item</span><span class="o">(</span><span class="s">&#34;ownerPk&#34;</span><span class="o">,</span> <span class="n">ownerAddress</span><span class="o">.</span><span class="na">getPublicKey</span><span class="o">(</span><span class="o">)</span><span class="o">)</span>
+                        <span class="o">.</span><span class="na">build</span><span class="o">(</span><span class="o">)</span><span class="o">,</span>
+                <span class="s">&#34;{ sigmaProp(HEIGHT &gt; freezeDeadline) &amp;&amp; ownerPk }&#34;</span><span class="o">)</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">build</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
 </code></pre></div><p>Note, in order to compile <code>ErgoContract</code> from the Freezer script source code the <code>compileContract</code>
 method requires that we provide values for named constants which are used within the script.
 If no such constants are used, then <code>ConstantsBuilder.empty()</code> can be passed to it.</p>
@@ -313,13 +313,13 @@ If no such constants are used, then <code>ConstantsBuilder.empty()</code> can be
 placeholder in the script. To repeat from earlier, this means that the box can only be spent by the owner of the
 corresponding secret key.</p>
 <p>Next, we create an unsigned transaction using all the data we've put together thus far.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// provide the transaction builder with which boxes we are going to spend, which outputs
-</span><span style="color:#75715e"></span><span style="color:#75715e">// should be created, the total transaction fees, and the address for change to be sent to
-</span><span style="color:#75715e"></span>UnsignedTransaction tx <span style="color:#f92672">=</span> txB<span style="color:#f92672">.</span><span style="color:#a6e22e">boxesToSpend</span><span style="color:#f92672">(</span>boxes<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-        <span style="color:#f92672">.</span><span style="color:#a6e22e">outputs</span><span style="color:#f92672">(</span>newBox<span style="color:#f92672">)</span>
-        <span style="color:#f92672">.</span><span style="color:#a6e22e">fee</span><span style="color:#f92672">(</span>Parameters<span style="color:#f92672">.</span><span style="color:#a6e22e">MinFee</span><span style="color:#f92672">)</span>
-        <span style="color:#f92672">.</span><span style="color:#a6e22e">sendChangeTo</span><span style="color:#f92672">(</span>prover<span style="color:#f92672">.</span><span style="color:#a6e22e">getP2PKAddress</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-        <span style="color:#f92672">.</span><span style="color:#a6e22e">build</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">// provide the transaction builder with which boxes we are going to spend, which outputs
+</span><span class="c1"></span><span class="c1">// should be created, the total transaction fees, and the address for change to be sent to
+</span><span class="c1"></span><span class="n">UnsignedTransaction</span> <span class="n">tx</span> <span class="o">=</span> <span class="n">txB</span><span class="o">.</span><span class="na">boxesToSpend</span><span class="o">(</span><span class="n">boxes</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="o">)</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">outputs</span><span class="o">(</span><span class="n">newBox</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">fee</span><span class="o">(</span><span class="n">Parameters</span><span class="o">.</span><span class="na">MinFee</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">sendChangeTo</span><span class="o">(</span><span class="n">prover</span><span class="o">.</span><span class="na">getP2PKAddress</span><span class="o">(</span><span class="o">)</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">build</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
 </code></pre></div><p>And finally we:</p>
 <ol>
 <li>Use the prover to sign the built transaction</li>
@@ -329,9 +329,9 @@ the Ergo node.</li>
 </ol>
 <p>The resulting <code>txId</code> can be used to refer to this transaction
 later however we do not use it here.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">SignedTransaction signed <span style="color:#f92672">=</span> prover<span style="color:#f92672">.</span><span style="color:#a6e22e">sign</span><span style="color:#f92672">(</span>tx<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-String txId <span style="color:#f92672">=</span> ctx<span style="color:#f92672">.</span><span style="color:#a6e22e">sendTransaction</span><span style="color:#f92672">(</span>signed<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-<span style="color:#66d9ef">return</span> signed<span style="color:#f92672">.</span><span style="color:#a6e22e">toJson</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">SignedTransaction</span> <span class="n">signed</span> <span class="o">=</span> <span class="n">prover</span><span class="o">.</span><span class="na">sign</span><span class="o">(</span><span class="n">tx</span><span class="o">)</span><span class="o">;</span>
+<span class="n">String</span> <span class="n">txId</span> <span class="o">=</span> <span class="n">ctx</span><span class="o">.</span><span class="na">sendTransaction</span><span class="o">(</span><span class="n">signed</span><span class="o">)</span><span class="o">;</span>
+<span class="k">return</span> <span class="n">signed</span><span class="o">.</span><span class="na">toJson</span><span class="o">(</span><span class="kc">true</span><span class="o">)</span><span class="o">;</span>
 </code></pre></div><p>As you may have noticed, for our final step we show off that it is possible to serialize the signed
 transaction into a Json string with pretty printing turned on. Look at the <a href="https://github.com/aslesarenko/ergo-appkit-examples/blob/master/java-examples/src/main/java/org/ergoplatform/appkit/examples/FreezeCoin.java">full
 source code</a>
@@ -341,15 +341,15 @@ application.</p>
 <p>Now with all of the code set in stone, we can run our FreezeCoin application using the following steps
 (assuming you are in the directory where you cloned
 <a href="https://github.com/aslesarenko/ergo-appkit-examples">ergo-appkit-examples</a>).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ pwd
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nb">pwd</span>
 the/directory/you/cloned/ergo-appkit-examples
 $ ./gradlew clean shadowJar 
 </code></pre></div><p>This will assemble the <code>build/libs/appkit-examples-3.1.0-all.jar</code> file containing
 our FreezeCoin Java application and all of its dependencies in a single fat jar.
 Note, this step has to be repeated after any changes are made to the Java source code of our application.</p>
 <p>Having created our application, we can now use our FreezeCoin app:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ java -cp build/libs/appkit-examples-3.1.0-all.jar <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>      org.ergoplatform.appkit.examples.FreezeCoin  <span style="color:#ae81ff">1000000000</span> 
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ java -cp build/libs/appkit-examples-3.1.0-all.jar <span class="se">\
+</span><span class="se"></span>      org.ergoplatform.appkit.examples.FreezeCoin  <span class="m">1000000000</span> 
 </code></pre></div><p>You will get something along the lines of this <a href="https://gist.github.com/aslesarenko/cacee372350458ac31bd5c73e957e322">output in the console</a>.</p>
 <p>And with that your transaction was accepted by the Ergo node and broadcast into the network where it shall lay await in the transaction pool to be added to a block. Once a miner selects and adds it to a block, your coins will be officially &ldquo;frozen&rdquo; within the newly created box based off of the values you provided to the FreezeCoin application.</p>
 <p>The example assumes the Ergo node (and the embedded wallet) is owned by the
@@ -362,24 +362,24 @@ Applications tend to suffer from long startup times and relatively high memory u
 <p>Let's run FreezeCoin using the time command to
 get the real (wall-clock elapsed time) it takes the entire program to run from
 start to finish. We use the <code>-l</code> flag to print the memory usage as well.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ /usr/bin/time -l java -cp build/libs/appkit-examples-3.1.0-all.jar <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>   org.ergoplatform.appkit.examples.FreezeCoin <span style="color:#ae81ff">1000000000</span>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ /usr/bin/time -l java -cp build/libs/appkit-examples-3.1.0-all.jar <span class="se">\
+</span><span class="se"></span>   org.ergoplatform.appkit.examples.FreezeCoin <span class="m">1000000000</span>
 ...
        4.97 real         8.41 user         0.69 sys
- <span style="color:#ae81ff">513703936</span>  maximum resident set size
-         <span style="color:#ae81ff">0</span>  average shared memory size
-         <span style="color:#ae81ff">0</span>  average unshared data size
-         <span style="color:#ae81ff">0</span>  average unshared stack size
-    <span style="color:#ae81ff">125010</span>  page reclaims
-      <span style="color:#ae81ff">1216</span>  page faults
-         <span style="color:#ae81ff">0</span>  swaps
-         <span style="color:#ae81ff">0</span>  block input operations
-         <span style="color:#ae81ff">0</span>  block output operations
-        <span style="color:#ae81ff">13</span>  messages sent
-        <span style="color:#ae81ff">86</span>  messages received
-         <span style="color:#ae81ff">1</span>  signals received
-      <span style="color:#ae81ff">2384</span>  voluntary context switches
-     <span style="color:#ae81ff">17409</span>  involuntary context switches
+ <span class="m">513703936</span>  maximum resident <span class="nb">set</span> size
+         <span class="m">0</span>  average shared memory size
+         <span class="m">0</span>  average unshared data size
+         <span class="m">0</span>  average unshared stack size
+    <span class="m">125010</span>  page reclaims
+      <span class="m">1216</span>  page faults
+         <span class="m">0</span>  swaps
+         <span class="m">0</span>  block input operations
+         <span class="m">0</span>  block output operations
+        <span class="m">13</span>  messages sent
+        <span class="m">86</span>  messages received
+         <span class="m">1</span>  signals received
+      <span class="m">2384</span>  voluntary context switches
+     <span class="m">17409</span>  involuntary context switches
 </code></pre></div><p>As seen above, this tiny application took 2 parallel threads almost 4
 seconds to run. Most of that time can be attributed to the JVM startup and
 the background JIT compiler running. This is quite sub-par performance, and we know we can do a lot better.</p>
@@ -389,60 +389,60 @@ ahead-of-time into a native executable image via GraalVM. This skips over the ne
 at runtime.</p>
 <p>The experience for us (the developer using GraalVM) is quite similar to a conventional compiler like gcc. Note,
 we may need to run <code>./gradlew clean shadowJar</code> first.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ ./gradlew clean shadowJar
-$ native-image --no-server <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span> -cp build/libs/appkit-examples-3.1.0-all.jar<span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span> --report-unsupported-elements-at-runtime<span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  --no-fallback -H:+TraceClassInitialization -H:+ReportExceptionStackTraces<span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>   -H:+AddAllCharsets -H:+AllowVMInspection -H:-RuntimeAssertions<span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>   --allow-incomplete-classpath <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --enable-url-protocols<span style="color:#f92672">=</span>http,https org.ergoplatform.appkit.examples.FreezeCoin freezecoin
-<span style="color:#f92672">[</span>freezecoin:3133<span style="color:#f92672">]</span>    classlist:  35,217.78 ms
-<span style="color:#f92672">[</span>freezecoin:3133<span style="color:#f92672">]</span>        <span style="color:#f92672">(</span>cap<span style="color:#f92672">)</span>:   6,063.07 ms
-<span style="color:#f92672">[</span>freezecoin:3133<span style="color:#f92672">]</span>        setup:   8,268.99 ms
-<span style="color:#f92672">[</span>freezecoin:3133<span style="color:#f92672">]</span>   <span style="color:#f92672">(</span>typeflow<span style="color:#f92672">)</span>:  60,238.25 ms
-<span style="color:#f92672">[</span>freezecoin:3133<span style="color:#f92672">]</span>    <span style="color:#f92672">(</span>objects<span style="color:#f92672">)</span>:  33,009.06 ms
-<span style="color:#f92672">[</span>freezecoin:3133<span style="color:#f92672">]</span>   <span style="color:#f92672">(</span>features<span style="color:#f92672">)</span>:   4,796.86 ms
-<span style="color:#f92672">[</span>freezecoin:3133<span style="color:#f92672">]</span>     analysis: 102,876.01 ms
-<span style="color:#f92672">[</span>freezecoin:3133<span style="color:#f92672">]</span>     <span style="color:#f92672">(</span>clinit<span style="color:#f92672">)</span>:  11,642.43 ms
-<span style="color:#f92672">[</span>freezecoin:3133<span style="color:#f92672">]</span>     universe:  13,718.96 ms
-<span style="color:#f92672">[</span>freezecoin:3133<span style="color:#f92672">]</span>      <span style="color:#f92672">(</span>parse<span style="color:#f92672">)</span>:   5,053.18 ms
-<span style="color:#f92672">[</span>freezecoin:3133<span style="color:#f92672">]</span>     <span style="color:#f92672">(</span>inline<span style="color:#f92672">)</span>:  18,317.24 ms
-<span style="color:#f92672">[</span>freezecoin:3133<span style="color:#f92672">]</span>    <span style="color:#f92672">(</span>compile<span style="color:#f92672">)</span>:  44,806.82 ms
-<span style="color:#f92672">[</span>freezecoin:3133<span style="color:#f92672">]</span>      compile:  72,288.24 ms
-<span style="color:#f92672">[</span>freezecoin:3133<span style="color:#f92672">]</span>        image:   7,955.29 ms
-<span style="color:#f92672">[</span>freezecoin:3133<span style="color:#f92672">]</span>        write:   2,872.25 ms
-<span style="color:#f92672">[</span>freezecoin:3133<span style="color:#f92672">]</span>      <span style="color:#f92672">[</span>total<span style="color:#f92672">]</span>: 243,813.30 ms
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ ./gradlew clean shadowJar
+$ native-image --no-server <span class="se">\
+</span><span class="se"></span> -cp build/libs/appkit-examples-3.1.0-all.jar<span class="se">\
+</span><span class="se"></span> --report-unsupported-elements-at-runtime<span class="se">\
+</span><span class="se"></span>  --no-fallback -H:+TraceClassInitialization -H:+ReportExceptionStackTraces<span class="se">\
+</span><span class="se"></span>   -H:+AddAllCharsets -H:+AllowVMInspection -H:-RuntimeAssertions<span class="se">\
+</span><span class="se"></span>   --allow-incomplete-classpath <span class="se">\
+</span><span class="se"></span>    --enable-url-protocols<span class="o">=</span>http,https org.ergoplatform.appkit.examples.FreezeCoin freezecoin
+<span class="o">[</span>freezecoin:3133<span class="o">]</span>    classlist:  35,217.78 ms
+<span class="o">[</span>freezecoin:3133<span class="o">]</span>        <span class="o">(</span>cap<span class="o">)</span>:   6,063.07 ms
+<span class="o">[</span>freezecoin:3133<span class="o">]</span>        setup:   8,268.99 ms
+<span class="o">[</span>freezecoin:3133<span class="o">]</span>   <span class="o">(</span>typeflow<span class="o">)</span>:  60,238.25 ms
+<span class="o">[</span>freezecoin:3133<span class="o">]</span>    <span class="o">(</span>objects<span class="o">)</span>:  33,009.06 ms
+<span class="o">[</span>freezecoin:3133<span class="o">]</span>   <span class="o">(</span>features<span class="o">)</span>:   4,796.86 ms
+<span class="o">[</span>freezecoin:3133<span class="o">]</span>     analysis: 102,876.01 ms
+<span class="o">[</span>freezecoin:3133<span class="o">]</span>     <span class="o">(</span>clinit<span class="o">)</span>:  11,642.43 ms
+<span class="o">[</span>freezecoin:3133<span class="o">]</span>     universe:  13,718.96 ms
+<span class="o">[</span>freezecoin:3133<span class="o">]</span>      <span class="o">(</span>parse<span class="o">)</span>:   5,053.18 ms
+<span class="o">[</span>freezecoin:3133<span class="o">]</span>     <span class="o">(</span>inline<span class="o">)</span>:  18,317.24 ms
+<span class="o">[</span>freezecoin:3133<span class="o">]</span>    <span class="o">(</span>compile<span class="o">)</span>:  44,806.82 ms
+<span class="o">[</span>freezecoin:3133<span class="o">]</span>      compile:  72,288.24 ms
+<span class="o">[</span>freezecoin:3133<span class="o">]</span>        image:   7,955.29 ms
+<span class="o">[</span>freezecoin:3133<span class="o">]</span>        write:   2,872.25 ms
+<span class="o">[</span>freezecoin:3133<span class="o">]</span>      <span class="o">[</span>total<span class="o">]</span>: 243,813.30 ms
 </code></pre></div><p>The simple command above produces a complete native executable called <code>freezecoin</code>.</p>
 <p>To emphasize, this executable isn’t a mere launcher for the JVM. In fact it doesn’t link to the JVM or bundle
 the JVM in any way. <code>native-image</code> compiles the FreezeCoin code, as well as any
 Java libraries it depends on, all the way down to simple machine code.</p>
 <p>If we look at the libraries which <code>freezecoin</code> uses you can see that it only uses standard system libraries. Thus, we can move just this one executable to another system
 which doesn't have a JVM installed and it will run there without issue.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ otool -L freezecoin    <span style="color:#75715e"># ldd freezecoin on Linux</span>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ otool -L freezecoin    <span class="c1"># ldd freezecoin on Linux</span>
 freezecoin:
-	/usr/lib/libSystem.B.dylib <span style="color:#f92672">(</span>compatibility version 1.0.0, current version 1252.50.4<span style="color:#f92672">)</span>
-	/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation <span style="color:#f92672">(</span>compatibility version 150.0.0, current version 1455.12.0<span style="color:#f92672">)</span>
-	/usr/lib/libz.1.dylib <span style="color:#f92672">(</span>compatibility version 1.0.0, current version 1.2.11<span style="color:#f92672">)</span>
+	/usr/lib/libSystem.B.dylib <span class="o">(</span>compatibility version 1.0.0, current version 1252.50.4<span class="o">)</span>
+	/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation <span class="o">(</span>compatibility version 150.0.0, current version 1455.12.0<span class="o">)</span>
+	/usr/lib/libz.1.dylib <span class="o">(</span>compatibility version 1.0.0, current version 1.2.11<span class="o">)</span>
 </code></pre></div><p>If we time this new <code>freezecoin</code> executable, we can see that it starts approximately 8x faster, and uses
 around 6x less memory. What this means is that you don’t feel that palpable pause you always get when running a
 short-running program with the JVM.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ DYLD_LIBRARY_PATH<span style="color:#f92672">=</span>$GRAAL_HOME/jre/lib /usr/bin/time -l ./freezecoin <span style="color:#ae81ff">1800000000</span>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nv">DYLD_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$GRAAL_HOME</span>/jre/lib /usr/bin/time -l ./freezecoin <span class="m">1800000000</span>
         0.43 real         0.15 user         0.03 sys
-  <span style="color:#ae81ff">81289216</span>  maximum resident set size
-         <span style="color:#ae81ff">0</span>  average shared memory size
-         <span style="color:#ae81ff">0</span>  average unshared data size
-         <span style="color:#ae81ff">0</span>  average unshared stack size
-     <span style="color:#ae81ff">20079</span>  page reclaims
-         <span style="color:#ae81ff">0</span>  page faults
-         <span style="color:#ae81ff">0</span>  swaps
-         <span style="color:#ae81ff">0</span>  block input operations
-         <span style="color:#ae81ff">0</span>  block output operations
-        <span style="color:#ae81ff">13</span>  messages sent
-        <span style="color:#ae81ff">86</span>  messages received
-         <span style="color:#ae81ff">0</span>  signals received
-        <span style="color:#ae81ff">11</span>  voluntary context switches
-       <span style="color:#ae81ff">138</span>  involuntary context switches
+  <span class="m">81289216</span>  maximum resident <span class="nb">set</span> size
+         <span class="m">0</span>  average shared memory size
+         <span class="m">0</span>  average unshared data size
+         <span class="m">0</span>  average unshared stack size
+     <span class="m">20079</span>  page reclaims
+         <span class="m">0</span>  page faults
+         <span class="m">0</span>  swaps
+         <span class="m">0</span>  block input operations
+         <span class="m">0</span>  block output operations
+        <span class="m">13</span>  messages sent
+        <span class="m">86</span>  messages received
+         <span class="m">0</span>  signals received
+        <span class="m">11</span>  voluntary context switches
+       <span class="m">138</span>  involuntary context switches
 </code></pre></div><p>This is just one of the great benefits of GraalVM which we get to take advantage of with Appkit.</p>
 <h2 id="3-develop-ergo-applications-in-javascript-python-ruby">3. Develop Ergo Applications in JavaScript, Python, Ruby</h2>
 <p>GraalVM supports so called <em>polyglot programming</em> in which different components of
@@ -467,8 +467,8 @@ Please see the full source code of <a href="https://github.com/aslesarenko/ergo-
 implementation</a>
 for details.
 The following command use <code>node</code> launcher to execute FreezeCoin.js script.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ node --jvm --vm.cp<span style="color:#f92672">=</span>build/libs/appkit-examples-3.1.0-all.jar <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  js-examples/FreezeCoin.js  <span style="color:#ae81ff">1000000000</span>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ node --jvm --vm.cp<span class="o">=</span>build/libs/appkit-examples-3.1.0-all.jar <span class="se">\
+</span><span class="se"></span>  js-examples/FreezeCoin.js  <span class="m">1000000000</span>
 </code></pre></div><p>Note, the paths in the command are relative to the root of
 <code>ergo-appkit-examples</code> project directory.</p>
 <h3 id="python">Python</h3>
@@ -480,8 +480,8 @@ for details).</p>
 <p><a href="https://github.com/aslesarenko/ergo-appkit-examples/blob/master/python-examples/FreezeCoin.py">Python example of
 FreezeCoin</a>
 can be executed using the following command</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ graalpython --jvm --polyglot --vm.cp<span style="color:#f92672">=</span>build/libs/appkit-examples-3.1.0-all.jar <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>   python-examples/FreezeCoin.py <span style="color:#ae81ff">1900000000</span>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ graalpython --jvm --polyglot --vm.cp<span class="o">=</span>build/libs/appkit-examples-3.1.0-all.jar <span class="se">\
+</span><span class="se"></span>   python-examples/FreezeCoin.py <span class="m">1900000000</span>
 </code></pre></div><h3 id="ruby">Ruby</h3>
 <p>GraalVM can <a href="https://www.graalvm.org/docs/reference-manual/languages/ruby/">run Ruby
 scripts</a> using
@@ -492,49 +492,49 @@ TruffleRuby aims to be fully compatible with the standard implementation of Ruby
 <p><a href="https://github.com/aslesarenko/ergo-appkit-examples/blob/master/ruby-examples/FreezeCoin.rb">Ruby example of
 FreezeCoin</a>
 can be executed using the following command</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ truffleruby --polyglot --jvm --vm.cp<span style="color:#f92672">=</span>build/libs/appkit-examples-3.1.0-all.jar <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    ruby-examples/FreezeCoin.rb <span style="color:#ae81ff">1900000000</span>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ truffleruby --polyglot --jvm --vm.cp<span class="o">=</span>build/libs/appkit-examples-3.1.0-all.jar <span class="se">\
+</span><span class="se"></span>    ruby-examples/FreezeCoin.rb <span class="m">1900000000</span>
 </code></pre></div><h2 id="4-ergo-native-shared-libraries">4. Ergo Native Shared Libraries</h2>
 <p>Another great benefit of GraalVM is that we can compile Java classes down into a native shared library instead of an executable.</p>
 <p>To do this we declare one or more static methods as the <code>@CEntryPoint</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FreezeCoin</span> <span style="color:#f92672">{</span>
-    <span style="color:#f92672">.</span><span style="color:#f92672">.</span><span style="color:#f92672">.</span>
-     <span style="color:#75715e">/**
-</span><span style="color:#75715e">     * Entry point callable from C which wraps {@link FreezeCoin#sendTx}
-</span><span style="color:#75715e">     */</span>
-    <span style="color:#a6e22e">@CEntryPoint</span><span style="color:#f92672">(</span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;sendTx&#34;</span><span style="color:#f92672">)</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">sendTxEntryPoint</span><span style="color:#f92672">(</span>
-            IsolateThread thread<span style="color:#f92672">,</span>
-            SignedWord amountToSendW<span style="color:#f92672">,</span>
-            CCharPointer configFileNameC<span style="color:#f92672">,</span>
-            CCharPointer resBuffer<span style="color:#f92672">,</span> UnsignedWord bufferSize<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> FileNotFoundException <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">long</span> amountToSend <span style="color:#f92672">=</span> amountToSendW<span style="color:#f92672">.</span><span style="color:#a6e22e">rawValue</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-        <span style="color:#75715e">// Convert the C strings to the target Java strings.
-</span><span style="color:#75715e"></span>        String configFileName <span style="color:#f92672">=</span> CTypeConversion<span style="color:#f92672">.</span><span style="color:#a6e22e">toJavaString</span><span style="color:#f92672">(</span>configFileNameC<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-        String txJson <span style="color:#f92672">=</span> sendTx<span style="color:#f92672">(</span>amountToSend<span style="color:#f92672">,</span> configFileName<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">FreezeCoin</span> <span class="o">{</span>
+    <span class="o">.</span><span class="o">.</span><span class="o">.</span>
+     <span class="cm">/**
+</span><span class="cm">     * Entry point callable from C which wraps {@link FreezeCoin#sendTx}
+</span><span class="cm">     */</span>
+    <span class="nd">@CEntryPoint</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&#34;sendTx&#34;</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">sendTxEntryPoint</span><span class="o">(</span>
+            <span class="n">IsolateThread</span> <span class="n">thread</span><span class="o">,</span>
+            <span class="n">SignedWord</span> <span class="n">amountToSendW</span><span class="o">,</span>
+            <span class="n">CCharPointer</span> <span class="n">configFileNameC</span><span class="o">,</span>
+            <span class="n">CCharPointer</span> <span class="n">resBuffer</span><span class="o">,</span> <span class="n">UnsignedWord</span> <span class="n">bufferSize</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">FileNotFoundException</span> <span class="o">{</span>
+        <span class="kt">long</span> <span class="n">amountToSend</span> <span class="o">=</span> <span class="n">amountToSendW</span><span class="o">.</span><span class="na">rawValue</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+        <span class="c1">// Convert the C strings to the target Java strings.
+</span><span class="c1"></span>        <span class="n">String</span> <span class="n">configFileName</span> <span class="o">=</span> <span class="n">CTypeConversion</span><span class="o">.</span><span class="na">toJavaString</span><span class="o">(</span><span class="n">configFileNameC</span><span class="o">)</span><span class="o">;</span>
+        <span class="n">String</span> <span class="n">txJson</span> <span class="o">=</span> <span class="n">sendTx</span><span class="o">(</span><span class="n">amountToSend</span><span class="o">,</span> <span class="n">configFileName</span><span class="o">)</span><span class="o">;</span>
 
-        <span style="color:#75715e">// put resulting string into provided buffer
-</span><span style="color:#75715e"></span>        CTypeConversion<span style="color:#f92672">.</span><span style="color:#a6e22e">toCString</span><span style="color:#f92672">(</span>txJson<span style="color:#f92672">,</span> resBuffer<span style="color:#f92672">,</span> bufferSize<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-    <span style="color:#f92672">}</span>  
-    <span style="color:#f92672">.</span><span style="color:#f92672">.</span><span style="color:#f92672">.</span>
-<span style="color:#f92672">}</span>
+        <span class="c1">// put resulting string into provided buffer
+</span><span class="c1"></span>        <span class="n">CTypeConversion</span><span class="o">.</span><span class="na">toCString</span><span class="o">(</span><span class="n">txJson</span><span class="o">,</span> <span class="n">resBuffer</span><span class="o">,</span> <span class="n">bufferSize</span><span class="o">)</span><span class="o">;</span>
+    <span class="o">}</span>  
+    <span class="o">.</span><span class="o">.</span><span class="o">.</span>
+<span class="o">}</span>
 </code></pre></div><p>We can then compile down to a shared library and an automatically generated header
 file. Notice the use of the <code>--shared</code> option.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ native-image --no-server <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span> -cp build/libs/appkit-examples-3.1.0-all.jar<span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span> --report-unsupported-elements-at-runtime<span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  --no-fallback -H:+TraceClassInitialization -H:+ReportExceptionStackTraces<span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>   -H:+AddAllCharsets -H:+AllowVMInspection -H:-RuntimeAssertions<span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>   --allow-incomplete-classpath <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --enable-url-protocols<span style="color:#f92672">=</span>http,https 
-    --shared -H:Name<span style="color:#f92672">=</span>libfreezecoin -H:Path<span style="color:#f92672">=</span>c-examples
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ native-image --no-server <span class="se">\
+</span><span class="se"></span> -cp build/libs/appkit-examples-3.1.0-all.jar<span class="se">\
+</span><span class="se"></span> --report-unsupported-elements-at-runtime<span class="se">\
+</span><span class="se"></span>  --no-fallback -H:+TraceClassInitialization -H:+ReportExceptionStackTraces<span class="se">\
+</span><span class="se"></span>   -H:+AddAllCharsets -H:+AllowVMInspection -H:-RuntimeAssertions<span class="se">\
+</span><span class="se"></span>   --allow-incomplete-classpath <span class="se">\
+</span><span class="se"></span>    --enable-url-protocols<span class="o">=</span>http,https 
+    --shared -H:Name<span class="o">=</span>libfreezecoin -H:Path<span class="o">=</span>c-examples
     
 $ otool -L c-examples/libfreezecoin.dylib 
 c-examples/libfreezecoin.dylib:
-	.../c-examples/libfreezecoin.dylib <span style="color:#f92672">(</span>compatibility version 0.0.0, current version 0.0.0<span style="color:#f92672">)</span>
-	/usr/lib/libSystem.B.dylib <span style="color:#f92672">(</span>compatibility version 1.0.0, current version 1252.50.4<span style="color:#f92672">)</span>
-	/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation <span style="color:#f92672">(</span>compatibility version 150.0.0, current version 1455.12.0<span style="color:#f92672">)</span>
-	/usr/lib/libz.1.dylib <span style="color:#f92672">(</span>compatibility version 1.0.0, current version 1.2.11<span style="color:#f92672">)</span>
+	.../c-examples/libfreezecoin.dylib <span class="o">(</span>compatibility version 0.0.0, current version 0.0.0<span class="o">)</span>
+	/usr/lib/libSystem.B.dylib <span class="o">(</span>compatibility version 1.0.0, current version 1252.50.4<span class="o">)</span>
+	/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation <span class="o">(</span>compatibility version 150.0.0, current version 1455.12.0<span class="o">)</span>
+	/usr/lib/libz.1.dylib <span class="o">(</span>compatibility version 1.0.0, current version 1.2.11<span class="o">)</span>
 </code></pre></div><p>Now we have the ability to write a <a href="https://github.com/aslesarenko/ergo-appkit-examples/blob/master/c-examples/freezecoin.c">C
 program</a>
 which uses the library.
@@ -542,40 +542,40 @@ The interface to our native library does have a bit of
 boilerplate (because the VM needs to manage a heap, threads, a garbage collector
 and more), and thus we need to create an instance and provide it
 our main thread.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#960050;background-color:#1e0010">#</span>include <span style="color:#f92672">&lt;</span>stdlib<span style="color:#f92672">.</span><span style="color:#a6e22e">h</span><span style="color:#f92672">&gt;</span>
-<span style="color:#960050;background-color:#1e0010">#</span>include <span style="color:#f92672">&lt;</span>stdio<span style="color:#f92672">.</span><span style="color:#a6e22e">h</span><span style="color:#f92672">&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="n">stdlib</span><span class="o">.</span><span class="na">h</span><span class="o">&gt;</span>
+<span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="n">stdio</span><span class="o">.</span><span class="na">h</span><span class="o">&gt;</span>
 
-<span style="color:#960050;background-color:#1e0010">#</span>include <span style="color:#f92672">&lt;</span>libfreezecoin<span style="color:#f92672">.</span><span style="color:#a6e22e">h</span><span style="color:#f92672">&gt;</span>
+<span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="n">libfreezecoin</span><span class="o">.</span><span class="na">h</span><span class="o">&gt;</span>
 
-<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> argc<span style="color:#f92672">,</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span><span style="color:#f92672">*</span>argv<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-  graal_isolate_t <span style="color:#f92672">*</span>isolate <span style="color:#f92672">=</span> NULL<span style="color:#f92672">;</span>
-  graal_isolatethread_t <span style="color:#f92672">*</span>thread <span style="color:#f92672">=</span> NULL<span style="color:#f92672">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="o">(</span><span class="kt">int</span> <span class="n">argc</span><span class="o">,</span> <span class="kt">char</span> <span class="o">*</span><span class="o">*</span><span class="n">argv</span><span class="o">)</span> <span class="o">{</span>
+  <span class="n">graal_isolate_t</span> <span class="o">*</span><span class="n">isolate</span> <span class="o">=</span> <span class="n">NULL</span><span class="o">;</span>
+  <span class="n">graal_isolatethread_t</span> <span class="o">*</span><span class="n">thread</span> <span class="o">=</span> <span class="n">NULL</span><span class="o">;</span>
   
-  <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>graal_create_isolate<span style="color:#f92672">(</span>NULL<span style="color:#f92672">,</span> <span style="color:#f92672">&amp;</span>isolate<span style="color:#f92672">,</span> <span style="color:#f92672">&amp;</span>thread<span style="color:#f92672">)</span> <span style="color:#f92672">!</span><span style="color:#f92672">=</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    fprintf<span style="color:#f92672">(</span>stderr<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;graal_create_isolate error\n&#34;</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-    <span style="color:#66d9ef">return</span> 1<span style="color:#f92672">;</span>
-  <span style="color:#f92672">}</span>
+  <span class="k">if</span> <span class="o">(</span><span class="n">graal_create_isolate</span><span class="o">(</span><span class="n">NULL</span><span class="o">,</span> <span class="o">&amp;</span><span class="n">isolate</span><span class="o">,</span> <span class="o">&amp;</span><span class="n">thread</span><span class="o">)</span> <span class="o">!</span><span class="o">=</span> <span class="n">0</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">fprintf</span><span class="o">(</span><span class="n">stderr</span><span class="o">,</span> <span class="s">&#34;graal_create_isolate error\n&#34;</span><span class="o">)</span><span class="o">;</span>
+    <span class="k">return</span> <span class="n">1</span><span class="o">;</span>
+  <span class="o">}</span>
 
-  <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span> configFileName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;freeze_coin_config.json&#34;</span><span style="color:#f92672">;</span>
+  <span class="kt">char</span> <span class="o">*</span> <span class="n">configFileName</span> <span class="o">=</span> <span class="s">&#34;freeze_coin_config.json&#34;</span><span class="o">;</span>
 
-  <span style="color:#75715e">// get amountToSend from cmd args and call transaction creation
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">long</span> amountToSend <span style="color:#f92672">=</span> atol<span style="color:#f92672">(</span>argv<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-  <span style="color:#66d9ef">char</span> result<span style="color:#f92672">[</span>1024 <span style="color:#f92672">*</span> 16<span style="color:#f92672">]</span><span style="color:#f92672">;</span>
-  sendTx<span style="color:#f92672">(</span>thread<span style="color:#f92672">,</span> amountToSend<span style="color:#f92672">,</span> configFileName<span style="color:#f92672">,</span> result<span style="color:#f92672">,</span> sizeof<span style="color:#f92672">(</span>result<span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+  <span class="c1">// get amountToSend from cmd args and call transaction creation
+</span><span class="c1"></span>  <span class="kt">long</span> <span class="n">amountToSend</span> <span class="o">=</span> <span class="n">atol</span><span class="o">(</span><span class="n">argv</span><span class="o">[</span><span class="n">1</span><span class="o">]</span><span class="o">)</span><span class="o">;</span>
+  <span class="kt">char</span> <span class="n">result</span><span class="o">[</span><span class="n">1024</span> <span class="o">*</span> <span class="n">16</span><span class="o">]</span><span class="o">;</span>
+  <span class="n">sendTx</span><span class="o">(</span><span class="n">thread</span><span class="o">,</span> <span class="n">amountToSend</span><span class="o">,</span> <span class="n">configFileName</span><span class="o">,</span> <span class="n">result</span><span class="o">,</span> <span class="n">sizeof</span><span class="o">(</span><span class="n">result</span><span class="o">)</span><span class="o">)</span><span class="o">;</span>
 
-  <span style="color:#75715e">// print out serialized result
-</span><span style="color:#75715e"></span>  printf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;%s\n&#34;</span><span style="color:#f92672">,</span> result<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+  <span class="c1">// print out serialized result
+</span><span class="c1"></span>  <span class="n">printf</span><span class="o">(</span><span class="s">&#34;%s\n&#34;</span><span class="o">,</span> <span class="n">result</span><span class="o">)</span><span class="o">;</span>
 
-  <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>graal_detach_thread<span style="color:#f92672">(</span>thread<span style="color:#f92672">)</span> <span style="color:#f92672">!</span><span style="color:#f92672">=</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    fprintf<span style="color:#f92672">(</span>stderr<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;graal_detach_thread error\n&#34;</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-    <span style="color:#66d9ef">return</span> 1<span style="color:#f92672">;</span>
-  <span style="color:#f92672">}</span>
-  <span style="color:#66d9ef">return</span> 0<span style="color:#f92672">;</span>
-<span style="color:#f92672">}</span>
+  <span class="k">if</span> <span class="o">(</span><span class="n">graal_detach_thread</span><span class="o">(</span><span class="n">thread</span><span class="o">)</span> <span class="o">!</span><span class="o">=</span> <span class="n">0</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">fprintf</span><span class="o">(</span><span class="n">stderr</span><span class="o">,</span> <span class="s">&#34;graal_detach_thread error\n&#34;</span><span class="o">)</span><span class="o">;</span>
+    <span class="k">return</span> <span class="n">1</span><span class="o">;</span>
+  <span class="o">}</span>
+  <span class="k">return</span> <span class="n">0</span><span class="o">;</span>
+<span class="o">}</span>
 </code></pre></div><p>We can compile this with our standard system tools and easily run our executable (set <code>LD_LIBRARY_PATH=.</code> on Linux).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ clang -Ic-examples -Lc-examples -lfreezecoin c-examples/freezecoin.c -o call_freezecoin
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ clang -Ic-examples -Lc-examples -lfreezecoin c-examples/freezecoin.c -o call_freezecoin
 $ otool -L call_freezecoin
-$ DYLD_LIBRARY_PATH<span style="color:#f92672">=</span>$GRAAL_HOME/jre/lib ./call_freezecoin <span style="color:#ae81ff">1000000000</span>
+$ <span class="nv">DYLD_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$GRAAL_HOME</span>/jre/lib ./call_freezecoin <span class="m">1000000000</span>
 </code></pre></div><h2 id="5-debugging-your-polyglot-ergo-application">5. Debugging Your Polyglot Ergo Application</h2>
 <p>You can debug JS, Python and Ruby in IntelliJ, but if for some reason this
 doesn't work for you or fit with your preferred editor, GraalVM offers another option.</p>
@@ -585,11 +585,11 @@ Truffle allows for tooling like debuggers to be implemented once and be availabl
 for all supported languages.</p>
 <p>As such we can run our program with the flag <code>--inspect</code> which will give us a link to
 open in Chrome and will pause the program in the debugger.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ ruby --polyglot --jvm --inspect --vm.cp<span style="color:#f92672">=</span>build/libs/appkit-examples-3.1.0-all.jar <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    ruby-examples/FreezeCoin.rb <span style="color:#ae81ff">1900000000</span>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ ruby --polyglot --jvm --inspect --vm.cp<span class="o">=</span>build/libs/appkit-examples-3.1.0-all.jar <span class="se">\
+</span><span class="se"></span>    ruby-examples/FreezeCoin.rb <span class="m">1900000000</span>
 Debugger listening on port 9229.
 To start debugging, open the following URL in Chrome:
-    chrome-devtools://devtools/bundled/js_app.html?ws<span style="color:#f92672">=</span>127.0.0.1:9229/30c7da1e-7558a47d09b
+    chrome-devtools://devtools/bundled/js_app.html?ws<span class="o">=</span>127.0.0.1:9229/30c7da1e-7558a47d09b
 ...
 </code></pre></div><p>From here we can set breakpoints and continue execution. When it breaks we’ll see
 values of the variables, can continue again until the next breakpoint, and do everything we've come to expect from debuggers.</p>

@@ -175,16 +175,16 @@ Node security There are a few important aspects of node usage that your wallet a
 <p>Denote by <strong>ergo_folder</strong> the folder where the jar is kept.</p>
 <h2 id="running-the-node-for-the-first-time">Running the node for the first time</h2>
 <p>Create a configuration file <code>ergo.conf</code> with the following text in <strong>ergo_folder</strong>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ergo <span style="color:#f92672">{</span>
-    directory <span style="color:#f92672">=</span> <span style="color:#e6db74">${</span>ergo.directory<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;/.ergo&#34;</span>
-    node <span style="color:#f92672">{</span>
-        mining <span style="color:#f92672">=</span> false
-    <span style="color:#f92672">}</span>
-    wallet.secretStorage.secretDir <span style="color:#f92672">=</span> <span style="color:#e6db74">${</span>ergo.directory<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;/wallet/keystore&#34;</span>
-<span style="color:#f92672">}</span>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">ergo <span class="o">{</span>
+    <span class="nv">directory</span> <span class="o">=</span> <span class="si">${</span><span class="nv">ergo</span><span class="p">.directory</span><span class="si">}</span><span class="s2">&#34;/.ergo&#34;</span>
+    node <span class="o">{</span>
+        <span class="nv">mining</span> <span class="o">=</span> <span class="nb">false</span>
+    <span class="o">}</span>
+    wallet.secretStorage.secretDir <span class="o">=</span> <span class="si">${</span><span class="nv">ergo</span><span class="p">.directory</span><span class="si">}</span><span class="s2">&#34;/wallet/keystore&#34;</span>
+<span class="o">}</span>
 </code></pre></div><p>The parameter <code>${ergo.directory}</code> points to the directory where the jar will be run from.
 Open a command prompt and <code>cd</code> to <strong>ergo_folder</strong>. Then issue the following command to run the node for the first time:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">  java -jar ergo-&lt;release&gt;.jar --mainnet -c ergo.conf
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">  java -jar ergo-&lt;release&gt;.jar --mainnet -c ergo.conf
 </code></pre></div><p>The node will start syncing immediately after this. Wait for a few minutes for the API to start and go to the next step.</p>
 <p><strong>Note:</strong> You can use any name for the file instead of <code>ergo.conf</code>. All configuration parameters are to be passed through this file and you only need to rewrite parameters that you want to change from the default values. The above config file actually has the default values.</p>
 <h2 id="compute-the-hash-of-your-secret">Compute the hash of your secret</h2>
@@ -196,23 +196,23 @@ Then go to http://127.0.0.1:9053/swagger#/utils/hashBlake2b and call the API to 
 <p><img src="/img/blog/how_to_setup_2img.png" alt="response"></p>
 <h2 id="update-config-file-with-api-key-hash">Update config file with API key hash</h2>
 <p>Edit the config file <code>ergo.conf</code> and paste the hash copied in the previous step. The file should look as follows:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ergo <span style="color:#f92672">{</span>
-    directory <span style="color:#f92672">=</span> <span style="color:#e6db74">${</span>ergo.directory<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;/.ergo&#34;</span>
-    node <span style="color:#f92672">{</span>
-        mining <span style="color:#f92672">=</span> false
-    <span style="color:#f92672">}</span>
-    wallet.secretStorage.secretDir <span style="color:#f92672">=</span> <span style="color:#e6db74">${</span>ergo.directory<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;/wallet/keystore&#34;</span>
-<span style="color:#f92672">}</span>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">ergo <span class="o">{</span>
+    <span class="nv">directory</span> <span class="o">=</span> <span class="si">${</span><span class="nv">ergo</span><span class="p">.directory</span><span class="si">}</span><span class="s2">&#34;/.ergo&#34;</span>
+    node <span class="o">{</span>
+        <span class="nv">mining</span> <span class="o">=</span> <span class="nb">false</span>
+    <span class="o">}</span>
+    wallet.secretStorage.secretDir <span class="o">=</span> <span class="si">${</span><span class="nv">ergo</span><span class="p">.directory</span><span class="si">}</span><span class="s2">&#34;/wallet/keystore&#34;</span>
+<span class="o">}</span>
 
-scorex <span style="color:#f92672">{</span>
-    restApi <span style="color:#f92672">{</span>
-        <span style="color:#75715e"># Hex-encoded Blake2b256 hash of an API key.</span> 
-        <span style="color:#75715e"># Should be 64-chars long Base16 string.</span>
-        <span style="color:#75715e"># below is the hash of the string &#39;hello&#39;</span>
-        <span style="color:#75715e"># replace with your actual hash</span> 
-        apiKeyHash <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;324dcf027dd4a30a932c441f365a25e86b173defa4b8e58948253471b81b72cf&#34;</span>
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span>
+scorex <span class="o">{</span>
+    restApi <span class="o">{</span>
+        <span class="c1"># Hex-encoded Blake2b256 hash of an API key.</span> 
+        <span class="c1"># Should be 64-chars long Base16 string.</span>
+        <span class="c1"># below is the hash of the string &#39;hello&#39;</span>
+        <span class="c1"># replace with your actual hash</span> 
+        <span class="nv">apiKeyHash</span> <span class="o">=</span> <span class="s2">&#34;324dcf027dd4a30a932c441f365a25e86b173defa4b8e58948253471b81b72cf&#34;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </code></pre></div><h2 id="initialize-wallet">Initialize wallet</h2>
 <p>Restart the node and go to <a href="http://127.0.0.1:9053/panel">http://127.0.0.1:9053/panel</a> to access the panel. Then set the API key secret from the previous step. Note that you need to set the <strong>secret</strong> and not the hash from the config file. In our example, this is the string <code>hello</code>.</p>
 <p><img src="/img/blog/how_to_setup_3img.png" alt="set API key"></p>

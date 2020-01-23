@@ -1178,22 +1178,6 @@
   </url>
   
   <url>
-    <loc>https://ergoplatform.org/cn/categories/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ergoplatform.org/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="https://ergoplatform.org/cn/categories/"
-                />
-  </url>
-  
-  <url>
     <loc>https://ergoplatform.org/cn/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

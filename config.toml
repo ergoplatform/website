@@ -1,8 +1,13 @@
 baseURL = "https://ergoplatform.org"
+title = "Ergo"
 languageCode = "en"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
-title = "Ergo"
+tags = ["development", "Go", "fast", "Blogging"]
+pygmentsUseClasses=true
+
+[taxonomies]
+  tag = "tags"
 
 # Links format
 [permalinks]

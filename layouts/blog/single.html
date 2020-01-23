@@ -34,7 +34,7 @@
             {{ $blogPosts := where .Site.RegularPages "Section" "blog" }}
             {{ $current := .RelPermalink}}
             {{ range $blogPosts }}
-              {{ if ne $current .URL }}
+              {{ if ne $current .RelPermalink }}
                 <a class="eg-blog__item eg-link related__post" href="{{.Permalink}}">
                   <div class="eg-blog__item-img"><img src="{{ .Params.blogPhoto }}" height="188" width="335" alt="blog photo"></div>
                   <h3 class="eg-blog__item-title"><span>{{ truncate 50 .Title }}</span></h3>

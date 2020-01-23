@@ -281,10 +281,7 @@
       }
 
       code {
-        background: $light-white;
         font-family: LabGrotesque !important;
-        color: $light-red;
-        padding: 1px 4px;
       }
 
       ul, ol {
@@ -336,7 +333,6 @@
         & > code {
           background: transparent;
           border: 0;
-          color: black;
           font-size: 100%;
           margin: 0;
           padding: 0;
@@ -350,7 +346,7 @@
         }
       }
 
-      table {
+      table:not(.lntable) {
         display: block;
         overflow: auto;
         width: 100%;

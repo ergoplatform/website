@@ -186,11 +186,11 @@ The mining specifics of ERGO require you to disclose your secret key to the mine
 </ul>
 <h3 id="requirements-for-linux">Requirements for Linux</h3>
 <h4 id="1-install-the-amdgpu-pro-driver-by-downloading-the-amdgpu-pro-package-for-your-specific-linux-distribution-from-amdcomhttpsamdcom-unpack-this-file-and-in-a-terminal-window-run">1. Install the AMDGPU-PRO driver by downloading the AMDGPU-PRO package for your specific Linux distribution from <a href="https://amd.com">amd.com</a>. Unpack this file and in a terminal window run:</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ amdgpu-pro-install --opencl<span style="color:#f92672">=</span>legacy,pal --headless
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ amdgpu-pro-install --opencl<span class="o">=</span>legacy,pal --headless
 </code></pre></div><h4 id="2-install-opencl-headers">2. Install OpenCL headers</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ apt install libcurl4-openssl-dev
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ apt install libcurl4-openssl-dev
 </code></pre></div><h4 id="3-install-openssl-102">3. Install OpenSSL 1.02</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ apt install libssl-dev
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ apt install libssl-dev
 </code></pre></div><h3 id="requirements-for-windows">Requirements for Windows</h3>
 <h4 id="1-you-need-at-least-one-amd-gpu-with-its-driver-installed-amdcomhttpsamdcom">1. You need at least one AMD GPU with its driver installed <a href="https://amd.com">amd.com</a></h4>
 <h4 id="2-download-and-install-amd-apk-from-mhssadinis-github-herehttpamd-devwpenginenetdna-cdncomapp-sdkinstallersappsdkinstaller30130135-gafullamd-app-sdkinstaller-v30130135-ga-windows-f-x64exe">2. Download and Install AMD APK from mhssadini's github <a href="http://amd-dev.wpengine.netdna-cdn.com/app-sdk/installers/APPSDKInstaller/3.0.130.135-GA/full/AMD-APP-SDKInstaller-v3.0.130.135-GA-windows-F-x64.exe">here</a></h4>
@@ -199,9 +199,9 @@ The mining specifics of ERGO require you to disclose your secret key to the mine
 <h3 id="building-in-linux">Building in Linux</h3>
 <h4 id="1-edit-the-ergoopenclcpp-in-the-master-directory-and-comment-define-test-or-uncomment-define-test-to-either-build-the-miner-or-tester">1. Edit the <code>ErgoOpenCL.cpp</code> in the master directory and comment <code>#define TEST</code> or uncomment <code>define TEST</code> to either build the miner or tester.</h4>
 <h4 id="2-change-the-directory-to-ergoamdminerubuntu-and-run-make">2. Change the directory to <code>ergoAMDminer/Ubuntu</code> and run make.</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./makefile
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">./makefile
 </code></pre></div><h4 id="3-if-everything-was-done-correctly-you-should-now-find-ergoopencl-in-ergoamdminerubuntu-go-ahead-and-run-it-to-start-mining">3. If everything was done correctly, you should now find ErgoOpenCL in <code>ergoAMDminer/Ubuntu/</code>. Go ahead and run it to start mining.</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./ErgoOpenCL
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">./ErgoOpenCL
 </code></pre></div><h3 id="pre-built-version-for-windows">Pre-Built Version for Windows</h3>
 <p>Download the <a href="https://github.com/mhssamadani/ergoAMDminer">github</a>, head over to the win64 folder and execute either <code>ErgoOpenCL_miner.exe</code> or <code>ErgoOpenCL_tester.exe</code>. If everything was set up correctly (see requirements and configuration) it should start mining.</p>
 <h3 id="building-in-windows">Building in Windows</h3>

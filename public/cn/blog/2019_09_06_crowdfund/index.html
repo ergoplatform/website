@@ -173,50 +173,50 @@
 <p>由于目前API不支持嵌入自定义环境变量（只有诸如高度等预定义变量），因此编译脚本的唯一方法是用具体值替换白皮书中的这些变量。例如，想想看，如果一个众筹活动在第5万个区块前筹到500个尔格币，那么这次众筹就是成功的。
 对于出资人公钥（backerPubKey）和项目公钥而言，我们可以采用目前只接受P2PK序列化钥匙的PK()函数。
 如此，白皮书修订后的脚本如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#f92672">{</span>
-   <span style="color:#66d9ef">val</span> backerPubKey <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">PK</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;9h7DHKSDgE4uvP8313GVGdsEg3AvdAWSSTG7XZsLwBfeth4aePG&#34;</span><span style="color:#f92672">)</span>
-   <span style="color:#66d9ef">val</span> projectPubKey <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">PK</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;9gBSqNT9LH9WjvWbyqEvFirMbYp4nfGHnoWdceKGu45AKiya3Fq&#34;</span><span style="color:#f92672">)</span> 
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="o">{</span>
+   <span class="k">val</span> <span class="n">backerPubKey</span> <span class="k">=</span> <span class="nc">PK</span><span class="o">(</span><span class="s">&#34;9h7DHKSDgE4uvP8313GVGdsEg3AvdAWSSTG7XZsLwBfeth4aePG&#34;</span><span class="o">)</span>
+   <span class="k">val</span> <span class="n">projectPubKey</span> <span class="k">=</span> <span class="nc">PK</span><span class="o">(</span><span class="s">&#34;9gBSqNT9LH9WjvWbyqEvFirMbYp4nfGHnoWdceKGu45AKiya3Fq&#34;</span><span class="o">)</span> 
     
-   <span style="color:#66d9ef">val</span> deadline <span style="color:#66d9ef">=</span> <span style="color:#ae81ff">50000</span>
-   <span style="color:#66d9ef">val</span> minToRaise <span style="color:#66d9ef">=</span> <span style="color:#ae81ff">500L</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000000000</span> 
+   <span class="k">val</span> <span class="n">deadline</span> <span class="k">=</span> <span class="mi">50000</span>
+   <span class="k">val</span> <span class="n">minToRaise</span> <span class="k">=</span> <span class="mi">500L</span> <span class="o">*</span> <span class="mi">1000000000</span> 
    
-   <span style="color:#66d9ef">val</span> fundraisingFailure <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">HEIGHT</span> <span style="color:#f92672">&gt;=</span> deadline <span style="color:#f92672">&amp;&amp;</span> backerPubKey
-   <span style="color:#66d9ef">val</span> enoughRaised <span style="color:#66d9ef">=</span> <span style="color:#f92672">{</span><span style="color:#f92672">(</span>outBox<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Box</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">=&gt;</span>outBox<span style="color:#f92672">.</span>value <span style="color:#f92672">&gt;=</span> minToRaise 
-                              <span style="color:#f92672">&amp;&amp;</span> outBox<span style="color:#f92672">.</span>propositionBytes <span style="color:#f92672">==</span> projectPubKey<span style="color:#f92672">.</span>propBytes
-                      <span style="color:#f92672">}</span>
+   <span class="k">val</span> <span class="n">fundraisingFailure</span> <span class="k">=</span> <span class="nc">HEIGHT</span> <span class="o">&gt;=</span> <span class="n">deadline</span> <span class="o">&amp;&amp;</span> <span class="n">backerPubKey</span>
+   <span class="k">val</span> <span class="n">enoughRaised</span> <span class="k">=</span> <span class="o">{</span><span class="o">(</span><span class="n">outBox</span><span class="k">:</span> <span class="kt">Box</span><span class="o">)</span> <span class="k">=&gt;</span><span class="n">outBox</span><span class="o">.</span><span class="n">value</span> <span class="o">&gt;=</span> <span class="n">minToRaise</span> 
+                              <span class="o">&amp;&amp;</span> <span class="n">outBox</span><span class="o">.</span><span class="n">propositionBytes</span> <span class="o">==</span> <span class="n">projectPubKey</span><span class="o">.</span><span class="n">propBytes</span>
+                      <span class="o">}</span>
         
-   <span style="color:#66d9ef">val</span> fundraisingSuccess <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">HEIGHT</span> <span style="color:#f92672">&lt;</span> deadline <span style="color:#f92672">&amp;&amp;</span> projectPubKey <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">OUTPUTS</span><span style="color:#f92672">.</span>exists<span style="color:#f92672">(</span>enoughRaised<span style="color:#f92672">)</span>
-   fundraisingFailure <span style="color:#f92672">||</span> fundraisingSuccess                     
- <span style="color:#f92672">}</span>                              
+   <span class="k">val</span> <span class="n">fundraisingSuccess</span> <span class="k">=</span> <span class="nc">HEIGHT</span> <span class="o">&lt;</span> <span class="n">deadline</span> <span class="o">&amp;&amp;</span> <span class="n">projectPubKey</span> <span class="o">&amp;&amp;</span> <span class="nc">OUTPUTS</span><span class="o">.</span><span class="n">exists</span><span class="o">(</span><span class="n">enoughRaised</span><span class="o">)</span>
+   <span class="n">fundraisingFailure</span> <span class="o">||</span> <span class="n">fundraisingSuccess</span>                     
+ <span class="o">}</span>                              
 </code></pre></div><h2 id="如何捐款">如何捐款</h2>
 <p>首先，JSON不支持多行字符串，因此需要用<code>\n</code>替换换行符。此外，引号将被转意，因此使用“而非”。生成的JSON将被发送到<code>/script/p2sAddress</code>。为了给项目捐款，首先要从/钱包/众多地址中获得你的地址，比如说，提取它们中的第一个。把地址输入出资人公钥，这样在这一步之后对/脚本/p2sAddress的请求看起来以下情况：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#f92672">{</span>
-  <span style="color:#e6db74">&#34;source&#34;</span><span style="color:#66d9ef">:</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#f92672">{</span> 
-    <span style="color:#66d9ef">val</span> <span style="color:#66d9ef">backerPubKey</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">PK</span><span style="color:#f92672">(</span><span style="color:#66d9ef">\</span><span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#960050;background-color:#1e0010">9</span><span style="color:#66d9ef">.</span><span style="color:#66d9ef">.</span><span style="color:#66d9ef">.</span><span style="color:#66d9ef">\</span><span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#f92672">)</span>
-    <span style="color:#66d9ef">val</span> <span style="color:#66d9ef">projectPubKey</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">PK</span><span style="color:#f92672">(</span>\<span style="color:#e6db74">&#34;9gBSqNT9LH9WjvWbyqEvFirMbYp4nfGHnoWdceKGu45AKiya3Fq\&#34;)
-</span><span style="color:#e6db74">    val deadline = 50000
-</span><span style="color:#e6db74">    val minToRaise = 500L * 1000000000
-</span><span style="color:#e6db74">    val fundraisingFailure = HEIGHT &gt;= deadline &amp;&amp; backerPubKey
-</span><span style="color:#e6db74">    val enoughRaised = {
-</span><span style="color:#e6db74">      (outBox: Box) =&gt; 
-</span><span style="color:#e6db74">        outBox.value &gt;= minToRaise &amp;&amp; outBox.propositionBytes == projectPubKey.propBytes
-</span><span style="color:#e6db74">    } 
-</span><span style="color:#e6db74">    val fundraisingSuccess = HEIGHT &lt; deadline &amp;&amp; projectPubKey &amp;&amp; OUTPUTS.exists(enoughRaised) 
-</span><span style="color:#e6db74">    fundraisingFailure || fundraisingSuccess 
-</span><span style="color:#e6db74">  }&#34;</span>
-<span style="color:#f92672">}</span>    
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="o">{</span>
+  <span class="s">&#34;source&#34;</span><span class="k">:</span> <span class="err">&#34;</span><span class="o">{</span> 
+    <span class="kt">val</span> <span class="kt">backerPubKey</span> <span class="o">=</span> <span class="kt">PK</span><span class="o">(</span><span class="kt">\</span><span class="err">&#34;</span><span class="err">9</span><span class="kt">.</span><span class="kt">.</span><span class="kt">.</span><span class="kt">\</span><span class="err">&#34;</span><span class="o">)</span>
+    <span class="kt">val</span> <span class="kt">projectPubKey</span> <span class="o">=</span> <span class="nc">PK</span><span class="o">(</span><span class="n">\</span><span class="s">&#34;9gBSqNT9LH9WjvWbyqEvFirMbYp4nfGHnoWdceKGu45AKiya3Fq\&#34;)
+</span><span class="s">    val deadline = 50000
+</span><span class="s">    val minToRaise = 500L * 1000000000
+</span><span class="s">    val fundraisingFailure = HEIGHT &gt;= deadline &amp;&amp; backerPubKey
+</span><span class="s">    val enoughRaised = {
+</span><span class="s">      (outBox: Box) =&gt; 
+</span><span class="s">        outBox.value &gt;= minToRaise &amp;&amp; outBox.propositionBytes == projectPubKey.propBytes
+</span><span class="s">    } 
+</span><span class="s">    val fundraisingSuccess = HEIGHT &lt; deadline &amp;&amp; projectPubKey &amp;&amp; OUTPUTS.exists(enoughRaised) 
+</span><span class="s">    fundraisingFailure || fundraisingSuccess 
+</span><span class="s">  }&#34;</span>
+<span class="o">}</span>    
 </code></pre></div><p>以及你的地址，而非“9…”.</p>
 <p>将字符串发送至 <code>/script/p2sAddress</code>以获得诸如以下反馈：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#f92672">{</span>
-  <span style="color:#e6db74">&#34;address&#34;</span><span style="color:#66d9ef">:</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#66d9ef">GB3kh2izpWKvyZfMboQwsEscjPaZcz9WrzGqZB4ZrkzRreiFMV6HZYWXGMK3rqCjDCoPgWGNzfnYSUhivW4a1VRYPE7uZXwKnBcqWcRkiuTx6QW55EcPcWeELUsumwdtKoFtWY583nWnKZff</span><span style="color:#960050;background-color:#1e0010">&#34;</span>
-<span style="color:#f92672">}</span>     
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="o">{</span>
+  <span class="s">&#34;address&#34;</span><span class="k">:</span> <span class="err">&#34;</span><span class="kt">GB3kh2izpWKvyZfMboQwsEscjPaZcz9WrzGqZB4ZrkzRreiFMV6HZYWXGMK3rqCjDCoPgWGNzfnYSUhivW4a1VRYPE7uZXwKnBcqWcRkiuTx6QW55EcPcWeELUsumwdtKoFtWY583nWnKZff</span><span class="err">&#34;</span>
+<span class="o">}</span>     
 </code></pre></div><p>复制地址字符串（GB3… 在我们的例子中），并且将钱通过<code>/wallet/payment/send</code> 汇入该地址。提出采用API方法发送10个尔格币（100亿个毫微尔格(nanoErgs)）的请求如下所示：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#f92672">[</span>
- <span style="color:#f92672">{</span>
-   <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#66d9ef">address</span><span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#66d9ef">:</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#66d9ef">GB3kh2izpWKvyZfMboQwsEscjPaZcz9WrzGqZB4ZrkzRreiFMV6HZYWXGMK3rqCjDCoPgWGNzfnYSUhivW4a1VRYPE7uZXwKnBcqWcRkiuTx6QW55EcPcWeELUsumwdtKoFtWY583nWnKZff</span><span style="color:#960050;background-color:#1e0010">&#34;</span>,
-   <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#66d9ef">value</span><span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#66d9ef">:</span> <span style="color:#960050;background-color:#1e0010">1</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#960050;background-color:#1e0010">0</span>
- <span style="color:#f92672">}</span>
-<span style="color:#f92672">]</span>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="o">[</span>
+ <span class="o">{</span>
+   <span class="err">&#34;</span><span class="kt">address</span><span class="err">&#34;</span><span class="kt">:</span> <span class="err">&#34;</span><span class="kt">GB3kh2izpWKvyZfMboQwsEscjPaZcz9WrzGqZB4ZrkzRreiFMV6HZYWXGMK3rqCjDCoPgWGNzfnYSUhivW4a1VRYPE7uZXwKnBcqWcRkiuTx6QW55EcPcWeELUsumwdtKoFtWY583nWnKZff</span><span class="err">&#34;</span>,
+   <span class="err">&#34;</span><span class="kt">value</span><span class="err">&#34;</span><span class="kt">:</span> <span class="err">1</span><span class="err">0</span><span class="err">0</span><span class="err">0</span><span class="err">0</span><span class="err">0</span><span class="err">0</span><span class="err">0</span><span class="err">0</span><span class="err">0</span><span class="err">0</span>
+ <span class="o">}</span>
+<span class="o">]</span>
 </code></pre></div><p>大功告成！</p>
 <p>现在钱包将可以自动找到区块链的币箱，因为其在退款条件下含有属于钱包的公钥。由于（对相同地址）一个输入值只产生一个输出值，因此钱包会定期通过与币箱进行最简单的交易以检查币箱是否有钱。 在退款高度（我们的例子中是50,000），钱包将花币箱里的钱，因此币箱价值将在加入/钱包/余额。请注意在采用EIP-1 3后，情况会有所不同，因为到那时候钱包将采用窄识别模式。</p>
 <h2 id="如何收集捐款">如何收集捐款</h2>

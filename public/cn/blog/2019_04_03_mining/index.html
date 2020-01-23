@@ -170,10 +170,10 @@ ergo.node.miningPubKeyHex = &amp;#34;11aa ... FF&amp;#34; 如果这个参数没�
 <p>Ergo挖矿需要一个配置并同步过的Ergo节点，还有至少一个GPU，来完成实际的PoW计算。当然了，你可以用多个GPU倍增哈希算力，但你仅需一个Ergo节点。</p>
 <h2 id="设置全节点">设置全节点</h2>
 <p>全节点设置可参见上一个章节（<a href="https://ergoplatform.org/cn/blog/2019_03_17_how_to_set/">教程一：如何设置全节点</a>）。要支持一个外部矿工，也就是我们会用到的，你的配置文件里要有以下设置：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ergo.node.mining <span style="color:#f92672">=</span> true
-ergo.node.useExternalMiner <span style="color:#f92672">=</span> true
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">ergo.node.mining <span class="o">=</span> <span class="nb">true</span>
+ergo.node.useExternalMiner <span class="o">=</span> <span class="nb">true</span>
 </code></pre></div><p>如果你已经有了私钥/公钥对，你可以在节点配置里指定公钥或地址：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ergo.node.miningPubKeyHex <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;11aa ... FF&#34;</span>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">ergo.node.miningPubKeyHex <span class="o">=</span> <span class="s2">&#34;11aa ... FF&#34;</span>
 </code></pre></div><p>如果这个参数没出现，节点会采用内置钱包里第一个公钥来为外部矿工生成区块。</p>
 <p>只要节点同步完成，你就完成挖矿的准备工作了。</p>
 <h2 id="设置矿工">设置矿工</h2>
@@ -183,10 +183,10 @@ ergo.node.useExternalMiner <span style="color:#f92672">=</span> true
 <li><a href="https://github.com/ergoplatform/cuda-miner">CUDA miner (Nvidia GPU only)</a></li>
 </ul>
 <p>挖矿配置文件如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">{</span>
-  <span style="color:#e6db74">&#34;seed&#34;</span>: <span style="color:#e6db74">&#34;注意！！！ 将此替换为您的助记句并保密，否则您将被抢劫&#34;</span>, 
-  <span style="color:#e6db74">&#34;node&#34;</span>: <span style="color:#e6db74">&#34;http://188.166.89.71:9052&#34;</span>,<span style="color:#e6db74">&#34;keepPrehash&#34;</span>: false
-<span style="color:#f92672">}</span>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="o">{</span>
+  <span class="s2">&#34;seed&#34;</span>: <span class="s2">&#34;注意！！！ 将此替换为您的助记句并保密，否则您将被抢劫&#34;</span>, 
+  <span class="s2">&#34;node&#34;</span>: <span class="s2">&#34;http://188.166.89.71:9052&#34;</span>,<span class="s2">&#34;keepPrehash&#34;</span>: <span class="nb">false</span>
+<span class="o">}</span>
 </code></pre></div><p>定义：</p>
 <ul>
 <li>种子 是节点配置里的助记句，或是该设置里能为miningPubKeyHex计算私钥的助记句</li>

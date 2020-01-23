@@ -179,11 +179,11 @@ Ergo mining is based on Autolykos, a Proof-of-Work algorithm designed to be ASIC
 <p>Finally, ensure that the node is synced as described <a href="https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node#check-if-the-node-is-synced">here</a>.</p>
 <h2 id="configure-and-run-the-miner">Configure and run the miner</h2>
 <p>On the computer where the miner will be running, create a file called <code>config.json</code> with the following content</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
-    <span style="color:#f92672">&#34;seed&#34;</span>: <span style="color:#e6db74">&#34;Attention!!! Replace this with your mnemonic sentence and keep it secret or you will get robbed&#34;</span>, 
-    <span style="color:#f92672">&#34;node&#34;</span>: <span style="color:#e6db74">&#34;http://192.168.1.100:9053&#34;</span>,
-    <span style="color:#f92672">&#34;keepPrehash&#34;</span>: <span style="color:#66d9ef">false</span>
-}
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+    <span class="nt">&#34;seed&#34;</span><span class="p">:</span> <span class="s2">&#34;Attention!!! Replace this with your mnemonic sentence and keep it secret or you will get robbed&#34;</span><span class="p">,</span> 
+    <span class="nt">&#34;node&#34;</span><span class="p">:</span> <span class="s2">&#34;http://192.168.1.100:9053&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;keepPrehash&#34;</span><span class="p">:</span> <span class="kc">false</span>
+<span class="p">}</span>
 </code></pre></div><p>where:</p>
 <ul>
 <li><strong>seed</strong> is the mnemonic sentence from your node's wallet obtained in the previous step.</li>

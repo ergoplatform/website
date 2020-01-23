@@ -1371,6 +1371,13 @@
   </url>
   
   <url>
+    <loc>https://ergoplatform.org/en/tags/development/</loc>
+    <lastmod>2018-10-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://ergoplatform.org/en/blog/2018_10_19-smart-contracts/</loc>
     <lastmod>2018-10-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -1388,29 +1395,8 @@
   </url>
   
   <url>
-    <loc>https://ergoplatform.org/en/categories/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="https://ergoplatform.org/cn/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ergoplatform.org/en/categories/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://ergoplatform.org/en/careers/frontend/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://ergoplatform.org/en/tags/</loc>
+    <lastmod>2018-10-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -1423,6 +1409,12 @@
                 hreflang="en"
                 href="https://ergoplatform.org/en/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/en/careers/frontend/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
 </urlset>

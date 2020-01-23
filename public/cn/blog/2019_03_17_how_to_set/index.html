@@ -177,8 +177,8 @@ $ java -jar ergo-assembly-&amp;lt;version&amp;gt;.">
 <h2 id="设置ergo节点">设置Ergo节点</h2>
 <p>当运行环境设置完备，您就可以下载最新版的Ergo客户端（<a href="https://github.com/ergoplatform/ergo/releases/">Ergo client release</a>）创建一个设置文件了。至于jar包，不需要单独下载，您只需要用<a href="https://www.scala-sbt.org/">SBT</a>通过<code>sbt assembly</code>指令来克隆一份资源库，就可创建您自己的jar包</p>
 <p>所有的设置参数都可以在默认设置文件（(default configuration file](<a href="https://github.com/ergoplatform/ergo/blob/master/src/main/resources/reference.conf">https://github.com/ergoplatform/ergo/blob/master/src/main/resources/reference.conf</a>)）中找到。在您的设置文件基础上，您只需重写您在默认值基础上想要进行改动的参数即可。比如，在该设置文件样本（<a href="https://github.com/ergoplatform/ergo/blob/master/src/main/resources/nodeTestnet/application.conf">sampleconfiguration file</a>）中您可以查看最新的测试网，里面只包含了一些重要的参数。请注意，在这个样本文件中，您必须去除以下几行指令：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">testMnemonic <span style="color:#66d9ef">=</span> <span style="color:#f92672">.</span><span style="color:#f92672">.</span><span style="color:#f92672">.</span>
-testKeysQty <span style="color:#66d9ef">=</span> <span style="color:#f92672">.</span><span style="color:#f92672">.</span><span style="color:#f92672">.</span>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="n">testMnemonic</span> <span class="k">=</span> <span class="o">.</span><span class="o">.</span><span class="o">.</span>
+<span class="n">testKeysQty</span> <span class="k">=</span> <span class="o">.</span><span class="o">.</span><span class="o">.</span>
 </code></pre></div><h2 id="现在我们来运行下面几个重要步骤">现在，我们来运行下面几个重要步骤：</h2>
 <h3 id="设置一个api密钥">、设置一个<strong>API</strong>密钥：</h3>
 <p>设置API端口密钥。要想设置钱包，您需要先通过节点设置文件来设置apiKeyHash参数，参见<a href="https://github.com/ergoplatform/ergo/wiki/Ergo-REST-API#setting-an-api-key">此处</a>。文件中要编辑替换：</p>
@@ -201,19 +201,19 @@ testKeysQty <span style="color:#66d9ef">=</span> <span style="color:#f92672">.</
 <p>更多关于钱包的细节描述，请查看<a href="https://ergoplatform.org/cn/blog/2019_06_04_wallet-documentation/">此处</a>。</p>
 <h2 id="运行ergo节点">运行Ergo节点</h2>
 <p>用<code>ergo-assembly-&lt;version&gt;.jar</code>二进制和<code>ergo.conf</code>设置文件运行节点：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ java -jar ergo-assembly-&lt;version&gt;.jar ergo.conf
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ java -jar ergo-assembly-&lt;version&gt;.jar ergo.conf
 </code></pre></div><p>为确保节点在运行，在浏览器里打开<a href="http://127.0.0.1:9052/info">127.0.0.1:9052/info</a>这里会显示关于节点的相关信息。</p>
 <h2 id="使用rest-api">使用REST API</h2>
 <p>节点会提供REST API（<a href="https://github.com/ergoplatform/ergo/wiki/Ergo-REST-API">相关描述</a>）
 您可以用Swagger来完成API请求，访问<a href="127.0.0.1:9052/swagger">127.0.0.1:9052/swagger</a>。API完整说明可以在<a href="https://github.com/ergoplatform/ergo/blob/master/src/main/resources/api/openapi.yaml">这里</a>找到。要接入受保护的API端口路径，需把您在前面步骤创建的密码字符，输入到<code>[api_key, Content-Type]</code>部分，或者点Swagger里的Authorize按键然后键入您的密码字符。</p>
 <h2 id="关闭控制端打印console-printing">关闭控制端打印Console Printing</h2>
 <p>默认情况下，Ergo节点会打印大量排错信息，这个功能可以关闭，在<code>src/main/resources</code>里编辑<code>logback.xml</code>，然后重新编译（或直接在jar包里编辑XML文件）。编辑以下指令：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">&lt;root level<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;WARN&#34;</span>&gt; &lt;!-- other options are TRACE, ERROR --&gt;   
-  &lt;appender-ref ref<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;STDOUT&#34;</span>/&gt; &lt;!-- remove this line to disable all printing --&gt;   
-  &lt;appender-ref ref<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;FILE&#34;</span>/&gt;
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">&lt;root <span class="nv">level</span><span class="o">=</span><span class="s2">&#34;WARN&#34;</span>&gt; &lt;!-- other options are TRACE, ERROR --&gt;   
+  &lt;appender-ref <span class="nv">ref</span><span class="o">=</span><span class="s2">&#34;STDOUT&#34;</span>/&gt; &lt;!-- remove this line to disable all printing --&gt;   
+  &lt;appender-ref <span class="nv">ref</span><span class="o">=</span><span class="s2">&#34;FILE&#34;</span>/&gt;
 &lt;/root&gt;
 </code></pre></div><p>或者也可以在运行节点时设置想要的参数，如：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">java -jar ergo-assembly-&lt;version&gt;.jar ergo.conf -Dlogback.stdout.level <span style="color:#f92672">=</span> ERROR
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">java -jar ergo-assembly-&lt;version&gt;.jar ergo.conf -Dlogback.stdout.level <span class="o">=</span> ERROR
 </code></pre></div>
           </div>
         </div>
