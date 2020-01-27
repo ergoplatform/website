@@ -531,6 +531,9 @@
 - id: tools_second-section_sixth_sub_first_link
   translation: Ergo Forum
 
+- id: tools_second-section_sixth_sub_second_link
+  translation: Discord channel
+
 - id: tools_third_title
   translation: Grants for Developers
 
