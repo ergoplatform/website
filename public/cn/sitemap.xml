@@ -3,6 +3,40 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ergoplatform.org/cn/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ergoplatform.org/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://ergoplatform.org/cn/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/cn/news/2020_01_23/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ergoplatform.org/en/news/2020_01_23/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://ergoplatform.org/cn/news/2020_01_23/"
+                />
+  </url>
+  
+  <url>
     <loc>https://ergoplatform.org/cn/blog/2020_01_12_security_audit/</loc>
     <lastmod>2020-01-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -16,23 +50,6 @@
                 rel="alternate"
                 hreflang="cn"
                 href="https://ergoplatform.org/cn/blog/2020_01_12_security_audit/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://ergoplatform.org/cn/</loc>
-    <lastmod>2020-01-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ergoplatform.org/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="https://ergoplatform.org/cn/"
                 />
   </url>
   
