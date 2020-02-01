@@ -96,7 +96,7 @@ pygmentsUseClasses=true
 
   [[languages.cn.menu.mainmenu]]
     identifier = "Foundation"
-    name = "Foundation"
+    name = "基金"
     url = "/foundation/"
     weight = -100
 
