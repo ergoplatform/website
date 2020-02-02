@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Ergo Platform Roadmap for 2020</title>
+      <link>https://ergoplatform.org/en/blog/2020_02_02/</link>
+      <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2020_02_02/</guid>
+      <description>Ergo community made a lot in 2019:  Very stressful but successful mainnet launch A lot of updates for Ergo protocol reference client to improve its stability and enhance functionality. Wallets: Magnum, CoinBarn (coming to ChromeStore, binaries available), UI panel in the node First applications, in form of command-line scripts, so not for regular users yet: a tool for crowdfunding campaigns, Ergo Notary, Ergo Oracle. Few Ergo improvement proposals, already implemented!</description>
+    </item>
+    
+    <item>
       <title>Security Audit (by Jean Philippe Aumasson)</title>
       <link>https://ergoplatform.org/en/blog/2020_01_12_security_audit/</link>
       <pubDate>Sun, 12 Jan 2020 00:00:00 +0000</pubDate>
