@@ -854,3 +854,126 @@
 
 - id: telegram_channel
   translation: https://t.me/ergoplatform_CH
+
+# foundation
+
+- id: foundation_first_title
+  translation: 尔格基金会
+
+- id: foundation_first_section_first_title
+  translation: "尔格基金会是一个由社区驱动的组织，其致力于："
+
+- id: foundation_first_section_first_li_item
+  translation: "促进尔格平台协议的不间断开发"
+
+- id: foundation_first_section_second_li_item
+  translation: "促进尔格平台及其代币(ERG)的普及及使用；"
+
+- id: foundation_first_section_third_li_item
+  translation: "开发与尔格平台相关的生态系统；"
+
+- id: foundation_first_section_fourth_li_item
+  translation: "促进利用尔格平台和区块链技术造福社会；"
+
+- id: foundation_first_section_fifth_li_item
+  translation: "支持真正去中心化的基础设施，并且；"
+
+- id: foundation_first_section_sixth_li_item
+  translation: "支持将隐私视为一项基本人权。"
+
+- id: foundation_second_section_first_title
+  translation: "我们的使命"
+
+- id: foundation_second_section_first_paragraph
+  translation: "尔格基金会致力于尔格平台协议的内生和不间断开发。基金会不仅要考虑矿工（其将直接在区块链上表达自己的意愿）批准的变化，而且还要考虑用户、基于尔格和核心开发者的项目建设。基金会还致力于为有着隐私意识的公众打造去信任环境、智能合约及支付框架。我们的业务活动包括融资、研究、对尔格平台进行研究及维护、对尔格平台进行改进、开展品牌营销等活动。我们认为尔格司库应当主要供开放社区使用，包括自由职业者、黑客(hackers)、专家和热心人士。有关尔格司库和协议的信息，请参阅以下链接
+            <a
+              class=\"eg-text__link eg-link\"
+              href=\"https://ergoplatform.org/docs/whitepaper.pdf\"
+            ><span>https://ergoplatform.org/docs/whitepaper.pdf</span></a> 和 <a
+              class=\"eg-text__link eg-link\"
+              href=\"https://ergoplatform.org/en/blog/2019_05_20-curve/\"
+            ><span>https://ergoplatform.org/en/blog/2019_05_20-curve/</span></a>"
+
+- id: foundation_second_section_second_paragraph
+  translation: "尔格平台的工作重心是提供一种执行金融合约的高效安全方式，这是区块链技术最广泛的应用领域。这个重心得到了尔格基金会的认可和支持。"
+
+- id: foundation_second_section_third_paragraph
+  translation: "尔格基金会致力于在尽可能少牌照许可的情况下，通过开源方式最大化有价值生态系统的开发。"
+
+- id: foundation_third_section_first_title
+  translation: "合作"
+
+- id: foundation_third_section_first_paragraph
+  translation: "尔格基金会旨在与能够为尔格生态系统开发出谋献策或者与尔格基金会分享价值的组织建立合作关系。可能的合作方式包括但不限于获得或提供财务支持、分享知识和想法、提供或获得免费或有偿咨询。"
+
+- id: foundation_fourth_section_first_title
+  translation: "资助计划"
+
+- id: foundation_fourth_section_first_paragraph
+  translation: "尔格基金会支持一个资助计划（具体指引将在近期公布）。目前，如果阁下想申请此项资助，请将电子邮件发送至
+            <a href=\"mailto:ergoplatform@protonmail.com\" class=\"eg-text__link eg-link\"><span>ergoplatform@protonmail.com</span></a>，或联系任何董事会成员。建议书目前需要获得尔格开发基金会6名董事会成员中4名成员的同意。尔格基金会正在接受来自社区新的志愿者，欢迎大家踊跃申请。"
+
+- id: foundation_fourth_section_second_paragraph
+  translation: "我们致力于就决定和批准的开发进度情况告知社区。"
+
+- id: foundation_fifth_section_first_title
+  translation: "董事会成员"
+
+- id: foundation_fifth_section_first_paragraph
+  translation: "当前尔格基金会董事会成员（按照姓氏字母顺序排列）："
+
+- id: foundation_fifth_section_first_li_item
+  translation: "Alex Chepurnoy"
+
+- id: foundation_fifth_section_second_li_item
+  translation: "Noah Hudson （贺能）"
+
+- id: foundation_fifth_section_third_li_item
+  translation: "Justin Simpson（贾琛）"
+
+- id: foundation_fifth_section_fourth_li_item
+  translation: "Alexander Slesarenko"
+
+- id: foundation_fifth_section_fifth_li_item
+  translation: "Martin Spodymek"
+
+- id: foundation_fifth_section_second_paragraph
+  translation: "当前开发基金会董事会成员（按照姓氏字母顺序排列）："
+
+- id: foundation_fifth_section_second_list_first_li_item
+  translation: "Alex Chepurnoy"
+
+- id: foundation_fifth_section_second_list_second_li_item
+  translation: "Noah Hudson （贺能）"
+
+- id: foundation_fifth_section_second_list_third_li_item
+  translation: "Guillermo Manzanares"
+
+- id: foundation_fifth_section_second_list_fourth_li_item
+  translation: "Justin Simpson（贾琛）"
+
+- id: foundation_fifth_section_second_list_fifth_li_item
+  translation: "Alexander Slesarenko"
+
+- id: foundation_fifth_section_second_list_sixth_li_item
+  translation: "Martin Spodymek"
+
+- id: foundation_sixth_section_first_title
+  translation: "附录：尔格基础信息"
+
+- id: foundation_sixth_section_first_paragraph
+  translation: "尔格脚本的加密部分是基于西格玛协议，并且天然支持门限m-of-n签名、环签名等。请牢记这一切，我们预计尔格脚本和尔格的设计将使其与合约货币一样具有独特用途，并且有尽可能多的应用。由于轻节点，可以通过真正去中心化的方式落实DApps和链下协议。"
+
+- id: foundation_sixth_section_second_paragraph
+  translation: "对于更多根本性变化，尔格遵循软分叉方法 —— 如果绝大多数网络接受了这一新特征，就会将其激活，然而，没有升级旧的节点会继续正常运行，并跳过这个特征验证。因此在尔格中应该不需要突破性硬分叉。"
+
+- id: foundation_sixth_section_third_paragraph
+  translation: "与在排放期过后，采矿可能会变得不太稳定的比特币和其他工作量证明货币不同，尔格的开采将会一直很稳定。其次，状态规模的增长也会变得可控和可预测，从而降低了对尔格矿机硬件的要求。第三，通过从旧币箱处收取保管费，矿工们将失去的硬币退还给流通领域，防止因钥匙丢失而导致流通供应的持续减少。为了实现生存能力，尔格除了提供技术上的改进之外，还在经济上进行了改进，其中最重要的是一个对尔格稳定性起着重要作用的存储费部分。"
+
+- id: foundation_sixth_section_fourth_paragraph
+  translation: "
+            所有加密货币都仰赖科研工作者的贡献。很高兴尔格视其为核心竞争力！
+            <a
+              class=\"eg-text__link eg-link\"
+              href=\"https://ergoplatform.org/en/documents/\"
+            ><span>https://ergoplatform.org/en/documents/</span></a>"

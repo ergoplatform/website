@@ -928,3 +928,121 @@
 
 - id: foundation_first_title
   translation: Ergo Foundation
+
+- id: foundation_first_section_first_title
+  translation: "The Ergo Foundation is a community-driven entity focused on:"
+
+- id: foundation_first_section_first_li_item
+  translation: "Promoting non-breaking development of Ergo Platform protocol;"
+
+- id: foundation_first_section_second_li_item
+  translation: "Promoting the widespread adoption and use of Ergo Platform and its native token (ERG);"
+
+- id: foundation_first_section_third_li_item
+  translation: "Developing the ecosystem around the Ergo Platform;"
+
+- id: foundation_first_section_fourth_li_item
+  translation: "Promoting the use of Ergo Platform and blockchain technology for social good;"
+
+- id: foundation_first_section_fifth_li_item
+  translation: "Supporting truly decentralized infrastructure, and;"
+
+- id: foundation_first_section_sixth_li_item
+  translation: "Supporting privacy as a basic human right."
+
+- id: foundation_second_section_first_title
+  translation: "Our Mission"
+
+- id: foundation_second_section_first_paragraph
+  translation: "Ergo Foundation is committed to organic and non-breaking development of Ergo Platform protocol. The Foundation takes care that the changes approved not only by miners (who express their will directly on the blockchain), but also users, projects building on top of Ergo and core developers. The Foundation is also dedicated to help with building trustless environments, smart contracts and payment frameworks for the public with privacy in mind. Our activities include fundraising, research, maintenance of Ergo Platform, improvements for Ergo Platform, marketing and events. We believe that the Ergo Treasury should be used mainly by open community, including freelancers, hackers, experts and enthusiasts. Information about Ergo`s Treasury and protocol can be found at
+            <a
+              class=\"eg-text__link eg-link\"
+              href=\"https://ergoplatform.org/docs/whitepaper.pdf\"
+            ><span>https://ergoplatform.org/docs/whitepaper.pdf</span></a> and <a
+              class=\"eg-text__link eg-link\"
+              href=\"https://ergoplatform.org/en/blog/2019_05_20-curve/\"
+            ><span>https://ergoplatform.org/en/blog/2019_05_20-curve/</span></a>"
+
+- id: foundation_second_section_second_paragraph
+  translation: "Ergo Platform’s primary focus is to provide an efficient and secure way to implement financial contracts, which are the most widely used application of the blockchain technology. This focus is recognized and supported by the Ergo Foundation."
+
+- id: foundation_second_section_third_paragraph
+  translation: "Ergo Foundation is committed to make efforts to maximize the number of valuable ecosystem developments done in an open-source way with least permissive license possible."
+
+- id: foundation_third_section_first_title
+  translation: "Partnerships"
+
+- id: foundation_third_section_first_paragraph
+  translation: "Ergo Foundation aims to establish partnerships with organizations that will contribute to developing the Ergo ecosystem or that share the values of the Ergo Foundation. Possible means of partnership include but are not limited to getting or providing financial support, sharing knowledge and ideas, providing or getting free or paid consultations."
+
+- id: foundation_fourth_section_first_title
+  translation: "Grants"
+
+- id: foundation_fourth_section_first_paragraph
+  translation: "The Ergo Foundation supports a grant program (guide will be announced soon). For now, please send an email to
+            <a href=\"mailto:ergoplatform@protonmail.com\" class=\"eg-text__link eg-link\"><span>ergoplatform@protonmail.com</span></a> or a message to any board member if you would like to apply for a grant. Proposals, at the moment, need to be approved by four of six votes of Ergo Development Fund Board Members. The Ergo Foundation is accepting new volunteers from the community so please apply if you wish."
+
+- id: foundation_fourth_section_second_paragraph
+  translation: "We are committed to informing the community about decisions and approved developments."
+
+- id: foundation_fifth_section_first_title
+  translation: "Board Members"
+
+- id: foundation_fifth_section_first_paragraph
+  translation: "Current Ergo Foundation Board Members (sorted by last name):"
+
+- id: foundation_fifth_section_first_li_item
+  translation: "Alex Chepurnoy"
+
+- id: foundation_fifth_section_second_li_item
+  translation: "Noah Hudson"
+
+- id: foundation_fifth_section_third_li_item
+  translation: "Justin Simpson"
+
+- id: foundation_fifth_section_fourth_li_item
+  translation: "Alexander Slesarenko"
+
+- id: foundation_fifth_section_fifth_li_item
+  translation: "Martin Spodymek"
+
+- id: foundation_fifth_section_second_paragraph
+  translation: "Current Development Fund Board Members (sorted by last name):"
+
+- id: foundation_fifth_section_second_list_first_li_item
+  translation: "Alex Chepurnoy"
+
+- id: foundation_fifth_section_second_list_second_li_item
+  translation: "Noah Hudson"
+
+- id: foundation_fifth_section_second_list_third_li_item
+  translation: "Guillermo Manzanares"
+
+- id: foundation_fifth_section_second_list_fourth_li_item
+  translation: "Justin Simpson"
+
+- id: foundation_fifth_section_second_list_fifth_li_item
+  translation: "Alexander Slesarenko"
+
+- id: foundation_fifth_section_second_list_sixth_li_item
+  translation: "Martin Spodymek"
+
+- id: foundation_sixth_section_first_title
+  translation: "Appendix: Ergo Basics"
+
+- id: foundation_sixth_section_first_paragraph
+  translation: "The cryptographic part of Ergo script is based on sigma protocols and naturally supports threshold m-of-n signatures, ring signatures and more. Keeping all this in mind, we expect ErgoScript and Ergo’s design to make it uniquely useful as Contractual Money with countless applications possible. Ergo DApps and offchain protocols may be implemented in a truly decentralized way due to light clients."
+
+- id: foundation_sixth_section_second_paragraph
+  translation: "For more fundamental changes Ergo is following a soft-forkability approach --- if an overwhelming majority of the network accepts a new feature, it is activated, however, old nodes which do not upgrade continue to operate normally and just skip over this feature validation. Thus disruptive hard forks should not be required in Ergo."
+
+- id: foundation_sixth_section_third_paragraph
+  translation: "Ergo mining will always be stable, unlike Bitcoin and other PoW currencies, in which mining may become unstable after the emission period. Second, state size growth becomes controllable and predictable reducing hardware requirements for Ergo miners. Third, by collecting storage fees from outdated boxes, miners return lost coins to circulation preventing a steady decrease of circulating supply due to lost keys. To achieve survivability, Ergo provides economic improvements in addition to the technical ones, most central of which is a storage fee component which plays an important role for Ergo‘s stability."
+
+- id: foundation_sixth_section_fourth_paragraph
+  translation: "
+            All cryptocurrencies rely on contributions from the scientific research community. Gladly Ergo brings it in the core!
+            <a
+              class=\"eg-text__link eg-link\"
+              href=\"https://ergoplatform.org/en/documents/\"
+            ><span>https://ergoplatform.org/en/documents/</span></a>"
