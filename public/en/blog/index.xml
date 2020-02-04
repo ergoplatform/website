@@ -12,6 +12,19 @@
     
     
     <item>
+      <title>Ergo Platform Ecosystem Digest - January 2020</title>
+      <link>https://ergoplatform.org/en/blog/2020_02_04_january_digest/</link>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2020_02_04_january_digest/</guid>
+      <description>Ergo Foundation has been established (https://ergoplatform.org/en/foundation/)
+  Security audit of most critical parts of the reference protocol client is done, report is available (https://ergoplatform.org/en/blog/2020_01_12_security_audit/)
+  New paper is out, &amp;ldquo;Bypassing Non-Outsourceable Proof-of-Work Schemes Using Collateralized Smart Contracts&amp;rdquo; (https://eprint.iacr.org/2020/044.pdf). This paper describes how to build a pool for Ergo based on smart contracts with collaterals.
+  Public Discord server has been created (https://discordapp.com/invite/gYrVrjS), please join!
+  Ergo Platform reference protocol client 3.</description>
+    </item>
+    
+    <item>
       <title>Ergo Platform Roadmap for 2020</title>
       <link>https://ergoplatform.org/en/blog/2020_02_02/</link>
       <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>

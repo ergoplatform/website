@@ -6,10 +6,23 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 02 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ergo Platform Ecosystem Digest - January 2020</title>
+      <link>https://ergoplatform.org/en/blog/2020_02_04_january_digest/</link>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2020_02_04_january_digest/</guid>
+      <description>Ergo Foundation has been established (https://ergoplatform.org/en/foundation/)
+  Security audit of most critical parts of the reference protocol client is done, report is available (https://ergoplatform.org/en/blog/2020_01_12_security_audit/)
+  New paper is out, &amp;ldquo;Bypassing Non-Outsourceable Proof-of-Work Schemes Using Collateralized Smart Contracts&amp;rdquo; (https://eprint.iacr.org/2020/044.pdf). This paper describes how to build a pool for Ergo based on smart contracts with collaterals.
+  Public Discord server has been created (https://discordapp.com/invite/gYrVrjS), please join!
+  Ergo Platform reference protocol client 3.</description>
+    </item>
     
     <item>
       <title>Ergo Platform Roadmap for 2020</title>
@@ -18,6 +31,15 @@
       
       <guid>https://ergoplatform.org/en/blog/2020_02_02/</guid>
       <description>Ergo community made a lot in 2019:  Very stressful but successful mainnet launch A lot of updates for Ergo protocol reference client to improve its stability and enhance functionality. Wallets: Magnum, CoinBarn (coming to ChromeStore, binaries available), UI panel in the node First applications, in form of command-line scripts, so not for regular users yet: a tool for crowdfunding campaigns, Ergo Notary, Ergo Oracle. Few Ergo improvement proposals, already implemented!</description>
+    </item>
+    
+    <item>
+      <title>Ergo Platform Roadmap for 2020</title>
+      <link>https://ergoplatform.org/en/news/2020_02_02/</link>
+      <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2020_02_02/</guid>
+      <description></description>
     </item>
     
     <item>
