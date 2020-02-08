@@ -1,7 +1,7 @@
 #landing
 - id: header_resilient_platform
   translation: "Welcome to
-  <span class=\"header-section__title--red\">Smart Money</span>"
+  <span class=\"header-section__title--red\">Smart Money *</span>"
 
 - id: getting_started
   translation: Getting started with Ergo
