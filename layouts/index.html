@@ -81,10 +81,15 @@
             <h1 class="header-section__title">
               {{ T "header_resilient_platform" | safeHTML }}
             </h1>
+
             <div id="typed-strings">
-              <p>Ergo builds advanced cryptographic features and radically new DeFi functionality on the rock-solid foundations laid by a decade of blockchain theory and development.</p>
+              <p><span class="eg-text--color-red">Conservative.</span> Because Smart doesn’t take unnecessary risks.</p>
+              <p><span class="eg-text--color-red">Ambitious.</span> Because Smart isn’t afraid to try new ideas.</p>
+              <p><span class="eg-text--color-red">Lightweight.</span> Because Smart isn’t exclusive.</p>
+              <p><span class="eg-text--color-red">Versatile.</span> Because Smart doesn’t limit its options.</p>
+              <p>[Ergo builds advanced cryptographic features and radically new DeFi functionality on the rock-solid foundations laid by a decade of blockchain theory and development.]</p>
             </div>
-            <p class="header-section__paragraph"><span id="typed"></span></p>
+            <p class="header-section__paragraph"><span class="eg-text--color-red">Smart money is: </span><span id="typed"></span></p>
             <div class="header-section__icons">
               {{- partial "social.html" . -}}
             </div>
@@ -216,39 +221,10 @@
             </div>
           </div>
         </section>
-        <section class="documents-section">
-          <div class="container container--margins-y grid-container-1k2">
-            <div>
-              <h2 class="eg-title">{{ T "documents_title" }}</h2>
-            </div>
-            <div class="services-section__items grid-container-1k1">
-              <div class="eg-info">
-                <a class="eg-info__title eg-link" href="{{ T `documents_ergo_platform_link` }}"><span>{{ T "documents_ergo_platform" }}</span></a>
-                <a class="eg-info__paragraph eg-link eg-info__paragraph--black" href="{{ T `documents_ergo_platform_link` }}"><span>{{ T "documents_ergo_platform_text" }}</span></a>
-              </div>
-              <div class="eg-info">
-                <a class="eg-info__title eg-link" href="/docs/ErgoScript.pdf"><span>{{ T "documents_ergoscript" }}</span></a>
-                <a class="eg-info__paragraph eg-link eg-info__paragraph--black" href="/docs/ErgoScript.pdf"><span>{{ T "documents_ergoscript_text" }}</span></a>
-              </div>
-              <div class="eg-info">
-                <a class="eg-info__title eg-link" href="{{ T `documents_ergo_teaser_link` }}"><span>{{ T "documents_ergo_teaser" }}</span></a>
-                <a class="eg-info__paragraph eg-link eg-info__paragraph--black" href="{{ T `documents_ergo_teaser_link` }}"><span>{{ T "documents_ergo_teaser_text" }}</span></a>
-              </div>
-              <div class="eg-info">
-                <a class="eg-info__title eg-link" href="/docs/AdvancedErgoScriptTutorial.pdf"><span>{{ T "documents_ergo_script_adv" }}</span></a>
-                <a class="eg-info__paragraph eg-link eg-info__paragraph--black" href="/docs/AdvancedErgoScriptTutorial.pdf"><span>{{ T "documents_ergo_script_adv_text" }}</span></a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="history-section">
-          <div class="container--margins-y">
-            <h2 class="container eg-title eg-title--black">{{ T "development_history_title" }}</h2>
-            {{- partial "slider.html" . -}}
-          </div>
-        </section>
         <section class="blog-section">
-          <div class="container container--margins-y blog-section__container">
+          <div class="container container--margins-y">
+            <h2 class="eg-title eg-title--black eg-mb-1-5">{{ T "blog_section"}}</h2>
+            <div class="blog-section__container">
             {{ $blogPages := where .Site.Pages "Section" "blog" }}
             {{ with $blogPages }}
               {{ range first 2 $blogPages }}
@@ -284,6 +260,7 @@
                 {{end}}
               {{ end }}
             {{ end }}
+            </div>
           </div>
         </section>
         <section class="community-section eg-red-section">
