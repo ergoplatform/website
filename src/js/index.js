@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import 'jquery-ui/ui/widgets/tabs';
+import Typed from 'typed.js';
 import 'slick-carousel';
 import 'slick-carousel/slick/slick.css';
 import { downloader } from './downloadMore';
@@ -43,6 +44,13 @@ document.addEventListener('DOMContentLoaded', () => {
       document.fonts.add(font);
     });
   }
+
+  new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 25,
+    backSpeed: 10,
+    backDelay: 1200,
+  });
 
   $('.dropdown .dropdown__button').each(function (e) {
     this.addEventListener('click', (e) => {

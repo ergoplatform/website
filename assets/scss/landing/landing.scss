@@ -20,7 +20,6 @@
     }
 
     .header-section__title {
-      max-width: 681px;
       color: $white;
       font-size: 50px;
       line-height: 60px;
@@ -47,8 +46,18 @@
       }
     }
 
+    .header-section__paragraph {
+      color: $white;
+      font-size: 20px;
+      line-height: 24px;
+      margin-top: 14px;
+      text-align: left;
+      margin-bottom: 0;
+      max-width: 550px;
+    }
+
     .header-section__icons {
-      margin-top: 35px;
+      margin-top: 24px;
 
       @media (max-width: $xs) {
         margin-top: 1rem;

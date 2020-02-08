@@ -53,6 +53,7 @@ gulp.task('js', () => gulp.src('./src/js/index.js')
         },
       ],
     },
+    externals: ['tls', 'net', 'fs'],
     plugins: [
       new webpack.ProvidePlugin({
         $: 'jquery',
