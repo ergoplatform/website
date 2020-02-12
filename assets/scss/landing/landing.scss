@@ -28,7 +28,7 @@
       line-height: 60px;
       font-weight: normal;
       margin: 0;
-      margin-bottom: 30px;
+      margin-bottom: 48px;
 
       @media (max-width: $sm) {
         font-size: 36px;
@@ -58,6 +58,10 @@
       text-align: center;
       margin-bottom: 0;
       max-width: 750px;
+
+      & + .header-section__paragraph {
+        margin-top: 16px;
+      }
     }
 
     .header-section__icons {

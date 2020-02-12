@@ -82,13 +82,17 @@
               {{ T "header_resilient_platform" | safeHTML }}
             </h1>
             <p class="header-section__paragraph">Ergo builds advanced cryptographic features and radically new DeFi functionality on the rock-solid foundations laid by a decade of blockchain theory and development.</p class="header-section__paragraph">
-            <div id="typed-strings">
-              <p><span class="eg-text--color-red">Conservative.</span> Because Smart doesn’t take unnecessary risks.</p>
-              <p><span class="eg-text--color-red">Ambitious.</span> Because Smart isn’t afraid to try new ideas.</p>
-              <p><span class="eg-text--color-red">Lightweight.</span> Because Smart isn’t exclusive.</p>
-              <p><span class="eg-text--color-red">Versatile.</span> Because Smart doesn’t limit its options.</p>
-            </div>
-            <p class="header-section__paragraph"><span class="eg-text--color-red">Smart money is: </span><span id="typed"></span></p>
+
+            <p class="header-section__paragraph"><span class="eg-text--color-red">Smart money is: </span></p>
+            <p class="header-section__paragraph">
+              <span id="typed"></span>
+              <div id="typed-strings">
+                <p><span class="eg-text--color-red">Conservative.</span> Because Smart doesn’t take unnecessary risks.</p>
+                <p><span class="eg-text--color-red">Ambitious.</span> Because Smart isn’t afraid to try new ideas.</p>
+                <p><span class="eg-text--color-red">Lightweight.</span> Because Smart isn’t exclusive.</p>
+                <p><span class="eg-text--color-red">Versatile.</span> Because Smart doesn’t limit its options.</p>
+              </div>
+            </p>
             <div class="header-section__icons">
               {{- partial "social.html" . -}}
             </div>
@@ -103,32 +107,32 @@
               <li class="subheader-section__item"><a href="#tabs-3">{{ T "ergo_economy" }}</a></li>
               <li class="subheader-section__item"><a href="#tabs-4">{{ T "ergo_contractual" }}</a></li>
               <li class="subheader-section__item"><a href="#tabs-5">{{ T "ergo_clients" }}</a></li>
-              <li class="subheader-section__item"><a href="#tabs-6">{{ T "ergo_survivability" }}</a></li>
+              <li class="subheader-section__item"><a href="#tabs-6">{{ T "ergo_agile" }}</a></li>
             </ul>
             <div class="subheader-section__tabs-content">
               <div id="tabs-1" class="subheader-section__tab">
-                <h2 class="subheader-section__tab-title">{{ T "ergo_vision" }}</h2>
                 <p class="subheader-section__tab-paragraph">{{ T "ergo_vision_text" | safeHTML }}</p>
               </div>
               <div id="tabs-2" class="subheader-section__tab">
-                <h2 class="subheader-section__tab-title">{{ T "ergo_decentralization" }}</h2>
                 <p class="subheader-section__tab-paragraph">{{ T "ergo_decentralization_text" | safeHTML }}</p>
               </div>
               <div id="tabs-3" class="subheader-section__tab">
-                <h2 class="subheader-section__tab-title">{{ T "ergo_economy" }}</h2>
                 <p class="subheader-section__tab-paragraph">{{ T "ergo_economy_text" | safeHTML }}</p>
               </div>
               <div id="tabs-4" class="subheader-section__tab">
-                <h2 class="subheader-section__tab-title">{{ T "ergo_contractual" }}</h2>
                 <p class="subheader-section__tab-paragraph">{{ T "ergo_contractual_text" | safeHTML }}</p>
               </div>
               <div id="tabs-5" class="subheader-section__tab">
-                <h2 class="subheader-section__tab-title">{{ T "ergo_clients" }}</h2>
                 <p class="subheader-section__tab-paragraph">{{ T "ergo_clients_text" | safeHTML }}</p>
               </div>
               <div id="tabs-6" class="subheader-section__tab">
-                <h2 class="subheader-section__tab-title">{{ T "ergo_survivability" }}</h2>
                 <p class="subheader-section__tab-paragraph">{{ T "ergo_survivability_text" | safeHTML }}</p>
+              </div>
+              <div id="tabs-7" class="subheader-section__tab">
+                <p class="subheader-section__tab-paragraph">{{ T "ergo_clients_text" | safeHTML }}</p>
+              </div>
+              <div id="tabs-8" class="subheader-section__tab">
+                <p class="subheader-section__tab-paragraph">{{ T "ergo_consensus_text" | safeHTML }}</p>
               </div>
             </div>
           </div>
