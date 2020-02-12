@@ -91,6 +91,9 @@
     <a class=\"eg-link eg-link--red\" href=\"#\"><span>Meet the Ergo team</span></a>
   "
 
+- id: ergo_agile_text
+  translation: "Ergo is designed and implemented by a team of experienced developers and researchers, who hold publications and PhDs in cryptography, compiler theory, blockchain technology, and cryptographic e-cash. The team also has a solid background in core development with such cryptocurrencies and blockchain frameworks as Nxt, Scorex and Waves. "
+
 - id: news_title
   translation: News
 

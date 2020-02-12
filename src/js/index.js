@@ -3,7 +3,6 @@ import 'jquery-ui/ui/widgets/tabs';
 import Typed from 'typed.js';
 import { downloader } from './downloadMore';
 
-
 const dropDownFunc = (id) => {
   $(`#${id}`).closest('.dropdown').toggleClass('show');
 };
