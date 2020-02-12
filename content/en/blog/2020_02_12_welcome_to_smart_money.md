@@ -11,7 +11,7 @@ It’s the smartest crypto you’ve never heard of. Ergo takes the best of Bitco
 
 DeFi is set to be the major blockchain trend for 2020. Many new smart contract platforms are positioning to become one of the handful of big players in the space. With a strong head start, competent development team and impressive network, Ethereum’s place in this billion-dollar (and growing) movement is assured. The others must offer something different – dramatically different – to differentiate themselves against this background. Ergo is a smart contracts and DeFi platform that may have what it takes to carve out a niche in this fast-moving and competitive new sector.
 
-## Smarter contracts
+## Powerful But Safe Contracts
 
 Ethereum is an exceptional platform, but there are things it does not do well. Its Turing-complete smart contracts are powerful, but dangerous – as incidents from The DAO to the Parity wallet exploits have proven, with tens of millions of dollars in collateral damage. With complexity comes uncertainty, and potentially catastrophic vulnerabilities. Contracts can be expensive to run, and depending on network conditions may execute unpredictably – or not at all. 
 
