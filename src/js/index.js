@@ -1,9 +1,7 @@
 import $ from 'jquery';
 import 'jquery-ui/ui/widgets/tabs';
-import 'slick-carousel';
-import 'slick-carousel/slick/slick.css';
+import Typed from 'typed.js';
 import { downloader } from './downloadMore';
-
 
 const dropDownFunc = (id) => {
   $(`#${id}`).closest('.dropdown').toggleClass('show');
@@ -44,6 +42,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 40,
+    backSpeed: 15,
+    backDelay: 1200,
+    loop: true,
+  });
+
   $('.dropdown .dropdown__button').each(function (e) {
     this.addEventListener('click', (e) => {
       dropDownFunc(e.target.dataset.targetId);
@@ -55,64 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   $('.tabs').tabs();
-
-  $('.timeline-nav').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    asNavFor: '.timeline-slider',
-    centerMode: false,
-    focusOnSelect: true,
-    mobileFirst: false,
-    arrows: false,
-    variableWidth: true,
-    dots: false,
-    infinite: false,
-  });
-
-  $('.timeline-slider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    centerMode: false,
-    fade: true,
-    infinite: false,
-    asNavFor: '.timeline-nav',
-    cssEase: 'ease',
-    mobileFirst: true,
-    speed: 500,
-    responsive: [
-      {
-        breakpoint: 0,
-        settings: {
-          centerMode: false,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          centerMode: true,
-        },
-      },
-    ],
-  });
-
-  $('.slider-for').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.slider-nav',
-  });
-
-  $('.slider-nav').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    dots: false,
-    centerMode: true,
-    focusOnSelect: true,
-  });
-
 
   if (document.getElementsByClassName('download').length > 0) {
     downloader('download', 6);

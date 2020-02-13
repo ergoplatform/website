@@ -14,6 +14,7 @@ parserOptions:
   sourceType: module
 rules:
   no-console: 0
+  no-new: 0
 
 plugins:
   # https://github.com/babel/eslint-plugin-babel

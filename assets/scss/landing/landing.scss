@@ -7,6 +7,9 @@
     .header-section__container {
       padding-top: 240px;
       padding-bottom: 150px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
 
       @media (max-width: $md) {
         padding-top: 200px;
@@ -20,12 +23,12 @@
     }
 
     .header-section__title {
-      max-width: 681px;
       color: $white;
       font-size: 50px;
       line-height: 60px;
       font-weight: normal;
       margin: 0;
+      margin-bottom: 48px;
 
       @media (max-width: $sm) {
         font-size: 36px;
@@ -40,6 +43,7 @@
       @media (max-width: $xs) {
         font-size: 24px;
         line-height: 32px;
+        margin-bottom: 24px;
       }
 
       &--red {
@@ -47,8 +51,44 @@
       }
     }
 
+    .header-section__paragraph {
+      color: $white;
+      font-size: 20px;
+      line-height: 24px;
+      margin-top: 28px;
+      text-align: center;
+      margin-bottom: 0;
+      max-width: 750px;
+
+      @media (max-width: $xs) {
+        font-size: 16px;
+        line-height: 18px;
+        margin-top: 20px;
+      }
+    }
+
+    .slider {
+      margin-top: 40px;
+
+      .slider__paragraph {
+        color: $white;
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 16px;
+        margin-bottom: 0;
+        max-width: 750px;
+        text-align: center;
+
+        @media (max-width: $xs) {
+          font-size: 14px;
+          line-height: 16px;
+          margin-top: 12px;
+        }
+      }
+    }
+
     .header-section__icons {
-      margin-top: 35px;
+      margin-top: 24px;
 
       @media (max-width: $xs) {
         margin-top: 1rem;
@@ -57,6 +97,10 @@
 
     .header-section__button {
       margin-top: 70px;
+
+      @media (max-width: $xs) {
+        margin-top: 42px;
+      }
     }
   }
 
