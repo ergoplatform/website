@@ -37,13 +37,15 @@
     "node-sass": "^4.12.0",
     "postcss-cli": "^6.1.3",
     "slick-carousel": "^1.8.1",
+    "source-map-explorer": "^2.2.2",
     "style-loader": "^1.0.0",
     "webpack": "^4.39.3",
     "webpack-stream": "^5.2.1"
   },
   "scripts": {
     "build": "gulp build",
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "analyze": "source-map-explorer 'static/js/*.js'"
   },
   "browserslist": [
     "last 2 versions",
