@@ -6,10 +6,19 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 04 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://powerful-spire-67290.herokuapp.com/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Welcome to Smart Money</title>
+      <link>http://powerful-spire-67290.herokuapp.com/en/blog/2020_02_12_welcome_to_smart_money/</link>
+      <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://powerful-spire-67290.herokuapp.com/en/blog/2020_02_12_welcome_to_smart_money/</guid>
+      <description>It’s the smartest crypto you’ve never heard of. Ergo takes the best of Bitcoin and integrates Sigma protocols so powerful they make Ethereum look like it would lose a game of chess against your cat. If you’re tired of spin and hype over solid tech, Ergo will remind you that in crypto, it’s always been fashionable to be intelligent. Bright is the new black, people, and Ergo is set to dazzle you.</description>
+    </item>
     
     <item>
       <title>Ergo Platform Ecosystem Digest - January 2020</title>

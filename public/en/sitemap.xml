@@ -4,7 +4,7 @@
   
   <url>
     <loc>http://powerful-spire-67290.herokuapp.com/en/</loc>
-    <lastmod>2020-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -17,6 +17,13 @@
                 hreflang="en"
                 href="http://powerful-spire-67290.herokuapp.com/en/"
                 />
+  </url>
+  
+  <url>
+    <loc>http://powerful-spire-67290.herokuapp.com/en/blog/2020_02_12_welcome_to_smart_money/</loc>
+    <lastmod>2020-02-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
