@@ -43,6 +43,7 @@
       @media (max-width: $xs) {
         font-size: 24px;
         line-height: 32px;
+        margin-bottom: 24px;
       }
 
       &--red {
@@ -58,6 +59,12 @@
       text-align: center;
       margin-bottom: 0;
       max-width: 750px;
+
+      @media (max-width: $xs) {
+        font-size: 16px;
+        line-height: 18px;
+        margin-top: 20px;
+      }
     }
 
     .slider {
@@ -71,6 +78,12 @@
         margin-bottom: 0;
         max-width: 750px;
         text-align: center;
+
+        @media (max-width: $xs) {
+          font-size: 14px;
+          line-height: 16px;
+          margin-top: 12px;
+        }
       }
     }
 
@@ -84,6 +97,10 @@
 
     .header-section__button {
       margin-top: 70px;
+
+      @media (max-width: $xs) {
+        margin-top: 42px;
+      }
     }
   }
 

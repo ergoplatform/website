@@ -35,7 +35,7 @@
     <br/><br/>
     Ergo draws on ten years of blockchain development, complementing tried and tested principles with the best peer-reviewed academic research into cryptography, consensus models and digital currencies. We start with solid blockchain basics and implement new and powerful cryptography natively. Our team has a solid background in core development with cryptocurrencies and blockchain frameworks including Nxt, Scorex and Waves, and our lean approach means we can prioritise new features and requirements quickly.
     <br/><br/>
-    <a class=\"eg-link eg-link--red\" href=\"#\"><span>Explore our key research</span></a>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/documents/\"><span>Explore our key research</span></a>
   "
 
 - id: ergo_decentralization_text
@@ -43,7 +43,7 @@
     <br/><br/>
     Ergo’s smart contracts allow us to execute wide-ranging tasks, but we always know in advance how much the code will cost and whether it will run successfully. Meanwhile, we can still write Turing-complete scripts by iterating processes across multiple blocks. That means Ergo can support versatile dApps that run predictably, with known costs, and don’t have any of the dangers of unrestricted functionality.
     <br/><br/>
-    <a class=\"eg-link eg-link--red\" href=\"#\"><span>ErgoScript tutorials and integration tools</span></a>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/tools/\"><span>ErgoScript tutorials and integration tools</span></a>
   "
 
 - id: ergo_economy_text
@@ -61,7 +61,7 @@
     <br/><br/>
     Ergo’s blockchain uses the Autolykos algorithm for consensus, which is a variant of Equihash and offers better ASIC resistance, as well as a degree of pool resistance. This enables better decentralization, avoiding large pools that can collude or be coerced to attack the network. At the same time, we recognise that ordinary users who do not run a full node should enjoy the same security benefits as miners. Ergo’s non-interactive proof-of-proof-of-work (NiPoPoW) allows anyone to make and verify transactions with complete confidence, without needing the storage, bandwidth and time required to download the full blockchain. In fact, as little as 1 MB of data is required – meaning any device can be used.
     <br/><br/>
-    <a class=\"eg-link eg-link--red\" href=\"#\"><span>Choose your wallet</span></a>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/wallets\"><span>Choose your wallet</span></a>
   "
 
 - id: ergo_survivability_text
@@ -70,7 +70,7 @@
     <br/><br/>
     At this point, in addition to transaction fees, miners will also benefit from storage rent fees charged on boxes (UTXOs) that have not moved their coins for four years or more. There are at least two advantages to this approach. Firstly, it gives miners an additional source of revenues once block rewards end. Since the security of the network depends on hashrate and miner participation, this is an important incentive to provide. Secondly, it has the effect of recycling lost coins (and dust) back into the Ergo economy. Research suggests that up to 4 million BTC have been permanently removed from circulation due to lost private keys. Ergo’s storage fees will slowly reclaim these for productive purposes, while users who want to hold coins for the long term can avoid being charged simply by moving their funds.
     <br/><br/>
-    <a class=\"eg-link eg-link--red\" href=\"#\"><span>Supported exchanges</span></a>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/exchanges/\"><span>Supported exchanges</span></a>
   "
 
 - id: ergo_clients_text
@@ -79,7 +79,7 @@
     <br/><br/>
     In Ergo’s case, these Foundation tokens are managed by a smart contract built into the protocol. 10% of each block reward for the first two years, or 7.5 ERG per block, are allocated to the Treasury, with the remaining 67.5 ERG going to miners. As block rewards begin to reduce after two years, the Foundation will continue to receive rewards over 67.5 ERG, with the Treasury allocation dropping to zero after 2.5 years.
     <br/><br/>
-    <a class=\"eg-link eg-link--red\" href=\"#\"><span>More about the Ergo Foundation</span></a>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/foundation/\"><span>More about the Ergo Foundation</span></a>
   "
 
 - id: ergo_consensus_text
@@ -88,7 +88,7 @@
     <br/><br/>
     We are also supported by community developers, who may work on a volunteer basis or who receive grants from the Foundation for implementing useful features and dApps. For example, ErgoMix, a decentralized mixing service based on Sigma protocols, was built by a third party developer from the Ergo community, and Ergo’s decentralized exchange is also being developed on this basis.
     <br/><br/>
-    <a class=\"eg-link eg-link--red\" href=\"#\"><span>Meet the Ergo team</span></a>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/team/\"><span>Meet the Ergo team</span></a>
   "
 
 - id: ergo_agile_text
