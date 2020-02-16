@@ -1,7 +1,6 @@
 ---
 title: "Welcome to Smart Money"
 date: 2020-02-12
-draft: false
 author: "Ergo team"
 authorPhoto: "/img/logotype_black_circle.svg"
 blogPhoto: "/img/blog/welcometo.jpg"

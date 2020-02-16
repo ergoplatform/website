@@ -1,0 +1,17 @@
+.eg-tag {
+  border: 1px solid $light-red;
+  padding: 5px 8px;
+  border-radius: 15px;
+  color: $light-red;
+
+  &:hover {
+    text-decoration: none !important;
+    transition: color 0.2s ease-in, background 0.2s ease-in;
+    color: $white;
+    background: $light-red;
+  }
+
+  & + .eg-tag {
+    margin-left: 5px;
+  }
+}

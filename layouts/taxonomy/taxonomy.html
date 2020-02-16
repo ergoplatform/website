@@ -1,0 +1,41 @@
+{{ define "main" }}
+  <!-- Page that displays after clicking on a post's tag -->
+  <main>
+    <section class="container container--top-content grid-container-1k2 container--left-lines container--lg-padding-bottom eg-blog">
+      <div>
+        <h2 class="eg-title">{{ T "tag_title" }} "{{ .Data.Term }}"</h2>
+        <div class="eg-text eg-mt-1-5 eg-mb-2-5">
+          <a href="{{ `blog` | absLangURL | safeURL }}" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>{{ T "tag_blog"}}</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="download grid-container-1k1 grid-container--md-margins grid-container-1k1__lg">
+          {{ range .Pages }}
+            <div class="eg-blog__item download__post">
+              <a href="{{.Permalink}}" class="eg-link">
+                <div class="eg-blog__item-img"><img src="{{ .Params.blogPhoto }}" height="188" width="335" alt="blog photo"></div>
+                <div class="eg-mb-1"><h3 class="eg-blog__item-title eg-link" href="{{.Permalink}}"><span>{{ truncate 50 .Title }}</span></h3></div>
+                <div class="eg-mb-1"><p class="eg-blog__item-paragraph eg-link" href="{{.Permalink}}"><span>{{ truncate 155 .Summary}}</span></p></div>
+              </a>
+              {{if .Params.tags}}
+                <ul class="eg-my-1-5">
+                  {{ range .Params.tags }}
+                    <a class="eg-tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{.}}</a>
+                  {{ end }}
+                </ul>
+              {{ end }}
+              <div class="eg-author">
+                <img src="{{ .Params.authorPhoto }}" alt="author img" class="eg-author__img" width="60" height="60">
+                <div class="eg-author__info">
+                  <h4 class="eg-author__info-title">{{ .Params.Author }}</h4>
+                  <p class="eg-author__info-paragraph">{{ if eq .Language.Lang "cn" }}{{ .Date.Format "2006.01.02" }}{{ else }}{{ .Date.Format "2 January, 2006" }}{{end}}</p>
+                </div>
+              </div>
+            </div>
+          {{end}}
+        </div>
+        <button class="download-button eg-btn eg-btn--outline-orange d-none">{{ T "news_load_more" }}</button>
+      </div>
+    </section>
+  </main>
+{{ end }}

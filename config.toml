@@ -3,11 +3,7 @@ title = "Ergo"
 languageCode = "en"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
-tags = ["development", "Go", "fast", "Blogging"]
 pygmentsUseClasses=true
-
-[taxonomies]
-  tag = "tags"
 
 # Links format
 [permalinks]

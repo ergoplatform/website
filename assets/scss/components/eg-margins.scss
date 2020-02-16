@@ -44,6 +44,18 @@
   }
 }
 
+.eg-my-1 {
+  margin: 1rem 0;
+}
+
+.eg-my-1-5 {
+  margin: 1.5rem 0;
+}
+
+.eg-mt-1-5 {
+  margin-top: 1.5rem;
+}
+
 .eg-my-sm-1 {
   @media (max-width: $sm) {
     margin-top: 1rem !important;

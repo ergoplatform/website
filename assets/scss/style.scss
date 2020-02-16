@@ -17,6 +17,7 @@
 @import 'components/eg-popup';
 @import 'components/eg-exchanges';
 @import 'components/eg-link';
+@import 'components/eg-tag';
 @import 'footer';
 @import 'header';
 @import 'landing/landing';
@@ -212,8 +213,6 @@ p {
     grid-gap: 20px 9% !important;
 
     @media (max-width: $sm) {
-      grid-template-columns: 1fr;
-      grid-gap: calc(1.5rem + 4px);
       margin-top: 0;
     }
   }
@@ -222,9 +221,13 @@ p {
     grid-gap: 40px 9% !important;
 
     @media (max-width: $sm) {
-      grid-template-columns: 1fr;
-      grid-gap: calc(1.5rem + 4px);
       margin-top: 0;
+    }
+  }
+
+  &__lg {
+    @media (max-width: $lg) {
+      grid-template-columns: 1fr;
     }
   }
 }

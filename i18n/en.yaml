@@ -1088,3 +1088,9 @@
               class=\"eg-text__link eg-link\"
               href=\"https://ergoplatform.org/en/documents/\"
             ><span>https://ergoplatform.org/en/documents/</span></a>"
+
+- id: tag_title
+  translation: "Search by tag"
+
+- id: tag_blog
+  translation: "Back to blog"
