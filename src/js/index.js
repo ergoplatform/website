@@ -7,6 +7,7 @@ const dropDownFunc = (id) => {
   $(`#${id}`).closest('.dropdown').toggleClass('show');
 };
 
+
 const copyToClipboard = (str) => {
   const el = document.createElement('textarea');
   el.value = str;

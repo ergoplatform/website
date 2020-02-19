@@ -62,7 +62,7 @@ gulp.task('js', () => gulp.src('./src/js/index.js')
         'jquery-collapse': 'jquery-collapse',
       }),
     ],
-    devtool: 'source-map',
+    // devtool: 'source-map',
   }))
   .on('error', swallowError)
   .pipe(gulp.dest('static/js')));
