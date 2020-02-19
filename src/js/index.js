@@ -42,14 +42,18 @@ document.addEventListener('DOMContentLoaded', () => {
       document.fonts.add(font);
     });
   }
+  const typedId = '#typed';
+  const typedElement = document.getElementById(typedId);
 
-  new Typed('#typed', {
-    stringsElement: '#typed-strings',
-    typeSpeed: 40,
-    backSpeed: 15,
-    backDelay: 1200,
-    loop: true,
-  });
+  if (typedElement) {
+    new Typed(typedId, {
+      stringsElement: '#typed-strings',
+      typeSpeed: 40,
+      backSpeed: 15,
+      backDelay: 1200,
+      loop: true,
+    });
+  }
 
   $('.dropdown .dropdown__button').each(function (e) {
     this.addEventListener('click', (e) => {
