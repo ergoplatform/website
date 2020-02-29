@@ -6,10 +6,28 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Coinbarn, a simple wallet for Ergo has been published in Chrome store</title>
+      <link>https://ergoplatform.org/en/news/2020_02_26/</link>
+      <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2020_02_26/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ergo Mainnet 3.2.1 released</title>
+      <link>https://ergoplatform.org/en/news/2020_02_19/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2020_02_19/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Welcome to Smart Money</title>
@@ -18,6 +36,15 @@
       
       <guid>https://ergoplatform.org/en/blog/2020_02_12_welcome_to_smart_money/</guid>
       <description>It’s the smartest crypto you’ve never heard of. Ergo takes the best of Bitcoin and integrates Sigma protocols so powerful they make Ethereum look like it would lose a game of chess against your cat. If you’re tired of spin and hype over solid tech, Ergo will remind you that in crypto, it’s always been fashionable to be intelligent. Bright is the new black, people, and Ergo is set to dazzle you.</description>
+    </item>
+    
+    <item>
+      <title>Ergo Platform Ecosystem Digest</title>
+      <link>https://ergoplatform.org/en/news/2020_02_04/</link>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2020_02_04/</guid>
+      <description></description>
     </item>
     
     <item>
