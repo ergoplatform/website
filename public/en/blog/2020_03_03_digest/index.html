@@ -11,12 +11,14 @@
     <link rel="preload" href="/fonts/LabGrotesque-Regular-hint-all.woff" as="font" type="font/woff" crossorigin>
 
     
-      <meta name="description" content="Firstly, we would like to thank many enthusiasts, developers, miners, other folks, and our families for measureless help with Ergo development and launching. The launch finishes a few years period of initial research and development by the Team, and also starts a new epoch, where the core technology is mostly set in stone and gradual improvements in protocol implementations and infrastructure projects become the main focus.
-The current core Ergo Core Team remains fully committed to the project (at least, while the Foundation Treasury enables that).">
+      <meta name="description" content="Ergo Platform Roadmap for 2020 has been released, the plan is minimum and very realistic https://ergoplatform.org/en/blog/2020_02_02/
+  Miners tested raising computational cost limit per block via voting with success
+  &amp;ldquo;Bypassing Non-Outsourceable Proof-of-Work Schemes Using Collateralized Smart Contracts&amp;rdquo; https://ia.cr/2020/044 was presented by Alex Chepurnoy at WTSC workshop associated with Financial Cryptography and Data Security 2020 in Malaysia
+  Few AMA sessions have been held with the Ergo team by Probit, ViteXExchange, and CryptoDaku.">
     
 
     
-    <title>After-Launch Thoughts and Ergo Roadmap | Ergo</title>
+    <title>Ergo Platform Ecosystem Digest - February 2020 | Ergo</title>
 
     
     
@@ -126,12 +128,6 @@ The current core Ergo Core Team remains fully committed to the project (at least
             
               
             
-              
-                <li class="dd-language__item dd-language__item_hidden">
-                  <a class="dd-language__link dd-language__link--white eg-link" href="https://ergoplatform.org/cn/blog/2019_07_09_after_launch/"><span>中文</span></a>
-                </li>
-              
-            
           </ul>
         </div>
         <button class="eg-navbar__trigger eg-navbar__trigger--black" type="button" aria-expanded="false" aria-label="Toggle navigation">
@@ -148,64 +144,70 @@ The current core Ergo Core Team remains fully committed to the project (at least
         <a href="https://ergoplatform.org/en/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>Back to all posts</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
-        <h1 class="eg-title eg-mb-1">After-Launch Thoughts and Ergo Roadmap</h1>
+        <h1 class="eg-title eg-mb-1">Ergo Platform Ecosystem Digest - February 2020</h1>
         
         <div class="eg-author">
-          <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img">
+          <img src="/img/logotype_black_circle.svg" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
-            <h4 class="eg-author__info-title">Alex Chepurnoy</h4>
-            <p class="eg-author__info-paragraph">9 July, 2019</p>
+            <h4 class="eg-author__info-title">Ergo team</h4>
+            <p class="eg-author__info-paragraph">3 March, 2020</p>
           </div>
         </div>
         <div class="eg-blog__single-img">
-          <img src="/img/blog/thanks.jpg" alt="blog photo">
+          <img src="/img/blog/february_digest.jpg" alt="blog photo">
         </div>
         <div class="eg-blog__single-content">
           <div>
-            <p>Firstly, we would like to thank many enthusiasts, developers, miners, other folks, and our families for measureless help with Ergo development and launching. The launch finishes a few years period of initial research and development by the Team, and also starts a new epoch, where the core technology is mostly set in stone and gradual improvements in protocol implementations and infrastructure projects become the main focus.</p>
-<p>The current core Ergo Core Team remains fully committed to the project (at least, while the Foundation Treasury enables that). With that in mind, let me give the light on current status of the project and future plans.</p>
-<h2 id="current-status">Current status</h2>
-<p>In the first place, let me remind some keypoints of Ergo:</p>
-<ol>
+            <ul>
 <li>
-<p>It is still a conservative Proof-of-Work blockchain with a strictly limited coin supply, a Bitcoin-like transactional model, a cautiously chosen target delay between blocks, and so on. In that sense Ergo is similar to Bitcoin, and time has proven that this is the best choice for those who value decentralization and sound money.</p>
+<p>Ergo Platform Roadmap for 2020 has been released, the plan is minimum and very realistic <a href="https://ergoplatform.org/en/blog/2020_02_02/">https://ergoplatform.org/en/blog/2020_02_02/</a></p>
 </li>
 <li>
-<p>Despite Bitcoin-like transactional model (with one-time unspent transaction outputs), Ergo supports enhanced contractual money possibilities without sacrificing security. We already have examples for crowdfunding, ICO, cold wallet contract, and so on. Also, Ergo provides best access to generic discrete log based zero-knowledge proofs, and thus it is better (in some cases, the only choice) for protocols to be built on top of it. For example, there is 2-out-of-3 multi-signature already done in the network, and this signature preserves zero-knowledge (so no third-party observer can ascertain which two parties actually signed the transaction input). In the same way, ring signatures (1-out-of-N signatures preserving zero-knowledge) are coming for free. Also please take a look at Ergomix, a <a href="https://docs.ergoplatform.com/sigmastate_protocols.pdf">non-interactive mixing scheme</a>, and maybe the first practical non-interactive mixing proposal.</p>
+<p>Miners tested raising computational cost limit per block via voting with success</p>
 </li>
 <li>
-<p>Ergo has native support for custom tokens. Also it has support for authenticated data structures which can be trusted (modification of a dataset happening outside the blockchain by a trusted party) or trustless (modifications are happening on-chain as defined by a contract, but only very compact dataset digest is stored in UTXO set anyway).</p>
+<p>&ldquo;Bypassing Non-Outsourceable Proof-of-Work Schemes Using Collateralized Smart Contracts&rdquo; <a href="https://ia.cr/2020/044">https://ia.cr/2020/044</a> was presented by Alex Chepurnoy at WTSC workshop associated with Financial Cryptography and Data Security 2020 in Malaysia</p>
 </li>
 <li>
-<p>It has pool-resistant and (somewhat) ASIC-resistant Autolykos Proof-of-Work scheme, which is targeting top-level GPUs, with best performance being on GPUs with 8gb+ RAM.</p>
+<p>Few AMA sessions have been held with the Ergo team by Probit, ViteXExchange, and CryptoDaku. <a href="https://bitcointalk.org/index.php?topic=5150971.msg53894939#msg53894939">https://bitcointalk.org/index.php?topic=5150971.msg53894939#msg53894939</a></p>
 </li>
 <li>
-<p>For better decentralization in regards with possible full-nodes count decline with time, Ergo for first time supports stateless fully secure clients. Efficient SPV clients support is also done, but via <a href="https://nipopows.com/">NIPoPoW technology</a>, not the FlyClient used in Grin.</p>
+<p>Anon92048 is working on non-custodial and non-interactive mixer implementing ErgoMix</p>
 </li>
 <li>
-<p>No need for hot debates on changing block size and many other parameters. Just using block size as an example, a miner can simply start voting at the beginning of an epoch (consisting of 1,024 blocks), and if 50+% of miners within the epoch support a change (1% block size increase or decrease in block size), it will happen. For many aspects of the protocol, soft-fork updates are possible, if 90+% of mining power votes are for a soft fork. Here Ergo is finishing what Bitcoin, with its soft-forkability, and Ethereum, with its dynamic gas limit per block readjustment, have started.</p>
+<p>Frontpage was updated <a href="https://ergoplatform.org/en/">https://ergoplatform.org/en/</a></p>
 </li>
-</ol>
-<p>All of these features are probably not very visible now, just one week after launch, but they will define unique Ergo characteristics in the long-term. Please note, for success in the long-term, you need to go from first principles.
-Ergo is doing that, and not in the tech only: please note that Ergo has well-defined social contract described in Section 2 of the whitepaper.</p>
-<h2 id="further-ergo-core-team-duties">Further Ergo Core Team Duties</h2>
-<p>While the reference node implementation is working more or less well, its interface could be confusing even for skilled users, and there is no infrastructure, such as wallets, frameworks to develop applications etc. Thus the core team will spend coming months on delivering needed frameworks and API improvements and supporting wallets and exchanges, some of which are already in-process. Also note that many components of the node are not efficient now, so performance of the node will be significantly increased in the observable future. At the same time, external teams continue to do security audits. The most critical parts of protocol design and reference implementation have already been audited, sometimes by more than one party.</p>
-<h2 id="hardforking-policy">Hardforking policy</h2>
-<p>Ergo is trying to avoid hard-forks. Emission, proof-of-work, basics of transactional model and other core things should not be changed at all as any change about core parts of design means another chain. However, developers may propose hard-forks within first 12 months if (and only if):</p>
-<ul>
-<li>a hard-fork is about security fixes only. The only exception is about making cost of particular instructions adjustable
-via miners voting, which was planned but not delivered in the current mainnet.</li>
-<li>a hard-fork is supported by 90+% of miners.</li>
-<li>a hard-fork is not breaking old contracts, freezing or moving any funds.</li>
+<li>
+<p>Welcome to Smart Money article published <a href="https://ergoplatform.org/en/blog/2020_02_12_welcome_to_smart_money/">https://ergoplatform.org/en/blog/2020_02_12_welcome_to_smart_money/</a></p>
+</li>
+<li>
+<p>Dev meeting summary <a href="https://twitter.com/ergoplatformorg/status/1230119289878872064">https://twitter.com/ergoplatformorg/status/1230119289878872064</a></p>
+</li>
+<li>
+<p>Finally Coingecko has updated info about Ergo <a href="https://www.coingecko.com/en/coins/ergo">https://www.coingecko.com/en/coins/ergo</a></p>
+</li>
+<li>
+<p>Ergo Mainnet 3.2.1 released <a href="https://github.com/ergoplatform/ergo/releases/tag/v3.2.1">https://github.com/ergoplatform/ergo/releases/tag/v3.2.1</a></p>
+</li>
+<li>
+<p>Ergo Playgrounds - Run contracts + off-chain code in the browser <a href="https://www.ergoforum.org/t/ergo-playgrounds-run-contracts-off-chain-code-in-the-browser/185">https://www.ergoforum.org/t/ergo-playgrounds-run-contracts-off-chain-code-in-the-browser/185</a></p>
+</li>
+<li>
+<p>Coinbarn, a simple wallet for Ergo has been published in the Chrome store! <a href="https://chrome.google.com/webstore/detail/coinbarn-wallet/pachdpadffdgjhmmgpdjkpnlhkdhbfgf">https://chrome.google.com/webstore/detail/coinbarn-wallet/pachdpadffdgjhmmgpdjkpnlhkdhbfgf</a> Desktop versions can be found here <a href="https://github.com/coinbarn/coinbarn-extension/releases/">https://github.com/coinbarn/coinbarn-extension/releases/</a></p>
+</li>
+<li>
+<p>The new bounty campaign, in partnership with Magnum wallet went live <a href="https://twitter.com/Magnum_Wallet/status/1232959453529616385">https://twitter.com/Magnum_Wallet/status/1232959453529616385</a></p>
+</li>
+<li>
+<p><a href="http://erg.ezpool.io/">http://erg.ezpool.io/</a> went out of private testing mode and is offering both Nvidia and AMD optimized miners. Congratulations to the pool creator who broke non-outsourceable PoW scheme</p>
+</li>
+<li>
+<p>Most active exchanges - Probit, Tidex, Waves Exchange <a href="https://ergoplatform.org/en/exchanges/">https://ergoplatform.org/en/exchanges/</a></p>
+</li>
+<li>
+<p>Please join the Ergo community to help with development and promotion! Our Telegram: <a href="https://t.me/ergoplatform">https://t.me/ergoplatform</a> | Discord: <a href="https://discordapp.com/invite/gYrVrjS">https://discordapp.com/invite/gYrVrjS</a> | Twitter: <a href="https://twitter.com/ergoplatformorg">https://twitter.com/ergoplatformorg</a> | Github: <a href="https://github.com/ergoplatform">https://github.com/ergoplatform</a></p>
+</li>
 </ul>
-<h2 id="community-matters">Community Matters!</h2>
-<p>Development should become more transparent and open to external contributors, with gradual switching to EPIPs (EPIP stands for Ergo Platform Improvement Proposal), formal documents appearing and discussed before implementation like Bitcoin and Ethereum are already using BIPs and EIPs, respectively.</p>
-<p>Ergo is also in need of an ecosystem of frameworks and applications around it. A part of the treasury will be spent on grants for ecosystem developers. Details of the grant program will be announced later, however, you may contact the Ergo Core Team right now with any proposals. Also, the team would be happy to help with advice, needed API improvements, and so on. From an investor perspective, investing in projects on top of Ergo may be more valuable in comparison with other blockchains, considering the commitments to protocol stability made by the team.</p>
-<p>Also, please spread the word about Ergo! We are a nascent blockchain getting it's feet off the ground and are looking for contributors who are interested in writing documentation, articles, and other material.</p>
-<h2 id="ergo-and-ergo-data">Ergo and Ergo Data</h2>
-<p>Initially, it was announced (couple of years ago) that two chains will be launched, Ergo and Ergo Data. Technology would be the same (or very similar), but parameters are different. The main idea behind Ergo Data is to serve needs of data-intensive applications, such as land registries, certificate directories etc.</p>
-<p>Currently, Ergo Data plans are unclear. The network will be launched only in case users will show demand for it. Also,
-Ergo Data would most likely be a sidechain of Ergo. Also, it will not be launched soon in any case, and only after Ergo  having established a solid infrastructure base. In case of Ergo Data chain being launched, EFYT holders at the moment of Ergo launch will get ErgoData tokens. A snapshot of EFYT holders at the moment of launch has already been done.</p>
 
           </div>
         </div>
@@ -213,7 +215,7 @@ Ergo Data would most likely be a sidechain of Ergo. Also, it will not be launche
   <p class="eg-text__paragraph eg-text__paragraph--26">Share post</p>
   <ul class="eg-social">
     <li class="eg-share_item">
-      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_07_09_after_launch%2f" target="_blank">
+      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2020_03_03_digest%2f" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path d="M17 14.0001H25V28.4H17V14.0001Z" fill="white"/>
@@ -224,7 +226,7 @@ Ergo Data would most likely be a sidechain of Ergo. Also, it will not be launche
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_07_09_after_launch%2f&amp;hashtags=ergoplatform" target="_blank">
+      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2020_03_03_digest%2f&amp;hashtags=ergoplatform" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path class="st0" fill-rule="evenodd" clip-rule="evenodd" d="M29 16.4204C28.4478 16.6615 27.855 16.8241 27.2323 16.8975C27.868 16.5225 28.3558 15.9287 28.5857 15.2214C27.9909 15.5684 27.3322 15.8208 26.6315 15.9565C26.0699 15.3677 25.2701 15 24.3851 15C22.6855 15 21.3076 16.3562 21.3076 18.0291C21.3076 18.2666 21.3347 18.4978 21.3873 18.7195C18.8298 18.5933 16.5616 17.3871 15.0441 15.5542C14.7792 16.0018 14.6274 16.5222 14.6274 17.0774C14.6274 18.1283 15.1706 19.0554 15.9963 19.5989C15.4921 19.5831 15.0174 19.4469 14.6024 19.22C14.6021 19.2325 14.6021 19.2452 14.6021 19.2581C14.6021 20.7258 15.6632 21.9504 17.0707 22.2285C16.8128 22.2979 16.5409 22.335 16.2599 22.335C16.0619 22.335 15.8693 22.3158 15.6812 22.2805C16.0728 23.4839 17.2097 24.36 18.5559 24.3843C17.5025 25.197 16.176 25.6812 14.734 25.6812C14.4857 25.6812 14.2408 25.6667 14 25.6384C15.3617 26.4982 16.979 27 18.7175 27C24.3777 27 27.4734 22.3837 27.4734 18.3804C27.4734 18.2494 27.4705 18.1184 27.4645 17.9883C28.0658 17.5614 28.5873 17.0281 29 16.4204Z" fill="#FF4221"/>
@@ -232,7 +234,7 @@ Ergo Data would most likely be a sidechain of Ergo. Also, it will not be launche
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link copy-link" href="https://ergoplatform.org/en/blog/2019_07_09_after_launch/" target="_blank">
+      <a class="eg-share__link copy-link" href="https://ergoplatform.org/en/blog/2020_03_03_digest/" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M39.91 19.3528L34.2335 6.06338C34.1186 5.78985 33.898 5.57515 33.6227 5.46487L20.2117 0.0807171C19.9364 -0.0292029 19.6283 -0.027376 19.3547 0.089384L6.0641 5.76578C5.79022 5.8811 5.57549 6.10129 5.46522 6.37698L0.0816753 19.7881C-0.0303977 20.0656 -0.0267767 20.3716 0.0903423 20.6455L5.76643 33.9366C5.88175 34.2101 6.10231 34.4249 6.37727 34.5352L19.7883 39.919C19.9209 39.9727 20.0639 40 20.2048 40C20.3544 40 20.5043 39.971 20.647 39.909L33.9359 34.2324C34.2097 34.1171 34.4245 33.8966 34.5348 33.6216L39.9183 20.2102C40.0304 19.9327 40.0267 19.6267 39.91 19.3528Z" stroke="#FF4221"/>
@@ -288,23 +290,6 @@ Ergo Data would most likely be a sidechain of Ergo. Also, it will not be launche
                 </div>
               
             
-              
-                <div class="eg-blog__item related__post">
-                  <a href="https://ergoplatform.org/en/blog/2020_03_03_digest/" class="eg-link">
-                    <div class="eg-blog__item-img"><img src="/img/blog/february_digest.jpg" height="188" width="335" alt="blog photo"></div>
-                    <div class="eg-mb-1"><h3 class="eg-blog__item-title eg-link" href="https://ergoplatform.org/en/blog/2020_03_03_digest/"><span>Ergo Platform Ecosystem Digest - February 2020</span></h3></div>
-                    <div class="eg-mb-1"><p class="eg-blog__item-paragraph eg-link" href="https://ergoplatform.org/en/blog/2020_03_03_digest/"><span>Ergo Platform Roadmap for 2020 has been released, the plan is minimum and very realistic https://ergoplatform.org/en/blog/2020_02_02/
-  Miners tested …</span></p></div>
-                  </a>
-                  
-                  <div class="eg-author">
-                    <img src="/img/logotype_black_circle.svg" alt="author img" class="eg-author__img" width="60" height="60">
-                    <div class="eg-author__info">
-                      <h4 class="eg-author__info-title">Ergo team</h4>
-                      <p class="eg-author__info-paragraph">3 March, 2020</p>
-                    </div>
-                  </div>
-                </div>
               
             
               
@@ -546,6 +531,22 @@ Developer MH Samadani published …</span></p></div>
                 </div>
               
             
+              
+                <div class="eg-blog__item related__post">
+                  <a href="https://ergoplatform.org/en/blog/2019_07_09_after_launch/" class="eg-link">
+                    <div class="eg-blog__item-img"><img src="/img/blog/thanks.jpg" height="188" width="335" alt="blog photo"></div>
+                    <div class="eg-mb-1"><h3 class="eg-blog__item-title eg-link" href="https://ergoplatform.org/en/blog/2019_07_09_after_launch/"><span>After-Launch Thoughts and Ergo Roadmap</span></h3></div>
+                    <div class="eg-mb-1"><p class="eg-blog__item-paragraph eg-link" href="https://ergoplatform.org/en/blog/2019_07_09_after_launch/"><span>Firstly, we would like to thank many enthusiasts, developers, miners, other folks, and our families for measureless help with Ergo development and …</span></p></div>
+                  </a>
+                  
+                  <div class="eg-author">
+                    <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
+                    <div class="eg-author__info">
+                      <h4 class="eg-author__info-title">Alex Chepurnoy</h4>
+                      <p class="eg-author__info-paragraph">9 July, 2019</p>
+                    </div>
+                  </div>
+                </div>
               
             
               
