@@ -12,6 +12,27 @@
     
     
     <item>
+      <title>Building Ergo: Sigma protocols</title>
+      <link>https://ergoplatform.org/en/blog/2020_03_16_ergo_sigma/</link>
+      <pubDate>Mon, 16 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2020_03_16_ergo_sigma/</guid>
+      <description>Ergo’s smart contracts and DeFi functionality are built on Sigma protocols – a powerful, flexible class of zero-knowledge proofs. Find out more about why they’re so important, and how they put Ergo head and shoulders above the competition.
+Cryptography is a fascinating area, and one of the most exciting and intriguing concepts it offers are zero-knowledge proofs. In simple terms, a zero-knowledge proof allows someone to prove they know the solution to a problem without actually revealing the solution itself.</description>
+    </item>
+    
+    <item>
+      <title>Introducing Σ3 – ErgoMixer</title>
+      <link>https://ergoplatform.org/en/blog/2020_03_20_ergo_mixer/</link>
+      <pubDate>Mon, 16 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2020_03_20_ergo_mixer/</guid>
+      <description>The project uses Ergo’s Sigma protocols to enable efficient, trustless mixing of funds, enabling a high degree of privacy while ensuring security is not compromised.
+ErgoMixer command-line demo tool along with detailed technical description can be found at https://github.com/anon92048/ergo-mixer-demo .
+Ergo’s Sigma protocols can be used to create many interesting and exciting DeFi use cases, with greater simplicity, efficiency and security than other smart contract platforms offer. Created by one of Ergo’s community members @anon92408, Σ3 (‘Sigma Three’) is a powerful mixer that works by pooling funds and enabling participants to spend them without anyone knowing who made the transactions.</description>
+    </item>
+    
+    <item>
       <title>Building Ergo: UTXO vs Account</title>
       <link>https://ergoplatform.org/en/blog/2020_03_03_building_utxo/</link>
       <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
