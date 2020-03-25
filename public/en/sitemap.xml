@@ -3,15 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ergoplatform.org/en/blog/2020_03_16_ergo_sigma/</loc>
-    <lastmod>2020-03-16T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://ergoplatform.org/en/</loc>
-    <lastmod>2020-03-16T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -27,6 +20,27 @@
   </url>
   
   <url>
+    <loc>https://ergoplatform.org/en/news/2020_03_24/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/en/news/2020_03_23/</loc>
+    <lastmod>2020-03-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/en/blog/2020_03_16_ergo_sigma/</loc>
+    <lastmod>2020-03-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://ergoplatform.org/en/blog/2020_03_20_ergo_mixer/</loc>
     <lastmod>2020-03-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -35,6 +49,13 @@
   
   <url>
     <loc>https://ergoplatform.org/en/blog/2020_03_03_building_utxo/</loc>
+    <lastmod>2020-03-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/en/news/2020_03_03/</loc>
     <lastmod>2020-03-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

@@ -6,10 +6,28 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ergo Mainnet 3.2.2 released</title>
+      <link>https://ergoplatform.org/en/news/2020_03_24/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2020_03_24/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Introducing Σ3 - ErgoMixer</title>
+      <link>https://ergoplatform.org/en/news/2020_03_23/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2020_03_23/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Building Ergo: Sigma protocols</title>
@@ -40,6 +58,15 @@ Ergo’s Sigma protocols can be used to create many interesting and exciting DeF
       <guid>https://ergoplatform.org/en/blog/2020_03_03_building_utxo/</guid>
       <description>Ergo takes the most secure and best-established features of Bitcoin and implements advanced new cryptographic features on its rock-solid foundations. This series explores the choices we have made in creating Ergo, with the first article unpacking the advantages of the UTXO model.
 When you’re dealing with financial value, you cannot afford to take chances. Every architecture decision in a cryptocurrency platform has implications. While there are different ways to solve the same problem, some solutions are better tested and more reliable than others.</description>
+    </item>
+    
+    <item>
+      <title>Building Ergo: UTXO vs Account</title>
+      <link>https://ergoplatform.org/en/news/2020_03_03/</link>
+      <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2020_03_03/</guid>
+      <description></description>
     </item>
     
     <item>
