@@ -11,11 +11,12 @@
     <link rel="preload" href="/fonts/LabGrotesque-Regular-hint-all.woff" as="font" type="font/woff" crossorigin>
 
     
-      <meta name="description" content="A local exchange trading system (LETS) is a local mutual credit association which members are allowed to create common credit money individually, with all the deals in the system written into a common ledger. As an example, assume that Alice with zero balance is willing to buy a liter of raw milk from Bob. First, they agree on a price, for example, assume that the price is about 2 Euro (as Alice and Bob are living in Ireland).">
+      <meta name="description" content="Ergo enables new models of financial interaction, underpinned by smart contracts built on flexible and powerful Sigma protocols but easily accessible to developers.
+One of the most exciting things about blockchain is the possibility of making digital agreements without any trusted intermediaries. In the simplest use case, pioneered by Bitcoin, Alice can send a payment directly to Bob, wherever the two of them are located around the world, with no bank or any trusted third party needed.">
     
 
     
-    <title>A Local Exchange Trading System On Top Of Ergo | Ergo</title>
+    <title>Ergo use cases: safe, simple financial contracts | Ergo</title>
 
     
     
@@ -125,12 +126,6 @@
             
               
             
-              
-                <li class="dd-language__item dd-language__item_hidden">
-                  <a class="dd-language__link dd-language__link--white eg-link" href="https://ergoplatform.org/cn/blog/2019_04_22-lets/"><span>中文</span></a>
-                </li>
-              
-            
           </ul>
         </div>
         <button class="eg-navbar__trigger eg-navbar__trigger--black" type="button" aria-expanded="false" aria-label="Toggle navigation">
@@ -147,155 +142,41 @@
         <a href="https://ergoplatform.org/en/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>Back to all posts</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
-        <h1 class="eg-title eg-mb-1">A Local Exchange Trading System On Top Of Ergo</h1>
+        <h1 class="eg-title eg-mb-1">Ergo use cases: safe, simple financial contracts</h1>
         
         <div class="eg-author">
-          <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img">
+          <img src="/img/logotype_black_circle.svg" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
-            <h4 class="eg-author__info-title">Alex Chepurnoy</h4>
-            <p class="eg-author__info-paragraph">22 April, 2019</p>
+            <h4 class="eg-author__info-title">Ergo team</h4>
+            <p class="eg-author__info-paragraph">29 March, 2020</p>
           </div>
         </div>
         <div class="eg-blog__single-img">
-          <img src="/img/blog/lets-example_opt.jpg" alt="blog photo">
+          <img src="/img/blog/ergo_use.jpg" alt="blog photo">
         </div>
         <div class="eg-blog__single-content">
           <div>
-            <p>A local exchange trading system (LETS) is a local mutual credit association which members are allowed to create common
-credit money individually, with all the deals in the system written into a common ledger.
-As an example, assume that Alice with zero balance is willing to buy a liter of raw milk from Bob.
-First, they agree on a price, for example, assume that the price is about 2 Euro (as Alice and Bob
-are living in Ireland). After the deal being written into a ledger, Alice's balance becomes -2 (minus
-two) Euro, and Bob's balance becomes 2 Euro. Then Bob may spend his 2 Euro, for example, on
-home-made beer from Charlie. Often, such systems impose limits on negative balances, and sometimes
-even on positive ones, in order to promote exchange in the community.</p>
-<p>Historically, such systems become popular during crisis times. The first system was established by Michael Linton in
-a Canadian town stuck in depression back in 1981. Local exchange trading systems were extremely popular during
-1998-2002 Argentine Great Depression. Most LETS groups range from 50 to 250 members, with paper-based credit notes and
-ledger maintained by a core committee. However, paper-based LETS currencies have shown some problems, such as
-counterfeit notes, possible rogue behavior of system managers, and so on. Therefore, blockchain-based LETS could be superior
-to the old systems. More information on LETS could be found in
-<a href="http://feasta.org/documents/moneyecology/chaptertwo.htm">&ldquo;The Ecology of Money&rdquo; book (by Richard Douthwaite)</a> and
-<a href="https://en.wikipedia.org/wiki/Local_exchange_trading_system">Wikipedia</a>.</p>
-<p>In this article we show how LETS could be implemented on top of Ergo. To the best of our knowledge, this is
-the first implementation of such kind of community currency on top of a blockchain.
-Our reference implementation
-is simple and consists of two contracts, namely, a management contract and an exchange contract.
-We skip Ergo preliminaries, so please read
-<a href="https://github.com/ergoplatform/ergo/wiki/An-ICO-Example-On-Top-Of-Ergo">the ICO article</a> and
-ErgoScript tutorials(<a href="https://docs.ergoplatform.com/ErgoScript.pdf">basic</a> and
-<a href="https://docs.ergoplatform.com/sigmastate_protocols.pdf">advanced</a>) for starters.
-Nevertheless, we are going to introduce a couple of new terms in following sentences.
-If a token is issued with amount equal to one, we call it the singleton token. Similarly,
-a box which contains the singleton token is called the singleton box.</p>
-<p>The management contract is controlling a singleton box which holds members of the LETS system.
-The contract enables the adding of new members at the pace of one member per one transaction. The box
-is not storing members, but only a small digest of authenticated data structure built on top of
-the members&rsquo; directory. A member is associated with a singleton token issued in a transaction which
-is adding the member to the directory. The transaction creates a new member's box which contains
-the member's singleton token. The member's box is protected by the exchange contract. Also, the newly
-created member's box has initial balance written down into the R4 register, and the balance is
-equal to zero in our example. The transaction creating a new member must provide a proof of correctness for
-directory transformation.</p>
-<p>The management contract box is controlled usually by a committee, and the committee could evolve over time. To support
-that, we allow committee logic to reside in the register R5.
-For example, assume that a new committee member has been added along with a new LETS member,
-the input management contract box is requiring 2-out-of-3 signatures, and the output box requires 3-out-of-4 signatures.
-In this case contents of the R5 register in the input and the output box would differ.</p>
-<p>The management contract code in ErgoScript with comments is provided below. Please note that
-&ldquo;userContractHash&rdquo; is about exchange contract hash.</p>
-<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala">    <span class="k">val</span> <span class="n">selfOut</span> <span class="k">=</span> <span class="nc">OUTPUTS</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span>
- 
-    <span class="c1">// Management script
-</span><span class="c1"></span>    <span class="k">val</span> <span class="n">managementScript</span> <span class="k">=</span> <span class="n">selfOut</span><span class="o">.</span><span class="n">R5</span><span class="o">[</span><span class="kt">SigmaProp</span><span class="o">]</span><span class="o">.</span><span class="n">get</span>
- 
-    <span class="c1">// The management script template is replicating self, and management script is satisfied
-</span><span class="c1"></span>    <span class="k">val</span> <span class="n">scriptCorrect</span> <span class="k">=</span> <span class="o">(</span><span class="n">selfOut</span><span class="o">.</span><span class="n">propositionBytes</span> <span class="o">==</span> <span class="nc">SELF</span><span class="o">.</span><span class="n">propositionBytes</span><span class="o">)</span> <span class="o">&amp;&amp;</span> <span class="n">managementScript</span>
- 
-    <span class="c1">// A spending transaction is creating boxes for directory, user, fee.
-</span><span class="c1"></span>    <span class="k">val</span> <span class="n">outsSizeCorrect</span> <span class="k">=</span> <span class="nc">OUTPUTS</span><span class="o">.</span><span class="n">size</span> <span class="o">==</span> <span class="mi">3</span>
- 
-    <span class="c1">// Checks that the management label token is replicating self
-</span><span class="c1"></span>    <span class="k">val</span> <span class="n">outTokenCorrect</span> <span class="k">=</span> <span class="o">(</span><span class="n">selfOut</span><span class="o">.</span><span class="n">tokens</span><span class="o">.</span><span class="n">size</span> <span class="o">==</span> <span class="mi">1</span><span class="o">)</span> <span class="o">&amp;&amp;</span> <span class="o">(</span><span class="n">selfOut</span><span class="o">.</span><span class="n">tokens</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span><span class="o">.</span><span class="n">_1</span> <span class="o">==</span> <span class="n">letsToken</span><span class="o">)</span>
- 
-    <span class="c1">// Checks that new token is issued, and its amount is correct
-</span><span class="c1"></span>    <span class="c1">// OUTPUTS(0) tokens already checked via outtokenCorrect
-</span><span class="c1"></span>    <span class="k">val</span> <span class="n">issuedTokenId</span> <span class="k">=</span> <span class="nc">INPUTS</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span><span class="o">.</span><span class="n">id</span>
-    <span class="k">val</span> <span class="n">userOut</span> <span class="k">=</span> <span class="nc">OUTPUTS</span><span class="o">(</span><span class="mi">1</span><span class="o">)</span>
-    <span class="k">val</span> <span class="n">correctTokenAmounts</span> <span class="k">=</span>
-      <span class="o">(</span><span class="n">userOut</span><span class="o">.</span><span class="n">tokens</span><span class="o">.</span><span class="n">size</span> <span class="o">==</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span>
-        <span class="n">userOut</span><span class="o">.</span><span class="n">tokens</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span><span class="o">.</span><span class="n">_1</span> <span class="o">==</span> <span class="n">issuedTokenId</span> <span class="o">&amp;&amp;</span>
-        <span class="n">userOut</span><span class="o">.</span><span class="n">tokens</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span><span class="o">.</span><span class="n">_2</span> <span class="o">==</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span>
-        <span class="nc">OUTPUTS</span><span class="o">(</span><span class="mi">2</span><span class="o">)</span><span class="o">.</span><span class="n">tokens</span><span class="o">.</span><span class="n">size</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span>
-        <span class="n">outTokenCorrect</span><span class="o">)</span>
- 
-    <span class="c1">// Checks that the new user has been created with the zero balance
-</span><span class="c1"></span>    <span class="k">val</span> <span class="n">zeroUserBalance</span>  <span class="k">=</span> <span class="n">userOut</span><span class="o">.</span><span class="n">R4</span><span class="o">[</span><span class="kt">Long</span><span class="o">]</span><span class="o">.</span><span class="n">get</span> <span class="o">==</span> <span class="mi">0</span>
- 
-    <span class="k">val</span> <span class="n">properUserScript</span> <span class="k">=</span> <span class="n">blake2b256</span><span class="o">(</span><span class="n">userOut</span><span class="o">.</span><span class="n">propositionBytes</span><span class="o">)</span> <span class="o">==</span> <span class="n">userContractHash</span>
- 
-    <span class="c1">// Checks that the new token identifier has been added to the directory
-</span><span class="c1"></span>    <span class="k">val</span> <span class="n">selfTree</span> <span class="k">=</span> <span class="nc">SELF</span><span class="o">.</span><span class="n">R4</span><span class="o">[</span><span class="kt">AvlTree</span><span class="o">]</span><span class="o">.</span><span class="n">get</span>
-    <span class="k">val</span> <span class="n">toAdd</span><span class="k">:</span> <span class="kt">Coll</span><span class="o">[</span><span class="o">(</span><span class="kt">Coll</span><span class="o">[</span><span class="kt">Byte</span><span class="o">]</span>, <span class="kt">Coll</span><span class="o">[</span><span class="kt">Byte</span><span class="o">]</span><span class="o">)</span><span class="o">]</span> <span class="k">=</span> <span class="nc">Coll</span><span class="o">(</span><span class="o">(</span><span class="n">issuedTokenId</span><span class="o">,</span> <span class="nc">Coll</span><span class="o">[</span><span class="kt">Byte</span><span class="o">]</span><span class="o">(</span><span class="o">)</span><span class="o">)</span><span class="o">)</span>
-    <span class="k">val</span> <span class="n">proof</span> <span class="k">=</span> <span class="n">getVar</span><span class="o">[</span><span class="kt">Coll</span><span class="o">[</span><span class="kt">Byte</span><span class="o">]</span><span class="o">]</span><span class="o">(</span><span class="mi">1</span><span class="o">)</span><span class="o">.</span><span class="n">get</span>
-    <span class="k">val</span> <span class="n">modifiedTree</span> <span class="k">=</span> <span class="n">selfTree</span><span class="o">.</span><span class="n">insert</span><span class="o">(</span><span class="n">toAdd</span><span class="o">,</span> <span class="n">proof</span><span class="o">)</span><span class="o">.</span><span class="n">get</span>
-    <span class="k">val</span> <span class="n">expectedTree</span> <span class="k">=</span> <span class="n">selfOut</span><span class="o">.</span><span class="n">R4</span><span class="o">[</span><span class="kt">AvlTree</span><span class="o">]</span><span class="o">.</span><span class="n">get</span>
-    <span class="k">val</span> <span class="n">treeCorrect</span> <span class="k">=</span> <span class="n">modifiedTree</span> <span class="o">==</span> <span class="n">expectedTree</span>
- 
-    <span class="n">correctTokenAmounts</span> <span class="o">&amp;&amp;</span> <span class="n">scriptCorrect</span> <span class="o">&amp;&amp;</span> <span class="n">treeCorrect</span> <span class="o">&amp;&amp;</span> <span class="n">zeroUserBalance</span> <span class="o">&amp;&amp;</span> <span class="n">properUserScript</span>       
-    <span class="n">correctTokenAmounts</span> <span class="o">&amp;&amp;</span> <span class="n">scriptCorrect</span> <span class="o">&amp;&amp;</span> <span class="n">treeCorrect</span> <span class="o">&amp;&amp;</span> <span class="n">zeroUserBalance</span> <span class="o">&amp;&amp;</span> <span class="n">properUserScript</span> <span class="n">correctTokenAmounts</span> <span class="o">&amp;&amp;</span> <span class="n">scriptCorrect</span> <span class="o">&amp;&amp;</span> <span class="n">treeCorrect</span> <span class="o">&amp;&amp;</span> <span class="n">zeroUserBalance</span> <span class="o">&amp;&amp;</span> <span class="n">properUserScript</span>      
-</code></pre></div><p>The exchange contract script is fairly straightforward and provided below along with comments describing its logic. In the
-contract, it is assumed that a spending transaction for an exchange contract box is receiving at least two inputs,
-and the first two inputs should be protected by the exchange contract script and contain LETS member tokens. To check
-that singleton member tokens in the inputs do indeed belong to the LETS system, a spending transaction provides the management
-contract box as the first read-only data input, and also should provide a proof that the member tokens do belong to
-the directory authenticated via the R4 register of the management contract box. &ldquo;letsToken&rdquo; in the script is about
-the singleton token of the management box.</p>
-<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala">  <span class="c1">// Minimal balance allowed for LETS trader
-</span><span class="c1"></span>  <span class="k">val</span> <span class="n">minBalance</span> <span class="k">=</span> <span class="o">-</span><span class="mi">20000</span>
-
-  <span class="k">val</span> <span class="n">lookupProof</span> <span class="k">=</span> <span class="n">getVar</span><span class="o">[</span><span class="kt">Coll</span><span class="o">[</span><span class="kt">Byte</span><span class="o">]</span><span class="o">]</span><span class="o">(</span><span class="mi">1</span><span class="o">)</span><span class="o">.</span><span class="n">get</span>
-
-  <span class="c1">// The read-only box which contains directory of LETS members
-</span><span class="c1"></span>  <span class="k">val</span> <span class="n">treeHolderBox</span> <span class="k">=</span> <span class="nc">CONTEXT</span><span class="o">.</span><span class="n">dataInputs</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span>
-  <span class="k">val</span> <span class="n">properLetsToken</span> <span class="k">=</span> <span class="n">treeHolderBox</span><span class="o">.</span><span class="n">tokens</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span><span class="o">.</span><span class="n">_1</span> <span class="o">==</span> <span class="n">letsToken</span>
-  <span class="k">val</span> <span class="n">membersTree</span> <span class="k">=</span> <span class="n">treeHolderBox</span><span class="o">.</span><span class="n">R4</span><span class="o">[</span><span class="kt">AvlTree</span><span class="o">]</span><span class="o">.</span><span class="n">get</span>
-
-  <span class="c1">// A spending transaction is taking two boxes of LETS members willing to make a deal,
-</span><span class="c1"></span>  <span class="c1">// and returns boxes with modified balances.
-</span><span class="c1"></span>  <span class="k">val</span> <span class="n">participant0</span> <span class="k">=</span> <span class="nc">INPUTS</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span>
-  <span class="k">val</span> <span class="n">participant1</span> <span class="k">=</span> <span class="nc">INPUTS</span><span class="o">(</span><span class="mi">1</span><span class="o">)</span>
-  <span class="k">val</span> <span class="n">participantOut0</span> <span class="k">=</span> <span class="nc">OUTPUTS</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span>
-  <span class="k">val</span> <span class="n">participantOut1</span> <span class="k">=</span> <span class="nc">OUTPUTS</span><span class="o">(</span><span class="mi">1</span><span class="o">)</span>
-
-  <span class="c1">//Check that members do indeed belong to the LETS
-</span><span class="c1"></span>  <span class="k">val</span> <span class="n">token0</span> <span class="k">=</span> <span class="n">participant0</span><span class="o">.</span><span class="n">tokens</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span><span class="o">.</span><span class="n">_1</span>
-  <span class="k">val</span> <span class="n">token1</span> <span class="k">=</span> <span class="n">participant1</span><span class="o">.</span><span class="n">tokens</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span><span class="o">.</span><span class="n">_1</span>
-  <span class="k">val</span> <span class="n">memberTokens</span> <span class="k">=</span> <span class="nc">Coll</span><span class="o">(</span><span class="n">token0</span><span class="o">,</span> <span class="n">token1</span><span class="o">)</span>
-  <span class="k">val</span> <span class="n">membersExist</span> <span class="k">=</span> <span class="n">membersTree</span><span class="o">.</span><span class="n">getMany</span><span class="o">(</span><span class="n">memberTokens</span><span class="o">,</span> <span class="n">lookupProof</span><span class="o">)</span><span class="o">.</span><span class="n">forall</span><span class="o">(</span><span class="o">{</span> <span class="o">(</span><span class="n">o</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">Coll</span><span class="o">[</span><span class="kt">Byte</span><span class="o">]</span><span class="o">]</span><span class="o">)</span> <span class="k">=&gt;</span> <span class="n">o</span><span class="o">.</span><span class="n">isDefined</span> <span class="o">}</span><span class="o">)</span>
-
-  <span class="c1">// Check that LETS member balance changes during the deal are correct
-</span><span class="c1"></span>  <span class="k">val</span> <span class="n">initialBalance0</span> <span class="k">=</span> <span class="n">participant0</span><span class="o">.</span><span class="n">R4</span><span class="o">[</span><span class="kt">Long</span><span class="o">]</span><span class="o">.</span><span class="n">get</span>
-  <span class="k">val</span> <span class="n">initialBalance1</span> <span class="k">=</span> <span class="n">participant1</span><span class="o">.</span><span class="n">R4</span><span class="o">[</span><span class="kt">Long</span><span class="o">]</span><span class="o">.</span><span class="n">get</span>
-  <span class="k">val</span> <span class="n">finishBalance0</span>  <span class="k">=</span> <span class="n">participantOut0</span><span class="o">.</span><span class="n">R4</span><span class="o">[</span><span class="kt">Long</span><span class="o">]</span><span class="o">.</span><span class="n">get</span>
-  <span class="k">val</span> <span class="n">finishBalance1</span>  <span class="k">=</span> <span class="n">participantOut1</span><span class="o">.</span><span class="n">R4</span><span class="o">[</span><span class="kt">Long</span><span class="o">]</span><span class="o">.</span><span class="n">get</span>
-  <span class="k">val</span> <span class="n">diff0</span> <span class="k">=</span> <span class="n">finishBalance0</span> <span class="o">-</span> <span class="n">initialBalance0</span>
-  <span class="k">val</span> <span class="n">diff1</span> <span class="k">=</span> <span class="n">finishBalance1</span> <span class="o">-</span> <span class="n">initialBalance1</span>
-  <span class="k">val</span> <span class="n">diffCorrect</span> <span class="k">=</span> <span class="n">diff0</span> <span class="o">==</span> <span class="o">-</span><span class="n">diff1</span>
-  <span class="k">val</span> <span class="n">balancesCorrect</span> <span class="k">=</span> <span class="o">(</span><span class="n">finishBalance0</span> <span class="o">&gt;</span> <span class="n">minBalance</span><span class="o">)</span> <span class="o">&amp;&amp;</span> <span class="o">(</span><span class="n">finishBalance1</span> <span class="o">&gt;</span> <span class="n">minBalance</span><span class="o">)</span> <span class="o">&amp;&amp;</span> <span class="n">diffCorrect</span>
-
-  <span class="c1">// Check that member boxes save their scripts.
-</span><span class="c1"></span>  <span class="c1">// todo: optimization could be made here
-</span><span class="c1"></span>  <span class="k">val</span> <span class="n">script0Saved</span> <span class="k">=</span> <span class="n">participantOut0</span><span class="o">.</span><span class="n">propositionBytes</span> <span class="o">==</span> <span class="n">participant0</span><span class="o">.</span><span class="n">propositionBytes</span>
-  <span class="k">val</span> <span class="n">script1Saved</span> <span class="k">=</span> <span class="n">participantOut1</span><span class="o">.</span><span class="n">propositionBytes</span> <span class="o">==</span> <span class="n">participant1</span><span class="o">.</span><span class="n">propositionBytes</span>
-  <span class="k">val</span> <span class="n">scriptsSaved</span> <span class="k">=</span> <span class="n">script0Saved</span> <span class="o">&amp;&amp;</span> <span class="n">script1Saved</span>
-
-  <span class="c1">// Member-specific box protection
-</span><span class="c1"></span>  <span class="k">val</span> <span class="n">selfPubKey</span> <span class="k">=</span> <span class="nc">SELF</span><span class="o">.</span><span class="n">R5</span><span class="o">[</span><span class="kt">SigmaProp</span><span class="o">]</span><span class="o">.</span><span class="n">get</span>
-
-  <span class="n">selfPubKey</span> <span class="o">&amp;&amp;</span> <span class="n">properLetsToken</span> <span class="o">&amp;&amp;</span> <span class="n">membersExist</span> <span class="o">&amp;&amp;</span> <span class="n">diffCorrect</span> <span class="o">&amp;&amp;</span> <span class="n">scriptsSaved</span>
-</code></pre></div><p>Note that both contracts could be modified in many ways to get new systems with different properties. So hopefully
-some day this article will be continued!</p>
+            <p><em>Ergo enables new models of financial interaction, underpinned by smart contracts built on flexible and powerful Sigma protocols but easily accessible to developers.</em></p>
+<p>One of the most exciting things about blockchain is the possibility of making digital agreements without any trusted intermediaries. In the simplest use case, pioneered by Bitcoin, Alice can send a payment directly to Bob, wherever the two of them are located around the world, with no bank or any trusted third party needed. However, with the functionality of a modern blockchain like Ergo, it is possible to make far more complex and sophisticated financial agreements than simple payments. Take the following example.</p>
+<h2 id="gold-backed-tokens">Gold-backed tokens</h2>
+<p>Alice uses ERGs to purchase gold-backed tokens from Bob. Bob stores the gold in a secure vault, and uses the blockchain to issue one token for every Troy ounce of gold he has. Alice can then use these tokens freely in different contracts, transferring and trading them under whatever conditions she specifies in the smart contract code. When Alice wants to sell the tokens for physical gold, she can conduct another transaction with Bob, receiving ERG in return, at market price.</p>
+<p>The point of blockchain contracts is to eliminate the need for trust. While the purchase transaction is now trustless, in this instance Alice still needs to trust Bob about two things. Firstly, Bob may refuse to swap the gold tokens back to ERG at the correct price when Alice wants to sell. Secondly, Bob may default on his obligations – running away with the gold, or misusing the funds he receives and running a fractional reserve.</p>
+<h2 id="extending-the-contracts">Extending the contracts</h2>
+<p>To address these issues, we can create an Oracle, or decentralised price feed. This uses multiple sources of external data to record the price of gold to the blockchain at regular intervals. This price feed will be the reference point for the redemption contract that manages the sale of Alice’s gold with Bob (or any other participant). Thus the system automatically enforces the right price when a swap takes place.</p>
+<p>The second situation requires a third-party insurer, Charlie, whose service is also hosted on the blockchain with a smart contract. When Alice purchases gold from Bob, she additionally buys an insurance contract from Charlie. The payment can be dependent on factors including the amount of insurance required, and Bob’s reputation – again, managed by a decentralized feedback mechanism. Now, if Bob defaults, Alice will automatically receive the value of her gold tokens, with Charlie effectively acting as a buyer of last resort.</p>
+<h2 id="programmable-contracts">Programmable contracts</h2>
+<p>There are, of course, many other example use cases like this one. We can also extend this use case, adding further economic actors. For example, Charlie may sell shares in his insurance business to Dave and other participants, providing them with a proportion of revenues in return for ensuring he has the capital he needs to cover any liabilities from the outset.</p>
+<p>However, even the most complex use case is simpler than general-purpose software that can be used to program any contract. After all, generalised logic must be both far-reaching and secure. Moreover, even a specialised contract is made up of many steps, each of which is fairly simple. Thus another requirement for a general-purpose platform is that it should simplify the process of writing contracts, making them as accessible (and safe) as possible. This can be achieved with the use of template agreements, with customisable parameters. The insurance contract above could be based on a module with flexible parameters, for example. This could be used and reused in many different circumstances.</p>
+<h2 id="ergos-approach">Ergo’s approach</h2>
+<p>This is essentially the approach that Ergo takes, providing superior support for real-world financial agreements. It does this through:</p>
+<ol>
+<li>Support for multi-stage contracts (<a href="https://www.youtube.com/watch?v=g3FlM_WOwBU">watch details for developers</a>)</li>
+<li>A simple high-level language, ErgoScript, enabling clear descriptions of contractual logic</li>
+<li>Support for formal verification of contracts for improved security guarantees (Ergo Platform deployed its <a href="https://twitter.com/chepurnoy/status/1239936086106935296">first formally verified p2p crowdfunding contract</a> just three months after the network launched)</li>
+<li>Easy Oracle creation</li>
+<li>Native support for complex signature schemes</li>
+</ol>
+<p>In short, creating financial contracts on the blockchain isn’t just about the functionality you provide. It’s about making that functionality safe and accessible, as well as powerful. Ergo achieves this and more.</p>
 
           </div>
         </div>
@@ -303,7 +184,7 @@ some day this article will be continued!</p>
   <p class="eg-text__paragraph eg-text__paragraph--26">Share post</p>
   <ul class="eg-social">
     <li class="eg-share_item">
-      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_04_22-lets%2f" target="_blank">
+      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2020_03_29_ergo_use%2f" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path d="M17 14.0001H25V28.4H17V14.0001Z" fill="white"/>
@@ -314,7 +195,7 @@ some day this article will be continued!</p>
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_04_22-lets%2f&amp;hashtags=ergoplatform" target="_blank">
+      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2020_03_29_ergo_use%2f&amp;hashtags=ergoplatform" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path class="st0" fill-rule="evenodd" clip-rule="evenodd" d="M29 16.4204C28.4478 16.6615 27.855 16.8241 27.2323 16.8975C27.868 16.5225 28.3558 15.9287 28.5857 15.2214C27.9909 15.5684 27.3322 15.8208 26.6315 15.9565C26.0699 15.3677 25.2701 15 24.3851 15C22.6855 15 21.3076 16.3562 21.3076 18.0291C21.3076 18.2666 21.3347 18.4978 21.3873 18.7195C18.8298 18.5933 16.5616 17.3871 15.0441 15.5542C14.7792 16.0018 14.6274 16.5222 14.6274 17.0774C14.6274 18.1283 15.1706 19.0554 15.9963 19.5989C15.4921 19.5831 15.0174 19.4469 14.6024 19.22C14.6021 19.2325 14.6021 19.2452 14.6021 19.2581C14.6021 20.7258 15.6632 21.9504 17.0707 22.2285C16.8128 22.2979 16.5409 22.335 16.2599 22.335C16.0619 22.335 15.8693 22.3158 15.6812 22.2805C16.0728 23.4839 17.2097 24.36 18.5559 24.3843C17.5025 25.197 16.176 25.6812 14.734 25.6812C14.4857 25.6812 14.2408 25.6667 14 25.6384C15.3617 26.4982 16.979 27 18.7175 27C24.3777 27 27.4734 22.3837 27.4734 18.3804C27.4734 18.2494 27.4705 18.1184 27.4645 17.9883C28.0658 17.5614 28.5873 17.0281 29 16.4204Z" fill="#FF4221"/>
@@ -322,7 +203,7 @@ some day this article will be continued!</p>
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link copy-link" href="https://ergoplatform.org/en/blog/2019_04_22-lets/" target="_blank">
+      <a class="eg-share__link copy-link" href="https://ergoplatform.org/en/blog/2020_03_29_ergo_use/" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M39.91 19.3528L34.2335 6.06338C34.1186 5.78985 33.898 5.57515 33.6227 5.46487L20.2117 0.0807171C19.9364 -0.0292029 19.6283 -0.027376 19.3547 0.089384L6.0641 5.76578C5.79022 5.8811 5.57549 6.10129 5.46522 6.37698L0.0816753 19.7881C-0.0303977 20.0656 -0.0267767 20.3716 0.0903423 20.6455L5.76643 33.9366C5.88175 34.2101 6.10231 34.4249 6.37727 34.5352L19.7883 39.919C19.9209 39.9727 20.0639 40 20.2048 40C20.3544 40 20.5043 39.971 20.647 39.909L33.9359 34.2324C34.2097 34.1171 34.4245 33.8966 34.5348 33.6216L39.9183 20.2102C40.0304 19.9327 40.0267 19.6267 39.91 19.3528Z" stroke="#FF4221"/>
@@ -360,22 +241,6 @@ some day this article will be continued!</p>
             
             
             
-              
-                <div class="eg-blog__item related__post">
-                  <a href="https://ergoplatform.org/en/blog/2020_03_29_ergo_use/" class="eg-link">
-                    <div class="eg-blog__item-img"><img src="/img/blog/ergo_use.jpg" height="188" width="335" alt="blog photo"></div>
-                    <div class="eg-mb-1"><h3 class="eg-blog__item-title eg-link" href="https://ergoplatform.org/en/blog/2020_03_29_ergo_use/"><span>Ergo use cases: safe, simple financial contracts</span></h3></div>
-                    <div class="eg-mb-1"><p class="eg-blog__item-paragraph eg-link" href="https://ergoplatform.org/en/blog/2020_03_29_ergo_use/"><span>Ergo enables new models of financial interaction, underpinned by smart contracts built on flexible and powerful Sigma protocols but easily accessible to …</span></p></div>
-                  </a>
-                  
-                  <div class="eg-author">
-                    <img src="/img/logotype_black_circle.svg" alt="author img" class="eg-author__img" width="60" height="60">
-                    <div class="eg-author__info">
-                      <h4 class="eg-author__info-title">Ergo team</h4>
-                      <p class="eg-author__info-paragraph">29 March, 2020</p>
-                    </div>
-                  </div>
-                </div>
               
             
               
@@ -819,6 +684,22 @@ CUDA toolkit Choose …</span></p></div>
                 </div>
               
             
+              
+                <div class="eg-blog__item related__post">
+                  <a href="https://ergoplatform.org/en/blog/2019_04_22-lets/" class="eg-link">
+                    <div class="eg-blog__item-img"><img src="/img/blog/lets-example_opt.jpg" height="188" width="335" alt="blog photo"></div>
+                    <div class="eg-mb-1"><h3 class="eg-blog__item-title eg-link" href="https://ergoplatform.org/en/blog/2019_04_22-lets/"><span>A Local Exchange Trading System On Top Of Ergo</span></h3></div>
+                    <div class="eg-mb-1"><p class="eg-blog__item-paragraph eg-link" href="https://ergoplatform.org/en/blog/2019_04_22-lets/"><span>A local exchange trading system (LETS) is a local mutual credit association which members are allowed to create common credit money individually, with all …</span></p></div>
+                  </a>
+                  
+                  <div class="eg-author">
+                    <img src="/img/authors/alex_chepurnoy.svg" alt="author img" class="eg-author__img" width="60" height="60">
+                    <div class="eg-author__info">
+                      <h4 class="eg-author__info-title">Alex Chepurnoy</h4>
+                      <p class="eg-author__info-paragraph">22 April, 2019</p>
+                    </div>
+                  </div>
+                </div>
               
             
               

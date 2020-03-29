@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Ergo use cases: safe, simple financial contracts</title>
+      <link>https://ergoplatform.org/en/blog/2020_03_29_ergo_use/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2020_03_29_ergo_use/</guid>
+      <description>Ergo enables new models of financial interaction, underpinned by smart contracts built on flexible and powerful Sigma protocols but easily accessible to developers.
+One of the most exciting things about blockchain is the possibility of making digital agreements without any trusted intermediaries. In the simplest use case, pioneered by Bitcoin, Alice can send a payment directly to Bob, wherever the two of them are located around the world, with no bank or any trusted third party needed.</description>
+    </item>
+    
+    <item>
       <title>Building Ergo: Sigma protocols</title>
       <link>https://ergoplatform.org/en/blog/2020_03_16_ergo_sigma/</link>
       <pubDate>Mon, 16 Mar 2020 00:00:00 +0000</pubDate>
