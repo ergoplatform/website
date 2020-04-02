@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://ergoplatform.org/en/</loc>
-    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -17,6 +17,20 @@
                 hreflang="en"
                 href="https://ergoplatform.org/en/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/en/blog/2020_04_02_use_cases/</loc>
+    <lastmod>2020-04-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/en/blog/2020_04_02_use_hot_potato/</loc>
+    <lastmod>2020-04-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>

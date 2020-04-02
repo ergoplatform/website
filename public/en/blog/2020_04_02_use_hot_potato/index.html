@@ -11,11 +11,13 @@
     <link rel="preload" href="/fonts/LabGrotesque-Regular-hint-all.woff" as="font" type="font/woff" crossorigin>
 
     
-      <meta name="description" content="What is Crowdfunding? Crowdfunding is a way of raising capital through the collective efforts of individuals. The campaigns are mostly started via the world wide web and allow projects and businesses to be funded by raising small amounts of money from a large number of people. One of the best known examples for successful crowdfunding startups is Oculus Rift, a virtual reality headset. The company Oculus VR initiated its campaign in 2012 and was only two years later acquired by Facebook for $2 billion total.">
+      <meta name="description" content="As the next financial crisis takes hold, it’s clear that conventional monetary policy is at its limit. Smart contract platforms like Ergo enable more innovative, targeted implementations of economic stimulation that the conventional banking sector cannot achieve.
+Conventional monetary policy is a hammer. It works as far as it goes, but if all you have is a hammer then every problem starts to look like a nail.
+When the Global Financial Crisis hit over a decade ago, central banks did what they were used to doing.">
     
 
     
-    <title>Ergo and crowdfunding | Ergo</title>
+    <title>Ergo use case: ‘hot potato’ monetary policy | Ergo</title>
 
     
     
@@ -125,12 +127,6 @@
             
               
             
-              
-                <li class="dd-language__item dd-language__item_hidden">
-                  <a class="dd-language__link dd-language__link--white eg-link" href="https://ergoplatform.org/cn/blog/2019_09_06_crowdfund/"><span>中文</span></a>
-                </li>
-              
-            
           </ul>
         </div>
         <button class="eg-navbar__trigger eg-navbar__trigger--black" type="button" aria-expanded="false" aria-label="Toggle navigation">
@@ -147,93 +143,41 @@
         <a href="https://ergoplatform.org/en/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>Back to all posts</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
-        <h1 class="eg-title eg-mb-1">Ergo and crowdfunding</h1>
+        <h1 class="eg-title eg-mb-1">Ergo use case: ‘hot potato’ monetary policy</h1>
         
         <div class="eg-author">
-          <img src="/img/authors/robert_wolf.jpg" alt="author img" class="eg-author__img">
+          <img src="/img/authors/guy_brandon.jpg" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
-            <h4 class="eg-author__info-title">Robert Wolf</h4>
-            <p class="eg-author__info-paragraph">6 September, 2019</p>
+            <h4 class="eg-author__info-title">Guy Brandon</h4>
+            <p class="eg-author__info-paragraph">2 April, 2020</p>
           </div>
         </div>
         <div class="eg-blog__single-img">
-          <img src="/img/blog/crowdfund.jpg" alt="blog photo">
+          <img src="/img/blog/use_potato.jpg" alt="blog photo">
         </div>
         <div class="eg-blog__single-content">
           <div>
-            <h2 id="what-is-crowdfunding">What is Crowdfunding?</h2>
-<p>Crowdfunding is a way of raising capital through the collective efforts of individuals. The campaigns are mostly started via the world wide web and allow projects and businesses to be funded by raising small amounts of money from a large number of people.
-One of the best known examples for successful crowdfunding startups is Oculus Rift, a virtual reality headset. The company Oculus VR initiated its campaign in 2012 and was only two years later acquired by Facebook for $2 billion total. Besides the usual startups, there are also a lot of blockchain projects which went the way of crowdfunding, for example, Ethereum, Tron and EOS. Today, numerous platforms exist that allow you to publish your campaign. Some of the bigger ones are Indiegogo, Kickstarter, and Gofundme, only to name a few.
-Crowdfunding has a lot of benefits: a wide reach, efficiency, and marketing aspects being the most convincing&hellip; But for now, let's get onto what's really important!</p>
-<h2 id="introducing-crowdfunding-on-ergo">Introducing Crowdfunding on Ergo</h2>
-<p>A few days ago, on August 28th, core developer <a href="https://www.ergoforum.org/u/kushti">Kushti</a> stated on the (Ergo forum)[www.ergoforum.org] that he managed to successfully write and implement code that allows users to start a crowdfunding campaign on top of the Ergo blockchain (as mentioned in the <a href="https://docs.ergoplatform.com/ErgoScript.pdf">whitepaper page 6</a>. This code even works with the current wallet API. <a href="https://ergoplatform.org/en/blog/2019_06_04_wallet-documentation/">Here</a> is a quick guide on how to set up the wallet.
-In this article, you will learn how to do exactly that: crowdfunding on top of Ergo! It also takes you through the proposal of the first campaign ever, which is to fund the <a href="https://github.com/ergoplatform/eips/blob/master/eip-0001.md">post-EIP1</a> crowdfunding script development.
-If you want to go into all the details, please read the following section, “The Script”. Otherwise, you can simply skip to reading the “How To Donate”, &ldquo;How To Collect Donations&rdquo;, and “Crowdfunding Project Proposal” sections below that.</p>
-<h2 id="the-script">The Script</h2>
-<p>The simplest crowdfunding script, according to the <a href="https://docs.ergoplatform.com/ErgoScript.pdf">ErgoScript White Paper (page 6)</a>, is “a script for the following crowdfunding situation: a project backer (with key backerPubKey) wishes to give money to a project (with key projectPubKey), but only if the project raises enough money (at least minToRaise) from other sources by a deadline (expressed in terms of HEIGHT).
-To give money to the project, the backer will create an output box protected by the following script. The script contains two conditions: one for the case the deadline has passed (enabling the backer to get the money back) and one for the case it succeeded (enabling the project to spend the money if the amount is at least minToRaise before the deadline).</p>
-<p>In order to ensure enough money has been raised, the script will search the output collection for a box with a sufficient value going to the projectPubKey. To check where the value of the output box is going, the script will read the script protecting the output box and compare it to the script corresponding to proveDlog(projectPubKey); this script can be obtained byprojectPubKey.propBytes.</p>
-<p>As currently the API does not support embedding of custom environment variables (only predefined ones like HEIGHT), the only way to compile the script is to replace such variables in the script from the white-paper with concrete values. For example, consider that a crowdfunding campaign is successful if it is raising 500 Ergs before block number 50,000. For backerPubKey and projectPubKey we can use PK() function which accepts only P2PK serialized keys at the moment. Then the modified script from the WhitePaper becomes the following:</p>
-<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="o">{</span>
-   <span class="k">val</span> <span class="n">backerPubKey</span> <span class="k">=</span> <span class="nc">PK</span><span class="o">(</span><span class="s">&#34;9h7DHKSDgE4uvP8313GVGdsEg3AvdAWSSTG7XZsLwBfeth4aePG&#34;</span><span class="o">)</span>
-   <span class="k">val</span> <span class="n">projectPubKey</span> <span class="k">=</span> <span class="nc">PK</span><span class="o">(</span><span class="s">&#34;9gBSqNT9LH9WjvWbyqEvFirMbYp4nfGHnoWdceKGu45AKiya3Fq&#34;</span><span class="o">)</span> 
-    
-   <span class="k">val</span> <span class="n">deadline</span> <span class="k">=</span> <span class="mi">50000</span>
-   <span class="k">val</span> <span class="n">minToRaise</span> <span class="k">=</span> <span class="mi">500L</span> <span class="o">*</span> <span class="mi">1000000000</span> 
-   
-   <span class="k">val</span> <span class="n">fundraisingFailure</span> <span class="k">=</span> <span class="nc">HEIGHT</span> <span class="o">&gt;=</span> <span class="n">deadline</span> <span class="o">&amp;&amp;</span> <span class="n">backerPubKey</span>
-   <span class="k">val</span> <span class="n">enoughRaised</span> <span class="k">=</span> <span class="o">{</span><span class="o">(</span><span class="n">outBox</span><span class="k">:</span> <span class="kt">Box</span><span class="o">)</span> <span class="k">=&gt;</span><span class="n">outBox</span><span class="o">.</span><span class="n">value</span> <span class="o">&gt;=</span> <span class="n">minToRaise</span> 
-                              <span class="o">&amp;&amp;</span> <span class="n">outBox</span><span class="o">.</span><span class="n">propositionBytes</span> <span class="o">==</span> <span class="n">projectPubKey</span><span class="o">.</span><span class="n">propBytes</span>
-                      <span class="o">}</span>
-        
-   <span class="k">val</span> <span class="n">fundraisingSuccess</span> <span class="k">=</span> <span class="nc">HEIGHT</span> <span class="o">&lt;</span> <span class="n">deadline</span> <span class="o">&amp;&amp;</span> <span class="n">projectPubKey</span> <span class="o">&amp;&amp;</span> <span class="nc">OUTPUTS</span><span class="o">.</span><span class="n">exists</span><span class="o">(</span><span class="n">enoughRaised</span><span class="o">)</span>
-   <span class="n">fundraisingFailure</span> <span class="o">||</span> <span class="n">fundraisingSuccess</span>                     
- <span class="o">}</span>                              
-</code></pre></div><h2 id="how-to-donate">How to Donate</h2>
-<p>First of all, JSON is not supporting multi-line strings, so you need to replace line breaks with <code>\n</code>.
-Also, quotes are to be escaped, so use &quot; instead of &ldquo;. The resulting JSON will be sent to <code>/script/p2sAddress</code>.
-To donate to a project, first get your address from /wallet/addresses, take e.g. the first of them. Put the address into the backerPubKey, so a request to /script/p2sAddress will look like the following after this step:</p>
-<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="o">{</span>
-  <span class="s">&#34;source&#34;</span><span class="k">:</span> <span class="err">&#34;</span><span class="o">{</span> 
-    <span class="kt">val</span> <span class="kt">backerPubKey</span> <span class="o">=</span> <span class="kt">PK</span><span class="o">(</span><span class="kt">\</span><span class="err">&#34;</span><span class="err">9</span><span class="kt">.</span><span class="kt">.</span><span class="kt">.</span><span class="kt">\</span><span class="err">&#34;</span><span class="o">)</span>
-    <span class="kt">val</span> <span class="kt">projectPubKey</span> <span class="o">=</span> <span class="nc">PK</span><span class="o">(</span><span class="n">\</span><span class="s">&#34;9gBSqNT9LH9WjvWbyqEvFirMbYp4nfGHnoWdceKGu45AKiya3Fq\&#34;)
-</span><span class="s">    val deadline = 50000
-</span><span class="s">    val minToRaise = 500L * 1000000000
-</span><span class="s">    val fundraisingFailure = HEIGHT &gt;= deadline &amp;&amp; backerPubKey
-</span><span class="s">    val enoughRaised = {
-</span><span class="s">      (outBox: Box) =&gt; 
-</span><span class="s">        outBox.value &gt;= minToRaise &amp;&amp; outBox.propositionBytes == projectPubKey.propBytes
-</span><span class="s">    } 
-</span><span class="s">    val fundraisingSuccess = HEIGHT &lt; deadline &amp;&amp; projectPubKey &amp;&amp; OUTPUTS.exists(enoughRaised) 
-</span><span class="s">    fundraisingFailure || fundraisingSuccess 
-</span><span class="s">  }&#34;</span>
-<span class="o">}</span>    
-</code></pre></div><p>with your address instead of “9…”.</p>
-<p>Send the string to <code>/script/p2sAddress</code> to get a response like:</p>
-<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="o">{</span>
-  <span class="s">&#34;address&#34;</span><span class="k">:</span> <span class="err">&#34;</span><span class="kt">GB3kh2izpWKvyZfMboQwsEscjPaZcz9WrzGqZB4ZrkzRreiFMV6HZYWXGMK3rqCjDCoPgWGNzfnYSUhivW4a1VRYPE7uZXwKnBcqWcRkiuTx6QW55EcPcWeELUsumwdtKoFtWY583nWnKZff</span><span class="err">&#34;</span>
-<span class="o">}</span>     
-</code></pre></div><p>Copy address string (GB3… in our example) and send the money to it via <code>/wallet/payment/send</code> . A request to the API method to send 10 Ergs (10 Billion nanoErgs) will be like following:</p>
-<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="o">[</span>
- <span class="o">{</span>
-   <span class="err">&#34;</span><span class="kt">address</span><span class="err">&#34;</span><span class="kt">:</span> <span class="err">&#34;</span><span class="kt">GB3kh2izpWKvyZfMboQwsEscjPaZcz9WrzGqZB4ZrkzRreiFMV6HZYWXGMK3rqCjDCoPgWGNzfnYSUhivW4a1VRYPE7uZXwKnBcqWcRkiuTx6QW55EcPcWeELUsumwdtKoFtWY583nWnKZff</span><span class="err">&#34;</span>,
-   <span class="err">&#34;</span><span class="kt">value</span><span class="err">&#34;</span><span class="kt">:</span> <span class="err">1</span><span class="err">0</span><span class="err">0</span><span class="err">0</span><span class="err">0</span><span class="err">0</span><span class="err">0</span><span class="err">0</span><span class="err">0</span><span class="err">0</span><span class="err">0</span>
- <span class="o">}</span>
-<span class="o">]</span>
-</code></pre></div><p>That’s all!</p>
-<p>Now the wallet will automatically find the box on the blockchain, as it contains the public key which belongs to the wallet in the refund condition. The wallet then periodically checks whether the box is spendable by constructing a simplest transaction with the box as an input and just one output (to the same address). After refund height (50,000 in our example) the wallet will be able to spend the box and so the box value will be added to /wallet/balances.
-Please note that this will not be the case after EIP-1 3 implementation as the wallet will use narrow recognition patterns by then.</p>
-<h2 id="how-to-collect-donations">How to Collect Donations</h2>
-<p>The wallet which is associated with the project public key will find incoming boxes on the blockchain. However, it will fail to make sure that boxes are spendable, as the wallet currently is using a simplest transaction for that, and the script is failing for such a spending transaction.
-Before <code>/wallet/boxes/uncertain</code> method being implemented, the only way for a project to find incoming boxes. Then <code>/wallet/transaction/send</code> with manually provided (in “inputsRaw”) serialized boxes (use <code>/utxo/byIdBinary</code> to get the serialized box by its identifier).</p>
-<p>Kushti did that by himself and got the following <a href="https://explorer.ergoplatform.com/en/transactions/3d5a1102296b6159754097f33e780cae2692d9a2ec2b6daf26219651bcc2ae48">transaction</a>.</p>
-<p>Please note that <a href="https://github.com/ergoplatform/eips/blob/master/eip-0001.md">EIP-1</a> will break this workflow as well.</p>
-<p>Kushti proposes to raise 500 Ergs before block 50,000 to develop command-line scripts (in Python) for organizing and participating in crowdfunding campaigns after EIP-1 implementation. Command-line scripts are more suitable than doing requests manually and also could be used for building graphic interfaces on top of them.</p>
-<p>The treasury did provide <a href="https://explorer.ergoplatform.com/en/transactions/2fc882792b94f8210e4378f2f5bab90896523e212d927ed16600170d76f46ac9">half of the funds</a>, so others need to contribute the missing 250 Erg collectively. In case of a campaign failure refunds will be given automatically. As collecting pledges is not trivial at the moment, Kushti will lead the project role, so please use the following key, which is controlled by him:</p>
-<p><code>9gBSqNT9LH9WjvWbyqEvFirMbYp4nfGHnoWdceKGu45AKiya3Fq</code></p>
-<p>In order to donate any amount of money, please follow the <code>“How To Donate”</code> section above with replacing backerPubKey with your public key, and pledge amount with a proper value (please note that it is in nanoErgs, <code>1 Erg = 1.000.000.000 nanoErgs</code>).</p>
-<p>As always, if you have further questions, suggestions or want to participate in the movement, please join our social media channels or forum.</p>
-<p><a href="https://t.me/ergoplatform">t.me/ergoplatform</a> | <a href="https://t.me/ergo_mining">t.me/ergo_mining</a> | <a href="www.ergoforum.org">www.ergoforum.org</a></p>
+            <p><em>As the next financial crisis takes hold, it’s clear that conventional monetary policy is at its limit. Smart contract platforms like Ergo enable more innovative, targeted implementations of economic stimulation that the conventional banking sector cannot achieve.</em></p>
+<p>Conventional monetary policy is a hammer. It works as far as it goes, but if all you have is a hammer then every problem starts to look like a nail.</p>
+<p>When the Global Financial Crisis hit over a decade ago, central banks did what they were used to doing. Cutting interest rates means it’s cheaper to borrow money, so there’s more cash in the system that can be spent and will circulate in the economy – paying for goods and services, funding employment and allowing life to continue something like as normal.</p>
+<p>That, at any rate, is the theory. It’s what central banks do in recessions to stimulate economic activity. When times are better, they raise interest rates to make it more expensive to borrow money and prevent the economy from overheating (including asset bubbles).</p>
+<h2 id="the-outer-limits">The outer limits</h2>
+<p>This is a blunt tool, but it works, up to a point. In the 2008 crisis, the problem was more severe – so severe, in fact, that interest rates were slashed to zero. Banks were still afraid to lend because they didn’t know the quality of the collateral they were offered in return, those notorious mortgage-backed securities.</p>
+<p>So the central banks undertook a programme of Quantitative Easing (QE). This entailed creating huge amounts of cash that didn’t exist before, then purchasing various assets from the banks. The idea was that the central bank would take on the risk and the assets, and commercial banks would then use this gift of liquidity to lend to small businesses and individuals, allowing them to continue operating as before.</p>
+<p>It didn’t work. Little of that newly-created money went to small businesses. Instead, banks used it to shore up their own balance sheets and make their own finances safer, investing only in low-risk assets rather than risky SMEs. Ultimately that cash filtered through to assets like the stock market and property, making the wealthy even more wealthy while the poorer were priced out of the market.</p>
+<h2 id="helicopter-money">Helicopter money</h2>
+<p>Today, as we experience the greatest financial challenge of our lifetimes – greater than even the Global Financial Crisis – central banks are considering even more unorthodox approaches. One of these is ‘helicopter money’. This involves cash being simply airdropped directly to citizens, either in the form of tax breaks or as money straight into their bank accounts. America has discussed giving $1,200 to every adult. Other nations are exploring the same idea.</p>
+<p>But there’s a problem with this, too.</p>
+<p>Just like the banks, ordinary citizens are worried about their finances. So instead of going out and spending (where ‘going out’ is even possible), they pay down their debt. That newly-printed money goes nowhere.</p>
+<p>That’s really as far as central banks can go. But a platform like Ergo can offer different types of money, with different conditions attached via smart contracts, incentivising different behaviour in different circumstances. And that enables a whole different range of monetary policy tools.</p>
+<h2 id="hot-potato-money">‘Hot potato’ money</h2>
+<p>In normal times, banks seek to maintain an inflation rate of around 2%. This means money is worth less over time. So instead of saving it all, and seeing the value of their savings fall, citizens have the incentive to spend it and circulate it within the economy.</p>
+<p>Too much inflation, of course, is a bad thing. Get money printing wrong and you have hyperinflation like Venezuela or Zimbabwe, and your economy collapses.</p>
+<p>But what if we kept inflation low, but created a limited amount of a special class of money that had to be used quickly if it was to retain its value at all? We’ll call this ‘hot potato’ money, because it has to be passed on fast.</p>
+<p>Using a blockchain and smart contracts, this would be a simple matter of creating a new token that could be freely transferred and traded, just like any other token. And it could be backed by reserves (held with the central bank, commercial banks or any other entity). But the difference would be that it has to be spent within a month of receiving it, or those tokens are locked, their value is lost to the holder and the funds that back them are freed up to return to the reserve holder.</p>
+<p>So this would be regular money that people had to spend: use it or lose it. If they hoard it, it becomes useless. And we can ensure that it is not used to pay down debt by including conditions that ensure it cannot be used by the banking sector. Of course, Ergo’s Sigma protocols can be used to figure out what has been spent, where, without knowing individual spending habits – enabling even more targeted stimulus.</p>
+<p>This idea likely has far-reaching implications – and possibly unintended consequences. What would the result be, for example, of creating different ‘classes’ of money that were only semi-interchangeable? Would this introduce unwelcome, even dangerous friction?</p>
+<p>This and other questions would need to be explored further. What’s clear is that central banks are already experimenting with unconventional monetary policy and are fast reaching the end of the road. We can continue that experiment with better, more powerful and targeted tools.</p>
 
           </div>
         </div>
@@ -241,7 +185,7 @@ Before <code>/wallet/boxes/uncertain</code> method being implemented, the only w
   <p class="eg-text__paragraph eg-text__paragraph--26">Share post</p>
   <ul class="eg-social">
     <li class="eg-share_item">
-      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_09_06_crowdfund%2f" target="_blank">
+      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2020_04_02_use_hot_potato%2f" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path d="M17 14.0001H25V28.4H17V14.0001Z" fill="white"/>
@@ -252,7 +196,7 @@ Before <code>/wallet/boxes/uncertain</code> method being implemented, the only w
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2019_09_06_crowdfund%2f&amp;hashtags=ergoplatform" target="_blank">
+      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2020_04_02_use_hot_potato%2f&amp;hashtags=ergoplatform" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path class="st0" fill-rule="evenodd" clip-rule="evenodd" d="M29 16.4204C28.4478 16.6615 27.855 16.8241 27.2323 16.8975C27.868 16.5225 28.3558 15.9287 28.5857 15.2214C27.9909 15.5684 27.3322 15.8208 26.6315 15.9565C26.0699 15.3677 25.2701 15 24.3851 15C22.6855 15 21.3076 16.3562 21.3076 18.0291C21.3076 18.2666 21.3347 18.4978 21.3873 18.7195C18.8298 18.5933 16.5616 17.3871 15.0441 15.5542C14.7792 16.0018 14.6274 16.5222 14.6274 17.0774C14.6274 18.1283 15.1706 19.0554 15.9963 19.5989C15.4921 19.5831 15.0174 19.4469 14.6024 19.22C14.6021 19.2325 14.6021 19.2452 14.6021 19.2581C14.6021 20.7258 15.6632 21.9504 17.0707 22.2285C16.8128 22.2979 16.5409 22.335 16.2599 22.335C16.0619 22.335 15.8693 22.3158 15.6812 22.2805C16.0728 23.4839 17.2097 24.36 18.5559 24.3843C17.5025 25.197 16.176 25.6812 14.734 25.6812C14.4857 25.6812 14.2408 25.6667 14 25.6384C15.3617 26.4982 16.979 27 18.7175 27C24.3777 27 27.4734 22.3837 27.4734 18.3804C27.4734 18.2494 27.4705 18.1184 27.4645 17.9883C28.0658 17.5614 28.5873 17.0281 29 16.4204Z" fill="#FF4221"/>
@@ -260,7 +204,7 @@ Before <code>/wallet/boxes/uncertain</code> method being implemented, the only w
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link copy-link" href="https://ergoplatform.org/en/blog/2019_09_06_crowdfund/" target="_blank">
+      <a class="eg-share__link copy-link" href="https://ergoplatform.org/en/blog/2020_04_02_use_hot_potato/" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M39.91 19.3528L34.2335 6.06338C34.1186 5.78985 33.898 5.57515 33.6227 5.46487L20.2117 0.0807171C19.9364 -0.0292029 19.6283 -0.027376 19.3547 0.089384L6.0641 5.76578C5.79022 5.8811 5.57549 6.10129 5.46522 6.37698L0.0816753 19.7881C-0.0303977 20.0656 -0.0267767 20.3716 0.0903423 20.6455L5.76643 33.9366C5.88175 34.2101 6.10231 34.4249 6.37727 34.5352L19.7883 39.919C19.9209 39.9727 20.0639 40 20.2048 40C20.3544 40 20.5043 39.971 20.647 39.909L33.9359 34.2324C34.2097 34.1171 34.4245 33.8966 34.5348 33.6216L39.9183 20.2102C40.0304 19.9327 40.0267 19.6267 39.91 19.3528Z" stroke="#FF4221"/>
@@ -316,22 +260,6 @@ Before <code>/wallet/boxes/uncertain</code> method being implemented, the only w
                 </div>
               
             
-              
-                <div class="eg-blog__item related__post">
-                  <a href="https://ergoplatform.org/en/blog/2020_04_02_use_hot_potato/" class="eg-link">
-                    <div class="eg-blog__item-img"><img src="/img/blog/use_potato.jpg" height="188" width="335" alt="blog photo"></div>
-                    <div class="eg-mb-1"><h3 class="eg-blog__item-title eg-link" href="https://ergoplatform.org/en/blog/2020_04_02_use_hot_potato/"><span>Ergo use case: ‘hot potato’ monetary policy</span></h3></div>
-                    <div class="eg-mb-1"><p class="eg-blog__item-paragraph eg-link" href="https://ergoplatform.org/en/blog/2020_04_02_use_hot_potato/"><span>As the next financial crisis takes hold, it’s clear that conventional monetary policy is at its limit. Smart contract platforms like Ergo enable more …</span></p></div>
-                  </a>
-                  
-                  <div class="eg-author">
-                    <img src="/img/authors/guy_brandon.jpg" alt="author img" class="eg-author__img" width="60" height="60">
-                    <div class="eg-author__info">
-                      <h4 class="eg-author__info-title">Guy Brandon</h4>
-                      <p class="eg-author__info-paragraph">2 April, 2020</p>
-                    </div>
-                  </div>
-                </div>
               
             
               
@@ -609,6 +537,22 @@ Node security There are a few important aspects of node usage …</span></p></di
                 </div>
               
             
+              
+                <div class="eg-blog__item related__post">
+                  <a href="https://ergoplatform.org/en/blog/2019_09_06_crowdfund/" class="eg-link">
+                    <div class="eg-blog__item-img"><img src="/img/blog/crowdfund.jpg" height="188" width="335" alt="blog photo"></div>
+                    <div class="eg-mb-1"><h3 class="eg-blog__item-title eg-link" href="https://ergoplatform.org/en/blog/2019_09_06_crowdfund/"><span>Ergo and crowdfunding</span></h3></div>
+                    <div class="eg-mb-1"><p class="eg-blog__item-paragraph eg-link" href="https://ergoplatform.org/en/blog/2019_09_06_crowdfund/"><span>What is Crowdfunding? Crowdfunding is a way of raising capital through the collective efforts of individuals. The campaigns are mostly started via the …</span></p></div>
+                  </a>
+                  
+                  <div class="eg-author">
+                    <img src="/img/authors/robert_wolf.jpg" alt="author img" class="eg-author__img" width="60" height="60">
+                    <div class="eg-author__info">
+                      <h4 class="eg-author__info-title">Robert Wolf</h4>
+                      <p class="eg-author__info-paragraph">6 September, 2019</p>
+                    </div>
+                  </div>
+                </div>
               
             
               
