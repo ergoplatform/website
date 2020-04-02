@@ -715,6 +715,9 @@
 - id: team_community
   translation: Community
 
+- id: team_content_manager
+  translation: Content Manager
+
 - id: team_researcher
   translation: Researcher at researchinstitute.io
 
