@@ -127,7 +127,7 @@ ergo { directory = ${ergo.directory}&amp;#34;/.ergo&amp;#34; node { mining = fal
  0x01 - Pay-to-PublicKey(P2PK) address 0x02 - Pay-to-Script-Hash(P2SH) 0x03 - Pay-to-Script(P2S)  对于地址类型，我们建立的内容字节如下：
  P2PK – 序列化（压缩）公钥 P2SH - 序列化脚本字节Blake2b256 哈希的前192个比特 P2S – 序列化脚本（这就是挖矿奖励的去处!）  举例来说，将10个尔格币发到P2PK 地址通常意味着对应的交易将包含一个币箱，在这个币箱中用P2PK地址中编码的公钥锁住10个尔格币。与此相类似， 如果是P2S地址，币箱将被地址中编码脚本锁住。如果是最复杂的P2SH脚本，币箱将获得特别预先确定脚本的保护，其将对脚本采用Blake2b256 哈希值前192个比特，在币箱支出时，应当会通过输入值显示。
 以下是特定地址将如何看待测试网的例子：
- 3 - P2PK (3WvsT2Gm4EpsM9Pg18PdY6XyhNNMqXDsvJTbbf6ihLvAmSb7u5RN) 8 - P2SH (8UmyuJuQ3FS9ts7j72fn3fKChXSGzbL9WC, 8LnSX95GAWdbDZWJZQ73Uth4uE8HqN3emJ) ? - P2S (imdaM2NzX, z4hAmfvfSnQJPChMWzfBzJjpB8ei2HoLCZ2RHTaNArMNHFirdJTc7E)  以下是他们对我们主网的看法：</description>
+ 3 - P2PK (3WvsT2Gm4EpsM9Pg18PdY6XyhNNMqXDsvJTbbf6ihLvAmSb7u5RN) ? - P2SH (rbcrmKEYduUvADj9Ts3dSVSG27h54pgrq5fPuwB) ? - P2S (Ms7smJwLGbUAjuWQ)  以下是他们对我们主网的看法：</description>
     </item>
     
     <item>
