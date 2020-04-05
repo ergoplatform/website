@@ -72,6 +72,12 @@ pygmentsUseClasses=true
     url = "/team/"
     weight = -40
 
+  [[languages.en.menu.mainmenu]]
+    identifier = "Use"
+    name = "Use Cases"
+    url = "/use_cases/"
+    weight = -30
+
   # [[languages.en.menu.mainmenu]]
   #   identifier = "Careers"
   #   name = "Careers"
@@ -131,3 +137,9 @@ pygmentsUseClasses=true
     name = "团队"
     url = "/team/"
     weight = -40
+
+  [[languages.cn.menu.mainmenu]]
+    identifier = "Use"
+    name = "Use Cases"
+    url = "/use_cases/"
+    weight = -30

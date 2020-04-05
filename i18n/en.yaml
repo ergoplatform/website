@@ -1097,3 +1097,47 @@
 
 - id: tag_blog
   translation: "Back to blog"
+
+# use_cases
+
+- id: use_cases_title
+  translation: Ergo Use Cases
+
+- id: use_cases_first_paragraph
+  translation: Ergo’s Sigma protocols and blockchain architecture make it possible to launch numerous use cases that would be difficult or impossible on conventional blockchain platforms, as well as those that can be implemented on other networks. While the range of possible use cases is endless, here are several examples.
+
+- id: use_cases_second_title
+  translation: Digital gold
+
+- id: use_cases_second_paragraph
+  translation: Just like Bitcoin, Ergo has digital scarcity. There is a limited supply, mined into existence through Proof of Work. In this respect, Ergo is a conservative blockchain. However, additional features are designed to ensure that miners are adequately compensated after block rewards end.
+
+- id: use_cases_third_title
+  translation: "Powerful privacy applications: ErgoMixer"
+
+- id: use_cases_third_paragraph
+  translation: "The project uses Ergo’s Sigma protocols to enable efficient, trustless mixing of funds, enabling a high degree of privacy while ensuring security is not compromised."
+
+- id: use_cases_fourth_title
+  translation: Safe, simple financial contracts
+
+- id: use_cases_fourth_paragraph
+  translation: Ergo enables new models of financial interaction, underpinned by smart contracts built on flexible and powerful Sigma protocols but easily accessible to developers.
+
+- id: use_cases_fifth_title
+  translation: Alternative financial systems and products
+
+- id: use_cases_fifth_paragraph
+  translation: The need to reform the global financial system has been clear since the last crisis in 2008. Now, COVID-19 has forced our hands. We cannot delay, and the best way to start is from the grassroots. Ergo offers powerful tools to achieve this with smart contract-powered microcredit facilities and Local Exchange Trading Systems (LETS).
+
+- id: use_cases_sixth_title
+  translation: "‘Hot potato’ monetary policy"
+
+- id: use_cases_sixth_paragraph
+  translation: As the next financial crisis takes hold, it’s clear that conventional monetary policy is at its limit. Smart contract platforms like Ergo enable more innovative, targeted implementations of economic stimulation that the conventional banking sector cannot achieve.
+
+- id: use_cases_seventh_title
+  translation: Money for hard times
+
+- id: use_cases_seventh_paragraph
+  translation: With superior support for light clients but no compromise in security, Ergo is ideally suited to use in locations with limited internet connectivity, or where bandwidth and storage are an issue. With support for alternative financial systems that can be accessed safely from any device, Ergo is a natural choice for failing states and economies.

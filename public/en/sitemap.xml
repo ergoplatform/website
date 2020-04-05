@@ -1146,6 +1146,23 @@
   </url>
   
   <url>
+    <loc>https://ergoplatform.org/en/use_cases/</loc>
+    <lastmod>2019-04-24T13:59:34+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://ergoplatform.org/cn/use_cases/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ergoplatform.org/en/use_cases/"
+                />
+  </url>
+  
+  <url>
     <loc>https://ergoplatform.org/en/wallets/</loc>
     <lastmod>2019-04-24T13:59:34+03:00</lastmod>
     <changefreq>weekly</changefreq>
