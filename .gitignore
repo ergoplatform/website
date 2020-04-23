@@ -5,3 +5,6 @@ dist
 *.DS_Store
 /static/js
 /resources/
+
+
+./tools/deploy.sh

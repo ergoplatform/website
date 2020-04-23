@@ -9,3 +9,6 @@ site:
 
 server:
 	hugo -D server --noHTTPCache
+
+deploy:
+	bash ./tools/update.sh && bash ./tools/deploy.sh
