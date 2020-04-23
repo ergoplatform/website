@@ -6,10 +6,20 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 21 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Building Ergo: Oracles</title>
+      <link>https://ergoplatform.org/en/blog/2020_04_04_building_ergo_oracles/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2020_04_04_building_ergo_oracles/</guid>
+      <description>Blockchains are siloed systems that can only reference their own data, established by consensus. Oracles are the solution to the problem of working with external information, which is vital for many everyday use cases.
+Blockchains are intentionally self-contained. They reference information only recorded within their immediate ecosystem, that has been agreed upon by a majority of miners. Since the whole point of a blockchain, based on consensus, is that there are no sources of centralisation or single points of failure, that poses a problem.</description>
+    </item>
     
     <item>
       <title>Building Ergo: Storage rent</title>
