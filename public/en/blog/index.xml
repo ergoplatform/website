@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Building Ergo: Atomic Swaps</title>
+      <link>https://ergoplatform.org/en/blog/2020_04_24_atomic_swaps/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2020_04_24_atomic_swaps/</guid>
+      <description>Because a blockchain is a siloed, self-contained system by design, interacting with other blockchain protocols is challenging. Atomic Swaps enable cross-chain exchange of digital assets, avoiding the need for centralised exchanges.
+Blockchains are excellent at decentralised value transfer within their own domains. That is, you can send BTC to any Bitcoin address securely and easily, and you can send LTC to any Litecoin address securely and easily too.
+But because blockchains are based on consensus between miners, they are not designed to interface with other blockchains.</description>
+    </item>
+    
+    <item>
       <title>Building Ergo: Oracles</title>
       <link>https://ergoplatform.org/en/blog/2020_04_04_building_ergo_oracles/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
@@ -19,17 +30,6 @@
       <guid>https://ergoplatform.org/en/blog/2020_04_04_building_ergo_oracles/</guid>
       <description>Blockchains are siloed systems that can only reference their own data, established by consensus. Oracles are the solution to the problem of working with external information, which is vital for many everyday use cases.
 Blockchains are intentionally self-contained. They reference information only recorded within their immediate ecosystem, that has been agreed upon by a majority of miners. Since the whole point of a blockchain, based on consensus, is that there are no sources of centralisation or single points of failure, that poses a problem.</description>
-    </item>
-    
-    <item>
-      <title>Building Ergo: Atomic Swaps</title>
-      <link>https://ergoplatform.org/en/blog/2020_04_24_atomic_swaps/</link>
-      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ergoplatform.org/en/blog/2020_04_24_atomic_swaps/</guid>
-      <description>Because a blockchain is a siloed, self-contained system by design, interacting with other blockchain protocols is challenging. Atomic Swaps enable cross-chain exchange of digital assets, avoiding the need for centralised exchanges.
-Blockchains are excellent at decentralised value transfer within their own domains. That is, you can send BTC to any Bitcoin address securely and easily, and you can send LTC to any Litecoin address securely and easily too.
-But because blockchains are based on consensus between miners, they are not designed to interface with other blockchains.</description>
     </item>
     
     <item>

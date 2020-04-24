@@ -1,9 +1,9 @@
 ---
 title: "Building Ergo: Atomic Swaps"
-date: 2020-04-21
+date: 2020-04-24
 author: "Guy Brandon"
 authorPhoto: "/img/authors/guy_brandon.jpg"
-blogPhoto: "/img/blog/rent_storage.jpg"
+blogPhoto: "/img/blog/atomic_swap.jpg"
 ---
 
 __Because a blockchain is a siloed, self-contained system by design, interacting with other blockchain protocols is challenging. Atomic Swaps enable cross-chain exchange of digital assets, avoiding the need for centralised exchanges.__
