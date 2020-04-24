@@ -22,6 +22,17 @@ Blockchains are intentionally self-contained. They reference information only re
     </item>
     
     <item>
+      <title>Building Ergo: Atomic Swaps</title>
+      <link>https://ergoplatform.org/en/blog/2020_04_24_atomic_swaps/</link>
+      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2020_04_24_atomic_swaps/</guid>
+      <description>Because a blockchain is a siloed, self-contained system by design, interacting with other blockchain protocols is challenging. Atomic Swaps enable cross-chain exchange of digital assets, avoiding the need for centralised exchanges.
+Blockchains are excellent at decentralised value transfer within their own domains. That is, you can send BTC to any Bitcoin address securely and easily, and you can send LTC to any Litecoin address securely and easily too.
+But because blockchains are based on consensus between miners, they are not designed to interface with other blockchains.</description>
+    </item>
+    
+    <item>
       <title>Building Ergo: Storage rent</title>
       <link>https://ergoplatform.org/en/blog/2020_04_21_ergo_positioning/</link>
       <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
