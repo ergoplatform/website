@@ -15,6 +15,9 @@ parserOptions:
 rules:
   no-console: 0
   no-new: 0
+  quotes: 0
+  operator-linebreak: 0
+  comma-dangle: 0
 
 plugins:
   # https://github.com/babel/eslint-plugin-babel
