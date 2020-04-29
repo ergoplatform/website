@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>FlowCards: A Declarative Framework for Development of Ergo dApps</title>
+      <link>https://ergoplatform.org/en/blog/2020_04_29_flow_cards/</link>
+      <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2020_04_29_flow_cards/</guid>
+      <description>With thanks to Robert Kornacki for polishing of the draft.
+ Introduction ErgoScript is the smart contract language used by the Ergo blockchain. While it has concise syntax adopted from Scala/Kotlin, it still may seem confusing at first because conceptually ErgoScript is quite different compared to conventional languages which we all know and love. This is because Ergo is a UTXO based blockchain, whereas smart contracts are traditionally associated with account based systems like Ethereum.</description>
+    </item>
+    
+    <item>
       <title>Building Ergo: Atomic Swaps</title>
       <link>https://ergoplatform.org/en/blog/2020_04_24_atomic_swaps/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>

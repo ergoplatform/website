@@ -4563,6 +4563,13 @@ isstream@~0.1.2:
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
+jquery-lazy@^1.7.10:
+  version "1.7.10"
+  resolved "https://registry.yarnpkg.com/jquery-lazy/-/jquery-lazy-1.7.10.tgz#aa3d43d058bf1ea89284214f4521f6d9a162d051"
+  integrity sha512-1vBpU+igfZJ58BrQrk2OFl3TMriGeIfZUg35uSIajZF4GcxF96NtdS3LbWk5a72rH2ypz0odTsAkqhUsICknhw==
+  dependencies:
+    jquery ">=1.7.2"
+
 jquery-ui-dist@^1.12.1:
   version "1.12.1"
   resolved "https://registry.yarnpkg.com/jquery-ui-dist/-/jquery-ui-dist-1.12.1.tgz#5c0815d3cc6f90ff5faaf5b268a6e23b4ca904fa"
@@ -4572,6 +4579,11 @@ jquery-ui@^1.12.1:
   version "1.12.1"
   resolved "https://registry.yarnpkg.com/jquery-ui/-/jquery-ui-1.12.1.tgz#bcb4045c8dd0539c134bc1488cdd3e768a7a9e51"
   integrity sha1-vLQEXI3QU5wTS8FIjN0+dop6nlE=
+
+jquery@>=1.7.2:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.5.0.tgz#9980b97d9e4194611c36530e7dc46a58d7340fc9"
+  integrity sha512-Xb7SVYMvygPxbFMpTFQiHh1J7HClEaThguL15N/Gg37Lri/qKyhRGZYzHRyLH8Stq3Aow0LsHO2O2ci86fCrNQ==
 
 jquery@^3.4.1:
   version "3.4.1"

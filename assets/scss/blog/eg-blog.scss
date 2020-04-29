@@ -281,6 +281,9 @@
       }
 
       code {
+        background: $light-white;
+        color: $light-red;
+        padding: 1px 4px;
         font-family: LabGrotesque !important;
       }
 
@@ -343,6 +346,8 @@
           line-height: inherit;
           overflow: visible;
           word-wrap: normal;
+          background: none;
+          color: inherit;
         }
       }
 
