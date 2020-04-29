@@ -1,8 +1,8 @@
 ---
 title: "FlowCards: A Declarative Framework for Development of Ergo dApps"
 date: 2020-04-29
-author: "Alex Chepurnoy"
-authorPhoto: "/img/authors/alex_chepurnoy.svg"
+author: "Alexander Slesarenko"
+authorPhoto: "/img/authors/alexander_slesarenko.jpg"
 blogPhoto: "/img/blog/flow_cards.jpg"
 ---
 
