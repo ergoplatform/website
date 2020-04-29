@@ -4,6 +4,7 @@ date: 2020-03-16
 author: "Ergo team"
 authorPhoto: "/img/logotype_black_circle.svg"
 blogPhoto: "/img/blog/ergo_sigma.jpg"
+tags: ['Building Ergo']
 ---
 
 _Ergo’s smart contracts and DeFi functionality are built on Sigma protocols – a powerful, flexible class of zero-knowledge proofs. Find out more about why they’re so important, and how they put Ergo head and shoulders above the competition._

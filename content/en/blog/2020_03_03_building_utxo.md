@@ -4,6 +4,7 @@ date: 2020-03-03
 author: "Ergo team"
 authorPhoto: "/img/logotype_black_circle.svg"
 blogPhoto: "/img/blog/building_ergo.jpg"
+tags: ['Building Ergo']
 ---
 
 Ergo takes the most secure and best-established features of Bitcoin and implements advanced new cryptographic features on its rock-solid foundations. This series explores the choices we have made in creating Ergo, with the first article unpacking the advantages of the UTXO model.

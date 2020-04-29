@@ -4,6 +4,7 @@ date: 2020-04-23
 author: "Guy Brandon"
 authorPhoto: "/img/authors/guy_brandon.jpg"
 blogPhoto: "/img/blog/network.jpg"
+tags: ['Building Ergo']
 ---
 
 __Blockchains are siloed systems that can only reference their own data, established by consensus. Oracles are the solution to the problem of working with external information, which is vital for many everyday use cases.__

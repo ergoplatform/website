@@ -4,6 +4,7 @@ date: 2020-04-02
 author: "Guy Brandon"
 authorPhoto: "/img/authors/guy_brandon.jpg"
 blogPhoto: "/img/blog/use_potato.jpg"
+tags: ['Building Ergo']
 ---
 
 _As the next financial crisis takes hold, it’s clear that conventional monetary policy is at its limit. Smart contract platforms like Ergo enable more innovative, targeted implementations of economic stimulation that the conventional banking sector cannot achieve._

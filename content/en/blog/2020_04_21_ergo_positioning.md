@@ -4,6 +4,7 @@ date: 2020-04-21
 author: "Guy Brandon"
 authorPhoto: "/img/authors/guy_brandon.jpg"
 blogPhoto: "/img/blog/rent_storage.jpg"
+tags: ['Building Ergo']
 ---
 
 __We’ve designed Ergo with long-term economic sustainability in mind, and storage rent is one of the ways we’re ensuring miners stay profitable well into the future. One community member, Robert, describes this function as ‘on-chain garbage collection’ that reduces the problem of blockchain bloat – and even makes it profitable.__
