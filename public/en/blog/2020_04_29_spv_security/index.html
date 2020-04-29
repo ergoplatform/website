@@ -11,12 +11,11 @@
     <link rel="preload" href="/fonts/LabGrotesque-Regular-hint-all.woff" as="font" type="font/woff" crossorigin>
 
     
-      <meta name="description" content="There’s often a tension in the crypto world between security and convenience. That trade-off is unacceptable if we want these technologies to be widely used. Here’s how Ergo addresses one common and very important issue.
-We all know that the most secure way to use Bitcoin, or any crypto, is to download a copy of the blockchain and run a full node yourself. That way, every time you or anyone else makes a transaction, your client checks the blockchain to ensure it’s valid.">
+      <meta name="description" content="">
     
 
     
-    <title>Building Ergo: SPV security | Ergo</title>
+    <title> | Ergo</title>
 
     
     
@@ -150,51 +149,21 @@ We all know that the most secure way to use Bitcoin, or any crypto, is to downlo
         <a href="https://ergoplatform.org/en/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>Back to all posts</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
-        <h1 class="eg-title eg-mb-1">Building Ergo: SPV security</h1>
-        
-          <ul class="eg-my-1-5">
-            
-              <a class="eg-tag" href="/en/tags/building-ergo">Building Ergo</a>
-            
-          </ul>
+        <h1 class="eg-title eg-mb-1"></h1>
         
         <div class="eg-author">
-          <img src="/img/authors/guy_brandon.jpg" alt="author img" class="eg-author__img">
+          <img src="" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
-            <h4 class="eg-author__info-title">Guy Brandon</h4>
-            <p class="eg-author__info-paragraph">29 April, 2020</p>
+            <h4 class="eg-author__info-title"></h4>
+            <p class="eg-author__info-paragraph">1 January, 0001</p>
           </div>
         </div>
         <div class="eg-blog__single-img">
-          <img src="/img/blog/spv_payment.jpg" alt="blog photo">
+          <img src="" alt="blog photo">
         </div>
         <div class="eg-blog__single-content">
           <div>
-            <p><em>There’s often a tension in the crypto world between security and convenience. That trade-off is unacceptable if we want these technologies to be widely used. Here’s how Ergo addresses one common and very important issue.</em></p>
-<p>We all know that the most secure way to use Bitcoin, or any crypto, is to download a copy of the blockchain and run a full node yourself. That way, every time you or anyone else makes a transaction, your client checks the blockchain to ensure it’s valid. You don’t have to trust anyone else.</p>
-<p>A full Bitcoin node checks all the blocks in the blockchain (using headers) and makes sure there are no fraudulent transactions. It’s a very secure way of using crypto – but there’s a problem. It requires significant bandwidth, storage and processing power. That kind of commodity hardware is expensive, and using a full node to validate and make transactions is in any case unsuitable for mobile devices. This is particularly true for Bitcoin, where the blockchain is over <a href="https://www.blockchain.com/charts/blocks-size">270 GB and counting</a>.</p>
-<h2 id="spv">SPV</h2>
-<p>Simplified Payment Verification (SPV) is designed to address this problem, as described in the <a href="https://bitcoin.org/bitcoin.pdf">Bitcoin white paper</a>:</p>
-<ul>
-<li><em>It is possible to verify payments without running a full network node. A user only needs to keep a copy of the block headers of the longest proof-of-work chain, which he can get by querying network nodes until he's convinced he has the longest chain, and obtain the Merkle branch linking the transaction to the block it's timestamped in. He can't check the transaction for himself, but by linking it to a place in the chain, he can see that a network node has accepted it, and blocks added after it further confirm the network has accepted it.</em></li>
-</ul>
-<p>Satoshi notes that this is not a perfect solution, and is vulnerable to an attacker overpowering the network and fooling SPV users.</p>
-<p>Moreover, while SPV mode is intended for resource-limited devices, even this ‘lite’ approach is not always feasible. Ethereum’s headers alone total around 5 GB to download. Thus Ethereum mobile clients do not validate chain validity and so blindly have to trust third parties.</p>
-<p>There are proposals to reduce the requirements for SPV mode by checking just a few random headers, instead of all of them. But it’s hard to do that securely.</p>
-<h2 id="efficient-spv">Efficient SPV</h2>
-<p>Several years have been spent researching and developing secure protocols that allow for efficient SPV clients. The two best-known and most reliable protocols are NiPoPoWs and FlyClient.</p>
-<p>Ergo implements NiPoPoWs, or Non-interactive Proof-of-Proof-of-Work. This technology can be explored in full on this dedicated website: <a href="https://nipopows.com">https://nipopows.com</a>:</p>
-<ul>
-<li>
-<p><em>Non-Interactive Proofs of Proof-of-Work (NIPoPoWs) are short stand-alone strings that a computer program can inspect to verify that an event happened on a proof-of-work-based blockchain without connecting to the blockchain network and without downloading all block headers. For example, these proofs can illustrate that a cryptocurrency payment was made.</em></p>
-</li>
-<li>
-<p><em>NIPoPoWs allow very efficient mobile wallets to be created. <a href="https://bitcoin.org/en/developer-guide#simplified-payment-verification-spv">SPV wallets</a> are already very lightweight compared to full nodes because they only require the download of block headers, not the whole blockchain. NIPoPoW wallets need to download only a small <em><strong>sample</strong></em> of block headers, around 250, when SPV clients need to download half a million block headers. The sample needed changes but doesn't grow much in size as the blockchain grows larger by the years, even after decades of data has been accumulated.</em></p>
-</li>
-</ul>
-<p>This enables us to build a mobile SPV client that requires around <strong>just 100KB</strong> of block headers to be downloaded.</p>
-<p>A super-efficient Ergo wallet with SPV security is in development, so stay tuned for more updates!</p>
-
+            
           </div>
         </div>
         <div><div class="eg-share eg-text">
@@ -257,8 +226,6 @@ We all know that the most secure way to use Bitcoin, or any crypto, is to downlo
           <div class="eg-blog__main related">
             
             
-            
-              
             
               
                 <div class="eg-blog__item related__post">
@@ -941,6 +908,8 @@ What are …</span></p></div>
                     </div>
                   </div>
                 </div>
+              
+            
               
             
             </div>
