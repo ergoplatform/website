@@ -1,6 +1,6 @@
 ---
 title: "Building Ergo: SPV security"
-date: 2020-05-1
+date: 2020-05-01
 author: "Guy Brandon"
 authorPhoto: "/img/authors/guy_brandon.jpg"
 blogPhoto: "/img/blog/spv_payment.jpg"

@@ -3,8 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ergoplatform.org/en/tags/building-ergo/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/en/blog/2020_05_1_spv_security/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://ergoplatform.org/en/</loc>
-    <lastmod>2020-04-29T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -16,6 +30,23 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://ergoplatform.org/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/en/tags/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://ergoplatform.org/cn/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ergoplatform.org/en/tags/"
                 />
   </url>
   
@@ -34,13 +65,6 @@
   </url>
   
   <url>
-    <loc>https://ergoplatform.org/en/tags/building-ergo/</loc>
-    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://ergoplatform.org/en/blog/2020_04_24_atomic_swaps/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -52,23 +76,6 @@
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ergoplatform.org/en/tags/</loc>
-    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="https://ergoplatform.org/cn/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ergoplatform.org/en/tags/"
-                />
   </url>
   
   <url>
@@ -1642,12 +1649,6 @@
                 hreflang="en"
                 href="https://ergoplatform.org/en/blog/2018_10_19-smart-contracts/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://ergoplatform.org/en/blog/2020_05_1_spv_security/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
