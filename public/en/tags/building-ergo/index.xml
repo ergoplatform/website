@@ -6,10 +6,20 @@
     <description>Recent content in Building Ergo on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/en/tags/building-ergo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Building Ergo: SPV security</title>
+      <link>https://ergoplatform.org/en/blog/2020_04_29_spv_security/</link>
+      <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2020_04_29_spv_security/</guid>
+      <description>There’s often a tension in the crypto world between security and convenience. That trade-off is unacceptable if we want these technologies to be widely used. Here’s how Ergo addresses one common and very important issue.
+We all know that the most secure way to use Bitcoin, or any crypto, is to download a copy of the blockchain and run a full node yourself. That way, every time you or anyone else makes a transaction, your client checks the blockchain to ensure it’s valid.</description>
+    </item>
     
     <item>
       <title>Building Ergo: Atomic Swaps</title>

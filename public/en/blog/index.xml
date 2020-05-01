@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Building Ergo: SPV security</title>
+      <link>https://ergoplatform.org/en/blog/2020_04_29_spv_security/</link>
+      <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2020_04_29_spv_security/</guid>
+      <description>There’s often a tension in the crypto world between security and convenience. That trade-off is unacceptable if we want these technologies to be widely used. Here’s how Ergo addresses one common and very important issue.
+We all know that the most secure way to use Bitcoin, or any crypto, is to download a copy of the blockchain and run a full node yourself. That way, every time you or anyone else makes a transaction, your client checks the blockchain to ensure it’s valid.</description>
+    </item>
+    
+    <item>
       <title>FlowCards: A Declarative Framework for Development of Ergo dApps</title>
       <link>https://ergoplatform.org/en/blog/2020_04_29_flow_cards/</link>
       <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
@@ -373,15 +383,6 @@ What are the vision about scaling and adoption? About scaling, the main approach
       <guid>https://ergoplatform.org/en/blog/2018_10_19-smart-contracts/</guid>
       <description>A lot of blockchain-related news these days are saying us that a bank X or a corporation Y is going to use a &amp;ldquo;blockchain&amp;rdquo; to &amp;ldquo;reduce costs&amp;rdquo;. Basically it means that just another buzzword is considered by big banksters as just another tool to extract value from everywhere in a more efficient way, and also to save on cutting job positions.
 While I am avoiding to say anything about &amp;ldquo;Satoshi&#39;s vision&amp;rdquo; (nothing but speculations could be dug there after his exodus), a broad view I witnessed in the early years around online forums users is that a cryptocurrency should provide tools to enrich the ordinary people behind their small businesses providing no much above making ends meet, not depersonalized big financial capital.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://ergoplatform.org/en/blog/2020_04_29_spv_security/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ergoplatform.org/en/blog/2020_04_29_spv_security/</guid>
-      <description></description>
     </item>
     
   </channel>

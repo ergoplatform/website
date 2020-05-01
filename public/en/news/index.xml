@@ -12,11 +12,38 @@
     
     
     <item>
-      <title>Building Ergo: Storage rent</title>
+      <title>FlowCards: A Declarative Framework for Development of Ergo dApps</title>
+      <link>https://ergoplatform.org/en/news/2020_04_29/</link>
+      <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2020_04_29/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Building Ergo: Atomic Swaps</title>
+      <link>https://ergoplatform.org/en/news/2020_04_24/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2020_04_24/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Building Ergo: Oracles</title>
       <link>https://ergoplatform.org/en/news/2020_04_23/</link>
-      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://ergoplatform.org/en/news/2020_04_23/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Building Ergo: Storage rent</title>
+      <link>https://ergoplatform.org/en/news/2020_04_21/</link>
+      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2020_04_21/</guid>
       <description></description>
     </item>
     

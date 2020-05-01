@@ -1,4 +1,4 @@
-<!-- ---
+---
 title: "Building Ergo: SPV security"
 date: 2020-04-29
 author: "Guy Brandon"
@@ -37,4 +37,4 @@ Ergo implements NiPoPoWs, or Non-interactive Proof-of-Proof-of-Work. This techno
 
 This enables us to build a mobile SPV client that requires around __just 100KB__ of block headers to be downloaded.
 
-A super-efficient Ergo wallet with SPV security is in development, so stay tuned for more updates! -->
+A super-efficient Ergo wallet with SPV security is in development, so stay tuned for more updates!
