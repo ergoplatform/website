@@ -6,10 +6,21 @@
     <description>Recent content on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Introduction to stablecoins</title>
+      <link>https://ergoplatform.org/en/blog/2020_05_05_stablecoins/</link>
+      <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2020_05_05_stablecoins/</guid>
+      <description>Stablecoins are a major use case for DeFi but come in various different forms. The stablecoin space is still relatively young and underserved – but that’s changing fast.
+Stablecoins are one of the most important and popular DeFi products, enabling users to hedge and store value on the blockchain, without having to use exchanges or other centralised providers.
+As a smart contracts and DeFi platform, Ergo is well suited for building all kinds of dApps, including stablecoins.</description>
+    </item>
     
     <item>
       <title>Building Ergo: SPV security</title>
