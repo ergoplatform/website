@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Building Ergo: Lite full nodes</title>
+      <link>https://ergoplatform.org/en/blog/2020_05_08_lite_full_nodes/</link>
+      <pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2020_05_08_lite_full_nodes/</guid>
+      <description>Ergo allows any user to run a full node with low resources – meaning you can help maintain the network with a device as simple as a Raspberry Pi.
+In a previous post, we looked at Ergo’s SPV mode, which allows for secure, efficient mobile clients. This enables users to make transactions using almost any device.
+At the other end of the scale, you might want to run a full node.</description>
+    </item>
+    
+    <item>
       <title>Introduction to stablecoins</title>
       <link>https://ergoplatform.org/en/blog/2020_05_05_stablecoins/</link>
       <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>

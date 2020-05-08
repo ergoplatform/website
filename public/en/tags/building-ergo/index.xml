@@ -6,10 +6,21 @@
     <description>Recent content in Building Ergo on Ergo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ergoplatform.org/en/tags/building-ergo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Building Ergo: Lite full nodes</title>
+      <link>https://ergoplatform.org/en/blog/2020_05_08_lite_full_nodes/</link>
+      <pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/blog/2020_05_08_lite_full_nodes/</guid>
+      <description>Ergo allows any user to run a full node with low resources – meaning you can help maintain the network with a device as simple as a Raspberry Pi.
+In a previous post, we looked at Ergo’s SPV mode, which allows for secure, efficient mobile clients. This enables users to make transactions using almost any device.
+At the other end of the scale, you might want to run a full node.</description>
+    </item>
     
     <item>
       <title>Building Ergo: SPV security</title>

@@ -11,12 +11,13 @@
     <link rel="preload" href="/fonts/LabGrotesque-Regular-hint-all.woff" as="font" type="font/woff" crossorigin>
 
     
-      <meta name="description" content="The need to reform the global financial system has been clear since the last crisis in 2008. Now, COVID-19 has forced our hands. We cannot delay, and the best way to start is from the grassroots.
-As lockdowns across the world effectively shut down whole sectors and a large part of the economy, we are entering a new era at breakneck pace. Central banks are taking unprecedented action in the form of money printing but, just like last time around, they will almost certainly fail at the ‘last mile’ (intentionally or otherwise): while their efforts will benefit the financial sector and the wealthy, the funds will not reach those small businesses and individuals who need them the most.">
+      <meta name="description" content="Ergo allows any user to run a full node with low resources – meaning you can help maintain the network with a device as simple as a Raspberry Pi.
+In a previous post, we looked at Ergo’s SPV mode, which allows for secure, efficient mobile clients. This enables users to make transactions using almost any device.
+At the other end of the scale, you might want to run a full node.">
     
 
     
-    <title>Ergo use case: Local Exchange Trading System (LETS) | Ergo</title>
+    <title>Building Ergo: Lite full nodes | Ergo</title>
 
     
     
@@ -150,7 +151,7 @@ As lockdowns across the world effectively shut down whole sectors and a large pa
         <a href="https://ergoplatform.org/en/blog" class="eg-text__link eg-text__link--20 eg-text__link--left-arrow eg-link"><span>Back to all posts</span></a>
       </div>
       <div class="eg-text eg-blog eg-blog--w-100">
-        <h1 class="eg-title eg-mb-1">Ergo use case: Local Exchange Trading System (LETS)</h1>
+        <h1 class="eg-title eg-mb-1">Building Ergo: Lite full nodes</h1>
         
           <ul class="eg-my-1-5">
             
@@ -159,29 +160,34 @@ As lockdowns across the world effectively shut down whole sectors and a large pa
           </ul>
         
         <div class="eg-author">
-          <img src="/img/logotype_black_circle.svg" alt="author img" class="eg-author__img">
+          <img src="/img/authors/guy_brandon.jpg" alt="author img" class="eg-author__img">
           <div class="eg-author__info">
-            <h4 class="eg-author__info-title">Ergo team</h4>
-            <p class="eg-author__info-paragraph">2 April, 2020</p>
+            <h4 class="eg-author__info-title">Guy Brandon</h4>
+            <p class="eg-author__info-paragraph">8 May, 2020</p>
           </div>
         </div>
         <div class="eg-blog__single-img">
-          <img src="/img/blog/use_lets.jpg" alt="blog photo">
+          <img src="/img/blog/fullnode.jpg" alt="blog photo">
         </div>
         <div class="eg-blog__single-content">
           <div>
-            <p><em>The need to reform the global financial system has been clear since the last crisis in 2008. Now, COVID-19 has forced our hands. We cannot delay, and the best way to start is from the grassroots.</em></p>
-<p>As lockdowns across the world effectively shut down whole sectors and a large part of the economy, we are entering a new era at breakneck pace. Central banks are taking unprecedented action in the form of money printing but, just like last time around, they will almost certainly fail at the ‘last mile’ (intentionally or otherwise): while their efforts will benefit the financial sector and the wealthy, the funds will not reach those small businesses and individuals who need them the most.</p>
-<h2 id="crossing-the-last-mile">Crossing the last mile</h2>
-<p>Technology like the Ergo platform can address this problem efficiently, building bridges into and within our local economies without the need for commercial or central banks. A key principle of Ergo, and one stated in the white paper, is that it is for regular people. The developers have spent considerable time building technology that can be applied to real-world use cases. (This is the idea behind ‘<a href="http://chepurnoy.org/blog/2018/10/smart-contracts-for-the-people/">Smart contracts for the people</a>’, for example.)</p>
-<h2 id="lets">LETS</h2>
-<p>In the present circumstances, a <a href="https://ergoplatform.org/en/blog/2019_04_22-lets">Local Exchange Trading System (LETS) would be a strong use case for Ergo</a>. A LETS is a mutual credit association in which individual members are allowed to borrow from a common pot of money. All the loans are written into a ledger. Naturally, a blockchain system allows for strict and more granular rules around the size of loans and their use, as well as user privacy.</p>
-<p>For example, let’s assume Alice has a zero balance. She wants to buy a litre of milk from Bob, and borrows the agreed price of 2 euros from the common pot. Alice’s account now registers -2 euros and Bob’s +2 euros. Bob can spend his balance with other participants of the LETS, and the creation of credit allows for economic activity and velocity of money even where people have, temporarily, no cash. Of course, limits on borrowing can be imposed – and even on positive ones, to prevent hoarding within the LETS. Such a system can be <a href="https://ergoplatform.org/en/blog/2019_05_29-exchange/">built trustlessly on Ergo</a>.</p>
-<h2 id="crisis-measures">Crisis measures</h2>
-<p>Systems like this have historically become popular during times of crisis. The first system of this kind was established by Michael Linton in a Canadian town stuck in depression back in 1981. LETS were also popular during the 1998-2002 Argentine Great Depression.</p>
-<p>Most LETS groups consist of 50 to 250 members, with paper-based credit notes and ledgers maintained by a committee. However, it is unsurprising that paper-based LETS have suffered from problems such as counterfeit notes, dishonest activity by administrators, and so on (much like centralised crypto exchanges). A blockchain-based LETS could be vastly superior to any previous system.</p>
-<p>Moreover, building lots of small credit systems on the same blockchain enables interoperability and novel financial products designed to strengthen the system as a whole. Hundreds of different LETS could exist, for individuals and small businesses, with different participation criteria, different credit limits, collateralisation requirements and other parameters. And yet they could still be connected by gateways allowing liquidity to move between different LETS, if required – while avoiding exposure to toxic debt.</p>
-<p><em>What use cases do you have for Ergo to address the broken financial system? Let us know.</em></p>
+            <p><strong>Ergo allows any user to run a full node with low resources – meaning you can help maintain the network with a device as simple as a Raspberry Pi.</strong></p>
+<p>In a previous post, we looked at <a href="https://ergoplatform.org/en/blog/2020_05_1_spv_security/">Ergo’s SPV</a> mode, which allows for secure, efficient mobile clients. This enables users to make transactions using almost any device.</p>
+<p>At the other end of the scale, you might want to run a full node. If you’re a miner, this will require that you download the full blockchain, because you’ll need the whole UTXO (unspent outputs) set to mine new blocks. But you can still run a full node without that UTXO set – vastly reducing the specification and expense of the hardware needed.</p>
+<h2 id="ergo-blocks">Ergo blocks</h2>
+<p>In Ergo, just like Bitcoin, Ethereum and other blockchains, blocks are broken into sections. In Bitcoin, there’s simply a block header and the transactions themselves. But in Ergo, we have some extra sections that enable new functionality:</p>
+<ul>
+<li>Header</li>
+<li>Transactions</li>
+<li>Extensions</li>
+<li>Proofs of UTXO transformation</li>
+</ul>
+<p>The ‘extension’ section contains certain mandatory fields (including links for NiPoPoW, once per 1,024 block epoch) and parameters for miner voting, such as current block size. It can also contain arbitrary fields.</p>
+<p>What this means in practice is that different types of node and client can download only those sections of the blocks they need – reducing the demands for storage, bandwidth and CPU cycles.</p>
+<h2 id="lite-full-nodes">Lite full nodes</h2>
+<p>While miners need to download everything, lite full nodes only need the transactions and proofs. This means they have a cryptographic guarantee of transactions, without holding the full UTXO set itself.</p>
+<p>Lite full nodes check the proofs generated by full nodes (including miners) who do hold the full blockchain, providing a guarantee of ledger validity. In Ethereum, these nodes are called Stateless Clients.</p>
+<p>For Ergo, it means you can run a full node and maintain the network with a device as simple as a Raspberry Pi with 512 MB RAM. This provides the ideal balance between ensuring the security of the network and placing an unnecessary burden on users who wish to do so – improving decentralisation and democratising participation in the Ergo network and community.</p>
 
           </div>
         </div>
@@ -189,7 +195,7 @@ As lockdowns across the world effectively shut down whole sectors and a large pa
   <p class="eg-text__paragraph eg-text__paragraph--26">Share post</p>
   <ul class="eg-social">
     <li class="eg-share_item">
-      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2020_04_02_use_cases%2f" target="_blank">
+      <a class="eg-share__link" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2020_05_08_lite_full_nodes%2f" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path d="M17 14.0001H25V28.4H17V14.0001Z" fill="white"/>
@@ -200,7 +206,7 @@ As lockdowns across the world effectively shut down whole sectors and a large pa
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2020_04_02_use_cases%2f&amp;hashtags=ergoplatform" target="_blank">
+      <a class="eg-share__link" href="https://twitter.com/share?url=https%3a%2f%2fergoplatform.org%2fen%2fblog%2f2020_05_08_lite_full_nodes%2f&amp;hashtags=ergoplatform" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40.91 20.3528L35.2335 7.06338C35.1186 6.78985 34.898 6.57515 34.6227 6.46487L21.2117 1.08072C20.9364 0.970797 20.6283 0.972624 20.3547 1.08938L7.0641 6.76578C6.79022 6.8811 6.57549 7.10129 6.46522 7.37698L1.08168 20.7881C0.969602 21.0656 0.973223 21.3716 1.09034 21.6455L6.76643 34.9366C6.88175 35.2101 7.10231 35.4249 7.37727 35.5352L20.7883 40.919C20.9209 40.9727 21.0639 41 21.2048 41C21.3544 41 21.5043 40.971 21.647 40.909L34.9359 35.2324C35.2097 35.1171 35.4245 34.8966 35.5348 34.6216L40.9183 21.2102C41.0304 20.9327 41.0267 20.6267 40.91 20.3528Z" stroke="#FF4221"/>
           <path class="st0" fill-rule="evenodd" clip-rule="evenodd" d="M29 16.4204C28.4478 16.6615 27.855 16.8241 27.2323 16.8975C27.868 16.5225 28.3558 15.9287 28.5857 15.2214C27.9909 15.5684 27.3322 15.8208 26.6315 15.9565C26.0699 15.3677 25.2701 15 24.3851 15C22.6855 15 21.3076 16.3562 21.3076 18.0291C21.3076 18.2666 21.3347 18.4978 21.3873 18.7195C18.8298 18.5933 16.5616 17.3871 15.0441 15.5542C14.7792 16.0018 14.6274 16.5222 14.6274 17.0774C14.6274 18.1283 15.1706 19.0554 15.9963 19.5989C15.4921 19.5831 15.0174 19.4469 14.6024 19.22C14.6021 19.2325 14.6021 19.2452 14.6021 19.2581C14.6021 20.7258 15.6632 21.9504 17.0707 22.2285C16.8128 22.2979 16.5409 22.335 16.2599 22.335C16.0619 22.335 15.8693 22.3158 15.6812 22.2805C16.0728 23.4839 17.2097 24.36 18.5559 24.3843C17.5025 25.197 16.176 25.6812 14.734 25.6812C14.4857 25.6812 14.2408 25.6667 14 25.6384C15.3617 26.4982 16.979 27 18.7175 27C24.3777 27 27.4734 22.3837 27.4734 18.3804C27.4734 18.2494 27.4705 18.1184 27.4645 17.9883C28.0658 17.5614 28.5873 17.0281 29 16.4204Z" fill="#FF4221"/>
@@ -208,7 +214,7 @@ As lockdowns across the world effectively shut down whole sectors and a large pa
       </a>
     </li>
     <li class="eg-share_item">
-      <a class="eg-share__link copy-link" href="https://ergoplatform.org/en/blog/2020_04_02_use_cases/" target="_blank">
+      <a class="eg-share__link copy-link" href="https://ergoplatform.org/en/blog/2020_05_08_lite_full_nodes/" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M39.91 19.3528L34.2335 6.06338C34.1186 5.78985 33.898 5.57515 33.6227 5.46487L20.2117 0.0807171C19.9364 -0.0292029 19.6283 -0.027376 19.3547 0.089384L6.0641 5.76578C5.79022 5.8811 5.57549 6.10129 5.46522 6.37698L0.0816753 19.7881C-0.0303977 20.0656 -0.0267767 20.3716 0.0903423 20.6455L5.76643 33.9366C5.88175 34.2101 6.10231 34.4249 6.37727 34.5352L19.7883 39.919C19.9209 39.9727 20.0639 40 20.2048 40C20.3544 40 20.5043 39.971 20.647 39.909L33.9359 34.2324C34.2097 34.1171 34.4245 33.8966 34.5348 33.6216L39.9183 20.2102C40.0304 19.9327 40.0267 19.6267 39.91 19.3528Z" stroke="#FF4221"/>
@@ -246,29 +252,6 @@ As lockdowns across the world effectively shut down whole sectors and a large pa
             
             
             
-              
-                <div class="eg-blog__item related__post">
-                  <a href="https://ergoplatform.org/en/blog/2020_05_08_lite_full_nodes/" class="eg-link">
-                    <div class="eg-blog__item-img"><img src="/img/blog/fullnode.jpg" height="188" width="335" alt="blog photo"></div>
-                    <div class="eg-mb-1"><h3 class="eg-blog__item-title eg-link" href="https://ergoplatform.org/en/blog/2020_05_08_lite_full_nodes/"><span>Building Ergo: Lite full nodes</span></h3></div>
-                    <div class="eg-mb-1"><p class="eg-blog__item-paragraph eg-link" href="https://ergoplatform.org/en/blog/2020_05_08_lite_full_nodes/"><span>Ergo allows any user to run a full node with low resources – meaning you can help maintain the network with a device as simple as a Raspberry Pi.
-In a …</span></p></div>
-                  </a>
-                  
-                    <ul class="eg-my-1-5">
-                      
-                        <a class="eg-tag" href="/en/tags/building-ergo">Building Ergo</a>
-                      
-                    </ul>
-                  
-                  <div class="eg-author">
-                    <img src="/img/authors/guy_brandon.jpg" alt="author img" class="eg-author__img" width="60" height="60">
-                    <div class="eg-author__info">
-                      <h4 class="eg-author__info-title">Guy Brandon</h4>
-                      <p class="eg-author__info-paragraph">8 May, 2020</p>
-                    </div>
-                  </div>
-                </div>
               
             
               
@@ -404,6 +387,28 @@ In a …</span></p></div>
                 </div>
               
             
+              
+                <div class="eg-blog__item related__post">
+                  <a href="https://ergoplatform.org/en/blog/2020_04_02_use_cases/" class="eg-link">
+                    <div class="eg-blog__item-img"><img src="/img/blog/use_lets.jpg" height="188" width="335" alt="blog photo"></div>
+                    <div class="eg-mb-1"><h3 class="eg-blog__item-title eg-link" href="https://ergoplatform.org/en/blog/2020_04_02_use_cases/"><span>Ergo use case: Local Exchange Trading System …</span></h3></div>
+                    <div class="eg-mb-1"><p class="eg-blog__item-paragraph eg-link" href="https://ergoplatform.org/en/blog/2020_04_02_use_cases/"><span>The need to reform the global financial system has been clear since the last crisis in 2008. Now, COVID-19 has forced our hands. We cannot delay, and the …</span></p></div>
+                  </a>
+                  
+                    <ul class="eg-my-1-5">
+                      
+                        <a class="eg-tag" href="/en/tags/building-ergo">Building Ergo</a>
+                      
+                    </ul>
+                  
+                  <div class="eg-author">
+                    <img src="/img/logotype_black_circle.svg" alt="author img" class="eg-author__img" width="60" height="60">
+                    <div class="eg-author__info">
+                      <h4 class="eg-author__info-title">Ergo team</h4>
+                      <p class="eg-author__info-paragraph">2 April, 2020</p>
+                    </div>
+                  </div>
+                </div>
               
             
               

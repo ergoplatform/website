@@ -3,8 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ergoplatform.org/en/tags/building-ergo/</loc>
+    <lastmod>2020-05-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/en/blog/2020_05_08_lite_full_nodes/</loc>
+    <lastmod>2020-05-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://ergoplatform.org/en/</loc>
-    <lastmod>2020-05-05T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -20,29 +34,8 @@
   </url>
   
   <url>
-    <loc>https://ergoplatform.org/en/blog/2020_05_05_stablecoins/</loc>
-    <lastmod>2020-05-05T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ergoplatform.org/en/tags/building-ergo/</loc>
-    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ergoplatform.org/en/blog/2020_05_1_spv_security/</loc>
-    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://ergoplatform.org/en/tags/</loc>
-    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -55,6 +48,20 @@
                 hreflang="en"
                 href="https://ergoplatform.org/en/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/en/blog/2020_05_05_stablecoins/</loc>
+    <lastmod>2020-05-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ergoplatform.org/en/blog/2020_05_1_spv_security/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
