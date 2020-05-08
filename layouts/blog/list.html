@@ -1,6 +1,16 @@
 {{define "main"}}
   <main>
-    <section class="container container--top-content container--lg-padding-bottom">
+    <section class="container container--top-content grid-container-1k2">
+      <h2 class="eg-title">Tags:</h2>
+      <div class="eg-text grid-container-1k2__main-section">
+        <div class="eg-tag-container">
+          {{ range .Site.Taxonomies.tags }}
+            <a class="eg-tag" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+    <section class="container container--lg-padding-bottom">
       <div class="eg-blog">
         {{ range first 1 .Pages.ByPublishDate.Reverse }}
           <div class="eg-blog__top-item">

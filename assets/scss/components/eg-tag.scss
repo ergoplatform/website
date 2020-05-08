@@ -3,15 +3,29 @@
   padding: 5px 8px;
   border-radius: 15px;
   color: $light-red;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 120px);
+    grid-gap: 5px;
+
+    @media (max-width: $sm) {
+      overflow-x: scroll;
+      display: flex;
+
+      .eg-tag + .eg-tag {
+        margin-left: 5px;
+      }
+    }
+  }
 
   &:hover {
     text-decoration: none !important;
     transition: color 0.2s ease-in, background 0.2s ease-in;
     color: $white;
     background: $light-red;
-  }
-
-  & + .eg-tag {
-    margin-left: 5px;
   }
 }
