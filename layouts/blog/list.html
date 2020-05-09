@@ -27,7 +27,15 @@
                 </ul>
               {{ end }}
               <div class="eg-author">
-                <img src="{{ .Params.authorPhoto }}" alt="author img" class="eg-author__img" width="60" height="60">
+                <img
+                  src="/img/placeholder-image.jpg"
+                  data-src="{{ .Params.authorPhoto }}"
+                  data-srcset="{{ .Params.authorPhoto }}"
+                  alt="author img"
+                  class="eg-author__img lazy"
+                  width="60"
+                  height="60"
+                >
                 <div class="eg-author__info">
                   <h4 class="eg-author__info-title">{{ .Params.Author }}</h4>
                   <p class="eg-author__info-paragraph">{{ if eq .Language.Lang "cn" }}{{ .Date.Format "2006.01.02" }}{{ else }}{{ .Date.Format "2 January, 2006" }}{{end}}</p>
@@ -35,7 +43,13 @@
               </div>
             </div>
             <div class="eg-blog__top-item-img">
-              <a href="{{.Permalink}}" class="eg-link"><img src="{{ .Params.blogPhoto }}" alt="blog photo"></a>
+              <a href="{{.Permalink}}" class="eg-link"><img
+                src="/img/placeholder-image.jpg"
+                alt="blog photo"
+                class="lazy"
+                data-src="{{ .Params.blogPhoto }}"
+                data-srcset="{{ .Params.blogPhoto }}"
+              /></a>
             </div>
           </div>
         {{ end }}
@@ -43,7 +57,16 @@
           {{ range (after 1 .Pages.ByPublishDate.Reverse) }}
             <div class="eg-blog__item download__post">
               <a href="{{.Permalink}}" class="eg-link">
-                <div class="eg-blog__item-img"><img src="{{ .Params.blogPhoto }}" height="188" width="335" alt="blog photo"></div>
+                <div class="eg-blog__item-img">
+                  <img
+                    src="/img/placeholder-image.jpg"
+                    data-src="{{ .Params.blogPhoto }}"
+                    data-srcset="{{ .Params.blogPhoto }}"
+                    height="188"
+                    width="335"
+                    alt="blog photo"
+                    class="lazy"
+                  ></div>
                 <div class="eg-mb-1"><h3 class="eg-blog__item-title eg-link" href="{{.Permalink}}"><span>{{ truncate 50 .Title }}</span></h3></div>
                 <div class="eg-mb-1"><p class="eg-blog__item-paragraph eg-link" href="{{.Permalink}}"><span>{{ truncate 155 .Summary}}</span></p></div>
               </a>
@@ -55,7 +78,16 @@
                 </ul>
               {{ end }}
               <div class="eg-author">
-                <img src="{{ .Params.authorPhoto }}" alt="author img" class="eg-author__img" width="60" height="60">
+                <img
+                  src="/img/placeholder-image.jpg"
+                  data-src="{{ .Params.authorPhoto }}"
+                  data-srcset="{{ .Params.authorPhoto }}"
+                  alt="author img"
+                  class="eg-author__img lazy"
+                  width="60"
+                  height="60"
+                  class="lazy"
+                >
                 <div class="eg-author__info">
                   <h4 class="eg-author__info-title">{{ .Params.Author }}</h4>
                   <p class="eg-author__info-paragraph">{{ if eq .Language.Lang "cn" }}{{ .Date.Format "2006.01.02" }}{{ else }}{{ .Date.Format "2 January, 2006" }}{{end}}</p>

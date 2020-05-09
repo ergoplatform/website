@@ -14,14 +14,26 @@
           </ul>
         {{ end }}
         <div class="eg-author">
-          <img src="{{ .Params.authorPhoto }}" alt="author img" class="eg-author__img">
+          <img
+            src="/img/placeholder-image.jpg"
+            data-src="{{ .Params.authorPhoto }}"
+            data-srcset="{{ .Params.authorPhoto }}"
+            alt="author img"
+            class="eg-author__img lazy"
+          />
           <div class="eg-author__info">
             <h4 class="eg-author__info-title">{{ .Params.Author }}</h4>
             <p class="eg-author__info-paragraph">{{ if eq .Language.Lang "cn" }}{{ .Date.Format "2006.01.02" }}{{ else }}{{ .Date.Format "2 January, 2006" }}{{end}}</p>
           </div>
         </div>
         <div class="eg-blog__single-img">
-          <img src="{{ .Params.blogPhoto }}" alt="blog photo">
+          <img
+            class="lazy"
+            alt="blog photo"
+            src="/img/placeholder-image.jpg"
+            data-src="{{ .Params.blogPhoto }}"
+            data-srcset="{{ .Params.blogPhoto }}"
+          />
         </div>
         <div class="eg-blog__single-content">
           <div>
@@ -44,7 +56,12 @@
               {{ if ne $current .RelPermalink }}
                 <div class="eg-blog__item related__post">
                   <a href="{{.Permalink}}" class="eg-link">
-                    <div class="eg-blog__item-img"><img src="{{ .Params.blogPhoto }}" height="188" width="335" alt="blog photo"></div>
+                    <div class="eg-blog__item-img"><img
+                      class="lazy"
+                      src="/img/placeholder-image.jpg"
+                      data-src="{{ .Params.blogPhoto }}"
+                      data-srcset="{{ .Params.blogPhoto }}"
+                      height="188" width="335" alt="blog photo" /></div>
                     <div class="eg-mb-1"><h3 class="eg-blog__item-title eg-link" href="{{.Permalink}}"><span>{{ truncate 50 .Title }}</span></h3></div>
                     <div class="eg-mb-1"><p class="eg-blog__item-paragraph eg-link" href="{{.Permalink}}"><span>{{ truncate 155 .Summary}}</span></p></div>
                   </a>
@@ -56,7 +73,11 @@
                     </ul>
                   {{ end }}
                   <div class="eg-author">
-                    <img src="{{ .Params.authorPhoto }}" alt="author img" class="eg-author__img" width="60" height="60">
+                    <img
+                      src="/img/placeholder-image.jpg"
+                      data-src="{{ .Params.authorPhoto }}"
+                      data-srcset="{{ .Params.authorPhoto }}"
+                      alt="author img" class="eg-author__img lazy" width="60" height="60">
                     <div class="eg-author__info">
                       <h4 class="eg-author__info-title">{{ .Params.Author }}</h4>
                       <p class="eg-author__info-paragraph">{{ if eq .Language.Lang "cn" }}{{ .Date.Format "2006.01.02" }}{{ else }}{{ .Date.Format "2 January, 2006" }}{{end}}</p>

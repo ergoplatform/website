@@ -45,6 +45,46 @@ document.addEventListener("DOMContentLoaded", () => {
       document.fonts.add(font);
     });
   }
+
+  let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+  let active = false;
+
+  const lazyLoad = function () {
+    if (active === false) {
+      active = true;
+
+      setTimeout(() => {
+        lazyImages.forEach((lazyImage) => {
+          const parent = lazyImage.closest('.download__post');
+
+          if (
+            (lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 0) &&
+            !(parent && getComputedStyle(parent).display === "none")
+          ) {
+            lazyImage.src = lazyImage.dataset.src;
+            lazyImage.srcset = lazyImage.dataset.srcset;
+            lazyImage.classList.remove("lazy");
+
+            lazyImages = lazyImages.filter((image) => image !== lazyImage);
+
+            if (lazyImages.length === 0) {
+              document.removeEventListener("scroll", lazyLoad);
+              window.removeEventListener("resize", lazyLoad);
+              window.removeEventListener("orientationchange", lazyLoad);
+            }
+          }
+        });
+
+        active = false;
+      }, 200);
+    }
+  };
+
+  document.addEventListener("scroll", lazyLoad);
+  window.addEventListener("resize", lazyLoad);
+  window.addEventListener("orientationchange", lazyLoad);
+  lazyLoad();
+
   const typedId = "typed";
   const typedElement = document.getElementById(typedId);
 
