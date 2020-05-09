@@ -22,7 +22,7 @@
     <title>{{- print $title | default .Site.Title -}}</title>
 
     {{ $scss := resources.Get "scss/style.scss" }}
-    {{ $style := $scss | resources.ToCSS | resources.PostCSS | resources.Minify }}
+    {{ $style := $scss | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint "sha512" }}
 
     <link rel="preload" href="{{ $style.Permalink }}" as="style">
     <link rel="stylesheet" href="{{ $style.Permalink }}">
