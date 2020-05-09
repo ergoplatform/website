@@ -143,3 +143,9 @@ pygmentsUseClasses=true
     name = "Use Cases"
     url = "/use_cases/"
     weight = -30
+
+[outputFormats]
+  [html]
+    minify = true
+  [json]
+    minify = true

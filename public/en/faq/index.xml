@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Faq on Ergo</title>
-    <link>https://ergoplatform.org/en/faq/</link>
-    <description>Recent content in Faq on Ergo</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Fri, 12 Apr 2019 13:50:04 +0300</lastBuildDate>
-    
-	<atom:link href="https://ergoplatform.org/en/faq/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Faq on Ergo</title><link>https://ergoplatform.org/en/faq/</link><description>Recent content in Faq on Ergo</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 12 Apr 2019 13:50:04 +0300</lastBuildDate><atom:link href="https://ergoplatform.org/en/faq/index.xml" rel="self" type="application/rss+xml"/></channel></rss>

@@ -1,5 +1,5 @@
 build-hugo:
-	hugo -D
+	hugo -D --minify
 
 build-assets:
 	yarn run build
