@@ -11,13 +11,16 @@
     <link rel="preload" href="/fonts/LabGrotesque-Regular-hint-all.woff" as="font" type="font/woff" crossorigin>
 
     {{ $scss := resources.Get "scss/style.scss" }}
-    {{ $style := $scss | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint "sha512" }}
+    {{ $style := $scss | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint "md5" }}
     <link rel="preload" href="{{ $style.Permalink }}" as="style">
 
     <meta name="description" content="Ergo is a resilient platform for contractual money">
     <title>{{- .Site.Title -}}</title>
     <link rel="stylesheet" href="{{ $style.Permalink }}">
-    <script type="text/javascript" src="/js/index.js" defer></script>
+
+    {{ $js := resources.Get "js/index.js" }}
+    {{ $jsFile := $js | resources.Minify | resources.Fingerprint "md5" }}
+    <script type="text/javascript" src="{{ $jsFile.Permalink }}" defer></script>
     <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101239081);</script>
     <script async src="//static.getclicky.com/js"></script>
   </head>

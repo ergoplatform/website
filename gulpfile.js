@@ -9,69 +9,67 @@ function swallowError(error) {
   this.emit("end");
 }
 
-gulp.task("js", () =>
-  gulp
-    .src("./src/js/index.js")
-    .pipe(
-      webpackStream({
-        mode: "production",
-        output: {
-          filename: "index.js",
-        },
-        module: {
-          rules: [
-            {
-              test: /\.(js)$/,
-              exclude: /(node_modules)/,
-              loader: "babel-loader",
-              query: {
-                presets: ["@babel/preset-env"],
-              },
+gulp.task("js", () => gulp
+  .src("./src/js/index.js")
+  .pipe(
+    webpackStream({
+      mode: "production",
+      output: {
+        filename: "index.js",
+      },
+      module: {
+        rules: [
+          {
+            test: /\.(js)$/,
+            exclude: /(node_modules)/,
+            loader: "babel-loader",
+            query: {
+              presets: ["@babel/preset-env"],
             },
-            {
-              test: /\.css$/,
-              use: ["style-loader", "css-loader"],
-            },
-            {
-              test: /\.svg$/,
-              use: [
-                {
-                  loader: "file-loader",
-                },
-              ],
-            },
-            {
-              test: /\.(otf|eot|ttf|woff|woff2)$/,
-              use: {
+          },
+          {
+            test: /\.css$/,
+            use: ["style-loader", "css-loader"],
+          },
+          {
+            test: /\.svg$/,
+            use: [
+              {
                 loader: "file-loader",
               },
+            ],
+          },
+          {
+            test: /\.(otf|eot|ttf|woff|woff2)$/,
+            use: {
+              loader: "file-loader",
             },
-            {
-              test: /\.(jpg|jpeg|gif|png)$/,
-              use: [
-                {
-                  loader: "file-loader",
-                },
-              ],
-            },
-          ],
-        },
-        externals: ["tls", "net", "fs"],
-        plugins: [
-          new webpack.ProvidePlugin({
-            $: "jquery",
-            jQuery: "jquery",
-            "jquery-ui": "jquery-ui",
-            "jquery-collapse": "jquery-collapse",
-            "jquery-lazy": "jquery-lazy",
-          }),
+          },
+          {
+            test: /\.(jpg|jpeg|gif|png)$/,
+            use: [
+              {
+                loader: "file-loader",
+              },
+            ],
+          },
         ],
-        // devtool: 'source-map',
-      })
-    )
-    .on("error", swallowError)
-    .pipe(gulp.dest("static/js"))
-);
+      },
+      externals: ["tls", "net", "fs"],
+      plugins: [
+        new webpack.ProvidePlugin({
+          $: "jquery",
+          jQuery: "jquery",
+          "jquery-ui": "jquery-ui",
+          "jquery-collapse": "jquery-collapse",
+          "jquery-lazy": "jquery-lazy",
+        }),
+      ],
+      // devtool: 'source-map',
+    })
+  )
+  .on("error", swallowError)
+  .pipe(gulp.dest("assets/js")));
 
 gulp.task("watch", () => {
   gulp.watch("src/js/**/*.js", gulp.series("js"));
