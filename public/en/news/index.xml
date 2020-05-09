@@ -12,6 +12,24 @@
     
     
     <item>
+      <title>Building Ergo: Lite full nodes</title>
+      <link>https://ergoplatform.org/en/news/2020_05_08/</link>
+      <pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2020_05_08/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Building Ergo: SPV security </title>
+      <link>https://ergoplatform.org/en/news/2020_05_01/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2020_05_01/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>FlowCards: A Declarative Framework for Development of Ergo dApps</title>
       <link>https://ergoplatform.org/en/news/2020_04_29/</link>
       <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>

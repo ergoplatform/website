@@ -23,6 +23,15 @@ At the other end of the scale, you might want to run a full node.</description>
     </item>
     
     <item>
+      <title>Building Ergo: Lite full nodes</title>
+      <link>https://ergoplatform.org/en/news/2020_05_08/</link>
+      <pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2020_05_08/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Introduction to stablecoins</title>
       <link>https://ergoplatform.org/en/blog/2020_05_05_stablecoins/</link>
       <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
@@ -41,6 +50,15 @@ As a smart contracts and DeFi platform, Ergo is well suited for building all kin
       <guid>https://ergoplatform.org/en/blog/2020_05_1_spv_security/</guid>
       <description>There’s often a tension in the crypto world between security and convenience. That trade-off is unacceptable if we want these technologies to be widely used. Here’s how Ergo addresses one common and very important issue.
 We all know that the most secure way to use Bitcoin, or any crypto, is to download a copy of the blockchain and run a full node yourself. That way, every time you or anyone else makes a transaction, your client checks the blockchain to ensure it’s valid.</description>
+    </item>
+    
+    <item>
+      <title>Building Ergo: SPV security </title>
+      <link>https://ergoplatform.org/en/news/2020_05_01/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ergoplatform.org/en/news/2020_05_01/</guid>
+      <description></description>
     </item>
     
     <item>
