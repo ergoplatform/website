@@ -20,11 +20,11 @@
                 <p class="eg-blog__top-item-paragraph"><span>{{ truncate 140 .Summary}}</span></p>
               </a>
               {{if .Params.tags}}
-                <ul class="eg-my-1-5">
+                <div class="eg-my-1-5">
                   {{ range .Params.tags }}
                     <a class="eg-tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{.}}</a>
                   {{ end }}
-                </ul>
+                </div>
               {{ end }}
               <div class="eg-author">
                 <img
@@ -71,11 +71,11 @@
                 <div class="eg-mb-1"><p class="eg-blog__item-paragraph eg-link" href="{{.Permalink}}"><span>{{ truncate 155 .Summary}}</span></p></div>
               </a>
               {{if .Params.tags}}
-                <ul class="eg-my-1-5">
+                <div class="eg-my-1-5">
                   {{ range .Params.tags }}
                     <a class="eg-tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{.}}</a>
                   {{ end }}
-                </ul>
+                </div>
               {{ end }}
               <div class="eg-author">
                 <img

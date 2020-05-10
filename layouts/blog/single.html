@@ -7,11 +7,11 @@
       <div class="eg-text eg-blog eg-blog--w-100">
         <h1 class="eg-title eg-mb-1">{{ .Title }}</h1>
         {{if .Params.tags}}
-          <ul class="eg-my-1-5">
+          <div class="eg-my-1-5">
             {{ range .Params.tags }}
               <a class="eg-tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{.}}</a>
             {{ end }}
-          </ul>
+          </div>
         {{ end }}
         <div class="eg-author">
           <img
@@ -66,11 +66,11 @@
                     <div class="eg-mb-1"><p class="eg-blog__item-paragraph eg-link" href="{{.Permalink}}"><span>{{ truncate 155 .Summary}}</span></p></div>
                   </a>
                   {{if .Params.tags}}
-                    <ul class="eg-my-1-5">
+                    <div class="eg-my-1-5">
                       {{ range .Params.tags }}
                         <a class="eg-tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{.}}</a>
                       {{ end }}
-                    </ul>
+                    </div>
                   {{ end }}
                   <div class="eg-author">
                     <img
