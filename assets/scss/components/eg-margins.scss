@@ -34,6 +34,12 @@
   }
 }
 
+.eg-mb-sm-1 {
+  @media (max-width: $sm) {
+    margin-bottom: 1rem !important;
+  }
+}
+
 .eg-mb-0 {
   margin-bottom: 0 !important;
 }

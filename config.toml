@@ -67,9 +67,9 @@ pygmentsUseClasses=true
     weight = -50
 
   [[languages.en.menu.mainmenu]]
-    identifier = "Team"
-    name = "Team"
-    url = "/team/"
+    identifier = "Hall of Fame"
+    name = "Hall of Fame"
+    url = "/hall_of_fame/"
     weight = -40
 
   [[languages.en.menu.mainmenu]]
@@ -133,9 +133,9 @@ pygmentsUseClasses=true
     weight = -50
 
   [[languages.cn.menu.mainmenu]]
-    identifier = "Team"
+    identifier = "Hall of Fame"
     name = "团队"
-    url = "/team/"
+    url = "/hall_of_fame/"
     weight = -40
 
   [[languages.cn.menu.mainmenu]]
