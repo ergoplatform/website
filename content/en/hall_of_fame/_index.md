@@ -1,4 +1,4 @@
 ---
-title: "Team"
+title: "Hall of Fame"
 date: 2019-04-11T20:29:21+03:00
 ---
