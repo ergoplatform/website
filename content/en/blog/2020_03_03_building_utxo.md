@@ -1,10 +1,10 @@
 ---
 title: "Building Ergo: UTXO vs Account"
 date: 2020-03-03
-author: "Ergo team"
+author: "Ergo Team"
 authorPhoto: "/img/logotype_black_circle.svg"
 blogPhoto: "/img/blog/building_ergo.jpg"
-tags: ['Building Ergo']
+tags: ['Building Ergo, 'Ergo Team']
 ---
 
 Ergo takes the most secure and best-established features of Bitcoin and implements advanced new cryptographic features on its rock-solid foundations. This series explores the choices we have made in creating Ergo, with the first article unpacking the advantages of the UTXO model.

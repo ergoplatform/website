@@ -2,9 +2,10 @@
 title: "Security Audit (by Jean Philippe Aumasson)"
 date: 2020-01-12
 draft: false
-author: "Ergo team"
+author: "Ergo Team"
 authorPhoto: "/img/logotype_black_circle.svg"
 blogPhoto: "/img/blog/security.jpg"
+tags: ["Ergo Team"]
 ---
 
 We would like to announce that Ergo has successfully passed security audit of certain (most critical) parts of the code. This time the audit was done by Jean-Philipee Aumasson (aka veorq, [https://aumasson.jp/](https://aumasson.jp/) ).

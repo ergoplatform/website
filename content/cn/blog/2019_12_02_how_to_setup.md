@@ -2,9 +2,10 @@
 title: "如何设置与配置全尔格节点"
 date: 2019-12-02
 draft: false
-author: "Ergo team"
+author: "Ergo Team"
 authorPhoto: "/img/logotype_black_circle.svg"
 blogPhoto: "/img/blog/how_to_setup.jpg"
+tags: ["Ergo Team"]
 ---
 
 本教程将解释如何安装与运行全尔格节点。其不涉及采矿相关的内容。

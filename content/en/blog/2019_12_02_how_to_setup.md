@@ -2,9 +2,10 @@
 title: "How to set up and configure a full Ergo node"
 date: 2019-12-02
 draft: false
-author: "Ergo team"
+author: "Ergo Team"
 authorPhoto: "/img/logotype_black_circle.svg"
 blogPhoto: "/img/blog/how_to_setup.jpg"
+tags: ["Ergo Team"]
 ---
 
 This tutorial explains how to install and run a full Ergo node. It does not cover mining.

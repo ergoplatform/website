@@ -1,9 +1,10 @@
 ---
 title: "Welcome to Smart Money"
 date: 2020-02-12
-author: "Ergo team"
+author: "Ergo Team"
 authorPhoto: "/img/logotype_black_circle.svg"
 blogPhoto: "/img/blog/welcometo.jpg"
+tags: ["Ergo Team"]
 ---
 
 It’s the smartest crypto you’ve never heard of. Ergo takes the best of Bitcoin and integrates Sigma protocols so powerful they make Ethereum look like it would lose a game of chess against your cat. If you’re tired of spin and hype over solid tech, Ergo will remind you that in crypto, it’s always been fashionable to be intelligent. Bright is the new black, people, and Ergo is set to dazzle you.

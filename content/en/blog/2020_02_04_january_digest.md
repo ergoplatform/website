@@ -2,9 +2,10 @@
 title: "Ergo Platform Ecosystem Digest - January 2020"
 date: 2020-02-04
 draft: false
-author: "Ergo team"
+author: "Ergo Team"
 authorPhoto: "/img/logotype_black_circle.svg"
 blogPhoto: "/img/blog/january_digest.jpg"
+tags: ["Ergo Team"]
 ---
 
 * Ergo Foundation has been established (https://ergoplatform.org/en/foundation/)

@@ -1,9 +1,10 @@
 ---
 title: "Introducing Σ3 – ErgoMixer"
 date: 2020-03-16
-author: "Ergo team"
+author: "Ergo Team"
 authorPhoto: "/img/logotype_black_circle.svg"
 blogPhoto: "/img/blog/ergo_mixer.jpg"
+tags: ["Ergo Team"]
 ---
 
 _The project uses Ergo’s Sigma protocols to enable efficient, trustless mixing of funds, enabling a high degree of privacy while ensuring security is not compromised._
