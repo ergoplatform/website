@@ -4,7 +4,15 @@
 
   .eg-footer__item:last-child {
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .eg-footer__members {
+      @media (max-width: $sm) {
+        margin-bottom: 2rem;
+      }
+    }
 
     @media (max-width: $sm) {
       display: block;
