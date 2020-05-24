@@ -9,7 +9,6 @@
     <link rel="preload" href="/fonts/LabGrotesque-kern-latin.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="/fonts/LabGrotesque-Mono-num.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="/fonts/LabGrotesque-Regular-hint-all.woff" as="font" type="font/woff" crossorigin="anonymous">
-    <link rel="preconnect" href="//static.getclicky.com/js" crossorigin="anonymous">
 
     {{ $scss := resources.Get "scss/style.scss" }}
     {{ $style := $scss | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint "md5" }}
