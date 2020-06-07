@@ -10,7 +10,7 @@
     shouldSort: true,
     includeMatches: false,
     matchAllTokens: true,
-    threshold: 0.2,
+    threshold: 0.4,
     location: 0,
     distance: 100,
     maxPatternLength: 64,
@@ -30,28 +30,89 @@
   onMount(async () => {
     data = await fetch(window.location.href + 'index.json').then(d => d.json());
     fuse = new Fuse(data, fuseOptions);
-
-    console.log(data);
   });
 
   const handleInputChange = () => {
     if (searchValue.trim() !== '') {
       result = fuse.search(searchValue);
-      console.log(result)
     }
   };
+
+  let isActive = false;
 </script>
 
-<input type="text" bind:value={searchValue} on:input={handleInputChange} placeholder="Search query">
+<style lang="scss">
+  .query-div {
+    margin: 20px 0;
+  }
 
-{#if searchValue.trim() === ''}
-  <p>Enter search query</p>
-{:else if searchValue.trim() === ''}
-  <p>Unrecognized search pattern. Please try searching by entering news, pages, blog posts</p>
-{:else if result.length > 0}
-  <ul>
-    {#each result as content (content.refIndex)}
-      <SearchCard {content} />
-    {/each}
-  </ul>
-{/if}
+  .input-container {
+    margin-top: 6px;
+    display: inline-flex;
+    align-items: center;
+    width: initial;
+    height: 36px;
+
+    .input-wrapper {
+      display: inline-flex;
+      vertical-align: middle;
+      align-items: center;
+      height: 100%;
+      user-select: none;
+      flex: 1 1 0%;
+      border-radius: 5px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(234, 234, 234);
+      border-image: initial;
+      transition: border 0.2s ease 0s, color 0.2s ease 0s;
+      &.active {
+        border-color: #FF4221;
+      }
+
+      input {
+        box-shadow: none;
+        font-size: 0.875rem;
+        background-color: transparent;
+        color: rgb(0, 0, 0);
+        width: 100%;
+        min-width: 0px;
+        margin: 4px 10px;
+        padding: 0px;
+        border-width: initial;
+        border-style: none;
+        border-color: initial;
+        border-image: initial;
+        outline: none;
+        border-radius: 0px;
+      }
+    }
+  }
+</style>
+
+<div class="input-container">
+  <div class="input-wrapper"
+      class:active={isActive}>
+    <input
+      type="text"
+      bind:value={searchValue}
+      on:input={handleInputChange}
+      placeholder="Search query"
+      on:focus={() => isActive = true}
+      on:blur={() => isActive = false}/>
+  </div>
+</div>
+
+<div class="query-div eg-text">
+  {#if searchValue.trim() === ''}
+    <p class="eg-text__paragraph eg-text__paragraph--18">You need to enter a search query</p>
+  {:else if result.length === 0}
+    <p>Unrecognized search pattern. Please try searching by entering news, pages, blog posts etc.</p>
+  {:else if result.length > 0}
+    <ul>
+      {#each result as content (content.refIndex)}
+        <SearchCard {content} />
+      {/each}
+    </ul>
+  {/if}
+</div>

@@ -148,7 +148,7 @@
           <div class="container container--margins-y">
             <h2 class="eg-title eg-title--black eg-mb-1">{{ T "news_title"}}</h2>
             <div class="news-section__items">
-              {{ $langNews := where .Site.Pages "Section" "news" }}
+              {{ $langNews := where .Site.RegularPages "Section" "news" }}
               {{ with $langNews }}
                 {{ range first 3 $langNews }}
                   <div class="news-section__item">
@@ -235,7 +235,7 @@
           <div class="container container--margins-y">
             <h2 class="eg-title eg-title--black eg-mb-1-5">{{ T "blog_section"}}</h2>
             <div class="blog-section__container">
-            {{ $blogPages := where .Site.Pages "Section" "blog" }}
+            {{ $blogPages := where .Site.RegularPages "Section" "blog" }}
             {{ with $blogPages }}
               {{ range first 2 $blogPages }}
                 <div class="blog-section__item">
