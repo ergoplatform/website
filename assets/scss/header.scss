@@ -214,18 +214,39 @@
 
   .eg-navbar__language {
     height: 100%;
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
     width: 80px;
     position: relative;
 
     @media (max-width: $lg) {
       margin-left: auto;
-      margin-top: 16px;
       margin-right: 1.5rem;
     }
+  }
 
-    @media (max-width: $sm) {
-      margin-top: 4px;
+  .eg-navbar__items {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    @media (max-width: $lg) {
+      margin-left: auto;
+    }
+
+    div:first-child {
+      margin-right: 0.5rem;
+      a {
+        display: block;
+        height: 20px;
+
+        &:hover {
+          path {
+            fill: $light-red;
+            transition: fill 0.2s ease 0s;
+          }
+        }
+      }
     }
   }
 }
@@ -298,9 +319,18 @@
 
   &--black.show {
     border: 0.5px solid #DEE3F1;
+    top: 10px;
 
     .dd-language__item_hidden {
       display: block;
+    }
+
+    @media (max-width: $lg) {
+      top: 8px;
+    }
+
+    @media (max-width: $sm) {
+      top: 2px;
     }
   }
 

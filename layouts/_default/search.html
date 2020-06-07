@@ -1,0 +1,18 @@
+{{ define "footerscripts"}}
+
+{{ $js := resources.Get "js/search.js" }}
+{{ $jsFile := $js | resources.Minify | resources.Fingerprint "md5" }}
+<script type="text/javascript" src="{{ $jsFile.Permalink }}" defer></script>
+
+{{ end }}
+
+{{define "main"}}
+  <main>
+    <div class="grid-container-1k2 container container--top-content container--lg-padding-bottom">
+      <h2 class="eg-title">Site search</h2>
+      <div id="search">
+
+      </div>
+    </div>
+  </main>
+{{end}}

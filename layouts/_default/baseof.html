@@ -26,9 +26,6 @@
     <link rel="preload" href="{{ $style.Permalink }}" as="style">
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 
-    {{ $js := resources.Get "js/index.js" }}
-    {{ $jsFile := $js | resources.Minify | resources.Fingerprint "md5" }}
-    <script type="text/javascript" src="{{ $jsFile.Permalink }}" defer></script>
 
     <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101239081);</script>
     <script async src="//static.getclicky.com/js"></script>
@@ -37,12 +34,17 @@
     <div class="wrapper">
       <div class="content">
         {{- partial "header.html" . -}}
+
         {{ block "main" . }}
         {{ end }}
       </div>
 
       {{- partial "footer.html" . -}}
     </div>
-
+    {{ $js := resources.Get "js/index.js" }}
+    {{ $jsFile := $js | resources.Minify | resources.Fingerprint "md5" }}
+    <script type="text/javascript" src="{{ $jsFile.Permalink }}" defer></script>
+    {{ block "footerscripts" . }}
+    {{ end }}
   </body>
 </html>
