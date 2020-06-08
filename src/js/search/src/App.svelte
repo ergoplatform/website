@@ -10,14 +10,13 @@
     shouldSort: true,
     includeMatches: false,
     matchAllTokens: true,
-    threshold: 0.4,
+    threshold: 0.3,
     location: 0,
-    distance: 100,
+    distance: 2000,
     maxPatternLength: 64,
     minMatchCharLength: 3,
     keys: [
       {name:"title",weight:0.8},
-      {name:"tags",weight:0.5},
       {name:"contents",weight:0.4},
       {name:"subtitle",weight:0.4}
     ]
@@ -26,10 +25,13 @@
   let result = [];
   let searchValue = '';
   let fuse;
+	let inputElement;
 
   onMount(async () => {
     data = await fetch(window.location.href + 'index.json').then(d => d.json());
     fuse = new Fuse(data, fuseOptions);
+
+		inputElement.focus();
   });
 
   const handleInputChange = () => {
@@ -39,6 +41,7 @@
   };
 
   let isActive = false;
+
 </script>
 
 <style lang="scss">
@@ -94,12 +97,13 @@
   <div class="input-wrapper"
       class:active={isActive}>
     <input
+      bind:this={inputElement}
       type="text"
       bind:value={searchValue}
       on:input={handleInputChange}
       placeholder="Search query"
       on:focus={() => isActive = true}
-      on:blur={() => isActive = false}/>
+      on:blur={() => isActive = false} />
   </div>
 </div>
 

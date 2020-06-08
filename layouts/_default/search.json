@@ -1,4 +1,4 @@
-{{ $pages := where .Site.Pages "Type" "not in" (slice "tags") }}
+{{ $pages := where .Site.Pages "Type" "not in" (slice "tags" "categories" "careers") }}
 
 {{- $.Scratch.Add "index" slice -}}
 {{- range $pages -}}
