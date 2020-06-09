@@ -16,6 +16,8 @@
     {{ else }}
       <meta name="description" content="Ergo is a resilient platform for contractual money">
     {{ end }}
+    {{ block "metaOg" . }}
+    {{ end }}
 
     {{ $title := print .Title " | " .Site.Title }}
     <title>{{- print $title | default .Site.Title -}}</title>

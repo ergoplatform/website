@@ -1,3 +1,10 @@
+{{define "metaOg"}}
+<meta property="og:title" content="{{.Title}}">
+<meta property="og:description" content="{{ truncate 60 .Summary }}">
+<meta property="og:image" content="{{ .Params.blogPhoto | absURL }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{end}}
+
 {{define "main"}}
   <main class="">
     <section class="container  container--top-content grid-container-1k2">
