@@ -1,8 +1,13 @@
 {{define "metaOg"}}
 <meta property="og:title" content="{{.Title}}">
-<meta property="og:description" content="{{ truncate 60 .Summary }}">
+<meta property="og:description" content="{{ truncate 30 .Summary }}">
 <meta property="og:image" content="{{ .Params.blogPhoto | absURL }}">
 <meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image:width" content="850">
+<meta property="og:image:height" content="450">
+<meta name="twitter:image" content="{{ .Params.blogPhoto | absURL }}">
+<meta name="twitter:description" content="{{ truncate 30 .Summary }}">
+<meta name="twitter:title" content="{{.Title}}">
 {{end}}
 
 {{define "main"}}
