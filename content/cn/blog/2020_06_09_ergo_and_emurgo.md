@@ -26,4 +26,4 @@ blogPhoto: "/img/blog/featureImage.png"
 关于EMURGO
 EMURGO 是一家全球区块链科技公司，其专注于为开发人员、创业公司、企业以及政府组织提供解决方案。EMURGO开发企业级应用，设计开发工具、投资创业企业并且提供区块链相关教育培训。
 
-EMURGO在新加坡、日本、美国、印度和印尼设有办事处并负责项目管理。EMURGO是卡尔达诺 协议的创始成员。如需联系了解更多信息，请访问：(https://emurgo.io/)[https://emurgo.io/] .
+EMURGO在新加坡、日本、美国、印度和印尼设有办事处并负责项目管理。EMURGO是卡尔达诺 协议的创始成员。如需联系了解更多信息，请访问：[https://emurgo.io/](https://emurgo.io/) .
