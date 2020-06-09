@@ -3,7 +3,7 @@ title: "Press release: Ergo Foundation partners with Emurgo to research and deve
 date: 2020-06-09
 author: "Guy Brandon"
 authorPhoto: "/img/authors/guy_brandon.jpg"
-blogPhoto: "/img/blog/emurgo_with_ergo.jpg"
+blogPhoto: "/img/blog/ergo_with_emurgo.png"
 tags: ['Ergo Team']
 ---
 
