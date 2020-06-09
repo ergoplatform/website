@@ -4,7 +4,7 @@ date: 2020-06-09
 draft: false
 author: "尔格团队"
 authorPhoto: "/img/logotype_black_circle.svg"
-blogPhoto: "/img/blog/featureimage.png"
+blogPhoto: "/img/blog/featureImage.png"
 ---
 
 卡尔达诺协议的创始成员EMURGO与尔格合作，并且建立基于区块链的去中心化金融解决方案 新加坡，2020年6月9日/ 全球区块链解决方案公司以及全球公认卡尔达诺协议创始实体EMURGO Ptd. Ltd. – EMURGO, 今日宣布将与尔格建立战略合作 – 将工作量证明区块链协议打造成为一个应用平台，该平台主要专注于为金融合约及其基于UTXO的智能合约提供简单的解决方案。该项目由前IOHK工程师设计与牵头，尔格非常重视为使用网络、长期区块链网络可持续性和去中心化方案的用户提供定制化的隐私。
