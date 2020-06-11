@@ -21,9 +21,9 @@ Where they overlap, and the most promising area for collaboration, is in their u
 
 Basing smart contracts on an extended UTXO model is a relatively new idea. Platforms like Ethereum use an Account model, which has very different implications. [Recent research](https://github.com/Emurgo/Emurgo-Research/blob/master/smart-contracts/High%20Level%20Design%20Patterns%20In%20Extended%20UTXO%20Systems.md) by Robert Kornacki (R&D Engineer at Emurgo) explains this in more detail:
 
-  Extended UTXO systems enable full fledged [turing complete](https://arxiv.org/abs/1806.10116) (across transactions) smart contracts. This is a novel innovation that allows the latest generation of blockchains to reclaim the original model that Bitcoin used, but now with a lot more power. 
-  Given that smart contract powered UTXO systems are nascent, there is a distinct lack of known design patterns which developers can rely on when building dApps. Looking at account-based models like Ethereum, encoding protocols in the UTXO model is as comparably different as writing imperative code is to functional.
-  The UTXO approach has the ability to revolutionise smart contracts, and the findings of the collaboration will doubtless prove valuable to both Cardano and Ergo as they implement their different roadmaps and technologies. 
+> Extended UTXO systems enable full fledged [turing complete](https://arxiv.org/abs/1806.10116) (across transactions) smart contracts. This is a novel innovation that allows the latest generation of blockchains to reclaim the original model that Bitcoin used, but now with a lot more power.  
+> Given that smart contract powered UTXO systems are nascent, there is a distinct lack of known design patterns which developers can rely on when building dApps. Looking at account-based models like Ethereum, encoding protocols in the UTXO model is as comparably different as writing imperative code is to functional.  
+> The UTXO approach has the ability to revolutionise smart contracts, and the findings of the collaboration will doubtless prove valuable to both Cardano and Ergo as they implement their different roadmaps and technologies. 
 
 ## DeFi collaboration
 
