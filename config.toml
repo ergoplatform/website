@@ -1,5 +1,6 @@
 baseURL = "https://ergoplatform.org"
 title = "Ergo"
+subtitle = "Ergo page"
 languageCode = "en"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true

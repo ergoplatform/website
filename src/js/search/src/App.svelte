@@ -3,7 +3,6 @@
   import Fuse from 'fuse.js';
   import SearchCard from './SearchCard.svelte';
 
-  const summaryInclude=60;
 
   // Options for fuse.js
   let fuseOptions = {
@@ -31,7 +30,9 @@
     data = await fetch(window.location.href + 'index.json').then(d => d.json());
     fuse = new Fuse(data, fuseOptions);
 
-		inputElement.focus();
+    inputElement.focus();
+    searchValue = inputElement.value;
+    handleInputChange();
   });
 
   const handleInputChange = () => {
@@ -113,10 +114,10 @@
   {:else if result.length === 0}
     <p>Unrecognized search pattern. Please try searching by entering news, pages, blog posts etc.</p>
   {:else if result.length > 0}
-    <ul>
+    <div>
       {#each result as content (content.refIndex)}
         <SearchCard {content} />
       {/each}
-    </ul>
+    </div>
   {/if}
 </div>
