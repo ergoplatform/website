@@ -15,7 +15,7 @@ $ yarn install
 # Up server on localhost:1313
 
 ```sh
-$ hugo server -D
+$ make server
 ```
 
 # Watch assets js
