@@ -1,0 +1,28 @@
+backend:
+  name: github
+  branch: master # Branch to update (optional; defaults to master)
+  repo: ergoplatform/website
+# This line should *not* be indented
+publish_mode: editorial_workflow
+
+# These lines should *not* be indented
+media_folder: "static/img/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/img/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - name: 'en_blog'
+    label: 'English Blog'
+    folder: 'content/en/blog'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Author', name: 'author', widget: 'string' }
+      - label: 'Author Photo'
+        name: 'authorPhoto'
+        widget: 'image'
+      - { label: 'Blog Photo', name: 'blogPhoto', widget: 'image' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
