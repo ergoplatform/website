@@ -25,7 +25,8 @@ Oracle pools involve several oracles operating together, with different shares i
 
 Thus – as in the PoW consensus approach itself – honest oracles are rewarded, while fraudulent or unreliable ones waste their resources.
 
-Stablecoin
+## Stablecoin
+
 When the new model is implemented, it will become a key part of the technology that will underpin the Ergo stablecoin. (This will take an algorithmic or collateralised approach, rather than being a fiat-backed coin like USDT or USDC.)
 
 Further details about the new stablecoin will be published in due course, with the new project expected to launch later in 2020.
