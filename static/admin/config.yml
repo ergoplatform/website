@@ -2,10 +2,8 @@ backend:
   name: github
   branch: master # Branch to update (optional; defaults to master)
   repo: ergoplatform/website
-# This line should *not* be indented
+  site_domain: cms.netlify.com
 publish_mode: editorial_workflow
-
-# These lines should *not* be indented
 media_folder: "static/img/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/img/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
@@ -16,7 +14,7 @@ collections:
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
