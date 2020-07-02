@@ -102,7 +102,7 @@
   translation: 白皮书I
 
 - id: documents_ergo_platform_link
-  translation: https://docs.ergoplatform.com/cn/whitepaper_cn.pdf
+  translation: https://ergoplatform.org/docs/whitepaper_Ergo_cn.pdf
 
 - id: documents_ergo_platform_text
   translation: "尔格:具备强适应力的合约币平台"
@@ -126,7 +126,7 @@
   translation: 尔格平台项目概况
 
 - id: documents_ergo_teaser_link
-  translation: https://docs.ergoplatform.com/cn/teaser%E5%B0%94%E6%A0%BC%E5%B9%B3%E5%8F%B0%E7%AE%80%E4%BB%8B_%E4%B8%AD%E6%96%87%E7%89%88.pdf
+  translation: https://ergoplatform.org/docs/teaser_cn.pdf
 
 - id: documents_ergo_script_adv
   translation: 白皮书III
@@ -888,8 +888,8 @@
   translation: "尔格基金会致力于尔格平台协议的内生和不间断开发。基金会不仅要考虑矿工（其将直接在区块链上表达自己的意愿）批准的变化，而且还要考虑用户、基于尔格和核心开发者的项目建设。基金会还致力于为有着隐私意识的公众打造去信任环境、智能合约及支付框架。我们的业务活动包括融资、研究、对尔格平台进行研究及维护、对尔格平台进行改进、开展品牌营销等活动。我们认为尔格司库应当主要供开放社区使用，包括自由职业者、黑客(hackers)、专家和热心人士。有关尔格司库和协议的信息，请参阅以下链接
             <a
               class=\"eg-text__link eg-link\"
-              href=\"https://ergoplatform.org/docs/whitepaper.pdf\"
-            ><span>https://ergoplatform.org/docs/whitepaper.pdf</span></a> 和 <a
+              href=\"https://ergoplatform.org/docs/whitepaper_Ergo_cn.pdf\"
+            ><span>https://ergoplatform.org/docs/whitepaper_Ergo_cn.pdf</span></a> 和 <a
               class=\"eg-text__link eg-link\"
               href=\"https://ergoplatform.org/en/blog/2019_05_20-curve/\"
             ><span>https://ergoplatform.org/en/blog/2019_05_20-curve/</span></a>"
