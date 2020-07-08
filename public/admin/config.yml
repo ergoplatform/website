@@ -2,10 +2,8 @@ backend:
   name: github
   branch: master # Branch to update (optional; defaults to master)
   repo: ergoplatform/website
-  site_domain: cms.netlify.com
-  api_root: https://api.github.com
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
+  base_url: https://ergoplatform.com
+  site_domain: ergoplatform.com
 publish_mode: editorial_workflow
 media_folder: "static/img/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/img/uploads" # The src attribute for uploaded media will begin with /images/uploads
