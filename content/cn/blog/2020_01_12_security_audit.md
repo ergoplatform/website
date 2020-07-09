@@ -39,7 +39,7 @@ blogPhoto: "/img/blog/security.jpg"
 
 西格玛语句证明是非交互式的，这应归功于 Fiat-Shamir 的转换
 
-该逻辑在[尔格脚本报告](https://docs.ergoplatform.com/ErgoScript.pdf)中有详细说明，并且详细的证明与验证流程在其附录 A 中有介 绍。
+该逻辑在[尔格脚本报告](https://ergoplatform.org/docs/ErgoScript.pdf)中有详细说明，并且详细的证明与验证流程在其附录 A 中有介 绍。
 
 实施过程中的挑战包括:
 
@@ -47,7 +47,7 @@ blogPhoto: "/img/blog/security.jpg"
 
 * 根据规范正确地实现证明与验证功能，最重要的是确保没有无效语句能够成功通过验 证。
 
-我们对这两个方面进行了回顾，根据存储库 [sigmastate-interpreter](https://github.com/ScorexFoundation/sigmastate-interpreter)中的代码和[尔格脚本报 告](https://docs.ergoplatform.com/ErgoScript.pdf)，对(附录 A 中的)预期行为与实际所采取的行为进行仔细比较。
+我们对这两个方面进行了回顾，根据存储库 [sigmastate-interpreter](https://github.com/ScorexFoundation/sigmastate-interpreter)中的代码和[尔格脚本报 告](https://ergoplatform.org/docs/ErgoScript.pdf)，对(附录 A 中的)预期行为与实际所采取的行为进行仔细比较。
 
 我们会重点审议来自 [SigSerializer](https://github.com/ScorexFoundation/sigmastate-interpreter/blob/master/sigmastate/src/main/scala/sigmastate/SigSerializer.scala)、[Interpreter](https://github.com/ScorexFoundation/sigmastate-interpreter/blob/master/sigmastate/src/main/scala/sigmastate/interpreter/Interpreter.scala) 的代码以及 [ProverInterpreter](https://github.com/ScorexFoundation/sigmastate-interpreter/blob/master/sigmastate/src/main/scala/sigmastate/interpreter/ProverInterpreter.scala) 特征和目标。
 
