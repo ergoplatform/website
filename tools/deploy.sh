@@ -1,5 +1,8 @@
 #!/bin/bash
 
-ssh website@88.198.13.202 << EOF
-  git pull origin master
-EOF
+echo "Start deploy"
+ssh -tq website@88.198.13.202 "bash -lc 'git pull'"
+ssh -tq website@88.198.13.202 "bash -lc 'make site'"
+echo "Deployed Successfully!"
+
+exit 0
