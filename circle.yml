@@ -1,13 +1,18 @@
-machine:
-  ruby:
-    version: 2.3.1
-  java:  # see <https://github.com/svenkreiss/html5validator#integration-with-circleci>
-    version: oraclejdk8
-  environment:
-    NOKOGIRI_USE_SYSTEM_LIBRARIES: true # Faster installation of nokogiri, required by html-proofer
+version: 2.0
 
-deployment:
-  production:
-    branch: master
-    commands:
-      - ./tools/deploy
+jobs:
+  deploy:
+    machine:
+      enabled: true
+    steps:
+      - run:
+          name: Deploy
+          command: bash ./tools/deploy.sh # run a script to set up Heroku
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only:  master
