@@ -9,6 +9,7 @@
     <link rel="preload" href="/fonts/LabGrotesque-Mono-num.woff" as="font" type="font/woff" crossorigin="anonymous">
 
 
+
     {{ $scss := resources.Get "scss/style.scss" }}
     {{ $style := $scss | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint "md5" }}
     <link rel="preload" href="{{ $style.Permalink }}" as="style">
@@ -25,7 +26,7 @@
   </head>
   <body>
     {{- $currentPage := . -}}
-    <header class="eg-header eg-header--landing">
+    <header class="eg-header eg-header--landing cars" >
       <nav class="eg-navbar">
         <div class="container eg-navbar__container">
           <div>
