@@ -2,6 +2,7 @@ backend:
   name: github
   branch: master # Branch to update (optional; defaults to master)
   repo: ergoplatform/website
+  base_url: https://ergoplatform.org
 
 publish_mode: editorial_workflow
 media_folder: "static/img/uploads" # Media files will be stored in the repo under static/images/uploads
