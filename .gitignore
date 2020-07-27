@@ -6,5 +6,7 @@ dist
 /static/js
 /resources/
 
+/public/
+
 
 ./tools/deploy.sh
