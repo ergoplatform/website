@@ -234,7 +234,7 @@ val fullSpread = {
 
 In sell order contract we need to relay on both token price and DEX fee amount to calculate how many tokens are in that buy order. Besides that, since we cannot deduce token amount "sold" in this swap transaction from the return box value we make spread calculation parametrized with concrete token amount that we will know later in the code:
 
-```scala
+```java
 // aggregated spread we get from all counter(buy) orders
 val fullSpread = { (tokenAmount: Long) =>
   spendingBuyOrders.fold((tokenAmount, 0L), { (t: (Long, Long), buyOrder: Box) => 
