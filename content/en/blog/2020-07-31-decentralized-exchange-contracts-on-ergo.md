@@ -14,12 +14,11 @@ Sell order contract [source](https://github.com/ergoplatform/ergo-contracts/blob
 Buy order contract [source](https://github.com/ergoplatform/ergo-contracts/blob/864bf9ac04916ce9092aa644fe66bcb86d5f4dd0/contracts/src/main/scala/org/ergoplatform/contracts/DexLimitOrder.scala#L58-L175).
 
 ## Partial matching
-
 Both contracts have token price and DEX fee parameters encoded on a compilation. This allows us to check the "residual" order assets, ERGs for a buy order, and tokens for a sell order.
 
-In the buy order contract, we search for a residual box, checking that it has correct parameters and assets.
 
-```scala
+In the buy order contract, we search for a residual box, checking that it has correct parameters and assets.
+```java
 // in case of partial matching new buy order box should be created with funds that are not matched in this tx
 val foundResidualOrderBoxes = OUTPUTS.filter { (b: Box) => 
   val tokenIdParamIsCorrect = b.R4[Coll[Byte]].isDefined && b.R4[Coll[Byte]].get == tokenId 
@@ -36,11 +35,10 @@ val foundResidualOrderBoxes = OUTPUTS.filter { (b: Box) =>
 [source](https://github.com/ergoplatform/ergo-contracts/blob/e5942fd1971558faa8f9045f3552e9b01fe535e2/contracts/src/main/scala/org/ergoplatform/contracts/DexLimitOrder.scala#L116-L127)
 
 Then, we check that the following properties hold:
+- Value (ERGs) of the "residual" order box is the value of the current box(order) minus ERGs value of the tokens we're receiving in this swap transaction and minus the DEX fee for this swap transaction.
+- Only one "residual" order box is created in this swap transaction.
 
-* Value (ERGs) of the "residual" order box is the value of the current box(order) minus ERGs value of the tokens we're receiving in this swap transaction and minus the DEX fee for this swap transaction.
-* Only one "residual" order box is created in this swap transaction.
-
-```scala
+```java
 // ERGs paid for the bought tokens
 val returnTokenValue = returnTokenAmount * tokenPrice
 // branch for total matching (all ERGs are spent and correct amount of tokens is bought)
@@ -60,7 +58,7 @@ val partialMatching = {
 
 In the sell order contract, we search for a residual box, checking that it has correct parameters and assets.
 
-```scala
+```java
 // in case of partial matching new sell order box should be created with tokens that are not matched in this tx
 // check that there is only one such box is made later in the code
 val foundResidualOrderBoxes = OUTPUTS.filter { (b: Box) => 
@@ -79,12 +77,11 @@ val foundResidualOrderBoxes = OUTPUTS.filter { (b: Box) =>
 [source](https://github.com/ergoplatform/ergo-contracts/blob/a2536b613459398836fee6f87baf19edad7b7d3e/contracts/src/main/scala/org/ergoplatform/contracts/DexLimitOrder.scala#L245-L257)
 
 Then, we check that the following properties hold:
+- The difference between the token amount in the current box(order) and the "residual" order box determines the amount of ERGs seller receives for the tokens "sold" in this swap transaction (`soldTokenAmount * tokenPrice`).
+- Value (ERGs) of the "residual" order box is the value of the current box(order) minus the DEX fee for this swap transaction.
+- Only one "residual" order box is created in this swap transaction.
 
-* The difference between the token amount in the current box(order) and the "residual" order box determines the amount of ERGs seller receives for the tokens "sold" in this swap transaction (`soldTokenAmount * tokenPrice`).
-* Value (ERGs) of the "residual" order box is the value of the current box(order) minus the DEX fee for this swap transaction.
-* Only one "residual" order box is created in this swap transaction.
-
-```scala
+```java
 // branch for partial matching, e.g. besides received ERGs we demand a new sell order with tokens for 
 // non-matched part of this order
 val partialMatching = {
@@ -112,30 +109,24 @@ val partialMatching = {
 [source](https://github.com/ergoplatform/ergo-contracts/blob/a2536b613459398836fee6f87baf19edad7b7d3e/contracts/src/main/scala/org/ergoplatform/contracts/DexLimitOrder.scala#L284-L305)
 
 ## Total matching
-
 Both sell and buy orders can be executed in the swap transaction entirely. In this case, there is no requirement for the "residual" order box. 
 For this path, we check that the following properties hold.
 For sell order:
-
-* ERGs amount seller receives in this swap transaction have to be equal to amount of tokens in the current order times token price.
-  `val totalMatching = (returnBox.value == selfTokenAmount * tokenPrice + fullSpread(selfTokenAmount))`
-  [source](https://github.com/ergoplatform/ergo-contracts/blob/a2536b613459398836fee6f87baf19edad7b7d3e/contracts/src/main/scala/org/ergoplatform/contracts/DexLimitOrder.scala#L281-L282)
+- ERGs amount seller receives in this swap transaction have to be equal to amount of tokens in the current order times token price.
+`val totalMatching = (returnBox.value == selfTokenAmount * tokenPrice + fullSpread(selfTokenAmount))`
+[source](https://github.com/ergoplatform/ergo-contracts/blob/a2536b613459398836fee6f87baf19edad7b7d3e/contracts/src/main/scala/org/ergoplatform/contracts/DexLimitOrder.scala#L281-L282)
 
 For buy order:
+- Token value (token amount * token price, in ERGs) buyer receives in this swap transaction have to be equal to the value of the current box(order) minus DEX fee.
+`val totalMatching = (SELF.value - expectedDexFee) == (returnTokenAmount * tokenPrice) && returnBox.value >= fullSpread`
+[source](https://github.com/ergoplatform/ergo-contracts/blob/a2536b613459398836fee6f87baf19edad7b7d3e/contracts/src/main/scala/org/ergoplatform/contracts/DexLimitOrder.scala#L152-L153)
 
-* Token value (token amount  *token price, in ERGs) buyer receives in this swap transaction have to be equal to the value of the current box(order) minus DEX fee.
-  `val totalMatching = (SELF.value - expectedDexFee) == (returnTokenAmount*  tokenPrice) && returnBox.value >= fullSpread`
-  [source](https://github.com/ergoplatform/ergo-contracts/blob/a2536b613459398836fee6f87baf19edad7b7d3e/contracts/src/main/scala/org/ergoplatform/contracts/DexLimitOrder.scala#L152-L153)
-
-## Bid-Ask spread
-
+## Bid-Ask spread 
 ### Counter orders sorting check
-
 The spread is the difference between the buy(bid) order price and sell(ask) order price. We want to make sure that if there is a spread, the "older" order gets it.
 For this contract requires the counter orders (spending orders) have to be ordered by spread amount. So that ones with a bigger spread will be "consumed" first.
 In buy order contract:
-
-```scala
+```java
 // check if this order should get the spread for a given counter order(height)
 val spreadIsMine = { (counterOrderBoxHeight: Int) => 
 // greater or equal since only a strict greater gives win in sell order contract
@@ -170,7 +161,7 @@ We also check the declared token price in the `R5` register of the counter sell 
 
 In sell order contract:
 
-```scala
+```java
 // check if this order should get the spread for a given counter order(height)
 val spreadIsMine = { (counterOrderBoxHeight: Int) => 
 // strictly greater since equality gives win in buy order contract
@@ -203,11 +194,9 @@ boxes.size > 0 && {
 We also check the declared token price in the `R5` register, and DEX fee per token in `R6` of the counter buy orders is in the correct range.
 
 ### Spread calculation
-
 To check that the current order gets its spread, we need to calculate it first. With counter orders sorted by the spread amount, we start to "consume" them in that order, decreasing the number of tokens left in this match. 
 In buy order contract:
-
-```scala
+```java
 // aggregated spread we get from all counter(sell) orders
 val fullSpread = {
   spendingSellOrders.fold((returnTokenAmount, 0L), { (t: (Long, Long), sellOrder: Box) => 
@@ -261,11 +250,9 @@ val fullSpread = { (tokenAmount: Long) =>
 [source](https://github.com/ergoplatform/ergo-contracts/blob/a2536b613459398836fee6f87baf19edad7b7d3e/contracts/src/main/scala/org/ergoplatform/contracts/DexLimitOrder.scala#L259-L279)
 
 ### Check received spread
-
 With the spread amount determined, we need to check if the current order is indeed received the spread.
 In buy order contract we check that it's included in return box value:
-
-```scala
+```java
 // branch for total matching (all ERGs are spent and correct amount of tokens is bought)
 val totalMatching = (SELF.value - expectedDexFee) == returnTokenValue && 
   returnBox.value >= fullSpread
@@ -283,8 +270,7 @@ val partialMatching = {
 
 In the sell order contract, as soon as we know the token amount "sold" in this swap transaction, we check that return box value has the spread included. 
 In total matching case we use total token amount in the current order:
-
-```scala
+```java
 // branch for total matching (all tokens are sold and full amount ERGs received)
 val totalMatching = (returnBox.value == selfTokenAmount * tokenPrice + fullSpread(selfTokenAmount))
 ```
@@ -292,9 +278,8 @@ val totalMatching = (returnBox.value == selfTokenAmount * tokenPrice + fullSprea
 [source](https://github.com/ergoplatform/ergo-contracts/blob/a2536b613459398836fee6f87baf19edad7b7d3e/contracts/src/main/scala/org/ergoplatform/contracts/DexLimitOrder.scala#L281-L282)
 
 In partial matching case we know the amount of token "sold" from the residual order( `val soldTokenAmount = selfTokenAmount - residualOrderTokenAmount`) and check that the spread is included in the return box value:
-
-```scala
+```java
 val returnBoxValueIsCorrect = returnBox.value == soldTokenErgValue + fullSpread(soldTokenAmount)
-```
+```        
 
 [source](https://github.com/ergoplatform/ergo-contracts/blob/a2536b613459398836fee6f87baf19edad7b7d3e/contracts/src/main/scala/org/ergoplatform/contracts/DexLimitOrder.scala#L299)
