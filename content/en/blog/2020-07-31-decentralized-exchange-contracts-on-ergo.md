@@ -2,7 +2,7 @@
 title: Decentralized Exchange Contracts on Ergo
 date: 2020-07-31T09:46:29.191Z
 author: Denys Zadorozhnyi
-authorPhoto: /img/uploads/portrait_small.jpg
+authorPhoto: /img/uploads/square-small.jpeg
 blogPhoto: /img/uploads/pexels-pixabay-210607-1-.jpg
 tags:
   - Building Ergo
