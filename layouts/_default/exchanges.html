@@ -17,8 +17,8 @@
           <div class="eg-exchanges">
             {{ range .Site.Home.AllTranslations }}
               {{ if eq .Language.Lang .Site.Params.defaultLanguage }}
-                {{ $defaultLangPages := where .Sites.First.Pages "Section" "exchanges" }}
-                {{ range (after 1 $defaultLangPages) }}
+                {{ $defaultLangPages := where .Sites.First.RegularPages.ByDate "Section" "exchanges" }}
+                {{ range $defaultLangPages }}
                   <div>
                     <a href="{{ .Params.link }}">
                       <img src="{{ .Params.logo }}" alt="{{ .Params.title }}" width="170">
