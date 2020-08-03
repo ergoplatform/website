@@ -15,79 +15,18 @@
         <h2 class="eg-title">{{ T "exchanges_second_title" }}</h2>
         <div class="grid-container-1k2__main-section">
           <div class="eg-exchanges">
-            <div>
-              <a href="https://waves.exchange/dex-demo?assetId2=5dJj4Hn9t2Ve3tRpNGirUHy4yBK6qdJRAJYV21yPPuGz&assetId1=8LQW8f7P5d5PZM7GtZEBgaqRPGSzS3DfPuiXrURJ4AJS">
-                <img src="/img/exchanges/wavesdex-black-120.svg" alt="waves" width="170">
-              </a>
-            </div>
-            <div>
-              <a href="https://tidex.com/exchange/erg/btc">
-                <img src="/img/exchanges/tidex.svg" alt="tidex exchange" width="170">
-              </a>
-            </div>
-            <div>
-              <a href="https://x.vite.net/trade?symbol=ERG-000_BTC-000&category=BTC">
-                <img
-                  src="/img/exchanges/vite.svg"
-                  alt="vite exchange" >
-              </a>
-            </div>
-            <!-- <div>
-              <a href="https://p2pb2b.io/trade/ERG_BTC">
-                <img
-                  src="/img/exchanges/p2p.png"
-                  alt="p2p exchange" >
-              </a>
-            </div> -->
-            <!-- <div>
-              <a href="https://bisq.network/markets/?currency=erg_btc">
-                <img
-                  src="/img/exchanges/bisq.svg"
-                  alt="bisq exchange" >
-              </a>
-            </div> -->
-            <div>
-              <a href="https://www.hotbit.io/exchange?symbol=ERG_BTC">
-                <img
-                  src="/img/exchanges/hotbit.svg"
-                  alt="hotbit exchange" >
-              </a>
-            </div>
-            <div>
-              <a href="https://www.probit.com/app/exchange/ERG-BTC">
-                <img
-                  src="/img/exchanges/probit.svg"
-                  alt="probit exchange" >
-              </a>
-            </div>
-            <!-- <div>
-              <a href="https://trade.citex.io/trade/ERG_BTC">
-                <img
-                  src="/img/exchanges/citex.png"
-                  alt="citex exchange" >
-              </a>
-            </div> -->
-            <div>
-              <a href="https://coinsbit.io/trade/ERG_BTC">
-                <img
-                  src="/img/exchanges/coinsbit.svg"
-                  alt="coinsbit exchange" >
-              </a>
-            </div>
-            <div>
-              <a href="https://sistemkoin.com/trade/ERG_BTC">
-                <img
-                  src="/img/exchanges/sistemcoin.svg"
-                  alt="sistemcoin exchange" >
-              </a>
-            </div>
-            <div>
-              <a href="https://www.coinex.com/exchange?currency=usdt&dest=erg">
-                <img
-                  src="/img/uploads/coinex.svg"
-                  alt="coinex exchange" >
-              </a>
-            </div>
+            {{ range .Site.Home.AllTranslations }}
+              {{ if eq .Language.Lang .Site.Params.defaultLanguage }}
+                {{ $defaultLangPages := where .Sites.First.Pages "Section" "exchanges" }}
+                {{ range (after 1 $defaultLangPages) }}
+                  <div>
+                    <a href="{{ .Params.link }}">
+                      <img src="{{ .Params.logo }}" alt="{{ .Params.title }}" width="170">
+                    </a>
+                  </div>
+                {{end}}
+              {{end}}
+            {{ end }}
           </div>
         </div>
       </div>

@@ -77,3 +77,15 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Subtitle', name: 'subtitle', widget: 'string' }
       - { label: 'Link', name: 'link', widget: 'string' }
+  - name: 'exchanges'
+    label: 'New exchange'
+    folder: 'content/en/exchanges'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Name', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Link', name: 'link', widget: 'string' }
+      - { label: 'Logotype', name: 'logo', widget: 'image' }

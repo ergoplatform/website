@@ -184,7 +184,7 @@
               {{ else }}
                 {{ range .Site.Home.AllTranslations }}
                   {{ if eq .Language.Lang .Site.Params.defaultLanguage }}
-                    {{ $defaultLangPages := where .Pages "Section" "news" }}
+                    {{ $defaultLangPages := where .Sites.First.Pages "Section" "news" }}
                     {{ range first 3 $defaultLangPages }}
                       <div class="news-section__item">
                         <h3 class="news-section__item-title">{{ .Date.Format "2 January, 2006" }}</h3>

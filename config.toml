@@ -2,7 +2,7 @@ baseURL = "https://ergoplatform.org"
 title = "Ergo"
 subtitle = "Ergo page"
 languageCode = "en"
-defaultContentLanguage = "en"
+DefaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 pygmentsUseClasses=true
 
@@ -89,7 +89,7 @@ pygmentsUseClasses=true
   languageCode = "cn"
   languageName = "中文"
   contentDir = "content/cn"
-  weight = 1
+  weight = 2
 
   [[languages.cn.menu.mainmenu]]
     identifier = "about"
