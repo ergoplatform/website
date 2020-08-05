@@ -1051,6 +1051,9 @@
 - id: foundation_fifth_section_fifth_li_item
   translation: "Martin Spodymek"
 
+- id: foundation_fifth_section_sixth_li_item
+  translation: "Robert Kornacki"
+
 - id: foundation_fifth_section_second_paragraph
   translation: "Current Development Fund Board Members (sorted by last name):"
 
@@ -1061,16 +1064,16 @@
   translation: "Noah Hudson"
 
 - id: foundation_fifth_section_second_list_third_li_item
-  translation: "Guillermo Manzanares"
-
-- id: foundation_fifth_section_second_list_fourth_li_item
   translation: "Justin Simpson"
 
-- id: foundation_fifth_section_second_list_fifth_li_item
+- id: foundation_fifth_section_second_list_fourth_li_item
   translation: "Alexander Slesarenko"
 
-- id: foundation_fifth_section_second_list_sixth_li_item
+- id: foundation_fifth_section_second_list_fifth_li_item
   translation: "Martin Spodymek"
+
+- id: foundation_fifth_section_second_list_sixth_li_item
+  translation: "Robert Kornacki"
 
 - id: foundation_sixth_section_first_title
   translation: "Appendix: Ergo Basics"
