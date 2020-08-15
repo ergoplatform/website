@@ -368,7 +368,7 @@
   translation: Survivability
 
 - id: basics_survivability
-  translation: "To survive in the long-term, Ergo prefers well-tested solutions. If there isn't already a well-tested solution for some problem, we perform our own research, and the <a href=\"http://ergoplatform.org/en/documents/\" class=\"eg-text__link eg-link\"><span>number of peer-reviewed papers</span></a> from the Ergo development team is already extensive.
+  translation: "To survive in the long-term, Ergo prefers well-tested solutions. If there isn't already a well-tested solution for some problem, we perform our own research, and the <a href=\"https://ergoplatform.org/en/documents/\" class=\"eg-text__link eg-link\"><span>number of peer-reviewed papers</span></a> from the Ergo development team is already extensive.
                   <br/><br/>  A resilient network should adapt to changing environment without the intervention of trusted parties (such as a ``core developer`` team). Ergo's on-chain miner voting protocol allows gradual changes in a large number of parameters including maximum block size, storage fee factor and more.
                   <br/><br/> For more fundamental changes Ergo is going to follow a soft-forkability approach --- if an overwhelming majority of the network accepts a new feature, it is activated, however, old nodes which do not upgrade continue to operate normally and just skip over this feature validation.
                   Thus disruptive hard forks should not be required in Ergo.
@@ -764,7 +764,7 @@
   translation: "How to find Ergo mining pools?"
 
 - id: faq_fifth-item_text
-  translation: "Ergo was created with the idea to achieve maximum resiliency through decentralization. Autolykos consensus protocol plays an important role in the network's decentralization, as far as it does not allow mining pools. Check Autolykos <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.com/docs/ErgoPow.pdf\"><span>specification</span></a> for more details."
+  translation: "Ergo was created with the idea to achieve maximum resiliency through decentralization. Autolykos consensus protocol plays an important role in the network's decentralization, as far as it does not allow mining pools. Check Autolykos <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/docs/ErgoPow.pdf\"><span>specification</span></a> for more details."
 
 - id: faq_sixth-item_title
   translation: "When will the Ergo network launch?"
@@ -808,7 +808,7 @@
   Twitter: <a class=\"eg-text__link eg-link\" href=\"https://twitter.com/ergoplatformorg\"><span>https://twitter.com/ergoplatformorg</span></a> <br/><br/>
   Wiki: <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki\"><span>https://github.com/ergoplatform/ergo/wiki</span></a> <br/><br/>
   Github: <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo\"><span>https://github.com/ergoplatform/ergo</span></a> <br/><br/>
-  Documents: <a class=\"eg-text__link eg-link\" href=\"http://docs.ergoplatform.com\"><span>http://docs.ergoplatform.com</span></a> <br/><br/>
+  Documents: <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/en/documents/\"><span>https://ergoplatform.org/en/documents/</span></a> <br/><br/>
   Telegram: <a class=\"eg-text__link eg-link\" href=\"https://t.me/ergoplatform\"><span>https://t.me/ergoplatform</span></a><br/><br/>
   "
 

@@ -328,7 +328,7 @@
   translation: "为了实现生存性，尔格除了提供技术改进之外还提供经济改进，其中最重要的是存储费用特性，它对尔格的稳定性起着重要作用：如果在输出状态下保持4年而不被移动，矿工可以为该状态的每个字节收取少量费用。
     这个想法类似于常规云存储服务，它对区块链系统的应用有几个重要的影响。
     首先，比特币和其他工作量证明货币的挖矿可能在发行后变得不稳定。与之不同的是，尔格挖矿将始终保持稳定，
-    其次，状态规模增长变得可控和可预测，降低了尔格矿工的硬件需求。第三，通过从过期币箱收取存储费用，矿工将丢失的硬币返还到流通中，防止由于钥匙丢失而导致的循环供应的稳定减少。这也为<a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.com/docs/ErgoPow.pdf\"><span>尔格的原生代币(“尔格币”)</span></a>建立了一个长期的独特用例，作为尔格区块链上唯一可用于支付存储租金的货币，尽管预计存在大量非原生代币可以在尔格区块链上发布，以便从其强大的安全性和去中心化性质以及合约货币功能中受益。 "
+    其次，状态规模增长变得可控和可预测，降低了尔格矿工的硬件需求。第三，通过从过期币箱收取存储费用，矿工将丢失的硬币返还到流通中，防止由于钥匙丢失而导致的循环供应的稳定减少。这也为<a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/docs/ErgoPow.pdf\"><span>尔格的原生代币(“尔格币”)</span></a>建立了一个长期的独特用例，作为尔格区块链上唯一可用于支付存储租金的货币，尽管预计存在大量非原生代币可以在尔格区块链上发布，以便从其强大的安全性和去中心化性质以及合约货币功能中受益。 "
 
 - id: basics_applicability_title
   translation: 适用性
@@ -668,7 +668,7 @@
   translation: 如何找到尔格矿池？
 
 - id: faq_fifth-item_text
-  translation: "尔格创建思想是为了通过去中心化实现最强的适应力.奥托吕科斯共识协议在网络的去中心化中发挥着重要作用，是因为它能防止矿池。核对奥托吕科斯<a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.com/docs/ErgoPow.pdf\"><span>说明</span></a>了解更多详情。"
+  translation: "尔格创建思想是为了通过去中心化实现最强的适应力.奥托吕科斯共识协议在网络的去中心化中发挥着重要作用，是因为它能防止矿池。核对奥托吕科斯<a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/docs/ErgoPow.pdf\"><span>说明</span></a>了解更多详情。"
 
 - id: faq_sixth-item_title
   translation: 尔格主链何时推出？
@@ -708,7 +708,7 @@
     推特: <a class=\"eg-text__link eg-link\" href=\"https://twitter.com/ergoplatformorg\"><span>https://twitter.com/ergoplatformorg</span></a><br/><br/>
     维基: <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki\"><span>https://github.com/ergoplatform/ergo/wiki</span></a><br/><br/>
     Github: <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo\"><span>https://github.com/ergoplatform/ergo</span></a><br/><br/>
-    文档: <a class=\"eg-text__link eg-link\" href=\"http://docs.ergoplatform.com\"><span>http://docs.ergoplatform.com</span></a><br/><br/>
+    文档: <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/en/documents/\"><span>https://ergoplatform.org/en/documents/</span></a><br/><br/>
     Telegram: <a class=\"eg-text__link eg-link\" href=\"https://t.me/ergoplatform_CH\"><span>https://t.me/ergoplatform_CH</span></a> <br/><br/>
     微信: <a class=\"eg-text__link eg-link\" href=\"/img/Wechat_qrcode.jpg\"><span>二维码</span></a> <br/><br/>
     "

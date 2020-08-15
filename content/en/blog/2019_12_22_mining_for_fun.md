@@ -12,7 +12,7 @@ tags: ["Ergo Team"]
 
 This article will help you start mining Ergo using a GPU. 
 
-Ergo mining is based on [Autolykos](https://ergoplatform.com/docs/ErgoPow.pdf), a Proof-of-Work algorithm designed to be ASIC and pool resistant. Miners have to perform memory-hard computations~(at least 4 GB memory is needed, but the current most efficient implementation utilizes between 8 GB of vRAM) that makes Ergo friendly for GPU mining. In addition, Autolykos requires access to **private** keys, thereby preventing mining pool formation. As soon as a correct solution is found, the miner broadcasts the block along with the solution and is able to collect the block reward after a delay of 720 blocks using the secret he used during mining. The rest of the network verifies the solution using the miner's **public** key and this verification can be done very efficiently, requiring less than a kilobyte of memory.
+Ergo mining is based on [Autolykos](https://ergoplatform.org/docs/ErgoPow.pdf), a Proof-of-Work algorithm designed to be ASIC and pool resistant. Miners have to perform memory-hard computations~(at least 4 GB memory is needed, but the current most efficient implementation utilizes between 8 GB of vRAM) that makes Ergo friendly for GPU mining. In addition, Autolykos requires access to **private** keys, thereby preventing mining pool formation. As soon as a correct solution is found, the miner broadcasts the block along with the solution and is able to collect the block reward after a delay of 720 blocks using the secret he used during mining. The rest of the network verifies the solution using the miner's **public** key and this verification can be done very efficiently, requiring less than a kilobyte of memory.
 
 ## Prerequisites
 
