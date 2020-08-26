@@ -27,7 +27,7 @@ pygmentsUseClasses=true
 
   [[languages.en.menu.mainmenu]]
     identifier = "about"
-    name = "About"
+    name = "Getting Started"
     url = "/about/"
     weight = -110
 
@@ -93,7 +93,7 @@ pygmentsUseClasses=true
 
   [[languages.cn.menu.mainmenu]]
     identifier = "about"
-    name = "关于"
+    name = "Getting Started"
     url = "/about/"
     weight = -110
 
