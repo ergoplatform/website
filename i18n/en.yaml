@@ -854,7 +854,7 @@
   translation: Part
 
 - id: wallets_ergo_wallet-doc_link
-  translation: https://ergoplatform.org/en/blog/2019_06_04_wallet-documentation/
+  translation: https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node
 
 
 #news
