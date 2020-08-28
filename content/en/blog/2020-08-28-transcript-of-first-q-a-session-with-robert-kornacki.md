@@ -62,10 +62,9 @@ It would typically just be easier for Daedalus to also source the pricing data i
 
 **Sounds very doable with Yoroi pretty soon though right?**
 
-Haha, again yes/no. To source data in UTXO systems you need to scan the UTXO set, so you need your own node. Light wallets like Yoroi don't have this, because it will cost theoretically an infinite amount of money if everyone just spams Emurgo's full nodes and forces us to pay for everyone's UTXO-set scans.
+Haha, again yes/no. To source data in UTXO systems, you need to scan the UTXO set, so you need your own node. Light wallets like Yoroi don't have this, because it will cost theoretically an infinite amount of money if everyone just spams Emurgo's full nodes and forces us to pay for everyone's UTXO-set scans.
 
 **Do you imagine IOG or Emurgo will make use of the Ergo blockchain for services/products like a stable coin or decentralized exchange?**
-
 
 We (Emurgo) are currently working with the Ergo Foundation to create a stablecoin on Ergo.
 We are also looking into direct interoperability, and how practical it is to deploy dApps we develop on Ergo also on Cardano.
