@@ -91,21 +91,21 @@ Will we see additional exchange listings for Ergo in the near future?  Visibilit
 
 We (the EF) are constantly talking with exchanges.
 
-I love this offchain to onchain tunneling stuff.
-This is completely off topic, but one of my side interests that is super untapped and I think will be a major breakthrough is when interoperability between off-chain distributed messaging networks integrate together with blockchains.
+**I love this offchain to onchain tunneling stuff**
+
+This is completely off-topic, but one of my side interests that is super untapped and I think will be a major breakthrough is when interoperability between off-chain distributed messaging networks integrate together with blockchains.
 
 Also, my assumption is that the Ergo token will be supported in the Yoroi wallet eventually, yes?
-Yes, Erg support will be added in Yoroi in the coming future. No dates for you yet unfortunately, but stay tuned!
+Yes, Erg support will be added to Yoroi in the coming future. No dates for you yet, unfortunately, but stay tuned!
 
-Robert in a sentence or two, what is the primary driver of value appreciation in the Ergo ecosystem, besides speculation? This is the number one question my friends ask.
+**Robert in a sentence or two, what is the primary driver of value appreciation in the Ergo ecosystem, besides speculation? This is the number one question my friends ask.**
 
-In my opinion a clear vision of the future: permisionless DeFi with in-built privacy capabilities on top of a new model (UTXO) that offers capabilities to streamline and improve the whole experience of both crypto and DeFi for the average user.
+In my opinion a clear vision of the future: permissionless DeFi with in-built privacy capabilities on top of a new model (UTXO) that offers capabilities to streamline and improve the whole experience of both crypto and DeFi for the average user.
 
-We're not there yet for having a streamlined and easy experience for the average user, that's quite obvious, but there's certain things that aren't possible (or aren't easy/aren't economical) that you can do on UTXO, like allowing anyone else to spend a UTXO you "own".
+We're not there yet for having a streamlined and easy experience for the average user, that's quite obvious, but there are certain things that aren't possible (or aren't easy/aren't economical) that you can do on UTXO, like allowing anyone else to spend a UTXO you "own".
 
-You have said that oracle pools are cheaper and eliminate the middleman, but the rumor mill is saying that threshold sigs are coming to LINK and will reduce tx fees by 99%
-Any validity to this?
+**You have said that Oracle Pools are cheaper and eliminate the middleman, but the rumor mill is saying that threshold sigs are coming to LINK and will reduce tx fees by 99%. Any validity to this?**
 
-We already have threshold signatures in Ergo, so we could likely do the same thing if that approach is that much better.
-That said, on-chain provides a lot of benefits with implementing incentives/disincentives like stake slashing, which aren't possible off-chain with threshold-sigs.
-We don't have such tx congestion on Ergo, and future plans for sidechains research for scaling, so we get a lot more game theoretic benefits for doing it on-chain, and it's all cheap at the moment.
+We already have threshold signatures in Ergo, so we could likely do the same thing if that approach is that much better. 
+
+That said, on-chain provides a lot of benefits with implementing incentives/disincentives like stake slashing, which aren't possible off-chain with threshold-sigs. We don't have such tx congestion on Ergo, and future plans for sidechains research for scaling, so we get a lot more game theoretic benefits for doing it on-chain, and it's all cheap at the moment.
