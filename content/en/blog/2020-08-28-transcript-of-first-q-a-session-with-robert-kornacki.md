@@ -1,5 +1,5 @@
 ---
-title: Transcript of first Oracle Pools Q&A session with Robert Kornacki
+title: Transcript of the Oracle Pools Q&A session with Robert Kornacki
 date: 2020-08-28T18:59:34.462Z
 author: mx
 authorPhoto: /img/uploads/mx.png
