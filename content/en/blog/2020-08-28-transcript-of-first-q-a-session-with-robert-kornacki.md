@@ -9,7 +9,7 @@ tags:
 ---
 **Robert Kornacki**
 
-I'd like to officially announce that Oracle Pools are live, running on mainnet, with all the code + detailed instructions available for you to start/run your own, and we have a beautiful frontend created by DeadIT now implemented in the explorer https://explorer.ergoplatform.com/en/oracle-pools-list
+I'd like to officially announce that Oracle Pools are live, running on mainnet, with all the code + detailed instructions available for you to start/run your own, and we have a beautiful frontend created by DeadIT now implemented in the explorer <https://explorer.ergoplatform.com/en/oracle-pools-list>
 
 **Can Ergo Oracle Pools be used on Eth projects?**
 
@@ -17,7 +17,7 @@ A similar system could be developed & deployed on Eth, but all the data is poste
 
 **So the data can’t be pulled from the Ergo blockchain to the Eth blockchain?**
 
-Eventually if Eth implements NiPoPoW, but it wouldn't make any sense financially.
+Eventually, if Eth implements NiPoPoW, but it wouldn't make any sense financially.
 
 **What about Cardano?**
 
