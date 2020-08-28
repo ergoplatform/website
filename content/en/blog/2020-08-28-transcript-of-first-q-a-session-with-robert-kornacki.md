@@ -51,7 +51,6 @@ We at Emurgo are supporting both Cardano ADA, and upcoming Ergo ERG in Yoroi, wi
 
 **What does oracle pool payout mean? you get paid for funding oracle pools?**
 
-
 Each oracle who submits a datapoint gets paid for doing their job. The oracle pool payout is the amount of nanoErgs (the smallest measurement of Ergs) that an oracle gets paid per oracle pool datapoint finalizing/posting.
 So if you take a look at the frontend page https://explorer.ergoplatform.com/en/oracle-pool-state/adausd You can see the oracle payout price is 2500000 and the posting schedule is 60 minutes (30 blocks). So oracles make 2500000 every 30 blocks in this pool.
 
