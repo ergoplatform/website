@@ -74,20 +74,23 @@ We are also looking into direct interoperability, and how practical it is to dep
 
 Since Ergo has superb privacy features thanks to Sigma protocols, there is a great chance that we can have interesting interoperability usecases in the future, where you may hold wrapped Ada and use that wAda is privacy-preserving smart contracts.
 
-I believe the same stable coin which will come on the ergo blockchain will come to the Cardano blockchain. In the future, we might see ergo and Cardano talking to each other?
+**I believe the same stable coin which will come on the ergo blockchain will come to the Cardano blockchain. In the future, we might see ergo and Cardano talking to each other?**
+
 We are putting in a lot of effort, and beginning to speak with IOG more about making this a reality (in terms of blockchains talking with each other).
 
-So in this case the only limitation would be the variety of datasources for the request to make this useful?
-With simple hierarchies of oracle pools, that indeed would be the case. We are also looking into mixing signed data together with unsigned data.
+**So in this case the only limitation would be the variety of data sources for the request to make this useful?**
+
+With simple hierarchies of Oracle Pools, that indeed would be the case. We are also looking into mixing signed data together with unsigned data.
 
 So you have pools sourcing signed data from CoinBase for example, and then others from other unsigned sources, thereby decreasing the chance of corrupting any one source.
+
 Besides just simple hierarchies as I initially stipulated in the writeup, I've spent more time thinking about even more complex schemes which can be built on top of oracle pools that use a lot more game theory in different ways, and maybe we'll release something about that by EOY.
 
 **Where does Emurgo get its funds to develop these things?**
 
 Emurgo is one of the founding companies which built Cardano + is now partners with the Ergo Foundation which allows us to develop in this ecosystem as well.
 
-Will we see additional exchange listings for Ergo in the near future?  Visibility and liquidity are a pain point currently.
+**Will we see additional exchange listings for Ergo in the near future?  Visibility and liquidity are a pain point currently.**
 
 We (the EF) are constantly talking with exchanges.
 
