@@ -66,10 +66,9 @@ Haha, again yes/no. To source data in UTXO systems, you need to scan the UTXO se
 
 **Do you imagine IOG or Emurgo will make use of the Ergo blockchain for services/products like a stable coin or decentralized exchange?**
 
-We (Emurgo) are currently working with the Ergo Foundation to create a stablecoin on Ergo.
-We are also looking into direct interoperability, and how practical it is to deploy dApps we develop on Ergo also on Cardano.
+We (Emurgo) are currently working with the Ergo Foundation to create a stablecoin on Ergo. We are also looking into direct interoperability, and how practical it is to deploy dApps we develop on Ergo also on Cardano.
 
-Since Ergo has superb privacy features thanks to Sigma protocols, there is a great chance that we can have interesting interoperability usecases in the future, where you may hold wrapped Ada and use that wAda is privacy-preserving smart contracts.
+Since Ergo has superb privacy features thanks to Sigma protocols, there is a great chance that we can have interesting interoperability use cases in the future, where you may hold wrapped Ada and use that wAda in privacy-preserving smart contracts.
 
 **I believe the same stable coin which will come on the ergo blockchain will come to the Cardano blockchain. In the future, we might see ergo and Cardano talking to each other?**
 
