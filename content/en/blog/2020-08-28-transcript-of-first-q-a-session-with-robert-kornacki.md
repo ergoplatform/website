@@ -13,24 +13,21 @@ I'd like to officially announce that Oracle Pools are live, running on mainnet, 
 
 **Can Ergo Oracle Pools be used on Eth projects?**
 
-
 A similar system could be developed & deployed on Eth, but all the data is posted on the Ergo blockchain so available to all Ergo users.
 
-**So the data can’t be pulled from the ergo blockchain to the eth blockchain?**
+**So the data can’t be pulled from the Ergo blockchain to the Eth blockchain?**
 
 Eventually if Eth implements NiPoPoW, but it wouldn't make any sense financially.
 
 **What about Cardano?**
 
-It would make more sense to post unique data from the Ergo blockchain to Eth or Cardano, rather than oracle data.
-We're researching into cross-chain compatability with Cardano in the background right now.
+It would make more sense to post unique data from the Ergo blockchain to Eth or Cardano, rather than oracle data. We're researching cross-chain compatibility with Cardano in the background right now. 
 
-Robert K
-And these oracle pools are now fully usable on-chain for any dApp anyone wishes to create. Simply use the oracle pool NFT id as a reference to find the latest oracle pool UTXO, and you can have oracle data immediately available for your 
+And these oracle pools are now fully usable on-chain for any dApp anyone wishes to create. Simply use the oracle pool NFT id as a reference to find the latest oracle pool UTXO, and you can have oracle data immediately available for your dApps.
 
-So the incentives for the oracle pools will Need to constantly be filled, this means users pay as they go or do they just send a large payment and it slowly depletes as it is used?
+**So the incentives for the oracle pools will Need to constantly be filled, this means users pay as they go or do they just send a large payment and it slowly depletes as it is used?**
 
-Good question. The idea is that with the UTXO-model, large dApps can enforce that users pay out a single output a very small % of a fee which goes to the Oracle Pools automatically.
+Good question. The idea is that with the UTXO-model, large dApps can enforce that users pay out a single output a very small % of a fee that goes to the Oracle Pools automatically.
 
 As such, well used/popular dApps fund key oracle pools via usage, and almost no one has to end up feeling the cost.
 
