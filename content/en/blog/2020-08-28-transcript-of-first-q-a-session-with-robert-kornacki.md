@@ -31,7 +31,7 @@ Good question. The idea is that with the UTXO-model, large dApps can enforce tha
 
 As such, well used/popular dApps fund key oracle pools via usage, and almost no one has to end up feeling the cost.
 
-For more specialized data, it may be that the pools will have to be more directly funded, but for key datapoints like Erg/USD, that will likely be the equivalent of core infrastructure available for everyone
+For more specialized data, it may be that the pools will have to be more directly funded, but for key datapoints like Erg/USD, that will likely be the equivalent of core infrastructure available for everyone.
 
 **Sort of how Uniswap takes fees to pay LP?**
 
