@@ -54,7 +54,7 @@ We at Emurgo are supporting both Cardano ADA, and upcoming Ergo ERG in Yoroi, wi
 Each oracle who submits a datapoint gets paid for doing their job. The oracle pool payout is the amount of nanoErgs (the smallest measurement of Ergs) that an oracle gets paid per oracle pool datapoint finalizing/posting.
 So if you take a look at the frontend page https://explorer.ergoplatform.com/en/oracle-pool-state/adausd You can see the oracle payout price is 2500000 and the posting schedule is 60 minutes (30 blocks). So oracles make 2500000 every 30 blocks in this pool.
 
-**Could Daedalus use the ADA oracle to add the current value at the time staking rewards are paid? would be useful for tax purpose?**
+**Could Daedalus use the ADA oracle to add the current value at the time staking rewards are paid?**
 
 Yes/no. The current oracle posts data to the Ergo blockchain, and so it'd require Daedalus to also support Ergo to have a setup like that.
 
