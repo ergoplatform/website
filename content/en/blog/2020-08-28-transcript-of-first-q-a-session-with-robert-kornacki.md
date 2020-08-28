@@ -94,7 +94,7 @@ We (the EF) are constantly talking with exchanges.
 
 This is completely off-topic, but one of my side interests that is super untapped and I think will be a major breakthrough is when interoperability between off-chain distributed messaging networks integrate together with blockchains.
 
-**Also, my assumption is that the Ergo token will be supported in the Yoroi wallet eventually, yes?**
+**My assumption is that the Ergo token will be supported in the Yoroi wallet eventually, yes?**
 
 Yes, Erg support will be added to Yoroi in the coming future. No dates for you yet, unfortunately, but stay tuned!
 
