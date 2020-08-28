@@ -70,7 +70,7 @@ We (Emurgo) are currently working with the Ergo Foundation to create a stablecoi
 
 Since Ergo has superb privacy features thanks to Sigma protocols, there is a great chance that we can have interesting interoperability use cases in the future, where you may hold wrapped Ada and use that wAda in privacy-preserving smart contracts.
 
-**I believe the same stable coin which will come on the ergo blockchain will come to the Cardano blockchain. In the future, we might see ergo and Cardano talking to each other?**
+**I believe the same stable coin which will come on the Ergo blockchain will come to the Cardano blockchain. In the future, we might see ergo and Cardano talking to each other?**
 
 We are putting in a lot of effort, and beginning to speak with IOG more about making this a reality (in terms of blockchains talking with each other).
 
