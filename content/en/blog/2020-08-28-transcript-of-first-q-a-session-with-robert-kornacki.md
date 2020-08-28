@@ -56,7 +56,6 @@ So if you take a look at the frontend page https://explorer.ergoplatform.com/en/
 
 **Could Daedalus use the ADA oracle to add the current value at the time staking rewards are paid? would be useful for tax purpose?**
 
-
 Yes/no. The current oracle posts data to the Ergo blockchain, and so it'd require Daedalus to also support Ergo to have a setup like that.
 
 It would typically just be easier for Daedalus to also source the pricing data itself via http requests, but it's technically feasible. Once we have Cardano oracles that should be doable (and since Daedalus is a full node it will scan all txs/blocks so the data will be available for use, so it can definitely be done)
