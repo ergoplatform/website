@@ -41,9 +41,9 @@ Indeed, but it can be a lot more generic, cheaper, and easy to implement in the 
 
 Great question. Here's a response I just wrote that touches on this from Reddit:
 
-Sure, I'll help clarify. Essentially when external oracle data is posted on-chain, it needs to be encoded in a very precise way within a transaction. Furthermore, oracle pools have a bunch of different moving parts which require transactions to be issued to move between the different stages of the pool protocol.
+Sure, I'll help clarify. Essentially when external oracle data is posted on-chain, it needs to be encoded in a very precise way within a transaction. Furthermore, oracle pools have a bunch of different moving parts that require transactions to be issued to move between the different stages of the pool protocol.
 
-As such, the oracle core is the piece of software which creates all of the complex transactions which post the data on-chain & runs the oracle pool protocol on-chain (such as averaging datapoints).
+As such, the oracle core is the piece of software that creates all of the complex transactions which post the data on-chain & runs the oracle pool protocol on-chain (such as averaging datapoints).
 
 The current oracle core is designed for the UTXO-based system in Ergo, which is quite similar in many ways to the UTXO-based system in Cardano.
 
