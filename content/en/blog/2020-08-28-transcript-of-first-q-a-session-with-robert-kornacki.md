@@ -1,5 +1,5 @@
 ---
-title: Transcript of first Q&A session with Robert Kornacki
+title: Transcript of first Q&A session with Robert Kornacki about Oracle Pools
 date: 2020-08-28T18:59:34.462Z
 author: mx
 authorPhoto: /img/uploads/mx.png
@@ -62,11 +62,13 @@ Yes/no. The current oracle posts data to the Ergo blockchain, and so it'd requir
 
 It would typically just be easier for Daedalus to also source the pricing data itself via http requests, but it's technically feasible. Once we have Cardano oracles that should be doable (and since Daedalus is a full node it will scan all txs/blocks so the data will be available for use, so it can definitely be done)
 
-Sounds very doable with yoroi pretty soon though right?
+**Sounds very doable with Yoroi pretty soon though right?**
 
 Haha, again yes/no. To source data in UTXO systems you need to scan the UTXO set, so you need your own node. Light wallets like Yoroi don't have this, because it will cost theoretically an infinite amount of money if everyone just spams Emurgo's full nodes and forces us to pay for everyone's UTXO-set scans.
 
-Do you imagine IOG or Emurgo will make use of the Ergo blockchain for services/products like a stable coin or decentralized exchange?
+**Do you imagine IOG or Emurgo will make use of the Ergo blockchain for services/products like a stable coin or decentralized exchange?**
+
+
 We (Emurgo) are currently working with the Ergo Foundation to create a stablecoin on Ergo.
 We are also looking into direct interoperability, and how practical it is to deploy dApps we develop on Ergo also on Cardano.
 
@@ -81,7 +83,7 @@ With simple hierarchies of oracle pools, that indeed would be the case. We are a
 So you have pools sourcing signed data from CoinBase for example, and then others from other unsigned sources, thereby decreasing the chance of corrupting any one source.
 Besides just simple hierarchies as I initially stipulated in the writeup, I've spent more time thinking about even more complex schemes which can be built on top of oracle pools that use a lot more game theory in different ways, and maybe we'll release something about that by EOY.
 
-Where does emurgo get its funds to develop these things?
+**Where does Emurgo get its funds to develop these things?**
 
 Emurgo is one of the founding companies which built Cardano + is now partners with the Ergo Foundation which allows us to develop in this ecosystem as well.
 
