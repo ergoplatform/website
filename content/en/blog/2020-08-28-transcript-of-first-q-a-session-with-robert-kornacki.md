@@ -49,14 +49,15 @@ The current oracle core is designed for the UTXO-based system in Ergo, which is 
 
 We at Emurgo are supporting both Cardano ADA, and upcoming Ergo ERG in Yoroi, with a focus on moving forward into smart contract & DeFi support, especially with Gougen on the horizon. As such we are now investing a lot of resources in developing key UTXO-based smart contract infrastructure that's required for the ecosystem as a whole, first on Ergo which is already launched and running, and soon on Gougen as well.
 
-What does oracle pool payout mean? you get paid for funding oracle pools?
-Each oracle who submits a datapoint gets paid for doing their job. The oracle pool payout is the amount of nanoErgs (the smallest measurement of Ergs) that an oracle gets paid per oracle pool datapoint finalizing/posting.
-So if you take a look at the frontend page https://explorer.ergoplatform.com/en/oracle-pool-state/adausd
-You can see the oracle payout price is 2500000
-And the posting schedule is 60 minutes (30 blocks)
-So oracles make 2500000 every 30 blocks in this pool.
+**What does oracle pool payout mean? you get paid for funding oracle pools?**
 
-could Daedalus use the ADA oracle to add the current value at the time staking rewards are paid? would be useful for tax purpose
+
+Each oracle who submits a datapoint gets paid for doing their job. The oracle pool payout is the amount of nanoErgs (the smallest measurement of Ergs) that an oracle gets paid per oracle pool datapoint finalizing/posting.
+So if you take a look at the frontend page https://explorer.ergoplatform.com/en/oracle-pool-state/adausd You can see the oracle payout price is 2500000 and the posting schedule is 60 minutes (30 blocks). So oracles make 2500000 every 30 blocks in this pool.
+
+**Could Daedalus use the ADA oracle to add the current value at the time staking rewards are paid? would be useful for tax purpose?**
+
+
 Yes/no. The current oracle posts data to the Ergo blockchain, and so it'd require Daedalus to also support Ergo to have a setup like that.
 
 It would typically just be easier for Daedalus to also source the pricing data itself via http requests, but it's technically feasible. Once we have Cardano oracles that should be doable (and since Daedalus is a full node it will scan all txs/blocks so the data will be available for use, so it can definitely be done)
