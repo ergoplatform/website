@@ -25,7 +25,7 @@ It would make more sense to post unique data from the Ergo blockchain to Eth or 
 
 And these oracle pools are now fully usable on-chain for any dApp anyone wishes to create. Simply use the oracle pool NFT id as a reference to find the latest oracle pool UTXO, and you can have oracle data immediately available for your dApps.
 
-**So the incentives for the oracle pools will need to constantly be filled, this means users pay as they go or do they just send a large payment and it slowly depletes as it is used?**
+**So the incentives for the Oracle Pools will need to constantly be filled, this means users pay as they go or do they just send a large payment and it slowly depletes as it is used?**
 
 Good question. The idea is that with the UTXO-model, large dApps can enforce that users pay out a single output a very small % of a fee that goes to the Oracle Pools automatically.
 
