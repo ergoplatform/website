@@ -61,6 +61,6 @@ There is also scope for using signed data – data from trusted entities like la
 
 This is the first implementation to come from the Emurgo-Ergo collaboration: the first steps in building out the UTXO-based DeFi ecosystem. There will be much more to come, and new developments promise to be very exciting.
 
-For further background, watch Emurgo researcher** [Robert Kornacki explain oracle pools](https://www.youtube.com/watch?v=NfSrNxA-MPo&t=1s).**
+For further background, watch Emurgo researcher **[Robert Kornacki explain oracle pools](https://www.youtube.com/watch?v=NfSrNxA-MPo&t=1s).**
 
 <!--EndFragment-->
