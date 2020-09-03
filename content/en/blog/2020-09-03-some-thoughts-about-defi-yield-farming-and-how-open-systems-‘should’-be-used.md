@@ -11,7 +11,7 @@ At the risk of stating the obvious, decentralisation is the hallmark of DeFi. It
 
 As a DeFi platform that aims to take and build on the best features of Bitcoin, Ergo is committed to decentralisation. 
 
-And so it is with a mixture of interest, concern, excitement, dismay and, frankly, awe that we watch the current DeFi craze for Yield Farming unfold. A $10 billion movement has arisen almost overnight.
+And so it is with a mixture of interest, concern, excitement, dismay and, frankly, awe that we watch the current DeFi craze for Yield Farming unfold. A [$10 billion](https://defipulse.com/) movement has arisen almost overnight.
 
 As the number of DeFi initiatives has multiplied, and with them yield farming opportunities, we have seen Ethereum struggle under the volume of transactions. A simple ETH transfer can cost several dollars, a token transaction $10-20. The kind of complex transactions associated with smart contract execution for DeFi protocols can be many times that.
 
@@ -19,9 +19,9 @@ This hardly fulfills DeFi’s promise of providing universal access to financial
 
 **Decentralisation comes first**
 
-There’s some exceptional innovation in the DeFi space, but equally, it’s easy to be critical of some of the recent DeFi initiatives: protocols that have been built (or cloned) for the sole purpose of capitalising on the yield farming craze, with no real-world utility, ability to generate revenues, or expectation of longevity. In one sense, it’s little more than a rerun of the altcoin craze of 2014-15. It’s certainly not what Ethereum’s founders had in mind. Vitalik Buterin has compared yield farming protocols (unfavourably) to central banks in their need to constantly print more tokens to sustain themselves.
+There’s some exceptional innovation in the DeFi space, but equally, it’s easy to be critical of some of the recent DeFi initiatives: protocols that have been built (or cloned) for the sole purpose of capitalising on the yield farming craze, with no real-world utility, ability to generate revenues, or expectation of longevity. In one sense, it’s little more than a rerun of the altcoin craze of 2014-15. It’s certainly not what Ethereum’s founders had in mind. Vitalik Buterin has [compared yield farming protocols (unfavourably) to central banks](https://twitter.com/VitalikButerin/status/1300406428289572865) in their need to constantly print more tokens to sustain themselves.
 
-The problem is that no one gets to say how an open platform ‘should’ be used – even its creators. The nature of decentralisation is that no one has control. Open platforms are like democracy: in the words of Winston Churchill, the worst system, apart from all the others. Or, to quote William Gibson’s sci-fi short story, Burning Chrome: ‘The street finds its own uses for things’. Put a piece of tech in the wild, and you shouldn’t be surprised if users come up with applications you never expected. Yield farming is just another result of DeFi’s core characteristics of openness and composability.
+The problem is that no one gets to say how an open platform ‘should’ be used – even its creators. The nature of decentralisation is that no one has control. Open platforms are like democracy: in the words of Winston Churchill, the worst system, apart from all the others. Or, to quote William Gibson’s sci-fi short story, [Burning Chrome:](http://self.gutenberg.org/articles/Burning_Chrome) ‘The street finds its own uses for things’. Put a piece of tech in the wild, and you shouldn’t be surprised if users come up with applications you never expected. Yield farming is just another result of DeFi’s core characteristics of openness and composability.
 
 Viewed this way, yield farming isn’t a ‘good’ or ‘bad’ application of blockchain. It just is. It’s what the street, or the crypto community, has decided to do with DeFi. 
 
