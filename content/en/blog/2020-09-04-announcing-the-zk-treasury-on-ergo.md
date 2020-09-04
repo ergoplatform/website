@@ -1,8 +1,8 @@
 ---
 title: Announcing the ZK Treasury on Ergo!
 date: 2020-09-04T18:54:28.168Z
-author: Alex Chepurnoy
-authorPhoto: /img/uploads/alex_chepurnoy.svg
+author: Guy Brandon
+authorPhoto: /img/uploads/guy_brandon.jpg
 blogPhoto: /img/uploads/aziz-acharki-puvpzckrnog-unsplash.jpg
 tags:
   - Building Ergo
