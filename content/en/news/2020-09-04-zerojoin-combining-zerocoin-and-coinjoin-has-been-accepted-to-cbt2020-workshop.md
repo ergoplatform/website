@@ -1,5 +1,5 @@
 ---
-title: 'ZeroJoin: Combining ZeroCoin and CoinJoin" has been accepted to CBT2020
+title: '"ZeroJoin: Combining ZeroCoin and CoinJoin" has been accepted to CBT2020
   workshop'
 date: 2020-09-01T20:16:57.267Z
 subtitle: 4th International Workshop on Cryptocurrencies and Blockchain
