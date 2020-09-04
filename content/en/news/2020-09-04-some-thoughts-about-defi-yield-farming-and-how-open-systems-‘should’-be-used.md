@@ -1,6 +1,6 @@
 ---
 title: Some thoughts about DeFi, Yield Farming and how open systems ‘should’ be used
-date: 2020-09-04T20:12:57.169Z
+date: 2020-09-03T20:12:57.169Z
 subtitle: At the risk of stating the obvious, decentralisation is the hallmark
   of DeFi. It is decentralisation that brings the benefits of transparency,
   accessibility, security, immutability, composability, efficiency and more
