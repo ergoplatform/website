@@ -15,7 +15,7 @@ tags:
 
 <https://twitter.com/YoroiWallet/status/1314244618435739648>
 
-![](/img/uploads/tw11.jpg "https://twitter.com/YoroiWallet/status/1314244618435739648")
+![](/img/uploads/tw22.jpg "https://twitter.com/YoroiWallet/status/1314244618435739648")
 
 <!--StartFragment-->
 
