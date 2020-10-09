@@ -9,7 +9,7 @@ tags:
 ---
 <!--StartFragment-->
 
-**Yoroi, the flagship lite wallet app for the Cardano ecosystem developed by Emurgo, now supports Ergo! This development follows directly from the [Ergo-Emurgo partnership](https://emurgo.io/en/blog/emurgo-to-partner-with-ergo-and-build-blockchain-based-decentralized-financial-solutions) announced in June this year.**
+Yoroi, the flagship lite wallet app for the Cardano ecosystem developed by Emurgo, now supports Ergo! This development follows directly from the [Ergo-Emurgo partnership](https://emurgo.io/en/blog/emurgo-to-partner-with-ergo-and-build-blockchain-based-decentralized-financial-solutions) announced in June this year.
 
 <!--EndFragment-->
 
