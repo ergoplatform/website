@@ -601,11 +601,8 @@
 
 - id: software_first-section_second_paragraph
   translation: "As far as software is reliable to keep your secret keys in private, it is highly recommended to build software from sources.
-  If you are not an experienced user, you may download already built binaries and
-  <a class=\"eg-text__link eg-link\" href=\"https://www.digitalocean.com/community/tutorials/how-to-verify-downloaded-files\"><span>verify</span></a> your image using the <a class=\"eg-text__link eg-link\" href=\"#???\"><span>SHA256 checksum</span></a>.
-  In the sections below you will be able to find binaries for a majority of operating systems.
+  If you are not an experienced user, you may download already built binaries.
   "
-
 
 - id: software_second_title
   translation: Downloads
@@ -668,9 +665,9 @@
   translation: Contributing to Ergo
 
 - id: team_first-section_first_paragraph
-  translation: "Ergo operates an open contributor model where anyone is welcome to contribute. We have instructions below to help you get started contributing in several different ways.
+  translation: "Ergo operates an open contributor model where anyone is welcome to contribute.
     <br/><br/>
-  If want to contribute in another way, please visit our <a class=\"eg-text__link eg-link\" href=\"https://t.me/ergoplatform\"><span>telegram channel</span></a> and discuss your plan with a developer.
+  If want to contribute in another way, please visit our <a class=\"eg-text__link eg-link\" href=\"https://discord.gg/cyahRhDWxS\"><span>discord channel</span></a> and discuss your plan at #development channel with a developer.
   "
 
 - id: team_first-section_first-item_title
@@ -686,10 +683,10 @@
   translation: Write & review code
 
 - id: team_first-section_third-item_title
-  translation: Translations
+  translation: Bounties
 
 - id: team_first-section_third-item_paragraph
-  translation: Translate the user interface
+  translation: You can help us and get bounty for that
 
 - id: team_first-section_fourth-item_title
   translation: Documentation

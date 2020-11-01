@@ -39,12 +39,66 @@
           <div class="eg-navbar__content">
             <div class="eg-navbar__collapse eg-navbar__collapse--black">
               <ul class="eg-nav">
-                {{ range .Site.Menus.mainmenu }}
-                  <li class="eg-nav__item">
+                <li
+                  class="eg-nav__item dropdown"
+                >
+                  <button
+                    class="eg-nav__link eg-link dropdown__button"
+                  >Individuals</button>
+                  <div class="nav-dropdown-menu">
+                    {{ range .Site.Menus.individuals }}
+                    {{ $menuUrl := .URL | absLangURL | safeURL }}
+                      <a
+                        class="nav-dropdown-menu__item"
+                        href="{{ $menuUrl }}"
+                        target="{{ if .Pre }} _blank {{ end}}"
+                      ><span>{{ .Name }}</span></a>
+                    {{end}}
+                </li>
+                <li
+                  class="eg-nav__item dropdown"
+                >
+                  <button
+                    class="eg-nav__link eg-link dropdown__button"
+                  >Developers</button>
+                  <div class="nav-dropdown-menu">
+                    {{ range .Site.Menus.developers }}
+                    {{ $menuUrl := .URL | absLangURL | safeURL }}
+                      <a
+                        class="nav-dropdown-menu__item"
+                        href="{{ $menuUrl }}"
+                        target="{{ if .Pre }} _blank {{ end}}"
+                      ><span>{{ .Name }}</span></a>
+
+                    {{end}}
+                </li>
+                <li
+                  class="eg-nav__item dropdown"
+                >
+                  <button
+                    class="eg-nav__link eg-link dropdown__button"
+                  >Community</button>
+                  <div class="nav-dropdown-menu">
+                    {{ range .Site.Menus.community }}
+                    {{ $menuUrl := .URL | absLangURL | safeURL }}
+                      <a
+                        class="nav-dropdown-menu__item"
+                        href="{{ $menuUrl }}"
+                        target="{{ if .Pre }} _blank {{ end}}"
+                      ><span>{{ .Name }}</span></a>
+                    {{end}}
+                </li>
+
+                {{ range .Site.Menus.other }}
+                  {{ $menuUrl := .URL | absLangURL | safeURL }}
+                  <li
+                    class="eg-nav__item"
+                  >
                     <a
-                      class="eg-nav__link eg-link"
-                      href="{{ .URL | absLangURL }}"
-                    ><span>{{ .Name }}</span></a>
+                      href="{{ $menuUrl}}"
+                      class="eg-nav__link eg-link dropdown__button"
+                      target="{{ if .Pre }} _blank {{ end}}"
+                    >{{.Name}}</a>
                   </li>
                 {{ end }}
               </ul>
@@ -288,7 +342,7 @@
             <h2 class="eg-red-section__white-title">{{ T "community_title" }}</h2>
             <div>
               <p class="eg-red-section__paragraph">{{ T "community_paragraph" }}</p>
-              <a class="eg-red-section__link eg-link" href="{{ `hall_of_fame` | absLangURL | safeURL}}"><span>{{ T "community_link" }}</span></a>
+              <a class="eg-red-section__link eg-link" href="{{ `contribute` | absLangURL | safeURL}}"><span>{{ T "community_link" }}</span></a>
             </div>
           </div>
         </section>

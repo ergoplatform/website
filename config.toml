@@ -25,6 +25,120 @@ pygmentsUseClasses=true
   contentDir = "content/en"
   weight = 1
 
+  [[languages.en.menu.individuals]]
+    identifier = "about"
+    name = "Getting Started"
+    url = "/about/"
+    weight = 10
+  [[languages.en.menu.individuals]]
+    identifier = "basics"
+    name = "Basics"
+    url = "/basics/"
+    weight = 20
+  [[languages.en.menu.individuals]]
+    identifier = "wallets"
+    name = "Wallets"
+    url = "/wallets/"
+    weight = 30
+  [[languages.en.menu.individuals]]
+    identifier = "exchanges"
+    name = "Exchanges"
+    url = "/exchanges/"
+    weight = 40
+  [[languages.en.menu.individuals]]
+    identifier = "mining_erg"
+    name = "Mining ERG"
+    url = "/blog/2019_12_22_mining_for_fun/"
+    weight = 50
+
+  [[languages.en.menu.developers]]
+    identifier = "contribute"
+    name = "Contribute to Ergo"
+    url = "/contribute"
+    weight = 10
+  [[languages.en.menu.developers]]
+    identifier = "use_cases"
+    name = "Use Cases"
+    url = "/use_cases/"
+    weight = 20
+  [[languages.en.menu.developers]]
+    identifier = "software"
+    name = "Software"
+    url = "/software/"
+    weight = 40
+  [[languages.en.menu.developers]]
+    identifier = "wiki"
+    name = "Wiki"
+    url = "https://github.com/ergoplatform/ergo/wiki"
+    pre = 'true'
+    weight = 40
+  [[languages.en.menu.developers]]
+    identifier = "awesome"
+    name = "Awesome Ergo"
+    url = "https://github.com/ergoplatform/awesome-ergo"
+    pre = 'true'
+    weight = 50
+
+  [[languages.en.menu.community]]
+    identifier = "foundation"
+    name = "Foundation"
+    url = "/foundation"
+    weight = 10
+  [[languages.en.menu.community]]
+    identifier = "forum"
+    name = "Forum"
+    url = "https://www.ergoforum.org/"
+    pre = 'true'
+    weight = 20
+  [[languages.en.menu.community]]
+    identifier = "discord"
+    name = "Discord"
+    url = "https://discord.gg/kj7s7nb"
+    pre = 'true'
+    weight = 30
+  [[languages.en.menu.community]]
+    identifier = "telegram"
+    name = "Telegram"
+    url = "https://t.me/ergoplatform"
+    pre = 'true'
+    weight = 40
+
+  [[languages.en.menu.other]]
+    identifier = "Documents"
+    name = "Documents"
+    url = "/documents/"
+    weight = 10
+
+  [[languages.en.menu.other]]
+    identifier = "news"
+    name = "News"
+    url = "/news/"
+    weight = 20
+
+  [[languages.en.menu.other]]
+    identifier = "Blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 30
+
+  [[languages.en.menu.other]]
+    identifier = "Hall of Fame"
+    name = "Hall of Fame"
+    url = "/hall_of_fame/"
+    weight = 40
+
+  [[languages.en.menu.other]]
+    identifier = "FAQ"
+    name = "FAQ"
+    url = "/faq/"
+    weight = 50
+
+  [[languages.en.menu.other]]
+    identifier = "explorer"
+    name = "Explorer"
+    url = "https://explorer.ergoplatform.com/"
+    weight = 60
+
   [[languages.en.menu.mainmenu]]
     identifier = "about"
     name = "Getting Started"
