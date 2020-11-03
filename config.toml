@@ -102,6 +102,18 @@ pygmentsUseClasses=true
     url = "https://t.me/ergoplatform"
     pre = 'true'
     weight = 40
+  [[languages.en.menu.community]]
+    identifier = "ergo_cast"
+    name = "Ergo Cast"
+    url = "https://ergocast.io/"
+    pre = 'true'
+    weight = 50
+  [[languages.en.menu.community]]
+    identifier = "ergo_101"
+    name = "Community Website Ergo 101"
+    url = "https://ergo101.org/"
+    pre = 'true'
+    weight = 50
 
   [[languages.en.menu.other]]
     identifier = "Documents"
@@ -137,6 +149,7 @@ pygmentsUseClasses=true
     identifier = "explorer"
     name = "Explorer"
     url = "https://explorer.ergoplatform.com/"
+    pre = 'true'
     weight = 60
 
   [[languages.en.menu.mainmenu]]
