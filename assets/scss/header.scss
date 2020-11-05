@@ -95,6 +95,15 @@
 
       &--black {
         background-color: rgba(0,0,0,0.97);
+
+        .nav-dropdown-menu {
+          @media (max-width: $lg) {
+            background: black !important;
+            &__item {
+              color: white !important
+            }
+          }
+        }
       }
     }
 
@@ -196,7 +205,7 @@
 
         @media (max-width: $lg) {
           margin-left: 0;
-          margin-top: 16px;
+          margin-top: 24px;
         }
       }
 
@@ -225,6 +234,7 @@
           position: relative;
           box-shadow: none;
           padding: 16px;
+          padding-bottom: 0;
         }
 
         &__item {
