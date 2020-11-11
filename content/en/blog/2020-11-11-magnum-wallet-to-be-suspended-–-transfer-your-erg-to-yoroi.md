@@ -41,6 +41,6 @@ One important thing to note when switching over from Magnum: **you won’t be ab
 
 Thus after creating a new Ergo account within Yoroi, simply send your ERGs from Magnum to your new Yoroi address and wait for your transaction to be confirmed on the blockchain.
 
-The whole process won’t take more than a few minutes. What’s more, you’ll also be upgrading to a wallet that is both better supported, and has a bright future ahead. Yoroi is going to become an increasingly important element within the Ergo ecosystem, offering support for dApps and Ergo-enabled websites – while also providing another strand to the** [interoperability between Ergo and Cardano](https://ergoplatform.org/en/blog/2020-11-09-first-steps-towards-interoperability-with-cardano-oracles/).**
+The whole process won’t take more than a few minutes. What’s more, you’ll also be upgrading to a wallet that is both better supported, and has a bright future ahead. Yoroi is going to become an increasingly important element within the Ergo ecosystem, offering support for dApps and Ergo-enabled websites – while also providing another strand to the [interoperability between Ergo and Cardano](https://ergoplatform.org/en/blog/2020-11-09-first-steps-towards-interoperability-with-cardano-oracles/).
 
 <!--EndFragment-->
