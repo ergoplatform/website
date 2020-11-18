@@ -34,29 +34,31 @@ The Ergo Foundation invites developers to submit new grant proposals, in order t
 
 The first two sections of FiveBinaries’ grant proposal are included below as an example:
 
-*\# Ergo hosted infrastructure*
-
-*To make it easier for dApps developers to host their infrastructure, either as a service to their users or development of their applications, I would like to propose a project to improve the experience by providing an out of the box solution.*  
-
-*\## Deliverables*
-
-*The out-of-box experience would be a cluster consisting of the following components.*
-
-*\* Ergo node*
-
-*\* Ergo explorer*
-
-*\* Ergo frontend*
-
-*\* Ergo backend (chain-grabber, explorer-api, utx-broadcaster and utx-watcher)*
-
-*\* Monitoring*
-
-*\* Grafana (metrics)*
-
-*\* ELK (logs)*
-
-*The project will make use of docker-compose to setup a number of containers forming a cluster.*
+> ```
+> # Ergo hosted infrastructure
+>
+> To make it easier for dApps developers to host their infrastructure, either as a service to their users or development of their applications, I would like to propose a project to improve the experience by providing an out of the box solution.  
+>
+> ## Deliverables
+>
+> The out-of-box experience would be a cluster consisting of the following components.
+>
+> * Ergo node
+>
+> * Ergo explorer
+>
+> * Ergo frontend
+>
+> * Ergo backend (chain-grabber, explorer-api, utx-broadcaster and utx-watcher)
+>
+> * Monitoring
+>
+> * Grafana (metrics)
+>
+> * ELK (logs)
+>
+> The project will make use of docker-compose to setup a number of containers forming a cluster.
+> ```
 
 If you have a great idea which you are looking to implement that would improve the Ergo ecosystem as a whole, please feel free to apply for an Ergo Foundation grant by emailing your proposal to: [ergoplatform@protonmail.com](mailto:ergoplatform@protonmail.com).
 
