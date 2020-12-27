@@ -12,7 +12,7 @@ tags:
 
 Ergo has some amazing tech and some talented developers. However, as a decentralised and community-powered platform, it’s not always easy to know what’s going on all the time. Different people are developing different dApps and use cases, formally and informally. Connecting them to the same users and building that all-important DeFi network effect isn’t always easy.
 
-That’s what the [Sigmaverse](http://sigmaverse.io/) is about. Sigmaverse is a one-stop portal to the Ergo dApp ecosystem: a place where users can find all the cool functionality that community developers are building on Ergo, all in one place.
+That’s what the [Sigmaverse](https://sigmaverse.io) is about. Sigmaverse is a one-stop portal to the Ergo dApp ecosystem: a place where users can find all the cool functionality that community developers are building on Ergo, all in one place.
 
 The idea is that developers can create their apps, and then list them on Sigmaverse using GitHub.
 
@@ -39,4 +39,4 @@ appCategory: [“web” or/and “cli” or/and “desktop”]
 ------
 ```
 
-That’s all! The process is fast and straightforward. To check out the dApps already available in the Sigmaverse, visit [Sigmaverse.io](http://sigmaverse.io/).
+That’s all! The process is fast and straightforward. To check out the dApps already available in the Sigmaverse, visit [](http://sigmaverse.io/)[Sigmaverse.io](https://sigmaverse.io).
