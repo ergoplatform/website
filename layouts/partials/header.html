@@ -15,6 +15,14 @@
             <li
               class="eg-nav__item dropdown"
             >
+              <a
+                class="eg-nav__link eg-link linear-wipe linear-wipe--dark"
+                href="https://ergosummit.org"
+              >Ergo Summit</a>
+            </li>
+            <li
+              class="eg-nav__item dropdown"
+            >
               <button
                 class="eg-nav__link eg-link dropdown__button"
               >Individuals</button>
@@ -27,6 +35,7 @@
                     target="{{ if .Pre }} _blank {{ end}}"
                   ><span>{{ .Name }}</span></a>
                 {{end}}
+              </div>
             </li>
             <li
               class="eg-nav__item dropdown"
@@ -42,8 +51,8 @@
                     href="{{ $menuUrl }}"
                     target="{{ if .Pre }} _blank {{ end}}"
                   ><span>{{ .Name }}</span></a>
-
                 {{end}}
+              </div>
             </li>
             <li
               class="eg-nav__item dropdown"
@@ -60,6 +69,7 @@
                     target="{{ if .Pre }} _blank {{ end}}"
                   ><span>{{ .Name }}</span></a>
                 {{end}}
+              </div>
             </li>
 
             {{ range .Site.Menus.other }}

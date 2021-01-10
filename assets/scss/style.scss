@@ -43,6 +43,35 @@ body {
   min-width: 340px;
 }
 
+.linear-wipe {
+  text-align: center;
+
+  background: linear-gradient(to right, #FFF 0%, $light-red 50%, #FFF 100%);
+  background-size: 200% auto;
+
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shine 1.5s linear infinite;
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+  &--dark {
+    color: #000;
+    background: linear-gradient(to right, #000 0%, $light-red 50%, #000 100%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
