@@ -43,7 +43,7 @@
     <br/><br/>
     Ergo’s smart contracts allow us to execute wide-ranging tasks, but we always know in advance how much the code will cost and whether it will run successfully. Meanwhile, we can still write Turing-complete scripts by iterating processes across multiple blocks. That means Ergo can support versatile dApps that run predictably, with known costs, and don’t have any of the dangers of unrestricted functionality.
     <br/><br/>
-    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/tools/\"><span>ErgoScript tutorials and integration tools</span></a>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/software/\"><span>ErgoScript tutorials and integration tools</span></a>
   "
 
 - id: ergo_economy_text

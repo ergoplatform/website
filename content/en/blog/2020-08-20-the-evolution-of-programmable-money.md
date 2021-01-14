@@ -37,6 +37,6 @@ Using ErgoScript, developers can neatly and reliably attach customisable conditi
 
 Ergo is therefore the next stage in the evolution of programmable money: a qualitatively better currency, at a time when money is losing its value before our eyes.
 
-**Learn more about [ErgoScript and Ergo’s Sigma Protocols](https://ergoplatform.org/en/tools/).**
+**Learn more about [ErgoScript and Ergo’s Sigma Protocols](https://ergoplatform.org/en/software/).**
 
 <!--EndFragment-->
