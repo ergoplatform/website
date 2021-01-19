@@ -1,0 +1,40 @@
+{{define "main"}}
+    <main>
+        <section>
+            <h1>Ergo Mining Calculator</h1>
+            <div>
+                <div>
+                    <span>Current price: </span>
+                    <span id="current-price">loading...</span>
+                </div>
+
+                <div>
+                    <span>Current block reward: </span>
+                    <span id="current-block-reward">loading...</span>
+                </div>
+
+                <div>
+                    <span>Network hashrate: </span>
+                    <span>30.82 TH/s</span>
+                </div>
+
+                <div>
+                    <span>Your hashrate: </span>
+                    <input type="number" value="0"/>
+                    <span>MH/s</span>
+                </div>
+
+                <div>
+                    <span>Daily revenue: </span>
+                    <span>0.00 ERG = $0.00</span>
+                </div>
+            </div>
+        </section>
+    </main>
+{{end}}
+
+<!-- {{ define "footerscripts"}}
+    {{ $js := resources.Get "js/miningCalculator.js" }}
+    {{ $jsFile := $js | resources.Minify | resources.Fingerprint "md5" }}
+    <script type="text/javascript" src="{{ $jsFile.Permalink }}" defer></script>
+{{ end }} -->
