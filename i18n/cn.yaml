@@ -980,3 +980,9 @@
               class=\"eg-text__link eg-link\"
               href=\"https://ergoplatform.org/en/documents/\"
             ><span>https://ergoplatform.org/en/documents/</span></a>"
+
+# mining page
+
+# Attention: Chinese translate done with Google translator
+- id: mining_calculator_title
+  translation: Ergo 采矿计算器
