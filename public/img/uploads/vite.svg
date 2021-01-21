@@ -1,0 +1,21 @@
+<svg class="logo" data-v-c405d972="" height="60px" version="1.1" viewBox="0 0 116 60" width="116px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title data-v-c405d972="">logo</title>
+  <desc data-v-c405d972="">Created with Sketch.</desc>
+  <defs data-v-c405d972="">
+    <linearGradient data-v-c405d972="" id="linearGradient-1" x1="0%" x2="136.342633%" y1="0%" y2="155.448607%">
+      <stop data-v-c405d972="" offset="0%" stop-color="#052EF5"></stop>
+      <stop data-v-c405d972="" offset="31.4739301%" stop-color="#0D6DF0"></stop>
+      <stop data-v-c405d972="" offset="49.1836977%" stop-color="#0B92E7"></stop>
+      <stop data-v-c405d972="" offset="71.3239784%" stop-color="#0BB6EB"></stop>
+      <stop data-v-c405d972="" offset="100%" stop-color="#00E0F2"></stop>
+    </linearGradient>
+  </defs>
+  <g data-v-c405d972="" id="Page-1" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <g data-v-c405d972="" id="net1" transform="translate(-240.000000, -28.000000)">
+        <g data-v-c405d972="" id="Group-6" transform="translate(240.000000, 28.000000)">
+          <path d="M58.032,43.6297431 L64.7718165,26.8473578 L65.972367,26.8473578 L58.6870459,44.5726789 L57.2954862,44.5726789 L50.0371376,26.8473578 L51.2921835,26.8473578 L57.9775046,43.6297431 L58.032,43.6297431 Z M72.766789,44.572844 L72.766789,26.8469725 L73.9673394,26.8469725 L73.9673394,44.572844 L72.766789,44.572844 Z M80.7618165,27.7908991 L80.7618165,26.8474128 L95.6875046,26.8474128 L95.6875046,27.7908991 L88.8111743,27.7908991 L88.8111743,44.5727339 L87.6106239,44.5727339 L87.6106239,27.7908991 L80.7618165,27.7908991 Z M102.481596,26.8473578 L115.579211,26.8473578 L115.579211,27.7913945 L103.682147,27.7913945 L103.682147,34.8906606 L114.86967,34.8906606 L114.86967,35.8341468 L103.682147,35.8341468 L103.682147,43.6297431 L115.715725,43.6297431 L115.715725,44.5726789 L102.481596,44.5726789 L102.481596,26.8473578 Z" data-v-c405d972="" fill="#272727" id="Combined-Shape"></path>
+          <path d="M0,14.5913394 L19.7020183,10.164 L17.7385321,59.8340917 L0,14.5913394 Z M24.2043853,9.31150459 L63.6689725,-5.50458712e-05 L18.3612661,59.8997615 L24.2043853,9.31150459 Z" data-v-c405d972="" fill="url(#linearGradient-1)" id="Combined-Shape"></path>
+        </g>
+    </g>
+  </g>
+</svg>

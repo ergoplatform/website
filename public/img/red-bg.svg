@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1280px" height="425px" viewBox="0 0 1280 425" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1293" height="425"></rect>
+        <polygon id="path-3" points="0 0 793 0 793 793 0 793"></polygon>
+    </defs>
+    <g id="main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, -3136.000000)" id="Group-3">
+            <g transform="translate(0.000000, 3136.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#F7F8FA" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <g mask="url(#mask-2)">
+                    <g transform="translate(-253.000000, -152.000000)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Clip-2" stroke="none" fill="none"></g>
+                        <path d="M791.211891,363.664968 L678.682522,100.212787 C676.396356,94.7829924 672.024064,90.5248907 666.572987,88.3386842 L400.699044,-18.399637 C395.233678,-20.5786992 389.132473,-20.5429768 383.702829,-18.2281699 L120.222216,94.3114577 C114.792572,96.5905423 110.534588,100.955811 108.348442,106.421327 L1.62021832,372.302628 C-0.601649107,377.796722 -0.530206424,383.869518 1.78453649,389.292168 L114.32105,652.787216 C116.600072,658.209866 120.972364,662.475112 126.430585,664.661318 L392.304528,771.392495 C394.926475,772.449876 397.762749,773 400.556158,773 C403.528174,773 406.493045,772.421298 409.32932,771.185306 L672.781356,658.652823 C678.203856,656.366593 682.468984,651.99418 684.65513,646.542953 L791.383354,380.661653 C793.598077,375.167558 793.533778,369.094762 791.211891,363.664968" id="Fill-1" stroke="none" fill="#FF4221" fill-rule="evenodd" mask="url(#mask-4)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
