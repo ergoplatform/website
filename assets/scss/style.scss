@@ -22,6 +22,7 @@
 @import 'header';
 @import 'landing/landing';
 @import "404";
+@import 'mining.scss';
 @import 'blog/eg-blog';
 @import 'syntax';
 
@@ -99,6 +100,10 @@ p {
     position: absolute;
     right: 74%;
     top: 150px;
+
+    &_higher {
+      top: 100px;
+    }
 
     @media (max-width: $sm) {
       display: none;
