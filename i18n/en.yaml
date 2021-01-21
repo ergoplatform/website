@@ -1141,3 +1141,8 @@
 
 - id: use_cases_seventh_paragraph
   translation: With superior support for light clients but no compromise in security, Ergo is ideally suited to use in locations with limited internet connectivity, or where bandwidth and storage are an issue. With support for alternative financial systems that can be accessed safely from any device, Ergo is a natural choice for failing states and economies.
+
+# mining page
+
+- id: mining_calculator_title
+  translation: Ergo Mining Calculator
