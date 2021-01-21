@@ -1,27 +1,21 @@
 <script>
-	// for view
 	let message = 'loading...';
-	let currentPrice = '';
-	let currentBlockRewardERG = '67.5';
-	let currentBlockReward = '';
-	let networkHashrate = '';
-	let yourHashrateInput;
-	let yourHashrate = '';
-	let dailyRevenueERG = '';
-	let dailyRevenue = '';
-	let isActive = false;
+	let currentPrice = null;
+	let currentBlockRewardERG = 67.5;
+	let currentBlockReward = null;
+	let networkHashrate = null;
+	let dailyRevenueERG = null;
+	let dailyRevenue = null;
 
-	// for calculations
 	const blockTime = 120;
 	const blocksPerDay = 864e2 / blockTime;
-	let difficulty;
+	const yourHashrateInput = document.getElementById("your-hashrate");
 
 	function changedYourHashrate() {
-		yourHashrate = yourHashrateInput.value;
-		const dailyReward = currentBlockRewardERG * yourHashrate * 1e6 * blockTime / difficulty * blocksPerDay;
+		const yourHashrate = +yourHashrateInput.value * 1e6;
+		dailyReward = currentBlockRewardERG * yourHashrate * blockTime / difficulty * blocksPerDay;
 		dailyRevenueERG = dailyReward.toFixed(2);
-		console.log(dailyRevenueERG);
-		dailyRevenue = (dailyRevenueERG * currentPrice).toFixed(2);
+		dailyRevenue = (dailyReward * currentPrice).toFixed(2);
 	}
 
 	fetch(`https://api.coingecko.com/api/v3/simple/price?ids=ergo&vs_currencies=USD`)
@@ -37,11 +31,11 @@
 		return new Error('Error: ' + error.message);
 	})
 	.then(response => response.json())
-	.then(data => {
-		currentPrice = data.ergo.usd.toFixed(2);
+	.then(response => {
+		currentPrice = response.ergo.usd.toFixed(2);
 		currentBlockReward = (currentBlockRewardERG * currentPrice).toFixed(2);
 
-		fetch(`https://api.ergoplatform.com/blocks`)
+		fetch(`https://api.ergoplatform.com/blocks?sortBy=height&sortDirection=desc&limit=1`)
 		.then(response => {
 			if (response.ok) {
 				return response;
@@ -54,11 +48,10 @@
 			return new Error('Error: ' + error.message);
 		})
 		.then(response => response.json())
-		.then(data => {
-			difficulty = data.items[0].difficulty;
+		.then(response => {
+			const difficulty = response.items[0].difficulty;
 			networkHashrate = (difficulty / blockTime / 1e12).toFixed(2);
 			changedYourHashrate();
-			message = 'success';
 		})
 		.catch(error => {
 			message = error.message;
@@ -69,72 +62,52 @@
 	});
 </script>
 
-<div class="calc-container">
-	<div class="calc-leftside">
-		<div class="calc-leftside_header">Your hashrate</div>
-		<div class="calc-leftside_main">
-			<div class="calc-leftside_input-wrapper" class:active={isActive}>
-				<input
-					bind:this={yourHashrateInput}
-					type="number"
-					value={yourHashrate}
-					placeholder="Hashrate value"
-					on:change={changedYourHashrate}
-					on:focus={() => isActive = true}
-      				on:blur={() => isActive = false}
-				/>
-			</div>
-			<div>MH/s</div>
-		</div>
-	</div>
+<style>
+</style>
 
-	<div class="calc-rightside">
-
-		<div class="calc-rightside_header">Daily revenue</div>
-
-		<div class="calc-rightside_main">
-			<div>{dailyRevenueERG} ERG</div>
-			<div>= <span class="accented-text">${dailyRevenue}</span></div>
+<div>
+	<h1>Ergo Mining Calculator</h1>
+	<div>
+		<div>
+			Current price: 
+			{#if currentPrice} 
+				1 ERG = ${currentPrice}
+			{:else} 
+				{message}
+			{/if}
 		</div>
 
-		<div class="calc-rightside_parameters">
-
-			<div class="calc-rightside_parameter">
-				<div class="calc-rightside_parameter_title">Current price</div>
-				<div class="calc-rightside_parameter_value">
-					1 ERG = <span class="accented-text">${currentPrice}</span>
-				</div>
-			</div>
-
-			<div class="calc-rightside_parameter">
-				<div class="calc-rightside_parameter_title">Current block reward</div>
-				<div class="calc-rightside_parameter_value">
-					{currentBlockRewardERG} ERG = <span class="accented-text">${currentBlockReward}</span>
-				</div>
-			</div>
-
-			<div class="calc-rightside_parameter">
-				<div class="calc-rightside_parameter_title">Network hashrate</div>
-				<div class="calc-rightside_parameter_value">{networkHashrate} TH/s</div>
-			</div>
+		<div>
+			Current block reward: 
+			{#if currentBlockRewardERG && currentBlockReward} 
+				{currentBlockRewardERG} ERG = {currentBlockReward}
+			{:else} 
+				{message}
+			{/if}
 		</div>
-	</div>
-	
-	<!-- <div>
+
+		<div>
+			Network hashrate: 
+			{#if networkHashrate} 
+				{networkHashrate} TH/s
+			{:else}
+				{message}
+			{/if}
+		</div>
 
 		<div>
 			<span>Your hashrate: </span>
-			<input id="your-hashrate" type="number" value={yourHashrate} 
-				on:change={changedYourHashrate} bind:this={yourHashrateInput}/>
+			<input type="number" value="0" on:change={changedYourHashrate}/>
 			<span>MH/s</span>
 		</div>
 
 		<div>
-			Daily revenue: {dailyRevenueERG} ERG = ${dailyRevenue}
+			Daily revenue:
+			{#if dailyRevenueERG && dailyRevenue} 
+				{dailyRevenueERG} ERG = ${dailyRevenue}
+			{:else}
+				{message}
+			{/if}
 		</div>
-
-		<div>
-			Loading message: {message}
-		</div>
-	</div> -->
+	</div>
 </div>
