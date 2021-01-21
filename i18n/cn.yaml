@@ -977,8 +977,3 @@
               class=\"eg-text__link eg-link\"
               href=\"https://ergoplatform.org/en/documents/\"
             ><span>https://ergoplatform.org/en/documents/</span></a>"
-
-# mining page
-
-- id: mining_calculator_title
-  translation: Ergo Mining Calculator

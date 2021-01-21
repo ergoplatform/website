@@ -79,12 +79,6 @@ pygmentsUseClasses=true
     url = "/use_cases/"
     weight = -30
 
-  [[languages.en.menu.mainmenu]]
-    identifier = "Mining"
-    name = "Mining"
-    url = "/mining/"
-    weight = -20
-
   # [[languages.en.menu.mainmenu]]
   #   identifier = "Careers"
   #   name = "Careers"
@@ -150,12 +144,6 @@ pygmentsUseClasses=true
     name = "Use Cases"
     url = "/use_cases/"
     weight = -30
-
-  [[languages.cn.menu.mainmenu]]
-    identifier = "Mining"
-    name = "Mining"
-    url = "/mining/"
-    weight = -20
 
 [outputFormats]
   [html]
