@@ -15,69 +15,68 @@
 
 	// for calculations
 	const blockTime = 120;
-	const blocksPerDay = 864e2 / blockTime;
+	const blocksPerDay = 86400 / blockTime;
 	let difficulty;
 
 	// for exceptions
-	const errmes = MultilingualContent.errmess;
+	const errorMessage = MultilingualContent.errorMessage;
 	let loadingError = false;
 
 	initData();
 
 	function handleInputChange() {
-		const dailyReward = 1e6 * currentBlockRewardERG * yourHashrate * blockTime / difficulty * blocksPerDay;
+		const dailyReward = 1000000 * currentBlockRewardERG * yourHashrate * blockTime / difficulty * blocksPerDay;
 		dailyRevenueERG = dailyReward.toFixed(2);
 		dailyRevenue = (dailyRevenueERG * currentPrice).toFixed(2);
-		console.log(dailyReward, currentBlockRewardERG, yourHashrate, blockTime, difficulty, blocksPerDay)
 	}
 
 	function initData() {
 		fetch(`https://api.coingecko.com/api/v3/simple/price?ids=ergo&vs_currencies=USD`)
-		.then(response => {
-			if (response.ok) {
-				return response;
-			}
-			else {
-				throw new Error();
-			}
-		})
-		.then(response => response.json())
-		.then(data => {
-			currentPrice = data.ergo.usd.toFixed(2);
-			currentBlockReward = (currentBlockRewardERG * currentPrice).toFixed(2);
+      .then(response => {
+        if (response.ok) {
+          return response;
+        }
+        else {
+          throw new Error();
+        }
+      })
+      .then(response => response.json())
+      .then(data => {
+        currentPrice = data.ergo.usd.toFixed(2);
+        currentBlockReward = (currentBlockRewardERG * currentPrice).toFixed(2);
 
-			fetch(`https://api.ergoplatform.com/blocks`)
-			.then(response => {
-				if (response.ok) {
-					return response;
-				}
-				else {
-					throw new Error();
-				}
-			})
-			.then(response => response.json())
-			.then(data => {
-				difficulty = data.items[0].difficulty;
-				networkHashrate = (difficulty / blockTime / 1e12).toFixed(2);
-			})
-			.then(() => {
-				yourHashrateInput.focus();
-				yourHashrate = yourHashrateInput.value;
-				handleInputChange();
-			})
-			.catch(() => {
-				loadingError = true;
-			});
-		})
-		.catch(() => {
-			loadingError = true;
-		});
+        fetch(`https://api.ergoplatform.com/blocks`)
+        .then(response => {
+          if (response.ok) {
+            return response;
+          }
+          else {
+            throw new Error();
+          }
+        })
+        .then(response => response.json())
+        .then(data => {
+          difficulty = data.items[0].difficulty;
+          networkHashrate = (difficulty / blockTime / 1e12).toFixed(2);
+        })
+        .then(() => {
+          yourHashrateInput.focus();
+          yourHashrate = yourHashrateInput.value;
+          handleInputChange();
+        })
+        .catch(() => {
+          loadingError = true;
+        });
+      })
+      .catch(() => {
+        loadingError = true;
+      });
 	}
 </script>
 
 <div class="calc-container">
 	{#if loadingError}
-		{errmes}
+		{errorMessage}
 	{:else}
 		<div class="calc-leftside">
 			<div class="calc-leftside_header">{MultilingualContent.yourHashrateTitle}</div>
