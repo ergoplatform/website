@@ -10,7 +10,6 @@
 @import 'components/eg-text';
 @import 'components/eg-margins';
 @import 'components/eg-download';
-@import 'components/eg-team-grid';
 @import 'components/eg-accordion';
 @import 'components/eg-table';
 @import 'components/eg-share';
@@ -18,6 +17,7 @@
 @import 'components/eg-exchanges';
 @import 'components/eg-link';
 @import 'components/eg-tag';
+@import 'team/team';
 @import 'footer';
 @import 'header';
 @import 'landing/landing';
@@ -42,6 +42,35 @@ body {
   width: 100%;
   position: relative;
   min-width: 340px;
+}
+
+.linear-wipe {
+  text-align: center;
+
+  background: linear-gradient(to right, #FFF 0%, $light-red 50%, #FFF 100%);
+  background-size: 200% auto;
+
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shine 1.5s linear infinite;
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+  &--dark {
+    color: #000;
+    background: linear-gradient(to right, #000 0%, $light-red 50%, #000 100%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .wrapper {

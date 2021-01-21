@@ -43,7 +43,7 @@
     <br/><br/>
     Ergo’s smart contracts allow us to execute wide-ranging tasks, but we always know in advance how much the code will cost and whether it will run successfully. Meanwhile, we can still write Turing-complete scripts by iterating processes across multiple blocks. That means Ergo can support versatile dApps that run predictably, with known costs, and don’t have any of the dangers of unrestricted functionality.
     <br/><br/>
-    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/tools/\"><span>ErgoScript tutorials and integration tools</span></a>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/software/\"><span>ErgoScript tutorials and integration tools</span></a>
   "
 
 - id: ergo_economy_text
@@ -88,7 +88,7 @@
     <br/><br/>
     We are also supported by community developers, who may work on a volunteer basis or who receive grants from the Foundation for implementing useful features and dApps. For example, ErgoMix, a decentralized mixing service based on Sigma protocols, was built by a third party developer from the Ergo community, and Ergo’s decentralized exchange is also being developed on this basis.
     <br/><br/>
-    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/team/\"><span>Meet the Ergo team</span></a>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/hall_of_fame/\"><span>Meet the Ergo team</span></a>
   "
 
 - id: ergo_agile_text
@@ -170,7 +170,7 @@
   translation: The Ergo Platform Project Overview
 
 - id: documents_ergo_teaser_link
-  translation: https://docs.ergoplatform.com/teaser.pdf
+  translation: https://ergoplatform.org/docs/teaser.pdf
 
 - id: documents_ergo_script_adv
   translation: Whitepaper III
@@ -343,13 +343,13 @@
                 It is created to provide an easy way to use financial contracts by ordinary people, that should be able to use them in a decentralized manner without any trust.
                 Unlike the traditional financial system, no bailouts, blacklists or other forms of discrimination should be possible on the core level of Ergo protocol.
                 Ergo protocol is designed to be survivable in the long-term, making it useful to implement contracts for a period of a person’s life and also enabling it to be a good store of value.
-                <a href=\"https://docs.ergoplatform.com/teaser.pdf\" class=\"eg-text__link eg-link\"><span>Read teaser for details</span></a>."
+                <a href=\"https://ergoplatform.org/docs/teaser.pdf\" target=\"_blank\" class=\"eg-text__link eg-link\"><span>Read teaser for details</span></a>."
 
 - id: basics_consensus_title
   translation: Consensus
 
 - id: basics_consensus
-  translation: "Consensus protocol of Ergo — <a href=\"https://docs.ergoplatform.com/ErgoPow.pdf\" class=\"eg-text__link eg-link\"><span>Autolykos</span></a> — is based on the well-known Proof-of-Work (“PoW”) consensus algorithm.
+  translation: "Consensus protocol of Ergo — <a href=\"https://ergoplatform.org/docs/ErgoPow.pdf\" target=\"_blank\" class=\"eg-text__link eg-link\"><span>Autolykos</span></a> — is based on the well-known Proof-of-Work (“PoW”) consensus algorithm.
                   PoW was chosen for several reasons including that PoW protocols are widely studied, have high security guarantees, and are friendly to light clients.
                   However, Autolykos has several meaningful differences from Bitcoin's PoW.
                   First, it is memory-hard reducing the disparity between specialized hardware (ASICs) and commodity GPUs, allowing ordinary people to participate in mining to secure the network and receive the reward.
@@ -368,7 +368,7 @@
   translation: Survivability
 
 - id: basics_survivability
-  translation: "To survive in the long-term, Ergo prefers well-tested solutions. If there isn't already a well-tested solution for some problem, we perform our own research, and the <a href=\"https://apograf.io/c/7MEY3\" class=\"eg-text__link eg-link\"><span>number of peer-reviewed papers</span></a> from the Ergo development team is already extensive.
+  translation: "To survive in the long-term, Ergo prefers well-tested solutions. If there isn't already a well-tested solution for some problem, we perform our own research, and the <a href=\"https://ergoplatform.org/en/documents/\" class=\"eg-text__link eg-link\"><span>number of peer-reviewed papers</span></a> from the Ergo development team is already extensive.
                   <br/><br/>  A resilient network should adapt to changing environment without the intervention of trusted parties (such as a ``core developer`` team). Ergo's on-chain miner voting protocol allows gradual changes in a large number of parameters including maximum block size, storage fee factor and more.
                   <br/><br/> For more fundamental changes Ergo is going to follow a soft-forkability approach --- if an overwhelming majority of the network accepts a new feature, it is activated, however, old nodes which do not upgrade continue to operate normally and just skip over this feature validation.
                   Thus disruptive hard forks should not be required in Ergo.
@@ -382,7 +382,7 @@
   To achieve survivability, Ergo provides economic improvements in addition to the technical ones, most central of which is a storage fee component which plays an important role for Ergo‘s stability: if an output remains in the state for 4 years without being moved, a miner may charge a small fee for every byte kept in the state.
   This idea is similar to regular cloud storage services, but it's application to blockchain systems has several significant consequences.
   First, Ergo mining will always be stable, unlike Bitcoin and other PoW currencies, in which mining may become unstable after the emission period.
-  Second, state size growth becomes controllable and predictable reducing hardware requirements for Ergo miners. Third, by collecting storage fees from outdated boxes, miners return lost coins to circulation preventing a steady decrease of circulating supply due to lost keys. This also establishes a long‐term unique use case for <a class=\"eg-text__link eg-link\" href=\"https://docs.ergoplatform.com/ErgoPow.pdf\"><span>Ergo’s native token (“Erg”)</span></a> as the only token on the Ergo blockchain that can be used to pay for storage rent, despite the expected presence of a large number of non‐native tokens that may be issued on the Ergo blockchain in order to benefit from its strong security and decentralization qualities and Contractual Money functionality.  "
+  Second, state size growth becomes controllable and predictable reducing hardware requirements for Ergo miners. Third, by collecting storage fees from outdated boxes, miners return lost coins to circulation preventing a steady decrease of circulating supply due to lost keys. This also establishes a long‐term unique use case for <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/docs/ErgoPow.pdf\" target=\"_blank\"><span>Ergo’s native token (“Erg”)</span></a> as the only token on the Ergo blockchain that can be used to pay for storage rent, despite the expected presence of a large number of non‐native tokens that may be issued on the Ergo blockchain in order to benefit from its strong security and decentralization qualities and Contractual Money functionality.  "
 
 - id: basics_applicability_title
   translation: Applicability
@@ -428,6 +428,9 @@
 
 - id: tech_third_title
   translation: Foundational papers
+
+- id: tech_fourth_title
+  translation: Presentations
 
 - id: tech_third-section_title_link
   translation: All papers
@@ -598,11 +601,8 @@
 
 - id: software_first-section_second_paragraph
   translation: "As far as software is reliable to keep your secret keys in private, it is highly recommended to build software from sources.
-  If you are not an experienced user, you may download already built binaries and
-  <a class=\"eg-text__link eg-link\" href=\"https://www.digitalocean.com/community/tutorials/how-to-verify-downloaded-files\"><span>verify</span></a> your image using the <a class=\"eg-text__link eg-link\" href=\"#???\"><span>SHA256 checksum</span></a>.
-  In the sections below you will be able to find binaries for a majority of operating systems.
+  If you are not an experienced user, you may download already built binaries.
   "
-
 
 - id: software_second_title
   translation: Downloads
@@ -665,9 +665,9 @@
   translation: Contributing to Ergo
 
 - id: team_first-section_first_paragraph
-  translation: "Ergo operates an open contributor model where anyone is welcome to contribute. We have instructions below to help you get started contributing in several different ways.
+  translation: "Ergo operates an open contributor model where anyone is welcome to contribute.
     <br/><br/>
-  If want to contribute in another way, please visit our <a class=\"eg-text__link eg-link\" href=\"https://t.me/ergoplatform\"><span>telegram channel</span></a> and discuss your plan with a developer.
+  If want to contribute in another way, please visit our <a class=\"eg-text__link eg-link\" href=\"https://discord.gg/cyahRhDWxS\"><span>discord channel</span></a> and discuss your plan at #development channel with a developer.
   "
 
 - id: team_first-section_first-item_title
@@ -683,10 +683,10 @@
   translation: Write & review code
 
 - id: team_first-section_third-item_title
-  translation: Translations
+  translation: Bounties
 
 - id: team_first-section_third-item_paragraph
-  translation: Translate the user interface
+  translation: You can help us and get bounty for that
 
 - id: team_first-section_fourth-item_title
   translation: Documentation
@@ -764,7 +764,7 @@
   translation: "How to find Ergo mining pools?"
 
 - id: faq_fifth-item_text
-  translation: "Ergo was created with the idea to achieve maximum resiliency through decentralization. Autolykos consensus protocol plays an important role in the network's decentralization, as far as it does not allow mining pools. Check Autolykos <a class=\"eg-text__link eg-link\" href=\"https://docs.ergoplatform.com/ErgoPow.pdf\"><span>specification</span></a> for more details."
+  translation: "Ergo was created with the idea to achieve maximum resiliency through decentralization. Autolykos consensus protocol plays an important role in the network's decentralization, as far as it does not allow mining pools. Check Autolykos <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/docs/ErgoPow.pdf\"><span>specification</span></a> for more details."
 
 - id: faq_sixth-item_title
   translation: "When will the Ergo network launch?"
@@ -808,7 +808,7 @@
   Twitter: <a class=\"eg-text__link eg-link\" href=\"https://twitter.com/ergoplatformorg\"><span>https://twitter.com/ergoplatformorg</span></a> <br/><br/>
   Wiki: <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki\"><span>https://github.com/ergoplatform/ergo/wiki</span></a> <br/><br/>
   Github: <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo\"><span>https://github.com/ergoplatform/ergo</span></a> <br/><br/>
-  Documents: <a class=\"eg-text__link eg-link\" href=\"http://docs.ergoplatform.com\"><span>http://docs.ergoplatform.com</span></a> <br/><br/>
+  Documents: <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/en/documents/\"><span>https://ergoplatform.org/en/documents/</span></a> <br/><br/>
   Telegram: <a class=\"eg-text__link eg-link\" href=\"https://t.me/ergoplatform\"><span>https://t.me/ergoplatform</span></a><br/><br/>
   "
 
@@ -854,7 +854,7 @@
   translation: Part
 
 - id: wallets_ergo_wallet-doc_link
-  translation: https://ergoplatform.org/en/blog/2019_06_04_wallet-documentation/
+  translation: https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node
 
 
 #news
@@ -1024,8 +1024,7 @@
   translation: "Grants"
 
 - id: foundation_fourth_section_first_paragraph
-  translation: "The Ergo Foundation supports a grant program (guide will be announced soon). For now, please send an email to
-            <a href=\"mailto:ergoplatform@protonmail.com\" class=\"eg-text__link eg-link\"><span>ergoplatform@protonmail.com</span></a> or a message to any board member if you would like to apply for a grant. Proposals, at the moment, need to be approved by four of six votes of Ergo Development Fund Board Members. The Ergo Foundation is accepting new volunteers from the community so please apply if you wish."
+  translation: "The Ergo Foundation has announced it is looking to fund grants for projects that focus on building key ecosystem infrastructure. Please <a href=\"https://ergoplatform.org/en/blog/2020-11-18-ergo-foundation-makes-key-dapp-infrastructure-grant/\" class=\"eg-text__link eg-link\"><span>reference this article</span></a> for scoping your own grant, and send it to <a href=\"mailto:ergoplatform@protonmail.com\" class=\"eg-text__link eg-link\"><span>ergoplatform@protonmail.com</span></a> if you have a project that you believe is worth being funded Proposals, at the moment, need to be approved by four of six votes of Ergo Development Fund Board Members. The Ergo Foundation is accepting new volunteers from the community so please apply if you wish."
 
 - id: foundation_fourth_section_second_paragraph
   translation: "We are committed to informing the community about decisions and approved developments."
@@ -1051,6 +1050,12 @@
 - id: foundation_fifth_section_fifth_li_item
   translation: "Martin Spodymek"
 
+- id: foundation_fifth_section_sixth_li_item
+  translation: "Robert Kornacki"
+
+- id: foundation_fifth_section_seventh_li_item
+  translation: "Mohammad Hassan Samadani"
+
 - id: foundation_fifth_section_second_paragraph
   translation: "Current Development Fund Board Members (sorted by last name):"
 
@@ -1061,16 +1066,16 @@
   translation: "Noah Hudson"
 
 - id: foundation_fifth_section_second_list_third_li_item
-  translation: "Guillermo Manzanares"
-
-- id: foundation_fifth_section_second_list_fourth_li_item
   translation: "Justin Simpson"
 
-- id: foundation_fifth_section_second_list_fifth_li_item
+- id: foundation_fifth_section_second_list_fourth_li_item
   translation: "Alexander Slesarenko"
 
-- id: foundation_fifth_section_second_list_sixth_li_item
+- id: foundation_fifth_section_second_list_fifth_li_item
   translation: "Martin Spodymek"
+
+- id: foundation_fifth_section_second_list_sixth_li_item
+  translation: "Robert Kornacki"
 
 - id: foundation_sixth_section_first_title
   translation: "Appendix: Ergo Basics"

@@ -1,0 +1,125 @@
+{{define "main"}}
+  <main>
+    <section class="container container--top-content container--last-container grid-container-1k2">
+      <h2 class="eg-title">{{ T "team_first_title" }}</h2>
+      <div class="eg-text grid-container-1k2__main-section">
+        <p class="eg-text__paragraph eg-text__paragraph--18 eg-mb-3">{{ T "team_first-section_first_paragraph" | safeHTML }}</p>
+        <div class="grid-container-1k1 grid-container-1k1--md-margins">
+          <div class="eg-text">
+            <div class="eg-mb-0-5">
+              <a class="eg-text__link eg-text__link--26 eg-link" target="_blank" href="https://github.com/ergoplatform/ergo/issues/new"><span>{{ T "team_first-section_first-item_title"}}</span></a>
+            </div>
+            <div>
+              <a class="eg-text__paragraph eg-text__paragraph--18 eg-link" target="_blank" href="https://github.com/ergoplatform/ergo/issues/new"><span class="eg-text__paragraph eg-text__paragraph--18">{{ T "team_first-section_first-item_paragraph"}}</span></a>
+            </div>
+          </div>
+          <div class="eg-text">
+            <div class="eg-mb-0-5">
+              <a class="eg-text__link eg-text__link--26 eg-link" target="_blank" href="https://github.com/ergoplatform/ergo"><span>{{ T "team_first-section_second-item_title"}}</span></a>
+            </div>
+            <div>
+              <a class="eg-text__paragraph eg-text__paragraph--18 eg-link" target="_blank" href="https://github.com/ergoplatform/ergo"><span>{{ T "team_first-section_second-item_paragraph"}}</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="community-section eg-red-section">
+      <div class="container eg-red-section__container">
+        <h2 class="eg-red-section__white-title">{{ T "tools_third_title" }}</h2>
+        <div>
+          <p class="eg-red-section__paragraph">{{ T "tools_third-section_paragraph" }}</p>
+          <a class="eg-red-section__link eg-link" href="mailto:ergoplatform@protonmail.com"><span>{{ T "tools_third-section_link" }}</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="container--margins-y grid-container-1k2 container--lg-padding-bottom">
+        <h2 class="eg-title">{{ T "tools_second_title" }}</h2>
+        <div class="grid-container-1k2__main-section">
+          <div class="eg-text eg-mb-3 eg-mb-sm-2">
+            <p class="eg-text__paragraph eg-text__paragraph--18">{{ T "tools_second-section_first_paragraph"}}</p>
+          </div>
+          <div class="grid-container-1k1 grid-container-1k1--md-margins">
+            <div class="eg-text">
+              <p class="eg-text__paragraph eg-text__paragraph--26">{{ T "tools_second-section_first-sub_title" }}</p>
+              <div class="eg-mb-1-5">
+                <div class="eg-mb-0-5">
+                  <a class="eg-text__link eg-text__link--20 eg-link" href="/docs/ErgoScript.pdf"><span>{{ T "tools_second-section_first-sub_first_subtitle" }}</span></a>
+                </div>
+                <div>
+                  <a class="eg-text__paragraph eg-text__paragraph--18 eg-link" href="/docs/ErgoScript.pdf"><span>{{ T "tools_second-section_first-sub_first_paragraph" }}</span></a>
+                </div>
+              </div>
+              <div>
+                <div class="eg-mb-0-5">
+                  <a class="eg-text__link eg-text__link--20 eg-link" href="/docs/AdvancedErgoScriptTutorial.pdf"><span>{{ T "tools_second-section_first-sub_second_subtitle" }}</span></a>
+                </div>
+                <div>
+                  <a class="eg-text__paragraph eg-text__paragraph--18 eg-link" href="/docs/AdvancedErgoScriptTutorial.pdf"><span>{{ T "tools_second-section_first-sub_second_paragraph" }}</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="eg-text">
+              <p class="eg-text__paragraph eg-text__paragraph--26">{{ T "tools_second-section_second-sub_title" }}</p>
+              <div class="eg-mb-1">
+                <a class="eg-text__link eg-text__link--20 eg-link" href="{{ T `tools_second-section_second-sub_first_url` }}"><span>{{ T "tools_second-section_second-sub_first_link" }}</span></a>
+              </div>
+              <div>
+                <a class="eg-text__link eg-text__link--20 eg-link" href="{{ T `tools_mining_link`}}"><span>{{ T "tools_second-section_second-sub_second_link" }}</span></a>
+              </div>
+            </div>
+            <div class="eg-text">
+              <p class="eg-text__paragraph eg-text__paragraph--26">{{ T "tools_second-section_fourth-sub_title" }}</p>
+              <div class="eg-mb-1">
+                <a class="eg-text__link eg-text__link--20 eg-link" href="https://github.com/ergoplatform/ergo/blob/master/src/main/resources/api/openapi.yaml"><span>{{ T "tools_second-section_fourth-sub_first_link" }}</span></a>
+              </div>
+              <div>
+                <a class="eg-text__link eg-text__link--20 eg-link" href="https://github.com/ergoplatform/explorer-back/blob/master/src/main/resources/api/openapi.yaml"><span>{{ T "tools_second-section_fourth-sub_second_link" }}</span></a>
+              </div>
+            </div>
+            <div class="eg-text">
+              <p class="eg-text__paragraph eg-text__paragraph--26">{{ T "tools_second-section_fifth-sub_title" }}</p>
+              <div class="eg-mb-1">
+                <a class="eg-text__link eg-text__link--20 eg-link" href="https://github.com/scorexfoundation/scorex"><span>{{ T "tools_second-section_scorex_link" }}</span></a>
+              </div>
+              <div class="eg-mb-1">
+                <a class="eg-text__link eg-text__link--20 eg-link" href="https://github.com/input-output-hk/scrypto"><span>{{ T "tools_second-section_fifth-sub_second_link" }}</span></a>
+              </div>
+              <div class="eg-mb-1">
+                <a class="eg-text__link eg-text__link--20 eg-link" href="https://github.com/ScorexFoundation/sigmastate-interpreter"><span>{{ T "tools_second-section_fifth-sub_first_link" }}</span></a>
+              </div>
+              <div class="eg-mb-1">
+                <a class="eg-text__link eg-text__link--20 eg-link" href="https://github.com/ergoplatform/ergo-js"><span>{{ T "tools_second-section_fifth-sub_third_link" }}</span></a>
+              </div>
+              <div class="eg-mb-1">
+                <a class="eg-text__link eg-text__link--20 eg-link" href="https://github.com/ergoplatform/ergo-wallet"><span>{{ T "tools_second-section_fifth-sub_fourth_link" }}</span></a>
+              </div>
+              <div>
+                <a class="eg-text__link eg-text__link--20 eg-link" href="https://github.com/coinbarn/ergo-ts"><span>{{ T "tools_second-section_fifth-sub_fifth_link" }}</span></a>
+              </div>
+            </div>
+            <div class="eg-text">
+              <p class="eg-text__paragraph eg-text__paragraph--26">{{ T "tools_second-section_third-sub_title" }}</p>
+              <div class="eg-mb-1">
+                <a class="eg-text__link eg-text__link--20 eg-link" href="https://testnet.ergoplatform.com"><span>{{ T "tools_second-section_third-sub_first_link" }}</span></a>
+              </div>
+              <div>
+                <a class="eg-text__link eg-text__link--20 eg-link" href="https://explorer.ergoplatform.com"><span>{{ T "tools_second-section_third-sub_second_link" }}</span></a>
+              </div>
+            </div>
+            <div class="eg-text">
+              <p class="eg-text__paragraph eg-text__paragraph--26">{{ T "tools_second-section_sixth-sub_title" }}</p>
+              <div class="eg-mb-1">
+                <a class="eg-text__link eg-text__link--20 eg-link" href="https://www.ergoforum.org/"><span>{{ T "tools_second-section_sixth_sub_first_link" }}</span></a>
+              </div>
+              <div>
+                <a class="eg-text__link eg-text__link--20 eg-link" href="https://discord.gg/kj7s7nb"><span>{{ T "tools_second-section_sixth_sub_second_link" }}</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+{{ end }}

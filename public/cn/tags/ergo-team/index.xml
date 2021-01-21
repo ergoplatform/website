@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ergo Team on Ergo</title><link>https://ergoplatform.org/cn/tags/ergo-team/</link><description>Recent content in Ergo Team on Ergo</description><generator>Hugo -- gohugo.io</generator><language>cn</language><lastBuildDate>Mon, 02 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://ergoplatform.org/cn/tags/ergo-team/index.xml" rel="self" type="application/rss+xml"/><item><title>如何设置与配置全尔格节点</title><link>https://ergoplatform.org/cn/blog/2019_12_02_how_to_setup/</link><pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate><guid>https://ergoplatform.org/cn/blog/2019_12_02_how_to_setup/</guid><description>本教程将解释如何安装与运行全尔格节点。其不涉及采矿相关的内容。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ergo Team on Ergo</title><link>https://ergoplatform.org/cn/tags/ergo-team/</link><description>Recent content in Ergo Team on Ergo</description><generator>Hugo -- gohugo.io</generator><language>cn</language><lastBuildDate>Tue, 30 Jun 2020 15:58:24 +0000</lastBuildDate><atom:link href="https://ergoplatform.org/cn/tags/ergo-team/index.xml" rel="self" type="application/rss+xml"/><item><title>尔格-Emurgo联手为预言机创造了新的模式</title><link>https://ergoplatform.org/cn/blog/2020-09-07-%E5%B0%94%E6%A0%BC-emurgo%E8%81%94%E6%89%8B%E4%B8%BA%E9%A2%84%E8%A8%80%E6%9C%BA%E5%88%9B%E9%80%A0%E4%BA%86%E6%96%B0%E7%9A%84%E6%A8%A1%E5%BC%8F/</link><pubDate>Tue, 30 Jun 2020 15:58:24 +0000</pubDate><guid>https://ergoplatform.org/cn/blog/2020-09-07-%E5%B0%94%E6%A0%BC-emurgo%E8%81%94%E6%89%8B%E4%B8%BA%E9%A2%84%E8%A8%80%E6%9C%BA%E5%88%9B%E9%80%A0%E4%BA%86%E6%96%B0%E7%9A%84%E6%A8%A1%E5%BC%8F/</guid><description>将在尔格稳定币项目中开展对预言机池的联合研究。
+预言机是金融去中心化(DeFi)的核心要素之一，在相互绝缘和独立的区块链世界与现实世界数据之间提供联系。为了安全有效地执行，dApps必须能够访问可靠的价格数据及其他信息。
+来自尔格-Emurgo合作进行的新研究为解决达成共识的问题以及在区块链上公布数据提供了一种新的方法：预言机池。
+尽管预言机在为dApps提供数据源方面非常重要，但研究显示当前预言机的方案缺乏透明度、问责制和运行稳定性。这使其成为潜在的单一故障点，威胁任何依赖其所运行软件的安全。以稳定币为例，这可能意味着失去钉子的风险，并使其易被攻击和利用。
+预言机池 预言机池的概念是为尔格扩展的UTXO智能合约模型而设计的，尽管高层次概述可在基于帐户的系统中使用（如以太坊）。
+预言机池是一种试图解决上述问题新模式，同时还提供其他新功能。从保证数据发布时间表、合并博弈理论性激励+抑制因素、嵌入式治理、潜在动态入口，以及构建预言机数据点信任等级制度，该模型释放出许多种可能性。
+预言机池涉及几个预言机同时运行，其在池中占比各不相同，并根据其所提供数据的可靠性获取付款。（为了确定数据的‘真实’价值，剔除异常值，并且对数据点进行平均计算。）要想参与，预言机需要提供抵押品，如果无法按时提供高质量的数据，可能会被“罚款”。
+因此 – 在工作量证明中，共识方法本身 – 奖励诚实的预言机，同时存在欺诈或不可靠的预言机浪费其资源。
+稳定币 当采用新模型时，其将成为支撑尔格稳定币技术的关键部分。（这将采取算法或担保的方法，而非像泰达币(USDT)或USDC等由强制性法令支持的币种）
+将在适当的时候发布有关新稳定币的进一步细节，预计新项目将在2020年晚些时候推出。</description></item><item><title>尔格/Emurgo联手的机遇</title><link>https://ergoplatform.org/cn/blog/2020-09-07-%E5%B0%94%E6%A0%BC-emurgo%E8%81%94%E6%89%8B%E7%9A%84%E6%9C%BA%E9%81%87/</link><pubDate>Thu, 11 Jun 2020 14:22:21 +0000</pubDate><guid>https://ergoplatform.org/cn/blog/2020-09-07-%E5%B0%94%E6%A0%BC-emurgo%E8%81%94%E6%89%8B%E7%9A%84%E6%9C%BA%E9%81%87/</guid><description>卡尔达诺和尔格在金融去中心化和区块链开发方面采取截然不容的方法，但是在某些特定领域二者存在重大重叠。这为富有成效的合作提供了可能性，这对两个截然不同的生态系统 – 以及整个区块链行业都有好处。
+近期宣布的Emurgo与尔格之间的合作在这两个社区均获得积极评价。理由很充分：这是一个将资源集中投入到一个重要和新兴研究领域的千载难逢的机遇，同时使两个项目得以以其自己的方式和自己的路线图利用所获得的见解。
+在某些方面，卡尔达尔和尔格非常不同。例如，卡尔达诺是一个以Haskell编程语言开发的权益证明平台，并且拥有以自定义基于Haskell的Plutus语言书写的智能合约。
+与此同时，尔格是一种基于Scorex 框架建立的工作量证明平台，该平台也是由尔格的首席开发者Chepurnoy (@kushti)所开发。其智能合约用尔格脚本撰写，其从Scala编程语言汲取特点。
+UTXO智能合约 如果二者存在重叠，并且最具希望的合作领域是双方采用扩大后的UTXO模型。（如希望了解更多信息，请参阅此处尔格采用UTXOs.)
+将智能合约建立在扩大后的UTXO模型是一个比较新的想法。诸如以太坊平台这样的平台采用了账户模型，其有着非常不同的含义。Robert Kornacki（Emurgo的研发工程师） 最近所做的研究做了更详细解释：
+扩大后的UTXO系统支持经过充分训练的图灵机得以完成（跨交易）智能契约。这是一种新型创新，其令最新一代区块链可以重新收回比特币所采用的原始模型，但其现在的能力要比之前大很多。
+鉴于智能合约驱动的UTXO系统尚处于初级阶段，在建立dApps的时候明显缺乏开发者可以依赖的已知设计模式。看看诸如以太坊这样在UTXO模型中对协议进行编码加密基于帐户的模型，其与功能性的编写命令式代码比较不同。
+UTXO的方法具有对智能合约进行革命性变革的能力，并且由于卡尔达尔和尔格采用了不同的路线图和技术，导致协作的发现将证明其对二者来说无疑是非常有价值的。
+金融去中心化协作 金融去中心化如何在合作，而非竞争中迅速发展是一个很好的例子。开源系统令彼此受益，使彼此更加强大，利用彼此的网络，而非相互拆台。
+这方面一个很好的例子是Yoroi钱包，为了与基于尔格的dApps以及卡尔达诺的生态系统建立联系，其将成为一种MetaMask钱包。与此同时，尔格已经实施的功能（诸如 NiPoPoW）并且还将在未来继续使用，这对于卡尔达诺和区块链来说是一个先例，即便这些功能无法直接被导入。</description></item><item><title>如何设置与配置全尔格节点</title><link>https://ergoplatform.org/cn/blog/2019_12_02_how_to_setup/</link><pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate><guid>https://ergoplatform.org/cn/blog/2019_12_02_how_to_setup/</guid><description>本教程将解释如何安装与运行全尔格节点。其不涉及采矿相关的内容。
 节点安全 节点的使用涉及几个重要方面的内容，你的钱包和钱的安全性取决于以下方面:
 尔格节点需要在配置文件中存储安全关键参数。你永远不应把这个文件公开。 尔格节点提供用于与内置钱包互动的REST API。敏感的API方法需要一个安全令牌，你永远不要通过不可靠的渠道发送该令牌。 访问尔格REST API必须限制在认识的主机上。尤其是绝不允许通过互联网访问API。 先决条件 为了运行尔格节点，你需要JRE版本&amp;gt;= 将要安装的8。其中一种安装方式是使用 甲骨文安装Java.
 接下来需要下载最新的尔格客户端发行版 jar文件，并且创建一个节点配置文件。

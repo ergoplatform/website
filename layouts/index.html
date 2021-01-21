@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="/favicon.png" sizes="16x16" type="image/png">
     <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
     <link rel="preload" href="/fonts/LabGrotesque-kern-latin.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="/fonts/LabGrotesque-Mono-num.woff" as="font" type="font/woff" crossorigin="anonymous">
+
+
 
     {{ $scss := resources.Get "scss/style.scss" }}
     {{ $style := $scss | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint "md5" }}
@@ -25,7 +26,7 @@
   </head>
   <body>
     {{- $currentPage := . -}}
-    <header class="eg-header eg-header--landing">
+    <header class="eg-header eg-header--landing cars" >
       <nav class="eg-navbar">
         <div class="container eg-navbar__container">
           <div>
@@ -38,12 +39,78 @@
           <div class="eg-navbar__content">
             <div class="eg-navbar__collapse eg-navbar__collapse--black">
               <ul class="eg-nav">
-                {{ range .Site.Menus.mainmenu }}
-                  <li class="eg-nav__item">
+                <li
+                  class="eg-nav__item dropdown"
+                >
+                  <a
+                    class="eg-nav__link eg-link linear-wipe"
+                    target="_blank"
+                    href="https://ergosummit.org"
+                  >Ergo Summit</a>
+                </li>
+                <li
+                  class="eg-nav__item dropdown"
+                >
+                  <button
+                    class="eg-nav__link eg-link dropdown__button"
+                  >Individuals</button>
+                  <div class="nav-dropdown-menu">
+                    {{ range .Site.Menus.individuals }}
+                    {{ $menuUrl := .URL | absLangURL | safeURL }}
+                      <a
+                        class="nav-dropdown-menu__item"
+                        href="{{ $menuUrl }}"
+                        target="{{ if .Pre }} _blank {{ end}}"
+                      ><span>{{ .Name }}</span></a>
+                    {{end}}
+                  </div>
+                </li>
+                <li
+                  class="eg-nav__item dropdown"
+                >
+                  <button
+                    class="eg-nav__link eg-link dropdown__button"
+                  >Developers</button>
+                  <div class="nav-dropdown-menu">
+                    {{ range .Site.Menus.developers }}
+                    {{ $menuUrl := .URL | absLangURL | safeURL }}
+                      <a
+                        class="nav-dropdown-menu__item"
+                        href="{{ $menuUrl }}"
+                        target="{{ if .Pre }} _blank {{ end}}"
+                      ><span>{{ .Name }}</span></a>
+
+                    {{end}}
+                  </div>
+                </li>
+                <li
+                  class="eg-nav__item dropdown"
+                >
+                  <button
+                    class="eg-nav__link eg-link dropdown__button"
+                  >Community</button>
+                  <div class="nav-dropdown-menu">
+                    {{ range .Site.Menus.community }}
+                    {{ $menuUrl := .URL | absLangURL | safeURL }}
+                      <a
+                        class="nav-dropdown-menu__item"
+                        href="{{ $menuUrl }}"
+                        target="{{ if .Pre }} _blank {{ end}}"
+                      ><span>{{ .Name }}</span></a>
+                    {{end}}
+                  </div>
+                </li>
+
+                {{ range .Site.Menus.other }}
+                  {{ $menuUrl := .URL | absLangURL | safeURL }}
+                  <li
+                    class="eg-nav__item"
+                  >
                     <a
-                      class="eg-nav__link eg-link"
-                      href="{{ .URL | absLangURL }}"
-                    ><span>{{ .Name }}</span></a>
+                      href="{{ $menuUrl}}"
+                      class="eg-nav__link eg-link dropdown__button"
+                      target="{{ if .Pre }} _blank {{ end}}"
+                    >{{.Name}}</a>
                   </li>
                 {{ end }}
               </ul>
@@ -183,7 +250,7 @@
               {{ else }}
                 {{ range .Site.Home.AllTranslations }}
                   {{ if eq .Language.Lang .Site.Params.defaultLanguage }}
-                    {{ $defaultLangPages := where .Pages "Section" "news" }}
+                    {{ $defaultLangPages := where .Sites.First.Pages "Section" "news" }}
                     {{ range first 3 $defaultLangPages }}
                       <div class="news-section__item">
                         <h3 class="news-section__item-title">{{ .Date.Format "2 January, 2006" }}</h3>
@@ -287,7 +354,7 @@
             <h2 class="eg-red-section__white-title">{{ T "community_title" }}</h2>
             <div>
               <p class="eg-red-section__paragraph">{{ T "community_paragraph" }}</p>
-              <a class="eg-red-section__link eg-link" href="{{ `team` | absLangURL | safeURL}}"><span>{{ T "community_link" }}</span></a>
+              <a class="eg-red-section__link eg-link" href="{{ `contribute` | absLangURL | safeURL}}"><span>{{ T "community_link" }}</span></a>
             </div>
           </div>
         </section>

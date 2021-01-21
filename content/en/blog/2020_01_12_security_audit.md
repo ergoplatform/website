@@ -40,7 +40,7 @@ These proofs are statements described as a tree of AND, OR, and threshold condit
 
 The proof of the sigma-statement is then made non-interactive thanks to the Fiat-Shamir transform.
 
-This logic is specified in the [ErgoScript paper](https://docs.ergoplatform.com/ErgoScript.pdf), and the specific
+This logic is specified in the [ErgoScript paper](https://ergoplatform.org/docs/ErgoScript.pdf), and the specific
 proving and verification routines described in its Appendix A.
 
 ​Implementation challenges are then to:
@@ -49,7 +49,7 @@ proving and verification routines described in its Appendix A.
 
 * Implement the proving and verification functionalities correctly, in compliance with the specification, and most importantly such that no invalid statement can successfully pass verification.
 
-We reviewed these two aspects, based on the code in the repository [sigmastate-interpreter](https://github.com/ScorexFoundation/sigmastate-interpreter), and on the [ErgoScript paper](https://docs.ergoplatform.com/ErgoScript.pdf), carefully comparing the intended behavior (in Appendix A) with the actual behavior as implemented.
+We reviewed these two aspects, based on the code in the repository [sigmastate-interpreter](https://github.com/ScorexFoundation/sigmastate-interpreter), and on the [ErgoScript paper](https://ergoplatform.org/docs/ErgoScript.pdf), carefully comparing the intended behavior (in Appendix A) with the actual behavior as implemented.
 
 ​We notably reviewed code from the [SigSerializer](https://github.com/ScorexFoundation/sigmastate-interpreter/blob/master/sigmastate/src/main/scala/sigmastate/SigSerializer.scala), [Interpreter](https://github.com/ScorexFoundation/sigmastate-interpreter/blob/master/sigmastate/src/main/scala/sigmastate/interpreter/Interpreter.scala), and [ProverInterpreter](https://github.com/ScorexFoundation/sigmastate-interpreter/blob/master/sigmastate/src/main/scala/sigmastate/interpreter/ProverInterpreter.scala) traits and objects.
 

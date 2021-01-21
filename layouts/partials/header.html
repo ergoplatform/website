@@ -12,14 +12,77 @@
       <div class="eg-navbar__content">
         <div class="eg-navbar__collapse">
           <ul class="eg-nav eg-nav--black">
-            {{ $url := .RelPermalink }}
-            {{ range .Site.Menus.mainmenu }}
+            <li
+              class="eg-nav__item dropdown"
+            >
+              <a
+                class="eg-nav__link eg-link linear-wipe linear-wipe--dark"
+                target="_blank"
+                href="https://ergosummit.org"
+              >Ergo Summit</a>
+            </li>
+            <li
+              class="eg-nav__item dropdown"
+            >
+              <button
+                class="eg-nav__link eg-link dropdown__button"
+              >Individuals</button>
+              <div class="nav-dropdown-menu">
+                {{ range .Site.Menus.individuals }}
+                {{ $menuUrl := .URL | absLangURL | safeURL }}
+                  <a
+                    class="nav-dropdown-menu__item"
+                    href="{{ $menuUrl }}"
+                    target="{{ if .Pre }} _blank {{ end}}"
+                  ><span>{{ .Name }}</span></a>
+                {{end}}
+              </div>
+            </li>
+            <li
+              class="eg-nav__item dropdown"
+            >
+              <button
+                class="eg-nav__link eg-link dropdown__button"
+              >Developers</button>
+              <div class="nav-dropdown-menu">
+                {{ range .Site.Menus.developers }}
+                {{ $menuUrl := .URL | absLangURL | safeURL }}
+                  <a
+                    class="nav-dropdown-menu__item"
+                    href="{{ $menuUrl }}"
+                    target="{{ if .Pre }} _blank {{ end}}"
+                  ><span>{{ .Name }}</span></a>
+                {{end}}
+              </div>
+            </li>
+            <li
+              class="eg-nav__item dropdown"
+            >
+              <button
+                class="eg-nav__link eg-link dropdown__button"
+              >Community</button>
+              <div class="nav-dropdown-menu">
+                {{ range .Site.Menus.community }}
+                {{ $menuUrl := .URL | absLangURL | safeURL }}
+                  <a
+                    class="nav-dropdown-menu__item"
+                    href="{{ $menuUrl }}"
+                    target="{{ if .Pre }} _blank {{ end}}"
+                  ><span>{{ .Name }}</span></a>
+                {{end}}
+              </div>
+            </li>
+
+            {{ range .Site.Menus.other }}
               {{ $menuUrl := .URL | absLangURL | safeURL }}
-              <li class="eg-nav__item {{ if eq (substr $url 4 (len .Identifier)) (substr .URL 1 (len .Identifier)) }}active{{ end }}">
+              <li
+                class="eg-nav__item"
+              >
                 <a
-                  class="eg-nav__link eg-link"
-                  href="{{ $menuUrl }}"
-                ><span>{{ .Name }}</span></a>
+                  href="{{ $menuUrl}}"
+                  class="eg-nav__link eg-link dropdown__button"
+                  target="{{ if .Pre }} _blank {{ end}}"
+                >{{.Name}}</a>
               </li>
             {{ end }}
           </ul>

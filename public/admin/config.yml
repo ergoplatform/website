@@ -1,0 +1,91 @@
+backend:
+  name: github
+  branch: master # Branch to update (optional; defaults to master)
+  repo: ergoplatform/website
+  base_url: https://ergoplatform.org
+
+publish_mode: editorial_workflow
+media_folder: "static/img/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/img/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - name: 'en_blog'
+    label: 'English blog post'
+    folder: 'content/en/blog'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Author', name: 'author', widget: 'string' }
+      - label: 'Author Photo'
+        name: 'authorPhoto'
+        widget: 'image'
+      - { label: 'Blog Photo', name: 'blogPhoto', widget: 'image' }
+      - label: "Tags"
+        name: "tags"
+        widget: "select"
+        multiple: true
+        options: ['Building Ergo', 'Ergo Team', 'Roadmap']
+        default: []
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'cn_blog'
+    label: 'Chinese blog post'
+    folder: 'content/cn/blog'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Author', name: 'author', widget: 'string' }
+      - label: 'Author Photo'
+        name: 'authorPhoto'
+        widget: 'image'
+      - { label: 'Blog Photo', name: 'blogPhoto', widget: 'image' }
+      - label: "Tags"
+        name: "tags"
+        widget: "select"
+        multiple: true
+        options: ['Building Ergo', 'Ergo Team', 'Roadmap']
+        default: []
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'en_news'
+    label: 'English news'
+    folder: 'content/en/news'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string' }
+      - { label: 'Link', name: 'link', widget: 'string' }
+  - name: 'cn_news'
+    label: 'Chinese news'
+    folder: 'content/cn/news'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string' }
+      - { label: 'Link', name: 'link', widget: 'string' }
+  - name: 'exchanges'
+    label: 'New exchange'
+    folder: 'content/en/exchanges'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Name', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Link', name: 'link', widget: 'string' }
+      - { label: 'Logotype', name: 'logo', widget: 'image' }
