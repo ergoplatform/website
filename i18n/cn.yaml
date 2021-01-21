@@ -980,5 +980,6 @@
 
 # mining page
 
+# Attention: Chinese translate done with Google translator
 - id: mining_calculator_title
-  translation: Ergo Mining Calculator
+  translation: Ergo 采矿计算器
