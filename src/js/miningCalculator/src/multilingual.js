@@ -7,7 +7,7 @@ const content = {
         networkHashrateTitle: 'Network hashrate',
         yourHashrateTitle: 'Your hashrate',
         hashratePlaceholderTitle: 'Hashrate value',
-        errmess: 'Data fetching error. Please, comeback later.'
+        errmess: 'Download error. If you see this error, please contact us.'
     },
     // Attention: Chinese translate done with Google translator
     cn: {
@@ -17,7 +17,7 @@ const content = {
         networkHashrateTitle: '网络哈希率',
         yourHashrateTitle: '你的哈希率',
         hashratePlaceholderTitle: '哈希值',
-        errmess: '数据获取错误。 请稍后再来'
+        errmess: '下载错误。 如果您看到此错误，请与我们联系。'
     }
 }
 
