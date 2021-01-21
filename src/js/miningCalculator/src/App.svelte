@@ -32,7 +32,7 @@
 	}
 
 	function initData() {
-		fetch(`https://api.coingecko.com/api/vs3/simple/price?ids=ergo&vs_currencies=USD`)
+		fetch(`https://api.coingecko.com/api/v3/simple/price?ids=ergo&vs_currencies=USD`)
 		.then(response => {
 			if (response.ok) {
 				return response;
