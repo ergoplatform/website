@@ -46,10 +46,16 @@ pygmentsUseClasses=true
     url = "/exchanges/"
     weight = 40
   [[languages.en.menu.individuals]]
+    identifier = "explorer"
+    name = "Explorer"
+    url = "https://explorer.ergoplatform.com/"
+    pre = 'true'
+    weight = 50
+  [[languages.en.menu.individuals]]
     identifier = "mining_erg"
     name = "Mining ERG"
     url = "/blog/2019_12_22_mining_for_fun/"
-    weight = 50
+    weight = 60
 
   [[languages.en.menu.developers]]
     identifier = "contribute"
@@ -144,71 +150,10 @@ pygmentsUseClasses=true
     weight = 50
 
   [[languages.en.menu.other]]
-    identifier = "explorer"
-    name = "Explorer"
-    url = "https://explorer.ergoplatform.com/"
-    pre = 'true'
-    weight = 60
-
-  [[languages.en.menu.mainmenu]]
-    identifier = "about"
-    name = "Getting Started"
-    url = "/about/"
-    weight = -110
-
-  [[languages.en.menu.mainmenu]]
-    identifier = "Foundation"
-    name = "Foundation"
-    url = "/foundation/"
-    weight = -100
-
-  [[languages.en.menu.mainmenu]]
-    identifier = "news"
-    name = "News"
-    url = "/news/"
-    weight = -90
-
-  [[languages.en.menu.mainmenu]]
-    identifier = "FAQ"
-    name = "FAQ"
-    url = "/faq/"
-    weight = -80
-
-  [[languages.en.menu.mainmenu]]
-    identifier = "Documents"
-    name = "Documents"
-    url = "/documents/"
-    weight = -70
-
-  [[languages.en.menu.mainmenu]]
-    identifier = "Tools"
-    name = "Tools"
-    url = "/tools/"
-    weight = -60
-
-  [[languages.en.menu.mainmenu]]
-    identifier = "Blog"
-    name = "Blog"
-    url = "/blog/"
-    weight = -50
-
-  [[languages.en.menu.mainmenu]]
-    identifier = "Hall of Fame"
-    name = "Hall of Fame"
-    url = "/hall_of_fame/"
-    weight = -40
-
-  [[languages.en.menu.mainmenu]]
-    identifier = "Use"
-    name = "Use Cases"
-    url = "/use_cases/"
-    weight = -30
-
-  [[languages.en.menu.mainmenu]]
     identifier = "Mining"
     name = "Mining"
     url = "/mining/"
-    weight = -20
+    weight = 60
 
   # [[languages.en.menu.mainmenu]]
   #   identifier = "Careers"
@@ -244,10 +189,16 @@ pygmentsUseClasses=true
     url = "/exchanges/"
     weight = 40
   [[languages.cn.menu.individuals]]
+    identifier = "explorer"
+    name = "Explorer"
+    url = "https://explorer.ergoplatform.com/"
+    pre = 'true'
+    weight = 50
+  [[languages.cn.menu.individuals]]
     identifier = "mining_erg"
     name = "Mining ERG"
     url = "/blog/2019_12_22_mining_for_fun/"
-    weight = 50
+    weight = 60
 
   [[languages.cn.menu.developers]]
     identifier = "contribute"
@@ -342,71 +293,10 @@ pygmentsUseClasses=true
     weight = 50
 
   [[languages.cn.menu.other]]
-    identifier = "explorer"
-    name = "Explorer"
-    url = "https://explorer.ergoplatform.com/"
-    pre = 'true'
-    weight = 60
-
-  [[languages.cn.menu.mainmenu]]
-    identifier = "about"
-    name = "Getting Started"
-    url = "/about/"
-    weight = -110
-
-  [[languages.cn.menu.mainmenu]]
-    identifier = "Foundation"
-    name = "Foundation"
-    url = "/foundation/"
-    weight = -100
-
-  [[languages.cn.menu.mainmenu]]
-    identifier = "news"
-    name = "News"
-    url = "/news/"
-    weight = -90
-
-  [[languages.cn.menu.mainmenu]]
-    identifier = "FAQ"
-    name = "FAQ"
-    url = "/faq/"
-    weight = -80
-
-  [[languages.cn.menu.mainmenu]]
-    identifier = "Documents"
-    name = "Documents"
-    url = "/documents/"
-    weight = -70
-
-  [[languages.cn.menu.mainmenu]]
-    identifier = "Tools"
-    name = "Tools"
-    url = "/tools/"
-    weight = -60
-
-  [[languages.cn.menu.mainmenu]]
-    identifier = "Blog"
-    name = "Blog"
-    url = "/blog/"
-    weight = -50
-
-  [[languages.cn.menu.mainmenu]]
-    identifier = "Hall of Fame"
-    name = "Hall of Fame"
-    url = "/hall_of_fame/"
-    weight = -40
-
-  [[languages.cn.menu.mainmenu]]
-    identifier = "Use"
-    name = "Use Cases"
-    url = "/use_cases/"
-    weight = -30
-
-  [[languages.cn.menu.mainmenu]]
     identifier = "Mining"
     name = "Mining"
     url = "/mining/"
-    weight = -20
+    weight = 60
 
 [outputFormats]
   [html]

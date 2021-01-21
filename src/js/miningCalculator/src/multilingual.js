@@ -11,4 +11,4 @@ const content = {
   },
 };
 
-export default content[language];
+export default content[language] || content.en;
