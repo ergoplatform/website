@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Building Ergo on Ergo</title><link>https://ergoplatform.org/cn/tags/building-ergo/</link><description>Recent content in Building Ergo on Ergo</description><generator>Hugo -- gohugo.io</generator><language>cn</language><lastBuildDate>Thu, 21 Jan 2021 19:43:19 +0000</lastBuildDate><atom:link href="https://ergoplatform.org/cn/tags/building-ergo/index.xml" rel="self" type="application/rss+xml"/><item><title>如何设置和配置Ergo全节点</title><link>https://ergoplatform.org/cn/blog/2021-01-21-%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E5%92%8C%E9%85%8D%E7%BD%AEergo%E5%85%A8%E8%8A%82%E7%82%B9/</link><pubDate>Thu, 21 Jan 2021 19:43:19 +0000</pubDate><guid>https://ergoplatform.org/cn/blog/2021-01-21-%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E5%92%8C%E9%85%8D%E7%BD%AEergo%E5%85%A8%E8%8A%82%E7%82%B9/</guid><description>如何设置和配置Ergo全节点
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Building Ergo on Ergo</title><link>https://ergoplatform.org/cn/tags/building-ergo/</link><description>Recent content in Building Ergo on Ergo</description><generator>Hugo -- gohugo.io</generator><language>cn</language><lastBuildDate>Mon, 01 Feb 2021 08:45:41 +0000</lastBuildDate><atom:link href="https://ergoplatform.org/cn/tags/building-ergo/index.xml" rel="self" type="application/rss+xml"/><item><title>硬分叉升级后Ergo挖矿须知</title><link>https://ergoplatform.org/cn/blog/2021-02-01-%E7%A1%AC%E5%88%86%E5%8F%89%E5%8D%87%E7%BA%A7%E5%90%8Eergo%E6%8C%96%E7%9F%BF%E9%A1%BB%E7%9F%A5/</link><pubDate>Mon, 01 Feb 2021 08:45:41 +0000</pubDate><guid>https://ergoplatform.org/cn/blog/2021-02-01-%E7%A1%AC%E5%88%86%E5%8F%89%E5%8D%87%E7%BA%A7%E5%90%8Eergo%E6%8C%96%E7%9F%BF%E9%A1%BB%E7%9F%A5/</guid><description>Ergo将在区块#417,792上进行硬分叉协议升级。此次升级会引入重大更改，包括将关闭不可外包功能（Non-Outsourceability）。经过此次硬分叉之后，新的PoW（被称为Autolykos v2.0）将支持传统矿池。本文将帮助您开始使用GPU进行Ergo挖矿。
+自区块#417,792起，以下说明将有效。这里和此处有更多详细信息。可在此处找到之前的挖矿须知，该说明有效性持续至区块417,791。
+Ergo挖矿基于Autolykos v.2，它是一种旨在阻碍ASIC的工作量证明算法。矿工须执行存储困难计算（至少需要2.5 GB的内存，但当前最高效的实现需要约4 GB的vRAM），这使得Ergo对GPU挖矿非常友好。与Autolykos v.1不同，Autolykos v.2不需要访问私钥，从而可以形成矿池。一旦找到正确答案，矿工将答案和区块一起广播，并能够使用其挖矿地址的密语在延迟720个区块后收到区块奖励。网络的其他矿工验证该答案，可以非常高效地完成此验证，所需内存不到一千字节。
+矿池挖矿
+前提条件
+访问Ergo矿池。 配有一个GPU（或多个GPU）的电脑。 接收矿池奖励的Ergo地址。 Ergo Stratum Proxy（Ergo层代理），用于将矿池服务器和挖矿软件联系起来。 Ergo挖矿软件。 设置挖矿软件的链接为：
+Nvidia Miner（Nvidia挖矿软件） AMD Miner（AMD挖矿软件） 请注意，部分矿池允许用户与他们一起进行单独挖矿。在这种情况下，步骤与普通矿池挖矿相同。
+查找支持Ergo挖矿的矿池。以下是提供Ergo挖矿的矿池名单（但不限于此）：
+herominers woolypooly 部分矿池的挖矿须知可能会有所不同，但常见设置如下。
+矿池挖矿快速入门
+1.下载适用于所需操作系统的AMD Miner或NVIDIA Miner。
+2. 运行ErgoStratumProxy可执行文件（与挖矿软件发行版捆绑在一起）
+在Windows PowerShell中： .\ErgoStratumProxy.exe -s &amp;lt;POOL_ADDRESS&amp;gt; -p &amp;lt;POOL_PORT&amp;gt; -u &amp;lt;WORKER_NAME&amp;gt;
+ 在Linux中： ./ErgoStratumProxy_Linux -s &amp;lt;POOL_ADDRESS&amp;gt; -p &amp;lt;POOL_PORT&amp;gt; -u &amp;lt;WORKER_NAME&amp;gt;
+ 3. 运行挖矿软件
+如有必要，请编辑config.json; 将节点地址设置为代理（Proxy）的地址（默认情况下，此地址为：{&amp;quot;node&amp;quot;:&amp;quot;http://127.0.0.1:3000&amp;quot;}） 单独挖矿</description></item><item><title>如何设置和配置Ergo全节点</title><link>https://ergoplatform.org/cn/blog/2021-01-21-%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E5%92%8C%E9%85%8D%E7%BD%AEergo%E5%85%A8%E8%8A%82%E7%82%B9/</link><pubDate>Thu, 21 Jan 2021 19:43:19 +0000</pubDate><guid>https://ergoplatform.org/cn/blog/2021-01-21-%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E5%92%8C%E9%85%8D%E7%BD%AEergo%E5%85%A8%E8%8A%82%E7%82%B9/</guid><description>如何设置和配置Ergo全节点
 本教程说明了如何安装和运行Ergo全节点，不涵盖挖矿。
  Windows用户还可以观看视频教程。
 如何在Windows上设置和配置Ergo全节点 视频链接：https://www.youtube.com/watch?v=fpEDJ1CM6ns
