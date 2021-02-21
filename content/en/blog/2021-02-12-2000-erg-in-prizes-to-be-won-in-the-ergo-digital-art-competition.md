@@ -25,7 +25,7 @@ The competition will include three categories:
 
 * Create an original work of digital art for one of the three categories.
 * Create an NFT representing this work of art ([ErgoUtils can be used for this](https://ergoutils.org/)). Assistance may be found on the [Ergo Discord](https://discord.gg/kj7s7nb).
-* List the NFT for sale on the [Ergo Auction House](https://ergoauctions.org/) NFT Marketplace, giving it whatever name you want. Your auction should last at least till the end of March 2021.
+* List the NFT for sale on the [Ergo Auction House](https://ergoauctions.org/) NFT Marketplace, giving it whatever name you want. [Your auction](https://www.youtube.com/watch?v=OAHFHrHq3Oc) should last at least till the end of March 2021.
 * To identify entries, the description on the Auction House listing should include the words “Competition Entry:” followed by the category, either “Crypto”, “Animated” or “Algorithmic”, and then a description of your artwork. E.g. “Competition Entry: Algorithmic. This is an AI-generated image of a forest.”
 * The image must be displayed upon clicking the thumbnail alongside the listing price – it must not be contained solely in a secondary link.
 
