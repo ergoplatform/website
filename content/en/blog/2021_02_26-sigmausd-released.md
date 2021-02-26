@@ -3,7 +3,7 @@ title: SigmaUSD - Ergo’s Community Deployed Stablecoin Is Live!
 date: 2021-02-26
 author: "Robert Kornacki"
 authorPhoto: "/img/authors/robert_kornacki.jpg"
-blogPhoto: "/img/blog/sigmausd_website.png"
+blogPhoto: "/img/blog/sigmausd_website1.png"
 tags:
   - Building Ergo
 ---
