@@ -36,4 +36,4 @@ Ergonauts all over the world were so thrilled by the release of the SigmaUSD dAp
 
 The Ergo DeFi ecosystem is just beginning to bloom, and it is clear that with so much interest in this first DeFi dApp we are only going to see more and more being developed and launched. With so much excitement coming out within just the first two months of 2021, this year looks like it’s going to be one to remember for Ergo and all Ergonauts.
 
-Wait are you waiting for? Head to [https://sigmausd.io/](https://sigmausd.io/) and see what all of the Ergonauts are raving about for yourself.
+What are you waiting for? Head to [https://sigmausd.io/](https://sigmausd.io/) and see what all of the Ergonauts are raving about for yourself.
