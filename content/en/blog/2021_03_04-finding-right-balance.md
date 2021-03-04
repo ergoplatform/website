@@ -3,7 +3,7 @@ title: Finding The Right Balance
 date: 2021-03-04
 author: "Ergo Foundation"
 authorPhoto: "/img/logotype_black_circle.svg"
-blogPhoto: "/img/uploads/finding-the-right-balance.png"
+blogPhoto: "/img/uploads/finding-the-right-balance2.png"
 ---
 
 With the recent launch of the bootstrap period of the SigUSD stablecoin, the Ergo community participation rates have exceeded our expectation. This can be clearly seen by the total value locked (TVL) of over 6 million dollars worth of Ergs within the dApp as of writing. We at the Ergo Foundation have been closely monitoring how the community is using the SigUSD dApp, understanding the mechanics, and all of the different factors at play.
