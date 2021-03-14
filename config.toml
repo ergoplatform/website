@@ -46,12 +46,6 @@ pygmentsUseClasses=true
     url = "/exchanges/"
     weight = 40
   [[languages.en.menu.individuals]]
-    identifier = "explorer"
-    name = "Explorer"
-    url = "https://explorer.ergoplatform.com/"
-    pre = 'true'
-    weight = 50
-  [[languages.en.menu.individuals]]
     identifier = "mining_erg"
     name = "Mining ERG"
     url = "/blog/2019_12_22_mining_for_fun/"
@@ -91,45 +85,50 @@ pygmentsUseClasses=true
     url = "/foundation"
     weight = 10
   [[languages.en.menu.community]]
+    identifier = "Hall of Fame"
+    name = "Hall of Fame"
+    url = "/hall_of_fame/"
+    weight = 20
+  [[languages.en.menu.community]]
     identifier = "news"
     name = "News"
     url = "/news/"
-    weight = 20
+    weight = 30
   [[languages.en.menu.community]]
     identifier = "Blog"
     name = "Blog"
     url = "/blog/"
-    weight = 30
+    weight = 40
   [[languages.en.menu.community]]
     identifier = "forum"
     name = "Forum"
     url = "https://www.ergoforum.org/"
     pre = 'true'
-    weight = 40
+    weight = 50
   [[languages.en.menu.community]]
     identifier = "discord"
     name = "Discord"
     url = "https://discord.gg/kj7s7nb"
     pre = 'true'
-    weight = 50
+    weight = 60
   [[languages.en.menu.community]]
     identifier = "telegram"
     name = "Telegram"
     url = "https://t.me/ergoplatform"
     pre = 'true'
-    weight = 60
+    weight = 70
   [[languages.en.menu.community]]
     identifier = "ergo_cast"
     name = "Ergo Cast"
     url = "https://ergocast.io/"
     pre = 'true'
-    weight = 70
+    weight = 80
   [[languages.en.menu.community]]
     identifier = "ergo_101"
     name = "Community Website Ergo 101"
     url = "https://ergo101.org/"
     pre = 'true'
-    weight = 80
+    weight = 90
 
   [[languages.en.menu.other]]
     identifier = "Documents"
@@ -138,22 +137,30 @@ pygmentsUseClasses=true
     weight = 10
 
   [[languages.en.menu.other]]
-    identifier = "Hall of Fame"
-    name = "Hall of Fame"
-    url = "/hall_of_fame/"
-    weight = 40
-
-  [[languages.en.menu.other]]
     identifier = "FAQ"
     name = "FAQ"
     url = "/faq/"
-    weight = 50
+    weight = 20
 
   [[languages.en.menu.other]]
     identifier = "Mining"
     name = "Mining"
     url = "/mining/"
-    weight = 60
+    weight = 30
+
+  [[languages.en.menu.other]]
+    identifier = "Explorer"
+    name = "Explorer"
+    url = "https://explorer.ergoplatform.com/"
+    pre = 'true'
+    weight = 40
+
+  [[languages.en.menu.other]]
+    identifier = "dApps"
+    name = "DApps"
+    weight = 50
+    url = "https://sigmaverse.io/"
+    pre = 'true'
 
   # [[languages.en.menu.mainmenu]]
   #   identifier = "Careers"
@@ -189,12 +196,6 @@ pygmentsUseClasses=true
     url = "/exchanges/"
     weight = 40
   [[languages.cn.menu.individuals]]
-    identifier = "explorer"
-    name = "Explorer"
-    url = "https://explorer.ergoplatform.com/"
-    pre = 'true'
-    weight = 50
-  [[languages.cn.menu.individuals]]
     identifier = "mining_erg"
     name = "Mining ERG"
     url = "/blog/2019_12_22_mining_for_fun/"
@@ -234,69 +235,233 @@ pygmentsUseClasses=true
     url = "/foundation"
     weight = 10
   [[languages.cn.menu.community]]
+    identifier = "Hall of Fame"
+    name = "Hall of Fame"
+    url = "/hall_of_fame/"
+    weight = 20
+  [[languages.cn.menu.community]]
     identifier = "news"
     name = "News"
     url = "/news/"
-    weight = 20
+    weight = 30
   [[languages.cn.menu.community]]
     identifier = "Blog"
     name = "Blog"
     url = "/blog/"
-    weight = 30
+    weight = 40
   [[languages.cn.menu.community]]
     identifier = "forum"
     name = "Forum"
     url = "https://www.ergoforum.org/"
     pre = 'true'
-    weight = 40
+    weight = 50
   [[languages.cn.menu.community]]
     identifier = "discord"
     name = "Discord"
     url = "https://discord.gg/kj7s7nb"
     pre = 'true'
-    weight = 50
+    weight = 60
   [[languages.cn.menu.community]]
     identifier = "telegram"
     name = "Telegram"
     url = "https://t.me/ergoplatform"
     pre = 'true'
-    weight = 60
+    weight = 70
   [[languages.cn.menu.community]]
     identifier = "ergo_cast"
     name = "Ergo Cast"
     url = "https://ergocast.io/"
     pre = 'true'
-    weight = 70
+    weight = 80
   [[languages.cn.menu.community]]
     identifier = "ergo_101"
     name = "Community Website Ergo 101"
     url = "https://ergo101.org/"
     pre = 'true'
-    weight = 80
+    weight = 90
 
-  [[languages.cn.menu.other]]
+  [[languages.en.menu.other]]
     identifier = "Documents"
     name = "Documents"
     url = "/documents/"
     weight = 10
 
-  [[languages.cn.menu.other]]
-    identifier = "Hall of Fame"
-    name = "Hall of Fame"
-    url = "/hall_of_fame/"
-    weight = 40
-
-  [[languages.cn.menu.other]]
+  [[languages.en.menu.other]]
     identifier = "FAQ"
     name = "FAQ"
     url = "/faq/"
-    weight = 50
+    weight = 20
 
-  [[languages.cn.menu.other]]
+  [[languages.en.menu.other]]
     identifier = "Mining"
     name = "Mining"
     url = "/mining/"
+    weight = 30
+
+  [[languages.en.menu.other]]
+    identifier = "Explorer"
+    name = "Explorer"
+    url = "https://explorer.ergoplatform.com/"
+    pre = 'true'
+    weight = 40
+
+  [[languages.en.menu.other]]
+    identifier = "dApps"
+    name = "DApps"
+    weight = 50
+    url = "https://sigmaverse.io/"
+    pre = 'true'
+
+[languages.pl]
+  languageCode = "pl"
+  languageName = "Pol"
+  contentDir = "content/pl"
+  weight = 3
+
+  [[languages.pl.menu.individuals]]
+    identifier = "about"
+    name = "Getting Started"
+    url = "/about/"
+    weight = 10
+  [[languages.pl.menu.individuals]]
+    identifier = "basics"
+    name = "Basics"
+    url = "/basics/"
+    weight = 20
+  [[languages.pl.menu.individuals]]
+    identifier = "wallets"
+    name = "Wallets"
+    url = "/wallets/"
+    weight = 30
+  [[languages.pl.menu.individuals]]
+    identifier = "exchanges"
+    name = "Exchanges"
+    url = "/exchanges/"
+    weight = 40
+  [[languages.pl.menu.individuals]]
+    identifier = "explorer"
+    name = "Explorer"
+    url = "https://explorer.ergoplatform.com/"
+    pre = 'true'
+    weight = 50
+  [[languages.pl.menu.individuals]]
+    identifier = "mining_erg"
+    name = "Mining ERG"
+    url = "/blog/2019_12_22_mining_for_fun/"
     weight = 60
+
+  [[languages.pl.menu.developers]]
+    identifier = "contribute"
+    name = "Contribute to Ergo"
+    url = "/contribute"
+    weight = 10
+  [[languages.pl.menu.developers]]
+    identifier = "use_cases"
+    name = "Use Cases"
+    url = "/use_cases/"
+    weight = 20
+  [[languages.pl.menu.developers]]
+    identifier = "software"
+    name = "Software"
+    url = "/software/"
+    weight = 40
+  [[languages.pl.menu.developers]]
+    identifier = "wiki"
+    name = "Wiki"
+    url = "https://github.com/ergoplatform/ergo/wiki"
+    pre = 'true'
+    weight = 40
+  [[languages.pl.menu.developers]]
+    identifier = "awesome"
+    name = "Awesome Ergo"
+    url = "https://github.com/ergoplatform/awesome-ergo"
+    pre = 'true'
+    weight = 50
+
+  [[languages.pl.menu.community]]
+    identifier = "foundation"
+    name = "Foundation"
+    url = "/foundation"
+    weight = 10
+
+  [[languages.pl.menu.community]]
+    identifier = "Hall of Fame"
+    name = "Hall of Fame"
+    url = "/hall_of_fame/"
+    weight = 20
+
+  [[languages.pl.menu.community]]
+    identifier = "news"
+    name = "News"
+    url = "/news/"
+    weight = 30
+  [[languages.pl.menu.community]]
+    identifier = "Blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 40
+  [[languages.pl.menu.community]]
+    identifier = "forum"
+    name = "Forum"
+    url = "https://www.ergoforum.org/"
+    pre = 'true'
+    weight = 50
+  [[languages.pl.menu.community]]
+    identifier = "discord"
+    name = "Discord"
+    url = "https://discord.gg/kj7s7nb"
+    pre = 'true'
+    weight = 60
+  [[languages.pl.menu.community]]
+    identifier = "telegram"
+    name = "Telegram"
+    url = "https://t.me/ergoplatform"
+    pre = 'true'
+    weight = 70
+  [[languages.pl.menu.community]]
+    identifier = "ergo_cast"
+    name = "Ergo Cast"
+    url = "https://ergocast.io/"
+    pre = 'true'
+    weight = 80
+  [[languages.pl.menu.community]]
+    identifier = "ergo_101"
+    name = "Community Website Ergo 101"
+    url = "https://ergo101.org/"
+    pre = 'true'
+    weight = 90
+
+  [[languages.pl.menu.other]]
+    identifier = "Documents"
+    name = "Documents"
+    url = "/documents/"
+    weight = 10
+
+  [[languages.pl.menu.other]]
+    identifier = "FAQ"
+    name = "FAQ"
+    url = "/faq/"
+    weight = 20
+
+  [[languages.pl.menu.other]]
+    identifier = "Mining"
+    name = "Mining"
+    url = "/mining/"
+    weight = 30
+
+  [[languages.pl.menu.other]]
+    identifier = "Explorer"
+    name = "Explorer"
+    url = "https://explorer.ergoplatform.com/"
+    pre = 'true'
+    weight = 40
+
+  [[languages.pl.menu.other]]
+    identifier = "dApps"
+    name = "DApps"
+    weight = 50
+    url = "https://sigmaverse.io/"
+    pre = 'true'
 
 [outputFormats]
   [html]
