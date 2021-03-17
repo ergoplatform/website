@@ -48,7 +48,8 @@ pygmentsUseClasses=true
   [[languages.en.menu.individuals]]
     identifier = "mining_erg"
     name = "Mining ERG"
-    url = "/blog/2019_12_22_mining_for_fun/"
+    url = "https://github.com/ergoplatform/ergo/wiki/Mining-Ergo-after-The-Hardening-Upgrade"
+    pre = 'true'
     weight = 60
 
   [[languages.en.menu.developers]]
@@ -198,7 +199,8 @@ pygmentsUseClasses=true
   [[languages.cn.menu.individuals]]
     identifier = "mining_erg"
     name = "Mining ERG"
-    url = "/blog/2019_12_22_mining_for_fun/"
+    url = "https://github.com/ergoplatform/ergo/wiki/Mining-Ergo-after-The-Hardening-Upgrade"
+    pre = 'true'
     weight = 60
 
   [[languages.cn.menu.developers]]
@@ -347,7 +349,8 @@ pygmentsUseClasses=true
   [[languages.pl.menu.individuals]]
     identifier = "mining_erg"
     name = "Mining ERG"
-    url = "/blog/2019_12_22_mining_for_fun/"
+    url = "https://github.com/ergoplatform/ergo/wiki/Mining-Ergo-after-The-Hardening-Upgrade"
+    pre = 'true'
     weight = 60
 
   [[languages.pl.menu.developers]]
