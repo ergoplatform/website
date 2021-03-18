@@ -4,8 +4,6 @@ date: 2021-03-18T19:24:09.349Z
 author: Guy Brandon
 authorPhoto: /img/uploads/guy_brandon.jpg
 blogPhoto: /img/uploads/winners.jpg
-tags:
-  - Ergo Team
 ---
 *The competition prompted some great entries. 2,000 ERG in prizes were ultimately distributed via bids to the winners.*
 
