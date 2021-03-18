@@ -10,7 +10,7 @@ tags:
 
 *The SigmaUSD stablecoin has been deployed by the community and is live and ready for all Ergonauts to use at [https://sigmausd.io/](https://sigmausd.io/)*
 
-After several months of hearing whispers about a stablecoin being built and teasers being thrown around, the Ergo community enjoyed an information-packed [Ergo Summit 2021](https://ergosummit.org/) which explained everything they needed to know about the [AgeUSD Protocol](https://github.com/Emurgo/age-usd); a novel crypto-backed algorithmic stablecoin protocol that has been created in joint partnership by the Ergo Foundation, EMURGO, and IOG on top of the Ergo Blockchain.
+After several months of hearing whispers about a stablecoin being built and teasers being thrown around, the Ergo community enjoyed an information-packed [Ergo Summit 2021](https://www.youtube.com/watch?v=zG-rxMCDIa0&ab_channel=ErgoPlatform) which explained everything they needed to know about the [AgeUSD Protocol](https://github.com/Emurgo/age-usd); a novel crypto-backed algorithmic stablecoin protocol that has been created in joint partnership by the Ergo Foundation, EMURGO, and IOG on top of the Ergo Blockchain.
 
 In addition to several talks about the protocol itself, the specs, smart contracts, headless dApp (off-chain code), and a CLI app for testing, were all provided to the community at the Ergo Summit 2021. This release packed together all of the design & theoretical knowledge with the tools to deploy the dApp on-chain.
 

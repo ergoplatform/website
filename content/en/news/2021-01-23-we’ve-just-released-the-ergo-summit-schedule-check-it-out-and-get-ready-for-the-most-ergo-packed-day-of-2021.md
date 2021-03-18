@@ -4,5 +4,5 @@ title: We’ve just released the Ergo Summit Schedule! Check it out and get read
 date: 2021-01-23T11:17:14.077Z
 subtitle: Ergo Summit 2021 - Entering The New Era - Announcing AgeUSD & The
   Hardening Upgrade
-link: https://ergosummit.org
+link: https://www.youtube.com/watch?v=zG-rxMCDIa0&ab_channel=ErgoPlatform
 ---

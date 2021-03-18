@@ -11,7 +11,7 @@ tags:
 
 *The elegant design avoids some of the complexity and potential problems of other approaches to creating decentralised, collateralised stablecoins.*
 
-As part of an ongoing joint initiative, Ergo and Cardano unveiled the design of a new stablecoin at the online [Ergo Summit](https://ergosummit.org/) event, held on 23 January.
+As part of an ongoing joint initiative, Ergo and Cardano unveiled the design of a new stablecoin at the online [Ergo Summit](https://www.youtube.com/watch?v=zG-rxMCDIa0&ab_channel=ErgoPlatform) event, held on 23 January.
 
 Named AgeUSD and inspired by StatiCoin, the stablecoin is the result of a collaboration between research and development teams across three organisations: [IOG (IOHK)](https://iohk.io/en/), the company leading Cardano core development; [Ergo Foundation](https://ergoplatform.org/en/foundation/); and blockchain technology company, [Emurgo](https://emurgo.io/), also one of the founding members of Cardano.
 
