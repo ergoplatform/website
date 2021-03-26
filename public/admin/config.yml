@@ -50,7 +50,7 @@ collections:
         name: "tags"
         widget: "select"
         multiple: true
-        options: ['Building Ergo', 'Ergo Team', 'Roadmap']
+        options: ['Building Ergo', 'Ergo Team', 'Roadmap', 'NFT']
         default: []
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'en_news'
