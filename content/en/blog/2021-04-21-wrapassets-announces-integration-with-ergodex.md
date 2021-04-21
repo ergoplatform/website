@@ -1,6 +1,6 @@
 ---
 title: WrapAssets announces integration with ErgoDEX!
-date: 2021-04-21T09:23:13.614Z
+date: 2021-04-21T10:58:03.521Z
 author: root7Z
 authorPhoto: /img/uploads/root7z.jpeg
 blogPhoto: /img/uploads/ergodex-wrap.jpg
