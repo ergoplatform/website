@@ -1,8 +1,7 @@
 #!/bin/bash
 
 echo "Start deploy"
-ssh -tq website@88.198.13.202 "bash -lc 'git pull'"
-ssh -tq website@88.198.13.202 "bash -lc 'make site'"
+ssh -tq root@88.198.50.217 '/bin/bash -l -c "source ~/.nvm/nvm.sh; cd /var/www/html/website; git pull;  make site"'
 echo "Deployed Successfully!"
 
 exit 0
