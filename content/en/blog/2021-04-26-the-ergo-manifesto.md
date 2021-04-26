@@ -91,8 +91,6 @@ The reality is the people at the top always get the life raft when a boat sinks,
 
 It is a K Shaped economic recovery.  
 
-
-
 ## The Weaponization of Money
 
 Centralized programmable digital money sounds like an efficient technical upgrade to the existing monetary infrastructure. In some areas, this may be the case. However, it appears that the basic constructs of money are in the beginning stages of an era that will further weaponize money against the average human. Current fiat based monetary systems attack the common citizen by creating persistent inflationary pressures. This is the direct result of central bank printing, monetary intervention, and mismanagement of fiscal budget by central governments.\
@@ -113,7 +111,6 @@ The third aspect of digital money to watch the ability to censor or limit credit
 
 ## Privacy
 
-\
 \
 Privacy must remain an option to protect the individual. It does not have to be forced, let people make their own choices. 
 
@@ -163,25 +160,21 @@ It is all too often those at the bottom who suffer in separation from those at t
 
 The goal of Ergonomic money is to create money, and smart contracts for all people. Those at the bottom have the greatest need for the type of tooling we are building.
 
- 
-
 ## Ergo Basic Principles
 
+*In this section, we define the main principles that should be followed to create ergonomic money.*  
 
+*This might be referred to as “Ergo’s Social Contract”.* 
 
-In this section, we define the main principles that should be followed to create ergonomic money.  
+*In case of intentional violation of any of these principles, the resulting protocol should not be called Ergo.*  
 
-This might be referred to as “Ergo’s Social Contract”. 
-
-In case of intentional violation of any of these principles, the resulting protocol should not be called Ergo.  
-
-### \    1) Decentralization First
+### 1) Decentralization First
 
 Ergo should be as decentralized as possible. Always strive to spread and grow. Any party's social leaders, software developers, hardware manufacturers, miners, funds need to avoid central points of failure. All actors whose absence will disrupt the function of the system need to have contingency plans in the event of a disruption. Decentralization is born from education and adoption. The tools we build need documentation, the community needs to actively participate and grow. Teach others to use and adopt the tools. The internet is a powerful driver of decentralization. It can be a powerful tool to teach. Decentralization is born from education, both on the development side and the user side. 
 
 Malicious behavior that may affect the security of the network, should be avoided. If any of these parties do appear during Ergo’s lifetime, the community should consider ways to decrease their impact level. There will always be those who seek to disrupt, take advantage, misuse and abuse their power. What is the answer? Education. Educating users to protect themselves, how to identify malicious actors, how to avoid them, how to work together to minimize their power. I would encourage all community members to continually seek to learn, adopt tooling, assist and teach in one way or another. A strong community is born through strong cooperation. 
 
-### \    3) Open Permissionless and Secure
+### 2) Open Permissionless and Secure
 
 Ergo protocol does not restrict or limit any categories of usage. This is necessary in order to remain resilient. We certainly can advocate cooperation, trade, and human values however we do not enforce them. That would require a central power. Developers are free to implement any logic they want, taking full responsibility for the ethics and legality of their application. 
 
@@ -193,17 +186,17 @@ Ergo is committed to supporting privacy tools for those that wish to use them. T
 
 Ergo is committed to best security practices. This is a continual commitment to prevent network attacks, preserve privacy and protect on-chain value. 
 
-### \    3) Created for Regular People
+### 3) Created for Regular People
 
 Ergo is committed to being a tool for Regular People. Ergo is a platform for ordinary people, and their interests should not be infringed upon in favor of big parties. In particular, this means that the centralization of mining should be prevented. Regular people should be able to participate in the protocol by running a full node and mining blocks. Post Autolykos V1 Ergo will work to provide a hash rate distribution of pools. 
 
 Ergo is committed to working towards building an ecosystem that offers tooling that is designed to assist regular people. Peer to peer exchange is continually under threat from peer to central power exchange. It is Ergo’s goal to encourage tooling and community education to empower the common human. 
 
-### \    4) Platform for Contractual Money
+### 4) Platform for Contractual Money
 
 Platform for Contractual Money. Ergo is the base layer to applications that will be built on top of it. It is suitable for several applications but its main focus is to provide an efficient, secure and easy way to implement financial contracts. Ergo is committed to building a network on solid foundations that continue to update and innovate. The goal with contractual money is to create a system that is not overrun by high user costs and fees. In order for money to be Ergonomic it must remain cost competitive. Ergo will assist with frameworks and tooling for people to build and implement to maximize the use and utility or contractual money. 
 
-### \    5) Long-term Focus
+### 5) Long-term Focus
 
 All aspects of Ergo development should be focused on a long-term perspective. Ergo was launched in crypto winter, the purpose and intent of Ergo core developers need to supersede short term market conditions. There will always be those who come for short term appreciation and those who come for the principle. 
 
@@ -216,7 +209,5 @@ We should always see beyond our noses, thinking into the future. What tools can 
 This long term vision must never die for Ergo to survive. Ergo was born in crypto winter. Many had begun dismissing the future of distributed systems and their ability to create value, nonetheless, we endured, kept building.\
 \
 Too often people sacrifice long term growth for short term excitement. Good times will come, and hard times will come. If Ergo is to endure we must be principled and create value on solid foundations. 
-
-
 
 <!--EndFragment-->
