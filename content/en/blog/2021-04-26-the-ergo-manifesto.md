@@ -210,4 +210,20 @@ This long term vision must never die for Ergo to survive. Ergo was born in crypt
 \
 Too often people sacrifice long term growth for short term excitement. Good times will come, and hard times will come. If Ergo is to endure we must be principled and create value on solid foundations. 
 
+
+
+#### Who is Kushti?
+
+
+
+Alexander Chepurnoy (aka Kushti) is the core developer of Ergo Platform and he has been active in blockchain development and smart contracts since 2011. He was a core developer for NXT, started smartcontract.com(now Chainlink) in 2014 with Sergey Nazarov, and is an IOHK researcher with over 20 academic papers to his name. When he was working on Nxt, he started utterly simple blockchain framework Scorex, which was later pivoted into modular blockchain framework. This project got attention from Charles Hoskinson, Cardano and Ethereum cofounder, around mid-Autumn, 2015. Then he joined IOHK around January’ 2016.
+
+
+
+#### A Note On Token Economics:
+
+Ergo Platform had fair launch in the very beginning. It didn’t hold any ICO and there wasn’t any premined coins for the founders of the platform. Decentralization and fairness of a peer to peer monetary system was the priority in the first place. Foundation treasury is set to %4.37 of the total coins mined and it isn’t possible to change the core elements of token economics in a further stage.
+
+
+
 <!--EndFragment-->
