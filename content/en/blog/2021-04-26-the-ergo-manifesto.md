@@ -39,7 +39,7 @@ The first Bitcoin block (known as the Genesis block) contained a message stating
 
 The creator of Bitcoin and inventor of the first-ever working blockchain chose to conceal his identity through a pseudonym that we’ve all grown accustomed to: Satoshi Nakamoto. He, she or them included the aforementioned message which was taken from a Times newspaper article issued on the very day the genesis block was mined. 
 
-This block was created at xyz (insert). This block timestamped both the inception of Bitcoin but also the start of an era of technological and financial innovation. Simply put, this was the catalyst for a full-blown revolution.
+This block timestamped both the inception of Bitcoin but also the start of an era of technological and financial innovation. Simply put, this was the catalyst for a full-blown revolution.
 
 Decentralization is political. It gave birth to the idea that monopolized powers could be replaced by technology. Systems could be put in place to transfer value globally without the need for intermediaries or oversight. People could choose the currency they use, and choose who, how and when they could exchange value with one another. 
 
