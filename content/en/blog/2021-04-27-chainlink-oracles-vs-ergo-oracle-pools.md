@@ -3,7 +3,7 @@ title: Chainlink Oracles vs. Ergo Oracle Pools
 date: 2021-04-27T22:31:50.759Z
 author: root7Z
 authorPhoto: /img/uploads/root7z.jpeg
-blogPhoto: /img/uploads/webp.net-resizeimage-1-.jpg
+blogPhoto: /img/uploads/pool.png
 tags:
   - Building Ergo
 ---
