@@ -1,6 +1,6 @@
 ---
 title: Use ERG To Make/Receive Payments Worldwide
-date: 2021-05-07T12:55:23.264Z
+date: 2021-05-07T12:57:08.546Z
 subtitle: "Now you can accept $ERG #cryptocurrency on your website & store
   platforms like #Shopify #Bigcommerce #WHMCS #Woocommerce, #Wordpress, & as
   donations on #Streamlabs #Twitch #Twitter & more!"
