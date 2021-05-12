@@ -3,7 +3,7 @@ title: ErgoMixer
 date: 2021-05-12T15:43:07.795Z
 author: Curia Regis Crypto
 authorPhoto: /img/uploads/1_70ukrjwixwgrxoxbgdl3fq.jpeg
-blogPhoto: /img/uploads/ergo_mixer.jpg
+blogPhoto: /img/uploads/ergmixnew.jpg
 tags:
   - Building Ergo
 ---
