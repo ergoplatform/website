@@ -65,7 +65,7 @@ When this was blocked, next was spamming the proxy addresses that ERG move throu
 
 Indeed, there were likely many other efforts to misuse and manipulate the oracle pools and the protocol itself, which were unsuccessful and we are not aware of.
 
-While we cannot say for sure that the dumping on the open market was connected, 150,000 ERG buy-walls appearing shortly after the short positioned was entered was telling.
+While we cannot say for sure that the dumping on the open market was connected, 150,000 ERG sell-walls appearing shortly after the short positioned was entered was telling.
 
 During the BTC-flash crash, the price of Erg fluctuated sharply to under $2; however, the robustness and smoothness of Oracle Pools came into play. 
 
