@@ -11,9 +11,7 @@ tags:
 
 ## Intro
 
-[SigUSD](https://sigmausd.io/#/) is a 100% cryptocurrency pegged decentralised stable coin that has no forced liquidation. (but is not without risk - as we're about to find out).
-
-[SigmaUSD.io](https://sigmausd.io/#/) is the worlds first UTxO-based stable coin. The foundation on which a new era of digital finance will be built.
+SigmaUSD.io is the worlds first UTxO-based stable coin. The foundation on which a new era of digital finance will be built. A 100% cryptocurrency pegged decentralised stable coin that has no forced liquidation. (but is not without risk - as we’re about to find out).
 
 It is an instantiation of the [AgeUSD protocol](https://github.com/Emurgo/age-usd) designed in partnership by IOHK, Ergo, and Emurgo.
 
