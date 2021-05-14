@@ -67,7 +67,7 @@ While we cannot say for sure that the dumping on the open market was connected, 
 
 During the BTC-flash crash, the price of Erg fluctuated sharply to under $2; however, the robustness and smoothness of Oracle Pools came into play. 
 
-They are limited to an update of 5c every 30minutes - up or down. The markets slowly recovered throughout the day, and the power of the Oracle Pools power was demonstrated. The Bearwhale had the chance to exit at a minimal loss during this period, but they did not. Maybe they were looking for lower prices of Erg.
+They are limited to an update of 0.5% every 30minutes - up or down. The markets slowly recovered throughout the day, and the power of the Oracle Pools power was demonstrated. The Bearwhale had the chance to exit at a minimal loss during this period, but they did not. Maybe they were looking for lower prices of Erg.
 
 Unfortunately, for his sake, the marketing machine is well-greased and roaring, and when we finally broke through $4, the whale exited his position with a loss of around 170,000 ERG, compared to his starting position at the beginning of V2. The exact amount made during V1 is hard to quantity, as the first transactions we see are withdrawals from the SigmaUSD bank (presumably, deposits made with another wallet). The Bearwhale's main address can be found [here](https://explorer.ergoplatform.com/en/addresses/9hyDXH72HoNTiG2pvxFQwxAhWBU8CrbvwtJDtnYoa4jfpaSk1d3), and [this second one](https://explorer.ergoplatform.com/en/addresses/9eyXNatnA6YM4tS1TjadEA6TFrd9bdufbFuykV89iX9vE9RBZZe) appeared later on. He likely has many others or friends helping him. 
 
