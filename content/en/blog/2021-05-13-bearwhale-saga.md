@@ -33,7 +33,7 @@ SigmaUSD is a complex beast, but you need to know for this article the following
 
 * SigmaRSV is similar to book value per share. Its value depends on both the size of the reserve and how it is utilised.
 * When the price dips, SigUSD holders who exit at a lower point than they entered must be rewarded extra Erg to make their SigUSD up to $1
-* SigRSV profits depend on these accumulated transaction fees minus any losses SigUSD holders experienced when exiting.
+* SigRSV profits depend on these accumulated transaction fees plus any losses SigUSD holders experienced when exiting.
 
 The 2% fee taken during minting goes back into the reserve. This fee accumulates in the reserve, appreciating the value of SigRSV and helping to prevent speculative orders.
 
@@ -85,7 +85,7 @@ From now, lots of individuals and whales may enter into both positions and take 
 
 The success of the SigmaUSD stablecoin depends not only on the price of Erg but also on the utilisation of SigUSD itself. 
 
-anon_2020a has already integrated the mixing of SigmaUSD/RSV into the ErgoMixer. The first working non-custodial, programmable, non-interactive mixer in the cryptocurrency space. 
+anon_2020s has already integrated the mixing of SigmaUSD/RSV into the ErgoMixer. The first working non-custodial, programmable, non-interactive mixer in the cryptocurrency space. 
 
 Both ERG and SigUSD are now accepted on [Cryptocurrency Checkout.](https://cryptocurrencycheckout.com/coin/sigmausd) This is a Non-Custodial Payment Gateway that provides plugins that make accepting multiple cryptocurrencies for your products and services as easy as entering your wallet addresses and copying some code into your website or application. 
 
