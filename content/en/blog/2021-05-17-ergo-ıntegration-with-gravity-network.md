@@ -1,6 +1,6 @@
 ---
 title: Ergo Integration with Gravity Network
-date: 2021-05-17T12:44:47.701Z
+date: 2021-05-17T12:55:34.644Z
 author: root7Z
 authorPhoto: /img/uploads/root7z.jpeg
 blogPhoto: /img/uploads/gravity_integration2.jpg
