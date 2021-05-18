@@ -1,7 +1,7 @@
 ---
 title: Mint Picture And Audio NFTs On Ergo
 date: 2021-05-18T12:06:30.920Z
-author: cryptokptx
+author: KPTX
 authorPhoto: /img/uploads/ergonaut11.jpg
 blogPhoto: /img/uploads/ergopace900x400.jpg
 tags:
