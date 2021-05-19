@@ -352,8 +352,8 @@
   translation: "Consensus protocol of Ergo — <a href=\"https://ergoplatform.org/docs/ErgoPow.pdf\" target=\"_blank\" class=\"eg-text__link eg-link\"><span>Autolykos</span></a> — is based on the well-known Proof-of-Work (“PoW”) consensus algorithm.
                   PoW was chosen for several reasons including that PoW protocols are widely studied, have high security guarantees, and are friendly to light clients.
                   However, Autolykos has several meaningful differences from Bitcoin's PoW.
-                  First, it is memory-hard reducing the disparity between specialized hardware (ASICs) and commodity GPUs, allowing ordinary people to participate in mining to secure the network and receive the reward.
-                  Second, Autolykos is the first production implementation of pool-resistant mining, which forces users to perform solo mining, thus keeping the network decentralized and without mining pools."
+                  It is memory-hard reducing the disparity between specialized hardware (ASICs) and commodity GPUs, allowing ordinary people to participate in mining to secure the network and receive the reward.
+                  It has storage rent to reclaim lost and forgotten coins, Sigma Protocols, and so much more."
 
 - id: basics_clients_title
   translation: Light Clients
@@ -751,20 +751,19 @@
   translation: What was the ICO price?
 
 - id: faq_third-item_text
-  translation: "Ergo is following the most decentralized way of emission and will start with zero coins in supply with the “minting” of the entire coin supply happening during the first eight years of Ergo mainnet, using the tried and tested PoW mining method. There was no ICO of Ergo."
+  translation: "Ergo is following the most decentralized way of emission and will start with zero coins in supply with the “minting” of the entire coin supply happening during the first eight years of Ergo mainnet, using the tried and tested PoW mining method. There was no ICO of Ergo. No VC Funding. No Pre mine."
 
 - id: faq_fourth-item_title
   translation: "How to mine Ergo?"
 
 - id: faq_fourth-item_text
-  translation: "Ergo is based on Autolykos PoW puzzle, that is the first PoW puzzle that is memory-hard and pool-resistant.
-  This means that you need a <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node\"><span>configured Ergo node</span></a> and GPU with at least 4 Gb of memory (while 8 Gb is recommended for maximum efficiency). Use this <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki/Mining\"><span>guide</span></a> to configure miner together with the node. Note, that you may employ many GPUs together on one Ergo node."
+  translation: "You need a <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node\"><span>configured Ergo node</span></a> and GPU with at least 4 Gb of memory (while 8 Gb is recommended for maximum efficiency). Use this <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki/Mining\"><span>guide</span></a> to configure miner together with the node. Note, that you may employ many GPUs together on one Ergo node."
 
 - id: faq_fifth-item_title
   translation: "How to find Ergo mining pools?"
 
 - id: faq_fifth-item_text
-  translation: "Ergo was created with the idea to achieve maximum resiliency through decentralization. Autolykos consensus protocol plays an important role in the network's decentralization, as far as it does not allow mining pools. Check Autolykos <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/docs/ErgoPow.pdf\"><span>specification</span></a> for more details."
+  translation: "See the mining pools listed <a class=\"eg-text__link eg-link\" href=\"https://miningpoolstats.stream/ergo\"><span>here</span></a>. Please select one of the smaller pools."
 
 - id: faq_sixth-item_title
   translation: "When will the Ergo network launch?"
