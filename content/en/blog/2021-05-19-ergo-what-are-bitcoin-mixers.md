@@ -133,7 +133,7 @@ Cash is fungible, interchangeable, mixable. We have accepted that as normal. I h
 
 The truth is the majority of criminal and illicit activities occur in physical fiat currency. However, this has never been a legitimate justification to outright ban the use of fiat currencies. 
 
-Resources
+**Resources**
 
 [ErgoMixer GitHub](https://github.com/ergoMixer/ergoMixBack)
 
