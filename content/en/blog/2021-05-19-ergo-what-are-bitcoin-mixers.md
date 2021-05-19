@@ -1,6 +1,6 @@
 ---
-title: "Ergo: What are Bitcoin Mixers"
-date: 2021-05-19T12:50:11.104Z
+title: What Are Bitcoin Mixers
+date: 2021-05-19T18:27:19.062Z
 author: Curia Regis Crypto
 authorPhoto: /img/uploads/1_70ukrjwixwgrxoxbgdl3fq.jpeg
 blogPhoto: /img/uploads/privacy.jpg
