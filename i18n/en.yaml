@@ -1,7 +1,34 @@
 #landing
+- id: menu_top_individuals
+  translation: "Individuals"
+
+- id: menu_top_developers
+  translation: "Developers"
+
+- id: menu_top_community
+  translation: "Community"
+
 - id: header_resilient_platform
   translation: "Welcome to
   <span class=\"header-section__title--red\">Smart Money</span>"
+
+- id: header_slogan
+  translation: "Ergo builds advanced cryptographic features and radically new DeFi functionality on the rock-solid foundations laid by a decade of blockchain theory and development."
+
+- id: header_slider
+  translation: "Smart money is: "
+
+- id: header_slider_conservative
+  translation: "<span class=\"eg-text--color-red\">Conservative.</span> Because Smart doesn’t take unnecessary risks."
+
+- id: header_slider_ambitious
+  translation: "<span class=\"eg-text--color-red\">Ambitious.</span> Because Smart isn’t afraid to try new ideas."
+
+- id: header_slider_lightweight
+  translation: "<span class=\"eg-text--color-red\">Lightweight.</span> Because Smart isn’t exclusive."
+
+- id: header_slider_versatile
+  translation: "<span class=\"eg-text--color-red\">Versatile.</span> Because Smart doesn’t limit its options."
 
 - id: getting_started
   translation: Getting started with Ergo
