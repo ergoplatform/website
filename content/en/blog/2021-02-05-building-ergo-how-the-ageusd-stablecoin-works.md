@@ -39,6 +39,6 @@ Each action incurs a small fee in ERG – provisionally set at 1% – which is a
 
 ‘It’s a simple, elegant design,’ comments Ergo’s founder and lead developer, Alexander Chepurnoy. ‘Its economic model maintains the conservative settings for collateral reserves and avoids the need for liquidations. Along with that, it supports a fully decentralised stablecoin emission setup. Thus, AgeUSD will offer the world a stable, simple, and decentralised stablecoin.'
 
-After launch, scheduled for mid-February, AgeUSD will be available via the [Sigmaverse](http://sigmaverse.io/), [Ergo’s dApp portal](https://ergoplatform.org/en/blog/2020-12-27-introducing-the-sigmaverse/). To find out more, read the documentation at <https://github.com/Emurgo/age-usd>.
+After launch, scheduled for mid-February, AgeUSD will be available via the [Sigmaverse](https://sigmaverse.io/), [Ergo’s dApp portal](https://ergoplatform.org/en/blog/2020-12-27-introducing-the-sigmaverse/). To find out more, read the documentation at <https://github.com/Emurgo/age-usd>.
 
 <!--EndFragment-->
