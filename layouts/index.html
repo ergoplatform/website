@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{.Site.Language.Lang }}">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
@@ -52,7 +52,7 @@
                 >
                   <button
                     class="eg-nav__link eg-link dropdown__button"
-                  >Individuals</button>
+                  >{{ T "menu_top_individuals" }}</button>
                   <div class="nav-dropdown-menu">
                     {{ range .Site.Menus.individuals }}
                     {{ $menuUrl := .URL | absLangURL | safeURL }}
@@ -69,7 +69,7 @@
                 >
                   <button
                     class="eg-nav__link eg-link dropdown__button"
-                  >Developers</button>
+                  >{{ T "menu_top_developers" }}</button>
                   <div class="nav-dropdown-menu">
                     {{ range .Site.Menus.developers }}
                     {{ $menuUrl := .URL | absLangURL | safeURL }}
@@ -87,7 +87,7 @@
                 >
                   <button
                     class="eg-nav__link eg-link dropdown__button"
-                  >Community</button>
+                  >{{ T "menu_top_community" }}</button>
                   <div class="nav-dropdown-menu">
                     {{ range .Site.Menus.community }}
                     {{ $menuUrl := .URL | absLangURL | safeURL }}
@@ -160,16 +160,16 @@
             <h1 class="header-section__title">
               {{ T "header_resilient_platform" | safeHTML }}
             </h1>
-            <p class="header-section__paragraph">Ergo builds advanced cryptographic features and radically new DeFi functionality on the rock-solid foundations laid by a decade of blockchain theory and development.</p class="header-section__paragraph">
+            <p class="header-section__paragraph">{{ T "header_slogan" }}</p class="header-section__paragraph">
             <div class="slider">
-              <p class="slider__paragraph"><span class="eg-text--color-red">Smart money is: </span></p>
+              <p class="slider__paragraph"><span class="eg-text--color-red">{{ T "header_slider" }}</span></p>
               <p class="slider__paragraph">
                 <span id="typed"></span>
                 <div id="typed-strings">
-                  <p><span class="eg-text--color-red">Conservative.</span> Because Smart doesn’t take unnecessary risks.</p>
-                  <p><span class="eg-text--color-red">Ambitious.</span> Because Smart isn’t afraid to try new ideas.</p>
-                  <p><span class="eg-text--color-red">Lightweight.</span> Because Smart isn’t exclusive.</p>
-                  <p><span class="eg-text--color-red">Versatile.</span> Because Smart doesn’t limit its options.</p>
+                  <p>{{ T "header_slider_conservative" | safeHTML }}</p>
+                  <p>{{ T "header_slider_ambitious" | safeHTML }}</p>
+                  <p>{{ T "header_slider_lightweight" | safeHTML }}</p>
+                  <p>{{ T "header_slider_versatile" | safeHTML }}</p>
                 </div>
               </p>
             </div>

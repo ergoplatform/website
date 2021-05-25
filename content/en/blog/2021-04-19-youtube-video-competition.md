@@ -23,7 +23,7 @@ tags:
 
 It could be anything about Ergo Platform, from its blockchain design or something that teach some specific on how to use Ergo, for example: Headless dApps, Ergo Playground, Ergo mixer, SigmaUSD, NFT Auction House, dApps, installing the Ergo node, mining etc.. 
 
-*"To participate, you should upload your video and retweet the competition announcement tweet quoting with your YouTube video link"*
+*"To participate, you should upload your video and quote retweet or answer the [competition announcement tweet](https://twitter.com/ergoplatformorg/status/1384072759748173824?s=20) with your YouTube video link"*
 
 Video length should be 3-25 minutes
 
