@@ -5,7 +5,7 @@ author: root7Z
 authorPhoto: /img/uploads/root7z.jpeg
 blogPhoto: /img/uploads/ergusdnpool.jpg
 tags:
-  - Partnerships
+  - Roadmap
 ---
 <!--StartFragment-->
 
