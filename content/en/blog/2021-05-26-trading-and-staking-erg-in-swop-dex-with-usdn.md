@@ -1,6 +1,6 @@
 ---
 title: Trading and Staking $ERG in Swop DEX with USDN!
-date: 2021-05-26T10:24:11.551Z
+date: 2021-05-26T11:38:09.510Z
 author: root7Z
 authorPhoto: /img/uploads/root7z.jpeg
 blogPhoto: /img/uploads/ergusdnpool.jpg
