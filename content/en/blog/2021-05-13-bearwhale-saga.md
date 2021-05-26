@@ -39,7 +39,7 @@ The 2% fee taken during minting goes back into the reserve. This fee accumulates
 
 Additionally, the contract locks at certain ratios, this is to ensure both that there is always enough reserve to meet the needs of the stablecoin under market conditions, and that the SigRSV position doesn’t suffer from significant dilution. 
 
-![](https://lh4.googleusercontent.com/dWnD0jxGxK5yYGzYo10zHnX742yKp5w6gRQToMYte8DyEbK6qv0u7WZ0Tqf3qbaY_qk2ZRsB59OvMle34SW9K7keAABoCkMdOk_8iaej9FcJ-7BIVwBvpT6BVWOnlwFW3LiTg61A)
+![](https://ergonaut.space/photo_2021-05-26_01.56.49.jpeg)
 
 ## SigmaUSD V1
 
