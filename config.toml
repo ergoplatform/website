@@ -163,11 +163,12 @@ pygmentsUseClasses=true
     url = "https://sigmaverse.io/"
     pre = 'true'
 
-  # [[languages.en.menu.mainmenu]]
-  #   identifier = "Careers"
-  #   name = "Careers"
-  #   url = "/careers/"
-  #   weight = -40
+  [[languages.en.menu.mainmenu]]
+    identifier = "wiki"
+    name = "Wiki"
+    url = "https://ergonaut.space/"
+    weight = 60
+    pre = 'true'
 
 [languages.cn]
   languageCode = "cn"
@@ -282,36 +283,43 @@ pygmentsUseClasses=true
     pre = 'true'
     weight = 90
 
-  [[languages.en.menu.other]]
+  [[languages.cn.menu.other]]
     identifier = "Documents"
     name = "Documents"
     url = "/documents/"
     weight = 10
 
-  [[languages.en.menu.other]]
+  [[languages.cn.menu.other]]
     identifier = "FAQ"
     name = "FAQ"
     url = "/faq/"
     weight = 20
 
-  [[languages.en.menu.other]]
+  [[languages.cn.menu.other]]
     identifier = "Mining"
     name = "Mining"
     url = "/mining/"
     weight = 30
 
-  [[languages.en.menu.other]]
+  [[languages.cn.menu.other]]
     identifier = "Explorer"
     name = "Explorer"
     url = "https://explorer.ergoplatform.com/"
     pre = 'true'
     weight = 40
 
-  [[languages.en.menu.other]]
+  [[languages.cn.menu.other]]
     identifier = "dApps"
     name = "DApps"
     weight = 50
     url = "https://sigmaverse.io/"
+    pre = 'true'
+
+  [[languages.cn.menu.mainmenu]]
+    identifier = "wiki"
+    name = "Wiki"
+    url = "https://ergonaut.space/"
+    weight = 60
     pre = 'true'
 
 [languages.pl]
@@ -464,6 +472,13 @@ pygmentsUseClasses=true
     name = "DApps"
     weight = 50
     url = "https://sigmaverse.io/"
+    pre = 'true'
+
+  [[languages.pl.menu.mainmenu]]
+    identifier = "wiki"
+    name = "Wiki"
+    url = "https://ergonaut.space/"
+    weight = 60
     pre = 'true'
 
 [outputFormats]
