@@ -60,7 +60,6 @@
           networkHashrate = (difficulty / blockTime / 1e12).toFixed(2);
         })
         .then(() => {
-          yourHashrateInput.focus();
           yourHashrate = yourHashrateInput.value;
           handleInputChange();
         })
