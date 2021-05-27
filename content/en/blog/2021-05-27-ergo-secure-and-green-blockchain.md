@@ -1,6 +1,6 @@
 ---
 title: "Ergo: Secure and Green Blockchain"
-date: 2021-05-27T12:12:45.439Z
+date: 2021-05-27T12:30:26.829Z
 author: root7Z
 authorPhoto: /img/uploads/root7z.jpeg
 blogPhoto: /img/uploads/greenblock.png
