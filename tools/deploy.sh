@@ -5,3 +5,4 @@ ssh -tq root@88.198.50.217 '/bin/bash -l -c "source ~/.nvm/nvm.sh; cd /var/www/h
 echo "Deployed Successfully!"
 
 exit 0
+
