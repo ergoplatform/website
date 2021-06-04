@@ -22,9 +22,9 @@ Ergo is looking for solutions from teams that want to “hack for change” surr
 **3rd Place**: 1,000 SigmaUSD\
 *All presenters will receive 100 SigmaUSD.*
 
-![ergonome-nft](/img/uploads/2021-06-04-17.07.57.jpg)
+Additionally, All Hackathon participants will receive a commemorative **@ERGnomes** non-fungible token, the '**[HackaGnome](https://twitter.com/ERGnomes/status/1397206492433027089?s=20)**'
 
-Additionally, All Hackathon participants will receive a commemorative ***@ERGnomes*** non-fungible token  -  The **[HackaGnome](https://twitter.com/ERGnomes/status/1397206492433027089?s=20)**
+![ergonome-nft](/img/uploads/2021-06-04-17.07.57.jpg)
 
 Submissions will be judged on the quality, implementation, and potential impact of the idea by the esteemed judges 
 
