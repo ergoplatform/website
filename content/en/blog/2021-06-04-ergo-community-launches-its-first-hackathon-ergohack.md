@@ -22,10 +22,11 @@ Ergo is looking for solutions from teams that want to “hack for change” surr
 **3rd Place**: 1,000 SigmaUSD\
 *All presenters will receive 100 SigmaUSD.*
 
-Additionally, All Hackathon participants will receive a commemorative ***@ERGnomes*** non-fungible token  -  The **HackaGnome**
+![ergonome-nft](/img/uploads/2021-06-04-17.07.57.jpg)
+
+Additionally, All Hackathon participants will receive a commemorative ***@ERGnomes*** non-fungible token  -  The **[HackaGnome](https://twitter.com/ERGnomes/status/1397206492433027089?s=20)**
 
 Submissions will be judged on the quality, implementation, and potential impact of the idea by the esteemed judges 
-
 
 **Aleksei Pupyshev**\
 *Founder of Ventuary Lab*\
@@ -50,7 +51,6 @@ Author of Scientific Papers on chimeric ledgers, UTXO with scripts, multi-curren
 
 Need some background info on the languages, tooling, and frameworks used for Ergo?
 Check out our community-driven content on [ergonaut.space](https://ergonaut.space/en/hackathon), and there’s a hidden treasure trove of information stashed across the [ergo forum](https://www.ergoforum.org/c/research-and-development/7?order=views). For some inspiration of what’s possible under Ergo, check out our [Hackathon Idea Incubator ](https://www.reddit.com/r/ergonauts/comments/nmof7c/hackathon_idea_incubator/)on Reddit. 
-
 
 Join the event on our official [Discord server](https://discord.gg/kj7s7nb) and register your interest in the #Hackathon channel. 
 We in the Ergo community look forward to seeing the unique and forward-thinking proposals from participants.
