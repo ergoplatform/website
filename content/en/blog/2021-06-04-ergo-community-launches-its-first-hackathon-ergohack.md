@@ -24,7 +24,7 @@ Ergo is looking for solutions from teams that want to “hack for change” surr
 
 Additionally, All Hackathon participants will receive a commemorative **@ERGnomes** non-fungible token, the '**[HackaGnome](https://twitter.com/ERGnomes/status/1397206492433027089?s=20)**'
 
-![ergonome-nft](/img/uploads/2021-06-04-17.07.57.jpg)
+![ergonome-nft](/img/uploads/2021-06-04-17.07.57.jpg =250x)
 
 Submissions will be judged on the quality, implementation, and potential impact of the idea by the esteemed judges 
 
