@@ -29,7 +29,6 @@ Additionally, All Hackathon participants will receive a commemorative **@ERGnome
 Submissions will be judged on the quality, implementation, and potential impact of the idea by the esteemed judges 
 
 **Aleksei Pupyshev**\
-*Founder of Ventuary Lab*\
 Founder of Graviton, co-founder of Neutrino protocol and Gravity protocol
 
 **Robert Kornacki**\
