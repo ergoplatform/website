@@ -30,9 +30,7 @@ Submissions will be judged on the quality, implementation, and potential impact 
 
 **Aleksei Pupyshev**\
 *Founder of Ventuary Lab*\
-Co-Author of Neutrino Protocol\
-Chief Technology Evangelist and Community Director Waves Platform\
-Former Artificial Intelligence Architect at MailRu Group Holding
+Founder of Graviton, co-founder of Neutrino protocol and Gravity protocol
 
 **Robert Kornacki**\
 *CSO at dcSpark*\
