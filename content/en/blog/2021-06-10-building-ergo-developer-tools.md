@@ -10,9 +10,9 @@ tags:
 With Ergo’s recent developments like oracle pools, the AgeUSD protocol, NFTAuctionhouse and ErgoDEX, we would like to share what tools you can use as a developer to start building Ergo. If you’re a front-end or back-end developer and looking for ways to start coding then this article is for you.
 
 
-Welcome To Smart Money
+**Welcome To Smart Money**
 
-Ergo Blockchain is a financial smart contract platform that is built on the UTXO model. Its language, “ErgoScript,” is a rich language that supports Multi-Stage Contracts based on Scala. Even if you don’t know Scala, you can get used to it easily by checking [ErgoTree](https://ergoplatform.org/docs/ErgoTree.pdf) to understand the logic behind it.
+Ergo Blockchain is a financial smart contract platform that is built on an extended version of the UTXO model. Its language, “ErgoScript,” is a rich language that supports Multi-Stage Contracts based on Scala. Even if you don’t know Scala, you can get used to it easily by checking [ErgoTree](https://ergoplatform.org/docs/ErgoTree.pdf) to understand the logic behind it.
 
 The first thing you can do to navigate around the Ergo Ecosystem is to go to the [main page](https://ergoplatform.org/en/) and click the “Developers” button on the top bar and scroll to “Contribute to Ergo”.
 
@@ -23,20 +23,15 @@ The first thing you can do to navigate around the Ergo Ecosystem is to go to the
 Scroll down on the page and you will a section entitled “Overview,” which contains a variety of guides to help you get started.
 
 
-
 ![](https://lh4.googleusercontent.com/kSXs9M1j4yYJjyV0DLjd-1rahQfaQqcidfGdFtr8AW6AnaA4I7M2A2IcpZXHJy93u6Cx08aYc-qM42xGoa6VcQnlVnWsRLjdHzUY31Knn6kbljevoDS6lA4knC-uwvn4vleuJXD_)
 
 To begin, take a look at the tutorials. There you can see the ErgoScript overview and application ideas using ErgoScript. Once you get an idea of the extended UTXO model and programming on top of Ergo, check ErgoScript on the right and download the latest library.
 
 
-
 After checking ErgoTree, the ErgoScript Whitepaper, ErgoScript Tutorials and downloading the latest library, you can start trying for yourself. 
 
 
-
 If you want to get to know some real use cases, check the Ergo [GitHub Wiki](https://github.com/ergoplatform/ergo/wiki) page.
-
-
 
 ![](https://lh6.googleusercontent.com/OkHl6IZYKJWcMo0bFKV1tfTKiYFwOcQZ94PY_8-X37fXHb6GUUR4_YYuO4QzghF973j77bw31TWPnmLh9MnGKOqtsV7QO8M8S3_myN8_5kYA2JZZDh4vrsiya1hVZ66HZo0yzVNv)
 
@@ -48,12 +43,12 @@ To build from scratch, check [Ergo Github](https://github.com/ergoplatform/ergo)
 
 Furthermore, you can check these topics to enhance your knowledge.
 
-Protocol
+**Protocol**
 * UTXO State
 * Autolykos
 * NiPoPow
 
-Data Model
+**Data Model**
 * Box
 * Transaction
 * BlockP2P
@@ -62,20 +57,20 @@ Data Model
 * Handshaking
 * Modifiers exchange
 
-Node
+**Node**
 * Node architecture
 * Node API
 * Light modes
-* [NiPoPow](https://nipopows.com/)
+* [NiPoPoWs](https://nipopows.com/)
 * State snapshots
 * History pruning
 * Digest state
 
-Wallet:
+**Wallet**
 * Addresses
 * Hierarchical keys
 
-Smart Contracts
+**Smart Contracts**
 * Core principles
 * ErgoScript
 
