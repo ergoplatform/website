@@ -75,4 +75,4 @@ Ergo.Meta --- and more community made dApps are starting to appear on the back o
 Ergo is proud to partner with EMURGO, the commercial arm of Cardano, in improving research on
 blockchain and zero-knowledge ecosystems. The upcoming integration with Waves Network will also see
 Ergo implement cross-chain functionality with all Waves enabled blockchains. Additionally, Ergo continues
-to support the security and
+to support the security and protection of individuals in the crypto space as a member of the blockchain alliance, BPSAA.
