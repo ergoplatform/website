@@ -37,9 +37,9 @@ Ergoscript truly increases the creative potential of blockchain technology and a
 variety of DeFi products and financial services. To further explore the intrinsic properties of Ergo’s
 Σ-protocols, please see [Whitepaper II](https://ergoplatform.org/docs/ErgoScript.pdf) and [Whitepaper III](https://ergoplatform.org/docs/AdvancedErgoScriptTutorial.pdf) on the Ergo Platform website.
 
-## A Commitment to Continued Open Source Community-Based
+## A Commitment to Continued Open Source Community-Based Work and Collaboration
 
-Work and Collaboration
+
 Community is integral to the identity of Ergo while it continues to build financial frameworks that benefit
 everyday users. The cryptocurrency industry would not exist if not for decades of collaboration between
 technologists, scientists and mathematicians. Ergo continues the spirit of collaboration for the benefit of
