@@ -21,13 +21,13 @@ Basically, it means that just another buzzword is considered by big banksters as
 
 What I witnessed in the early years around online forums users is this.
 
-> *Cryptocurrency should provide tools to enrich ordinary people. Their small businesses providing no much above making ends meet, not depersonalized big financial capital. This is what inspired me. This is my dream.*
+***Cryptocurrency should provide tools to enrich ordinary people. Their small businesses providing no much above making ends meet, not depersonalized big financial capital. This is what inspired me. This is my dream.***
 
 The tools of a cryptocurrency in the eyes of the original broad community vision should allow people to do economic activity whatever the business size, geographic location, interest rates set by big players, and so on. 
 
 The tools should allow people to do contracts (digital, self-enforcing, reasonable smart contracts) regardless of the differences in jurisdictions, traditions, followed business practices, etc.
 
-> I hope Ergo will be useful here. Thousands of small cooperatives and individual entrepreneurs are more important to healthy and sustainable wealth growth around the globe than a couple of corporations hiding profits in offshore heavens.
+I hope Ergo will be useful here. Thousands of small cooperatives and individual entrepreneurs are more important to healthy and sustainable wealth growth around the globe than a couple of corporations hiding profits in offshore heavens.
 
 As an example, let’s consider the use and integration with communities, cooperative federations, nonprofit foundations, and philanthropic trusts. 
 
