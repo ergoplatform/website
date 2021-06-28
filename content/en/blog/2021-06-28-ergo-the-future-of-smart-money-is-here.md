@@ -39,21 +39,15 @@ variety of DeFi products and financial services. To further explore the intrinsi
 
 ## A Commitment to Continued Open Source Community-Based Work and Collaboration
 
+Community is integral to the identity of Ergo while it continues to build financial frameworks that benefit everyday users. The cryptocurrency industry would not exist if not for decades of collaboration between technologists, scientists and mathematicians. Ergo continues the spirit of collaboration for the benefit of humanity by providing tools to disintermediate power and give it to the people. This is paramount to Alex Chepurnoy’s life work. [The Ergo Manifesto](https://ergoplatform.org/en/blog/2021-04-26-the-ergo-manifesto/) provides a detailed and comprehensive discussion on Chepurnoy’s inspiration for Ergo.
 
-Community is integral to the identity of Ergo while it continues to build financial frameworks that benefit
-everyday users. The cryptocurrency industry would not exist if not for decades of collaboration between
-technologists, scientists and mathematicians. Ergo continues the spirit of collaboration for the benefit of
-humanity by providing tools to disintermediate power and give it to the people. This is paramount to Alex
-Chepurnoy’s life work. [The Ergo Manifesto](https://ergoplatform.org/en/blog/2021-04-26-the-ergo-manifesto/) provides a detailed and comprehensive discussion on
-Chepurnoy’s inspiration for Ergo.
-
-**Cryptocurrency should provide tools to enrich ordinary people. Their small businesses
-providing no much above making ends meet, not depersonalized big financial capital. This
-is what inspired me. This is my dream.**
-
-**I hope Ergo will be useful here. Thousands of small cooperatives and individual
-entrepreneurs are more important to healthy and sustainable wealth growth around the
-globe than a couple of corporations hiding profits in offshore heavens.**
+> Cryptocurrency should provide tools to enrich ordinary people. Their small businesses
+> providing no much above making ends meet, not depersonalized big financial capital. This
+> is what inspired me. This is my dream.
+>
+> I hope Ergo will be useful here. Thousands of small cooperatives and individual
+> entrepreneurs are more important to healthy and sustainable wealth growth around the
+> globe than a couple of corporations hiding profits in offshore heavens.
 
 Chepurnoy works directly with a team of 15 developers, some of whom oversee and manage
 development teams. Ergo’s growing environment strives to maintain a strong synergy between
