@@ -45,9 +45,9 @@ Community is integral to the identity of Ergo while it continues to build financ
 > providing no much above making ends meet, not depersonalized big financial capital. This
 > is what inspired me. This is my dream.
 >
-> **I hope Ergo will be useful here. Thousands of small cooperatives and individual
+> I hope Ergo will be useful here. Thousands of small cooperatives and individual
 > entrepreneurs are more important to healthy and sustainable wealth growth around the
-> globe than a couple of corporations hiding profits in offshore heavens.**
+> globe than a couple of corporations hiding profits in offshore heavens.
 
 Chepurnoy works directly with a team of 15 developers, some of whom oversee and manage
 development teams. Ergo’s growing environment strives to maintain a strong synergy between
