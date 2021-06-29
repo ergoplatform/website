@@ -1,8 +1,8 @@
 ---
 title: Ergo - The Future of Smart Money is Here
 date: 2021-06-28T12:46:33.703Z
-author: Ergo Foundation
-authorPhoto: /img/uploads/1762.png
+author: Sean Rice
+authorPhoto: /img/uploads/sean-rice.jpg
 blogPhoto: /img/uploads/img_20210628_152125_660.jpg
 tags:
   - Building Ergo
