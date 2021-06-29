@@ -2,7 +2,7 @@
 title: "Building Ergo: ErgoScript"
 date: 2021-06-09T15:23:35.828Z
 author: root7Z
-authorPhoto: /img/uploads/root7z.jpeg
+authorPhoto: /img/uploads/rootz-the-storyteller-4root7z.png
 blogPhoto: /img/uploads/ergcode.png
 tags:
   - Building Ergo
