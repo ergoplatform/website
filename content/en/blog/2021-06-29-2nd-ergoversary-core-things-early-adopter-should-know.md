@@ -14,8 +14,6 @@ tags:
 
 Happy birthday to us! Can you believe it has been two whole years already?! In recent months we’ve seen an explosion in growth while the core developers have been quietly pumping out the next generation of decentralised financial tooling. Unlike a lot of projects in this age, Ergo is not merely a speculative token but rather a groundbreaking, novel cryptocurrency that can execute complex multi-stage contracts. This year alone, we have hosted a Hackathon and launched an algorithmic stablecoin, while developing a Crowdfund protocol and the highly anticipated ErgoDEX.
 
-![]()
-
 ## What is Ergo? 
 
 Ergo, a resilient platform for contractual money, is an open-source, decentralized network that is designed for creating and implementing efficient and secure financial contracts. It lays the bedrock for the future of DeFi with an ecosystem tailored to the needs of a trustless banking system. Ergo’s native language, ErgoScript, is revolutionary in its ability to create and execute complex multi-stage smart contracts with its Σ-protocols (Sigma-protocols ---a type of zero-knowledge proof). Enabling Turing complete capabilities with the use of extended UtxO, Ergo is a powerful vehicle for the future of blockchain technology and DeFi. The potential for developers to design and create robust dApps with the highest security and efficiency positions Ergo as one of the most important developments in cryptocurrency. 
