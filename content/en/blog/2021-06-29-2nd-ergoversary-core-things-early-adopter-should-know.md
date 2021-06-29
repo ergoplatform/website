@@ -1,5 +1,5 @@
 ---
-title: 2nd ErgoVersary - Core Things Early Adopter Should Know
+title: 2nd ErgoVersary - Core Things Early Adopters Should Know
 date: 2021-06-29T13:05:41.924Z
 author: root7Z
 authorPhoto: /img/uploads/rootz-the-storyteller-4root7z.png
