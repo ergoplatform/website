@@ -2,7 +2,7 @@
 title: Ergo Integration with Gravity Network
 date: 2021-05-17T12:55:34.644Z
 author: root7Z
-authorPhoto: /img/uploads/root7z.jpeg
+authorPhoto: /img/uploads/rootz-the-storyteller-4root7z.png
 blogPhoto: /img/uploads/gravity_integration2.jpg
 tags:
   - Building Ergo
