@@ -3,7 +3,7 @@ title: Ergo首届黑客松大赛ERGOHACK圆满结束
 date: 2021-06-29T14:59:19.874Z
 author: Curia Regis Crypto
 authorPhoto: /img/uploads/1_70ukrjwixwgrxoxbgdl3fq.jpeg
-blogPhoto: /img/uploads/img_20210628_152125_660.jpg
+blogPhoto: /img/uploads/2021-06-04-17.01.28.jpg
 tags:
   - Roadmap
   - Building Ergo
