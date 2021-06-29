@@ -1,7 +1,7 @@
 ---
 title: Ergo首届黑客松大赛ERGOHACK圆满结束
 date: 2021-06-29T14:59:19.874Z
-author: 作者：Curtis Regis Crypto
+author: Curia Regis Crypto
 authorPhoto: /img/uploads/1_70ukrjwixwgrxoxbgdl3fq.jpeg
 blogPhoto: /img/uploads/img_20210628_152125_660.jpg
 tags:
@@ -27,3 +27,5 @@ Ergo首届黑客松大赛已经圆满结束，它正如计划那样：规模小�
 @Tolstojevski虽然不是直接参与者，但是他非常友好地为Ergo开发者创建了完整的C#教学视频系列！（链接：https://www.youtube.com/playlist?list=PLUWruihtE-HtL-JZk8Vb4Yn_H18aE3rb6）
 
 各参赛团队的作品现已提交给评委——请关注后续结果！
+
+**原文链接：**<https://ergoplatform.org/en/blog/2021-06-19-ergohack/>
