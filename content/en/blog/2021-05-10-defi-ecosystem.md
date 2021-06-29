@@ -2,7 +2,7 @@
 title: DeFi Ecosystem
 date: 2021-05-10T14:47:36.628Z
 author: root7Z
-authorPhoto: /img/uploads/root7z.jpeg
+authorPhoto: /img/uploads/rootz-the-storyteller-4root7z.png
 blogPhoto: /img/uploads/futureball.jpg
 tags:
   - Building Ergo
