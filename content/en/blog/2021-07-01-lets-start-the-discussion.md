@@ -3,7 +3,7 @@ title: LETS start the discussion
 date: 2021-07-01T08:17:31.518Z
 author: Glasgow
 authorPhoto: /img/uploads/screenshot-2021-07-01-at-09.18.39.png
-blogPhoto: /img/uploads/screenshot-2021-07-01-at-09.22.30.png
+blogPhoto: /img/uploads/lets_cover.png
 tags:
   - Building Ergo
 ---
