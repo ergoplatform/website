@@ -24,5 +24,3 @@ The need to reform the global financial system has been evident since the last c
 Cryptocurrency should provide tools to enrich ordinary people. Their small businesses providing no much above making ends meet, not depersonalized big financial capital. This is what inspired me. This is my dream.
 
 * [The Ergo Manifesto](https://ergoplatform.org/en/blog/2021-04-26-the-ergo-manifesto/)
-
-Ergo had a fair launch with 95%+ of its tokens available only via mining after launch. If you’d like to get involved, join the [Community Marketing](https://t.me/ErgoSocials) telegram
