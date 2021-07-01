@@ -17,7 +17,7 @@ As lockdowns across the world effectively shut down whole sectors and a large pa
 
 These separated communities could still be connected via gateways, allowing liquidity to move between them and avoiding exposure to toxic debt, creating a system that is immune from both inflation and depressions. Additionally, thanks to Ergo’s [sigma protocols](https://ergonaut.space/en/sigma-protocols), creating a ‘[Trustless LETS](https://github.com/ergoplatform/ergo/wiki/A-Trustless-Local-Exchange-Trading-System)’ on top of Ergo is also possible. A Trustless LETS has no membership record, therefore, no management committee is needed for enrolment allowing it to operate with full autonomy. This will be discussed in more detail in an upcoming article. 
 
-If the ideas discussed here interest you, LETS start the discussion! Join us on the [\#lets](https://discord.gg/BVpT8vRUMa) channel on Discord. Or [Ergo’s Agora](https://t.me/ErgoAgora), a Telegram group chat meant to facilitate open discussions around privacy, anonymity, trust, economics and related topics
+If the ideas discussed here interest you, LETS start the discussion! Join us on the [\#lets](https://discord.gg/BVpT8vRUMa) channel on Discord -- or on [Ergo’s Agora](https://t.me/ErgoAgora), a Telegram group chat used to facilitate open discussions around privacy, anonymity, trust, economics and related topics.
 
 The need to reform the global financial system has been evident since the last crisis in 2008. Now, COVID-19 has forced our hands. We cannot delay, and the best way to start is from the grassroots. 
 
