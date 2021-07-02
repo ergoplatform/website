@@ -3,7 +3,7 @@ title: "Ergo: Decentralized Applications Framework"
 date: 2021-07-02T13:28:25.739Z
 author: root7Z
 authorPhoto: /img/uploads/rootz-the-storyteller-4root7z.png
-blogPhoto: /img/uploads/photo_2021-06-22_13-28-17.jpg
+blogPhoto: /img/uploads/photo_2021-06-01_20-31-14.jpg
 tags:
   - Building Ergo
 ---
