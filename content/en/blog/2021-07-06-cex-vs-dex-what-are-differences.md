@@ -29,7 +29,7 @@ A Centralized Exchange (CEX) is probably familiar to readers who have used platf
 
 ### Power of Centralized Structure
 
-(+)Centralized exchanges are faster by design because funds do not need to be moved across a blockchain. Transactions are fulfilled by simply exchanging the funds' information internally on the CEX. Therefore, as a centralized entity it can provide faster transactions. With CEX's, one also need not worry about losing access to their assets if they lose the password. In this instance, a user can easily request a password reset from the CEX. However, if an individual loses the private keys to their wallet, the assets can not be recovered.
+(+) Centralized exchanges are faster by design because funds do not need to be moved across a blockchain. Transactions are fulfilled by simply exchanging the funds' information internally on the CEX. Therefore, as a centralized entity it can provide faster transactions. With CEX's, one also need not worry about losing access to their assets if they lose the password. In this instance, a user can easily request a password reset from the CEX. However, if an individual loses the private keys to their wallet, the assets can not be recovered.
 
 (-) "Not Your Keys, Not Your Coins." Readers may be familiar with this phrase and its reference to the intrinsic downside of storing assets on a CEX. The actions of a user happen under the auspices of a custodial service provider.  Centralized exchanges implement data-keeping services of your funds but also hold your keys, which is contradictory to the principles of a P2P (peer-to-peer) financial system. 
 
