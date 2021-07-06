@@ -1,6 +1,6 @@
 ---
 title: "CEX vs DEX: What Are Differences?"
-date: 2021-07-06T16:45:29.928Z
+date: 2021-07-06T17:04:27.395Z
 author: root7Z
 authorPhoto: /img/uploads/rootz-the-storyteller-4root7z.png
 blogPhoto: /img/uploads/cexvsdex.png
