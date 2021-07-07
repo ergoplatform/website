@@ -1,6 +1,6 @@
 ---
 title: 2nd ErgoVersary Wrap-Up
-date: 2021-07-07T08:50:03.231Z
+date: 2021-07-07T12:07:31.957Z
 author: Ergo Foundation
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/2nd-ergoversary.jpg
