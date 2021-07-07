@@ -144,4 +144,4 @@ channel）可以根据需要来实现。（译注：Rainbow网络是用于创建
 
 很难预测Ergo上的应用程序将需要哪种类型的解决方案，但这并不是没有办法克服。目前正在进行的一项研究可能有一天被证明对Ergo的开发有用。这个由理论主导的项目不仅为Ergo，而且为整个加密货币提供了许多有用的结果。Ergo致力于发现并实现可最大程度发挥工作量证明潜力的解决方案。
 
-**原文链接：**https://curiaregiscrypto.medium.com/bitcoin-vs-ergo-the-path-forward-66f3f868a68d
+**原文链接** https://curiaregiscrypto.medium.com/bitcoin-vs-ergo-the-path-forward-66f3f868a68d
