@@ -53,7 +53,7 @@ However, one must consider that there is not one chain to rule them all. Both sy
 
 Readers may have noticed the [ErgoDex proposal on Catalyst](https://cardano.ideascale.com/a/dtd/ErgoDex-Plutus-Port/352410-48088) - a graphic of the roadmap is available below. After the initial application is deployed on both Cardano and Ergo (using each token natively as needed), the real power of the eUTxO model will start to emerge. Ergo will seek to provide trustless swaps, cross-chain gateways and shared liquidity between the two chains. 
 
-A decentralized [stablecoin](https://sigmausd.io/#/) protocol, oracle pools, privacy futures and sidechain development will be the first building blocks of a robust decentralized economic model on Ergo.
+AgeUSD stablecoin protocol, oracle pools, privacy futures and sidechain development will be the first building blocks of a robust decentralized economic model on Ergo.
 
 ![](https://lh5.googleusercontent.com/KRHyU3LiETc9NYy506_YHFAoCueIFckMU9cwpLp5pyZrWAZ7sVQt07-elduUMAE7NF2H0sXHPrKQSQnMsHVIerN5fP9xxp_-ogoiLtRxY9Oc_-SNrC6v7ZokGYptG8SZETc2xWum)
 
