@@ -86,7 +86,7 @@ Yoroi dApp Bridge has been [implemented](https://github.com/ergoplatform/eips/pu
 
 ## Ergo Applications
 
-\- ErgoDEX: Release is coming! Liquidity Mining will be available with SigUSD and ERG liquidity pools.
+\- [ErgoDEX](https://ergodex.io/): Release is coming! Liquidity Mining will be available with SigUSD and ERG liquidity pools.
 
 \- Gateways Under Testing: Multi-chain Ergo will be opened through [Gravity](https://gravity.tech/) integration. USDT, USDN, ETH, BTC and many more will be accessible on Ergo. Similarly, Ergo will be on BSC, Solana, Waves and many more blockchains.
 
