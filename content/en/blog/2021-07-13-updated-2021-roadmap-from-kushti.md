@@ -118,15 +118,15 @@ Yoroi dApp Bridge has been [implemented](https://github.com/ergoplatform/eips/pu
 
 ## Hackathon Teams and Apps:
 
-\-Ergo Raffle: Charity Lottery Implementation
+\-[Ergo Raffle](https://github.com/NazeriMahdi2001/Raffle-Doc): Charity Lottery Implementation
 
-\-SigmaStamp: Timestamping on Ergo
+\-[SigmaStamp](https://github.com/sigmastamp): Timestamping on Ergo
 
-\-ErgoTeam: Zero-knowledge spending vaults
+\-[ErgoTeam](https://github.com/anon-real/ErgoTeam): Zero-knowledge spending vaults
 
-\-SmartPool: NIPoPoW based decentralized mining
+\-[SmartPool](https://discord.com/channels/668903786361651200/852554580520992798/854466897117577226): NIPoPoW based decentralized mining
 
-\-ErgoIndex: Pegged token creation contract that will facilitate integration with traditional finance.
+\-[ErgoIndex](https://ergo-index.fund/): Pegged token creation contract that will facilitate integration with traditional finance.
 
 \-ErgoCharts: Charting application for Ergo ecosystem through oracle pools feed.
 
