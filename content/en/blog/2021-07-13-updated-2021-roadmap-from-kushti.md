@@ -11,21 +11,15 @@ tags:
 
 [Please see the full video for details on the ErgoVersary roadmap update](https://www.youtube.com/watch?v=QCMpVRVrHqI&t=1s) 
 
-
-
 #### Disclaimer:
 
 *Ergo is community-driven with new members joining every day*
 
-*Devs are not full-time, they come and go.*
+*Devs are not full-time, they come and go*
 
-*Devs are anonymous.*
-
-
+*Devs are anonymous*
 
 # Ergo Development 21’ RoadMap
-
-
 
 * Layers
 * Ergo protocol research and development
@@ -34,32 +28,22 @@ tags:
 * Applications
 * Social Impact (This will later be covered in a full video)
 
-
-
 \*New partnerships are on the way
 
 \*New Research is coming
 
 \*Ergo is catching up with new trends.
 
-
-
 ## Main Directions
 
 > "Hard-forks are painful." - Kushti
 
-
-
 *Note:* Hard-forks are not expected in the future, the aim is to avoid hard-forks at all costs.
-
-
 
 1. Networking Layer (efficiency)
 2. Simplified contracts casting (next soft-fork) - ErgoTree Update
 3. Ergo.Meta (Layer 2) - off-chain and side-chain solutions framework
-4.  ErgoTree - There will be only Velvet Soft Forks in the future
-
-
+4. ErgoTree - There will be only Velvet Soft Forks in the future
 
 ## Goals
 
@@ -69,15 +53,9 @@ tags:
 * Improved Cross-Chain Operability
 * Clean Wallet - Bootstrapping within minutes
 
-
-
 ## Ergo Infrastructure
 
-
-
 ### Wallets
-
-
 
 **New Wallets Are Coming!**
 
@@ -91,16 +69,12 @@ tags:
 
 *\*Additional partnerships with other known wallets are currently in discussion.*
 
-
-
 ### Ergo Node - Reference Protocol Client
 
 * [NIPoPoWs based boot-strapping](https://eprint.iacr.org/2021/623.pdf) - Bootstrapping with UTXO based snapshots
 * P2P Layers Improvement
 
 Yoroi dApp Bridge has been [implemented](https://github.com/ergoplatform/eips/pull/23) and is under testing. We are expecting the first use will be on ErgoDEX.
-
-
 
 ### Libraries:
 
@@ -109,8 +83,6 @@ Yoroi dApp Bridge has been [implemented](https://github.com/ergoplatform/eips/pu
 \- [AppKit](https://github.com/ergoplatform/ergo-appkit) - good progress
 
 \- [JDE](https://github.com/ergoplatform/ergo-jde) - recently released
-
-
 
 ## Ergo Applications
 
@@ -124,11 +96,7 @@ Yoroi dApp Bridge has been [implemented](https://github.com/ergoplatform/eips/pu
 
 \- LETS - Alternative Financial Systems: Implementation will start after ErgoFund.
 
-
-
 ## Tokenomics:
-
-
 
 \-Tokenization of ErgoMixer - Contracts are done (other apps may follow -eg. ErgoAuctions)
 
@@ -138,11 +106,7 @@ Yoroi dApp Bridge has been [implemented](https://github.com/ergoplatform/eips/pu
 
 \-Community will create and invent novel token schemes (ICO on Ergo). 
 
-
-
 ## Privacy
-
-
 
 \-Apps on top of ErgoMixer (as API)
 
@@ -152,11 +116,7 @@ Yoroi dApp Bridge has been [implemented](https://github.com/ergoplatform/eips/pu
 
 \-Mixer Hops - Obfuscation Applications
 
-
-
 ## Hackathon Teams and Apps:
-
-
 
 \-Ergo Raffle: Charity Lottery Implementation
 
@@ -170,11 +130,7 @@ Yoroi dApp Bridge has been [implemented](https://github.com/ergoplatform/eips/pu
 
 \-ErgoCharts: Charting application for Ergo ecosystem through oracle pools feed.
 
-
-
 ## Ergo Incubator and Community Funds
-
-
 
 DarkFund0 - Still looking for applications
 
@@ -183,7 +139,5 @@ GoodWhale is looking for grants (it’s an anonymous investor, offering $20K in 
 More funds are coming!
 
 Ergo Incubator - A project that will be funded by Ergo Foundation with weekly reports.
-
-
 
 <!--EndFragment-->
