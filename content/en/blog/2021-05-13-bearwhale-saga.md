@@ -1,8 +1,8 @@
 ---
 title: Bearwhale Saga
 date: 2021-05-13T12:01:05.336Z
-author: Curia Regis Crypto
-authorPhoto: /img/uploads/1_70ukrjwixwgrxoxbgdl3fq.jpeg
+author: Glasgow
+authorPhoto: /img/uploads/2021-07-01-09.18.09.jpg
 blogPhoto: /img/uploads/bearwhale.jpg
 tags:
   - Building Ergo
