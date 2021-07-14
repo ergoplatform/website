@@ -6,6 +6,7 @@ authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/kushtiupdate.jpg
 tags:
   - Roadmap
+  - Ergo Team
 ---
 <!--StartFragment-->
 
