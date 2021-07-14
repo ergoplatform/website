@@ -3,9 +3,10 @@ title: Updated 2021 RoadMap From Kushti
 date: 2021-07-13T20:26:04.926Z
 author: Ergo Foundation
 authorPhoto: /img/uploads/1762.png
-blogPhoto: /img/uploads/updated2021roadmap.jpg
+blogPhoto: /img/uploads/kushtiupdate.jpg
 tags:
   - Roadmap
+  - Ergo Team
 ---
 <!--StartFragment-->
 
