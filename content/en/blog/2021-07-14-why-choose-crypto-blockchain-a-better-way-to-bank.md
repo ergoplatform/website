@@ -3,7 +3,7 @@ title: "Why Choose Crypto? Blockchain: A Better Way to Bank"
 date: 2021-07-14T12:25:07.040Z
 author: root7Z
 authorPhoto: /img/uploads/rootz-the-storyteller-4root7z.png
-blogPhoto: /img/uploads/whychoosecrypto.jpg
+blogPhoto: /img/uploads/whycryp.jpg
 tags:
   - Building Ergo
   - Roadmap
