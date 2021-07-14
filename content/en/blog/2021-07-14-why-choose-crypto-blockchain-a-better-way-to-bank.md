@@ -1,6 +1,6 @@
 ---
 title: "Why Choose Crypto? Blockchain: A Better Way to Bank"
-date: 2021-07-14T11:54:47.438Z
+date: 2021-07-14T12:25:07.040Z
 author: root7Z
 authorPhoto: /img/uploads/rootz-the-storyteller-4root7z.png
 blogPhoto: /img/uploads/whychoosecrypto.jpg
@@ -10,17 +10,17 @@ tags:
 ---
 <!--StartFragment-->
 
-Nakamoto created Bitcoin to provide a platform for a decentralized, secure and private peer-2-peer financial system. Its creation was born out of a concern that the distribution of economic power is too reliant upon centralized entities.
+<!--StartFragment-->
+
+Nakamoto created Bitcoin to provide a platform for a decentralized, secure and private peer-2-peer financial system. It’s creation was born out of a concern that the distribution of economic power is too reliant upon centralized entities.
 
 
 
-After the 2008 Mortgage Crisis, it is clear that the fractional banking system and ever-increasing M2 and M3 money supply can easily get out of hand with exponentially increasing synthetic financial products. This is a clear indicator of monetary mismanagement by centralized entities. Money shocks can occur because of a liquidity crisis and over-extended credits. In this scenario, the value of fiat currencies will inevitably decrease due to inflation.
+After the 2008 Mortgage Crisis, it is clear that the fractional banking system and ever increasing M2 and M3 money supply can easily get out of hand with various synthetic derivatives. This is a clear indicator of monetary mismanagement by centralized entities. Money shocks can occur because of a liquidity crisis and over-extended credits. In this scenario, the value of fiat currencies will inevitably decrease due to inflation.
 
 
 
 ## Too Big To Fail
-
-
 
 Banks have an incredible amount of power over individuals with the ability to influence phenomenal changes on a national or global landscape. When they get in trouble, governments often have to interfere to prevent them from collapsing because these institutions are inextricably linked to their respective economies. When these institutions get too big, their decision makers can become reckless with an expectation that the government will bail them out.  
 
@@ -34,11 +34,13 @@ A fractional-reserve banking system often requires banks to provide between 0-10
 
 
 
-To prevent these issues caused by centralized banking, zero-knowledge authentication is proposed through the proof of work algorithm in Bitcoin. It should be noted however, that a PoW structure is not immune to flaws. In PoW, if a malicious actor take over 51% of the nodes so that they can execute Sybil Attacks and perform double spending or network halting actions. Therefore, decentralized mining and more varied mining pools are highly recommended for securing the decentralization of blockchain.
+To prevent these issues caused by centralized banking, zero-knowledge authentication is proposed through the proof of work algorithm in Bitcoin.It should be noted however, that a PoW structure is not immune to flaws. In PoW, if a malicious actor takes over 51% of the nodes, then they can execute Sybil Attacks and perform double spending or network halting actions. Therefore, decentralized mining and more varied mining pools are highly recommended for securing the decentralization of blockchain.
 
 
 
-Bitcoin is the pioneer of cryptocurrencies and is the prototype for what is to come. It is the first global implementation of a peer-2-peer autonomous monetary system where its native currency is traded on free markets. Bitcoin has only one implementation of blockchain which is a crypto currency. Bitcoin only serves as either a store of value or a transaction unit. A lot of different implementations are improved through where Bitcoin left empty in its design, where examples such as Ergo or Ethereum are building new approaches to Layer 1 and novel ideas of decentralized finance are showing that Layer 2 implementations are also a vast progression from the initial launch of Bitcoin.
+Bitcoin is the pioneer of cryptocurrencies and is the prototype for what is to come. It is the first global implementation of a peer-2-peer autonomous monetary system where its native currency is traded on free markets. Bitcoin has only one implementation of blockchain though, which is as a cryptocurrency. Bitcoin functions as either a store of value or a transaction unit. A lot of different implementations were left empty in its design. Ergo is building a new approach to Layer 1 and novel ideas of decentralized finance are showing that Layer 2 implementations are vastly improved from the initial launch of Bitcoin.
+
+
 
 
 
@@ -52,19 +54,20 @@ Bitcoin is the pioneer of cryptocurrencies and is the prototype for what is to c
 
 Banks charge certain fees in order to match depositors and borrowers. The matching process considers different elements such as: 
 
-
-
 * How much money is deposited?
 * How many individuals want money?
 * When will be the execution of borrowing and lending contracts?
 
 
 
-This is where smart contracts come into play on a decentralized network. Instead of using your bank, you can use blockchain-based immutable smart contracts and verify smart contract pools with on-chain metrics. Through the use of the blockchain, individuals will be able to reclaim their economic freedom by controlling their finances on decentralized autonomous organizations(DAO).
+This is where smart contracts come into play on a decentralized network. Instead of using your bank, you can use blockchain based immutable smart contracts and verify smart contract pools with on-chain metrics. Through the use of the blockchain, individuals will be able to reclaim their economic freedom by controlling their finances through decentralized autonomous organizations(DAO).
 
-To learn what kind of applications are being developed for DeFi Ecosystems, follow [here](https://ergoplatform.org/en/blog/2021-05-10-defi-ecosystem/).
+\
+*You can learn what kind of applications are being developed for DeFi Ecosystems [here](https://ergoplatform.org/en/blog/2021-05-10-defi-ecosystem/).*
 
-**\
-It should be noted that blockchains are more than just vehicles for providing cheap and fast transactions. Distributed ledgers can expand to cover every aspect of virtual data processing services, including cloud storage, cloud computing, governance and finance.**
+\
+**It should be noted that blockchains are more than just vehicles for providing cheap and fast transactions. Distributed ledgers can expand to cover every aspect of virtual data processing services, including cloud storage, cloud computing, governance and finance.**
+
+
 
 <!--EndFragment-->
