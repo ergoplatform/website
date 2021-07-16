@@ -1,9 +1,9 @@
 ---
 title: "Ergoutils: A How-To Guide"
-date: 2021-07-16T11:20:06.439Z
+date: 2021-07-16T16:57:07.444Z
 author: root7Z
 authorPhoto: /img/uploads/rootz-the-storyteller-4root7z.png
-blogPhoto: /img/uploads/1762.png
+blogPhoto: /img/uploads/ergoutils.jpg
 tags:
   - Ergo Team
   - Building Ergo
