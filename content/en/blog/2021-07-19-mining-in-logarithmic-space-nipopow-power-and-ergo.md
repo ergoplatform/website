@@ -1,5 +1,5 @@
 ---
-title: "Mining in Logarithmic Space: NiPoPoW Power and Ergo"
+title: "Mining in Logarithmic Space: NIPoPoW Power and Ergo"
 date: 2021-07-19T16:10:57.037Z
 author: Ergo Foundation
 authorPhoto: /img/uploads/1762.png
