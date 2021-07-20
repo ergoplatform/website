@@ -87,7 +87,7 @@ Let this serve not as an example of why blockchain is bad, but as an example of 
 
 Now like in most jurisdictions on earth the average citizen of every country has essentially zero power over monetary policy. The average citizen lacks the tools that corporations, criminal organizations, terrorist organizations, and the wealthy have to protect themselves and benefit from financial difficulties. Financial circumstances were created by the same powers that now hold their wealth hostage. 
 
-The reality is the people at the top always get the life raft when a boat sinks, the people at the bottom go down with the ship. Now, this is not unique to Turkey. This is currently a global phenomenon. It is apparent looking at the changes in the distribution of wealth. However, it has been sanitized to seem more palatable. It is not the wealthy who have life rafts and the common people are downing. 
+The reality is the people at the top always get the life raft when a boat sinks, the people at the bottom go down with the ship. Now, this is not unique to Turkey. This is currently a global phenomenon. It is apparent looking at the changes in the distribution of wealth. However, it has been sanitized to seem more palatable. It is not the wealthy who have life rafts and the common people are drowning. 
 
 It is a K Shaped economic recovery.  
 
