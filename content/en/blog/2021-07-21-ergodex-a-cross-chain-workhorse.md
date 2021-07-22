@@ -9,11 +9,11 @@ tags:
 ---
 <!--StartFragment-->
 
-You can [vote](https://cardano.ideascale.com/a/dtd/ErgoDex-Plutus-Port/352410-48088) for ErgoDEX in Project Catalyst Fund 5
+*You can [vote](https://cardano.ideascale.com/a/dtd/ErgoDex-Plutus-Port/352410-48088) for ErgoDEX in Project Catalyst Fund 5*
 
 
 
-In early 2022, Ergonauts will witness the highly anticipated debut of Ergo’s decentralized exchange: ErgoDEX. A decentralized exchange (DEX) allows users to trade assets and provide liquidity through the execution of smart contracts - there is no need for any intermediary. Ergo’s PoW (Proof of Work) consensus utilizes the eUTXO model (extended unspent transaction output) when performing transactions. With its use of Σ-protocols (a type of zero knowledge proof), Ergo smart contracts are highly efficient and secure with features such as ring-signatures, multi-signatures, multiple currencies, advanced privacy and self-replicating scripts.
+Within a few weeks, Ergonauts will witness the highly anticipated debut of Ergo’s decentralized exchange: ErgoDEX. A decentralized exchange (DEX) allows users to trade assets and provide liquidity through the execution of smart contracts - there is no need for any intermediary. Ergo’s PoW (Proof of Work) consensus utilizes the eUTXO model (extended unspent transaction output) when performing transactions. With its use of Σ-protocols (a type of zero knowledge proof), Ergo smart contracts are highly efficient and secure with features such as ring-signatures, multi-signatures, multiple currencies, advanced privacy and self-replicating scripts.
 
 
 
@@ -47,9 +47,8 @@ ErgoDEX will be a signature dApp in the Ergo ecosystem, offering secure and effi
 
 There are several other DEX projects being developed for deployment on the Cardano network, but none offer all the combined features that ErgoDEX promises. With Ergo’s Σ-protocols and NIPoPoWs operating as dynamic tools in the design and implementation of ErgoDEX, we may be looking at the new standard in the DEX market. 
 
-
-
-For an overview of the roadmap and development team, visit [ergodex.io](https://ergodex.io/). 
+**\
+For an overview of the roadmap and development team, visit [ergodex.io](https://ergodex.io/)**
 
 
 
