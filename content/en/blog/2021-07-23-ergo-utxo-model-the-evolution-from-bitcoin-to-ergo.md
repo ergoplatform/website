@@ -1,6 +1,6 @@
 ---
 title: "Ergo UTXO Model: The Evolution From Bitcoin To Ergo"
-date: 2021-07-23T17:44:38.183Z
+date: 2021-07-23T18:02:37.817Z
 author: root7Z
 authorPhoto: /img/uploads/rootz-the-storyteller-4root7z.png
 blogPhoto: /img/uploads/ergoutxo.png
