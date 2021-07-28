@@ -1,0 +1,1170 @@
+#landing
+- id: menu_top_individuals
+  translation: "Individuals"
+
+- id: menu_top_developers
+  translation: "Developers"
+
+- id: menu_top_community
+  translation: "Community"
+
+- id: header_resilient_platform
+  translation: "Vitajte vo svete
+  <span class=\"header-section__title--red\">Smart Money</span>"
+
+- id: header_slogan
+  translation: "Ergo builds advanced cryptographic features and radically new DeFi functionality on the rock-solid foundations laid by a decade of blockchain theory and development."
+
+- id: header_slider
+  translation: "Smart money is: "
+
+- id: header_slider_conservative
+  translation: "<span class=\"eg-text--color-red\">Conservative.</span> Because Smart doesn’t take unnecessary risks."
+
+- id: header_slider_ambitious
+  translation: "<span class=\"eg-text--color-red\">Ambitious.</span> Because Smart isn’t afraid to try new ideas."
+
+- id: header_slider_lightweight
+  translation: "<span class=\"eg-text--color-red\">Lightweight.</span> Because Smart isn’t exclusive."
+
+- id: header_slider_versatile
+  translation: "<span class=\"eg-text--color-red\">Versatile.</span> Because Smart doesn’t limit its options."
+
+- id: getting_started
+  translation: Začnite s Ergo
+
+- id: ergo_vision
+  translation: Vedené výskumom a zamerané na reálny svet
+
+- id: ergo_decentralization
+  translation: Výkonné a bezpečné
+
+- id: ergo_economy
+  translation: Inteligentné a intuitívne
+
+- id: ergo_contractual
+  translation: Zabezpečené a prístupné
+
+- id: ergo_survivability
+  translation: Deflačné a ekonomicky udržateľné
+
+- id: ergo_clients
+  translation: Založené na PoW a financované protokolom
+
+- id: ergo_consensus
+  translation: Vedené konsenzom a pripravené na adaptáciu
+
+- id: ergo_agile
+  translation: Vedené komunitou a agilné
+
+- id: ergo_vision_text
+  translation: "Blockchain je rýchlo rozvíjajúce sa odvetie ktoré ponúka mnoho vzrušujúcich vývojových príležitostí s viacerými aplikáciami a prípadmi užitia, ktoré vychádzajú každým dňom. Avšak táto inovácia často prichádza s programátorským heslom \"rýchlo konať a pokaziť to\" (ang. \"move fast and break things\"), ktorý z pravidla nefunguje dobre pokiaľ sa jedná o financie používateľov v hodnote miliónov či miliárd dolárov.
+    <br/><br/>
+    Ergo platforma čerpá z desiatich rokov znalostí z vývoja blockchain technológie, dopĺňa osvedčené princípy recenzované najlepšími akademickými štúdiami v kryptografii, konsenzuálnych modeloch a digitálnych mien. Zakladáme na pevných základoch blockchain technológie a implementujeme novú a výkonnú kryptografiu nátivne. Náš tím má solídne skúsenosti s vývojom jadra kryptomien a blockchain frameworkov ako sú Nxt, Scorex a Waves a náš štíhly prístup znamená, že môžeme rýchlo uprednostniť nové funkcie a požiadavky.
+    <br/><br/>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/documents/\"><span>Objavte naše klúčové výskumy</span></a>
+  "
+
+- id: ergo_decentralization_text
+  translation: "Počas našich rôznych skúsenostiach pri prácach na blockchain platformách sme sa naučili, že konvenčné Turing-kompletné smart kontrakty môžu byť výkonné, ale taktiež môžu byť riskantné. Implementácia zložitých výpočetných úloh na blockchaine môže mať nežiadúce následky. Stav siete, chyby a zneužívanie kódu môžu znamenať, že je nemožné vopred vedieť, ako nákladné bude vykonanie softváru - alebo či daný kód bude fungovať tak, ako očakávame. To môže viesť k zraniteľnostiam v bezpečnosti a chybným dAppom.
+    <br/><br/>
+    Ergo smart kontrakty nám dovoľujú vykonať širokú škálu rôznych úloh, avšak vždy vieme vopred vyhodnotiť koľko nás bude kód stáť a či bude fungovať správne. Zároveň stále môžeme písať Turing-kompletné skripty opakovaním procesov naprieč viacerými blokmi. To znamená, že na Ergu zvládnu bežať všestranné dAppy predvídaťeľne, za známu cenu a bez rizík z neobmedzenej funkcionality.
+    <br/><br/>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/software/\"><span>ErgoScript tutoriál a integračné nástroje</span></a>
+  "
+
+- id: ergo_economy_text
+  translation: "
+    Sigma protokoly sú základom Ergo smart kontraktov. Umožňujú vytvorenie triedy tzv. zero-knowledge protokolov, ktoré nám dovoľujú implementovať úlohy, ktoré by boli inak buď nemožné, alebo riskantné a nebezpečné.
+    <br/><br/>
+    Napríklad, Sigma protokoly nám umožňujú implementovať prstencové a prahové podpisy. Povedzme, že chcete vytvoriť \'prstencový výdavkový kontrakt\', kde jeden z nás môže vykonať transakciu z tej istej adresy, ale nechceme, aby niekto iný nevedel, kto z nás vykonal danú transakciu. To nie je možné s Bitcoinom. Síce Ethereum to umožňuje, avšak bolo by to drahé a komplikované - hlavne s veľkosťou prstenca 10 až 20 členov, čo by bolo potrebné pre robustné súkromie.
+    <br/><br/>
+    S Ergom je tento druh aplikácie ľahko vytvoriteľný, vďaka integrácii Sigma protokolov v jadre. Toto dovoľuje nezávislé súkromie na úrovni aplikácie: tzv. trustless skripty, ktoré umožňujú prístup k mixérom alebo iným funkciám, bez potreby akýchkoľvek tretích strán.
+  "
+
+- id: ergo_contractual_text
+  translation: "
+    Každý skript je aplikovaný k nepoužitému výstupu. Túto funkčnosť sme čerpali z protokolu Bitcoinu, ktorý taktiež používa UTXOs, inak nazvaný \'mincový\' model, namiesto \'účtového\' modelu, ktorý využíva Ethereum. My považujeme tento prístup bezpečnejší, keďže boxy sú nemenné ako aj viac flexibilné.
+    <br/><br/>
+    Ergo blockchain používa Autolykos algoritmus pre konsenzus, čo je varianta Equihash-u a ponúka lepšiu odolnosť voči ASIC-om, ako aj istý stupeň odolnosti voči skupinám. Toto pomáha k decentralizácii, vyhýbaniu sa veľkým skupinám, ktoré sa môžu dohovoriť alebo byť donútené zaútočiť na sieť. Zároveň uznávame, že bežní ľudia, ktorí nevlastnia plný uzol (ang. full node), by si mali užívať rovnaké výhody ako ťažiari. Ergov neinteraktívny proof-of-proof-of-work (NiPoPoW) dovoľuje komukoľvek vytvoriť a overiť transakcie s úplnou dôverou, bez potreby úložiska, priepustnosti a času potrebného pre stiahnutie celého blockchainu. V skutočnosti, iba 1 MB dát je potrebný - čo znamená, že akékoľvek zariadenie môže byť využité.
+    <br/><br/>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/wallets\"><span>Vyberte si peňaženku</span></a>
+  "
+
+- id: ergo_survivability_text
+  translation: "
+    Ako mnohé iné funkcie Erga, ekonomický model siete je založený na Bitcoinovom modele. Veríme, že digitálne obmedzené množstvo (ang. scarcity) je dôležité pre podopretú hodnotu a preto je množstvo mincí v obehu tesne pod 100 miliónov ERG. Narozdiel od Bitcoinu, tzv. blok odmeny sa ustálene znižujú už po prvých dvoch rokoch a bez zdĺhavej emisie. Block odmeny začínajú na 75 ERG a počas ôsmych rokov padnú na nulu a potom celkové množstvo bude fixné.
+    <br/><br/>
+    V tomto bode, naviac od poplatkov za transakcie, budú ťažiari benefitovať z poplatkov za prenájom úložiska, účtované za boxy (UTXOs), ktoré nehýbali s ich mincami štyri a viac rokov. Tento prístup prináša aspoň dve výhody. Po prvé, dáva ťažiarom prídavný zdroj príjmu keď blok odmeny skončia. Keďže bezpečnosť siete záleží na hashrate a účasti ťažiarov, toto je dôležitý podnet. Po druhé, vracia stratené mince (a ich malé čiastky) späť do ekonomiky Erga. Výskumy odhaľujú, že až 4 milióny BTC boli permanentne odstránené z obehu kvôli strate súkromných kľúčov. Ergov poplatok za úložisko pomaly získa tieto mince späť za účelom produktivity, zatiaľ čo užívateľ, ktorý chce držať mince na dlhú dobu, sa tomuto môže jednoducho vyhnúť premiestnením mincí.
+    <br/><br/>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/exchanges/\"><span>Podporované burzy</span></a>
+  "
+
+- id: ergo_clients_text
+  translation: "
+    Je ťažké balancovať medzi tým, aby bol projekt adekvátne financovaný a znevýhodňovaním neskorších užívateľov, pokiaľ je veľká časť tokenov predťažená alebo rezervovaná pre ICO. My sme zvolili stratégiu úspešne oskúšanú inými kryptomenami, kedy sa percento tokenov z každej blok odmeny alokuje pre vývoj a marketing.
+    <br/><br/>
+    V prípade Erga, tieto tokeny nadácie sú organizované smart kontraktami vbudované do protokolu. 10% z každej blok odmeny počas prvých dvoch rokov, čiže 7.5 ERG za blok, bude alokovaných do Pokladnice s ostávajúcimi 67.5 ERG idúcim ťažiarom. Ako sa blok odmeny začnú znižovať po dvoch rokoch, nadácia bude dostávať zvyšok odmien presáhajúce 67.5 ERG s alokáciou do Pokladnice a po 2.5 rokoch padnú na nulu.
+    <br/><br/>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/foundation/\"><span>Viac o Ergo nadácii</span></a>
+  "
+
+- id: ergo_consensus_text
+  translation: "
+    Ergo je navrhnuté a implementované tímom skúsených vývojárov a výskumníkov, ktorí držia publikácie a PhD tituly v kryptografii, teórii prekladačov, blockchain technológii a kryptografickej elektronickej hotovosti. Tím má tiež silné poznatky z vývoja jadra s kryptomenami a blockchain frameworkami ako je Nxt, Scorex a Waves.
+    <br/><br/>
+    Podporujú nás tiež komunitní vývojári, ktorí môžu pracovať ako dobrovoľníci alebo získavať granty z nadácie za implementovanie užitočných funkcií a dAppov. Napríklad ErgoMix, decentralizovaná mixovacia služba založená na Sigma protokole, vytvorená vývojármi z tretej strany z Ergo komunity a Ergo decentralizovaná burza je tiež vyvíjaná na tejto báze.
+    <br/><br/>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/hall_of_fame/\"><span>Stretnite Ergo tím</span></a>
+  "
+
+- id: ergo_agile_text
+  translation: "Ergo je navrhnuté a implementované tímom skúsených vývojárov a výskumníkov, ktorí držia publikácie a PhD tituly v kryptografii, teórii prekladačov, blockchain technológii a kryptografickej elektronickej hotovosti. Tím má tiež silné poznatky z vývoja jadra s kryptomenami a blockchain frameworkami ako je Nxt, Scorex a Waves."
+
+- id: news_title
+  translation: Novinky
+
+- id: blog_section
+  translation: Blog
+
+- id: services_title
+  translation: Ergo Služby
+
+- id: service_wallets_title
+  translation: Peňaženky
+
+- id: service_wallets_paragraph
+  translation: Preskúmajte Ergo peňženky. Vyberte si peňaženku, ktorú preferujete a začnite používať Ergo už teraz!
+
+- id: service_exchanges_title
+  translation: Burzy
+
+- id: service_exchanges_paragraph
+  translation: Pozrite si všetky existujúce služby burzy, nájdite tú, ktorú preferujete a vytvorte si účet na nákup či predaj ERG.
+
+- id: service_explorer_title
+  translation: Block prieskumník
+
+- id: service_explorer_paragraph
+  translation: Pozorujte posledné bloky a transakcie vykonané na Ergo sieti.
+
+- id: service_dev_tools_title
+  translation: Vývojárske nástroje
+
+- id: service_dev_tools_paragraph
+  translation: Objavujte vývojárske nástroje a implementujte svoj prvý Ergo kontrakt!
+
+- id: service_software_title
+  translation: Softváre
+
+- id: service_software_paragraph
+  translation: Stiahnite žiadaný softváre pre Váš operačný systém a pripojte sa do Ergo siete už dnes!
+
+- id: service_wiki_title
+  translation: Wiki
+
+- id: service_wiki_paragraph
+  translation: Vzdelajte sa čítaním Ergo wiki.
+
+- id: documents_title
+  translation: Dokumenty
+
+- id: documents_ergo_platform
+  translation: Whitepaper I
+
+- id: documents_ergo_platform_link
+  translation: /docs/whitepaper.pdf
+
+- id: documents_ergo_platform_text
+  translation: "Ergo: Odolná Platforma Pre Kontraktuálne Peniaze"
+
+- id: documents_ergoscript
+  translation: Whitepaper II
+
+- id: documents_ergoscript_text
+  translation: ErgoScript, Skriptovací Jazyk Kryptomeny Podporujúci Neinteraktívne Zero-Knowledge Dôkazy
+
+- id: documents_ergo_tech
+  translation: Yellowpaper (v príprave)
+
+- id: documents_ergo_tech_text
+  translation: Ergo Technická Dokumentácia
+
+- id: documents_ergo_teaser
+  translation: Upútavka
+
+- id: documents_ergo_teaser_text
+  translation: Ergo Platforma Prehľad Projektov
+
+- id: documents_ergo_teaser_link
+  translation: https://ergoplatform.org/docs/teaser.pdf
+
+- id: documents_ergo_script_adv
+  translation: Whitepaper III
+
+- id: documents_ergo_script_adv_text
+  translation: Pokročilý ErgoScript Tutoriál
+
+- id: development_history_title
+  translation: História Vývoja
+
+- id: read_more
+  translation: Čítaj viac
+
+- id: community_title
+  translation: Ergo platforma komunita
+
+- id: community_paragraph
+  translation: Ergo je otvorený protokol implementujúci moderné, vedecké idey v blockchain oblasti. Ergo funguje ako otvorený prispievateľský model, kde ktokoľvek je vítaný prispieť.
+
+- id: community_link
+  translation: Prispieť k Ergo Platforme
+
+#slider development history
+
+- id: development_history_2019_first_date
+  translation: 14 Marec
+
+- id: development_history_2019_first_date_text
+  translation: Plne funkčný Testnet 2.0 uvoľnený
+
+- id: development_history_2019_second_date
+  translation: 1 Júl
+
+- id: development_history_2019_second_date_text
+  translation: Ergo mainnet je spustený
+
+- id: development_history_2018_first_date
+  translation: 1 Jún
+
+- id: development_history_2018_first_date_text
+  translation: Testnet 1.0 so smart kontraktami uvoľnený
+
+- id: development_history_2018_second_date
+  translation: 26 Jún
+
+- id: development_history_2018_second_date_text
+  translation: Formálny dôkaz Turing-kompletnosti ErgoScriptu
+
+- id: development_history_2018_third_date
+  translation: 6 December
+
+- id: development_history_2018_third_date_text
+  translation: Testnet 1.8 s novým PoW uvoľnený
+
+- id: development_history_2017_first_date
+  translation: 13 Jún
+
+- id: development_history_2017_first_date_text
+  translation: Ergo implementácia začala
+
+- id: development_history_2017_second_date
+  translation: 28 Júl
+
+- id: development_history_2017_second_date_text
+  translation: Výskum úpravy zložitosti dokončený
+
+- id: development_history_2017_third_date
+  translation: 5 December
+
+- id: development_history_2017_third_date_text
+  translation: Testnet 0 uvoľnený
+
+- id: development_history_2016_first_date
+  translation: 12 Marec
+
+- id: development_history_2016_first_date_text
+  translation: Scorex-Lagonaki testnet uvoľnený
+
+- id: development_history_2016_second_date
+  translation: 4 Apríl
+
+- id: development_history_2016_second_date_text
+  translation: Waves spustený na základe Scorex-u
+
+- id: development_history_2016_third_date
+  translation: 14 Október
+
+- id: development_history_2016_third_date_text
+  translation: Výskum overených dynamických slovníkov bol dokončený (ang. Authenticated Dynamic Dictionaries)
+
+- id: development_history_2015_first_date
+  translation: 23 Január
+
+- id: development_history_2015_first_date_text
+  translation: Začiatok implementácie Scorex frameworku
+
+- id: development_history_2015_second_date
+  translation: 7 November
+
+- id: development_history_2015_second_date_text
+  translation: Začiatok spolupráce s IOHK reseach
+
+- id: development_history_2015_third_date
+  translation: 17 November
+
+- id: development_history_2015_third_date_text
+  translation: Scorex tím vyhral Moskovský blockchain hackathon
+
+#footer
+- id: privacy_policy_link
+  translation: Zásady ochrany osobných údajov
+
+- id: legal_link
+  translation: Právne informácie
+
+- id: insights_label
+  translation: Dostávajte informácie a správy od Erga
+
+- id: insights_input
+  translation: Váš email
+
+- id: social_media
+  translation: Sociálne médiá
+
+- id: ergo_platform
+  translation: Ergo platforma
+
+#about
+
+- id: about_title
+  translation: Ako použit Ergo
+
+- id: about_first_title
+  translation: Informujte sa
+
+- id: about_first_paragraph
+  translation: Ergo je rozdielne od iných platform, ktoré môžete poznať a používať každý deň. Začnite so základmi a naučte sa o podstatách Erga - čo to je, ako môže byť použité a čím sa líši od iných blockchain systémov.
+
+- id: about_second_title
+  translation: Vyberte si peňaženku
+
+- id: about_second_paragraph
+  translation: Peňaženka nie je potrebná pre vlastnenie Erga avšak poskytuje prídavnú bezpečnosť a kontrolu. Strávte pár minút a vyberte si najvhodnejšiu peňaženku pre Vaše potreby.
+
+- id: about_third_title
+  translation: Získajte Ergo
+
+- id: about_third_paragraph
+  translation: "Ergo môže byť ťažené používateľmi s prístupom k široko používanému hardváru. Avšak najrýchlejší a najjednoduchší spôsob ako získať Ergo pre mnohých používateľov je navštívenie burzy. Môžeme Vás naviesť správnym smerom."
+
+- id: about_fourth_title
+  translation: Napíšte kontrakt
+
+- id: about_fourth_paragraph
+  translation: Ergo nie je iba mena, ale aj platforma pre Kontraktuálne Peniaze. Objavte tutoriály a príklady a vyskúšajte si naimplementovať vlastnú aplikáciu poháňanú Ergom
+
+#basics
+
+- id: basics_first_title
+  translation: Základy
+
+- id: basics_vision_title
+  translation: Vízia
+
+- id: basics_vision
+  translation: "Ergo bolo vytvorené ako odpoveď pre stagnáciu v oblasti blockchain technológie. Implementuje rozličné technické a ekonomické idey pripravené na použitie,
+                ktoré pridávajú hodnotu no neznižujú známe výhody blockchain systému. Primárne zameranie Erga je poskytnúť efektívne a bezpečné spôsoby ako implementovať
+                finančné kontrakty, ktoré sú najrozšírenejšie využité aplikácie blockchain technológie. Vytvorená tak, aby bežní ľudia mohli takéto kontrakty využívať ľahko,
+                decentralizovane a bez potreby dôverovať. Na rozdiel od tradičného finančného systému by na základnej úrovni Ergo protokolu nemali existovať výpomoci (ang. bailouts)
+                čierne listiny (ang. blacklists), alebo iné formy diskriminácie. Protokol Ergo je navrhnutý s ohľadom na dlhodobé prežitie, čo umožňuje realizovať kontrakty uzatvorené
+                na dĺžku celého života jedinca a je dobrým prostriedkom zachovania hodnoty.
+                <a href=\"https://ergoplatform.org/docs/teaser.pdf\" target=\"_blank\" class=\"eg-text__link eg-link\"><span>Prečítajte si upútavku pre viac detailov</span></a>."
+
+- id: basics_consensus_title
+  translation: Konsenzus
+
+- id: basics_consensus
+  translation: "Konsenzus protokol Erga — <a href=\"https://ergoplatform.org/docs/ErgoPow.pdf\" target=\"_blank\" class=\"eg-text__link eg-link\"><span>Autolykos</span></a> — je založený na dobre známom konsenzuálnom algorithme Proof-of-Work (“PoW”).
+                  PoW (sk. \'Dôkaz prácou\') bol vybraný z niekoľkých dôvodov, vrátane toho, že protokoly PoW sú široko naštudované, majú vysoké bezpečnostné záruky a sú priateľské pre ľahkých klientov (ang. light clients).
+                  Autolykos má však niekoľko významných rozdielov od PoW Bitcoinu. Je „pamäťovo odolný“, čím zmenšuje nepomer medzi špecializovaným hardvérom (ASIC) a široko používanými modelmi grafických kariet.
+                  To otvára možnosti ťaženia pre bežných ľudí, ktorý tak môžu prispieť k zabezpečeniu siete a zároveň dostávať odmeny. Má poplatky za prenájom úložiska a týmto spôsobom aj získať
+                  späť stratené či zabudnuté mince späť, Sigma Protokoly a omnoho viac.
+                  "
+
+- id: basics_clients_title
+  translation: Ľahký klienti
+
+- id: basics_clients
+  translation: "Je takmer nemožné použiť existujúce kryptomeny bez pomoci dôveryhodných tretích strán. Aby klient mohol získať čo len malé množstvo mincí bez potreby dôverovať niekomu cudziemu
+                si musí stiahnuť a spracovať gigabajty dát, aby sa mohol zosynchronizovať so sieťou, čo môže trvať aj niekoľko týždňov aj na špičkovom hardváre, o mobiloch ani nehovoriac.
+                Nie je preto žiadným prekvapením, že väčšina používateľov dáva prednosť používaniu dôveryhodným riešeniam ako sú peňaženky, burzy, prieskumník blokov atď.<br/><br/>
+                Ergo bolo navrhnuté tak, aby bolo čo najviac užívateľsky prívetivé z hľadiska decentralizácie. Jednou z dôležitých vlastností PoW modelu je, že umožňuje overiť vykonanú prácu
+                bez nutnosti sťahovať celú históriu blockchainu. Ergo bloky podporujú NiPoPoW dôkazy, umožňujúce ľahkým klientom synchronizáciu sieťou sťahovaním menej ako jedného megabajtu dát.
+                Ergo tiež používa overený stav a pre každú zahrnutú transakciu si klient môže stiahnuť dôkaz o jeho správnosti. Takže bez ohľadu na veľkosť blockchainu sa môže 
+                bežný používateľ so smartfónom pripojiť k sieti a začať používať Ergo s rovnakými bezpečnostnými zárukami ako pri použití úplného uzla."
+
+
+
+- id: basics_survivability_title
+  translation: Prežitie
+
+- id: basics_survivability
+  translation: "S ohľadom na dlhodobé prežitie dáva Ergo prednosť dôkladne otestovaným riešeniam. Ak osvedčené riešenie problému neexistuje, uskutočňujeme vlastný výskum a <a href=\"https://ergoplatform.org/en/documents/\" class=\"eg-text__link eg-link\"><span>počet recenzovaných publikácií</span></a> vývojového tímu Ergo je značný.
+                  <br/><br/>  Robustná sieť by sa mala prispôsobiť meniacemu sa prostrediu bez zásahu dôveryhodných strán (ako sú napríklad hlavní vývojári). Ergov hlasovací protokol ťažiarov na reťazci (ang. on-chain) umožňuje postupne upravovať mnoho parametrov vrátane maximálnej veľkosti bloku, faktoru poplatku za úložisko a ďalších.
+                  <br/><br/> Pre zásadnejšie zmeny bude Ergo následovať princíp tzv. mäkkých zmien (ang. soft-forkability approach) --- pokiaľ drvivá väčšina siete prijme novú funkčnosť, bude daná funkčnosť uvedená do prevádzky a staré uzly, ktoré neaktualizujú systém budú normálne fungovať a jednoducho preskočia validáciu tejto funkcie.
+                  Preto potencionálne škodlivé aktualizácie založené na tzv. tvrdých zmenách (ang. hard forks) by nemali byť pre Ergo potrebné.
+  "
+
+- id: basics_ecomony_title
+  translation: Ekonomika
+
+- id: basics_ecomony_paragraph
+  translation: "
+  Pre dosiahnutie prežitiaschopnosti, Ergo poskytuje okrem technických vylepšení aj ekonomické inovácie, z ktorých najdôležitejšou je zložka poplatku za úložisko, ktorá hra dôležitú úlohu pri udržiavaní stability Ergo systému:
+  pokiaľ je výstup transakcie bez zmeny, resp. pohnutia, aspoň 4 roky, ťažiar si môže účtovať malý poplatok za každý bajt uložený v tomto stave. Táto myšlienka je podobná bežným úložiskovým cloud službám,
+  avšak jej aplikácia na blockchain systémy má zopár dôležitých dôsledkov. Po prvé, ťažba Erga bude vždy stabilná na rozdiel od Bitcoinu a iných PoW mien, kde sa ťažba po skončení emisií môže stať nestabilná.
+  Po druhé, zväčšenie stavu je kontrolovateľné a predvídateľné, čo znižuje hardvárové požiadavky pre ťažiarov Erga. Po tretie, zbieraním poplatkov za ukladanie starých výstupov ťažiari vracajú do obehu stratené mince, a tak zabránia neustálemu poklesu mincí v obehu v dôsledku straty súkromných kľúčov.
+  Týmto sa tiež vytvára jedinečný dlhodobý prípad použitia  <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/docs/ErgoPow.pdf\" target=\"_blank\"><span>natívneho tokenu Erga (\"ERG\")</span></a> ako jediný token na Ergo blockchaine, ktorý môže byť použitý pre platenie za prenájom úložiska, a to napriek očakávanej skutočnosti veľkého množstva nenatívnych tokenov, ktoré môžu byť na Ergo blockchaine vyrobené , z dôvodu vysokej kvality bezpečnosti, decentralizácie a funkčnosti Kontraktuálnych Peňazí."
+
+- id: basics_applicability_title
+  translation: Použiteľnosť
+
+- id: basics_applicability_paragraph
+  translation: "
+    Ergo dAppsi a tzv. mimoreťazové (ang. offchain) protokoly môžu byť implementované v skutočne decentralizovanom spôsobe vďaka existencií ľahkých klientov, avšak tie tiež požadujú flexibilný a bezpečný smart kontrakt jazyk.
+    Ergo smart kontrakty sú založené na Bitcoinovom modeli UTXO, kde je každý nepoužitý výstup chránený skriptom. Ak je skriptovací jazyk dostatočne bohatý, umožňuje písanie Turing-kompletných kontraktov zatiaľ čo sa vyhýba ad-hoc riešeniam pre zastavovanie programov ako je plyn (ang. gas) z Etherea.
+    Nielen že je ErgoScript oveľa univerzálnejší jazyk ako Bitcoin Script, podporuje aj operácie, ktoré Vám umožňujú presne odhadnúť zložitosť skriptu pred jeho vykonaním, čím sa zabráni útokom DoS a problémom \"zastavenia\".
+    Dostupná sada pokynov je dostatočná na súčasné napísanie ľubovoľného programu — ErgoScript bol preukázaný ako Turing kompletný.
+    Kryptografická časť ErgoScriptu sa spolieha na Sigma protokoly a prirodzene podporuje prahové M- z N- podpisy, prstencové podpisy a ďalšie.
+    S ohľadom na toto všetko očakávame, že ErgoScript a Ergo budú vďaka svojim dizajnom mimoriadne užitočné pre Kontraktuálne Peniaze s nepočetným množstvom možných aplikácií."
+
+- id: basics_second_title
+  translation: Naučte sa viac
+
+- id: basics_second-section_first_link
+  translation: Vývojárske nástroje
+
+- id: basics_second-section_second_link
+  translation: Wiki
+
+- id: basics_second-section_third_link
+  translation: Dokumenty
+
+- id: basics_second-section_fourth_link
+  translation: Softváre
+
+#tech
+
+- id: tech_first_title
+  translation: Dokumenty
+
+- id: tech_first-section_first_paragraph
+  translation: Ergo nasleduje zásadný prístup a používa len stabilné a dobre otestované riešenia aj za cenu pomaľšieho, krátkodobého vývoja. Väčšina riešení Ergo platformy sú formalizované v papieroch prezentované na recenzovaných konferenciach a boli široko diskutované v komunite.
+
+- id: tech_first-section_second_paragraph
+  translation: Táto stránka obsahuje odkazy od dokumentov s obecným prehľadom o Ergo platforme ako aj papiere s princípmi Ergo protokolu.
+
+- id: tech_second_title
+  translation: Prehľady
+
+- id: tech_third_title
+  translation: Základné papiere
+
+- id: tech_fourth_title
+  translation: Prezentácie
+
+- id: tech_third-section_title_link
+  translation: Všetky papiere
+
+- id: tech_third-section_first_title
+  translation: Vylepšenie Autentifikovaných Dynamických Slovníkov Pomocou Aplikácií Pre Kryptomeny
+
+- id: tech_third-section_first_paragraph
+  translation: Leonid Reyzin, Dmitry Meshkov, Alexander Chepurnoy, Sasha Ivanov
+
+- id: tech_third-section_second_title
+  translation: Systematický Prístup K Poplatkom Vrámci Kryptomeny
+
+- id: tech_third-section_second_paragraph
+  translation: Alexander Chepurnoy, Vasily Kharin, Dmitry Meshkov
+
+- id: tech_third-section_third_title
+  translation: Prehodnotenie Kontroly Obtiažnosti Pre Systémy Blockchain
+
+- id: tech_third-section_third_paragraph
+  translation: Leonid Reyzin, Dmitry Meshkov, Alexander Chepurnoy, Sasha Ivanov
+
+- id: tech_third-section_fourth_title
+  translation: Samoprodukujúce sa Mince Ako Univerzálny Turingov Stroj
+
+- id: tech_third-section_fourth_paragraph
+  translation: Alexander Chepurnoy, Vasily Kharin, Dmitry Meshkov
+
+- id: tech_third-section_fifth_title
+  translation: Viacrežimové Kryptomenové Systémy
+
+- id: tech_third-section_fifth_paragraph
+  translation: Tuyet Duong, Alexander Chepurnoy, Hong-Sheng Zhou
+
+- id: tech_third-section_sixth_title
+  translation: "EDRAX: Kryptomena s Bezstavovou Validáciou Transankcií"
+
+- id: tech_third-section_sixth_paragraph
+  translation: Alexander Chepurnoy, Charalampos Papamanthou, Yupeng Zhang
+
+- id: tech_third-section_seventh_title
+  translation: Na Kontraktuálnych Peniazoch
+
+- id: tech_third-section_seventh_paragraph
+  translation: Alexander Chepurnoy, Amitabh Saxena
+
+- id: tech_third-section_eight_title
+  translation: Viacstupňové Kontrakty v UTXO Modeli
+
+- id: tech_third-section_eight_paragraph
+  translation: Alexander Chepurnoy, Amitabh Saxena
+
+- id: tech_third-section_nine_title
+  translation: Obchádzanie Neobchodovateľných Proof-of-Work Schém Pomocou Zabezpečených Smart Kontraktov
+
+- id: tech_third-section_nine_paragraph
+  translation: Alexander Chepurnoy, Amitabh Saxena
+
+
+# tools
+
+- id: tools_first_title
+  translation: Integračné nástroje
+
+- id: tools_first-section_first_paragraph
+  translation: Ergo poskytuje efektívny, bezpečný a jednoduchý spôsob ako implementovať finančné kontrakty s pomocou množstva náradia
+
+- id: tools_second_title
+  translation: Prehľad
+
+- id: tools_second-section_first_paragraph
+  translation: "Pripojením sa k Ergo Platforme získate prístup ku kompletnému vývoju a vývojovému prostrediu zahŕňajúc:"
+
+- id: tools_second-section_first-sub_title
+  translation: ErgoScript Tutoriály
+
+- id: tools_second-section_first-sub_first_subtitle
+  translation: ErgoScript Prehľad
+
+- id: tools_second-section_first-sub_first_paragraph
+  translation: Ergo navrhuje flexibilný skriptovací jazyk založený na efektívnych Σ-protokoloch (Sigma protokoly)
+
+- id: tools_second-section_first-sub_second_subtitle
+  translation: Pokročilý ErgoScript Tutoriál
+
+- id: tools_second-section_first-sub_second_paragraph
+  translation: Prezrite si a vyskúšajte príklady kontraktov, ktoré sa vytvárajú na Ergu.
+
+- id: tools_second-section_second-sub_title
+  translation: Inštalácia Uzlu
+
+- id: tools_second-section_second-sub_first_link
+  translation: Ako si nainštalovať úplny uzol
+
+- id: tools_second-section_second-sub_first_url
+  translation: https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node
+
+- id: tools_second-section_second-sub_second_link
+  translation: Ako ťažiť Ergo
+
+- id: tools_second-section_third-sub_title
+  translation: Prieskumníci
+
+- id: tools_second-section_third-sub_first_link
+  translation: TestNet Prieskumník
+
+- id: tools_second-section_third-sub_second_link
+  translation: Mainnet Prieskumník
+
+- id: tools_second-section_fourth-sub_title
+  translation: APIs
+
+- id: tools_second-section_fourth-sub_first_link
+  translation: API pre uzol
+
+- id: tools_second-section_fourth-sub_second_link
+  translation: API Prieskmuník
+
+- id: tools_second-section_fifth-sub_title
+  translation: Knižnice
+
+- id: tools_second-section_scorex_link
+  translation: (Scala) Scorex framework
+
+- id: tools_second-section_fifth-sub_first_link
+  translation: (Scala) ErgoScript
+
+- id: tools_second-section_fifth-sub_second_link
+  translation: (Scala) Základná kryptografia
+
+- id: tools_second-section_fifth-sub_third_link
+  translation: (JS) Základy transakcií
+
+- id: tools_second-section_fifth-sub_fourth_link
+  translation: (Scala) Ergo peňaženka
+
+- id: tools_second-section_fifth-sub_fifth_link
+  translation: (TS) Základy transakcií
+
+- id: tools_second-section_sixth-sub_title
+  translation: Podporné odkazy
+
+- id: tools_second-section_sixth_sub_first_link
+  translation: Ergo Fórum
+
+- id: tools_second-section_sixth_sub_second_link
+  translation: Discord kanál
+
+- id: tools_third_title
+  translation: Grant pre Vývojárov
+
+- id: tools_third-section_paragraph
+  translation: Ponúkame granty pre vývojárov, ktorí vytvárajú projekty na Ergo platforme.
+
+- id: tools_third-section_link
+  translation: Získať podporu
+
+- id: tools_mining_link
+  translation: https://github.com/ergoplatform/ergo/wiki/Mining
+
+#software
+
+- id: software_first_title
+  translation: Softváre
+
+- id: software_first-section_first_paragraph
+  translation: "Ergo je založený na blockchaine kvôli Kontraktuálnym peniazom, bolo vyvýjané od nuly za pomoci programovacieho jazyku Scala a nie je rozdvojené od žiadnej inej kryptomeny."
+
+- id: software_first-section_second_paragraph
+  translation: "Pokiaľ je softváre spoľahlivý pre udržanie Vašich súkromých kľúčov, je odporúčané budovanie softváru zo zdrojových kódov. Pokiaľ nie ste skúsený používateľ, môžete si stiahnúť už existujúce binárne súbory.
+  "
+
+- id: software_second_title
+  translation: Stiahnutia
+
+- id: software_second-section_first_title
+  translation: Windows x64 & x86
+
+- id: software_second-section_first_first-item_title
+  translation: GPU miner pre Windows 64
+
+- id: software_second-section_first_second-item_title
+  translation: Daemon + balíček konzolovej peňaženka pre Windows 32
+
+- id: software_second-section_second_title
+  translation: Mac OS Mavericks 10.9
+
+- id: software_second-section_second_first-item_title
+  translation: Daemon + balíček konzolovej peňaženky verzia 0.11.1.0
+
+- id: software_second-section_third_title
+  translation: Linux x64 & x86
+
+- id: software_second-section_third_first-item_title
+  translation: Daemon + balíček konzolovej peňaženky pre Linux x64
+
+- id: software_second-section_third_second-item_title
+  translation: Daemon + balíček konzolovej peňaženky pre Linux x86
+
+- id: software_second-section_fourth_title
+  translation: Všetky systémy
+
+- id: software_second-section_fourth_first-item_title
+  translation: Úplny uzol jar súbor.
+
+
+#exchanges
+
+- id: exchanges_first_title
+  translation: Burzy
+
+- id: exchanges_first-section_first_paragraph
+  translation: "Môžete si kúpiť, predať alebo vymieňať Ergo na množstve online platformách nazvané burzy.
+    <br/><br/>
+    Disclaimer: Burzy poskytujú rozličujúce stupne bezpečnosti, ochrany, súkromia a kontroly nad Vašimi peniazmi a informáciami. Urobte si prieskum a rozmyslite si, či uloženie Vašich mincí do peňaženky nebude bezpečnejšie.
+  "
+
+- id: exchanges_first-section_link
+  translation: Objavte Peňaženky
+
+- id: exchanges_second_title
+  translation: Obľúbene digitálne burzy s menami
+
+- id: exchanges_second-section_first_paragraph
+  translation: Pred vydaním Ergo mainnetu ste si mohli zakúpiť len Ergo First Year Token (“EFYT”), ktorý je uvedený na platforme Waves a bude vymenení za Ergo tokeny po vydaní mainnetu.
+
+
+#team
+
+- id: team_first_title
+  translation: Prispievanie k Ergu
+
+- id: team_first-section_first_paragraph
+  translation: "Ergo operuje ako model otvoreného prispievateľa (ang. open contributor model) kde ktokoľvek môže prispieť.
+    <br/><br/>
+  Pokiaľ by ste chceli prispieť prosím neváhajte navštíviť nás <a class=\"eg-text__link eg-link\" href=\"https://discord.gg/cyahRhDWxS\"><span>discord kanál</span></a> a prediskutovať Vaše plány v #development kanáli s vývojármi.
+  "
+
+- id: team_first-section_first-item_title
+  translation: Nahlasovanie Chýb
+
+- id: team_first-section_first-item_paragraph
+  translation: Nahlásiť chyby vrátane bezpečnostných problémov
+
+- id: team_first-section_second-item_title
+  translation: Kód
+
+- id: team_first-section_second-item_paragraph
+  translation: Napíšte a zrecenzujte kód
+
+- id: team_first-section_third-item_title
+  translation: Prémie
+
+- id: team_first-section_third-item_paragraph
+  translation: Môžete nám pomôcť a získať za to prémiu.
+
+- id: team_first-section_fourth-item_title
+  translation: Dokumentácia
+
+- id: team_first-section_fourth-item_paragraph
+  translation: Napíšte dokumentáciu pre používateľov a vývojárov
+
+- id: team_first-section_fifth-item_title
+  translation: Technická podpora
+
+- id: team_first-section_fifth-item_paragraph
+  translation: Podporte ostatných používateľov
+
+- id: team_second_title
+  translation: Pravidelní prispievatelia
+
+- id: team_contribute
+  translation: Prispejte
+
+- id: team_now
+  translation: teray
+
+- id: team_developer
+  translation: Vývojár
+
+- id: team_community
+  translation: Komunita
+
+- id: team_content_manager
+  translation: Manažér obsahu
+
+- id: team_researcher
+  translation: Výskumný pracovník na researchinstitute.io
+
+# faq
+
+- id: faq_first_title
+  translation: FAQ
+
+- id: faq_first-item_title
+  translation: Čo je Ergo?
+
+- id: faq_first-item_text
+  translation: "Ergo je robustná platforma pre Kontraktuálne Peniaze (pozn. Zmluvné Peniaze). Je nadizajnované ako platforma pre aplikácie s hlavným zameraním poskytovať efektívne, bezpečné a jednoducho implementovateľné finančné kontrakty.<br/><br/>
+  Aby Ergo mohlo tento cieľ dosiahnuť, musí zahrnúť rôzne technické a ekonomické vylepšenia k existujúcim blockchain riešeniam. Každá minca v Ergu je chránená programom v ErgoScripte, ktorý je výkonný a protokol-zameraný skriptovací jazyk založený na Σ-protokoloch. Špecifikuje podmienky, za ktorých sa môže minca použiť: kto ju môže minúť, za akých vonkajších podmienok, komu atď.<br/><br/>
+  Rozšírená podpora pre ľahkých klientov robí Ergo priateľské pre koncových používateľov a dovoľuje bežaniu kontraktov na bežných zariadeniach ako sú mobilé telefóny a to bez potreby dôvery. Aby bolo Ergo užitočné z dlhodobého hľadiska, dodržiava prísny prístup k dlhodobému pržitiu - používa široko-skúmané riešenia ktoré neskončia s problémami v bezpečnosti v budúcnosti, zatiaľ čo tiež predchádza zníženiu výkonu v priebehu času vďaka novému ekonomickému modelu.<br/><br/>
+  Na koniec, Ergo je protokol, ktorý sa môže sám meniť a dopĺňať, čo mu dovoľuje prijímať nové nápady a zlepšovať sám seba v budúcnosti. Zamerania na dlhodobé prežitie a schpnosť sa sám meniť a doplniť dávajú Ergu odolnosť.
+  "
+
+- id: faq_second-item_title
+  translation: "Čo znamenú Kontraktuálne peniaze?"
+
+- id: faq_second-item_text
+  translation: "Podľa nášho názoru prevažujúca väčšina úspešných verejných prípadov užitia pre blockchain technológiu sú spojené s finančnými aplikáciami. Ergo rozširuje Bitcoinov spôsob písania kontraktov prikladaním chrániaceho skriptu (spolu s prídavnými používateľskými dátami) ku každej minci. Preto sú Ergo aplikácie definované v zmysle chrániaceho skriptu vbudovaného do každébo boxu tiež obsahujúc dáta zahrnuté v realizáciach (ang. data involved in execution). Razíme termín Kontraktuálne Peniaze pre ERG a druhotné tokeny, ktorých využitie je späté s kontraktami. Napríklad naviac od bežnej ochrany len niekoľkými M z N podpisov, Ergo dovoľuje špecifikovať, kto sú možní príjemcovia, čo môže tiež byť kontrakt s takýmito zložitými podmienkami. Tento prístup \"reťazením\" dovoľuje implementáciu bezpečných a efektívnych kontraktov ľubovoľnej zložitosti."
+
+- id: faq_third-item_title
+  translation: Aká bola cena počas ICO?
+
+- id: faq_third-item_text
+  translation: "Ergo nasleduje najviac decentralizovaný spôsob emisie a začalo s nula mincami v obehu a \"razenie\" všetkých mincí nastane počas prvých ôsmich rokov Ergo mainnetu, používajúc odskúšanú a testovanú PoW ťažiacu metódu. Preto nebolo žiadne ICO pre Ergo. Žiadne VC financovanie. Žiadne predťaženie."
+
+- id: faq_fourth-item_title
+  translation: "Ako ťažiť Ergo?"
+
+- id: faq_fourth-item_text
+  translation: "Potrebujete <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node\"><span>nakonfigurovaný Ergo uzol</span></a> a GPU s aspoň 4 Gb pamäte (8Gb je odporúčaných pre maximálnu efektivitu). Použite tento <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki/Mining\"><span>návod</span></a> na nakonfigurovanie mineru (softváre, ktorý ťaží kryptomenu) spolu s uzlom.<br/>
+  Poznámka: Môžete zapojiť viacero GPU spolu na jednom Ergo uzle."
+
+- id: faq_fifth-item_title
+  translation: "Ako nájsť Ergo ťažiace skupiny?"
+
+- id: faq_fifth-item_text
+  translation: "Pozrite si ťažiace skupiny spísane <a class=\"eg-text__link eg-link\" href=\"https://miningpoolstats.stream/ergo\"><span>tu</span></a>. Prosím, zvoľte si jednu z menších skupín."
+
+- id: faq_sixth-item_title
+  translation: "Kedy bude Ergo sieť spustená?"
+
+- id: faq_sixth-item_text
+  translation: "Ergo mainnet bol spustený 1. Júla."
+
+- id: faq_seventh-item_title
+  translation: "Má Ergo limit na veľkosť bloku?"
+
+- id: faq_seventh-item_text
+  translation: "Nie, Ergo nemá pevne stanovený limit pre veľkosť bloku. Namiesto toho môže byť veľkosť bloku zvýšená alebo znížena v priebehu času podľa potreby. Je obmedzená k faktoru rastu kvôli prevencii pred nadmerným rastom počas krátkej doby."
+
+- id: faq_eighth-item_title
+  translation: "Prečo má Ergo vlastný smart kontrakt jazyk?"
+
+- id: faq_eighth-item_text
+  translation: "Dizajnovaný priestor programovacích jazykov je veľmi široký od všeobecne slúžiacich jazykov ako sú C, Java, Python až po špecializované jazyky ako sú SQL, HTML, CSS, avšak žiadny z nich nebol nadizajnovaný pre aplikáciu Kontraktuálnych Peňazí<br/><br/>
+                ErgoScript bol nadizajnovaný k dosiahnutiu viacerých vlastností. Obsahuje iba deterministické operácie kvôli udržaniu konsenzu v sieti. Kvôli prevencii pred možným spam útokom ErgoScript podporuje predčasový (ang. ahead-of-time) odhad, nepočítajúc široké množstvo operácií ako sú možné nekonečné cykly. Ale aj napriek všetkým týmto obmedzeniam, ErgoScript je dostatočne vyjadrujúci (ang. expressive) k implementácii zložitých smart kontraktov, vrátane Turing-kompletných smart kontraktov avšak bezpečným spôsobom."
+
+- id: faq_nineth-item_title
+  translation: "Aký je plán pre emisiu Ergo tokenov a celková peňažná základňa?"
+
+- id: faq_nineth-item_text
+  translation: "Detaily týkajúce sa Ergo emisného plánu a peňažnej zásoby môžete nájsť na blog poste <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/en/blog/2019_05_20-curve/\"><span>tu</span></a>."
+
+- id: faq_tenth-item_title
+  translation: "Kde sa môžem naučiť viac o Ergu?"
+
+- id: faq_tenth-item_text
+  translation: "Stránka: <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/\"><span>https://ergoplatform.org/</span></a> <br/><br/>
+  Twitter: <a class=\"eg-text__link eg-link\" href=\"https://twitter.com/ergoplatformorg\"><span>https://twitter.com/ergoplatformorg</span></a> <br/><br/>
+  Wiki: <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki\"><span>https://github.com/ergoplatform/ergo/wiki</span></a> <br/><br/>
+  Github: <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo\"><span>https://github.com/ergoplatform/ergo</span></a> <br/><br/>
+  Dokumenty: <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/en/documents/\"><span>https://ergoplatform.org/en/documents/</span></a> <br/><br/>
+  Telegram: <a class=\"eg-text__link eg-link\" href=\"https://t.me/ergoplatform\"><span>https://t.me/ergoplatform</span></a><br/><br/>
+  "
+
+#wallets
+
+- id: wallets_first_title
+  translation: "Peňaženky"
+
+- id: wallets_first-section_paragraph
+  translation: "Digitálna peňaženka Vám môže pomôcť bezpečne uschovať Vaše digitálne meny, súkromne a pod Vašou kontrolou. Jednoznačne odporúčame používanie peňaženky pre uloženie Ergo aktív (technicky, peňaženky iba ukladajú Vaše klúče od Ergo adries). Prosím, majte na pamäti, že peňaženky nie sú ako bankové účty, a preto vykonajte opatrenia ohľadom Vašeho hesla a buďte si istý, že ste si vytvorili zálohy pre ochranu Vašich peňazí.
+    <br/><br/>
+    Poznámka: peňaženky sú podporované tretími stranami, my iba poskytujeme informácie ako za závesom, za účelom zjednodušenia Vašej celkovej skúsenosti s digitálnymi menami.
+  "
+
+- id: wallets_second_title
+  translation: "Populárne"
+
+- id: wallets_table_first_title
+  translation: Peňaženky
+
+- id: wallets_table_second_title
+  translation: Typ
+
+- id: wallets_table_third_title
+  translation: Viacpodpisová
+
+- id: wallets_table_fourth_title
+  translation: Podpora skriptov
+
+- id: wallets_table_second-column_first_title
+  translation: Web
+
+- id: wallets_table_second-column_second_title
+  translation: Mobil
+
+- id: wallets_table_second-column_third_title
+  translation: Desktop
+
+- id: wallets_table_second-column_fourth_title
+  translation: Hardváre
+
+- id: wallets_part
+  translation: Časť
+
+- id: wallets_ergo_wallet-doc_link
+  translation: https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node
+
+
+#news
+
+- id: news_first_title
+  translation: Najnovšie Novinky
+
+- id: news_load_more
+  translation: Načítať viac noviniek
+
+
+#blog
+
+- id: back_to_all_posts
+  translation: späť ku všetkým príspevkom
+
+- id: blog_related_reads
+  translation: Súvisiace články
+
+
+#legal
+
+- id: legal_title
+  translation: Právne informácie
+
+- id: legal_first-item_title
+  translation: 1. Informácie uverejnené na ergoplatform.org
+
+- id: legal_first-item_text
+  translation: "Stránka https://ergoplatform.org (ďalej v texte odkazované ako \"Stránka\") poskytuje informácie a materiály všeobecnej povahy. Nie ste autorizovaný a taktiež by ste sa nemali obracať na Stránku ohľadom právnych rád, obchodných rád alebo žiadnych iných rád. Jednáte na vlastné nebezpečenstvo pri spoliehaní sa na obsah tento Stránky. Pokiaľ sa potrebujete rozhodnúť či jednať alebo nie, mali by ste kontaktovať licencovaného právnika v príslušnej jurisdikcii, v ktorej potrebujete pomôcť. Vlastníci ani prispievatelia nie sú žiadnym spôsobom zodpovední za akcie, rozhodnutia ani iné prijaté či neprijaté opatrenia vykonané Vami na základe spoliehania sa na túto Stránku."
+
+- id: legal_second-item_title
+  translation: 2. Preklady
+
+- id: legal_second-item_text
+  translation: "Táto stránka obsahuje preklady anglickej verzie obsahu dostupného na tejto Stránke. Tieto preklady slúžia len pre Vaše pohodlie. V prípade rozdielov medzi anglickou a preloženou verziou by ste mali uprednostniť anglickú verziu. Pokiaľ odhalíte akékoľvek nezrovnalosti prosím nahláste ich na <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki/Contribute#translation\"><span>GitHube</span></a>."
+
+- id: legal_third-item_title
+  translation: 3. Riziká spojené s používaním Erga
+
+- id: legal_third-item_text
+  translation: "Táto Stránka nenesie žiadnu zodpovednosť za straty, škody alebo nároky vyplývajúce z udalostí patriacich do rozsahu nasledujúcich piatich kategórií:
+                <br/><br/>
+                (1) Chyby, ktorých sa dopustil používateľ používaním akejkoľvek služby či softváru súvisiaceho s Ergom ako napr. zabudnuté heslá, platby poslané na zlú Ergo adresu a omylom vymazané peňaženky.
+<br/><br/>
+                (2) Softvárové problémy so Stránkou a/alebo akákoľvek služba či softvár súvisiaci s Ergom ako napr. poškodené súbory peňaženky, nesprávne vyhotovené transakcie, nebezpečné kryptografické knižnice, malware ovplyvňujúci túto Stránku a/alebo akúkoľvek službu či softvár súvisiaci s Ergom.
+<br/><br/>
+                (3) Technické zlyhania hardvéru používateľa akejkoľvek služby či softváru súvisiaceho s Ergom ako napr. strata dát kvôli vadnému alebo poškodenému ukladaciemu zariadeniu.
+<br/><br/>
+                (4) Problémy s bezpečnosťou, ktoré používateľ zažil pri používaní akákoľvek služby či softváru súvisiaceho s Ergom ako napr. neoprávnený prístup k používateľovým peňaženkám a/alebo účtom.
+<br/><br/>
+                (5) Činnosti alebo nečinnosti tretích strán a/alebo udalosti, s ktorými sa stretli tretie strany ako napr. bankrot poskytovateľa služby, útoky na informačnú bezpečnosť na poskytovateľov služieb a podvody vykonané tretímy stranami."
+
+- id: legal_fourth-item_title
+  translation: 4. Investičné riziká
+
+- id: legal_fourth-item_text
+  translation: "Investícia do Erga môže viesť k strate peňazí z krátkodobého alebo dlhodobého hľadiska. Investory Erga by mali očakávať širokú fluktuáciu cien. Informácie zverejnené na tejto Stránke nemôžu garantovať, že investory Erga nestratia peniaze."
+
+- id: legal_fifth-item_title
+  translation: 5. Dodržiavanie daňových povinností
+
+- id: legal_fifth-item_text
+  translation: "Používatelia tejto Stránky sú výlučne zodpovední za to, aby určili, aké dane sa vzťahujú na ich Ergo transakcie. Vlastníci alebo prispievateľia tejto Stránky NIE sú zodpovední za určovanie daní vzťahujúcich sa na Ergo transakcie."
+
+- id: legal_sixth-item_title
+  translation: 6. Táto Stránka neukladá, neposiela ani nepríma ERG
+
+- id: legal_sixth-item_text
+  translation: "Táto Stránka neukladá, neposiela ani nepríjma ERG. Je tomu tak preto, pretože ERG existujú len na základe záznamu o vlastníctve udržiavaného v sieti Ergo. Akýkoľvek prevod titulu v ERG sa uskutočňuje na decentralizovanej sieti Ergo a nie na tejto Stránke."
+
+- id: legal_seventh-item_title
+  translation: 7. Žiadne záruky
+
+- id: legal_seventh-item_text
+  translation: "Táto Stránka je poskytovaná \"ako je\" bez akýchkoľvek záruk akéhokoľvek druhu týkajúcich sa tejto Stránky a/alebo obsahu, dát, materiálov a/alebo služieb poskytovaných na tejto Stránke."
+
+#privacy
+
+- id: privacy_title
+  translation: Zásady ochrany osobných údajov
+
+- id: privacy_first-item_text
+  translation: "Vaše údaje neuchovávame, bodka."
+
+# error page
+
+- id: error_page_text
+  translation: Ľutujeme, stránka sa nenašla
+
+- id: error_page_button
+  translation: Späť na domovskú stránku
+
+# share
+
+- id: share_post
+  translation: Zdieľať príspevok
+
+# social
+
+- id: telegram_channel
+  translation: https://t.me/ergoplatform
+
+# careers
+
+- id: careers_first_title
+  translation: Otvorené pozície
+
+- id: careers_first-section_first_paragraph
+  translation: Nejaký text o našej spoločnosti/ tíme/ atď.
+
+- id: back_to_all_careers
+  translation: Späť ku všetkým kariéram
+
+# foundation
+
+- id: foundation_first_title
+  translation: Ergo Nadácia
+
+- id: foundation_first_section_first_title
+  translation: "Ergo nadácia je entita riadená komunitou zameraná na:"
+
+- id: foundation_first_section_first_li_item
+  translation: "Podporu neustáleho vývoja protokolu Ergo platformy;"
+
+- id: foundation_first_section_second_li_item
+  translation: "Podporu rozsiahlej adopcie a využívania Ergo platformy a jej natívneho tokenu (ERG);"
+
+- id: foundation_first_section_third_li_item
+  translation: "Rozvoj ekosystému okolo platformy Ergo;"
+
+- id: foundation_first_section_fourth_li_item
+  translation: "Podporu využívania Ergo platformy a blockchain technológie pre spoločenské dobro;"
+
+- id: foundation_first_section_fifth_li_item
+  translation: "Podporu skutočne decentralizovanej infraštruktúry a;"
+
+- id: foundation_first_section_sixth_li_item
+  translation: "Podporu súkromia ako základného ľudského práva."
+
+- id: foundation_second_section_first_title
+  translation: "Naša Misia"
+
+- id: foundation_second_section_first_paragraph
+  translation: "Ergo nadácia sa zaviazala k organickému a nepretržitému vývoju protokolu Ergo platformy. Nadácia dbá na to, aby zmeny boli potvrdené nielen ťažiarmi (ktorí prejavia svoje rozhodnutia priamo na blockchaine), ale aj používateľmi, projektami budujúce na Ergu a hlavnými vývojármi. Nadácia sa taktiež venuje aj budovaniu dôverýhodných prostredí, smart kontraktov a platobných frameworkov pre verejnosť s ohľadom na ochranu súkromia. Naše aktivity zahŕňajú zbierky (ang. fundraising), výskumy, udržiavanie a zlepšovanie Ergo platformy, marketing a udalosti. Veríme, že Ergo Pokladnica by mala byť využívaná hlavne otvorenou komunitou vrátane nezávislých pracovníkov, hackerov, odborníkov a nadšencov. Informácie o Ergo Pokladnici a protokole nájdete na
+            <a
+              class=\"eg-text__link eg-link\"
+              href=\"https://ergoplatform.org/docs/whitepaper.pdf\"
+            ><span>https://ergoplatform.org/docs/whitepaper.pdf</span></a> a <a
+              class=\"eg-text__link eg-link\"
+              href=\"https://ergoplatform.org/en/blog/2019_05_20-curve/\"
+            ><span>https://ergoplatform.org/en/blog/2019_05_20-curve/</span></a>"
+
+- id: foundation_second_section_second_paragraph
+  translation: "Hlavným zameraním Ergo platformy je poskytnúť efektívny a bezpečný spôsob finančných kontraktov, ktoré sú najbežnejšie využitie blockchain technológie. Toto zameranie uznáva a podporuje Ergo nadácia."
+
+- id: foundation_second_section_third_paragraph
+  translation: "Ergo nadácia je odhodlaná vyvinúť úsilie na maximálizáciu počtu hodnotných vývojov ekosystémov, ktoré sú vyvíjané otvoreným (ang. open-source) spôsobom s čo najmenšou možnou tolerantnou licenciou."
+
+- id: foundation_third_section_first_title
+  translation: "Partnerstvá"
+
+- id: foundation_third_section_first_paragraph
+  translation: "Cieľom Nadácie Ergo je nadviazať partnerstvá s organizáciami, ktoré prispejú k vývoju Ergo ekosystému alebo zdieľajú rovnaké hodnoty ako Ergo nadácia. Možné spôsoby partnerstva zahŕňajú, avšak nie sú obmedzené na získanie alebo poskytnutie finančnej podpory, zdieľanie vedomostí a nápadov, poskytovanie alebo získavanie bezplatných či platených konzultácií."
+
+- id: foundation_fourth_section_first_title
+  translation: "Granty"
+
+- id: foundation_fourth_section_first_paragraph
+  translation: "Ergo nadácia oznámila, že sa chystá financovať granty pre projekty zamerané na budovanie kľúčovej ekosystémovej infraštruktúry. Prosím <a href=\"https://ergoplatform.org/en/blog/2020-11-18-ergo-foundation-makes-key-dapp-infrastructure-grant/\" class=\"eg-text__link eg-link\"><span>odkážte sa na tento článok</span></a> aby ste si určili rozsah Vášho grantu a pošlite ho na adresu <a href=\"mailto:ergoplatform@protonmail.com\" class=\"eg-text__link eg-link\"><span>ergoplatform@protonmail.com</span></a>. ak máte projekt, o ktorom si myslíte, že stojí za to ho financovať. Návrhy musia byť v súčasnosti schválené štyrmi zo šiestich hlasov členov rady Ergo Vývojový Fund. Ergo nadácia prijíma nových dobrovoľníkov z komunity, preto pokiaľ chcete, priháste sa."
+
+- id: foundation_fourth_section_second_paragraph
+  translation: "Zaviazali sme sa informovať komunitu o naších rozhodnutiach a schválenom vývoji."
+
+- id: foundation_fifth_section_first_title
+  translation: "Členovia rady"
+
+- id: foundation_fifth_section_first_paragraph
+  translation: "Súčasní členovia rady Ergo nadácie (zoradené podľa priezviska):"
+
+- id: foundation_fifth_section_first_li_item
+  translation: "Alex Chepurnoy"
+
+- id: foundation_fifth_section_second_li_item
+  translation: "Noah Hudson"
+
+- id: foundation_fifth_section_third_li_item
+  translation: "Justin Simpson"
+
+- id: foundation_fifth_section_fourth_li_item
+  translation: "Alexander Slesarenko"
+
+- id: foundation_fifth_section_fifth_li_item
+  translation: "Martin Spodymek"
+
+- id: foundation_fifth_section_sixth_li_item
+  translation: "Robert Kornacki"
+
+- id: foundation_fifth_section_seventh_li_item
+  translation: "Mohammad Hasan Samadani"
+
+- id: foundation_fifth_section_second_paragraph
+  translation: "Súčasní členovia rady Vývojového Fundu (zoradené podľa priezviska):"
+
+- id: foundation_fifth_section_second_list_first_li_item
+  translation: "Alex Chepurnoy"
+
+- id: foundation_fifth_section_second_list_second_li_item
+  translation: "Noah Hudson"
+
+- id: foundation_fifth_section_second_list_third_li_item
+  translation: "Justin Simpson"
+
+- id: foundation_fifth_section_second_list_fourth_li_item
+  translation: "Alexander Slesarenko"
+
+- id: foundation_fifth_section_second_list_fifth_li_item
+  translation: "Martin Spodymek"
+
+- id: foundation_fifth_section_second_list_sixth_li_item
+  translation: "Robert Kornacki"
+
+- id: foundation_sixth_section_first_title
+  translation: "Appendix: Ergo Basics"
+
+- id: foundation_sixth_section_first_paragraph
+  translation: "Kryptografická časť Ergoscriptu je založená na sigma protokoloch a prirodzene podporuje prahové m- z -n podpisy, prstencové podpisy a ďalšie. Berúc všetko toto do úvahy, očakávame, že dizajn Ergoscriptu a Erga bude jedinečne užitočný pre Kontraktuálne Peniazes nespočetným množstvom možných aplikácií. Ergo dAppy a mimoreťazcové (ang. offchain) protokoly môžu byť naozaj implementované decentralizovane vďaka ľahkým klientom."
+
+- id: foundation_sixth_section_second_paragraph
+  translation: "Pre zásadnejšie zmeny bude Ergo následovať princíp tzv. mäkkých zmien (ang. soft-forkability approach) --- pokiaľ drvivá väčšina siete prijme novú funkčnosť, bude daná funkčnosť uvedená do prevádzky a staré uzly, ktoré neaktualizujú systém budú normálne fungovať a jednoducho preskočia validáciu tejto funkcie. Preto potencionálne škodlivé aktualizácie založené na tzv. tvrdých zmenách (ang. hard forks) by nemali byť pre Ergo potrebné."
+
+- id: foundation_sixth_section_third_paragraph
+  translation: "Ťažba Erga bude vždy stabilná na rozdiel od Bitcoinu a iných PoW mien, kde sa ťažba po skončení emisií môže stať nestabilná. Po druhé, zväčšenie stavu je kontrolovateľné a predvídateľné, čo znižuje hardvárové požiadavky pre ťažiarov Erga. Po tretie, zbieraním poplatkov za ukladanie starých výstupov ťažiari vracajú do obehu stratené mince, a tak zabránia neustálemu poklesu mincí v obehu v dôsledku straty súkromných kľúčov. Pre dosiahnutie prežitiaschopnosti, Ergo poskytuje okrem technických vylepšení aj ekonomické inovácie, z ktorých najdôležitejšou je zložka poplatku za úložisko, ktorá hra dôležitú úlohu pri udržiavaní stability Ergo systému"
+
+- id: foundation_sixth_section_fourth_paragraph
+  translation: "
+            Všetky kryptomeny sa spoliehajú na príspevky vedecko-výskumnej komunity. Našťastie Ergo to prináša v jadre!
+            <a
+              class=\"eg-text__link eg-link\"
+              href=\"https://ergoplatform.org/en/documents/\"
+            ><span>https://ergoplatform.org/en/documents/</span></a>"
+
+- id: tag_title
+  translation: "Hľadať podľa tagu"
+
+- id: tag_blog
+  translation: "Späť ku blogu"
+
+# use_cases
+
+- id: use_cases_title
+  translation: Ergo Prípady Užitia
+
+- id: use_cases_first_paragraph
+  translation: Sigma protokoly a blockchain architektúra Erga umožňujú spustenie množstva prípadov užitia, ktoré by inak boli ťažké alebo nemožné na konvenčných blockchain platformách, ako aj tých, ktoré je možné implementovať na iných sieťach. Aj keď rozsah prípadov užitia je nekonečný, tu je niekoľko príkladov.
+
+- id: use_cases_second_title
+  translation: Digitálne zlato
+
+- id: use_cases_second_paragraph
+  translation: Rovnako ako Bitcoin, aj Ergo má digitálny nedostatok (ang. scarcity). Existuje iba obmedzené množstvo, ktoré môže byť vyťažené cez Proof of Work. V tomto ohľade je Ergo konzervatívny blockchain. Navrhujú sa však aj ďalšie funkcie, ktoré zebezpečia adekvátnu kompenzáciu ťažiarom po skončení blok odmien.
+
+- id: use_cases_third_title
+  translation: "Výkonné aplikácie na ochranu súkromia: ErgoMixer"
+
+- id: use_cases_third_paragraph
+  translation: "Projekt používa Ergo sigma protokoly aby umožnili efektívne, dôveryhodné zamiešanie finančných prostriedkov, čo umožní vysoký stupeň ochrany súkromia a zároveň zaistí, že nebude ohrozená bezpečnosť."
+
+- id: use_cases_fourth_title
+  translation: Bezpečné a jednoduché finančné kontrakty
+
+- id: use_cases_fourth_paragraph
+  translation: Ergo umožňuje nové modely finančnej interakcie založené na smart kontraktoch postavených na flexibilných a výkonných Sigma protokoloch pričom ostávajú ľahko prístupné vývojárom.
+
+- id: use_cases_fifth_title
+  translation: Alternatívne finančné systémy a produkty
+
+- id: use_cases_fifth_paragraph
+  translation: Potreba reformy globálneho finančného systému je zrejmá od poslednej krízy v roku 2008. Teraz nás COVID-19 donútil. Nemôžeme to zdržiavať a najlepší spôsob, ako začať je od ľudu. Ergo ponúka výkonné nástroje pre dosiahnutie tohto cieľa pomocou smart kontraktami poháňaných mikroúverov a Lokálneho Systému Vymieňacích Búrz (ang. Local Exchange Trading Systems - LETS).
+
+- id: use_cases_sixth_title
+  translation: "Experimentálna ekonomika"
+
+- id: use_cases_sixth_paragraph
+  translation: S nástupom nasledujúcej krízy je zrejmé, že konvenčná finančná politika je na hranici svojich možností. Smart kontrakt platformy ako Ergo umožňujú inovatívnejšie, cielenejšie implementácie ekonomickej stimulácie, ktoré konvenčný bankový sektor nedokáže a nemôže docieliť.
+
+- id: use_cases_seventh_title
+  translation: Peniaze na ťažké časy
+
+- id: use_cases_seventh_paragraph
+  translation: Vďaka vynikajúcej podpore ľahkých klientov avšak bez kompromisov v bezpečnosti, je Ergo ideálne vhodné na použitie v miestach s obmedzeným internetovým pripojením alebo tam, kde je problém s priepustnosťou a úložiskom. Vďaka podpore alternatívnych finančných systémov, ktoré sú bezpečne prístupné z akéhokoľvek zariadenia, je Ergo prirodzená voľba pre zlyhávajúce štáty a ekonomiky
+
+  # mining page
+
+- id: mining_calculator_title
+  translation: Ergo ťažiarenská kalkulačka
