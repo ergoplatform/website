@@ -7,8 +7,7 @@ blogPhoto: /img/uploads/cover.png
 tags:
   - Building Ergo
 ---
-![](<>)
-
+![](https://user-images.githubusercontent.com/26038055/122617266-38b02980-d08c-11eb-8cd7-a33d9984d002.png)
 
 ![Ergo Android Preview](https://lh6.googleusercontent.com/nlzznrKdBr0ISyq6R87oXSkBe7lHiYbky_4B5QPjAM6R1jhyV38pgvbN2tNGupNikpO9KrGsx3P4Uy5lQOq3LkUKshHr67bVH9S4qnoy8F7aeK4GT2aDTu3H5ltRe-XHlbxw5Po4)
 
