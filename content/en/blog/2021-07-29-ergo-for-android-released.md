@@ -7,9 +7,6 @@ blogPhoto: /img/uploads/cover.png
 tags:
   - Building Ergo
 ---
-![](https://user-images.githubusercontent.com/26038055/122617266-38b02980-d08c-11eb-8cd7-a33d9984d002.png)
-
-![Ergo Android Preview](https://lh6.googleusercontent.com/nlzznrKdBr0ISyq6R87oXSkBe7lHiYbky_4B5QPjAM6R1jhyV38pgvbN2tNGupNikpO9KrGsx3P4Uy5lQOq3LkUKshHr67bVH9S4qnoy8F7aeK4GT2aDTu3H5ltRe-XHlbxw5Po4)
 
 We’re pleased to announce the release of Ergo’s first mobile wallet! This app was built on top of [Ergo Appkit](https://github.com/aslesarenko/ergo-appkit) - Ergo’s official SDK - and has been [audited by the Ergo team](https://twitter.com/ergoplatformorg/status/1417039106576633857). If you still hesitate to add your secrets to it: you can also use it without giving your mnemonic. You won't be able to send funds then, but you can track your balance.
 
