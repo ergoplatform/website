@@ -1,9 +1,9 @@
 ---
-title: "Ergo’s AgeUSD Protocol:  SigRSV and SigUSD"
-date: 2021-07-30T11:57:19.153Z
+title: "Ergo’s AgeUSD Protocol: SigRSV and SigUSD"
+date: 2021-07-30T16:11:27.752Z
 author: root7Z
 authorPhoto: /img/uploads/rootz-the-storyteller-4root7z.png
-blogPhoto: /img/uploads/1762.png
+blogPhoto: /img/uploads/ageusdsigusd.jpg
 tags:
   - Building Ergo
 ---
