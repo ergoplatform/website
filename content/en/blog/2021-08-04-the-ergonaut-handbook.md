@@ -67,7 +67,7 @@ Alex Chepurnoy’s [latest update](https://ergoplatform.org/en/blog/2021-07-13-u
 
 Readers can also refer to the following infographic about Ergo Platform’s Roadmap.
 
-![](/img/uploads/screenshot_2021-05-09_at_22.41.04.png)
+![](/img/uploads/screenshot-2021-08-04-at-17.01.57.png)
 
 After the overwhelming success of our very first hackathon, [ErgoHack](https://ergoplatform.org/en/blog/2021-06-19-ergohack/), we are pleased to announce that plans are underway to organize a second one very soon. 
 
