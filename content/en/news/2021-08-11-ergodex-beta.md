@@ -1,6 +1,6 @@
 ---
 title: ErgoDEX Beta!
-date: 2021-08-11T19:47:44.371Z
+date: 2021-08-11T19:49:00.518Z
 subtitle: We’re please to announce that the ErgoDEX team have launched their
   first beta! (and the first eUTXO DEX!!) To access the ErgoDEX beta, you’ll
   need to follow the steps in this blog post and install Yoroi Nightly, the dApp
