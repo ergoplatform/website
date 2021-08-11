@@ -7,7 +7,7 @@ blogPhoto: /img/uploads/ergodex2.png
 tags:
   - Building Ergo
 ---
-After some initial delays integrating with the dApp connector we can now announce that the ErgoDEX Beta is live!
+ We're please to announce that the ErgoDEX team have launched their first beta!
 
 To access the beta, you’ll need to follow the steps below and install Yoroi Nightly, the dApp connector - and get your hands on some test tokens. 
 
@@ -24,7 +24,7 @@ Once these extensions are installed, create a new ERG wallet within the freshly 
 
 ### Tokens
 
-In order to test the tokens, there’s a faucet available at this address that provides *WT_ERG* and *WT_ADA*. Simply replace \`YOUR_ADDRESS\` with your ERG address in the following link.
+In order to test the tokens, there’s a faucet available at this address that provides *WT_ERG* and *WT_ADA*. Simply replace *YOUR_ADDRESS* with your ERG address in this link. 
 
 <https://gettoken.ergopool.io/dexToken/address/YOUR_ADDRESS>
 
@@ -34,7 +34,7 @@ Congratulations! You are now completely ready to start testing the beta interfac
 
 ### But wait… there’s more. 
 
-In order to give the initial system a good test, we’ve partnered with the esteemed Erdoge token which is tradeable on ErgoDEX under an ERDOGE/KUSHTI liquidity pair. These are Ergo native tokens (with no real value) and are available for free from members throughout the Ergo Community chats.
+In order to give the initial system a good test, we’ve partnered with the esteemed Erdoge token which is tradeable on ErgoDEX under an ERDOGE/KUSHTI liquidity pair. These are Ergo native tokens (with no real value) and are available for free from members throughout the Ergo Community chats. (That's if I don't get them first).
 
 ![ErgoDEX and ERDOGE best partnership logos](https://lh3.googleusercontent.com/PeWh8JR8_AMyX5o4twZmBMfKD10dfd710qbtuWfNChl1WxTU7m65FJedNvSyupDZQohuoKqa4Af5l_68xH0BN9TflH2hRvM5mpWmtH9a3rTo-7q-p-YNP8sgi9S_IU4HTsNEUi1n)
 
