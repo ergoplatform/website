@@ -7,7 +7,7 @@ blogPhoto: /img/uploads/ergodex2.png
 tags:
   - Building Ergo
 ---
- We're please to announce that the ErgoDEX team have launched their first beta!
+ We're pleased to announce that the ErgoDEX team have launched their first beta!
 
 To access the beta, you’ll need to follow the steps below and install Yoroi Nightly, the dApp connector - and get your hands on some test tokens. 
 
@@ -42,4 +42,4 @@ In order to give the initial system a good test, we’ve partnered with the este
 
 Once there has been some testing with the existing native tokens outlined above, the tokens from SigmaUSD (SigUSD/SigRSV) can be added -- freeing them from the constraints and limitations of their existing contract.
 
-Please open an issue on the ErgoDEX Team [Front-End Github page](https://github.com/ergolabs/ergo-dex-frontend) with any comments or suggestions!
+Please open an issue on the ErgoDEX [Front-End Github page](https://github.com/ergolabs/ergo-dex-frontend) with any comments or suggestions!
