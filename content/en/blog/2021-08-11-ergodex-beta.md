@@ -7,7 +7,7 @@ blogPhoto: /img/uploads/ergodex2.png
 tags:
   - Building Ergo
 ---
-After some initial delays integrating with the dApp connector we can now announce that the ErgoDEX Beta is live!
+After some initial delays integrating with the dApp connector we can now announce that the ErgoDEX team have launched their first beta!
 
 To access the beta, you’ll need to follow the steps below and install Yoroi Nightly, the dApp connector - and get your hands on some test tokens. 
 
@@ -24,7 +24,7 @@ Once these extensions are installed, create a new ERG wallet within the freshly 
 
 ### Tokens
 
-In order to test the tokens, there’s a faucet available at this address that provides *WT_ERG* and *WT_ADA*. Simply replace \`YOUR_ADDRESS\` with your ERG address in the following link.
+In order to test the tokens, there’s a faucet available at this address that provides *WT_ERG* and *WT_ADA*. Simply replace *YOUR_ADDRESS* with your ERG address in this link. 
 
 <https://gettoken.ergopool.io/dexToken/address/YOUR_ADDRESS>
 
