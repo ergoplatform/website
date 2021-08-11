@@ -30,7 +30,7 @@ In order to test the tokens, there’s a faucet available at this address that p
 
 This will provide 10k WT_ERG and 10k WT_ADA tokens (one request per address). These are test tokens and do not have any monetary value
 
-Congratulations! You are now completely ready to start testing the beta interface available at [dev.ergodex.io](https://dev.ergodex.io/)
+Congratulations! You are now completely ready to start testing the beta interface available at [beta.ergodex.io](https://beta.ergodex.io/)
 
 ### But wait… there’s more. 
 
