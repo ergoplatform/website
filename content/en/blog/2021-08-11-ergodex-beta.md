@@ -1,5 +1,5 @@
 ---
-title: ErgoDEX Beta
+title: ErgoDEX Beta - Everything you need to know
 date: 2021-08-11T17:44:22.363Z
 author: Glasgow
 authorPhoto: /img/uploads/2021-07-01-09.18.09.jpg
