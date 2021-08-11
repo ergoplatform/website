@@ -7,7 +7,7 @@ blogPhoto: /img/uploads/ergodex2.png
 tags:
   - Building Ergo
 ---
-After some initial delays integrating with the dApp connector we can now announce that the ErgoDEX team have launched their first beta!
+ We're please to announce that the ErgoDEX team have launched their first beta!
 
 To access the beta, you’ll need to follow the steps below and install Yoroi Nightly, the dApp connector - and get your hands on some test tokens. 
 
