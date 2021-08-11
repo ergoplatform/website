@@ -11,20 +11,20 @@ After some initial delays integrating with the dApp connector we can now announc
 
 To access the beta, you’ll need to follow the steps below and install Yoroi Nightly, the dApp connector - and get your hands on some test tokens. 
 
-The ErgoDEX Team has put function first for this initial beta. However there is a beautiful interface already designed which is being implemented - stay tuned!
+The ErgoDEX Team has put function first for this initial beta. However, there is a beautiful interface already designed which is being implemented - stay tuned!
 
 ### dApp Connector
 
 To interact with the ErgoDEX Beta UI you will need to install the following two extensions which are available on either Google Chrome, Brave or Sidekick. The Chrome versions can be found below;
 
 * [Yoroi Nightly](https://chrome.google.com/webstore/detail/yoroi-nightly/poonlenmfdfbjfeeballhiibknlknepo) - Yoroi wallet’s test environment
-* [Yoroi-Ergo dApp Connector Nightly](https://chrome.google.com/webstore/detail/yoroi-ergo-dapp-connector/chifollcalpmjdiokipacefnpmbgjnle) - Enables the ErgoDEX UI connect to your wallet
+* [Yoroi-Ergo dApp Connector Nightly](https://chrome.google.com/webstore/detail/yoroi-ergo-dapp-connector/chifollcalpmjdiokipacefnpmbgjnle) - Enables the ErgoDEX UI to connect to your wallet
 
 Once these extensions are installed, create a new ERG wallet within the freshly installed Yoroi Nightly extension and send a small amount of ERG (~1) to cover protocol fees from your current wallet. 
 
 ### Tokens
 
-In order to test the tokens there’s a faucet available at this address which provides WT_ERG and WT_ADA. Simply replace \`YOUR_ADDRESS\` with your ERG address in the following link.
+In order to test the tokens, there’s a faucet available at this address that provides *WT_ERG* and *WT_ADA*. Simply replace \`YOUR_ADDRESS\` with your ERG address in the following link.
 
 <https://gettoken.ergopool.io/dexToken/address/YOUR_ADDRESS>
 
@@ -34,13 +34,9 @@ Congratulations! You are now completely ready to start testing the beta interfac
 
 ### But wait… there’s more. 
 
-In order to give the initial system a good test, we’ve partnered with the esteemed Erdoge token which is tradeable on ErgoDEX under a ERDOGE/KUSHTI liquidity pair. These are native tokens and available for free from members throughout the Ergo Community. Happy hunting!
-
-
+In order to give the initial system a good test, we’ve partnered with the esteemed Erdoge token which is tradeable on ErgoDEX under an ERDOGE/KUSHTI liquidity pair. These are Ergo native tokens (with no real value) and are available for free from members throughout the Ergo Community. Happy hunting!
 
 ![](https://lh3.googleusercontent.com/PeWh8JR8_AMyX5o4twZmBMfKD10dfd710qbtuWfNChl1WxTU7m65FJedNvSyupDZQohuoKqa4Af5l_68xH0BN9TflH2hRvM5mpWmtH9a3rTo-7q-p-YNP8sgi9S_IU4HTsNEUi1n)
-
-
 
 ### Next Steps
 
