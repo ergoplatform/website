@@ -28,15 +28,15 @@ In order to test the tokens, there’s a faucet available at this address that p
 
 <https://gettoken.ergopool.io/dexToken/address/YOUR_ADDRESS>
 
-[This will provide o](https://gettoken.ergopool.io/dexToken/address/YOUR_ADDRESS)n each request, 10k WT_ERG and 10k WT_ADA tokens (one request per address). WT_ERG and WT_ADA are test tokens and do not have any monetary value
+This will provide 10k WT_ERG and 10k WT_ADA tokens (one request per address). These are test tokens and do not have any monetary value
 
 Congratulations! You are now completely ready to start testing the beta interface available at [dev.ergodex.io](https://dev.ergodex.io/)
 
 ### But wait… there’s more. 
 
-In order to give the initial system a good test, we’ve partnered with the esteemed Erdoge token which is tradeable on ErgoDEX under an ERDOGE/KUSHTI liquidity pair. These are Ergo native tokens (with no real value) and are available for free from members throughout the Ergo Community. Happy hunting!
+In order to give the initial system a good test, we’ve partnered with the esteemed Erdoge token which is tradeable on ErgoDEX under an ERDOGE/KUSHTI liquidity pair. These are Ergo native tokens (with no real value) and are available for free from members throughout the Ergo Community chats.
 
-![](https://lh3.googleusercontent.com/PeWh8JR8_AMyX5o4twZmBMfKD10dfd710qbtuWfNChl1WxTU7m65FJedNvSyupDZQohuoKqa4Af5l_68xH0BN9TflH2hRvM5mpWmtH9a3rTo-7q-p-YNP8sgi9S_IU4HTsNEUi1n)
+![ErgoDEX and ERDOGE best partnership logos](https://lh3.googleusercontent.com/PeWh8JR8_AMyX5o4twZmBMfKD10dfd710qbtuWfNChl1WxTU7m65FJedNvSyupDZQohuoKqa4Af5l_68xH0BN9TflH2hRvM5mpWmtH9a3rTo-7q-p-YNP8sgi9S_IU4HTsNEUi1n)
 
 ### Next Steps
 
