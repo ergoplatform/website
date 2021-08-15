@@ -1,5 +1,5 @@
 ---
-title: Interview With ErgoDEX Developer
+title: An Interview With ErgoDEX Developer
 date: 2021-08-15T14:51:40.536Z
 subtitle: What is Ergo's uniqueness? What is UTXO based financial contracts? Who
   is the team behind Ergo? What is the relation with Cardano? What is ErgoDEX,
