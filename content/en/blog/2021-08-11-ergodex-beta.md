@@ -26,7 +26,7 @@ Once these extensions are installed, create a new ERG wallet within the freshly 
 
 In order to test the tokens, there’s a faucet available at this address that provides *WT_ERG* and *WT_ADA*. Simply replace *YOUR_ADDRESS* with your ERG address in this link. 
 
-[mint.ergodex.io](mint.ergodex.io)
+[mint.ergodex.io](https://mint.ergodex.io)
 
 This will provide 10k WT_ERG and 10k WT_ADA tokens (one request per address). These are test tokens and do not have any monetary value
 
