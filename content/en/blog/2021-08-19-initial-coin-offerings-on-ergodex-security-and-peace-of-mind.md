@@ -1,7 +1,7 @@
 ---
 title: "Initial Coin Offerings on ErgoDEX: Security and Peace of Mind "
 date: 2021-08-19T16:02:36.692Z
-author: root7Z
+author: Ergo Foundation
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/ico-on-ergodex.jpg
 tags:
