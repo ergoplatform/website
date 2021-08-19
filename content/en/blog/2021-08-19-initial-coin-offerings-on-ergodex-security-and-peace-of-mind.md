@@ -45,7 +45,7 @@ It should be kept in mind that although ErgoDEX is designed as a fail-proof exch
 
 In addition to the aforementioned DEX properties, ErgoDEX can provide “time released orders” where investors funds are released gradually while funding a project. There is also the option to provide a “buy-back order” which creates the ability to refund investors. These features offer a layer of security and oversight by potentially prohibiting developers from receiving the investments in the event they do deliver on the promised project. If the project is not proceeding as advertised, investors can withdraw their remaining funds and exit with minimal loss. 
 
-With Ergo, we are creating an equal playing field for all users while building safeguards to prevent malicious actors.
+With Ergo, we are trying to create an equal playing field for all users while building safeguards to prevent malicious actors.
 
 ### ErgoDEX is coming soon!
 
