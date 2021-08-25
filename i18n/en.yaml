@@ -1064,47 +1064,32 @@
 - id: foundation_fifth_section_first_paragraph
   translation: "Current Ergo Foundation Board Members (sorted by last name):"
 
-- id: foundation_fifth_section_first_li_item
-  translation: "Alex Chepurnoy"
-
-- id: foundation_fifth_section_second_li_item
-  translation: "Noah Hudson"
-
-- id: foundation_fifth_section_third_li_item
-  translation: "Justin Simpson"
-
-- id: foundation_fifth_section_fourth_li_item
-  translation: "Alexander Slesarenko"
-
-- id: foundation_fifth_section_fifth_li_item
-  translation: "Martin Spodymek"
-
-- id: foundation_fifth_section_sixth_li_item
-  translation: "Robert Kornacki"
-
-- id: foundation_fifth_section_seventh_li_item
-  translation: "Mohammad Hasan Samadani"
-
 - id: foundation_fifth_section_second_paragraph
   translation: "Current Development Fund Board Members (sorted by last name):"
 
-- id: foundation_fifth_section_second_list_first_li_item
-  translation: "Alex Chepurnoy"
+- id: foundation_armeanio
+  translation: Joseph Armeanio
 
-- id: foundation_fifth_section_second_list_second_li_item
-  translation: "Noah Hudson"
+- id: foundation_chepurnoy
+  translation: Alex Chepurnoy
 
-- id: foundation_fifth_section_second_list_third_li_item
-  translation: "Justin Simpson"
+- id: foundation_hudson
+  translation: Noah Hudson
 
-- id: foundation_fifth_section_second_list_fourth_li_item
-  translation: "Alexander Slesarenko"
+- id: foundation_kornacki
+  translation: Robert Kornacki
 
-- id: foundation_fifth_section_second_list_fifth_li_item
-  translation: "Martin Spodymek"
+- id: foundation_simpson
+  translation: Justin Simpson
 
-- id: foundation_fifth_section_second_list_sixth_li_item
-  translation: "Robert Kornacki"
+- id: foundation_samadani
+  translation: Mohammad Hasan Samadani
+
+- id: foundation_slesarenko
+  translation: Alexander Slesarenko
+
+- id: foundation_spodymek
+  translation: Martin Spodymek
 
 - id: foundation_sixth_section_first_title
   translation: "Appendix: Ergo Basics"
