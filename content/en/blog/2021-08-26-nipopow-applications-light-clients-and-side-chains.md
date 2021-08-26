@@ -1,6 +1,6 @@
 ---
 title: "NIPoPoW Applications: Light Clients and Side Chains"
-date: 2021-08-26T17:57:33.134Z
+date: 2021-08-26T19:29:21.989Z
 author: root7Z
 authorPhoto: /img/uploads/rootz-the-storyteller-4root7z.png
 blogPhoto: /img/uploads/nipopows.jpg
