@@ -1,6 +1,6 @@
 ---
 title: ErgoHack II
-date: 2021-09-07T11:59:47.911Z
+date: 2021-09-07T12:06:08.297Z
 author: Ergo Foundation
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/ergohack2.jpg
