@@ -40,7 +40,7 @@ People who join the hack will be able to take lessons and receive guidance from 
 
 \-Create bridges for interoperability and explore the full functionality of NIPoPoWs
 
-\-Hirie new members and grow the Ergo Developer Team
+\-Hire new members and grow the Ergo Developer Team
 
 We are anticipating an influx of developers who are interested in coding with us to promote the growth and development of the  Ergo ecosystem. We also have [bounties](https://github.com/ergoplatform/grow-ergo/issues) for those who are willing to prepare Ergo Coding tutorials.
 
