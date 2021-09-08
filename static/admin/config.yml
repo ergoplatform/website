@@ -89,3 +89,14 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Link', name: 'link', widget: 'string' }
       - { label: 'Logotype', name: 'logo', widget: 'image' }
+  - name: 'careers'
+    label: 'New job'
+    folder: 'content/en/careers'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Careers Title', hint: 'Job title at the careers page', name: 'title', widget: 'string' }
+      - { label: 'Job Title', name: 'subtitle', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }

@@ -2,7 +2,7 @@
 title: Multi-Stage Contracts
 date: 2021-04-16T18:59:23.428Z
 author: root7Z
-authorPhoto: /img/uploads/root7z.jpeg
+authorPhoto: /img/uploads/rootz-the-storyteller-4root7z.png
 blogPhoto: /img/uploads/mask-group.png
 tags:
   - Building Ergo

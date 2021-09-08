@@ -248,16 +248,16 @@
 
     &--26 {
       font-size: 26px;
-      line-height: 30px;
+      line-height: 36px;
 
       @media (max-width: $md) {
         font-size: 24px;
-        line-height: 28px;
+        line-height: 32px;
       }
 
       @media (max-width: $sm) {
         font-size: 22px;
-        line-height: 26px;
+        line-height: 28px;
       }
     }
 

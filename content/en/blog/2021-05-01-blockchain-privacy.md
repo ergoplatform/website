@@ -2,7 +2,7 @@
 title: Blockchain Privacy
 date: 2021-05-01T11:42:10.975Z
 author: root7Z
-authorPhoto: /img/uploads/root7z.jpeg
+authorPhoto: /img/uploads/rootz-the-storyteller-4root7z.png
 blogPhoto: /img/uploads/privacy-1.jpg
 tags:
   - Building Ergo
