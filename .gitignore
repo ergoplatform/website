@@ -6,6 +6,7 @@ dist
 /static/js
 /resources/
 /public/
+.vscode
 
 
 
