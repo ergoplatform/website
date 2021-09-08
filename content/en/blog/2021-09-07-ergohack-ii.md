@@ -10,7 +10,7 @@ tags:
 ---
 <!--StartFragment-->
 
-The first ERGOHACK three months ago was such a success that we have decided to host another, ERGOHACK II, from October 8-10, 2021. Interested applicants can head over to our official hackathon page ([ergohack.io](ergohack.io)) for all of the relevant information and application details. 
+The first ERGOHACK three months ago was such a success that we have decided to host another, ERGOHACK II, from October 8-10, 2021. Interested applicants can head over to our official hackathon page ([ergohack.io](https://ergohack.io)) for all of the relevant information and application details. 
 
 # What is ErgoHack?
 
@@ -22,7 +22,7 @@ A hackathon is a competition where teams of different specialists (from develope
 2. At the hackathon, you can network, discuss your ideas, and communicate with our mentors. You will also receive access to ERGO workshops.
 3. Pitch your prototype as a Demo (to get to the Demo phase, you need to pass all 3 checkpoints of review) and win prizes, because you are awesome!
 
-We had our first hackathon back in early June and there were 6 teams participating in the event. You can check out the highlights from the last hackathon [here](https://curiaregiscrypto.medium.com/ergohack-results-f7d72711a9db). 
+We had our first hackathon back in early June and there were 6 teams participating in the event. You can check out the highlights from the last hackathon here. 
 
 # ErgoHack II
 
