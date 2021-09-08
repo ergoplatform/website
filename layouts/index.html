@@ -224,7 +224,7 @@
             <h2 class="eg-title eg-title--black eg-mb-1">{{ T "news_title"}}</h2>
             <div class="news-section__items">
               {{ $langNews := where .Site.RegularPages "Section" "news" }}
-              {{ with $langNews }}
+              {{ if  $langNews }}
                 {{ range first 3 $langNews }}
                   <div class="news-section__item">
                     <h3
@@ -249,7 +249,7 @@
               {{ else }}
                 {{ range .Site.Home.AllTranslations }}
                   {{ if eq .Language.Lang .Site.Params.defaultLanguage }}
-                    {{ $defaultLangPages := where .Sites.First.Pages "Section" "news" }}
+                    {{ $defaultLangPages := where (index .Site.Home.AllTranslations 0).Site.Pages "Section" "news" }}
                     {{ range first 3 $defaultLangPages }}
                       <div class="news-section__item">
                         <h3 class="news-section__item-title">{{ .Date.Format "2 January, 2006" }}</h3>
@@ -328,7 +328,7 @@
             {{ else }}
               {{ range .Site.Home.AllTranslations }}
                 {{ if eq .Language.Lang .Site.Params.defaultLanguage }}
-                  {{ $defaultBlogPages := where .Pages "Section" "blog" }}
+                  {{ $defaultBlogPages := where (index .Site.Home.AllTranslations 0).Site.Pages "Section" "blog" }}
                   {{ range first 2 $defaultBlogPages }}
                     <div class="blog-section__item">
                       <h3 class="blog-section__item-title">{{ .Title }}</h3>

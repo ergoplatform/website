@@ -1,0 +1,1169 @@
+#landing
+- id: menu_top_individuals
+  translation: "Interessierte"
+
+- id: menu_top_developers
+  translation: "Entwickler"
+
+- id: menu_top_community
+  translation: "Community"
+
+- id: header_resilient_platform
+  translation: "Sag Hallo zu
+  <span class=\"header-section__title--red\">Smart Money</span>"
+
+- id: header_slogan
+  translation: "Ergo entwickelt fortschrittliche kryptografische Features und brandneue DeFi-Funktionalität auf den felsenfesten Fundamenten eines Jahrzehnts der Blockchain-Entwicklung."
+
+- id: header_slider
+  translation: "Smart Money ist: "
+
+- id: header_slider_conservative
+  translation: "<span class=\"eg-text--color-red\">Konservativ.</span> Weil es keine unnötigen Risiken eingeht."
+
+- id: header_slider_ambitious
+  translation: "<span class=\"eg-text--color-red\">Ehrgeizg.</span> Weil es keine Angst vor neuen Ideen hat."
+
+- id: header_slider_lightweight
+  translation: "<span class=\"eg-text--color-red\">Leichtgewichtig.</span> Weil es nicht exklusiv ist."
+
+- id: header_slider_versatile
+  translation: "<span class=\"eg-text--color-red\">Vielseitig.</span> Weil es sich nicht einschränkt."
+
+- id: getting_started
+  translation: Erste Schritte mit Ergo
+
+- id: ergo_vision
+  translation: Forschungsorientiert aber praxisnah
+
+- id: ergo_decentralization
+  translation: Leistungsstark aber sicher
+
+- id: ergo_economy
+  translation: Intelligent aber unkompliziert
+
+- id: ergo_contractual
+  translation: Sicher aber zugänglich
+
+- id: ergo_survivability
+  translation: Deflatorisch aber wirtschaftlich nachhaltig
+
+- id: ergo_clients
+  translation: PoW-Mining aber but protokollfinanziert
+
+- id: ergo_consensus
+  translation: Konsensgeführt aber leicht anpassbar
+
+- id: ergo_agile
+  translation: Communitygesteuert aber agil
+ 
+- id: ergo_vision_text
+  translation: "Blockchain ist ein sich schnell entwickelndes Feld, das viele aufregende Entwicklungen bietet, wobei jeden Tag neue Anwendungen und Use Cases auftauchen. Allerdings geht diese Innovation oft mit einem \"move fast and break things\"-Ansatz bei der Softwareentwicklung einher, der sich nicht eignet, wenn es um Millionen oder sogar Milliarden von Dollar an finanziellen Werten der Nutzer*innen geht.
+    <br/><br/>
+    Ergo stützt sich auf zehn Jahre Blockchain-Entwicklung und ergänzt bewährte Prinzipien mit der besten von Experten begutachteten akademischen Forschung zu Kryptografie, Konsensmodellen und digitalen Währungen. Wir bauen auf soliden Grundlagen auf und implementieren neue und leistungsstarke Kryptografie nativ in der Ergo-Blockchain. Unser Team hat einen umfassenden Hintergrund in der Entwicklung mit Kryptowährungen und Blockchain-Frameworks wie Nxt, Scorex und Waves. Unser schlanker Ansatz bedeutet, dass wir neue Features und Anforderungen schnell priorisieren können
+    <br/><br/>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/documents/\"><span>Erfahre mehr über unsere Schwerpunkte und Forschungsgrundlagen</span></a>
+  "
+
+- id: ergo_decentralization_text
+  translation: "Durch unsere verschiedenen Erfahrungen bei der Arbeit mit Blockchains haben wir gelernt, dass übliche Turing-komplette Smart Contracts zwar leistungsstark, aber auch riskant sein können. Die Implementierung komplexer Berechnungsaufgaben auf der Blockchain kann unbeabsichtigte Folgen haben. Netzwerkzustand, Bugs und Code-Exploits können dazu führen, dass sich die Kosten für die Ausführung von Software nicht abschätzen lassen - oder ob der Code überhaupt wie beabsichtigt ausgeführt werden kann. Das kann zu Sicherheitslücken und fehlerhaften dApps führen.
+    <br/><br/>
+    Die Smart Contracts von Ergo erlauben es, vielfältige Aufgaben auszuführen und dabei immer zu wissen, wie viel die Ausführung kosten wird und ob der Code erfolgreich laufen wird. Trotzdem können weiterhin Turing-komplette Skripte geschrieben werden, indem Prozesse über mehrere Blöcke hinweg wiederholt werden. Das bedeutet, dass Ergo vielseitige dApps unterstützen kann, die vorhersehbar und mit bekannten Kosten ablaufen und keine der Gefahren von uneingeschränkter Funktionalität aufweisen.
+    <br/><br/>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/software/\"><span>ErgoScript - Tutorials und Integrationstools</span></a>
+  "
+
+- id: ergo_economy_text
+  translation: "
+    Sigma-Protokolle sind die Grundlage für die Smart Contracts von Ergo. Sie lassen eine Reihe effizienter Zero-Knowledge-Protokolle zu, die es uns ermöglichen, Aufgaben zu implementieren, die sonst entweder unmöglich oder aber riskant und teuer wären.
+    <br/><br/>
+    Mit den Sigma-Protokollen können wir zum Beispiel Ring- und Schwellenwertsignaturen ohne weiteres implementieren. Nehmen wir an, Sie möchten einen \"Ring-Spending-Contract\" erstellen, bei dem jeder von uns eine Transaktion von derselben Adresse aus durchführen kann, aber wir wollen nicht, dass jemand anderes weiß, wer von uns das Geld ausgibt. Das ist mit Bitcoin nicht möglich. Und obwohl es mit Ethereum möglich ist, wäre es teuer und kompliziert - besonders bei einer Ringgröße von 10 oder 20 Mitgliedern, die für eine robuste Privatsphäre erforderlich wäre..
+    <br/><br/>
+    Mit Ergo kann diese Art von Anwendung dank der Core-Integration von Sigma-Protokollen leicht erstellt werden. Dies ermöglicht eine selbstverwaltete Privatsphäre auf Anwendungsebene: vertrauenswürdige Skripte, die für den Zugriff auf Mixer oder andere Funktionen verwendet werden können, ohne dass überhaupt Dritte erforderlich sind.
+  "
+
+- id: ergo_contractual_text
+  translation: "
+    Jedes Skript wird auf eine noch nicht getätigte Auszahlung angewendet. Dieses Features ist vom Bitcoin-Protokoll inspiriert, das ebenfalls UTXOs bzw. das \"Coin\"-Modell verwendet, anstelle eines \"Account\"-Modells wie bei Ethereum. Wir halten dies für einen sichereren Ansatz, da Boxen unveränderlich und zudem flexibler sind.
+    <br/><br/>
+    Die Blockchain von Ergo verwendet den Autolykos-Algorithmus für die Konsensbildung, der eine Variante von Equihash ist und eine bessere ASIC-Resistenz sowie einen gewissen Grad an Pool-Resistenz bietet. Dies ermöglicht eine bessere Dezentralisierung und vermeidet große Pools, die sich absprechen oder gezwungen werden können, das Netzwerk anzugreifen. Gleichzeitig ist uns bewusst, dass normale Nutzer*innen, die keinen Full-Node betreiben, die gleichen Sicherheitsvorteile genießen sollten wie Miner*innen. Ergos Non-interactive Proof-of-Proof-of-Work (NiPoPoW) erlaubt es allen, Transaktionen mit vollem Vertrauen durchzuführen und zu verifizieren, ohne den Speicherplatz, die Bandbreite und die Zeit zu benötigen, die für den Download der kompletten Blockchain notwendig sind. Tatsächlich wird nur 1 MB an Speicherplatz benötigt - dies bedeutet, dass jedes beliebige Endgerät verwendet werden kann.
+    <br/><br/>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/wallets\"><span>Wähle dein Wallet</span></a>
+  "
+
+- id: ergo_survivability_text
+  translation: "
+    Wie viele andere Features von Ergo, basiert das Wirtschaftsmodell des Netzwerks auf dem Ansatz von Bitcoin. Wir glauben, dass digitale Knappheiten wichtig sind, um den Wert zu stützen, und haben den Coin-Vorrat auf unter 100 Millionen ERG limitiert. Anders als bei Bitcoin nehmen die Block Rewards nach den ersten zwei Jahren stetig ab, es gibt keinen Long Tail der Ausschüttung. Die Block Rewards beginnen bei 75 ERG und werden über einen Zeitraum von acht Jahren auf Null fallen, danach wird der Coin-Vorrat fixiert sein.
+    <br/><br/>
+    Dann werden die Miner*innen zusätzlich zu den Transaktionsgebühren auch von den Lagermietgebühren profitieren, die für Boxen (UTXOs) erhoben werden, die ihre Coins vier Jahre lang oder länger nicht bewegt haben. Es gibt mindestens zwei Vorteile für diesen Ansatz. Erstens bietet es den Miner*innen eine zusätzliche Einnahmequelle, sobald die Block Rewards auslaufen. Da die Sicherheit des Netzwerks von der Hash-Rate und der Beteiligung der Miner*innen abhängt, ist dies ein wichtiger Anreiz, der geboten wird. Zweitens hat es den Effekt, dass verlorene Coins (und Dust) wieder in die Ergo-Wirtschaft zurückgeführt werden. Untersuchungen legen nahe, dass bis zu 4 Millionen BTC aufgrund verlorener privater Keys dauerhaft aus dem Verkehr gezogen worden sind. Die Lagerungsgebühren von Ergo werden diese langsam für produktive Zwecke zurückgewinnen, während Nutzer*innen, die Coins langfristig halten wollen, die Gebühren vermeiden können, indem sie ihre Mittel einfach transferieren.
+    <br/><br/>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/exchanges/\"><span>Unterstützte Exchanges</span></a>
+  "
+
+- id: ergo_clients_text
+  translation: "
+    Wenn ein großer Teil der Tokens in einem ICO im Voraus gemined oder reserviert wird, wird es schwer, ein Gleichgewicht zwischen der Sicherstellung der Projektfinanzierung und der potenziellen Benachteiligung späterer Nutzer*innen zu erreichen. Wir haben uns für eine Strategie entschieden, die sich bei anderen Kryptowährungen als erfolgreich erwiesen hat, wobei ein Prozentsatz der Token aus jedem Block Reward für Entwicklung und Marketing bereitgestellt wird.
+    <br/><br/>
+    Im Fall von Ergo werden diese Foundation-Token durch einen in das Protokoll eingebauten Smart Contract verwaltet. 10% jedes Block Rewards für die ersten zwei Jahre, oder 7,5 ERG pro Block, werden der Treasury zugewiesen, während die restlichen 67,5 ERG an die Miner*innen gehen. Wenn die Block-Rewards nach zwei Jahren zu sinken beginnen, erhält die Foundation weiterhin nur die Rewards über 67,5 ERG, wodurch die Verteilung an die Treasury nach 2,5 Jahren auf Null sinkt.
+    <br/><br/>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/foundation/\"><span>Mehr Informationen zur Ergo-Foundation</span></a>
+  "
+
+- id: ergo_consensus_text
+  translation: "
+    Ergo wird von einem Team aus erfahrenen Entwickler*innen und Forscher*innen entworfen und implementiert, die Publikationen und Doktortitel in Kryptographie, Compiler-Theorie, Blockchain-Technologie und kryptographischem E-Cash besitzen. Das Team hat auch einen robusten Hintergrund in der Core-Entwicklung mit solchen Kryptowährungen und Blockchain-Frameworks wie Nxt, Scorex und Waves.
+    <br/><br/>
+    Wir werden auch von Entwickler*innen aus der Community unterstützt, die entweder auf freiwilliger Basis arbeiten oder von der Foundation Zuschüsse für die Implementierung nützlicher Funktionen und dApps erhalten. So wurde z. B. ErgoMix, ein dezentraler Mixer-Dienst, der auf Sigma-Protokollen basiert, von einem Drittentwickler aus der Ergo-Community gebaut, und auch der dezentrale Exchange (DEX) von Ergo wird auf dieser Basis entwickelt.
+    <br/><br/>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/hall_of_fame/\"><span>Lerne das Ergo-Team kennen</span></a>
+  "
+
+- id: ergo_agile_text
+  translation: "Ergo wird von einem Team aus erfahrenen Entwickler*innen und Forscher*innen entworfen und implementiert, die Publikationen und Doktortitel in Kryptographie, Compiler-Theorie, Blockchain-Technologie und kryptographischem E-Cash besitzen. Das Team hat auch einen robusten Hintergrund in der Core-Entwicklung mit solchen Kryptowährungen und Blockchain-Frameworks wie Nxt, Scorex und Waves. "
+
+- id: news_title
+  translation: News
+
+- id: blog_section
+  translation: Blog
+
+- id: services_title
+  translation: Ergo Dienste
+
+- id: service_wallets_title
+  translation: Wallets
+
+- id: service_wallets_paragraph
+  translation: Zu den Ergo Wallets. Wähle ein Wallet und starte mit Ergo!
+
+- id: service_exchanges_title
+  translation: Exchanges
+
+- id: service_exchanges_paragraph
+  translation: Verschaffe dir einen Überblick über die verfügbaren Exchanges, besorge dir einen Account und kaufe und verkaufe ERG.
+
+- id: service_explorer_title
+  translation: Block Explorer
+
+- id: service_explorer_paragraph
+  translation: Beobachte die letzten Blocks und Transaktionen im Ergo-Netzwerk.
+
+- id: service_dev_tools_title
+  translation: Entwicklertools
+
+- id: service_dev_tools_paragraph
+  translation: Sieh dir die Entwicklerwerkzeuge an und implementiere deinen ersten Ergo Smart Contract!
+
+- id: service_software_title
+  translation: Software
+
+- id: service_software_paragraph
+  translation: Lade dir die für dein Betriebssystem erforderliche Software herunter und werde noch heute Teil des Ergo-Netzwerks!
+
+- id: service_wiki_title
+  translation: Wiki
+
+- id: service_wiki_paragraph
+  translation: Erfahre mehr über Ergo im Wiki.
+
+- id: documents_title
+  translation: Dokumente
+
+- id: documents_ergo_platform
+  translation: Whitepaper I
+
+- id: documents_ergo_platform_link
+  translation: /docs/whitepaper.pdf
+
+- id: documents_ergo_platform_text
+  translation: "Ergo: The Resilient Platform For Contractual Money"
+
+- id: documents_ergoscript
+  translation: Whitepaper II
+
+- id: documents_ergoscript_text
+  translation: ErgoScript, a Cryptocurrency Scripting Language Supporting Noninteractive Zero-Knowledge Proofs
+
+- id: documents_ergo_tech
+  translation: Yellowpaper (kommt noch)
+
+- id: documents_ergo_tech_text
+  translation: Ergo Technische Dokumentation
+
+- id: documents_ergo_teaser
+  translation: Teaser
+
+- id: documents_ergo_teaser_text
+  translation: The Ergo Platform Project Overview
+
+- id: documents_ergo_teaser_link
+  translation: https://ergoplatform.org/docs/teaser.pdf
+
+- id: documents_ergo_script_adv
+  translation: Whitepaper III
+
+- id: documents_ergo_script_adv_text
+  translation: Advanced ErgoScript Tutorial
+
+- id: development_history_title
+  translation: Entwicklungsgeschichte
+
+- id: read_more
+  translation: Mehr erfahren
+
+- id: community_title
+  translation: Ergo Platform Community
+
+- id: community_paragraph
+  translation: Ergo ist ein offenes Protokoll, das zeitgemäße wissenschaftliche Ideen im Blockchain-Bereich umsetzt. Ergo praktiziert ein offenes Contributor-Modell, bei dem jede*r willkommen ist, einen Beitrag zu leisten.
+
+- id: community_link
+  translation: Mach mit bei der Ergo Platform
+
+#slider development history
+
+- id: development_history_2019_first_date
+  translation: 14. März
+
+- id: development_history_2019_first_date_text
+  translation: Testnet 2.0 startet voll funktionsfähig
+
+- id: development_history_2019_second_date
+  translation: 1. Juli
+
+- id: development_history_2019_second_date_text
+  translation: Ergo Mainnet startet
+
+- id: development_history_2018_first_date
+  translation: 1. Juni
+
+- id: development_history_2018_first_date_text
+  translation: Testnet 1.0 mit Unterstützung für Smart Contracts
+
+- id: development_history_2018_second_date
+  translation: 26. Juni
+
+- id: development_history_2018_second_date_text
+  translation: Formaler Beweis der Turing-Vollständigkeit von ErgoScript
+
+- id: development_history_2018_third_date
+  translation: 6. Dezember
+
+- id: development_history_2018_third_date_text
+  translation: Testnet 1.8 mit neuem Proof-of-Work startet
+
+- id: development_history_2017_first_date
+  translation: 13. Juni
+
+- id: development_history_2017_first_date_text
+  translation: Implementierung von Ergo beginnt
+
+- id: development_history_2017_second_date
+  translation: 28. Juli
+
+- id: development_history_2017_second_date_text
+  translation: Forschung zur Anpassung der Mining-Difficulty abgeschlossen
+
+- id: development_history_2017_third_date
+  translation: 5. Dezember
+
+- id: development_history_2017_third_date_text
+  translation: Testnet 0 Release
+
+- id: development_history_2016_first_date
+  translation: 12. März
+
+- id: development_history_2016_first_date_text
+  translation: Scorex-Lagonaki Testnet Release
+
+- id: development_history_2016_second_date
+  translation: 4. April
+
+- id: development_history_2016_second_date_text
+  translation: Waves startet auf Basis von Scorex
+
+- id: development_history_2016_third_date
+  translation: 14. Oktober
+
+- id: development_history_2016_third_date_text
+  translation: Forschung zu Authenticated Dynamic Dictionaries abgeschlossen
+
+- id: development_history_2015_first_date
+  translation: 23. Januar
+
+- id: development_history_2015_first_date_text
+  translation: Implementierung des Scorex-Frameworks beginnt
+
+- id: development_history_2015_second_date
+  translation: 7. November
+
+- id: development_history_2015_second_date_text
+  translation: Start der Zusammenarbeit mit IOHK Research
+
+- id: development_history_2015_third_date
+  translation: 17. November
+
+- id: development_history_2015_third_date_text
+  translation: Scorex-Team gewinnt Moskau Blockchain Hackathon
+
+#footer
+- id: privacy_policy_link
+  translation: Datenschutz (EN)
+
+- id: legal_link
+  translation: Rechtliches (EN)
+
+- id: insights_label
+  translation: Erhalte Neuigkeiten über Ergo
+
+- id: insights_input
+  translation: E-Mail
+
+- id: social_media
+  translation: Social Media
+
+- id: ergo_platform
+  translation: Ergo Platform
+
+#about
+
+- id: about_title
+  translation: Verwendung von Ergo
+
+- id: about_first_title
+  translation: Informiere Dich
+
+- id: about_first_paragraph
+  translation: Ergo ist anders als andere Plattformen, die Du täglich nutzt. Beginne mit den Grundlagen und lerne die Basics von Ergo kennen - was es ist, wie es genutzt werden kann und wie es sich von anderen Blockchains unterscheidet.
+
+- id: about_second_title
+  translation: Wähle dein Wallet
+
+- id: about_second_paragraph
+  translation: Du brauchst nicht zwingend ein Wallet für Dein Ergo, aber es bietet Dir zusätzliche Sicherheit und Kontrolle. Nimm dir ein paar Minuten Zeit und wähle das für Deine Bedürfnisse am besten geeignete Wallet aus.
+
+- id: about_third_title
+  translation: Besorge dir Ergo
+
+- id: about_third_paragraph
+  translation: Ergo kann mit ganz normaler Hardware gemined werden. Für die meisten Nutzer*innen ist es aber wahrscheinlich schneller und einfacher, einen Exchange für den Erwerb zu nutzen. Wir bringen Dich auf die richtiger Spur.
+  
+- id: about_fourth_title
+  translation: Schreibe einen Contract
+
+- id: about_fourth_paragraph
+  translation: Ergo ist nicht nur eine Währung, sondern eine ganze Plattform für Contractual Money. Erkunde unsere Tutorials und Beispiele und implementiere Deine eigene App mit Ergo.
+
+#basics
+
+- id: basics_first_title
+  translation: Basics
+
+- id: basics_vision_title
+  translation: Vision
+
+- id: basics_vision
+  translation: "Ergo wurde als Antwort auf die ausbleibende Entwicklung im Blockchain-Bereich geschaffen und implementiert technische und wirtschaftliche ready-to-use Eigenschaften, die einen Mehrwert schaffen, aber die bekannten Vorteile von Blockchains nicht reduzieren. Ergos primärer Fokus ist es, einen effizienten und sicheren Prozess zur Abwicklung von finanziellen Verträgen zu schaffen, die die am weitesten verbreitete Einsatzmöglichkeit von Blockchains darstellen. Ergo wurde geschaffen, um allen Personen eine zugängliche Nutzung dieser finanziellen Verträge zu ermöglichen - völlig dezentral und ohne Treuhand. Im Gegensatz zum traditionellen Finanzsystem sollen im Core des Ergo-Protokolls keine Bailouts, Blacklists oder andere Formen der Diskriminierung möglich sein. Das Ergo-Protokoll ist nachhaltig konzipiert und bietet sich so für lebenslange Verträge sowie als gute Wertanlage an.<br /><br />
+                <a href=\"https://ergoplatform.org/docs/teaser.pdf\" target=\"_blank\" class=\"eg-text__link eg-link\"><span>Mehr Details im Ergo Teaser</span></a>."
+
+- id: basics_consensus_title
+  translation: Konsens
+
+- id: basics_consensus
+  translation: "Das Konsensprotkoll von Ergo — <a href=\"https://ergoplatform.org/docs/ErgoPow.pdf\" target=\"_blank\" class=\"eg-text__link eg-link\"><span>Autolykos</span></a> — basiert auf dem verbreiteten Proof-of-Work-Algorithmus.
+                  Mehrere Gründe führten zur Entscheidung für PoW als Konsensprotokoll, u.a. die umfassenden Erfahrungen mit PoW in der Forschung, hohe Sicherheitsgarantien und gute Unterstützung für Light Clients.
+                  Autolykos hat jedoch einige bedeutende Unterschiede zu Bitcoins Proof-of-Work.
+                  Dank seiner memory-hardness ist es speicherhungrig und ebnet das ungleiche Verhältnis zwischen spezialisierter Hardware (ASICs) und handelsüblichen GPUs, wodurch alle Nutzer*innen am Mining teilnehmen können, um das Netzwerk zu sichern und Rewards zu erhalten.
+                  Außerdem ermöglicht Autolykos den Einzug einer Storage-Miete, um verlorene oder vergessene Coins zurück in den Umlauf zu bringen, Sigma-Protokolle, und vieles mehr."
+
+- id: basics_clients_title
+  translation: Light Clients
+
+- id: basics_clients
+  translation: "Es ist fast unmöglich, existierende Kryptowährungen ohne die Hilfe von vertrauenswürdigen Dritten bzw. Treuhändern zu nutzen. Um auch nur eine kleine Menge an Coins ohne notwendigen Verlass auf Dritte zu erhalten, müssen Gigabytes an Daten für die Synchronisierung mit dem Netzwerk heruntergeladen und verarbeitet werden - was selbst auf High-End-Hardware mehrere Wochen dauern kann, von mobilen Geräten ganz zu schweigen. Es ist daher nicht verwunderlich, dass die meisten Nutzer*innen lieber zugänglichere Lösungen für Wallets, Exchanges, Block-Explorer usw. verwenden. <br/><br/>
+                  Ergo wurde entwickelt, um zur Förderung der Dezentralisierung maximal benutzungsfreundlich zu sein. Eine der wichtigen Eigenschaften von PoW ist es, dass es die Verifizierung der geleisteten Arbeit ermöglicht, ohne die komplette Chain herunterzuladen. Ergo-Blöcke unterstützen NiPoPoW-Proofs, die Light Clients eine Synchronisation mit dem Netzwerk ermöglichen, indem sie weniger als ein Megabyte an Daten herunterladen. Dank der Nutzung von Authenticated State kann ein Client für jede getätigte Transaktion einen Beweis für die Korrektheit herunterladen. Unabhängig von der Größe der Blockchain können also alle Nutzer*innen mit einem Smartphone dem Netzwerk beitreten und Ergo mit den gleichen Sicherheitsgarantien wie mit einem vollen Knoten nutzen."
+
+
+
+- id: basics_survivability_title
+  translation: Lebensdauer
+
+- id: basics_survivability
+  translation: "Um langfristig zu überleben, setzt Ergo auf erprobte Lösungen. Und wenn es nicht bereits eine erprobte Lösung gibt, forschen wir selbst danach, und die <a href=\"https://ergoplatform.org/en/documents/\" class=\"eg-text__link eg-link\"><span>Anzahl der von Peers begutachteten Papers</span></a> des Ergo-Entwicklungsteams ist bereits jetzt umfangreich.
+                  <br/><br/> Ein widerstandsfähiges Netzwerk sollte sich an eine sich ändernde Umgebung anpassen, ohne dass auf den Eingriff von Personen (wie z.B. einem \"Kernentwicklerteam\") vertraut werden muss. Das On-Chain-Miner-Voting-Protokoll von Ergo erlaubt die stufenweise Änderung von vielen Parametern, einschließlich der maximalen Blockgröße, des Faktors der Lagermietgebühren und mehr.
+                  <br/><br/> Für grundlegendere Changes wird Ergo einen Soft-Fork-Ansatz verfolgen --- wenn eine überwiegende Mehrheit des Netzwerks ein neues Feature akzeptiert, wird es aktiviert. Alte Nodes, die nicht upgraden, arbeiten jedoch normal weiter und überspringen einfach diese Feature-Validierung.
+                  Daher sollten störende Hard-Forks in Ergo nicht erforderlich sein.
+  "
+
+- id: basics_ecomony_title
+  translation: Wirtschaftlichkeit
+
+- id: basics_ecomony_paragraph
+  translation: "
+  Um überlebensfähig zu bleiben, bietet Ergo neben den technischen auch wirtschaftliche Verbesserungen an. Die zentralste davon ist eine Lagermietgebühr, die eine wichtige Rolle für die Stabilität von Ergo spielt: Wenn Coins nach der Transaktion 4 Jahre lang unveränderlich ihren State beibehalten ohne bewegt zu werden, können Miner*innen eine geringe Gebühr für jedes Byte, das in diesem State gehalten wird, verlangen.
+  Diese Idee ähnelt regulären Cloud-Speicherdiensten, aber ihre Anwendung auf Blockchain-Systeme hat mehrere wichtige Konsequenzen.
+  Erstens wird das Ergo-Mining im Gegensatz zu Bitcoin und anderen PoW-Währungen, bei denen das Mining nach der Emissionsphase instabil werden kann, immer stabil sein.
+  Zweitens wird das Wachstum der States Sizes kontrollierbar und vorhersehbar, was die Hardware-Anforderungen für Ergo-Miner*innen reduziert. Drittens bringen Miner*innen durch das Einnehmen von Lagermietgebühren von veralteten Boxen verlorene Münzen zurück in den Umlauf und verhindern so eine stetige Abnahme des zirkulierenden Supplys durch verlorene Keys. Dies etabliert auch einen langfristigen einzigartigen Use Case für <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/docs/ErgoPow. pdf\" target=\"_blank\"><span>Ergos nativen Token (\"ERG\")</span></a> als einzigen Token auf der Ergo-Blockchain, der zur Bezahlung der Lagermiete verwendet werden kann - trotz der zu erwartenden großen Anzahl von nicht-nativen Token, die auf der Ergo-Blockchain existieren werden können, um von Ergos starken Sicherheits- und Dezentralisierungsqualitäten sowie seinen Funktionen für Contractual Money zu profitieren."
+
+- id: basics_applicability_title
+  translation: Anwendbarkeit
+
+- id: basics_applicability_paragraph
+  translation: "
+    Ergo DApps und Offchain-Protokolle können dank Light Clients dezentral implementiert werden, benötigen aber auch eine flexible und sichere Sprache für Smart Contracts.
+    Ergos Smart Contracts basieren auf einem Bitcoin-ähnlichen UTXO-Modell, bei dem jeder Output durch ein Skript geschützt ist.
+    Wenn die Skriptsprache vielfältig genug ist, ermöglicht sie die Entwicklung von Turing-kompletten Contracts und vermeidet somit ad-hoc zu implementierende Lösungen gegen Program Halting wie z.B. Gas bei Ethereum.
+    Während es wesentlich vielseitiger ist als Bitcoin-Skript, enthält ErgoScript auch Funktionalitäten, die eine genaue Abschätzung der Skriptkomplexität vor der Codeausführung ermöglichen, wodurch verschiedene DoS-Angriffe und das \"Halting\"-Problem verhindert werden.
+    Dennoch ist es immer noch ausreichend, um jedes denkbare Programm zu schreiben - ErgoScript ist nachweislich Turing-vollständig.
+    Der kryptographische Teil von ErgoScript basiert auf Sigma-Protokollen und unterstützt nativ threshold m-of-n-Signaturen, Ringsignaturen und mehr.
+    Dank all dieser Eigenschaften erwarten wir, dass ErgoScript und das Design von Ergo es zu einem einzigartig nützlichen Contractual Money mit unzähligen möglichen Anwendungen machen."
+
+- id: basics_second_title
+  translation: Mehr erfahren
+
+- id: basics_second-section_first_link
+  translation: Entwicklertools
+
+- id: basics_second-section_second_link
+  translation: Wiki
+
+- id: basics_second-section_third_link
+  translation: Dokumente
+
+- id: basics_second-section_fourth_link
+  translation: Software
+
+#tech
+
+- id: tech_first_title
+  translation: Dokumente
+
+- id: tech_first-section_first_paragraph
+  translation: Ergo folgt den Ansätzen der Fundamentalanalyse und verwendet stabile, bewährte Lösungsstrategien - auch wenn dadurch kurzfristige Innovationen etwas langsamer erreicht werden. Die meisten dieser Ansätze und Konzepte von Ergo sind in Papers formuliert, die ein Peer Review durchlaufen sind und auf Konferenzen vorgestellt sowie in der Community breit diskutiert wurden.
+
+- id: tech_first-section_second_paragraph
+  translation: Diese Seite enthält Links zu Dokumenten mit einem allgemeinen Überblick über Ergo sowie zu Papers, die dem Ergo-Protokoll zugrunde liegen.
+
+- id: tech_second_title
+  translation: Überblick
+
+- id: tech_third_title
+  translation: Grundlagen
+
+- id: tech_fourth_title
+  translation: Präsentationen
+
+- id: tech_third-section_title_link
+  translation: Alle Papers
+
+- id: tech_third-section_first_title
+  translation: Improving authenticated dynamic dictionaries, with applications to cryptocurrencies
+
+- id: tech_third-section_first_paragraph
+  translation: Leonid Reyzin, Dmitry Meshkov, Alexander Chepurnoy, Sasha Ivanov
+
+- id: tech_third-section_second_title
+  translation: A Systematic Approach To Cryptocurrency Fees
+
+- id: tech_third-section_second_paragraph
+  translation: Alexander Chepurnoy, Vasily Kharin, Dmitry Meshkov
+
+- id: tech_third-section_third_title
+  translation: Revisiting Difficulty Control for Blockchain Systems
+
+- id: tech_third-section_third_paragraph
+  translation: Leonid Reyzin, Dmitry Meshkov, Alexander Chepurnoy, Sasha Ivanov
+
+- id: tech_third-section_fourth_title
+  translation: Self-reproducing Coins as Universal Turing Machine
+
+- id: tech_third-section_fourth_paragraph
+  translation: Alexander Chepurnoy, Vasily Kharin, Dmitry Meshkov
+
+- id: tech_third-section_fifth_title
+  translation: Multi-mode Cryptocurrency Systems
+
+- id: tech_third-section_fifth_paragraph
+  translation: Tuyet Duong, Alexander Chepurnoy, Hong-Sheng Zhou
+
+- id: tech_third-section_sixth_title
+  translation: "EDRAX: A Cryptocurrency with Stateless Transaction Validation"
+
+- id: tech_third-section_sixth_paragraph
+  translation: Alexander Chepurnoy, Charalampos Papamanthou, Yupeng Zhang
+
+- id: tech_third-section_seventh_title
+  translation: On Contractual Money
+
+- id: tech_third-section_seventh_paragraph
+  translation: Alexander Chepurnoy, Amitabh Saxena
+
+- id: tech_third-section_eight_title
+  translation: Multi-stage Contracts in the UTXO Model
+
+- id: tech_third-section_eight_paragraph
+  translation: Alexander Chepurnoy, Amitabh Saxena
+
+- id: tech_third-section_nine_title
+  translation: Bypassing Non-Outsourceable Proof-of-Work Schemes Using Collateralized Smart Contracts
+
+- id: tech_third-section_nine_paragraph
+  translation: Alexander Chepurnoy, Amitabh Saxena
+
+
+# tools
+
+- id: tools_first_title
+  translation: Integrationstools
+
+- id: tools_first-section_first_paragraph
+  translation: Dank einer Reihe von Werkzeugen, können mit Ergo Finanzverträge effizient, sicher und einfach umgesetzt werden.
+
+- id: tools_second_title
+  translation: Überblick
+
+- id: tools_second-section_first_paragraph
+  translation: "Mit dem Beitritt zur Ergo Platform erhältst Du Zugang zu einer kompletten Entwicklungs- und Deploymentumgebung, einschließlich:"
+
+- id: tools_second-section_first-sub_title
+  translation: ErgoScript Tutorials
+
+- id: tools_second-section_first-sub_first_subtitle
+  translation: ErgoScript Überblick
+
+- id: tools_second-section_first-sub_first_paragraph
+  translation: Ergo bietet eine flexible Skriptsprache, die auf effizienten Σ-Protokollen (Sigma-Protokollen) basiert
+
+- id: tools_second-section_first-sub_second_subtitle
+  translation: ErgoScript Tutorial (Fortgeschrittene)
+
+- id: tools_second-section_first-sub_second_paragraph
+  translation: Schaue Dir Beispiele von Ergo Smart Contracts an
+
+- id: tools_second-section_second-sub_title
+  translation: Node Installation
+
+- id: tools_second-section_second-sub_first_link
+  translation: How To - Ergo Full Node installieren
+
+- id: tools_second-section_second-sub_first_url
+  translation: https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node
+
+- id: tools_second-section_second-sub_second_link
+  translation: How To - Ergo minen
+
+- id: tools_second-section_third-sub_title
+  translation: Explorers
+
+- id: tools_second-section_third-sub_first_link
+  translation: TestNet Explorer
+
+- id: tools_second-section_third-sub_second_link
+  translation: Mainnet Explorer
+
+- id: tools_second-section_fourth-sub_title
+  translation: APIs
+
+- id: tools_second-section_fourth-sub_first_link
+  translation: Node API
+
+- id: tools_second-section_fourth-sub_second_link
+  translation: Explorer API
+
+- id: tools_second-section_fifth-sub_title
+  translation: Libraries
+
+- id: tools_second-section_scorex_link
+  translation: (Scala) Scorex framework
+
+- id: tools_second-section_fifth-sub_first_link
+  translation: (Scala) ErgoScript
+
+- id: tools_second-section_fifth-sub_second_link
+  translation: (Scala) Basic cryptography
+
+- id: tools_second-section_fifth-sub_third_link
+  translation: (JS) Transaction basics
+
+- id: tools_second-section_fifth-sub_fourth_link
+  translation: (Scala) Ergo wallet
+
+- id: tools_second-section_fifth-sub_fifth_link
+  translation: (TS) Transactions basics
+
+- id: tools_second-section_sixth-sub_title
+  translation: Hilfe & Support
+
+- id: tools_second-section_sixth_sub_first_link
+  translation: Ergo Forum
+
+- id: tools_second-section_sixth_sub_second_link
+  translation: Discord Server
+
+- id: tools_third_title
+  translation: Förderungen für Entwickler*innen
+
+- id: tools_third-section_paragraph
+  translation: Wir unterstützen Entwickler*innen, die Projekte auf der Ergo-Plattform aufbauen und umsetzen.
+
+- id: tools_third-section_link
+  translation: Erhalte Unterstützung
+
+- id: tools_mining_link
+  translation: https://github.com/ergoplatform/ergo/wiki/Mining
+
+#software
+
+- id: software_first_title
+  translation: Software
+
+- id: software_first-section_first_paragraph
+  translation: "Ergo ist eine Blockchain-basierte Plattform für Contractual Money, die von Grund auf mit der Programmiersprache Scala entwickelt wurde und kein Fork einer anderen Kryptowährung ist."
+
+- id: software_first-section_second_paragraph
+  translation: "Um volle Kontrolle und Sicherheits zu gewährleisten, empfehlen wir die Software selbst aus dem Quellcode zu kompilieren. Falls Du damit keine Erfahrungen haben solltest, kannst du auch bereits kompilierte Software (Binaries) herunterladen.
+  "
+
+- id: software_second_title
+  translation: Downloads
+
+- id: software_second-section_first_title
+  translation: Windows x64 & x86
+
+- id: software_second-section_first_first-item_title
+  translation: GPU miner for Windows 64
+
+- id: software_second-section_first_second-item_title
+  translation: Daemon + console wallet pack for Windows 32
+
+- id: software_second-section_second_title
+  translation: Mac OS Mavericks 10.9
+
+- id: software_second-section_second_first-item_title
+  translation: Daemon + console wallet pack version 0.11.1.0
+
+- id: software_second-section_third_title
+  translation: Linux x64 & x86
+
+- id: software_second-section_third_first-item_title
+  translation: Daemon + console wallet pack for Linux x64
+
+- id: software_second-section_third_second-item_title
+  translation: Daemon + console wallet pack for Linux x86
+
+- id: software_second-section_fourth_title
+  translation: Alle Betriebssysteme
+
+- id: software_second-section_fourth_first-item_title
+  translation: Full node jar file.
+
+
+#exchanges
+
+- id: exchanges_first_title
+  translation: Exchanges
+
+- id: exchanges_first-section_first_paragraph
+  translation: "Du kannst Ergo auf sog. Exchanges kaufen, verkaufen und handeln.
+    <br/><br/>
+    Hinweis: Exchanges bieten sehr unterschiedliche Grade an Sicherheit, Datenschutz und Kontrolle über Deine Mittel und persönlichen Informationen. Informiere Dich gut über die von dir gewählten Exchanges und überlege, deine Coins in einem eigenen Wallet zu lagern (Not your keys, not your coins!).
+  "
+
+- id: exchanges_first-section_link
+  translation: Unterstützte Wallets
+
+- id: exchanges_second_title
+  translation: Verbreitete Krypto-Exchanges
+
+- id: exchanges_second-section_first_paragraph
+  translation: Vor dem Start des Ergo-Mainnets kannst Du nur den Ergo First Year Token ("EFYT") erwerben, der auf der Waves-Plattform gelistet ist und nach dem Start des Mainnets in ERG-Tokens getauscht wird.
+
+
+#team
+
+- id: team_first_title
+  translation: Bei Ergo mitmachen
+
+- id: team_first-section_first_paragraph
+  translation: "Bei Ergo sind Alle willkommen, an der Entwicklung teilzunehmen!
+    <br/><br/>
+  Wenn du andere Ideen hast, wie du bei Ergo mitmachen möchtest, wende dich bitte auf unserem <a class=\"eg-text__link eg-link\" href=\"https://discord.gg/cyahRhDWxS\"><span>Discord Server</span></a> an eine*n Entwickler*in im #development-Kanal.
+  "
+
+- id: team_first-section_first-item_title
+  translation: Bug Reports
+
+- id: team_first-section_first-item_paragraph
+  translation: Melde Bugs und Sicherheitsbedenken
+
+- id: team_first-section_second-item_title
+  translation: Code
+
+- id: team_first-section_second-item_paragraph
+  translation: Code schreiben & reviewen
+
+- id: team_first-section_third-item_title
+  translation: Bounties
+
+- id: team_first-section_third-item_paragraph
+  translation: Unterstütze uns und erhalte Bounties
+
+- id: team_first-section_fourth-item_title
+  translation: Dokumentation
+
+- id: team_first-section_fourth-item_paragraph
+  translation: Schreibe Dokumentation für Nutzer*innen und Entwickler*innen
+
+- id: team_first-section_fifth-item_title
+  translation: Tech support
+
+- id: team_first-section_fifth-item_paragraph
+  translation: Hilf anderen Nutzer*innen
+
+- id: team_second_title
+  translation: Ständige Contributors
+
+- id: team_contribute
+  translation: Mach mit -
+
+- id: team_now
+  translation: jetzt!
+
+- id: team_developer
+  translation: Developer
+
+- id: team_community
+  translation: Community
+
+- id: team_content_manager
+  translation: Content Manager*in
+
+- id: team_researcher
+  translation: Researcher at researchinstitute.io
+
+# faq
+
+- id: faq_first_title
+  translation: FAQ
+
+- id: faq_first-item_title
+  translation: Was ist Ergo?
+
+- id: faq_first-item_text
+  translation: "Ergo ist eine widerstandsfähige Plattform für Contractual Money. Ergo ist für Anwendungen konzipiert, deren Schwerpunkt auf der effizienten, sicheren und einfachen Umsetzung von Finanzverträgen liegt. <br/><br/>
+    Um dieses Ziel zu erreichen, bietet Ergo verschiedene technische und wirtschaftliche Verbesserungen gegenüber bestehenden Blockchains. Jeder Coin in Ergo ist durch ein Programm in ErgoScript geschützt, einer vielseitigen und protokollfreundlichen Skriptsprache, die auf Σ-Protokollen (Sigma-Protokollen) basiert. Sie legt die Bedingungen fest, unter denen ein Coin verwendet werden kann: wer kann ihn ausgeben, wann, unter welchen Bedingungen, an wen und so weiter. <br/><br/>
+    Dank der Unterstützung von Light Nodes ist Ergo benutzungsfreundlich und erlaubt es, Smart Contracts auf gängigen Geräten wie Smartphones ohne notwendiges Vertrauen in Dritte auszuführen (trustless). Um langfristig nützlich zu sein, verfolgt Ergo strikt einen nachhaltigen Ansatz - es verwendet weithin erforschte Lösungsstrategien, die auch in der Zukunft nicht zu Sicherheitsproblemen führen werden, während es dank eines neuen ökonomischen Modells gleichzeitig einen Leistungsabfall verhindert. <br/><br/>
+    Ergos Protokoll erlaubt außerdem, neue Ideen umzusetzen und sich in der Zukunft immer weiter zu verbessern.
+    Diese Schwerpunktsetzung auf eine langfristige und nachhaltige Lebensdauer und Selbstverbesserung verleihen Ergo seine Widerstandsfähigkeit.
+  "
+
+- id: faq_second-item_title
+  translation: "Was ist Contractual Money?"
+
+- id: faq_second-item_text
+  translation: "Unserer Meinung nach bezieht sich die überwältigende Mehrheit der erfolgreichen öffentlichen Blockchain-Anwendungen auf den finanziellen Bereich.
+    Ergo erweitert Bitcoins Ansatz für Verträge (Contracts), indem ein schützendes Skript (zusammen mit zusätzlichen benutzerdefinierten Daten) an jeden Coin angehängt wird.
+    Somit sind Ergo-Anwendungen in Form von Schutzskripten beschrieben, die in Boxen eingebaut sind, die zusätzliche an der Ausführung des Contracts beteiligte Daten enthalten.
+    Wir prägen daher den Begriff Contractual Money für ERG und sekundäre Token, deren Nutzung an einen Contract gebunden ist.
+    Zusätzlich zum Grundschutz durch eine m-of-n-Signatur erlaubt Ergo zum Beispiel die Angabe, wer möglichen Empfänger*innen bestimmter Coins sind, was wiederum auch ein Contract mit weiteren komplexen Bedingungen sein kann. Dieser Ansatz der \"Verkettung\" erlaubt es, sichere und effiziente Contracts beliebiger Komplexität zu implementieren."
+
+- id: faq_third-item_title
+  translation: Wo lag der ICO-Preis (Initial Coin Offering)?
+
+- id: faq_third-item_text
+  translation: "Ergo folgt dem dezentralsten Weg der Ausschüttung und wird mit null Coins im Supply starten, wobei das Minting des gesamten Coin Supplys in den ersten acht Jahren des Ergo-Mainnets mit bewährtem PoW-Mining erfolgt. Es gab kein ICO von Ergo. Keine Venture-Capital-Finanzierung. Kein Pre-Mining."
+
+- id: faq_fourth-item_title
+  translation: "Wie kann ich Ergo minen?"
+
+- id: faq_fourth-item_text
+  translation: "Du benötigst einen <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node\"><span>konfigurierten Ergo node</span></a> und eine Grafikkarte mit 4 GB RAM (8 GB empfohlen). Nutze diesen <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki/Mining\"><span>Guide</span></a> um den Node und den Miner einzurichten. Du kannst mehrere Grafikkarten an einem Node verwenden."
+
+- id: faq_fifth-item_title
+  translation: "Wo finde ich Ergo Mining Pools?"
+
+- id: faq_fifth-item_text
+  translation: "Eine Liste von Mining Pools findest du <a class=\"eg-text__link eg-link\" href=\"https://miningpoolstats.stream/ergo\"><span>hier</span></a>. Bitte wähle einen der kleineren Pools."
+
+- id: faq_sixth-item_title
+  translation: "Wann startet das Ergo-Netzwerk?"
+
+- id: faq_sixth-item_text
+  translation: "Das Mainnet von Ergo startete am 01. Juli 2019."
+
+- id: faq_seventh-item_title
+  translation: "Hat Ergo eine maximale Blockgröße (Block Size Limit)?"
+
+- id: faq_seventh-item_text
+  translation: "Nein, Ergo hat keine festgelegte maximale Blockgröße. Die Blockgröße kann sich je nach Anforderung anpassen. Damit keine zu schnellen Schwankungen auftreten, ist die Wachstums- bzw. Abnahmerate allerdings auf einen bestimmten Wert gekappt."
+
+- id: faq_eighth-item_title
+  translation: "Warum hat Ergo eine eigene Smart Contract Programmiersprache?"
+
+- id: faq_eighth-item_text
+  translation: "Programmiersprachen können sehr vielfältig konzipiert werden und und reichen von allgemeinen Programmiersprachen wie C, Java, Python bis hin zu spezialisierten Sprachen wie SQL, HTML, CSS.
+                Allerdings wurde keine von diesen Sprachen für Contractual Money entwickelt.
+                <br/><br/>
+                Das Design von ErgoScript erfüllt mehrere notwendige Eigenschaften.
+                Es beinhaltet ausschließlich deterministische Operationen, um die Konsensbildung im Netzwerk zu gewährleisten.
+                Es kann die Kosten und Auswirkungen eines Skripts im Voraus abschätzen und somit Spam-Attacken und andere nachteilige Situationen (wie z.B. potentielle Endlosschleifen) ausschließen.
+                Und trotz all dieser scheinbaren Beschränkungen ist ErgoScript vielseitig genug, um
+                komplexe Smart Contracts zu implementieren."
+
+- id: faq_nineth-item_title
+  translation: "Wie werden ERGs in Umlauf gebracht und wie hoch wird der maximale Supply sein?"
+
+- id: faq_nineth-item_text
+  translation: "Mehr zur Ergo Emission Schedule und zu anderen Kennzahlen findest du in einem (englischen) Blogbeitrag <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/en/blog/2019_05_20-curve/\"><span>hier</span></a>."
+
+- id: faq_tenth-item_title
+  translation: "Wo kann ich mehr über Ergo erfahren?"
+
+- id: faq_tenth-item_text
+  translation: "Webseite: <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/\"><span>https://ergoplatform.org/</span></a> <br/><br/>
+  Twitter: <a class=\"eg-text__link eg-link\" href=\"https://twitter.com/ergoplatformorg\"><span>https://twitter.com/ergoplatformorg</span></a> <br/><br/>
+  Wiki: <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki\"><span>https://github.com/ergoplatform/ergo/wiki</span></a> <br/><br/>
+  Github: <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo\"><span>https://github.com/ergoplatform/ergo</span></a> <br/><br/>
+  Dokumente: <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/en/documents/\"><span>https://ergoplatform.org/en/documents/</span></a> <br/><br/>
+  Telegram: <a class=\"eg-text__link eg-link\" href=\"https://t.me/ergoplatform\"><span>https://t.me/ergoplatform</span></a><br/><br/>
+  "
+
+# wallets
+
+- id: wallets_first_title
+  translation: "Wallets"
+
+- id: wallets_first-section_paragraph
+  translation: "Digitale Wallets verwahren Deine Kryptowährungen sicher, privat und unter Deiner Kontrolle. Wir empfehlen die Nutzung von Wallets zum Aufbewahren deiner ERGs ausdrücklich (technisch gesehen speichern Sie eigentlich \"nur\" die Keys zu deinen Empfangs-Adressen und damit deinen Coins). Aber denk daran, dein Wallet funktioniert nicht so wie ein Konto bei einer Bank und du bist selbst dafür verantwortlich - verwalte deine Passwörter und Passphrasen gut und sichere Sie regelmäßig!
+    <br/><br/>
+    Beachte außerdem, dass Wallets von Drittanbietern angeboten werden. Wir stellen die folgenden Infos hier nur zur Verfügung, um die Suche für Dich etwas einfacher zu machen.
+  "
+
+- id: wallets_second_title
+  translation: "Popular"
+
+- id: wallets_table_first_title
+  translation: Wallet
+
+- id: wallets_table_second_title
+  translation: Typ
+
+- id: wallets_table_third_title
+  translation: Multisig
+
+- id: wallets_table_fourth_title
+  translation: Skripts
+
+- id: wallets_table_second-column_first_title
+  translation: Web
+
+- id: wallets_table_second-column_second_title
+  translation: Mobil
+
+- id: wallets_table_second-column_third_title
+  translation: Desktop
+
+- id: wallets_table_second-column_fourth_title
+  translation: Hardware
+
+- id: wallets_part
+  translation: Part
+
+- id: wallets_ergo_wallet-doc_link
+  translation: https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node
+
+
+#news
+
+- id: news_first_title
+  translation: Neuigkeiten
+
+- id: news_load_more
+  translation: Mehr News laden
+
+
+#blog
+
+- id: back_to_all_posts
+  translation: Zurück zu allen Beiträgen
+
+- id: blog_related_reads
+  translation: Auch interessant
+
+
+#legal
+
+- id: legal_title
+  translation: Legal
+
+- id: legal_first-item_title
+  translation: 1. Information published on ergoplatform.org
+
+- id: legal_first-item_text
+  translation: "The website https://ergoplatform.org (hereinafter, referred to as the \"Website\") provides information and material of a general nature. You are not authorized and nor should you rely on the Website for legal advice, business advice, or advice of any kind. You act at your own risk in reliance on the contents of the Website. Should you make a decision to act or not act you should contact a licensed attorney in the relevant jurisdiction in which you want or need help. In no way are the owners of, or contributors to, the Website responsible for the actions, decisions, or other behavior taken or not taken by you in reliance upon the Website."
+
+- id: legal_second-item_title
+  translation: 2. Translations
+
+- id: legal_second-item_text
+  translation: "The Website may contain translations of the English version of the content available on the Website. These translations are provided only as a convenience. In the event of any conflict between the English language version and the translated version, the English language version shall take precedence. If you notice any inconsistency, please report them on <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki/Contribute#translation\"><span>GitHub</span></a>."
+
+- id: legal_third-item_title
+  translation: 3. Risks related to the use of Ergo
+
+- id: legal_third-item_text
+  translation: "The Website will not be responsible for any losses, damages or claims arising from events falling within the scope of the following five categories:
+                <br/><br/>
+                (1) Mistakes made by the user of any Ergo-related software or service, e.g., forgotten passwords, payments sent to wrong Ergo addresses, and accidental deletion of wallets.
+<br/><br/>
+                (2) Software problems of the Website and/or any Ergo-related software or service, e.g., corrupted wallet file, incorrectly constructed transactions, unsafe cryptographic libraries, malware affecting the Website and/or any Ergo-related software or service.
+<br/><br/>
+                (3) Technical failures in the hardware of the user of any Ergo-related software or service, e.g., data loss due to a faulty or damaged storage device.
+<br/><br/>
+                (4) Security problems experienced by the user of any Ergo-related software or service, e.g., unauthorized access to users' wallets and/or accounts.
+<br/><br/>
+                (5) Actions or inactions of third parties and/or events experienced by third parties, e.g., bankruptcy of service providers, information security attacks on service providers, and fraud conducted by third parties."
+
+- id: legal_fourth-item_title
+  translation: 4. Investment risks
+
+- id: legal_fourth-item_text
+  translation: "The investment in Ergo can lead to loss of money over short or even long periods. The investors in Ergo should expect prices to have large range fluctuations. The information published on the Website cannot guarantee that the investors in Ergo would not lose money."
+
+- id: legal_fifth-item_title
+  translation: 5. Compliance with tax obligations
+
+- id: legal_fifth-item_text
+  translation: "The users of the Website are solely responsible to determinate what, if any, taxes apply to their Ergo transactions. The owners of, or contributors to, the Website are NOT responsible for determining the taxes that apply to Ergo transactions."
+
+- id: legal_sixth-item_title
+  translation: 6. The Website does not store, send, or receive Ergs
+
+- id: legal_sixth-item_text
+  translation: "The Website does not store, send or receive Ergs. This is because Ergs exist only by virtue of the ownership record maintained in the Ergo network. Any transfer of title in Ergs occurs within a decentralized Ergo network, and not on the Website."
+
+- id: legal_seventh-item_title
+  translation: 7. No warranties
+
+- id: legal_seventh-item_text
+  translation: "The Website is provided on an \"as is\" basis without any warranties of any kind regarding the Website and/or any content, data, materials and/or services provided on the Website."
+
+#privacy
+
+- id: privacy_title
+  translation: Privacy policy
+
+- id: privacy_first-item_text
+  translation: "We don’t store your data, period."
+
+# error page
+
+- id: error_page_text
+  translation: Sorry, Seite nicht gefunden!
+
+- id: error_page_button
+  translation: Zurück zur Startseite
+
+# share
+
+- id: share_post
+  translation: Beitrag teilen
+
+# social
+
+- id: telegram_channel
+  translation: https://t.me/ergoplatform
+
+# careers
+
+- id: careers_first_title
+  translation: Offene Stellen
+
+- id: careers_first-section_first_paragraph
+  translation: Ein wenig Text über uns
+
+- id: back_to_all_careers
+  translation: Zurück zu allen Stellen
+
+# foundation
+
+- id: foundation_first_title
+  translation: Ergo Foundation
+
+- id: foundation_first_section_first_title
+  translation: "Die Ergo Foundation ist eine von der Community gesteuerte Instanz mit folgenden Zielen:"
+
+- id: foundation_first_section_first_li_item
+  translation: "Förderung der Entwicklung des Ergo-Protokolls;"
+
+- id: foundation_first_section_second_li_item
+  translation: "Förderung der Verbreitung und Nutzung der Ergo Platform und seines nativn Tokens (ERG);"
+
+- id: foundation_first_section_third_li_item
+  translation: "Ausbau und Entwicklung des gesamten Netzwerks der Ergo Platform;"
+
+- id: foundation_first_section_fourth_li_item
+  translation: "Förderung der Nutzung von Ergo und Blockchains für soziale Zwecke;"
+
+- id: foundation_first_section_fifth_li_item
+  translation: "Unterstützung einer wirklich dezentralisierten Infrastruktur, und"
+
+- id: foundation_first_section_sixth_li_item
+  translation: "Unterstützung des Datenschutzes als grundlegendes Menschenrecht."
+
+- id: foundation_second_section_first_title
+  translation: "Unsere Mission"
+
+- id: foundation_second_section_first_paragraph
+  translation: "Die Ergo Foundation setzt sich für eine natürliche und erhaltende Entwicklung des Protokolls der Ergo Platform ein. Die Foundation sorgt dafür, dass die Änderungen nicht nur von Miner*innen direkt auf der Blockchain, sondern auch von Nutzer*innen, Projekten von Dritten, und Core-Entwickler*innen genehmigt werden. Die Foundation widmet sich außerdem dem Aufbau von vertrauenswürdigen Systemen, Smart Contracts und Frameworks für den öffentlichen Zahlungsverkehr unter Berücksichtigung der Privatsphäre. Unsere Aktivitäten umfassen Fundraising, Forschung, Wartung und Verbesserung der Ergo Platform, Marketing und Veranstaltungen. Wir glauben, dass die Ergo Treasury hauptsächlich von der Community genutzt werden sollte, einschließlich Freiberufler*innen, Programmierer*innen, Expert*innen und Enthusiast*innen. Informationen über Ergos Treasury und Protokoll erhältst du unter
+            <a
+              class=\"eg-text__link eg-link\"
+              href=\"https://ergoplatform.org/docs/whitepaper.pdf\"
+            ><span>https://ergoplatform.org/docs/whitepaper.pdf</span></a> und <a
+              class=\"eg-text__link eg-link\"
+              href=\"https://ergoplatform.org/en/blog/2019_05_20-curve/\"
+            ><span>https://ergoplatform.org/en/blog/2019_05_20-curve/</span></a>"
+
+- id: foundation_second_section_second_paragraph
+  translation: "Der primäre Fokus der Ergo Platform ist es, einen effizienten und sicheren Weg zur Implementierung von finanziellen Verträgen (Contracts) zu bieten, da dies der am weitesten verbreitete Anwendungsfall von Blockchains ist. Dieser Fokus wird von der Ergo Foundation anerkannt und unterstützt."
+
+- id: foundation_second_section_third_paragraph
+  translation: "Die Ergo Foundation setzt sich für Open-Source-Entwicklungen im Ergo-System ein und befürwortet eine Nutzung von möglichst permissiven Lizenzen."
+
+- id: foundation_third_section_first_title
+  translation: "Partnerschaften"
+
+- id: foundation_third_section_first_paragraph
+  translation: "Die Ergo Foundation strebt Partnerschaften mit Organisationen an, die zur Entwicklung des gesamten Ergo-Systems beitragen oder die die Werte der Ergo Foundation teilen. Mögliche Arten und Weisen der Partnerschaft umfassen unter anderem den Erhalt oder die Bereitstellung finanzieller Unterstützung, den Austausch von Wissen und Ideen, den Erhalt oder die Bereitstellung von kostenlosen oder kostenpflichtigen Beratungsleistungen."
+
+- id: foundation_fourth_section_first_title
+  translation: "Förderungen"
+
+- id: foundation_fourth_section_first_paragraph
+  translation: "Die Ergo Foundation plant die Förderung von Projekten, deren Schwerpunkt im Ausbau der Kerninfrastruktur liegt.<br /><br />Bitte <a href=\"https://ergoplatform.org/en/blog/2020-11-18-ergo-foundation-makes-key-dapp-infrastructure-grant/\" class=\"eg-text__link eg-link\"><span>lies diesen Artikel</span></a> um deinen eigenen Förderungsantrag zu formulieren, und sende ihn an <a href=\"mailto:ergoplatform@protonmail.com\" class=\"eg-text__link eg-link\"><span>ergoplatform@protonmail.com</span></a> falls du ein Deiner Meinung nach förderungswürdiges Projekt hast. Anträge müssen aktuell von vier der sechs stimmberechtigten Ergo Development Fund Board Members genehmigt werden. Die Ergo Foundation nimmt gerne neue Freiwillige aus der Community auf - sende uns deine Bewerbung!"
+
+- id: foundation_fourth_section_second_paragraph
+  translation: "Wir verpflichten uns die Community über Entscheidungen und genehmigte Förderungsanträge zu informieren."
+
+- id: foundation_fifth_section_first_title
+  translation: "Board Members"
+
+- id: foundation_fifth_section_first_paragraph
+  translation: "Aktuelle Ergo Foundation Board Members (nach Nachnamen sortiert):"
+
+- id: foundation_fifth_section_first_li_item
+  translation: "Alex Chepurnoy"
+
+- id: foundation_fifth_section_second_li_item
+  translation: "Noah Hudson"
+
+- id: foundation_fifth_section_third_li_item
+  translation: "Justin Simpson"
+
+- id: foundation_fifth_section_fourth_li_item
+  translation: "Alexander Slesarenko"
+
+- id: foundation_fifth_section_fifth_li_item
+  translation: "Martin Spodymek"
+
+- id: foundation_fifth_section_sixth_li_item
+  translation: "Robert Kornacki"
+
+- id: foundation_fifth_section_seventh_li_item
+  translation: "Mohammad Hasan Samadani"
+
+- id: foundation_fifth_section_second_paragraph
+  translation: "Aktuelle Development Fund Board Members (nach Nachnamen sortiert):"
+
+- id: foundation_fifth_section_second_list_first_li_item
+  translation: "Alex Chepurnoy"
+
+- id: foundation_fifth_section_second_list_second_li_item
+  translation: "Noah Hudson"
+
+- id: foundation_fifth_section_second_list_third_li_item
+  translation: "Justin Simpson"
+
+- id: foundation_fifth_section_second_list_fourth_li_item
+  translation: "Alexander Slesarenko"
+
+- id: foundation_fifth_section_second_list_fifth_li_item
+  translation: "Martin Spodymek"
+
+- id: foundation_fifth_section_second_list_sixth_li_item
+  translation: "Robert Kornacki"
+
+- id: foundation_sixth_section_first_title
+  translation: "Anhang: Ergo Basics"
+
+- id: foundation_sixth_section_first_paragraph
+  translation: "Der kryptographische Teil von ErgoScript basiert auf Sigma-Protokollen und unterstützt nativ threshold m-of-n-Signaturen, Ringsignaturen und mehr. Deshalb erwarten wir, dass ErgoScript und sein Design Ergo zu einem einzigartigen Contractual Money mit unzähligen Anwendungsmöglichkeiten machen. Ergo DApps und Offchain-Protokolle können dank Light Clients wirklich dezentral implementiert werden."
+
+- id: foundation_sixth_section_second_paragraph
+  translation: "Für grundlegendere Changes verfolgt Ergo einen Soft-Fork-Ansatz --- wenn eine überwiegende Mehrheit des Netzwerks ein neues Feature akzeptiert, wird es aktiviert. Alte Nodes, die nicht upgraden, arbeiten jedoch normal weiter und überspringen einfach diese Feature-Validierung. Daher sollten störende Hard-Forks in Ergo nicht erforderlich sein."
+
+- id: foundation_sixth_section_third_paragraph
+  translation: "Drei weitere Vorteile von Ergo: Erstens wird das Ergo-Mining im Gegensatz zu Bitcoin und anderen PoW-Währungen, bei denen das Mining nach der Emissionsphase instabil werden kann, immer stabil sein. Zweitens wird das Wachstum der States Sizes kontrollierbar und vorhersehbar, was die Hardware-Anforderungen für Ergo-Miner*innen reduziert. Drittens bringen Miner*innen durch das Einnehmen von Lagermietgebühren von veralteten Boxen verlorene Münzen zurück in den Umlauf und verhindern so eine stetige Abnahme des zirkulierenden Supplys durch verlorene Keys."
+
+- id: foundation_sixth_section_fourth_paragraph
+  translation: "
+            Alle Kryptowährungen sind auf Beiträge aus der wissenschaftlichen Forschungscommunity angewiesen. Gut, dass Ergo daran schon im Core denkt! 
+            <a
+              class=\"eg-text__link eg-link\"
+              href=\"https://ergoplatform.org/en/documents/\"
+            ><span>https://ergoplatform.org/en/documents/</span></a>"
+
+- id: tag_title
+  translation: "Schlagwortsuche"
+
+- id: tag_blog
+  translation: "Zurück zum Blog"
+
+# use_cases
+
+- id: use_cases_title
+  translation: Ergo Use Cases
+
+- id: use_cases_first_paragraph
+  translation: Die Sigma-Protokolle und die Architektur von Ergo ermöglichen zahlreiche Use Cases, die auf konventionellen Blockchains nur schwer oder gar nicht realisierbar wären. Während die Vielfalt der möglichen Anwendungsfälle endlos ist, folgen hier einige Beispiele.
+
+- id: use_cases_second_title
+  translation: Digitales Gold
+
+- id: use_cases_second_paragraph
+  translation: Genau wie bei Bitcoin ist die Menge an ERG stark begrenzt. Es gibt einen fixierten Supply, der durch PoW-Mining ausgeschüttet wird. In dieser Hinsicht ist Ergo eine eher konservative Blockchain. Zusätzliche Funktionen stellen jedoch sicher, dass die Miner*innen auch nach Ablauf der Block Rewards angemessen belohnt werden.
+
+- id: use_cases_third_title
+  translation: "Starker Datenschutz: ErgoMixer"
+
+- id: use_cases_third_paragraph
+  translation: "Dieses Projekt nutzt die Sigma-Protokolle von Ergo, um einen effizienten, vertrauenswürdigen Austausch von Coins zu ermöglichen, der ein hohes Maß an Privatsphäre bietet und gleichzeitig sicher ist."
+
+- id: use_cases_fourth_title
+  translation: Sichere, einfache finanzielle Verträge (Contracts)
+
+- id: use_cases_fourth_paragraph
+  translation: Ergo ermöglicht neue Modelle finanzieller Interaktion, realisiert durch Smart Contracts, die auf flexiblen und leistungsfähigen Sigma-Protokollen aufbauen, aber für Entwickler*innen leicht zugänglich sind.
+
+- id: use_cases_fifth_title
+  translation: Alternative Finanzsysteme und Produkte
+
+- id: use_cases_fifth_paragraph
+  translation: Die Notwendigkeit, das globale Finanzsystem zu reformieren, ist seit der letzten Krise im Jahr 2008 klar. Und jetzt hat uns COVID-19 in Zugzwang gebracht. Wir können nicht länger warten, und der beste Weg anzufangen, startet bei der Basis. Ergo bietet mit Smart-Contract-gesteuerten Mikrokrediten und Local Exchange Trading Systems (LETS) leistungsfähige Werkzeuge, um dies zu erreichen.
+
+- id: use_cases_sixth_title
+  translation: "Experimentelle Wirtschaft"
+
+- id: use_cases_sixth_paragraph
+  translation: Mit der nächsten anstehenden Finanzkrise ist klar, dass die konventionelle Geldpolitik an ihre Grenzen stößt. Smart-Contract-Plattformen wie Ergo ermöglichen innovativere, gezieltere Realisierungen der wirtschaftlichen Stimulation, die der konventionelle Bankensektor nicht leisten kann.
+
+- id: use_cases_seventh_title
+  translation: Geld für harte Zeiten
+
+- id: use_cases_seventh_paragraph
+  translation: Mit hervorragender Unterstützung für Light Clients, aber ohne Kompromisse bei der Sicherheit, ist Ergo ideal geeignet für den Einsatz an Orten mit begrenzter Internetverbindung oder wo Bandbreite und Speicherplatz ein Problem darstellen. Mit der Unterstützung alternativer Finanzsysteme, auf die von jedem Gerät aus sicher zugegriffen werden kann, ist Ergo eine selbstverständliche Wahl für notleidende Staaten und Volkswirtschaften.
+
+  # mining page
+
+- id: mining_calculator_title
+  translation: Ergo Mining Rechner
