@@ -36,7 +36,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "2.6.x",
     "gulp-watch": "^5.0.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^6.0.1",
     "postcss-cli": "^7.1.2",
     "source-map-explorer": "^2.5.0",
     "style-loader": "^1.2.1",
