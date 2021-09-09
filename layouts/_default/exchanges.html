@@ -18,12 +18,14 @@
             {{ range .Site.Home.AllTranslations }}
               {{ if eq .Language.Lang .Site.Params.defaultLanguage }}
                 {{ $defaultLangPages := where (index .Site.Home.AllTranslations 0).Site.Pages "Section" "exchanges" }}
-                {{ range $defaultLangPages }}
+                {{ range $defaultLangPages.ByDate }}
+                  {{ if .Params.logo }}
                   <div>
                     <a href="{{ .Params.link }}">
                       <img src="{{ .Params.logo }}" alt="{{ .Params.title }}" width="170">
                     </a>
                   </div>
+                  {{end}}
                 {{end}}
               {{end}}
             {{ end }}
