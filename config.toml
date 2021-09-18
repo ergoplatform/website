@@ -45,12 +45,6 @@ pygmentsUseClasses=true
     name = "Exchanges"
     url = "/exchanges/"
     weight = 40
-  [[languages.en.menu.individuals]]
-    identifier = "mining_erg"
-    name = "Mining ERG"
-    url = "https://github.com/ergoplatform/ergo/wiki/Mining-Ergo-after-The-Hardening-Upgrade"
-    pre = 'true'
-    weight = 60
 
   [[languages.en.menu.developers]]
     identifier = "contribute"
@@ -58,21 +52,15 @@ pygmentsUseClasses=true
     url = "/contribute"
     weight = 10
   [[languages.en.menu.developers]]
-    identifier = "use_cases"
-    name = "Use Cases"
-    url = "/use_cases/"
-    weight = 20
-  [[languages.en.menu.developers]]
     identifier = "software"
     name = "Software"
     url = "/software/"
-    weight = 40
+    weight = 20
   [[languages.en.menu.developers]]
-    identifier = "wiki"
-    name = "Wiki"
-    url = "https://github.com/ergoplatform/ergo/wiki"
-    pre = 'true'
-    weight = 40
+    identifier = "use_cases"
+    name = "Use Cases"
+    url = "/use_cases/"
+    weight = 30
   [[languages.en.menu.developers]]
     identifier = "awesome"
     name = "Awesome Ergo"
@@ -107,29 +95,11 @@ pygmentsUseClasses=true
     pre = 'true'
     weight = 50
   [[languages.en.menu.community]]
-    identifier = "discord"
-    name = "Discord"
-    url = "https://discord.gg/kj7s7nb"
-    pre = 'true'
+    identifier = "wiki"
+    name = "Wiki"
+    url = "https://ergonaut.space/"
     weight = 60
-  [[languages.en.menu.community]]
-    identifier = "telegram"
-    name = "Telegram"
-    url = "https://t.me/ergoplatform"
     pre = 'true'
-    weight = 70
-  [[languages.en.menu.community]]
-    identifier = "ergo_cast"
-    name = "Ergo Cast"
-    url = "https://ergocast.io/"
-    pre = 'true'
-    weight = 80
-  [[languages.en.menu.community]]
-    identifier = "ergo_101"
-    name = "Community Website Ergo 101"
-    url = "https://ergo101.org/"
-    pre = 'true'
-    weight = 90
 
   [[languages.en.menu.other]]
     identifier = "Documents"
@@ -163,19 +133,11 @@ pygmentsUseClasses=true
     url = "https://sigmaverse.io/"
     pre = 'true'
 
-  [[languages.en.menu.mainmenu]]
-    identifier = "wiki"
-    name = "Wiki"
-    url = "https://ergonaut.space/"
-    weight = 60
-    pre = 'true'
-
 [languages.cn]
   languageCode = "cn"
   languageName = "中文"
   contentDir = "content/cn"
   weight = 2
-
 
   [[languages.cn.menu.individuals]]
     identifier = "about"
@@ -197,12 +159,6 @@ pygmentsUseClasses=true
     name = "Exchanges"
     url = "/exchanges/"
     weight = 40
-  [[languages.cn.menu.individuals]]
-    identifier = "mining_erg"
-    name = "Mining ERG"
-    url = "https://github.com/ergoplatform/ergo/wiki/Mining-Ergo-after-The-Hardening-Upgrade"
-    pre = 'true'
-    weight = 60
 
   [[languages.cn.menu.developers]]
     identifier = "contribute"
@@ -210,21 +166,15 @@ pygmentsUseClasses=true
     url = "/contribute"
     weight = 10
   [[languages.cn.menu.developers]]
-    identifier = "use_cases"
-    name = "Use Cases"
-    url = "/use_cases/"
-    weight = 20
-  [[languages.cn.menu.developers]]
     identifier = "software"
     name = "Software"
     url = "/software/"
-    weight = 40
+    weight = 20
   [[languages.cn.menu.developers]]
-    identifier = "wiki"
-    name = "Wiki"
-    url = "https://github.com/ergoplatform/ergo/wiki"
-    pre = 'true'
-    weight = 40
+    identifier = "use_cases"
+    name = "Use Cases"
+    url = "/use_cases/"
+    weight = 30
   [[languages.cn.menu.developers]]
     identifier = "awesome"
     name = "Awesome Ergo"
@@ -259,29 +209,11 @@ pygmentsUseClasses=true
     pre = 'true'
     weight = 50
   [[languages.cn.menu.community]]
-    identifier = "discord"
-    name = "Discord"
-    url = "https://discord.gg/kj7s7nb"
-    pre = 'true'
+    identifier = "wiki"
+    name = "Wiki"
+    url = "https://ergonaut.space/"
     weight = 60
-  [[languages.cn.menu.community]]
-    identifier = "telegram"
-    name = "Telegram"
-    url = "https://t.me/ergoplatform"
     pre = 'true'
-    weight = 70
-  [[languages.cn.menu.community]]
-    identifier = "ergo_cast"
-    name = "Ergo Cast"
-    url = "https://ergocast.io/"
-    pre = 'true'
-    weight = 80
-  [[languages.cn.menu.community]]
-    identifier = "ergo_101"
-    name = "Community Website Ergo 101"
-    url = "https://ergo101.org/"
-    pre = 'true'
-    weight = 90
 
   [[languages.cn.menu.other]]
     identifier = "Documents"
@@ -313,13 +245,6 @@ pygmentsUseClasses=true
     name = "DApps"
     weight = 50
     url = "https://sigmaverse.io/"
-    pre = 'true'
-
-  [[languages.cn.menu.mainmenu]]
-    identifier = "wiki"
-    name = "Wiki"
-    url = "https://ergonaut.space/"
-    weight = 60
     pre = 'true'
 
 [languages.pl]
@@ -348,18 +273,6 @@ pygmentsUseClasses=true
     name = "Exchanges"
     url = "/exchanges/"
     weight = 40
-  [[languages.pl.menu.individuals]]
-    identifier = "explorer"
-    name = "Explorer"
-    url = "https://explorer.ergoplatform.com/"
-    pre = 'true'
-    weight = 50
-  [[languages.pl.menu.individuals]]
-    identifier = "mining_erg"
-    name = "Mining ERG"
-    url = "https://github.com/ergoplatform/ergo/wiki/Mining-Ergo-after-The-Hardening-Upgrade"
-    pre = 'true'
-    weight = 60
 
   [[languages.pl.menu.developers]]
     identifier = "contribute"
@@ -367,27 +280,21 @@ pygmentsUseClasses=true
     url = "/contribute"
     weight = 10
   [[languages.pl.menu.developers]]
-    identifier = "use_cases"
-    name = "Use Cases"
-    url = "/use_cases/"
-    weight = 20
-  [[languages.pl.menu.developers]]
     identifier = "software"
     name = "Software"
     url = "/software/"
-    weight = 40
+    weight = 20
   [[languages.pl.menu.developers]]
-    identifier = "wiki"
-    name = "Wiki"
-    url = "https://github.com/ergoplatform/ergo/wiki"
-    pre = 'true'
-    weight = 40
+    identifier = "use_cases"
+    name = "Use Cases"
+    url = "/use_cases/"
+    weight = 30
   [[languages.pl.menu.developers]]
     identifier = "awesome"
     name = "Awesome Ergo"
     url = "https://github.com/ergoplatform/awesome-ergo"
     pre = 'true'
-    weight = 50
+    weight = 40
 
   [[languages.pl.menu.community]]
     identifier = "foundation"
@@ -418,29 +325,11 @@ pygmentsUseClasses=true
     pre = 'true'
     weight = 50
   [[languages.pl.menu.community]]
-    identifier = "discord"
-    name = "Discord"
-    url = "https://discord.gg/kj7s7nb"
-    pre = 'true'
+    identifier = "wiki"
+    name = "Wiki"
+    url = "https://ergonaut.space/"
     weight = 60
-  [[languages.pl.menu.community]]
-    identifier = "telegram"
-    name = "Telegram"
-    url = "https://t.me/ergoplatform"
     pre = 'true'
-    weight = 70
-  [[languages.pl.menu.community]]
-    identifier = "ergo_cast"
-    name = "Ergo Cast"
-    url = "https://ergocast.io/"
-    pre = 'true'
-    weight = 80
-  [[languages.pl.menu.community]]
-    identifier = "ergo_101"
-    name = "Community Website Ergo 101"
-    url = "https://ergo101.org/"
-    pre = 'true'
-    weight = 90
 
   [[languages.pl.menu.other]]
     identifier = "Documents"
@@ -474,13 +363,6 @@ pygmentsUseClasses=true
     url = "https://sigmaverse.io/"
     pre = 'true'
 
-  [[languages.pl.menu.mainmenu]]
-    identifier = "wiki"
-    name = "Wiki"
-    url = "https://ergonaut.space/"
-    weight = 60
-    pre = 'true'
-	
 [languages.de]
   languageCode = "de"
   languageName = "Deu"
@@ -507,12 +389,6 @@ pygmentsUseClasses=true
     name = "Exchanges"
     url = "/exchanges/"
     weight = 40
-  [[languages.de.menu.individuals]]
-    identifier = "mining_erg"
-    name = "ERG minen"
-    url = "https://github.com/ergoplatform/ergo/wiki/Mining-Ergo-after-The-Hardening-Upgrade"
-    pre = 'true'
-    weight = 60
 
   [[languages.de.menu.developers]]
     identifier = "contribute"
@@ -520,27 +396,15 @@ pygmentsUseClasses=true
     url = "/contribute"
     weight = 10
   [[languages.de.menu.developers]]
-    identifier = "use_cases"
-    name = "Use Cases"
-    url = "/use_cases/"
-    weight = 20
-  [[languages.de.menu.developers]]
     identifier = "software"
     name = "Software"
     url = "/software/"
-    weight = 40
+    weight = 20
   [[languages.de.menu.developers]]
-    identifier = "wiki"
-    name = "Wiki"
-    url = "https://github.com/ergoplatform/ergo/wiki"
-    pre = 'true'
-    weight = 40
-  [[languages.de.menu.developers]]
-    identifier = "awesome"
-    name = "Awesome Ergo"
-    url = "https://github.com/ergoplatform/awesome-ergo"
-    pre = 'true'
-    weight = 50
+    identifier = "use_cases"
+    name = "Use Cases"
+    url = "/use_cases/"
+    weight = 30
 
   [[languages.de.menu.community]]
     identifier = "foundation"
@@ -569,29 +433,17 @@ pygmentsUseClasses=true
     pre = 'true'
     weight = 50
   [[languages.de.menu.community]]
-    identifier = "discord"
-    name = "Discord"
-    url = "https://discord.gg/kj7s7nb"
+    identifier = "awesome"
+    name = "Awesome Ergo"
+    url = "https://github.com/ergoplatform/awesome-ergo"
     pre = 'true'
     weight = 60
   [[languages.de.menu.community]]
-    identifier = "telegram"
-    name = "Telegram"
-    url = "https://t.me/ergoplatform"
+    identifier = "wiki"
+    name = "Wiki"
+    url = "https://ergonaut.space/"
+    weight = 60
     pre = 'true'
-    weight = 70
-  [[languages.de.menu.community]]
-    identifier = "ergo_cast"
-    name = "Ergo Cast"
-    url = "https://ergocast.io/"
-    pre = 'true'
-    weight = 80
-  [[languages.de.menu.community]]
-    identifier = "ergo_101"
-    name = "Community Website Ergo 101"
-    url = "https://ergo101.org/"
-    pre = 'true'
-    weight = 90
 
   [[languages.de.menu.other]]
     identifier = "Documents"
@@ -623,13 +475,6 @@ pygmentsUseClasses=true
     name = "DApps"
     weight = 50
     url = "https://sigmaverse.io/"
-    pre = 'true'
-
-  [[languages.de.menu.mainmenu]]
-    identifier = "wiki"
-    name = "Wiki"
-    url = "https://ergonaut.space/"
-    weight = 60
     pre = 'true'
 
 [languages.sk]
