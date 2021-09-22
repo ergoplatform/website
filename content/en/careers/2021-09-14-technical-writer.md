@@ -2,7 +2,7 @@
 title: Technical Writer
 subtitle: Technical Writer
 ---
-As a technical writer for Ergo Platform, you will be responsible for writing specialist information about Ergo’s technology and applications, and how they work. You will need to both be able to explain how things are used in a general way that is easy to understand to the end-user - or write highly technical documentation for developers. The information may be presented in the form of user guides for software applications, reference and instruction manuals for appliances, training guides, instructional videos or online help incorporated into software and operating guides.
+As a technical writer for Ergo Platform, you will be responsible for writing specialist information about Ergo’s technology and applications, and how they work. You will need to both be able to explain how things are used in a general way that is easy to understand to the end-user - or write highly technical documentation for developers. The information may be presented in the form of user guides for software applications, reference and instruction manuals for appliances, training guides, instructional videos or online help incorporated into software and operating guides
 
 As a technical author, you'll need to understand the product or applications and then design and write documentation to explain it to users. You may also provide this information in various other forms including software demos and interactive tutorials, wikis, blogs and podcasts, using video, illustrations and graphics.
 
