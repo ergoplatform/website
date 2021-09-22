@@ -28,4 +28,4 @@ The Ergo Foundation, a non-profit foundation established to promote the adoption
 * A financial background or any experience with accounting and preparing financial reports.
 * Knowledge of blockchain technology, digital wallets, DeFi etc.
 
-To apply for get in touch at team@ergoplatform.org 
+To apply for get in touch at [team@ergoplatform.org ](mailto:team@ergoplatform.org)
