@@ -10,8 +10,7 @@ The Ergo Foundation, a non-profit foundation established to promote the adoption
 
 ### Responsibilities
 
-* Monitor and account for all crypto funds flow using cryptio (<https://cryptio.co/>). 
-* * This includes all addresses directly controlled by the Foundation as well as custodial accounts.
+* Monitor and account for all crypto funds flow using cryptio (<https://cryptio.co/>). This includes all addresses directly controlled by the Foundation as well as custodial accounts.
 * Use Xero Accounting Software to maintain up-to-date accounts for all fiat and crypto holdings. (<https://www.xero.com/>)
 * Ensure accounting and tax compliance by working with external accounting and tax advisors and providing them with up-to-date and accurate information.
 * The opening and maintenance of crypto exchange and fiat banking accounts.
@@ -30,8 +29,6 @@ The Ergo Foundation, a non-profit foundation established to promote the adoption
  
 
 ### Any of the following would be beneficial.
-
- 
 
 * Degree in finance and/or computer science.
 * A financial background or any experience with accounting and preparing financial reports.
