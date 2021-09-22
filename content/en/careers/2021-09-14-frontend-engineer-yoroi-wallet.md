@@ -2,6 +2,7 @@
 title: "Frontend Engineer, Yoroi Wallet "
 subtitle: "Frontend Engineer, Yoroi Wallet "
 ---
+disabled 
 ### The Role
 
 As a member of the Ergoplatform Ecosystem Core development team you will design
