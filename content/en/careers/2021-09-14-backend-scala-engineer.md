@@ -45,3 +45,5 @@ Work with Ergo core developers who delivered Ergo blockchain. The ideal candidat
 * Experience with low-level performance optimisations, whether via compilers or manual optimisation
 * Able to work remotely
 * Ready to start soon
+
+To apply for get in touch at [team@ergoplatform.org ](mailto:team@ergoplatform.org)
