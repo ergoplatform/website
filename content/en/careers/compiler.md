@@ -2,7 +2,7 @@
 title: Compiler Engineer
 subtitle: Compiler Engineer, Ergoplatform Core
 ---
-## The Role:
+## The Role
 
 As a member of the Ergoplatform Core Development team, you will be responsible for
 maintaining and evolving open source bytecode interpreter of smart contracts and
@@ -49,4 +49,4 @@ environment.
 * Able to work remotely 
 * Ready to start soon
 
-To apply for get in touch at [team@ergoplatform.org ](mailto:team@ergoplatform.org)
+To apply for get in touch at [team@ergoplatform.org](mailto:team@ergoplatform.org)
