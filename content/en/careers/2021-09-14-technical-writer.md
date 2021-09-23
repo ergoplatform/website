@@ -45,9 +45,9 @@ Related administration may involve:
 
 ## Qualifications
 
-Although you don't need a degree, one in Computer Science or a related field would be beneficial. It's particularly helpful if you have experience of working with blockchain technology such as (e)UTXO, zero-knowledge proofs, or <<x>>. 
+Although you don't need a degree, one in Computer Science or a related field would be beneficial. It's particularly helpful if you have experience of working with blockchain technology.
 
-Skills
+**Skills**
 
 You will need to have:
 
@@ -71,3 +71,5 @@ You will need to have:
 It's useful to have practical experience that relates to the job. This could be experience of writing guides or user manuals, either for companies as part of work experience or placements, or ones you've created for use in a portfolio. It could also include other writing assignments that show your ability to communicate with the reader.
 
 Any experience that shows skills in related areas such as science and technology is also useful.
+
+To apply for get in touch at [team@ergoplatform.org ](mailto:team@ergoplatform.org)
