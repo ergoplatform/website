@@ -2,7 +2,7 @@
 title: Technical Writer
 subtitle: Technical Writer
 ---
-As a technical writer for Ergo Platform, you will be responsible for writing specialist information about Ergo’s technology and applications, and how they work. You will need to both be able to explain how things are used in a general way that is easy to understand to the end-user - or write highly technical documentation for developers. The information may be presented in the form of user guides for software applications, reference and instruction manuals for appliances, training guides, instructional videos or online help incorporated into software and operating guides.
+As a technical writer for Ergo Platform, you will be responsible for writing specialist information about Ergo’s technology and applications, and how they work. You will need to both be able to explain how things are used in a general way that is easy to understand to the end-user - or write highly technical documentation for developers. The information may be presented in the form of user guides for software applications, reference and instruction manuals for appliances, training guides, instructional videos or online help incorporated into software and operating guides
 
 As a technical author, you'll need to understand the product or applications and then design and write documentation to explain it to users. You may also provide this information in various other forms including software demos and interactive tutorials, wikis, blogs and podcasts, using video, illustrations and graphics.
 
@@ -45,9 +45,9 @@ Related administration may involve:
 
 ## Qualifications
 
-Although you don't need a degree, one in Computer Science or a related field would be beneficial. It's particularly helpful if you have experience of working with blockchain technology such as (e)UTXO, zero-knowledge proofs, or <<x>>. 
+Although you don't need a degree, one in Computer Science or a related field would be beneficial. It's particularly helpful if you have experience of working with blockchain technology.
 
-Skills
+**Skills**
 
 You will need to have:
 
@@ -71,3 +71,5 @@ You will need to have:
 It's useful to have practical experience that relates to the job. This could be experience of writing guides or user manuals, either for companies as part of work experience or placements, or ones you've created for use in a portfolio. It could also include other writing assignments that show your ability to communicate with the reader.
 
 Any experience that shows skills in related areas such as science and technology is also useful.
+
+To apply for get in touch at [team@ergoplatform.org ](mailto:team@ergoplatform.org)
