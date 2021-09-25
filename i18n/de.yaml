@@ -56,7 +56,7 @@
 
 - id: ergo_agile
   translation: Communitygesteuert aber agil
- 
+
 - id: ergo_vision_text
   translation: "Blockchain ist ein sich schnell entwickelndes Feld, das viele aufregende Entwicklungen bietet, wobei jeden Tag neue Anwendungen und Use Cases auftauchen. Allerdings geht diese Innovation oft mit einem \"move fast and break things\"-Ansatz bei der Softwareentwicklung einher, der sich nicht eignet, wenn es um Millionen oder sogar Milliarden von Dollar an finanziellen Werten der Nutzer*innen geht.
     <br/><br/>
@@ -347,7 +347,7 @@
 
 - id: about_third_paragraph
   translation: Ergo kann mit ganz normaler Hardware gemined werden. Für die meisten Nutzer*innen ist es aber wahrscheinlich schneller und einfacher, einen Exchange für den Erwerb zu nutzen. Wir bringen Dich auf die richtiger Spur.
-  
+
 - id: about_fourth_title
   translation: Schreibe einen Contract
 
@@ -586,7 +586,7 @@
   translation: (JS) Transaction basics
 
 - id: tools_second-section_fifth-sub_fourth_link
-  translation: (Scala) Ergo wallet
+  translation: (Scala) Ergo App Kit
 
 - id: tools_second-section_fifth-sub_fifth_link
   translation: (TS) Transactions basics
@@ -1107,7 +1107,7 @@
 
 - id: foundation_sixth_section_fourth_paragraph
   translation: "
-            Alle Kryptowährungen sind auf Beiträge aus der wissenschaftlichen Forschungscommunity angewiesen. Gut, dass Ergo daran schon im Core denkt! 
+            Alle Kryptowährungen sind auf Beiträge aus der wissenschaftlichen Forschungscommunity angewiesen. Gut, dass Ergo daran schon im Core denkt!
             <a
               class=\"eg-text__link eg-link\"
               href=\"https://ergoplatform.org/en/documents/\"
