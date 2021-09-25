@@ -391,7 +391,7 @@
                 Nie je preto žiadným prekvapením, že väčšina používateľov dáva prednosť používaniu dôveryhodným riešeniam ako sú peňaženky, burzy, prieskumník blokov atď.<br/><br/>
                 Ergo bolo navrhnuté tak, aby bolo čo najviac užívateľsky prívetivé z hľadiska decentralizácie. Jednou z dôležitých vlastností PoW modelu je, že umožňuje overiť vykonanú prácu
                 bez nutnosti sťahovať celú históriu blockchainu. Ergo bloky podporujú NiPoPoW dôkazy, umožňujúce ľahkým klientom synchronizáciu sieťou sťahovaním menej ako jedného megabajtu dát.
-                Ergo tiež používa overený stav a pre každú zahrnutú transakciu si klient môže stiahnuť dôkaz o jeho správnosti. Takže bez ohľadu na veľkosť blockchainu sa môže 
+                Ergo tiež používa overený stav a pre každú zahrnutú transakciu si klient môže stiahnuť dôkaz o jeho správnosti. Takže bez ohľadu na veľkosť blockchainu sa môže
                 bežný používateľ so smartfónom pripojiť k sieti a začať používať Ergo s rovnakými bezpečnostnými zárukami ako pri použití úplného uzla."
 
 
@@ -597,7 +597,7 @@
   translation: (JS) Základy transakcií
 
 - id: tools_second-section_fifth-sub_fourth_link
-  translation: (Scala) Ergo peňaženka
+  translation: (Scala) Ergo App Kit
 
 - id: tools_second-section_fifth-sub_fifth_link
   translation: (TS) Základy transakcií
