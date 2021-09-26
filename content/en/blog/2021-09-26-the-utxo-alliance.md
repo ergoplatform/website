@@ -3,7 +3,7 @@ title: The UTXO Alliance
 date: 2021-09-26T21:40:14.759Z
 author: Glasgow
 authorPhoto: /img/uploads/2021-07-01-09.18.09.jpg
-blogPhoto: /img/uploads/photo_2021-09-26-22.40.41.jpeg
+blogPhoto: /img/uploads/title.png
 tags:
   - Building Ergo
 ---
