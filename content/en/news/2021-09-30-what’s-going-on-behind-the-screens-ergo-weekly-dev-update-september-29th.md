@@ -5,5 +5,5 @@ subtitle: "Focusing on the moon is great, but the truth is a rocket takes an
   incredible amount of engineering. Designing and building systems that are
   subject to immense pressure is not an easy task.  Check the latest updates on
   Ergo Ecosystem:"
-link: curiaregiscrypto.medium.com/whats-going-on-behind-the-screens-ergo-weekly-dev-update-september-29th-44baf7302fd8
+link: https://curiaregiscrypto.medium.com/whats-going-on-behind-the-screens-ergo-weekly-dev-update-september-29th-44baf7302fd8
 ---
