@@ -1,6 +1,6 @@
 ---
 title: Off-chain Logic and eUTXO
-date: 2021-10-04T11:20:29.395Z
+date: 2021-10-04T16:03:30.700Z
 author: Curia Regis Crypto
 authorPhoto: /img/uploads/1_70ukrjwixwgrxoxbgdl3fq.jpeg
 blogPhoto: /img/uploads/photo_2021-10-04_19-02-03.jpg
