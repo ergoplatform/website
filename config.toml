@@ -453,7 +453,7 @@ pygmentsUseClasses=true
 
   [[languages.es.menu.other]]
     identifier = "FAQ"
-    name = "Preguntas frecuentes"
+    name = "FAQ"
     url = "/faq/"
     weight = 20
 
@@ -465,7 +465,7 @@ pygmentsUseClasses=true
 
   [[languages.es.menu.other]]
     identifier = "Explorer"
-    name = "Explorador de bloques"
+    name = "Explorador"
     url = "https://explorer.ergoplatform.com/"
     pre = 'true'
     weight = 40

@@ -26,7 +26,7 @@
             >
               <button
                 class="eg-nav__link eg-link dropdown__button"
-              >Individuals</button>
+              >{{ T "menu_top_individuals" }}</button>
               <div class="nav-dropdown-menu">
                 {{ range .Site.Menus.individuals }}
                 {{ $menuUrl := .URL | absLangURL | safeURL }}
@@ -43,7 +43,7 @@
             >
               <button
                 class="eg-nav__link eg-link dropdown__button"
-              >Developers</button>
+              >{{ T "menu_top_developers" }}</button>
               <div class="nav-dropdown-menu">
                 {{ range .Site.Menus.developers }}
                 {{ $menuUrl := .URL | absLangURL | safeURL }}
@@ -60,7 +60,7 @@
             >
               <button
                 class="eg-nav__link eg-link dropdown__button"
-              >Community</button>
+              >{{ T "menu_top_community" }}</button>
               <div class="nav-dropdown-menu">
                 {{ range .Site.Menus.community }}
                 {{ $menuUrl := .URL | absLangURL | safeURL }}
