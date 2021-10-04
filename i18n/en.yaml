@@ -867,6 +867,9 @@
 - id: wallets_table_fourth_title
   translation: Scripts support
 
+- id: wallets_table_fifth_title
+  translation: Native asset support
+
 - id: wallets_table_second-column_first_title
   translation: Web
 
