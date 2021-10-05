@@ -1,10 +1,12 @@
 ---
-title: "The opportunities of the Ergo/Emurgo partnership"
+title: The opportunities of the Ergo/Emurgo partnership
 date: 2020-06-11
-author: "Guy Brandon"
-authorPhoto: "/img/authors/guy_brandon.jpg"
-blogPhoto: "/img/blog/ergo_emurgo_opportunity.png"
-tags: ['Ergo Team']
+author: Guy Brandon
+authorPhoto: /img/authors/guy_brandon.jpg
+blogPhoto: /img/blog/ergo_emurgo_opportunity.png
+tags:
+  - Ergo Team
+  - Partnerships
 ---
 
 _Cardano and Ergo take quite different approaches to DeFi and blockchain development, but there are specific areas in which they significantly overlap. This allows the possibility of fruitful collaboration, with benefits to two distinct ecosystems – and the blockchain space as a whole._
