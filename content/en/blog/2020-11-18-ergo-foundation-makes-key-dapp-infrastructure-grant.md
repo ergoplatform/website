@@ -6,6 +6,7 @@ authorPhoto: /img/uploads/guy_brandon.jpg
 blogPhoto: /img/uploads/plant.jpg
 tags:
   - Building Ergo
+  - Partnerships
 ---
 <!--StartFragment-->
 
