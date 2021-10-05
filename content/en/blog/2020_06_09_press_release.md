@@ -1,10 +1,13 @@
 ---
-title: "Press release: Ergo Foundation partners with Emurgo to research and develop new DeFi solutions"
+title: "Press release: Ergo Foundation partners with Emurgo to research and
+  develop new DeFi solutions"
 date: 2020-06-09
-author: "Guy Brandon"
-authorPhoto: "/img/authors/guy_brandon.jpg"
-blogPhoto: "/img/blog/ergo_with_emurgo.png"
-tags: ['Ergo Team']
+author: Guy Brandon
+authorPhoto: /img/authors/guy_brandon.jpg
+blogPhoto: /img/blog/ergo_with_emurgo.png
+tags:
+  - Ergo Team
+  - Partnerships
 ---
 
 _The collaboration will encompass a range of objectives – including exploration of a decentralised stablecoin solution._
