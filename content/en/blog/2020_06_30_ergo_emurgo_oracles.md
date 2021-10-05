@@ -1,10 +1,12 @@
 ---
-title: "Ergo-Emurgo partnership yields new model for oracles"
+title: Ergo-Emurgo partnership yields new model for oracles
 date: 2020-06-30
-author: "Guy Brandon"
-authorPhoto: "/img/authors/guy_brandon.jpg"
-blogPhoto: "/img/blog/ergo_emurgo_oracles.png"
-tags: ['Ergo Team']
+author: Guy Brandon
+authorPhoto: /img/authors/guy_brandon.jpg
+blogPhoto: /img/blog/ergo_emurgo_oracles.png
+tags:
+  - Ergo Team
+  - Partnerships
 ---
 
 *The joint research on oracle pools will be implemented in the Ergo stablecoin project.*
