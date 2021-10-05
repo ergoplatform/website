@@ -6,6 +6,7 @@ authorPhoto: /img/uploads/2021-07-01-09.18.09.jpg
 blogPhoto: /img/uploads/title-1-.png
 tags:
   - Building Ergo
+  - Partnerships
 ---
 # The UTXO Alliance
 
