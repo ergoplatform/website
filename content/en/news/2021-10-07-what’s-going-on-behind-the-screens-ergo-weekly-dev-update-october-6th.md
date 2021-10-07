@@ -1,5 +1,5 @@
 ---
-title: "What’s Going On Behind the Screens: Ergo Weekly Dev Update October 6th"
+title: Ergo Weekly Dev Update October 6th
 date: 2021-10-07T14:50:44.136Z
 subtitle: "Focusing on the moon is great, but the truth is a rocket takes an
   incredible amount of engineering. Designing and building systems that are
