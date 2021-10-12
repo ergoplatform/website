@@ -630,8 +630,7 @@
   translation: "Ergo es una plataforma basada en blockchain para el dinero contractual que se ha desarrollado desde cero utilizando el lenguaje de programación Scala y no es una bifurcación de ninguna otra criptomoneda."
 
 - id: software_first-section_second_paragraph
-  translation: Siempre que el software sea confiable para mantener sus claves secretas en privado, se recomienda encarecidamente crear software a partir de las fuentes. Si no es un usuario experimentado, puede descargar binarios ya construidos.
-  
+  translation: Siempre que el software sea capaz de mantener tus claves secretas seguras de manera consistente, se recomienda construir el software a partir del código. Si no eres un usuario avanzado puedes descargar los ejecutables.
 
 - id: software_second_title
   translation: Downloads

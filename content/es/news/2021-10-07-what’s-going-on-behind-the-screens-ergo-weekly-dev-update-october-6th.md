@@ -1,9 +1,9 @@
 ---
-title: "Qué sucede detrás de las pantallas: actualización semanal de desarrolladores de Ergo 22 de septiembre"
-date: 2021-09-24T18:49:01.340Z
+title: Actualización semanal de los desarrolladores de Ergo, 6 de Octubre
+date: 2021-10-07T14:50:44.136Z
 subtitle: "Centrarse en la luna es genial, pero la verdad es que un cohete requiere
   increíble cantidad de ingeniería. Diseñar y construir sistemas que sean capaces de
   someterse a una presión inmensa no es una tarea fácil. Consulte las últimas actualizaciones en
   Ecosistema Ergo:"
-link: curiaregiscrypto.medium.com/whats-going-on-behind-the-screens-ergo-weekly-dev-update-september-22nd-305222254967
+link: https://curiaregiscrypto.medium.com/whats-going-on-behind-the-screens-ergo-weekly-dev-update-october-6th-b17b199ff142
 ---
