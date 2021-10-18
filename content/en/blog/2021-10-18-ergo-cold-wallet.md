@@ -1,6 +1,6 @@
 ---
 title: Ergo Cold Wallet
-date: 2021-10-18T14:53:05.048Z
+date: 2021-10-18T14:58:32.554Z
 author: Ergo Foundation
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/cold-wallet1.png
