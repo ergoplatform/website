@@ -18,7 +18,7 @@ As you may know, hackathons gather coders to work on projects about specific top
 
 
 
-ErgoHack was held on Ergo Platform's Discord, where mentors and participants could communicate in public channels and welcomed the incoming community. During the event, non-tech participants were able to gain insights through released interviews with [Kushti](https://www.youtube.com/watch?v=d7C3lyyhSP0), [Armeanio](https://www.youtube.com/watch?v=oqun_AQvCw4), as well as a few guest interviews from the Cardano ecosystem: [Long Nguyen](https://www.youtube.com/watch?v=0tA7ZSRCodE) and [Patric Tobler](https://www.youtube.com/watch?v=vQGSzJHZJNE&t=347s). 
+ErgoHack was held on Ergo Platform's Discord, where mentors and participants could communicate in public channels and welcomed the incoming community. During the event, non-tech participants were able to gain insights through released interviews with [Kushti](https://www.youtube.com/watch?v=d7C3lyyhSP0), [Armeanio](https://www.youtube.com/watch?v=oqun_AQvCw4), as well as a few guest interviews from the Cardano ecosystem: [Long Nguyen](https://www.youtube.com/watch?v=0tA7ZSRCodE) and [Patrick Tobler](https://www.youtube.com/watch?v=vQGSzJHZJNE&t=347s). 
 
 
 
