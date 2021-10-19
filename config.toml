@@ -367,7 +367,7 @@ pygmentsUseClasses=true
   languageCode = "es"
   languageName = "Es"
   contentDir = "content/es"
-  weight = 1
+  weight = 4
 
   [[languages.es.menu.individuals]]
     identifier = "about"
