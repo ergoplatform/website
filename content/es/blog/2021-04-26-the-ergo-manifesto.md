@@ -37,81 +37,79 @@ Ergo va a cumplir mi sueño, todo el mundo sin importar su clase social debería
 
 ## Orígenes de Bitcoin
 
-The first Bitcoin block (known as the Genesis block) contained a message stating "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks."
+El primer bloque de Bitcoin (conocido como el bloque Génesis) contenía un mensaje que decía "El canciller del Times 03 / Ene / 2009 al borde del segundo rescate para los bancos".
 
-The creator of Bitcoin and inventor of the first-ever working blockchain chose to conceal his identity through a pseudonym that we’ve all grown accustomed to: Satoshi Nakamoto. He, she or them included the aforementioned message which was taken from a Times newspaper article issued on the very day the genesis block was mined. 
+El creador de Bitcoin e inventor de la primera cadena de bloques en funcionamiento eligió ocultar su identidad a través de un seudónimo al que todos nos hemos acostumbrado: Satoshi Nakamoto. Él, ella o ellos incluyeron el mensaje antes mencionado que fue tomado de un artículo del periódico Times emitido el mismo día en que se extrajo el bloque génesis.
 
-This block timestamped both the inception of Bitcoin but also the start of an era of technological and financial innovation. Simply put, this was the catalyst for a full-blown revolution.
+Este bloque marcó el inicio de Bitcoin, pero también el inicio de una era de innovación tecnológica y financiera. En pocas palabras, este fue el catalizador de una revolución en toda regla.
 
-Decentralization is political. It gave birth to the idea that monopolized powers could be replaced by technology. Systems could be put in place to transfer value globally without the need for intermediaries or oversight. People could choose the currency they use, and choose who, how and when they could exchange value with one another. 
+La descentralización está relacionada con la política. Dio origen a la idea de que los poderes monopolizados podrían ser reemplazados por tecnología. Se podrían implementar sistemas para transferir valor a nivel mundial sin la necesidad de intermediarios o supervisión. Las personas pueden elegir la moneda que usan y elegir quién, cómo y cuándo intercambiar valor entre sí.
 
-An entire industry formed around the idea of P2P commerce. Open, borderless and secure channels that potentially could prove mechanisms to level the economic playing field, and provide tools for prosperity for the average citizen of earth. 
+Toda una industria se formó en torno a la idea del comercio P2P (persona con persona, sin intermediarios). Canales abiertos, sin fronteras y seguros que potencialmente podrían resultar mecanismos para nivelar el campo de juego económico y proporcionar herramientas para la prosperidad del ciudadano medio de la tierra. 
 
-## Current Market Mindset
+## Mentalidad actual del mercado
 
-The mentality of crypto markets shifted greatly after the ICO mania of 2017. In fact, it seems that the space as a whole has come to celebrate bailouts, printing, and stimulus.\
+La mentalidad de los mercados de criptomonedas cambió mucho después de la locura de las ICO de 2017. De hecho, parece que el espacio en su conjunto ha llegado para celebrar los rescates, la impresión y el estímulo.
 \
-Yes, there have been some massive price gains in fiat, a lot of hype-based marketing, but it does seem the original intent of goals of cypherpunks is becoming increasingly diluted. 
+Sí, ha habido algunos aumentos masivos de precios en fiat, mucho marketing basado en exageraciones, pero parece que la intención original de los objetivos de los cypherpunks se está diluyendo cada vez más.
 
-This is something that needs to be addressed. If cryptocurrency is to be implemented as an effective tool for the average human, we need tooling and adoption. Right now, it seems the market mentality is as follows: how do we honeypot new users with hype marketing, drive pumps and cannibalize these new members of communities.
+Esto es algo que debe abordarse. Si la criptomoneda se va a implementar como una herramienta efectiva para el ser humano promedio, necesitamos herramientas y adopción. En este momento, parece que la mentalidad del mercado es la siguiente: ¿cómo engañamos a los nuevos usuarios con marketing exagerado, impulsamos subidas exageradas y canibalizamos a estos nuevos miembros de las comunidades?
 
-The current state of the market is a little sad. We need to get back to the roots of the crypto-revolution, decentralized tools that are private, secure, and drive real world adoption of these systems. The ideal is to create tools that help people create value. 
+El estado actual del mercado es un poco triste. Necesitamos volver a las raíces de la cripto-revolución, herramientas descentralizadas que son privadas, seguras e impulsan la adopción de estos sistemas en el mundo real. Lo ideal es crear herramientas que ayuden a las personas a crear valor.
 
-## Why is this important?
+## Por qué es esto importante?
 
-The global economy has not improved since the original bailouts. I understand that the central narrative around privacy and security always plays on emotional extremes, however the reality is it is always the common humans that get burned when economies implode. 
+La economía global no ha mejorado desde los rescates financieros originales. Entiendo que la narrativa central en torno a la privacidad y la seguridad siempre juega con los extremos emocionales, sin embargo, la realidad es que siempre son los humanos comunes los que se queman cuando las economías implosionan.
 
 *\-*
 
-*Think about it for a second.* 
+*Piensa en ello un segundo* 
 
 \-
 
-Corporations have access to foreign markets and foreign credit. They have many tools to adjust and circumvent economic difficulties. 
+Las corporaciones tienen acceso a los mercados extranjeros y al crédito externo. Tienen muchas herramientas para adaptarse y sortear las dificultades económicas.
 
-As for criminal enterprises they generally benefit from economic hardship. Hard times drive self-medication. Larger criminal syndicates are essentially an import/export business. They also have access to foreign currency, and oftentimes will run black-market currency exchanges and further leverage this international access for profit. 
+En cuanto a las empresas delictivas, generalmente se benefician de las dificultades económicas. Los tiempos difíciles impulsan la automedicación. Los sindicatos criminales más grandes son esencialmente un negocio de importación / exportación. También tienen acceso a moneda extranjera y, a menudo, realizarán intercambios de divisas en el mercado negro y aprovecharán aún más este acceso internacional con fines de lucro.
 
-Terrorist organizations benefit during times of economic hardship. Nothing motivates a person towards violence like a righteous anger from a sense of being trapped and hopeless. Terrorist organizations thrive in regions of chaos. They feed on chaos; it is their single greatest tool of recruitment. 
+Las organizaciones terroristas se benefician en tiempos de dificultades económicas. Nada motiva a una persona hacia la violencia como una ira justa por la sensación de estar atrapado y sin esperanza. Las organizaciones terroristas prosperan en regiones de caos. Se alimentan del caos; es su mayor herramienta de reclutamiento.
 
-The wealthy in our world often have internationally allocated portfolios. They are relatively liquid and generally have the ability to circumvent difficulties through market access, regulatory means such as tax havens, loopholes, and jurisdictional arbitrage.
+Los ricos de nuestro mundo a menudo tienen carteras asignadas internacionalmente. Generalmente tienen la capacidad de sortear dificultades a través del acceso al mercado, medios regulatorios como paraísos fiscales, lagunas y arbitraje jurisdiccional.
 
-There are multiple examples of economies that are in severe distress, one that made news recently was Turkey. The Turkish Central Banks recently banned cryptocurrencies as a form of payment. They cut access to a potential tool that would benefit the average citizen. 
+Hay múltiples ejemplos de economías que se encuentran en grave peligro, uno que fue noticia recientemente fue Turquía. Los bancos centrales turcos prohibieron recientemente las criptomonedas como forma de pago. Cortaron el acceso a una herramienta potencial que beneficiaría al ciudadano medio.
 
-The foreign exchange rate of the Lira to the dollar in 2010 was 1.14. The current exchange rate is 8.50. That is an 86.5882% decrease in purchasing power.
+El tipo de cambio de la lira por dólar en 2010 fue de 1,14. El tipo de cambio actual es de 8,50. Eso es una disminución del 86,5882% en el poder adquisitivo.
 
-Now imagine you are a Turk, perhaps you have traded a lifetime of time and labor to earn and save. In the span of a little over a decade over 86% of your monetary value has disappeared. 
+Ahora imagina que eres un turco, tal vez hayas intercambiado toda una vida de tiempo y trabajo para ganar y ahorrar. En el lapso de poco más de una década, más del 86% de su valor monetario ha desaparecido.
 
-The sad thing is blockchain was accessible in Turkey, however, the custodial actors abused their position with the people. 
+Lo triste es que blockchain era accesible en Turquía, sin embargo, los agentes de custodia abusaron de su posición con la gente.
 
-It is critically important to make systems as non-interactive and non-custodial as possible. This eliminates the potential for bad actors and protects the people. This was a failure in technology and should serve as a warning to the dangers of centralized blockchain.
+Es de vital importancia hacer que los sistemas sean lo menos interactivos y sin custodia posible. Esto elimina el potencial de malos actores y protege a las personas de a pie, como tú y como yo. Esto fue una falla en la tecnología y debería servir como una advertencia sobre los peligros de la cadena de bloques centralizada.
 
-Let this serve not as an example of why blockchain is bad, but as an example of why the common people need truly decentralized tools they can actually trust. 
+No dejemos que esto sirva como un ejemplo de por qué blockchain es malo, sino como un ejemplo de por qué la gente común necesita herramientas verdaderamente descentralizadas en las que realmente puedan confiar.
 
-Now like in most jurisdictions on earth the average citizen of every country has essentially zero power over monetary policy. The average citizen lacks the tools that corporations, criminal organizations, terrorist organizations, and the wealthy have to protect themselves and benefit from financial difficulties. Financial circumstances were created by the same powers that now hold their wealth hostage. 
+Ahora, como en la mayoría de las jurisdicciones del mundo, el ciudadano medio de cada país tiene esencialmente cero poder sobre la política monetaria. El ciudadano medio carece de las herramientas que tienen las corporaciones, las organizaciones criminales, las organizaciones terroristas y los ricos para protegerse y beneficiarse de las dificultades financieras. Las circunstancias financieras fueron creadas por los mismos poderes que ahora mantienen su riqueza como rehén.
 
-The reality is the people at the top always get the life raft when a boat sinks, the people at the bottom go down with the ship. Now, this is not unique to Turkey. This is currently a global phenomenon. It is apparent looking at the changes in the distribution of wealth. However, it has been sanitized to seem more palatable. It is not the wealthy who have life rafts and the common people are drowning. 
+La realidad es que la gente de arriba siempre coge la balsa salvavidas cuando un bote se hunde, la gente de abajo baja con el barco. Ahora bien, esto no es exclusivo de Turquía. Este es actualmente un fenómeno global. Es evidente al observar los cambios en la distribución de la riqueza. Sin embargo, se ha desinfectado para que parezca más apetecible. Son los ricos los que tienen balsas salvavidas y la gente común se está ahogando.
 
-It is a K Shaped economic recovery.  
+## El uso del dinero como arma
 
-## The Weaponization of Money
+El dinero digital programable centralizado suena como una actualización técnica eficiente de la infraestructura monetaria existente. En algunas áreas, este puede ser el caso. Sin embargo, parece que las construcciones básicas del dinero se encuentran en las etapas iniciales de una era que convertirá el dinero en un arma contra el ser humano promedio. Los sistemas monetarios actuales basados ​​en fiat atacan al ciudadano común creando presiones inflacionarias persistentes. Este es el resultado directo de la impresión del banco central, la intervención monetaria y la mala gestión del presupuesto fiscal por parte de los gobiernos centrales.
 
-Centralized programmable digital money sounds like an efficient technical upgrade to the existing monetary infrastructure. In some areas, this may be the case. However, it appears that the basic constructs of money are in the beginning stages of an era that will further weaponize money against the average human. Current fiat based monetary systems attack the common citizen by creating persistent inflationary pressures. This is the direct result of central bank printing, monetary intervention, and mismanagement of fiscal budget by central governments.\
-\
-The resulting monetary policy has inflicted great hardship on the average global citizens, through perpetually driving up the cost of living. Hyper Monetization has transformed nearly every asset class into a financial instrument that is used as a means to generate wealth. This has driven wealth inequality globally and produced inflation of global debt to levels never seen in recorded history.\
-\
-The truth is many consumers have been led to believe larger numbers reflect greater wealth. The reality is currency is decreasing in its purchasing power. Your house did not double in value, your currency purchases half as much house. Wage inflation has yet to equalize the inflationary pressures that are put on the middle and lower classes globally. The result is a further increase in personal debt and monetary stress on the average consumer.\
-\
-As central banks begin to enact a shift to Central Bank Digital Currencies they may end up redefining the historical principles of the currency itself. I fear that money will be weaponized and turned into a tool of social control.\
-\
-There are 3 particular points that I believe need to be watched for and rejected to prevent the adoption of weaponized money.\
-\
-The first is programmable money's ability to have an expiration date and or the ability of central powers to forcibly burn CBDC. This constitutes theft to the highest degree. Perhaps we will hear some sanitized terms, such as digital asset forfeiture however this level of centralized power will forever alter the balance of power between citizens and the state.\
-\
-The second is the ability for centralized power to connect credit, or payment ability to a citizen’s social status within a community. Simply stated this is weaponizing money against dissent. The ability for a citizen to dissent in any free society is generally the only legal means they have to effect change. Absent the ability to dissent, society is not free. Connecting centralized access, reward mechanisms, or conformity to digital money currency is weaponizing money against thought, freedom of speech and freedom of expression. \
-\
-The third aspect of digital money to watch the ability to censor or limit credit in particular areas of the market. This challenges the sovereignty of money itself. The collective social contract has generally been that your money is yours. It is your property, your asset. Restricting or limiting consumers' access to spending their own wealth is a power we must all fear and resist. Although legalization has prevented access to certain markets, products and services, cash has remained sovereign. This pillar of freedom must be respected. This potentially could destroy the concept of a free market. 
+La política monetaria resultante ha infligido grandes dificultades a los ciudadanos globales promedio, al elevar perpetuamente el costo de vida. La hipermonetización ha transformado casi todas las clases de activos en un instrumento financiero que se utiliza como medio para generar riqueza. Esto ha impulsado la desigualdad de la riqueza a nivel mundial y ha producido una inflación de la deuda mundial a niveles nunca vistos en la historia registrada.
 
-## Privacy
+La verdad es que a muchos consumidores se les ha hecho creer que un número mayor refleja una mayor riqueza. La realidad es que la moneda está perdiendo poder adquisitivo. Su casa no duplicó su valor, su moneda compra la mitad de la casa. La inflación salarial aún tiene que igualar las presiones inflacionarias que se ejercen sobre las clases media y baja a nivel mundial. El resultado es un aumento adicional de la deuda personal y la tensión monetaria del consumidor medio.
+
+A medida que los bancos centrales comiencen a promulgar un cambio a las monedas digitales del banco central, pueden terminar redefiniendo los principios históricos de la moneda en sí. Temo que el dinero se convierta en un arma y se convierta en una herramienta de control social.
+
+Hay 3 puntos particulares que creo que deben ser vigilados y rechazados para evitar la adopción de dinero armado.
+
+El primero es la capacidad programable del dinero para tener una fecha de vencimiento o la capacidad de los poderes centrales para quemar monedas digitales de bancos centrales por la fuerza. Esto constituye un robo al más alto grado. Quizás escuchemos algunos términos desinfectados, como la confiscación de activos digitales, sin embargo, este nivel de poder centralizado alterará para siempre el equilibrio de poder entre los ciudadanos y el estado.
+
+El segundo es la capacidad del poder centralizado para conectar el crédito o la capacidad de pago con el estatus social de un ciudadano dentro de una comunidad. En pocas palabras, esto es utilizar el dinero como arma contra la disidencia. La capacidad de un ciudadano para disentir en cualquier sociedad libre es generalmente el único medio legal que tiene para efectuar cambios. Sin la capacidad de disentir, la sociedad no es libre. Conectar el acceso centralizado, los mecanismos de recompensa o la conformidad con la moneda de dinero digital es convertir el dinero en un arma contra el pensamiento, la libertad de expresión y la libertad de expresión.
+
+El tercer aspecto del dinero digital es vigilar la capacidad de censurar o limitar el crédito en áreas particulares del mercado. Esto desafía la soberanía del dinero en sí. El contrato social colectivo ha sido generalmente que tu dinero es tuyo. Es su propiedad, su activo. Restringir o limitar el acceso de los consumidores a gastar su propia riqueza es un poder al que todos debemos temer y resistir. Si bien la legalización ha impedido el acceso a ciertos mercados, productos y servicios, el efectivo se ha mantenido soberano. Este pilar de la libertad debe respetarse. Potencialmente, esto podría destruir el concepto de mercado libre. 
+
+## Privacidad
 
 \
 Privacy must remain an option to protect the individual. It does not have to be forced, let people make their own choices. 
