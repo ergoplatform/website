@@ -7,7 +7,7 @@ blogPhoto: /img/uploads/ergomanifesto.png
 tags:
   - Ergo Team
 ---
-<!--StartFragment-->“reduce costs”
+<!--StartFragment-->
 
 ##### El Ergo Manifesto tiene como objetivo educar y ofrecer una visión de lo que puede lograr la tecnología blockchain. Esperamos construir la sociedad a través de una forma de cooperación horizontal a través de la producción bajo la división del trabajo, el comercio y el intercambio, y la solidaridad y la ayuda mutua.
 
@@ -112,110 +112,110 @@ El tercer aspecto del dinero digital es vigilar la capacidad de censurar o limit
 ## Privacidad
 
 \
-Privacy must remain an option to protect the individual. It does not have to be forced, let people make their own choices. 
+La privacidad debe seguir siendo una opción para proteger al individuo. No tiene que ser forzado, deja que las personas tomen sus propias decisiones.
 
-Privacy is the ability to create barriers and erect boundaries to create a space by and for the individual. It is up to each what barriers and boundaries they chose to create. 
+La privacidad es la capacidad de crear barreras y erigir límites para crear un espacio por y para el individuo. Depende de cada uno qué barreras y límites eligieron crear.
 
-Civilization exists under a continuous tension between what is best for society and what is best for the individual. The only real entities in a community are individuals. All collectives, associations, and governments stem from individual participation and interaction. 
+La civilización existe bajo una tensión continua entre lo que es mejor para la sociedad y lo que es mejor para el individuo. Las únicas entidades reales en una comunidad son los individuos. Todos los colectivos, asociaciones y gobiernos surgen de la participación e interacción individuales.
 
-Privacy protects the individual from society.
+La privacidad protege al individuo de la sociedad.
 
-Privacy creates space to allow personal autonomy. Personal autonomy is the basis of individual rights.  
+La privacidad crea espacio para permitir la autonomía personal. La autonomía personal es la base de los derechos individuales.
 
-Privacy, both financial and personal, is a critical component of life in a free society. When in the wrong hands, personal information can be wielded as a powerful tool of control and manipulation. Privacy allows individuals to make decisions free of coercion.
+La privacidad, tanto financiera como personal, es un componente fundamental de la vida en una sociedad libre. Cuando está en las manos equivocadas, la información personal puede ser utilizada como una poderosa herramienta de control y manipulación. La privacidad permite a las personas tomar decisiones sin coacción.
 
-Individuals in free societies must have a boundary, a private reality, free of government involvement, surveillance, and control. Current technological trends in our world significantly intrude in one’s personal space. 
+Los individuos en sociedades libres deben tener un límite, una realidad privada, libre de participación, vigilancia y control del gobierno. Las tendencias tecnológicas actuales en nuestro mundo se entrometen significativamente en el espacio personal de uno.
 
-Individuals should have control over who has access to information about their personal and financial lives. 
+Las personas deben tener control sobre quién tiene acceso a la información sobre su vida personal y financiera.
 
-Privacy is a matter of trust. The lack of privacy demonstrates a lack of confidence. A lack of trust cannot be the foundation of a healthy society. Healthy societies are built on cooperation. Voluntary cooperation is, in and of itself, an exercise in trust. 
+La privacidad es una cuestión de confianza. La falta de privacidad demuestra una falta de confianza. La falta de confianza no puede ser la base de una sociedad sana. Las sociedades saludables se basan en la cooperación. La cooperación voluntaria es, en sí misma, un ejercicio de confianza.
 
-Privacy rights mean that groups can’t take your data without your knowledge/consent and leverage this information for their benefit. 
+Los derechos de privacidad significan que los grupos no pueden tomar sus datos sin su conocimiento / consentimiento y aprovechar esta información para su beneficio.
 
-Financial privacy is especially vital because it can be the difference between survival and systematic suppression of an opposition group in a country with an authoritarian government. Absent privacy individuals in society have no means of survival when under the threat of oppressive regimes. 
+La privacidad financiera es especialmente vital porque puede marcar la diferencia entre la supervivencia y la supresión sistemática de un grupo de oposición en un país con un gobierno autoritario. A falta de privacidad, los individuos de la sociedad no tienen forma de sobrevivir cuando están bajo la amenaza de regímenes opresores.
 
-How many times in human history have religious, political, or tribal conflicts lead to one group in power forcibly taking the wealth of another less powerful group? How often is the seizing of financial assets used as means of authoritarian control?
+¿Cuántas veces en la historia de la humanidad los conflictos religiosos, políticos o tribales han llevado a un grupo en el poder a tomar por la fuerza la riqueza de otro grupo menos poderoso? ¿Con qué frecuencia se utiliza la incautación de activos financieros como medio de control autoritario?
 
-Many businesses, dissidents, and human rights groups maintain accounts outside the countries where they are active for precisely this reason. 
+Muchas empresas, disidentes y grupos de derechos humanos mantienen cuentas fuera de los países donde operan precisamente por esta razón.
 
-Financial privacy can allow people to protect their life savings when a government tries to confiscate its citizens’ wealth, whether for political, ethnic, religious or “merely” economic reasons. Financial privacy is of deep and abiding importance to freedom, and many governments have shown themselves willing to abuse private financial information.
+La privacidad financiera puede permitir que las personas protejan los ahorros de toda su vida cuando un gobierno intenta confiscar la riqueza de sus ciudadanos, ya sea por razones políticas, étnicas, religiosas o "simplemente" económicas. La privacidad financiera tiene una importancia profunda y duradera para la libertad, y muchos gobiernos se han mostrado dispuestos a abusar de la información financiera privada.
 
-## Ergo.nomic Money
+## Dinero Ergonómico
 
-The goal of the Ergo blockchain is to create Ergonomic Money.
+El objetivo de la cadena de bloques Ergo es crear dinero ergonómico.
 
-Ergonomics is the scientific discipline concerned with the understanding of the interactions among humans and other elements of a system, and the profession that applies theory, principles, data, and methods to design in order to optimize human well-being and overall system performance.
+La ergonomía es la disciplina científica que se ocupa de la comprensión de las interacciones entre los seres humanos y otros elementos de un sistema, y ​​la profesión que aplica la teoría, los principios, los datos y los métodos para diseñar con el fin de optimizar el bienestar humano y el rendimiento general del sistema.
 
-Time and time again economies implode, those with financial tools end up cannibalizing the wealth and value of the common people. This is not ergonomic; it is predatory and monopolistic. We need better tools. 
+Una y otra vez las economías implosionan, aquellos con herramientas financieras terminan canibalizando la riqueza y el valor de la gente común. Esto no es ergonómico; es depredador y monopolista. Necesitamos mejores herramientas.
 
-Now perhaps competition will upset central powers. It certainly did in the case of Turkey. That is why these tools need to be private, resilient, censorship-resistant, secure, open and free. 
+Ahora quizás la competencia trastorne a los poderes centrales. Ciertamente lo hizo en el caso de Turquía. Es por eso que estas herramientas deben ser privadas, resilientes, resistentes a la censura, seguras, abiertas y gratuitas.
 
-Perhaps you live in a developed society and think it is fine, the central banks are pumping liquidity into our economy. Central banks are bailing enough water that the ship won’t sink. I hope you are right, but I fear you are wrong. 
+Quizás vives en una sociedad desarrollada y piensas que está bien, los bancos centrales están inyectando liquidez a nuestra economía. Los bancos centrales están achicando suficiente agua para que el barco no se hunda. Espero que tengas razón, pero me temo que puedes estar equivocado.
 
-Simply because the tools we are building may not benefit you today make no mistake they may be the lifeboat of tomorrow. That is the intent, purpose of my life’s work in cryptocurrency. 
+Simplemente porque las herramientas que estamos construyendo pueden no beneficiarlo hoy, no se equivoquen, pues pueden ser el bote salvavidas del mañana. Esa es la intención, el propósito del trabajo de mi vida en criptomonedas.
 
-Anyone who dares to say crypto is just a tool for criminals’ and terrorists’ need to search how these organizations are funded, protected and where they draw their supply chains from before making such accusations. Ignorance is venomous. 
+Cualquiera que se atreva a decir que las criptomonedas son solo una herramienta para los criminales y terroristas necesitan investigar cómo estas organizaciones están financiadas, protegidas y de dónde obtienen sus cadenas de suministro antes de hacer tales acusaciones. La ignorancia es venenosa.
 
-It is all too often those at the bottom who suffer in separation from those at the top, who initiate the suffering. This cycle of economic abuse needs to be broken. 
+Con demasiada frecuencia son los de abajo los que sufren siendo los de arriba los que inician el sufrimiento. Es necesario romper este ciclo de abuso económico.
 
-The goal of Ergonomic money is to create money, and smart contracts for all people. Those at the bottom have the greatest need for the type of tooling we are building.
+El objetivo del dinero ergonómico es crear dinero y contratos inteligentes para todas las personas. Los que están en la parte inferior tienen la mayor necesidad del tipo de herramientas que estamos construyendo.
 
-## Ergo Basic Principles
+## Principios Básicos de Ergo
 
-*In this section, we define the main principles that should be followed to create ergonomic money.*  
+*En esta sección, definimos los principios fundamentales que deben seguirse para crear dinero ergonómico.*  
 
-*This might be referred to as “Ergo’s Social Contract”.* 
+*Esto podría denominarse “contrato social de Ergo”.* 
 
-*In case of intentional violation of any of these principles, the resulting protocol should not be called Ergo.*  
+*En caso de violación intencional de cualquiera de estos principios, el protocolo resultante no debe llamarse Ergo.*  
 
-### 1) Decentralization First
+### 1) Descentralización primero
 
-Ergo should be as decentralized as possible. Always strive to spread and grow. Any party's social leaders, software developers, hardware manufacturers, miners, funds need to avoid central points of failure. All actors whose absence will disrupt the function of the system need to have contingency plans in the event of a disruption. Decentralization is born from education and adoption. The tools we build need documentation, the community needs to actively participate and grow. Teach others to use and adopt the tools. The internet is a powerful driver of decentralization. It can be a powerful tool to teach. Decentralization is born from education, both on the development side and the user side. 
+Ergo debería estar lo más descentralizado posible. Los líderes sociales, los desarrolladores de software, los fabricantes de hardware, los mineros y los fondos de cualquier partido deben evitar los puntos centrales de falla. Todos los actores cuya ausencia interrumpirá el funcionamiento del sistema deben tener planes de contingencia en caso de una interrupción. La descentralización nace de la educación y la adopción. Las herramientas que creamos necesitan documentación, la comunidad necesita participar activamente y crecer. Enseñe a otros a usar y adoptar las herramientas. Internet es un poderoso impulsor de la descentralización. Puede ser una herramienta poderosa para enseñar. La descentralización nace de la educación, tanto del lado del desarrollo como del lado del usuario.
 
-Malicious behavior that may affect the security of the network, should be avoided. If any of these parties do appear during Ergo’s lifetime, the community should consider ways to decrease their impact level. There will always be those who seek to disrupt, take advantage, misuse and abuse their power. What is the answer? Education. Educating users to protect themselves, how to identify malicious actors, how to avoid them, how to work together to minimize their power. I would encourage all community members to continually seek to learn, adopt tooling, assist and teach in one way or another. A strong community is born through strong cooperation. 
+Debe evitarse el comportamiento malicioso que pueda afectar la seguridad de la red. Si alguna de estos grupos de gente malvada aparece durante la vida de Ergo, la comunidad debe actuar y pensar en formas de disminuir su nivel de impacto negativo. Siempre habrá quienes busquen interrumpir, aprovechar, hacer mal uso y abusar de su poder. ¿Cual es la respuesta? Educación. Educar a los usuarios para que se protejan a sí mismos, cómo identificar a los actores maliciosos, cómo evitarlos, cómo trabajar juntos para minimizar su poder. Animaría a todos los miembros de la comunidad a buscar continuamente aprender, adoptar herramientas, ayudar y enseñar de una forma u otra. Una comunidad fuerte nace de una fuerte cooperación.
 
-### 2) Open Permissionless and Secure
+### 2) Abierto sin permiso y seguro
 
-Ergo protocol does not restrict or limit any categories of usage. This is necessary in order to remain resilient. We certainly can advocate cooperation, trade, and human values however we do not enforce them. That would require a central power. Developers are free to implement any logic they want, taking full responsibility for the ethics and legality of their application. 
+El protocolo Ergo no restringe ni limita ninguna categoría de uso. Esto es necesario para seguir siendo resiliente. Ciertamente podemos defender la cooperación, el comercio y los valores humanos, pero no podemos forzar a nadie a ello, por eso habrá gente que no defienda los buenos valores. Eso requeriría un poder central. Los desarrolladores son libres de implementar cualquier lógica que deseen, asumiendo la responsabilidad total de la ética y legalidad de su aplicación.
 
-All code for the core protocol must remain fully open and transparent. Every line, everything should be fully auditable and transparent. This prevents manipulation as well as builds decentralized resiliency. Ergo is fully committed to being open source in order to remain trusted and that trust must remain fully verifiable. 
+Todo el código del protocolo central debe permanecer completamente abierto y transparente. Cada línea, todo, debe ser completamente auditable y transparente. Esto evita la manipulación y genera resiliencia descentralizada. Ergo está totalmente comprometido con ser de código abierto para seguir siendo confiable y esa confianza debe seguir siendo completamente verificable.
 
-Anyone can join the network and participate in the protocol without permission. Unlike the traditional financial system, no bailouts, blacklists or other forms of discrimination should be possible on the core level of Ergo protocol. Insider advantage should be minimized. 
+Cualquiera puede unirse a la red y participar en el protocolo sin permiso. A diferencia del sistema financiero tradicional, no deberían ser posibles rescates, listas negras u otras formas de discriminación en el nivel central del protocolo Ergo. Debe minimizarse la ventaja de la información privilegiada.
 
-Ergo is committed to supporting privacy tools for those that wish to use them. This must remain a voluntary choice. If a user wants to use mechanisms to disrupt the public availability of their data that is fully within the scope of their power. They must take full responsibility for the ethics and legality of these actions. 
+Ergo se compromete a respaldar las herramientas de privacidad para aquellos que deseen utilizarlas. Esta debe seguir siendo una elección voluntaria. Si un usuario desea utilizar mecanismos para interrumpir la disponibilidad pública de sus datos, eso está completamente dentro del alcance de su poder. Deben asumir la plena responsabilidad de la ética y legalidad de estas acciones.
 
-Ergo is committed to best security practices. This is a continual commitment to prevent network attacks, preserve privacy and protect on-chain value. 
+Ergo está comprometido con las mejores prácticas de seguridad. Este es un compromiso continuo para prevenir ataques a la red, preservar la privacidad y proteger el valor en cadena.
 
-### 3) Created for Regular People
+### 3) Creado para personas comunes
 
-Ergo is committed to being a tool for Regular People. Ergo is a platform for ordinary people, and their interests should not be infringed upon in favor of big parties. In particular, this means that the centralization of mining should be prevented. Regular people should be able to participate in the protocol by running a full node and mining blocks. Post Autolykos V1 Ergo will work to provide a hash rate distribution of pools. 
+Ergo se compromete a ser una herramienta para la gente común. Ergo es una plataforma para la gente común, y sus intereses no deben ser violados en favor de los grandes partidos. En particular, esto significa que debe evitarse la centralización de la minería. Las personas normales deberían poder participar en el protocolo ejecutando un nodo completo y bloques de minería. Con Autolykos V1 Ergo proporciona una distribución de la tasa de hash de los grupos.
 
-Ergo is committed to working towards building an ecosystem that offers tooling that is designed to assist regular people. Peer to peer exchange is continually under threat from peer to central power exchange. It is Ergo’s goal to encourage tooling and community education to empower the common human. 
+Ergo se compromete a trabajar para construir un ecosistema que ofrezca herramientas diseñadas para ayudar a la gente común. El intercambio entre pares está continuamente amenazado por el intercambio de poder entre pares y el centro. El objetivo de Ergo es fomentar las herramientas y la educación comunitaria para empoderar al ser humano común.
 
-### 4) Platform for Contractual Money
+### 4) Plataforma de Dinero Contractual
 
-Platform for Contractual Money. Ergo is the base layer to applications that will be built on top of it. It is suitable for several applications but its main focus is to provide an efficient, secure and easy way to implement financial contracts. Ergo is committed to building a network on solid foundations that continue to update and innovate. The goal with contractual money is to create a system that is not overrun by high user costs and fees. In order for money to be Ergonomic it must remain cost competitive. Ergo will assist with frameworks and tooling for people to build and implement to maximize the use and utility or contractual money. 
+Ergo es la capa base de las aplicaciones que se construirán sobre ella. Es adecuado para varias aplicaciones, pero su objetivo principal es proporcionar una manera eficiente, segura y fácil de implementar contratos financieros. Ergo se compromete a construir una red sobre bases sólidas que continúen actualizándose e innovando. El objetivo con el dinero contractual es crear un sistema que no se vea invadido por los altos costos y tarifas de los usuarios. Para que el dinero sea ergonómico, debe seguir siendo competitivo en cuanto a costos. Ergo ayudará con marcos y herramientas para que las personas construyan e implementen para maximizar el uso y la utilidad o el dinero contractual. 
 
-### 5) Long-term Focus
+### 5) Enfoque a largo plazo
 
-All aspects of Ergo development should be focused on a long-term perspective. Ergo was launched in crypto winter, the purpose and intent of Ergo core developers need to supersede short term market conditions. There will always be those who come for short term appreciation and those who come for the principle. 
+Todos los aspectos del desarrollo de Ergo deben enfocarse en una perspectiva a largo plazo. Ergo se lanzó en el invierno de las criptomonedas, el propósito y la intención de los desarrolladores centrales de Ergo deben reemplazar las condiciones del mercado a corto plazo. Siempre habrá quienes vengan por una apreciación a corto plazo y quienes vengan por el principio.
 
-Smart contracts for the people is an open source concept to provide a system that can empower the average person. That goal is to remain resilient, adaptable and secure through the long ark of time.  
+Los contratos inteligentes para las personas son un concepto de código abierto para proporcionar un sistema que puede empoderar a la persona promedio. Ese objetivo es permanecer resistente, adaptable y seguro a lo largo del tiempo.
 
-Since Ergo is designed as a platform, applications built on top of Ergo should also be able to survive in the long term. This resiliency and long term survivability may also enable Ergo to be a good store of value and a mechanism to assist the common human.\
-\
-We should always see beyond our noses, thinking into the future. What tools can we add? How can we improve? What are the risks? How can we prepare for what is next? 
+Dado que Ergo está diseñado como una plataforma, las aplicaciones creadas sobre Ergo también deberían poder sobrevivir a largo plazo. Esta capacidad de recuperación y supervivencia a largo plazo también puede permitir que Ergo sea una buena reserva de valor y un mecanismo para ayudar al ser humano común.
 
-This long term vision must never die for Ergo to survive. Ergo was born in crypto winter. Many had begun dismissing the future of distributed systems and their ability to create value, nonetheless, we endured, kept building.\
-\
-Too often people sacrifice long term growth for short term excitement. Good times will come, and hard times will come. If Ergo is to endure we must be principled and create value on solid foundations. 
+Siempre debemos ver más allá de nuestras narices, pensando en el futuro. ¿Qué herramientas podemos agregar? ¿Cómo podemos mejorar? ¿Cuáles son los riesgos? ¿Cómo podemos prepararnos para lo que sigue?
 
-### Who is Kushti?
+Esta visión a largo plazo nunca debe morir para que Ergo sobreviva. Ergo nació en el cripto invierno. Muchos habían comenzado a descartar el futuro de los sistemas distribuidos y su capacidad para crear valor, sin embargo, aguantamos, seguimos construyendo.
 
-Alexander Chepurnoy (aka Kushti) is the core developer of Ergo Platform and he has been active in blockchain development and smart contracts since 2011. He was a core developer for NXT, started smartcontract.com(now Chainlink) in 2014 with Sergey Nazarov, and is an IOHK researcher with over 20 academic papers to his name. When he was working on Nxt, he started utterly simple blockchain framework Scorex, which was later pivoted into modular blockchain framework. This project got attention from Charles Hoskinson, Cardano and Ethereum cofounder, around mid-Autumn, 2015. Then he joined IOHK around January’ 2016.
+Con demasiada frecuencia, la gente sacrifica el crecimiento a largo plazo por la emoción a corto plazo. Vendrán buenos tiempos y vendrán tiempos difíciles. Para que Ergo perdure, debemos tener principios y crear valor sobre bases sólidas.
 
-### A Note On Token Economics:
+### ¿Quién es Kushti?
 
-Ergo Platform had fair launch in the very beginning. It didn’t hold any ICO and there wasn’t any premined coins for the founders of the platform. Decentralization and fairness of a peer to peer monetary system was the priority in the first place. Foundation treasury is set to %4.37 of the total coins mined and it isn’t possible to change the core elements of token economics in a further stage.
+Alexander Chepurnoy (también conocido como Kushti) es el desarrollador principal de Ergo Platform y ha estado activo en el desarrollo de blockchain y contratos inteligentes desde 2011. Fue un desarrollador central de NXT, comenzó smartcontract.com (ahora ChainLink) en 2014 con Sergey Nazarov, y es un investigador de IOHK con más de 20 artículos académicos a su nombre. Cuando estaba trabajando en Nxt, comenzó un marco de blockchain completamente simple: Scorex, que luego se convirtió en un marco de blockchain modular (Waves está construido sobre Scorex). Este proyecto llamó la atención de Charles Hoskinson, cofundador de Cardano y Ethereum, a mediados de otoño de 2015. Luego se unió a IOHK alrededor de enero de 2016.
+
+### Una nota sobre la economía de los tokens:
+
+Ergo Platform tuvo un lanzamiento justo desde el principio. No tenía ninguna ICO y no había monedas pre-minadas para los fundadores de la plataforma. La descentralización y la equidad de un sistema monetario de igual a igual fue la prioridad en primer lugar. La tesorería de la fundación se establece en un 4,37% del total de monedas extraídas y no es posible cambiar los elementos centrales de la economía de los tokens en una etapa posterior.
 
 <!--EndFragment-->
