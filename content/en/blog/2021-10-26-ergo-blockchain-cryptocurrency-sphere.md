@@ -10,7 +10,7 @@ tags:
 ---
 <!--StartFragment-->
 
-The following is a first in a series of articles covering general cryptocurrency & blockchain education. Over the next few weeks, we will regularly publish articles covering various introductory topics as they relate to the field of cryptocurrency.
+The following is a first in a series of articles covering general cryptocurrency & blockchain education. Over the next few weeks, we will regularly publish articles covering various introductory topics as they relate to the field of smart contracts.
 
 Before you start, [Ergo Protocol Research and Client Development Roadmap](https://www.reddit.com/r/ergonauts/comments/qfjhw4/ergo_protocol_research_and_client_development/) is recently published by Kushti, if you wish to look in advance.
 
