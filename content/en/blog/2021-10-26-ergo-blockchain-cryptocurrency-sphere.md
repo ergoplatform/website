@@ -3,7 +3,7 @@ title: "Ergo & Blockchain: Cryptocurrency Sphere"
 date: 2021-10-26T13:07:18.329Z
 author: root7Z
 authorPhoto: /img/uploads/rootz-the-storyteller-4root7z.png
-blogPhoto: /img/uploads/ergoblockchain.png
+blogPhoto: /img/uploads/ergoblockchain.jpg
 tags:
   - Roadmap
   - Ergo Team
