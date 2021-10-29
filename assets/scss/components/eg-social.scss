@@ -25,5 +25,17 @@
         fill: $light-red;
       }
     }
+
+    &.eg-footer__social-icon--reddit {
+      &:hover {
+        path {
+          fill:black;
+        }
+
+        path:nth-child(2) {
+          fill: $light-red;
+        }
+      }
+    }
   }
 }
