@@ -22,7 +22,7 @@ As the Ergo Ecosystem continues to expand, we want to thank all the Ergonauts wh
 
 The **Ergnomes** team is one of the earliest developers of Ergo NFTs. They issued 477 unique Ergnomes on their first series and subsequently have issued 3000 Gnomekins this Halloween. You can check out the project on the [Ergnomes](https://ergnomes.io/) website, NFT Auctions or social media. The most expensive sale from their series was Alex Chepurnoy’s Ergnomes NFT which sold for 1420 ERG.
 
-The next project, **CyberCitizens** is an extension of the team's first project: Ergopixels. After their succesful first drop, they rebranded as Cybercitizens to fit with the theme and style of their vision. There are 2080 unique CyberCitizens and authenticity can be verifiable on their catalogue. They are planning their drop after the Auction House V2 update.Please visit their [website](https://cybercitizens.io/) for more information.
+The next project, **CyberCitizens** is an extension of the team's first project: ErgoPixels. After their succesful first drop, they rebranded as Cybercitizens to fit with the theme and style of their vision. There are 2080 unique CyberCitizens and authenticity can be verifiable on their catalogue. They are planning their next drop after the Auction House V2 update.Please visit their [website](https://cybercitizens.io/) for more information.
 
 **Cypherkics** are the first sneaker centered NFT project from the Cardano NFT ecosystem. They made a Halloween NFT airdrop in collaboration with ErgoDEX. The team is mainly active in the Cardano NFT (CNFT) space but they also have close relations with the Ergonauts community. You can check out their project on [Twitter](https://twitter.com/Cypherkicks).
 
