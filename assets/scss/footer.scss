@@ -9,9 +9,13 @@
     justify-content: space-between;
 
     .eg-footer__members {
+      transition: 1s;
       @media (max-width: $sm) {
         margin-bottom: 2rem;
       }
+    }
+    .eg-footer__members:hover{
+      transform:scale(1.2);
     }
 
     @media (max-width: $sm) {
