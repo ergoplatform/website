@@ -874,7 +874,7 @@
   translation: Web
 
 - id: wallets_table_second-column_second_title
-  translation: Mobile
+  translation: Mobile Android
 
 - id: wallets_table_second-column_fifth_title
   translation: Mobile IOS
