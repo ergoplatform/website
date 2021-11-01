@@ -1,5 +1,5 @@
 ---
-title: "Ergo: New Standard For NFT’s"
+title: "Ergo: New Standard For NFTs"
 date: 2021-11-01T16:28:02.434Z
 author: Ergo Foundation
 authorPhoto: /img/uploads/1762.png
