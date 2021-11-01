@@ -877,6 +877,9 @@
   translation: Mobile
 
 - id: wallets_table_second-column_third_title
+  translation: Mobile IOS
+
+- id: wallets_table_second-column_third_title
   translation: Desktop
 
 - id: wallets_table_second-column_fourth_title
