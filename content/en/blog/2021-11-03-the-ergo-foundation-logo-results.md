@@ -2,7 +2,7 @@
 title: The Ergo Foundation Logo Results
 date: 2021-11-03T12:18:32.558Z
 author: Ergo Foundation
-authorPhoto: /img/uploads/ergo_foundation_logo_vertical.png
+authorPhoto: /img/uploads/logo.png
 blogPhoto: /img/uploads/ergo_foundation__card_front__white-1-.png
 tags:
   - Building Ergo
