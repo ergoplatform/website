@@ -14,6 +14,8 @@ The following article will look into core aspects of cryptocurrencies, decentral
 
 # Crypto, Blockchain and  Finance
 
+
+
 Cryptocurrencies rely on distributed ledger technology to maintain relevant data on the blockchain. A decentralized database consists of the nodes that carry the information, such as the number of wallets, tokens, nodes and the function of specific contracts stored on the blockchain. As Decentralized Finance (DeFi) becomes more accepted, it is important to prepare for a new functioning economic design.
 
 When Satoshi Nakamoto created something new (Bitcoin) in opposition to traditional financial institutions, it was thought to be a hobby project by an anonymous developer. Quite often, it was thought to be a joke or a scam initiated to take away people’s money. Fast-forward to today and now Bitcoin is recognized as legal tender and gaining acceptance among financial firms. What once was thought to be “money out of thin air” has turned into something far beyond that touches more and more of everyday life.
@@ -21,6 +23,8 @@ When Satoshi Nakamoto created something new (Bitcoin) in opposition to tradition
 The relevance of this is that the currency, in the form of data, is backed by computing power which is the outcome of running mining equipment and electricity. Users pay commission fees to miners for transaction verification and miners get extra rewards from the protocol for providing security. This is called the Proof of Work (PoW) consensus model on which Bitcoin, Ethereum, and Monero are built. Another model is called Proof of Stake (PoS). In PoS, the consensus is decided by the amount of staked tokens rather than the hash power from miners. There are different actors (Miner/Staker) and attack vectors (51/66/33% attacks) that these two core consensus models represent.
 
 # PoW and PoS Launch Models 
+
+
 
 As the pioneer of PoW systems, Bitcoin did not have an initial coin offering (ICO) but instead had a fair launch where anyone could mine it with their computer hardware. Ethereum, on the other hand, pre-mined certain allocations (of coins) for the team and ecosystem funding and conducted an ICO before the mining started. Both launch models have different characteristics in terms of their allocators. In PoS, the foundation holds the vast majority of the funds at the launch phase and investors can obtain coins on ICO or buy them on secondary markets. There can also be pre-sale rounds that are open mainly for Venture Capitals (VC). In PoW, the only way to get the coins is by mining or buying on the secondary market from a seller. 
 
@@ -33,6 +37,8 @@ Below is an infographic displaying a comparison of token allocations for PoS pro
 ![by: tortodelivery](https://lh4.googleusercontent.com/WD0VaTu3CgW0kuJdJE6BWqR3RtPPOkxAWLlLZWG6jEgeLlOHq9NwLeHuoKeufJJSTTceg8iasKpxpgLm9pltgLOUa8vgQlNaMtxNIJYemsusdtBaq2qK4t9K5B4oszMv0uNAT0np)
 
 # Tokenomics
+
+
 
 Tokenomics, or Token Economics, is the key factor that separates cryptocurrency from fiat currency. Traditional monetary policies are defined by institutions and they are always subject to changes by the same institutions. Tokenomics on the other hand are written on blockchain and can not be changed without achieving a consensus to do so.
 
