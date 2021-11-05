@@ -30,7 +30,11 @@ In the PoS model launch, there is often a certain amount of foundation/team allo
 
 Below is an infographic displaying a comparison of token allocations for PoS projects:
 
-![by: tortodelivery](https://lh4.googleusercontent.com/WD0VaTu3CgW0kuJdJE6BWqR3RtPPOkxAWLlLZWG6jEgeLlOHq9NwLeHuoKeufJJSTTceg8iasKpxpgLm9pltgLOUa8vgQlNaMtxNIJYemsusdtBaq2qK4t9K5B4oszMv0uNAT0np)
+![](https://lh4.googleusercontent.com/WD0VaTu3CgW0kuJdJE6BWqR3RtPPOkxAWLlLZWG6jEgeLlOHq9NwLeHuoKeufJJSTTceg8iasKpxpgLm9pltgLOUa8vgQlNaMtxNIJYemsusdtBaq2qK4t9K5B4oszMv0uNAT0np)
+
+by: tortodelivery
+
+
 
 # Tokenomics
 
