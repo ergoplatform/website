@@ -51,7 +51,7 @@ These powerful tools are the building blocks that support an already impressive 
 
 [ErgoUtils](https://bit.ly/3kYyT8V) - The dApp for the creation of Ergo NFT’s and new tokens.
 
-[Oracle Pools](https://bit.ly/3kYfIMm) - Messengers between blockchain and outside world.
+[Oracle Pools](https://bit.ly/3kYfIMm) - Messengers between Ergo blockchain and the outside world.
 
 These are just a few of the dApps currently deployed on Ergo. For a comprehensive overview of the ecosystem please visit [Sigmaverse](https://bit.ly/3kRCqpo) and explore the dApps that are in development from the most recent [ErgoHack](https://ergoplatform.org/en/blog/2021-10-21-ergohack-ii-results/).
 
