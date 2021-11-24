@@ -1,7 +1,7 @@
 ---
 title: Ergo SmartPools and Decentralized Mining
 date: 2021-11-19T17:38:43.147Z
-author: Ergo Foundation
+author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/smartpools.png
 tags:
