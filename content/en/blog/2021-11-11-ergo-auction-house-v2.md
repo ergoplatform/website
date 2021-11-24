@@ -1,7 +1,7 @@
 ---
 title: Ergo Auction House V2
 date: 2021-11-11T16:14:11.842Z
-author: Ergo Foundation
+author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/ergoauctions-2-.png
 tags:
