@@ -1,5 +1,5 @@
 ---
-title: "Ergohack Wonders: I. The Ergo Raffle"
+title: "Ergohack Wonders: The Ergo Raffle"
 date: 2021-11-30T19:27:36.146Z
 author: Ergo Foundation
 authorPhoto: /img/uploads/1762.png
