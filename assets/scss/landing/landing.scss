@@ -111,11 +111,20 @@
 
     .header-section__button {
       margin-top: 70px;
+      transition : all 0.5 ease;
+      &:hover {
+        transform: scale(1.1);
+        color: #ff4221;
+        transition: all 0.5s ease;
+        background: #ffffff;
+    }
+      
 
       @media (max-width: $xs) {
         margin-top: 42px;
       }
     }
+
   }
 
   .subheader-section {
