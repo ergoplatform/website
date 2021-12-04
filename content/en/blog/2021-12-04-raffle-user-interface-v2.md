@@ -27,6 +27,6 @@ If you wish to check the contracts for yourself, check Raffle on [GitHub](https:
 **\
 To learn about Ergo Raffle and how to use it, see the previous [blog post](https://ergoplatform.org/en/blog/2021-09-02-ergo-raffle/).**
 
-**To learn what has been achieved with raffle, see [ErgoHack Wonders](https://ergoplatform.org/en/blog/2021-11-30-ergohack-wonders-i-the-ergo-raffle/).**
+**To learn what has been achieved with ErgoRaffle, see [ErgoHack Wonders](https://ergoplatform.org/en/blog/2021-11-30-ergohack-wonders-i-the-ergo-raffle/).**
 
 <!--EndFragment-->
