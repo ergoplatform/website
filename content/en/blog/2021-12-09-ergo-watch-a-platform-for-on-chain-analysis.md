@@ -1,6 +1,6 @@
 ---
 title: "Ergo Watch: A Platform for On-Chain Analysis"
-date: 2021-12-09T14:37:51.434Z
+date: 2021-12-09T16:02:39.774Z
 author: Ergo Foundation
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/ergowatch.png
