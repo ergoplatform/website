@@ -2,7 +2,7 @@
 title: Ergo AMA Wrap-Up, December 3
 date: 2021-12-06T14:05:15.626Z
 author: Ergo Foundation
-authorPhoto: /img/uploads/1762.png
+authorPhoto: /img/uploads/logo.png
 blogPhoto: /img/uploads/ama-2-2-.png
 tags:
   - Building Ergo
