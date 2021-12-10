@@ -2,7 +2,7 @@
 title: Ergo Foundation Announces Official Incorporation
 date: 2021-12-10T18:43:45.252Z
 author: Ergo Foundation
-authorPhoto: /img/uploads/1762.png
+authorPhoto: /img/uploads/logo.png
 blogPhoto: /img/uploads/ef.png
 tags:
   - Building Ergo
