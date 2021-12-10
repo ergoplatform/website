@@ -2,7 +2,7 @@
 title: Raffle User Interface v2
 date: 2021-12-04T15:40:29.132Z
 author: Ergo Foundation
-authorPhoto: /img/uploads/1762.png
+authorPhoto: /img/uploads/logo.png
 blogPhoto: /img/uploads/raffle-cover.png
 tags:
   - Building Ergo
