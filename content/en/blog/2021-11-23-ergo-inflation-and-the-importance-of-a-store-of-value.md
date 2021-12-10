@@ -2,7 +2,7 @@
 title: Ergo, Inflation and the Importance of a Store of Value
 date: 2021-11-23T15:01:38.107Z
 author: Ergo Foundation
-authorPhoto: /img/uploads/1762.png
+authorPhoto: /img/uploads/logo.png
 blogPhoto: /img/uploads/inflation-2-.png
 tags:
   - Roadmap
