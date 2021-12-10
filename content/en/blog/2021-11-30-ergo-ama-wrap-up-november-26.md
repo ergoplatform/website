@@ -2,7 +2,7 @@
 title: Ergo AMA Wrap-Up, November 26
 date: 2021-11-30T01:08:45.513Z
 author: Ergo Foundation
-authorPhoto: /img/uploads/1762.png
+authorPhoto: /img/uploads/logo.png
 blogPhoto: /img/uploads/ama.png
 tags:
   - Roadmap
