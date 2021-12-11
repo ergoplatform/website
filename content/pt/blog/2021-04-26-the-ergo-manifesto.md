@@ -23,27 +23,27 @@ Isto foi o que testemunhei nos primeiros anos, em torno dos usuários de fóruns
 
 ***Criptomoedas devem fornecer ferramentas para enriquecer pessoas comuns. Seus pequenos negócios não proporcionam muito além de pagar as contas, não são grandes capitais financeiros despersonalizados. Isto foi o que me inspirou. Este é o meu sonho.***
 
-As ferramentas de uma criptomoeda, aos olhos da visão geral da comunidade original, deveriam permitir que as pessoas realizassem atividades econômicas, seja qual for o tamanho dos seus negócios, localização geográfica, taxas de juros estabelecidas por grandes players e assim por diante.
+As ferramentas de uma criptomoeda, aos olhos da visão geral da comunidade original, deveriam permitir que as pessoas realizassem atividades econômicas, seja qual for o tamanho dos seus negócios, localização geográfica, taxas de juros estabelecidas por grandes participantes do mercado, e assim por diante.
 
-As ferramentas devem permitir que as pessoas façam contratos (digitais, autoaplicáveis, contratos inteligentes razoáveis) independentemente das diferenças de jurisdição, tradições, práticas comerciais seguidas, etc.
+As ferramentas devem permitir que as pessoas façam contratos (digitais, auto-aplicáveis, contratos inteligentes razoáveis) independentemente das diferenças de jurisdição, tradições, práticas comerciais seguidas, etc.
 
-Espero que a Ergo seja útil aqui. Milhares de pequenas cooperativas e empreendedores individuais são mais importantes para o crescimento saudável e sustentável da riqueza em todo o mundo do que algumas corporações ocultando lucros em paraísos fiscais.
+Espero que a Ergo seja útil aqui. Milhares de empreendedores individuais e de pequenas cooperativas são mais importantes para o crescimento saudável e sustentável da riqueza em todo o mundo do que algumas corporações ocultando lucros em paraísos fiscais.
 
 Como exemplo, vamos considerar o uso e integração com comunidades, federações cooperativas, fundações sem fins lucrativos, e fundos filantrópicos.
 
 Vamos tentar criar finanças de base. Sim, muitas outras coisas podem ser criadas, mas acho que este meu objetivo não deve ser esquecido. Meu sonho são contratos inteligentes que ajudem a criar valor e proteger as pessoas comuns.
 
-Ergo va a cumplir mi sueño, todo el mundo sin importar su clase social debería tener libertad financiera y justicia igualitaria.
+Ergo vai cumprir meu sonho: todo mundo deve ter liberdade financeira e igualdade de justiça, sem importar sua classe social.
 
 ## Origens do Bitcoin
 
-O primeiro bloco gerado pelo Bitcoin (conhecido como o Bloco Gênesis) continha uma mensagem dizendo “The Times 03/Jan/2009 Chancellor on brink of second bailout for banks.” [“Chanceler à beira de um segundo resgate aos bancos.”, em português].
+O primeiro bloco gerado pelo Bitcoin (conhecido como o Bloco Gênesis) continha uma mensagem dizendo “*The Times 03/Jan/2009 Chancellor on brink of second bailout for banks*.” [“Chanceler à beira de um segundo resgate aos bancos.”, em português].
 
-O criador do Bitcoin e inventor da primeira blockchain funcional, escolheu ocultar sua identidade por meio de um pseudônimo com o qual todos nós nos acostumamos: Satoshi Nakamoto. Ele, ela ou eles incluíram a mensagem mencionada acima, que foi tirada de um artigo do jornal The Times publicado no mesmo dia em que o Bloco Gênesis foi minerado.
+O criador do Bitcoin e inventor da primeira blockchain funcional, escolheu ocultar sua identidade por meio de um pseudônimo com o qual todos nós nos acostumamos: Satoshi Nakamoto. Ele, ela ou eles incluíram a mensagem mencionada acima, que foi tirada de um artigo do jornal *The Times* publicado no mesmo dia em que o Bloco Gênesis foi minerado.
 
 Este bloco marcou o início do Bitcoin, mas também o início de uma era de inovação tecnológica e financeira. Simplificando, este foi o catalisador para uma revolução completa.
 
-A descentralização é política. Isso deu origem à ideia de que os poderes monopolizados poderiam ser substituídos pela tecnologia. Sistemas poderiam ser implementados para transferir valor globalmente, sem a necessidade de intermediários ou supervisão. As pessoas podem escolher a moeda que usam e escolher quem, como e quando podem trocar valores entre si.
+A decentralização é política. Isso deu origem à ideia de que os poderes monopolizados poderiam ser substituídos pela tecnologia. Sistemas poderiam ser implementados para transferir valor globalmente, sem a necessidade de intermediários ou supervisão. As pessoas podem escolher a moeda que usam e escolher quem, como e quando podem trocar valores entre si.
 
 Toda uma indústria se formou em torno da ideia de comércio P2P. Canais abertos, sem fronteiras e seguros que potencialmente poderiam ser mecanismos para nivelar o campo de atuação econômico e fornecer ferramentas para a prosperidade para o cidadão médio do planeta.
 
@@ -51,9 +51,9 @@ Toda uma indústria se formou em torno da ideia de comércio P2P. Canais abertos
 
 A mentalidade dos mercados de criptografia mudou muito após a mania dos ICOs de 2017. Na verdade, parece que o espaço como um todo veio para celebrar os resgates, impressão e estímulos.
 \
-Sim, tem havido alguns ganhos massivos de preço em moeda fiduciária, muito marketing baseado em exageros, mas parece que a intenção original dos objetivos dos cypherpunks está se tornando cada vez mais diluída.
+Sim, tem havido alguns ganhos massivos de preço em moeda fiduciária, muito marketing baseado em exageros, mas parece que a intenção original dos objetivos dos *cypherpunks* está se tornando cada vez mais diluída.
 
-Isso é algo que precisa ser abordado. Se um criptoativo deve ser implementado como uma ferramenta eficaz para o ser humano médio, precisamos de ferramentas e adoção. No momento, parece que a mentalidade do mercado é a seguinte: como conseguimos mais usuários com marketing da moda, impulsionar os pumps e canibalizar esses novos membros das comunidades?
+Isso é algo que precisa ser abordado. Se um criptoativo deve ser implementado como uma ferramenta eficaz para o ser humano médio, precisamos de ferramentas e adoção. No momento, parece que a mentalidade do mercado é a seguinte: como conseguimos mais usuários com marketing da moda, impulsionar as subidas de preço e canibalizar esses novos membros das comunidades?
 
 O estado atual do mercado é um pouco triste. Precisamos voltar às raízes da cripto-revolução, ferramentas descentralizadas que são privadas, seguras e impulsionam a adoção desses sistemas no mundo real. O ideal é criar ferramentas que ajudem as pessoas a criar valor.
 
@@ -99,7 +99,7 @@ A política monetária infligiu grandes dificuldades aos cidadãos globais médi
 
 A verdade é que muitos consumidores foram levados a acreditar que números maiores refletem maior riqueza. A realidade é que o poder de compra da moeda está diminuindo. Sua casa não dobrou de valor, sua moeda que só compra a metade da casa. A inflação salarial ainda precisa equalizar as pressões inflacionárias que são exercidas sobre as classes média e baixa em todo o mundo. O resultado é um novo aumento na dívida pessoal e estresse monetário sobre o consumidor médio.
 
-À medida que os bancos centrais começam a mudar para as Central Bank Digital Currencies [Moedas Digitais de Bancos Centrais, em português], eles podem acabar redefinindo os princípios históricos da própria moeda. Temo que o dinheiro seja usado como arma e transformado em uma ferramenta de controle social. 
+À medida que os bancos centrais começam a mudar para as Moedas Digitais de Bancos Centrais, eles podem acabar redefinindo os princípios históricos da própria moeda. Temo que o dinheiro seja usado como arma e transformado em uma ferramenta de controle social. 
 
 Existem três pontos específicos que eu acredito que precisam ser observados e rejeitados para evitar a adoção do dinheiro como arma.
 
@@ -162,15 +162,15 @@ O objetivo do dinheiro ergonômico é criar dinheiro e contratos inteligentes pa
 
 ## Princípios Básicos de Ergo
 
-*Nesta seção, definimos os princípios centrais que devem ser seguidos para criar dinheiro ergonômico.*  
+*Nesta seção, definimos os princípios centrais que devem ser seguidos para criar dinheiro ergonômico.*
 
-*Isso pode ser referido como o “Contrato Social da Ergo”. * 
+*Isso pode ser referido como o “Contrato Social da Ergo”.*
 
-*EEm caso de violação intencional de algum destes princípios, o protocolo resultante não deve ser denominado Ergo.*  
+*Em caso de violação intencional de algum destes princípios, o protocolo resultante não deve ser denominado Ergo.*
 
-### 1) Descentralização primeiro
+### 1) decentralização primeiro
 
-Ergo deve ser o mais descentralizado possível. Sempre se esforce para se espalhar e crescer. Os líderes sociais, desenvolvedores de software, fabricantes de hardware, mineradores e fundos de qualquer partido precisam evitar pontos centrais de falha. Todos os atores cuja ausência irá interromper o funcionamento do sistema precisam ter planos de contingência no caso de uma interrupção. A descentralização nasce da educação e adoção. As ferramentas que construímos precisam de documentação, a comunidade precisa participar ativamente e crescer. Ensine outras pessoas a usar e adotar as ferramentas. A Internet é um poderoso impulsionador da descentralização. Pode ser uma ferramenta poderosa para ensinar. A descentralização nasce da educação, tanto do lado do desenvolvimento quanto do lado do usuário.
+Ergo deve ser o mais descentralizado possível. Sempre se esforce para se espalhar e crescer. Os líderes sociais, desenvolvedores de software, fabricantes de hardware, mineradores e fundos de qualquer partido precisam evitar pontos centrais de falha. Todos os atores cuja ausência irá interromper o funcionamento do sistema precisam ter planos de contingência no caso de uma interrupção. A decentralização nasce da educação e adoção. As ferramentas que construímos precisam de documentação, a comunidade precisa participar ativamente e crescer. Ensine outras pessoas a usar e adotar as ferramentas. A Internet é um poderoso impulsionador da decentralização. Pode ser uma ferramenta poderosa para ensinar. A decentralização nasce da educação, tanto do lado do desenvolvimento quanto do lado do usuário.
 
 O comportamento malicioso que pode afetar a segurança da rede deve ser evitado. Se alguma dessas partes aparecer durante a vida de Ergo, a comunidade deve considerar maneiras de diminuir seu nível de impacto. Sempre haverá aqueles que procuram atrapalhar, tirar vantagem, fazer mal uso  e abusar de seu poder. Qual é a resposta? Educação. Educar os usuários para se protegerem, como identificar agentes mal-intencionados, como evitá-los, como trabalhar juntos para minimizar seu poder. Eu encorajaria todos os membros da comunidade a buscarem continuamente aprender, adotar ferramentas, auxiliar e ensinar de uma forma ou de outra. Uma forte comunidade nasce por meio de uma forte cooperação.
 
@@ -178,7 +178,7 @@ O comportamento malicioso que pode afetar a segurança da rede deve ser evitado.
 
 O protocolo Ergo não restringe ou limita nenhuma categoria de uso. Isso é necessário para permanecer resiliente. Certamente podemos defender a cooperação, o comércio e os valores humanos, mas não os aplicamos. Isso exigiria um poder central. Os desenvolvedores são livres para implementar qualquer lógica que desejarem, assumindo total responsabilidade pela ética e legalidade de sua aplicação. 
 
-Todo o código do protocolo principal deve permanecer totalmente aberto e transparente. Cada linha, tudo deve ser totalmente alditável e transparente. Isso evita a manipulação e também cria resiliência descentralizada. A Ergo está totalmente comprometida em ser open source para permanecer confiável e essa confiança deve permanecer totalmente verificável.
+Todo o código do protocolo principal deve permanecer totalmente aberto e transparente. Cada linha, tudo deve ser totalmente auditável e transparente. Isso evita a manipulação e também cria resiliência descentralizada. A Ergo está totalmente comprometida em ser código aberto para permanecer confiável e essa confiança deve permanecer totalmente verificável.
 
 Qualquer pessoa pode ingressar na rede e participar do protocolo sem permissão. Ao contrário do sistema financeiro tradicional, nenhum resgate, listas negras ou outras formas de discriminação devem ser possíveis no nível central do protocolo Ergo. A vantagem interna deve ser minimizada. 
 
@@ -188,7 +188,7 @@ Ergo está comprometida com as melhores práticas de segurança. Este é um comp
 
 ### 3) Criado para as pessoas comuns
 
-Ergo tem o compromisso de ser uma ferramenta para pessoas comuns. Ergo é uma plataforma para pessoas comuns, e seus interesses não devem ser infringidos em favor de grandes partidos. Em particular, isso significa que a centralização da mineração deve ser evitada. Pessoas comuns devem ser capazes de participar do protocolo executando um nó completo e blocos de mineração. A publicação do Ergo Autolykos V1 trabalhará para fornecer uma distribuição de taxa de hash de pools. 
+Ergo tem o compromisso de ser uma ferramenta para pessoas comuns. Ergo é uma plataforma para pessoas comuns, e seus interesses não devem ser infringidos em favor de grandes partidos. Em particular, isso significa que a centralização da mineração deve ser evitada. Pessoas comuns devem ser capazes de participar do protocolo executando um nó completo e blocos de mineração. A publicação do Ergo Autolykos v1 trabalhará para fornecer uma distribuição de taxa de *hash* de *pools*. 
 
 Ergo está empenhada em trabalhar para construir um ecossistema que ofereça ferramentas projetadas para ajudar as pessoas comuns. As negociações ponto a ponto estão continuamente sob ameaça de negociações de ponto a poder central. O objetivo da Ergo é incentivar o uso de ferramentas e a educação da comunidade para capacitar o ser humano comum.
 
@@ -212,10 +212,10 @@ Muitas vezes as pessoas sacrificam o crescimento de longo prazo por entusiasmo d
 
 ### Quem é Kushti?
 
-Alexander Chepurnoy (também conhecido como Kushti) é o desenvolvedor da Ergo Platform e atua no desenvolvimento de blockchains e contratos inteligentes desde 2011. Ele foi um dos desenvolvedores da NXT, iniciou o smartcontract.com (agora Chainlink) em 2014 com Sergey Nazarov, e é um pesquisador da IOHK com mais de 20 trabalhos acadêmicos em seu nome. Quando estava trabalhando no NXT, começou uma estrutura de blockchain totalmente simples com Scorex, que mais tarde foi transformada em uma estrutura de blockchain modular. Este projeto chamou a atenção de Charles Hoskinson, co-fundador Cardano e Ethereum, em meados do outono de 2015. Então ele se juntou à IOHK por volta de janeiro de 2016.
+Alexander Chepurnoy (também conhecido como Kushti) é o desenvolvedor da Plataforma Ergo e atua no desenvolvimento de blockchains e contratos inteligentes desde 2011. Ele foi um dos desenvolvedores da NXT, iniciou o *smartcontract.com* (agora *Chainlink*) em 2014 com Sergey Nazarov, e é um pesquisador da IOHK com mais de 20 trabalhos acadêmicos em seu nome. Quando estava trabalhando no NXT, começou uma estrutura de blockchain totalmente simples com Scorex, que mais tarde foi transformada em uma estrutura de blockchain modular. Este projeto chamou a atenção de Charles Hoskinson, co-fundador de Cardano e Ethereum, no terceiro trimestre de 2015. Então, ele se juntou à IOHK em Janeiro de 2016.
 
 ### Uma nota sobre a tokenomia
 
-A Ergo Platform teve um lançamento justo desde de seu início. Não tinha ICO e não havia moedas pré-mineradas para os fundadores da plataforma. A descentralização e a justiça de um sistema monetário ponto a ponto  foi a prioridade em primeiro lugar. A tesouraria da Fundação Ergo está definida em 4,37% do total de moedas extraídas e não é possível alterar os elementos essenciais da economia de token em uma fase posterior.
+A Plataforma Ergo teve um lançamento justo desde de seu início. Não tinha ICO e não havia moedas pré-mineradas para os fundadores da plataforma. A decentralização e a justiça de um sistema monetário ponto a ponto  foi a prioridade em primeiro lugar. A tesouraria da Fundação Ergo está definida em 4,37% do total de moedas extraídas e não é possível alterar os elementos essenciais da economia de token em uma fase posterior.
 
 <!--EndFragment-->
