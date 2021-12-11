@@ -1,7 +1,7 @@
 ---
-title: El Ergo Manifesto
+title: O Manifesto Ergo
 date: 2021-04-26T18:19:48.338Z
-author: Ergo Foundation
+author: Fundação Ergo
 authorPhoto: /img/uploads/logotype_black_circle.svg
 blogPhoto: /img/uploads/ergomanifesto.png
 tags:
@@ -9,213 +9,213 @@ tags:
 ---
 <!--StartFragment-->
 
-##### El Ergo Manifesto tiene como objetivo educar y ofrecer una visión de lo que puede lograr la tecnología blockchain. Esperamos construir la sociedad a través de una forma de cooperación horizontal a través de la producción bajo la división del trabajo, el comercio y el intercambio, y la solidaridad y la ayuda mutua.
+##### O Manifesto Ergo tem como objetivo educar e oferecer uma visão do que a tecnologia de blockchain pode realizar. Esperamos fortalecer a sociedade através de uma forma de cooperação horizontal por meio de produção sob a divisão de trabalho, comércio e câmbio, e solidariedade e ajuda mútua.
 
-##### Creemos que esto se puede lograr manteniendo los principios básicos que benefician el bienestar de todos los seres humanos. Los principios básicos que han sido fundamentales para los derechos y valores humanos deben mantenerse a medida que evolucionan nuestras capacidades tecnológicas. Las herramientas que se construyen deben enriquecer el valor humano en lugar de subyugar a los humanos en sistemas de vigilancia y control. 
+#####  Acreditamos que isso pode ser alcançado mantendo os princípios básicos que norteiam o bem-estar de todos os humanos. Os princípios fundamentais que têm sido centrais para os direitos e valores humanos devem ser mantidos à medida que nossas capacidades tecnológicas evoluem. As ferramentas construídas devem enriquecer os valores humanos, em vez de subjugá-los em sistemas de vigilância e controle.
 
-# Por Kushti- Con la ayuda del equipo de Ergo
+# Por Kushti- Com ajuda do time de desenvolvimento da Ergo
 
-Muchas noticias relacionadas con blockchain en estos días dicen que un banco X o una corporación Y van a utilizar una "blockchain" para "reducir costos".
+Atualmente, muitas notícias relacionadas a blockchains dizem que um banco X ou a empresa Y usará uma “blockchain” para “reduzir custos”.
 
-Básicamente, significa que los grandes banqueros la consideran simplemente otra palabra de moda como una herramienta más para extraer valor de todas partes de una manera más eficiente y también para ahorrar en la reducción de puestos de trabajo.
+Basicamente, isto significa que mais uma palavra da moda é considerada pelos grandes banqueiros apenas como mais uma ferramenta para extrair valor de todos os lugares de forma mais eficiente e também para economizar na redução de postos de trabalho.
 
-Lo que presencié en los primeros años en torno a los usuarios de foros en línea es esto.
+Isto foi o que testemunhei nos primeiros anos, em torno dos usuários de fóruns online.
 
-***El mundo cripto debería proporcionar herramientas para enriquecer a la gente común. Sus pequeñas empresas no proporcionan mucho más que llegar a fin de mes, no despersonalizan el gran capital financiero. Esto es lo que me inspiró. Este es mi sueño.***
+***Criptomoedas devem fornecer ferramentas para enriquecer pessoas comuns. Seus pequenos negócios não proporcionam muito além de pagar as contas, não são grandes capitais financeiros despersonalizados. Isto foi o que me inspirou. Este é o meu sonho.***
 
-Las herramientas de una criptomoneda a los ojos de la visión comunitaria deberían permitir a las personas realizar actividades económicas independientemente del tamaño de la empresa, la ubicación geográfica, las tasas de interés establecidas por los grandes actores, etc.
+As ferramentas de uma criptomoeda, aos olhos da visão geral da comunidade original, deveriam permitir que as pessoas realizassem atividades econômicas, seja qual for o tamanho dos seus negócios, localização geográfica, taxas de juros estabelecidas por grandes players e assim por diante.
 
-Las herramientas deben permitir que las personas realicen contratos (digitales, autoaplicables, contratos inteligentes razonables) independientemente de las diferencias en jurisdicciones, tradiciones etc.
+As ferramentas devem permitir que as pessoas façam contratos (digitais, autoaplicáveis, contratos inteligentes razoáveis) independentemente das diferenças de jurisdição, tradições, práticas comerciais seguidas, etc.
 
-Espero que Ergo sea de utilidad aquí. Miles de pequeñas cooperativas y empresarios individuales son más importantes para el crecimiento de la riqueza saludable y sostenible en todo el mundo que un par de corporaciones que esconden ganancias en los paraísos fiscales.
+Espero que a Ergo seja útil aqui. Milhares de pequenas cooperativas e empreendedores individuais são mais importantes para o crescimento saudável e sustentável da riqueza em todo o mundo do que algumas corporações ocultando lucros em paraísos fiscais.
 
-Como ejemplo, consideremos el uso y la integración con comunidades, federaciones cooperativas, fundaciones sin fines de lucro y filantrópicas. 
+Como exemplo, vamos considerar o uso e integração com comunidades, federações cooperativas, fundações sem fins lucrativos, e fundos filantrópicos.
 
-Intentemos crear una base de finanzas. Sí, se pueden construir muchas otras cosas, pero creo que mi objetivo no debe olvidarse. Mi sueño son contratos inteligentes que ayuden a crear valor y proteger a la gente común.
+Vamos tentar criar finanças de base. Sim, muitas outras coisas podem ser criadas, mas acho que este meu objetivo não deve ser esquecido. Meu sonho são contratos inteligentes que ajudem a criar valor e proteger as pessoas comuns.
 
 Ergo va a cumplir mi sueño, todo el mundo sin importar su clase social debería tener libertad financiera y justicia igualitaria.
 
-## Orígenes de Bitcoin
+## Origens do Bitcoin
 
-El primer bloque de Bitcoin (conocido como el bloque Génesis) contenía un mensaje que decía "El canciller del Times 03 / Ene / 2009 al borde del segundo rescate para los bancos".
+O primeiro bloco gerado pelo Bitcoin (conhecido como o Bloco Gênesis) continha uma mensagem dizendo “The Times 03/Jan/2009 Chancellor on brink of second bailout for banks.” [“Chanceler à beira de um segundo resgate aos bancos.”, em português].
 
-El creador de Bitcoin e inventor de la primera cadena de bloques en funcionamiento eligió ocultar su identidad a través de un seudónimo al que todos nos hemos acostumbrado: Satoshi Nakamoto. Él, ella o ellos incluyeron el mensaje antes mencionado que fue tomado de un artículo del periódico Times emitido el mismo día en que se extrajo el bloque génesis.
+O criador do Bitcoin e inventor da primeira blockchain funcional, escolheu ocultar sua identidade por meio de um pseudônimo com o qual todos nós nos acostumamos: Satoshi Nakamoto. Ele, ela ou eles incluíram a mensagem mencionada acima, que foi tirada de um artigo do jornal The Times publicado no mesmo dia em que o Bloco Gênesis foi minerado.
 
-Este bloque marcó el inicio de Bitcoin, pero también el inicio de una era de innovación tecnológica y financiera. En pocas palabras, este fue el catalizador de una revolución en toda regla.
+Este bloco marcou o início do Bitcoin, mas também o início de uma era de inovação tecnológica e financeira. Simplificando, este foi o catalisador para uma revolução completa.
 
-La descentralización está relacionada con la política. Dio origen a la idea de que los poderes monopolizados podrían ser reemplazados por tecnología. Se podrían implementar sistemas para transferir valor a nivel mundial sin la necesidad de intermediarios o supervisión. Las personas pueden elegir la moneda que usan y elegir quién, cómo y cuándo intercambiar valor entre sí.
+A descentralização é política. Isso deu origem à ideia de que os poderes monopolizados poderiam ser substituídos pela tecnologia. Sistemas poderiam ser implementados para transferir valor globalmente, sem a necessidade de intermediários ou supervisão. As pessoas podem escolher a moeda que usam e escolher quem, como e quando podem trocar valores entre si.
 
-Toda una industria se formó en torno a la idea del comercio P2P (persona con persona, sin intermediarios). Canales abiertos, sin fronteras y seguros que potencialmente podrían resultar mecanismos para nivelar el campo de juego económico y proporcionar herramientas para la prosperidad del ciudadano medio de la tierra. 
+Toda uma indústria se formou em torno da ideia de comércio P2P. Canais abertos, sem fronteiras e seguros que potencialmente poderiam ser mecanismos para nivelar o campo de atuação econômico e fornecer ferramentas para a prosperidade para o cidadão médio do planeta.
 
-## Mentalidad actual del mercado
+## Mentalidade do mercado atual
 
-La mentalidad de los mercados de criptomonedas cambió mucho después de la locura de las ICO de 2017. De hecho, parece que el espacio en su conjunto ha llegado para celebrar los rescates, la impresión y el estímulo.
+A mentalidade dos mercados de criptografia mudou muito após a mania dos ICOs de 2017. Na verdade, parece que o espaço como um todo veio para celebrar os resgates, impressão e estímulos.
 \
-Sí, ha habido algunos aumentos masivos de precios en fiat, mucho marketing basado en exageraciones, pero parece que la intención original de los objetivos de los cypherpunks se está diluyendo cada vez más.
+Sim, tem havido alguns ganhos massivos de preço em moeda fiduciária, muito marketing baseado em exageros, mas parece que a intenção original dos objetivos dos cypherpunks está se tornando cada vez mais diluída.
 
-Esto es algo que debe abordarse. Si la criptomoneda se va a implementar como una herramienta efectiva para el ser humano promedio, necesitamos herramientas y adopción. En este momento, parece que la mentalidad del mercado es la siguiente: ¿cómo engañamos a los nuevos usuarios con marketing exagerado, impulsamos subidas exageradas y canibalizamos a estos nuevos miembros de las comunidades?
+Isso é algo que precisa ser abordado. Se um criptoativo deve ser implementado como uma ferramenta eficaz para o ser humano médio, precisamos de ferramentas e adoção. No momento, parece que a mentalidade do mercado é a seguinte: como conseguimos mais usuários com marketing da moda, impulsionar os pumps e canibalizar esses novos membros das comunidades?
 
-El estado actual del mercado es un poco triste. Necesitamos volver a las raíces de la cripto-revolución, herramientas descentralizadas que son privadas, seguras e impulsan la adopción de estos sistemas en el mundo real. Lo ideal es crear herramientas que ayuden a las personas a crear valor.
+O estado atual do mercado é um pouco triste. Precisamos voltar às raízes da cripto-revolução, ferramentas descentralizadas que são privadas, seguras e impulsionam a adoção desses sistemas no mundo real. O ideal é criar ferramentas que ajudem as pessoas a criar valor.
 
-## Por qué es esto importante?
+## Por que isso é importante?
 
-La economía global no ha mejorado desde los rescates financieros originales. Entiendo que la narrativa central en torno a la privacidad y la seguridad siempre juega con los extremos emocionales, sin embargo, la realidad es que siempre son los humanos comunes los que se queman cuando las economías implosionan.
+A economia global não melhorou desde os resgates originais. Eu entendo que a narrativa central em torno da privacidade e segurança sempre joga em extremos emocionais, mas a realidade é que são sempre as pessoas comuns que se queimam  quando as economias implodem.
 
 *\-*
 
-*Piensa en ello un segundo* 
+*Pense nisso por um segundo.* 
 
 \-
 
-Las corporaciones tienen acceso a los mercados extranjeros y al crédito externo. Tienen muchas herramientas para adaptarse y sortear las dificultades económicas.
+As corporações têm acesso a mercados e crédito estrangeiro. Eles têm muitas ferramentas para ajustar e contornar as dificuldades econômicas.
 
-En cuanto a las empresas delictivas, generalmente se benefician de las dificultades económicas. Los tiempos difíciles impulsan la automedicación. Los sindicatos criminales más grandes son esencialmente un negocio de importación / exportación. También tienen acceso a moneda extranjera y, a menudo, realizarán intercambios de divisas en el mercado negro y aprovecharán aún más este acceso internacional con fines de lucro.
+Quanto às empresas criminosas, geralmente se beneficiam das dificuldades econômicas. Os tempos difíceis conduzem à automedicação. Os grandes sindicatos criminosos são essencialmente importação/exportação de negociações. Eles também têm acesso à moeda estrangeira e, muitas vezes, administram as operações de câmbio do mercado informal alavancando ainda mais esse acesso internacional para obter lucro.
 
-Las organizaciones terroristas se benefician en tiempos de dificultades económicas. Nada motiva a una persona hacia la violencia como una ira justa por la sensación de estar atrapado y sin esperanza. Las organizaciones terroristas prosperan en regiones de caos. Se alimentan del caos; es su mayor herramienta de reclutamiento.
+As organizações terroristas se beneficiam em tempos de dificuldades econômicas. Nada motiva uma pessoa para a violência como a raiva justificada pela sensação de estar preso e sem esperança. As organizações terroristas prosperam em regiões de caos. Eles se alimentam do caos; é sua maior ferramenta de recrutamento.
 
-Los ricos de nuestro mundo a menudo tienen carteras asignadas internacionalmente. Generalmente tienen la capacidad de sortear dificultades a través del acceso al mercado, medios regulatorios como paraísos fiscales, lagunas y arbitraje jurisdiccional.
+Os ricos em nosso mundo costumam ter carteiras alocadas internacionalmente. Eles são relativamente líquidos e geralmente têm a capacidade de contornar as dificuldades por meio do acesso ao mercado, meios regulatórios como paraísos fiscais, brechas e arbitragem jurisdicional.
 
-Hay múltiples ejemplos de economías que se encuentran en grave peligro, uno que fue noticia recientemente fue Turquía. Los bancos centrales turcos prohibieron recientemente las criptomonedas como forma de pago. Cortaron el acceso a una herramienta potencial que beneficiaría al ciudadano medio.
+Existem vários exemplos de economias que estão em sérias dificuldades, uma delas que virou notícia recentemente foi a Turquia. Os bancos centrais turcos baniram recentemente as criptomoedas como forma de pagamento. Eles cortaram o acesso a uma ferramenta potencial que beneficiaria o cidadão comum.
 
-El tipo de cambio de la lira por dólar en 2010 fue de 1,14. El tipo de cambio actual es de 8,50. Eso es una disminución del 86,5882% en el poder adquisitivo.
+A taxa de câmbio da Lira em relação ao dólar em 2010 foi de 1,14. A taxa de câmbio atual é 8,50. Isso representa uma redução de 86,5882% no poder de compra.
 
-Ahora imagina que eres un turco, tal vez hayas intercambiado toda una vida de tiempo y trabajo para ganar y ahorrar. En el lapso de poco más de una década, más del 86% de su valor monetario ha desaparecido.
+Agora imagine que você é um turco, talvez você tenha negociado uma vida inteira de tempo e trabalho para ganhar e economizar. Em um período de pouco mais de uma década, mais de 86% de seu valor monetário desapareceu.
 
-Lo triste es que blockchain era accesible en Turquía, sin embargo, los agentes de custodia abusaron de su posición con la gente.
+O triste é que as blockchains estavam disponíveis na Turquia, no entanto, os governantes e representantes do poder turco abusaram de sua posição com o povo.
 
-Es de vital importancia hacer que los sistemas sean lo menos interactivos y sin custodia posible. Esto elimina el potencial de malos actores y protege a las personas de a pie, como tú y como yo. Esto fue una falla en la tecnología y debería servir como una advertencia sobre los peligros de la cadena de bloques centralizada.
+É extremamente importante tornar os sistemas o mais não interativos e não custodiais possível.. Isso elimina o potencial de maus atores e protege as pessoas. Isso foi uma falha de tecnologia e deveria servir como um alerta para os perigos das blockchains centralizadas.
 
-No dejemos que esto sirva como un ejemplo de por qué blockchain es malo, sino como un ejemplo de por qué la gente común necesita herramientas verdaderamente descentralizadas en las que realmente puedan confiar.
+Deixe isso servir, não como um exemplo de porque o blockchain é ruim, mas como um exemplo de porque o cidadão comum precisa de ferramentas verdadeiramente descentralizadas em que possa realmente confiar.
 
-Ahora, como en la mayoría de las jurisdicciones del mundo, el ciudadano medio de cada país tiene esencialmente cero poder sobre la política monetaria. El ciudadano medio carece de las herramientas que tienen las corporaciones, las organizaciones criminales, las organizaciones terroristas y los ricos para protegerse y beneficiarse de las dificultades financieras. Las circunstancias financieras fueron creadas por los mismos poderes que ahora mantienen su riqueza como rehén.
+Agora, como na maioria das jurisdições do planeta, o cidadão médio de cada país tem praticamente zero poder sobre a política monetária. O cidadão médio não tem as ferramentas que as corporações, organizações criminosas, organizações terroristas e os ricos têm para se proteger e se beneficiar das dificuldades financeiras. As circunstâncias financeiras foram criadas pelos mesmos poderes que agora mantêm suas riquezas como reféns.
 
-La realidad es que la gente de arriba siempre coge la balsa salvavidas cuando un bote se hunde, la gente de abajo baja con el barco. Ahora bien, esto no es exclusivo de Turquía. Este es actualmente un fenómeno global. Es evidente al observar los cambios en la distribución de la riqueza. Sin embargo, se ha desinfectado para que parezca más apetecible. Son los ricos los que tienen balsas salvavidas y la gente común se está ahogando.
+A realidade é que as pessoas no topo sempre pegam o bote salva-vidas quando um barco afunda, as pessoas no fundo afundam com o navio. Agora, isso não é exclusivo da Turquia. Este é um fenômeno global atualmente. É evidente quando se olha para as mudanças na distribuição da riqueza. No entanto, foi higienizado para parecer mais palatável. Não são os ricos que têm botes salva-vidas e as pessoas comuns estão se afogando.
 
-## El uso del dinero como arma
+## O dinheiro como armamento
 
-El dinero digital programable centralizado suena como una actualización técnica eficiente de la infraestructura monetaria existente. En algunas áreas, este puede ser el caso. Sin embargo, parece que las construcciones básicas del dinero se encuentran en las etapas iniciales de una era que convertirá el dinero en un arma contra el ser humano promedio. Los sistemas monetarios actuales basados ​​en fiat atacan al ciudadano común creando presiones inflacionarias persistentes. Este es el resultado directo de la impresión del banco central, la intervención monetaria y la mala gestión del presupuesto fiscal por parte de los gobiernos centrales.
+Dinheiro digital programável centralizado soa como uma atualização técnica eficiente para a infraestrutura monetária existente. Em algumas áreas, pode ser o caso. No entanto, parece que as construções básicas do dinheiro estão nos estágios iniciais de uma era que o tornará ainda mais contra o cidadão comum. Os atuais sistemas monetários fiduciários atacam este cidadão criando pressões inflacionárias persistentes. Este é um resultado direto da impressão de dinheiro do banco central, intervenção monetária e má gestão do orçamento fiscal pelos governos centrais.
 
-La política monetaria resultante ha infligido grandes dificultades a los ciudadanos globales promedio, al elevar perpetuamente el costo de vida. La hipermonetización ha transformado casi todas las clases de activos en un instrumento financiero que se utiliza como medio para generar riqueza. Esto ha impulsado la desigualdad de la riqueza a nivel mundial y ha producido una inflación de la deuda mundial a niveles nunca vistos en la historia registrada.
+A política monetária infligiu grandes dificuldades aos cidadãos globais médios, ao elevar perpetuamente o custo de vida. A hiper-monetização transformou quase todas as classes de ativos em um instrumento financeiro que é usado como meio de gerar riqueza. Isso impulsionou a desigualdade de riqueza em todo o mundo e produziu inflação na dívida global a níveis nunca vistos na história.
 
-La verdad es que a muchos consumidores se les ha hecho creer que un número mayor refleja una mayor riqueza. La realidad es que la moneda está perdiendo poder adquisitivo. Su casa no duplicó su valor, su moneda compra la mitad de la casa. La inflación salarial aún tiene que igualar las presiones inflacionarias que se ejercen sobre las clases media y baja a nivel mundial. El resultado es un aumento adicional de la deuda personal y la tensión monetaria del consumidor medio.
+A verdade é que muitos consumidores foram levados a acreditar que números maiores refletem maior riqueza. A realidade é que o poder de compra da moeda está diminuindo. Sua casa não dobrou de valor, sua moeda que só compra a metade da casa. A inflação salarial ainda precisa equalizar as pressões inflacionárias que são exercidas sobre as classes média e baixa em todo o mundo. O resultado é um novo aumento na dívida pessoal e estresse monetário sobre o consumidor médio.
 
-A medida que los bancos centrales comiencen a promulgar un cambio a las monedas digitales del banco central, pueden terminar redefiniendo los principios históricos de la moneda en sí. Temo que el dinero se convierta en un arma y se convierta en una herramienta de control social.
+À medida que os bancos centrais começam a mudar para as Central Bank Digital Currencies [Moedas Digitais de Bancos Centrais, em português], eles podem acabar redefinindo os princípios históricos da própria moeda. Temo que o dinheiro seja usado como arma e transformado em uma ferramenta de controle social. 
 
-Hay 3 puntos particulares que creo que deben ser vigilados y rechazados para evitar la adopción de dinero armado.
+Existem três pontos específicos que eu acredito que precisam ser observados e rejeitados para evitar a adoção do dinheiro como arma.
 
-El primero es la capacidad programable del dinero para tener una fecha de vencimiento o la capacidad de los poderes centrales para quemar monedas digitales de bancos centrales por la fuerza. Esto constituye un robo al más alto grado. Quizás escuchemos algunos términos desinfectados, como la confiscación de activos digitales, sin embargo, este nivel de poder centralizado alterará para siempre el equilibrio de poder entre los ciudadanos y el estado.
+O primeiro é a capacidade do dinheiro programável ter uma data de validade e/ou a capacidade dos poderes centrais de queimar o CDBC à força. Isso constitui roubo no mais alto grau. Talvez ouviremos alguns termos higienizados, como confisco de ativos digitais; no entanto, esse nível de poder centralizado irá alterar para sempre o equilíbrio de poder entre os cidadãos e o estado.
 
-El segundo es la capacidad del poder centralizado para conectar el crédito o la capacidad de pago con el estatus social de un ciudadano dentro de una comunidad. En pocas palabras, esto es utilizar el dinero como arma contra la disidencia. La capacidad de un ciudadano para disentir en cualquier sociedad libre es generalmente el único medio legal que tiene para efectuar cambios. Sin la capacidad de disentir, la sociedad no es libre. Conectar el acceso centralizado, los mecanismos de recompensa o la conformidad con la moneda de dinero digital es convertir el dinero en un arma contra el pensamiento, la libertad de expresión y la libertad de expresión.
+A segunda é a capacidade do poder centralizado de conectar o crédito, ou capacidade de pagamento, ao status social de um cidadão dentro de uma comunidade. Em poucas palavras, isso é o dinheiro armado contra a dissidência. A capacidade de um cidadão discordar em qualquer sociedade livre é geralmente o único meio legal de que dispõem para efetuar mudanças. Sem a capacidade de discordar, a sociedade não é livre. Conectar acesso centralizado, mecanismos de recompensa ou conformidade com a moeda de dinheiro digital é uma arma contra o pensamento e a liberdade de expressão.
 
-El tercer aspecto del dinero digital es vigilar la capacidad de censurar o limitar el crédito en áreas particulares del mercado. Esto desafía la soberanía del dinero en sí. El contrato social colectivo ha sido generalmente que tu dinero es tuyo. Es su propiedad, su activo. Restringir o limitar el acceso de los consumidores a gastar su propia riqueza es un poder al que todos debemos temer y resistir. Si bien la legalización ha impedido el acceso a ciertos mercados, productos y servicios, el efectivo se ha mantenido soberano. Este pilar de la libertad debe respetarse. Potencialmente, esto podría destruir el concepto de mercado libre. 
+O terceiro aspecto do dinheiro digital é observar a capacidade de censurar ou limitar o crédito em áreas específicas do mercado. Isso desafia a soberania do próprio dinheiro. O contrato social coletivo geralmente diz que o seu dinheiro é seu. É sua propriedade, seu ativo. Restringir ou limitar o acesso dos consumidores a  sua própria riqueza é um poder que todos devemos temer e resistir. Embora a legalização tenha impedido o acesso a certos mercados, produtos e serviços, o dinheiro permaneceu soberano. Este pilar da liberdade deve ser respeitado. Isso poderia destruir o conceito de mercado livre.
 
-## Privacidad
+## Privacidade
 
 \
-La privacidad debe seguir siendo una opción para proteger al individuo. No tiene que ser forzado, deja que las personas tomen sus propias decisiones.
+A privacidade deve permanecer como uma opção para proteger o indivíduo. Não precisa ser forçada, deixe as pessoas fazerem suas próprias escolhas. 
 
-La privacidad es la capacidad de crear barreras y erigir límites para crear un espacio por y para el individuo. Depende de cada uno qué barreras y límites eligieron crear.
+Privacidade gera a capacidade de criar barreiras e estabelecer limites de espaço para e pelo indivíduo. Depende de cada um quais barreiras e limites eles escolheram criar.
 
-La civilización existe bajo una tensión continua entre lo que es mejor para la sociedad y lo que es mejor para el individuo. Las únicas entidades reales en una comunidad son los individuos. Todos los colectivos, asociaciones y gobiernos surgen de la participación e interacción individuales.
+A civilização existe sob uma tensão contínua entre o que é melhor para a sociedade e o que é melhor para o indivíduo. As únicas entidades reais em uma comunidade são os indivíduos. Todos os coletivos, associações e governos resultam da participação e interação individual. 
 
-La privacidad protege al individuo de la sociedad.
+A privacidade protege o indivíduo da sociedade. 
 
-La privacidad crea espacio para permitir la autonomía personal. La autonomía personal es la base de los derechos individuales.
+A privacidade cria espaço para permitir autonomia pessoal. A autonomia pessoal é a base dos direitos individuais.
 
-La privacidad, tanto financiera como personal, es un componente fundamental de la vida en una sociedad libre. Cuando está en las manos equivocadas, la información personal puede ser utilizada como una poderosa herramienta de control y manipulación. La privacidad permite a las personas tomar decisiones sin coacción.
+A privacidade, tanto financeira quanto pessoal, é um componente crítico da vida em uma sociedade livre. Quando nas mãos erradas, as informações pessoais podem ser utilizadas como uma ferramenta poderosa de controle e manipulação. A privacidade permite que os indivíduos tomem decisões livres de coerção.
 
-Los individuos en sociedades libres deben tener un límite, una realidad privada, libre de participación, vigilancia y control del gobierno. Las tendencias tecnológicas actuales en nuestro mundo se entrometen significativamente en el espacio personal de uno.
+Os indivíduos em sociedades livres devem ter um limite, uma realidade privada, livre do envolvimento, vigilância e controle do governo. As tendências tecnológicas atuais em nosso mundo interferem significativamente no espaço pessoal de alguém.
 
-Las personas deben tener control sobre quién tiene acceso a la información sobre su vida personal y financiera.
+Os indivíduos devem ter controle sobre quem tem acesso às informações sobre suas vidas pessoais e financeiras. 
 
-La privacidad es una cuestión de confianza. La falta de privacidad demuestra una falta de confianza. La falta de confianza no puede ser la base de una sociedad sana. Las sociedades saludables se basan en la cooperación. La cooperación voluntaria es, en sí misma, un ejercicio de confianza.
+A privacidade é uma questão de confiança. A falta de privacidade demonstra falta de confiança. A falta de confiança não pode ser a base de uma sociedade saudável. Sociedades saudáveis ​​são construídas com base na cooperação. A cooperação voluntária é, por si só, um exercício de confiança. 
 
-Los derechos de privacidad significan que los grupos no pueden tomar sus datos sin su conocimiento / consentimiento y aprovechar esta información para su beneficio.
+Direitos de privacidade significam que grupos não podem pegar seus dados sem o seu conhecimento/consentimento e usar essas informações em seu benefício.
 
-La privacidad financiera es especialmente vital porque puede marcar la diferencia entre la supervivencia y la supresión sistemática de un grupo de oposición en un país con un gobierno autoritario. A falta de privacidad, los individuos de la sociedad no tienen forma de sobrevivir cuando están bajo la amenaza de regímenes opresores.
+A privacidade financeira é especialmente vital, porque pode ser a diferença entre a sobrevivência e a repressão sistemática de um grupo de oposição em um país com um governo autoritário. Indivíduos com falta de privacidade na sociedade não têm meios de sobrevivência quando estão sob a ameaça de regimes opressores. 
 
-¿Cuántas veces en la historia de la humanidad los conflictos religiosos, políticos o tribales han llevado a un grupo en el poder a tomar por la fuerza la riqueza de otro grupo menos poderoso? ¿Con qué frecuencia se utiliza la incautación de activos financieros como medio de control autoritario?
+Quantas vezes na história da humanidade conflitos religiosos, políticos ou tribais levaram um grupo no poder a tomar à força a riqueza de outro grupo menos poderoso? Com que frequência a apreensão de ativos financeiros é utilizada como meio de controle autoritário?
 
-Muchas empresas, disidentes y grupos de derechos humanos mantienen cuentas fuera de los países donde operan precisamente por esta razón.
+Muitas empresas, dissidentes e grupos de direitos humanos mantêm contas fora dos países onde atuam exatamente por esse motivo. 
 
-La privacidad financiera puede permitir que las personas protejan los ahorros de toda su vida cuando un gobierno intenta confiscar la riqueza de sus ciudadanos, ya sea por razones políticas, étnicas, religiosas o "simplemente" económicas. La privacidad financiera tiene una importancia profunda y duradera para la libertad, y muchos gobiernos se han mostrado dispuestos a abusar de la información financiera privada.
+A privacidade financeira pode permitir que as pessoas protejam suas economias quando um governo tenta confiscar a riqueza de seus cidadãos, seja por razões políticas, étnicas, religiosas ou "meramente" econômicas. A privacidade financeira é de profunda e permanente importância para a liberdade, e muitos governos se mostraram dispostos a abusar de informações financeiras privadas.
 
-## Dinero Ergonómico
+## Moeda Ergonômica
 
-El objetivo de la cadena de bloques Ergo es crear dinero ergonómico.
+O objetivo da blockchain Ergo é criar dinheiro ergonômico.
 
-La ergonomía es la disciplina científica que se ocupa de la comprensión de las interacciones entre los seres humanos y otros elementos de un sistema, y ​​la profesión que aplica la teoría, los principios, los datos y los métodos para diseñar con el fin de optimizar el bienestar humano y el rendimiento general del sistema.
+Ergonomia é uma disciplina científica preocupada com a compreensão das interações entre humanos e outros elementos de um sistema, aplicando teoria, princípios, dados e métodos para projetar um fim em otimizar o bem-estar humano e o desempenho geral do sistema. 
 
-Una y otra vez las economías implosionan, aquellos con herramientas financieras terminan canibalizando la riqueza y el valor de la gente común. Esto no es ergonómico; es depredador y monopolista. Necesitamos mejores herramientas.
+Vez após vez, as economias implodem, aqueles com ferramentas financeiras acabam canibalizando a riqueza e os bens do cidadão comum. Isso não é ergonômico; é predatório e monopolista. Precisamos de ferramentas melhores. 
 
-Ahora quizás la competencia trastorne a los poderes centrales. Ciertamente lo hizo en el caso de Turquía. Es por eso que estas herramientas deben ser privadas, resilientes, resistentes a la censura, seguras, abiertas y gratuitas.
+Agora, talvez a competição vá perturbar as potências centrais. Certamente que sim, no caso da Turquia. É por isso que essas ferramentas precisam ser privadas, resilientes, resistentes à censura, seguras, abertas e gratuitas.
 
-Quizás vives en una sociedad desarrollada y piensas que está bien, los bancos centrales están inyectando liquidez a nuestra economía. Los bancos centrales están achicando suficiente agua para que el barco no se hunda. Espero que tengas razón, pero me temo que puedes estar equivocado.
+Talvez você viva em uma sociedade desenvolvida e pense que está tudo bem, os bancos centrais estão injetando liquidez em nossa economia. Os bancos centrais estão resgatando água suficiente para que o navio não afunde. Espero que você esteja certo, mas temo que esteja errado. 
 
-Simplemente porque las herramientas que estamos construyendo pueden no beneficiarlo hoy, no se equivoquen, pues pueden ser el bote salvavidas del mañana. Esa es la intención, el propósito del trabajo de mi vida en criptomonedas.
+Simplesmente porque as ferramentas que estamos construindo podem não beneficiá-lo hoje, não se engane, elas podem ser o bote salva-vidas de amanhã. Essa é a intenção, o propósito do trabalho da minha vida na criptomoeda.
 
-Cualquiera que se atreva a decir que las criptomonedas son solo una herramienta para los criminales y terroristas necesitan investigar cómo estas organizaciones están financiadas, protegidas y de dónde obtienen sus cadenas de suministro antes de hacer tales acusaciones. La ignorancia es venenosa.
+Qualquer pessoa que se atreva a dizer que cripto é apenas uma ferramenta para criminosos e terroristas precisa pesquisar como essas organizações são financiadas, protegidas e de onde extraem suas cadeias de suprimentos antes de fazer tais acusações. A ignorância é venenosa. 
 
-Con demasiada frecuencia son los de abajo los que sufren siendo los de arriba los que inician el sufrimiento. Es necesario romper este ciclo de abuso económico.
+Com muita frequência, os que estão na base são os que sofrem, separados dos que estão no topo, e são os que iniciam o sofrimento. Este ciclo de abuso econômico precisa ser quebrado. 
 
-El objetivo del dinero ergonómico es crear dinero y contratos inteligentes para todas las personas. Los que están en la parte inferior tienen la mayor necesidad del tipo de herramientas que estamos construyendo.
+O objetivo do dinheiro ergonômico é criar dinheiro e contratos inteligentes para todas as pessoas. Os que estão na base são os que mais precisam do tipo de ferramenta que estamos construindo.
 
-## Principios Básicos de Ergo
+## Princípios Básicos de Ergo
 
-*En esta sección, definimos los principios fundamentales que deben seguirse para crear dinero ergonómico.*  
+*Nesta seção, definimos os princípios centrais que devem ser seguidos para criar dinheiro ergonômico.*  
 
-*Esto podría denominarse “contrato social de Ergo”.* 
+*Isso pode ser referido como o “Contrato Social da Ergo”. * 
 
-*En caso de violación intencional de cualquiera de estos principios, el protocolo resultante no debe llamarse Ergo.*  
+*EEm caso de violação intencional de algum destes princípios, o protocolo resultante não deve ser denominado Ergo.*  
 
-### 1) Descentralización primero
+### 1) Descentralização primeiro
 
-Ergo debería estar lo más descentralizado posible. Los líderes sociales, los desarrolladores de software, los fabricantes de hardware, los mineros y los fondos de cualquier partido deben evitar los puntos centrales de falla. Todos los actores cuya ausencia interrumpirá el funcionamiento del sistema deben tener planes de contingencia en caso de una interrupción. La descentralización nace de la educación y la adopción. Las herramientas que creamos necesitan documentación, la comunidad necesita participar activamente y crecer. Enseñe a otros a usar y adoptar las herramientas. Internet es un poderoso impulsor de la descentralización. Puede ser una herramienta poderosa para enseñar. La descentralización nace de la educación, tanto del lado del desarrollo como del lado del usuario.
+Ergo deve ser o mais descentralizado possível. Sempre se esforce para se espalhar e crescer. Os líderes sociais, desenvolvedores de software, fabricantes de hardware, mineradores e fundos de qualquer partido precisam evitar pontos centrais de falha. Todos os atores cuja ausência irá interromper o funcionamento do sistema precisam ter planos de contingência no caso de uma interrupção. A descentralização nasce da educação e adoção. As ferramentas que construímos precisam de documentação, a comunidade precisa participar ativamente e crescer. Ensine outras pessoas a usar e adotar as ferramentas. A Internet é um poderoso impulsionador da descentralização. Pode ser uma ferramenta poderosa para ensinar. A descentralização nasce da educação, tanto do lado do desenvolvimento quanto do lado do usuário.
 
-Debe evitarse el comportamiento malicioso que pueda afectar la seguridad de la red. Si alguna de estos grupos de gente malvada aparece durante la vida de Ergo, la comunidad debe actuar y pensar en formas de disminuir su nivel de impacto negativo. Siempre habrá quienes busquen interrumpir, aprovechar, hacer mal uso y abusar de su poder. ¿Cual es la respuesta? Educación. Educar a los usuarios para que se protejan a sí mismos, cómo identificar a los actores maliciosos, cómo evitarlos, cómo trabajar juntos para minimizar su poder. Animaría a todos los miembros de la comunidad a buscar continuamente aprender, adoptar herramientas, ayudar y enseñar de una forma u otra. Una comunidad fuerte nace de una fuerte cooperación.
+O comportamento malicioso que pode afetar a segurança da rede deve ser evitado. Se alguma dessas partes aparecer durante a vida de Ergo, a comunidade deve considerar maneiras de diminuir seu nível de impacto. Sempre haverá aqueles que procuram atrapalhar, tirar vantagem, fazer mal uso  e abusar de seu poder. Qual é a resposta? Educação. Educar os usuários para se protegerem, como identificar agentes mal-intencionados, como evitá-los, como trabalhar juntos para minimizar seu poder. Eu encorajaria todos os membros da comunidade a buscarem continuamente aprender, adotar ferramentas, auxiliar e ensinar de uma forma ou de outra. Uma forte comunidade nasce por meio de uma forte cooperação.
 
-### 2) Abierto sin permiso y seguro
+### 2) Aberto e seguro
 
-El protocolo Ergo no restringe ni limita ninguna categoría de uso. Esto es necesario para seguir siendo resiliente. Ciertamente podemos defender la cooperación, el comercio y los valores humanos, pero no podemos forzar a nadie a ello, por eso habrá gente que no defienda los buenos valores. Eso requeriría un poder central. Los desarrolladores son libres de implementar cualquier lógica que deseen, asumiendo la responsabilidad total de la ética y legalidad de su aplicación.
+O protocolo Ergo não restringe ou limita nenhuma categoria de uso. Isso é necessário para permanecer resiliente. Certamente podemos defender a cooperação, o comércio e os valores humanos, mas não os aplicamos. Isso exigiria um poder central. Os desenvolvedores são livres para implementar qualquer lógica que desejarem, assumindo total responsabilidade pela ética e legalidade de sua aplicação. 
 
-Todo el código del protocolo central debe permanecer completamente abierto y transparente. Cada línea, todo, debe ser completamente auditable y transparente. Esto evita la manipulación y genera resiliencia descentralizada. Ergo está totalmente comprometido con ser de código abierto para seguir siendo confiable y esa confianza debe seguir siendo completamente verificable.
+Todo o código do protocolo principal deve permanecer totalmente aberto e transparente. Cada linha, tudo deve ser totalmente alditável e transparente. Isso evita a manipulação e também cria resiliência descentralizada. A Ergo está totalmente comprometida em ser open source para permanecer confiável e essa confiança deve permanecer totalmente verificável.
 
-Cualquiera puede unirse a la red y participar en el protocolo sin permiso. A diferencia del sistema financiero tradicional, no deberían ser posibles rescates, listas negras u otras formas de discriminación en el nivel central del protocolo Ergo. Debe minimizarse la ventaja de la información privilegiada.
+Qualquer pessoa pode ingressar na rede e participar do protocolo sem permissão. Ao contrário do sistema financeiro tradicional, nenhum resgate, listas negras ou outras formas de discriminação devem ser possíveis no nível central do protocolo Ergo. A vantagem interna deve ser minimizada. 
 
-Ergo se compromete a respaldar las herramientas de privacidad para aquellos que deseen utilizarlas. Esta debe seguir siendo una elección voluntaria. Si un usuario desea utilizar mecanismos para interrumpir la disponibilidad pública de sus datos, eso está completamente dentro del alcance de su poder. Deben asumir la plena responsabilidad de la ética y legalidad de estas acciones.
+Ergo está empenhada em apoiar ferramentas de privacidade para aqueles que desejam usá-las. Esta deve permanecer uma escolha voluntária. Se um usuário deseja usar mecanismos para interromper a disponibilidade pública de seus dados que estão totalmente dentro do escopo de seu poder. Eles devem assumir total responsabilidade pela ética e legalidade dessas ações. 
 
-Ergo está comprometido con las mejores prácticas de seguridad. Este es un compromiso continuo para prevenir ataques a la red, preservar la privacidad y proteger el valor en cadena.
+Ergo está comprometida com as melhores práticas de segurança. Este é um compromisso contínuo para prevenir ataques à rede, preservar a privacidade e proteger o valor da rede.
 
-### 3) Creado para personas comunes
+### 3) Criado para as pessoas comuns
 
-Ergo se compromete a ser una herramienta para la gente común. Ergo es una plataforma para la gente común, y sus intereses no deben ser violados en favor de los grandes partidos. En particular, esto significa que debe evitarse la centralización de la minería. Las personas normales deberían poder participar en el protocolo ejecutando un nodo completo y bloques de minería. Con Autolykos V1 Ergo proporciona una distribución de la tasa de hash de los grupos.
+Ergo tem o compromisso de ser uma ferramenta para pessoas comuns. Ergo é uma plataforma para pessoas comuns, e seus interesses não devem ser infringidos em favor de grandes partidos. Em particular, isso significa que a centralização da mineração deve ser evitada. Pessoas comuns devem ser capazes de participar do protocolo executando um nó completo e blocos de mineração. A publicação do Ergo Autolykos V1 trabalhará para fornecer uma distribuição de taxa de hash de pools. 
 
-Ergo se compromete a trabajar para construir un ecosistema que ofrezca herramientas diseñadas para ayudar a la gente común. El intercambio entre pares está continuamente amenazado por el intercambio de poder entre pares y el centro. El objetivo de Ergo es fomentar las herramientas y la educación comunitaria para empoderar al ser humano común.
+Ergo está empenhada em trabalhar para construir um ecossistema que ofereça ferramentas projetadas para ajudar as pessoas comuns. As negociações ponto a ponto estão continuamente sob ameaça de negociações de ponto a poder central. O objetivo da Ergo é incentivar o uso de ferramentas e a educação da comunidade para capacitar o ser humano comum.
 
-### 4) Plataforma de Dinero Contractual
+### 4) Plataforma de Dinheiro Contratual
 
-Ergo es la capa base de las aplicaciones que se construirán sobre ella. Es adecuado para varias aplicaciones, pero su objetivo principal es proporcionar una manera eficiente, segura y fácil de implementar contratos financieros. Ergo se compromete a construir una red sobre bases sólidas que continúen actualizándose e innovando. El objetivo con el dinero contractual es crear un sistema que no se vea invadido por los altos costos y tarifas de los usuarios. Para que el dinero sea ergonómico, debe seguir siendo competitivo en cuanto a costos. Ergo ayudará con marcos y herramientas para que las personas construyan e implementen para maximizar el uso y la utilidad o el dinero contractual. 
+Plataforma de Dinheiro Contratual. Ergo é a camada base para aplicativos que serão construídos sobre ela. É adequado para diversas aplicações, mas seu foco principal é fornecer uma maneira eficiente, segura e fácil de implementar contratos financeiros. Ergo está empenhada em construir uma rede em bases sólidas que continuem a atualizar e inovar. O objetivo com o dinheiro contratual é criar um sistema que não seja sobrecarregado por altos custos e taxas de usuário. Para que o dinheiro seja ergonômico, ele deve permanecer competitivo em termos de custos. Ergo ajudará com estruturas e ferramentas para que as pessoas construam e implementem o uso máximo de suas utilidades ou dinheiro contratual.
 
-### 5) Enfoque a largo plazo
+### 5) Foco de longo prazo
 
-Todos los aspectos del desarrollo de Ergo deben enfocarse en una perspectiva a largo plazo. Ergo se lanzó en el invierno de las criptomonedas, el propósito y la intención de los desarrolladores centrales de Ergo deben reemplazar las condiciones del mercado a corto plazo. Siempre habrá quienes vengan por una apreciación a corto plazo y quienes vengan por el principio.
+Todos os aspectos do desenvolvimento, portanto, devem ser focados em uma perspectiva de longo prazo. Ergo foi lançado no inverno cripto, o propósito e a intenção dos principais e primeiros desenvolvedores da Ergo foi pôr de lado as condições de mercado de curto prazo. Sempre haverá aqueles que vêm pela valorização de curto prazo e aqueles que vêm pelos princípios.
 
-Los contratos inteligentes para las personas son un concepto de código abierto para proporcionar un sistema que puede empoderar a la persona promedio. Ese objetivo es permanecer resistente, adaptable y seguro a lo largo del tiempo.
+Contratos inteligentes para as pessoas é um conceito de código aberto para um sistema que pode capacitar a pessoa média. O objetivo é permanecer resiliente, adaptável e seguro ao longo do tempo. 
 
-Dado que Ergo está diseñado como una plataforma, las aplicaciones creadas sobre Ergo también deberían poder sobrevivir a largo plazo. Esta capacidad de recuperación y supervivencia a largo plazo también puede permitir que Ergo sea una buena reserva de valor y un mecanismo para ayudar al ser humano común.
+Uma vez que a Ergo foi projetada como uma plataforma, os aplicativos desenvolvidos com base na Ergo também devem ser capazes de sobreviver a longo prazo. Esta resiliência e capacidade de sobrevivência a longo prazo também podem permitir que a Ergo seja uma boa reserva de valor e um mecanismo para ajudar as pessoas comuns.
 
-Siempre debemos ver más allá de nuestras narices, pensando en el futuro. ¿Qué herramientas podemos agregar? ¿Cómo podemos mejorar? ¿Cuáles son los riesgos? ¿Cómo podemos prepararnos para lo que sigue?
+Devemos sempre ver além de nossos narizes, pensando no futuro. Que ferramentas podemos adicionar? Como podemos melhorar? Quais são os riscos? Como podemos nos preparar para o que vem a seguir?
 
-Esta visión a largo plazo nunca debe morir para que Ergo sobreviva. Ergo nació en el cripto invierno. Muchos habían comenzado a descartar el futuro de los sistemas distribuidos y su capacidad para crear valor, sin embargo, aguantamos, seguimos construyendo.
+Esta visão de longo prazo nunca deve morrer para que a Ergo sobreviva. Ergo nasceu em um inverno cripto. Muitos começaram a descartar o futuro dos sistemas distribuídos e sua capacidade de criar valor; no entanto, persistimos, continuamos construindo. 
 
-Con demasiada frecuencia, la gente sacrifica el crecimiento a largo plazo por la emoción a corto plazo. Vendrán buenos tiempos y vendrán tiempos difíciles. Para que Ergo perdure, debemos tener principios y crear valor sobre bases sólidas.
+Muitas vezes as pessoas sacrificam o crescimento de longo prazo por entusiasmo de curto prazo. Os bons tempos virão, bem como os tempos difíceis. Para que a Ergo perdure, devemos ter princípios e criar valor sobre bases sólidas.
 
-### ¿Quién es Kushti?
+### Quem é Kushti?
 
-Alexander Chepurnoy (también conocido como Kushti) es el desarrollador principal de Ergo Platform y ha estado activo en el desarrollo de blockchain y contratos inteligentes desde 2011. Fue un desarrollador central de NXT, comenzó smartcontract.com (ahora ChainLink) en 2014 con Sergey Nazarov, y es un investigador de IOHK con más de 20 artículos académicos a su nombre. Cuando estaba trabajando en Nxt, comenzó un marco de blockchain completamente simple: Scorex, que luego se convirtió en un marco de blockchain modular (Waves está construido sobre Scorex). Este proyecto llamó la atención de Charles Hoskinson, cofundador de Cardano y Ethereum, a mediados de otoño de 2015. Luego se unió a IOHK alrededor de enero de 2016.
+Alexander Chepurnoy (também conhecido como Kushti) é o desenvolvedor da Ergo Platform e atua no desenvolvimento de blockchains e contratos inteligentes desde 2011. Ele foi um dos desenvolvedores da NXT, iniciou o smartcontract.com (agora Chainlink) em 2014 com Sergey Nazarov, e é um pesquisador da IOHK com mais de 20 trabalhos acadêmicos em seu nome. Quando estava trabalhando no NXT, começou uma estrutura de blockchain totalmente simples com Scorex, que mais tarde foi transformada em uma estrutura de blockchain modular. Este projeto chamou a atenção de Charles Hoskinson, co-fundador Cardano e Ethereum, em meados do outono de 2015. Então ele se juntou à IOHK por volta de janeiro de 2016.
 
-### Una nota sobre la economía de los tokens:
+### Uma nota sobre a tokenomia
 
-Ergo Platform tuvo un lanzamiento justo desde el principio. No tenía ninguna ICO y no había monedas pre-minadas para los fundadores de la plataforma. La descentralización y la equidad de un sistema monetario de igual a igual fue la prioridad en primer lugar. La tesorería de la fundación se establece en un 4,37% del total de monedas extraídas y no es posible cambiar los elementos centrales de la economía de los tokens en una etapa posterior.
+A Ergo Platform teve um lançamento justo desde de seu início. Não tinha ICO e não havia moedas pré-mineradas para os fundadores da plataforma. A descentralização e a justiça de um sistema monetário ponto a ponto  foi a prioridade em primeiro lugar. A tesouraria da Fundação Ergo está definida em 4,37% do total de moedas extraídas e não é possível alterar os elementos essenciais da economia de token em uma fase posterior.
 
 <!--EndFragment-->
