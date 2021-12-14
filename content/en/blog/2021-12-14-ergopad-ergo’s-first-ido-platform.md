@@ -3,7 +3,7 @@ title: "ErgoPad: Ergo’s First IDO Platform"
 date: 2021-12-14T16:17:34.371Z
 author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
-blogPhoto: /img/uploads/ergopad-3-.png
+blogPhoto: /img/uploads/ergopad-3-2-.png
 tags:
   - Building Ergo
 ---
