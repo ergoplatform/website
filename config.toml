@@ -705,6 +705,120 @@ pygmentsUseClasses=true
     url = "https://sigmaverse.io/"
     pre = 'true'
 
+[languages.pt]
+  languageCode = "pt"
+  languageName = "Pt"
+  contentDir = "content/pt"
+  weight = 4
+
+  [[languages.pt.menu.individuals]]
+    identifier = "about"
+    name = "Getting Started"
+    url = "/about/"
+    weight = 10
+  [[languages.pt.menu.individuals]]
+    identifier = "basics"
+    name = "Basics"
+    url = "/basics/"
+    weight = 20
+  [[languages.pt.menu.individuals]]
+    identifier = "wallets"
+    name = "Wallets"
+    url = "/wallets/"
+    weight = 30
+  [[languages.pt.menu.individuals]]
+    identifier = "exchanges"
+    name = "Exchanges"
+    url = "/exchanges/"
+    weight = 40
+
+  [[languages.pt.menu.developers]]
+    identifier = "contribute"
+    name = "Contribute to Ergo"
+    url = "/contribute"
+    weight = 10
+  [[languages.pt.menu.developers]]
+    identifier = "software"
+    name = "Software"
+    url = "/software/"
+    weight = 20
+  [[languages.pt.menu.developers]]
+    identifier = "use_cases"
+    name = "Use Cases"
+    url = "/use_cases/"
+    weight = 30
+  [[languages.pt.menu.developers]]
+    identifier = "awesome"
+    name = "Awesome Ergo"
+    url = "https://github.com/ergoplatform/awesome-ergo"
+    pre = 'true'
+    weight = 40
+
+  [[languages.pt.menu.community]]
+    identifier = "foundation"
+    name = "Foundation"
+    url = "/foundation"
+    weight = 10
+  [[languages.pt.menu.community]]
+    identifier = "Hall of Fame"
+    name = "Hall of Fame"
+    url = "/hall_of_fame/"
+    weight = 20
+  [[languages.pt.menu.community]]
+    identifier = "news"
+    name = "News"
+    url = "/news/"
+    weight = 30
+  [[languages.pt.menu.community]]
+    identifier = "Blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 40
+  [[languages.pt.menu.community]]
+    identifier = "forum"
+    name = "Forum"
+    url = "https://www.ergoforum.org/"
+    pre = 'true'
+    weight = 50
+  [[languages.pt.menu.community]]
+    identifier = "wiki"
+    name = "Wiki"
+    url = "https://ergonaut.space/"
+    weight = 60
+    pre = 'true'
+
+  [[languages.pt.menu.other]]
+    identifier = "Documents"
+    name = "Documents"
+    url = "/documents/"
+    weight = 10
+
+  [[languages.pt.menu.other]]
+    identifier = "FAQ"
+    name = "FAQ"
+    url = "/faq/"
+    weight = 20
+
+  [[languages.pt.menu.other]]
+    identifier = "Mining"
+    name = "Mining"
+    url = "/mining/"
+    weight = 30
+
+  [[languages.pt.menu.other]]
+    identifier = "Explorer"
+    name = "Explorer"
+    url = "https://explorer.ergoplatform.com/"
+    pre = 'true'
+    weight = 40
+
+  [[languages.pt.menu.other]]
+    identifier = "dApps"
+    name = "DApps"
+    weight = 50
+    url = "https://sigmaverse.io/"
+    pre = 'true'
+
 [outputFormats]
   [html]
     minify = true
