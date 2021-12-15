@@ -382,7 +382,8 @@
   }
 
   &--white.show {
-    border: 0.5px solid transparent;
+    background: black;
+    border: 0.5px solid white;
 
     .dd-language__item_hidden {
       display: block;
@@ -390,6 +391,7 @@
   }
 
   &--black.show {
+    background: white;
     border: 0.5px solid #DEE3F1;
     top: 10px;
 
