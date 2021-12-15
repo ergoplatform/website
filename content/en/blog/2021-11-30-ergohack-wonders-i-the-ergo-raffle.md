@@ -2,7 +2,7 @@
 title: "Ergohack Wonders: The Ergo Raffle"
 date: 2021-11-30T19:27:36.146Z
 author: Ergo Foundation
-authorPhoto: /img/uploads/1762.png
+authorPhoto: /img/uploads/logo.png
 blogPhoto: /img/uploads/ergohack_wonders_the_ergo_raffle113021.png
 tags:
   - Building Ergo
