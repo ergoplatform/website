@@ -1,7 +1,7 @@
 ---
 title: "Ergo Mining: Be A Part Of Our Growing Network"
 date: 2021-08-24T15:00:05.787Z
-author: Ergo Foundation
+author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/photo_2021-08-24_17-59-25.jpg
 tags:
