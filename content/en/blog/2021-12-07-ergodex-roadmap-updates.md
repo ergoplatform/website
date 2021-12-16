@@ -1,8 +1,8 @@
 ---
 title: ErgoDEX Roadmap Updates
 date: 2021-12-07T19:01:11.608Z
-author: Ergo Foundation
-authorPhoto: /img/uploads/logo.png
+author: Ergo Platform
+authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/ergodexroadmap.jpg
 tags:
   - Building Ergo
