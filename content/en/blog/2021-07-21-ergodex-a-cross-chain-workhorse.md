@@ -1,7 +1,7 @@
 ---
 title: "ErgoDEX: A Cross Chain Workhorse"
 date: 2021-07-21T15:46:55.851Z
-author: Ergo Foundation
+author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/ergodex.jpg
 tags:
