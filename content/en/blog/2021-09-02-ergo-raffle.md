@@ -1,7 +1,7 @@
 ---
 title: Ergo Raffle
 date: 2021-09-02T14:26:20.255Z
-author: Ergo Foundation
+author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/ergoraffle.jpg
 tags:
