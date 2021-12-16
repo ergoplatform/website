@@ -1,7 +1,7 @@
 ---
 title: "Ergo Ecosystem: Scaling Solutions"
 date: 2021-10-29T13:47:53.833Z
-author: Ergo Foundation
+author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/ergoscale.jpg
 tags:
