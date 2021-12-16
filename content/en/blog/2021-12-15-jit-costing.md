@@ -137,3 +137,54 @@ costing of contracts written in expressive language such as ErgoTree. However,
 the list above should already be enough to motivate development of a better alternative.
 
 ## JIT Costing
+
+The new upcoming release v5.0 of Ergo node will use _hybrid_ costing
+algorithm to protect the network from over-expensive transactions (aka SPAM transaction).
+
+This hybridization naturally reflects the design on Ergo contracts, which are based on
+Extened UTXO blockchain architecture and employ [Sigma state authenticated
+language](https://github.com/ScorexFoundation/sigmastate-interpreter) as foundation of
+ErgoScript.
+
+
+
+An example of the JIT cost control (also called _dynamic_ cost control) is the Ethereum's
+`gasLimit` checks performed during a transaction execution.
+
+### New Costing of ErgoTree
+
+Ethereum's contracts are compiled into bytecode instructions which are then executed by
+Ethereum VM as part of transaction execution. Each instruction has the associated cost
+(aka _gas_) and the cost of the whole executed transaction is accrued as instructions are executed
+one by one until either transaction complete or `gasLimit` is reached. In the later case
+the transaction is aborted and the `gasLimit * gasPrice` number of Wei is transferred to
+the miner.
+
+In contrast, Ergo's approach is more light-weight and does not require using a _stateful_ VM
+to execute contracts. Instead, the contracts are evaluated using _stateless_ interpreter and
+thus many contracts can be evaluated in parallel.
+
+For each input box of the transaction being validated:
+1) The contract (stored in a box) is deserialized into ErgoTree data structure ready
+   for direct and efficient execution by the interpreter.
+2) A special Context data structure is created and passed to the interpreter
+3) Interpreter evaluates the given contract in the given context.
+
+The operations above can be done in parallel for all inputs, this is because interpreter
+never mutates (or changes) the blockchain state.
+In addition, the interpreter doesn't have direct access to the blockchain, and rely
+solely on the Context to evaluate contracts.
+
+The interpreter of the ErgoTree `t` is extended to accumulate the execution cost
+`t.accCost` during evaluation all the tree nodes, and it checks that `t.accCost <=
+costLimit` at any time.
+Thus, upon completion of ErgoTree reduction, the result is a pair `(R, C1)`,
+where `R` is a _Sigma Protocol Proposition Tree_ and `C1 = t.accCost` is the cost
+accumulated during script reduction.
+The resulting Sigma Protocol Proposition `R` must be further verified against proofs of
+knowledge provided during transaction signing. The cost `C2` of `R` verification is
+approximated by an Ahead Of Time costing without performing time-consuming crypto
+operations. The resulting value `C1 + C2` is checked against `costLimit`.
+
+If at any time the accumulated cost exceeds `costLimit`, then an exception is thrown,
+which is interpreted as an _over-limit script_ as the transaction is rejected.
