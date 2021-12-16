@@ -1,8 +1,8 @@
 ---
 title: "Ergo & Blockchain: Privacy and Security"
 date: 2021-12-02T16:51:17.118Z
-author: Ergo Foundation
-authorPhoto: /img/uploads/logo.png
+author: Ergo Platform
+authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/securityprivacy.jpg
 tags:
   - Building Ergo
