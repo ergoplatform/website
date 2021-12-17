@@ -26,7 +26,7 @@ environment.
 * Collaborate with Ergo Core Devs team to understand current Ergo architecture and
   propose future improvements  
 
-## Requirements:
+## Requirements
 
 * BS in relevant field (Computer Science, Computer Engineering, etc.), however, if you
   can prove skills and knowledge through portfolio work, projects or previous employment,
