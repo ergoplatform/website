@@ -1,7 +1,7 @@
 ---
 title: "The Future of Blockchain: A Case for the Combined Power of Ergo and Cardano"
 date: 2021-07-08T13:08:33.978Z
-author: Ergo Foundation
+author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/casefuture.jpg
 tags:

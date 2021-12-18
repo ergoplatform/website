@@ -1,7 +1,7 @@
 ---
 title: UTXO Model Transaction
 date: 2021-10-07T13:53:49.094Z
-author: Ergo Foundation
+author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/photo_2021-10-07_16-52-48.jpg
 tags:

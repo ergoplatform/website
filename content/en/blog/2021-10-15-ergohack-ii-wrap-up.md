@@ -1,7 +1,7 @@
 ---
 title: ErgoHack II Wrap-Up
 date: 2021-10-15T08:46:07.372Z
-author: Ergo Foundation
+author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/wrap1.jpg
 tags:

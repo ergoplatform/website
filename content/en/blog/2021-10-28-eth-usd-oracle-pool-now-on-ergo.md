@@ -1,7 +1,7 @@
 ---
 title: ETH/USD Oracle Pool Now on Ergo!
 date: 2021-10-28T13:16:58.091Z
-author: Ergo Foundation
+author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/ethusd.jpg
 tags:

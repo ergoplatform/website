@@ -1,7 +1,7 @@
 ---
 title: "Ergo: Advancing on Bitcoin"
 date: 2021-08-17T16:21:17.200Z
-author: Ergo Foundation
+author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/photo_2021-08-17-17.33.30.jpeg
 tags:

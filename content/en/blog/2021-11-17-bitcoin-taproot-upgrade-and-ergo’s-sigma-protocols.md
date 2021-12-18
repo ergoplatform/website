@@ -1,8 +1,8 @@
 ---
 title: Bitcoin Taproot Upgrade and Ergo’s Sigma Protocols
 date: 2021-11-17T16:29:53.359Z
-author: Ergo Foundation
-authorPhoto: /img/uploads/logo.png
+author: Ergo Platform
+authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/taproot.png
 tags:
   - Building Ergo
