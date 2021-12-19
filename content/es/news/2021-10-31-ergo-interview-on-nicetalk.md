@@ -1,10 +1,10 @@
 ---
-title: Ergo Interview On NiceTalk
+title: Entrevista de Ergo en NiceTalk (inglés)
 date: 2021-10-30T09:07:03.648Z
-subtitle: NiceTalk is a cryptocurrency talk show from NiceHash featuring expert
-  insight and commentary on the latest events in crypto! Join us as we talk with
-  special guests Alex (Kushti) Chepurnoy, Joseph Armeanio, and Mark Glasgow from
-  ERGO about Autolykos algorithm, privacy features, stablecoins, and what's next
-  for mining after ETH 2.0. Ergo links are below to learn more.
+subtitle: NiceTalk es un programa de entrevistas sobre criptomonedas de NiceHash con expertos.
+  ¡Información y comentarios sobre los últimos eventos en cripto! Únase a nosotros mientras hablamos con
+  invitados especiales Alex (Kushti) Chepurnoy, Joseph Armeanio y Mark Glasgow de
+  ERGO sobre el algoritmo de Autolykos, las funciones de privacidad, las monedas estables y lo que sigue
+  para minar después de ETH 2.0. Los enlaces Ergo se encuentran a continuación para obtener más información.
 link: https://www.youtube.com/watch?v=HVHTvZvS4cA
 ---

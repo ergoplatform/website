@@ -1,7 +1,7 @@
 ---
-title: "Ergo & Blockchain: Privacy and Security"
+title: "Ergo & Blockchain: Privacidad y seguridad"
 date: 2021-12-02T16:51:17.118Z
-author: Ergo Foundation
+author: Ergo Foundation (translated by Daniu, original version will always prevail)
 authorPhoto: /img/uploads/logo.png
 blogPhoto: /img/uploads/securityprivacy.jpg
 tags:
@@ -9,49 +9,43 @@ tags:
   - Roadmap
 ---
 <!--StartFragment-->
+Para este tercer artículo de la serie Ergo & Blockchain, exploraremos los diversos argumentos planteados sobre la privacidad y seguridad de diferentes criptomonedas.
 
-For this third article in the Ergo & Blockchain series, we will explore the various arguments posited on the privacy and security of different cryptocurrencies. 
+## Descentralización
 
-## Decentralization
+Los ecosistemas de criptomonedas y DeFi están creciendo a un ritmo rápido y existen diferentes puntos de vista sobre los beneficios de blockchain. Cabe señalar que una criptomoneda descentralizada autoproclamada, donde diez o veinte validadores controlan el [50% de la red] (https://ergoplatform.org/en/blog/2021-11-05-ergo-blockchain-tokenomics- and-finance /), no es necesariamente descentralizado o inmutable. [La búsqueda de la eficiencia] (https://forkast.news/headlines/solana-transaction-less-energy-two-google/), a expensas de la descentralización, a veces ha sido una prioridad más alta entre los proyectos de blockchain. Frente al riesgo de convertirse en bases de datos centralizadas, parece que las criptomonedas están bajo la amenaza de vigilancia y censura.
 
-Cryptocurrency and DeFi ecosystems are growing at a fast pace and there are differing views on the benefits of blockchain. It should be noted that a self-proclaimed decentralized cryptocurrency, where ten or twenty validators control [50% of the network](https://ergoplatform.org/en/blog/2021-11-05-ergo-blockchain-tokenomics-and-finance/), is not necessarily decentralized or immutable. [The search for efficiency](https://forkast.news/headlines/solana-transaction-less-energy-two-google/), at the expense of decentralization, has sometimes been a higher priority among blockchain projects. Facing the risk of becoming centralized databases, it seems that cryptocurrencies are under the threat of surveillance and censorship.   
+La historia ha demostrado que la centralización no creará una forma alternativa de financiación. Como hemos aprendido con la llegada de los contratos inteligentes, las criptomonedas son más que simples herramientas para una financiación más rápida. Para una comprensión más profunda de cómo Ergo ve el espíritu y la aplicación de las criptomonedas, consulte el [Ergo Manifesto] (https://ergoplatform.org/en/blog/2021-04-26-the-ergo-manifesto/).
+Bitcoin se creó como una alternativa a las monedas fiduciarias y las estructuras centralizadas al ofrecer una forma descentralizada de almacenamiento y autenticación de datos. Las criptomonedas han eliminado la necesidad de un intermediario y han cambiado la forma en que percibimos las finanzas, la propiedad y la transparencia. Sin embargo, este no es necesariamente el caso cuando uno analiza la tokenómica de ciertas criptomonedas.
 
-History has shown that centralization will not create an alternative way of finance. As we have learned with the advent of smart contracts, cryptocurrencies are more than just mere tools for faster finance. For a deeper understanding of how Ergo views the spirit and application of cryptocurrencies, please see the [Ergo Manifesto](https://ergoplatform.org/en/blog/2021-04-26-the-ergo-manifesto/).
+Algunos modelos de minería por contrato inteligente, como [SmartPools] (https://ergoplatform.org/en/blog/2021-11-19-ergo-smartpools-and-decentralized-mining/) o [Logarithmic Space Mining] (https: / /ergoplatform.org/en/blog/2021-07-19-mining-in-logarithmic-space-nipopow-power-and-ergo/), puede aumentar la descentralización del poder minero. Estos tipos de modelos ayudan a prevenir [ataques del 51%] (https://www.investopedia.com/terms/1/51-attack.asp) y aumentan la seguridad. La cantidad de grupos de minería que admiten Ergo ha aumentado en más de veinte, y dos de ellos funcionan como grupos lanzados por la comunidad.
 
-Bitcoin was created as an alternative to fiat currencies and centralized structures by offering a decentralized way of data storage and authentication. Cryptocurrencies have erased the need for an intermediary party and changed how we perceive finance, ownership and transparency. However, this is not necessarily the case when one analyzes the tokenomics of certain cryptocurrencies. 
+En el caso de los intercambios centralizados, dice el refrán: no son tus llaves, no son tus monedas. Cada persona debe poseer una [billetera sin custodia] (https://ergoplatform.org/en/wallets/) para la seguridad de sus fondos. Su frase inicial es única para usted y sus fondos están bajo su control e inmunes a los ataques de intercambio. Además, las carteras sin custodia permiten a los usuarios acceder a las dApps para que puedan beneficiarse de interacciones seguras.
+## Accesibilidad de la información
 
-Some smart contract mining models, like [SmartPools](https://ergoplatform.org/en/blog/2021-11-19-ergo-smartpools-and-decentralized-mining/) or [Logarithmic Space Mining](https://ergoplatform.org/en/blog/2021-07-19-mining-in-logarithmic-space-nipopow-power-and-ergo/), can increase the decentralization of mining power. These types of models help to prevent [51% attacks](https://www.investopedia.com/terms/1/51-attack.asp) and increase security. The number of mining pools that support Ergo has increased by over twenty with two of those operating as community launched pools.
+Los bancos, los gobiernos, las empresas de inversión, etc., tienen un gran poder sobre las personas. Cuando las personas utilizan servicios de base de datos centralizados para los servicios de almacenamiento y autenticación, su accesibilidad a esos datos se pone en riesgo. La censura se presenta en varias formas, desde una simple exención a ciertas ventajas (fuentes internas, ofertas especiales), hasta la censura total, como la prohibición del acceso a los mercados globales.
 
-In the case of centralized exchanges, the saying goes: not your keys, not your coins. Every person needs to own a [non-custodial wallet](https://ergoplatform.org/en/wallets/) for the safety of their funds. Your seed phrase is unique to you and your funds are under your control and immune to exchange hacks. Additionally, non-custodial wallets allow users access to dApps so that they can benefit from secure interactions.
+No es así como debería funcionar una economía de libre mercado. El estado ha priorizado las instituciones sobre las personas y ha creado una competencia desleal. Esto conduce a una toma de riesgos irresponsable por parte de las instituciones y a una economía más frágil. La naturaleza no favorece a los desfavorecidos y la persona promedio es la que sufre el mayor daño de las caídas del mercado, ya que a menudo no hay rescates para las personas.
 
-## Accessibility of Information
+Las criptomonedas brindan una solución (aunque no perfecta) y una oposición a la acumulación central de poderes de gobernanza. La relación entre individuos y autoridades atravesará una transición social en este nuevo contexto de poder. Lo que antes se veía como una [Caja Negra] (https://en.wikipedia.org/wiki/Black_box) ahora está tokenizado y descentralizado. El uso de la criptografía ha introducido la autenticidad de conocimiento cero que es accesible y segura para que la utilicen muchos. Por primera vez, las personas no tienen que depender de una base de datos centralizada; aunque el poder de las bases de datos centralizadas no se disipará rápidamente.
 
-Banks, governments, investment firms, etc, hold a great amount of power over individuals. When individuals use centralized database services for storage and authentication services, their accessibility to that data becomes at risk. Censorship comes in various forms, from a simple exemption to certain advantages (insider sources, special offers), to full censorship such as being banned access to global markets.
+## Vigilancia
 
-This is not how a free-market economy should be working. The state has prioritized institutions over individuals and created unfair competition. This leads to irresponsible risk-taking by institutions and a more fragile economy. Nature does not favor the disadvantaged and the average person stands to experience the most harm from market crashes - as there are often no bail-outs for the people.
-
-Cryptocurrencies provide a solution (although not perfect) and an opposition to the central accumulation of governance powers. The relationship between individuals and authorities will be undergoing a social transition in this new context of power. What once was seen as a [Black Box](https://en.wikipedia.org/wiki/Black_box) is now tokenized and decentralized. The use of cryptography has introduced zero-knowledge authenticity which is accessible and secure for use by many. For the first time, people do not have to rely on a centralized database; although the power of centralized databases will not be quick to dissipate.
-
-## Surveillance
-
-Now that we see that cryptocurrencies are (supposed to) offer opportunities for ordinary people, we should explore under what conditions that becomes true. When Bitcoin launched, it was designed as a decentralized and immutable value of exchange. The idea of privacy was not a priority over the security of the system. Bitcoin provides pseudo-anonymity, as the addresses can not be linked to an individual directly, however, the addresses can be seen on-chain. Here is an explanation of the “New Privacy Model” from [Bitcoin’s Whitepaper](https://bitcoin.org/bitcoin.pdf).
+Ahora que vemos que las criptomonedas ofrecen (se supone que) oportunidades para la gente común, deberíamos explorar bajo qué condiciones eso se convierte en realidad. Cuando se lanzó Bitcoin, fue diseñado como un valor de intercambio descentralizado e inmutable. La idea de privacidad no era una prioridad sobre la seguridad del sistema. Bitcoin proporciona pseudoanonimato, ya que las direcciones no se pueden vincular a un individuo directamente, sin embargo, las direcciones se pueden ver en la cadena. Aquí hay una explicación del "Nuevo modelo de privacidad" del [Informe técnico de Bitcoin] (https://bitcoin.org/bitcoin.pdf).
 
 ![](https://lh5.googleusercontent.com/xD3ABK9U0KWp3yQArDiJ6HMnjWD7U5Qq1gV8nd2L9ljugm5-a22Mq1j0K960Gkzib_faURcjs0v8aFToTaM_QvJKNbM78OHdFlibzR4CkjlGt-Hh2oDP6wpw8fglqIDvDbm1u073)
 
-This was a huge leap for privacy but still an early version of digital anonymity.
+Este fue un gran salto para la privacidad, pero sigue siendo una versión temprana del anonimato digital.
 
-Later, Bitcoin users could obfuscate their transactions through the use of centralized mixers. A non-interactive mixer was hard to implement on Bitcoin, although the [Taproot Upgrade](https://www.research.arcane.no/blog/what-is-taproot-the-next-bitcoin-upgrade) opens the possibility for newer privacy models. There are also privacy-oriented cryptocurrencies, such as Monero, that obfuscate all transactions. Ergo has the flexibility to implement privacy in various use cases. Although it is not a privacy-oriented blockchain, Sigma Protocols allow privacy-oriented dApps like [ErgoMixer](https://ergoplatform.org/en/blog/2021-05-12-ergomixer/), or private side-chains, to obfuscate specific transactions.
+Más tarde, los usuarios de Bitcoin podrían ofuscar sus transacciones mediante el uso de mezcladores centralizados. Un mezclador no interactivo fue difícil de implementar en Bitcoin, aunque la [Actualización de Taproot] (https://www.research.arcane.no/blog/what-is-taproot-the-next-bitcoin-upgrade) abre la posibilidad para modelos de privacidad más nuevos. También hay criptomonedas orientadas a la privacidad, como Monero, que ofuscan todas las transacciones. Ergo tiene la flexibilidad de implementar la privacidad en varios casos de uso. Aunque no es una cadena de bloques orientada a la privacidad, los protocolos Sigma permiten dApps orientadas a la privacidad como [ErgoMixer] (https://ergoplatform.org/en/blog/2021-05-12-ergomixer/), o cadenas laterales privadas, para ofuscar transacciones específicas.
 
-With blockchain, hierarchical layers of privacy can be created to select which data can be shared with whom. In this sense, blockchains are perfectly suited for the security needs of businesses and other institutions. Inevitably, this will lead to some resistance from centralized institutions because gatekeepers will likely not want to lose their powers to peer-to-peer networks. 
+Con blockchain, se pueden crear capas jerárquicas de privacidad para seleccionar qué datos se pueden compartir con quién. En este sentido, las cadenas de bloques se adaptan perfectamente a las necesidades de seguridad de las empresas y otras instituciones. Inevitablemente, esto dará lugar a cierta resistencia por parte de las instituciones centralizadas porque es probable que los guardianes no quieran perder sus poderes ante las redes de igual a igual.
 
-Ergo believes that the future lies in regaining power for the average person. We need to learn what tools are readily available and what tools we as a society are in danger of losing. A tokenized revolution may not be fast and steady though, as the people in control will undoubtedly dislike the redistribution of their current power structure.
+Ergo cree que el futuro está en recuperar el poder de la persona promedio. Necesitamos saber qué herramientas están fácilmente disponibles y qué herramientas nosotros, como sociedad, corremos el riesgo de perder. Sin embargo, una revolución simbólica puede no ser rápida y constante, ya que a las personas que tienen el control, sin duda, no les gustará la redistribución de su estructura de poder actual.
 
-Therefore, it is important to understand and analyse one’s own actions. If cryptocurrencies become centralized or if the users stop using blockchains and turn to centralized databases, the model would be no different than the historical constructs that have led us to this moment. We recommend everyone to be aware of the network’s token and hash-rate distribution, have a non-custodial crypto wallet and always do your own research.
+Por lo tanto, es importante comprender y analizar las propias acciones. Si las criptomonedas se centralizan o si los usuarios dejan de usar blockchains y recurren a bases de datos centralizadas, el modelo no sería diferente a las construcciones históricas que nos han llevado a este momento. Recomendamos a todos que estén al tanto de la distribución del token y la tasa de hash de la red, tengan una billetera criptográfica sin custodia y siempre hagan su propia investigación.
 
-For the next article in this series, we will dive into blockchain technology and innovation. If you are curious about the previous articles in the Ergo & Blockchain series, please see the following: 
-
-[Ergo & Blockchain: Cryptocurrency Sphere](https://ergoplatform.org/en/blog/2021-10-26-ergo-blockchain-cryptocurrency-sphere/) 
-
-[Ergo & Blockchain: Tokenomics & Finance](https://ergoplatform.org/en/blog/2021-11-05-ergo-blockchain-tokenomics-and-finance/)
+En el próximo artículo de esta serie, nos sumergiremos en la tecnología y la innovación blockchain. Si tiene curiosidad acerca de los artículos anteriores de la serie Ergo & Blockchain, consulte lo siguiente:
+[Ergo & Blockchain: Tokenomics & Finance](https://ergoplatform.org/es/blog/2021-11-05-ergo-blockchain-tokenomics-and-finance/)
 
 <!--EndFragment-->

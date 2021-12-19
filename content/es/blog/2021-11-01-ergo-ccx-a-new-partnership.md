@@ -1,7 +1,7 @@
 ---
-title: "Ergo & CCX: A New Partnership"
+title: "Ergo & CCX: Una nueva asociación"
 date: 2021-11-01T13:38:15.422Z
-author: Ergo Foundation
+author: Ergo Foundation (translated by Daniu, original version will always prevail)
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/ccx.png
 tags:
@@ -9,37 +9,34 @@ tags:
 ---
 <!--StartFragment-->
 
-By popular demand through a vote on their Discord server, Conceal Network (CCX) is building a bridge to Ergo! This bridge will bring the wCCX token, which is 1:1 swappable with CCX, to the Ergo blockchain and the ERG token to Conceal Network. [Read more about the anatomy of Wrapped CCX](https://concealnetwork.medium.com/the-anatomy-of-wrapped-ccx-97b2a8c008d9). 
+¡Por demanda popular a través de una votación en su servidor de discord, Conceal Network (CCX) está construyendo un puente para Ergo! Este puente traerá el token WCCX, que es un intercambiable 1:1 con CCX ("equivalente") a la blockchain de ERGO y el token ERG a Conceal Network.[Lea más sobre la anatomía de CCX wrapped (https://condealnetwork.medium.com/the-anatomy-of-wrapped-ccx-97b2a8c008d9).
+
+
+Los proyectos orientados a la privacidad son esenciales y se necesitan más herramientas que se centren en estos proyectos, ya que continuamos hacia una mayor adopción.
+
+
+En el futuro, esta asociación espera colaborar en traer capacidades de EVM de Máquina Virtual de Ethereum a ERG, puertas de enlace de privacidad, Swaps sin necesidad de confianza usando HTLC, y, por supuesto, un enfoque compartido en la investigación de la capa 2 UTXO.
 
 
 
-Privacy-oriented projects are essential and more tools focusing on these projects are needed as we continue towards increased adoption.
+Conceal Network es una blockchain descentralizada impulsada por la comunidad, libre de la participación de las instituciones financieras y se alimenta con un código 100% de código abierto.Es accesible para cualquier persona en el mundo, independientemente de su ubicación o estado geográfico.
 
+Con esta superposición de ideales, una colaboración entre Ergo y Conceal Network no debe sorprender.
 
+Su moneda nativa (₡ CCX) se basa en el protocolo Cryptonote y se ejecuta en una tecnología segura de la red de pares a igual que funciona sin una autoridad central. Usted controla las claves privadas de sus fondos.
 
-In the future, this partnership hopes to collaborate on bringing Ethereum Virtual Machine EVM capabilities to ERG, privacy gateways, trustless swaps using HTLC, and of course, a shared focus on Layer-2 UTXO research. 
+Conceal Network evita muchas preocupaciones alrededor de Bitcoin (por ejemplo, impactos tecnológicos, ambientales, reputación y seguridad) y es una excelente tienda de valor alternativa privada.
 
-
-
-Conceal Network is a community-driven decentralized blockchain, free from financial institutions’ involvement and powered by 100% open-source code. It is accessible to anyone in the world regardless of their geographic location or status. 
-
-With this overlap of ideals, a collaboration between Ergo and Conceal Network should come as no surprise. 
-
-Conceal Networks native coin (₡CCX) is based on the Cryptonote protocol and runs on a secure peer-to-peer network technology that operates without a central authority. You control the private keys to your funds.
-
-Conceal Network avoids many concerns around Bitcoin (e.g. technological, environmental impacts, reputation and security) and is an excellent private alternative store of value.
-
-Flagship Features (see the [Conceal Wiki](https://conceal.network/wiki/doku.php?id=about) or [this interview](https://crypto-lowcap.com/exclusive-interview-conceal/) for more)
-
-* Anonymous payments
-* Protected Proof of Work
-* Private banking via Cold-staking by making use of HTLC
+Características destacables
+* Pagos anónimos
+* Prueba de trabajo(POW) protegida.
+* Banca privada a través de staking haciendo uso de HTLC
 * Fungible
-* Scalable
-* Dynamic Adaptive Limits
-* Unlinkable Transactions
-* Private on-chain (self-destructive) encrypted Messages
-* Private off-chain p2p encrypted audio- and video calls with Conceal Live 
+* Escalable
+* Límites adaptativos dinámicos.
+* Transacciones sin problemas
+* Mensajes cifrados privados en cadena (autodestructiva)
+* Llamadas de audio encriptadas en la cadena privada P2P con CONCEAL LIVE
 
 
 

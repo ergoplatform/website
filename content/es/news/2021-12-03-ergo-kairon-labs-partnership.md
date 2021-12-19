@@ -1,8 +1,8 @@
 ---
-title: Ergo & Kairon Labs Partnership
+title: Asociación de Ergo & Kairon Labs
 date: 2021-12-03T14:50:17.445Z
-subtitle: We are pleased to announce a new partnership with industry-leading
-  crypto market maker, Kairon Labs.  Kairon will focus on Ergo's liquidity and
-  trading volume as we work towards future exchange listings.
+subtitle: Nos complace anunciar una nueva asociación con líderes en la industria
+  creador de mercado de criptomonedas, Kairon Labs. Kairon se centrará en la liquidez de Ergo y
+  volumen de operaciones a medida que trabajamos para futuros listados en exchanges
 link: https://finance.yahoo.com/news/ergo-partners-kairon-labs-093300165.html
 ---

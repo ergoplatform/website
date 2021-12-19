@@ -1,7 +1,7 @@
 ---
-title: Good Whale’s Grant Fund
+title: La subvención de la ballena buena
 date: 2021-11-02T12:02:45.749Z
-author: Ergo Foundation
+author: Ergo Foundation (translated by Daniu, original version will always prevail)
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/good-whale-cover-1-.png
 tags:
@@ -10,25 +10,25 @@ tags:
 ---
 <!--StartFragment-->
 
-Ergo believes that people should take as much control of the ecosystem as possible to support decentralization and hopes to develop the crypto community and ecosystem through grassroots movements. The Ergo ecosystem is growing at a rapid pace in terms of both development and user base. We build in collaboration thanks to all the Ergonauts who support and take control of the ecosystem.
+Ergo cree que las personas deben tomar tanto control del ecosistema posible para apoyar la descentralización y las esperanzas de desarrollar la comunidad criptográfica y el ecosistema a través de los movimientos de base.El ecosistema ERGO está creciendo a un ritmo rápido en términos de desarrollo y base de usuarios.Construimos en colaboración gracias a todos los ergonautas que apoyan y toman el control del ecosistema.
 
-Alex (Kushti) Chepurnoy [recently posted](https://www.ergoforum.org/t/good-whales-grant-fund/2779) a proposition from a big Ergo investor named *Good Whale*. In their desire to support Ergo research & development, Good Whale is offering grants up to $20,000 SigUSD (each!) This is not a contract job, so developers who apply for this grant will also control the products created and any resulting income flow.
+Alex (Kushti) Chepurnoy ha publicado recientemente (https://www.ergoforum.org/t/good-whes-grant-fund/2779) una proposición de un gran inversor de ergo llamado * Buena ballena *.En su deseo de apoyar la investigación y el desarrollo de Ergo, la buena ballena está ofreciendo subvenciones de hasta $ 20,000 SIGUSD (¡cada uno!) este no es un trabajo por contrato, por lo que los desarrolladores que solicitan esta subvención también controlarán los productos creados y cualquier flujo de ingresos resultante.
 
-Good whale’s fund is mostly interested in the following topics:
+La ballena buena está interesado principalmente en los siguientes temas:
 
-* developing a standard for NiPoPoW-based certificates for NFTs 
-* developing contracts and UI for Ergo Name System (alternative for Namecoin, Handshake, Ethereum Name Service)
-* developing applications on top of ErgoDEX, such as DexyUSD [Dexy USD - Simplest Stablecoin Design](https://www.ergoforum.org/t/dexy-usd-simplest-stablecoin-design/1430), token sales with buyback guarantees [New Ergo Smart DEX Orders with buyback guarantees | Ergo](https://ergoplatform.org/en/blog/2020-12-02-new-ergo-smart-dex-orders-with-buyback-guarantees/) etc
-* developing standard DeFi stack: lending applications, financial instruments (futures, options), etc
-* [Mixicles](https://research.chain.link/mixicles.pdf) and other private DeFi applications
-* Mutual credit systems, targeted microloans, savings cooperatives and other community-powering DeFi
+* Desarrollar un estándar para certificados basados en Nipopow para NFTS
+* Desarrollo de contratos y UI para el Ergo Name System (alternativa para Namecoin, HandShake, Ethereum Name Service)
+* Desarrollar aplicaciones en la parte superior de Ergodex, como DEXYUSD [DEXY USD - STABLECOIN DISEÑO SIMPLEST] (https://www.eroforum.org/t/dexy-usd-simplest-stablecoin-design/1430), Ventas de tokens con garantías de recompra[NUEVO ERGO Smart Dex Pedidos con garantías de recompra |Ergo] (https://ergoplatform.org/en/blog/2020-12-02-new-ergo-smart-dex-orders-with-buyback-guarantes/), etc.
+* Desarrollo de Standard Defi Stack: Aplicaciones de préstamos, instrumentos financieros (futuros, opciones), etc.
+* [MIXICAS] (https://research.chain.link/mixicles.pdf) y otras aplicaciones de defi privadas
+* Sistemas de crédito mutuos, microcréditos dirigidos, cooperativas de ahorro y otros defi de la comunidad.
 
-These are initial categories, and interested developers are free to propose their own!
+¡Estas son categorías iniciales, y los desarrolladores interesados son libres de proponer otras!
 
-Please note that this is an additional fund to help promote and speed up Ergo ecosystem bootstrapping. There are bounties up for bugs, tutorials, and new applications on the [grow-ergo](https://github.com/ergoplatform/grow-ergo/issues) repository. There are also more than 4k ERG in the DarkFund0, reserved for privacy-preserving applications.
+Tenga en cuenta que este es un fondo adicional para ayudar a promover y acelerar el arranque del ecosistema de Ergo.Hay recubiertos para errores, tutoriales y nuevas aplicaciones en el repositorio [Grow-Ergo] (https://github.com/ergoplatform/grow-ergo/issues).También hay más de 4K ERG en el Darkfund0, reservado para aplicaciones de conservación de privacidad.
 
-The Ergo Foundation is always interested in viewing all grant proposals.
+La Fundación siempre está interesada en ver todas las propuestas de subvenciones.
 
-If you are interested in building with Ergo and supporting development, please send your proposals to team@ergoplatform.org.
+Si está interesado en construir con Ergo y el desarrollo de apoyo, envíe sus propuestas a Team@ergoplatform.org.
 
 <!--EndFragment-->

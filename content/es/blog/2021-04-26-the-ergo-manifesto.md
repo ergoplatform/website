@@ -1,7 +1,7 @@
 ---
 title: El Ergo Manifesto
 date: 2021-04-26T18:19:48.338Z
-author: Ergo Foundation
+author: Ergo Foundation (translated by Daniu)
 authorPhoto: /img/uploads/logotype_black_circle.svg
 blogPhoto: /img/uploads/ergomanifesto.png
 tags:

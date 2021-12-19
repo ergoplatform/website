@@ -1,9 +1,9 @@
 ---
-title: Ergo Foundation Announces Official Incorporation
+title: La Fundación Ergo anuncia incorporación oficial
 date: 2021-12-10T20:25:06.470Z
-subtitle: "Announced today, the Accounting and Corporate Regulatory Authority
-  (ACRA) has approved Ergo Foundation Ltd as a corporate entity in Singapore.
-  With this news, the Ergo Foundation establishes a clear pathway towards
-  forming new official partnerships and listings on Tier 1 exchanges.  "
-link: https://ergoplatform.org/en/blog/2021-12-10-ergo-foundation-announces-official-incorporation/
+subtitle: "Anunciado hoy, la Autoridad Reguladora Contable y Corporativa
+  (ACRA) ha aprobado a Ergo Foundation Ltd como entidad corporativa en Singapur.
+  Con esta noticia, la Fundación Ergo establece un camino claro hacia
+  formando nuevas asociaciones oficiales y listados en exchanges del nivel más alto."
+link: https://ergoplatform.org/es/blog/2021-12-10-ergo-foundation-announces-official-incorporation/
 ---

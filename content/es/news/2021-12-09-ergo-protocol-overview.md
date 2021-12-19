@@ -1,8 +1,8 @@
 ---
-title: Ergo Protocol Overview
+title: Descripción general del protocolo Ergo (inglés)
 date: 2021-12-09T11:13:14.078Z
-subtitle: Here you can find an overview of frequently asked questions about Ergo
-  Protocol. All the relevant information to-date is described in this long post
-  by Joseph Armeanio.  -Intentions -Security -Team -Technology
+subtitle: Aquí puede encontrar una descripción general de las preguntas frecuentes sobre Ergo
+  Protocolo. Toda la información relevante hasta la fecha se describe en este largo artículo.
+  por Joseph Armeanio. -Intenciones -Seguridad -Equipo -Tecnología
 link: https://curiaregiscrypto.medium.com/reddit-response-too-long-t-6fbb61f40a17
 ---

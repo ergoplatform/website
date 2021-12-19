@@ -9,16 +9,16 @@ tags:
 ---
 <!--StartFragment-->
 
-**Disclaimer:** *ErgoPad is a community-driven project and does not operate under the Ergo Foundation. The project was developed by a team that participated in ErgoHack and they are working on their contracts in the Ergo Discord with support from Ergo Core.*
+**Descargo de responsabilidad:** *ErgoPad es un proyecto impulsado por la comunidad y no opera bajo la Fundación Ergo. El proyecto fue desarrollado por un equipo que participó en ErgoHack y están trabajando en sus contratos en Ergo Discord con el apoyo de Ergo Core.*
 
-ErgoPad will be the first Launchpad on Ergo to host initial decentralized token offerings (IDOs). This type of dApp aims to kick start the development of various projects and token auctions on the blockchain, thereby allowing developers to raise capital.
+ErgoPad será el primer Launchpad en Ergo que albergará ofertas de tokens descentralizadas (IDO) iniciales. Este tipo de dApp tiene como objetivo impulsar el desarrollo de varios proyectos y subastas de tokens en la cadena de bloques, lo que permite a los desarrolladores recaudar capital.
 
-Readers may recognize the term launchpad from some centralized exchanges (such as Binance, FTX, etc.), however there are also decentralized versions of launchpads. For example, MISO is currently a decentralized launchpad operating on Ethereum.
+Los lectores pueden reconocer el término launchpad de algunos intercambios centralizados (como Binance, FTX, etc.), sin embargo, también existen versiones descentralizadas de launchpad. Por ejemplo, MISO es actualmente una plataforma de lanzamiento descentralizada que opera en Ethereum.
 
-As is often the case with Ethereum, transaction fees can be extremely high and can deter the average investor, resulting in many users opting to use launchpads on centralized exchanges. Ergo aims to eliminate centralized points of failure and create an equal playing field for all participants.
+Como suele ser el caso con Ethereum, las tarifas de transacción pueden ser extremadamente altas y pueden disuadir al inversionista promedio, lo que hace que muchos usuarios opten por usar plataformas de lanzamiento en intercambios centralizados. Ergo tiene como objetivo eliminar los puntos centralizados de falla y crear un campo de juego equitativo para todos los participantes.
 
-As Ergo’s first IDO platform, ErgoPad offers users minimal fees on a blockchain that provides maximum scalability, privacy, and decentralization. The creation of a launchpad on Ergo is an important milestone as it potentially opens the door for both increased developer and investor activity.
+Como la primera plataforma IDO de Ergo, ErgoPad ofrece a los usuarios tarifas mínimas en una cadena de bloques que proporciona la máxima escalabilidad, privacidad y descentralización. La creación de una plataforma de lanzamiento en Ergo es un hito importante, ya que potencialmente abre la puerta a una mayor actividad tanto de desarrolladores como de inversores.
 
-If you wish to learn more about the project, please visit [ErgoPad.io](http://ergopad.io) where you can access relevant communication channels. The team also recently held an “Ask me Anything” which can be accessed [here](https://ergopad.medium.com/ergopad-ama-4-december-2021-8a2a9cf69810).
+Si desea obtener más información sobre el proyecto, visite [ErgoPad.io] (http://ergopad.io) donde puede acceder a los canales de comunicación relevantes. El equipo también celebró recientemente un “Pregúntame cualquier cosa” al que se puede acceder [aquí] (https://ergopad.medium.com/ergopad-ama-4-december-2021-8a2a9cf69810).
 
 <!--EndFragment-->

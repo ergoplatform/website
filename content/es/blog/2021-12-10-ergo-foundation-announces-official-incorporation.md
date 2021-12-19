@@ -1,7 +1,7 @@
 ---
-title: Ergo Foundation Announces Official Incorporation
+title: La fundación de Ergo anuncia la incorporación oficial
 date: 2021-12-10T18:43:45.252Z
-author: Ergo Foundation
+author: Ergo Foundation (translated by Daniu, original version will always prevail)
 authorPhoto: /img/uploads/logo.png
 blogPhoto: /img/uploads/ef.png
 tags:
@@ -10,36 +10,33 @@ tags:
 ---
 <!--StartFragment-->
 
-Announced today, the Accounting and Corporate Regulatory Authority ([ACRA](https://www.acra.gov.sg/)) has approved Ergo Foundation Ltd as a corporate entity in Singapore. With this news, the Ergo Foundation establishes a clear pathway towards forming new official partnerships and listings on Tier 1 exchanges.
+Anunciado hoy, la Autoridad de Regulación Corporativa y Contable ([ACRA] (https://www.acra.gov.sg/)) ha aprobado a Ergo Foundation Ltd como una entidad corporativa en Singapur. Con esta noticia, la Fundación Ergo establece un camino claro hacia la formación de nuevas asociaciones y listados oficiales en los exchanges de Nivel 1 (top).
 
 
 
-The Ergo Foundation has been working towards incorporation during this last year as a necessary step in legitimizing the ongoing work of the foundation and treasury. There are several official partnerships already in development and the establishment of the company creates a vehicle for the formalization of these collaborations. 
+La Fundación Ergo viene trabajando durante este último año para que la incorporación sea un paso necesario para legitimar el trabajo permanente de la fundación y tesorería. Hay varias asociaciones oficiales que ya están en desarrollo y el establecimiento de la empresa crea un vehículo para la formalización de estas colaboraciones.
 
 
 
-As an incorporated entity, Ergo Foundation Ltd can formally pursue the legal opinions necessary for Tier 1 exchange listings. Coupled with the recent engagement of Kairon Labs as a market maker for ERG, Ergo is positioning itself to be increasingly active in the cryptocurrency industry going forward.
+Como entidad incorporada, Ergo Foundation Ltd puede solicitar formalmente las opiniones legales necesarias para las listas de intercambio de Nivel 1. Junto con el reciente compromiso de Kairon Labs como creador de mercado para ERG, Ergo se está posicionando para ser cada vez más activo en la industria de las criptomonedas en el futuro.
+
+
+### Sobre Ergo
 
 
 
-### About Ergo
+Ergo es el siguiente paso inevitable en la evolución de la tecnología blockchain de Prueba de trabajo (pow), diseñada para crear e implementar contratos financieros poderosos, eficientes y altamente seguros. Utiliza los mejores aspectos de Bitcoin y Ethereum al usar el modelo UTXO de Bitcoin mientras implementa la funcionalidad de contrato inteligente de Ethereum.
 
 
 
-Ergo is the inevitable next step in the evolution of Proof of Work blockchain technology, designed for creating and implementing powerful, efficient, and highly secure financial contracts. It utilizes the best aspects of Bitcoin and Ethereum by using Bitcoin’s UTXO model while implementing the smart contract functionality of Ethereum.
-
+La innovación de Ergo proporciona una criptoeconomía mejorada, cuyo objetivo es proporcionar bienes sociales y financieros para aquellos que valoran la privacidad, la confiabilidad técnica y las oportunidades de inversión. Los productos que Ergo crea lo posicionan como líder en el tratamiento de los problemas de pobreza y accesibilidad en regiones donde el acceso a productos y servicios financieros modernos es limitado o nulo.
  
 
-Ergo’s innovation provides an enhanced crypto-economy, aimed at providing social and financial goods for those who value privacy, technical reliability, and investment opportunities. The products Ergo creates position it as a leader in addressing the issues of poverty and accessibility in regions where there is limited or no access to modern financial products and services.
-
- 
-
-### About the Ergo Foundation
+### Acerca de la Fundación Ergo
 
 
 
-The Ergo Foundation oversees the business aspects of the Ergo Platform. The Foundation consists of several board members who are tasked with ensuring that the projects built honor and uphold the initial inspirations for the creation of Ergo. They are responsible for the Ergo Treasury as well as the disbursement of funds to further develop the Ergo Ecosystem. For further information, please see the Ergo Foundation webpage.
-
+La Fundación Ergo supervisa los aspectos comerciales de la Plataforma Ergo. La Fundación consta de varios miembros de la junta que tienen la tarea de garantizar que los proyectos construidos honren y mantengan las inspiraciones iniciales para la creación de Ergo. Son responsables de la Tesorería Ergo, así como del desembolso de fondos para desarrollar aún más el Ecosistema Ergo. Para obtener más información, consulte la página web de Ergo Foundation.
 
 
 <!--EndFragment-->

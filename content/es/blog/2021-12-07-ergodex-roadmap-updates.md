@@ -1,7 +1,7 @@
 ---
-title: ErgoDEX Roadmap Updates
+title: ErgoDEX Roadmap Actualizaciones
 date: 2021-12-07T19:01:11.608Z
-author: Ergo Foundation
+author: Ergo Foundation (translated by Daniu, original version will always prevail)
 authorPhoto: /img/uploads/logo.png
 blogPhoto: /img/uploads/ergodexroadmap.jpg
 tags:
@@ -9,27 +9,22 @@ tags:
   - Roadmap
 ---
 <!--StartFragment-->
+Yasha e Ilya del equipo ErgoDEX hicieron recientemente una entrevista en el canal de Youtube de [Adaverse] (https://www.youtube.com/watch?v=sl-GSgyXDqU). El equipo habló sobre el roadmap de desarrollo de ErgoDEX, la interoperabilidad con Cardano y el muy esperado token ErgoDEX.
 
-Yasha and Ilya from the ErgoDEX team recently did an interview on [Adaverse](https://www.youtube.com/watch?v=sl-GSgyXDqU)’s Youtube channel. The team talked about the development roadmap of ErgoDEX, interoperability with Cardano and the highly anticipated ErgoDEX token.
+El comercio y [proporcionar liquidez] (https://finematics.com/liquidity-pools-explained/) en ErgoDEX están actualmente activos y hay más de $ 500K en activos bloqueados. Los pares negociables ERG / SigUSD y ERG / SigRSV están disponibles y varios equipos de desarrolladores están trabajando en puentes hacia Ethereum, Solana y otras cadenas compatibles con EVM. Además, hay equipos trabajando en el lanzamiento del conector dApp de Yoroi.
 
-Trading and [providing liquidity](https://finematics.com/liquidity-pools-explained/) in ErgoDEX are currently active and there is over $500K worth of assets locked. ERG/SigUSD and ERG/SigRSV tradable pairs are available and several developer teams are working on bridges to Ethereum, Solana and other EVM compatible chains. Additionally, there are teams working on the Yoroi dApp connector release. 
+El conector dApp de Yoroi ya estaba en uso en ErgoDEX con Yoroi Nightly, pero ahora la actualización se integrará en la versión alfa. La integración de ERG con Ledger también permitirá la utilización de ErgoDEX a través de Yoroi con carteras de hardware Ledger.
 
-The Yoroi dApp connector was already in use on ErgoDEX with the Yoroi Nightly but now the update will be integrated into the alpha release. ERG integration with Ledger will also enable utilization of ErgoDEX via Yoroi with Ledger hardware wallets.
+Ergo se construye utilizando el modelo UTXO extendido. Los beneficios del modelo UTXO extendido (eUTXO) radican en su capacidad de composición. La capacidad de composición permite desarrollar aplicaciones más livianas que están interconectadas y son escalables, creando una experiencia DeFi única en la cadena de bloques. Otras aplicaciones podrán conectarse a ErgoDEX y utilizar datos en cadena más fácilmente.
 
-Ergo is built using the extended UTXO model. The benefits of the extended UTXO (eUTXO) model lie in its composability. Composability enables developing lighter applications that are interconnected and scalable, creating a unique DeFi experience on the blockchain. Other apps will be able to connect to ErgoDEX and utilize on-chain data more easily.
+Un hito importante en la hoja de ruta de ErgoDEX será el lanzamiento de Ergo Software Development Kits (SDK). Los SDK de Ergo permitirán implementaciones de dApp más sencillas porque se podrán construir nuevas utilizando la misma pila que ErgoDEX.
 
-An important milestone on the ErgoDEX roadmap will be the release of Ergo Software Development Kits (SDKs). Ergo SDKs will allow for easier dApp deployments because new ones will be able to be built using the same stack as ErgoDEX. 
+Durante la entrevista, el equipo reveló su entusiasmo por el lanzamiento V5 de Sigma State Interpreter. Esta actualización ayudará significativamente a los desarrolladores de dApp al hacer que los contratos inteligentes sean más baratos y predecibles.
 
-During the interview, the team revealed their excitement about the V5 release of Sigma State Interpreter. This update will significantly help dApp developers by making smart contracts cheaper and more predictable.
+La cartera de pedidos DEX se implementará pronto y también se planean ofertas de monedas iniciales reembolsables en la hoja de ruta. Esta característica única de ErgoDEX integrará soporte de recompra y rellenos parciales para modelos de inversión más seguros.
 
-The DEX order book will be deployed soon and refundable initial coin offerings are also planned in the roadmap. This unique feature on ErgoDEX will integrate buy-back support and partial fillings for safer investment models. 
+La decisión de mejorar continuamente la experiencia del usuario en Ergo es una prioridad para el equipo; este tipo de trabajo hará que el proceso de desarrollo entre cadenas sea más rápido. Se espera la interoperabilidad con Cardano en 2022, pero el equipo dijo que es difícil predecir una fecha exacta debido a todas las partes móviles. (Nota: en el [ErgoPulse,] de hoy (https://www.youtube.com/watch?v=H7pj_MepctM) el equipo dijo que el desarrollo va rápido y que el lanzamiento puede llegar a mediados de enero) El primer enfoque es traer más activos como USDT, BTC y ADA a ErgoDEX y brindan una experiencia similar a Metamask con el conector dApp de Yoroi.
 
-The decision to continually improve the user experience on Ergo is a priority for the team - this kind of work will make the cross-chain development process faster. Interoperability with Cardano is expected in 2022 but the team said it is hard to predict an exact date because of all the moving parts. (Note: In today's [ErgoPulse,](https://www.youtube.com/watch?v=H7pj_MepctM) the team said development is going fast and release may come mid January) The first focus is to bring more assets such as USDT, BTC and ADA to ErgoDEX and provide a Metamask-like experience with the Yoroi dApp connector. 
-
-With cross-chain integration, users of ErgoDEX will be able to swap between chains with just one click. Atomic swaps on ErgoDEX will enable an easy transfer of assets between chains. 
-
-Another planned use case is to enable DeFi lending on ErgoDEX. Decentralized lending will allow inside-app borrowing for users. With DeFi lending, there are also plans for new models such as [leveraged liquidity farming](https://thedefiant.io/leveraged-yield-farming/) tools.
-
-With regards to the ErgoDEX token, the team said they are researching meaningful use cases of the proposed token. Applications such as DeFi lending, leveraged farming or similar liquidity locking oriented tools could be suitable for using ErgoDEX tokens. The team said creating a token economy is a very sensitive discussion and they will be looking for the best ways to create profit for token holders. The token distribution model will be announced shortly after the token development is finalized.
+Con la integración entre cadenas, los usuarios de ErgoDEX podrán cambiar entre cadenas con un solo clic. Los intercambios atómicos en ErgoDEX permitirán una fácil transferencia de activos entre cadenas.
 
 <!--EndFragment-->

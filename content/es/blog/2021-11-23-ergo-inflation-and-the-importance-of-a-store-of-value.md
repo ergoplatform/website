@@ -1,7 +1,7 @@
 ---
-title: Ergo, Inflation and the Importance of a Store of Value
+title: Ergo, Inflación y la importancia de una reserva de valor.
 date: 2021-11-23T15:01:38.107Z
-author: Ergo Foundation
+author: Ergo Foundation (translated by Daniu, original version will always prevail)
 authorPhoto: /img/uploads/logo.png
 blogPhoto: /img/uploads/inflation-2-.png
 tags:
@@ -10,51 +10,48 @@ tags:
 ---
 <!--StartFragment-->
 
-We have been hearing the warnings for a while now and our economies have started to signal the inevitable: rising inflation is here. What does this mean for the value of your money and your financial future? 
+Hemos estado escuchando las advertencias por un tiempo y nuestras economías han comenzado a señalar lo inevitable: el aumento de la inflación está aquí. ¿Qué significa esto para el valor de su dinero y su futuro financiero?
 
-Inflation occurs when the purchasing power of a currency is diminished against the rising costs of goods and services. In the United States, [inflation spiked sharply](https://www.usinflationcalculator.com/inflation/current-inflation-rates/) in April and May of this year with rates of 4.2% and 5%, respectively. As of October, inflation now stands at a staggering 6.2%. In Canada, inflation has [soared to a near 20-year high](https://financialpost.com/news/economy/canadas-annual-inflation-rate-hits-4-7-in-oct-highest-since-feb-2003) of 4.7% in October and it stands to reason it will go higher if the USA is already at 6.2%. These are concerning numbers as countries continue to struggle with strategies for reopening economies amidst the continuing COVID-19 pandemic. Ultimately, those who will feel the brunt of inflation will be the lower and middle class as the majority of this population have not earned wage increases to match rising inflation rates. 
+La inflación se produce cuando el poder adquisitivo de una moneda disminuye frente a los crecientes costos de bienes y servicios. En Estados Unidos, [la inflación se disparó bruscamente] (https://www.usinflationcalculator.com/inflation/current-inflation-rates/) en abril y mayo de este año con tasas de 4.2% y 5%, respectivamente. A partir de octubre, la inflación se sitúa ahora en un asombroso 6.2%. En Canadá, la inflación se ha [disparado a un máximo de casi 20 años] (https://financialpost.com/news/economy/canadas-annual-inflation-rate-hits-4-7-in-oct-highest-since- feb-2003) del 4,7% en octubre y es lógico que suba si EE.UU. ya está en el 6,2%. Estos son números preocupantes a medida que los países continúan luchando con estrategias para reabrir las economías en medio de la continua pandemia de COVID-19. En última instancia, quienes sentirán la peor parte de la inflación serán las clases media y baja, ya que la mayoría de esta población no ha ganado aumentos salariales para igualar las crecientes tasas de inflación. 
 
-Since the inception of Bitcoin, the argument has been made that cryptocurrency can be a solid hedge against rising inflation. Why is this? Cryptocurrencies with a fixed supply can not mint additional tokens and therefore provide scarcity and a store of value. Similar to Bitcoin, Ergo’s tokenomics guarantee that the supply is capped at approximately 97 million ERG (for comparison, Ethereum does NOT have a fixed supply of coins). Over time, inflation (whether gradual or extreme) will decrease fiat’s purchasing power of goods, services and other assets - including crypto. Compounding this issue is the willingness of governments and central banks to print an unlimited supply of money in tandem with what seems to be an infinite government debt ceiling. Think about that for a moment. Who will suffer when this house of cards falls? It is probably safe to assume it will not be the millionaire/billionaire class.
+Desde el inicio de Bitcoin, se ha argumentado que la criptomoneda puede ser una cobertura sólida contra el aumento de la inflación. ¿Por qué es esto? Las criptomonedas con un suministro fijo no pueden crear tokens adicionales y, por lo tanto, proporcionan escasez y una reserva de valor. Similar a Bitcoin, la tokeconomía de Ergo garantiza que el suministro tiene un límite de aproximadamente 97 millones de ERG (en comparación, Ethereum NO tiene un suministro fijo de monedas). Con el tiempo, la inflación (ya sea gradual o extrema) disminuirá el poder adquisitivo de bienes, servicios y otros activos de fiat, incluido el cifrado. Para agravar este problema está la voluntad de los gobiernos y los bancos centrales de imprimir un suministro ilimitado de dinero junto con lo que parece ser un techo infinito de deuda pública. Piense en eso por un momento. ¿Quién sufrirá cuando este castillo de naipes caiga? Probablemente sea seguro asumir que no será la clase de millonarios / multimillonarios.
 
-So what are the options? What can you do to diminish inflation's impact on your financial future? Most financial advisors encourage their clients to invest their savings into an asset class. Traditionally those include bonds, stocks, precious metals, etc. Most of these options are pillars of the traditional banking system and therefore continue to be controlled by centralized entities. If you are new to cryptocurrencies, you have no doubt come across discussions about centralized versus decentralized finance (DeFi). To explore that discussion more fully, here is some suggested [reading](https://medium.com/stably-blog/decentralized-finance-vs-traditional-finance-what-you-need-to-know-3b57aed7a0c2) covering some of the principles of decentralized finance.
+Así que cuales son las opciones? ¿Qué puede hacer para disminuir el impacto de la inflación en su futuro financiero? La mayoría de los asesores financieros animan a sus clientes a invertir sus ahorros en una clase de activos. Tradicionalmente, estos incluyen bonos, acciones, metales preciosos, etc. La mayoría de estas opciones son pilares del sistema bancario tradicional y, por lo tanto, continúan controladas por entidades centralizadas. Si es nuevo en las criptomonedas, sin duda se ha encontrado con discusiones sobre finanzas centralizadas versus descentralizadas (DeFi). Para explorar esa discusión más a fondo, aquí hay una [lectura] sugerida en inglés (https://medium.com/stably-blog/decentralized-finance-vs-traditional-finance-what-you-need-to-know-3b57aed7a0c2) que cubre algunos de los principios de las finanzas descentralizadas.
 
-With cryptocurrency, people have another option and a new way to invest their money. That being said, there seem to be thousands of options when it comes to cryptocurrencies. How do you decide where to invest? 
+Con las criptomonedas, las personas tienen otra opción y una nueva forma de invertir su dinero. Dicho esto, parece haber miles de opciones cuando se trata de criptomonedas. ¿Cómo decides dónde invertir?
 
-We recommend you ask some very important questions before you choose a blockchain to invest in:
+Le recomendamos que haga algunas preguntas muy importantes antes de elegir una cadena de bloques en la que invertir:
 
-* What are the tokenomics of the particular crypto?
-* What is the circulating supply and is there a fixed cap for the emission schedule of the tokens?
-* Was there an Initial Coin Offering? Was a portion of the supply reserved for founders and venture capitalists? If so, how much?
-* What is the purpose of the particular blockchain?
-* Does the blockchain have projects built on it? What kinds of products do they offer?
-* Who are the founders and developers, and what are their goals?
-* Is the blockchain decentralized or are there centralized features?
-* Are the applications being built open-source and peer reviewed?
+* ¿Cuáles son los tokenomics de la criptomoneda en particular?
+* ¿Cuál es el suministro circulante y hay un límite fijo para el programa de emisión de los tokens?
+* ¿Hubo una oferta inicial de monedas? ¿Se reservó una parte del suministro para fundadores y capitalistas de riesgo? Si es así, ¿cuánto?
+* ¿Cuál es el propósito de la blockchain en particular?
+* ¿La cadena de bloques tiene proyectos construidos sobre ella? ¿Qué tipo de productos ofrecen?
+* ¿Quiénes son los fundadores y desarrolladores, y cuáles son sus objetivos?
+* ¿La cadena de bloques está descentralizada o hay funciones centralizadas?
+* ¿Las aplicaciones que se están construyendo son de código abierto y revisadas por pares?
 
-One of the proudest features of the Ergo blockchain is that there was no Initial Coin Offering (ICO) and no funds or assets were pre-allocated to any founders or developers (for a deeper dive into Ergo’s tokenomics, please see [the following article](https://ergoplatform.org/en/blog/2021-11-05-ergo-blockchain-tokenomics-and-finance/)). If you research the launch of other blockchains, you will find many that pre-allocated funds and held ICO’s to raise capital. Ergo had a truly fair launch and is developing a blockchain for the financial needs of the future. The [Ergo Manifesto](https://ergoplatform.org/en/blog/2021-04-26-the-ergo-manifesto/) is the seminal document highlighting all of the inspirations and motivations for the creation of the blockchain. If one were to attempt to succinctly define the goal of Ergo, it would be to offer financial empowerment to the average citizen in a world where centralized entities have allowed the powerful to weaponize and control the flow of money for their benefit.
+Una de las características más orgullosas de la cadena de bloques Ergo es que no hubo una Oferta Inicial de Monedas (ICO) y no se asignaron previamente fondos o activos a ningún fundador o desarrollador (para una inmersión más profunda en la tokenomía de Ergo, consulte [el siguiente artículo] (https://ergoplatform.org/en/blog/2021-11-05-ergo-blockchain-tokenomics-and-finance/)). Si investiga el lanzamiento de otras cadenas de bloques, encontrará muchos fondos preasignados y ICO para recaudar capital. Ergo tuvo un lanzamiento verdaderamente justo y está desarrollando una cadena de bloques para las necesidades financieras del futuro. El [Ergo Manifesto] (https://ergoplatform.org/en/blog/2021-04-26-the-ergo-manifesto/) es el documento fundamental que destaca todas las inspiraciones y motivaciones para la creación de la cadena de bloques. Si uno intentara definir sucintamente el objetivo de Ergo, sería ofrecer empoderamiento financiero al ciudadano promedio en un mundo donde las entidades centralizadas han permitido a los poderosos armarse y controlar el flujo de dinero para su beneficio.
 
-Ergo is an answer. Ergo is an opportunity for individuals to reclaim even a little bit of their financial freedom and power. Ergo is a possible solution to inflation and yet so much more than just a store of value.
+Ergo es una respuesta. Ergo es una oportunidad para que las personas recuperen incluso un poco de su poder y libertad financiera. Ergo es una posible solución a la inflación y, sin embargo, mucho más que una reserva de valor.
 
-The developers of Ergo are some of the leading technologists in the blockchain industry, having created smartcontract.com (now Chainlink). They are IOHK alumni (the company behind the creation of Cardano) and were instrumental in projects such as NXT and Scorex. The Ergo blockchain is designed with the UTXO model ledger that Bitcoin operates on but with the added advantage of smart contract functionality. This is called the extended UTXO model.
+Los desarrolladores de Ergo son algunos de los tecnólogos líderes en la industria blockchain, habiendo creado smartcontract.com (ahora Chainlink). Son ex alumnos de IOHK (la empresa detrás de la creación de Cardano) y fueron fundamentales en proyectos como NXT y Scorex. La cadena de bloques Ergo está diseñada con el libro de contabilidad del modelo UTXO en el que opera Bitcoin, pero con la ventaja adicional de la funcionalidad de contrato inteligente. Esto se llama modelo UTXO extendido.
+Estas poderosas herramientas son los componentes básicos que respaldan un ecosistema ya impresionante de aplicaciones descentralizadas:
 
-When you invest in Ergo, you are not just investing in a cryptocurrency, you are investing in a platform that is building decentralized applications (dApps) and financial products for you. You are investing in a platform that is committed to open source, peer-reviewed work and collaborations with other blockchains with like-minded goals (see [UTXO Alliance](https://utxo-alliance.org/)  and [BPSAA](https://bpsaa.vision/)). The future of crypto adoption and a functional blockchain industry will require interoperability and the ability to host a wide array of services between different platforms. Therein lies the real potential of cryptocurrencies. In addition to a store of value, Ergo’s dApps offer competitive financial products and services without a centralized intermediary. Ergo is at the forefront of developing this future with features such as [ErgoScript](https://ergoplatform.org/docs/ErgoScript.pdf), Σ-protocols (see [Whitepaper II](https://ergoplatform.org/docs/ErgoScript.pdf) and [Whitepaper III](https://ergoplatform.org/docs/AdvancedErgoScriptTutorial.pdf)) and [NiPoPoW’s (Non-Interactive Proof’s of Proof of Work)](https://ergoplatform.org/en/blog/2021-08-26-nipopow-applications-light-clients-and-side-chains/).
+[ErgoDEX] (https://bit.ly/3oPGwzt) - Una [dApp insignia] (https://ergoplatform.org/en/blog/2021-07-21-ergodex-a-cross-chain-workhorse/) en Ergo: es el primer intercambio descentralizado en el modelo UTXO con capacidad de cadena cruzada con Cardano.
 
-These powerful tools are the building blocks that support an already impressive ecosystem of decentralized applications:
+[SigmaUSD] (https://bit.ly/3nFRKHx) - Una solución novedosa e innovadora para un protocolo de moneda estable algorítmica respaldado por criptografía.
 
-[ErgoDEX](https://bit.ly/3oPGwzt)  - A [flagship dApp](https://ergoplatform.org/en/blog/2021-07-21-ergodex-a-cross-chain-workhorse/) on Ergo - it is the first decentralized exchange on the UTXO model with cross-chain capability with Cardano.
+[ErgoRaffle] (https://bit.ly/3DI15nT): una aplicación de pseudo-financiación descentralizada.
 
-[SigmaUSD](https://bit.ly/3nFRKHx)  - A novel and innovative solution for a crypto-backed algorithmic stablecoin protocol.
+[Ergo Auction House] (https://bit.ly/3DHCorr): centro NFT de Ergo.
 
-[ErgoRaffle](https://bit.ly/3DI15nT) - A decentralized pseudo-crowdfunding application.
+[ErgoUtils] (https://bit.ly/3kYyT8V): la dApp para la creación de Ergo NFT y nuevos tokens.
 
-[Ergo Auction House](https://bit.ly/3DHCorr) - Ergo’s NFT hub.
+[Oracle Pools] (https://bit.ly/3kYfIMm) - Mensajeros entre Ergo blockchain y el mundo exterior.
 
-[ErgoUtils](https://bit.ly/3kYyT8V) - The dApp for the creation of Ergo NFT’s and new tokens.
+Estas son solo algunas de las dApps actualmente implementadas en Ergo. Para obtener una descripción general completa del ecosistema, visite [Sigmaverse] (https://bit.ly/3kRCqpo) y explore las dApps que están en desarrollo desde el [ErgoHack] más reciente (https://ergoplatform.org/en/blog / 2021-10-21-ergohack-ii-resultados /).
 
-[Oracle Pools](https://bit.ly/3kYfIMm) - Messengers between Ergo blockchain and the outside world.
-
-These are just a few of the dApps currently deployed on Ergo. For a comprehensive overview of the ecosystem please visit [Sigmaverse](https://bit.ly/3kRCqpo) and explore the dApps that are in development from the most recent [ErgoHack](https://ergoplatform.org/en/blog/2021-10-21-ergohack-ii-results/).
-
-As this article attempts to convey, Ergo is designed to be a solution for financial empowerment. With rising inflation and the uncertainty that accompanies that reality, we believe that Ergo and the tools it is building will become increasingly more important in times of financial uncertainty. If you have more questions about the possibilities of Ergo, we encourage you to explore our [website](https://ergoplatform.org/en/) and [ErgoWiki](https://bit.ly/3x6Iak8) and get to know the community on [Telegram](https://t.me/ergoplatform), [Twitter](https://twitter.com/ergoplatformorg) and [Discord](https://discord.com/invite/kj7s7nb). The Ergonaut community is one of the best aspects of Ergo and they are the reason we are building this blockchain. Ultimately, we are stronger as a community and the feedback we receive informs us about the tools and dApps we need to focus on to meet the financial needs of society.
+Como este artículo intenta transmitir, Ergo está diseñado para ser una solución para el empoderamiento financiero. Con el aumento de la inflación y la incertidumbre que acompaña a esa realidad, creemos que Ergo y las herramientas que está construyendo serán cada vez más importantes en tiempos de incertidumbre financiera. Si tiene más preguntas sobre las posibilidades de Ergo, le recomendamos que explore nuestro [sitio web] (https://ergoplatform.org/es/) y [ErgoWiki] (https://bit.ly/3x6Iak8) y acceda a conozca la comunidad en [Telegram] (https://t.me/ergoplatform), [Twitter] (https://twitter.com/ergoplatformes) y [Discord] (https://discord.com/invite/kj7s7nb) . La comunidad Ergonaut es uno de los mejores aspectos de Ergo y son la razón por la que estamos construyendo esta cadena de bloques. En última instancia, somos más fuertes como comunidad y los comentarios que recibimos nos informan sobre las herramientas y dApps en las que debemos enfocarnos para satisfacer las necesidades financieras de la sociedad.
 
 <!--EndFragment-->

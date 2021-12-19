@@ -1,7 +1,7 @@
 ---
-title: Ergo SmartPools and Decentralized Mining
+title: Ergo piscinas inteligentes y minería descentralizada 
 date: 2021-11-19T17:38:43.147Z
-author: Ergo Platform
+author: Ergo Platform (translated by Daniu, original version will always prevail)
 authorPhoto: /img/uploads/logo.png
 blogPhoto: /img/uploads/smartpools.png
 tags:
@@ -9,40 +9,38 @@ tags:
 ---
 <!--StartFragment-->
 
-For those following the recent ErgoHacks, you may be aware of the “SmartPools” concept that was suggested at our first event. This project aimed to work towards replacing centralized mining pools with an autonomous on-chain smart contract. The team spent that weekend researching the idea and ultimately produced a whitepaper as their submission. Building on this work, a new developer entered ErgoHack II with the goal of continuing this project, implementing the ‘Sub Pooling’ design specified as a requirement in the SmartPools whitepaper. 
+Para aquellos que siguen los recientes ErgoHacks, es posible que conozcan el concepto de “SmartPools” que se sugirió en nuestro primer evento. Este proyecto tenía como objetivo trabajar para reemplazar los grupos de minería centralizados con un contrato inteligente autónomo en la cadena. El equipo pasó ese fin de semana investigando la idea y finalmente produjo un documento técnico como su presentación. Sobre la base de este trabajo, un nuevo desarrollador ingresó a ErgoHack II con el objetivo de continuar este proyecto, implementando el diseño "Sub Pooling" especificado como requisito en el documento técnico de SmartPools.
+
+
+Ahora nos complace anunciar [GetBlok.io] (http://ergo.getblok.io): ¡el primer grupo de minería descentralizada en Ergo! La capacidad de reemplazar los grupos de minería centralizados con contratos inteligentes es un cambio de juego y, en última instancia, podría ayudar a reducir el riesgo de ataques del 51% y otras caídas que trae la centralización.
 
 
 
-We are now pleased to announce [GetBlok.io](http://ergo.getblok.io) - the very first decentralized mining pool on Ergo! The ability to replace centralized mining pools with smart contracts is a game changer and could ultimately help reduce the risk of 51% attacks and other downfalls that centralization brings.
+Las tarifas del grupo de minería generalmente pueden variar entre el 1 y el 3%, pero los mineros nunca pueden estar realmente seguros de si están obteniendo su parte justa. GetBlok tiene como objetivo crear transparencia aquí para que los mineros puedan estar seguros de que sus acciones se distribuirán según las ganancias. Las tarifas de GetBlok son actualmente del 1%, pero se espera que se reduzcan a alrededor del 0,1% en el futuro; esto ayudará a cubrir los costos de mantenimiento.
+
+
+Con la centralización viene el riesgo de abuso, o incluso la detención de la red o ataques de doble gasto. Por poco probable que esto pueda parecer, a medida que la tecnología mejora, la necesidad de depender de entidades centralizadas también disminuye.
 
 
 
-Mining pool fees can usually vary between 1-3% but miners can never truly be sure if they are getting their fair share. GetBlok aims to create transparency here so that miners can be sure that their shares will be distributed as earned. The fees on GetBlok are currently at 1% but it is expected to be lowered to around 0.1% in the future - this will help cover the upkeep costs.
+Aquí hay una breve descripción de lo que este proyecto pretende resolver:
 
 
 
-With centralization comes the risk of abuse, or even network halting or double-spend attacks. However unlikely this may seem, as technology improves, the need to rely on centralized entities also diminishes. 
+* Los pools de minería centralizados cobran tarifas elevadas y no es posible verificar los pagos.
+* Los grupos de minería centralizados representan una amenaza para la seguridad de la red, ya que controlan más acciones en la distribución de la tasa de hash.
+* Los mineros en solitario requieren grupos de minería; de lo contrario, los tiempos de búsqueda de bloques serán demasiado grandes.
 
 
 
-Here is a brief overview of what this project aims to solve:
+Con el modelo de minería SmartPools:
 
 
 
-* Centralized mining pools charge high fees and it is not possible to verify the payments.
-* Centralized mining pools carry a threat to network security as they control more shares in hash rate distribution.
-* Solo miners require mining pools; otherwise block finding times will be too great.
+* Los contratos de pool de minería y los esquemas de recompensa serán verificables y justos.
+* Las tarifas necesarias para mantener el servidor y financiar a los desarrolladores se pueden deducir en la cadena.
+* Los modelos de minería descentralizados pueden prevenir la manipulación del poder de hash.
 
-
-
-With the SmartPools mining model: 
-
-
-
-* Mining pool contracts and reward schemes will be verifiable and fair.
-* Fees that are needed to keep the server and fund the developers can be deducted on-chain. 
-* Decentralized mining models can prevent the manipulation of hash-power.
-
-Ergo believes that this project is a necessary and essential step towards future decentralization. As we build the blockchain of the future, we hope to see as many facets of decentralization as possible. Readers can explore the contracts and model for GetBlok [here](https://bit.ly/3oIQ53o).
+Ergo cree que este proyecto es un paso necesario y esencial hacia la descentralización futura. A medida que construimos la cadena de bloques del futuro, esperamos ver tantas facetas de descentralización como sea posible. Los lectores pueden explorar los contratos y el modelo de GetBlok [aquí] (https://bit.ly/3oIQ53o).
 
 <!--EndFragment-->

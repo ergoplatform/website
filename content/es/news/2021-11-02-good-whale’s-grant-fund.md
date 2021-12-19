@@ -1,8 +1,8 @@
 ---
-title: Good Whale’s Grant Fund
+title: Subvenciones de "La Ballena Buena"
 date: 2021-11-02T12:14:50.338Z
-subtitle: Do you have an idea for the Ergo Ecosystem? If yes, there are grants
-  to develop that idea into a dApp on the Ergo blockchain! See all the details
-  below and learn about the Good Whale Fund! Spread the word, Ergonauts!
-link: https://ergoplatform.org/en/blog/2021-11-02-good-whales-grant-fund/
+subtitle: ¿Tiene una idea para el ecosistema Ergo? Si es así, hay subvenciones
+  para desarrollar esa idea en una dApp en la blockchain de Ergo. Ver todos los detalles
+  a continuación! ¡Corre la voz, ergonauta!
+link: https://ergoplatform.org/es/blog/2021-11-02-good-whales-grant-fund/
 ---

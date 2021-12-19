@@ -1,35 +1,34 @@
 ---
-title: "Ergohack Wonders: The Ergo Raffle"
+title: "Maravillas de la ErgoHack: El Ergo Raffle"
 date: 2021-11-30T19:27:36.146Z
-author: Ergo Foundation
+author: Ergo Foundation (translated by Daniu, original version will always prevail)
 authorPhoto: /img/uploads/logo.png
 blogPhoto: /img/uploads/ergohack_wonders_the_ergo_raffle113021.png
 tags:
   - Building Ergo
 ---
 <!--StartFragment-->
+Uno de los mejores aspectos de Ergo es la comunidad, conocida en las redes sociales por su espíritu acogedor, amabilidad y muy alta concentración de miembros conocedores de la tecnología. El evento que une a esta comunidad como pocas otras cosas es el hackathon de Ergo: ErgoHack.
 
-One of the best aspects of Ergo is the community, known across social media for its welcoming spirit, friendliness and very high concentration of tech-savvy members. The event that brings this community together like few other things is Ergo’s hackathon: ErgoHack.
+Por el nivel y la variedad del talento participante, así como por la pasión en la participación de la comunidad, el Ergohack bien podría ser los Juegos Olímpicos de Ergo.
 
-For the level and variety of the participating talent as well as the passion in the community’s involvement, the Ergohack could well be the Olympic Games of Ergo.
+Aunque solo ha habido dos ErgoHacks hasta ahora, la cantidad de dApps y soluciones que han resultado es asombrosa. De estos, uno de los más populares tiene que ser el Ergo Raffle, que también fue el ganador del primer Ergohack en junio de 2021.
 
-Even though there have only been two ErgoHacks so far, the number of dApps and solutions that have resulted is staggering. Of these, one of the most popular has to be the Ergo Raffle, which was also the winner of the first Ergohack in June 2021.
+La genialidad de Ergo Raffle radica en su simplicidad; apela tanto a nuestra codicia como a nuestra generosidad. Establece un juego que puede resultar en que tengamos el boleto ganador o perdedor, pero sabiendo que hemos ayudado a una causa potencialmente valiosa.
 
-The Ergo Raffle’s genius lies in its simplicity; it appeals both to our greed and our generosity. It sets up a game that can result in us either holding the winning or losing ticket but knowing we have helped a potentially worthwhile cause.
+Las cantidades que se destinan al boleto ganador y la organización benéfica elegida varían de un sorteo a otro, ¡pero no es necesario que sea una organización benéfica! Se han lanzado muchos sorteos por diversión.
 
-The amounts going to the winning ticket and the chosen charity vary from raffle to raffle - but you don’t need to be a charity! A lot of raffles have just been launched for fun.
+Hasta el día de hoy, teniendo en cuenta que Ergo Raffle solo ha estado disponible durante un par de meses, se han financiado con éxito más de diez rifas para organizaciones benéficas por un total de aproximadamente $ 15,000.
 
-To this day - keeping in mind Ergo Raffle has only been out for a couple of months - over ten raffles have been successfully funded for charities for a total of about $15,000.
+Manteniéndose fiel al espíritu Ergonaut, la comunidad se ha enfocado en causas ambientales, educativas y humanitarias para Ergo Raffle. Estos incluyen, entre otros, restaurar el bosque de Mau en Kenia, comprar útiles escolares para niños desfavorecidos, financiar un jardín hidropónico para una escuela secundaria y ayudar a una escuela chechena a financiar su programa de aprendizaje basado en computadoras.
 
-Keeping true to the Ergonaut spirit, the community has focused on environmental, educational and humanitarian causes for Ergo Raffle. These include, but are not limited to, restoring the Mau Forest in Kenya, buying school supplies for disadvantaged children, financing a hydroponics garden for a high school and helping a Chechen school fund their computer based learning program.  
+Además, en más de una ocasión, la comunidad Ergonaut ha extendido su ayuda a otras comunidades criptográficas, como Cardano.
 
-Furthermore, on more than one occasion, the Ergonaut community has extended its help to other crypto communities, such as Cardano.
+Se llevó a cabo uno de los sorteos más exitosos en beneficio de las familias wichì del Chaco, Argentina. Un ergonauta se acercó al miembro de la comunidad de Cardano y amigo CryptoGirlB, que opera el grupo de staking de Cardano “WHITE”; este grupo ha estado donando de manera famosa y constante el 100% de sus recompensas a la Fundación Espiga. Se organizó un sorteo y en 48 horas se alcanzó la meta de 150 ERG. Al final del sorteo, el número había subido a 170 ERG. La cantidad que ha ido directamente a la Fundación Espiga es 155 ERG que ayudará a alimentar, vestir y financiar viviendas para la comunidad de Wichì.
 
-One of the more successful Raffles was held to benefit the Wichì families of Chaco, Argentina. An Ergonaut reached out to Cardano Community member and friend CryptoGirlB, who operates the Cardano Stake Pool “WHITE”; this pool has famously and consistently been donating 100% of their pool rewards to Fundacion Espiga. A raffle was set up and within 48 hours the goal of 150 ERG was reached. By the end of the raffle the number had climbed to 170 ERG. The amount that has gone directly to Fundacion Espiga is 155 ERG which will help feed, clothe and finance housing for the Wichì community.
+Espiga ahora está completamente equipada con su propia billetera ERG que le permitirá aceptar donaciones de la Comunidad Ergo, ya sea a través de sorteos o iniciativa privada.
 
-Espiga is now fully equipped with their own ERG wallet which will allow them to accept donations from the Ergo Community, be it through raffles or private initiative.
-
-We all want to change the world for the better and Ergo is giving us the tools to level out the playing field. Ergo Raffle has taken that suggestion and is already shining, mere months after its conception.
+Todos queremos cambiar el mundo para mejor y Ergo nos está dando las herramientas para nivelar el campo de juego. Ergo Raffle ha tomado esa sugerencia y ya está brillando, pocos meses después de su concepción.
 
 
 

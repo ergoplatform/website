@@ -1,8 +1,8 @@
 ---
-title: Ergo Pulse Episode 1 - ErgoDex
+title: Ergo Pulse Episodio 1 - ErgoDex (inglés)
 date: 2021-12-07T18:07:13.570Z
-subtitle: The first episode of ErgoPulse, a monthly talk show all about Ergo, is
-  here! This episode's featured project is ErgoDex! Check it out and tell us
-  what you think.
+subtitle: El primer episodio de ErgoPulse, un programa de entrevistas mensual sobre Ergo, es
+  ¡aquí! ¡El proyecto destacado de este episodio es ErgoDex! Compruébalo y cuéntanos
+  qué piensas.
 link: https://www.youtube.com/watch?v=H7pj_MepctM
 ---

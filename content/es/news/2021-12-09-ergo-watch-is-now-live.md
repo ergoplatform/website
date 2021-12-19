@@ -1,8 +1,8 @@
 ---
-title: Ergo Watch is now live!
+title: ¡Ergo Watch!
 date: 2021-12-09T16:29:39.687Z
-subtitle: This tool allows users to access useful metrics about Ergo! You can
-  view data on $ERG emission, developer and user growth, oracle pools and
-  SigUSD. Check out the latest blog for details.
-link: bit.ly/3lRSfNw
+subtitle: Esta herramienta permite a los usuarios acceder a métricas útiles sobre Ergo! Se puede
+  ver datos sobre emisión de $ERG, crecimiento de desarrolladores y usuarios, grupos de oráculos y
+  SigUSD. Consulte el último blog para obtener más detalles.
+link: https://ergoplatform.org/es/blog/2021-12-09-ergo-watch-a-platform-for-on-chain-analysis/
 ---
