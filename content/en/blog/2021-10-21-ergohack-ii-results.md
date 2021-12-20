@@ -1,7 +1,7 @@
 ---
 title: ErgoHack II Results
 date: 2021-10-21T14:04:37.957Z
-author: Ergo Platform
+author: Ergo Foundation
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/results1.jpg
 tags:
