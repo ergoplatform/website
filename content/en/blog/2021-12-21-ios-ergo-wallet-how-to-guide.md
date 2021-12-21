@@ -35,8 +35,6 @@ Once installed, you will have the option of creating a new Ergo wallet, restorin
 
 ![](/img/uploads/1ergoios.png)
 
-↙  ↓  ↘
-
 If you use the application to create a new Ergo wallet, you will be guided through the steps of writing down your 15-word mnemonic phrase. Once the wallet is created and you are issued the wallet’s address, you have the option of securing the keys to this wallet via password encryption (a spending password) or in the device's keychain.
 
 After choosing how you would like to secure the keys to the wallet, you have successfully installed and created a new Ergo wallet on your iOS device. From here, you can access the mobile wallet to send and/or receive ERG. Remember to securely store your mnemonic phrase and spending password in a safe place and never make digital copies of this information. Good old fashioned pen and paper is the more secure way to protect anyone from accessing your Ergo wallet.
