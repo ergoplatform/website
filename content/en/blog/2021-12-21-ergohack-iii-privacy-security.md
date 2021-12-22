@@ -9,7 +9,7 @@ tags:
 ---
 <!--StartFragment-->
 
-The Ergo Platform is teeming with activity from the numerous projects that have been, and continue to be, developed from previous ErgoHack’s. Following the success of these hackathons, we are pleased to announce our next event, **[ErgoHack III: Privacy and Security](https://ergohack.io/)**. 
+The Ergo Platform is teeming with activity from the numerous projects that have been, and continue to be, developed from previous ErgoHack’s. Following the success of these hackathons, we are pleased to announce our next event, **ErgoHack III: Privacy and Security**. 
 
 It is especially encouraging for the growth and adoption of the platform that many developers continue to stay on and build additional financial tools and decentralized applications on Ergo with each subsequent ErgoHack.
 
