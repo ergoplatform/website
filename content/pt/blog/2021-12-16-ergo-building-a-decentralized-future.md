@@ -1,7 +1,7 @@
 ---
 title: "Ergo: Construindo um Futuro Descentralizado"
 date: 2021-12-16T20:17:03.289Z
-author: Platforma Ergo
+author: Plataforma Ergo
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/ergf.jpg
 tags:

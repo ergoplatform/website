@@ -1,7 +1,7 @@
 ---
 title: "ErgoPad: A Primeira Plataforma de IDO da Ergo"
 date: 2021-12-14T16:17:34.371Z
-author: Ergo Platform
+author: Plataforma Ergo
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/ergopad-3-2-.png
 tags:

@@ -1,7 +1,7 @@
 ---
 title: Atualizaçao Taproot de Bitcoin e Protocolos Sigma de Ergo
 date: 2021-11-17T16:29:53.359Z
-author: Platforma Ergo
+author: Plataforma Ergo
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/taproot.png
 tags:

@@ -1,7 +1,7 @@
 ---
 title: Fundação Ergo Anuncia Incorporação Oficial
 date: 2021-12-10T18:43:45.252Z
-author: Ergo Foundation
+author: Fundação Ergo
 authorPhoto: /img/uploads/logo.png
 blogPhoto: /img/uploads/ef.png
 tags:
