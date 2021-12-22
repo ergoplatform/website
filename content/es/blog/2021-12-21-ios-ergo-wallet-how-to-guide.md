@@ -1,7 +1,7 @@
 ---
 title: "iOS Ergo Wallet: How-To Guide"
 date: 2021-12-21T19:00:15.051Z
-author: Ergo Platform
+author: Ergo Platform (translated by Daniu, original version will always prevail)
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/ergoios.png
 tags:
