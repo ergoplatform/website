@@ -21,9 +21,7 @@ ErgoHack is a competition that brings together blockchain developers to work on 
 
 Those who complete the hackathon and wish to continue their projects will gain access to the Ergo Incubator Program which aims to help commercialize and bring projects to market. 
 
-
-
-# Topic: PRIVACY & SECURITY
+## Topic: PRIVACY & SECURITY
 
 The focus of this ErgoHack is Privacy and Security. Participants are encouraged to be creative and explore any concept, dApp, and/or any other tools related to these topics. It can be anything from a Wallet to Mixers, Non-Interactive dApps, decentralization infrastructure, and security-enhancing tools. There are no strict limits to your proposals - only that you focus on privacy and security applications on the UTXO model.
 
