@@ -7,5 +7,5 @@ subtitle: "The Ergo Platform is teeming with activity from previous ErgoHack’s
   the Ergo Discord and will be broadcast across our communication
   channels.   Are you a developer, coder, or entrepreneur? Then join us for
   ErogHack III! Application deadline: January 31, 2022"
-link: bit.ly/3mqbNsF
+link: https://bit.ly/3mqbNsF
 ---
