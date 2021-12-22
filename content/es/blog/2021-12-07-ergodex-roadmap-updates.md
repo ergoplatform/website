@@ -9,7 +9,7 @@ tags:
   - Roadmap
 ---
 <!--StartFragment-->
-Yasha e Ilya del equipo ErgoDEX hicieron recientemente una entrevista en el canal de Youtube de [Adaverse] (https://www.youtube.com/watch?v=sl-GSgyXDqU). El equipo habló sobre el roadmap de desarrollo de ErgoDEX, la interoperabilidad con Cardano y el muy esperado token ErgoDEX.
+Yasha e Ilya del equipo ErgoDEX hicieron recientemente una entrevista en el canal de Youtube de [Adaverse](https://www.youtube.com/watch?v=sl-GSgyXDqU). El equipo habló sobre el roadmap de desarrollo de ErgoDEX, la interoperabilidad con Cardano y el muy esperado token ErgoDEX.
 
 El comercio y [proporcionar liquidez] (https://finematics.com/liquidity-pools-explained/) en ErgoDEX están actualmente activos y hay más de $ 500K en activos bloqueados. Los pares negociables ERG / SigUSD y ERG / SigRSV están disponibles y varios equipos de desarrolladores están trabajando en puentes hacia Ethereum, Solana y otras cadenas compatibles con EVM. Además, hay equipos trabajando en el lanzamiento del conector dApp de Yoroi.
 
@@ -23,7 +23,7 @@ Durante la entrevista, el equipo reveló su entusiasmo por el lanzamiento V5 de 
 
 La cartera de pedidos DEX se implementará pronto y también se planean ofertas de monedas iniciales reembolsables en la hoja de ruta. Esta característica única de ErgoDEX integrará soporte de recompra y rellenos parciales para modelos de inversión más seguros.
 
-La decisión de mejorar continuamente la experiencia del usuario en Ergo es una prioridad para el equipo; este tipo de trabajo hará que el proceso de desarrollo entre cadenas sea más rápido. Se espera la interoperabilidad con Cardano en 2022, pero el equipo dijo que es difícil predecir una fecha exacta debido a todas las partes móviles. (Nota: en el [ErgoPulse,] de hoy (https://www.youtube.com/watch?v=H7pj_MepctM) el equipo dijo que el desarrollo va rápido y que el lanzamiento puede llegar a mediados de enero) El primer enfoque es traer más activos como USDT, BTC y ADA a ErgoDEX y brindan una experiencia similar a Metamask con el conector dApp de Yoroi.
+La decisión de mejorar continuamente la experiencia del usuario en Ergo es una prioridad para el equipo; este tipo de trabajo hará que el proceso de desarrollo entre cadenas sea más rápido. Se espera la interoperabilidad con Cardano en 2022, pero el equipo dijo que es difícil predecir una fecha exacta debido a todas las partes móviles. (Nota: en el [ErgoPulse,](https://www.youtube.com/watch?v=H7pj_MepctM) de hoy  el equipo dijo que el desarrollo va rápido y que el lanzamiento puede llegar a mediados de enero) El primer enfoque es traer más activos como USDT, BTC y ADA a ErgoDEX y brindan una experiencia similar a Metamask con el conector dApp de Yoroi.
 
 Con la integración entre cadenas, los usuarios de ErgoDEX podrán cambiar entre cadenas con un solo clic. Los intercambios atómicos en ErgoDEX permitirán una fácil transferencia de activos entre cadenas.
 

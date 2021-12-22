@@ -19,6 +19,6 @@ Como suele ser el caso con Ethereum, las tarifas de transacción pueden ser extr
 
 Como la primera plataforma IDO de Ergo, ErgoPad ofrece a los usuarios tarifas mínimas en una cadena de bloques que proporciona la máxima escalabilidad, privacidad y descentralización. La creación de una plataforma de lanzamiento en Ergo es un hito importante, ya que potencialmente abre la puerta a una mayor actividad tanto de desarrolladores como de inversores.
 
-Si desea obtener más información sobre el proyecto, visite [ErgoPad.io] (http://ergopad.io) donde puede acceder a los canales de comunicación relevantes. El equipo también celebró recientemente un “Pregúntame cualquier cosa” al que se puede acceder [aquí] (https://ergopad.medium.com/ergopad-ama-4-december-2021-8a2a9cf69810).
+Si desea obtener más información sobre el proyecto, visite [ErgoPad.io](http://ergopad.io) donde puede acceder a los canales de comunicación relevantes. El equipo también celebró recientemente un “Pregúntame cualquier cosa” al que se puede acceder [aquí](https://ergopad.medium.com/ergopad-ama-4-december-2021-8a2a9cf69810).
 
 <!--EndFragment-->

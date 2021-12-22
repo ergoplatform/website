@@ -9,7 +9,7 @@ tags:
 ---
 <!--StartFragment-->
 
-¡Por demanda popular a través de una votación en su servidor de discord, Conceal Network (CCX) está construyendo un puente para Ergo! Este puente traerá el token WCCX, que es un intercambiable 1:1 con CCX ("equivalente") a la blockchain de ERGO y el token ERG a Conceal Network.[Lea más sobre la anatomía de CCX wrapped (https://condealnetwork.medium.com/the-anatomy-of-wrapped-ccx-97b2a8c008d9).
+¡Por demanda popular a través de una votación en su servidor de discord, Conceal Network (CCX) está construyendo un puente para Ergo! Este puente traerá el token WCCX, que es un intercambiable 1:1 con CCX ("equivalente") a la blockchain de ERGO y el token ERG a Conceal Network.[Lea más sobre la anatomía de CCX wrapped](https://condealnetwork.medium.com/the-anatomy-of-wrapped-ccx-97b2a8c008d9).
 
 
 Los proyectos orientados a la privacidad son esenciales y se necesitan más herramientas que se centren en estos proyectos, ya que continuamos hacia una mayor adopción.
@@ -23,7 +23,7 @@ Conceal Network es una blockchain descentralizada impulsada por la comunidad, li
 
 Con esta superposición de ideales, una colaboración entre Ergo y Conceal Network no debe sorprender.
 
-Su moneda nativa (₡ CCX) se basa en el protocolo Cryptonote y se ejecuta en una tecnología segura de la red de pares a igual que funciona sin una autoridad central. Usted controla las claves privadas de sus fondos.
+Su moneda nativa (₡CCX) se basa en el protocolo Cryptonote y se ejecuta en una tecnología segura de la red de pares a igual que funciona sin una autoridad central. Usted controla las claves privadas de sus fondos.
 
 Conceal Network evita muchas preocupaciones alrededor de Bitcoin (por ejemplo, impactos tecnológicos, ambientales, reputación y seguridad) y es una excelente tienda de valor alternativa privada.
 

@@ -10,7 +10,7 @@ tags:
 ---
 <!--StartFragment-->
 
-El siguiente artículo analizará los aspectos centrales de las criptomonedas, las finanzas descentralizadas (defi), las economías de los token (tokenomics) y la trayectoria del protocolo ERGO.Para el primer episodio en la serie Ergo & Blockchain, consulte [Ergo y Blockchain: Esfera de Cryptocurrency](https://ergoplatform.org/en/blog/2021-10-26-ergo-blockchain-cryptocurrency-sphere/).
+El siguiente artículo analizará los aspectos centrales de las criptomonedas, las finanzas descentralizadas (defi), las economías de los token (tokenomics) y la trayectoria del protocolo ERGO.Para el primer episodio en la serie Ergo & Blockchain, consulte [Ergo y Blockchain: Esfera de criptomonedas](https://ergoplatform.org/en/blog/2021-10-26-ergo-blockchain-cryptocurrency-sphere/).
 
 ## Crypto, Blockchain y Finanzas
 

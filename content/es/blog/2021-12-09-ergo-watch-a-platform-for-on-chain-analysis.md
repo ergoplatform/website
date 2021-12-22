@@ -13,7 +13,7 @@ La nueva plataforma de análisis en cadena de Ergo, [Ergo.Watch] (http://ergo.wa
 
 
 
-Aconsejamos a los lectores que consulten el [hilo] de CryptoQuakka (https://github.com/abchrisxyz/ergowatch) y que se suscriban a su blog para obtener más detalles.
+CryptoQuokka ha hecho un [hilo](https://github.com/abchrisxyz/ergowatch) que recomendamos leer y que se suscriban a su blog para obtener más detalles.
 
 
 

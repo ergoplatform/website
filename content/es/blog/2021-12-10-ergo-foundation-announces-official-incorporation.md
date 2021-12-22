@@ -10,7 +10,7 @@ tags:
 ---
 <!--StartFragment-->
 
-Anunciado hoy, la Autoridad de Regulación Corporativa y Contable ([ACRA] (https://www.acra.gov.sg/)) ha aprobado a Ergo Foundation Ltd como una entidad corporativa en Singapur. Con esta noticia, la Fundación Ergo establece un camino claro hacia la formación de nuevas asociaciones y listados oficiales en los exchanges de Nivel 1 (top).
+Anunciado hoy, la Autoridad de Regulación Corporativa y Contable ([ACRA](https://www.acra.gov.sg/)) ha aprobado a Ergo Foundation Ltd como una entidad corporativa en Singapur. Con esta noticia, la Fundación Ergo establece un camino claro hacia la formación de nuevas asociaciones y listados oficiales en los exchanges de Nivel 1 (top).
 
 
 
