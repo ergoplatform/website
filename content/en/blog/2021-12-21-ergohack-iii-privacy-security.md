@@ -47,8 +47,6 @@ To prepare, we advise participants to focus on learning ErgoScript, consulting t
 
 ### Submission Rules: 
 
-The development and presentation of your project is expected to be done during the event. 
-
 The submissions can be text, video or audio with relevant graphics and code repositories. You will be able to submit your proposals through the ErgoHack communication channels. 
 
 The event will begin on Friday, February 11, and will end on Sunday, February 13. Participants will be required to submit their presentations in one of the following forms:
