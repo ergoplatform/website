@@ -3,7 +3,7 @@ title: "Ergo Mining: Tools Of Decentralization"
 date: 2021-12-23T17:20:48.055Z
 author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
-blogPhoto: /img/uploads/mining_ergo_tool_of_decentralization.png
+blogPhoto: /img/uploads/mining_ergo_tools_of_decentralization.png
 tags:
   - Building Ergo
 ---
