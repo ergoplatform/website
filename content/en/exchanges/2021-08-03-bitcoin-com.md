@@ -1,6 +1,6 @@
 ---
 title: Bitcoin.com
-date: 2021-08-30T14:36:49.183Z
-link: https://exchange.bitcoin.com/erg-to-btc
-logo: /img/uploads/master_exchangelogo-1.svg
+date: 2021-12-23T10:54:49.183Z
+link: https://fmfw.io/erg-to-btc
+logo: /img/uploads/fmfw_logo.svg
 ---
