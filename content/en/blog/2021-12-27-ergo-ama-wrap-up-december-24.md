@@ -1,6 +1,6 @@
 ---
 title: Ergo AMA Wrap-Up, December 24
-date: 2021-12-27T19:49:53.267Z
+date: 2021-12-27T19:55:41.085Z
 author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/ama-2-2-.png
