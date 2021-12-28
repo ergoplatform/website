@@ -21,13 +21,9 @@ Layer 1 is the smart contract layer as well as the on-chain transaction layer. 
 
 Layer 2 can refer to off-chain, on-chain or a combination of both. 
 
+## Network Layer
 
-
-# Network Layer
-
-
-
-## PoW and PoS models
+### PoW and PoS models
 
 Bitcoin revealed a solution to [Byzantine General's problem](https://decrypt.co/resources/byzantine-fault-tolerance-what-is-it-explained) by introducing the proof-of-work mechanism. In this model, mining nodes can validate new transactions by achieving the consensus. The PoW model enables a fault-tolerant decentralized network and creates a new digital money form, known as cryptocurrency. 
 
@@ -44,7 +40,7 @@ PoW and PoS are two known solutions for achieving consensus in a public blockcha
 * Firstly, it guaranteed the execution of a fair launch (equitable access to all coins through mining). 
 * Secondly, since the beginning of Bitcoin, PoW has been proven to be a time-tested and secure blockchain model (see: [Lindy Effect](https://en.wikipedia.org/wiki/Lindy_effect)). Ergo's consensus algorithm Autolykos v2 is a GPU-mineable model and it is less demanding on mining gear with lower temperatures. 
 
-## UTXO and Accounts Models
+### UTXO and Accounts Models
 
 Apart from these two consensus models, there are also two different data-availability models known as the UTXO and Accounts models. In Bitcoin’s whitepaper, UTXO is not mentioned. Instead, researchers later called this the UTXO model because the sum of all one-time Unspent Transaction Outputs represents the whole blockchain. The Accounts model (as described in Ethereum’s whitepaper) represents long-living accounts that are ever-growing on the blockchain. 
 
@@ -60,9 +56,9 @@ The UTXO model has more flexibility in its off-chain design by combining both on
 
 Both Accounts and UTXO models can implement different solutions to data-availability efficiency (known as Layer 2 solutions), such as payment channels, side-chains, state-channels, sharding and/or zk-rollups.
 
-# Application Layer
+## Application Layer
 
-## Distributed Applications
+### Distributed Applications
 
 Bitcoin lacks a Turing complete language and does not employ complex smart contracts. In Ethereum, smart contracts exist mostly on-chain and they are executed on the Ethereum Virtual Machine. In Ergo, some parts of dApps are off-chain, and some happen on-chain. Therefore, Ergo's eUTXO off-chain logic allows for the running of dApp nodes locally on a user's computer and introduces new designs for distributed applications.
 
@@ -70,7 +66,7 @@ Today, an Ethereum developer needs to own a full node that contains all of the n
 
 On Ergo, the eUTXO design introduces a unique way to overcome security and scalability problems on the application layer. Users of applications will be able to own light nodes to directly participate in the governance of an application. By introducing light nodes and light clients and creating truly stateless clients, developers, miners and users can distribute the network with [light-bootstrapping](https://ergoplatform.org/en/blog/2021-07-19-mining-in-logarithmic-space-nipopow-power-and-ergo/) and increase collaboration on the platform. For more information about off-chain logic and the eUTXO design, please see this [article](https://ergoplatform.org/en/blog/2021-10-04-off-chain-logic-and-eutxo/). 
 
-## Optional Privacy 
+### Optional Privacy 
 
 Another topic of cryptocurrency debate is financial anonymity and privacy. Bitcoin addresses are not directly linked to personal identities, therefore the network provides users with a level of pseudo-anonymity. However, users need to rely on centralized coin-mixer services to hide their transactions and maintain privacy. 
 
