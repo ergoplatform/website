@@ -61,6 +61,6 @@ The first two sections of FiveBinaries’ grant proposal are included below as a
 > The project will make use of docker-compose to setup a number of containers forming a cluster.
 > ```
 
-If you have a great idea which you are looking to implement that would improve the Ergo ecosystem as a whole, please feel free to apply for an Ergo Foundation grant by emailing your proposal to: [ergoplatform@protonmail.com](mailto:ergoplatform@protonmail.com).
+If you have a great idea which you are looking to implement that would improve the Ergo ecosystem as a whole, please feel free to apply for an Ergo Foundation grant by emailing your proposal to: [team@ergoplatform.org](mailto:team@ergoplatform.org).
 
 <!--EndFragment-->

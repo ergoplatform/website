@@ -9,7 +9,7 @@
   translation: "Comunidade"
 
 - id: header_resilient_platform
-  translation: "Bem-vindo ao 
+  translation: "Bem-vindo ao
   <span class=\"header-section__title--red\">Smart Money</span>"
 
 - id: header_slogan
@@ -1054,7 +1054,7 @@
   translation: "Verbas"
 
 - id: foundation_fourth_section_first_paragraph
-  translation: "A Fundação Ergo tem anunciado que disponibiliza financiamento para projetos que foquem na construção de infraestruturas-chave para o ecossistema. Por favor <a href=\"https://ergoplatform.org/en/blog/2020-11-18-ergo-foundation-makes-key-dapp-infrastructure-grant/\" class=\"eg-text__link eg-link\"><span>dirija-se a esse artigo</span></a> para conseguir sua própria verba e envie-o por e-mail para <a href=\"mailto:ergoplatform@protonmail.com\" class=\"eg-text__link eg-link\"><span>ergoplatform@protonmail.com</span></a> se tiver um projeto que acredita ser merecedor de receber verbas. No momento, propostas precisam ser aprovadas por 4 (quatro) dos 6 (seis) votos do Conselho de Membros do Fundo de Desenvolvimento Ergo. A Fundação Ergo está aceitando novos voluntários da comunidade, então por favor inscreva-se se desejar."
+  translation: "A Fundação Ergo tem anunciado que disponibiliza financiamento para projetos que foquem na construção de infraestruturas-chave para o ecossistema. Por favor <a href=\"https://ergoplatform.org/en/blog/2020-11-18-ergo-foundation-makes-key-dapp-infrastructure-grant/\" class=\"eg-text__link eg-link\"><span>dirija-se a esse artigo</span></a> para conseguir sua própria verba e envie-o por e-mail para <a href=\"mailto:team@ergoplatform.org\" class=\"eg-text__link eg-link\"><span>team@ergoplatform.org</span></a> se tiver um projeto que acredita ser merecedor de receber verbas. No momento, propostas precisam ser aprovadas por 4 (quatro) dos 6 (seis) votos do Conselho de Membros do Fundo de Desenvolvimento Ergo. A Fundação Ergo está aceitando novos voluntários da comunidade, então por favor inscreva-se se desejar."
 
 - id: foundation_fourth_section_second_paragraph
   translation: "Nos comprometemos a informar a comunidade sobre decisões e desenvolvimentos aprovados."

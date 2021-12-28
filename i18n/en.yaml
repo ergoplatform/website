@@ -1059,7 +1059,7 @@
   translation: "Grants"
 
 - id: foundation_fourth_section_first_paragraph
-  translation: "The Ergo Foundation has announced it is looking to fund grants for projects that focus on building key ecosystem infrastructure. Please <a href=\"https://ergoplatform.org/en/blog/2020-11-18-ergo-foundation-makes-key-dapp-infrastructure-grant/\" class=\"eg-text__link eg-link\"><span>reference this article</span></a> for scoping your own grant, and send it to <a href=\"mailto:ergoplatform@protonmail.com\" class=\"eg-text__link eg-link\"><span>ergoplatform@protonmail.com</span></a> if you have a project that you believe is worth being funded Proposals, at the moment, need to be approved by four of six votes of Ergo Development Fund Board Members. The Ergo Foundation is accepting new volunteers from the community so please apply if you wish."
+  translation: "The Ergo Foundation has announced it is looking to fund grants for projects that focus on building key ecosystem infrastructure. Please <a href=\"https://ergoplatform.org/en/blog/2020-11-18-ergo-foundation-makes-key-dapp-infrastructure-grant/\" class=\"eg-text__link eg-link\"><span>reference this article</span></a> for scoping your own grant, and send it to <a href=\"mailto:team@ergoplatform.org\" class=\"eg-text__link eg-link\"><span>team@ergoplatform.org</span></a> if you have a project that you believe is worth being funded Proposals, at the moment, need to be approved by four of six votes of Ergo Development Fund Board Members. The Ergo Foundation is accepting new volunteers from the community so please apply if you wish."
 
 - id: foundation_fourth_section_second_paragraph
   translation: "We are committed to informing the community about decisions and approved developments."

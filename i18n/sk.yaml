@@ -1041,7 +1041,7 @@
   translation: "Granty"
 
 - id: foundation_fourth_section_first_paragraph
-  translation: "Ergo nadácia oznámila, že sa chystá financovať granty pre projekty zamerané na budovanie kľúčovej ekosystémovej infraštruktúry. Prosím <a href=\"https://ergoplatform.org/en/blog/2020-11-18-ergo-foundation-makes-key-dapp-infrastructure-grant/\" class=\"eg-text__link eg-link\"><span>odkážte sa na tento článok</span></a> aby ste si určili rozsah Vášho grantu a pošlite ho na adresu <a href=\"mailto:ergoplatform@protonmail.com\" class=\"eg-text__link eg-link\"><span>ergoplatform@protonmail.com</span></a>. ak máte projekt, o ktorom si myslíte, že stojí za to ho financovať. Návrhy musia byť v súčasnosti schválené štyrmi zo šiestich hlasov členov rady Ergo Vývojový Fund. Ergo nadácia prijíma nových dobrovoľníkov z komunity, preto pokiaľ chcete, priháste sa."
+  translation: "Ergo nadácia oznámila, že sa chystá financovať granty pre projekty zamerané na budovanie kľúčovej ekosystémovej infraštruktúry. Prosím <a href=\"https://ergoplatform.org/en/blog/2020-11-18-ergo-foundation-makes-key-dapp-infrastructure-grant/\" class=\"eg-text__link eg-link\"><span>odkážte sa na tento článok</span></a> aby ste si určili rozsah Vášho grantu a pošlite ho na adresu <a href=\"mailto:team@ergoplatform.org\" class=\"eg-text__link eg-link\"><span>team@ergoplatform.org</span></a>. ak máte projekt, o ktorom si myslíte, že stojí za to ho financovať. Návrhy musia byť v súčasnosti schválené štyrmi zo šiestich hlasov členov rady Ergo Vývojový Fund. Ergo nadácia prijíma nových dobrovoľníkov z komunity, preto pokiaľ chcete, priháste sa."
 
 - id: foundation_fourth_section_second_paragraph
   translation: "Zaviazali sme sa informovať komunitu o naších rozhodnutiach a schválenom vývoji."
