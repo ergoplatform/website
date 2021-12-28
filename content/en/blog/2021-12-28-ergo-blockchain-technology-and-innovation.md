@@ -1,9 +1,9 @@
 ---
 title: "Ergo & Blockchain: Technology and Innovation"
-date: 2021-12-28T20:37:16.163Z
+date: 2021-12-28T20:47:56.308Z
 author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
-blogPhoto: /img/uploads/tech-1-1-1-1-.png
+blogPhoto: /img/uploads/tech-1-2-1-1-.png
 tags:
   - Building Ergo
 ---
