@@ -19,7 +19,7 @@ Now over two years old, Ergo is a community-driven project. The platform aims to
 
 For most of the year, Ergo saw significant growth in market capitalization. In 2021, Ergo’s native token (ERG) reached a new all-time high of $19.50 (nearly cracking the top 100 tokens on Coinmarketcap), making it one of the fastest growing Defi projects in the blockchain industry. At the time of writing, Ergo has a market capitalization of more than $256 million with the total supply of approximately 97 million currently set to be fully mined within the next six years.
 
-In November, Ergo introduced a new plan for a soft fork that will alter the emission schedule of ERG. . It proposes an increase to the years of emission (up to 2057) while maintaining the same capped supply. For more information on this proposal and the upcoming vote, please see the following: <https://www.ergoforum.org/t/emission-soft-fork-proposal/2996> 
+In November, Ergo introduced a new plan for a soft fork that will alter the emission schedule of ERG. It proposes an increase to the years of emission (up to 2057) while maintaining the same capped supply. For more information on this proposal and the upcoming vote, please see the following: <https://www.ergoforum.org/t/emission-soft-fork-proposal/2996> 
 
 ## Ergo Wallets 
 
