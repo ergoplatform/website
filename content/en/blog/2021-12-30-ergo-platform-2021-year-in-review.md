@@ -24,24 +24,10 @@ In November, Ergo introduced a new plan for a soft fork that will alter the emis
 ## Ergo Wallets 
 
 * In 2021, Ergo launched a mobile wallet for Android and iOS devices that was created by community developer, MrStahlfelge. The mobile wallet works like most standard decentralized wallets; users have a 15-word seed phrase for security and can send or receive ERG tokens with the wallet.
-
-
-
 * After announcing a collaboration with Tesseract systems in May, Ledger (an industry leader in hardware wallet security) is currently developing support for the ERG token. 
-
-
-
 * While hardware cold storage solutions are in development, Ergonauts have another option for securing their ERG assets offline. Available on [Sigmaverse](https://bit.ly/3kRCqpo), the Ergo Paper Wallet is a cold wallet generator that can create a tamper-resistant paper wallet offline. 
-
-
-
 * Nautilus wallet recently announced in December that they are building a new Ergo wallet with a focus on privacy features.
-
-
-
 * Yoroi extension wallet will soon integrate the dApp connector and will enable a user experience that is similar to Metamask wallet.
-
-
 
 ## Ergo’s Ecosystem and dApps
 
@@ -57,7 +43,7 @@ In August, ErgoDEX released a beta version with swapping options and liquidity p
 
 ### ErgoMixer
 
-In March, Ergo introduced a new privacy-based tool known as the [Ergomixer](https://github.com/ergoMixer/ergoMixBack). Ergomixer is a non-custodial mixer where two or more parties can exchange crypto without revealing private details - such as their wallet balance. In a sense, the dApp works like a physical cash wallet in a grocery store where a buyer can pay for items while concealing their balance.
+In March, Ergo introduced a new privacy-based tool known as the [ErgoMixer](https://github.com/ergoMixer/ergoMixBack). ErgoMixer is a non-custodial mixer where two or more parties can exchange crypto without revealing private details - such as their wallet balance. In a sense, the dApp works like a physical cash wallet in a grocery store where a buyer can pay for items while concealing their balance.
 
 ### Ergo Auction House
 
@@ -67,11 +53,7 @@ In November, the team behind ErgoAuctions announced an updated version of their 
 
 [Ergo Payment Portal](https://paymentportal.ergo.ga/about.html) is a dApp built to facilitate payments in ERG for small businesses. In this dApp, sellers can create a direct URL for their product and set a price for it. Typically, the Payment Portal URL will include the product, the price, the wallet address and the currency.
 
-
-
 These are just a few of the unique dApps available on Ergo. For a comprehensive overview of the ecosystem, please visit [Sigmaverse](https://bit.ly/3kRCqpo). 
-
-
 
 ## Ergo Hackathons
 
@@ -92,8 +74,6 @@ Throughout the year, Ergo showed a commitment to expanding the community and mai
 
 Ergo was listed on several new exchanges in 2021, including Kucoin, Changelly, Changelly pro, and Bitcoin.com, to name a few. In addition to the work being done by Kairon Labs, Dan Friedman has indicated that the Ergo community can expect to see more exchanges support Ergo in 2022. In the last AMA of 2021, he indicated that the team is in discussion with several Tier 1 and Tier 2 exchanges and that more details will be available as soon as paperwork is finalized. In addition to these exchanges, Dan also revealed that developers are building bridges so that Ergo can be integrated and listed on several prominent DEXs.
 
-
-
 ### Looking Ahead to 2022
 
 2021 was a big year for Ergo and there are a lot of things in the pipeline to ensure that 2022 will be even busier. The Ergo Foundation officially incorporated in Singapore this year, opening the doors to securing new partnerships. With the appointment of Dan Friedman as an advisor to the Ergo Foundation Board, Ergo has made a strong commitment to taking the necessary steps to promote and market the platform into the next phase of its development.
@@ -101,7 +81,5 @@ Ergo was listed on several new exchanges in 2021, including Kucoin, Changelly, C
 Expect to see a rebranding of Ergo’s website in the New Year and keep an eye out for announcements regarding new partnerships and developments. Our community is one of our strongest identifying features and we always look forward to hearing your feedback. 
 
 Happy New Year! We look forward to continuing to build the future of blockchain with you as we enter 2022. 
-
-
 
 <!--EndFragment-->
