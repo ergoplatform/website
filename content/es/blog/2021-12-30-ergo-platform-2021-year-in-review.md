@@ -1,7 +1,7 @@
 ---
-title: "Ergo Platform 2021: Year in Review"
+title: "Ergo Platform 2021: Resumen de este año"
 date: 2021-12-30T17:29:38.524Z
-author: Ergo Platform
+author: Ergo Platform (translated by Daniu, original version will always prevail)
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/01_ergo_cover_12_28_2021-1-.png
 tags:
@@ -9,77 +9,76 @@ tags:
 ---
 <!--StartFragment-->
 
-As the world tries to recover from the effects of Covid and the different stages of lockdown restrictions, cryptocurrencies continue on a path to mainstream adoption. The larger conversation in the industry has been regulation and how to successfully integrate blockchain technology into world economies as a whole.
+A medida que el mundo intenta recuperarse de los efectos de Covid y las diferentes etapas de las restricciones de bloqueo, las criptomonedas continúan en el camino hacia la adopción generalizada. La conversación más importante en la industria ha sido la regulación y cómo integrar con éxito la tecnología blockchain en las economías mundiales en su conjunto.
 
-Despite innovations in crypto, particularly in decentralized finance, conflicting regulations and lack of a proper framework have been huge drawbacks in the past. In 2021, we saw legislators and regulatory bodies start to work closely with industry leaders in creating a structure for the steadily growing asset.
+A pesar de las innovaciones en criptografía, particularmente en las finanzas descentralizadas, las regulaciones en conflicto y la falta de un marco adecuado han sido grandes inconvenientes en el pasado. En 2021, vimos que los legisladores y los organismos reguladores comenzaron a trabajar en estrecha colaboración con los líderes de la industria para crear una estructura para el activo en constante crecimiento.
 
-Now over two years old, Ergo is a community-driven project. The platform aims to fulfill the key goals of decentralization and the [Ergo Manifesto](https://ergoplatform.org/en/blog/2021-04-26-the-ergo-manifesto/) while continuing to breed innovation amongst developers and within the community. In 2021, Ergo increased partnerships within the DeFi sector, hosted new hackathons that inspired new dApps, and saw the community grow in size.
+Ahora con más de dos años, Ergo es un proyecto impulsado por la comunidad. La plataforma tiene como objetivo cumplir los objetivos clave de descentralización y el [Ergo Manifesto](https://ergoplatform.org/es/blog/2021-04-26-the-ergo-manifesto/) mientras continúa generando innovación entre los desarrolladores y dentro de la comunidad. En 2021, Ergo aumentó las asociaciones dentro del sector DeFi, organizó nuevos hackatones que inspiraron nuevas dApps y vio crecer a la comunidad.
 
-## Tokenomics and Market Cap
+## Tokenomics y capitalización de mercado
 
-For most of the year, Ergo saw significant growth in market capitalization. In 2021, Ergo’s native token (ERG) reached a new all-time high of $19.50 (nearly cracking the top 100 tokens on Coinmarketcap), making it one of the fastest growing Defi projects in the blockchain industry. At the time of writing, Ergo has a market capitalization of more than $256 million with the total supply of approximately 97 million currently set to be fully mined within the next six years.
+Durante la mayor parte del año, Ergo experimentó un crecimiento significativo en la capitalización de mercado. En 2021, el token nativo de Ergo (ERG) alcanzó un nuevo máximo histórico de $ 19.50 (casi rompiendo los 100 tokens principales en Coinmarketcap), lo que lo convierte en uno de los proyectos Defi de más rápido crecimiento en la industria blockchain. Al momento de escribir este artículo, Ergo tiene una capitalización de mercado de más de $ 256 millones con un suministro total de aproximadamente 97 millones que actualmente se explotará por completo en los próximos seis años.
 
-In November, Ergo introduced a new plan for a soft fork that will alter the emission schedule of ERG. It proposes an increase to the years of emission (up to 2057) while maintaining the same capped supply. For more information on this proposal and the upcoming vote, please see the following: <https://www.ergoforum.org/t/emission-soft-fork-proposal/2996> 
+En noviembre, Ergo presentó un nuevo plan para una bifurcación suave(soft-fork) que alterará el cronograma de emisiones de ERG. Propone un aumento de los años de emisión (hasta 2057) manteniendo el mismo suministro limitado. Para obtener más información sobre esta propuesta y la próxima votación, consulte lo siguiente: <https://www.ergoforum.org/t/emission-soft-fork-proposal/2996>
 
-## Ergo Wallets 
+## Wallets/Billeteras de Ergo
 
-* In 2021, Ergo launched a mobile wallet for Android and iOS devices that was created by community developer, MrStahlfelge. The mobile wallet works like most standard decentralized wallets; users have a 15-word seed phrase for security and can send or receive ERG tokens with the wallet.
-* After announcing a collaboration with Tesseract systems in May, Ledger (an industry leader in hardware wallet security) is currently developing support for the ERG token. 
-* While hardware cold storage solutions are in development, Ergonauts have another option for securing their ERG assets offline. Available on [Sigmaverse](https://bit.ly/3kRCqpo), the Ergo Paper Wallet is a cold wallet generator that can create a tamper-resistant paper wallet offline. 
-* Nautilus wallet recently announced in December that they are building a new Ergo wallet with a focus on privacy features.
-* Yoroi extension wallet will soon integrate the dApp connector and will enable a user experience that is similar to Metamask wallet.
+* En 2021, Ergo lanzó una billetera móvil para dispositivos Android e iOS que fue creada por el desarrollador de la comunidad, MrStahlfelge. La billetera móvil funciona como la mayoría de las billeteras descentralizadas estándar; los usuarios tienen una frase semilla de 15 palabras por seguridad y pueden enviar o recibir tokens ERG con la billetera.
+* Después de anunciar una colaboración con los sistemas Tesseract en mayo, Ledger (líder de la industria en seguridad de carteras de hardware) está desarrollando actualmente soporte para el token ERG.
+* Mientras se desarrollan soluciones de almacenamiento en frío de hardware, los ergonautas tienen otra opción para proteger sus activos de ERG fuera de línea. Disponible en [Sigmaverse](https://bit.ly/3kRCqpo), Ergo Paper Wallet es un generador de billetera fría que puede crear una billetera de papel resistente a la manipulación sin conexión.
+* La billetera Nautilus anunció recientemente en diciembre que están construyendo una nueva billetera Ergo con un enfoque en las características de privacidad.
+* La billetera de extensión Yoroi pronto integrará el conector dApp y permitirá una experiencia de usuario similar a la billetera Metamask.
 
-## Ergo’s Ecosystem and dApps
+## Ecosistema y dApps de Ergo
 
 ### SigmaUSD
 
-After months of development, [SigUSD](https://bit.ly/3nFRKHx) was launched in February. The stablecoin was one of the first major dApps to be deployed on the Ergo system. SigUSD is an algorithmic crypto-backed stablecoin that uses the AgeUSD protocol. Users can mint either SigUSD or SigRSV where both tokens are backed by ERG reserves.
+Después de meses de desarrollo, [SigUSD](https://bit.ly/3nFRKHx) se lanzó en febrero. La moneda estable fue una de las primeras dApps importantes que se implementó en el sistema Ergo. SigUSD es una moneda estable algorítmica respaldada por criptografía que utiliza el protocolo AgeUSD. Los usuarios pueden acuñar SigUSD o SigRSV donde ambos tokens están respaldados por reservas de ERG.
 
 ### ErgoDEX
 
-It is a non-custodial, decentralized exchange that will run on top of the Ergo and Cardano blockchains. [ErgoDEX](https://bit.ly/3oPGwzt) supports swap features as well as an automated market maker (AMM). Order book trading systems will also be developed as the DEX works towards building a secure transfer of liquidity between the Ergo and Cardano networks. 
+Es un intercambio descentralizado sin custodia que se ejecutará sobre las cadenas de bloques Ergo y Cardano. [ErgoDEX](https://bit.ly/3oPGwzt) admite funciones de intercambio, así como un creador de mercado automatizado (AMM). Los sistemas de negociación de carteras de pedidos también se desarrollarán a medida que DEX trabaja para construir una transferencia segura de liquidez entre las redes Ergo y Cardano.
 
-In August, ErgoDEX released a beta version with swapping options and liquidity pools. Recently, the team behind ErgoDEX announced that the exchange already has approximately $1 million in TVL (total value locked). 
+En agosto, ErgoDEX lanzó una versión beta con opciones de intercambio y grupos de liquidez. Recientemente, el equipo detrás de ErgoDEX anunció que el intercambio ya tiene aproximadamente $1 millón en TVL (valor total bloqueado).
 
 ### ErgoMixer
 
-In March, Ergo introduced a new privacy-based tool known as the [ErgoMixer](https://github.com/ergoMixer/ergoMixBack). ErgoMixer is a non-custodial mixer where two or more parties can exchange crypto without revealing private details - such as their wallet balance. In a sense, the dApp works like a physical cash wallet in a grocery store where a buyer can pay for items while concealing their balance.
+En marzo, Ergo presentó una nueva herramienta basada en la privacidad conocida como [ErgoMixer](https://github.com/ergoMixer/ergoMixBack). ErgoMixer es un mezclador sin custodia en el que dos o más partes pueden intercambiar criptomonedas sin revelar detalles privados, como el saldo de su billetera. En cierto sentido, la dApp funciona como una billetera de efectivo física en una tienda en la que un comprador puede pagar los artículos mientras oculta su saldo.
 
-### Ergo Auction House
+### Casa de subastas de ergo
 
-In November, the team behind ErgoAuctions announced an updated version of their [Ergo Auction House](https://bit.ly/3DHCorr). The auction house is an NFT marketplace for artworks, including audio and visual content by artists and content creators in the blockchain space. The upgrade brought royalty features to artists and an option to list auctions in other tokens besides ERG.
+En noviembre, el equipo detrás de ErgoAuctions anunció una versión actualizada de su [Ergo Auction House](https://bit.ly/3DHCorr). La casa de subastas es un mercado NFT para obras de arte, que incluyen contenido de audio y visual de artistas y creadores de contenido en el espacio blockchain. La actualización trajo características de royalties a los artistas y una opción para listar subastas en otros tokens además de ERG.
 
-### Ergo Payment Portal
+### Ergo portal de pagos
 
-[Ergo Payment Portal](https://paymentportal.ergo.ga/about.html) is a dApp built to facilitate payments in ERG for small businesses. In this dApp, sellers can create a direct URL for their product and set a price for it. Typically, the Payment Portal URL will include the product, the price, the wallet address and the currency.
+[Ergo Portal de pagos](https://paymentportal.ergo.ga/about.html) es una dApp creada para facilitar los pagos en ERG para pequeñas empresas. En esta dApp, los vendedores pueden crear una URL directa para su producto y fijarle un precio. Por lo general, la URL del portal de pago incluirá el producto, el precio, la dirección de la billetera y la moneda.
 
-These are just a few of the unique dApps available on Ergo. For a comprehensive overview of the ecosystem, please visit [Sigmaverse](https://bit.ly/3kRCqpo). 
+Estas son solo algunas de las dApps exclusivas disponibles en Ergo. Para obtener una descripción general completa del ecosistema, visite [Sigmaverse](https://bit.ly/3kRCqpo).
 
 ## Ergo Hackathons
 
-In June 2021, Ergo hosted its first-ever hackathon—[ERGOHACK](https://ergoplatform.org/en/blog/2021-06-04-ergo-community-launches-its-first-hackathon-ergohack/). The event featured the presentation of potentially new solutions for the ecosystem, including tokenization schemes, visual tools for constructing multi signatures, and NFT tools. There were six presenting groups in total and the grand prize was $5000 for first place.
+En junio de 2021, Ergo organizó su primer hackathon— [ERGOHACK] https://ergoplatform.org/en/blog/2021-06-04-ergo-community-launches-its-first-hackathon-ergohack/). El evento contó con la presentación de soluciones potencialmente nuevas para el ecosistema, incluidos esquemas de tokenización, herramientas visuales para construir firmas múltiples y herramientas NFT. Hubo seis grupos de presentación en total y el gran premio fue de $ 5000 para el primer lugar.
 
-The second hackathon—[ERGOHACK II](https://ergoplatform.org/en/blog/2021-10-15-ergohack-ii-wrap-up/) was held in October. The focus was social transformation with the goal of implementing this theme into tools and dApps using ErgoScript and Ergo’s UTXO based smart contracts.
+El segundo hackathon— [ERGOHACK II](https://ergoplatform.org/en/blog/2021-10-15-ergohack-ii-wrap-up/) se llevó a cabo en octubre. El enfoque fue la transformación social con el objetivo de implementar este tema en herramientas y dApps utilizando ErgoScript y contratos inteligentes basados ​​en UTXO de Ergo.
 
-A third hackathon—[ERGOHACK III](https://ergoplatform.org/en/blog/2021-12-21-ergohack-iii-privacy-security/) is scheduled for February 2022. ERGOHACK III will focus on privacy and security and applications will be open from January 4 -31. Like previous iterations of ErgoHack, the goal is to promote innovation and the creation of tools and dApps for the Ergo ecosystem.
+Un tercer hackathon— [ERGOHACK III] (https://ergoplatform.org/en/blog/2021-12-21-ergohack-iii-privacy-security/) está programado para febrero de 2022. ERGOHACK III se centrará en la privacidad y la seguridad y las solicitudes estarán abiertas del 4 al 31 de enero. Al igual que las versiones anteriores de ErgoHack, el objetivo es promover la innovación y la creación de herramientas y dApps para el ecosistema Ergo.
 
-## Ergo Partnerships and Exchange Listings
+## Asociaciones de ergo y listados en Exchanges
+A lo largo del año, Ergo mostró su compromiso de expandir la comunidad e incorporar la adopción a través de varias asociaciones. Algunas de estas asociaciones incluyeron:
 
-Throughout the year, Ergo showed a commitment to expanding the community and mainstream adoption through several partnerships. Some of these partnerships included:
+* Gravity Network: trabaja para promover la interoperabilidad entre cadenas
+* Kairon Labs: contratado como creador de mercado para reforzar la liquidez y el volumen
+* Conceal Network (CCX): construcción de un puente entre ambas redes
+* Waves Enterprise - Grupos de oráculos
 
-* Gravity Network - working to promote cross-chain interoperability
-* Kairon Labs - retained as a market maker to bolster liquidity and volume
-* Conceal Network (CCX) - building a bridge between both networks
-* Waves Enterprise - Oracle pools
+Ergo se incluyó en varios intercambios nuevos en 2021, incluidos Kucoin, Changelly, Changelly pro y Bitcoin.com, por nombrar algunos. Además del trabajo que está realizando Kairon Labs, Dan Friedman ha indicado que la comunidad Ergo puede esperar ver más intercambios que apoyen a Ergo en 2022. En la última AMA de 2021, indicó que el equipo está en discusión con varios Tier 1 y Intercambios de nivel 2 y que habrá más detalles disponibles tan pronto como se finalice el papeleo. Además de estos intercambios, Dan también reveló que los desarrolladores están construyendo puentes para que Ergo pueda integrarse y figurar en varios DEX destacados como UniSwap, PancakeSwap etc.
 
-Ergo was listed on several new exchanges in 2021, including Kucoin, Changelly, Changelly pro, and Bitcoin.com, to name a few. In addition to the work being done by Kairon Labs, Dan Friedman has indicated that the Ergo community can expect to see more exchanges support Ergo in 2022. In the last AMA of 2021, he indicated that the team is in discussion with several Tier 1 and Tier 2 exchanges and that more details will be available as soon as paperwork is finalized. In addition to these exchanges, Dan also revealed that developers are building bridges so that Ergo can be integrated and listed on several prominent DEXs.
+### Mirando hacia adelante a 2022
 
-### Looking Ahead to 2022
+2021 fue un gran año para Ergo y hay muchas cosas en proceso para garantizar que 2022 sea aún más ajetreado. La Fundación Ergo se incorporó oficialmente en Singapur este año, abriendo las puertas para asegurar nuevas asociaciones. Con el nombramiento de Dan Friedman como asesor del Consejo de la Fundación Ergo, Ergo se ha comprometido firmemente a tomar las medidas necesarias para promover y comercializar la plataforma en la siguiente fase de su desarrollo.
 
-2021 was a big year for Ergo and there are a lot of things in the pipeline to ensure that 2022 will be even busier. The Ergo Foundation officially incorporated in Singapore this year, opening the doors to securing new partnerships. With the appointment of Dan Friedman as an advisor to the Ergo Foundation Board, Ergo has made a strong commitment to taking the necessary steps to promote and market the platform into the next phase of its development.
+Espere ver un cambio de marca en el sitio web de Ergo en el Año Nuevo y esté atento a los anuncios sobre nuevas asociaciones y desarrollos. Nuestra comunidad es una de nuestras características de identificación más sólidas y siempre esperamos escuchar sus comentarios.
 
-Expect to see a rebranding of Ergo’s website in the New Year and keep an eye out for announcements regarding new partnerships and developments. Our community is one of our strongest identifying features and we always look forward to hearing your feedback. 
-
-Happy New Year! We look forward to continuing to build the future of blockchain with you as we enter 2022. 
+¡Feliz año nuevo! Esperamos continuar construyendo el futuro de blockchain con usted a medida que ingresamos en 2022.
 
 <!--EndFragment-->
