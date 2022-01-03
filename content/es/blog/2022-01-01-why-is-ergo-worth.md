@@ -1,5 +1,5 @@
 ---
-title: ¡Hola! soy nuevo, ¿por qué es Ergo un buen projecto?
+title: ¡Hola! soy nuevo, ¿por qué es Ergo un buen proyecto?
 date: 2022-01-01T12:02:45.749Z
 author: Daniu
 authorPhoto: /img/uploads/spanish_logo.jpg
