@@ -9,56 +9,56 @@ tags:
 ---
 <!--StartFragment-->
 
-The Ergomixer is the first non-interactive, non-custodial mixer in the cryptocurrency space. There have been requests from the community to understand the mixer, why it is an important piece of tech, and why people would choose to use it. 
+O Ergomixer é o primeiro *mixer* (misturador) não-interativo e sem custódia do mercado de criptomoedas. Recebemos muitos pedidos da comunidade para que explicássemos o mixer, sua importância tecnológica, e por que uma pessoa escolheria usá-lo. 
 
-*It is my hope that I can cover these questions in a way that a novice to the crypto space can understand and comprehend.* 
+*Espero poder responder estas questões de uma forma que seja compreensível para um novato em criptomoedas.* 
 
 *
 
-A non-interactive application is permissionless. Everyone has the ability to use it without initiating a request. Imagine you came across someone who gave non-interactive high fives. They just walked about with their hand outstretched offering a high five to everyone they passed. This type of application empowers the user, it treats everyone the same. There are no special privileges, no compliance requirements, non-interactive applications are simply free and open to all. 
+Uma aplicação não-interativa é *permissionless*, i.e. funciona sem permissão. Todo mundo tem a habilidade de usá-la sem iniciar uma solicitação. Imagine que você se depare com alguém que dê apertos de mão não-interativos. Esta pessoa simplesmente anda com uma de suas mãos estendidas, oferecendo apertos de mão para todas as pessoas que passem na rua. Esse tipo de aplicação empodera o usuário porque trata todo mundo de forma igual. Não há privilégios especiais, nenhum requisito de conformidade. Aplicações não-interativas simplesmente são livres e abertas para todos. 
 
-The ergo mixer is non-custodial meaning at no point does another party hold an individual’s tokens. Originally mixing cryptocurrency was a service. A user had to send their tokens to a custodial party, who would then provide the service of mixing. Hopefully, the tokens that were sent were returned. As many of you know, there are often grifters who float about on social media offering all kinds of wonderful services without any intention of returning whatever you send them. Giving custody of your tokens to another party does come with risk. The Ergomixer eliminates that risk. 
+O ErgoMixer é não-custodial, ou seja, em nenhum momento os tokens de um indivíduo passa pelas mãos de terceiros. Originalmente, *mixing* de criptomoedas era um serviço. Um usuário tem que enviar seus tokens para uma entidade de custódia que por sua vez proveria o serviço de mixing. Com sorte, os tokens eram retornados. Como alguns de vocês já sabem, frequentemente nos deparamos com golpistas que rondam as redes sociais oferecendo todos os tipos de serviços "maravilhosos" sem qualquer intenção de retornar o que você os envia. Existe risco em dar custódia de seus tokens para terceiros. O ErgoMixer elimina esse risco. 
 
-These are two principles of true decentralization that I would recommend to everyone in the cryptocurrency come to recognize, understand and use. 
+Estes são os dois princípios de verdadeira descentralização que recomendo que todos no ramo de criptomoedas devam reconhecer, entender e usar. 
 
-**Why?** Because these types of applications protect you, the user. 
+**Por que?** Porque esses tipos de aplicações protegem você, o usuário. 
 
-## Flexibility/Fungibility
+## Flexibilidade / Fungibilidade
 
-In time any token on the Ergo blockchain will have the ability to be mixed. The first token that was mixed through the mixer beyond Ergo’s native token was SigmaUSD. This is really an exciting accomplishment, especially given there is a Dex in the process of being developed on the Ergo Blockchain. 
+Em breve, qualquer token na blockchain Ergo terá a habilidade de ser misturado. O primeiro token que foi misturado através do mixer, além do token nativo de Ergo, foi o SigmaUSD. Esse é uma realização animadora, especialmente dado que existe uma Dex (sigla em inglês para "corretora descentralizada") no processo de desenvolvimento na blockchain Ergo. 
 
-Any coin that will be listed on Ergo’s decentralized exchange will have the capability of being mixable. I am sure the development of that will take some time, however, it suddenly gives privacy capabilities to tokens that have no privacy features. 
+Qualquer moeda que seja listada na corretora descentralizada de Ergo terá a capacidade de ser misturável. Estou confiante que este desenvolvimento ainda demorará um tempo. Porém, isso dá recursos de privacidade para tokens que não possuem esses recursos nativamente. 
 
-Suddenly users may be able to mix a variety of stablecoins and assets.
+De repente, usuários podem ser capazes de misturar uma variedade de stablecoins e ativos.
 
-## Why Might I Want to Mix Tokens?
+## Por que eu posso querer "misturar" tokens?
 
-The UTXO model of account is similar to cash register accounting. Simply stated, a deposit is made, amounts are combined, and change is returned. 
+O modelo UTXO de contabilidade é similar ao modelo de contabilidade caixa registradora. De forma simples, um depósito é feitos, quantias são combinadas, e troco é retornado. 
 
-If you go to a local shop and pay in paper currency, the cashier does not have the ability to look into your wallet. Perhaps they may peek inside from a distance and try to gauge the amount that you are carrying, however, you have a certain element of privacy in the transaction. 
+Se você for a uma loja e pagar com dinheiro vivo, a pessoa operando o caixa não tem a habilidade de olhar dentro da sua carteira. Talvez a pessoa possa espiar de longe e tentar estimar a quantia que você está carregando, mas você tem um certo elemento de privacidade na transação. 
 
-In the basic UTXO model of accounting, this transaction is not private. While it may be extremely difficult to connect the wallet and the user, the amount held is stored. This information is not simply available as if a cashier is trying to catch a momentary glance, that transaction is stored for all to see and is auditable at any point in the future if someone has the transaction information.\
+No modelo básico UTXO de contabilidade, essa transação não é privada. Apesar de poder ser extremamente difícil de conectar a carteira ao usuário, o montante retido é armazenado. Essa informação não está simplesmente disponível como se um operador estivesse tentando espiar de relance. Aquela transação está armazenada para todos verem e é auditável a qualquer momento no futuro se alguém tiver a informação da transação.\
 \
-The Ergomixer is a way to send tokens and potentially conceal both sides of a transaction. 
+O ErgoMixer é uma maneira de enviar tokens e potencialmente ocultar ambos os lados de uma transação. 
 
-## Practical Example for Senders
+## Exemplo Prático para remetentes
 
-Imagine a user wants to place a bid on the latest NFT at the Ergo Auction House. 
+Imagine que um usuário que queira dar um lance no NFT mais recente lançado na *Ergo Auction House* (Casa de Leilões Ergo). 
 
-A bidder may want to conceal their wallet information for a variety of reasons, for example, they may have a limited budget and not want that information broadcast to their competitors. 
+Um licitante (pessoa fazendo a oferta) pode querer ocultar sua informação de carteira por uma variedade de razões. Por exemplo, o licitante pode ter um orçamento limitado e não querer que essa informação seja transmitida a seus competidores. 
 
-They may be transferring money into the future Decentralized Exchange and want to conceal their total balance from other traders. Perhaps they have a large position and believe other traders may try to take advantage of knowing a large sum is inbound. 
+Licitantes podem estar transferindo dinheiro dentro da futura corretora descentralizada e querer esconder seus balanços totais de outros traders. Talvez eles tenham uma grande posição e acreditem que outros traders podem tentar levar vantagem de saber que uma grande quantia está prestes a entrar. 
 
-There are many practical reasons why parties making an exchange may want to conceal their financial decisions. We do this all the time. 
+Existem muitas razões para que partes que estejam realizando uma transação queiram ocultar suas decisões financeiras. Fazemos isso o tempo todo. 
 
-In truth, this is no different than the privacy features of cash. 
+Na realidade, isso não diferente dos elementos de privacidade existentes em dinheiro vivo. 
 
-You can go into a store, take out a 10, and ask for two 5’s... You have just mixed money. 
+Você pode ir a uma loja e pedir para trocar uma nota de R$10 por duas de R$5... Você acabou de "misturar" dinheiro. 
 
-There is a reason why people do not go about in their daily life with all of their net worth on their person. In reality, it is common sense. On a blockchain, it is often associated with some nefarious intent.
+Há uma razão para que pessoas não andem por aí no dia-a-dia com todo seu patrimônio líquido na carteira. Na verdade, é apenas senso comum. Numa blockchain, a mesma coisa é comumente associada a intenções nefastas.
 
-Cash is fungible, interchangeable, mixable. We have accepted that as normal. I hope that in time the perception of mixing on a blockchain is as acceptable as the same properties we see with physical currency. 
+Dinheiro vivo é fungível, intercambiável, misturável. Aceitamos isso como normal. Espero que com o tempo os mixers em blockchains sejam tão aceitáveis quanto as mesmas propriedades em dinheiro físico. 
 
-The truth is the majority of criminal and illicit activities occur in physical fiat currency. However, this has never been a legitimate justification to outright ban the use of fiat currencies. 
+A verdade é que a maioria da atividade criminal ocorre em moeda corrente física. Porém esta nunca foi uma justificativa legítima para banir completamente o uso de moedas fiduciárias. 
 
 <!--EndFragment-->
