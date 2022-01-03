@@ -5,7 +5,7 @@ author: Fundação Ergo
 authorPhoto: /img/uploads/logotype_black_circle.svg
 blogPhoto: /img/uploads/ergomanifesto.png
 tags:
-  - Ergo Team
+  - Equipe Ergo
 ---
 <!--StartFragment-->
 

@@ -5,7 +5,7 @@ author: Curia Regis Crypto
 authorPhoto: /img/uploads/1_70ukrjwixwgrxoxbgdl3fq.jpeg
 blogPhoto: /img/uploads/2021-06-04-17.01.28.jpg
 tags:
-  - Building Ergo
+  - Construindo Ergo
 ---
 **Ergo, um protocolo prova-de-trabalho centrado na comunidade, está lançando seu primeiro hackaton na próxima semana: ERGOHACK.** 
 

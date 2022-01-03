@@ -5,7 +5,7 @@ author: Fundação Ergo
 authorPhoto: /img/uploads/ergo_foundation_logo_vertical.png
 blogPhoto: /img/uploads/ergohack33.png
 tags:
-  - Building Ergo
+  - Construindo Ergo
 ---
 <!--StartFragment-->
 

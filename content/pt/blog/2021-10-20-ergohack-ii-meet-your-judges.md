@@ -5,7 +5,7 @@ author: Fundação Ergo
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/judges1.jpg
 tags:
-  - Ergo Team
+  - Equipe Ergo
 ---
 <!--StartFragment-->
 

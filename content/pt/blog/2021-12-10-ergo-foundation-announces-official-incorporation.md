@@ -5,7 +5,7 @@ author: Fundação Ergo
 authorPhoto: /img/uploads/logo.png
 blogPhoto: /img/uploads/ef.png
 tags:
-  - Building Ergo
+  - Construindo Ergo
   - Roadmap
 ---
 <!--StartFragment-->
