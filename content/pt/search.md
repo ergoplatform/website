@@ -1,6 +1,6 @@
 +++
-title = "Search"
-layout = "search"
+title = "Busca"
+layout = "busca"
 subtitle = "Search page"
 outputs = ["html", "json"]
 [sitemap]

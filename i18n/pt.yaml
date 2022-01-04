@@ -62,7 +62,7 @@
     <br/><br/>
     Ergo se aproveita de 10+ anos de desenvolvimento de blockchains, complementando princípios muito bem estabelecidos com artigos acadêmicos em criptografia, modelos de consenso e moedas digitais, todos revisados por membros da comunidade científica. Iniciamos sólidos fundamentos de blockchain e implementamos novos e poderosos esquemas de criptografia de forma nativa. Nossa equipe tem vasta experiência em desenvolvimento de frameworks de criptografia e blockchain, como *Nxt*, *Scorex* e *Waves*. Como abordamos esses assuntos de maneira simples e direta, podemos rapidamente priorizar novas funcionalidades e requisitos.
     <br/><br/>
-    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/documents/\"><span>Explore nossas pesquisas</span></a>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/pt/documentos/\"><span>Explore nossas pesquisas</span></a>
   "
 
 - id: ergo_decentralization_text
@@ -70,7 +70,7 @@
     <br/><br/>
     Contratos inteligentes em Ergo nos habilita a executar tarefas de alta complexidade, mas sempre sabemos a priori o custo de executar o código e se o código será executado com sucesso. Enquanto isso, ainda podemos escrever scripts Turing-completos através de iteração sobre processos em múltiplos blocos. Isso significa que Ergo suporta dApps versáteis que são executados previsivelmente, com custo conhecido, e não sem qualquer tipo de perigo proveniente de funcionalidade irrestrita.
     <br/><br/>
-    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/software/\"><span>Tutoriais de ErgoScript e ferramentas de integração</span></a>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/pt/software/\"><span>Tutoriais de ErgoScript e ferramentas de integração</span></a>
   "
 
 - id: ergo_economy_text
@@ -88,7 +88,7 @@
     <br/><br/>
     A blockchain Ergo usa o algoritmo *Autolykos* para consenso, que é uma variante *Equihash* e oferece melhor resistência a *ASICs*, além de um certo grau de resistência a *pools*. Isso possibilita melhor decentralização ao evitar grandes pools que possam ou conspirar ou ser coagidas a atacar a rede. Ao mesmo tempo, reconhecemos que usuários comuns que não executem um nó completo devem desfrutar dos mesmos benefícios de segurança que mineradores. Ao implementar Prova-de-prova-de-trabalho (NiPoPoW, em inglês) não interativas, Ergo permite que qualquer um faça e verifique transações com completa confiança, sem a necessidade de armazenamento, largura de banda e tempo necessários para baixar a blockchain completa. De fato, são necessário tão pouco quanto 1 MB de dados – ou seja, qualquer aparelho pode ser usado.
     <br/><br/>
-    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/wallets\"><span>Escolha sua carteira</span></a>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/pt/carteiras\"><span>Escolha sua carteira</span></a>
   "
 
 - id: ergo_survivability_text
@@ -97,7 +97,7 @@
     <br/><br/>
     Nesse momento, além de taxas de transação, mineradores também se beneficiarão de aluguéis de armazenamento cobrados de caixas (UTXOs) que não tenham movido suas moedas por 4 (quatro) anos ou mais. Há ao menos duas vantagens para esse modelo. Primeiramente, dá a mineradores uma fonte adicional de arrecadação após o fim das recompensas por bloco minerado. Como a segurança da rede depende da participação dos mineradores, esse incentivo é importante. Segundo, esse modelo tem o efeito de reciclar moedas perdidas (e a chamada ``poeira`` deixada por transações) de volta ao ecossistema econômico de Ergo. Pesquisas sugerem que até 4 milhões de BTC foram permanentemente removidas de circulação devido a perda de chaves. Taxas de armazenamento de Ergo lentamente recuperam moedas perdidas para propósitos produtivos, enquanto usuários que queiram guardar suas moedas para o longo prazo podem evitar a taxa se simplesmente moverem seus fundos.
     <br/><br/>
-    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/exchanges/\"><span>Corretoras suportadas</span></a>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/pt/exchanges/\"><span>Corretoras suportadas</span></a>
   "
 
 - id: ergo_clients_text
@@ -106,7 +106,7 @@
     <br/><br/>
     No caso de Ergo, esses tokens da Fundação são administrados por um contrato inteligente construído dentro do protocolo. Nos primeiros dois anos, 10% de cada remuneração por bloco (7.5 ERG por bloco) são alocados ao Tesouro, com os 67.5 ERG restantes indo para os mineradores. Conforme as recomendado por bloco comecem a ser reduzidas após dois anos, a Fundação continuará a receber as recompensas que excedam 67.5 ERG, com a alocação ao Tesouro diminuindo até zero em 2 anos e meio.
     <br/><br/>
-    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/foundation/\"><span>Mais sobre a Fundação Ergo</span></a>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/pt/fundacao/\"><span>Mais sobre a Fundação Ergo</span></a>
   "
 
 - id: ergo_consensus_text
@@ -115,7 +115,7 @@
     <br/><br/>
     Também temos uma comunidade de desenvolvedores, que podem trabalhar de forma voluntária ou podem receber verbas da Fundação para implementar funcionalidades úteis e dApps. Por exemplo, ErgoMix, um  serviço decentralizado de mixing baseado em protocolos Sigma, foi criado por um desenvolvedor parceiro da comunidade. A corretora decentralizada de Ergo também está sendo desenvolvida com essas bases.
     <br/><br/>
-    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/hall_of_fame/\"><span>Conheça a equipe Ergo</span></a>
+    <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/pt/hall_da_fama/\"><span>Conheça a equipe Ergo</span></a>
   "
 
 - id: ergo_agile_text
@@ -397,7 +397,7 @@
   translation: Capacidade de Sobrevivência
 
 - id: basics_survivability
-  translation: "Para sobreviver no longo prazo, a plataforma Ergo prefere soluções bem testadas e aprovadas. Se não há uma solução bem testada para um problema, realizamos a nossa própria pesquisa e já é enorme o <a href=\"https://ergoplatform.org/en/documents/\" class=\"eg-text__link eg-link\"><span>número de artigos da nossa equipe de desenvolvimento que foram revisados pela comunidade científica</span></a>.
+  translation: "Para sobreviver no longo prazo, a plataforma Ergo prefere soluções bem testadas e aprovadas. Se não há uma solução bem testada para um problema, realizamos a nossa própria pesquisa e já é enorme o <a href=\"https://ergoplatform.org/pt/documentos/\" class=\"eg-text__link eg-link\"><span>número de artigos da nossa equipe de desenvolvimento que foram revisados pela comunidade científica</span></a>.
                   <br/><br/>  Uma rede resiliente deve se adaptar a um ambiente em constante mudança sem a intervenção de terceiros (tais como um núcleo de ``desenvolvedores centrais``). O protocolo de votação *on-chain* para mineradores de Ergo permite modificações graduais em um grande número de parâmetros, incluindo tamanho máximo de bloco, fator de taxa de armazenamento, e outros.
                   <br/><br/>  Para alterações mais fundamentais, Ergo segue uma abordagem de bifurcação suave --- se uma maioria sobrepujante da rede aceitar um novo recurso, esse recurso é ativado. Porém, nós da rede que não se atualizarem continuam a operar normalmente e apenas ignoram da validação desse novo recurso.
                   Portanto, bifurcações rígidas não são necessárias em Ergo."
@@ -822,7 +822,7 @@
   translation: "O que é o cronograma de emissão de token Ergo e base monetária total?"
 
 - id: faq_nineth-item_text
-  translation: "Os detalhes sobre o cronograma de emissão de Ergo e oferta monetária podem ser encontrados <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/en/blog/2019_05_20-curve/\"><span>nesta</span></a> postagem em blog."
+  translation: "Os detalhes sobre o cronograma de emissão de Ergo e oferta monetária podem ser encontrados <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/pt/blog/2019_05_20-curve/\"><span>nesta</span></a> postagem em blog."
 
 - id: faq_tenth-item_title
   translation: "Onde posso aprender mais sobre Ergo?"
@@ -832,7 +832,7 @@
   Twitter: <a class=\"eg-text__link eg-link\" href=\"https://twitter.com/ergoplatformorg\"><span>https://twitter.com/ergoplatformorg</span></a> <br/><br/>
   Wiki: <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo/wiki\"><span>https://github.com/ergoplatform/ergo/wiki</span></a> <br/><br/>
   Github: <a class=\"eg-text__link eg-link\" href=\"https://github.com/ergoplatform/ergo\"><span>https://github.com/ergoplatform/ergo</span></a> <br/><br/>
-  Documentos: <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/en/documents/\"><span>https://ergoplatform.org/en/documents/</span></a> <br/><br/>
+  Documentos: <a class=\"eg-text__link eg-link\" href=\"https://ergoplatform.org/pt/documentos/\"><span>https://ergoplatform.org/pt/documentos/</span></a> <br/><br/>
   Telegram: <a class=\"eg-text__link eg-link\" href=\"https://t.me/ergoplatform\"><span>https://t.me/ergoplatform</span></a><br/><br/>
   "
 
@@ -1035,8 +1035,8 @@
               href=\"https://ergoplatform.org/docs/whitepaper.pdf\"
             ><span>https://ergoplatform.org/docs/whitepaper.pdf</span></a> e <a
               class=\"eg-text__link eg-link\"
-              href=\"https://ergoplatform.org/en/blog/2019_05_20-curve/\"
-            ><span>https://ergoplatform.org/en/blog/2019_05_20-curve/</span></a>"
+              href=\"https://ergoplatform.org/pt/blog/2019_05_20-curve/\"
+            ><span>https://ergoplatform.org/pt/blog/2019_05_20-curve/</span></a>"
 
 - id: foundation_second_section_second_paragraph
   translation: "O principal foco da Plataforma Ergo é oferecer um jeito eficiente e seguro de implementar contratos financeiros, que são a aplicação mais difundida de tecnologia blockchain. Este foco é reconhecido e apoiado pela Fundação Ergo."
@@ -1054,7 +1054,7 @@
   translation: "Verbas"
 
 - id: foundation_fourth_section_first_paragraph
-  translation: "A Fundação Ergo tem anunciado que disponibiliza financiamento para projetos que foquem na construção de infraestruturas-chave para o ecossistema. Por favor <a href=\"https://ergoplatform.org/en/blog/2020-11-18-ergo-foundation-makes-key-dapp-infrastructure-grant/\" class=\"eg-text__link eg-link\"><span>dirija-se a esse artigo</span></a> para conseguir sua própria verba e envie-o por e-mail para <a href=\"mailto:team@ergoplatform.org\" class=\"eg-text__link eg-link\"><span>team@ergoplatform.org</span></a> se tiver um projeto que acredita ser merecedor de receber verbas. No momento, propostas precisam ser aprovadas por 4 (quatro) dos 6 (seis) votos do Conselho de Membros do Fundo de Desenvolvimento Ergo. A Fundação Ergo está aceitando novos voluntários da comunidade, então por favor inscreva-se se desejar."
+  translation: "A Fundação Ergo tem anunciado que disponibiliza financiamento para projetos que foquem na construção de infraestruturas-chave para o ecossistema. Por favor <a href=\"https://ergoplatform.org/pt/blog/2020-11-18-ergo-foundation-makes-key-dapp-infrastructure-grant/\" class=\"eg-text__link eg-link\"><span>dirija-se a esse artigo</span></a> para conseguir sua própria verba e envie-o por e-mail para <a href=\"mailto:team@ergoplatform.org\" class=\"eg-text__link eg-link\"><span>team@ergoplatform.org</span></a> se tiver um projeto que acredita ser merecedor de receber verbas. No momento, propostas precisam ser aprovadas por 4 (quatro) dos 6 (seis) votos do Conselho de Membros do Fundo de Desenvolvimento Ergo. A Fundação Ergo está aceitando novos voluntários da comunidade, então por favor inscreva-se se desejar."
 
 - id: foundation_fourth_section_second_paragraph
   translation: "Nos comprometemos a informar a comunidade sobre decisões e desenvolvimentos aprovados."
@@ -1109,8 +1109,8 @@
             Todas as criptomoedas dependem de contribuições da comunidade de pesquisa científica. Com alegria, Ergo traz isto em seu âmago!
             <a
               class=\"eg-text__link eg-link\"
-              href=\"https://ergoplatform.org/en/documents/\"
-            ><span>https://ergoplatform.org/en/documents/</span></a>"
+              href=\"https://ergoplatform.org/pt/documentos/\"
+            ><span>https://ergoplatform.org/pt/documentos/</span></a>"
 
 - id: tag_title
   translation: "Procurar por tag"
