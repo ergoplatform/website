@@ -874,10 +874,10 @@
   translation: Web
 
 - id: wallets_table_second-column_second_title
-  translation: Mobile IOS/Android
+  translation: Mobile iOS/Android
 
 - id: wallets_table_second-column_fifth_title
-  translation: Mobile IOS
+  translation: Mobile iOS
 
 - id: wallets_table_second-column_third_title
   translation: Desktop
