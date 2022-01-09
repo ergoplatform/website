@@ -70,7 +70,7 @@ Você está preparado para construir o próximo grande projeto em Ergo? Prepare 
 
 * Uma breve explicação das habilidades de cada membro da equipe e o porquê deles serem importantes para a proposta.
 * Uma breve explicação sobre o projeto e as soluções que serão desenvolvidas.
-* Um resumo de cada trabalho de base e cada obstáculo potencial que vocês prevêem (se existir)
+* Um resumo de cada trabalho de base e cada obstáculo potencial que vocês preveem (se existir)
 * Uma breve explanação sobre os passos que serão necessários para completar o projeto (podem ser listados como tópicos).
 
 

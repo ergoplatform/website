@@ -37,7 +37,7 @@ Agora, com essa terceira redução no calendário de emissões de Ergo, recompen
 
 
 
-Neste momento, a emissão está configurada para ser finalizada nos próximos 5,5 anos. Porém, Alex Chepurnoy recentemente sugeriu extender a curva de emissão para criar uma melhor previsibilidade para futuras recompensas por mineração. Chepurnoy publicou uma [Proposta de Bifurcação Suave](https://www.ergoforum.org/t/emission-soft-fork-proposal/2996) no fórum de Ergo é é fortemente sugerido que membros da comunidade, especialmente mineradores, participem da discussão.
+Neste momento, a emissão está configurada para ser finalizada nos próximos 5,5 anos. Porém, Alex Chepurnoy recentemente sugeriu estender a curva de emissão para criar uma melhor previsibilidade para futuras recompensas por mineração. Chepurnoy publicou uma [Proposta de Bifurcação Suave](https://www.ergoforum.org/t/emission-soft-fork-proposal/2996) no fórum de Ergo é é fortemente sugerido que membros da comunidade, especialmente mineradores, participem da discussão.
 
 
 
@@ -60,7 +60,7 @@ O total do fundo de re-emissão seria então de 23.553.600 ERG.
 
 
 
-Considerando que o contrato de re-emissão também pagará 3 ERG por bloco (começando no bloco 2.080.800) e criará uma longa cauda de emissão começando do bloco #1.562.400, estamos extraindo \~29.88 anos a mais de recompensas estáveis (no total, \~38 years de emissão, começando no lançamento da rede principal). Logo, mineradores terão sua parte estável da renda garantida até o ano 2057.“
+Considerando que o contrato de re-emissão também pagará 3 ERG por bloco (começando no bloco 2.080.800) e criará uma longa cauda de emissão começando do bloco #1.562.400, estamos extraindo \~29.88 anos a mais de recompensas estáveis (no total, \~38 anos de emissão, começando no lançamento da rede principal). Logo, mineradores terão sua parte estável da renda garantida até o ano 2057.“
 
 
 
