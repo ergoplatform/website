@@ -5,8 +5,8 @@ author: Fundação Ergo
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/results1.jpg
 tags:
-  - Building Ergo
-  - Ergo Team
+  - Construindo Ergo
+  - Equipe Ergo
 ---
 <!--StartFragment-->
 

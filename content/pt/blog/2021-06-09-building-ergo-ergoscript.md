@@ -5,7 +5,7 @@ author: root7Z
 authorPhoto: /img/uploads/rootz-the-storyteller-4root7z.png
 blogPhoto: /img/uploads/ergcode.png
 tags:
-  - Building Ergo
+  - Construindo Ergo
 ---
 <!--StartFragment-->
 

@@ -4,7 +4,7 @@ date: 2020-03-16
 author: "Equipe Ergo"
 authorPhoto: "/img/logotype_black_circle.svg"
 blogPhoto: "/img/blog/ergo_sigma.jpg"
-tags: ['Building Ergo', 'Ergo Team']
+tags: ['Construindo Ergo', 'Equipe Ergo']
 ---
 
 _Contratos inteligentes em Ergo e funcionalidades DeFi são construídas com Protocolos Sigma – uma classe poderosa e flexível de provas de conhecimento-zero. Descubra mais sobre o por quê de sua importância, e como eles colocam Ergo na frente dos competidores._

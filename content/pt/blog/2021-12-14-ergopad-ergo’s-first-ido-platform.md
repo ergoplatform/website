@@ -5,7 +5,7 @@ author: Plataforma Ergo
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/ergopad-3-2-.png
 tags:
-  - Building Ergo
+  - Construindo Ergo
 ---
 <!--StartFragment-->
 

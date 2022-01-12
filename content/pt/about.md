@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Sobre"
 subtitle: "About page"
 layout: "about"
 outputs: ["html", "json"]

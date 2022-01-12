@@ -1,5 +1,5 @@
 ---
-title: "Contribute"
+title: "Contribua"
 subtitle: "Contribute page"
 layout: "contribute"
 date: 2019-04-12T13:49:59+03:00

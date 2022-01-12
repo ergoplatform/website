@@ -1,5 +1,5 @@
 +++
-title = "Search"
+title = "Busca"
 layout = "search"
 subtitle = "Search page"
 outputs = ["html", "json"]

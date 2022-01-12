@@ -5,7 +5,7 @@ author: Curia Regis Crypto
 authorPhoto: /img/uploads/1_70ukrjwixwgrxoxbgdl3fq.jpeg
 blogPhoto: /img/uploads/photo_2021-10-04_19-02-03.jpg
 tags:
-  - Building Ergo
+  - Construindo Ergo
 ---
 <!--StartFragment-->
 
