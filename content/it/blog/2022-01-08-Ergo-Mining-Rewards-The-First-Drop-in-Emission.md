@@ -1,3 +1,4 @@
+---
 title: "Ergo Mining Rewards: il primo calo nell'emissione"
 date: 2022-01-04T15:04:51.765Z
 author: Ergo Platform, tradotto da ErGonario

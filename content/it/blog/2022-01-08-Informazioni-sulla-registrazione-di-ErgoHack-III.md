@@ -1,3 +1,4 @@
+---
 title: Informazioni sulla registrazione di ErgoHack III
 date: 2022-01-06T15:36:16.948Z
 author: Ergo Platform, tradotto da ErGonario

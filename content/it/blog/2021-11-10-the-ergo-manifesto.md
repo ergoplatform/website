@@ -13,7 +13,7 @@ tags:
 
 # Di Kushti- Con l'aiuto della squadra di sviluppatori di Ergo
 
-Molte notizie relative alla blockchain in questi giorni dicono che una banca X o una società Y utilizzeranno la "blockchain" per "ridurre i costi".  
+Molte notizie relative alla blockchain in questi giorni dicono che una banca X o una società Y utilizzeranno la "blockchain" per "ridurre i costi". 
 
 
 
