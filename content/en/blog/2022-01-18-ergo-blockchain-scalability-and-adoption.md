@@ -55,6 +55,6 @@ Layer 2 scaling solutions are smart contracts that facilitate blockchain transfe
 
 [Ergo & Blockchain: Privacy and Security](https://ergoplatform.org/en/blog/2021-12-02-ergo-blockchain-privacy-and-security/)
 
-[Ergo & Blockchain: Technology and Innovation](https://ergoplatform.org/en/blog/2021-12-28-ergo-blockchain-technology-and-innovation/)
+[Ergo & Blockchain: Technology and Innovation](https://ergoplatform.org/en/blog/2021-12-28-ergo-blockchain-technology-and-innovation/) 
 
 <!--EndFragment-->
