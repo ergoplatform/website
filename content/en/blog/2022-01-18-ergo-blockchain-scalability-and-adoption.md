@@ -47,7 +47,7 @@ Layer 2 scaling solutions are smart contracts that facilitate blockchain transfe
 
 *In the next article, we will analyze the topic of Sustainability & Growth of blockchains. By doing that, we will take a look at the history and the current ecosystem; how the legal landscape is evolving, which kind of actors are participating and what kind of problems we may expect to encounter.*
 
- **Previous Articles:**
+  **Previous Articles:**
 
 [Ergo & Blockchain: Cryptocurrency Sphere](https://ergoplatform.org/en/blog/2021-10-26-ergo-blockchain-cryptocurrency-sphere/)
 
