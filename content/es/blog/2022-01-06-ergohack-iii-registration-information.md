@@ -12,7 +12,7 @@ tags:
 
 **ErgoHack III tendrá lugar en Febrero 11-13, 2022**
 
-**Registros están abiertos hasta el 31 de Enero, 2022**
+**Registros abiertos hasta el 31 de Enero, 2022**
 
 
 

@@ -1,7 +1,7 @@
 ---
-title: "ErgoHack III: Building Tomorrow's Privacy and Security Tools"
+title: "ErgoHack III: Construyendo la privacidad y seguridad del mañana"
 date: 2022-01-20T20:18:19.351Z
-author: Ergo Foundation
+author: Ergo Foundation (translated by Daniu, original version will always prevail)
 authorPhoto: /img/uploads/logo.png
 blogPhoto: /img/uploads/07_ergoblog_cover_01202022-1-.png
 tags:
@@ -10,42 +10,47 @@ tags:
 ---
 <!--StartFragment-->
 
-Ergo is a proof-of-work, open source smart contract platform based on grassroots economic principles. When founders Alex Chepurnoy and Dimitry Meshkov designed the platform, infrastructure choices were made to build a scalable, secure and flexible public blockchain. 
+Ergo es una plataforma PoW de contratos inteligentes de código abierto basada en principios económicos de base. Cuando los fundadores Alex Chepurnoy y Dimitry Meshkov diseñaron la plataforma, se tomaron decisiones de infraestructura para construir una cadena de bloques pública escalable, segura y flexible.
 
-Ergo uses the extended UTXO (eUTXO) model as its base design choice so the logic is different from the Accounts model. The eUTXO model provides higher security and privacy options than Accounts because the addresses are made from one-time use UTXO boxes. Ergo's Multi-Stage Contracts on this UTXO model are written in Ergo’s native [ErgoScript](https://ergoplatform.org/docs/ErgoScript.pdf), and are based on [Sigma Protocols](http://docs.ergoplatform.org/dev/scs/sigma/) to implement non-interactive zero-knowledge contracts at high security.
+Ergo usa el modelo UTXO extendido (eUTXO) como su opción de diseño base, por lo que la lógica es diferente del modelo de Cuentas. El modelo eUTXO ofrece mayores opciones de seguridad y privacidad que el modelo de cuentas(como el de Eth) porque las direcciones se crean a partir de casillas UTXO de un solo uso. Los contratos de etapas múltiples de Ergo en este modelo UTXO están escritos en [ErgoScript] (https://ergoplatform.org/docs/ErgoScript.pdf) y se basan en [Protocolos Sigma](http://docs.ergoplatform.org/dev/scs/sigma/) para implementar contratos de conocimiento cero no interactivos con alta seguridad.
 
-ErgoScript utilizes a subset of Scala (an acronym for Scalable Language), to support a fast, flexible and secure design. Scala is both an object-oriented and functional new language running on Java Virtual Machine. The learning curve can be steeper when compared to learning Java because it is a newer language and developer tools are still being developed. Once you get used to ErgoScript, you will feel at ease in your coding experience with the easy-to-read syntax and strong fault tolerance. Recently, Twitter switched from Ruby to Scala as its main language. [Their coders expressed](https://youtu.be/IayQ7lxPUP4?t=1549) that Scala is an easy to refactor scalable language, which consists of more than one way to approach the same problems.
+ErgoScript utiliza un subconjunto de Scala (acrónimo de Scalable Language) para respaldar un diseño rápido, flexible y seguro. Scala es un nuevo lenguaje funcional y orientado a objetos que se ejecuta en Java Virtual Machine. La curva de aprendizaje puede ser más pronunciada en comparación con el aprendizaje de Java porque es un lenguaje más nuevo y las herramientas para desarrolladores aún se están desarrollando. Una vez que se acostumbre a ErgoScript, se sentirá cómodo en su experiencia de codificación con la sintaxis fácil de leer y la gran tolerancia a fallas. Recientemente, Twitter cambió de Ruby a Scala como su idioma principal. [Sus codificadores expresaron](https://youtu.be/IayQ7lxPUP4?t=1549) que Scala es un lenguaje escalable fácil de refactorizar, que consta de más de una forma de abordar los mismos problemas.
 
-To code in ErgoScript, you do not yet need to be proficient in Scala, as you will be able to get on board pretty quickly with our [developer resources](https://ergohack.io/journey-precursor/). Ergo also has libraries for developers of JavaScript, TypeScript and Phyton to assist in starting your first dApp idea. For the backend stack, Ergo is developing Rust libraries.
+Para codificar en ErgoScript, aún no es necesario que domines Scala, ya que podrás incorporarte bastante rápido con nuestros [recursos para desarrolladores](https://ergohack.io/journey-precursor/). Ergo también tiene bibliotecas para desarrolladores de JavaScript, TypeScript y Phyton para ayudarlo a comenzar su primera idea de dApp. Para la pila de back-end, Ergo está desarrollando bibliotecas de Rust.
 
-## Join, Learn, Build and Earn
+## Únete, aprende, construye y gana
 
-ErgoHack III: Privacy and Security aims to incentivize developers to build the tools and applications that will empower the use cases of decentralized finance. Public blockchains are transparent and verifiable, therefore the users are at risk of being targeted by malicious actors. On-chain surveillance is a reality and hackers can be tempted to profit off of people if they learn of a wallet owner's identity.
+*ErgoHack III: Privacidad y seguridad* tiene como objetivo incentivar a los desarrolladores a crear las herramientas y aplicaciones que potenciarán los casos de uso de las finanzas descentralizadas. Las cadenas de bloques públicas son transparentes y verificables, por lo que los usuarios corren el riesgo de ser atacados por actores malintencionados. La vigilancia en cadena es una realidad y los piratas informáticos pueden verse tentados a sacar provecho de las personas si se enteran de la identidad del propietario de una billetera.
 
-That's why we (as individuals) need the tools, security implementations, wallets and privacy designs to guard ourselves. Privacy should be optional, with not only institutions but individuals being able to access various options. For a blockchain to be ergonomic, these tools need to be accessible for all.
+Es por eso que nosotros (como individuos) necesitamos las herramientas, las implementaciones de seguridad, las carteras y los diseños de privacidad para protegernos. La privacidad debe ser opcional, y no solo las instituciones sino también las personas pueden acceder a varias opciones. Para que una cadena de bloques sea ergonómica, estas herramientas deben ser accesibles para todos.
 
-We suggest you explore [Sigmaverse](https://bit.ly/3kRCqpo) to get a sense of the dApps that are live, as well as those in development. 
+Te sugerimos explorar [Sigmaverse](https://bit.ly/3kRCqpo) para tener una idea de las dApps que están activas, así como las que están en desarrollo.
 
-* ErgoHack III will take place from February 11-13, 2022
-* Registrations are open until January 31, 2022
+**ErgoHack III tendrá lugar en Febrero 11-13, 2022**
 
-**The winners of the ErgoHack III will share a prize pool of 18K SigUSD:**
+**Registros abiertos hasta el 31 de Enero, 2022**
 
-* 1st Prize : 10K SigUSD
-* 2nd Prize: 6K SigUSD
-* 3rd Prize : 2K SigUSD
+Con el registro ya abierto, existe una gran anticipación sobre qué nuevos proyectos se propondrán y desarrollarán durante *ErgoHack III: Privacidad y seguridad.* Durante el evento, los nuevos participantes tendrán la oportunidad de descubrir el poder y la versatilidad de las herramientas únicas de Ergo a medida que construyen nuevas dApps en el modelo UTXO extendido.
 
-*Additional prizes include several honorable mentions worth 200 SigUSD*
+## ErgoHack III Premios:
 
-**To apply, every applicant needs a proposal that should include:**
+1er lugar - 10k SigUSD
 
-* A brief explanation of the skillsets of each team member and why they are important to the proposal.
-* A brief explanation about the project and the solutions it will develop.
-* A summary of any prep-work as well as any potential hurdles you foresee (if any)
-* A brief explanation of the steps you envision necessary to complete the project (can be listed as bullet points).
+2do lugar - 6K SigUSD
 
- [Register Here](https://q9fwzopidh8.typeform.com/to/oVAR4zvy?typeform-source=ergoplatform.org)
+3er lugar - 2k SigUSD
 
-If you do not have a team yet, join our Discord and check [i-need-a-team](https://discord.com/channels/668903786361651200/852478885744345118) to find like-minded people with you. If you have any other questions, please reach us so we can help.
+Los premios adicionales incluyen varias menciones de honor por valor de 200 SigUSD
+
+¿Estás listo para construir el próximo gran proyecto en Ergo? Prepare su propuesta y asegúrese de enviar su registro antes del 31 de enero de 2022. Su propuesta debe incluir:
+
+* Una breve explicación de las habilidades de cada miembro del equipo y por qué son importantes para la propuesta.
+* Una breve explicación sobre el proyecto y las soluciones que desarrollará.
+* Un resumen de cualquier trabajo de preparación, así como cualquier obstáculo potencial que prevea (si corresponde)
+* Una breve explicación de los pasos que cree que son necesarios para completar el proyecto (se pueden enumerar como viñetas).
+
+ [Registrate aquí](https://q9fwzopidh8.typeform.com/to/oVAR4zvy?typeform-source=ergoplatform.org)
+
+Al presentar la solicitud, necesita un equipo de 2 a 5 personas. No te preocupes si no tienes equipo, puedes buscar compañeros a través de i-need-a-team en el [Discord](https://discord.gg/EqZDrtzm) de Ergo. Si tiene alguna otra pregunta, también puede acceder a subcategorías de debates en Discord sobre el desarrollo en Ergo.
 
 <!--EndFragment-->
