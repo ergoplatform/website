@@ -17,7 +17,7 @@ Mnoho správ súvisiacich s blockchainom v týchto dňoch hovorí ako banka X al
 
 
 
-Toto je len ďalší módny výraz, ktorý veľkí bankstri používajú ako ďalší nástroj na efektívnejšie získanie hodnoty zo všetkých smerov a šetrenie pri zmenšovaní pracovných pozícií.
+Toto je len ďalší módny výraz, ktorý veľkí bankstri používajú ako ďalší nástroj na efektívnejšie získanie hodnoty zo všetkých smerov a šetrenie pri znižovaní počtu pracovných pozícií.
 
 
 
@@ -67,7 +67,7 @@ Okolo myšlienky P2P obchodu sa vytvoril celý priemysel. Otvorené, bezhraničn
 
 ## Súčasné Myslenie Marketov
 
-Mentalita krypto trhov sa po ICO mánii v roku 2017 značne zmenila. Zdá sa, že priestor ako celok prišiel oslavovať záchranné balíčky, tlačenie peňazí a stimulusy.
+Mentalita krypto trhov sa po ICO mánii v roku 2017 značne zmenila. Zdá sa, že priestor ako celok prišiel oslavovať záchranné balíčky, tlačenie peňazí a stimuly.
 
  
 
@@ -101,7 +101,7 @@ Teroristické organizácie profitujú v časoch ekonomických ťažkostí. Nič 
 
 
 
-Bohatí v našom svete majú často medzinárodne pridelené portfóliá. Sú relatívne likvidné a vo všeobecnosti majú schopnosť obchádzať ťažkosti prostredníctvom prístupu na trh, regulačných prostriedkov akými sú daňové raje, medzery v zákonoch a jurisdikčná arbitráž.
+Bohatí v našom svete majú často medzinárodne pridelené portfóliá. Sú relatívne likvidné a vo všeobecnosti majú schopnosť obchádzať ťažkosti pomocou prístupov na trhy a regulačnými prostriedkami akými sú daňové raje, medzery v zákonoch a jurisdikčná arbitráž.
 
 
 
@@ -159,7 +159,7 @@ Pravdou je, že mnohí spotrebitelia boli vedení k presvedčeniu, že väčšie
 
  
 
- Druhým je schopnosť centralizovanej moci prepojiť úverovú alebo platobnú schopnosť so sociálnym postavením občana v rámci komunity. Jednoducho povedané, ide o zbraňovanie peňazí proti nesúhlasu. Schopnosť občana nesúhlasiť v akejkoľvek slobodnej spoločnosti je vo všeobecnosti jediným legálnym prostriedkom, ktorý má na uskutočnenie zmeny. Absencia schopnosti nesúhlasiť; spoločnosť nie je slobodná. Prepojenie centralizovaného prístupu, mechanizmov odmeňovania alebo prispôsobenia sa digitálnej peňažnej mene je zbraňou peňazí proti mysleniu, slobode prejavu a slobode prejavu.
+ Druhým je schopnosť centralizovanej moci prepojiť úverovú alebo platobnú schopnosť so sociálnym postavením občana v rámci komunity. Jednoducho povedané, ide o zbrojenie peňazí proti nesúhlasu. Schopnosť občana nesúhlasiť v akejkoľvek slobodnej spoločnosti je vo všeobecnosti jediným legálnym prostriedkom, ktorý má na uskutočnenie zmeny. Absencia schopnosti nesúhlasiť; spoločnosť nie je slobodná. Prepojenie centralizovaného prístupu, mechanizmov odmeňovania alebo prispôsobenia sa digitálnej peňažnej mene je zbraňou peňazí proti mysleniu, slobode reči a prejavu.
 
  
 
@@ -237,7 +237,7 @@ Ergo by malo byť čo najviac decentralizované. Vždy sa snažte šíriť a rá
 
 Škodlivému správaniu, ktoré môže ovplyvniť bezpečnosť siete, by sa malo vyhnúť. Ak sa akákoľvek z týchto strán objaví počas života Erga, komunita by mala zvážiť spôsoby, ako znížiť úroveň ich vplyvu. Vždy budú existovať tí, ktorí sa budú snažiť narušiť, využiť a zneužiť svoju moc. Aká je odpoveď? Vzdelávanie. Vzdelávať používateľov, aby sa chránili, aby identifikovali škodlivých aktérov a vyhýbali sa im a spolupracovali na minimalizácii ich vplyvu. Chcel by som povzbudiť všetkých členov komunity, aby neustále vyhľadávali vzdelanie, osvojovali si nástroje, pomáhali a učili sa tak či onak. Silná komunita sa rodí zo silnej spolupráce.
 
-1. **Otvorená Bez Povolenia a Bezpečná**
+1. **Otvorené Bez Povolenia a Bezpečné**
 
 Ergo protokol neobmedzuje ani nelimituje žiadne kategórie použitia. To je potrebné pre zachovanie odolnosti. Určite môžeme obhajovať spoluprácu, obchod a ľudské hodnoty; avšak ich nevnucujeme. To by si vyžadovalo centrálnu moc. Vývojári môžu slobodne implementovať akúkoľvek logiku, ktorú chcú, pričom preberajú plnú zodpovednosť za etiku a zákonnosť svojej aplikácie.
 
@@ -257,7 +257,7 @@ Ergo sa zaviazalo vybudovať ekosystém, ktorý ponúka nástroje určené na po
 
 1. **Platforma pre Zmluvné Peniaze**
 
-Ergo je základná vrstva pre aplikácií, ktoré budú na nej postavené. Je vhodné pre niekoľko aplikácií, ale jeho hlavným cieľom je poskytnúť efektívny, bezpečný a jednoduchý spôsob implementácie finančných zmlúv. Ergo sa zaviazalo vybudovať sieť na pevných základoch, ktoré sa neustále aktualizujú a inovujú. Cieľom so zmluvnými peniazmi je vytvoriť systém, ktorý nebude zaťažený vysokými nákladmi a poplatkami pre používateľov. Aby boli peniaze ergonomické, musia zostať nákladovo konkurencieschopné. Ergo bude pomáhať s kostrami a nástrojmi, ktoré môžu ľudia vybudovať a implementovať s cieľom maximalizovať využitie a užitočnosť alebo zmluvné peniaze.
+Ergo je základná vrstva pre aplikácie, ktoré budú na nej postavené. Je vhodné pre niekoľko aplikácií, ale jeho hlavným cieľom je poskytnúť efektívny, bezpečný a jednoduchý spôsob implementácie finančných zmlúv. Ergo sa zaviazalo vybudovať sieť na pevných základoch, ktoré sa neustále aktualizujú a inovujú. Cieľom so zmluvnými peniazmi je vytvoriť systém, ktorý nebude zaťažený vysokými nákladmi a poplatkami pre používateľov. Aby boli peniaze ergonomické, musia zostať nákladovo konkurencieschopné. Ergo bude pomáhať s kostrami a nástrojmi, ktoré môžu ľudia vybudovať a implementovať s cieľom maximalizovať využitie a užitočnosť alebo zmluvné peniaze.
 
 1. **Dlhodobé Zameranie**
 
@@ -281,7 +281,7 @@ Táto dlhodobá vízia nesmie nikdy zomrieť, aby Ergo prežilo. Ergo sa zrodilo
 
 ### Kto je Kushti?
 
-Alexander Chepurnoy (aka Kushti) je hlavným vývojárom Ergo Platformy a od roku 2011 je aktívny vo vývoji blockchainu a smart kontraktov. Bol hlavným vývojárom pre NXT, v roku 2014 založil smartcontract.com (teraz Chainlink) so Sergejom Nazarovom. Je výskumníkom v IOHK s viac ako 20 akademickými prácami. Pri práci na Nxt začal s „úplne jednoduchou blockchainovou kostrou“ Scorex, ktorý sa neskôr zmenil na modulárnu blockchainovú kostru. Tento projekt si získal pozornosť Charlesa Hoskinsona, spoluzakladateľa Cardana a Etherea približne v polovici jesene 2015. Potom sa okolo januára 2016 pripojil k IOHK.
+Alexander Chepurnoy (alias Kushti) je hlavným vývojárom Ergo Platformy a od roku 2011 je aktívny vo vývoji blockchainu a smart kontraktov. Bol hlavným vývojárom pre NXT, v roku 2014 založil smartcontract.com (teraz Chainlink) so Sergejom Nazarovom. Je výskumníkom v IOHK s viac ako 20 akademickými prácami. Pri práci na Nxt začal s „úplne jednoduchou blockchainovou kostrou“ Scorex, ktorý sa neskôr zmenil na modulárnu blockchainovú kostru. Tento projekt si získal pozornosť Charlesa Hoskinsona, spoluzakladateľa Cardana a Etherea približne v polovici jesene 2015. Potom sa okolo januára 2016 pripojil k IOHK.
 
 ### Poznámka K Ekonomike Tokenov:
 
