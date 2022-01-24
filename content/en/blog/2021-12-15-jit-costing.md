@@ -140,7 +140,7 @@ There are other technical difficulties, drawbacks and contra arguments for using
 costing of contracts written in expressive language such as ErgoTree. However, 
 the list above should already be enough to motivate development of a better alternative.
 
-## JIT Costing
+## New Costing in v5.0
 
 The new upcoming release v5.0 of Ergo node will use _hybrid_ costing
 algorithm to protect the network from over-expensive transactions (aka SPAM transaction).
@@ -219,4 +219,7 @@ which is interpreted as an _over-limit script_ as the transaction is rejected.
 
 ## Conclusions
 
-TODO
+New costing algorithm solved the problems of AOT costing approach implemented in v4.x
+releases. Cost control of v5.0 becomes much more efficient and accurate. In additions,
+limitations of AOT costing no longer erroneously rejects some useful contracts which
+addresses many pain points of v4.x versions.
