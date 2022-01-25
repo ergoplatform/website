@@ -2,8 +2,8 @@
 title: Ergo AMA Wrap-Up January 21, 2022
 date: 2022-01-25T08:02:25.802Z
 author: Ergo Platform
-authorPhoto: /img/uploads/1762.png
-blogPhoto: /img/uploads/03b1_ergoblog_cover_01112021.png
+authorPhoto: /img/uploads/symbol_bold__1080px__black.png
+blogPhoto: /img/uploads/ama_wrapup.png
 tags:
   - Ergo Team
   - Building Ergo
