@@ -2,8 +2,8 @@
 title: "Ergo Mining Rewards: The First Drop in Emission"
 date: 2022-01-04T15:04:51.765Z
 author: Ergo Platform
-authorPhoto: /img/uploads/1762.png
-blogPhoto: /img/uploads/01b_logo_ergoblog_cover_01032021-1-.png
+authorPhoto: /img/uploads/symbol_bold__1080px__black.png
+blogPhoto: /img/uploads/news-blog-6.png
 tags:
   - Roadmap
 ---
