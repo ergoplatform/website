@@ -2,7 +2,7 @@
 title: Ergo AMA Wrap-Up January 7, 2022
 date: 2022-01-10T20:33:03.033Z
 author: Ergo Platform
-authorPhoto: /img/uploads/1762.png
+authorPhoto: /img/uploads/symbol_bold__1080px__black.png
 blogPhoto: /img/uploads/ama_wrapup.png
 tags:
   - Roadmap
