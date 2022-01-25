@@ -3,7 +3,7 @@ title: "Community Projects on Ergo: Important Dates"
 date: 2022-01-11T20:32:55.489Z
 author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
-blogPhoto: /img/uploads/04b_ergoblog_cover_01112021-1-.png
+blogPhoto: /img/uploads/04_ergoblog_cover_01112021-1-.png
 tags:
   - Building Ergo
   - Ergo Team
