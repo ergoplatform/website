@@ -1,6 +1,6 @@
 ---
 title: "ErgoHack III: Last Week to Register"
-date: 2022-01-25T19:24:53.801Z
+date: 2022-01-25T19:33:10.741Z
 author: Ergo Foundation
 authorPhoto: /img/uploads/logo.png
 blogPhoto: /img/uploads/news-blog-20-1-.png
