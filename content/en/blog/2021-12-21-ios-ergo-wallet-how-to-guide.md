@@ -3,7 +3,7 @@ title: "iOS Ergo Wallet: How-To Guide"
 date: 2021-12-21T19:00:15.051Z
 author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
-blogPhoto: /img/uploads/ergoios.png
+blogPhoto: /img/uploads/news-blog-24.png
 tags:
   - Building Ergo
 ---
