@@ -7,4 +7,4 @@ subtitle: El AMA de la semana pasada cubrió todo, desde adopción masiva, marke
   billeteras para Ergonautas y el compromiso de una incubadora de ecosistemas. Ponerse al día
   sobre todos los detalles en nuestro resumen del AMA en inglés, clic derecho y traducir para los que no hablen inglés!
 link: https://ergoplatform.info/3IxKsx6
----
+--- 
