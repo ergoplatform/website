@@ -13,7 +13,7 @@
   <span class=\"header-section__title--red\">Smart Money</span>"
 
 - id: header_slogan
-  translation: "Ergo construye características encriptadas avanzadas y nueva funcionalidad DeFi sobre los cimientos sólidos provenientes de una década de desarrollo y teoría de la blockchain." 
+  translation: "Ergo construye características encriptadas avanzadas y nueva funcionalidad DeFi sobre los cimientos sólidos provenientes de una década de desarrollo y teoría de la blockchain."
 
 - id: header_slider
   translation: "Smart money es: "
@@ -89,7 +89,7 @@
     La blockchain de Ergo utiliza el algoritmo Autolykos para el consenso, que es una variante de Equihash y ofrece una mejor resistencia ASIC, así como un grado de resistencia del pool. Esto permite una mejor descentralización, evitando grandes grupos que puedan actuar en conveniencia propia o verse coaccionados a atacar la red. Al mismo tiempo, reconocemos que los usuarios normales que no ejecutan un nodo completo deberían disfrutar de los mismos beneficios de seguridad que los mineros. La prueba de trabajo no interactiva de Ergo (NiPoPoW) permite a cualquier persona realizar y verificar transacciones con total confianza, sin necesidad del almacenamiento, ancho de banda y tiempo necesarios para descargar la blockchain completa. De hecho, se requiere tan solo 1 MB de datos, lo que significa que se puede utilizar cualquier dispositivo.
     <br/><br/>
     <a class=\"eg-link eg-link--red\" href=\"https://ergoplatform.org/en/wallets\"><span>Elige tu billetera(wallet)</span></a>"
-  
+
 
 - id: ergo_survivability_text
   translation: "
@@ -1051,7 +1051,7 @@
   translation: "Subvenciones"
 
 - id: foundation_fourth_section_first_paragraph
-  translation: "La Fundación Ergo ha anunciado que está buscando financiar subvenciones para proyectos que se centren en la construcción de infraestructura clave del ecosistema. Porfavor <a href=\"https://ergoplatform.org/en/blog/2020-11-18-ergo-foundation-makes-key-dapp-infrastructure-grant/\" class=\"eg-text__link eg-link\"><span>dirígete a este artículo</span></a> para conseguir su propia subvención y envíalo a <a href=\"mailto:ergoplatform@protonmail.com\" class=\"eg-text__link eg-link\"><span>ergoplatform@protonmail.com</span></a> si tiene un proyecto que cree que vale la pena financiar, Las propuestas en este momento deben ser aprobadas por cuatro de los seis votos de los miembros de la Junta Directiva del Fondo de Desarrollo Ergo. La Fundación Ergo está aceptando nuevos voluntarios de la comunidad, así que inscríbase si lo desea."
+  translation: "La Fundación Ergo ha anunciado que está buscando financiar subvenciones para proyectos que se centren en la construcción de infraestructura clave del ecosistema. Porfavor <a href=\"https://ergoplatform.org/en/blog/2020-11-18-ergo-foundation-makes-key-dapp-infrastructure-grant/\" class=\"eg-text__link eg-link\"><span>dirígete a este artículo</span></a> para conseguir su propia subvención y envíalo a <a href=\"mailto:team@ergoplatform.org\" class=\"eg-text__link eg-link\"><span>team@ergoplatform.org</span></a> si tiene un proyecto que cree que vale la pena financiar, Las propuestas en este momento deben ser aprobadas por cuatro de los seis votos de los miembros de la Junta Directiva del Fondo de Desarrollo Ergo. La Fundación Ergo está aceptando nuevos voluntarios de la comunidad, así que inscríbase si lo desea."
 
 - id: foundation_fourth_section_second_paragraph
   translation: "Estamos comprometidos a informar a la comunidad sobre las decisiones y desarrollos aprobados."

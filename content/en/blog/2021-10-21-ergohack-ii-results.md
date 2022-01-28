@@ -22,7 +22,7 @@ Uncollateralized lending is still in its infancy in the field of cryptocurrency.
 
 ## Second Place
 
-Second place was awarded to the Ergo-Subpooling team and theiridea for smart-contract-based mining pools. The team was formed by miners who are willing to create an on-chain mining pool with zero fees and verifiable equal hash rate distribution among miners. Their target users are solo miners with small farming rigs. Ergo-Subpooling also aims to increase decentralization by cutting the need for centralized mining pools.
+Second place was awarded to the Ergo-Subpooling team and their idea for smart-contract-based mining pools. The team was formed by miners who are willing to create an on-chain mining pool with zero fees and verifiable equal hash rate distribution among miners. Their target users are solo miners with small farming rigs. Ergo-Subpooling also aims to increase decentralization by cutting the need for centralized mining pools.
 
 They presented an impressive understanding of ErgoScript/AppKit and they had already started test-runs. The full proposal of the project can be found at [Ergo Subpooling](https://github.com/K-Singh/ergo-subpooling).
 

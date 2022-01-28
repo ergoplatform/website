@@ -1,7 +1,7 @@
 ---
 title: ErgoDEX New UI Launch
 date: 2021-11-09T22:35:43.121Z
-author: Ergo Foundation
+author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/ergodex-ui.png
 tags:

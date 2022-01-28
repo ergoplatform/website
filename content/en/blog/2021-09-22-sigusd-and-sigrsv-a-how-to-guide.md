@@ -1,7 +1,7 @@
 ---
 title: "SigUSD and SigRSV: A How-To Guide"
 date: 2021-09-22T13:08:31.455Z
-author: Ergo Foundation
+author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/photo_2021-09-22_16-09-24.jpg
 tags:

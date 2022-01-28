@@ -1,7 +1,7 @@
 ---
 title: "Ecosistema de ergo: soluciones escalables"
 date: 2021-10-29T13:47:53.833Z
-author: Ergo Foundation
+author: Ergo Foundation (translated by Daniu)
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/ergoscale.jpg
 tags:
@@ -22,7 +22,7 @@ En la Capa 1, la capa de aplicación, Ergo admite soluciones de escalabilidad en
 
 
 
-Al final, existen soluciones de escalado de capa 2 que se refieren a soluciones de escalado de capa fuera de la cadena. Hay varias soluciones fuera de la cadena como [Hydra] (https://iohk.io/en/research/library/papers/hydrafast-isomorphic-state-channels/) y cadenas laterales para comprimir la congestiónen la blockchain y proporcionar beneficios similares como inscripciones -zk. Ergo también puede ser compatible con otras soluciones UTXO Layer 2 como la Lightning Network de Bitcoin.
+Al final, existen soluciones de escalado de capa 2 que se refieren a soluciones de escalado de capa fuera de la cadena. Hay varias soluciones fuera de la cadena como [Hydra](https://iohk.io/en/research/library/papers/hydrafast-isomorphic-state-channels/) y cadenas laterales para comprimir la congestiónen la blockchain y proporcionar beneficios similares como inscripciones -zk. Ergo también puede ser compatible con otras soluciones UTXO Layer 2 como la Lightning Network de Bitcoin.
 
 
 
