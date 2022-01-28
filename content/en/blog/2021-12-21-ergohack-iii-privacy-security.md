@@ -2,8 +2,8 @@
 title: "ErgoHack III: Privacy & Security"
 date: 2021-12-22T12:31:54.000Z
 author: Ergo Foundation
-authorPhoto: /img/uploads/ergo_foundation_logo_vertical.png
-blogPhoto: /img/uploads/ergohack33.png
+authorPhoto: /img/uploads/logo.png
+blogPhoto: /img/uploads/ergo-hack-3.png
 tags:
   - Building Ergo
 ---

@@ -3,7 +3,7 @@ title: Ergo AMA Wrap-Up, November 26
 date: 2021-11-30T01:08:45.513Z
 author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
-blogPhoto: /img/uploads/ama.png
+blogPhoto: /img/uploads/ama_wrapup.png
 tags:
   - Roadmap
   - Building Ergo

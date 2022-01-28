@@ -3,7 +3,7 @@ title: Ergo AMA Wrap-Up, January 14
 date: 2022-01-18T00:39:30.027Z
 author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
-blogPhoto: /img/uploads/03b1_ergoblog_cover_01112021.png
+blogPhoto: /img/uploads/ama_wrapup.png
 tags:
   - Ergo Team
 ---

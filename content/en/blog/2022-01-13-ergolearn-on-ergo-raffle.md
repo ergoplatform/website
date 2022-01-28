@@ -2,8 +2,8 @@
 title: ErgoLearn on Ergo Raffle
 date: 2022-01-13T19:31:07.577Z
 author: Ergo Platform
-authorPhoto: /img/uploads/1762.png
-blogPhoto: /img/uploads/05_ergoblog_cover_01112021.png
+authorPhoto: /img/uploads/symbol_bold__1080px__black.png
+blogPhoto: /img/uploads/news-blog-19.png
 tags:
   - Ergo Team
   - Building Ergo

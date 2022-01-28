@@ -3,7 +3,7 @@ title: "Ergo & Blockchain: Scalability and Adoption"
 date: 2022-01-18T17:48:31.980Z
 author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
-blogPhoto: /img/uploads/06_ergoblog_cover_01182022-1-.png
+blogPhoto: /img/uploads/scalability.png
 tags:
   - Building Ergo
 ---

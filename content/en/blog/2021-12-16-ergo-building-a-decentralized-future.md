@@ -3,7 +3,7 @@ title: "Ergo: Building a Decentralized Future"
 date: 2021-12-16T20:17:03.289Z
 author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
-blogPhoto: /img/uploads/ergf.jpg
+blogPhoto: /img/uploads/news-blog-23.png
 tags:
   - Building Ergo
 ---
