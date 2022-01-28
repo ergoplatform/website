@@ -31,6 +31,18 @@ collections:
         options: ['Building Ergo', 'Ergo Team', 'Roadmap', 'Partnerships']
         default: []
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'en_news'
+    label: 'English news'
+    folder: 'content/en/news'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string' }
+      - { label: 'Link', name: 'link', widget: 'string' }
   - name: 'cn_blog'
     label: 'Chinese blog post'
     folder: 'content/cn/blog'
@@ -53,9 +65,9 @@ collections:
         options: ['Building Ergo', 'Ergo Team', 'Roadmap', 'NFT', 'Partnerships']
         default: []
       - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'en_news'
-    label: 'English news'
-    folder: 'content/en/news'
+  - name: 'cn_news'
+    label: 'Chinese news'
+    folder: 'content/cn/news'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
@@ -65,9 +77,99 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Subtitle', name: 'subtitle', widget: 'string' }
       - { label: 'Link', name: 'link', widget: 'string' }
-  - name: 'cn_news'
-    label: 'Chinese news'
-    folder: 'content/cn/news'
+  - name: 'pt_blog'
+    label: 'Portuguese blog post'
+    folder: 'content/pt/blog'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Author', name: 'author', widget: 'string' }
+      - label: 'Author Photo'
+        name: 'authorPhoto'
+        widget: 'image'
+      - { label: 'Blog Photo', name: 'blogPhoto', widget: 'image' }
+      - label: "Tags"
+        name: "tags"
+        widget: "select"
+        multiple: true
+        options: ['Building Ergo', 'Ergo Team', 'Roadmap', 'NFT', 'Partnerships']
+        default: []
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'pt_news'
+    label: 'Portuguese news'
+    folder: 'content/pt/news'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string' }
+      - { label: 'Link', name: 'link', widget: 'string' }
+  - name: 'it_blog'
+    label: 'Italy blog post'
+    folder: 'content/it/blog'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Author', name: 'author', widget: 'string' }
+      - label: 'Author Photo'
+        name: 'authorPhoto'
+        widget: 'image'
+      - { label: 'Blog Photo', name: 'blogPhoto', widget: 'image' }
+      - label: "Tags"
+        name: "tags"
+        widget: "select"
+        multiple: true
+        options: ['Building Ergo', 'Ergo Team', 'Roadmap', 'NFT', 'Partnerships']
+        default: []
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'it_news'
+    label: 'Italy news'
+    folder: 'content/it/news'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string' }
+      - { label: 'Link', name: 'link', widget: 'string' }
+  - name: 'es_blog'
+    label: 'Spanish blog post'
+    folder: 'content/es/blog'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Author', name: 'author', widget: 'string' }
+      - label: 'Author Photo'
+        name: 'authorPhoto'
+        widget: 'image'
+      - { label: 'Blog Photo', name: 'blogPhoto', widget: 'image' }
+      - label: "Tags"
+        name: "tags"
+        widget: "select"
+        multiple: true
+        options: ['Building Ergo', 'Ergo Team', 'Roadmap', 'NFT', 'Partnerships']
+        default: []
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'es_news'
+    label: 'Spanish news'
+    folder: 'content/es/news'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
