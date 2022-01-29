@@ -3,7 +3,7 @@ title: "Ergoitaly.it "
 date: 2022-01-28T17:08:19.901Z
 author: ErGonario
 authorPhoto: /img/uploads/io2.png
-blogPhoto: /img/uploads/e85b-0lweam2829-1-.jpg
+blogPhoto: /img/uploads/ergoitaly.jpg
 tags:
   - Building Ergo
 ---
