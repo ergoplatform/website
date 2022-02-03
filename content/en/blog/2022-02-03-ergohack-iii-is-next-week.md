@@ -2,7 +2,7 @@
 title: ErgoHack III is Next Week!
 date: 2022-02-03T16:05:57.905Z
 author: Ergo Foundation
-authorPhoto: /img/uploads/symbol_bold__1080px__black.png
+authorPhoto: /img/uploads/logo.png
 blogPhoto: /img/uploads/02_ergoblog_cover_03012022-1-.png
 tags:
   - Building Ergo
