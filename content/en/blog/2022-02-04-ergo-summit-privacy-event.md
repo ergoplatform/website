@@ -5,7 +5,7 @@ author: Ergo Foundation
 authorPhoto: /img/uploads/logo.png
 blogPhoto: /img/uploads/03_ergoblog_cover_04022022-1-.png
 tags:
-  - Building Ergo
+  - Ergo Team
   - Partnerships
 ---
 <!--StartFragment-->
