@@ -6,6 +6,7 @@ authorPhoto: /img/uploads/symbol_bold__1080px__black.png
 blogPhoto: /img/uploads/04_ergoblog_cover_09022022-2-1-1-.png
 tags:
   - Building Ergo
+  - Roadmap
 ---
 <!--StartFragment-->
 
