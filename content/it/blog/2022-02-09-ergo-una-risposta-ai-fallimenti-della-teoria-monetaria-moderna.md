@@ -2,7 +2,7 @@
 title: "Ergo: una risposta ai fallimenti della teoria monetaria moderna"
 date: 2022-02-09T10:01:44.734Z
 author: Ergo platform, tradotto da Ergonario
-authorPhoto: /img/uploads/io2.png
+authorPhoto: /img/uploads/ergoitaly.jpg
 blogPhoto: /img/uploads/news-blog-30-1-.png
 tags:
   - Building Ergo
