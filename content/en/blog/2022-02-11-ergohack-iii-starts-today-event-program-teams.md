@@ -3,7 +3,7 @@ title: "ErgoHack III Starts Today: Event Program & Teams"
 date: 2022-02-11T10:44:34.995Z
 author: Ergo Foundation
 authorPhoto: /img/uploads/logo.png
-blogPhoto: /img/uploads/ergo-hack-3.png
+blogPhoto: /img/uploads/ergo-hack-3-1-1-.png
 tags:
   - Building Ergo
   - Ergo Team
