@@ -10,9 +10,9 @@ tags:
 ---
 <!--StartFragment-->
 
+
+
 Looking at the second day of updates for ErgoHack III, it is becoming clear that it will be very hard to choose a winner! Check out the latest work from the teams.
-
-
 
 
 
@@ -135,5 +135,9 @@ I have cancelled the pull request on Sigmaverse as this project is a development
 I have been studying the Categorical aspects of Petri Nets for some time now and did a Scala 3 implementation in a project I open sourced: <https://github.com/iandebeer/castanet>. The original intent was to compose applications from Knative Services under Kubernetes, but it requires a lot of Macro programming to work with GRPC interfaces.
 
 ### SuSy:
+
+* No updates available
+
+
 
 <!--EndFragment-->
