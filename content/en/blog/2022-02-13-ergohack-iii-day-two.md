@@ -12,10 +12,6 @@ tags:
 
 Looking at the second day of updates for ErgoHack III, it is becoming clear that it will be very hard to choose a winner! Check out the latest work from the teams.
 
-
-
-
-
 ## Community-Ledger Integration (Nautilus - Satergo - SAFEW)
 
 ### Nautilus
@@ -36,8 +32,6 @@ Currently working on the ledger integration. As of now, I'm able to connect and 
 
 Prepared the slides giving an overview of the customizable game engine of our Casino with a simple roulette game implementation.
 
-
-
 Wrote some documentation for core contracts:
 
 <https://github.com/nightowlcasino/ERGOHACK-III->
@@ -48,8 +42,6 @@ Wrote some documentation for core contracts:
 
 We were able to integrate Yoroi and Nautilus into anetaBTC and TosiDrop. We also finished our docs and new landing page. Lastly we are preparing Aneta Wallet demo video
 
-
-
 ### GuapSwap:
 
 Done: -Create constants: ErgoDex PoolIDs, TokenIDs, etc. 
@@ -58,17 +50,13 @@ Currently: -Create math helper functions for ergodex parameter calculations 
 
 Will do: -Continue implementation of functionality for the different commands: guapswap$ generate guapswap$ swap <proxy_address> 
 
-
-
 ### Delphi - Oracle Pools Interface:
 
 Have made decent progress through our task checklist with a stretch goal of getting through each one by end of EH3 
 
-
-
 \-API service providing for list of known oracle pools
 
-Pool Specific Data
+*Pool Specific Data*
 
 \-timeseries of datapoints
 
@@ -76,9 +64,7 @@ Pool Specific Data
 
 \-timeseries of active oracle (oracles submitting a datapoint)
 
-
-
-Oracle Specific Data:
+*Oracle Specific Data:*
 
 \-First posting date
 
@@ -88,9 +74,7 @@ Oracle Specific Data:
 
 \-timeseries of datapoints
 
-
-
-\- Balb: I’ve been splitting time. I first had to modify the connector first so that the correct data is parsed based off the url. Got all that working correctly now. Still need to create a way for downloading binaries.
+\- Balb: I’ve been splitting time. I first had to modify the connector first so that the correct data is parsed based off the URL. Got all that working correctly now. Still need to create a way for downloading binaries.
 
 ### Hype10Use: 
 
@@ -104,36 +88,28 @@ Planning our standard for domain token name
 
 Started smart contract design and integration with minting process
 
-
-
 ### SkyHarbor NFT Marketplace:
 
 Buying, selling, and cancelling sales on the blockchain are now done. More error testing and then we move on speeding up the website
 
-
-
 ### Stealth-Addresses:
 
-Team 1:
+*Team 1:*
 
 We embed our project into the mixer. Now we are testing the mixer and also working on the UI. Tomorrow I try to push the main project and our version of the mixer on GitHub and share the link
 
-
-
-Team 2:
+*Team 2:*
 
 I've added a PR for the necessary DHTuple access on the wallet - <https://github.com/ergoplatform/ergo-playgrounds/pull/24> Once that one lands, I could do a PR for adding it to ergo by example.
-
-
 
 ### Petri-Nets:
 
 I have cancelled the pull request on Sigmaverse as this project is a development framework and not an ErgoPlatform use case. Hope to make more progress today, a lot of foundational understanding is required to fill in the blanks. I did more reading than actual coding, but I still believe it will be a good fit. It is also clear to me that the scope is bigger than what a Hackathon intends, but it got me started and I now have momentum. I hope to at least prove the viability of the project with ErgoHack III.
 
-
-
 I have been studying the Categorical aspects of Petri Nets for some time now and did a Scala 3 implementation in a project I open sourced: <https://github.com/iandebeer/castanet>. The original intent was to compose applications from Knative Services under Kubernetes, but it requires a lot of Macro programming to work with GRPC interfaces.
 
 ### SuSy:
+
+* No updates available
 
 <!--EndFragment-->
