@@ -10,11 +10,11 @@ tags:
 ---
 *Seu portal para o universo de dApps em Ergo está se abrindo.*
 
-Ergo possui uma tecnologia maravilhosa e desenvolvedores muito talentosos. Porém, como uma plataforma descentralizada e empoderada pela comunidade, não é sempre fácil de saber o que está acontecendo o tempo inteiro. Diferentes pessoas estão desenvolvendo diferentes dApps e casos de uso, formal ou informalmente. Não é sempre fácil conectar esses projetos à mesma base de usuaŕios para criação de um efeito de rede, tão importante em DeFi.
+Ergo possui uma tecnologia maravilhosa e desenvolvedores muito talentosos. Porém, como uma plataforma descentralizada e empoderada pela comunidade, não é sempre fácil de saber o que está acontecendo o tempo inteiro. Diferentes pessoas estão desenvolvendo diferentes dApps e casos de uso, formal ou informalmente. Não é sempre fácil conectar esses projetos à mesma base de usuários para criação de um efeito de rede, tão importante em DeFi.
 
 O [Sigmaverso](https://sigmaverse.io) é sobre isso. Sigmaverso é um portal que reúne todo o ecossistema dApp de Ergo: um lugar onde usuários podem encontrar todas as funcionalidades legais que desenvolvedores da comunidade estão construindo em Ergo. Tudo em um lugar só.
 
-A ideia é que desenvolvedores possam criar seus apps e então listá-los no Sigmaverse usando GitHub.
+A ideia é que desenvolvedores possam criar seus apps e então listá-los no Sigmaverso usando GitHub.
 
 Conforme se torne o website padrão para acesso a dApps, mais e mais desenvolvedores adicionarão os seus, tornando mais fácil o aprendizado sobre novas inclusões no ecossistema. Uma barra de buscas permite que usuários possam procurar por um tipo específico de dApp.
 
@@ -26,7 +26,7 @@ Até agora, cinco dApps estão listados no Sigmaverso:
 * [Pools Oráculo](https://explorer.ergoplatform.com/en/oracle-pools-list): oráculos através de uma abordagem descentralizada usando UTXO estendidos ([leia mais](https://ergoplatform.org/pt/blog/2020-08-31-ergos-oracle-pools-and-what-they-mean-for-the-ecosystem/))
 * [Tesouro de Conhecimento-Zero](https://github.com/anon-real/DistributedSigsServer): crie assinaturas digitais conjuntas com condições sobre medida ([leia mais](https://ergoplatform.org/pt/blog/2020-09-04-announcing-the-zk-treasury-on-ergo/))
 
-Para incluir seu dApp no Sigmaverso, crie uma nova apsta em https://github.com/ergoplatform/sigmaverse/applications com o nome do seu dApp. Dentro desta pasta, crie um novo arquivo chamado *overview.md*, com a seguinte estrutura:
+Para incluir seu dApp no Sigmaverso, crie uma nova pasta em https://github.com/ergoplatform/sigmaverse/applications com o nome do seu dApp. Dentro desta pasta, crie um novo arquivo chamado *overview.md*, com a seguinte estrutura:
 
 ```markdown
 ------
