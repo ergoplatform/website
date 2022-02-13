@@ -1,11 +1,11 @@
 ---
 title: Resumo do "Perguntas e Respostas" de Ergo, 14 de Janeiro de 2022
 date: 2022-01-18T00:39:30.027Z
-author: Ergo Platform
+author: Plataforma Ergo
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/03b1_ergoblog_cover_01112021.png
 tags:
-  - Ergo Team
+  - Equipe Ergo
 ---
 <!--StartFragment-->
 
