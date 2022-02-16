@@ -66,13 +66,13 @@ Ergo-DNS is a decentralized domain service on the Ergo blockchain. Web 2 domains
 
 <https://www.youtube.com/watch?v=G7glbtnAnMY> 
 
-### **SkyHarbor NFT Marketplace:**
+### **SkyHarbor NFT Marketplace**
 
 The SkyHarbor team worked on UI improvements, the dApp connector and fast minting. They are planning to implement verified artist pages to prevent fraud. Buying, selling, and minting contracts have been constructed. 
 
 <https://www.youtube.com/watch?v=nnLmTG-43m8> 
 
-### **Stealth-Addresses:**
+### **Stealth-Addresses**
 
 *Team 1:*
 
@@ -84,13 +84,13 @@ Team 2 tried to implemented the approach from the formerly proposed stealth-addr
 
 <https://github.com/ergoplatform/ergo-playgrounds/pull/24> 
 
-### **Castanets:**
+### **Castanets**
 
 The Castanet project is taking a wider approach to building dApp infrastructure. It aims to make dApps more composable. To build this out, they use a coloured petri net for smart contract orchestration and testing from the heads-and-tails contract example for generalizing the concept from there. The scope of the project is bigger than a hackathon project.
 
 <https://github.com/iandebeer/ergo-castanet/blob/main/docs/Conclusion.md> 
 
-### **SuSy-Bridge:**
+### **SuSy-Bridge**
 
 The SuSy team did not end up submitting to ErgoHack. Due to the recent Solana Wormhole hack, they are reconsidering the use of Wormhole.
 
