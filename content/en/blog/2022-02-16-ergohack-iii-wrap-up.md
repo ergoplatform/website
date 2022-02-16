@@ -76,11 +76,11 @@ The SkyHarbor team worked on UI improvements, the dApp connector and fast mintin
 
 *Team 1:*
 
-Stealth-addresses are addresses that one can create via their private wallet address. They are useful when the receiver does not want to share their address while receiving a transaction. People or institutions can use this for privacy-preserving commerce or private crowdfunding to protect themselves from being targeted by malicious actors. The problem is that it is different from sending a private transaction because your address needs to scan the stealth boxes to receive the transaction. The team developed stealth-scanner and UI integration in ErgoMixer. <https://github.com/aragogi/Stealth-doc> 
+Stealth-addresses are addresses that one can create via their private wallet address. They are useful when the receiver does not want to share their address while receiving a transaction. People or institutions can use this for privacy-preserving commerce or private crowdfunding to protect themselves from being targeted by malicious actors. For this, they created a sign-in approach that can be used with any wallet, rather than using the wallets produced for stealth-address use. The project is continuing to research and develop. The problem is that it is different from sending a private transaction because your address needs to scan the stealth boxes to receive the transaction. The team developed stealth-scanner and UI integration in ErgoMixer. <https://github.com/aragogi/Stealth-doc> 
 
 *Team 2:*
 
-Team 2 tried to develop a newer approach from the formerly proposed stealth-address design. For this, they created a sign-in approach that can be used with any wallet, rather than using the wallets produced for stealth-address use. The project is continuing to research and develop.
+Team 2 tried to implemented the approach from the formerly proposed stealth-address design in the Ergo forum. 
 
 <https://github.com/ergoplatform/ergo-playgrounds/pull/24> 
 
