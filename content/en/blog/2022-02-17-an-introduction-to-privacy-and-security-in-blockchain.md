@@ -3,7 +3,7 @@ title: An Introduction to Privacy and Security in Blockchain
 date: 2022-02-17T18:26:49.358Z
 author: Ergo Platform
 authorPhoto: /img/uploads/symbol_bold__1080px__black.png
-blogPhoto: /img/uploads/intrprivsec-1-.png
+blogPhoto: /img/uploads/intrprivsec-2-.png
 tags:
   - Building Ergo
 ---
