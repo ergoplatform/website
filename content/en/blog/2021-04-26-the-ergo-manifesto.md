@@ -2,7 +2,7 @@
 title: The Ergo Manifesto
 date: 2021-04-26T18:19:48.338Z
 author: Ergo Foundation
-authorPhoto: /img/uploads/logotype_black_circle.svg
+authorPhoto: /img/uploads/logo.png
 blogPhoto: /img/uploads/ergomanifesto.png
 tags:
   - Ergo Team
