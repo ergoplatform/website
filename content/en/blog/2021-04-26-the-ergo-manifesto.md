@@ -11,7 +11,7 @@ tags:
 
 ##### We believe this is achievable while maintaining basic principles that benefit the well-being of all humans. Core principles that have been central to human rights and values must be maintained as our technological capacities evolve. The built tools must enrich human value rather than subjugate humans in systems of surveillance and control. 
 
-## By Kushti- With Help From the Ergo Team
+## **By Kushti- With Help From the Ergo Team**
 
 A lot of blockchain-related news these days is saying that a bank X or a corporation Y will use a "blockchain" to "reduce costs". 
 
