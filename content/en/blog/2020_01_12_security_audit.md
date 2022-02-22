@@ -3,7 +3,7 @@ title: Security Audit (by Jean Philippe Aumasson)
 date: 2020-01-12
 draft: false
 author: Ergo Team
-authorPhoto: /img/logotype_black_circle.svg
+authorPhoto: /img/uploads/logotype_black_circle.svg
 blogPhoto: /img/blog/security.jpg
 tags:
   - Ergo Team
