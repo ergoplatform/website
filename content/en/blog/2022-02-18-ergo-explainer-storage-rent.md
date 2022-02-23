@@ -11,7 +11,7 @@ tags:
 
 **tl;dr: Storage rent is a fee for long term storage on the Ergo blockchain. Four years from your last transaction, you will be charged ~0.14 ERG and a transaction fee to pay for the costs of storing your digital information.**  
 
-![](https://lh4.googleusercontent.com/eDJP1o6VTnR9PzwRw_7vX-oTcuQQQvIvsS1UnWfJibxfQT77GwGRX7N_aTa1VbrNKK_IFpDJxao0WU7Jnnv3lFAE1gsEcmvjKXwyxOE3EQkEotT50Ahj_O7UakASb6xxGmBAJ7sJ)
+![](/img/uploads/group-1.png)
 
 ## Storage on the Ergo Blockchain
 
