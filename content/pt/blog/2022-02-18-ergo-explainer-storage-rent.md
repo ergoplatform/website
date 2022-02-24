@@ -13,7 +13,7 @@ tags:
 
 
 
-![](https://lh4.googleusercontent.com/eDJP1o6VTnR9PzwRw_7vX-oTcuQQQvIvsS1UnWfJibxfQT77GwGRX7N_aTa1VbrNKK_IFpDJxao0WU7Jnnv3lFAE1gsEcmvjKXwyxOE3EQkEotT50Ahj_O7UakASb6xxGmBAJ7sJ)
+![](/img/uploads/group-1.png)
 
 # Armazenamento na Blockchain Ergo
 
