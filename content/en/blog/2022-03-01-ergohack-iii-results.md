@@ -1,6 +1,6 @@
 ---
 title: ErgoHack III Results
-date: 2022-03-01T06:05:18.417Z
+date: 2022-03-01T06:09:22.842Z
 author: Ergo Foundation
 authorPhoto: /img/uploads/logo.png
 blogPhoto: /img/uploads/ergohack3results-2-1-1-.png
