@@ -18,35 +18,25 @@ For this hackathon, there were three main prizes as well as several special/part
 
 ## **ErgoHack III Winners**
 
-
-
 Based on the tabulated scores we are pleased to announce the following winners:
-
-
 
 ### **1st Place - Stealth-Addresses Team 1** 
 
 Stealth-addresses help to obfuscate receiving payments and are important for privacy-preserving commerce or private crowdfunding. This team's submission aligned perfectly with the theme of this recent ErgoHack III. They completed implementation of their project and this feature is now integrated within ErgoMixer.
 
-### <https://github.com/aragogi/Stealth-doc> 
-
-
+<https://github.com/aragogi/Stealth-doc> 
 
 ### **2nd Place - SAFEW - Simple And Fast Ergo Wallet** 
 
 SAFEW is a wallet that was developed during the hackathon and it is a much faster alternative to Yoroi. The team worked on Ledger integration and they made a great deal of progress, while providing good documentation. As part of their work, the team developed support for ErgoMixer and Ergo Pay implementation. 
 
-### <https://docs.ergoplatform.com/events/pdf/SAFEW_ergohack3_report.pdf> 
-
-
+<https://docs.ergoplatform.com/events/pdf/SAFEW_ergohack3_report.pdf> 
 
 ### **3rd Place - Nautilus**
 
 Captain Nemo (from Nautilus) has quickly become an Ergo community celebrity! They have been incredibly active and seem to have worked tirelessly to design and create an Ergo web-extension wallet. Captain Nemo was a very busy participant in the ErgoHack chatrooms during the hackathon and was often assisting other wallets and dApp teams with their development and integration. The Nautilus wallet features full dApp connectivity and will also support integration with the Ledger hardware wallet.
 
-### <https://github.com/capt-nemo429/nautilus-wallet/pull/6/files> 
-
-
+<https://github.com/capt-nemo429/nautilus-wallet/pull/6/files> 
 
 As was mentioned earlier, there are several other prizes to be awarded by Dan Friedman, Joseph Armeanio, and anon2020. 
 
@@ -60,15 +50,9 @@ In the most recent [Developer Update](https://www.youtube.com/watch?v=xo7NvKsxYR
 
 3rd place GuapSwap 100$ in ERG
 
-
-
 This last ErgoHack had so much talent and it is clear the future of Ergo is looking very bright with each subsequent hackathon. These projects explored privacy and security and have added a great deal of functionality and infrastructure to the Ergo ecosystem and will continue to improve their projects long after this competition. For a complete overview of all the projects that participated in ErgoHack III, please see the following blog post: [ErgoHack III Wrap-Up](https://ergoplatform.org/en/blog/2022-02-16-ergohack-iii-wrap-up/).
 
-
-
 ### **ErgoHack III was adjudicated by the following jury:**
-
-
 
 #### Alexander Chepurnoy
 
@@ -76,31 +60,21 @@ Alexander Chepurnoy, aka Kushti, is an experienced blockchain developer, speaker
 
 Alexander is a graduate of the State Petersburg National Research University, where he also taught a course on cryptography and blockchain technology. He is widely cited on Google Scholar and has spoken at numerous blockchain events and conferences worldwide.
 
-
-
 ### Mohammad Hasan Samadani
 
 Mohammad (mhs_sam) has a PhD in computer science and over 12 years of experience in security and software development as a product owner, researcher, and team leader. He developed the ERGO mining software, Stratum server, and ergopool (smart contract based pool to bypass pool-resistancy of Autolykos v1) and became an ERGO Foundation Board Member in 2020.
-
-
 
 ### Ilya Oskin
 
 Ilya Oskin is an experienced software engineer and he has been a core developer at Ergo since the launch of the project. Ilya has a degree in economics from The Russian Presidential Academy of National Economy and Public Administration. He is also the supervisor at GeekBrains, an online educational platform devoted to blockchain development. Ilya is the founder of ErgoDEX where he is currently working as the lead developer for the project.
 
-
-
 ### Alexander Slesarenko (Morphic)
 
 Slesarenko is an ERGO Foundation Board Member and graduate of Applied Mathematics from Udmurt State University. He has extensive experience in software development as a team leader, architect and researcher. He worked as Team Leader at Huawei Research Lab focusing on developing languages and compilers for high-performance big data processing. Alexander is a Blockchain Core Developer and Lead Developer of ErgoScript at ERGO.
 
-
-
 ### Mark Glasgow
 
 Mark is an Ergo Foundation Board member and performs several roles in Ergo. As a Computing Science graduate with a personal passion for improving inclusive systems, he is also the Technical Director for Disabled Students UK CIC - a non-profit named as one of the most influential disability-led organizations in the UK.
-
-
 
 ### Bruno Woltzenlogel Paleo
 
