@@ -1,24 +1,22 @@
 ---
-title: "Security Audit (by Jean Philippe Aumasson)"
+title: Security Audit (by Jean Philippe Aumasson)
 date: 2020-01-12
 draft: false
-author: "Ergo Team"
-authorPhoto: "/img/logotype_black_circle.svg"
-blogPhoto: "/img/blog/security.jpg"
-tags: ["Ergo Team"]
+author: Ergo Team
+authorPhoto: /img/uploads/logotype_black_circle.svg
+blogPhoto: /img/blog/security.jpg
+tags:
+  - Ergo Team
 ---
-
-We would like to announce that Ergo has successfully passed security audit of certain (most critical) parts of the code. This time the audit was done by Jean-Philipee Aumasson (aka veorq, [https://aumasson.jp/](https://aumasson.jp/) ).
+We would like to announce that Ergo has successfully passed security audit of certain (most critical) parts of the code. This time the audit was done by Jean-Philipee Aumasson (aka veorq, <https://aumasson.jp/> ).
 
 The detailed report is below. Nothing critical is found. Comments on issues found:
 
 1. On wallet password, we'll provide a recommendation in next versions of the protocol client. Not sure hard enforcement on password will take place, but we'll do more consultations on this.
-
 2. Changing "n" and "k" parameters makes sense when launching new network only. Changing this parameters in mining node will make blocks produced invalid for other nodes. Changing this parameters in protocol client means going on another fork (blocks coming from the honest protocol participants will be rejected). So no need for extra checks maybe, as people launching new networks will set "n" and "k" properly.
-
 3. Currently the Ergo node (as well as other blockchain protocol clients and wallets we're aware of, as well as cryptographic libraries we're using) do not provide protection from side-channel attacks running locally (e.g. timing attacks or memory inspection by malware or viruses). So please protect machines you're running wallets on!  
 
-==========================================================================================================
+\==========================================================================================================
 
 % Ergo security assessment % Jean-Philippe Aumasson % 07/Dec/19
 
@@ -46,7 +44,6 @@ proving and verification routines described in its Appendix A.
 ​Implementation challenges are then to:
 
 * Define encoding of the proofs that are safe and efficient, and implement serialization and deserialization that always succeeds in processing valid input, and that always gracefully fails to process invalid input.
-
 * Implement the proving and verification functionalities correctly, in compliance with the specification, and most importantly such that no invalid statement can successfully pass verification.
 
 We reviewed these two aspects, based on the code in the repository [sigmastate-interpreter](https://github.com/ScorexFoundation/sigmastate-interpreter), and on the [ErgoScript paper](https://ergoplatform.org/docs/ErgoScript.pdf), carefully comparing the intended behavior (in Appendix A) with the actual behavior as implemented.
@@ -79,10 +76,8 @@ Ergo's wallet functionality enables its users to store a secret on disk and reco
 ​The first time a wallet is create, the `InitWallet` command does the following:
 
 * Generate `settings.walletSettings.seedStrengthBits` random bits, as initial entropy. [By default](https://github.com/ergoplatform/ergo/blob/master/src/main/resources/reference.conf), 160 bits are generated.
-
 * Generate a BIP39 from the random bits generated, which can be seen as an encoding of the entropy bits. The standard BIP39 logic is used, with optional password.
 * Derive a seed from the mnemonic using BIP39's PBKDF2-based derivation logic.
-
 * Encrypt this seed to disk with AES-GCM, using a random nonce, and a key derive from the password using PBKDF2-HMAC-SHA256 with [128000](https://github.com/ergoplatform/ergo/blob/master/src/test/resources/application.conf#L107) iterations, using a random salt.
 
 To unlock a wallet already created, a user provides the password and the wallet attempts to decrypt the stored data.
@@ -92,13 +87,13 @@ To unlock a wallet already created, a user provides the password and the wallet 
 ​The two risks we identified here are:
 
 * The absence of checks on the password's length: since the password is sufficient to access the seed given the wallet's on-disk stored secret, the password should in theory have at least as much entropy as the mnemonic, and in practice should be practically hard to crack. We thus recommend to enforce a minimal password length, for example of 16 characters.
-
 * Copies of secret values (password, seed, and derive private keys) are likely to remain in memory after wallet software execution, which is an intrinsic limitation garbage-collected languages such as Scala.
 
 Another process or user sharing the same memory address space could potentially recover the secrets, and they could also appear in crash dumps. To the best of our knowledge, there is no effective mitigation in pure Scala.
 
 ​
-# PoW validation
+
+## PoW validation
 
 ​After previously reviewing the security of the Autolykos PoW, we performed another round of review focusing on its latest verification logic, and notably the changes in the commit [eb0f85a](https://github.com/ergoplatform/ergo/commit/eb0f85ac48b0ee8194c12369faf4cc5f16954af9).
 
@@ -110,6 +105,5 @@ Another process or user sharing the same memory address space could potentially 
 ​We believe the following points should be addressed:
 
 * Stricter validation of `k` and `n`: although the class enforces `k<=32` (number of elements in the solution) and `n<31` (log2 of the total number of elements), weak could still be created from the authorized parameters. The `validate()` function may therefore have additional validation that `n` and `k` are equal to the intended
-values.
-
+  values.
 * Assert that `k` and `n` are positive values, since currently negative ones (as `Int`s) would pass the `assert` statements.

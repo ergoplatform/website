@@ -15,9 +15,7 @@ While cryptocurrencies address transaction fees as an atomic concept, the paper 
 
 ![Figure A.](/img/uploads/3d.png)
 
-
-
-# Blockchain Costs
+## Blockchain Costs
 
 Proof of Work blockchain technology relies on miners to guard the integrity of the blockchain. Miner resources, such as memory and electricity, are costly and therefore a revenue scheme is needed to incentivize miners. Miner incentives are currently comprised of the block rewards and transaction fees. Transactions fees are an important component in preventing spam attacks that exhaust miner resources.
 
@@ -31,7 +29,7 @@ The 3-dimensional scale shown above is based on storage-oriented load, computati
 
 In Ergo, the total size of the state is the sum of the sizes of all UTXOs. That is to say that this data contains the execution of smart contracts, all the transactions and nodal information. Because the memory resources provided by miners are limited, a state deterioration fee should be added to miners' revenue streams in order to encourage decreasing the system load while securing future miners’ contribution.
 
-# Storage Rent
+## Storage Rent
 
 Unreasonable state growth is an economic problem and it can lead to spam attacks and network congestion. Another problem could be the deflation of a cryptocurrency if coins are lost and/or forgotten. So instead of being used as the base for smart contracts, the currency becomes unreasonably scarce, making the system heavy and limiting coin flow.
 
@@ -45,7 +43,7 @@ For the purposes of research and this article, it is worth noting that the conce
 
 “Demurrage forces freicoins to circulate at deliberately high rates. Separation of money's roles as store-of-value and medium-of-exchange allows money to flow when it is needed, in good times and bad. “
 
-# Conclusions
+## Conclusions
 
 An important consequence of storage fees is that they provide additional rewards (besides block and transaction rewards) for miners.
 

@@ -2,7 +2,7 @@
 title: O Manifesto Ergo
 date: 2021-04-26T18:19:48.338Z
 author: Fundação Ergo
-authorPhoto: /img/uploads/logotype_black_circle.svg
+authorPhoto: /img/uploads/logo.png
 blogPhoto: /img/uploads/ergomanifesto.png
 tags:
   - Equipe Ergo
@@ -13,7 +13,7 @@ tags:
 
 #####  Acreditamos que isso pode ser alcançado mantendo os princípios básicos que norteiam o bem-estar de todos os humanos. Os princípios fundamentais que têm sido centrais para os direitos e valores humanos devem ser mantidos à medida que nossas capacidades tecnológicas evoluem. As ferramentas construídas devem enriquecer os valores humanos, em vez de subjugá-los em sistemas de vigilância e controle.
 
-# Por Kushti- Com ajuda do time de desenvolvimento da Ergo
+## **Por Kushti- Com ajuda do time de desenvolvimento da Ergo**
 
 Atualmente, muitas notícias relacionadas a blockchains dizem que um banco X ou a empresa Y usará uma “blockchain” para “reduzir custos”.
 
