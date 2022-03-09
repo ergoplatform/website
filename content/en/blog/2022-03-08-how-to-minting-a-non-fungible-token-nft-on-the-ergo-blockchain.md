@@ -35,8 +35,9 @@ For this example, let’s assume we are using Nautilus on Google Chrome. There i
 
 1. In your browser, click on the Nautilus wallet, either by clicking on the Nautilus icon (pinned) or by clicking the Puzzle Piece icon (both in the upper right corner of your browser) and selecting Nautilus wallet from the list.
 
-   ![extensions](/img/uploads/extentions.png "Extensions")
-2. In the Nautilus wallet, click on Receive, the middle icon at the top. Then, copy the default address of your Ergo Wallet.
+![extensions](/img/uploads/extentions.png "Extensions")
+
+1. In the Nautilus wallet, click on Receive, the middle icon at the top. Then, copy the default address of your Ergo Wallet.
 
 ![](https://lh3.googleusercontent.com/ivdhFyA8mfVKBsvZ0rHTRE3STyT_AfhpqxDx1YeWAZEqIoztpMNIIWHHKhshp8inJ8eTs1-qpiMiQgfsjvOXUbHhGsk69yOCN_ENMAThArXZVoGeraXwHptZwwVbvhN6MDAMEzDN)
 
