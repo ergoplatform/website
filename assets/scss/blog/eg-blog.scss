@@ -303,6 +303,10 @@
         list-style: disc;
       }
 
+      ol {
+        list-style: decimal;
+      }
+
       ol > li,
       ul > li {
         font-size: 18px;
