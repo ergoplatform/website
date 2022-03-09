@@ -47,10 +47,8 @@ For this example, let’s assume we are using Nautilus on Google Chrome. There i
 ![](https://lh5.googleusercontent.com/jYSJbFvbhvbvsmvmFgkpWb1d98JF4MaruMXwIdVx7JxNEOS5Ck0Dv7lsW2huUPKapD9xYBY5c8qOHqBNNIWyvPmJpG9MLqMr62zYVyaA7zBpypK-XwwS3TaC-SfspxUD8Vwlg-Lt)
 
 5. Click on Any Wallet 
-6. Paste your wallet address into the box - this will be the receiving address you copied from your Nautilus wallet. It should be a string of 51 characters that are a mix of numbers and upper and lower case letters. For example:
-
-*9g1p6UU8XoAeU4yGPLpbTHYiG8aBHwfCFzQqJZrfzuLnmF3zb7P* 
-
+6. Paste your wallet address into the box - this will be the receiving address you copied from your Nautilus wallet. It should be a string of 51 characters that are a mix of numbers and upper and lower case letters. For example: \
+   *9g1p6UU8XoAeU4yGPLpbTHYiG8aBHwfCFzQqJZrfzuLnmF3zb7P* 
 7. Then, click the Save button.
 8. You will be returned to the main Ergo Auction web page.
 9. Click the Add button, which is the first icon in the top right corner. Then, select Create Artwork from the pull-down menu.
