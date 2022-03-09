@@ -7,8 +7,6 @@ blogPhoto: /img/uploads/01_ergoblog_cover_08032022.png
 tags:
   - Building Ergo
 ---
-
-
 # What is an NFT?
 
 When you have a unit of currency, such as the U.S. dollar, it is interchangeable with any other U.S. dollar. One Euro is the same as any other Euro. Fungible is just another word for interchangeable.
@@ -29,7 +27,7 @@ If you want to participate as a creator in the NFT marketplace, you will need to
 
 ## Visual Reference
 
-![](https://lh6.googleusercontent.com/MV793A7GVZWgIDIZCu7zxyRHW7reQ_4N6As6FVqqG3NLRTjj-5VhVbkTZ9TjXM5PqgVwsdrDME0bQWDuWAVXIXkgmdV4zfgFRZiiqM0DqXujoquDMZM3V5HNsnn7hE5-1TqthW88) Wallet,   ![](https://lh4.googleusercontent.com/qnCOWAmHWBVsjTCFIVt6I0jD6JKq6Pk83fXHm1TzBb-BKGfs73d3ZJXFO1_jUUioyjUaoSqcd4glYZsHtD6_6Nj8MGJfGzBoKa7DZGg20rVfD0cYCPvvBjCk27AmA40Fm-bOrdYB) Add,  ![](https://lh3.googleusercontent.com/SsEqbAyvO-XfhdS6rPM17ww41BLSdil7lR3oUW-k8d90QU9BN6H53K2RL4TbLYV1LcE5X-stmOj7g46Q93IP4Yzyq8gUHXcuF74fdKbkOtQePJs8MczRF4lUMSywHuKhetqCq8yy) Nautilus Icon, ![](https://lh4.googleusercontent.com/sV4HJIKmnO1F9G-fzyHzJICJ0dYZRaFEJCXdX4cv8YYRhWYqt-gr_4MkTEowScv0MzvomFwNXUN1XvITeu0uE4cQ9IumNOtbV6QjzSY-UjVutwYRkZZBMB07QvVBLW-MbXecorFE) Puzzle Piece icon
+![Visual reference](/img/uploads/group-17.png "Visual reference")
 
 ## Minting an NFT
 
