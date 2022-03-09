@@ -27,7 +27,7 @@ If you want to participate as a creator in the NFT marketplace, you will need to
 
 ## Visual Reference
 
-![Visual reference](/img/uploads/group-17.png "Visual reference")
+![Visual reference](/img/uploads/group-17-1-.png "Visual reference")
 
 ## Minting an NFT
 
