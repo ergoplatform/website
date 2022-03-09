@@ -33,7 +33,7 @@ If you want to participate as a creator in the NFT marketplace, you will need to
 
 For this example, let’s assume we are using Nautilus on Google Chrome. There is 1 ERG in our wallet, and we are making an NFT of a photograph saved as a PNG file on our computer.
 
-1. In your browser, click on the Nautilus wallet, either by clicking on the Nautilus icon (pinned) or by clicking the Puzzle Piece icon (both in the upper right corner of your browser) and selecting Nautilus wallet from the list. 
+1. In your browser, click on the Nautilus wallet, either by clicking on the Nautilus icon (pinned) or by clicking the Puzzle Piece icon (both in the upper right corner of your browser) and selecting Nautilus wallet from the list.
 
  ![](https://lh3.googleusercontent.com/xog9W4ZLxdcS2kkeNRDNXmYQsWdCiJzY7h0HvxsewrO4IvR8ACu0xqONxSNsKz28Jz9RJPxYaD9FaN2JoUEW9zpe6jyMSRSkzWgXzxaXIBlR3vqdLocEiSrz8Uikx0wuEdXQP2GQ)
 
