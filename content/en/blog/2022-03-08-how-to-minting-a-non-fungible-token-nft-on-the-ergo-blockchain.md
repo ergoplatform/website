@@ -7,7 +7,7 @@ blogPhoto: /img/uploads/01_ergoblog_cover_08032022.png
 tags:
   - Building Ergo
 ---
-# What is an NFT?
+## What is an NFT?
 
 When you have a unit of currency, such as the U.S. dollar, it is interchangeable with any other U.S. dollar. One Euro is the same as any other Euro. Fungible is just another word for interchangeable.
 
@@ -15,7 +15,7 @@ Non-fungible means unique. One house is not the same as another, even if their p
 
 We are still in the early stages of understanding and fulfilling the full potential of NFTs. They can be used to represent identity, property, artwork, assets, legal documents and much more. Therefore, NFTs are like digital deeds. When they are on a blockchain, NFTs can be a [store of value](https://taschalabs.com/nft-is-better-than-diamond-heres-why/) because they are limited in supply, durable and a community of buyers and sellers decides their value. With these conditions, NFTs become digital assets which can be traded. As with any kind of trading, traders need a marketplace. On the Ergo blockchain, the main marketplace for NFTs is [The Ergo Auction House](https://ergoauctions.org/).
 
-# How to Mint an NFT?
+## How to Mint an NFT?
 
 If you want to participate as a creator in the NFT marketplace, you will need to learn how to mint NFTs. To start, there are a few requirements.
 
@@ -37,7 +37,7 @@ For this example, let’s assume we are using Nautilus on Google Chrome. There i
 
 ![extensions](/img/uploads/extentions.png "Extensions")
 
-  2. In the Nautilus wallet, click on Receive, the middle icon at the top. Then, copy the default address of your Ergo Wallet.
+2. In the Nautilus wallet, click on Receive, the middle icon at the top. Then, copy the default address of your Ergo Wallet.
 
 ![](https://lh3.googleusercontent.com/ivdhFyA8mfVKBsvZ0rHTRE3STyT_AfhpqxDx1YeWAZEqIoztpMNIIWHHKhshp8inJ8eTs1-qpiMiQgfsjvOXUbHhGsk69yOCN_ENMAThArXZVoGeraXwHptZwwVbvhN6MDAMEzDN)
 
