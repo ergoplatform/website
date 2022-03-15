@@ -29,7 +29,8 @@ The following is a summary of questions posed by the audience during this AMA. L
 
 * Sure, it’s been in discussion
 * It’s one of those things that if you’re planning quantum computing and resistance to it, you’re fighting ghosts
-* * Those adversaries aren’t here yet
+
+  * Those adversaries aren’t here yet
   * The difficulty with ghost fighting is you are going to struggle to know what you are going against
 * Luckily, there are “theoretical” ways to resist a quantum adversary - it could be a long time away
 * Hard to predict evolution of technology
@@ -40,7 +41,8 @@ The following is a summary of questions posed by the audience during this AMA. L
 *Answered by Dan Friedman*
 
 * From the Cardano side, have been discussing this on the research level
-* * About quantum computing and quantum resistance
+
+  * About quantum computing and quantum resistance
 * 2018 was supposed to be the year
 * 2022, still thinking about it; it’s not mainstream
 * Needs to be monitored but doesn’t see it happening tomorrow
@@ -56,7 +58,8 @@ The following is a summary of questions posed by the audience during this AMA. L
 * Ergo is in the early stage of rolling out toolkit and documentation
 * Same is true in terms of Cardano
 * Goguen rolled out last fall
-* * 3-4 months in
+
+  * 3-4 months in
 * Need to start with a solid foundation and lots of documentation
 * Once that happens, then people use the composability of UTXO and start to build
 * It’s advancing pretty quickly on both Ergo and Cardano
@@ -98,19 +101,24 @@ The following is a summary of questions posed by the audience during this AMA. L
 *Answered by Joe Armeanio*
 
 * You have two things you can consider
-* * 1st - inflation of tokenomics
-  * * Every project has some inflation or emission schedule
+
+  * 1st - inflation of tokenomics
+
+    * Every project has some inflation or emission schedule
     * Every project has a certain element of inflation
     * How much is too much?
     * How much is way too much?
     * How much is insane?
     * This is something we are kind of seeing tested in real time
   * Looking at it in a more practical sense it has to do with use and utility
-  * * Beyond the emission of the cryptocurrency
-    * * You have the ability to borrow
+
+    * Beyond the emission of the cryptocurrency
+
+      * You have the ability to borrow
       * Have the certain interest rate or yield on top of the cost of borrowing - often based on demand
   * Look at it from a demand and use case side (can see with some stablecoins on larger exchanges that are actually viable)
-  * * The result of economic activity vs just a programmed inflation rate
+
+    * The result of economic activity vs just a programmed inflation rate
     * Doesn’t think that people in the industry necessarily look at those things as separate - they just see a percentage
     * What is the energy or economic activity behind that particular percentage?
     * If it’s based on use, he believes it’s more sustainable
@@ -132,13 +140,15 @@ The following is a summary of questions posed by the audience during this AMA. L
 * It might take a very small amount and lock it into the oracle pools
 * The most interesting thing will not necessarily be how it locks ERG to that framework, it’s rather the complexity and variety of DeFi that can be built on top of Ergo
 * Ergo has a unique approach to oracles 
-* * Traditionally it’s more point to point data
+
+  * Traditionally it’s more point to point data
   * With Ergo, trying to disrupt that model by securing it by having many points to many points that’s aggregated to a single point which gives some additional assurances
 * That can be plugged in on top of Ergo
 * Can be bridged to other chains through a gateway or API
 * Something that will develop based on demand
 * Does think we will see oracle data on top of Cardano
-* * Right now the use case for oracle data on both is still something that is growing
+
+  * Right now the use case for oracle data on both is still something that is growing
 
 ***Who are you ErgoHack 3 winners, Dan?***
 
@@ -159,12 +169,14 @@ The following is a summary of questions posed by the audience during this AMA. L
 * It’s a question of having specialty circuits and where are they going to go?
 * Ergo adjusts the memory table so if someone built an integrated circuit for the memory table today, they may run into issues when the memory table is adjusted 
 * Centralization of mining will probably occur to some degree
-* * Imagines that as demand increases
-  * * Have people try to arbitrage the profitability of mining by finding cheaper energy
+
+  * Imagines that as demand increases
+
+    * Have people try to arbitrage the profitability of mining by finding cheaper energy
     * Will probably see people start to create block streams for field programmable gate arrays (like a hybrid GPU ASIC - can be reprogrammed)
-    * * They are more efficient than GPU’s
-      * Have a community member that’s been working on creating FPGA for Ergo
-      * In terms of his efficiency, he’s tripled the average GPU’s miners ability but there is also a chip shortage
+    * They are more efficient than GPU’s
+    * Have a community member that’s been working on creating FPGA for Ergo
+    * In terms of his efficiency, he’s tripled the average GPU’s miners ability but there is also a chip shortage
 * Long-term, will probably see some centralization
 * That’s not a big negative
 * It creates competition
@@ -185,9 +197,11 @@ The following is a summary of questions posed by the audience during this AMA. L
 *Answered by Joe Armeanio*
 
 * Three things
-* * Commercial adoption
+
+  * Commercial adoption
   * A framework for additional miner rewards
-  * * Exploring PoW performed - tracks the work that miners have done
+
+    * Exploring PoW performed - tracks the work that miners have done
   * Bridges - having viable bridges and creating more liquidity between networks
 
 ***Could Ergo and Cardano have a hybrid PoW-PoS protocol? Or does that compromise security?***
@@ -211,17 +225,21 @@ The following is a summary of questions posed by the audience during this AMA. L
 *Answered by Dan Friedman*
 
 * As far as commercial interest is concerned
-* * Been having meetings with several prospects
+
+  * Been having meetings with several prospects
   * Ironing out strengths and weaknesses
 * Strengths
-* * The level of development of the protocol
+
+  * The level of development of the protocol
   * The tooling/toolset/toolbox
 * Weaknesses
-* * Size of the network
+
+  * Size of the network
   * The size has been criticized in discussions
   * It’s a young project and Dan thinks it’s a fair assessment 
 * How do we attract more commercial interest?
-* * Thinks it will come from more cooperation with other UTXO alliance partners
+
+  * Thinks it will come from more cooperation with other UTXO alliance partners
   * What is the strength we can sell? What’s the solution to the weakness criticisms?
 * Believes Ergo would be great for traceability and identity solutions
 * Current plans are being developed
@@ -232,9 +250,11 @@ The following is a summary of questions posed by the audience during this AMA. L
 *Answered by Joe Armeanio*
 
 * Thinks that if he was going to build commercially, the first question would be: “What is it going to cost?”
-* * Ergo is highly competitive as an answer to that question.
+
+  * Ergo is highly competitive as an answer to that question.
 * Second question: “What are my risks?”
-* * It is true that it is a smaller project
+
+  * It is true that it is a smaller project
   * Hashrate is not as high compared to other GPU-mineable coins
   * The hardware security of miners is important
   * Having a robust security layer/hashrate will probably attract more commercial projects
