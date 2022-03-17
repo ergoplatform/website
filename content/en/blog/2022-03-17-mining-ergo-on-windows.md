@@ -17,7 +17,7 @@ Mining is the engine that drives the Ergo blockchain. Ergo uses the [Autolykos](
 
 You will need the following to mine Ergo:
 
-* a GPU video card with a minimum of 4GB of RAM (ideally more if within your budget)
+* a GPU video card with a minimum of **4GB of RAM** (ideally more if within your budget)
 * [mining software](https://ergoplatform.org/en/mining/) compatible with your card, such as [T-Rex](https://trex-miner.com/) (Nvidia) or [RedTeamMiner](https://www.teamredminer.com/) (AMD)
 * [an Ergo wallet](https://ergoplatform.org/en/wallets/) (such as [Nautilus](https://ergoplatform.org/en/blog/2022-03-10-storing-crypto-on-ergo-nautilus-wallet/))
 
@@ -53,13 +53,13 @@ You can find your Ergo address by going to the Receive tab in your Ergo wallet. 
 
 `stratum+ssl://ergo.getblok.io:4056`
 
-When finished, save the file as ERGO_mining.bat. To start mining, simply click on the file.
+When finished, save the file as **ERGO_mining.bat**. To start mining, simply click on the file.
 
 **Note:** If you have a virus protection program like McAfee, you will need to restore the t-rex.exe file after extraction and exclude it from Real-Time Scanning in order to run it. 
 
-If you want the mining software to start when you reboot your computer, then, save **ERGO_mining.bat** in `C:\Users\Username\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`. If you have trouble finding the Startup folder, you can always save ERGO_mining.bat somewhere, type the Windows **key + R** to get the shell prompt, then type:
+If you want the mining software to start when you reboot your computer, then, save ERGO_mining.bat in `C:\Users\Username\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`. If you have trouble finding the Startup folder, you can always save ERGO_mining.bat somewhere, type the Windows **key + R** to get the shell prompt, then type:
 
-`shell:startup `
+`shell:startup`
 
 This will bring up the Startup folder, and you can drag and drop the Ergo_mining.bat file into it.
 
