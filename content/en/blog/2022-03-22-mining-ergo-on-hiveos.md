@@ -27,8 +27,6 @@ Let’s start by getting your HiveOS account. 
 
 Once you have created your account, you will be asked to verify your email and then be offered the opportunity to enable Two Factor Authentication (2FA) for stronger security. When finished with 2FA, you will see the following screen:
 
-
-
 ![](https://lh5.googleusercontent.com/fOKSDoBX5ww0YoJundiggntf2Yvx_ZNPTCSsPkcvlBf3gSasMxK96whC4ofh_uqjnP013OeERRsI3vnjgSm1iFBGp-axsh-5fw75adTsuIe8skG2bDK-GpIbj3qlF-H4EQUrV7c9)
 
 Because HiveOS is a dedicated crypto mining operating system, the user interface allows access to numerous features, including power consumption, overclock settings, remote power access and other crypto mining actions. Users can also control all of these features remotely on a smartphone with the HiveOS app.
@@ -37,19 +35,11 @@ Because HiveOS is a dedicated crypto mining operating system, the user interface
 
 Now that you have your HiveOS account, you need to create a bootable drive for the operating system. Go to <https://hiveon.com/install/> and download the ZIP file under the “GPU” category.
 
-
-
 ![](https://lh5.googleusercontent.com/69pirLkLwaF_XChq4dXNAMCzkh4N8UrAbi7tWiFsIp5ZLx2UTp7WyzOptSyk4qPE6fn609cjlCmOlla5r7uwbJ3hPbbN40VdR5q41Wd7Smy1m77jErQihaGF7n5iupsgZXH9oq3p)
-
-
 
 Once downloaded, you will need to flash the operating system onto your external SSD or USB key. This writer chose to use balenaEtcher for creating the bootable drive and readers can access that open source software here: <https://www.balena.io/etcher/>. Download and install the balenaEtcher software on your computer. Once completed, open balenaEtcher on your computer. You will see the following screen:
 
-
-
 ![](https://lh5.googleusercontent.com/BzLSjfeVnlDfoETcoh4DZG7sCww8bBB4qQndblahOR8kfSjdZPMemTB7jcE-1BaQklRBjLfpwPsEUPti1ZFH85ALMMIFalo5zTWojZfNuzaK7J1BLjxkLN4Yb993EBZxkt0AyEtC)
-
-
 
 You will then follow these steps:
 
@@ -69,15 +59,11 @@ You will see the following page below. From here you can set up your miner by se
 
 ![](https://lh6.googleusercontent.com/5zP2Ra4xRyyZnlxg0ZM1mP9g5kAGzo5n4DYloqKdvBPKLNN9haZGFYGbtA2KnYLtJVVO0nOgH7wbBIinl1ZWHUUolssn9ks0MuMbMumpywNhKl6xFbv0UYEr5Srg0wFCWlsvsjXU)
 
-
-
 Follow these steps:
 
 * Select “+ Add Rig”
 * On the next screen, select “Connect existing”
 * IMPORTANT: Write down the Rig ID and password (you will need to click on the eye symbol to see the password) that you see on the next page:
-
-
 
 ![](https://lh5.googleusercontent.com/k-soYYrscOtyXLgtZp2RqqCQqSwT3ik9a2QlxFmmjraZ8QP3GBiL9DhNbL96pk9Yj87cRLId5WZjmkdHaeBjo3RQInxrzUaZ9o5BegbpaZlPhMNtZ-MtU2NoL_xcXrVWOxxzBY8p)
 
@@ -87,24 +73,16 @@ Note: This is not a demonstration account and is not an operational miner.
 
 Once you have taken note of your Rig ID and Password, it is time to set up your wallet and Flight Sheet. In the above image, you will see a “Flight Sheet” tab near the top right of the screen. After you select that tab you will be prompted to “Go to list.”
 
-
-
 ![](/img/uploads/2022-03-22-20.29.50.jpg)
-
-
 
 Select “Go to list” and click on “+ Add Wallet.” From there, you will fill in the necessary information in the image below.
 
 * Coin: ERG
-* Address: Your Receiving address from your Ergo wallet. This can be your private Ergo wallet or your Ergo wallet address from an exchange.
+* Address: Your Receiving address from your Ergo wallet. 
 * The other details are optional.
 * Click “Create”
 
-
-
 ![](https://lh3.googleusercontent.com/Acwwqi7LE8WyBqlaVM341BQvEjFTvX8bjlZQ7mccU9sRQzCRT8rKEjUbKS7GXFLfuv4EAiBhOnMlOULQUl6mJXvPM0315IGFcX8817JdHUtetsF06WC2G4AA1_rcFGW6k-N1Hn3O)
-
-
 
 After you click “Create,” you will be brought back to the Flight Sheet page. From there, select the “+ Add Flight Sheet” option and fill out the following in the next screen (example in the image below).
 
@@ -114,8 +92,6 @@ After you click “Create,” you will be brought back to the Flight Sheet page.
 * Miner: From the dropdown menu you will have several options. Choose “T-Rex Miner” for Nvidia GPU’s or “TeamRedMiner'' for AMD GPU’s.
 * Name: Give your Flight Sheet a name - it can be whatever you wish.
 * Select “Create Flight Sheet”
-
-
 
 ![](https://lh3.googleusercontent.com/PFUuMozLA9vC2JKxKoqFxOMG0GiMWbGjak9vm-0UmY9pRkB6CcvR7F6jCXGi1wFBunMItDQl63L74nOYnNeUWKchDUPWdIkWHOcV7Wzp2KLd4jl-bB01pe08NTxhHhfO1z7XSkab)
 
@@ -140,8 +116,6 @@ There is just one last step and it requires that you go into your HiveOS account
 ### Conclusion and Overclocking
 
 As was mentioned earlier in this article, you can enjoy full remote access to your miner from the mobile app. If you have taken the time to set up this miner, you should make the most of your GPU’s capabilities.
-
-
 
 ![](https://lh4.googleusercontent.com/nGX_9FUNAv7qF73HlibSwWpFac5wTiBKR7OmSIVO_QnVNi9RTRkwSMvcEU0Rtoi01F5s1reyTU34xxZ-vJHfNzoKVfDk9AEcmUZOBTjMWWEBQY72xKNqT7tisq1RnAxkqqDCwnoo)
 
