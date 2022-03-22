@@ -167,47 +167,43 @@ The goal of Ergonomic money is to create money and smart contracts for all peopl
 
 *In case of intentional violation of any of these principles, the resulting protocol should not be called Ergo.*  
 
-1. **Decentralization First**
-
-Ergo should be as decentralized as possible. Always strive to spread and grow. Any party's social leaders, software developers, hardware manufacturers, miners, funds need to avoid central points of failure. All actors whose absence will disrupt the system's function need to have contingency plans in the event of a disruption. Decentralization is born from education and adoption. The tools we build need documentation; the community needs to participate and grow actively. Teach others to use and adapt the tools. The internet is a powerful driver of decentralization, and it can be a powerful tool to teach. Decentralization is born from education, both on the development side and the user side. 
-
-Malicious behavior that may affect the security of the network should be avoided. If any of these parties appear during Ergo's lifetime, the community should consider ways to decrease their impact level. There will always be those who seek to disrupt, take advantage, misuse and abuse their power. What is the answer? Education. Educating users to protect themselves, identify malicious actors, avoid them, and work together to minimize their influence. I would encourage all community members to continually seek to learn, adopt tooling, assist and teach in one way or another. A strong community is born through strong cooperation. 
-
-1. **Open Permissionless and Secure**
-
-Ergo protocol does not restrict or limit any categories of usage. This is necessary to remain resilient. We certainly can advocate cooperation, trade, and human values; however, we do not enforce them. That would require a central power. Developers are free to implement any logic they want, taking full responsibility for the ethics and legality of their application. 
-
-All code for the core protocol must remain fully open and transparent. Every line should be fully auditable and transparent. This prevents manipulation as well as builds decentralized resiliency. Ergo is fully committed to being open source to remain trusted, and that trust must remain fully verifiable. 
-
-Anyone can join the network and participate in the protocol without permission. Unlike the traditional financial system, no bailouts, blacklists, or other forms of discrimination should be possible on the core level of Ergo protocol. Insider advantage should be minimized. 
-
-Ergo is committed to supporting privacy tools for those that wish to use them. This must remain a voluntary choice if a user wants to use mechanisms to disrupt the public availability of their data entirely within the scope of their power. They must take full responsibility for the ethics and legality of these actions. 
-
-Ergo is committed to best security practices. This is a continual commitment to prevent network attacks, preserve privacy and protect on-chain value. 
-
-1. **Created for Regular People**
-
-Ergo is committed to being a tool for Regular People. Ergo is a platform for ordinary people, and their interests should not be infringed upon in favor of big parties. In particular, this means that the centralization of mining should be prevented. Regular people should be able to participate in the protocol by running a full node and mining blocks. Post Autolykos V1 Ergo will work to provide a hash rate distribution of pools. 
-
-Ergo is committed to building an ecosystem that offers tools designed to assist regular people. Peer to peer exchange is continually under threat from peer to central power exchange. It is Ergo's goal to encourage tooling and community education to empower ordinary people. 
-
-1. **A Platform for Contractual Money**
-
-Ergo is the base layer to applications that will be built on top of it. It is suitable for several applications, but its main focus is to provide an efficient, secure and easy way to implement financial contracts. Ergo is committed to building a network on solid foundations that continue to update and innovate. The goal with contractual money is to create a system that is not overrun by high user costs and fees. For money to be Ergonomic, it must remain cost-competitive. Ergo will assist with frameworks and tooling for people to build and implement to maximize the use and utility or contractual money. 
-
-1. **Long-term Focus**
-
-All aspects of Ergo development should be focused on a long-term perspective. Ergo was launched in crypto winter; the purpose and intent of Ergo core developers need to supersede short term market conditions. There will always be those who come for short term appreciation and those who come for the principle. 
-
-Smart contracts for the people is an open-source concept to provide a system that can empower the average person. That goal is to remain resilient, adaptable and secure through the long ark of time.  
-
-Since Ergo is designed as a platform, applications built on top of Ergo should also survive in the long term. This resiliency and long term survivability may also enable Ergo to be a good store of value and a mechanism to assist the ordinary human.
-
-We should always see beyond our noses, thinking into the future. What tools can we add? How can we improve? What are the risks? How can we prepare for what is next? 
-
-This long term vision must never die for Ergo to survive. Ergo was born in crypto winter when many had already begun dismissing the future of distributed systems and their ability to create value; nonetheless, we endured, kept building.
-
- Too often, people sacrifice long term growth for short term excitement. Good times will come, and hard times will come. If Ergo is to endure, we must be principled and create value on solid foundations. 
+1. **Decentralization First**\
+   \
+   Ergo should be as decentralized as possible. Always strive to spread and grow. Any party's social leaders, software developers, hardware manufacturers, miners, funds need to avoid central points of failure. All actors whose absence will disrupt the system's function need to have contingency plans in the event of a disruption. Decentralization is born from education and adoption. The tools we build need documentation; the community needs to participate and grow actively. Teach others to use and adapt the tools. The internet is a powerful driver of decentralization, and it can be a powerful tool to teach. Decentralization is born from education, both on the development side and the user side. \
+   \
+   Malicious behavior that may affect the security of the network should be avoided. If any of these parties appear during Ergo's lifetime, the community should consider ways to decrease their impact level. There will always be those who seek to disrupt, take advantage, misuse and abuse their power. What is the answer? Education. Educating users to protect themselves, identify malicious actors, avoid them, and work together to minimize their influence. I would encourage all community members to continually seek to learn, adopt tooling, assist and teach in one way or another. A strong community is born through strong cooperation. 
+2. **Open Permissionless and Secure**\
+   \
+   Ergo protocol does not restrict or limit any categories of usage. This is necessary to remain resilient. We certainly can advocate cooperation, trade, and human values; however, we do not enforce them. That would require a central power. Developers are free to implement any logic they want, taking full responsibility for the ethics and legality of their application. \
+   \
+   All code for the core protocol must remain fully open and transparent. Every line should be fully auditable and transparent. This prevents manipulation as well as builds decentralized resiliency. Ergo is fully committed to being open source to remain trusted, and that trust must remain fully verifiable. \
+   \
+   Anyone can join the network and participate in the protocol without permission. Unlike the traditional financial system, no bailouts, blacklists, or other forms of discrimination should be possible on the core level of Ergo protocol. Insider advantage should be minimized. \
+   \
+   Ergo is committed to supporting privacy tools for those that wish to use them. This must remain a voluntary choice if a user wants to use mechanisms to disrupt the public availability of their data entirely within the scope of their power. They must take full responsibility for the ethics and legality of these actions. \
+   \
+   Ergo is committed to best security practices. This is a continual commitment to prevent network attacks, preserve privacy and protect on-chain value. 
+3. **Created for Regular People**\
+   \
+   Ergo is committed to being a tool for Regular People. Ergo is a platform for ordinary people, and their interests should not be infringed upon in favor of big parties. In particular, this means that the centralization of mining should be prevented. Regular people should be able to participate in the protocol by running a full node and mining blocks. Post Autolykos V1 Ergo will work to provide a hash rate distribution of pools. \
+   \
+   Ergo is committed to building an ecosystem that offers tools designed to assist regular people. Peer to peer exchange is continually under threat from peer to central power exchange. It is Ergo's goal to encourage tooling and community education to empower ordinary people. 
+4. **A Platform for Contractual Money**\
+   \
+   Ergo is the base layer to applications that will be built on top of it. It is suitable for several applications, but its main focus is to provide an efficient, secure and easy way to implement financial contracts. Ergo is committed to building a network on solid foundations that continue to update and innovate. The goal with contractual money is to create a system that is not overrun by high user costs and fees. For money to be Ergonomic, it must remain cost-competitive. Ergo will assist with frameworks and tooling for people to build and implement to maximize the use and utility or contractual money. 
+5. **Long-term Focus**\
+   \
+   All aspects of Ergo development should be focused on a long-term perspective. Ergo was launched in crypto winter; the purpose and intent of Ergo core developers need to supersede short term market conditions. There will always be those who come for short term appreciation and those who come for the principle. \
+   \
+   Smart contracts for the people is an open-source concept to provide a system that can empower the average person. That goal is to remain resilient, adaptable and secure through the long ark of time.  \
+   \
+   Since Ergo is designed as a platform, applications built on top of Ergo should also survive in the long term. This resiliency and long term survivability may also enable Ergo to be a good store of value and a mechanism to assist the ordinary human.\
+   \
+   We should always see beyond our noses, thinking into the future. What tools can we add? How can we improve? What are the risks? How can we prepare for what is next? \
+   \
+   This long term vision must never die for Ergo to survive. Ergo was born in crypto winter when many had already begun dismissing the future of distributed systems and their ability to create value; nonetheless, we endured, kept building.\
+   \
+   Too often, people sacrifice long term growth for short term excitement. Good times will come, and hard times will come. If Ergo is to endure, we must be principled and create value on solid foundations. 
 
 ### Who is Kushti?
 
