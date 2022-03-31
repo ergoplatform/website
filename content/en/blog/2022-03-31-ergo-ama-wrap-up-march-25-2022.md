@@ -21,7 +21,7 @@ Dan concluded his pre-recorded updates by informing the audience that he will be
 
 The following is a summary of questions posed by the audience during this AMA. Last week, Armeanio answered questions on Ledger support, measuring growth in the Ergo ecosystem, LETS, cross chain bridges, exchange listings, and much more. To view the full AMA, please head over to Ergo’s Youtube channel: <https://www.youtube.com/watch?v=99Q36x_ZYM0> 
 
-**A few weeks back it seemed like Ledger support was just about to happen. What is the current situation with that?**
+##### **A few weeks back it seemed like Ledger support was just about to happen. What is the current situation with that?**
 
 * Last time he talked to the team was that morning
 * They are working on that and back in their office
@@ -35,7 +35,7 @@ The following is a summary of questions posed by the audience during this AMA. L
   * It will allow users to interact with dApps from their Ledger device
   * This will greatly improve the user experience
 
-**What’s the most meaningful metric for understanding true growth in the Ergo ecosystem? TVL? Transactions per block? Value of transactions? Number of addresses? Or something that can’t be quantified?**
+##### **What’s the most meaningful metric for understanding true growth in the Ergo ecosystem? TVL? Transactions per block? Value of transactions? Number of addresses? Or something that can’t be quantified?**
 
 * One of the most important metrics is hashrate
 
@@ -56,7 +56,7 @@ The following is a summary of questions posed by the audience during this AMA. L
   * If a firm is going to be analyzing the amount of value that is moving around in a UTXO, are they aware that you always send your entire balance, then you get change back?
   * Do firms calculate the value sent or are they analyzing the full amount?
 
-**How do you envision the first iteration of LETS operating? What would be the things you’d like to see most traded on a LETS?**
+##### **How do you envision the first iteration of LETS operating? What would be the things you’d like to see most traded on a LETS?**
 
 * LETS - local exchange trading system
 
@@ -68,7 +68,7 @@ The following is a summary of questions posed by the audience during this AMA. L
   * Blockchain brings a few interesting things to the table for a LETS
 * It’s system of account where people can work to collaborate
 
-**Do you see any risk for the network security in the short term because of EIP-0027? I suppose that the total hashrate is going to drop proportional to the block reward reduction.**
+##### **Do you see any risk for the network security in the short term because of EIP-0027? I suppose that the total hashrate is going to drop proportional to the block reward reduction.**
 
 * The reduction in block rewards is less than 20%
 * In crypto, that can happen in a day depending on price action
@@ -89,7 +89,7 @@ The following is a summary of questions posed by the audience during this AMA. L
   * ErgoPad has a staking framework
   * Foundations are coming together
 
-**How are bridge developments going? Any ETA?**
+##### **How are bridge developments going? Any ETA?**
 
 * Alex is in Dubai 
 * Will be working with the Susy team
@@ -108,7 +108,7 @@ The following is a summary of questions posed by the audience during this AMA. L
   * Adding new chains to that framework minimizes risk
   * That should help with auditability 
 
-**Why is it taking so long to list Ergo in another exchange?**
+##### **Why is it taking so long to list Ergo in another exchange?**
 
 * Ergo has a disadvantage - we are an actual mainnet blockchain
 * We are custom built
@@ -127,7 +127,7 @@ The following is a summary of questions posed by the audience during this AMA. L
 * Starting to see that change
 * Being a custom main network, Ergo is unique when it comes to building exchange support
 
-**How will we prevent network issues by noodle based tokens in the future?**
+##### **How will we prevent network issues by noodle based tokens in the future?**
 
 * We have a new noodle token that someone minted and airdropped to approximately 50k wallets in 3 transactions
 * Impressive but it created some issues on the network
@@ -148,11 +148,11 @@ The following is a summary of questions posed by the audience during this AMA. L
 * That caused them to go offline
 * This is just growth pain
 
-**Can you confirm or deny that Ergo is in the testnet phase with any exchanges?**
+##### **Can you confirm or deny that Ergo is in the testnet phase with any exchanges?**
 
 * Yes, we are in the integration and testing phase with two exchanges
 
-**Have you considered adding Ergo full nodes to Umbrel or Start9? It seems like it could capture some of the Bitcoin maxis attention.**
+##### **Have you considered adding Ergo full nodes to Umbrel or Start9? It seems like it could capture some of the Bitcoin maxis attention.**
 
 * Thinks we need to build out a robust full node wallet that has support for off chain infrastructure
 * It would allow more full nodes in the network
@@ -161,7 +161,7 @@ The following is a summary of questions posed by the audience during this AMA. L
 * Will probably see the tokenization of that - incentives for people to run off chain services
 * Doesn’t see the need to attract the attention of Bitcoin maxis
 
-**How would the Ergo Foundation use their funds if Ergo mooned? How would they use it if it tanked?**
+##### **How would the Ergo Foundation use their funds if Ergo mooned? How would they use it if it tanked?**
 
 * Alex is pretty conservative
 
@@ -172,7 +172,7 @@ The following is a summary of questions posed by the audience during this AMA. L
   * Thinks Ergo Foundation should promote education and develop open source frameworks
   * ETH promoted the education around Solidity - this was well done and very successful
 
-**What are your thoughts on BTC and ADA pairs on ErgoDEX? Do you like the wild wild west style or do you prefer dictatorships?**
+##### **What are your thoughts on BTC and ADA pairs on ErgoDEX? Do you like the wild wild west style or do you prefer dictatorships?**
 
 * When ErgoDEX allowed custom pool creation, one of the first things that occured was someone created a fake pool
 * If we want to be decentralized, what can we do to educate users or to notify or warn them?
@@ -190,7 +190,7 @@ The following is a summary of questions posed by the audience during this AMA. L
   * Audit projects as they pop up
 * Education will be key to preventing scam coins
 
-**Is the Minotaur wallet going to be listed in the Apple App Store under the Ergo Foundation umbrella or individually?**
+##### **Is the Minotaur wallet going to be listed in the Apple App Store under the Ergo Foundation umbrella or individually?**
 
 * The Apple App Store has been a bottleneck for the Ergo Foundation
 * Needed to create an official account in the App Store
@@ -198,13 +198,13 @@ The following is a summary of questions posed by the audience during this AMA. L
 * Been incredibly slow, especially with current geo-political climate
 * Banking has been slow 
 
-**Can you release any info on marketing plans? I know you guys have hired a marketing manager and would love to know some progress on this.**
+##### **Can you release any info on marketing plans? I know you guys have hired a marketing manager and would love to know some progress on this.**
 
 * Ergo Foundation goal is to empower the Ergo community
 * Hired a new marketing manager that represents the community
 * The Ergo Platform Twitter is now managed by the leader of the Sigmanaut Training Program
 
-**Is the Nautilus wallet officially approved by you?**
+##### **Is the Nautilus wallet officially approved by you?**
 
 * It’s open source
 * It’s had a lot of developers from different projects play with it
@@ -215,7 +215,7 @@ The following is a summary of questions posed by the audience during this AMA. L
 * Doesn’t have a favorite at this point
 * If he was leaning towards one wallet, he really enjoys the cold storage feature with the Android wallet
 
-**Dan has mentioned before how he sees synergies working with other UTXO alliance members such as Nervos. What are your personal views on this and what use-cases would you like to see?**
+##### **Dan has mentioned before how he sees synergies working with other UTXO alliance members such as Nervos. What are your personal views on this and what use-cases would you like to see?**
 
 * Long-term, thinks there is a lot of value in Layer 2 solutions
 * That is probably the area that shows the most promise
@@ -225,7 +225,7 @@ The following is a summary of questions posed by the audience during this AMA. L
 * Thinks the alliance is great and creates solutions to common problems
 * Hopes to see implementation from the various research
 
-**What are some dApp ideas you want to see made on Ergo?**
+##### **What are some dApp ideas you want to see made on Ergo?**
 
 * Competing stablecoins is a nice framework to build out
 * Doesn’t think one stablecoin will rule them all 
