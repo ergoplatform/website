@@ -1,6 +1,6 @@
 ---
 title: The World’s Most Decentralized Casino is Being Built on Ergo
-date: 2022-04-11T15:04:51.735Z
+date: 2022-04-20T15:04:51.735Z
 author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/nightowl_logo.png
