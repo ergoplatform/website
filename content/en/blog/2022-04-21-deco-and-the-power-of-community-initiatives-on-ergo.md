@@ -25,12 +25,17 @@ The first cohort of Deco students graduated the “Layman Course Batch #0” on 
 
 1. Two “Layman eUTXO design” [courses](https://drive.google.com/file/d/1bxHRvr9vN2yTw5nfb0nve9BXNaevo6bl/view) (the list below is quoted from the curriculum overview). These are geared towards novices and cover:
 
-* Basics of eUTxO
-* Concepts of Boxes, Transactions, Registers and its utilities
-* Designing of Transactions (Simple, Real-life, eUTxO)
-* Basic concepts of Tokens, Script hashes for box retrieval
-* Mindset for designing these systems
-* Group projects to work on
+* * Basics of eUTxO
+
+  * Concepts of Boxes, Transactions, Registers and its utilities
+
+  * Designing of Transactions (Simple, Real-life, eUTxO)
+
+  * Basic concepts of Tokens, Script hashes for box retrieval
+
+  * Mindset for designing these systems
+
+  * Group projects to work on
 
 2. One “ErgoScript Developer” [course](https://drive.google.com/file/d/1bxHRvr9vN2yTw5nfb0nve9BXNaevo6bl/view) (the list below is quoted from the curriculum overview), focusing on:
 
