@@ -1,38 +1,38 @@
 ---
-title: What is a DAO (Decentralized Autonomous Organization)?
+title: O que é uma DAO (Organização Autônoma Descentralizada)?
 date: 2022-03-15T17:07:24.427Z
-author: "Ergo Platform "
+author: "Plataforma Ergo"
 authorPhoto: /img/uploads/1762.png
 blogPhoto: /img/uploads/news-blog-46.png
 tags:
-  - Building Ergo
+  - Construindo Ergo
 ---
-# Introduction
+# Introdução
 
-A decentralized autonomous organization (DAO) is a new type of cooperative. DAOs enable groups of any size and individuals to coordinate, pool resources, and create tokens that represent shares of ownership which can be used to vote and make decisions. With new types of organization, new ways of working together become possible.
+Uma organização autônoma descentralizada (DAO, sigla em Inglês) é um novo tipo de cooperativa. DAOs permitem que grupos de qualquer tamanho e indivíduos coordenem-se, juntem recursos e criem tokens que representam partes de propriedade que podem ser usadas para votar e tomar decisões. Com novos tipos de organização, novas formas de trabalhar em conjunto se tornam possíveis.
 
-### DAO Features
+### Funcionalidades da DAO
 
-* Internet-enabled - memberships are not limited by geography or social connections
-* On a blockchain - leveraging cryptocurrencies and open, distributed ledgers
-* Smart contracts - facilitate trust between members and can automate some actions 
+* Habilitada-pela-Internet - associações não são limitadas por geografia ou conexões sociais
+* Em uma blockchain - utiliza-se de criptomoedas e livros-razão abertos e distribuídos
+* Contratos inteligentes - facilitam a confiança entre membros e podem automatizar algumas ações
 
-# The Need for DAOs
+# A Necessidade para DAOs
 
-Imagine a group of four friends who are potters with an interest in buying an expensive piece of equipment, such as a raku kiln. Individually, they might not be able to justify buying this piece of equipment. However, it may make sense to buy it if they share the expense and ownership of the kiln. 
+Imagine que um grupo de quatro amigos oleiros tenham interesse em comprar um equipamento caro, como uma fornalha. Individualmente, eles podem não ter a capacidade de justiticar uma compra desse tipo. Porém, pode fazer sentido que eles compartilhem a compra e propriedade do forno. 
 
-This is a common situation. There are many aspects of life where cooperative ownership could enable easier access to resources and services. 
+Esta é uma situação comum. Há muitos aspectos da vida onde propriedade cooperativa pode facilitar acesso a recursos e serviços. 
 
-Collective action also opens new opportunities. Together we can effect change that is impossible for individuals working alone or in smaller groups.
+Ações coletivas também abrem novas oportunidades. Juntos, podemos mudar o que parece impossível para indivíduos que trabalham sozinhos ou em pequenos grupos.
 
-But even for collectives, it is often easier to work in small groups. As the size of a cooperative grows, we do not have the necessary mechanisms for organizing beyond [Dunbar’s number](https://en.wikipedia.org/wiki/Dunbar%27s_number) (one hundred and fifty people). In the past, we have relied on governments, corporations and non-profits to manage projects of a larger scale. DAOs give us another option that can potentially include millions of people.
+Mas mesmo para coletivos, é frequentemente mais fácil trabalhar em pequenos grupos. Com um aumento do tamanho da cooportativa, não temos os mecanismos necessários para organizá-la para além do [número de Dunbar](https://pt.wikipedia.org/wiki/N%C3%BAmero_de_Dunbar) (cento e cinquenta pessoas). No passado, dependíamos de governo, empresas e organizações sem fins lucrativos para administrar projetos de maior escala. As DAOs nos dão outra opção que pode potencialmente incluir milhões de pessoas.
 
-# What Can DAOs Do?
+# O que DAOs podem fazer?
 
-DAOs are still an emerging technology. A simple example of a DAO could outline smart contract rules for a shared wallet, such as [ErgoTeam](https://github.com/anon-real/ErgoTeam) on the Ergo blockchain. This is analogous to the four potters buying the kiln through a shared bank account. A bank account is subject to the bank’s rules. In a DAO, it is subject to the rules of a smart contract.
+As DAOs ainda são uma tecnologia emergente. Um exemplo simples de uma DAO pode delinear regras de contratos inteligentes para uma carteira compartilhada, como o [ErgoTeam](https://github.com/anon-real/ErgoTeam) na blockchain Ergo. Isto é análogo aos quatro oleiros comprando o forno através de uma conta bancária conjunta. Uma conta bancária está sujeita às regras do banco. Em uma DAO, está sujeita às regras dos contratos inteligentes.
 
-As group size increases, from a few people to even millions, there will be more sophisticated requirements. On the Ergo blockchain, [Paideia](https://ergopad.io/projects/paideia) is currently working on a complete software suite for DAOs. In [their whitepaper](https://docs.google.com/document/d/1G8iN_9sFJ3k5UuSAIbRHdkUIhqVGhpmeA_XQXVyZW94/), they discuss the reasons for implementing DAOs on Ergo. They also discuss different governance models, voting procedures, issuing of tokens, proposal management and other features that they plan to implement. It includes an optimistic voting mechanism, quorum voting with tokens, direct sale of tokens, airdrops and other features. For an accessible introduction to Paideia, [the following episode](https://www.youtube.com/watch?v=RuSb4tyXS68) of Ergo Pulse provides a concise overview. 
+Com o crescimento do grupo de algumas pessoas para até mesmo milhões, haverá requisitos mais sofisticados. Na blockchain Ergo, a [Paideia](https://ergopad.io/projects/paideia) está atualmente trabalhando em um software completo para DAOs. No [seu artigo](https://docs.google.com/document/d/1G8iN_9sFJ3k5UuSAIbRHdkUIhqVGhpmeA_XQXVyZW94/), eles discutem as motivações para implementar DAOs em Ergo. Eles também discutem diferentes modelos de governança, procedimentos de votação, lançamentos de tokens, administração de propostas e outras funcionalidades que eles planejam implementar. Isso inclui um mecanismo otimista de votação, quórum de votação com tokens, venda direta de tokens, airdrops e outras funcionalidades. Para uma introdução acessível à Paideia, [o seguinte episódio](https://www.youtube.com/watch?v=RuSb4tyXS68) (em Inglês) de Ergo Pulse fornece um resumo consiso. 
 
-# Conclusion
+# Conclusão
 
-DAOs offer a new approach to collective ownership and action at scale. As the technology  develops and is implemented on the Ergo blockchain, it will open up new opportunities for collaboration and action. This will help fuel adoption and help set the foundation for new tools that will empower ordinary people, organizations and business to work together and change the world as we know it for the better.
+As DAOs oferecem uma nova abordagem à propriedade coletiva e ação em grande escala. Com o desenvolvimento da tecnologia e sua implementação na blockchain Ergo, ela irá abrir novas ooportunidades para colaboração e ação. Isto irá ajudar a alimentar adoção e ajudará a formar uma fundação para novas ferramentas que irão empoderar as pessoas comuns, organizações e empresas para trabalharem em conjunto e mudar para melhor o mundo como conhecemos.
