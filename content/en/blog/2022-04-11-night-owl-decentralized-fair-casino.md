@@ -3,7 +3,7 @@ title: The World’s Most Decentralized Casino is Being Built on Ergo
 date: 2022-04-20T15:04:51.735Z
 author: Ergo Platform
 authorPhoto: /img/uploads/1762.png
-blogPhoto: /img/uploads/nightowl_logo.png
+blogPhoto: /img/uploads/nightowl-logo.jpg
 tags:
   - Building Ergo
 ---
@@ -41,5 +41,3 @@ The team has mentioned their aspirations for the platform’s future in their [L
 The Ergohack III team has much to offer and much more to come. Their targeted roadmap date is July 2022. This launch of v0.1.0 aims to include swap, liquidity provisioning, and The Pioneers game collection.  
 
 For more information and to stay up to date, the Night Owl’s coming soon page is now up with links to their respective socials: https://nightowlcasino.io/. 
-
-![Night Owl Banner](../../../static/img/uploads/nightowl_banner.jpg)
