@@ -1,5 +1,5 @@
 ---
-title: Ergo now available on Indodax
+title: Ergo Now Available on Indodax
 date: 2022-04-28T12:11:10.376Z
 author: Ergo Foundation
 authorPhoto: /img/uploads/group-1.png
